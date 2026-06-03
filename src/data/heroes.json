@@ -1,0 +1,252 @@
+[
+  {
+    "id": 1,
+    "slug": "lam",
+    "name": "Lam",
+    "role": "Jungle",
+    "difficulty": "Medium",
+    "winRate": 52.3,
+    "pickRate": 12.5,
+    "banRate": 8.7,
+    "tier": "S+",
+    "build": {
+      "items": ["Raptor's Claw", "Swift Boots", "Frost Blade", "Divine Blade", "Immortal Shield", "Oracle's Blessing"],
+      "order": ["Raptor's Claw", "Swift Boots", "Frost Blade"]
+    },
+    "arcana": ["Hunter", "Toughness", "Lethal"],
+    "counters": ["luna", "augran"],
+    "counteredBy": ["musashi", "yaria"],
+    "tips": ["Lam excels at ganking squishy mid laners early game", "Use 1-2-3-A combo for burst damage", "Focus on invading enemy jungle when ahead"],
+    "patchHistory": ["Season 12: Base damage +10%", "Season 11: Ultimate cooldown reduced", "Season 10: Added mobility to 2nd skill"],
+    "faqs": [
+      {"question": "Can Lam invade early jungle?", "answer": "Yes, Lam has strong early damage and can safely invade at level 2."},
+      {"question": "Is Lam good against Augran?", "answer": "Lam has moderate advantage against Augran due to his mobility."},
+      {"question": "What is Lam combo order?", "answer": "1-2-3-A is the standard burst combo."}
+    ]
+  },
+  {
+    "id": 2,
+    "slug": "angela",
+    "name": "Angela",
+    "role": "Roam",
+    "difficulty": "Easy",
+    "winRate": 54.1,
+    "pickRate": 15.2,
+    "banRate": 5.3,
+    "tier": "S",
+    "build": {
+      "items": ["Healing Flask", "Tough Boots", "Guardian's Armor", "Oracle's Blessing", "Aegis of Protection", "Crown of Kings"],
+      "order": ["Healing Flask", "Tough Boots", "Guardian's Armor"]
+    },
+    "arcana": ["Meditation", "Toughness", "Cooldown"],
+    "counters": ["daji", "musashi"],
+    "counteredBy": ["loong", "yaria"],
+    "tips": ["Always stick to your carry during team fights", "Use ultimate to revive allies in critical moments", "Position yourself safely while healing"],
+    "patchHistory": ["Season 12: Healing power +15%", "Season 11: Ultimate range increased", "Season 10: Cooldowns reduced"],
+    "faqs": [
+      {"question": "Is Angela good for beginners?", "answer": "Yes, Angela is one of the easiest supports to learn."},
+      {"question": "Can Angela heal multiple allies?", "answer": "Her 1st skill heals nearby allies."},
+      {"question": "When should I use Angela's ultimate?", "answer": "Use it to revive your main carry or turn a team fight."}
+    ]
+  },
+  {
+    "id": 3,
+    "slug": "augran",
+    "name": "Augran",
+    "role": "Gold Lane",
+    "difficulty": "Hard",
+    "winRate": 49.8,
+    "pickRate": 18.9,
+    "banRate": 12.1,
+    "tier": "S",
+    "build": {
+      "items": ["Swift Boots", "Swift Strike", "Berserker's Fury", "Demon Hunter", "Immortal Shield", "Blade of Despair"],
+      "order": ["Swift Boots", "Swift Strike", "Berserker's Fury"]
+    },
+    "arcana": ["Hunter", "Lethal", "Swiftness"],
+    "counters": ["musashi", "hou-yi"],
+    "counteredBy": ["lam", "luna"],
+    "tips": ["Position yourself at maximum range while attacking", "Use 1st skill to kite enemies", "Ultimate can be used to escape or chase"],
+    "patchHistory": ["Season 12: Attack speed +5%", "Season 11: 2nd skill damage adjusted", "Season 10: Base movement speed increased"],
+    "faqs": [
+      {"question": "Is Augran good in Season 12?", "answer": "Yes, Augran is a top-tier marksman this season."},
+      {"question": "What build does Augran use?", "answer": "Swift Strike, Berserker's Fury, Demon Hunter are core items."},
+      {"question": "How to play Augran safely?", "answer": "Always stay behind your tank or support."}
+    ]
+  },
+  {
+    "id": 4,
+    "slug": "hou-yi",
+    "name": "Hou Yi",
+    "role": "Gold Lane",
+    "difficulty": "Medium",
+    "winRate": 51.2,
+    "pickRate": 14.3,
+    "banRate": 6.8,
+    "tier": "A",
+    "build": {
+      "items": ["Swift Boots", "Swift Strike", "Berserker's Fury", "Demon Hunter", "Immortal Shield", "Blade of Despair"],
+      "order": ["Swift Boots", "Swift Strike", "Berserker's Fury"]
+    },
+    "arcana": ["Hunter", "Lethal", "Swiftness"],
+    "counters": ["lam", "musashi"],
+    "counteredBy": ["augran", "yaria"],
+    "tips": ["Use your ultimate to stun enemies from long range", "1st skill can hit multiple targets", "Farm safely early game"],
+    "patchHistory": ["Season 12: Ultimate damage +10%", "Season 11: Attack range increased", "Season 10: Base stats buffed"],
+    "faqs": [
+      {"question": "How to aim Hou Yi's ultimate?", "answer": "Predict enemy movement or use it on crowded team fights."},
+      {"question": "Is Hou Yi better than Augran?", "answer": "Both are strong, Augran has higher mobility, Hou Yi has range."},
+      {"question": "What is Hou Yi's combo?", "answer": "1st + auto attacks, ultimate for stuns."}
+    ]
+  },
+  {
+    "id": 5,
+    "slug": "musashi",
+    "name": "Musashi",
+    "role": "Exp Lane",
+    "difficulty": "Hard",
+    "winRate": 53.5,
+    "pickRate": 11.7,
+    "banRate": 9.2,
+    "tier": "S+",
+    "build": {
+      "items": ["Tough Boots", "Shadow Blade", "Divine Blade", "Immortal Shield", "Oracle's Blessing", "Blade of Despair"],
+      "order": ["Tough Boots", "Shadow Blade", "Divine Blade"]
+    },
+    "arcana": ["Hunter", "Toughness", "Lethal"],
+    "counters": ["lam", "augran"],
+    "counteredBy": ["luna", "yaria"],
+    "tips": ["Use your ultimate to dodge enemy CC", "Combo: 2-1-3 for maximum burst", "Split push and join team fights"],
+    "patchHistory": ["Season 12: Ultimate untargetable duration increased", "Season 11: Base HP +100", "Season 10: Cooldowns adjusted"],
+    "faqs": [
+      {"question": "Can Musashi solo carry?", "answer": "Yes, Musashi is an excellent split pusher and team fighter."},
+      {"question": "What to build on Musashi?", "answer": "Shadow Blade + Divine Blade core."},
+      {"question": "How to counter Musashi?", "answer": "Use CC and burst him down quickly."}
+    ]
+  },
+  {
+    "id": 6,
+    "slug": "marco-polo",
+    "name": "Marco Polo",
+    "role": "Gold Lane",
+    "difficulty": "Hard",
+    "winRate": 48.9,
+    "pickRate": 10.8,
+    "banRate": 4.5,
+    "tier": "A",
+    "build": {
+      "items": ["Swift Boots", "Swift Strike", "Berserker's Fury", "Demon Hunter", "Immortal Shield", "Blade of Despair"],
+      "order": ["Swift Boots", "Swift Strike", "Berserker's Fury"]
+    },
+    "arcana": ["Hunter", "Lethal", "Swiftness"],
+    "counters": ["hou-yi", "luna"],
+    "counteredBy": ["lam", "musashi"],
+    "tips": ["Use your mobility to reposition in fights", "Ultimate is great for team fights", "Build attack speed and crit"],
+    "patchHistory": ["Season 12: 1st skill damage buffed", "Season 11: Ultimate range increased", "Season 10: Base stats adjusted"],
+    "faqs": [
+      {"question": "Is Marco Polo hard to play?", "answer": "Yes, he requires good positioning and mechanical skill."},
+      {"question": "What lane is Marco Polo?", "answer": "Gold Lane (ADC)."},
+      {"question": "How to counter Marco Polo?", "answer": "Burst him down before he can kite."}
+    ]
+  },
+  {
+    "id": 7,
+    "slug": "loong",
+    "name": "Loong",
+    "role": "Mid",
+    "difficulty": "Hard",
+    "winRate": 52.7,
+    "pickRate": 13.4,
+    "banRate": 11.0,
+    "tier": "S+",
+    "build": {
+      "items": ["Arcane Boots", "Boom Stick", "Glowing Wand", "Divine Wizardry", "Oracle's Blessing", "Void Book"],
+      "order": ["Arcane Boots", "Boom Stick", "Glowing Wand"]
+    },
+    "arcana": ["Mana Surge", "Cooldown", "Magic Pen"],
+    "counters": ["daji", "angela"],
+    "counteredBy": ["lam", "musashi"],
+    "tips": ["Use your 1st skill to poke safely", "Ultimate is powerful in team fights", "Position at the backline"],
+    "patchHistory": ["Season 12: AP ratio +5%", "Season 11: Cooldowns reduced", "Season 10: Ultimate damage buffed"],
+    "faqs": [
+      {"question": "Is Loong a mid laner?", "answer": "Yes, Loong is a mid lane mage."},
+      {"question": "What build for Loong?", "answer": "Boom Stick, Glowing Wand, Divine Wizardry."},
+      {"question": "How to combo with Loong?", "answer": "2-1-Ult for maximum burst."}
+    ]
+  },
+  {
+    "id": 8,
+    "slug": "daji",
+    "name": "Daji",
+    "role": "Mid",
+    "difficulty": "Easy",
+    "winRate": 50.5,
+    "pickRate": 16.8,
+    "banRate": 7.3,
+    "tier": "A",
+    "build": {
+      "items": ["Arcane Boots", "Boom Stick", "Glowing Wand", "Divine Wizardry", "Oracle's Blessing", "Void Book"],
+      "order": ["Arcane Boots", "Boom Stick", "Glowing Wand"]
+    },
+    "arcana": ["Mana Surge", "Cooldown", "Magic Pen"],
+    "counters": ["lam", "augran"],
+    "counteredBy": ["loong", "yaria"],
+    "tips": ["Hide in bushes to surprise enemies", "Use 2-3-1 combo to burst squishies", "Don't overextend early"],
+    "patchHistory": ["Season 12: Stun duration +0.2s", "Season 11: Ultimate damage +15%", "Season 10: Base HP buffed"],
+    "faqs": [
+      {"question": "Is Daji good for beginners?", "answer": "Yes, simple burst combo and mechanics."},
+      {"question": "What is Daji's combo?", "answer": "2 (stun) + 3 + 1 for full burst."},
+      {"question": "How to counter Daji?", "answer": "Use magic resistance items."}
+    ]
+  },
+  {
+    "id": 9,
+    "slug": "yaria",
+    "name": "Yaria",
+    "role": "Jungle",
+    "difficulty": "Medium",
+    "winRate": 51.8,
+    "pickRate": 9.6,
+    "banRate": 6.1,
+    "tier": "S",
+    "build": {
+      "items": ["Raptor's Claw", "Tough Boots", "Divine Blade", "Immortal Shield", "Oracle's Blessing", "Blade of Despair"],
+      "order": ["Raptor's Claw", "Tough Boots", "Divine Blade"]
+    },
+    "arcana": ["Hunter", "Toughness", "Lethal"],
+    "counters": ["musashi", "loong"],
+    "counteredBy": ["lam", "luna"],
+    "tips": ["Farm jungle quickly and gank early", "Use ultimate to sustain in fights", "Invade enemy jungle when possible"],
+    "patchHistory": ["Season 12: Jungle clear speed +10%", "Season 11: Ultimate heal buffed", "Season 10: Base damage adjusted"],
+    "faqs": [
+      {"question": "What build does Yaria use?", "answer": "Tank/bruiser hybrid build."},
+      {"question": "Is Yaria a tank jungler?", "answer": "Yes, she has good sustain and durability."},
+      {"question": "How to play Yaria?", "answer": "Farm fast, gank often, initiate fights."}
+    ]
+  },
+  {
+    "id": 10,
+    "slug": "luban-no7",
+    "name": "Luban No.7",
+    "role": "Gold Lane",
+    "difficulty": "Easy",
+    "winRate": 48.2,
+    "pickRate": 20.1,
+    "banRate": 3.2,
+    "tier": "B",
+    "build": {
+      "items": ["Swift Boots", "Swift Strike", "Berserker's Fury", "Demon Hunter", "Immortal Shield", "Blade of Despair"],
+      "order": ["Swift Boots", "Swift Strike", "Berserker's Fury"]
+    },
+    "arcana": ["Hunter", "Lethal", "Swiftness"],
+    "counters": ["hou-yi", "musashi"],
+    "counteredBy": ["lam", "yaria"],
+    "tips": ["Use passive for consistent damage", "Position safely behind your team", "Farm early items before fighting"],
+    "patchHistory": ["Season 12: Passive damage +8%", "Season 11: Ultimate range increased", "Season 10: Base attack speed buffed"],
+    "faqs": [
+      {"question": "Is Luban good for beginners?", "answer": "Yes, very simple mechanics."},
+      {"question": "What build for Luban?", "answer": "Standard ADC attack speed and crit."},
+      {"question": "How to counter Luban?", "answer": "Burst him down quickly."}
+    ]
+  }
+]
