@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { Hero } from "@/lib/data";
+import HeroAvatar from "./HeroAvatar";
 
 interface HeroCardProps {
   hero: Hero;
@@ -28,9 +29,13 @@ export const HeroCard = ({ hero, showTier = false }: HeroCardProps) => {
     <Link href={`/hero/${hero.slug}`}>
       <div className="bg-surface border border-border rounded-lg p-4 hover:bg-surfaceHover hover:border-primary transition cursor-pointer">
         <div className="flex items-center gap-4">
-          <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center text-primary font-bold">
-            {hero.name.charAt(0)}
-          </div>
+          {hero.avatar ? (
+            <HeroAvatar avatar={hero.avatar} name={hero.name} size="md" />
+          ) : (
+            <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center text-primary font-bold">
+              {hero.name.charAt(0)}
+            </div>
+          )}
           <div className="flex-grow">
             <div className="flex items-center gap-2">
               <h3 className="font-semibold">{hero.name}</h3>
