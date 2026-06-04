@@ -23,7 +23,7 @@ npm run build
 
 1. Connect repo `hokmeta`, branch `main`
 2. Build: `npm run build`
-3. Output directory: **`out`** (do not set `distDir: 'out'` in `next.config.mjs`)
+3. Output directory: **`out`** — keep `distDir: 'out'` in `next.config.mjs` (required for Hostinger)
 4. `config/site.json` → `domain` must match live URL
 
 ## Data
