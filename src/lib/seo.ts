@@ -8,22 +8,36 @@ export interface SeoInput {
   ogImage?: string;
   noindex?: boolean;
   type?: 'website' | 'article';
+  keywords?: string[];
+}
+
+export function getSiteBase(): string {
+  return site.domain.replace(/\/$/, '');
 }
 
 export function canonicalUrl(path: string): string {
-  const base = site.domain.replace(/\/$/, '');
+  const base = getSiteBase();
   const normalized = path.startsWith('/') ? path : `/${path}`;
   return `${base}${normalized === '/' ? '' : normalized}`;
+}
+
+/** Absolute URL for JSON-LD ItemList entries */
+export function absoluteUrl(path: string): string {
+  const p = path.startsWith('/') ? path : `/${path}`;
+  const withSlash = p.endsWith('/') ? p : `${p}/`;
+  return `${getSiteBase()}${withSlash === '//' ? '/' : withSlash}`;
 }
 
 export function buildMetadata(input: SeoInput): Metadata {
   const url = canonicalUrl(input.path);
   const og = input.ogImage ?? site.ogImage;
-  const fullOg = og.startsWith('http') ? og : `${site.domain}${og}`;
+  const fullOg = og.startsWith('http') ? og : `${getSiteBase()}${og}`;
 
   return {
+    metadataBase: new URL(getSiteBase()),
     title: input.title,
     description: input.description,
+    keywords: input.keywords,
     alternates: { canonical: url },
     robots: input.noindex
       ? { index: false, follow: false }

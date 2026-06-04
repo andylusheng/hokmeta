@@ -4,12 +4,12 @@
   "name": "Angela",
   "role": "Support",
   "difficulty": "Easy",
-  "tier": "S",
-  "winRate": null,
-  "pickRate": null,
-  "banRate": null,
-  "rank": null,
-  "avatar": "https://image.inews.gtimg.com/newsapp_bt/0/hokmeta/hero/angela.png",
+  "tier": "S+",
+  "winRate": 51.81,
+  "pickRate": 2.3,
+  "banRate": 3.02,
+  "rank": 4,
+  "avatar": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/wjaExUFU.png",
   "build": [
     {
       "name": "Swift Boots",
@@ -62,8 +62,8 @@
   ],
   "patchHistory": [
     {
-      "version": "S38",
-      "change": "Data unavailable"
+      "version": "Live meta",
+      "change": "Camp HOK ranked stats — WR 51.81%, pick 2.3%, ban 3.02%, tier band S."
     },
     {
       "version": "S37",
@@ -78,7 +78,7 @@
     {
       "id": "faq-good-season",
       "question": "Is Angela good in current season?",
-      "answer": "Angela is listed as Tier S Support with Data unavailable win rate, Data unavailable pick rate, and Data unavailable ban rate. Ranked viability follows these meta metrics and patch history on this page."
+      "answer": "Angela shows 51.81% win rate, 2.3% pick rate, 3.02% ban rate (Camp HOK). Tier S+ Support."
     },
     {
       "id": "faq-best-build",
@@ -88,11 +88,17 @@
     {
       "id": "faq-counter",
       "question": "How to counter Angela?",
-      "answer": "Pick Musashi, Jing, Fang to pressure Angela's Support windows. Ban rate unavailable shows draft priority. See counter matchups table below."
+      "answer": "Use Musashi, Jing, Fang. Ban rate 3.02% reflects draft priority against Angela."
     }
   ],
   "metaAnalysis": [
-    "Angela win rate: Data unavailable. Tier S Support ranking uses other signals.",
-    "Draft counters: Musashi, Jing, Fang. Heroes that punish Angela: Lam, Musashi, Loong."
-  ]
+    "Angela win rate 51.81% (Camp HOK, 2026-06-04).",
+    "Pick rate 2.3% for Angela in current ranked meta.",
+    "Ban rate 3.02% — moderate bans.",
+    "Counters: Musashi, Jing, Fang. Countered by: Lam, Musashi, Loong."
+  ],
+  "tencentId": 142,
+  "avatarFallback": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/142/142.jpg",
+  "dataSource": "Camp HOK via hok-meta-analyzer",
+  "dataUpdated": "2026-06-04"
 }

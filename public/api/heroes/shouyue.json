@@ -4,12 +4,12 @@
   "name": "Shouyue",
   "role": "Marksman",
   "difficulty": "Hard",
-  "tier": "S+",
-  "winRate": null,
-  "pickRate": null,
-  "banRate": null,
-  "rank": null,
-  "avatar": "https://image.inews.gtimg.com/newsapp_bt/0/hokmeta/hero/shouyue.png",
+  "tier": "A",
+  "winRate": 51.5,
+  "pickRate": 0.79,
+  "banRate": 0.09,
+  "rank": 5,
+  "avatar": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/4bUKKH66.png",
   "build": [
     {
       "name": "Hunter",
@@ -62,8 +62,8 @@
   ],
   "patchHistory": [
     {
-      "version": "S38",
-      "change": "Data unavailable"
+      "version": "Live meta",
+      "change": "Camp HOK ranked stats — WR 51.5%, pick 0.79%, ban 0.09%, tier band B."
     },
     {
       "version": "S37",
@@ -78,7 +78,7 @@
     {
       "id": "faq-good-season",
       "question": "Is Shouyue good in current season?",
-      "answer": "Shouyue is listed as Tier S+ Marksman with Data unavailable win rate, Data unavailable pick rate, and Data unavailable ban rate. Ranked viability follows these meta metrics and patch history on this page."
+      "answer": "Shouyue shows 51.5% win rate, 0.79% pick rate, 0.09% ban rate (Camp HOK). Tier A Marksman."
     },
     {
       "id": "faq-best-build",
@@ -88,11 +88,17 @@
     {
       "id": "faq-counter",
       "question": "How to counter Shouyue?",
-      "answer": "Pick Loong, Wukong, Kaizer to pressure Shouyue's Marksman windows. Ban rate unavailable shows draft priority. See counter matchups table below."
+      "answer": "Use Loong, Wukong, Kaizer. Ban rate 0.09% reflects draft priority against Shouyue."
     }
   ],
   "metaAnalysis": [
-    "Shouyue win rate: Data unavailable. Tier S+ Marksman ranking uses other signals.",
-    "Draft counters: Loong, Wukong, Kaizer. Heroes that punish Shouyue: Dharma, Data unavailable, Data unavailable."
-  ]
+    "Shouyue win rate 51.5% (Camp HOK, 2026-06-04).",
+    "Pick rate 0.79% for Shouyue in current ranked meta.",
+    "Ban rate 0.09% — moderate bans.",
+    "Counters: Loong, Wukong, Kaizer. Countered by: Dharma, Data unavailable, Data unavailable."
+  ],
+  "tencentId": 196,
+  "avatarFallback": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/196/196.jpg",
+  "dataSource": "Camp HOK via hok-meta-analyzer",
+  "dataUpdated": "2026-06-04"
 }

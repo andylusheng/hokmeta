@@ -4,12 +4,12 @@
   "name": "Hou Yi",
   "role": "Marksman",
   "difficulty": "Medium",
-  "tier": "S",
-  "winRate": null,
-  "pickRate": null,
-  "banRate": null,
-  "rank": null,
-  "avatar": "https://image.inews.gtimg.com/newsapp_bt/0/hokmeta/hero/hou-yi.png",
+  "tier": "S+",
+  "winRate": 49.28,
+  "pickRate": 2.85,
+  "banRate": 0.2,
+  "rank": 16,
+  "avatar": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/S5isJokI.png",
   "build": [
     {
       "name": "Hunter",
@@ -62,8 +62,8 @@
   ],
   "patchHistory": [
     {
-      "version": "S38",
-      "change": "Data unavailable"
+      "version": "Live meta",
+      "change": "Camp HOK ranked stats — WR 49.28%, pick 2.85%, ban 0.2%, tier band S."
     },
     {
       "version": "S37",
@@ -78,7 +78,7 @@
     {
       "id": "faq-good-season",
       "question": "Is Hou Yi good in current season?",
-      "answer": "Hou Yi is listed as Tier S Marksman with Data unavailable win rate, Data unavailable pick rate, and Data unavailable ban rate. Ranked viability follows these meta metrics and patch history on this page."
+      "answer": "Hou Yi shows 49.28% win rate, 2.85% pick rate, 0.2% ban rate (Camp HOK). Tier S+ Marksman."
     },
     {
       "id": "faq-best-build",
@@ -88,11 +88,17 @@
     {
       "id": "faq-counter",
       "question": "How to counter Hou Yi?",
-      "answer": "Pick Loong, Wukong, Kaizer to pressure Hou Yi's Marksman windows. Ban rate unavailable shows draft priority. See counter matchups table below."
+      "answer": "Use Loong, Wukong, Kaizer. Ban rate 0.2% reflects draft priority against Hou Yi."
     }
   ],
   "metaAnalysis": [
-    "Hou Yi win rate: Data unavailable. Tier S Marksman ranking uses other signals.",
-    "Draft counters: Loong, Wukong, Kaizer. Heroes that punish Hou Yi: Biron, Dharma, Donghuang."
-  ]
+    "Hou Yi win rate 49.28% (Camp HOK, 2026-06-04).",
+    "Pick rate 2.85% for Hou Yi in current ranked meta.",
+    "Ban rate 0.2% — moderate bans.",
+    "Counters: Loong, Wukong, Kaizer. Countered by: Biron, Dharma, Donghuang."
+  ],
+  "tencentId": 169,
+  "avatarFallback": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/169/169.jpg",
+  "dataSource": "Camp HOK via hok-meta-analyzer",
+  "dataUpdated": "2026-06-04"
 }

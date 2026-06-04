@@ -5,11 +5,11 @@
   "role": "Support",
   "difficulty": "Medium",
   "tier": "S",
-  "winRate": null,
-  "pickRate": null,
-  "banRate": null,
-  "rank": null,
-  "avatar": "https://image.inews.gtimg.com/newsapp_bt/0/hokmeta/hero/dolia.png",
+  "winRate": 46.06,
+  "pickRate": 1.83,
+  "banRate": 0.52,
+  "rank": 29,
+  "avatar": "https://camp.honorofkings.com/camp/admin/hero/head_128-128/tfvb3IJf.png",
   "build": [
     {
       "name": "Swift",
@@ -62,8 +62,8 @@
   ],
   "patchHistory": [
     {
-      "version": "S38",
-      "change": "Data unavailable"
+      "version": "Live meta",
+      "change": "Camp HOK ranked stats — WR 46.06%, pick 1.83%, ban 0.52%, tier band A."
     },
     {
       "version": "S37",
@@ -78,7 +78,7 @@
     {
       "id": "faq-good-season",
       "question": "Is Dolia good in current season?",
-      "answer": "Dolia is listed as Tier S Support with Data unavailable win rate, Data unavailable pick rate, and Data unavailable ban rate. Ranked viability follows these meta metrics and patch history on this page."
+      "answer": "Dolia shows 46.06% win rate, 1.83% pick rate, 0.52% ban rate (Camp HOK). Tier S Support."
     },
     {
       "id": "faq-best-build",
@@ -88,11 +88,17 @@
     {
       "id": "faq-counter",
       "question": "How to counter Dolia?",
-      "answer": "Pick Diaochan, Luna, Mozi to pressure Dolia's Support windows. Ban rate unavailable shows draft priority. See counter matchups table below."
+      "answer": "Use Diaochan, Luna, Mozi. Ban rate 0.52% reflects draft priority against Dolia."
     }
   ],
   "metaAnalysis": [
-    "Dolia win rate: Data unavailable. Tier S Support ranking uses other signals.",
-    "Draft counters: Diaochan, Luna, Mozi. Heroes that punish Dolia: Loong, Wukong, Li Xin."
-  ]
+    "Dolia win rate 46.06% (Camp HOK, 2026-06-04).",
+    "Pick rate 1.83% for Dolia in current ranked meta.",
+    "Ban rate 0.52% — moderate bans.",
+    "Counters: Diaochan, Luna, Mozi. Countered by: Loong, Wukong, Li Xin."
+  ],
+  "tencentId": 159,
+  "avatarFallback": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/159/159.jpg",
+  "dataSource": "Camp HOK via hok-meta-analyzer",
+  "dataUpdated": "2026-06-04"
 }

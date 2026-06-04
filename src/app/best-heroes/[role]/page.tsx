@@ -1,6 +1,6 @@
 import { notFound } from 'next/navigation';
 import { getHeroesByRole, heroes } from '@/lib/data';
-import { buildMetadata, defaultTitle } from '@/lib/seo';
+import { absoluteUrl, buildMetadata, defaultTitle } from '@/lib/seo';
 import { HeroCard } from '@/components/HeroCard';
 import { Breadcrumb } from '@/components/Breadcrumb';
 import { JsonLd, breadcrumbSchema, itemListSchema } from '@/lib/schema';
@@ -61,7 +61,7 @@ export default function BestHeroesRolePage({
           `Best ${role} Heroes`,
           list.map((h) => ({
             name: h.name,
-            url: `https://hokmeta.com/hero/${h.slug}/`,
+            url: absoluteUrl(`/hero/${h.slug}`),
           }))
         )}
       />

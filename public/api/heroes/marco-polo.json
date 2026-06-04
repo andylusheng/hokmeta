@@ -4,12 +4,12 @@
   "name": "Marco Polo",
   "role": "Marksman",
   "difficulty": "Hard",
-  "tier": "S",
-  "winRate": null,
-  "pickRate": null,
-  "banRate": null,
-  "rank": null,
-  "avatar": "https://image.inews.gtimg.com/newsapp_bt/0/hokmeta/hero/marco-polo.png",
+  "tier": "S+",
+  "winRate": 50.06,
+  "pickRate": 2.12,
+  "banRate": 0.3,
+  "rank": 13,
+  "avatar": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/48d8GxkP.png",
   "build": [
     {
       "name": "Hunter",
@@ -62,8 +62,8 @@
   ],
   "patchHistory": [
     {
-      "version": "S38",
-      "change": "Data unavailable"
+      "version": "Live meta",
+      "change": "Camp HOK ranked stats — WR 50.06%, pick 2.12%, ban 0.3%, tier band S."
     },
     {
       "version": "S37",
@@ -78,7 +78,7 @@
     {
       "id": "faq-good-season",
       "question": "Is Marco Polo good in current season?",
-      "answer": "Marco Polo is listed as Tier S Marksman with Data unavailable win rate, Data unavailable pick rate, and Data unavailable ban rate. Ranked viability follows these meta metrics and patch history on this page."
+      "answer": "Marco Polo shows 50.06% win rate, 2.12% pick rate, 0.3% ban rate (Camp HOK). Tier S+ Marksman."
     },
     {
       "id": "faq-best-build",
@@ -88,11 +88,17 @@
     {
       "id": "faq-counter",
       "question": "How to counter Marco Polo?",
-      "answer": "Pick Loong, Wukong, Fang to pressure Marco Polo's Marksman windows. Ban rate unavailable shows draft priority. See counter matchups table below."
+      "answer": "Use Loong, Wukong, Fang. Ban rate 0.3% reflects draft priority against Marco Polo."
     }
   ],
   "metaAnalysis": [
-    "Marco Polo win rate: Data unavailable. Tier S Marksman ranking uses other signals.",
-    "Draft counters: Loong, Wukong, Fang. Heroes that punish Marco Polo: Augran, Biron, Data unavailable."
-  ]
+    "Marco Polo win rate 50.06% (Camp HOK, 2026-06-04).",
+    "Pick rate 2.12% for Marco Polo in current ranked meta.",
+    "Ban rate 0.3% — moderate bans.",
+    "Counters: Loong, Wukong, Fang. Countered by: Augran, Biron, Data unavailable."
+  ],
+  "tencentId": 132,
+  "avatarFallback": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/132/132.jpg",
+  "dataSource": "Camp HOK via hok-meta-analyzer",
+  "dataUpdated": "2026-06-04"
 }

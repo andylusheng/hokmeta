@@ -5,11 +5,11 @@
   "role": "Assassin",
   "difficulty": "Hard",
   "tier": "A",
-  "winRate": null,
-  "pickRate": null,
-  "banRate": null,
-  "rank": null,
-  "avatar": "https://image.inews.gtimg.com/newsapp_bt/0/hokmeta/hero/fang.png",
+  "winRate": 50.42,
+  "pickRate": 1,
+  "banRate": 0.04,
+  "rank": 11,
+  "avatar": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/6dGNjKTe.png",
   "build": [
     {
       "name": "Shadow",
@@ -62,8 +62,8 @@
   ],
   "patchHistory": [
     {
-      "version": "S38",
-      "change": "Data unavailable"
+      "version": "Live meta",
+      "change": "Camp HOK ranked stats — WR 50.42%, pick 1%, ban 0.04%, tier band B."
     },
     {
       "version": "S37",
@@ -78,7 +78,7 @@
     {
       "id": "faq-good-season",
       "question": "Is Fang good in current season?",
-      "answer": "Fang is listed as Tier A Assassin with Data unavailable win rate, Data unavailable pick rate, and Data unavailable ban rate. Ranked viability follows these meta metrics and patch history on this page."
+      "answer": "Fang shows 50.42% win rate, 1% pick rate, 0.04% ban rate (Camp HOK). Tier A Assassin."
     },
     {
       "id": "faq-best-build",
@@ -88,11 +88,17 @@
     {
       "id": "faq-counter",
       "question": "How to counter Fang?",
-      "answer": "Pick Biron, Donghuang, Angela to pressure Fang's Assassin windows. Ban rate unavailable shows draft priority. See counter matchups table below."
+      "answer": "Use Biron, Donghuang, Angela. Ban rate 0.04% reflects draft priority against Fang."
     }
   ],
   "metaAnalysis": [
-    "Fang win rate: Data unavailable. Tier A Assassin ranking uses other signals.",
-    "Draft counters: Biron, Donghuang, Angela. Heroes that punish Fang: Angela, Luban No.7, Mozi."
-  ]
+    "Fang win rate 50.42% (Camp HOK, 2026-06-04).",
+    "Pick rate 1% for Fang in current ranked meta.",
+    "Ban rate 0.04% — moderate bans.",
+    "Counters: Biron, Donghuang, Angela. Countered by: Angela, Luban No.7, Mozi."
+  ],
+  "tencentId": 195,
+  "avatarFallback": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/195/195.jpg",
+  "dataSource": "Camp HOK via hok-meta-analyzer",
+  "dataUpdated": "2026-06-04"
 }

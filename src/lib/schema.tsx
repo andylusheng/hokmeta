@@ -77,6 +77,43 @@ export function faqPageSchema(faqs: { question: string; answer: string }[]) {
   };
 }
 
+export function webSiteSchema() {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: site.name,
+    url: site.domain,
+    description: site.description,
+    publisher: { '@type': 'Organization', name: site.author },
+    potentialAction: {
+      '@type': 'SearchAction',
+      target: {
+        '@type': 'EntryPoint',
+        urlTemplate: `${site.domain.replace(/\/$/, '')}/search/?q={search_term_string}`,
+      },
+      'query-input': 'required name=search_term_string',
+    },
+  };
+}
+
+export function heroArticleSchema(hero: Hero, path: string) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: `${hero.name} Build & Guide`,
+    description: `${hero.name} ${hero.role} — Tier ${hero.tier}. Builds, counters, and meta analysis.`,
+    author: { '@type': 'Organization', name: site.author },
+    publisher: {
+      '@type': 'Organization',
+      name: site.name,
+      url: site.domain,
+    },
+    datePublished: site.datePublished,
+    dateModified: site.dateModified,
+    mainEntityOfPage: canonicalUrl(path),
+  };
+}
+
 export function videoGameSchema(hero: Hero) {
   return {
     '@context': 'https://schema.org',

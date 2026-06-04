@@ -3,7 +3,9 @@ import {
   getMostPickedHeroes,
   getMostBannedHeroes,
   getRecentMetaChanges,
+  site,
 } from '@/lib/data';
+import patchesMeta from '../../../data/patches.json';
 import { buildMetadata, defaultTitle } from '@/lib/seo';
 import { TrendList } from '@/components/TrendList';
 import { Breadcrumb } from '@/components/Breadcrumb';
@@ -34,7 +36,11 @@ export default function HeroTrendsPage() {
       <Breadcrumb
         items={[{ label: 'Home', href: '/' }, { label: 'Hero Trends' }]}
       />
-      <h1 className="mb-8 text-3xl font-bold text-white">Hero Trends</h1>
+      <h1 className="mb-2 text-3xl font-bold text-white">Hero Trends</h1>
+      <p className="mb-8 text-sm text-gray-500">
+        Live stats from Camp HOK · Last sync:{' '}
+        {'updated' in patchesMeta ? patchesMeta.updated : site.dateModified}
+      </p>
 
       <div className="grid gap-8 lg:grid-cols-2">
         <section className="card">

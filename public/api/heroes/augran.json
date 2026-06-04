@@ -4,12 +4,12 @@
   "name": "Augran",
   "role": "Warrior",
   "difficulty": "Medium",
-  "tier": "S",
-  "winRate": null,
-  "pickRate": null,
-  "banRate": null,
-  "rank": null,
-  "avatar": "https://image.inews.gtimg.com/newsapp_bt/0/hokmeta/hero/augran.png",
+  "tier": "S+",
+  "winRate": 46.93,
+  "pickRate": 1.18,
+  "banRate": 5.05,
+  "rank": 28,
+  "avatar": "https://camp.honorofkings.com/camp/admin/hero/head_128-128/ue6KY05b.png",
   "build": [
     {
       "name": "Gilded Greaves",
@@ -62,8 +62,8 @@
   ],
   "patchHistory": [
     {
-      "version": "S38",
-      "change": "Data unavailable"
+      "version": "Live meta",
+      "change": "Camp HOK ranked stats — WR 46.93%, pick 1.18%, ban 5.05%, tier band S."
     },
     {
       "version": "S37",
@@ -78,7 +78,7 @@
     {
       "id": "faq-good-season",
       "question": "Is Augran good in current season?",
-      "answer": "Augran is listed as Tier S Warrior with Data unavailable win rate, Data unavailable pick rate, and Data unavailable ban rate. Ranked viability follows these meta metrics and patch history on this page."
+      "answer": "Augran shows 46.93% win rate, 1.18% pick rate, 5.05% ban rate (Camp HOK). Tier S+ Warrior."
     },
     {
       "id": "faq-best-build",
@@ -88,11 +88,17 @@
     {
       "id": "faq-counter",
       "question": "How to counter Augran?",
-      "answer": "Pick Diaochan, Milady, Marco Polo to pressure Augran's Warrior windows. Ban rate unavailable shows draft priority. See counter matchups table below."
+      "answer": "Use Diaochan, Milady, Marco Polo. Ban rate 5.05% reflects draft priority against Augran."
     }
   ],
   "metaAnalysis": [
-    "Augran win rate: Data unavailable. Tier S Warrior ranking uses other signals.",
-    "Draft counters: Diaochan, Milady, Marco Polo. Heroes that punish Augran: Data unavailable, Data unavailable, Data unavailable."
-  ]
+    "Augran win rate 46.93% (Camp HOK, 2026-06-04).",
+    "Pick rate 1.18% for Augran in current ranked meta.",
+    "Ban rate 5.05% — high draft pressure.",
+    "Counters: Diaochan, Milady, Marco Polo. Countered by: Data unavailable, Data unavailable, Data unavailable."
+  ],
+  "tencentId": 524,
+  "avatarFallback": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/524/524.jpg",
+  "dataSource": "Camp HOK via hok-meta-analyzer",
+  "dataUpdated": "2026-06-04"
 }

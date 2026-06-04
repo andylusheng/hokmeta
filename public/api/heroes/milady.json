@@ -4,12 +4,12 @@
   "name": "Milady",
   "role": "Mage",
   "difficulty": "Medium",
-  "tier": "A",
-  "winRate": null,
-  "pickRate": null,
-  "banRate": null,
-  "rank": null,
-  "avatar": "https://image.inews.gtimg.com/newsapp_bt/0/hokmeta/hero/milady.png",
+  "tier": "S+",
+  "winRate": 48.95,
+  "pickRate": 1.9,
+  "banRate": 2.4,
+  "rank": 18,
+  "avatar": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/orlOit3f.png",
   "build": [
     {
       "name": "Arcane",
@@ -62,8 +62,8 @@
   ],
   "patchHistory": [
     {
-      "version": "S38",
-      "change": "Data unavailable"
+      "version": "Live meta",
+      "change": "Camp HOK ranked stats — WR 48.95%, pick 1.9%, ban 2.4%, tier band S."
     },
     {
       "version": "S37",
@@ -78,7 +78,7 @@
     {
       "id": "faq-good-season",
       "question": "Is Milady good in current season?",
-      "answer": "Milady is listed as Tier A Mage with Data unavailable win rate, Data unavailable pick rate, and Data unavailable ban rate. Ranked viability follows these meta metrics and patch history on this page."
+      "answer": "Milady shows 48.95% win rate, 1.9% pick rate, 2.4% ban rate (Camp HOK). Tier S+ Mage."
     },
     {
       "id": "faq-best-build",
@@ -88,11 +88,17 @@
     {
       "id": "faq-counter",
       "question": "How to counter Milady?",
-      "answer": "Pick Musashi, Jing, Lam to pressure Milady's Mage windows. Ban rate unavailable shows draft priority. See counter matchups table below."
+      "answer": "Use Musashi, Jing, Lam. Ban rate 2.4% reflects draft priority against Milady."
     }
   ],
   "metaAnalysis": [
-    "Milady win rate: Data unavailable. Tier A Mage ranking uses other signals.",
-    "Draft counters: Musashi, Jing, Lam. Heroes that punish Milady: Augran, Li Xin, Kaizer."
-  ]
+    "Milady win rate 48.95% (Camp HOK, 2026-06-04).",
+    "Pick rate 1.9% for Milady in current ranked meta.",
+    "Ban rate 2.4% — moderate bans.",
+    "Counters: Musashi, Jing, Lam. Countered by: Augran, Li Xin, Kaizer."
+  ],
+  "tencentId": 511,
+  "avatarFallback": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/511/511.jpg",
+  "dataSource": "Camp HOK via hok-meta-analyzer",
+  "dataUpdated": "2026-06-04"
 }

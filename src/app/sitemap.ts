@@ -13,9 +13,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/tier-list',
     '/hero-trends',
     '/best-heroes',
+    '/tools',
     '/tools/build-generator',
     '/tools/counter-picker',
     '/learn',
+    '/privacy',
+    '/about',
   ].map((path) => ({
     url: `${base}${path}/`,
     lastModified: now,

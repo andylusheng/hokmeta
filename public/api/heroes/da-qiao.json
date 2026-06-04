@@ -5,11 +5,11 @@
   "role": "Support",
   "difficulty": "Easy",
   "tier": "A",
-  "winRate": null,
-  "pickRate": null,
-  "banRate": null,
-  "rank": null,
-  "avatar": "https://image.inews.gtimg.com/newsapp_bt/0/hokmeta/hero/da-qiao.png",
+  "winRate": 49.1,
+  "pickRate": 0.92,
+  "banRate": 0.49,
+  "rank": 17,
+  "avatar": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/IEPtzR5z.png",
   "build": [
     {
       "name": "Swift",
@@ -62,8 +62,8 @@
   ],
   "patchHistory": [
     {
-      "version": "S38",
-      "change": "Data unavailable"
+      "version": "Live meta",
+      "change": "Camp HOK ranked stats — WR 49.1%, pick 0.92%, ban 0.49%, tier band B."
     },
     {
       "version": "S37",
@@ -78,7 +78,7 @@
     {
       "id": "faq-good-season",
       "question": "Is Da Qiao good in current season?",
-      "answer": "Da Qiao is listed as Tier A Support with Data unavailable win rate, Data unavailable pick rate, and Data unavailable ban rate. Ranked viability follows these meta metrics and patch history on this page."
+      "answer": "Da Qiao shows 49.1% win rate, 0.92% pick rate, 0.49% ban rate (Camp HOK). Tier A Support."
     },
     {
       "id": "faq-best-build",
@@ -88,11 +88,17 @@
     {
       "id": "faq-counter",
       "question": "How to counter Da Qiao?",
-      "answer": "Pick Musashi, Jing, Lam to pressure Da Qiao's Support windows. Ban rate unavailable shows draft priority. See counter matchups table below."
+      "answer": "Use Musashi, Jing, Lam. Ban rate 0.49% reflects draft priority against Da Qiao."
     }
   ],
   "metaAnalysis": [
-    "Da Qiao win rate: Data unavailable. Tier A Support ranking uses other signals.",
-    "Draft counters: Musashi, Jing, Lam. Heroes that punish Da Qiao: Loong, Wukong, Data unavailable."
-  ]
+    "Da Qiao win rate 49.1% (Camp HOK, 2026-06-04).",
+    "Pick rate 0.92% for Da Qiao in current ranked meta.",
+    "Ban rate 0.49% — moderate bans.",
+    "Counters: Musashi, Jing, Lam. Countered by: Loong, Wukong, Data unavailable."
+  ],
+  "tencentId": 191,
+  "avatarFallback": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/191/191.jpg",
+  "dataSource": "Camp HOK via hok-meta-analyzer",
+  "dataUpdated": "2026-06-04"
 }

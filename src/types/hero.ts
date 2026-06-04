@@ -37,6 +37,10 @@ export interface Hero {
   banRate: number | null;
   rank: number | null;
   avatar: string;
+  avatarFallback?: string;
+  tencentId?: number;
+  dataSource?: string;
+  dataUpdated?: string;
   build: HeroBuildItem[];
   arcana: string[];
   spells: string[];

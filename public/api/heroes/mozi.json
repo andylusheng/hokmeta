@@ -4,12 +4,12 @@
   "name": "Mozi",
   "role": "Mage",
   "difficulty": "Hard",
-  "tier": "A",
-  "winRate": null,
-  "pickRate": null,
-  "banRate": null,
-  "rank": null,
-  "avatar": "https://image.inews.gtimg.com/newsapp_bt/0/hokmeta/hero/mozi.png",
+  "tier": "S",
+  "winRate": 49.96,
+  "pickRate": 1.24,
+  "banRate": 1.1,
+  "rank": 14,
+  "avatar": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/Za4OlJ6t.png",
   "build": [
     {
       "name": "Arcane",
@@ -62,8 +62,8 @@
   ],
   "patchHistory": [
     {
-      "version": "S38",
-      "change": "Data unavailable"
+      "version": "Live meta",
+      "change": "Camp HOK ranked stats — WR 49.96%, pick 1.24%, ban 1.1%, tier band A."
     },
     {
       "version": "S37",
@@ -78,7 +78,7 @@
     {
       "id": "faq-good-season",
       "question": "Is Mozi good in current season?",
-      "answer": "Mozi is listed as Tier A Mage with Data unavailable win rate, Data unavailable pick rate, and Data unavailable ban rate. Ranked viability follows these meta metrics and patch history on this page."
+      "answer": "Mozi shows 49.96% win rate, 1.24% pick rate, 1.1% ban rate (Camp HOK). Tier S Mage."
     },
     {
       "id": "faq-best-build",
@@ -88,11 +88,17 @@
     {
       "id": "faq-counter",
       "question": "How to counter Mozi?",
-      "answer": "Pick Musashi, Fang, Jing to pressure Mozi's Mage windows. Ban rate unavailable shows draft priority. See counter matchups table below."
+      "answer": "Use Musashi, Fang, Jing. Ban rate 1.1% reflects draft priority against Mozi."
     }
   ],
   "metaAnalysis": [
-    "Mozi win rate: Data unavailable. Tier A Mage ranking uses other signals.",
-    "Draft counters: Musashi, Fang, Jing. Heroes that punish Mozi: Dolia, Data unavailable, Data unavailable."
-  ]
+    "Mozi win rate 49.96% (Camp HOK, 2026-06-04).",
+    "Pick rate 1.24% for Mozi in current ranked meta.",
+    "Ban rate 1.1% — moderate bans.",
+    "Counters: Musashi, Fang, Jing. Countered by: Dolia, Data unavailable, Data unavailable."
+  ],
+  "tencentId": 108,
+  "avatarFallback": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/108/108.jpg",
+  "dataSource": "Camp HOK via hok-meta-analyzer",
+  "dataUpdated": "2026-06-04"
 }

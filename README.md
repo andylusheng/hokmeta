@@ -1,55 +1,54 @@
-# HOK Meta (hokmeta.com)
+# HOK Meta (https://hokmeta.com)
 
-Production-ready **Next.js 14** static site for Honor of Kings meta: 30 top heroes, tier list, builds, counters, trends, learn hub, and JSON API for AI crawlers.
+Production **Next.js 14** static site for Honor of Kings meta: 30 heroes, tier list, builds, counters, trends, and learn hub.
 
-## Quick start
+## Local development
 
 ```bash
 npm install
-node scripts/generate-data.js   # optional: regenerate data
-node scripts/copy-api.js        # copies /public/api/*.json
 npm run dev
 ```
 
-Build static export:
+Open http://localhost:3001
+
+## Production build
 
 ```bash
 npm run build
 ```
 
-Output: `out/` directory ready for CDN/hosting.
+- Static site: `out/`
+- Hostinger copy: `dist/` (same content, for deploy output dir)
 
-## Routes
+## Deploy (Hostinger Node.js + GitHub)
 
-| Route | Description |
-|-------|-------------|
-| `/` | Homepage |
-| `/heroes/` | All heroes |
-| `/tier-list/` | Tier S+–C by role |
-| `/hero/[slug]/` | Hero guide + meta analysis |
-| `/best-heroes/[role]/` | Role meta pages |
-| `/tools/build-generator/` | Build tool |
-| `/tools/counter-picker/` | Counter tool |
-| `/hero-trends/` | Rising / picked / banned / patches |
-| `/learn/` + 10 articles | Topic cluster |
-| `/search/?q=` | **noindex** search results |
+1. Connect repo `hokmeta`, branch `main`
+2. Build: `npm run build`
+3. Output directory: **`out`** or **`dist`** (postbuild copies `out` → `dist`)
+4. `config/site.json` → `domain` must match live URL
+
+## Data
+
+- `data/heroes.json` — hero meta (builds, counters, FAQs + live stats)
+- `data/keywords.json` — related search terms
+- `data/hero-id-map.json` — slug → Tencent hero ID / Camp name
+- Regenerate skeleton: `node scripts/generate-data.js`
+- **Refresh win/pick/ban + avatars** (Camp HOK metrics):
+
+```bash
+npm run sync-meta
+```
+
+Sources: [Tencent Camp HOK](https://camp.honorofkings.com/) metrics via [hok-meta-analyzer](https://github.com/lnsdeep/hok-meta-analyzer) export; portraits from `game.gtimg.cn` CDN (fallback).
 
 ## API (static JSON)
 
 - `/api/heroes.json`
 - `/api/heroes/{slug}.json`
 
-## Data
-
-- `data/heroes.json` — 30 heroes (run `scripts/generate-data.js` to regenerate)
-- `data/keywords.json` — long-tail keywords per hero
-
 ## SEO
 
-Central metadata: `src/lib/seo.ts`  
-JSON-LD: `src/lib/schema.tsx`  
-Author: **HOK Meta Team**
-
-## License
-
-Private — hokmeta.com
+- `src/lib/seo.ts` — metadata & canonical URLs
+- `src/lib/schema.tsx` — JSON-LD
+- `public/robots.txt` via `src/app/robots.ts`
+- Search: `/search/` is `noindex`

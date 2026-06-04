@@ -19,6 +19,7 @@ import {
   JsonLd,
   breadcrumbSchema,
   faqPageSchema,
+  heroArticleSchema,
   videoGameSchema,
 } from '@/lib/schema';
 
@@ -33,11 +34,13 @@ export function generateMetadata({
 }) {
   const hero = getHeroBySlug(params.slug);
   if (!hero) return {};
+  const kw = getKeywordsForHero(hero.slug);
   return buildMetadata({
     title: defaultTitle(`${hero.name} Build, Counters & Guide`),
     description: `${hero.name} ${hero.role} guide — Tier ${hero.tier}, build order, arcana, counters, patch history, and meta analysis.`,
     path: `/hero/${hero.slug}`,
     ogImage: hero.avatar,
+    keywords: kw.length ? kw : undefined,
   });
 }
 
@@ -66,6 +69,9 @@ export default function HeroPage({
         )}
       />
       <JsonLd data={videoGameSchema(hero)} />
+      <JsonLd
+        data={heroArticleSchema(hero, `/hero/${hero.slug}`)}
+      />
 
       <Breadcrumb
         items={[
@@ -151,7 +157,13 @@ export default function HeroPage({
         </aside>
       </div>
 
-      <p className="mt-6 text-center text-sm text-gray-500">
+      {hero.dataSource && (
+        <p className="mt-6 text-center text-xs text-gray-600">
+          Stats: {hero.dataSource}
+          {hero.dataUpdated ? ` · Updated ${hero.dataUpdated}` : ''}
+        </p>
+      )}
+      <p className="mt-2 text-center text-sm text-gray-500">
         <Link href="/tools/counter-picker/" className="text-hok-gold hover:underline">
           Counter picker tool
         </Link>

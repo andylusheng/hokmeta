@@ -4,12 +4,12 @@
   "name": "Dharma",
   "role": "Warrior",
   "difficulty": "Medium",
-  "tier": "A",
-  "winRate": null,
-  "pickRate": null,
-  "banRate": null,
-  "rank": null,
-  "avatar": "https://image.inews.gtimg.com/newsapp_bt/0/hokmeta/hero/dharma.png",
+  "tier": "B",
+  "winRate": 52.16,
+  "pickRate": 0.21,
+  "banRate": 0.02,
+  "rank": 2,
+  "avatar": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/9u997w0x.png",
   "build": [
     {
       "name": "Gilded",
@@ -62,8 +62,8 @@
   ],
   "patchHistory": [
     {
-      "version": "S38",
-      "change": "Data unavailable"
+      "version": "Live meta",
+      "change": "Camp HOK ranked stats — WR 52.16%, pick 0.21%, ban 0.02%, tier band C."
     },
     {
       "version": "S37",
@@ -78,7 +78,7 @@
     {
       "id": "faq-good-season",
       "question": "Is Dharma good in current season?",
-      "answer": "Dharma is listed as Tier A Warrior with Data unavailable win rate, Data unavailable pick rate, and Data unavailable ban rate. Ranked viability follows these meta metrics and patch history on this page."
+      "answer": "Dharma shows 52.16% win rate, 0.21% pick rate, 0.02% ban rate (Camp HOK). Tier B Warrior."
     },
     {
       "id": "faq-best-build",
@@ -88,11 +88,17 @@
     {
       "id": "faq-counter",
       "question": "How to counter Dharma?",
-      "answer": "Pick Lady Sun, Hou Yi, Shouyue to pressure Dharma's Warrior windows. Ban rate unavailable shows draft priority. See counter matchups table below."
+      "answer": "Use Lady Sun, Hou Yi, Shouyue. Ban rate 0.02% reflects draft priority against Dharma."
     }
   ],
   "metaAnalysis": [
-    "Dharma win rate: Data unavailable. Tier A Warrior ranking uses other signals.",
-    "Draft counters: Lady Sun, Hou Yi, Shouyue. Heroes that punish Dharma: Data unavailable, Data unavailable, Data unavailable."
-  ]
+    "Dharma win rate 52.16% (Camp HOK, 2026-06-04).",
+    "Pick rate 0.21% for Dharma in current ranked meta.",
+    "Ban rate 0.02% — moderate bans.",
+    "Counters: Lady Sun, Hou Yi, Shouyue. Countered by: Data unavailable, Data unavailable, Data unavailable."
+  ],
+  "tencentId": 134,
+  "avatarFallback": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/134/134.jpg",
+  "dataSource": "Camp HOK via hok-meta-analyzer",
+  "dataUpdated": "2026-06-04"
 }

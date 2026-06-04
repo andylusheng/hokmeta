@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { heroes } from '@/lib/data';
-import { buildMetadata, defaultTitle } from '@/lib/seo';
+import { absoluteUrl, buildMetadata, defaultTitle } from '@/lib/seo';
 import { HeroCard } from '@/components/HeroCard';
 import { JsonLd, itemListSchema } from '@/lib/schema';
 import { LearnCard } from '@/components/LearnCard';
@@ -19,7 +19,7 @@ export default function HomePage() {
     'Featured HOK Heroes',
     featured.map((h) => ({
       name: h.name,
-      url: `https://hokmeta.com/hero/${h.slug}/`,
+      url: absoluteUrl(`/hero/${h.slug}`),
     }))
   );
 
@@ -31,11 +31,14 @@ export default function HomePage() {
           Honor of Kings Meta &amp; Tier List
         </h1>
         <p className="mx-auto max-w-2xl text-gray-400 sm:mx-0">
-          Data-driven guides for {heroes.length} top meta heroes — builds,
-          counters, patch tracking, and Core Web Vitals–optimized pages.
+          Data-driven guides for {heroes.length} top meta heroes — tier list,
+          builds, counters, patch notes, and ranked meta tools.
         </p>
         <div className="mt-6 flex flex-wrap justify-center gap-3 sm:justify-start">
-          <Link href="/tier-list/" className="btn-primary">
+          <Link href="/heroes/" className="btn-primary">
+            Browse Heroes
+          </Link>
+          <Link href="/tier-list/" className="rounded-md border border-hok-border px-4 py-2 text-sm font-semibold text-white hover:border-hok-gold">
             Tier List
           </Link>
           <Link

@@ -1,5 +1,5 @@
 import { learnArticles } from '@/lib/learn';
-import { buildMetadata, defaultTitle } from '@/lib/seo';
+import { absoluteUrl, buildMetadata, defaultTitle } from '@/lib/seo';
 import { LearnCard } from '@/components/LearnCard';
 import { Breadcrumb } from '@/components/Breadcrumb';
 import { JsonLd, breadcrumbSchema, itemListSchema } from '@/lib/schema';
@@ -25,7 +25,7 @@ export default function LearnIndexPage() {
           'HOK Meta Learning Hub',
           learnArticles.map((a) => ({
             name: a.title,
-            url: `https://hokmeta.com/learn/${a.slug}/`,
+            url: absoluteUrl(`/learn/${a.slug}`),
           }))
         )}
       />

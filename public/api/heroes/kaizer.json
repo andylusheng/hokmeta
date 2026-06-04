@@ -4,12 +4,12 @@
   "name": "Kaizer",
   "role": "Warrior",
   "difficulty": "Medium",
-  "tier": "A",
-  "winRate": null,
-  "pickRate": null,
-  "banRate": null,
-  "rank": null,
-  "avatar": "https://image.inews.gtimg.com/newsapp_bt/0/hokmeta/hero/kaizer.png",
+  "tier": "S",
+  "winRate": 51.38,
+  "pickRate": 1.63,
+  "banRate": 0.17,
+  "rank": 7,
+  "avatar": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/xUdtJiLO.png",
   "build": [
     {
       "name": "Gilded",
@@ -62,8 +62,8 @@
   ],
   "patchHistory": [
     {
-      "version": "S38",
-      "change": "Data unavailable"
+      "version": "Live meta",
+      "change": "Camp HOK ranked stats — WR 51.38%, pick 1.63%, ban 0.17%, tier band A."
     },
     {
       "version": "S37",
@@ -78,7 +78,7 @@
     {
       "id": "faq-good-season",
       "question": "Is Kaizer good in current season?",
-      "answer": "Kaizer is listed as Tier A Warrior with Data unavailable win rate, Data unavailable pick rate, and Data unavailable ban rate. Ranked viability follows these meta metrics and patch history on this page."
+      "answer": "Kaizer shows 51.38% win rate, 1.63% pick rate, 0.17% ban rate (Camp HOK). Tier S Warrior."
     },
     {
       "id": "faq-best-build",
@@ -88,11 +88,17 @@
     {
       "id": "faq-counter",
       "question": "How to counter Kaizer?",
-      "answer": "Pick Angela, Dolia, Milady to pressure Kaizer's Warrior windows. Ban rate unavailable shows draft priority. See counter matchups table below."
+      "answer": "Use Angela, Dolia, Milady. Ban rate 0.17% reflects draft priority against Kaizer."
     }
   ],
   "metaAnalysis": [
-    "Kaizer win rate: Data unavailable. Tier A Warrior ranking uses other signals.",
-    "Draft counters: Angela, Dolia, Milady. Heroes that punish Kaizer: Arli, Hou Yi, Shouyue."
-  ]
+    "Kaizer win rate 51.38% (Camp HOK, 2026-06-04).",
+    "Pick rate 1.63% for Kaizer in current ranked meta.",
+    "Ban rate 0.17% — moderate bans.",
+    "Counters: Angela, Dolia, Milady. Countered by: Arli, Hou Yi, Shouyue."
+  ],
+  "tencentId": 503,
+  "avatarFallback": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/503/503.jpg",
+  "dataSource": "Camp HOK via hok-meta-analyzer",
+  "dataUpdated": "2026-06-04"
 }

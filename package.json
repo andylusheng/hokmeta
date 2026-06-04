@@ -9,10 +9,11 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "postbuild": "node scripts/copy-api.js"
+    "sync-meta": "node scripts/sync-meta.js",
+    "postbuild": "node scripts/copy-api.js && node scripts/postbuild-hostinger.js"
   },
   "dependencies": {
-    "next": "14.2.18",
+    "next": "14.2.28",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
@@ -22,7 +23,7 @@
     "@types/react-dom": "^18.3.1",
     "autoprefixer": "^10.4.20",
     "eslint": "^8.57.1",
-    "eslint-config-next": "14.2.18",
+    "eslint-config-next": "14.2.28",
     "postcss": "^8.4.49",
     "tailwindcss": "^3.4.15",
     "typescript": "^5.6.3"

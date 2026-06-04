@@ -4,12 +4,12 @@
   "name": "Arli",
   "role": "Marksman",
   "difficulty": "Medium",
-  "tier": "S",
-  "winRate": null,
-  "pickRate": null,
-  "banRate": null,
-  "rank": null,
-  "avatar": "https://image.inews.gtimg.com/newsapp_bt/0/hokmeta/hero/arli.png",
+  "tier": "A",
+  "winRate": 47.01,
+  "pickRate": 0.79,
+  "banRate": 0.36,
+  "rank": 27,
+  "avatar": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/hF8AFVqh.png",
   "build": [
     {
       "name": "Hunter",
@@ -62,8 +62,8 @@
   ],
   "patchHistory": [
     {
-      "version": "S38",
-      "change": "Data unavailable"
+      "version": "Live meta",
+      "change": "Camp HOK ranked stats — WR 47.01%, pick 0.79%, ban 0.36%, tier band B."
     },
     {
       "version": "S37",
@@ -78,7 +78,7 @@
     {
       "id": "faq-good-season",
       "question": "Is Arli good in current season?",
-      "answer": "Arli is listed as Tier S Marksman with Data unavailable win rate, Data unavailable pick rate, and Data unavailable ban rate. Ranked viability follows these meta metrics and patch history on this page."
+      "answer": "Arli shows 47.01% win rate, 0.79% pick rate, 0.36% ban rate (Camp HOK). Tier A Marksman."
     },
     {
       "id": "faq-best-build",
@@ -88,11 +88,17 @@
     {
       "id": "faq-counter",
       "question": "How to counter Arli?",
-      "answer": "Pick Wukong, Loong, Kaizer to pressure Arli's Marksman windows. Ban rate unavailable shows draft priority. See counter matchups table below."
+      "answer": "Use Wukong, Loong, Kaizer. Ban rate 0.36% reflects draft priority against Arli."
     }
   ],
   "metaAnalysis": [
-    "Arli win rate: Data unavailable. Tier S Marksman ranking uses other signals.",
-    "Draft counters: Wukong, Loong, Kaizer. Heroes that punish Arli: Data unavailable, Data unavailable, Data unavailable."
-  ]
+    "Arli win rate 47.01% (Camp HOK, 2026-06-04).",
+    "Pick rate 0.79% for Arli in current ranked meta.",
+    "Ban rate 0.36% — moderate bans.",
+    "Counters: Wukong, Loong, Kaizer. Countered by: Data unavailable, Data unavailable, Data unavailable."
+  ],
+  "tencentId": 508,
+  "avatarFallback": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/508/508.jpg",
+  "dataSource": "Camp HOK via hok-meta-analyzer",
+  "dataUpdated": "2026-06-04"
 }

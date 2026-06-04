@@ -4,12 +4,12 @@
   "name": "Lam",
   "role": "Assassin",
   "difficulty": "Hard",
-  "tier": "S+",
-  "winRate": null,
-  "pickRate": null,
-  "banRate": null,
-  "rank": null,
-  "avatar": "https://image.inews.gtimg.com/newsapp_bt/0/hokmeta/hero/lam.png",
+  "tier": "A",
+  "winRate": 48.8,
+  "pickRate": 1.01,
+  "banRate": 0.48,
+  "rank": 20,
+  "avatar": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/02i6M2YK.png",
   "build": [
     {
       "name": "Shadow Blade",
@@ -62,8 +62,8 @@
   ],
   "patchHistory": [
     {
-      "version": "S38",
-      "change": "Data unavailable"
+      "version": "Live meta",
+      "change": "Camp HOK ranked stats — WR 48.8%, pick 1.01%, ban 0.48%, tier band B."
     },
     {
       "version": "S37",
@@ -78,7 +78,7 @@
     {
       "id": "faq-good-season",
       "question": "Is Lam good in current season?",
-      "answer": "Lam is listed as Tier S+ Assassin with Data unavailable win rate, Data unavailable pick rate, and Data unavailable ban rate. Ranked viability follows these meta metrics and patch history on this page."
+      "answer": "Lam shows 48.8% win rate, 1.01% pick rate, 0.48% ban rate (Camp HOK). Tier A Assassin."
     },
     {
       "id": "faq-best-build",
@@ -88,11 +88,17 @@
     {
       "id": "faq-counter",
       "question": "How to counter Lam?",
-      "answer": "Pick Angela, Biron, Donghuang to pressure Lam's Assassin windows. Ban rate unavailable shows draft priority. See counter matchups table below."
+      "answer": "Use Angela, Biron, Donghuang. Ban rate 0.48% reflects draft priority against Lam."
     }
   ],
   "metaAnalysis": [
-    "Lam win rate: Data unavailable. Tier S+ Assassin ranking uses other signals.",
-    "Draft counters: Angela, Biron, Donghuang. Heroes that punish Lam: Yaria, Milady, Diaochan."
-  ]
+    "Lam win rate 48.8% (Camp HOK, 2026-06-04).",
+    "Pick rate 1.01% for Lam in current ranked meta.",
+    "Ban rate 0.48% — moderate bans.",
+    "Counters: Angela, Biron, Donghuang. Countered by: Yaria, Milady, Diaochan."
+  ],
+  "tencentId": 515,
+  "avatarFallback": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/515/515.jpg",
+  "dataSource": "Camp HOK via hok-meta-analyzer",
+  "dataUpdated": "2026-06-04"
 }

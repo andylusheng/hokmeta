@@ -6,8 +6,7 @@ const NAV = [
   { href: '/tier-list/', label: 'Tier List' },
   { href: '/hero-trends/', label: 'Trends' },
   { href: '/best-heroes/', label: 'Best Heroes' },
-  { href: '/tools/build-generator/', label: 'Build Gen' },
-  { href: '/tools/counter-picker/', label: 'Counters' },
+  { href: '/tools/', label: 'Tools' },
   { href: '/learn/', label: 'Learn' },
 ];
 
