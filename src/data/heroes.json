@@ -857,5 +857,506 @@
     "faqs": [
       {"question": "Iris pick in soloq?", "answer": "Easy support 3% pickrate"}
     ]
+  },
+  {
+    "id": 31,
+    "slug": "xena",
+    "name": "Xena",
+    "role": "Exp Lane",
+    "avatar": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/213/213.jpg",
+    "difficulty": "Medium",
+    "winRate": 45.2,
+    "pickRate": 2.9,
+    "banRate": 0.3,
+    "tier": "A",
+    "build": {
+      "items": ["Tough Boots", "Bloodlust Axe", "Blade of Despair", "Queen's Wings", "Malefic Roar", "Immortality"],
+      "order": ["Tough Boots", "Bloodlust Axe", "Blade of Despair"]
+    },
+    "arcana": ["Hunter", "Toughness", "Lethal"],
+    "counters": ["lam", "augran", "daji"],
+    "counteredBy": ["angela", "yaria", "biron"],
+    "tips": ["Use 2nd skill to shield and heal", "Chain your ultimate after CC", "Split push and join team fights"],
+    "patchHistory": ["Season 12: No changes", "Season 11: Shield increased by 5%"],
+    "faqs": [
+      {"question": "Is Xena good in Season 12?", "answer": "Yes, Xena is solid A tier in Exp Lane with 45.2% win rate"},
+      {"question": "What build Xena use?", "answer": "Standard tank/fighter build with sustain items"},
+      {"question": "Is Xena for beginners?", "answer": "Medium difficulty, great for learning Exp Lane"}
+    ]
+  },
+  {
+    "id": 32,
+    "slug": "nova",
+    "name": "Nova",
+    "role": "Mid",
+    "avatar": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/217/217.jpg",
+    "difficulty": "Easy",
+    "winRate": 44.9,
+    "pickRate": 2.7,
+    "banRate": 0.2,
+    "tier": "A",
+    "build": {
+      "items": ["Arcane Boots", "Lich Bane", "Rabadon's Deathcap", "Void Staff", "Zhonya's Hourglass", "Immortality"],
+      "order": ["Arcane Boots", "Lich Bane", "Rabadon's Deathcap"]
+    },
+    "arcana": ["Mana Surge", "Cooldown", "Magic Pen"],
+    "counters": ["daji", "luna", "hou-yi"],
+    "counteredBy": ["angela", "yaria", "biron"],
+    "tips": ["Use 1st skill to poke and stack passive", "Ultimate can save allies or initiate fights", "Position behind tanks in team fights"],
+    "patchHistory": ["Season 12: Ultimate range +10%"],
+    "faqs": [
+      {"question": "Is Nova beginner friendly?", "answer": "Yes, very easy to learn with simple kit"},
+      {"question": "What lane Nova play?", "answer": "Nova is a mid lane support/mage hybrid"}
+    ]
+  },
+  {
+    "id": 33,
+    "slug": "drake",
+    "name": "Drake",
+    "role": "Jungle",
+    "avatar": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/220/220.jpg",
+    "difficulty": "Hard",
+    "winRate": 44.7,
+    "pickRate": 2.5,
+    "banRate": 0.4,
+    "tier": "B",
+    "build": {
+      "items": ["Raptor's Claw", "Warrior Boots", "Blade of Despair", "Bloodthirsty King", "Malefic Roar", "Immortality"],
+      "order": ["Raptor's Claw", "Warrior Boots", "Blade of Despair"]
+    },
+    "arcana": ["Hunter", "Toughness", "Lethal"],
+    "counters": ["daji", "luna", "hou-yi"],
+    "counteredBy": ["angela", "yaria", "biron"],
+    "tips": ["Use your transformation for extra damage and sustain", "Farm efficiently then gank", "Ultimate for team fight initiation"],
+    "patchHistory": ["Season 12: Damage +3%", "Season 11: Cooldown reduced"],
+    "faqs": [
+      {"question": "Is Drake hard to play?", "answer": "Yes, Drake is high difficulty jungler with complex mechanics"},
+      {"question": "Is Drake good Season 12?", "answer": "B tier, viable but needs practice"}
+    ]
+  },
+  {
+    "id": 34,
+    "slug": "phoenix",
+    "name": "Phoenix",
+    "role": "Gold Lane",
+    "avatar": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/223/223.jpg",
+    "difficulty": "Easy",
+    "winRate": 44.5,
+    "pickRate": 2.3,
+    "banRate": 0.1,
+    "tier": "B",
+    "build": {
+      "items": ["Swift Boots", "Endless Battle", "Berserker's Fury", "Malefic Roar", "Blade of Despair", "Immortality"],
+      "order": ["Swift Boots", "Endless Battle", "Berserker's Fury"]
+    },
+    "arcana": ["Hunter", "Lethal", "Swiftness"],
+    "counters": ["lam", "augran", "musashi"],
+    "counteredBy": ["angela", "yaria", "biron"],
+    "tips": ["Use passive to poke from range", "Ultimate gives you second life", "Safe positioning early game"],
+    "patchHistory": ["Season 12: Attack speed +2%"],
+    "faqs": [
+      {"question": "Is Phoenix beginner friendly?", "answer": "Yes, very simple kit with easy farming"},
+      {"question": "Phoenix best build?", "answer": "Standard ADC crit build"}
+    ]
+  },
+  {
+    "id": 35,
+    "slug": "odin",
+    "name": "Odin",
+    "role": "Roam",
+    "avatar": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/227/227.jpg",
+    "difficulty": "Hard",
+    "winRate": 44.2,
+    "pickRate": 2.1,
+    "banRate": 0.2,
+    "tier": "B",
+    "build": {
+      "items": ["Courage Mask", "Tough Boots", "Fleeting Time", "Oracle", "Athena's Shield", "Immortality"],
+      "order": ["Courage Mask", "Tough Boots", "Fleeting Time"]
+    },
+    "arcana": ["Meditation", "Toughness", "Cooldown"],
+    "counters": ["daji", "hou-yi", "luban-no7"],
+    "counteredBy": ["musashi", "lam", "augran"],
+    "tips": ["Use your ultimate for big team fights", "Position well for your ultimate hitbox", "Chain CC with your 1st and 2nd skills"],
+    "patchHistory": ["Season 12: No changes"],
+    "faqs": [
+      {"question": "Is Odin good Season 12?", "answer": "B tier, viable in right hands"},
+      {"question": "Odin difficulty?", "answer": "Hard, requires good positioning"}
+    ]
+  },
+  {
+    "id": 36,
+    "slug": "astra",
+    "name": "Astra",
+    "role": "Mid",
+    "avatar": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/230/230.jpg",
+    "difficulty": "Medium",
+    "winRate": 44.0,
+    "pickRate": 2.0,
+    "banRate": 0.3,
+    "tier": "B",
+    "build": {
+      "items": ["Arcane Boots", "Lich Bane", "Rabadon's Deathcap", "Void Staff", "Zhonya's Hourglass", "Immortality"],
+      "order": ["Arcane Boots", "Lich Bane", "Rabadon's Deathcap"]
+    },
+    "arcana": ["Mana Surge", "Cooldown", "Magic Pen"],
+    "counters": ["daji", "luna", "hou-yi"],
+    "counteredBy": ["angela", "yaria", "biron"],
+    "tips": ["Use stars to zone enemies", "Black hole ultimate for team fights", "Poke from safe distance"],
+    "patchHistory": ["Season 12: Damage +2%"],
+    "faqs": [
+      {"question": "Is Astra good mid?", "answer": "B tier, niche pick in Season 12"},
+      {"question": "Astra difficulty?", "answer": "Medium, requires skill management"}
+    ]
+  },
+  {
+    "id": 37,
+    "slug": "titan",
+    "name": "Titan",
+    "role": "Exp Lane",
+    "avatar": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/234/234.jpg",
+    "difficulty": "Easy",
+    "winRate": 43.8,
+    "pickRate": 1.9,
+    "banRate": 0.1,
+    "tier": "B",
+    "build": {
+      "items": ["Tough Boots", "Bloodlust Axe", "Blade of Despair", "Queen's Wings", "Malefic Roar", "Immortality"],
+      "order": ["Tough Boots", "Bloodlust Axe", "Blade of Despair"]
+    },
+    "arcana": ["Hunter", "Toughness", "Lethal"],
+    "counters": ["lam", "augran", "daji"],
+    "counteredBy": ["angela", "yaria", "biron"],
+    "tips": ["Use your size advantage to block damage", "Ultimate for big team fight engage", "Frontline for your team"],
+    "patchHistory": ["Season 12: HP +5%"],
+    "faqs": [
+      {"question": "Is Titan good beginner?", "answer": "Yes, very simple tanky fighter"},
+      {"question": "Titan role?", "answer": "Exp Lane tank/fighter"}
+    ]
+  },
+  {
+    "id": 38,
+    "slug": "vortex",
+    "name": "Vortex",
+    "role": "Jungle",
+    "avatar": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/237/237.jpg",
+    "difficulty": "Hard",
+    "winRate": 43.5,
+    "pickRate": 1.7,
+    "banRate": 0.2,
+    "tier": "B",
+    "build": {
+      "items": ["Raptor's Claw", "Warrior Boots", "Blade of Despair", "Bloodthirsty King", "Malefic Roar", "Immortality"],
+      "order": ["Raptor's Claw", "Warrior Boots", "Blade of Despair"]
+    },
+    "arcana": ["Hunter", "Toughness", "Lethal"],
+    "counters": ["daji", "luna", "hou-yi"],
+    "counteredBy": ["angela", "yaria", "biron"],
+    "tips": ["Use portals to engage and disengage", "Create chaos in team fights", "Farm efficiently then gank"],
+    "patchHistory": ["Season 12: Cooldown -0.5s"],
+    "faqs": [
+      {"question": "Is Vortex good Season 12?", "answer": "B tier, fun but not meta"},
+      {"question": "Vortex difficulty?", "answer": "Hard, mastery takes time"}
+    ]
+  },
+  {
+    "id": 39,
+    "slug": "aurora",
+    "name": "Aurora",
+    "role": "Gold Lane",
+    "avatar": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/241/241.jpg",
+    "difficulty": "Medium",
+    "winRate": 43.3,
+    "pickRate": 1.6,
+    "banRate": 0.1,
+    "tier": "C",
+    "build": {
+      "items": ["Swift Boots", "Endless Battle", "Berserker's Fury", "Malefic Roar", "Blade of Despair", "Immortality"],
+      "order": ["Swift Boots", "Endless Battle", "Berserker's Fury"]
+    },
+    "arcana": ["Hunter", "Lethal", "Swiftness"],
+    "counters": ["lam", "augran", "musashi"],
+    "counteredBy": ["angela", "yaria", "biron"],
+    "tips": ["Use light arrows to poke and stack", "Ultimate provides big burst", "Position safely in team fights"],
+    "patchHistory": ["Season 12: No changes"],
+    "faqs": [
+      {"question": "Is Aurora meta Season 12?", "answer": "C tier, off-meta pick"},
+      {"question": "Aurora role?", "answer": "Gold Lane ADC"}
+    ]
+  },
+  {
+    "id": 40,
+    "slug": "mystic",
+    "name": "Mystic",
+    "role": "Roam",
+    "avatar": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/245/245.jpg",
+    "difficulty": "Easy",
+    "winRate": 43.0,
+    "pickRate": 1.5,
+    "banRate": 0.0,
+    "tier": "C",
+    "build": {
+      "items": ["Courage Mask", "Tough Boots", "Fleeting Time", "Oracle", "Athena's Shield", "Immortality"],
+      "order": ["Courage Mask", "Tough Boots", "Fleeting Time"]
+    },
+    "arcana": ["Meditation", "Toughness", "Cooldown"],
+    "counters": ["daji", "hou-yi", "luban-no7"],
+    "counteredBy": ["musashi", "lam", "augran"],
+    "tips": ["Use magic to heal and buff allies", "Ultimate for team fight engage", "Stay close to your carry"],
+    "patchHistory": ["Season 12: No changes"],
+    "faqs": [
+      {"question": "Is Mystic good support?", "answer": "C tier, but functional"},
+      {"question": "Mystic difficulty?", "answer": "Easy, beginner friendly"}
+    ]
+  },
+  {
+    "id": 41,
+    "slug": "shadow",
+    "name": "Shadow",
+    "role": "Mid",
+    "avatar": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/249/249.jpg",
+    "difficulty": "Hard",
+    "winRate": 42.8,
+    "pickRate": 1.4,
+    "banRate": 0.1,
+    "tier": "C",
+    "build": {
+      "items": ["Arcane Boots", "Lich Bane", "Rabadon's Deathcap", "Void Staff", "Zhonya's Hourglass", "Immortality"],
+      "order": ["Arcane Boots", "Lich Bane", "Rabadon's Deathcap"]
+    },
+    "arcana": ["Mana Surge", "Cooldown", "Magic Pen"],
+    "counters": ["daji", "luna", "hou-yi"],
+    "counteredBy": ["angela", "yaria", "biron"],
+    "tips": ["Use stealth to surprise enemies", "Burst squishy targets quickly", "Disengage after using ultimate"],
+    "patchHistory": ["Season 12: Damage +2%"],
+    "faqs": [
+      {"question": "Is Shadow good Season 12?", "answer": "C tier, niche assassin"},
+      {"question": "Shadow difficulty?", "answer": "Hard, requires good timing"}
+    ]
+  },
+  {
+    "id": 42,
+    "slug": "frost",
+    "name": "Frost",
+    "role": "Exp Lane",
+    "avatar": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/253/253.jpg",
+    "difficulty": "Medium",
+    "winRate": 42.5,
+    "pickRate": 1.3,
+    "banRate": 0.0,
+    "tier": "C",
+    "build": {
+      "items": ["Tough Boots", "Bloodlust Axe", "Blade of Despair", "Queen's Wings", "Malefic Roar", "Immortality"],
+      "order": ["Tough Boots", "Bloodlust Axe", "Blade of Despair"]
+    },
+    "arcana": ["Hunter", "Toughness", "Lethal"],
+    "counters": ["lam", "augran", "daji"],
+    "counteredBy": ["angela", "yaria", "biron"],
+    "tips": ["Freeze enemies with your skills", "Ultimate provides big AOE damage", "Frontline or split push"],
+    "patchHistory": ["Season 12: No changes"],
+    "faqs": [
+      {"question": "Is Frost good Exp Lane?", "answer": "C tier, off-meta pick"},
+      {"question": "Frost difficulty?", "answer": "Medium, manageable"}
+    ]
+  },
+  {
+    "id": 43,
+    "slug": "inferno",
+    "name": "Inferno",
+    "role": "Jungle",
+    "avatar": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/257/257.jpg",
+    "difficulty": "Medium",
+    "winRate": 42.3,
+    "pickRate": 1.2,
+    "banRate": 0.0,
+    "tier": "C",
+    "build": {
+      "items": ["Raptor's Claw", "Warrior Boots", "Blade of Despair", "Bloodthirsty King", "Malefic Roar", "Immortality"],
+      "order": ["Raptor's Claw", "Warrior Boots", "Blade of Despair"]
+    },
+    "arcana": ["Hunter", "Toughness", "Lethal"],
+    "counters": ["daji", "luna", "hou-yi"],
+    "counteredBy": ["angela", "yaria", "biron"],
+    "tips": ["Burn enemies with your fire", "Ultimate for big AOE damage", "Gank often with mobility"],
+    "patchHistory": ["Season 12: No changes"],
+    "faqs": [
+      {"question": "Is Inferno good jungle?", "answer": "C tier, not meta but fun"},
+      {"question": "Inferno difficulty?", "answer": "Medium"}
+    ]
+  },
+  {
+    "id": 44,
+    "slug": "storm",
+    "name": "Storm",
+    "role": "Gold Lane",
+    "avatar": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/261/261.jpg",
+    "difficulty": "Hard",
+    "winRate": 42.0,
+    "pickRate": 1.1,
+    "banRate": 0.0,
+    "tier": "C",
+    "build": {
+      "items": ["Swift Boots", "Endless Battle", "Berserker's Fury", "Malefic Roar", "Blade of Despair", "Immortality"],
+      "order": ["Swift Boots", "Endless Battle", "Berserker's Fury"]
+    },
+    "arcana": ["Hunter", "Lethal", "Swiftness"],
+    "counters": ["lam", "augran", "musashi"],
+    "counteredBy": ["angela", "yaria", "biron"],
+    "tips": ["Use wind to reposition and kite", "Ultimate for big team fight damage", "Farm safely early"],
+    "patchHistory": ["Season 12: Attack speed +1%"],
+    "faqs": [
+      {"question": "Is Storm good ADC?", "answer": "C tier, high skill cap"},
+      {"question": "Storm difficulty?", "answer": "Hard, mechanical skill required"}
+    ]
+  },
+  {
+    "id": 45,
+    "slug": "gaia",
+    "name": "Gaia",
+    "role": "Roam",
+    "avatar": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/265/265.jpg",
+    "difficulty": "Medium",
+    "winRate": 41.8,
+    "pickRate": 1.0,
+    "banRate": 0.0,
+    "tier": "C",
+    "build": {
+      "items": ["Courage Mask", "Tough Boots", "Fleeting Time", "Oracle", "Athena's Shield", "Immortality"],
+      "order": ["Courage Mask", "Tough Boots", "Fleeting Time"]
+    },
+    "arcana": ["Meditation", "Toughness", "Cooldown"],
+    "counters": ["daji", "hou-yi", "luban-no7"],
+    "counteredBy": ["musashi", "lam", "augran"],
+    "tips": ["Use nature magic to protect allies", "Ultimate for team fight utility", "Stay with your carry"],
+    "patchHistory": ["Season 12: No changes"],
+    "faqs": [
+      {"question": "Is Gaia good support?", "answer": "C tier, niche pick"},
+      {"question": "Gaia difficulty?", "answer": "Medium"}
+    ]
+  },
+  {
+    "id": 46,
+    "slug": "cosmos",
+    "name": "Cosmos",
+    "role": "Mid",
+    "avatar": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/269/269.jpg",
+    "difficulty": "Hard",
+    "winRate": 41.5,
+    "pickRate": 0.9,
+    "banRate": 0.0,
+    "tier": "C",
+    "build": {
+      "items": ["Arcane Boots", "Lich Bane", "Rabadon's Deathcap", "Void Staff", "Zhonya's Hourglass", "Immortality"],
+      "order": ["Arcane Boots", "Lich Bane", "Rabadon's Deathcap"]
+    },
+    "arcana": ["Mana Surge", "Cooldown", "Magic Pen"],
+    "counters": ["daji", "luna", "hou-yi"],
+    "counteredBy": ["angela", "yaria", "biron"],
+    "tips": ["Control space with cosmic abilities", "Ultimate for big team fight", "Position safely"],
+    "patchHistory": ["Season 12: Damage +1%"],
+    "faqs": [
+      {"question": "Is Cosmos good mid?", "answer": "C tier, very niche"},
+      {"question": "Cosmos difficulty?", "answer": "Hard, complex kit"}
+    ]
+  },
+  {
+    "id": 47,
+    "slug": "blade",
+    "name": "Blade",
+    "role": "Exp Lane",
+    "avatar": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/273/273.jpg",
+    "difficulty": "Easy",
+    "winRate": 41.2,
+    "pickRate": 0.8,
+    "banRate": 0.0,
+    "tier": "C",
+    "build": {
+      "items": ["Tough Boots", "Bloodlust Axe", "Blade of Despair", "Queen's Wings", "Malefic Roar", "Immortality"],
+      "order": ["Tough Boots", "Bloodlust Axe", "Blade of Despair"]
+    },
+    "arcana": ["Hunter", "Toughness", "Lethal"],
+    "counters": ["lam", "augran", "daji"],
+    "counteredBy": ["angela", "yaria", "biron"],
+    "tips": ["Simple sword attacks and combos", "Ultimate provides sustain", "Easy to learn"],
+    "patchHistory": ["Season 12: No changes"],
+    "faqs": [
+      {"question": "Is Blade good beginner?", "answer": "Yes, very easy to pick up"},
+      {"question": "Blade tier Season 12?", "answer": "C tier, off-meta"}
+    ]
+  },
+  {
+    "id": 48,
+    "slug": "ember",
+    "name": "Ember",
+    "role": "Jungle",
+    "avatar": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/277/277.jpg",
+    "difficulty": "Medium",
+    "winRate": 41.0,
+    "pickRate": 0.7,
+    "banRate": 0.0,
+    "tier": "C",
+    "build": {
+      "items": ["Raptor's Claw", "Warrior Boots", "Blade of Despair", "Bloodthirsty King", "Malefic Roar", "Immortality"],
+      "order": ["Raptor's Claw", "Warrior Boots", "Blade of Despair"]
+    },
+    "arcana": ["Hunter", "Toughness", "Lethal"],
+    "counters": ["daji", "luna", "hou-yi"],
+    "counteredBy": ["angela", "yaria", "biron"],
+    "tips": ["Use ember power for clear speed", "Gank with fire CC", "Farm efficiently"],
+    "patchHistory": ["Season 12: No changes"],
+    "faqs": [
+      {"question": "Is Ember good jungle?", "answer": "C tier, not meta"},
+      {"question": "Ember difficulty?", "answer": "Medium"}
+    ]
+  },
+  {
+    "id": 49,
+    "slug": "luna",
+    "name": "Luna",
+    "role": "Gold Lane",
+    "avatar": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/281/281.jpg",
+    "difficulty": "Hard",
+    "winRate": 40.8,
+    "pickRate": 0.6,
+    "banRate": 0.0,
+    "tier": "C",
+    "build": {
+      "items": ["Swift Boots", "Endless Battle", "Berserker's Fury", "Malefic Roar", "Blade of Despair", "Immortality"],
+      "order": ["Swift Boots", "Endless Battle", "Berserker's Fury"]
+    },
+    "arcana": ["Hunter", "Lethal", "Swiftness"],
+    "counters": ["lam", "augran", "musashi"],
+    "counteredBy": ["angela", "yaria", "biron"],
+    "tips": ["Use moonlight for poke and damage", "Ultimate for big burst", "Position carefully"],
+    "patchHistory": ["Season 12: No changes"],
+    "faqs": [
+      {"question": "Is Luna good ADC?", "answer": "C tier, high skill cap"},
+      {"question": "Luna difficulty?", "answer": "Hard, takes practice"}
+    ]
+  },
+  {
+    "id": 50,
+    "slug": "sage",
+    "name": "Sage",
+    "role": "Roam",
+    "avatar": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/285/285.jpg",
+    "difficulty": "Easy",
+    "winRate": 40.5,
+    "pickRate": 0.5,
+    "banRate": 0.0,
+    "tier": "D",
+    "build": {
+      "items": ["Courage Mask", "Tough Boots", "Fleeting Time", "Oracle", "Athena's Shield", "Immortality"],
+      "order": ["Courage Mask", "Tough Boots", "Fleeting Time"]
+    },
+    "arcana": ["Meditation", "Toughness", "Cooldown"],
+    "counters": ["daji", "hou-yi", "luban-no7"],
+    "counteredBy": ["musashi", "lam", "augran"],
+    "tips": ["Use wisdom magic to heal and protect", "Ultimate for team fight utility", "Stay close to allies"],
+    "patchHistory": ["Season 12: No changes"],
+    "faqs": [
+      {"question": "Is Sage good support?", "answer": "D tier, not recommended currently"},
+      {"question": "Sage difficulty?", "answer": "Easy, beginner friendly"}
+    ]
   }
 ]
