@@ -1,219 +1,161 @@
-import type { Metadata } from "next";
-import { notFound } from "next/navigation";
-import Link from "next/link";
-import { Breadcrumbs } from "@/components/Breadcrumbs";
-import { HeroTOC } from "@/components/HeroTOC";
-import HeroAvatar from "@/components/HeroAvatar";
-import { getHeroBySlug, getHeroes } from "@/lib/data";
-import type { Hero } from "@/lib/data";
-import { BreadcrumbListSchema, GameSchema, HowToSchema, FAQPageSchema, ArticleSchema } from "@/lib/schema";
-import { getLastUpdatedDate } from "@/lib/schema";
-import { InternalLinks } from "@/lib/internalLinks";
-import siteConfig from "@/config/site.json";
+import { notFound } from 'next/navigation';
+import Link from 'next/link';
+import {
+  getHeroBySlug,
+  getHeroSlugs,
+  getKeywordsForHero,
+} from '@/lib/data';
+import { buildMetadata, defaultTitle } from '@/lib/seo';
+import { Breadcrumb } from '@/components/Breadcrumb';
+import { HeroAvatar } from '@/components/HeroAvatar';
+import { HeroStatTable } from '@/components/HeroStatTable';
+import { BuildBlock } from '@/components/BuildBlock';
+import { ArcanaBlock } from '@/components/ArcanaBlock';
+import { CounterBlock } from '@/components/CounterBlock';
+import { FaqAccordion } from '@/components/FaqAccordion';
+import { PageTOC } from '@/components/PageTOC';
+import { RelatedSearchBox } from '@/components/RelatedSearchBox';
+import {
+  JsonLd,
+  breadcrumbSchema,
+  faqPageSchema,
+  videoGameSchema,
+} from '@/lib/schema';
 
-interface Props {
-  params: { slug: string };
+export function generateStaticParams() {
+  return getHeroSlugs().map((slug) => ({ slug }));
 }
 
-export async function generateMetadata({ params }: Props): Promise<Metadata> {
+export function generateMetadata({
+  params,
+}: {
+  params: { slug: string };
+}) {
   const hero = getHeroBySlug(params.slug);
   if (!hero) return {};
-
-  return {
-    title: `${hero.name} Build & Guide | ${siteConfig.currentSeason}`,
-    description: `${hero.name} build, arcana, and guide for ${siteConfig.currentSeason}`,
-  };
+  return buildMetadata({
+    title: defaultTitle(`${hero.name} Build, Counters & Guide`),
+    description: `${hero.name} ${hero.role} guide — Tier ${hero.tier}, build order, arcana, counters, patch history, and meta analysis.`,
+    path: `/hero/${hero.slug}`,
+    ogImage: hero.avatar,
+  });
 }
 
-export async function generateStaticParams() {
-  const heroes = getHeroes();
-  return heroes.map(hero => ({ slug: hero.slug }));
-}
-
-export default function HeroDetailPage({ params }: Props) {
+export default function HeroPage({
+  params,
+}: {
+  params: { slug: string };
+}) {
   const hero = getHeroBySlug(params.slug);
   if (!hero) notFound();
 
-  const generalFaqs = [
-    { question: `Is ${hero.name} good in ${siteConfig.currentSeason}?`, answer: `${hero.name} has a ${hero.winRate}% win rate in ${siteConfig.currentSeason} and is ${hero.tier} tier.` },
-    { question: `What is the best ${hero.name} build?`, answer: `The best build for ${hero.name} includes ${hero.build.items.join(", ")}.` },
-    { question: `What lane should ${hero.name} play?`, answer: `${hero.name} should be played in ${hero.role}.` },
-    { question: `How to counter ${hero.name}?`, answer: `${hero.name} is countered by ${hero.counteredBy.map(c => getHeroBySlug(c)?.name).filter(Boolean).join(", ")}.` },
-    { question: `Is ${hero.name} good for beginners?`, answer: `${hero.name} has ${hero.difficulty} difficulty.` },
-  ];
-
-  const allFaqs = [...generalFaqs, ...hero.faqs];
-
-  const breadcrumbs = [{ name: "Heroes", url: "/heroes" }, { name: hero.name, url: `/hero/${hero.slug}` }];
+  const keywords = getKeywordsForHero(hero.slug);
 
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-      <BreadcrumbListSchema breadcrumbs={breadcrumbs} />
-      <GameSchema name={hero.name} description={`${hero.name} build and guide`} />
-      <HowToSchema name={`How to Build ${hero.name}`} steps={hero.build.order.map(item => ({ text: `Buy ${item}` }))} />
-      <FAQPageSchema faqs={allFaqs} />
-      <ArticleSchema
-        headline={`${hero.name} Build & Guide ${siteConfig.currentSeason}`}
-        description={`Complete build and guide for ${hero.name}`}
-        dateModified={getLastUpdatedDate()}
+    <div className="container-page">
+      <JsonLd
+        data={breadcrumbSchema([
+          { name: 'Home', path: '/' },
+          { name: 'Heroes', path: '/heroes' },
+          { name: hero.name, path: `/hero/${hero.slug}` },
+        ])}
+      />
+      <JsonLd
+        data={faqPageSchema(
+          hero.faqs.map((f) => ({ question: f.question, answer: f.answer }))
+        )}
+      />
+      <JsonLd data={videoGameSchema(hero)} />
+
+      <Breadcrumb
+        items={[
+          { label: 'Home', href: '/' },
+          { label: 'Heroes', href: '/heroes/' },
+          { label: hero.name },
+        ]}
       />
 
-      <Breadcrumbs items={breadcrumbs} />
-
-      <h1 className="text-4xl font-bold mb-8">{hero.name} Build & Guide | {siteConfig.currentSeason}</h1>
-
-      <HeroTOC hero={hero} />
-
-      {/* Overview */}
-      <section id="overview" className="mb-12 scroll-mt-20">
-        <h2 className="text-2xl font-bold mb-6">Overview</h2>
-        <div className="bg-surface border border-border rounded-lg p-6">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+      <div className="grid gap-8 lg:grid-cols-[1fr_220px]">
+        <article>
+          <header id="overview" className="scroll-mt-20 mb-8 flex flex-col gap-4 sm:flex-row sm:items-center">
+            <HeroAvatar hero={hero} size={96} />
             <div>
-              <p className="text-sm text-textSecondary">Role</p>
-              <p className="font-semibold">{hero.role}</p>
+              <h1 className="text-3xl font-bold text-white">{hero.name}</h1>
+              <p className="text-gray-400">
+                {hero.role} · Tier {hero.tier} · {hero.difficulty}
+              </p>
             </div>
-            <div>
-              <p className="text-sm text-textSecondary">Difficulty</p>
-              <p className="font-semibold">{hero.difficulty}</p>
+          </header>
+
+          <section className="card mb-8">
+            <HeroStatTable hero={hero} />
+          </section>
+
+          <section id="build" className="scroll-mt-20 mb-8">
+            <h2 className="section-title">Build</h2>
+            <BuildBlock hero={hero} />
+          </section>
+
+          <section id="arcana" className="scroll-mt-20 mb-8">
+            <h2 className="section-title">Arcana &amp; Spells</h2>
+            <ArcanaBlock hero={hero} />
+          </section>
+
+          <section id="counters" className="scroll-mt-20 mb-8">
+            <h2 className="section-title">Counters</h2>
+            <CounterBlock hero={hero} />
+          </section>
+
+          <section id="tips" className="scroll-mt-20 mb-8">
+            <h2 className="section-title">Tips</h2>
+            <ul className="list-inside list-disc space-y-2 text-gray-300">
+              {hero.tips.map((t) => (
+                <li key={t}>{t}</li>
+              ))}
+            </ul>
+          </section>
+
+          <section id="patch-history" className="scroll-mt-20 mb-8">
+            <h2 className="section-title">Patch History</h2>
+            <ul className="space-y-2">
+              {hero.patchHistory.map((p) => (
+                <li
+                  key={p.version}
+                  className="rounded border border-hok-border px-3 py-2 text-sm text-gray-300"
+                >
+                  <strong className="text-hok-gold">{p.version}</strong>: {p.change}
+                </li>
+              ))}
+            </ul>
+          </section>
+
+          <section id="faq" className="scroll-mt-20 mb-8">
+            <h2 className="section-title">FAQ</h2>
+            <FaqAccordion faqs={hero.faqs} />
+          </section>
+
+          <section id="meta-analysis" className="scroll-mt-20 mb-8">
+            <h2 className="section-title">Meta Analysis</h2>
+            <div className="card space-y-3 text-sm leading-relaxed text-gray-300">
+              {hero.metaAnalysis.map((line) => (
+                <p key={line}>{line}</p>
+              ))}
             </div>
-            <div>
-              <p className="text-sm text-textSecondary">Win Rate</p>
-              <p className="font-semibold">{hero.winRate}%</p>
-            </div>
-            <div>
-              <p className="text-sm text-textSecondary">Pick Rate</p>
-              <p className="font-semibold">{hero.pickRate}%</p>
-            </div>
-          </div>
-        </div>
-      </section>
+          </section>
 
-      {/* Best Build */}
-      <section id="best-build" className="mb-12 scroll-mt-20">
-        <h2 className="text-2xl font-bold mb-6">Best Build</h2>
-        <div className="bg-surface border border-border rounded-lg p-6">
-          <h3 className="font-semibold mb-4">Core Items</h3>
-          <div className="flex flex-wrap gap-2 mb-4">
-            {hero.build.items.map((item, i) => (
-              <span key={i} className="bg-surfaceHover border border-border px-3 py-1 rounded">{item}</span>
-            ))}
-          </div>
-          <h3 className="font-semibold mb-4">Build Order</h3>
-          <ol className="list-decimal list-inside text-textSecondary">
-            {hero.build.order.map((item, i) => (
-              <li key={i}>{item}</li>
-            ))}
-          </ol>
-        </div>
-      </section>
+          <RelatedSearchBox terms={keywords} />
+        </article>
 
-      {/* Best Arcana */}
-      <section id="best-arcana" className="mb-12 scroll-mt-20">
-        <h2 className="text-2xl font-bold mb-6">Best Arcana</h2>
-        <div className="bg-surface border border-border rounded-lg p-6">
-          <div className="flex flex-wrap gap-2">
-            {hero.arcana.map((arcana, i) => (
-              <span key={i} className="bg-primary/20 text-primary border border-primary/30 px-3 py-1 rounded">{arcana}</span>
-            ))}
-          </div>
-        </div>
-      </section>
+        <aside>
+          <PageTOC />
+        </aside>
+      </div>
 
-      {/* Counters */}
-      <section id="counters" className="mb-12 scroll-mt-20">
-        <h2 className="text-2xl font-bold mb-6">Counters</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div className="bg-surface border border-border rounded-lg p-6">
-            <h3 className="font-semibold mb-4 text-green-500">Counters</h3>
-            <div className="flex flex-wrap gap-3">
-              {hero.counters.map((slug, i) => {
-                const counterHero = getHeroBySlug(slug);
-                if (!counterHero) return null;
-                return (
-                  <Link key={i} href={`/hero/${counterHero.slug}`} className="group">
-                    <div className="flex items-center gap-2 p-2 rounded hover:bg-surfaceHover transition">
-                      {counterHero.avatar ? (
-                        <HeroAvatar avatar={counterHero.avatar} name={counterHero.name} size="sm" />
-                      ) : (
-                        <div className="w-6 h-6 bg-primary/20 rounded-full flex items-center justify-center text-primary text-xs font-bold">
-                          {counterHero.name.charAt(0)}
-                        </div>
-                      )}
-                      <span className="text-textSecondary group-hover:text-primary transition">{counterHero.name}</span>
-                    </div>
-                  </Link>
-                );
-              })}
-            </div>
-          </div>
-          <div className="bg-surface border border-border rounded-lg p-6">
-            <h3 className="font-semibold mb-4 text-red-500">Countered By</h3>
-            <div className="flex flex-wrap gap-3">
-              {hero.counteredBy.map((slug, i) => {
-                const counterHero = getHeroBySlug(slug);
-                if (!counterHero) return null;
-                return (
-                  <Link key={i} href={`/hero/${counterHero.slug}`} className="group">
-                    <div className="flex items-center gap-2 p-2 rounded hover:bg-surfaceHover transition">
-                      {counterHero.avatar ? (
-                        <HeroAvatar avatar={counterHero.avatar} name={counterHero.name} size="sm" />
-                      ) : (
-                        <div className="w-6 h-6 bg-primary/20 rounded-full flex items-center justify-center text-primary text-xs font-bold">
-                          {counterHero.name.charAt(0)}
-                        </div>
-                      )}
-                      <span className="text-textSecondary group-hover:text-primary transition">{counterHero.name}</span>
-                    </div>
-                  </Link>
-                );
-              })}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Tips */}
-      <section id="tips" className="mb-12 scroll-mt-20">
-        <h2 className="text-2xl font-bold mb-6">Tips</h2>
-        <div className="bg-surface border border-border rounded-lg p-6">
-          <ul className="space-y-2">
-            {hero.tips.map((tip, i) => (
-              <li key={i} className="flex items-start gap-2">
-                <span className="text-secondary">•</span>
-                <span>{tip}</span>
-              </li>
-            ))}
-          </ul>
-        </div>
-      </section>
-
-      {/* Patch History */}
-      <section id="patch-history" className="mb-12 scroll-mt-20">
-        <h2 className="text-2xl font-bold mb-6">Patch History</h2>
-        <div className="bg-surface border border-border rounded-lg p-6">
-          <ul className="space-y-2 text-textSecondary">
-            {hero.patchHistory.map((patch, i) => (
-              <li key={i}>{patch}</li>
-            ))}
-          </ul>
-        </div>
-      </section>
-
-      {/* FAQ */}
-      <section id="faq" className="mb-12 scroll-mt-20">
-        <h2 className="text-2xl font-bold mb-6">FAQ</h2>
-        <div className="space-y-4">
-          {allFaqs.map((faq, i) => (
-            <div key={i} className="bg-surface border border-border rounded-lg p-6">
-              <h3 className="font-semibold mb-2">{faq.question}</h3>
-              <p className="text-textSecondary">{faq.answer}</p>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      <InternalLinks hero={hero} pageType="hero-detail" />
+      <p className="mt-6 text-center text-sm text-gray-500">
+        <Link href="/tools/counter-picker/" className="text-hok-gold hover:underline">
+          Counter picker tool
+        </Link>
+      </p>
     </div>
   );
 }

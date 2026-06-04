@@ -1,47 +1,38 @@
-"use client";
+'use client';
 
-import { useState } from "react";
-import { HeroCard } from "@/components/HeroCard";
-import { getHeroes, roles } from "@/lib/data";
+import type { HeroRole, HeroTier } from '@/types/hero';
+import type { Hero } from '@/types/hero';
+import { TierCard } from '@/components/TierCard';
+import { ROLES, TIERS } from '@/types/hero';
 
-export default function TierListClient() {
-  const heroes = getHeroes();
-  const [selectedRole, setSelectedRole] = useState<string>("All");
-
-  const filteredHeroes = selectedRole === "All"
-    ? heroes
-    : heroes.filter(h => h.role === selectedRole);
-
-  const sortedHeroes = [...filteredHeroes].sort((a, b) => {
-    const tierOrder = { "S+": 0, "S": 1, "A": 2, "B": 3, "C": 4, "D": 5 };
-    return tierOrder[a.tier as keyof typeof tierOrder] - tierOrder[b.tier as keyof typeof tierOrder];
-  });
-
+export function TierListClient({
+  grouped,
+}: {
+  grouped: Record<HeroTier, Record<HeroRole, Hero[]>>;
+}) {
   return (
-    <>
-      <div className="flex flex-wrap gap-2 mb-8">
-        <button
-          onClick={() => setSelectedRole("All")}
-          className={`px-4 py-2 rounded-lg transition ${selectedRole === "All" ? "bg-primary text-white" : "bg-surface border border-border hover:bg-surfaceHover"}`}
-        >
-          All
-        </button>
-        {roles.map(role => (
-          <button
-            key={role}
-            onClick={() => setSelectedRole(role)}
-            className={`px-4 py-2 rounded-lg transition ${selectedRole === role ? "bg-primary text-white" : "bg-surface border border-border hover:bg-surfaceHover"}`}
-          >
-            {role}
-          </button>
-        ))}
-      </div>
-
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-        {sortedHeroes.map(hero => (
-          <HeroCard key={hero.slug} hero={hero} showTier />
-        ))}
-      </div>
-    </>
+    <div className="space-y-10">
+      {TIERS.map((tier) => (
+        <section key={tier} id={`tier-${tier.replace('+', 'plus')}`}>
+          <h2 className="mb-4 text-2xl font-bold text-hok-gold">Tier {tier}</h2>
+          <div className="space-y-6">
+            {ROLES.map((role) => {
+              const list = grouped[tier][role];
+              if (!list.length) return null;
+              return (
+                <div key={role}>
+                  <h3 className="mb-2 text-lg font-semibold text-white">{role}</h3>
+                  <div className="grid grid-cols-2 gap-2 sm:grid-cols-3 md:grid-cols-4">
+                    {list.map((hero) => (
+                      <TierCard key={hero.slug} hero={hero} />
+                    ))}
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </section>
+      ))}
+    </div>
   );
 }

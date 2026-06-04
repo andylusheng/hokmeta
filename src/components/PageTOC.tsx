@@ -1,0 +1,36 @@
+const SECTIONS = [
+  { id: 'overview', label: 'Overview' },
+  { id: 'build', label: 'Build' },
+  { id: 'arcana', label: 'Arcana' },
+  { id: 'counters', label: 'Counters' },
+  { id: 'tips', label: 'Tips' },
+  { id: 'patch-history', label: 'Patch History' },
+  { id: 'faq', label: 'FAQ' },
+  { id: 'meta-analysis', label: 'Meta Analysis' },
+  { id: 'related-searches', label: 'Related Searches' },
+] as const;
+
+export function PageTOC() {
+  return (
+    <nav
+      aria-label="Table of contents"
+      className="card sticky top-4 hidden lg:block"
+    >
+      <p className="mb-2 text-xs font-semibold uppercase tracking-wide text-gray-500">
+        On this page
+      </p>
+      <ul className="space-y-1 text-sm">
+        {SECTIONS.map((s) => (
+          <li key={s.id}>
+            <a
+              href={`#${s.id}`}
+              className="text-gray-400 transition hover:text-hok-gold"
+            >
+              {s.label}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </nav>
+  );
+}

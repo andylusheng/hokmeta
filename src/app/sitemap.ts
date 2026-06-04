@@ -1,36 +1,48 @@
-import { getHeroes, getPatches, roles } from "@/lib/data";
-import { MetadataRoute } from "next";
+import type { MetadataRoute } from 'next';
+import { site, heroes, getHeroSlugs } from '@/lib/data';
+import { getLearnSlugs } from '@/lib/learn';
+import { ROLES } from '@/types/hero';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://hokmeta.com";
-  const heroes = getHeroes();
-  const patches = getPatches();
+  const base = site.domain.replace(/\/$/, '');
+  const now = new Date();
 
-  const heroUrls: MetadataRoute.Sitemap = heroes.map((hero) => ({
-    url: `${baseUrl}/hero/${hero.slug}`,
-    lastModified: new Date(),
+  const staticRoutes = [
+    '',
+    '/heroes',
+    '/tier-list',
+    '/hero-trends',
+    '/best-heroes',
+    '/tools/build-generator',
+    '/tools/counter-picker',
+    '/learn',
+  ].map((path) => ({
+    url: `${base}${path}/`,
+    lastModified: now,
+    changeFrequency: 'weekly' as const,
+    priority: path === '' ? 1 : 0.8,
   }));
 
-  const roleUrls: MetadataRoute.Sitemap = roles.map((role) => ({
-    url: `${baseUrl}/best-heroes/${role.toLowerCase().replace(/ /g, "-")}`,
-    lastModified: new Date(),
+  const heroRoutes = getHeroSlugs().map((slug) => ({
+    url: `${base}/hero/${slug}/`,
+    lastModified: now,
+    changeFrequency: 'weekly' as const,
+    priority: 0.9,
   }));
 
-  const patchUrls: MetadataRoute.Sitemap = patches.map((patch) => ({
-    url: `${baseUrl}/patch-notes/season-${patch.season}`,
-    lastModified: new Date(),
+  const roleRoutes = ROLES.map((role) => ({
+    url: `${base}/best-heroes/${role.toLowerCase()}/`,
+    lastModified: now,
+    changeFrequency: 'weekly' as const,
+    priority: 0.7,
   }));
 
-  const staticUrls: MetadataRoute.Sitemap = [
-    { url: baseUrl, lastModified: new Date() },
-    { url: `${baseUrl}/tier-list`, lastModified: new Date() },
-    { url: `${baseUrl}/heroes`, lastModified: new Date() },
-    { url: `${baseUrl}/best-heroes`, lastModified: new Date() },
-    { url: `${baseUrl}/patch-notes`, lastModified: new Date() },
-    { url: `${baseUrl}/tools`, lastModified: new Date() },
-    { url: `${baseUrl}/tools/build-generator`, lastModified: new Date() },
-    { url: `${baseUrl}/tools/counter-picker`, lastModified: new Date() },
-  ];
+  const learnRoutes = getLearnSlugs().map((slug) => ({
+    url: `${base}/learn/${slug}/`,
+    lastModified: now,
+    changeFrequency: 'monthly' as const,
+    priority: 0.75,
+  }));
 
-  return [...staticUrls, ...heroUrls, ...roleUrls, ...patchUrls];
+  return [...staticRoutes, ...heroRoutes, ...roleRoutes, ...learnRoutes];
 }

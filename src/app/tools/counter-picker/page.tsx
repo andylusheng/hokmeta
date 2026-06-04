@@ -1,30 +1,32 @@
-import type { Metadata } from "next";
-import { Suspense } from "react";
-import { Breadcrumbs } from "@/components/Breadcrumbs";
-import CounterPickerClient from "@/components/CounterPickerClient";
-import { InternalLinks } from "@/lib/internalLinks";
-import siteConfig from "@/config/site.json";
+import { heroes } from '@/lib/data';
+import { buildMetadata, defaultTitle } from '@/lib/seo';
+import { CounterPickerClient } from '@/components/CounterPickerClient';
+import { Breadcrumb } from '@/components/Breadcrumb';
+import { JsonLd, breadcrumbSchema } from '@/lib/schema';
 
-export const metadata: Metadata = {
-  title: `Counter Picker | ${siteConfig.currentSeason}`,
-  description: `Pick counter heroes`,
-};
+export const metadata = buildMetadata({
+  title: defaultTitle('Counter Picker'),
+  description: 'Pick counters for any meta hero using local counter matchup data.',
+  path: '/tools/counter-picker',
+});
 
 export default function CounterPickerPage() {
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-      <Breadcrumbs items={[
-        { name: "Tools", url: "/tools" },
-        { name: "Counter Picker", url: "/tools/counter-picker" }
-      ]} />
-
-      <h1 className="text-3xl font-bold mb-8">Counter Picker</h1>
-
-      <Suspense fallback={<div>Loading...</div>}>
-        <CounterPickerClient />
-      </Suspense>
-
-      <InternalLinks pageType="tools" />
+    <div className="container-page">
+      <JsonLd
+        data={breadcrumbSchema([
+          { name: 'Home', path: '/' },
+          { name: 'Counter Picker', path: '/tools/counter-picker' },
+        ])}
+      />
+      <Breadcrumb
+        items={[
+          { label: 'Home', href: '/' },
+          { label: 'Counter Picker' },
+        ]}
+      />
+      <h1 className="mb-6 text-3xl font-bold text-white">Counter Picker</h1>
+      <CounterPickerClient heroes={heroes} />
     </div>
   );
 }

@@ -1,34 +1,22 @@
-import Image from 'next/image'
+import Image from 'next/image';
+import type { Hero } from '@/types/hero';
 
-interface HeroAvatarProps {
-  avatar: string
-  name: string
-  size?: 'sm' | 'md' | 'lg'
-}
-
-export default function HeroAvatar({ avatar, name, size = 'md' }: HeroAvatarProps) {
-  const sizeMap = {
-    sm: 24,
-    md: 40,
-    lg: 64
-  }
-
+export function HeroAvatar({
+  hero,
+  size = 48,
+}: {
+  hero: Pick<Hero, 'name' | 'avatar' | 'slug'>;
+  size?: number;
+}) {
+  const alt = `${hero.name} HOK Build & Guide`;
   return (
-    <div className="relative group">
-      <div className={`relative rounded-full overflow-hidden border-2 border-gray-700`}
-           style={{ width: sizeMap[size], height: sizeMap[size] }}>
-        <Image
-          src={avatar}
-          alt={`${name} hero icon`}
-          fill
-          unoptimized
-          className="object-cover"
-        />
-      </div>
-      {/* Tooltip */}
-      <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-2 py-1 bg-surface border border-border rounded text-sm text-text opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none z-10">
-        {name}
-      </div>
-    </div>
-  )
+    <Image
+      src={hero.avatar}
+      alt={alt}
+      width={size}
+      height={size}
+      className="rounded-full bg-hok-border object-cover"
+      unoptimized
+    />
+  );
 }

@@ -1,27 +1,32 @@
-import type { Metadata } from "next";
-import { Breadcrumbs } from "@/components/Breadcrumbs";
-import BuildGeneratorClient from "@/components/BuildGeneratorClient";
-import { InternalLinks } from "@/lib/internalLinks";
-import siteConfig from "@/config/site.json";
+import { heroes } from '@/lib/data';
+import { buildMetadata, defaultTitle } from '@/lib/seo';
+import { BuildGeneratorClient } from '@/components/BuildGeneratorClient';
+import { Breadcrumb } from '@/components/Breadcrumb';
+import { JsonLd, breadcrumbSchema } from '@/lib/schema';
 
-export const metadata: Metadata = {
-  title: `Build Generator | ${siteConfig.currentSeason}`,
-  description: `Generate HOK builds`,
-};
+export const metadata = buildMetadata({
+  title: defaultTitle('Build Generator'),
+  description: 'Generate Honor of Kings item builds from verified hero JSON data.',
+  path: '/tools/build-generator',
+});
 
 export default function BuildGeneratorPage() {
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-      <Breadcrumbs items={[
-        { name: "Tools", url: "/tools" },
-        { name: "Build Generator", url: "/tools/build-generator" }
-      ]} />
-
-      <h1 className="text-3xl font-bold mb-8">Build Generator</h1>
-
-      <BuildGeneratorClient />
-
-      <InternalLinks pageType="tools" />
+    <div className="container-page">
+      <JsonLd
+        data={breadcrumbSchema([
+          { name: 'Home', path: '/' },
+          { name: 'Build Generator', path: '/tools/build-generator' },
+        ])}
+      />
+      <Breadcrumb
+        items={[
+          { label: 'Home', href: '/' },
+          { label: 'Build Generator' },
+        ]}
+      />
+      <h1 className="mb-6 text-3xl font-bold text-white">Build Generator</h1>
+      <BuildGeneratorClient heroes={heroes} />
     </div>
   );
 }

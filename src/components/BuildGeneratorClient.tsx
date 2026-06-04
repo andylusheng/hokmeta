@@ -1,58 +1,48 @@
-"use client";
+'use client';
 
-import { useState } from "react";
-import { getHeroes } from "@/lib/data";
+import { useMemo, useState } from 'react';
+import type { Hero } from '@/types/hero';
+import { BuildBlock } from '@/components/BuildBlock';
 
-export default function BuildGeneratorClient() {
-  const heroes = getHeroes();
-  const [selectedHero, setSelectedHero] = useState<string | null>(null);
+export function BuildGeneratorClient({ heroes }: { heroes: Hero[] }) {
+  const [slug, setSlug] = useState(heroes[0]?.slug ?? '');
 
-  const hero = heroes.find(h => h.slug === selectedHero);
+  const hero = useMemo(
+    () => heroes.find((h) => h.slug === slug),
+    [heroes, slug]
+  );
 
   return (
-    <>
-      <div className="bg-surface border border-border rounded-lg p-6 mb-8">
-        <label className="block text-sm font-semibold mb-2">Select Hero</label>
+    <div className="space-y-6">
+      <label className="block">
+        <span className="mb-2 block text-sm text-gray-400">Select hero</span>
         <select
-          value={selectedHero || ""}
-          onChange={(e) => setSelectedHero(e.target.value)}
-          className="w-full bg-surfaceHover border border-border rounded-lg px-4 py-3 text-text"
+          value={slug}
+          onChange={(e) => setSlug(e.target.value)}
+          className="w-full max-w-md rounded border border-hok-border bg-hok-card px-3 py-2 text-white"
         >
-          <option value="">Choose a hero</option>
           {heroes.map((h) => (
-            <option key={h.slug} value={h.slug}>{h.name} - {h.role}</option>
+            <option key={h.slug} value={h.slug}>
+              {h.name} ({h.role})
+            </option>
           ))}
         </select>
-      </div>
-
-      {hero && (
-        <div className="space-y-8">
-          <div className="bg-surface border border-border rounded-lg p-6">
-            <h2 className="text-2xl font-bold mb-4">{hero.name} Build</h2>
-            <p className="text-textSecondary mb-6">
-              {hero.name} has a {hero.winRate}% win rate. This build maximizes {hero.role === "Jungle" || hero.role === "Exp Lane" ? "survivability and damage" : "damage and attack speed"}.
-            </p>
-
-            <h3 className="font-semibold mb-3">Core Items</h3>
-            <div className="flex flex-wrap gap-2 mb-6">
-              {hero.build.items.map((item, i) => (
-                <span key={i} className="bg-surfaceHover border border-border px-3 py-1 rounded">{item}</span>
-              ))}
-            </div>
-
-            <h3 className="font-semibold mb-3">Best Arcana</h3>
-            <div className="flex flex-wrap gap-2 mb-6">
-              {hero.arcana.map((arcana, i) => (
-                <span key={i} className="bg-primary/20 text-primary border border-primary/30 px-3 py-1 rounded">{arcana}</span>
-              ))}
-            </div>
-
-            <a href={`/hero/${hero.slug}`} className="inline-block bg-primary hover:bg-primary/90 text-white px-6 py-2 rounded-lg transition">
-              View Full Guide
-            </a>
-          </div>
+      </label>
+      {hero ? (
+        <div className="card">
+          <h2 className="section-title">{hero.name} build path</h2>
+          <BuildBlock hero={hero} />
+          <p className="mt-4 text-sm text-gray-400">
+            Tier {hero.tier} · {formatRate(hero.winRate)} win rate · Data from
+            heroes.json
+          </p>
         </div>
-      )}
-    </>
+      ) : null}
+    </div>
   );
+}
+
+function formatRate(value: number | null): string {
+  if (value === null) return 'Data unavailable';
+  return `${value.toFixed(1)}%`;
 }

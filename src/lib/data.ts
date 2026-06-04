@@ -1,23 +1,117 @@
-import heroesData from "../data/heroes.json";
-import patchesData from "../data/patches.json";
+import heroesData from '../../data/heroes.json';
+import keywordsData from '../../data/keywords.json';
+import siteConfig from '../../config/site.json';
+import type { Hero, HeroRole, HeroTier, KeywordsMap } from '@/types/hero';
 
-export type Hero = typeof heroesData[0];
-export type Patch = typeof patchesData[0];
+export const site = siteConfig;
+export const heroes = heroesData as Hero[];
+export const keywords = keywordsData as KeywordsMap;
 
-export const getHeroes = (): Hero[] => heroesData;
-export const getHeroBySlug = (slug: string): Hero | undefined => heroesData.find(h => h.slug === slug);
-export const getTopHeroesByPickRate = (limit: number = 10): Hero[] =>
-  [...heroesData].sort((a, b) => b.pickRate - a.pickRate).slice(0, limit);
-export const getHeroesByRole = (role: string): Hero[] =>
-  heroesData.filter(h => h.role.toLowerCase() === role.toLowerCase());
-export const getTopTierHeroes = (): Hero[] =>
-  heroesData.filter(h => h.tier === "S+" || h.tier === "S");
-export const getRelatedHeroes = (hero: Hero): Hero[] =>
-  getHeroesByRole(hero.role).filter(h => h.slug !== hero.slug).slice(0, 3);
+export function getHeroBySlug(slug: string): Hero | undefined {
+  return heroes.find((h) => h.slug === slug);
+}
 
-export const getPatches = (): Patch[] => patchesData;
-export const getPatchBySeason = (season: number): Patch | undefined =>
-  patchesData.find(p => p.season === season);
+export function getHeroSlugs(): string[] {
+  return heroes.map((h) => h.slug);
+}
 
-export const roles = ["Jungle", "Mid", "Gold Lane", "Exp Lane", "Roam"] as const;
-export const tiers = ["S+", "S", "A", "B", "C", "D"] as const;
+export function getKeywordsForHero(slug: string): string[] {
+  return keywords[slug] ?? [];
+}
+
+export function formatRate(value: number | null): string {
+  if (value === null || Number.isNaN(value)) return 'Data unavailable';
+  return `${value.toFixed(1)}%`;
+}
+
+export function formatRank(rank: number | null): string {
+  if (rank === null) return 'Data unavailable';
+  return `#${rank}`;
+}
+
+export function getHeroesByRole(role: HeroRole): Hero[] {
+  return heroes.filter((h) => h.role === role);
+}
+
+export function getHeroesByTier(tier: HeroTier): Hero[] {
+  return heroes.filter((h) => h.tier === tier);
+}
+
+export function getTierListGrouped(): Record<HeroTier, Record<HeroRole, Hero[]>> {
+  const tiers = ['S+', 'S', 'A', 'B', 'C'] as HeroTier[];
+  const roles = [
+    'Tank',
+    'Warrior',
+    'Assassin',
+    'Mage',
+    'Marksman',
+    'Support',
+  ] as HeroRole[];
+
+  const result = {} as Record<HeroTier, Record<HeroRole, Hero[]>>;
+  for (const tier of tiers) {
+    result[tier] = {} as Record<HeroRole, Hero[]>;
+    for (const role of roles) {
+      result[tier][role] = heroes.filter((h) => h.tier === tier && h.role === role);
+    }
+  }
+  return result;
+}
+
+const tierOrder: HeroTier[] = ['S+', 'S', 'A', 'B', 'C'];
+
+function sortByTier( list: Hero[]): Hero[] {
+  return [...list].sort(
+    (a, b) => tierOrder.indexOf(a.tier) - tierOrder.indexOf(b.tier)
+  );
+}
+
+export function getTopRisingHeroes(limit = 5): Hero[] {
+  const withStats = heroes.filter((h) => h.winRate !== null);
+  if (withStats.length) {
+    return [...withStats]
+      .sort((a, b) => (b.winRate ?? 0) - (a.winRate ?? 0))
+      .slice(0, limit);
+  }
+  return sortByTier(heroes).slice(0, limit);
+}
+
+export function getMostPickedHeroes(limit = 5): Hero[] {
+  const withStats = heroes.filter((h) => h.pickRate !== null);
+  if (withStats.length) {
+    return [...withStats]
+      .sort((a, b) => (b.pickRate ?? 0) - (a.pickRate ?? 0))
+      .slice(0, limit);
+  }
+  return sortByTier(heroes).slice(0, limit);
+}
+
+export function getMostBannedHeroes(limit = 5): Hero[] {
+  const withStats = heroes.filter((h) => h.banRate !== null);
+  if (withStats.length) {
+    return [...withStats]
+      .sort((a, b) => (b.banRate ?? 0) - (a.banRate ?? 0))
+      .slice(0, limit);
+  }
+  return sortByTier(heroes).slice(0, limit);
+}
+
+export function getRecentMetaChanges(limit = 8): { hero: Hero; patch: string }[] {
+  const items: { hero: Hero; patch: string }[] = [];
+  for (const hero of heroes) {
+    for (const p of hero.patchHistory) {
+      if (p.change && p.change !== 'Data unavailable') {
+        items.push({ hero, patch: `${p.version}: ${p.change}` });
+      }
+    }
+  }
+  return items.slice(0, limit);
+}
+
+export const AVATAR_CDN =
+  'https://image.inews.gtimg.com/newsapp_bt/0/hokmeta/hero';
+
+export function heroAvatarUrl(slug: string): string {
+  const hero = getHeroBySlug(slug);
+  return hero?.avatar ?? `${AVATAR_CDN}/${slug}.png`;
+}

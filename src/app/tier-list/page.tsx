@@ -1,38 +1,35 @@
-import type { Metadata } from "next";
-import { Breadcrumbs } from "@/components/Breadcrumbs";
-import TierListClient from "@/components/TierListClient";
-import { getHeroes } from "@/lib/data";
-import { BreadcrumbListSchema, ItemListSchema, ArticleSchema } from "@/lib/schema";
-import { getLastUpdatedDate } from "@/lib/schema";
-import { InternalLinks } from "@/lib/internalLinks";
-import siteConfig from "@/config/site.json";
+import { getTierListGrouped } from '@/lib/data';
+import { buildMetadata, defaultTitle } from '@/lib/seo';
+import { TierListClient } from '@/components/TierListClient';
+import { Breadcrumb } from '@/components/Breadcrumb';
+import { JsonLd, breadcrumbSchema } from '@/lib/schema';
 
-export const metadata: Metadata = {
-  title: `Tier List | ${siteConfig.currentSeason}`,
-  description: `HOK Tier List for ${siteConfig.currentSeason}`,
-};
+export const metadata = buildMetadata({
+  title: defaultTitle('Tier List'),
+  description:
+    'Honor of Kings tier list S+ to C grouped by role — win rate, pick rate, and ban rate driven.',
+  path: '/tier-list',
+});
 
 export default function TierListPage() {
-  const heroes = getHeroes();
-  const itemListItems = heroes.map(h => ({ name: h.name, url: `https://hokmeta.com/hero/${h.slug}` }));
+  const grouped = getTierListGrouped();
 
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-      <BreadcrumbListSchema breadcrumbs={[{ name: "Tier List", url: "/tier-list" }]} />
-      <ItemListSchema items={itemListItems} name="HOK Tier List" />
-      <ArticleSchema
-        headline={`HOK Tier List ${siteConfig.currentSeason}`}
-        description={`Complete tier list for ${siteConfig.currentSeason}`}
-        dateModified={getLastUpdatedDate()}
+    <div className="container-page">
+      <JsonLd
+        data={breadcrumbSchema([
+          { name: 'Home', path: '/' },
+          { name: 'Tier List', path: '/tier-list' },
+        ])}
       />
-
-      <Breadcrumbs items={[{ name: "Tier List", url: "/tier-list" }]} />
-
-      <h1 className="text-3xl font-bold mb-8">Tier List | {siteConfig.currentSeason}</h1>
-
-      <TierListClient />
-
-      <InternalLinks pageType="tier-list" />
+      <Breadcrumb
+        items={[{ label: 'Home', href: '/' }, { label: 'Tier List' }]}
+      />
+      <h1 className="mb-2 text-3xl font-bold text-white">HOK Tier List</h1>
+      <p className="mb-8 text-gray-400">
+        Grouped by tier band and role. Stats sourced from heroes.json.
+      </p>
+      <TierListClient grouped={grouped} />
     </div>
   );
 }

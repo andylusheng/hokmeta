@@ -1,11 +1,15 @@
-import { MetadataRoute } from "next";
+import type { MetadataRoute } from 'next';
+import { site } from '@/lib/data';
 
 export default function robots(): MetadataRoute.Robots {
+  const base = site.domain.replace(/\/$/, '');
   return {
     rules: {
-      userAgent: "*",
-      allow: "/",
+      userAgent: '*',
+      allow: '/',
+      disallow: ['/search/'],
     },
-    sitemap: "https://hokmeta.com/sitemap.xml",
+    sitemap: `${base}/sitemap.xml`,
+    host: base,
   };
 }
