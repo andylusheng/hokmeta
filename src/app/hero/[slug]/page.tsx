@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { HeroTOC } from "@/components/HeroTOC";
+import HeroAvatar from "@/components/HeroAvatar";
 import { getHeroBySlug, getHeroes } from "@/lib/data";
 import type { Hero } from "@/lib/data";
 import { BreadcrumbListSchema, GameSchema, HowToSchema, FAQPageSchema, ArticleSchema } from "@/lib/schema";
@@ -125,35 +126,49 @@ export default function HeroDetailPage({ params }: Props) {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="bg-surface border border-border rounded-lg p-6">
             <h3 className="font-semibold mb-4 text-green-500">Counters</h3>
-            <ul className="space-y-2">
+            <div className="flex flex-wrap gap-3">
               {hero.counters.map((slug, i) => {
                 const counterHero = getHeroBySlug(slug);
                 if (!counterHero) return null;
                 return (
-                  <li key={i}>
-                    <Link href={`/hero/${counterHero.slug}`} className="text-textSecondary hover:text-primary transition">
-                      {counterHero.name}
-                    </Link>
-                  </li>
+                  <Link key={i} href={`/hero/${counterHero.slug}`} className="group">
+                    <div className="flex items-center gap-2 p-2 rounded hover:bg-surfaceHover transition">
+                      {counterHero.avatar ? (
+                        <HeroAvatar avatar={counterHero.avatar} name={counterHero.name} size="sm" />
+                      ) : (
+                        <div className="w-6 h-6 bg-primary/20 rounded-full flex items-center justify-center text-primary text-xs font-bold">
+                          {counterHero.name.charAt(0)}
+                        </div>
+                      )}
+                      <span className="text-textSecondary group-hover:text-primary transition">{counterHero.name}</span>
+                    </div>
+                  </Link>
                 );
               })}
-            </ul>
+            </div>
           </div>
           <div className="bg-surface border border-border rounded-lg p-6">
             <h3 className="font-semibold mb-4 text-red-500">Countered By</h3>
-            <ul className="space-y-2">
+            <div className="flex flex-wrap gap-3">
               {hero.counteredBy.map((slug, i) => {
                 const counterHero = getHeroBySlug(slug);
                 if (!counterHero) return null;
                 return (
-                  <li key={i}>
-                    <Link href={`/hero/${counterHero.slug}`} className="text-textSecondary hover:text-primary transition">
-                      {counterHero.name}
-                    </Link>
-                  </li>
+                  <Link key={i} href={`/hero/${counterHero.slug}`} className="group">
+                    <div className="flex items-center gap-2 p-2 rounded hover:bg-surfaceHover transition">
+                      {counterHero.avatar ? (
+                        <HeroAvatar avatar={counterHero.avatar} name={counterHero.name} size="sm" />
+                      ) : (
+                        <div className="w-6 h-6 bg-primary/20 rounded-full flex items-center justify-center text-primary text-xs font-bold">
+                          {counterHero.name.charAt(0)}
+                        </div>
+                      )}
+                      <span className="text-textSecondary group-hover:text-primary transition">{counterHero.name}</span>
+                    </div>
+                  </Link>
                 );
               })}
-            </ul>
+            </div>
           </div>
         </div>
       </section>

@@ -30,17 +30,17 @@ export const HeroCard = ({ hero, showTier = false }: HeroCardProps) => {
       <div className="bg-surface border border-border rounded-lg p-4 hover:bg-surfaceHover hover:border-primary transition cursor-pointer">
         <div className="flex items-center gap-4">
           {hero.avatar ? (
-            <HeroAvatar avatar={hero.avatar} name={hero.name} size="md" />
+            <HeroAvatar avatar={hero.avatar} name={hero.name} size="lg" />
           ) : (
-            <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center text-primary font-bold">
+            <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center text-primary font-bold">
               {hero.name.charAt(0)}
             </div>
           )}
           <div className="flex-grow">
             <div className="flex items-center gap-2">
-              <h3 className="font-semibold">{hero.name}</h3>
+              <h3 className="font-semibold text-xl">{hero.name}</h3>
               {showTier && (
-                <span className={`text-xs px-2 py-0.5 rounded-full ${getTierColor(hero.tier)}`}>
+                <span className={`text-xs px-2 py-0.5 rounded-full text-white font-semibold ${getTierColor(hero.tier)}`}>
                   {hero.tier}
                 </span>
               )}

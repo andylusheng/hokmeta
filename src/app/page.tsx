@@ -7,7 +7,7 @@ import { WebSiteSchema, BreadcrumbListSchema } from "@/lib/schema";
 import { InternalLinks } from "@/lib/internalLinks";
 
 export default function Home() {
-  const topHeroes = getTopHeroesByPickRate(10);
+  const topHeroes = getTopHeroesByPickRate(50);
   const patch = getPatchBySeason(12);
 
   return (
