@@ -38,7 +38,7 @@ npm run build
 npm run sync-meta
 ```
 
-Sources: [Tencent Camp HOK](https://camp.honorofkings.com/) metrics via [hok-meta-analyzer](https://github.com/lnsdeep/hok-meta-analyzer) export; portraits from `game.gtimg.cn` CDN (fallback).
+Sources: [Camp HOK](https://camp.honorofkings.com/) win/pick/ban via [hok-meta-analyzer](https://github.com/lnsdeep/hok-meta-analyzer); matchups from [qing762 honor-of-kings-api](https://github.com/qing762/honor-of-kings-api); avatars Camp + `game.gtimg.cn` fallback.
 
 ## API (static JSON)
 

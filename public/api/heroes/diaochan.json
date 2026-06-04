@@ -46,14 +46,12 @@
     "Punish"
   ],
   "counters": [
-    "Musashi",
-    "Jing",
-    "Lam"
+    "Luna",
+    "Zhang Fei"
   ],
   "counteredBy": [
-    "Augran",
-    "Dolia",
-    "Arthur"
+    "Liang",
+    "Mulan"
   ],
   "tips": [
     "Diaochan: prioritize S+ tier Mage power spikes from patch history.",
@@ -66,11 +64,11 @@
       "change": "Camp HOK ranked stats — WR 48.22%, pick 0.84%, ban 0.1%, tier band B."
     },
     {
-      "version": "S37",
-      "change": "Data unavailable"
+      "version": "Matchups",
+      "change": "Counters Luna, Zhang Fei · Weak into Liang, Mulan (Tencent hero data)."
     },
     {
-      "version": "S36",
+      "version": "S37",
       "change": "Data unavailable"
     }
   ],
@@ -88,17 +86,17 @@
     {
       "id": "faq-counter",
       "question": "How to counter Diaochan?",
-      "answer": "Use Musashi, Jing, Lam. Ban rate 0.1% reflects draft priority against Diaochan."
+      "answer": "Use Luna, Zhang Fei. Ban rate 0.1% reflects draft priority against Diaochan."
     }
   ],
   "metaAnalysis": [
     "Diaochan win rate 48.22% (Camp HOK, 2026-06-04).",
     "Pick rate 0.84% for Diaochan in current ranked meta.",
     "Ban rate 0.1% — moderate bans.",
-    "Counters: Musashi, Jing, Lam. Countered by: Augran, Dolia, Arthur."
+    "Counters: Luna, Zhang Fei. Countered by: Liang, Mulan."
   ],
   "tencentId": 141,
   "avatarFallback": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/141/141.jpg",
-  "dataSource": "Camp HOK via hok-meta-analyzer",
+  "dataSource": "Camp HOK + Tencent official",
   "dataUpdated": "2026-06-04"
 }

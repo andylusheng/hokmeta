@@ -6,6 +6,26 @@
   html {
     scroll-behavior: smooth;
   }
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+  }
+  .focus\:not-sr-only:focus {
+    position: static;
+    width: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    clip: auto;
+    white-space: normal;
+  }
   body {
     @apply bg-hok-dark font-sans text-gray-100 antialiased;
     font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;

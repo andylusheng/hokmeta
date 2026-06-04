@@ -42,10 +42,18 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="font-sans">
+        <a
+          href="#main-content"
+          className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-[100] focus:rounded focus:bg-hok-gold focus:px-3 focus:py-2 focus:text-hok-dark"
+        >
+          Skip to content
+        </a>
         <JsonLd data={orgSchema} />
         <JsonLd data={webSiteSchema()} />
         <SiteHeader />
-        <main className="min-h-[70vh] py-6">{children}</main>
+        <main id="main-content" className="min-h-[70vh] py-6">
+          {children}
+        </main>
         <SiteFooter />
       </body>
     </html>

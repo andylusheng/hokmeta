@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { site } from '@/lib/data';
+import patchesMeta from '../../data/patches.json';
 
 const FOOTER_LINKS = [
   { href: '/heroes/', label: 'Heroes' },
@@ -13,6 +14,9 @@ const FOOTER_LINKS = [
 ];
 
 export function SiteFooter() {
+  const updated =
+    'updated' in patchesMeta && patchesMeta.updated ? patchesMeta.updated : null;
+
   return (
     <footer className="mt-12 border-t border-hok-border py-8 text-sm text-gray-500">
       <div className="container-page flex flex-col gap-6">
@@ -35,7 +39,9 @@ export function SiteFooter() {
             © {new Date().getFullYear()} {site.name}. {site.author}.
           </p>
           <p className="text-xs text-gray-600">
-            Stats marked &quot;Data unavailable&quot; until official sources are linked.
+            Stats: Camp HOK
+            {updated ? ` · Synced ${updated}` : ''}. Run{' '}
+            <code className="text-gray-500">npm run sync-meta</code> to refresh.
           </p>
         </div>
       </div>

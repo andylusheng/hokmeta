@@ -46,14 +46,12 @@
     "Heal"
   ],
   "counters": [
-    "Wukong",
-    "Loong",
-    "Kaizer"
+    "Guan Yu",
+    "Zhang Fei"
   ],
   "counteredBy": [
-    "Data unavailable",
-    "Data unavailable",
-    "Data unavailable"
+    "Gao Changgong",
+    "Arke"
   ],
   "tips": [
     "Arli: prioritize S tier Marksman power spikes from patch history.",
@@ -66,11 +64,11 @@
       "change": "Camp HOK ranked stats — WR 47.01%, pick 0.79%, ban 0.36%, tier band B."
     },
     {
-      "version": "S37",
-      "change": "Data unavailable"
+      "version": "Matchups",
+      "change": "Counters Guan Yu, Zhang Fei · Weak into Gao Changgong, Arke (Tencent hero data)."
     },
     {
-      "version": "S36",
+      "version": "S37",
       "change": "Data unavailable"
     }
   ],
@@ -88,17 +86,17 @@
     {
       "id": "faq-counter",
       "question": "How to counter Arli?",
-      "answer": "Use Wukong, Loong, Kaizer. Ban rate 0.36% reflects draft priority against Arli."
+      "answer": "Use Guan Yu, Zhang Fei. Ban rate 0.36% reflects draft priority against Arli."
     }
   ],
   "metaAnalysis": [
     "Arli win rate 47.01% (Camp HOK, 2026-06-04).",
     "Pick rate 0.79% for Arli in current ranked meta.",
     "Ban rate 0.36% — moderate bans.",
-    "Counters: Wukong, Loong, Kaizer. Countered by: Data unavailable, Data unavailable, Data unavailable."
+    "Counters: Guan Yu, Zhang Fei. Countered by: Gao Changgong, Arke."
   ],
   "tencentId": 508,
   "avatarFallback": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/508/508.jpg",
-  "dataSource": "Camp HOK via hok-meta-analyzer",
+  "dataSource": "Camp HOK + Tencent official",
   "dataUpdated": "2026-06-04"
 }
