@@ -17,14 +17,13 @@ Open http://localhost:3001
 npm run build
 ```
 
-- Static site: `out/`
-- Hostinger copy: `dist/` (same content, for deploy output dir)
+- Static site: `out/` (includes `index.html` at root)
 
 ## Deploy (Hostinger Node.js + GitHub)
 
 1. Connect repo `hokmeta`, branch `main`
 2. Build: `npm run build`
-3. Output directory: **`out`** or **`dist`** (postbuild copies `out` → `dist`)
+3. Output directory: **`out`** (do not set `distDir: 'out'` in `next.config.mjs`)
 4. `config/site.json` → `domain` must match live URL
 
 ## Data

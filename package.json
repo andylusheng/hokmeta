@@ -10,7 +10,7 @@
     "start": "next start",
     "lint": "next lint",
     "sync-meta": "node scripts/sync-meta.js",
-    "postbuild": "node scripts/copy-api.js && node scripts/postbuild-hostinger.js"
+    "postbuild": "node scripts/copy-api.js"
   },
   "dependencies": {
     "next": "14.2.28",
