@@ -70,24 +70,24 @@
     },
     {
       "slot": 4,
-      "itemId": null,
-      "name": "siege breaker",
-      "icon": null,
-      "description": null
-    },
-    {
-      "slot": 5,
       "itemId": "13310",
       "name": "Frostscar's Embrace",
       "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/13310.jpg",
       "description": "Enhanced BAs slow"
     },
     {
-      "slot": 6,
+      "slot": 5,
       "itemId": "1131",
       "name": "Starbreaker",
       "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1131.jpg",
       "description": "Anti-tank"
+    },
+    {
+      "slot": 6,
+      "itemId": null,
+      "name": "Data unavailable",
+      "icon": null,
+      "description": null
     }
   ],
   "arcana": [
@@ -107,42 +107,84 @@
     "Garo"
   ],
   "tips": [
-    "Nakoruru (Assassin): Tier A on international ranked — 50.67% WR.",
-    "Primary lane: Jungling.",
-    "Build core: Rapacious Bite, Boots of Tranquility, Axe of Torment."
+    "Nakoruru is a Medium Assassin (Jungling) on Honor of Kings Global. Camp HOK ranks them Tier A with 50.7% win rate and 0.8% pick rate as of 2026-06-05.",
+    "Best build path: Rapacious Bite → Boots of Resistance → Axe of Torment → Frostscar's Embrace → Starbreaker.",
+    "Run Mutation for stats that match Nakoruru's Assassin kit. Take Smite — swap to Purify against heavy CC or Smite when jungling.",
+    "Standard trade: AMUBE YATORO → RERA MUTSUBE → KAMUI MUTSUBE → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "Laning: Clear to level four, then gank the lane with the least escape. Secure Tyrant when your bot or mid has crash wave.",
+    "Teamfight: Wait for CC from your team, then dive carry with full combo. Exit with reset or flash if focus fired.",
+    "Nakoruru excels into Wukong, Athena, Xiang Yu. Avoid blind picking into Diaochan, Fang, Garo without team peel.",
+    "Nakoruru is a viable Tier A pick in high rank with 50.7% win rate — strong in one-trick hands or as a counter-pick."
   ],
   "patchHistory": [
     {
       "version": "Live meta",
-      "change": "Camp HOK — WR 50.67%, pick 0.76%, ban 0.1%, popularity tier A."
+      "change": "Camp HOK — WR 50.7%, pick 0.8%, ban 0.1%, tier A."
     },
     {
       "version": "Matchups",
-      "change": "Counters Wukong, Athena, Xiang Yu · Weak into Diaochan, Fang, Garo."
+      "change": "Strong into Wukong, Athena, Xiang Yu · Weak into Diaochan, Fang, Garo."
+    },
+    {
+      "version": "High rank",
+      "change": "Nakoruru is a viable Tier A pick in high rank with 50.7% win rate — strong in one-trick hands or as a counter-pick."
     }
   ],
   "faqs": [
     {
       "id": "faq-good-season",
-      "question": "Is Nakoruru good in current season?",
-      "answer": "Nakoruru is Tier A Assassin with 50.67% win rate, 0.76% pick rate, and 0.1% ban rate on the international server (Camp HOK)."
+      "question": "Is Nakoruru good in the current meta?",
+      "answer": "Nakoruru is Tier A Assassin with 50.7% win rate, 0.8% pick rate, and 0.1% ban rate on Honor of Kings Global (Camp HOK, 2026-06-05). Solid situational pick."
     },
     {
       "id": "faq-best-build",
       "question": "What is the best Nakoruru build?",
-      "answer": "Recommended item path: Rapacious Bite, Boots of Tranquility, Axe of Torment, Mortal Punisher, Overlord's Might, Spikemail. Spells and Arcana are listed on this page."
+      "answer": "Core item path: Rapacious Bite, Boots of Resistance, Axe of Torment, siege breaker, Frostscar's Embrace, Starbreaker. Run Mutation arcana with Smite. Switch to alternate build presets on this page for jungle, clash, or late-game setups."
     },
     {
       "id": "faq-counter",
       "question": "How to counter Nakoruru?",
-      "answer": "Strong picks into Nakoruru: Diaochan, Fang, Garo. Nakoruru is strong into Wukong, Athena, Xiang Yu."
+      "answer": "Pick Diaochan, Fang, Garo into Nakoruru. Deny Jungling resources early and force fights before Nakoruru completes core items. Nakoruru struggles when the enemy can peel and group them."
+    },
+    {
+      "id": "faq-strong-into",
+      "question": "Who does Nakoruru counter?",
+      "answer": "Nakoruru is strong into Wukong, Athena, Xiang Yu according to HoKStats matchup data and role matchups on the global server. Draft Nakoruru when the enemy relies on these heroes in the Jungling lane."
+    },
+    {
+      "id": "faq-high-rank",
+      "question": "Is Nakoruru good in high rank / Diamond+?",
+      "answer": "Nakoruru is a viable Tier A pick in high rank with 50.7% win rate — strong in one-trick hands or as a counter-pick."
+    },
+    {
+      "id": "faq-lane",
+      "question": "What lane should Nakoruru play?",
+      "answer": "Nakoruru is tagged Jungling in Camp export (Assassin). Clear to level four, then gank the lane with the least escape. Secure Tyrant when your bot or mid has crash wave."
+    },
+    {
+      "id": "faq-arcana",
+      "question": "Best arcana and spells for Nakoruru?",
+      "answer": "Recommended: Mutation arcana. Battle spell: Smite. Adjust Purify/Execute based on enemy dive and jungle need."
+    },
+    {
+      "id": "faq-vs-peer",
+      "question": "Nakoruru or Wukong — which is better?",
+      "answer": "Nakoruru vs Wukong (Assassin, Tier S): Wukong is 1.3% pick / 49.7% WR. Nakoruru has +0.9% WR vs Wukong in Camp data. Choose Nakoruru when you need Jungling identity; choose Wukong for Jungling comfort."
+    },
+    {
+      "id": "faq-ban",
+      "question": "Should I ban Nakoruru?",
+      "answer": "Low priority ban (0.1%). Focus bans on higher-tier Assassin picks unless targeting a one-trick."
     }
   ],
   "metaAnalysis": [
-    "Nakoruru win rate 50.67% (Camp HOK, 2026-06-04).",
-    "Pick rate 0.76% in global ranked.",
-    "Ban rate 0.1%.",
-    "Counters: Wukong, Athena, Xiang Yu. Countered by: Diaochan, Fang, Garo."
+    "Nakoruru — 50.7% WR, 0.8% pick, 0.1% ban (Camp HOK 2026-06-05).",
+    "Tier A Assassin · Jungling · difficulty Medium.",
+    "Nakoruru is a viable Tier A pick in high rank with 50.7% win rate — strong in one-trick hands or as a counter-pick.",
+    "Matchups: strong into Wukong, Athena, Xiang Yu; weak into Diaochan, Fang, Garo.",
+    "Nakoruru vs Wukong (Assassin, Tier S): Wukong is 1.3% pick / 49.7% WR. Nakoruru has +0.9% WR vs Wukong in Camp data. Choose Nakoruru when you need Jungling identity; choose Wukong for Jungling comfort.",
+    "Nakoruru vs Musashi (Assassin, Tier A): Musashi is 1.1% pick / 50.7% WR. Musashi wins 0.0% more often globally. Choose Nakoruru when you need Jungling identity; choose Musashi for Jungling comfort.",
+    "Draft tip: counter-pick or comfort pick when lane matchup is favorable."
   ],
   "builds": [
     {
@@ -174,24 +216,24 @@
         },
         {
           "slot": 4,
-          "itemId": null,
-          "name": "siege breaker",
-          "icon": null,
-          "description": null
-        },
-        {
-          "slot": 5,
           "itemId": "13310",
           "name": "Frostscar's Embrace",
           "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/13310.jpg",
           "description": "Enhanced BAs slow"
         },
         {
-          "slot": 6,
+          "slot": 5,
           "itemId": "1131",
           "name": "Starbreaker",
           "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1131.jpg",
           "description": "Anti-tank"
+        },
+        {
+          "slot": 6,
+          "itemId": null,
+          "name": "Data unavailable",
+          "icon": null,
+          "description": null
         }
       ]
     },
@@ -595,5 +637,31 @@
         }
       ]
     }
-  ]
+  ],
+  "guide": {
+    "overview": "Nakoruru is a Medium Assassin (Jungling) on Honor of Kings Global. Camp HOK ranks them Tier A with 50.7% win rate and 0.8% pick rate as of 2026-06-05.",
+    "bestBuild": "Rush Rapacious Bite, Boots of Resistance, Axe of Torment, then complete siege breaker, Frostscar's Embrace, Starbreaker. Use preset tabs for jungle, clash, or CN-style paths when draft requires it.",
+    "arcanaSpells": "Run Mutation for stats that match Nakoruru's Assassin kit. Take Smite — swap to Purify against heavy CC or Smite when jungling.",
+    "combo": "Standard trade: AMUBE YATORO → RERA MUTSUBE → KAMUI MUTSUBE → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "laning": "Clear to level four, then gank the lane with the least escape. Secure Tyrant when your bot or mid has crash wave.",
+    "teamfight": "Wait for CC from your team, then dive carry with full combo. Exit with reset or flash if focus fired.",
+    "highRank": "Nakoruru is a viable Tier A pick in high rank with 50.7% win rate — strong in one-trick hands or as a counter-pick.",
+    "comparisons": [
+      "Nakoruru vs Wukong (Assassin, Tier S): Wukong is 1.3% pick / 49.7% WR. Nakoruru has +0.9% WR vs Wukong in Camp data. Choose Nakoruru when you need Jungling identity; choose Wukong for Jungling comfort.",
+      "Nakoruru vs Musashi (Assassin, Tier A): Musashi is 1.1% pick / 50.7% WR. Musashi wins 0.0% more often globally. Choose Nakoruru when you need Jungling identity; choose Musashi for Jungling comfort."
+    ],
+    "matchups": {
+      "strongInto": [
+        "Wukong",
+        "Athena",
+        "Xiang Yu"
+      ],
+      "weakInto": [
+        "Diaochan",
+        "Fang",
+        "Garo"
+      ],
+      "summary": "Nakoruru excels into Wukong, Athena, Xiang Yu. Avoid blind picking into Diaochan, Fang, Garo without team peel."
+    }
+  }
 }

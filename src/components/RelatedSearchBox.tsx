@@ -9,7 +9,7 @@ export function RelatedSearchBox({ terms }: { terms: string[] }) {
         {terms.map((term) => (
           <li key={term}>
             <Link
-              href={`/heroes/?q=${encodeURIComponent(term)}`}
+              href={`/search/?q=${encodeURIComponent(term)}`}
               className="rounded-full border border-hok-border px-3 py-1 text-sm text-gray-300 hover:border-hok-gold hover:text-hok-gold"
             >
               {term}

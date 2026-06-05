@@ -77,17 +77,17 @@
     },
     {
       "slot": 5,
-      "itemId": null,
-      "name": "siege breaker",
-      "icon": null,
-      "description": null
-    },
-    {
-      "slot": 6,
       "itemId": "1338",
       "name": "Cuirass of Savagery",
       "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1338.jpg",
       "description": "Offense & defense"
+    },
+    {
+      "slot": 6,
+      "itemId": null,
+      "name": "Data unavailable",
+      "icon": null,
+      "description": null
     }
   ],
   "arcana": [
@@ -103,45 +103,89 @@
     "Diaochan"
   ],
   "counteredBy": [
-    "Liu Bang"
+    "Liu Bang",
+    "Lapulapu",
+    "Ata"
   ],
   "tips": [
-    "Meng Ya (Marksman): Tier B on international ranked — 53.61% WR.",
-    "Primary lane: Farm Lane.",
-    "Build core: Boots of Dexterity, Eternity Blade, Shadow Ripper."
+    "Meng Ya is a Medium Marksman (Farm Lane) on Honor of Kings Global. Camp HOK ranks them Tier B with 53.6% win rate and 0.4% pick rate as of 2026-06-05.",
+    "Best build path: Eternity Blade → Boots of Resistance → Daybreaker's Virtue → Shadow Ripper → Cuirass of Savagery.",
+    "Run Cataclysm for stats that match Meng Ya's Marksman kit. Take Haste & Flash — swap to Purify against heavy CC or Smite when jungling.",
+    "Standard trade: Awesome Barrage → Heavy Shot → Missile Mayhem → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "Laning: Last-hit safely until first core item. Ping jungler for river vision; never face-check brush without minion cover.",
+    "Teamfight: Position behind frontline; attack closest safe target. Join fight only after enemy dive cooldowns are used.",
+    "Meng Ya excels into Mai Shiranui, Pei, Diaochan. Avoid blind picking into Liu Bang, Lapulapu, Ata without team peel.",
+    "Meng Ya sits at Tier B globally (53.6% WR). In high rank, pick only into favorable matchups or when you have a dedicated pocket pick. Camp data shows above-average win rate — prioritize when not hard-countered in draft."
   ],
   "patchHistory": [
     {
       "version": "Live meta",
-      "change": "Camp HOK — WR 53.61%, pick 0.42%, ban 0.01%, popularity tier B."
+      "change": "Camp HOK — WR 53.6%, pick 0.4%, ban 0.0%, tier B."
     },
     {
       "version": "Matchups",
-      "change": "Counters Mai Shiranui, Pei, Diaochan · Weak into Liu Bang."
+      "change": "Strong into Mai Shiranui, Pei, Diaochan · Weak into Liu Bang, Lapulapu, Ata."
+    },
+    {
+      "version": "High rank",
+      "change": "Meng Ya sits at Tier B globally (53.6% WR). In high rank, pick only into favorable matchups or when you have a dedicated pocket pick. Camp data shows above-average win rate — prioritize when not hard-countered in draft."
     }
   ],
   "faqs": [
     {
       "id": "faq-good-season",
-      "question": "Is Meng Ya good in current season?",
-      "answer": "Meng Ya is Tier B Marksman with 53.61% win rate, 0.42% pick rate, and 0.01% ban rate on the international server (Camp HOK)."
+      "question": "Is Meng Ya good in the current meta?",
+      "answer": "Meng Ya is Tier B Marksman with 53.6% win rate, 0.4% pick rate, and 0.0% ban rate on Honor of Kings Global (Camp HOK, 2026-06-05). Niche — draft carefully."
     },
     {
       "id": "faq-best-build",
       "question": "What is the best Meng Ya build?",
-      "answer": "Recommended item path: Boots of Dexterity, Eternity Blade, Shadow Ripper, Doomsday, Sunchaser, Daybreaker's Virtue. Spells and Arcana are listed on this page."
+      "answer": "Core item path: Eternity Blade, Boots of Resistance, Daybreaker's Virtue, Shadow Ripper, siege breaker, Cuirass of Savagery. Run Cataclysm arcana with Haste & Flash. Switch to alternate build presets on this page for jungle, clash, or late-game setups."
     },
     {
       "id": "faq-counter",
       "question": "How to counter Meng Ya?",
-      "answer": "Strong picks into Meng Ya: Liu Bang. Meng Ya is strong into Mai Shiranui, Pei, Diaochan."
+      "answer": "Pick Liu Bang, Lapulapu, Ata into Meng Ya. Deny Farm Lane resources early and force fights before Meng Ya completes core items. Meng Ya struggles when the enemy can dive and burst them."
+    },
+    {
+      "id": "faq-strong-into",
+      "question": "Who does Meng Ya counter?",
+      "answer": "Meng Ya is strong into Mai Shiranui, Pei, Diaochan according to HoKStats matchup data and role matchups on the global server. Draft Meng Ya when the enemy relies on these heroes in the Farm Lane lane."
+    },
+    {
+      "id": "faq-high-rank",
+      "question": "Is Meng Ya good in high rank / Diamond+?",
+      "answer": "Meng Ya sits at Tier B globally (53.6% WR). In high rank, pick only into favorable matchups or when you have a dedicated pocket pick. Camp data shows above-average win rate — prioritize when not hard-countered in draft."
+    },
+    {
+      "id": "faq-lane",
+      "question": "What lane should Meng Ya play?",
+      "answer": "Meng Ya is tagged Farm Lane in Camp export (Marksman). Last-hit safely until first core item. Ping jungler for river vision; never face-check brush without minion cover."
+    },
+    {
+      "id": "faq-arcana",
+      "question": "Best arcana and spells for Meng Ya?",
+      "answer": "Recommended: Cataclysm arcana. Battle spell: Haste & Flash. Adjust Purify/Execute based on enemy dive and jungle need."
+    },
+    {
+      "id": "faq-vs-peer",
+      "question": "Meng Ya or Hou Yi — which is better?",
+      "answer": "Meng Ya vs Hou Yi (Marksman, Tier S+): Hou Yi is 2.9% pick / 49.3% WR. Meng Ya has +4.3% WR vs Hou Yi in Camp data. Choose Meng Ya when you need Farm Lane identity; choose Hou Yi for Farm Lane comfort."
+    },
+    {
+      "id": "faq-ban",
+      "question": "Should I ban Meng Ya?",
+      "answer": "Low priority ban (0.0%). Focus bans on higher-tier Marksman picks unless targeting a one-trick."
     }
   ],
   "metaAnalysis": [
-    "Meng Ya win rate 53.61% (Camp HOK, 2026-06-04).",
-    "Pick rate 0.42% in global ranked.",
-    "Ban rate 0.01%.",
-    "Counters: Mai Shiranui, Pei, Diaochan. Countered by: Liu Bang."
+    "Meng Ya — 53.6% WR, 0.4% pick, 0.0% ban (Camp HOK 2026-06-05).",
+    "Tier B Marksman · Farm Lane · difficulty Medium.",
+    "Meng Ya sits at Tier B globally (53.6% WR). In high rank, pick only into favorable matchups or when you have a dedicated pocket pick. Camp data shows above-average win rate — prioritize when not hard-countered in draft.",
+    "Matchups: strong into Mai Shiranui, Pei, Diaochan; weak into Liu Bang, Lapulapu, Ata.",
+    "Meng Ya vs Hou Yi (Marksman, Tier S+): Hou Yi is 2.9% pick / 49.3% WR. Meng Ya has +4.3% WR vs Hou Yi in Camp data. Choose Meng Ya when you need Farm Lane identity; choose Hou Yi for Farm Lane comfort.",
+    "Meng Ya vs Marco Polo (Marksman, Tier S+): Marco Polo is 2.1% pick / 50.1% WR. Meng Ya has +3.5% WR vs Marco Polo in Camp data. Choose Meng Ya when you need Farm Lane identity; choose Marco Polo for Farm Lane comfort.",
+    "Draft tip: counter-pick or comfort pick when lane matchup is favorable."
   ],
   "builds": [
     {
@@ -180,17 +224,17 @@
         },
         {
           "slot": 5,
-          "itemId": null,
-          "name": "siege breaker",
-          "icon": null,
-          "description": null
-        },
-        {
-          "slot": 6,
           "itemId": "1338",
           "name": "Cuirass of Savagery",
           "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1338.jpg",
           "description": "Offense & defense"
+        },
+        {
+          "slot": 6,
+          "itemId": null,
+          "name": "Data unavailable",
+          "icon": null,
+          "description": null
         }
       ]
     },
@@ -430,17 +474,17 @@
         },
         {
           "slot": 5,
-          "itemId": "1154",
-          "name": "Cloud Piercer",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1154.jpg",
-          "description": "Crit Rate +12%, ASPD +15%"
-        },
-        {
-          "slot": 6,
           "itemId": "1155",
           "name": "Daybreaker's Virtue",
           "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1155.jpg",
           "description": "Great for marksmen"
+        },
+        {
+          "slot": 6,
+          "itemId": "1122",
+          "name": "Sunglow Striker",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1122.jpg",
+          "description": "PATK +35, HP +450"
         }
       ]
     },
@@ -530,10 +574,10 @@
         },
         {
           "slot": 5,
-          "itemId": "1154",
-          "name": "Cloud Piercer",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1154.jpg",
-          "description": "Crit Rate +12%, ASPD +15%"
+          "itemId": "1155",
+          "name": "Daybreaker's Virtue",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1155.jpg",
+          "description": "Great for marksmen"
         },
         {
           "slot": 6,
@@ -573,24 +617,24 @@
         },
         {
           "slot": 4,
-          "itemId": "1154",
-          "name": "Cloud Piercer",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1154.jpg",
-          "description": "Crit Rate +12%, ASPD +15%"
-        },
-        {
-          "slot": 5,
           "itemId": "1155",
           "name": "Daybreaker's Virtue",
           "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1155.jpg",
           "description": "Great for marksmen"
         },
         {
-          "slot": 6,
+          "slot": 5,
           "itemId": "1126",
           "name": "Doomsday",
           "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1126.jpg",
           "description": "Boosts BA damage"
+        },
+        {
+          "slot": 6,
+          "itemId": "1138",
+          "name": "Overlord's Might",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1138.jpg",
+          "description": "High-damage attack"
         }
       ]
     },
@@ -644,5 +688,31 @@
         }
       ]
     }
-  ]
+  ],
+  "guide": {
+    "overview": "Meng Ya is a Medium Marksman (Farm Lane) on Honor of Kings Global. Camp HOK ranks them Tier B with 53.6% win rate and 0.4% pick rate as of 2026-06-05.",
+    "bestBuild": "Rush Eternity Blade, Boots of Resistance, Daybreaker's Virtue, then complete Shadow Ripper, siege breaker, Cuirass of Savagery. Use preset tabs for jungle, clash, or CN-style paths when draft requires it.",
+    "arcanaSpells": "Run Cataclysm for stats that match Meng Ya's Marksman kit. Take Haste & Flash — swap to Purify against heavy CC or Smite when jungling.",
+    "combo": "Standard trade: Awesome Barrage → Heavy Shot → Missile Mayhem → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "laning": "Last-hit safely until first core item. Ping jungler for river vision; never face-check brush without minion cover.",
+    "teamfight": "Position behind frontline; attack closest safe target. Join fight only after enemy dive cooldowns are used.",
+    "highRank": "Meng Ya sits at Tier B globally (53.6% WR). In high rank, pick only into favorable matchups or when you have a dedicated pocket pick. Camp data shows above-average win rate — prioritize when not hard-countered in draft.",
+    "comparisons": [
+      "Meng Ya vs Hou Yi (Marksman, Tier S+): Hou Yi is 2.9% pick / 49.3% WR. Meng Ya has +4.3% WR vs Hou Yi in Camp data. Choose Meng Ya when you need Farm Lane identity; choose Hou Yi for Farm Lane comfort.",
+      "Meng Ya vs Marco Polo (Marksman, Tier S+): Marco Polo is 2.1% pick / 50.1% WR. Meng Ya has +3.5% WR vs Marco Polo in Camp data. Choose Meng Ya when you need Farm Lane identity; choose Marco Polo for Farm Lane comfort."
+    ],
+    "matchups": {
+      "strongInto": [
+        "Mai Shiranui",
+        "Pei",
+        "Diaochan"
+      ],
+      "weakInto": [
+        "Liu Bang",
+        "Lapulapu",
+        "Ata"
+      ],
+      "summary": "Meng Ya excels into Mai Shiranui, Pei, Diaochan. Avoid blind picking into Liu Bang, Lapulapu, Ata without team peel."
+    }
+  }
 }

@@ -13,15 +13,17 @@ import { BuildBlock } from '@/components/BuildBlock';
 import { SkillBlock } from '@/components/SkillBlock';
 import { ArcanaBlock } from '@/components/ArcanaBlock';
 import { CounterBlock } from '@/components/CounterBlock';
+import { HeroGuideBlock } from '@/components/HeroGuideBlock';
 import { FaqAccordion } from '@/components/FaqAccordion';
 import { PageTOC } from '@/components/PageTOC';
 import { RelatedSearchBox } from '@/components/RelatedSearchBox';
+import { DataAttribution } from '@/components/DataAttribution';
 import {
   JsonLd,
   breadcrumbSchema,
   faqPageSchema,
   heroArticleSchema,
-  videoGameSchema,
+  heroGameSchema,
 } from '@/lib/schema';
 
 export function generateStaticParams() {
@@ -38,7 +40,7 @@ export function generateMetadata({
   const kw = getKeywordsForHero(hero.slug);
   return buildMetadata({
     title: defaultTitle(`${hero.name} Build, Counters & Guide`),
-    description: `${hero.name} ${hero.role} guide — Tier ${hero.tier}, build order, arcana, counters, patch history, and meta analysis.`,
+    description: `${hero.name} ${hero.role} guide — best build, arcana, combos, counters, high-rank tips, hero comparisons, and ${hero.faqs.length}+ FAQs (Camp HOK ${hero.dataUpdated ?? 'meta'}).`,
     path: `/hero/${hero.slug}`,
     ogImage: hero.avatar,
     keywords: kw.length ? kw : undefined,
@@ -69,7 +71,7 @@ export default function HeroPage({
           hero.faqs.map((f) => ({ question: f.question, answer: f.answer }))
         )}
       />
-      <JsonLd data={videoGameSchema(hero)} />
+      <JsonLd data={heroGameSchema(hero, `/hero/${hero.slug}`)} />
       <JsonLd
         data={heroArticleSchema(hero, `/hero/${hero.slug}`)}
       />
@@ -85,7 +87,7 @@ export default function HeroPage({
       <div className="grid gap-8 lg:grid-cols-[1fr_220px]">
         <article>
           <header id="overview" className="scroll-mt-20 mb-8 flex flex-col gap-4 sm:flex-row sm:items-center">
-            <HeroAvatar hero={hero} size={96} />
+            <HeroAvatar hero={hero} size={96} priority />
             <div>
               <h1 className="text-3xl font-bold text-white">{hero.name}</h1>
               <p className="text-gray-400">
@@ -93,6 +95,12 @@ export default function HeroPage({
               </p>
             </div>
           </header>
+
+          <DataAttribution
+            subject={hero.name}
+            dataSource={hero.dataSource}
+            dataUpdated={hero.dataUpdated}
+          />
 
           <section className="card mb-8">
             <HeroStatTable hero={hero} />
@@ -113,18 +121,14 @@ export default function HeroPage({
             <ArcanaBlock hero={hero} />
           </section>
 
-          <section id="counters" className="scroll-mt-20 mb-8">
-            <h2 className="section-title">Counters</h2>
-            <CounterBlock hero={hero} />
+          <section id="guide" className="scroll-mt-20 mb-8">
+            <h2 className="section-title">{hero.name} Guide</h2>
+            <HeroGuideBlock hero={hero} />
           </section>
 
-          <section id="tips" className="scroll-mt-20 mb-8">
-            <h2 className="section-title">Tips</h2>
-            <ul className="list-inside list-disc space-y-2 text-gray-300">
-              {hero.tips.map((t) => (
-                <li key={t}>{t}</li>
-              ))}
-            </ul>
+          <section id="counters" className="scroll-mt-20 mb-8">
+            <h2 className="section-title">Counters &amp; Matchups</h2>
+            <CounterBlock hero={hero} />
           </section>
 
           <section id="patch-history" className="scroll-mt-20 mb-8">
@@ -163,13 +167,7 @@ export default function HeroPage({
         </aside>
       </div>
 
-      {hero.dataSource && (
-        <p className="mt-6 text-center text-xs text-gray-600">
-          Stats: {hero.dataSource}
-          {hero.dataUpdated ? ` · Updated ${hero.dataUpdated}` : ''}
-        </p>
-      )}
-      <p className="mt-2 text-center text-sm text-gray-500">
+      <p className="mt-6 text-center text-sm text-gray-500">
         <Link href="/tools/counter-picker/" className="text-hok-gold hover:underline">
           Counter picker tool
         </Link>

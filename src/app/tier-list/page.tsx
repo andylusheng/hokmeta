@@ -2,7 +2,7 @@ import { getTierListByRole } from '@/lib/data';
 import { buildMetadata, defaultTitle } from '@/lib/seo';
 import { TierListClient } from '@/components/TierListClient';
 import { Breadcrumb } from '@/components/Breadcrumb';
-import { JsonLd, breadcrumbSchema } from '@/lib/schema';
+import { JsonLd, breadcrumbSchema, tierListSchema } from '@/lib/schema';
 
 export const metadata = buildMetadata({
   title: defaultTitle('Tier List'),
@@ -22,6 +22,7 @@ export default function TierListPage() {
           { name: 'Tier List', path: '/tier-list' },
         ])}
       />
+      <JsonLd data={tierListSchema(grouped)} />
       <Breadcrumb
         items={[{ label: 'Home', href: '/' }, { label: 'Tier List' }]}
       />

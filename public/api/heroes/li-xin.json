@@ -70,24 +70,24 @@
     },
     {
       "slot": 4,
-      "itemId": null,
-      "name": "siege breaker",
-      "icon": null,
-      "description": null
-    },
-    {
-      "slot": 5,
       "itemId": "1338",
       "name": "Cuirass of Savagery",
       "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1338.jpg",
       "description": "Offense & defense"
     },
     {
-      "slot": 6,
+      "slot": 5,
       "itemId": "1127",
       "name": "Destiny",
       "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1127.jpg",
       "description": "Negates fatal damage"
+    },
+    {
+      "slot": 6,
+      "itemId": null,
+      "name": "Data unavailable",
+      "icon": null,
+      "description": null
     }
   ],
   "arcana": [
@@ -106,42 +106,84 @@
     "Guiguzi"
   ],
   "tips": [
-    "Li Xin (Warrior): Tier S+ on international ranked — 52.58% WR.",
-    "Primary lane: Clash Lane.",
-    "Build core: Primordial Crystal, Boots of Tranquility, Nettle Gauntlet."
+    "Li Xin is a Medium Warrior (Clash Lane) on Honor of Kings Global. Camp HOK ranks them Tier S+ with 52.6% win rate and 1.9% pick rate as of 2026-06-05.",
+    "Best build path: Boots of Resistance → Axe of Torment → Spikemail → Cuirass of Savagery → Destiny.",
+    "Run Conflict for stats that match Li Xin's Warrior kit. Take Flash — swap to Purify against heavy CC or Smite when jungling.",
+    "Standard trade: Lightning Dash → Chaos Wave → Light Awakening → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "Laning: Trade on your power spike levels (2/4). Call jungler for dive only when enemy flash is down.",
+    "Teamfight: Flank or dive backline after tanks commit. Do not start fights without vision on enemy jungler.",
+    "Li Xin excels into Da Qiao, Liang. Avoid blind picking into Cai Yan, Da Qiao, Guiguzi without team peel.",
+    "Li Xin is a Tier S+ staple in high-elo (Diamond+) on the international server — worth mastering for climb. Ban rate 1.3% — expect Li Xin to be removed in tryhard lobbies; have a backup in the same role. Camp data shows above-average win rate — prioritize when not hard-countered in draft."
   ],
   "patchHistory": [
     {
       "version": "Live meta",
-      "change": "Camp HOK — WR 52.58%, pick 1.86%, ban 1.33%, popularity tier S+."
+      "change": "Camp HOK — WR 52.6%, pick 1.9%, ban 1.3%, tier S+."
     },
     {
       "version": "Matchups",
-      "change": "Counters Da Qiao, Liang · Weak into Cai Yan, Da Qiao, Guiguzi."
+      "change": "Strong into Da Qiao, Liang · Weak into Cai Yan, Da Qiao, Guiguzi."
+    },
+    {
+      "version": "High rank",
+      "change": "Li Xin is a Tier S+ staple in high-elo (Diamond+) on the international server — worth mastering for climb. Ban rate 1.3% — expect Li Xin to be removed in tryhard lobbies; have a backup in the same role. Camp data shows above-average win rate — prioritize when not hard-countered in draft."
     }
   ],
   "faqs": [
     {
       "id": "faq-good-season",
-      "question": "Is Li Xin good in current season?",
-      "answer": "Li Xin is Tier S+ Warrior with 52.58% win rate, 1.86% pick rate, and 1.33% ban rate on the international server (Camp HOK)."
+      "question": "Is Li Xin good in the current meta?",
+      "answer": "Li Xin is Tier S+ Warrior with 52.6% win rate, 1.9% pick rate, and 1.3% ban rate on Honor of Kings Global (Camp HOK, 2026-06-05). Strong meta pick for ranked."
     },
     {
       "id": "faq-best-build",
       "question": "What is the best Li Xin build?",
-      "answer": "Recommended item path: Primordial Crystal, Boots of Tranquility, Nettle Gauntlet, Axe of Torment, Boots of Fortitude, Overlord's Might. Spells and Arcana are listed on this page."
+      "answer": "Core item path: Boots of Resistance, Axe of Torment, Spikemail, siege breaker, Cuirass of Savagery, Destiny. Run Conflict arcana with Flash. Switch to alternate build presets on this page for jungle, clash, or late-game setups."
     },
     {
       "id": "faq-counter",
       "question": "How to counter Li Xin?",
-      "answer": "Strong picks into Li Xin: Cai Yan, Da Qiao, Guiguzi. Li Xin is strong into Da Qiao, Liang."
+      "answer": "Pick Cai Yan, Da Qiao, Guiguzi into Li Xin. Deny Clash Lane resources early and force fights before Li Xin completes core items. Li Xin struggles when the enemy can out-range or out-sustain them."
+    },
+    {
+      "id": "faq-strong-into",
+      "question": "Who does Li Xin counter?",
+      "answer": "Li Xin is strong into Da Qiao, Liang according to HoKStats matchup data and role matchups on the global server. Draft Li Xin when the enemy relies on these heroes in the Clash Lane lane."
+    },
+    {
+      "id": "faq-high-rank",
+      "question": "Is Li Xin good in high rank / Diamond+?",
+      "answer": "Li Xin is a Tier S+ staple in high-elo (Diamond+) on the international server — worth mastering for climb. Ban rate 1.3% — expect Li Xin to be removed in tryhard lobbies; have a backup in the same role. Camp data shows above-average win rate — prioritize when not hard-countered in draft."
+    },
+    {
+      "id": "faq-lane",
+      "question": "What lane should Li Xin play?",
+      "answer": "Li Xin is tagged Clash Lane in Camp export (Fighter). Trade on your power spike levels (2/4). Call jungler for dive only when enemy flash is down."
+    },
+    {
+      "id": "faq-arcana",
+      "question": "Best arcana and spells for Li Xin?",
+      "answer": "Recommended: Conflict arcana. Battle spell: Flash. Adjust Purify/Execute based on enemy dive and jungle need."
+    },
+    {
+      "id": "faq-vs-peer",
+      "question": "Li Xin or Chicha — which is better?",
+      "answer": "Li Xin vs Chicha (Warrior, Tier S): Chicha is 1.5% pick / 50.2% WR. Li Xin has +2.4% WR vs Chicha in Camp data. Choose Li Xin when you need Clash Lane identity; choose Chicha for Clash Lane comfort."
+    },
+    {
+      "id": "faq-ban",
+      "question": "Should I ban Li Xin?",
+      "answer": "Yes in tryhard queues — 1.3% ban rate. Deny if enemy first-picks Warrior."
     }
   ],
   "metaAnalysis": [
-    "Li Xin win rate 52.58% (Camp HOK, 2026-06-04).",
-    "Pick rate 1.86% in global ranked.",
-    "Ban rate 1.33%.",
-    "Counters: Da Qiao, Liang. Countered by: Cai Yan, Da Qiao, Guiguzi."
+    "Li Xin — 52.6% WR, 1.9% pick, 1.3% ban (Camp HOK 2026-06-05).",
+    "Tier S+ Warrior · Clash Lane · difficulty Medium.",
+    "Li Xin is a Tier S+ staple in high-elo (Diamond+) on the international server — worth mastering for climb. Ban rate 1.3% — expect Li Xin to be removed in tryhard lobbies; have a backup in the same role. Camp data shows above-average win rate — prioritize when not hard-countered in draft.",
+    "Matchups: strong into Da Qiao, Liang; weak into Cai Yan, Da Qiao, Guiguzi.",
+    "Li Xin vs Chicha (Warrior, Tier S): Chicha is 1.5% pick / 50.2% WR. Li Xin has +2.4% WR vs Chicha in Camp data. Choose Li Xin when you need Clash Lane identity; choose Chicha for Clash Lane comfort.",
+    "Li Xin vs Augran (Warrior, Tier S+): Augran is 1.2% pick / 46.9% WR. Li Xin has +5.6% WR vs Augran in Camp data. Choose Li Xin when you need Clash Lane identity; choose Augran for Jungling comfort.",
+    "Draft tip: first-pick or ban priority in ranked."
   ],
   "builds": [
     {
@@ -173,24 +215,24 @@
         },
         {
           "slot": 4,
-          "itemId": null,
-          "name": "siege breaker",
-          "icon": null,
-          "description": null
-        },
-        {
-          "slot": 5,
           "itemId": "1338",
           "name": "Cuirass of Savagery",
           "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1338.jpg",
           "description": "Offense & defense"
         },
         {
-          "slot": 6,
+          "slot": 5,
           "itemId": "1127",
           "name": "Destiny",
           "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1127.jpg",
           "description": "Negates fatal damage"
+        },
+        {
+          "slot": 6,
+          "itemId": null,
+          "name": "Data unavailable",
+          "icon": null,
+          "description": null
         }
       ]
     },
@@ -409,10 +451,10 @@
         },
         {
           "slot": 2,
-          "itemId": "1129",
-          "name": "Swiftstrike Lance",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1129.jpg",
-          "description": "ASPD +15%, PATK +35"
+          "itemId": "1159",
+          "name": "Tempest",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1159.jpg",
+          "description": "Stacks Attack Speed & Movement Speed"
         },
         {
           "slot": 3,
@@ -544,5 +586,30 @@
         }
       ]
     }
-  ]
+  ],
+  "guide": {
+    "overview": "Li Xin is a Medium Warrior (Clash Lane) on Honor of Kings Global. Camp HOK ranks them Tier S+ with 52.6% win rate and 1.9% pick rate as of 2026-06-05.",
+    "bestBuild": "Rush Boots of Resistance, Axe of Torment, Spikemail, then complete siege breaker, Cuirass of Savagery, Destiny. Use preset tabs for jungle, clash, or CN-style paths when draft requires it.",
+    "arcanaSpells": "Run Conflict for stats that match Li Xin's Warrior kit. Take Flash — swap to Purify against heavy CC or Smite when jungling.",
+    "combo": "Standard trade: Lightning Dash → Chaos Wave → Light Awakening → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "laning": "Trade on your power spike levels (2/4). Call jungler for dive only when enemy flash is down.",
+    "teamfight": "Flank or dive backline after tanks commit. Do not start fights without vision on enemy jungler.",
+    "highRank": "Li Xin is a Tier S+ staple in high-elo (Diamond+) on the international server — worth mastering for climb. Ban rate 1.3% — expect Li Xin to be removed in tryhard lobbies; have a backup in the same role. Camp data shows above-average win rate — prioritize when not hard-countered in draft.",
+    "comparisons": [
+      "Li Xin vs Chicha (Warrior, Tier S): Chicha is 1.5% pick / 50.2% WR. Li Xin has +2.4% WR vs Chicha in Camp data. Choose Li Xin when you need Clash Lane identity; choose Chicha for Clash Lane comfort.",
+      "Li Xin vs Augran (Warrior, Tier S+): Augran is 1.2% pick / 46.9% WR. Li Xin has +5.6% WR vs Augran in Camp data. Choose Li Xin when you need Clash Lane identity; choose Augran for Jungling comfort."
+    ],
+    "matchups": {
+      "strongInto": [
+        "Da Qiao",
+        "Liang"
+      ],
+      "weakInto": [
+        "Cai Yan",
+        "Da Qiao",
+        "Guiguzi"
+      ],
+      "summary": "Li Xin excels into Da Qiao, Liang. Avoid blind picking into Cai Yan, Da Qiao, Guiguzi without team peel."
+    }
+  }
 }

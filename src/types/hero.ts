@@ -56,6 +56,24 @@ export interface HeroFaq {
   answer: string;
 }
 
+export interface HeroGuideMatchups {
+  strongInto: string[];
+  weakInto: string[];
+  summary: string;
+}
+
+export interface HeroGuide {
+  overview: string;
+  bestBuild: string;
+  arcanaSpells: string;
+  combo: string;
+  laning: string;
+  teamfight: string;
+  highRank: string;
+  comparisons: string[];
+  matchups: HeroGuideMatchups;
+}
+
 export interface Hero {
   id: string;
   slug: string;
@@ -85,6 +103,7 @@ export interface Hero {
   patchHistory: PatchEntry[];
   faqs: HeroFaq[];
   metaAnalysis: string[];
+  guide?: HeroGuide;
 }
 
 export type KeywordsMap = Record<string, string[]>;

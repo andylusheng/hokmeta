@@ -21,6 +21,7 @@ function BuildItemGrid({ items }: { items: HeroBuildItem[] }) {
               height={40}
               className="h-10 w-10 shrink-0 rounded object-cover"
               loading="lazy"
+              decoding="async"
               onError={(e) => {
                 const el = e.currentTarget;
                 if (!item.itemId) return;

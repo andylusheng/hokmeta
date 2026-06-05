@@ -33,12 +33,23 @@ export function buildMetadata(input: SeoInput): Metadata {
   const og = input.ogImage ?? site.ogImage;
   const fullOg = og.startsWith('http') ? og : `${getSiteBase()}${og}`;
 
+  const google = site.googleSiteVerification?.trim();
+  const bing = site.bingSiteVerification?.trim();
+  const verification =
+    google || bing
+      ? {
+          ...(google ? { google } : {}),
+          ...(bing ? { other: { 'msvalidate.01': bing } } : {}),
+        }
+      : undefined;
+
   return {
     metadataBase: new URL(getSiteBase()),
     title: input.title,
     description: input.description,
     keywords: input.keywords,
     alternates: { canonical: url },
+    ...(verification ? { verification } : {}),
     robots: input.noindex
       ? { index: false, follow: false }
       : { index: true, follow: true },

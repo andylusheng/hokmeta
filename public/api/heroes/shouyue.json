@@ -63,31 +63,31 @@
     },
     {
       "slot": 3,
-      "itemId": null,
-      "name": "siege breaker",
-      "icon": null,
-      "description": null
-    },
-    {
-      "slot": 4,
       "itemId": "11311",
       "name": "Pure Sky",
       "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/11311.jpg",
       "description": "Temp. damage reduction"
     },
     {
-      "slot": 5,
+      "slot": 4,
       "itemId": "1132",
       "name": "Bloodweeper",
       "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1132.jpg",
       "description": "Physical Lifesteal"
     },
     {
-      "slot": 6,
+      "slot": 5,
       "itemId": "1134",
       "name": "Master Sword",
       "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1134.jpg",
       "description": "Enhances BA"
+    },
+    {
+      "slot": 6,
+      "itemId": null,
+      "name": "Data unavailable",
+      "icon": null,
+      "description": null
     }
   ],
   "arcana": [
@@ -103,45 +103,88 @@
     "Ying"
   ],
   "counteredBy": [
-    "Liu Bang"
+    "Liu Bang",
+    "Chano"
   ],
   "tips": [
-    "Shouyue (Assassin): Tier A on international ranked — 51.5% WR.",
-    "Primary lane: Farm Lane.",
-    "Build core: Sparkforged Dagger, Boots of Dexterity, Doomsday."
+    "Shouyue is a Medium Assassin (Farm Lane) on Honor of Kings Global. Camp HOK ranks them Tier A with 51.5% win rate and 0.8% pick rate as of 2026-06-05.",
+    "Best build path: Starbreaker → Boots of Dexterity → Pure Sky → Bloodweeper → Master Sword.",
+    "Run Cataclysm for stats that match Shouyue's Assassin kit. Take Haste & Flash — swap to Purify against heavy CC or Smite when jungling.",
+    "Standard trade: The Tranquil Eye → Wild Wind → Getaway → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "Laning: Last-hit safely until first core item. Ping jungler for river vision; never face-check brush without minion cover.",
+    "Teamfight: Wait for CC from your team, then dive carry with full combo. Exit with reset or flash if focus fired.",
+    "Shouyue excels into Diaochan, Nakoruru, Ying. Avoid blind picking into Liu Bang, Chano without team peel.",
+    "Shouyue is a viable Tier A pick in high rank with 51.5% win rate — strong in one-trick hands or as a counter-pick."
   ],
   "patchHistory": [
     {
       "version": "Live meta",
-      "change": "Camp HOK — WR 51.5%, pick 0.79%, ban 0.09%, popularity tier A."
+      "change": "Camp HOK — WR 51.5%, pick 0.8%, ban 0.1%, tier A."
     },
     {
       "version": "Matchups",
-      "change": "Counters Diaochan, Nakoruru, Ying · Weak into Liu Bang."
+      "change": "Strong into Diaochan, Nakoruru, Ying · Weak into Liu Bang, Chano."
+    },
+    {
+      "version": "High rank",
+      "change": "Shouyue is a viable Tier A pick in high rank with 51.5% win rate — strong in one-trick hands or as a counter-pick."
     }
   ],
   "faqs": [
     {
       "id": "faq-good-season",
-      "question": "Is Shouyue good in current season?",
-      "answer": "Shouyue is Tier A Assassin with 51.5% win rate, 0.79% pick rate, and 0.09% ban rate on the international server (Camp HOK)."
+      "question": "Is Shouyue good in the current meta?",
+      "answer": "Shouyue is Tier A Assassin with 51.5% win rate, 0.8% pick rate, and 0.1% ban rate on Honor of Kings Global (Camp HOK, 2026-06-05). Solid situational pick."
     },
     {
       "id": "faq-best-build",
       "question": "What is the best Shouyue build?",
-      "answer": "Recommended item path: Sparkforged Dagger, Boots of Dexterity, Doomsday, Shadow Ripper, Overlord's Might, Eternity Blade. Spells and Arcana are listed on this page."
+      "answer": "Core item path: Starbreaker, Boots of Dexterity, siege breaker, Pure Sky, Bloodweeper, Master Sword. Run Cataclysm arcana with Haste & Flash. Switch to alternate build presets on this page for jungle, clash, or late-game setups."
     },
     {
       "id": "faq-counter",
       "question": "How to counter Shouyue?",
-      "answer": "Strong picks into Shouyue: Liu Bang. Shouyue is strong into Diaochan, Nakoruru, Ying."
+      "answer": "Pick Liu Bang, Chano into Shouyue. Deny Farm Lane resources early and force fights before Shouyue completes core items. Shouyue struggles when the enemy can peel and group them."
+    },
+    {
+      "id": "faq-strong-into",
+      "question": "Who does Shouyue counter?",
+      "answer": "Shouyue is strong into Diaochan, Nakoruru, Ying according to HoKStats matchup data and role matchups on the global server. Draft Shouyue when the enemy relies on these heroes in the Farm Lane lane."
+    },
+    {
+      "id": "faq-high-rank",
+      "question": "Is Shouyue good in high rank / Diamond+?",
+      "answer": "Shouyue is a viable Tier A pick in high rank with 51.5% win rate — strong in one-trick hands or as a counter-pick."
+    },
+    {
+      "id": "faq-lane",
+      "question": "What lane should Shouyue play?",
+      "answer": "Shouyue is tagged Farm Lane in Camp export (Marksman, Assassin). Last-hit safely until first core item. Ping jungler for river vision; never face-check brush without minion cover."
+    },
+    {
+      "id": "faq-arcana",
+      "question": "Best arcana and spells for Shouyue?",
+      "answer": "Recommended: Cataclysm arcana. Battle spell: Haste & Flash. Adjust Purify/Execute based on enemy dive and jungle need."
+    },
+    {
+      "id": "faq-vs-peer",
+      "question": "Shouyue or Wukong — which is better?",
+      "answer": "Shouyue vs Wukong (Assassin, Tier S): Wukong is 1.3% pick / 49.7% WR. Shouyue has +1.8% WR vs Wukong in Camp data. Choose Shouyue when you need Farm Lane identity; choose Wukong for Jungling comfort."
+    },
+    {
+      "id": "faq-ban",
+      "question": "Should I ban Shouyue?",
+      "answer": "Low priority ban (0.1%). Focus bans on higher-tier Assassin picks unless targeting a one-trick."
     }
   ],
   "metaAnalysis": [
-    "Shouyue win rate 51.5% (Camp HOK, 2026-06-04).",
-    "Pick rate 0.79% in global ranked.",
-    "Ban rate 0.09%.",
-    "Counters: Diaochan, Nakoruru, Ying. Countered by: Liu Bang."
+    "Shouyue — 51.5% WR, 0.8% pick, 0.1% ban (Camp HOK 2026-06-05).",
+    "Tier A Assassin · Farm Lane · difficulty Medium.",
+    "Shouyue is a viable Tier A pick in high rank with 51.5% win rate — strong in one-trick hands or as a counter-pick.",
+    "Matchups: strong into Diaochan, Nakoruru, Ying; weak into Liu Bang, Chano.",
+    "Shouyue vs Wukong (Assassin, Tier S): Wukong is 1.3% pick / 49.7% WR. Shouyue has +1.8% WR vs Wukong in Camp data. Choose Shouyue when you need Farm Lane identity; choose Wukong for Jungling comfort.",
+    "Shouyue vs Musashi (Assassin, Tier A): Musashi is 1.1% pick / 50.7% WR. Shouyue has +0.8% WR vs Musashi in Camp data. Choose Shouyue when you need Farm Lane identity; choose Musashi for Jungling comfort.",
+    "Draft tip: counter-pick or comfort pick when lane matchup is favorable."
   ],
   "builds": [
     {
@@ -166,31 +209,31 @@
         },
         {
           "slot": 3,
-          "itemId": null,
-          "name": "siege breaker",
-          "icon": null,
-          "description": null
-        },
-        {
-          "slot": 4,
           "itemId": "11311",
           "name": "Pure Sky",
           "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/11311.jpg",
           "description": "Temp. damage reduction"
         },
         {
-          "slot": 5,
+          "slot": 4,
           "itemId": "1132",
           "name": "Bloodweeper",
           "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1132.jpg",
           "description": "Physical Lifesteal"
         },
         {
-          "slot": 6,
+          "slot": 5,
           "itemId": "1134",
           "name": "Master Sword",
           "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1134.jpg",
           "description": "Enhances BA"
+        },
+        {
+          "slot": 6,
+          "itemId": null,
+          "name": "Data unavailable",
+          "icon": null,
+          "description": null
         }
       ]
     },
@@ -594,5 +637,30 @@
         }
       ]
     }
-  ]
+  ],
+  "guide": {
+    "overview": "Shouyue is a Medium Assassin (Farm Lane) on Honor of Kings Global. Camp HOK ranks them Tier A with 51.5% win rate and 0.8% pick rate as of 2026-06-05.",
+    "bestBuild": "Rush Starbreaker, Boots of Dexterity, siege breaker, then complete Pure Sky, Bloodweeper, Master Sword. Use preset tabs for jungle, clash, or CN-style paths when draft requires it.",
+    "arcanaSpells": "Run Cataclysm for stats that match Shouyue's Assassin kit. Take Haste & Flash — swap to Purify against heavy CC or Smite when jungling.",
+    "combo": "Standard trade: The Tranquil Eye → Wild Wind → Getaway → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "laning": "Last-hit safely until first core item. Ping jungler for river vision; never face-check brush without minion cover.",
+    "teamfight": "Wait for CC from your team, then dive carry with full combo. Exit with reset or flash if focus fired.",
+    "highRank": "Shouyue is a viable Tier A pick in high rank with 51.5% win rate — strong in one-trick hands or as a counter-pick.",
+    "comparisons": [
+      "Shouyue vs Wukong (Assassin, Tier S): Wukong is 1.3% pick / 49.7% WR. Shouyue has +1.8% WR vs Wukong in Camp data. Choose Shouyue when you need Farm Lane identity; choose Wukong for Jungling comfort.",
+      "Shouyue vs Musashi (Assassin, Tier A): Musashi is 1.1% pick / 50.7% WR. Shouyue has +0.8% WR vs Musashi in Camp data. Choose Shouyue when you need Farm Lane identity; choose Musashi for Jungling comfort."
+    ],
+    "matchups": {
+      "strongInto": [
+        "Diaochan",
+        "Nakoruru",
+        "Ying"
+      ],
+      "weakInto": [
+        "Liu Bang",
+        "Chano"
+      ],
+      "summary": "Shouyue excels into Diaochan, Nakoruru, Ying. Avoid blind picking into Liu Bang, Chano without team peel."
+    }
+  }
 }

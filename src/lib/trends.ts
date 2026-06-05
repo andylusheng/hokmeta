@@ -1,6 +1,8 @@
-import { heroes, formatRate } from '@/lib/data';
+import { heroes, formatRate, sortByMetaScore } from '@/lib/data';
 import type { Hero, HeroRole } from '@/types/hero';
 import { ROLES } from '@/types/hero';
+
+const MIN_PICK = 0.2;
 
 function byWinRate(limit: number, filter?: (h: Hero) => boolean) {
   return [...heroes]
@@ -11,7 +13,12 @@ function byWinRate(limit: number, filter?: (h: Hero) => boolean) {
 
 function byPickRate(limit: number, filter?: (h: Hero) => boolean) {
   return [...heroes]
-    .filter((h) => h.pickRate !== null && (!filter || filter(h)))
+    .filter(
+      (h) =>
+        h.pickRate !== null &&
+        (h.pickRate ?? 0) >= MIN_PICK &&
+        (!filter || filter(h))
+    )
     .sort((a, b) => (b.pickRate ?? 0) - (a.pickRate ?? 0))
     .slice(0, limit);
 }
@@ -24,7 +31,7 @@ function byBanRate(limit: number) {
 }
 
 function topInRole(role: HeroRole): Hero | undefined {
-  return byWinRate(1, (h) => h.role === role)[0];
+  return sortByMetaScore(heroes.filter((h) => h.role === role))[0];
 }
 
 /** Current patch standouts — S+/S tier sorted by win rate. */
@@ -32,28 +39,24 @@ export function getPatchStrongest(limit = 10) {
   return byWinRate(limit, (h) => h.tier === 'S+' || h.tier === 'S');
 }
 
-/** Solo queue: high WR heroes with meaningful pick rate (not one-trick outliers). */
+/** Solo queue: meta score with minimum 51% WR. */
 export function getSoloQueueKings(limit = 10) {
-  return [...heroes]
-    .filter((h) => h.winRate !== null && (h.pickRate ?? 0) >= 0.15)
-    .sort((a, b) => {
-      const scoreA = (a.winRate ?? 0) * 0.65 + (a.pickRate ?? 0) * 18;
-      const scoreB = (b.winRate ?? 0) * 0.65 + (b.pickRate ?? 0) * 18;
-      return scoreB - scoreA;
-    })
-    .slice(0, limit);
+  return sortByMetaScore(
+    heroes.filter((h) => h.winRate !== null && (h.winRate ?? 0) >= 51)
+  ).slice(0, limit);
 }
 
 /**
- * Pro-scene proxy — no live KPL feed; ranks global ban + pick pressure
- * (heroes that dominate draft phase on Camp intl).
+ * Pro-scene proxy — ban + pick pressure on Camp international ranked.
  */
 export function getProScenePressure(limit = 10) {
   return [...heroes]
     .filter((h) => h.banRate !== null || h.pickRate !== null)
     .sort((a, b) => {
-      const scoreA = (a.banRate ?? 0) * 2.2 + (a.pickRate ?? 0) * 1.1 + (a.winRate ?? 0) * 0.15;
-      const scoreB = (b.banRate ?? 0) * 2.2 + (b.pickRate ?? 0) * 1.1 + (b.winRate ?? 0) * 0.15;
+      const scoreA =
+        (a.banRate ?? 0) * 2.2 + (a.pickRate ?? 0) * 1.1 + (a.winRate ?? 0) * 0.15;
+      const scoreB =
+        (b.banRate ?? 0) * 2.2 + (b.pickRate ?? 0) * 1.1 + (b.winRate ?? 0) * 0.15;
       return scoreB - scoreA;
     })
     .slice(0, limit);
@@ -66,55 +69,65 @@ export interface TrendDuo {
   note: string;
 }
 
-/** Synergy pairs from top picks per lane/role (Camp data proxy, not duo WR). */
-export function getBestDuos(limit = 8): TrendDuo[] {
-  const roam = byPickRate(3, (h) => h.lane === 'Roaming' || h.role === 'Support');
-  const farm = byPickRate(3, (h) => h.role === 'Marksman');
-  const jungle = byPickRate(3, (h) => h.lane === 'Jungling');
-  const mid = byPickRate(2, (h) => h.lane === 'Mid Lane' || h.role === 'Mage');
-  const clash = byPickRate(2, (h) => h.lane === 'Clash Lane');
+/**
+ * Lane-based pairs from top picks in the same strategic slot.
+ * Not official duo win rates — only pairs that actually share a lane role.
+ */
+export function getBestDuos(limit = 6): TrendDuo[] {
+  const roam = byPickRate(1, (h) => h.lane === 'Roaming')[0];
+  const botAdc = byPickRate(1, (h) => h.lane === 'Farm Lane' && h.role === 'Marksman')[0];
+  const jungler = byPickRate(1, (h) => h.lane === 'Jungling')[0];
+  const mid = byPickRate(1, (h) => h.lane === 'Mid Lane')[0];
+  const clash = byPickRate(1, (h) => h.lane === 'Clash Lane')[0];
+  const peelTank = sortByMetaScore(
+    heroes.filter((h) => h.role === 'Tank' || h.lane === 'Roaming')
+  )[0];
+  const diveAssassin = sortByMetaScore(
+    heroes.filter((h) => h.role === 'Assassin' && h.lane === 'Jungling')
+  )[0];
 
   const duos: TrendDuo[] = [];
-  if (roam[0] && farm[0]) {
+
+  if (roam && botAdc) {
     duos.push({
       id: 'bot-lane',
       label: 'Bot lane (roam + marksman)',
-      heroes: [roam[0], farm[0]],
-      note: `Peel + farm sync · ${formatRate(roam[0].pickRate)} / ${formatRate(farm[0].pickRate)} pick`,
+      heroes: [roam, botAdc],
+      note: `${roam.name} peel for ${botAdc.name} · ${formatRate(roam.pickRate)} / ${formatRate(botAdc.pickRate)} pick`,
     });
   }
-  if (roam[1] && farm[1]) {
-    duos.push({
-      id: 'bot-lane-2',
-      label: 'Bot lane alt',
-      heroes: [roam[1], farm[1]],
-      note: 'Second-highest pick bot pairing on global',
-    });
-  }
-  if (jungle[0] && mid[0]) {
+  if (jungler && mid) {
     duos.push({
       id: 'mid-jungle',
       label: 'Mid + jungle tempo',
-      heroes: [jungle[0], mid[0]],
-      note: 'Gank setup / objective control',
+      heroes: [jungler, mid],
+      note: `Gank chain / objective setup · ${formatRate(jungler.pickRate)} jungle pick`,
     });
   }
-  if (jungle[1] && clash[0]) {
+  if (jungler && clash) {
     duos.push({
-      id: 'side-pressure',
-      label: 'Jungle + clash pressure',
-      heroes: [jungle[1], clash[0]],
-      note: 'Dive and skirmish side lanes',
+      id: 'side-gank',
+      label: 'Jungle + clash side pressure',
+      heroes: [jungler, clash],
+      note: 'Dive and skirmish top/side after jungle tempo',
     });
   }
-  const tank = topInRole('Tank');
-  const assassin = byPickRate(1, (h) => h.role === 'Assassin')[0];
-  if (tank && assassin) {
+  if (peelTank && diveAssassin) {
     duos.push({
       id: 'engage-pick',
-      label: 'Engage + pick',
-      heroes: [tank, assassin],
-      note: 'Front-to-back pick comp core',
+      label: 'Engage + assassin pick',
+      heroes: [peelTank, diveAssassin],
+      note: `Front-to-back: ${peelTank.name} opens, ${diveAssassin.name} follows`,
+    });
+  }
+
+  const farmMage = byPickRate(1, (h) => h.lane === 'Farm Lane' && h.role === 'Mage')[0];
+  if (roam && farmMage) {
+    duos.push({
+      id: 'farm-mage',
+      label: 'Roam + farm mage',
+      heroes: [roam, farmMage],
+      note: 'Roaming support enables farm-lane mage poke',
     });
   }
 
@@ -128,7 +141,7 @@ export interface TrendComp {
   note: string;
 }
 
-/** Five-role draft templates from top Camp metrics (not pro match replay data). */
+/** Five-role draft templates from top Camp metrics. */
 export function getBestComps(limit = 4): TrendComp[] {
   const picks = (role: HeroRole) => topInRole(role);
   const jungler =
@@ -142,7 +155,8 @@ export function getBestComps(limit = 4): TrendComp[] {
     roam,
     byPickRate(1, (h) => h.lane === 'Clash Lane')[0] ?? picks('Warrior'),
     picks('Mage'),
-    byPickRate(1, (h) => h.role === 'Marksman')[0] ?? picks('Marksman'),
+    byPickRate(1, (h) => h.lane === 'Farm Lane' && h.role === 'Marksman')[0] ??
+      picks('Marksman'),
   ].filter(Boolean) as Hero[];
 
   const piggyback = [
@@ -158,9 +172,9 @@ export function getBestComps(limit = 4): TrendComp[] {
   if (balanced.length >= 5) {
     comps.push({
       id: 'balanced',
-      label: 'Balanced ranked (1 per role, highest WR)',
+      label: 'Balanced ranked (1 per role)',
       heroes: balanced.slice(0, 5),
-      note: 'Safe 5-stack template from role WR leaders',
+      note: 'Meta score leaders per role from Camp HOK',
     });
   }
   if (fastPush.length >= 5) {
@@ -168,15 +182,15 @@ export function getBestComps(limit = 4): TrendComp[] {
       id: 'fast-push',
       label: 'Fast push / early tempo',
       heroes: fastPush.slice(0, 5),
-      note: 'Jungle + roam picks with clash and bot pressure',
+      note: 'Jungle + roam with clash and bot pressure',
     });
   }
   if (piggyback.length >= 5) {
     comps.push({
       id: 'piggyback',
-      label: 'Piggyback (feed carry)',
+      label: 'Protect the carry',
       heroes: piggyback.slice(0, 5),
-      note: 'Farm marksman with peel — CN 养猪 style',
+      note: 'Farm marksman with peel and jungle space',
     });
   }
 
@@ -186,7 +200,7 @@ export function getBestComps(limit = 4): TrendComp[] {
       id: 'ban-value',
       label: 'Ban-worthy core (draft pressure)',
       heroes: banHeavy,
-      note: 'Heroes global players ban most — plan around them',
+      note: 'Most banned on global — plan drafts around them',
     });
   }
 

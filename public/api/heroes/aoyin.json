@@ -49,45 +49,45 @@
   "build": [
     {
       "slot": 1,
-      "itemId": "1411",
-      "name": "Lightfoot Shoes",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1411.jpg",
-      "description": "Movement Speed"
-    },
-    {
-      "slot": 2,
       "itemId": "1133",
       "name": "Eternity Blade",
       "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1133.jpg",
       "description": "High crit damage"
     },
     {
-      "slot": 3,
+      "slot": 2,
       "itemId": "1425",
       "name": "Boots of Dexterity",
       "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1425.jpg",
       "description": "Boosts ASPD"
     },
     {
-      "slot": 4,
+      "slot": 3,
       "itemId": "1136",
       "name": "Shadow Ripper",
       "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1136.jpg",
       "description": "Crits boost ASPD"
     },
     {
-      "slot": 5,
+      "slot": 4,
       "itemId": "1155",
       "name": "Daybreaker's Virtue",
       "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1155.jpg",
       "description": "Great for marksmen"
     },
     {
-      "slot": 6,
+      "slot": 5,
       "itemId": "1126",
       "name": "Doomsday",
       "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1126.jpg",
       "description": "Boosts BA damage"
+    },
+    {
+      "slot": 6,
+      "itemId": "1138",
+      "name": "Overlord's Might",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1138.jpg",
+      "description": "High-damage attack"
     }
   ],
   "arcana": [
@@ -98,52 +98,94 @@
     "Execute"
   ],
   "counters": [
-    "Data unavailable",
-    "Data unavailable",
-    "Data unavailable"
+    "Liu Bei",
+    "Athena",
+    "Zilong"
   ],
   "counteredBy": [
-    "Data unavailable",
-    "Data unavailable",
-    "Data unavailable"
+    "Kaizer",
+    "Dun",
+    "Arthur"
   ],
   "tips": [
-    "Ao'yin (Marksman): Tier S+ on international ranked — 48.42% WR.",
-    "Primary lane: Farm Lane.",
-    "Build core: Lightfoot Shoes, Eternity Blade, Boots of Dexterity."
+    "Ao'yin is a Medium Marksman (Farm Lane) on Honor of Kings Global. Camp HOK ranks them Tier S+ with 48.4% win rate and 1.6% pick rate as of 2026-06-05.",
+    "Best build path: Eternity Blade → Boots of Dexterity → Shadow Ripper → Daybreaker's Virtue → Doomsday → Overlord's Might.",
+    "Run Penetration for stats that match Ao'yin's Marksman kit. Take Flash & Execute — swap to Purify against heavy CC or Smite when jungling.",
+    "Standard trade: Flaming Palm → Downpour → Riding the Wind → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "Laning: Last-hit safely until first core item. Ping jungler for river vision; never face-check brush without minion cover.",
+    "Teamfight: Position behind frontline; attack closest safe target. Join fight only after enemy dive cooldowns are used.",
+    "Ao'yin excels into Liu Bei, Athena, Zilong. Avoid blind picking into Kaizer, Dun, Arthur without team peel.",
+    "Ao'yin is a Tier S+ staple in high-elo (Diamond+) on the international server — worth mastering for climb. Ban rate 5.1% — expect Ao'yin to be removed in tryhard lobbies; have a backup in the same role. Below 49% global WR — high-rank players often avoid unless compensating for team comp."
   ],
   "patchHistory": [
     {
       "version": "Live meta",
-      "change": "Camp HOK — WR 48.42%, pick 1.57%, ban 5.06%, popularity tier S+."
+      "change": "Camp HOK — WR 48.4%, pick 1.6%, ban 5.1%, tier S+."
     },
     {
       "version": "Matchups",
-      "change": "Counters Data unavailable, Data unavailable, Data unavailable · Weak into Data unavailable, Data unavailable, Data unavailable."
+      "change": "Strong into Liu Bei, Athena, Zilong · Weak into Kaizer, Dun, Arthur."
+    },
+    {
+      "version": "High rank",
+      "change": "Ao'yin is a Tier S+ staple in high-elo (Diamond+) on the international server — worth mastering for climb. Ban rate 5.1% — expect Ao'yin to be removed in tryhard lobbies; have a backup in the same role. Below 49% global WR — high-rank players often avoid unless compensating for team comp."
     }
   ],
   "faqs": [
     {
       "id": "faq-good-season",
-      "question": "Is Ao'yin good in current season?",
-      "answer": "Ao'yin is Tier S+ Marksman with 48.42% win rate, 1.57% pick rate, and 5.06% ban rate on the international server (Camp HOK)."
+      "question": "Is Ao'yin good in the current meta?",
+      "answer": "Ao'yin is Tier S+ Marksman with 48.4% win rate, 1.6% pick rate, and 5.1% ban rate on Honor of Kings Global (Camp HOK, 2026-06-05). Strong meta pick for ranked."
     },
     {
       "id": "faq-best-build",
       "question": "What is the best Ao'yin build?",
-      "answer": "Recommended item path: Lightfoot Shoes, Eternity Blade, Boots of Dexterity, Shadow Ripper, Daybreaker's Virtue, Doomsday. Spells and Arcana are listed on this page."
+      "answer": "Core item path: Lightfoot Shoes, Eternity Blade, Boots of Dexterity, Shadow Ripper, Daybreaker's Virtue, Doomsday. Run Penetration arcana with Flash & Execute. Switch to alternate build presets on this page for jungle, clash, or late-game setups."
     },
     {
       "id": "faq-counter",
       "question": "How to counter Ao'yin?",
-      "answer": "Strong picks into Ao'yin: Data unavailable, Data unavailable, Data unavailable. Ao'yin is strong into Data unavailable, Data unavailable, Data unavailable."
+      "answer": "Pick Kaizer, Dun, Arthur into Ao'yin. Deny Farm Lane resources early and force fights before Ao'yin completes core items. Ao'yin struggles when the enemy can dive and burst them."
+    },
+    {
+      "id": "faq-strong-into",
+      "question": "Who does Ao'yin counter?",
+      "answer": "Ao'yin is strong into Liu Bei, Athena, Zilong according to HoKStats matchup data and role matchups on the global server. Draft Ao'yin when the enemy relies on these heroes in the Farm Lane lane."
+    },
+    {
+      "id": "faq-high-rank",
+      "question": "Is Ao'yin good in high rank / Diamond+?",
+      "answer": "Ao'yin is a Tier S+ staple in high-elo (Diamond+) on the international server — worth mastering for climb. Ban rate 5.1% — expect Ao'yin to be removed in tryhard lobbies; have a backup in the same role. Below 49% global WR — high-rank players often avoid unless compensating for team comp."
+    },
+    {
+      "id": "faq-lane",
+      "question": "What lane should Ao'yin play?",
+      "answer": "Ao'yin is tagged Farm Lane in Camp export (Marksman). Last-hit safely until first core item. Ping jungler for river vision; never face-check brush without minion cover."
+    },
+    {
+      "id": "faq-arcana",
+      "question": "Best arcana and spells for Ao'yin?",
+      "answer": "Recommended: Penetration arcana. Battle spell: Flash & Execute. Adjust Purify/Execute based on enemy dive and jungle need."
+    },
+    {
+      "id": "faq-vs-peer",
+      "question": "Ao'yin or Hou Yi — which is better?",
+      "answer": "Ao'yin vs Hou Yi (Marksman, Tier S+): Hou Yi is 2.9% pick / 49.3% WR. Hou Yi wins 0.9% more often globally. Choose Ao'yin when you need Farm Lane identity; choose Hou Yi for Farm Lane comfort."
+    },
+    {
+      "id": "faq-ban",
+      "question": "Should I ban Ao'yin?",
+      "answer": "Yes in tryhard queues — 5.1% ban rate. Deny if enemy first-picks Marksman."
     }
   ],
   "metaAnalysis": [
-    "Ao'yin win rate 48.42% (Camp HOK, 2026-06-04).",
-    "Pick rate 1.57% in global ranked.",
-    "Ban rate 5.06%.",
-    "Counters: Data unavailable, Data unavailable, Data unavailable. Countered by: Data unavailable, Data unavailable, Data unavailable."
+    "Ao'yin — 48.4% WR, 1.6% pick, 5.1% ban (Camp HOK 2026-06-05).",
+    "Tier S+ Marksman · Farm Lane · difficulty Medium.",
+    "Ao'yin is a Tier S+ staple in high-elo (Diamond+) on the international server — worth mastering for climb. Ban rate 5.1% — expect Ao'yin to be removed in tryhard lobbies; have a backup in the same role. Below 49% global WR — high-rank players often avoid unless compensating for team comp.",
+    "Matchups: strong into Liu Bei, Athena, Zilong; weak into Kaizer, Dun, Arthur.",
+    "Ao'yin vs Hou Yi (Marksman, Tier S+): Hou Yi is 2.9% pick / 49.3% WR. Hou Yi wins 0.9% more often globally. Choose Ao'yin when you need Farm Lane identity; choose Hou Yi for Farm Lane comfort.",
+    "Ao'yin vs Marco Polo (Marksman, Tier S+): Marco Polo is 2.1% pick / 50.1% WR. Marco Polo wins 1.6% more often globally. Choose Ao'yin when you need Farm Lane identity; choose Marco Polo for Farm Lane comfort.",
+    "Draft tip: first-pick or ban priority in ranked."
   ],
   "builds": [
     {
@@ -154,45 +196,45 @@
       "items": [
         {
           "slot": 1,
-          "itemId": "1411",
-          "name": "Lightfoot Shoes",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1411.jpg",
-          "description": "Movement Speed"
-        },
-        {
-          "slot": 2,
           "itemId": "1133",
           "name": "Eternity Blade",
           "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1133.jpg",
           "description": "High crit damage"
         },
         {
-          "slot": 3,
+          "slot": 2,
           "itemId": "1425",
           "name": "Boots of Dexterity",
           "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1425.jpg",
           "description": "Boosts ASPD"
         },
         {
-          "slot": 4,
+          "slot": 3,
           "itemId": "1136",
           "name": "Shadow Ripper",
           "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1136.jpg",
           "description": "Crits boost ASPD"
         },
         {
-          "slot": 5,
+          "slot": 4,
           "itemId": "1155",
           "name": "Daybreaker's Virtue",
           "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1155.jpg",
           "description": "Great for marksmen"
         },
         {
-          "slot": 6,
+          "slot": 5,
           "itemId": "1126",
           "name": "Doomsday",
           "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1126.jpg",
           "description": "Boosts BA damage"
+        },
+        {
+          "slot": 6,
+          "itemId": "1138",
+          "name": "Overlord's Might",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1138.jpg",
+          "description": "High-damage attack"
         }
       ]
     },
@@ -461,38 +503,38 @@
         },
         {
           "slot": 2,
-          "itemId": "1411",
-          "name": "Lightfoot Shoes",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1411.jpg",
-          "description": "Movement Speed"
-        },
-        {
-          "slot": 3,
           "itemId": "1111",
           "name": "Iron Sword",
           "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1111.jpg",
           "description": "PATK +20"
         },
         {
-          "slot": 4,
+          "slot": 3,
           "itemId": "1133",
           "name": "Eternity Blade",
           "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1133.jpg",
           "description": "High crit damage"
         },
         {
-          "slot": 5,
+          "slot": 4,
           "itemId": "1425",
           "name": "Boots of Dexterity",
           "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1425.jpg",
           "description": "Boosts ASPD"
         },
         {
-          "slot": 6,
+          "slot": 5,
           "itemId": "1116",
           "name": "Thunderclap Brand",
           "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1116.jpg",
           "description": "PATK +35, Crit Rate +12%"
+        },
+        {
+          "slot": 6,
+          "itemId": "1136",
+          "name": "Shadow Ripper",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1136.jpg",
+          "description": "Crits boost ASPD"
         }
       ]
     },
@@ -554,47 +596,73 @@
       "items": [
         {
           "slot": 1,
-          "itemId": "1411",
-          "name": "Lightfoot Shoes",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1411.jpg",
-          "description": "Movement Speed"
-        },
-        {
-          "slot": 2,
           "itemId": "1133",
           "name": "Eternity Blade",
           "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1133.jpg",
           "description": "High crit damage"
         },
         {
-          "slot": 3,
+          "slot": 2,
           "itemId": "1423",
           "name": "Boots of Tranquility",
           "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1423.jpg",
           "description": "Reduces Skill CD"
         },
         {
-          "slot": 4,
+          "slot": 3,
           "itemId": "1155",
           "name": "Daybreaker's Virtue",
           "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1155.jpg",
           "description": "Great for marksmen"
         },
         {
-          "slot": 5,
+          "slot": 4,
           "itemId": "1136",
           "name": "Shadow Ripper",
           "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1136.jpg",
           "description": "Crits boost ASPD"
         },
         {
-          "slot": 6,
+          "slot": 5,
           "itemId": "1126",
           "name": "Doomsday",
           "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1126.jpg",
           "description": "Boosts BA damage"
+        },
+        {
+          "slot": 6,
+          "itemId": "1138",
+          "name": "Overlord's Might",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1138.jpg",
+          "description": "High-damage attack"
         }
       ]
     }
-  ]
+  ],
+  "guide": {
+    "overview": "Ao'yin is a Medium Marksman (Farm Lane) on Honor of Kings Global. Camp HOK ranks them Tier S+ with 48.4% win rate and 1.6% pick rate as of 2026-06-05.",
+    "bestBuild": "Rush Lightfoot Shoes, Eternity Blade, Boots of Dexterity, then complete Shadow Ripper, Daybreaker's Virtue, Doomsday. Use preset tabs for jungle, clash, or CN-style paths when draft requires it.",
+    "arcanaSpells": "Run Penetration for stats that match Ao'yin's Marksman kit. Take Flash & Execute — swap to Purify against heavy CC or Smite when jungling.",
+    "combo": "Standard trade: Flaming Palm → Downpour → Riding the Wind → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "laning": "Last-hit safely until first core item. Ping jungler for river vision; never face-check brush without minion cover.",
+    "teamfight": "Position behind frontline; attack closest safe target. Join fight only after enemy dive cooldowns are used.",
+    "highRank": "Ao'yin is a Tier S+ staple in high-elo (Diamond+) on the international server — worth mastering for climb. Ban rate 5.1% — expect Ao'yin to be removed in tryhard lobbies; have a backup in the same role. Below 49% global WR — high-rank players often avoid unless compensating for team comp.",
+    "comparisons": [
+      "Ao'yin vs Hou Yi (Marksman, Tier S+): Hou Yi is 2.9% pick / 49.3% WR. Hou Yi wins 0.9% more often globally. Choose Ao'yin when you need Farm Lane identity; choose Hou Yi for Farm Lane comfort.",
+      "Ao'yin vs Marco Polo (Marksman, Tier S+): Marco Polo is 2.1% pick / 50.1% WR. Marco Polo wins 1.6% more often globally. Choose Ao'yin when you need Farm Lane identity; choose Marco Polo for Farm Lane comfort."
+    ],
+    "matchups": {
+      "strongInto": [
+        "Liu Bei",
+        "Athena",
+        "Zilong"
+      ],
+      "weakInto": [
+        "Kaizer",
+        "Dun",
+        "Arthur"
+      ],
+      "summary": "Ao'yin excels into Liu Bei, Athena, Zilong. Avoid blind picking into Kaizer, Dun, Arthur without team peel."
+    }
+  }
 }

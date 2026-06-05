@@ -41,7 +41,8 @@ export function SkillBlock({ hero }: { hero: Hero }) {
               height={48}
               className="h-12 w-12 rounded object-cover"
               loading="lazy"
-            onError={(e) => {
+              decoding="async"
+              onError={(e) => {
               const el = e.currentTarget;
               const fallbacks = [
                 hero.avatar,

@@ -1,7 +1,8 @@
-import { canonicalUrl } from '@/lib/seo';
+import { canonicalUrl, absoluteUrl } from '@/lib/seo';
 import { site } from '@/lib/data';
-import type { Hero } from '@/types/hero';
 import { formatRate } from '@/lib/data';
+import type { Hero, HeroRole, HeroTier } from '@/types/hero';
+import { ROLES_AZ } from '@/types/hero';
 
 interface BreadcrumbItem {
   name: string;
@@ -109,20 +110,151 @@ export function heroArticleSchema(hero: Hero, path: string) {
       url: site.domain,
     },
     datePublished: site.datePublished,
-    dateModified: site.dateModified,
+    dateModified: hero.dataUpdated ?? site.dateModified,
     mainEntityOfPage: canonicalUrl(path),
+    image: hero.avatar,
   };
 }
 
-export function videoGameSchema(hero: Hero) {
+function property(name: string, value: string) {
+  return { '@type': 'PropertyValue', name, value };
+}
+
+/**
+ * VideoGame + character stats + build/arcana ItemLists for hero pages.
+ * Targets Google rich results for game guides.
+ */
+export function heroGameSchema(hero: Hero, path: string) {
+  const pageUrl = canonicalUrl(path);
+  const buildNames = hero.build
+    .map((b) => b.name)
+    .filter((n) => n && n !== 'Data unavailable');
+  const arcanaNames = (hero.arcana ?? []).filter(
+    (n) => n && !n.toLowerCase().includes('unavailable')
+  );
+  const spells = (hero.spells ?? []).filter(Boolean);
+
   return {
     '@context': 'https://schema.org',
-    '@type': 'VideoGame',
-    name: 'Honor of Kings',
-    character: {
-      '@type': 'Thing',
-      name: hero.name,
-      description: `${hero.name} ${hero.role} — Tier ${hero.tier}. Win rate ${formatRate(hero.winRate)}.`,
-    },
+    '@graph': [
+      {
+        '@type': 'VideoGame',
+        '@id': `${pageUrl}#hok-game`,
+        name: 'Honor of Kings',
+        alternateName: ['HOK', 'Honor of Kings Global'],
+        applicationCategory: 'Game',
+        operatingSystem: 'Android, iOS',
+        gamePlatform: 'Mobile',
+        url: site.domain,
+        character: { '@id': `${pageUrl}#hero-character` },
+      },
+      {
+        '@type': 'Thing',
+        '@id': `${pageUrl}#hero-character`,
+        name: hero.name,
+        url: pageUrl,
+        image: hero.avatar,
+        description: `${hero.name} is a ${hero.role} in Honor of Kings Global ranked meta.`,
+        additionalProperty: [
+          property('Role', hero.role),
+          property('Tier', hero.tier),
+          property('Difficulty', hero.difficulty),
+          property('Win Rate', formatRate(hero.winRate)),
+          property('Pick Rate', formatRate(hero.pickRate)),
+          property('Ban Rate', formatRate(hero.banRate)),
+          ...(hero.lane ? [property('Lane', hero.lane)] : []),
+        ],
+      },
+      ...(buildNames.length
+        ? [
+            {
+              '@type': 'ItemList',
+              '@id': `${pageUrl}#build`,
+              name: `${hero.name} recommended item build`,
+              numberOfItems: buildNames.length,
+              itemListElement: buildNames.map((name, i) => ({
+                '@type': 'ListItem',
+                position: i + 1,
+                name,
+              })),
+            },
+          ]
+        : []),
+      ...(arcanaNames.length
+        ? [
+            {
+              '@type': 'ItemList',
+              '@id': `${pageUrl}#arcana`,
+              name: `${hero.name} arcana setup`,
+              numberOfItems: arcanaNames.length,
+              itemListElement: arcanaNames.map((name, i) => ({
+                '@type': 'ListItem',
+                position: i + 1,
+                name,
+              })),
+            },
+          ]
+        : []),
+      ...(spells.length
+        ? [
+            {
+              '@type': 'ItemList',
+              '@id': `${pageUrl}#spells`,
+              name: `${hero.name} battle spells`,
+              itemListElement: spells.map((name, i) => ({
+                '@type': 'ListItem',
+                position: i + 1,
+                name,
+              })),
+            },
+          ]
+        : []),
+    ],
+  };
+}
+
+/** @deprecated Use heroGameSchema */
+export function videoGameSchema(hero: Hero) {
+  return heroGameSchema(hero, `/hero/${hero.slug}`);
+}
+
+const TIER_BANDS: HeroTier[] = ['S+', 'S', 'A', 'B'];
+
+/** Full tier list as ItemList with role, tier band, and position. */
+export function tierListSchema(
+  grouped: Record<HeroRole, Record<HeroTier, Hero[]>>
+) {
+  const itemListElement: object[] = [];
+  let position = 1;
+
+  for (const role of ROLES_AZ) {
+    for (const tier of TIER_BANDS) {
+      const list = grouped[role]?.[tier] ?? [];
+      for (const hero of list) {
+        itemListElement.push({
+          '@type': 'ListItem',
+          position,
+          name: hero.name,
+          url: absoluteUrl(`/hero/${hero.slug}`),
+          additionalProperty: [
+            property('Role', role),
+            property('Tier', tier),
+            property('Win Rate', formatRate(hero.winRate)),
+            ...(hero.lane ? [property('Lane', hero.lane)] : []),
+          ],
+        });
+        position += 1;
+      }
+    }
+  }
+
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    name: 'Honor of Kings Meta Tier List',
+    description:
+      'Hero tier rankings by primary role (Assassin through Warrior) and tier band S+ to B.',
+    numberOfItems: itemListElement.length,
+    itemListElement,
   };
 }

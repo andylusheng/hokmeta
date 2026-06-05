@@ -36,7 +36,7 @@ export default function HeroTrendsPage() {
   const patchStrong = getPatchStrongest(10);
   const soloKings = getSoloQueueKings(10);
   const proPressure = getProScenePressure(10);
-  const duos = getBestDuos(8);
+  const duos = getBestDuos(6);
   const comps = getBestComps(4);
 
   const syncDate =
@@ -58,9 +58,8 @@ export default function HeroTrendsPage() {
         Meta leaderboards from Camp HOK international ranked — updated each sync.
       </p>
       <p className="mb-8 text-sm text-gray-500">
-        Last sync: {syncDate} · Duo/comp/KPL boards are{' '}
-        <strong className="font-medium text-gray-400">data-derived proxies</strong>{' '}
-        (no live KPL or duo win-rate API). Use for draft ideas; verify on{' '}
+        Last sync: {syncDate}. Duo and comp boards use lane-based top picks from
+        Camp data — not official pair win rates or KPL replays. Cross-check on{' '}
         <Link href="/tier-list/" className="text-hok-gold hover:underline">
           Tier List
         </Link>{' '}
@@ -69,7 +68,7 @@ export default function HeroTrendsPage() {
 
       <div className="grid gap-8 lg:grid-cols-2">
         <section className="card">
-          <h2 className="section-title">版本最强 · Patch Strongest</h2>
+          <h2 className="section-title">Patch Strongest</h2>
           <p className="mb-3 text-xs text-gray-500">
             Tier S+ / S heroes with highest win rate this sync
           </p>
@@ -77,9 +76,9 @@ export default function HeroTrendsPage() {
         </section>
 
         <section className="card">
-          <h2 className="section-title">路人王 · Solo Queue Kings</h2>
+          <h2 className="section-title">Solo Queue Kings</h2>
           <p className="mb-3 text-xs text-gray-500">
-            High WR + healthy pick rate — strong without a premade
+            Meta score with 51%+ win rate — strong picks without a premade
           </p>
           <TrendList heroes={soloKings} metric="winRate" />
         </section>
@@ -100,25 +99,25 @@ export default function HeroTrendsPage() {
         </section>
 
         <section className="card">
-          <h2 className="section-title">KPL / Pro Draft Pressure</h2>
+          <h2 className="section-title">Pro Draft Pressure</h2>
           <p className="mb-3 text-xs text-gray-500">
-            Proxy: ban + pick weight on global Camp (国服 KPL 无实时 API)
+            Ban + pick weight on global Camp (no live KPL API)
           </p>
           <TrendList heroes={proPressure} metric="banRate" />
         </section>
 
         <section className="card lg:col-span-2">
-          <h2 className="section-title">最强搭档 · Best Duos</h2>
+          <h2 className="section-title">Best Duos</h2>
           <p className="mb-3 text-xs text-gray-500">
-            Top pick pairs by lane/role synergy — not official duo win rates
+            One pair per lane strategy — roam/bot, mid/jungle, side gank, engage/pick
           </p>
           <TrendDuoList duos={duos} />
         </section>
 
         <section className="card lg:col-span-2">
-          <h2 className="section-title">最强阵容 · Meta Comps</h2>
+          <h2 className="section-title">Meta Comps</h2>
           <p className="mb-3 text-xs text-gray-500">
-            Five-hero templates: balanced, fast push, piggyback, ban core
+            Five-hero templates: balanced, fast push, protect carry, ban core
           </p>
           <TrendCompList comps={comps} />
         </section>

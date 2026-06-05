@@ -23,28 +23,33 @@ export default function sitemap(): MetadataRoute.Sitemap {
     url: `${base}${path}/`,
     lastModified: now,
     changeFrequency: 'weekly' as const,
-    priority: path === '' ? 1 : 0.8,
+    priority: path === '' ? 1 : path === '/tier-list' ? 0.95 : 0.8,
   }));
 
-  const heroRoutes = getHeroSlugs().map((slug) => ({
-    url: `${base}/hero/${slug}/`,
-    lastModified: now,
+  const heroRoutes = heroes.map((hero) => ({
+    url: `${base}/hero/${hero.slug}/`,
+    lastModified: hero.dataUpdated ? new Date(hero.dataUpdated) : now,
     changeFrequency: 'weekly' as const,
-    priority: 0.9,
+    priority:
+      hero.tier === 'S+' || hero.tier === 'S'
+        ? 0.95
+        : hero.tier === 'A'
+          ? 0.88
+          : 0.85,
   }));
 
   const roleRoutes = ROLES.map((role) => ({
     url: `${base}/best-heroes/${role.toLowerCase()}/`,
     lastModified: now,
     changeFrequency: 'weekly' as const,
-    priority: 0.7,
+    priority: 0.75,
   }));
 
   const learnRoutes = getLearnSlugs().map((slug) => ({
     url: `${base}/learn/${slug}/`,
     lastModified: now,
     changeFrequency: 'monthly' as const,
-    priority: 0.75,
+    priority: 0.72,
   }));
 
   return [...staticRoutes, ...heroRoutes, ...roleRoutes, ...learnRoutes];

@@ -3,12 +3,12 @@ const SECTIONS = [
   { id: 'skills', label: 'Skills' },
   { id: 'build', label: 'Build' },
   { id: 'arcana', label: 'Arcana' },
+  { id: 'guide', label: 'Guide' },
   { id: 'counters', label: 'Counters' },
-  { id: 'tips', label: 'Tips' },
-  { id: 'patch-history', label: 'Patch History' },
+  { id: 'high-rank', label: 'High Rank' },
+  { id: 'comparisons', label: 'Comparisons' },
   { id: 'faq', label: 'FAQ' },
   { id: 'meta-analysis', label: 'Meta Analysis' },
-  { id: 'related-searches', label: 'Related Searches' },
 ] as const;
 
 export function PageTOC() {

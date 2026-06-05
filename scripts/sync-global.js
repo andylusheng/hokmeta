@@ -337,14 +337,14 @@ async function main() {
           }));
         }
 
-        const buildPresets = parseBuildPresetsFromHtml(html, itemLookup);
+        const buildPresets = parseBuildPresetsFromHtml(html, itemLookup, hero.role);
         if (buildPresets.length) {
           hero.builds = buildPresets;
           hero.build =
             pickDefaultBuildItems(buildPresets, hero.lane) ||
             buildPresets[0].items;
         } else {
-          hero.build = parseBuildFromHtml(html, itemLookup, hero.lane);
+          hero.build = parseBuildFromHtml(html, itemLookup, hero.lane, hero.role);
         }
         const arc = parseArcana(html);
         if (arc.length) hero.arcana = arc;

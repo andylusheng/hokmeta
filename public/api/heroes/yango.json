@@ -70,24 +70,24 @@
     },
     {
       "slot": 4,
-      "itemId": null,
-      "name": "siege breaker",
-      "icon": null,
-      "description": null
-    },
-    {
-      "slot": 5,
       "itemId": "11311",
       "name": "Pure Sky",
       "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/11311.jpg",
       "description": "Temp. damage reduction"
     },
     {
-      "slot": 6,
+      "slot": 5,
       "itemId": "1131",
       "name": "Starbreaker",
       "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1131.jpg",
       "description": "Anti-tank"
+    },
+    {
+      "slot": 6,
+      "itemId": null,
+      "name": "Data unavailable",
+      "icon": null,
+      "description": null
     }
   ],
   "arcana": [
@@ -97,52 +97,94 @@
     "Flash"
   ],
   "counters": [
-    "Data unavailable",
-    "Data unavailable",
-    "Data unavailable"
+    "Lapulapu",
+    "Ata",
+    "Sakeer"
   ],
   "counteredBy": [
-    "Data unavailable",
-    "Data unavailable",
-    "Data unavailable"
+    "Hou Yi",
+    "Daji",
+    "Angela"
   ],
   "tips": [
-    "Yango (Assassin): Tier B on international ranked — 49.53% WR.",
-    "Primary lane: Clash Lane.",
-    "Build core: Storm Sword, Meteor, Boots of Tranquility."
+    "Yango is a Medium Assassin (Clash Lane) on Honor of Kings Global. Camp HOK ranks them Tier B with 49.5% win rate and 0.5% pick rate as of 2026-06-05.",
+    "Best build path: Boots of Fortitude → Axe of Torment → Deepfrost Siege → Pure Sky → Starbreaker.",
+    "Run Mutation for stats that match Yango's Assassin kit. Take Flash — swap to Purify against heavy CC or Smite when jungling.",
+    "Standard trade: Occult Arts - Umbra → Occult Arts - Zhi Chu Luan → Occult Arts - Shadow Crucifixion → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "Laning: Trade on your power spike levels (2/4). Call jungler for dive only when enemy flash is down.",
+    "Teamfight: Wait for CC from your team, then dive carry with full combo. Exit with reset or flash if focus fired.",
+    "Yango excels into Lapulapu, Ata, Sakeer. Avoid blind picking into Hou Yi, Daji, Angela without team peel.",
+    "Yango sits at Tier B globally (49.5% WR). In high rank, pick only into favorable matchups or when you have a dedicated pocket pick."
   ],
   "patchHistory": [
     {
       "version": "Live meta",
-      "change": "Camp HOK — WR 49.53%, pick 0.45%, ban 0.18%, popularity tier B."
+      "change": "Camp HOK — WR 49.5%, pick 0.5%, ban 0.2%, tier B."
     },
     {
       "version": "Matchups",
-      "change": "Counters Data unavailable, Data unavailable, Data unavailable · Weak into Data unavailable, Data unavailable, Data unavailable."
+      "change": "Strong into Lapulapu, Ata, Sakeer · Weak into Hou Yi, Daji, Angela."
+    },
+    {
+      "version": "High rank",
+      "change": "Yango sits at Tier B globally (49.5% WR). In high rank, pick only into favorable matchups or when you have a dedicated pocket pick."
     }
   ],
   "faqs": [
     {
       "id": "faq-good-season",
-      "question": "Is Yango good in current season?",
-      "answer": "Yango is Tier B Assassin with 49.53% win rate, 0.45% pick rate, and 0.18% ban rate on the international server (Camp HOK)."
+      "question": "Is Yango good in the current meta?",
+      "answer": "Yango is Tier B Assassin with 49.5% win rate, 0.5% pick rate, and 0.2% ban rate on Honor of Kings Global (Camp HOK, 2026-06-05). Niche — draft carefully."
     },
     {
       "id": "faq-best-build",
       "question": "What is the best Yango build?",
-      "answer": "Recommended item path: Storm Sword, Meteor, Boots of Tranquility, Overlord's Might, Axe of Torment, Starbreaker. Spells and Arcana are listed on this page."
+      "answer": "Core item path: Boots of Fortitude, Axe of Torment, Deepfrost Siege, siege breaker, Pure Sky, Starbreaker. Run Mutation arcana with Flash. Switch to alternate build presets on this page for jungle, clash, or late-game setups."
     },
     {
       "id": "faq-counter",
       "question": "How to counter Yango?",
-      "answer": "Strong picks into Yango: Data unavailable, Data unavailable, Data unavailable. Yango is strong into Data unavailable, Data unavailable, Data unavailable."
+      "answer": "Pick Hou Yi, Daji, Angela into Yango. Deny Clash Lane resources early and force fights before Yango completes core items. Yango struggles when the enemy can peel and group them."
+    },
+    {
+      "id": "faq-strong-into",
+      "question": "Who does Yango counter?",
+      "answer": "Yango is strong into Lapulapu, Ata, Sakeer according to HoKStats matchup data and role matchups on the global server. Draft Yango when the enemy relies on these heroes in the Clash Lane lane."
+    },
+    {
+      "id": "faq-high-rank",
+      "question": "Is Yango good in high rank / Diamond+?",
+      "answer": "Yango sits at Tier B globally (49.5% WR). In high rank, pick only into favorable matchups or when you have a dedicated pocket pick."
+    },
+    {
+      "id": "faq-lane",
+      "question": "What lane should Yango play?",
+      "answer": "Yango is tagged Clash Lane in Camp export (Assassin). Trade on your power spike levels (2/4). Call jungler for dive only when enemy flash is down."
+    },
+    {
+      "id": "faq-arcana",
+      "question": "Best arcana and spells for Yango?",
+      "answer": "Recommended: Mutation arcana. Battle spell: Flash. Adjust Purify/Execute based on enemy dive and jungle need."
+    },
+    {
+      "id": "faq-vs-peer",
+      "question": "Yango or Wukong — which is better?",
+      "answer": "Yango vs Wukong (Assassin, Tier S): Wukong is 1.3% pick / 49.7% WR. Wukong wins 0.2% more often globally. Choose Yango when you need Clash Lane identity; choose Wukong for Jungling comfort."
+    },
+    {
+      "id": "faq-ban",
+      "question": "Should I ban Yango?",
+      "answer": "Low priority ban (0.2%). Focus bans on higher-tier Assassin picks unless targeting a one-trick."
     }
   ],
   "metaAnalysis": [
-    "Yango win rate 49.53% (Camp HOK, 2026-06-04).",
-    "Pick rate 0.45% in global ranked.",
-    "Ban rate 0.18%.",
-    "Counters: Data unavailable, Data unavailable, Data unavailable. Countered by: Data unavailable, Data unavailable, Data unavailable."
+    "Yango — 49.5% WR, 0.5% pick, 0.2% ban (Camp HOK 2026-06-05).",
+    "Tier B Assassin · Clash Lane · difficulty Medium.",
+    "Yango sits at Tier B globally (49.5% WR). In high rank, pick only into favorable matchups or when you have a dedicated pocket pick.",
+    "Matchups: strong into Lapulapu, Ata, Sakeer; weak into Hou Yi, Daji, Angela.",
+    "Yango vs Wukong (Assassin, Tier S): Wukong is 1.3% pick / 49.7% WR. Wukong wins 0.2% more often globally. Choose Yango when you need Clash Lane identity; choose Wukong for Jungling comfort.",
+    "Yango vs Musashi (Assassin, Tier A): Musashi is 1.1% pick / 50.7% WR. Musashi wins 1.2% more often globally. Choose Yango when you need Clash Lane identity; choose Musashi for Jungling comfort.",
+    "Draft tip: counter-pick or comfort pick when lane matchup is favorable."
   ],
   "builds": [
     {
@@ -174,24 +216,24 @@
         },
         {
           "slot": 4,
-          "itemId": null,
-          "name": "siege breaker",
-          "icon": null,
-          "description": null
-        },
-        {
-          "slot": 5,
           "itemId": "11311",
           "name": "Pure Sky",
           "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/11311.jpg",
           "description": "Temp. damage reduction"
         },
         {
-          "slot": 6,
+          "slot": 5,
           "itemId": "1131",
           "name": "Starbreaker",
           "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1131.jpg",
           "description": "Anti-tank"
+        },
+        {
+          "slot": 6,
+          "itemId": null,
+          "name": "Data unavailable",
+          "icon": null,
+          "description": null
         }
       ]
     },
@@ -510,38 +552,38 @@
         },
         {
           "slot": 2,
-          "itemId": "1411",
-          "name": "Lightfoot Shoes",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1411.jpg",
-          "description": "Movement Speed"
-        },
-        {
-          "slot": 3,
           "itemId": "1124",
           "name": "Meteor",
           "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1124.jpg",
           "description": "PATK +35\nCDR +7.5%"
         },
         {
-          "slot": 4,
+          "slot": 3,
           "itemId": "1137",
           "name": "Axe of Torment",
           "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1137.jpg",
           "description": "Anti-squishy"
         },
         {
-          "slot": 5,
+          "slot": 4,
           "itemId": "1421",
           "name": "Boots of Fortitude",
           "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1421.jpg",
           "description": "Reduces physical damage"
         },
         {
-          "slot": 6,
+          "slot": 5,
           "itemId": "1138",
           "name": "Overlord's Might",
           "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1138.jpg",
           "description": "High-damage attack"
+        },
+        {
+          "slot": 6,
+          "itemId": "13310",
+          "name": "Frostscar's Embrace",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/13310.jpg",
+          "description": "Enhanced BAs slow"
         }
       ]
     },
@@ -560,40 +602,66 @@
         },
         {
           "slot": 2,
-          "itemId": "1411",
-          "name": "Lightfoot Shoes",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1411.jpg",
-          "description": "Movement Speed"
-        },
-        {
-          "slot": 3,
           "itemId": "1124",
           "name": "Meteor",
           "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1124.jpg",
           "description": "PATK +35\nCDR +7.5%"
         },
         {
-          "slot": 4,
+          "slot": 3,
           "itemId": "1423",
           "name": "Boots of Tranquility",
           "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1423.jpg",
           "description": "Reduces Skill CD"
         },
         {
-          "slot": 5,
+          "slot": 4,
           "itemId": "1137",
           "name": "Axe of Torment",
           "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1137.jpg",
           "description": "Anti-squishy"
         },
         {
-          "slot": 6,
+          "slot": 5,
           "itemId": "1138",
           "name": "Overlord's Might",
           "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1138.jpg",
           "description": "High-damage attack"
+        },
+        {
+          "slot": 6,
+          "itemId": "1134",
+          "name": "Master Sword",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1134.jpg",
+          "description": "Enhances BA"
         }
       ]
     }
-  ]
+  ],
+  "guide": {
+    "overview": "Yango is a Medium Assassin (Clash Lane) on Honor of Kings Global. Camp HOK ranks them Tier B with 49.5% win rate and 0.5% pick rate as of 2026-06-05.",
+    "bestBuild": "Rush Boots of Fortitude, Axe of Torment, Deepfrost Siege, then complete siege breaker, Pure Sky, Starbreaker. Use preset tabs for jungle, clash, or CN-style paths when draft requires it.",
+    "arcanaSpells": "Run Mutation for stats that match Yango's Assassin kit. Take Flash — swap to Purify against heavy CC or Smite when jungling.",
+    "combo": "Standard trade: Occult Arts - Umbra → Occult Arts - Zhi Chu Luan → Occult Arts - Shadow Crucifixion → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "laning": "Trade on your power spike levels (2/4). Call jungler for dive only when enemy flash is down.",
+    "teamfight": "Wait for CC from your team, then dive carry with full combo. Exit with reset or flash if focus fired.",
+    "highRank": "Yango sits at Tier B globally (49.5% WR). In high rank, pick only into favorable matchups or when you have a dedicated pocket pick.",
+    "comparisons": [
+      "Yango vs Wukong (Assassin, Tier S): Wukong is 1.3% pick / 49.7% WR. Wukong wins 0.2% more often globally. Choose Yango when you need Clash Lane identity; choose Wukong for Jungling comfort.",
+      "Yango vs Musashi (Assassin, Tier A): Musashi is 1.1% pick / 50.7% WR. Musashi wins 1.2% more often globally. Choose Yango when you need Clash Lane identity; choose Musashi for Jungling comfort."
+    ],
+    "matchups": {
+      "strongInto": [
+        "Lapulapu",
+        "Ata",
+        "Sakeer"
+      ],
+      "weakInto": [
+        "Hou Yi",
+        "Daji",
+        "Angela"
+      ],
+      "summary": "Yango excels into Lapulapu, Ata, Sakeer. Avoid blind picking into Hou Yi, Daji, Angela without team peel."
+    }
+  }
 }

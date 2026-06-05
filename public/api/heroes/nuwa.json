@@ -77,17 +77,17 @@
     },
     {
       "slot": 5,
-      "itemId": null,
-      "name": "tome of wisdom",
-      "icon": null,
-      "description": null
-    },
-    {
-      "slot": 6,
       "itemId": "1231",
       "name": "Void Staff",
       "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1231.jpg",
       "description": "Anti-tank"
+    },
+    {
+      "slot": 6,
+      "itemId": null,
+      "name": "Data unavailable",
+      "icon": null,
+      "description": null
     }
   ],
   "arcana": [
@@ -107,42 +107,84 @@
     "Mulan"
   ],
   "tips": [
-    "Nuwa (Mage): Tier A on international ranked — 51.54% WR.",
-    "Primary lane: Mid Lane.",
-    "Build core: Boots of the Arcane, Venomous Staff, Insatiable Tome."
+    "Nuwa is a Medium Mage (Mid Lane) on Honor of Kings Global. Camp HOK ranks them Tier A with 51.5% win rate and 0.8% pick rate as of 2026-06-05.",
+    "Best build path: Boots of the Arcane → Scepter of Reverberation → Savant's Wrath → Insatiable Tome → Void Staff.",
+    "Run Nightmare for stats that match Nuwa's Mage kit. Take Flash — swap to Purify against heavy CC or Smite when jungling.",
+    "Standard trade: Divine Glow - Creation → Divine Glow - Coalescence → Divine Glow - Emergence → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "Laning: Control first wave without taking free poke. Roam after pushing wave 2–4 to side lanes with your jungler.",
+    "Teamfight: Poke from max range before objective. Save hard CC for enemy dive or your carry peel window.",
+    "Nuwa excels into Mulan, Nakoruru, Pei. Avoid blind picking into Liu Bei, Mayene, Mulan without team peel.",
+    "Nuwa is a viable Tier A pick in high rank with 51.5% win rate — strong in one-trick hands or as a counter-pick. Pick rate 0.8% — frequently seen in ranked; learn the matchup even if you do not main Nuwa."
   ],
   "patchHistory": [
     {
       "version": "Live meta",
-      "change": "Camp HOK — WR 51.54%, pick 0.83%, ban 0.42%, popularity tier A."
+      "change": "Camp HOK — WR 51.5%, pick 0.8%, ban 0.4%, tier A."
     },
     {
       "version": "Matchups",
-      "change": "Counters Mulan, Nakoruru, Pei · Weak into Liu Bei, Mayene, Mulan."
+      "change": "Strong into Mulan, Nakoruru, Pei · Weak into Liu Bei, Mayene, Mulan."
+    },
+    {
+      "version": "High rank",
+      "change": "Nuwa is a viable Tier A pick in high rank with 51.5% win rate — strong in one-trick hands or as a counter-pick. Pick rate 0.8% — frequently seen in ranked; learn the matchup even if you do not main Nuwa."
     }
   ],
   "faqs": [
     {
       "id": "faq-good-season",
-      "question": "Is Nuwa good in current season?",
-      "answer": "Nuwa is Tier A Mage with 51.54% win rate, 0.83% pick rate, and 0.42% ban rate on the international server (Camp HOK)."
+      "question": "Is Nuwa good in the current meta?",
+      "answer": "Nuwa is Tier A Mage with 51.5% win rate, 0.8% pick rate, and 0.4% ban rate on Honor of Kings Global (Camp HOK, 2026-06-05). Solid situational pick."
     },
     {
       "id": "faq-best-build",
       "question": "What is the best Nuwa build?",
-      "answer": "Recommended item path: Boots of the Arcane, Venomous Staff, Insatiable Tome, Mask of Agony, Savant's Wrath, Frozen Breath. Spells and Arcana are listed on this page."
+      "answer": "Core item path: Boots of the Arcane, Scepter of Reverberation, Savant's Wrath, Insatiable Tome, tome of wisdom, Void Staff. Run Nightmare arcana with Flash. Switch to alternate build presets on this page for jungle, clash, or late-game setups."
     },
     {
       "id": "faq-counter",
       "question": "How to counter Nuwa?",
-      "answer": "Strong picks into Nuwa: Liu Bei, Mayene, Mulan. Nuwa is strong into Mulan, Nakoruru, Pei."
+      "answer": "Pick Liu Bei, Mayene, Mulan into Nuwa. Deny Mid Lane resources early and force fights before Nuwa completes core items. Nuwa struggles when the enemy can out-range or out-sustain them."
+    },
+    {
+      "id": "faq-strong-into",
+      "question": "Who does Nuwa counter?",
+      "answer": "Nuwa is strong into Mulan, Nakoruru, Pei according to HoKStats matchup data and role matchups on the global server. Draft Nuwa when the enemy relies on these heroes in the Mid Lane lane."
+    },
+    {
+      "id": "faq-high-rank",
+      "question": "Is Nuwa good in high rank / Diamond+?",
+      "answer": "Nuwa is a viable Tier A pick in high rank with 51.5% win rate — strong in one-trick hands or as a counter-pick. Pick rate 0.8% — frequently seen in ranked; learn the matchup even if you do not main Nuwa."
+    },
+    {
+      "id": "faq-lane",
+      "question": "What lane should Nuwa play?",
+      "answer": "Nuwa is tagged Mid Lane in Camp export (Mage). Control first wave without taking free poke. Roam after pushing wave 2–4 to side lanes with your jungler."
+    },
+    {
+      "id": "faq-arcana",
+      "question": "Best arcana and spells for Nuwa?",
+      "answer": "Recommended: Nightmare arcana. Battle spell: Flash. Adjust Purify/Execute based on enemy dive and jungle need."
+    },
+    {
+      "id": "faq-vs-peer",
+      "question": "Nuwa or Daji — which is better?",
+      "answer": "Nuwa vs Daji (Mage, Tier S+): Daji is 2.4% pick / 51.0% WR. Nuwa has +0.5% WR vs Daji in Camp data. Choose Nuwa when you need Mid Lane identity; choose Daji for Mid Lane comfort."
+    },
+    {
+      "id": "faq-ban",
+      "question": "Should I ban Nuwa?",
+      "answer": "Yes in tryhard queues — 0.4% ban rate. Deny if enemy first-picks Mage."
     }
   ],
   "metaAnalysis": [
-    "Nuwa win rate 51.54% (Camp HOK, 2026-06-04).",
-    "Pick rate 0.83% in global ranked.",
-    "Ban rate 0.42%.",
-    "Counters: Mulan, Nakoruru, Pei. Countered by: Liu Bei, Mayene, Mulan."
+    "Nuwa — 51.5% WR, 0.8% pick, 0.4% ban (Camp HOK 2026-06-05).",
+    "Tier A Mage · Mid Lane · difficulty Medium.",
+    "Nuwa is a viable Tier A pick in high rank with 51.5% win rate — strong in one-trick hands or as a counter-pick. Pick rate 0.8% — frequently seen in ranked; learn the matchup even if you do not main Nuwa.",
+    "Matchups: strong into Mulan, Nakoruru, Pei; weak into Liu Bei, Mayene, Mulan.",
+    "Nuwa vs Daji (Mage, Tier S+): Daji is 2.4% pick / 51.0% WR. Nuwa has +0.5% WR vs Daji in Camp data. Choose Nuwa when you need Mid Lane identity; choose Daji for Mid Lane comfort.",
+    "Nuwa vs Angela (Mage, Tier S+): Angela is 2.3% pick / 51.8% WR. Angela wins 0.3% more often globally. Choose Nuwa when you need Mid Lane identity; choose Angela for Mid Lane comfort.",
+    "Draft tip: counter-pick or comfort pick when lane matchup is favorable."
   ],
   "builds": [
     {
@@ -181,17 +223,17 @@
         },
         {
           "slot": 5,
-          "itemId": null,
-          "name": "tome of wisdom",
-          "icon": null,
-          "description": null
-        },
-        {
-          "slot": 6,
           "itemId": "1231",
           "name": "Void Staff",
           "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1231.jpg",
           "description": "Anti-tank"
+        },
+        {
+          "slot": 6,
+          "itemId": null,
+          "name": "Data unavailable",
+          "icon": null,
+          "description": null
         }
       ]
     },
@@ -310,38 +352,38 @@
         },
         {
           "slot": 2,
-          "itemId": "1411",
-          "name": "Lightfoot Shoes",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1411.jpg",
-          "description": "Movement Speed"
-        },
-        {
-          "slot": 3,
           "itemId": "1423",
           "name": "Boots of Tranquility",
           "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1423.jpg",
           "description": "Reduces Skill CD"
         },
         {
-          "slot": 4,
+          "slot": 3,
           "itemId": "1233",
           "name": "Scepter of Reverberation",
           "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1233.jpg",
           "description": "Skill hits trigger explosions"
         },
         {
-          "slot": 5,
+          "slot": 4,
           "itemId": "1238",
           "name": "Sage's Tome",
           "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1238.jpg",
           "description": "Great for mages"
         },
         {
-          "slot": 6,
+          "slot": 5,
           "itemId": "1222",
           "name": "Blood Clan's Grimoire",
           "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1222.jpg",
           "description": "MATK +60, Magical Lifesteal +12%"
+        },
+        {
+          "slot": 6,
+          "itemId": "1232",
+          "name": "Savant's Wrath",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1232.jpg",
+          "description": "Greatly boosts MATK"
         }
       ]
     },
@@ -645,5 +687,31 @@
         }
       ]
     }
-  ]
+  ],
+  "guide": {
+    "overview": "Nuwa is a Medium Mage (Mid Lane) on Honor of Kings Global. Camp HOK ranks them Tier A with 51.5% win rate and 0.8% pick rate as of 2026-06-05.",
+    "bestBuild": "Rush Boots of the Arcane, Scepter of Reverberation, Savant's Wrath, then complete Insatiable Tome, tome of wisdom, Void Staff. Use preset tabs for jungle, clash, or CN-style paths when draft requires it.",
+    "arcanaSpells": "Run Nightmare for stats that match Nuwa's Mage kit. Take Flash — swap to Purify against heavy CC or Smite when jungling.",
+    "combo": "Standard trade: Divine Glow - Creation → Divine Glow - Coalescence → Divine Glow - Emergence → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "laning": "Control first wave without taking free poke. Roam after pushing wave 2–4 to side lanes with your jungler.",
+    "teamfight": "Poke from max range before objective. Save hard CC for enemy dive or your carry peel window.",
+    "highRank": "Nuwa is a viable Tier A pick in high rank with 51.5% win rate — strong in one-trick hands or as a counter-pick. Pick rate 0.8% — frequently seen in ranked; learn the matchup even if you do not main Nuwa.",
+    "comparisons": [
+      "Nuwa vs Daji (Mage, Tier S+): Daji is 2.4% pick / 51.0% WR. Nuwa has +0.5% WR vs Daji in Camp data. Choose Nuwa when you need Mid Lane identity; choose Daji for Mid Lane comfort.",
+      "Nuwa vs Angela (Mage, Tier S+): Angela is 2.3% pick / 51.8% WR. Angela wins 0.3% more often globally. Choose Nuwa when you need Mid Lane identity; choose Angela for Mid Lane comfort."
+    ],
+    "matchups": {
+      "strongInto": [
+        "Mulan",
+        "Nakoruru",
+        "Pei"
+      ],
+      "weakInto": [
+        "Liu Bei",
+        "Mayene",
+        "Mulan"
+      ],
+      "summary": "Nuwa excels into Mulan, Nakoruru, Pei. Avoid blind picking into Liu Bei, Mayene, Mulan without team peel."
+    }
+  }
 }

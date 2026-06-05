@@ -5,6 +5,7 @@ import { SiteFooter } from '@/components/SiteFooter';
 import { buildMetadata } from '@/lib/seo';
 import { site } from '@/lib/data';
 import { JsonLd, webSiteSchema } from '@/lib/schema';
+import { GoogleAnalytics } from '@/components/GoogleAnalytics';
 
 export const metadata: Metadata = {
   ...buildMetadata({
@@ -42,6 +43,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="font-sans">
+        <GoogleAnalytics />
         <a
           href="#main-content"
           className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-[100] focus:rounded focus:bg-hok-gold focus:px-3 focus:py-2 focus:text-hok-dark"

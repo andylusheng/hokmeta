@@ -49,45 +49,45 @@
   "build": [
     {
       "slot": 1,
-      "itemId": null,
-      "name": "tome of wisdom",
-      "icon": null,
-      "description": null
-    },
-    {
-      "slot": 2,
       "itemId": "1426",
       "name": "Boots of Deftness",
       "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1426.jpg",
       "description": "Extra Movement Speed"
     },
     {
-      "slot": 3,
+      "slot": 2,
       "itemId": "1240",
       "name": "Insatiable Tome",
       "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1240.jpg",
       "description": "Magical Lifesteal"
     },
     {
-      "slot": 4,
+      "slot": 3,
       "itemId": "1231",
       "name": "Void Staff",
       "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1231.jpg",
       "description": "Anti-tank"
     },
     {
-      "slot": 5,
+      "slot": 4,
       "itemId": "1232",
       "name": "Savant's Wrath",
       "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1232.jpg",
       "description": "Greatly boosts MATK"
     },
     {
-      "slot": 6,
+      "slot": 5,
       "itemId": "12211",
       "name": "Venomous Staff",
       "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/12211.jpg",
       "description": "Lowers Health regen"
+    },
+    {
+      "slot": 6,
+      "itemId": null,
+      "name": "Data unavailable",
+      "icon": null,
+      "description": null
     }
   ],
   "arcana": [
@@ -102,47 +102,89 @@
     "Milady"
   ],
   "counteredBy": [
-    "Data unavailable",
-    "Data unavailable",
-    "Data unavailable"
+    "Li Xin",
+    "Kaizer",
+    "Dun"
   ],
   "tips": [
-    "Haya (Mage): Tier S+ on international ranked — 49.78% WR.",
-    "Primary lane: Mid Lane.",
-    "Build core: Boots of the Arcane, Venomous Staff, Twilight Stream."
+    "Haya is a Medium Mage (Mid Lane) on Honor of Kings Global. Camp HOK ranks them Tier S+ with 49.8% win rate and 0.9% pick rate as of 2026-06-05.",
+    "Best build path: Boots of Deftness → Insatiable Tome → Void Staff → Savant's Wrath → Venomous Staff.",
+    "Run Fate for stats that match Haya's Mage kit. Take Flash — swap to Purify against heavy CC or Smite when jungling.",
+    "Standard trade: Crescent Wave → Wayward Rays → Moonscape Mirage → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "Laning: Control first wave without taking free poke. Roam after pushing wave 2–4 to side lanes with your jungler.",
+    "Teamfight: Poke from max range before objective. Save hard CC for enemy dive or your carry peel window.",
+    "Haya excels into Sakeer, Zilong, Milady. Avoid blind picking into Li Xin, Kaizer, Dun without team peel.",
+    "Haya is a Tier S+ staple in high-elo (Diamond+) on the international server — worth mastering for climb. Ban rate 3.0% — expect Haya to be removed in tryhard lobbies; have a backup in the same role."
   ],
   "patchHistory": [
     {
       "version": "Live meta",
-      "change": "Camp HOK — WR 49.78%, pick 0.93%, ban 3.01%, popularity tier S+."
+      "change": "Camp HOK — WR 49.8%, pick 0.9%, ban 3.0%, tier S+."
     },
     {
       "version": "Matchups",
-      "change": "Counters Sakeer, Zilong, Milady · Weak into Data unavailable, Data unavailable, Data unavailable."
+      "change": "Strong into Sakeer, Zilong, Milady · Weak into Li Xin, Kaizer, Dun."
+    },
+    {
+      "version": "High rank",
+      "change": "Haya is a Tier S+ staple in high-elo (Diamond+) on the international server — worth mastering for climb. Ban rate 3.0% — expect Haya to be removed in tryhard lobbies; have a backup in the same role."
     }
   ],
   "faqs": [
     {
       "id": "faq-good-season",
-      "question": "Is Haya good in current season?",
-      "answer": "Haya is Tier S+ Mage with 49.78% win rate, 0.93% pick rate, and 3.01% ban rate on the international server (Camp HOK)."
+      "question": "Is Haya good in the current meta?",
+      "answer": "Haya is Tier S+ Mage with 49.8% win rate, 0.9% pick rate, and 3.0% ban rate on Honor of Kings Global (Camp HOK, 2026-06-05). Strong meta pick for ranked."
     },
     {
       "id": "faq-best-build",
       "question": "What is the best Haya build?",
-      "answer": "Recommended item path: Boots of the Arcane, Venomous Staff, Twilight Stream, Insatiable Tome, Savant's Wrath, Ardent Dominion. Spells and Arcana are listed on this page."
+      "answer": "Core item path: tome of wisdom, Boots of Deftness, Insatiable Tome, Void Staff, Savant's Wrath, Venomous Staff. Run Fate arcana with Flash. Switch to alternate build presets on this page for jungle, clash, or late-game setups."
     },
     {
       "id": "faq-counter",
       "question": "How to counter Haya?",
-      "answer": "Strong picks into Haya: Data unavailable, Data unavailable, Data unavailable. Haya is strong into Sakeer, Zilong, Milady."
+      "answer": "Pick Li Xin, Kaizer, Dun into Haya. Deny Mid Lane resources early and force fights before Haya completes core items. Haya struggles when the enemy can out-range or out-sustain them."
+    },
+    {
+      "id": "faq-strong-into",
+      "question": "Who does Haya counter?",
+      "answer": "Haya is strong into Sakeer, Zilong, Milady according to HoKStats matchup data and role matchups on the global server. Draft Haya when the enemy relies on these heroes in the Mid Lane lane."
+    },
+    {
+      "id": "faq-high-rank",
+      "question": "Is Haya good in high rank / Diamond+?",
+      "answer": "Haya is a Tier S+ staple in high-elo (Diamond+) on the international server — worth mastering for climb. Ban rate 3.0% — expect Haya to be removed in tryhard lobbies; have a backup in the same role."
+    },
+    {
+      "id": "faq-lane",
+      "question": "What lane should Haya play?",
+      "answer": "Haya is tagged Mid Lane in Camp export (Mage). Control first wave without taking free poke. Roam after pushing wave 2–4 to side lanes with your jungler."
+    },
+    {
+      "id": "faq-arcana",
+      "question": "Best arcana and spells for Haya?",
+      "answer": "Recommended: Fate arcana. Battle spell: Flash. Adjust Purify/Execute based on enemy dive and jungle need."
+    },
+    {
+      "id": "faq-vs-peer",
+      "question": "Haya or Daji — which is better?",
+      "answer": "Haya vs Daji (Mage, Tier S+): Daji is 2.4% pick / 51.0% WR. Daji wins 1.3% more often globally. Choose Haya when you need Mid Lane identity; choose Daji for Mid Lane comfort."
+    },
+    {
+      "id": "faq-ban",
+      "question": "Should I ban Haya?",
+      "answer": "Yes in tryhard queues — 3.0% ban rate. Deny if enemy first-picks Mage."
     }
   ],
   "metaAnalysis": [
-    "Haya win rate 49.78% (Camp HOK, 2026-06-04).",
-    "Pick rate 0.93% in global ranked.",
-    "Ban rate 3.01%.",
-    "Counters: Sakeer, Zilong, Milady. Countered by: Data unavailable, Data unavailable, Data unavailable."
+    "Haya — 49.8% WR, 0.9% pick, 3.0% ban (Camp HOK 2026-06-05).",
+    "Tier S+ Mage · Mid Lane · difficulty Medium.",
+    "Haya is a Tier S+ staple in high-elo (Diamond+) on the international server — worth mastering for climb. Ban rate 3.0% — expect Haya to be removed in tryhard lobbies; have a backup in the same role.",
+    "Matchups: strong into Sakeer, Zilong, Milady; weak into Li Xin, Kaizer, Dun.",
+    "Haya vs Daji (Mage, Tier S+): Daji is 2.4% pick / 51.0% WR. Daji wins 1.3% more often globally. Choose Haya when you need Mid Lane identity; choose Daji for Mid Lane comfort.",
+    "Haya vs Angela (Mage, Tier S+): Angela is 2.3% pick / 51.8% WR. Angela wins 2.0% more often globally. Choose Haya when you need Mid Lane identity; choose Angela for Mid Lane comfort.",
+    "Draft tip: first-pick or ban priority in ranked."
   ],
   "builds": [
     {
@@ -153,45 +195,45 @@
       "items": [
         {
           "slot": 1,
-          "itemId": null,
-          "name": "tome of wisdom",
-          "icon": null,
-          "description": null
-        },
-        {
-          "slot": 2,
           "itemId": "1426",
           "name": "Boots of Deftness",
           "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1426.jpg",
           "description": "Extra Movement Speed"
         },
         {
-          "slot": 3,
+          "slot": 2,
           "itemId": "1240",
           "name": "Insatiable Tome",
           "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1240.jpg",
           "description": "Magical Lifesteal"
         },
         {
-          "slot": 4,
+          "slot": 3,
           "itemId": "1231",
           "name": "Void Staff",
           "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1231.jpg",
           "description": "Anti-tank"
         },
         {
-          "slot": 5,
+          "slot": 4,
           "itemId": "1232",
           "name": "Savant's Wrath",
           "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1232.jpg",
           "description": "Greatly boosts MATK"
         },
         {
-          "slot": 6,
+          "slot": 5,
           "itemId": "12211",
           "name": "Venomous Staff",
           "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/12211.jpg",
           "description": "Lowers Health regen"
+        },
+        {
+          "slot": 6,
+          "itemId": null,
+          "name": "Data unavailable",
+          "icon": null,
+          "description": null
         }
       ]
     },
@@ -595,5 +637,31 @@
         }
       ]
     }
-  ]
+  ],
+  "guide": {
+    "overview": "Haya is a Medium Mage (Mid Lane) on Honor of Kings Global. Camp HOK ranks them Tier S+ with 49.8% win rate and 0.9% pick rate as of 2026-06-05.",
+    "bestBuild": "Rush tome of wisdom, Boots of Deftness, Insatiable Tome, then complete Void Staff, Savant's Wrath, Venomous Staff. Use preset tabs for jungle, clash, or CN-style paths when draft requires it.",
+    "arcanaSpells": "Run Fate for stats that match Haya's Mage kit. Take Flash — swap to Purify against heavy CC or Smite when jungling.",
+    "combo": "Standard trade: Crescent Wave → Wayward Rays → Moonscape Mirage → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "laning": "Control first wave without taking free poke. Roam after pushing wave 2–4 to side lanes with your jungler.",
+    "teamfight": "Poke from max range before objective. Save hard CC for enemy dive or your carry peel window.",
+    "highRank": "Haya is a Tier S+ staple in high-elo (Diamond+) on the international server — worth mastering for climb. Ban rate 3.0% — expect Haya to be removed in tryhard lobbies; have a backup in the same role.",
+    "comparisons": [
+      "Haya vs Daji (Mage, Tier S+): Daji is 2.4% pick / 51.0% WR. Daji wins 1.3% more often globally. Choose Haya when you need Mid Lane identity; choose Daji for Mid Lane comfort.",
+      "Haya vs Angela (Mage, Tier S+): Angela is 2.3% pick / 51.8% WR. Angela wins 2.0% more often globally. Choose Haya when you need Mid Lane identity; choose Angela for Mid Lane comfort."
+    ],
+    "matchups": {
+      "strongInto": [
+        "Sakeer",
+        "Zilong",
+        "Milady"
+      ],
+      "weakInto": [
+        "Li Xin",
+        "Kaizer",
+        "Dun"
+      ],
+      "summary": "Haya excels into Sakeer, Zilong, Milady. Avoid blind picking into Li Xin, Kaizer, Dun without team peel."
+    }
+  }
 }

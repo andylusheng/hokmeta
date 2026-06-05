@@ -77,17 +77,17 @@
     },
     {
       "slot": 5,
-      "itemId": null,
-      "name": "ardent dominator",
-      "icon": null,
-      "description": null
-    },
-    {
-      "slot": 6,
       "itemId": "12211",
       "name": "Venomous Staff",
       "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/12211.jpg",
       "description": "Lowers Health regen"
+    },
+    {
+      "slot": 6,
+      "itemId": null,
+      "name": "Data unavailable",
+      "icon": null,
+      "description": null
     }
   ],
   "arcana": [
@@ -107,42 +107,84 @@
     "Haya"
   ],
   "tips": [
-    "Milady (Mage): Tier S+ on international ranked — 48.95% WR.",
-    "Primary lane: Mid Lane.",
-    "Build core: Spell Tome, Boots of Tranquility, Nebulon Wood."
+    "Milady is a Medium Mage (Mid Lane) on Honor of Kings Global. Camp HOK ranks them Tier S+ with 49.0% win rate and 1.9% pick rate as of 2026-06-05.",
+    "Best build path: Boots of Tranquility → Mask of Agony → Void Staff → Twilight Stream → Venomous Staff.",
+    "Run Nightmare for stats that match Milady's Mage kit. Take Flash — swap to Purify against heavy CC or Smite when jungling.",
+    "Standard trade: Air Superiority → Forced Invasion → Chaos Field → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "Laning: Control first wave without taking free poke. Roam after pushing wave 2–4 to side lanes with your jungler.",
+    "Teamfight: Poke from max range before objective. Save hard CC for enemy dive or your carry peel window.",
+    "Milady excels into Nakoruru, Pei, Mai Shiranui. Avoid blind picking into Allain, Fuzi, Haya without team peel.",
+    "Milady is a Tier S+ staple in high-elo (Diamond+) on the international server — worth mastering for climb. Ban rate 2.4% — expect Milady to be removed in tryhard lobbies; have a backup in the same role. Below 49% global WR — high-rank players often avoid unless compensating for team comp."
   ],
   "patchHistory": [
     {
       "version": "Live meta",
-      "change": "Camp HOK — WR 48.95%, pick 1.9%, ban 2.4%, popularity tier S+."
+      "change": "Camp HOK — WR 49.0%, pick 1.9%, ban 2.4%, tier S+."
     },
     {
       "version": "Matchups",
-      "change": "Counters Nakoruru, Pei, Mai Shiranui · Weak into Allain, Fuzi, Haya."
+      "change": "Strong into Nakoruru, Pei, Mai Shiranui · Weak into Allain, Fuzi, Haya."
+    },
+    {
+      "version": "High rank",
+      "change": "Milady is a Tier S+ staple in high-elo (Diamond+) on the international server — worth mastering for climb. Ban rate 2.4% — expect Milady to be removed in tryhard lobbies; have a backup in the same role. Below 49% global WR — high-rank players often avoid unless compensating for team comp."
     }
   ],
   "faqs": [
     {
       "id": "faq-good-season",
-      "question": "Is Milady good in current season?",
-      "answer": "Milady is Tier S+ Mage with 48.95% win rate, 1.9% pick rate, and 2.4% ban rate on the international server (Camp HOK)."
+      "question": "Is Milady good in the current meta?",
+      "answer": "Milady is Tier S+ Mage with 49.0% win rate, 1.9% pick rate, and 2.4% ban rate on Honor of Kings Global (Camp HOK, 2026-06-05). Strong meta pick for ranked."
     },
     {
       "id": "faq-best-build",
       "question": "What is the best Milady build?",
-      "answer": "Recommended item path: Spell Tome, Boots of Tranquility, Nebulon Wood, Mask of Agony, Boots of the Arcane, Venomous Staff. Spells and Arcana are listed on this page."
+      "answer": "Core item path: Boots of Tranquility, Mask of Agony, Void Staff, Twilight Stream, ardent dominator, Venomous Staff. Run Nightmare arcana with Flash. Switch to alternate build presets on this page for jungle, clash, or late-game setups."
     },
     {
       "id": "faq-counter",
       "question": "How to counter Milady?",
-      "answer": "Strong picks into Milady: Allain, Fuzi, Haya. Milady is strong into Nakoruru, Pei, Mai Shiranui."
+      "answer": "Pick Allain, Fuzi, Haya into Milady. Deny Mid Lane resources early and force fights before Milady completes core items. Milady struggles when the enemy can out-range or out-sustain them."
+    },
+    {
+      "id": "faq-strong-into",
+      "question": "Who does Milady counter?",
+      "answer": "Milady is strong into Nakoruru, Pei, Mai Shiranui according to HoKStats matchup data and role matchups on the global server. Draft Milady when the enemy relies on these heroes in the Mid Lane lane."
+    },
+    {
+      "id": "faq-high-rank",
+      "question": "Is Milady good in high rank / Diamond+?",
+      "answer": "Milady is a Tier S+ staple in high-elo (Diamond+) on the international server — worth mastering for climb. Ban rate 2.4% — expect Milady to be removed in tryhard lobbies; have a backup in the same role. Below 49% global WR — high-rank players often avoid unless compensating for team comp."
+    },
+    {
+      "id": "faq-lane",
+      "question": "What lane should Milady play?",
+      "answer": "Milady is tagged Mid Lane in Camp export (Mage). Control first wave without taking free poke. Roam after pushing wave 2–4 to side lanes with your jungler."
+    },
+    {
+      "id": "faq-arcana",
+      "question": "Best arcana and spells for Milady?",
+      "answer": "Recommended: Nightmare arcana. Battle spell: Flash. Adjust Purify/Execute based on enemy dive and jungle need."
+    },
+    {
+      "id": "faq-vs-peer",
+      "question": "Milady or Daji — which is better?",
+      "answer": "Milady vs Daji (Mage, Tier S+): Daji is 2.4% pick / 51.0% WR. Daji wins 2.1% more often globally. Choose Milady when you need Mid Lane identity; choose Daji for Mid Lane comfort."
+    },
+    {
+      "id": "faq-ban",
+      "question": "Should I ban Milady?",
+      "answer": "Yes in tryhard queues — 2.4% ban rate. Deny if enemy first-picks Mage."
     }
   ],
   "metaAnalysis": [
-    "Milady win rate 48.95% (Camp HOK, 2026-06-04).",
-    "Pick rate 1.9% in global ranked.",
-    "Ban rate 2.4%.",
-    "Counters: Nakoruru, Pei, Mai Shiranui. Countered by: Allain, Fuzi, Haya."
+    "Milady — 49.0% WR, 1.9% pick, 2.4% ban (Camp HOK 2026-06-05).",
+    "Tier S+ Mage · Mid Lane · difficulty Medium.",
+    "Milady is a Tier S+ staple in high-elo (Diamond+) on the international server — worth mastering for climb. Ban rate 2.4% — expect Milady to be removed in tryhard lobbies; have a backup in the same role. Below 49% global WR — high-rank players often avoid unless compensating for team comp.",
+    "Matchups: strong into Nakoruru, Pei, Mai Shiranui; weak into Allain, Fuzi, Haya.",
+    "Milady vs Daji (Mage, Tier S+): Daji is 2.4% pick / 51.0% WR. Daji wins 2.1% more often globally. Choose Milady when you need Mid Lane identity; choose Daji for Mid Lane comfort.",
+    "Milady vs Angela (Mage, Tier S+): Angela is 2.3% pick / 51.8% WR. Angela wins 2.9% more often globally. Choose Milady when you need Mid Lane identity; choose Angela for Mid Lane comfort.",
+    "Draft tip: first-pick or ban priority in ranked."
   ],
   "builds": [
     {
@@ -181,17 +223,17 @@
         },
         {
           "slot": 5,
-          "itemId": null,
-          "name": "ardent dominator",
-          "icon": null,
-          "description": null
-        },
-        {
-          "slot": 6,
           "itemId": "12211",
           "name": "Venomous Staff",
           "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/12211.jpg",
           "description": "Lowers Health regen"
+        },
+        {
+          "slot": 6,
+          "itemId": null,
+          "name": "Data unavailable",
+          "icon": null,
+          "description": null
         }
       ]
     },
@@ -253,45 +295,45 @@
       "items": [
         {
           "slot": 1,
-          "itemId": "1411",
-          "name": "Lightfoot Shoes",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1411.jpg",
-          "description": "Movement Speed"
-        },
-        {
-          "slot": 2,
           "itemId": "1211",
           "name": "Spell Tome",
           "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1211.jpg",
           "description": "MATK +35"
         },
         {
-          "slot": 3,
+          "slot": 2,
           "itemId": "1426",
           "name": "Boots of Deftness",
           "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1426.jpg",
           "description": "Extra Movement Speed"
         },
         {
-          "slot": 4,
+          "slot": 3,
           "itemId": "1424",
           "name": "Boots of the Arcane",
           "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1424.jpg",
           "description": "Magical Pierce"
         },
         {
-          "slot": 5,
+          "slot": 4,
           "itemId": "1214",
           "name": "Sage's Codex",
           "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1214.jpg",
           "description": "MATK +60, CDR +7.5%"
         },
         {
-          "slot": 6,
+          "slot": 5,
           "itemId": "12211",
           "name": "Venomous Staff",
           "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/12211.jpg",
           "description": "Lowers Health regen"
+        },
+        {
+          "slot": 6,
+          "itemId": "1235",
+          "name": "Mask of Agony",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1235.jpg",
+          "description": "Boosts skill damage"
         }
       ]
     },
@@ -345,5 +387,31 @@
         }
       ]
     }
-  ]
+  ],
+  "guide": {
+    "overview": "Milady is a Medium Mage (Mid Lane) on Honor of Kings Global. Camp HOK ranks them Tier S+ with 49.0% win rate and 1.9% pick rate as of 2026-06-05.",
+    "bestBuild": "Rush Boots of Tranquility, Mask of Agony, Void Staff, then complete Twilight Stream, ardent dominator, Venomous Staff. Use preset tabs for jungle, clash, or CN-style paths when draft requires it.",
+    "arcanaSpells": "Run Nightmare for stats that match Milady's Mage kit. Take Flash — swap to Purify against heavy CC or Smite when jungling.",
+    "combo": "Standard trade: Air Superiority → Forced Invasion → Chaos Field → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "laning": "Control first wave without taking free poke. Roam after pushing wave 2–4 to side lanes with your jungler.",
+    "teamfight": "Poke from max range before objective. Save hard CC for enemy dive or your carry peel window.",
+    "highRank": "Milady is a Tier S+ staple in high-elo (Diamond+) on the international server — worth mastering for climb. Ban rate 2.4% — expect Milady to be removed in tryhard lobbies; have a backup in the same role. Below 49% global WR — high-rank players often avoid unless compensating for team comp.",
+    "comparisons": [
+      "Milady vs Daji (Mage, Tier S+): Daji is 2.4% pick / 51.0% WR. Daji wins 2.1% more often globally. Choose Milady when you need Mid Lane identity; choose Daji for Mid Lane comfort.",
+      "Milady vs Angela (Mage, Tier S+): Angela is 2.3% pick / 51.8% WR. Angela wins 2.9% more often globally. Choose Milady when you need Mid Lane identity; choose Angela for Mid Lane comfort."
+    ],
+    "matchups": {
+      "strongInto": [
+        "Nakoruru",
+        "Pei",
+        "Mai Shiranui"
+      ],
+      "weakInto": [
+        "Allain",
+        "Fuzi",
+        "Haya"
+      ],
+      "summary": "Milady excels into Nakoruru, Pei, Mai Shiranui. Avoid blind picking into Allain, Fuzi, Haya without team peel."
+    }
+  }
 }

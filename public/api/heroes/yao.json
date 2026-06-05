@@ -77,17 +77,17 @@
     },
     {
       "slot": 5,
-      "itemId": null,
-      "name": "siege breaker",
-      "icon": null,
-      "description": null
-    },
-    {
-      "slot": 6,
       "itemId": "1131",
       "name": "Starbreaker",
       "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1131.jpg",
       "description": "Anti-tank"
+    },
+    {
+      "slot": 6,
+      "itemId": null,
+      "name": "Data unavailable",
+      "icon": null,
+      "description": null
     }
   ],
   "arcana": [
@@ -102,47 +102,89 @@
     "Ziya"
   ],
   "counteredBy": [
-    "Data unavailable",
-    "Data unavailable",
-    "Data unavailable"
+    "Hou Yi",
+    "Daji",
+    "Angela"
   ],
   "tips": [
-    "Yao (Assassin): Tier B on international ranked — 51.44% WR.",
-    "Primary lane: Jungling.",
-    "Build core: Relentless Blade, Boots of Tranquility, Meteor."
+    "Yao is a Medium Assassin (Jungling) on Honor of Kings Global. Camp HOK ranks them Tier B with 51.4% win rate and 0.5% pick rate as of 2026-06-05.",
+    "Best build path: Rapacious Bite → Boots of Resistance → Axe of Torment → Spikemail → Starbreaker.",
+    "Run Mutation for stats that match Yao's Assassin kit. Take Smite — swap to Purify against heavy CC or Smite when jungling.",
+    "Standard trade: Starlight Slice → Starburn (Yao) → Return to Dust → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "Laning: Clear to level four, then gank the lane with the least escape. Secure Tyrant when your bot or mid has crash wave.",
+    "Teamfight: Wait for CC from your team, then dive carry with full combo. Exit with reset or flash if focus fired.",
+    "Yao excels into Angela, Mi Yue, Ziya. Avoid blind picking into Hou Yi, Daji, Angela without team peel.",
+    "Yao sits at Tier B globally (51.4% WR). In high rank, pick only into favorable matchups or when you have a dedicated pocket pick."
   ],
   "patchHistory": [
     {
       "version": "Live meta",
-      "change": "Camp HOK — WR 51.44%, pick 0.54%, ban 0.04%, popularity tier B."
+      "change": "Camp HOK — WR 51.4%, pick 0.5%, ban 0.0%, tier B."
     },
     {
       "version": "Matchups",
-      "change": "Counters Angela, Mi Yue, Ziya · Weak into Data unavailable, Data unavailable, Data unavailable."
+      "change": "Strong into Angela, Mi Yue, Ziya · Weak into Hou Yi, Daji, Angela."
+    },
+    {
+      "version": "High rank",
+      "change": "Yao sits at Tier B globally (51.4% WR). In high rank, pick only into favorable matchups or when you have a dedicated pocket pick."
     }
   ],
   "faqs": [
     {
       "id": "faq-good-season",
-      "question": "Is Yao good in current season?",
-      "answer": "Yao is Tier B Assassin with 51.44% win rate, 0.54% pick rate, and 0.04% ban rate on the international server (Camp HOK)."
+      "question": "Is Yao good in the current meta?",
+      "answer": "Yao is Tier B Assassin with 51.4% win rate, 0.5% pick rate, and 0.0% ban rate on Honor of Kings Global (Camp HOK, 2026-06-05). Niche — draft carefully."
     },
     {
       "id": "faq-best-build",
       "question": "What is the best Yao build?",
-      "answer": "Recommended item path: Relentless Blade, Boots of Tranquility, Meteor, Axe of Torment, Boots of Resistance, Rapacious Bite. Spells and Arcana are listed on this page."
+      "answer": "Core item path: Rapacious Bite, Boots of Resistance, Axe of Torment, Spikemail, siege breaker, Starbreaker. Run Mutation arcana with Smite. Switch to alternate build presets on this page for jungle, clash, or late-game setups."
     },
     {
       "id": "faq-counter",
       "question": "How to counter Yao?",
-      "answer": "Strong picks into Yao: Data unavailable, Data unavailable, Data unavailable. Yao is strong into Angela, Mi Yue, Ziya."
+      "answer": "Pick Hou Yi, Daji, Angela into Yao. Deny Jungling resources early and force fights before Yao completes core items. Yao struggles when the enemy can peel and group them."
+    },
+    {
+      "id": "faq-strong-into",
+      "question": "Who does Yao counter?",
+      "answer": "Yao is strong into Angela, Mi Yue, Ziya according to HoKStats matchup data and role matchups on the global server. Draft Yao when the enemy relies on these heroes in the Jungling lane."
+    },
+    {
+      "id": "faq-high-rank",
+      "question": "Is Yao good in high rank / Diamond+?",
+      "answer": "Yao sits at Tier B globally (51.4% WR). In high rank, pick only into favorable matchups or when you have a dedicated pocket pick."
+    },
+    {
+      "id": "faq-lane",
+      "question": "What lane should Yao play?",
+      "answer": "Yao is tagged Jungling in Camp export (Fighter, Assassin). Clear to level four, then gank the lane with the least escape. Secure Tyrant when your bot or mid has crash wave."
+    },
+    {
+      "id": "faq-arcana",
+      "question": "Best arcana and spells for Yao?",
+      "answer": "Recommended: Mutation arcana. Battle spell: Smite. Adjust Purify/Execute based on enemy dive and jungle need."
+    },
+    {
+      "id": "faq-vs-peer",
+      "question": "Yao or Wukong — which is better?",
+      "answer": "Yao vs Wukong (Assassin, Tier S): Wukong is 1.3% pick / 49.7% WR. Yao has +1.7% WR vs Wukong in Camp data. Choose Yao when you need Jungling identity; choose Wukong for Jungling comfort."
+    },
+    {
+      "id": "faq-ban",
+      "question": "Should I ban Yao?",
+      "answer": "Low priority ban (0.0%). Focus bans on higher-tier Assassin picks unless targeting a one-trick."
     }
   ],
   "metaAnalysis": [
-    "Yao win rate 51.44% (Camp HOK, 2026-06-04).",
-    "Pick rate 0.54% in global ranked.",
-    "Ban rate 0.04%.",
-    "Counters: Angela, Mi Yue, Ziya. Countered by: Data unavailable, Data unavailable, Data unavailable."
+    "Yao — 51.4% WR, 0.5% pick, 0.0% ban (Camp HOK 2026-06-05).",
+    "Tier B Assassin · Jungling · difficulty Medium.",
+    "Yao sits at Tier B globally (51.4% WR). In high rank, pick only into favorable matchups or when you have a dedicated pocket pick.",
+    "Matchups: strong into Angela, Mi Yue, Ziya; weak into Hou Yi, Daji, Angela.",
+    "Yao vs Wukong (Assassin, Tier S): Wukong is 1.3% pick / 49.7% WR. Yao has +1.7% WR vs Wukong in Camp data. Choose Yao when you need Jungling identity; choose Wukong for Jungling comfort.",
+    "Yao vs Musashi (Assassin, Tier A): Musashi is 1.1% pick / 50.7% WR. Yao has +0.7% WR vs Musashi in Camp data. Choose Yao when you need Jungling identity; choose Musashi for Jungling comfort.",
+    "Draft tip: counter-pick or comfort pick when lane matchup is favorable."
   ],
   "builds": [
     {
@@ -181,17 +223,17 @@
         },
         {
           "slot": 5,
-          "itemId": null,
-          "name": "siege breaker",
-          "icon": null,
-          "description": null
-        },
-        {
-          "slot": 6,
           "itemId": "1131",
           "name": "Starbreaker",
           "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1131.jpg",
           "description": "Anti-tank"
+        },
+        {
+          "slot": 6,
+          "itemId": null,
+          "name": "Data unavailable",
+          "icon": null,
+          "description": null
         }
       ]
     },
@@ -595,5 +637,31 @@
         }
       ]
     }
-  ]
+  ],
+  "guide": {
+    "overview": "Yao is a Medium Assassin (Jungling) on Honor of Kings Global. Camp HOK ranks them Tier B with 51.4% win rate and 0.5% pick rate as of 2026-06-05.",
+    "bestBuild": "Rush Rapacious Bite, Boots of Resistance, Axe of Torment, then complete Spikemail, siege breaker, Starbreaker. Use preset tabs for jungle, clash, or CN-style paths when draft requires it.",
+    "arcanaSpells": "Run Mutation for stats that match Yao's Assassin kit. Take Smite — swap to Purify against heavy CC or Smite when jungling.",
+    "combo": "Standard trade: Starlight Slice → Starburn (Yao) → Return to Dust → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "laning": "Clear to level four, then gank the lane with the least escape. Secure Tyrant when your bot or mid has crash wave.",
+    "teamfight": "Wait for CC from your team, then dive carry with full combo. Exit with reset or flash if focus fired.",
+    "highRank": "Yao sits at Tier B globally (51.4% WR). In high rank, pick only into favorable matchups or when you have a dedicated pocket pick.",
+    "comparisons": [
+      "Yao vs Wukong (Assassin, Tier S): Wukong is 1.3% pick / 49.7% WR. Yao has +1.7% WR vs Wukong in Camp data. Choose Yao when you need Jungling identity; choose Wukong for Jungling comfort.",
+      "Yao vs Musashi (Assassin, Tier A): Musashi is 1.1% pick / 50.7% WR. Yao has +0.7% WR vs Musashi in Camp data. Choose Yao when you need Jungling identity; choose Musashi for Jungling comfort."
+    ],
+    "matchups": {
+      "strongInto": [
+        "Angela",
+        "Mi Yue",
+        "Ziya"
+      ],
+      "weakInto": [
+        "Hou Yi",
+        "Daji",
+        "Angela"
+      ],
+      "summary": "Yao excels into Angela, Mi Yue, Ziya. Avoid blind picking into Hou Yi, Daji, Angela without team peel."
+    }
+  }
 }

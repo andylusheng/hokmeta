@@ -136,13 +136,13 @@ async function enrichHero(hero, hokSlug, lookup) {
     });
   }
 
-  const presets = parseBuildPresetsFromHtml(html, lookup);
+  const presets = parseBuildPresetsFromHtml(html, lookup, hero.role);
   if (presets.length) {
     hero.builds = presets;
     hero.build =
       pickDefaultBuildItems(presets, hero.lane) || presets[0].items;
   } else {
-    const build = parseBuildFromHtml(html, lookup, hero.lane);
+    const build = parseBuildFromHtml(html, lookup, hero.lane, hero.role);
     if (build.filter((b) => b.icon).length >= 4) hero.build = build;
   }
 

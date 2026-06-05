@@ -49,9 +49,17 @@ Legacy 30-hero patch sync: `npm run sync-meta` (deprecated for counters — use 
 - `/api/heroes.json`
 - `/api/heroes/{slug}.json`
 
-## SEO
+## SEO & analytics
 
-- `src/lib/seo.ts` — metadata & canonical URLs
-- `src/lib/schema.tsx` — JSON-LD
-- `public/robots.txt` via `src/app/robots.ts`
+- `src/lib/seo.ts` — metadata, canonical URLs, GSC/Bing verification tags
+- `src/lib/schema.tsx` — JSON-LD (FAQ, Article, ItemList, VideoGame)
+- `src/app/sitemap.ts` — auto-generated sitemap
+- `src/app/robots.ts` — robots + sitemap URL
 - Search: `/search/` is `noindex`
+
+**Before launch tracking:** fill `config/site.json` → `googleSiteVerification`, `bingSiteVerification`, `ga4MeasurementId`, then `npm run build` and deploy. See [docs/SETUP_ANALYTICS.md](docs/SETUP_ANALYTICS.md).
+
+```bash
+npm run gsc-priority-urls   # URLs to request indexing in GSC/Bing
+npm run qa-priority-builds  # Re-sync builds for top meta heroes
+```

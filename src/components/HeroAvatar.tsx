@@ -7,9 +7,12 @@ import type { Hero } from '@/types/hero';
 export function HeroAvatar({
   hero,
   size = 48,
+  priority = false,
 }: {
   hero: Pick<Hero, 'name' | 'avatar' | 'slug' | 'avatarFallback'>;
   size?: number;
+  /** Set on above-the-fold LCP images (hero page header). */
+  priority?: boolean;
 }) {
   const alt = `${hero.name} HOK Build & Guide`;
   const [fallbackSlug, setFallbackSlug] = useState<string | null>(null);
@@ -25,8 +28,12 @@ export function HeroAvatar({
       alt={alt}
       width={size}
       height={size}
+      sizes={`${size}px`}
       className="rounded-full bg-hok-border object-cover"
       unoptimized
+      priority={priority}
+      loading={priority ? 'eager' : 'lazy'}
+      decoding="async"
       onError={() => {
         if (hero.avatarFallback) {
           setFallbackSlug(hero.slug);

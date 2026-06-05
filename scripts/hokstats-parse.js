@@ -267,9 +267,23 @@ function parseBuildNamesFromProse(html) {
   return names.slice(0, 6);
 }
 
-function resolveBuildFromIds(entries, lookup) {
+function padBuildToSix(build) {
+  while (build.length < 6) {
+    build.push({
+      slot: build.length + 1,
+      itemId: null,
+      name: 'Data unavailable',
+      icon: null,
+      description: null,
+    });
+  }
+  return build;
+}
+
+function resolveBuildFromIds(entries, lookup, heroRole) {
+  const finalized = finalizeBuildEntries(entries, lookup, heroRole);
   const build = [];
-  entries.slice(0, 6).forEach((entry, i) => {
+  finalized.forEach((entry, i) => {
     const byId = lookup.list.find((it) => it.id === String(entry.id));
     if (byId) {
       build.push(buildItemEntry(byId, i + 1));
@@ -288,16 +302,7 @@ function resolveBuildFromIds(entries, lookup) {
       description: null,
     });
   });
-  while (build.length < 6) {
-    build.push({
-      slot: build.length + 1,
-      itemId: null,
-      name: 'Data unavailable',
-      icon: null,
-      description: null,
-    });
-  }
-  return build;
+  return padBuildToSix(build);
 }
 
 const ARCANA_NAMES = [
@@ -624,7 +629,91 @@ function buildItemEntry(item, slot) {
   };
 }
 
-function resolveBuildFromNames(names, lookup) {
+/** Component → finished item (same build branch). */
+const COMPONENT_UPGRADES = {
+  '1154': ['1155', '1141'], // Cloud Piercer → Daybreaker's Virtue | Sunchaser
+  '1129': ['1159'], // Swiftstrike Lance → Tempest
+  '1521': ['1531'], // Guerrilla Machete → Runeblade
+  '1522': ['1532'], // Patrol Axe → Giant's Grip
+  '1523': ['1533'], // Relentless Blade → Rapacious Bite
+  '13211': ['1347'], // Mirror of Radiance → Longnight Guardian
+};
+
+const COMPONENT_MAX_GOLD = 1200;
+const TIER2_BOOTS = new Set(['1421', '1422', '1423', '1424', '1425', '1426']);
+const DEFAULT_BOOT_BY_ROLE = {
+  marksman: '1425',
+  assassin: '1425',
+  warrior: '1421',
+  tank: '1421',
+  mage: '1424',
+  support: '1423',
+};
+
+function pickComponentUpgrade(componentId, upgradeIds, presentIds, heroRole) {
+  const present = new Set(presentIds.map(String));
+  const available = upgradeIds.filter((id) => !present.has(String(id)));
+  if (!available.length) return null;
+  if (componentId === '1154') {
+    if (present.has('1141')) return null;
+    return '1155';
+  }
+  if (componentId === '1411') {
+    const roleKey = String(heroRole || '').toLowerCase();
+    return DEFAULT_BOOT_BY_ROLE[roleKey] || '1425';
+  }
+  return available[0];
+}
+
+function shouldSkipEntry(id, used) {
+  if (id === '1411' && [...used].some((x) => TIER2_BOOTS.has(x))) return true;
+  if (id === '1154' && (used.has('1155') || used.has('1141'))) return true;
+  if (COMPONENT_UPGRADES[id]?.some((target) => used.has(target))) return true;
+  return false;
+}
+
+function finalizeBuildEntries(entries, lookup, heroRole) {
+  const rawIds = entries.map((e) => String(e.id));
+  const upgradedIds = rawIds.map((id) => {
+    if (id === '1411' && rawIds.some((x) => TIER2_BOOTS.has(x))) return null;
+    const upgrades = COMPONENT_UPGRADES[id];
+    if (!upgrades?.length && id !== '1411') return id;
+    if (id === '1411' || upgrades?.length) {
+      return pickComponentUpgrade(id, upgrades || [], rawIds, heroRole) || id;
+    }
+    return id;
+  });
+
+  const finalIds = [];
+  const used = new Set();
+  for (let i = 0; i < upgradedIds.length; i++) {
+    const id = upgradedIds[i];
+    if (!id || shouldSkipEntry(id, used)) continue;
+    if (used.has(id)) continue;
+    used.add(id);
+    finalIds.push(id);
+    if (finalIds.length >= 6) break;
+  }
+
+  return finalIds.map((id) => {
+    const item = lookup.list.find((it) => it.id === id);
+    const entry = entries.find((e) => String(e.id) === id);
+    return { id, name: item?.name || entry?.name || id };
+  });
+}
+
+function resolveBuildFromNames(names, lookup, heroRole) {
+  const entries = [];
+  names.forEach((name) => {
+    const item = findItemByName(name, lookup);
+    if (item && !entries.some((e) => e.id === item.id)) {
+      entries.push({ id: item.id, name: item.name });
+    }
+  });
+  if (entries.length >= 3) {
+    return resolveBuildFromIds(entries, lookup, heroRole);
+  }
+
   const build = [];
   names.slice(0, 6).forEach((name, i) => {
     const item = findItemByName(name, lookup);
@@ -639,16 +728,7 @@ function resolveBuildFromNames(names, lookup) {
       });
     }
   });
-  while (build.length < 6) {
-    build.push({
-      slot: build.length + 1,
-      itemId: null,
-      name: 'Data unavailable',
-      icon: null,
-      description: null,
-    });
-  }
-  return build;
+  return padBuildToSix(build);
 }
 
 function slugifyBuildLabel(label) {
@@ -701,7 +781,7 @@ function pickDefaultBuildItems(presets, heroLane) {
 }
 
 /** HoKStats preset cards: Late Game, Clash Lane, 国服套装, Jungling, etc. */
-function parseBuildPresetsFromHtml(html, lookup) {
+function parseBuildPresetsFromHtml(html, lookup, heroRole) {
   const presets = [];
   const seen = new Set();
   const cardRe =
@@ -722,7 +802,7 @@ function parseBuildPresetsFromHtml(html, lookup) {
     }
     if (entries.length < 3) continue;
 
-    const items = resolveBuildFromIds(entries.slice(0, 6), lookup);
+    const items = resolveBuildFromIds(entries, lookup, heroRole);
     if (items.filter((b) => b.icon).length < 3) continue;
 
     const key = items.map((b) => b.itemId || b.name).join('|');
@@ -742,7 +822,8 @@ function parseBuildPresetsFromHtml(html, lookup) {
   if (slugs.length >= 4) {
     const fromSlugs = resolveBuildFromNames(
       slugs.map((s) => s.replace(/-/g, ' ')),
-      lookup
+      lookup,
+      heroRole
     );
     if (fromSlugs.filter((b) => b.icon).length >= 4) {
       const key = fromSlugs.map((b) => b.itemId || b.name).join('|');
@@ -763,8 +844,8 @@ function parseBuildPresetsFromHtml(html, lookup) {
   return presets.slice(0, 10);
 }
 
-function parseBuildFromHtml(html, lookup, heroLane) {
-  const presets = parseBuildPresetsFromHtml(html, lookup);
+function parseBuildFromHtml(html, lookup, heroLane, heroRole) {
+  const presets = parseBuildPresetsFromHtml(html, lookup, heroRole);
   if (presets.length) {
     return pickDefaultBuildItems(presets, heroLane) || presets[0].items;
   }
@@ -772,28 +853,30 @@ function parseBuildFromHtml(html, lookup, heroLane) {
   const chains = parseBuildItemChains(html);
   if (chains.length) {
     const best = chains.reduce((a, b) => (b.length > a.length ? b : a), chains[0]);
-    const fromChain = resolveBuildFromIds(best.slice(0, 6), lookup);
+    const fromChain = resolveBuildFromIds(best, lookup, heroRole);
     if (fromChain.filter((b) => b.icon).length >= 4) return fromChain;
   }
 
   const named = parseBuildItemNames(html);
-  if (named.length >= 4) return resolveBuildFromNames(named, lookup);
+  if (named.length >= 4) return resolveBuildFromNames(named, lookup, heroRole);
 
   const prose = parseBuildNamesFromProse(html);
   if (prose.length >= 4) {
-    const fromProse = resolveBuildFromNames(prose, lookup);
+    const fromProse = resolveBuildFromNames(prose, lookup, heroRole);
     if (fromProse.filter((b) => b.icon).length >= 4) return fromProse;
   }
 
   const slugs = parseBuildItemSlugs(html);
   const fromSlugs = resolveBuildFromNames(
     slugs.map((s) => s.replace(/-/g, ' ')),
-    lookup
+    lookup,
+    heroRole
   );
-  const namedIcons = resolveBuildFromNames(named, lookup).filter((b) => b.icon).length;
+  const namedIcons = resolveBuildFromNames(named, lookup, heroRole).filter((b) => b.icon)
+    .length;
   const hasIcons = fromSlugs.filter((b) => b.icon).length;
   return namedIcons > hasIcons
-    ? resolveBuildFromNames(named, lookup)
+    ? resolveBuildFromNames(named, lookup, heroRole)
     : fromSlugs;
 }
 
@@ -828,6 +911,8 @@ module.exports = {
   parseBuildItemChains,
   parseBuildNamesFromProse,
   resolveBuildFromIds,
+  finalizeBuildEntries,
+  COMPONENT_UPGRADES,
   parseArcana,
   parseSpells,
   parseCounters,

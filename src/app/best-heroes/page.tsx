@@ -29,8 +29,8 @@ export default function BestHeroesIndexPage() {
       />
       <h1 className="mb-2 text-3xl font-bold text-white">Best Heroes by Role</h1>
       <p className="mb-4 max-w-2xl text-gray-400">
-        SEO-friendly quick picks: who to queue in each primary role, sorted by win
-        rate. For full S+ / S / A / B bands use the{' '}
+        Quick ranked picks per role — sorted by tier, pick rate, and ban pressure
+        (not raw win rate alone). For full S+ / S / A / B bands use the{' '}
         <Link href="/tier-list/" className="text-hok-gold hover:underline">
           Tier List
         </Link>
@@ -41,8 +41,9 @@ export default function BestHeroesIndexPage() {
         .
       </p>
       <p className="mb-8 text-sm text-gray-500">
-        This page answers &ldquo;who should I play as {`{role}`}?&rdquo; — not a
-        duplicate of Trends (pick/ban boards) or Learn (strategy articles).
+        International Camp data — heroes like Jing may rank lower here if global win
+        rate is weak; Lan is not on the current global roster. CN meta favorites
+        can differ from these numbers.
       </p>
 
       <div className="space-y-10">

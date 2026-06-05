@@ -70,22 +70,22 @@
     },
     {
       "slot": 4,
-      "itemId": null,
-      "name": "tome of wisdom",
-      "icon": null,
-      "description": null
-    },
-    {
-      "slot": 5,
       "itemId": "1232",
       "name": "Savant's Wrath",
       "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1232.jpg",
       "description": "Greatly boosts MATK"
     },
     {
+      "slot": 5,
+      "itemId": null,
+      "name": "Data unavailable",
+      "icon": null,
+      "description": null
+    },
+    {
       "slot": 6,
       "itemId": null,
-      "name": "ardent dominator",
+      "name": "Data unavailable",
       "icon": null,
       "description": null
     }
@@ -107,42 +107,84 @@
     "Ying"
   ],
   "tips": [
-    "Yuhuan (Mage): Tier B on international ranked — 50.64% WR.",
-    "Primary lane: Mid Lane.",
-    "Build core: Knowledge Gem, Guardian - Starspring, Boots of the Arcane."
+    "Yuhuan is a Medium Mage (Mid Lane) on Honor of Kings Global. Camp HOK ranks them Tier B with 50.6% win rate and 0.5% pick rate as of 2026-06-05.",
+    "Best build path: Scepter of Reverberation → Boots of Tranquility → Staves of Sorcery → Savant's Wrath.",
+    "Run Nightmare for stats that match Yuhuan's Mage kit. Take Heal & Flash — swap to Purify against heavy CC or Smite when jungling.",
+    "Standard trade: Tragic Beauty → Mournful Tempo → Melody of Peace → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "Laning: Control first wave without taking free poke. Roam after pushing wave 2–4 to side lanes with your jungler.",
+    "Teamfight: Poke from max range before objective. Save hard CC for enemy dive or your carry peel window.",
+    "Yuhuan excels into Mai Shiranui, Nakoruru, Wukong. Avoid blind picking into Luna, Ying without team peel.",
+    "Yuhuan sits at Tier B globally (50.6% WR). In high rank, pick only into favorable matchups or when you have a dedicated pocket pick."
   ],
   "patchHistory": [
     {
       "version": "Live meta",
-      "change": "Camp HOK — WR 50.64%, pick 0.47%, ban 0.02%, popularity tier B."
+      "change": "Camp HOK — WR 50.6%, pick 0.5%, ban 0.0%, tier B."
     },
     {
       "version": "Matchups",
-      "change": "Counters Mai Shiranui, Nakoruru, Wukong · Weak into Luna, Ying."
+      "change": "Strong into Mai Shiranui, Nakoruru, Wukong · Weak into Luna, Ying."
+    },
+    {
+      "version": "High rank",
+      "change": "Yuhuan sits at Tier B globally (50.6% WR). In high rank, pick only into favorable matchups or when you have a dedicated pocket pick."
     }
   ],
   "faqs": [
     {
       "id": "faq-good-season",
-      "question": "Is Yuhuan good in current season?",
-      "answer": "Yuhuan is Tier B Mage with 50.64% win rate, 0.47% pick rate, and 0.02% ban rate on the international server (Camp HOK)."
+      "question": "Is Yuhuan good in the current meta?",
+      "answer": "Yuhuan is Tier B Mage with 50.6% win rate, 0.5% pick rate, and 0.0% ban rate on Honor of Kings Global (Camp HOK, 2026-06-05). Niche — draft carefully."
     },
     {
       "id": "faq-best-build",
       "question": "What is the best Yuhuan build?",
-      "answer": "Recommended item path: Knowledge Gem, Guardian - Starspring, Boots of the Arcane, Holy Grail, Ominous Premonition, Eye of the Phoenix. Spells and Arcana are listed on this page."
+      "answer": "Core item path: Scepter of Reverberation, Boots of Tranquility, Staves of Sorcery, tome of wisdom, Savant's Wrath, ardent dominator. Run Nightmare arcana with Heal & Flash. Switch to alternate build presets on this page for jungle, clash, or late-game setups."
     },
     {
       "id": "faq-counter",
       "question": "How to counter Yuhuan?",
-      "answer": "Strong picks into Yuhuan: Luna, Ying. Yuhuan is strong into Mai Shiranui, Nakoruru, Wukong."
+      "answer": "Pick Luna, Ying into Yuhuan. Deny Mid Lane resources early and force fights before Yuhuan completes core items. Yuhuan struggles when the enemy can out-range or out-sustain them."
+    },
+    {
+      "id": "faq-strong-into",
+      "question": "Who does Yuhuan counter?",
+      "answer": "Yuhuan is strong into Mai Shiranui, Nakoruru, Wukong according to HoKStats matchup data and role matchups on the global server. Draft Yuhuan when the enemy relies on these heroes in the Mid Lane lane."
+    },
+    {
+      "id": "faq-high-rank",
+      "question": "Is Yuhuan good in high rank / Diamond+?",
+      "answer": "Yuhuan sits at Tier B globally (50.6% WR). In high rank, pick only into favorable matchups or when you have a dedicated pocket pick."
+    },
+    {
+      "id": "faq-lane",
+      "question": "What lane should Yuhuan play?",
+      "answer": "Yuhuan is tagged Mid Lane in Camp export (Mage). Control first wave without taking free poke. Roam after pushing wave 2–4 to side lanes with your jungler."
+    },
+    {
+      "id": "faq-arcana",
+      "question": "Best arcana and spells for Yuhuan?",
+      "answer": "Recommended: Nightmare arcana. Battle spell: Heal & Flash. Adjust Purify/Execute based on enemy dive and jungle need."
+    },
+    {
+      "id": "faq-vs-peer",
+      "question": "Yuhuan or Daji — which is better?",
+      "answer": "Yuhuan vs Daji (Mage, Tier S+): Daji is 2.4% pick / 51.0% WR. Daji wins 0.4% more often globally. Choose Yuhuan when you need Mid Lane identity; choose Daji for Mid Lane comfort."
+    },
+    {
+      "id": "faq-ban",
+      "question": "Should I ban Yuhuan?",
+      "answer": "Low priority ban (0.0%). Focus bans on higher-tier Mage picks unless targeting a one-trick."
     }
   ],
   "metaAnalysis": [
-    "Yuhuan win rate 50.64% (Camp HOK, 2026-06-04).",
-    "Pick rate 0.47% in global ranked.",
-    "Ban rate 0.02%.",
-    "Counters: Mai Shiranui, Nakoruru, Wukong. Countered by: Luna, Ying."
+    "Yuhuan — 50.6% WR, 0.5% pick, 0.0% ban (Camp HOK 2026-06-05).",
+    "Tier B Mage · Mid Lane · difficulty Medium.",
+    "Yuhuan sits at Tier B globally (50.6% WR). In high rank, pick only into favorable matchups or when you have a dedicated pocket pick.",
+    "Matchups: strong into Mai Shiranui, Nakoruru, Wukong; weak into Luna, Ying.",
+    "Yuhuan vs Daji (Mage, Tier S+): Daji is 2.4% pick / 51.0% WR. Daji wins 0.4% more often globally. Choose Yuhuan when you need Mid Lane identity; choose Daji for Mid Lane comfort.",
+    "Yuhuan vs Angela (Mage, Tier S+): Angela is 2.3% pick / 51.8% WR. Angela wins 1.2% more often globally. Choose Yuhuan when you need Mid Lane identity; choose Angela for Mid Lane comfort.",
+    "Draft tip: counter-pick or comfort pick when lane matchup is favorable."
   ],
   "builds": [
     {
@@ -174,22 +216,22 @@
         },
         {
           "slot": 4,
-          "itemId": null,
-          "name": "tome of wisdom",
-          "icon": null,
-          "description": null
-        },
-        {
-          "slot": 5,
           "itemId": "1232",
           "name": "Savant's Wrath",
           "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1232.jpg",
           "description": "Greatly boosts MATK"
         },
         {
+          "slot": 5,
+          "itemId": null,
+          "name": "Data unavailable",
+          "icon": null,
+          "description": null
+        },
+        {
           "slot": 6,
           "itemId": null,
-          "name": "ardent dominator",
+          "name": "Data unavailable",
           "icon": null,
           "description": null
         }
@@ -395,5 +437,30 @@
         }
       ]
     }
-  ]
+  ],
+  "guide": {
+    "overview": "Yuhuan is a Medium Mage (Mid Lane) on Honor of Kings Global. Camp HOK ranks them Tier B with 50.6% win rate and 0.5% pick rate as of 2026-06-05.",
+    "bestBuild": "Rush Scepter of Reverberation, Boots of Tranquility, Staves of Sorcery, then complete tome of wisdom, Savant's Wrath, ardent dominator. Use preset tabs for jungle, clash, or CN-style paths when draft requires it.",
+    "arcanaSpells": "Run Nightmare for stats that match Yuhuan's Mage kit. Take Heal & Flash — swap to Purify against heavy CC or Smite when jungling.",
+    "combo": "Standard trade: Tragic Beauty → Mournful Tempo → Melody of Peace → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "laning": "Control first wave without taking free poke. Roam after pushing wave 2–4 to side lanes with your jungler.",
+    "teamfight": "Poke from max range before objective. Save hard CC for enemy dive or your carry peel window.",
+    "highRank": "Yuhuan sits at Tier B globally (50.6% WR). In high rank, pick only into favorable matchups or when you have a dedicated pocket pick.",
+    "comparisons": [
+      "Yuhuan vs Daji (Mage, Tier S+): Daji is 2.4% pick / 51.0% WR. Daji wins 0.4% more often globally. Choose Yuhuan when you need Mid Lane identity; choose Daji for Mid Lane comfort.",
+      "Yuhuan vs Angela (Mage, Tier S+): Angela is 2.3% pick / 51.8% WR. Angela wins 1.2% more often globally. Choose Yuhuan when you need Mid Lane identity; choose Angela for Mid Lane comfort."
+    ],
+    "matchups": {
+      "strongInto": [
+        "Mai Shiranui",
+        "Nakoruru",
+        "Wukong"
+      ],
+      "weakInto": [
+        "Luna",
+        "Ying"
+      ],
+      "summary": "Yuhuan excels into Mai Shiranui, Nakoruru, Wukong. Avoid blind picking into Luna, Ying without team peel."
+    }
+  }
 }

@@ -77,17 +77,17 @@
     },
     {
       "slot": 5,
-      "itemId": null,
-      "name": "siege breaker",
-      "icon": null,
-      "description": null
-    },
-    {
-      "slot": 6,
       "itemId": "1337",
       "name": "Sage's Sanctuary",
       "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1337.jpg",
       "description": "Resurrect on the spot"
+    },
+    {
+      "slot": 6,
+      "itemId": null,
+      "name": "Data unavailable",
+      "icon": null,
+      "description": null
     }
   ],
   "arcana": [
@@ -107,42 +107,84 @@
     "Pei"
   ],
   "tips": [
-    "Lu Bu (Tank): Tier A on international ranked — 48.32% WR.",
-    "Primary lane: Clash Lane.",
-    "Build core: Iron Sword, Nettle Gauntlet, Boots of Tranquility."
+    "Lu Bu is a Easy Tank (Clash Lane) on Honor of Kings Global. Camp HOK ranks them Tier A with 48.3% win rate and 1.2% pick rate as of 2026-06-05.",
+    "Best build path: Boots of Resistance → Succubus Cloak → Blazing Cape → Overlord's Platemail → Sage's Sanctuary.",
+    "Run Fate for stats that match Lu Bu's Tank kit. Take Flash — swap to Purify against heavy CC or Smite when jungling.",
+    "Standard trade: Impaling Thrust → Souleater → Tremble, Mortals → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "Laning: Trade on your power spike levels (2/4). Call jungler for dive only when enemy flash is down.",
+    "Teamfight: Engage on enemy carry when your team has follow-up. Body-block skillshots for your marksman.",
+    "Lu Bu excels into Heino, Daji, Luna. Avoid blind picking into Han Xin, Lam, Pei without team peel.",
+    "Lu Bu is a viable Tier A pick in high rank with 48.3% win rate — strong in one-trick hands or as a counter-pick. Pick rate 1.2% — frequently seen in ranked; learn the matchup even if you do not main Lu Bu. Below 49% global WR — high-rank players often avoid unless compensating for team comp."
   ],
   "patchHistory": [
     {
       "version": "Live meta",
-      "change": "Camp HOK — WR 48.32%, pick 1.18%, ban 0.15%, popularity tier A."
+      "change": "Camp HOK — WR 48.3%, pick 1.2%, ban 0.1%, tier A."
     },
     {
       "version": "Matchups",
-      "change": "Counters Heino, Daji, Luna · Weak into Han Xin, Lam, Pei."
+      "change": "Strong into Heino, Daji, Luna · Weak into Han Xin, Lam, Pei."
+    },
+    {
+      "version": "High rank",
+      "change": "Lu Bu is a viable Tier A pick in high rank with 48.3% win rate — strong in one-trick hands or as a counter-pick. Pick rate 1.2% — frequently seen in ranked; learn the matchup even if you do not main Lu Bu. Below 49% global WR — high-rank players often avoid unless compensating for team comp."
     }
   ],
   "faqs": [
     {
       "id": "faq-good-season",
-      "question": "Is Lu Bu good in current season?",
-      "answer": "Lu Bu is Tier A Tank with 48.32% win rate, 1.18% pick rate, and 0.15% ban rate on the international server (Camp HOK)."
+      "question": "Is Lu Bu good in the current meta?",
+      "answer": "Lu Bu is Tier A Tank with 48.3% win rate, 1.2% pick rate, and 0.1% ban rate on Honor of Kings Global (Camp HOK, 2026-06-05). Solid situational pick."
     },
     {
       "id": "faq-best-build",
       "question": "What is the best Lu Bu build?",
-      "answer": "Recommended item path: Iron Sword, Nettle Gauntlet, Boots of Tranquility, Pure Sky, Boots of Resistance, Destiny. Spells and Arcana are listed on this page."
+      "answer": "Core item path: Boots of Resistance, Succubus Cloak, Blazing Cape, Overlord's Platemail, siege breaker, Sage's Sanctuary. Run Fate arcana with Flash. Switch to alternate build presets on this page for jungle, clash, or late-game setups."
     },
     {
       "id": "faq-counter",
       "question": "How to counter Lu Bu?",
-      "answer": "Strong picks into Lu Bu: Han Xin, Lam, Pei. Lu Bu is strong into Heino, Daji, Luna."
+      "answer": "Pick Han Xin, Lam, Pei into Lu Bu. Deny Clash Lane resources early and force fights before Lu Bu completes core items. Lu Bu struggles when the enemy can out-range or out-sustain them."
+    },
+    {
+      "id": "faq-strong-into",
+      "question": "Who does Lu Bu counter?",
+      "answer": "Lu Bu is strong into Heino, Daji, Luna according to HoKStats matchup data and role matchups on the global server. Draft Lu Bu when the enemy relies on these heroes in the Clash Lane lane."
+    },
+    {
+      "id": "faq-high-rank",
+      "question": "Is Lu Bu good in high rank / Diamond+?",
+      "answer": "Lu Bu is a viable Tier A pick in high rank with 48.3% win rate — strong in one-trick hands or as a counter-pick. Pick rate 1.2% — frequently seen in ranked; learn the matchup even if you do not main Lu Bu. Below 49% global WR — high-rank players often avoid unless compensating for team comp."
+    },
+    {
+      "id": "faq-lane",
+      "question": "What lane should Lu Bu play?",
+      "answer": "Lu Bu is tagged Clash Lane in Camp export (Fighter, Tank). Trade on your power spike levels (2/4). Call jungler for dive only when enemy flash is down."
+    },
+    {
+      "id": "faq-arcana",
+      "question": "Best arcana and spells for Lu Bu?",
+      "answer": "Recommended: Fate arcana. Battle spell: Flash. Adjust Purify/Execute based on enemy dive and jungle need."
+    },
+    {
+      "id": "faq-vs-peer",
+      "question": "Lu Bu or Kaizer — which is better?",
+      "answer": "Lu Bu vs Kaizer (Tank, Tier S): Kaizer is 1.6% pick / 51.4% WR. Kaizer wins 3.1% more often globally. Choose Lu Bu when you need Clash Lane identity; choose Kaizer for Clash Lane comfort."
+    },
+    {
+      "id": "faq-ban",
+      "question": "Should I ban Lu Bu?",
+      "answer": "Optional ban when enemy spams Tank; 1.2% pick rate but only 0.1% ban rate."
     }
   ],
   "metaAnalysis": [
-    "Lu Bu win rate 48.32% (Camp HOK, 2026-06-04).",
-    "Pick rate 1.18% in global ranked.",
-    "Ban rate 0.15%.",
-    "Counters: Heino, Daji, Luna. Countered by: Han Xin, Lam, Pei."
+    "Lu Bu — 48.3% WR, 1.2% pick, 0.1% ban (Camp HOK 2026-06-05).",
+    "Tier A Tank · Clash Lane · difficulty Easy.",
+    "Lu Bu is a viable Tier A pick in high rank with 48.3% win rate — strong in one-trick hands or as a counter-pick. Pick rate 1.2% — frequently seen in ranked; learn the matchup even if you do not main Lu Bu. Below 49% global WR — high-rank players often avoid unless compensating for team comp.",
+    "Matchups: strong into Heino, Daji, Luna; weak into Han Xin, Lam, Pei.",
+    "Lu Bu vs Kaizer (Tank, Tier S): Kaizer is 1.6% pick / 51.4% WR. Kaizer wins 3.1% more often globally. Choose Lu Bu when you need Clash Lane identity; choose Kaizer for Clash Lane comfort.",
+    "Lu Bu vs Dun (Tank, Tier S): Dun is 1.5% pick / 52.3% WR. Dun wins 4.0% more often globally. Choose Lu Bu when you need Clash Lane identity; choose Dun for Clash Lane comfort.",
+    "Draft tip: counter-pick or comfort pick when lane matchup is favorable."
   ],
   "builds": [
     {
@@ -181,17 +223,17 @@
         },
         {
           "slot": 5,
-          "itemId": null,
-          "name": "siege breaker",
-          "icon": null,
-          "description": null
-        },
-        {
-          "slot": 6,
           "itemId": "1337",
           "name": "Sage's Sanctuary",
           "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1337.jpg",
           "description": "Resurrect on the spot"
+        },
+        {
+          "slot": 6,
+          "itemId": null,
+          "name": "Data unavailable",
+          "icon": null,
+          "description": null
         }
       ]
     },
@@ -303,45 +345,45 @@
       "items": [
         {
           "slot": 1,
-          "itemId": "1411",
-          "name": "Lightfoot Shoes",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1411.jpg",
-          "description": "Movement Speed"
-        },
-        {
-          "slot": 2,
           "itemId": "11311",
           "name": "Pure Sky",
           "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/11311.jpg",
           "description": "Temp. damage reduction"
         },
         {
-          "slot": 3,
+          "slot": 2,
           "itemId": "1421",
           "name": "Boots of Fortitude",
           "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1421.jpg",
           "description": "Reduces physical damage"
         },
         {
-          "slot": 4,
+          "slot": 3,
           "itemId": "1138",
           "name": "Overlord's Might",
           "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1138.jpg",
           "description": "High-damage attack"
         },
         {
-          "slot": 5,
+          "slot": 4,
           "itemId": "1127",
           "name": "Destiny",
           "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1127.jpg",
           "description": "Negates fatal damage"
         },
         {
-          "slot": 6,
+          "slot": 5,
           "itemId": "1422",
           "name": "Boots of Resistance",
           "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
           "description": "Shortens CC"
+        },
+        {
+          "slot": 6,
+          "itemId": "11210",
+          "name": "Mortal Punisher",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/11210.jpg",
+          "description": "Lowers Health regen"
         }
       ]
     },
@@ -545,5 +587,31 @@
         }
       ]
     }
-  ]
+  ],
+  "guide": {
+    "overview": "Lu Bu is a Easy Tank (Clash Lane) on Honor of Kings Global. Camp HOK ranks them Tier A with 48.3% win rate and 1.2% pick rate as of 2026-06-05.",
+    "bestBuild": "Rush Boots of Resistance, Succubus Cloak, Blazing Cape, then complete Overlord's Platemail, siege breaker, Sage's Sanctuary. Use preset tabs for jungle, clash, or CN-style paths when draft requires it.",
+    "arcanaSpells": "Run Fate for stats that match Lu Bu's Tank kit. Take Flash — swap to Purify against heavy CC or Smite when jungling.",
+    "combo": "Standard trade: Impaling Thrust → Souleater → Tremble, Mortals → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "laning": "Trade on your power spike levels (2/4). Call jungler for dive only when enemy flash is down.",
+    "teamfight": "Engage on enemy carry when your team has follow-up. Body-block skillshots for your marksman.",
+    "highRank": "Lu Bu is a viable Tier A pick in high rank with 48.3% win rate — strong in one-trick hands or as a counter-pick. Pick rate 1.2% — frequently seen in ranked; learn the matchup even if you do not main Lu Bu. Below 49% global WR — high-rank players often avoid unless compensating for team comp.",
+    "comparisons": [
+      "Lu Bu vs Kaizer (Tank, Tier S): Kaizer is 1.6% pick / 51.4% WR. Kaizer wins 3.1% more often globally. Choose Lu Bu when you need Clash Lane identity; choose Kaizer for Clash Lane comfort.",
+      "Lu Bu vs Dun (Tank, Tier S): Dun is 1.5% pick / 52.3% WR. Dun wins 4.0% more often globally. Choose Lu Bu when you need Clash Lane identity; choose Dun for Clash Lane comfort."
+    ],
+    "matchups": {
+      "strongInto": [
+        "Heino",
+        "Daji",
+        "Luna"
+      ],
+      "weakInto": [
+        "Han Xin",
+        "Lam",
+        "Pei"
+      ],
+      "summary": "Lu Bu excels into Heino, Daji, Luna. Avoid blind picking into Han Xin, Lam, Pei without team peel."
+    }
+  }
 }

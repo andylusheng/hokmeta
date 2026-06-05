@@ -22,6 +22,18 @@ async function fetchText(url) {
   return res.text();
 }
 
+function syncBuildTip(hero) {
+  if (!Array.isArray(hero.tips) || !hero.build?.length) return;
+  const path = hero.build
+    .filter((b) => b.name && b.name !== 'Data unavailable')
+    .map((b) => b.name)
+    .join(' → ');
+  if (!path) return;
+  const line = `Best build path: ${path}.`;
+  const idx = hero.tips.findIndex((t) => /^Best build path:/i.test(t));
+  if (idx >= 0) hero.tips[idx] = line;
+}
+
 async function main() {
   const items = JSON.parse(fs.readFileSync(itemsPath, 'utf8'));
   const lookup = buildItemLookup(items);
@@ -39,15 +51,16 @@ async function main() {
     const hokSlug = nameToSlug[hero.name] || hero.slug;
     try {
       const html = await fetchText(`https://hokstats.gg/heroes/${hokSlug}/`);
-      const presets = parseBuildPresetsFromHtml(html, lookup);
+      const presets = parseBuildPresetsFromHtml(html, lookup, hero.role);
       if (presets.length) {
         hero.builds = presets;
         hero.build =
           pickDefaultBuildItems(presets, hero.lane) || presets[0].items;
       } else {
-        const build = parseBuildFromHtml(html, lookup, hero.lane);
+        const build = parseBuildFromHtml(html, lookup, hero.lane, hero.role);
         if (build.filter((b) => b.icon).length >= 4) hero.build = build;
       }
+      syncBuildTip(hero);
       ok++;
       if ((i + 1) % 20 === 0) console.log(`  ${i + 1}/${heroes.length}`);
     } catch (e) {

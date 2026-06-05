@@ -16,6 +16,9 @@
     "fix-all-icons": "node scripts/fix-all-icons-fast.js",
     "repair-heroes": "node scripts/repair-heroes.js",
     "repair-builds": "node scripts/repair-builds-only.js",
+    "qa-priority-builds": "node scripts/qa-priority-heroes.js",
+    "gsc-priority-urls": "node scripts/gsc-priority-urls.js",
+    "enrich-guides": "node scripts/enrich-hero-guides.js",
     "postbuild": "node scripts/copy-api.js"
   },
   "dependencies": {

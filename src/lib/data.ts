@@ -68,7 +68,7 @@ export function getHeroesGroupedByRole(): Record<HeroRole, Hero[]> {
   ] as HeroRole[];
   const result = {} as Record<HeroRole, Hero[]>;
   for (const role of roles) {
-    result[role] = sortByWinRate(heroes.filter((h) => h.role === role));
+    result[role] = sortByMetaScore(heroes.filter((h) => h.role === role));
   }
   return result;
 }
@@ -101,6 +101,34 @@ export function getHeroesByTier(tier: HeroTier): Hero[] {
 
 function sortByWinRate(list: Hero[]): Hero[] {
   return [...list].sort((a, b) => (b.winRate ?? -1) - (a.winRate ?? -1));
+}
+
+const TIER_WEIGHT: Record<HeroTier, number> = {
+  'S+': 5,
+  S: 4,
+  A: 3,
+  B: 2,
+  C: 1,
+};
+
+/** Ranked meta score: tier + pick/ban pressure + WR (not raw WR alone). */
+export function metaScore(hero: Hero): number {
+  const tier = TIER_WEIGHT[hero.tier] ?? 0;
+  return (
+    tier * 100 +
+    (hero.pickRate ?? 0) * 35 +
+    (hero.banRate ?? 0) * 25 +
+    (hero.winRate ?? 0) * 0.4
+  );
+}
+
+export function sortByMetaScore(list: Hero[]): Hero[] {
+  return [...list].sort((a, b) => metaScore(b) - metaScore(a));
+}
+
+/** Best heroes to queue per role — tier and meta activity, not niche high-WR picks. */
+export function getRecommendedHeroesByRole(role: HeroRole, limit = 10): Hero[] {
+  return sortByMetaScore(heroes.filter((h) => h.role === role)).slice(0, limit);
 }
 
 export function getTierListGrouped(): Record<HeroTier, Record<HeroRole, Hero[]>> {

@@ -77,10 +77,10 @@
     },
     {
       "slot": 5,
-      "itemId": "1154",
-      "name": "Cloud Piercer",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1154.jpg",
-      "description": "Crit Rate +12%, ASPD +15%"
+      "itemId": "1155",
+      "name": "Daybreaker's Virtue",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1155.jpg",
+      "description": "Great for marksmen"
     },
     {
       "slot": 6,
@@ -98,52 +98,94 @@
     "Execute"
   ],
   "counters": [
-    "Data unavailable",
-    "Data unavailable",
-    "Data unavailable"
+    "Sakeer",
+    "Angela",
+    "Guiguzi"
   ],
   "counteredBy": [
-    "Data unavailable",
-    "Data unavailable",
-    "Data unavailable"
+    "Hou Yi",
+    "Marco Polo",
+    "Lady Sun"
   ],
   "tips": [
-    "Chicha (Warrior): Tier S on international ranked — 50.17% WR.",
-    "Primary lane: Clash Lane.",
-    "Build core: Boots of Dexterity, Sparkforged Dagger, Blood Rage."
+    "Chicha is a Medium Warrior (Clash Lane) on Honor of Kings Global. Camp HOK ranks them Tier S with 50.2% win rate and 1.5% pick rate as of 2026-06-05.",
+    "Best build path: Iron Sword → Boots of Dexterity → Sparkforged Dagger → Doomsday → Daybreaker's Virtue → Blood Rage.",
+    "Run Penetration for stats that match Chicha's Warrior kit. Take Flash & Execute — swap to Purify against heavy CC or Smite when jungling.",
+    "Standard trade: Peak-Crushing Polearm → World-Splitting Spear → Return of the Armsmaster → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "Laning: Trade on your power spike levels (2/4). Call jungler for dive only when enemy flash is down.",
+    "Teamfight: Flank or dive backline after tanks commit. Do not start fights without vision on enemy jungler.",
+    "Chicha excels into Sakeer, Angela, Guiguzi. Avoid blind picking into Hou Yi, Marco Polo, Lady Sun without team peel.",
+    "Chicha is a Tier S staple in high-elo (Diamond+) on the international server — worth mastering for climb. Pick rate 1.5% — frequently seen in ranked; learn the matchup even if you do not main Chicha."
   ],
   "patchHistory": [
     {
       "version": "Live meta",
-      "change": "Camp HOK — WR 50.17%, pick 1.47%, ban 0.37%, popularity tier S."
+      "change": "Camp HOK — WR 50.2%, pick 1.5%, ban 0.4%, tier S."
     },
     {
       "version": "Matchups",
-      "change": "Counters Data unavailable, Data unavailable, Data unavailable · Weak into Data unavailable, Data unavailable, Data unavailable."
+      "change": "Strong into Sakeer, Angela, Guiguzi · Weak into Hou Yi, Marco Polo, Lady Sun."
+    },
+    {
+      "version": "High rank",
+      "change": "Chicha is a Tier S staple in high-elo (Diamond+) on the international server — worth mastering for climb. Pick rate 1.5% — frequently seen in ranked; learn the matchup even if you do not main Chicha."
     }
   ],
   "faqs": [
     {
       "id": "faq-good-season",
-      "question": "Is Chicha good in current season?",
-      "answer": "Chicha is Tier S Warrior with 50.17% win rate, 1.47% pick rate, and 0.37% ban rate on the international server (Camp HOK)."
+      "question": "Is Chicha good in the current meta?",
+      "answer": "Chicha is Tier S Warrior with 50.2% win rate, 1.5% pick rate, and 0.4% ban rate on Honor of Kings Global (Camp HOK, 2026-06-05). Strong meta pick for ranked."
     },
     {
       "id": "faq-best-build",
       "question": "What is the best Chicha build?",
-      "answer": "Recommended item path: Boots of Dexterity, Sparkforged Dagger, Blood Rage, Ominous Premonition, Blazing Cape, Succubus Cloak. Spells and Arcana are listed on this page."
+      "answer": "Core item path: Iron Sword, Boots of Dexterity, Sparkforged Dagger, Doomsday, Cloud Piercer, Blood Rage. Run Penetration arcana with Flash & Execute. Switch to alternate build presets on this page for jungle, clash, or late-game setups."
     },
     {
       "id": "faq-counter",
       "question": "How to counter Chicha?",
-      "answer": "Strong picks into Chicha: Data unavailable, Data unavailable, Data unavailable. Chicha is strong into Data unavailable, Data unavailable, Data unavailable."
+      "answer": "Pick Hou Yi, Marco Polo, Lady Sun into Chicha. Deny Clash Lane resources early and force fights before Chicha completes core items. Chicha struggles when the enemy can out-range or out-sustain them."
+    },
+    {
+      "id": "faq-strong-into",
+      "question": "Who does Chicha counter?",
+      "answer": "Chicha is strong into Sakeer, Angela, Guiguzi according to HoKStats matchup data and role matchups on the global server. Draft Chicha when the enemy relies on these heroes in the Clash Lane lane."
+    },
+    {
+      "id": "faq-high-rank",
+      "question": "Is Chicha good in high rank / Diamond+?",
+      "answer": "Chicha is a Tier S staple in high-elo (Diamond+) on the international server — worth mastering for climb. Pick rate 1.5% — frequently seen in ranked; learn the matchup even if you do not main Chicha."
+    },
+    {
+      "id": "faq-lane",
+      "question": "What lane should Chicha play?",
+      "answer": "Chicha is tagged Clash Lane in Camp export (Fighter). Trade on your power spike levels (2/4). Call jungler for dive only when enemy flash is down."
+    },
+    {
+      "id": "faq-arcana",
+      "question": "Best arcana and spells for Chicha?",
+      "answer": "Recommended: Penetration arcana. Battle spell: Flash & Execute. Adjust Purify/Execute based on enemy dive and jungle need."
+    },
+    {
+      "id": "faq-vs-peer",
+      "question": "Chicha or Li Xin — which is better?",
+      "answer": "Chicha vs Li Xin (Warrior, Tier S+): Li Xin is 1.9% pick / 52.6% WR. Li Xin wins 2.4% more often globally. Choose Chicha when you need Clash Lane identity; choose Li Xin for Clash Lane comfort."
+    },
+    {
+      "id": "faq-ban",
+      "question": "Should I ban Chicha?",
+      "answer": "Yes in tryhard queues — 0.4% ban rate. Deny if enemy first-picks Warrior."
     }
   ],
   "metaAnalysis": [
-    "Chicha win rate 50.17% (Camp HOK, 2026-06-04).",
-    "Pick rate 1.47% in global ranked.",
-    "Ban rate 0.37%.",
-    "Counters: Data unavailable, Data unavailable, Data unavailable. Countered by: Data unavailable, Data unavailable, Data unavailable."
+    "Chicha — 50.2% WR, 1.5% pick, 0.4% ban (Camp HOK 2026-06-05).",
+    "Tier S Warrior · Clash Lane · difficulty Medium.",
+    "Chicha is a Tier S staple in high-elo (Diamond+) on the international server — worth mastering for climb. Pick rate 1.5% — frequently seen in ranked; learn the matchup even if you do not main Chicha.",
+    "Matchups: strong into Sakeer, Angela, Guiguzi; weak into Hou Yi, Marco Polo, Lady Sun.",
+    "Chicha vs Li Xin (Warrior, Tier S+): Li Xin is 1.9% pick / 52.6% WR. Li Xin wins 2.4% more often globally. Choose Chicha when you need Clash Lane identity; choose Li Xin for Clash Lane comfort.",
+    "Chicha vs Augran (Warrior, Tier S+): Augran is 1.2% pick / 46.9% WR. Chicha has +3.2% WR vs Augran in Camp data. Choose Chicha when you need Clash Lane identity; choose Augran for Jungling comfort.",
+    "Draft tip: first-pick or ban priority in ranked."
   ],
   "builds": [
     {
@@ -182,10 +224,10 @@
         },
         {
           "slot": 5,
-          "itemId": "1154",
-          "name": "Cloud Piercer",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1154.jpg",
-          "description": "Crit Rate +12%, ASPD +15%"
+          "itemId": "1155",
+          "name": "Daybreaker's Virtue",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1155.jpg",
+          "description": "Great for marksmen"
         },
         {
           "slot": 6,
@@ -596,5 +638,31 @@
         }
       ]
     }
-  ]
+  ],
+  "guide": {
+    "overview": "Chicha is a Medium Warrior (Clash Lane) on Honor of Kings Global. Camp HOK ranks them Tier S with 50.2% win rate and 1.5% pick rate as of 2026-06-05.",
+    "bestBuild": "Rush Iron Sword, Boots of Dexterity, Sparkforged Dagger, then complete Doomsday, Cloud Piercer, Blood Rage. Use preset tabs for jungle, clash, or CN-style paths when draft requires it.",
+    "arcanaSpells": "Run Penetration for stats that match Chicha's Warrior kit. Take Flash & Execute — swap to Purify against heavy CC or Smite when jungling.",
+    "combo": "Standard trade: Peak-Crushing Polearm → World-Splitting Spear → Return of the Armsmaster → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "laning": "Trade on your power spike levels (2/4). Call jungler for dive only when enemy flash is down.",
+    "teamfight": "Flank or dive backline after tanks commit. Do not start fights without vision on enemy jungler.",
+    "highRank": "Chicha is a Tier S staple in high-elo (Diamond+) on the international server — worth mastering for climb. Pick rate 1.5% — frequently seen in ranked; learn the matchup even if you do not main Chicha.",
+    "comparisons": [
+      "Chicha vs Li Xin (Warrior, Tier S+): Li Xin is 1.9% pick / 52.6% WR. Li Xin wins 2.4% more often globally. Choose Chicha when you need Clash Lane identity; choose Li Xin for Clash Lane comfort.",
+      "Chicha vs Augran (Warrior, Tier S+): Augran is 1.2% pick / 46.9% WR. Chicha has +3.2% WR vs Augran in Camp data. Choose Chicha when you need Clash Lane identity; choose Augran for Jungling comfort."
+    ],
+    "matchups": {
+      "strongInto": [
+        "Sakeer",
+        "Angela",
+        "Guiguzi"
+      ],
+      "weakInto": [
+        "Hou Yi",
+        "Marco Polo",
+        "Lady Sun"
+      ],
+      "summary": "Chicha excels into Sakeer, Angela, Guiguzi. Avoid blind picking into Hou Yi, Marco Polo, Lady Sun without team peel."
+    }
+  }
 }

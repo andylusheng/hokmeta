@@ -77,17 +77,17 @@
     },
     {
       "slot": 5,
-      "itemId": null,
-      "name": "siege breaker",
-      "icon": null,
-      "description": null
-    },
-    {
-      "slot": 6,
       "itemId": "1127",
       "name": "Destiny",
       "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1127.jpg",
       "description": "Negates fatal damage"
+    },
+    {
+      "slot": 6,
+      "itemId": null,
+      "name": "Data unavailable",
+      "icon": null,
+      "description": null
     }
   ],
   "arcana": [
@@ -107,42 +107,84 @@
     "Lady Sun"
   ],
   "tips": [
-    "Ying (Assassin): Tier A on international ranked — 52.35% WR.",
-    "Primary lane: Jungling.",
-    "Build core: Relentless Blade, Boots of Tranquility, Meteor."
+    "Ying is a Medium Assassin (Jungling) on Honor of Kings Global. Camp HOK ranks them Tier A with 52.4% win rate and 1.0% pick rate as of 2026-06-05.",
+    "Best build path: Boots of Resistance → Rapacious Bite → Axe of Torment → Frostscar's Embrace → Destiny.",
+    "Run Mutation for stats that match Ying's Assassin kit. Take Smite — swap to Purify against heavy CC or Smite when jungling.",
+    "Standard trade: Moonslash → Cloudchaser → Starburn → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "Laning: Clear to level four, then gank the lane with the least escape. Secure Tyrant when your bot or mid has crash wave.",
+    "Teamfight: Wait for CC from your team, then dive carry with full combo. Exit with reset or flash if focus fired.",
+    "Ying excels into Kongming, Liang, Yuhuan. Avoid blind picking into Di Renjie, Erin, Lady Sun without team peel.",
+    "Ying is a viable Tier A pick in high rank with 52.4% win rate — strong in one-trick hands or as a counter-pick. Pick rate 1.0% — frequently seen in ranked; learn the matchup even if you do not main Ying. Camp data shows above-average win rate — prioritize when not hard-countered in draft."
   ],
   "patchHistory": [
     {
       "version": "Live meta",
-      "change": "Camp HOK — WR 52.35%, pick 1.03%, ban 0.19%, popularity tier A."
+      "change": "Camp HOK — WR 52.4%, pick 1.0%, ban 0.2%, tier A."
     },
     {
       "version": "Matchups",
-      "change": "Counters Kongming, Liang, Yuhuan · Weak into Di Renjie, Erin, Lady Sun."
+      "change": "Strong into Kongming, Liang, Yuhuan · Weak into Di Renjie, Erin, Lady Sun."
+    },
+    {
+      "version": "High rank",
+      "change": "Ying is a viable Tier A pick in high rank with 52.4% win rate — strong in one-trick hands or as a counter-pick. Pick rate 1.0% — frequently seen in ranked; learn the matchup even if you do not main Ying. Camp data shows above-average win rate — prioritize when not hard-countered in draft."
     }
   ],
   "faqs": [
     {
       "id": "faq-good-season",
-      "question": "Is Ying good in current season?",
-      "answer": "Ying is Tier A Assassin with 52.35% win rate, 1.03% pick rate, and 0.19% ban rate on the international server (Camp HOK)."
+      "question": "Is Ying good in the current meta?",
+      "answer": "Ying is Tier A Assassin with 52.4% win rate, 1.0% pick rate, and 0.2% ban rate on Honor of Kings Global (Camp HOK, 2026-06-05). Solid situational pick."
     },
     {
       "id": "faq-best-build",
       "question": "What is the best Ying build?",
-      "answer": "Recommended item path: Relentless Blade, Boots of Tranquility, Meteor, Axe of Torment, Rapacious Bite, Boots of Resistance. Spells and Arcana are listed on this page."
+      "answer": "Core item path: Boots of Resistance, Rapacious Bite, Axe of Torment, Frostscar's Embrace, siege breaker, Destiny. Run Mutation arcana with Smite. Switch to alternate build presets on this page for jungle, clash, or late-game setups."
     },
     {
       "id": "faq-counter",
       "question": "How to counter Ying?",
-      "answer": "Strong picks into Ying: Di Renjie, Erin, Lady Sun. Ying is strong into Kongming, Liang, Yuhuan."
+      "answer": "Pick Di Renjie, Erin, Lady Sun into Ying. Deny Jungling resources early and force fights before Ying completes core items. Ying struggles when the enemy can peel and group them."
+    },
+    {
+      "id": "faq-strong-into",
+      "question": "Who does Ying counter?",
+      "answer": "Ying is strong into Kongming, Liang, Yuhuan according to HoKStats matchup data and role matchups on the global server. Draft Ying when the enemy relies on these heroes in the Jungling lane."
+    },
+    {
+      "id": "faq-high-rank",
+      "question": "Is Ying good in high rank / Diamond+?",
+      "answer": "Ying is a viable Tier A pick in high rank with 52.4% win rate — strong in one-trick hands or as a counter-pick. Pick rate 1.0% — frequently seen in ranked; learn the matchup even if you do not main Ying. Camp data shows above-average win rate — prioritize when not hard-countered in draft."
+    },
+    {
+      "id": "faq-lane",
+      "question": "What lane should Ying play?",
+      "answer": "Ying is tagged Jungling in Camp export (Fighter, Assassin). Clear to level four, then gank the lane with the least escape. Secure Tyrant when your bot or mid has crash wave."
+    },
+    {
+      "id": "faq-arcana",
+      "question": "Best arcana and spells for Ying?",
+      "answer": "Recommended: Mutation arcana. Battle spell: Smite. Adjust Purify/Execute based on enemy dive and jungle need."
+    },
+    {
+      "id": "faq-vs-peer",
+      "question": "Ying or Wukong — which is better?",
+      "answer": "Ying vs Wukong (Assassin, Tier S): Wukong is 1.3% pick / 49.7% WR. Ying has +2.6% WR vs Wukong in Camp data. Choose Ying when you need Jungling identity; choose Wukong for Jungling comfort."
+    },
+    {
+      "id": "faq-ban",
+      "question": "Should I ban Ying?",
+      "answer": "Optional ban when enemy spams Assassin; 1.0% pick rate but only 0.2% ban rate."
     }
   ],
   "metaAnalysis": [
-    "Ying win rate 52.35% (Camp HOK, 2026-06-04).",
-    "Pick rate 1.03% in global ranked.",
-    "Ban rate 0.19%.",
-    "Counters: Kongming, Liang, Yuhuan. Countered by: Di Renjie, Erin, Lady Sun."
+    "Ying — 52.4% WR, 1.0% pick, 0.2% ban (Camp HOK 2026-06-05).",
+    "Tier A Assassin · Jungling · difficulty Medium.",
+    "Ying is a viable Tier A pick in high rank with 52.4% win rate — strong in one-trick hands or as a counter-pick. Pick rate 1.0% — frequently seen in ranked; learn the matchup even if you do not main Ying. Camp data shows above-average win rate — prioritize when not hard-countered in draft.",
+    "Matchups: strong into Kongming, Liang, Yuhuan; weak into Di Renjie, Erin, Lady Sun.",
+    "Ying vs Wukong (Assassin, Tier S): Wukong is 1.3% pick / 49.7% WR. Ying has +2.6% WR vs Wukong in Camp data. Choose Ying when you need Jungling identity; choose Wukong for Jungling comfort.",
+    "Ying vs Musashi (Assassin, Tier A): Musashi is 1.1% pick / 50.7% WR. Ying has +1.6% WR vs Musashi in Camp data. Choose Ying when you need Jungling identity; choose Musashi for Jungling comfort.",
+    "Draft tip: counter-pick or comfort pick when lane matchup is favorable."
   ],
   "builds": [
     {
@@ -181,17 +223,17 @@
         },
         {
           "slot": 5,
-          "itemId": null,
-          "name": "siege breaker",
-          "icon": null,
-          "description": null
-        },
-        {
-          "slot": 6,
           "itemId": "1127",
           "name": "Destiny",
           "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1127.jpg",
           "description": "Negates fatal damage"
+        },
+        {
+          "slot": 6,
+          "itemId": null,
+          "name": "Data unavailable",
+          "icon": null,
+          "description": null
         }
       ]
     },
@@ -617,33 +659,59 @@
         },
         {
           "slot": 3,
-          "itemId": "1411",
-          "name": "Lightfoot Shoes",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1411.jpg",
-          "description": "Movement Speed"
-        },
-        {
-          "slot": 4,
           "itemId": "1533",
           "name": "Rapacious Bite",
           "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1533.jpg",
           "description": "Monster kills boost PATK"
         },
         {
-          "slot": 5,
+          "slot": 4,
           "itemId": "1423",
           "name": "Boots of Tranquility",
           "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1423.jpg",
           "description": "Reduces Skill CD"
         },
         {
-          "slot": 6,
+          "slot": 5,
           "itemId": "1534",
           "name": "Dragon's Rage",
           "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1534.jpg",
           "description": "Boosts BA damage"
+        },
+        {
+          "slot": 6,
+          "itemId": "1137",
+          "name": "Axe of Torment",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1137.jpg",
+          "description": "Anti-squishy"
         }
       ]
     }
-  ]
+  ],
+  "guide": {
+    "overview": "Ying is a Medium Assassin (Jungling) on Honor of Kings Global. Camp HOK ranks them Tier A with 52.4% win rate and 1.0% pick rate as of 2026-06-05.",
+    "bestBuild": "Rush Boots of Resistance, Rapacious Bite, Axe of Torment, then complete Frostscar's Embrace, siege breaker, Destiny. Use preset tabs for jungle, clash, or CN-style paths when draft requires it.",
+    "arcanaSpells": "Run Mutation for stats that match Ying's Assassin kit. Take Smite — swap to Purify against heavy CC or Smite when jungling.",
+    "combo": "Standard trade: Moonslash → Cloudchaser → Starburn → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "laning": "Clear to level four, then gank the lane with the least escape. Secure Tyrant when your bot or mid has crash wave.",
+    "teamfight": "Wait for CC from your team, then dive carry with full combo. Exit with reset or flash if focus fired.",
+    "highRank": "Ying is a viable Tier A pick in high rank with 52.4% win rate — strong in one-trick hands or as a counter-pick. Pick rate 1.0% — frequently seen in ranked; learn the matchup even if you do not main Ying. Camp data shows above-average win rate — prioritize when not hard-countered in draft.",
+    "comparisons": [
+      "Ying vs Wukong (Assassin, Tier S): Wukong is 1.3% pick / 49.7% WR. Ying has +2.6% WR vs Wukong in Camp data. Choose Ying when you need Jungling identity; choose Wukong for Jungling comfort.",
+      "Ying vs Musashi (Assassin, Tier A): Musashi is 1.1% pick / 50.7% WR. Ying has +1.6% WR vs Musashi in Camp data. Choose Ying when you need Jungling identity; choose Musashi for Jungling comfort."
+    ],
+    "matchups": {
+      "strongInto": [
+        "Kongming",
+        "Liang",
+        "Yuhuan"
+      ],
+      "weakInto": [
+        "Di Renjie",
+        "Erin",
+        "Lady Sun"
+      ],
+      "summary": "Ying excels into Kongming, Liang, Yuhuan. Avoid blind picking into Di Renjie, Erin, Lady Sun without team peel."
+    }
+  }
 }

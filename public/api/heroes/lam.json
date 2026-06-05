@@ -77,17 +77,17 @@
     },
     {
       "slot": 5,
-      "itemId": null,
-      "name": "siege breaker",
-      "icon": null,
-      "description": null
-    },
-    {
-      "slot": 6,
       "itemId": "1338",
       "name": "Cuirass of Savagery",
       "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1338.jpg",
       "description": "Offense & defense"
+    },
+    {
+      "slot": 6,
+      "itemId": null,
+      "name": "Data unavailable",
+      "icon": null,
+      "description": null
     }
   ],
   "arcana": [
@@ -107,42 +107,84 @@
     "Luara"
   ],
   "tips": [
-    "Lam (Assassin): Tier A on international ranked — 48.8% WR.",
-    "Primary lane: Jungling.",
-    "Build core: Relentless Blade, Boots of Tranquility, Axe of Torment."
+    "Lam is a Medium Assassin (Jungling) on Honor of Kings Global. Camp HOK ranks them Tier A with 48.8% win rate and 1.0% pick rate as of 2026-06-05.",
+    "Best build path: Rapacious Bite → Boots of Resistance → Axe of Torment → Immovable - Sky Dome → Cuirass of Savagery.",
+    "Run Mutation for stats that match Lam's Assassin kit. Take Smite — swap to Purify against heavy CC or Smite when jungling.",
+    "Standard trade: Wavebreaker → Space Split → Death From Below → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "Laning: Clear to level four, then gank the lane with the least escape. Secure Tyrant when your bot or mid has crash wave.",
+    "Teamfight: Wait for CC from your team, then dive carry with full combo. Exit with reset or flash if focus fired.",
+    "Lam excels into Lu Bu, Wuyan, Xiang Yu. Avoid blind picking into Erin, Liang, Luara without team peel.",
+    "Lam is a viable Tier A pick in high rank with 48.8% win rate — strong in one-trick hands or as a counter-pick. Pick rate 1.0% — frequently seen in ranked; learn the matchup even if you do not main Lam. Below 49% global WR — high-rank players often avoid unless compensating for team comp."
   ],
   "patchHistory": [
     {
       "version": "Live meta",
-      "change": "Camp HOK — WR 48.8%, pick 1.01%, ban 0.48%, popularity tier A."
+      "change": "Camp HOK — WR 48.8%, pick 1.0%, ban 0.5%, tier A."
     },
     {
       "version": "Matchups",
-      "change": "Counters Lu Bu, Wuyan, Xiang Yu · Weak into Erin, Liang, Luara."
+      "change": "Strong into Lu Bu, Wuyan, Xiang Yu · Weak into Erin, Liang, Luara."
+    },
+    {
+      "version": "High rank",
+      "change": "Lam is a viable Tier A pick in high rank with 48.8% win rate — strong in one-trick hands or as a counter-pick. Pick rate 1.0% — frequently seen in ranked; learn the matchup even if you do not main Lam. Below 49% global WR — high-rank players often avoid unless compensating for team comp."
     }
   ],
   "faqs": [
     {
       "id": "faq-good-season",
-      "question": "Is Lam good in current season?",
-      "answer": "Lam is Tier A Assassin with 48.8% win rate, 1.01% pick rate, and 0.48% ban rate on the international server (Camp HOK)."
+      "question": "Is Lam good in the current meta?",
+      "answer": "Lam is Tier A Assassin with 48.8% win rate, 1.0% pick rate, and 0.5% ban rate on Honor of Kings Global (Camp HOK, 2026-06-05). Solid situational pick."
     },
     {
       "id": "faq-best-build",
       "question": "What is the best Lam build?",
-      "answer": "Recommended item path: Relentless Blade, Boots of Tranquility, Axe of Torment, Rapacious Bite, Pure Sky, Spikemail. Spells and Arcana are listed on this page."
+      "answer": "Core item path: Rapacious Bite, Boots of Resistance, Axe of Torment, Immovable - Sky Dome, siege breaker, Cuirass of Savagery. Run Mutation arcana with Smite. Switch to alternate build presets on this page for jungle, clash, or late-game setups."
     },
     {
       "id": "faq-counter",
       "question": "How to counter Lam?",
-      "answer": "Strong picks into Lam: Erin, Liang, Luara. Lam is strong into Lu Bu, Wuyan, Xiang Yu."
+      "answer": "Pick Erin, Liang, Luara into Lam. Deny Jungling resources early and force fights before Lam completes core items. Lam struggles when the enemy can peel and group them."
+    },
+    {
+      "id": "faq-strong-into",
+      "question": "Who does Lam counter?",
+      "answer": "Lam is strong into Lu Bu, Wuyan, Xiang Yu according to HoKStats matchup data and role matchups on the global server. Draft Lam when the enemy relies on these heroes in the Jungling lane."
+    },
+    {
+      "id": "faq-high-rank",
+      "question": "Is Lam good in high rank / Diamond+?",
+      "answer": "Lam is a viable Tier A pick in high rank with 48.8% win rate — strong in one-trick hands or as a counter-pick. Pick rate 1.0% — frequently seen in ranked; learn the matchup even if you do not main Lam. Below 49% global WR — high-rank players often avoid unless compensating for team comp."
+    },
+    {
+      "id": "faq-lane",
+      "question": "What lane should Lam play?",
+      "answer": "Lam is tagged Jungling in Camp export (Assassin, Fighter). Clear to level four, then gank the lane with the least escape. Secure Tyrant when your bot or mid has crash wave."
+    },
+    {
+      "id": "faq-arcana",
+      "question": "Best arcana and spells for Lam?",
+      "answer": "Recommended: Mutation arcana. Battle spell: Smite. Adjust Purify/Execute based on enemy dive and jungle need."
+    },
+    {
+      "id": "faq-vs-peer",
+      "question": "Lam or Wukong — which is better?",
+      "answer": "Lam vs Wukong (Assassin, Tier S): Wukong is 1.3% pick / 49.7% WR. Wukong wins 0.9% more often globally. Choose Lam when you need Jungling identity; choose Wukong for Jungling comfort."
+    },
+    {
+      "id": "faq-ban",
+      "question": "Should I ban Lam?",
+      "answer": "Yes in tryhard queues — 0.5% ban rate. Deny if enemy first-picks Assassin."
     }
   ],
   "metaAnalysis": [
-    "Lam win rate 48.8% (Camp HOK, 2026-06-04).",
-    "Pick rate 1.01% in global ranked.",
-    "Ban rate 0.48%.",
-    "Counters: Lu Bu, Wuyan, Xiang Yu. Countered by: Erin, Liang, Luara."
+    "Lam — 48.8% WR, 1.0% pick, 0.5% ban (Camp HOK 2026-06-05).",
+    "Tier A Assassin · Jungling · difficulty Medium.",
+    "Lam is a viable Tier A pick in high rank with 48.8% win rate — strong in one-trick hands or as a counter-pick. Pick rate 1.0% — frequently seen in ranked; learn the matchup even if you do not main Lam. Below 49% global WR — high-rank players often avoid unless compensating for team comp.",
+    "Matchups: strong into Lu Bu, Wuyan, Xiang Yu; weak into Erin, Liang, Luara.",
+    "Lam vs Wukong (Assassin, Tier S): Wukong is 1.3% pick / 49.7% WR. Wukong wins 0.9% more often globally. Choose Lam when you need Jungling identity; choose Wukong for Jungling comfort.",
+    "Lam vs Musashi (Assassin, Tier A): Musashi is 1.1% pick / 50.7% WR. Musashi wins 1.9% more often globally. Choose Lam when you need Jungling identity; choose Musashi for Jungling comfort.",
+    "Draft tip: counter-pick or comfort pick when lane matchup is favorable."
   ],
   "builds": [
     {
@@ -181,17 +223,17 @@
         },
         {
           "slot": 5,
-          "itemId": null,
-          "name": "siege breaker",
-          "icon": null,
-          "description": null
-        },
-        {
-          "slot": 6,
           "itemId": "1338",
           "name": "Cuirass of Savagery",
           "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1338.jpg",
           "description": "Offense & defense"
+        },
+        {
+          "slot": 6,
+          "itemId": null,
+          "name": "Data unavailable",
+          "icon": null,
+          "description": null
         }
       ]
     },
@@ -645,5 +687,31 @@
         }
       ]
     }
-  ]
+  ],
+  "guide": {
+    "overview": "Lam is a Medium Assassin (Jungling) on Honor of Kings Global. Camp HOK ranks them Tier A with 48.8% win rate and 1.0% pick rate as of 2026-06-05.",
+    "bestBuild": "Rush Rapacious Bite, Boots of Resistance, Axe of Torment, then complete Immovable - Sky Dome, siege breaker, Cuirass of Savagery. Use preset tabs for jungle, clash, or CN-style paths when draft requires it.",
+    "arcanaSpells": "Run Mutation for stats that match Lam's Assassin kit. Take Smite — swap to Purify against heavy CC or Smite when jungling.",
+    "combo": "Standard trade: Wavebreaker → Space Split → Death From Below → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "laning": "Clear to level four, then gank the lane with the least escape. Secure Tyrant when your bot or mid has crash wave.",
+    "teamfight": "Wait for CC from your team, then dive carry with full combo. Exit with reset or flash if focus fired.",
+    "highRank": "Lam is a viable Tier A pick in high rank with 48.8% win rate — strong in one-trick hands or as a counter-pick. Pick rate 1.0% — frequently seen in ranked; learn the matchup even if you do not main Lam. Below 49% global WR — high-rank players often avoid unless compensating for team comp.",
+    "comparisons": [
+      "Lam vs Wukong (Assassin, Tier S): Wukong is 1.3% pick / 49.7% WR. Wukong wins 0.9% more often globally. Choose Lam when you need Jungling identity; choose Wukong for Jungling comfort.",
+      "Lam vs Musashi (Assassin, Tier A): Musashi is 1.1% pick / 50.7% WR. Musashi wins 1.9% more often globally. Choose Lam when you need Jungling identity; choose Musashi for Jungling comfort."
+    ],
+    "matchups": {
+      "strongInto": [
+        "Lu Bu",
+        "Wuyan",
+        "Xiang Yu"
+      ],
+      "weakInto": [
+        "Erin",
+        "Liang",
+        "Luara"
+      ],
+      "summary": "Lam excels into Lu Bu, Wuyan, Xiang Yu. Avoid blind picking into Erin, Liang, Luara without team peel."
+    }
+  }
 }
