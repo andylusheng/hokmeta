@@ -110,7 +110,7 @@
     "Li Bai is a Medium Assassin (Jungling) on Honor of Kings Global. Camp HOK ranks them Tier A with 52.0% win rate and 0.7% pick rate as of 2026-06-05.",
     "Best build path: Rapacious Bite → Boots of Dexterity → Axe of Torment → Bloodweeper → Master Sword → Shadow Ripper.",
     "Run Mutation for stats that match Li Bai's Assassin kit. Take Smite — swap to Purify against heavy CC or Smite when jungling.",
-    "Standard trade: Stupor Slash → Stroke of Genius → Flickering Flurry → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "Standard trade: Stupor Slash → Stroke of Genius → Flickering Flurry → weave basic attacks. Weave basic attacks between skill casts for passive value.",
     "Laning: Clear to level four, then gank the lane with the least escape. Secure Tyrant when your bot or mid has crash wave.",
     "Teamfight: Wait for CC from your team, then dive carry with full combo. Exit with reset or flash if focus fired.",
     "Li Bai excels into Dun, Lian Po, Liu Shan. Avoid blind picking into Garo, Mozi, Shi without team peel.",
@@ -440,9 +440,66 @@
   ],
   "guide": {
     "overview": "Li Bai is a Medium Assassin (Jungling) on Honor of Kings Global. Camp HOK ranks them Tier A with 52.0% win rate and 0.7% pick rate as of 2026-06-05.",
+    "hook": "Li Bai: Basic Attack hits grant stacks.",
     "bestBuild": "Rush Rapacious Bite, Boots of Dexterity, Axe of Torment, then complete Bloodweeper, Master Sword, Shadow Ripper. Use preset tabs for jungle, clash, or CN-style paths when draft requires it.",
     "arcanaSpells": "Run Mutation for stats that match Li Bai's Assassin kit. Take Smite — swap to Purify against heavy CC or Smite when jungling.",
-    "combo": "Standard trade: Stupor Slash → Stroke of Genius → Flickering Flurry → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "combo": "Standard trade: Stupor Slash → Stroke of Genius → Flickering Flurry → weave basic attacks. Weave basic attacks between skill casts for passive value.",
+    "skillOrder": {
+      "priority": "Skill 2 → Skill 1 → Flickering Flurry (max Skill 2 first)",
+      "reason": "Stroke of Genius provides mobility or stick—max first. Stupor Slash second for damage. Flickering Flurry on every level."
+    },
+    "combos": [
+      {
+        "id": "standard",
+        "name": "Standard trade",
+        "steps": "Stupor Slash → Stroke of Genius → Flickering Flurry → weave basic attacks",
+        "when": "Jungling skirmish or objective fight"
+      },
+      {
+        "id": "all-in",
+        "name": "All-in",
+        "steps": "Flickering Flurry after full rotation when Flash is down",
+        "when": "Gank or backline dive with team CC"
+      }
+    ],
+    "itemNotes": [
+      {
+        "slot": 1,
+        "why": "Monster kills boost PATK"
+      },
+      {
+        "slot": 2,
+        "why": "Boosts ASPD"
+      },
+      {
+        "slot": 3,
+        "why": "Anti-squishy"
+      },
+      {
+        "slot": 4,
+        "why": "Physical Lifesteal"
+      },
+      {
+        "slot": 5,
+        "why": "Enhances BA"
+      },
+      {
+        "slot": 6,
+        "why": "Crits boost ASPD"
+      }
+    ],
+    "arcanaRows": [
+      {
+        "slot": "Primary",
+        "rune": "Mutation",
+        "effect": "Recommended for Assassin Jungling"
+      },
+      {
+        "slot": "Spell",
+        "rune": "Smite",
+        "effect": "Adjust Purify/Execute based on enemy dive."
+      }
+    ],
     "laning": "Clear to level four, then gank the lane with the least escape. Secure Tyrant when your bot or mid has crash wave.",
     "teamfight": "Wait for CC from your team, then dive carry with full combo. Exit with reset or flash if focus fired.",
     "highRank": "Li Bai is a viable Tier A pick in high rank with 52.0% win rate — strong in one-trick hands or as a counter-pick.",

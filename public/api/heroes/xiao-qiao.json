@@ -108,7 +108,7 @@
     "Xiao Qiao is a Medium Mage (Mid Lane) on Honor of Kings Global. Camp HOK ranks them Tier S with 48.6% win rate and 1.9% pick rate as of 2026-06-05.",
     "Best build path: Boots of the Arcane → Scepter of Reverberation → Savant's Wrath → Insatiable Tome → Void Staff → Splendor.",
     "Run Nightmare for stats that match Xiao Qiao's Mage kit. Take Flash — swap to Purify against heavy CC or Smite when jungling.",
-    "Standard trade: Blossoming Fan → Honeysweet Breeze → Meteor Storm → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "Standard trade: Blossoming Fan → Honeysweet Breeze → Meteor Storm → weave basic attacks. Weave basic attacks between skill casts for passive value.",
     "Laning: Control first wave without taking free poke. Roam after pushing wave 2–4 to side lanes with your jungler.",
     "Teamfight: Poke from max range before objective. Save hard CC for enemy dive or your carry peel window.",
     "Xiao Qiao excels into Ukyo Tachibana, Han Xin. Avoid blind picking into Liu Bei, Menki without team peel.",
@@ -688,9 +688,60 @@
   ],
   "guide": {
     "overview": "Xiao Qiao is a Medium Mage (Mid Lane) on Honor of Kings Global. Camp HOK ranks them Tier S with 48.6% win rate and 1.9% pick rate as of 2026-06-05.",
+    "hook": "Xiao Qiao: Hitting enemies with skills enhances herself, increasing her Movement Speed.",
     "bestBuild": "Rush Boots of the Arcane, Scepter of Reverberation, Savant's Wrath, then complete Insatiable Tome, Void Staff, Splendor. Use preset tabs for jungle, clash, or CN-style paths when draft requires it.",
     "arcanaSpells": "Run Nightmare for stats that match Xiao Qiao's Mage kit. Take Flash — swap to Purify against heavy CC or Smite when jungling.",
-    "combo": "Standard trade: Blossoming Fan → Honeysweet Breeze → Meteor Storm → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "combo": "Standard trade: Blossoming Fan → Honeysweet Breeze → Meteor Storm → weave basic attacks. Weave basic attacks between skill casts for passive value.",
+    "skillOrder": {
+      "priority": "Skill 2 → Skill 1 → Meteor Storm (max Skill 2 first)",
+      "reason": "Max primary utility/damage skill first, then Blossoming Fan, and Meteor Storm on cooldown."
+    },
+    "combos": [
+      {
+        "id": "standard",
+        "name": "Standard trade",
+        "steps": "Blossoming Fan → Honeysweet Breeze → Meteor Storm → weave basic attacks",
+        "when": "Mid Lane skirmish or objective fight"
+      }
+    ],
+    "itemNotes": [
+      {
+        "slot": 1,
+        "why": "Magical Pierce"
+      },
+      {
+        "slot": 2,
+        "why": "Skill hits trigger explosions"
+      },
+      {
+        "slot": 3,
+        "why": "Greatly boosts MATK"
+      },
+      {
+        "slot": 4,
+        "why": "Magical Lifesteal"
+      },
+      {
+        "slot": 5,
+        "why": "Anti-tank"
+      },
+      {
+        "slot": 6,
+        "why": "Temp. invincibility"
+      }
+    ],
+    "arcanaRows": [
+      {
+        "slot": "Primary",
+        "rune": "Nightmare",
+        "effect": "Recommended for Mage Mid Lane"
+      },
+      {
+        "slot": "Spell",
+        "rune": "Flash",
+        "effect": "Adjust Purify/Execute based on enemy dive."
+      }
+    ],
     "laning": "Control first wave without taking free poke. Roam after pushing wave 2–4 to side lanes with your jungler.",
     "teamfight": "Poke from max range before objective. Save hard CC for enemy dive or your carry peel window.",
     "highRank": "Xiao Qiao is a Tier S staple in high-elo (Diamond+) on the international server — worth mastering for climb. Pick rate 1.9% — frequently seen in ranked; learn the matchup even if you do not main Xiao Qiao. Below 49% global WR — high-rank players often avoid unless compensating for team comp.",

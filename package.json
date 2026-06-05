@@ -19,6 +19,7 @@
     "qa-priority-builds": "node scripts/qa-priority-heroes.js",
     "gsc-priority-urls": "node scripts/gsc-priority-urls.js",
     "enrich-guides": "node scripts/enrich-hero-guides.js",
+    "patch-musashi": "node scripts/patch-musashi-guide.js",
     "postbuild": "node scripts/copy-api.js"
   },
   "dependencies": {

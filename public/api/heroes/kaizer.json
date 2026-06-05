@@ -111,7 +111,7 @@
     "Kaizer is a Easy Tank (Clash Lane) on Honor of Kings Global. Camp HOK ranks them Tier S with 51.4% win rate and 1.6% pick rate as of 2026-06-05.",
     "Best build path: Blazing Cape → Boots of Resistance → Ominous Premonition → Blood Rage → Sage's Sanctuary → Longnight Guardian.",
     "Run Cataclysm for stats that match Kaizer's Tank kit. Take Flash & Smite — swap to Purify against heavy CC or Smite when jungling.",
-    "Standard trade: Vortex Brand → Blade Tempest → Invincible Warrior → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "Standard trade: Vortex Brand → Blade Tempest → Invincible Warrior → weave basic attacks. Weave basic attacks between skill casts for passive value.",
     "Laning: Trade on your power spike levels (2/4). Call jungler for dive only when enemy flash is down.",
     "Teamfight: Engage on enemy carry when your team has follow-up. Body-block skillshots for your marksman.",
     "Kaizer excels into Da Qiao, Diaochan, Daji. Avoid blind picking into Donghuang, Kui, Sun Bin without team peel.",
@@ -691,9 +691,60 @@
   ],
   "guide": {
     "overview": "Kaizer is a Easy Tank (Clash Lane) on Honor of Kings Global. Camp HOK ranks them Tier S with 51.4% win rate and 1.6% pick rate as of 2026-06-05.",
+    "hook": "Kaizer: Basic Attacks and Skill 2 deal extra damage to single targets.",
     "bestBuild": "Rush Blazing Cape, Boots of Resistance, Ominous Premonition, then complete Blood Rage, Sage's Sanctuary, Longnight Guardian. Use preset tabs for jungle, clash, or CN-style paths when draft requires it.",
     "arcanaSpells": "Run Cataclysm for stats that match Kaizer's Tank kit. Take Flash & Smite — swap to Purify against heavy CC or Smite when jungling.",
-    "combo": "Standard trade: Vortex Brand → Blade Tempest → Invincible Warrior → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "combo": "Standard trade: Vortex Brand → Blade Tempest → Invincible Warrior → weave basic attacks. Weave basic attacks between skill casts for passive value.",
+    "skillOrder": {
+      "priority": "Skill 2 → Skill 1 → Invincible Warrior (max Skill 2 first)",
+      "reason": "Max primary utility/damage skill first, then Vortex Brand, and Invincible Warrior on cooldown."
+    },
+    "combos": [
+      {
+        "id": "standard",
+        "name": "Standard trade",
+        "steps": "Vortex Brand → Blade Tempest → Invincible Warrior → weave basic attacks",
+        "when": "Clash Lane skirmish or objective fight"
+      }
+    ],
+    "itemNotes": [
+      {
+        "slot": 1,
+        "why": "Burns nearby enemies"
+      },
+      {
+        "slot": 2,
+        "why": "Shortens CC"
+      },
+      {
+        "slot": 3,
+        "why": "Slows attackers"
+      },
+      {
+        "slot": 4,
+        "why": "Grants temporary shield"
+      },
+      {
+        "slot": 5,
+        "why": "Resurrect on the spot"
+      },
+      {
+        "slot": 6,
+        "why": "Resists burst damage"
+      }
+    ],
+    "arcanaRows": [
+      {
+        "slot": "Primary",
+        "rune": "Cataclysm",
+        "effect": "Recommended for Tank Clash Lane"
+      },
+      {
+        "slot": "Spell",
+        "rune": "Flash / Smite",
+        "effect": "Adjust Purify/Execute based on enemy dive."
+      }
+    ],
     "laning": "Trade on your power spike levels (2/4). Call jungler for dive only when enemy flash is down.",
     "teamfight": "Engage on enemy carry when your team has follow-up. Body-block skillshots for your marksman.",
     "highRank": "Kaizer is a Tier S staple in high-elo (Diamond+) on the international server — worth mastering for climb. Pick rate 1.6% — frequently seen in ranked; learn the matchup even if you do not main Kaizer.",

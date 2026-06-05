@@ -110,7 +110,7 @@
     "Dun is a Easy Tank (Clash Lane) on Honor of Kings Global. Camp HOK ranks them Tier S with 52.3% win rate and 1.5% pick rate as of 2026-06-05.",
     "Best build path: Boots of Resistance → Frostscar's Embrace → Blazing Cape → Eye of the Phoenix → Overlord's Platemail → Blood Rage.",
     "Run Fate for stats that match Dun's Tank kit. Take Execute — swap to Purify against heavy CC or Smite when jungling.",
-    "Standard trade: Wind Slash → Gale's Benediction → Unruly Blade → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "Standard trade: Wind Slash → Gale's Benediction → Unruly Blade → weave basic attacks. Weave basic attacks between skill casts for passive value.",
     "Laning: Trade on your power spike levels (2/4). Call jungler for dive only when enemy flash is down.",
     "Teamfight: Engage on enemy carry when your team has follow-up. Body-block skillshots for your marksman.",
     "Dun excels into Diaochan, Fang, Erin. Avoid blind picking into Han Xin, Li Bai, Wukong without team peel.",
@@ -690,9 +690,60 @@
   ],
   "guide": {
     "overview": "Dun is a Easy Tank (Clash Lane) on Honor of Kings Global. Camp HOK ranks them Tier S with 52.3% win rate and 1.5% pick rate as of 2026-06-05.",
+    "hook": "Dun: Periodic Passive Effect: When Health drops too low, taking damage will enhance Dun.",
     "bestBuild": "Rush Boots of Resistance, Frostscar's Embrace, Blazing Cape, then complete Eye of the Phoenix, Overlord's Platemail, Blood Rage. Use preset tabs for jungle, clash, or CN-style paths when draft requires it.",
     "arcanaSpells": "Run Fate for stats that match Dun's Tank kit. Take Execute — swap to Purify against heavy CC or Smite when jungling.",
-    "combo": "Standard trade: Wind Slash → Gale's Benediction → Unruly Blade → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "combo": "Standard trade: Wind Slash → Gale's Benediction → Unruly Blade → weave basic attacks. Weave basic attacks between skill casts for passive value.",
+    "skillOrder": {
+      "priority": "Skill 2 → Skill 1 → Unruly Blade (max Skill 2 first)",
+      "reason": "Max primary utility/damage skill first, then Wind Slash, and Unruly Blade on cooldown."
+    },
+    "combos": [
+      {
+        "id": "standard",
+        "name": "Standard trade",
+        "steps": "Wind Slash → Gale's Benediction → Unruly Blade → weave basic attacks",
+        "when": "Clash Lane skirmish or objective fight"
+      }
+    ],
+    "itemNotes": [
+      {
+        "slot": 1,
+        "why": "Shortens CC"
+      },
+      {
+        "slot": 2,
+        "why": "Enhanced BAs slow"
+      },
+      {
+        "slot": 3,
+        "why": "Burns nearby enemies"
+      },
+      {
+        "slot": 4,
+        "why": "Boosts Health regen"
+      },
+      {
+        "slot": 5,
+        "why": "Extra Health"
+      },
+      {
+        "slot": 6,
+        "why": "Grants temporary shield"
+      }
+    ],
+    "arcanaRows": [
+      {
+        "slot": "Primary",
+        "rune": "Fate",
+        "effect": "Recommended for Tank Clash Lane"
+      },
+      {
+        "slot": "Spell",
+        "rune": "Execute",
+        "effect": "Adjust Purify/Execute based on enemy dive."
+      }
+    ],
     "laning": "Trade on your power spike levels (2/4). Call jungler for dive only when enemy flash is down.",
     "teamfight": "Engage on enemy carry when your team has follow-up. Body-block skillshots for your marksman.",
     "highRank": "Dun is a Tier S staple in high-elo (Diamond+) on the international server — worth mastering for climb. Pick rate 1.5% — frequently seen in ranked; learn the matchup even if you do not main Dun. Camp data shows above-average win rate — prioritize when not hard-countered in draft.",

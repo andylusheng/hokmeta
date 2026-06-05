@@ -108,7 +108,7 @@
     "Liu Shan is a Easy Tank (Roaming) on Honor of Kings Global. Camp HOK ranks them Tier A with 49.6% win rate and 0.9% pick rate as of 2026-06-05.",
     "Best build path: Boots of Resistance → Glacial Buckler → Ominous Premonition → Succubus Cloak → Longnight Guardian.",
     "Run Fate for stats that match Liu Shan's Tank kit. Take Flash — swap to Purify against heavy CC or Smite when jungling.",
-    "Standard trade: Overcharge! → Robo Smash → Take It for a Spin → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "Standard trade: Overcharge! → Robo Smash → Take It for a Spin → weave basic attacks. Weave basic attacks between skill casts for passive value.",
     "Laning: Help marksman crash wave, then rotate mid for picks. Return before Tyrant if your carry has no escape.",
     "Teamfight: Engage on enemy carry when your team has follow-up. Body-block skillshots for your marksman.",
     "Liu Shan excels into Arthur, Augran, Biron. Avoid blind picking into Li Bai without team peel.",
@@ -338,9 +338,56 @@
   ],
   "guide": {
     "overview": "Liu Shan is a Easy Tank (Roaming) on Honor of Kings Global. Camp HOK ranks them Tier A with 49.6% win rate and 0.9% pick rate as of 2026-06-05.",
+    "hook": "Liu Shan: Liu Shan's skills deal equal damage to structures and can disrupt them while also recovering Health.",
     "bestBuild": "Rush Boots of Resistance, Glacial Buckler, Ominous Premonition, then complete Succubus Cloak, Longnight Guardian. Use preset tabs for jungle, clash, or CN-style paths when draft requires it.",
     "arcanaSpells": "Run Fate for stats that match Liu Shan's Tank kit. Take Flash — swap to Purify against heavy CC or Smite when jungling.",
-    "combo": "Standard trade: Overcharge! → Robo Smash → Take It for a Spin → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "combo": "Standard trade: Overcharge! → Robo Smash → Take It for a Spin → weave basic attacks. Weave basic attacks between skill casts for passive value.",
+    "skillOrder": {
+      "priority": "Skill 2 → Skill 1 → Take It for a Spin (max Skill 2 first)",
+      "reason": "Max primary utility/damage skill first, then Overcharge!, and Take It for a Spin on cooldown."
+    },
+    "combos": [
+      {
+        "id": "standard",
+        "name": "Standard trade",
+        "steps": "Overcharge! → Robo Smash → Take It for a Spin → weave basic attacks",
+        "when": "Roaming skirmish or objective fight"
+      }
+    ],
+    "itemNotes": [
+      {
+        "slot": 1,
+        "why": "Shortens CC"
+      },
+      {
+        "slot": 2,
+        "why": "Group damage & slow"
+      },
+      {
+        "slot": 3,
+        "why": "Slows attackers"
+      },
+      {
+        "slot": 4,
+        "why": "Negates magical damage"
+      },
+      {
+        "slot": 5,
+        "why": "Resists burst damage"
+      }
+    ],
+    "arcanaRows": [
+      {
+        "slot": "Primary",
+        "rune": "Fate",
+        "effect": "Recommended for Tank Roaming"
+      },
+      {
+        "slot": "Spell",
+        "rune": "Flash",
+        "effect": "Adjust Purify/Execute based on enemy dive."
+      }
+    ],
     "laning": "Help marksman crash wave, then rotate mid for picks. Return before Tyrant if your carry has no escape.",
     "teamfight": "Engage on enemy carry when your team has follow-up. Body-block skillshots for your marksman.",
     "highRank": "Liu Shan is a viable Tier A pick in high rank with 49.6% win rate — strong in one-trick hands or as a counter-pick. Pick rate 0.9% — frequently seen in ranked; learn the matchup even if you do not main Liu Shan.",

@@ -108,7 +108,7 @@
     "Athena is a Medium Assassin (Jungling) on Honor of Kings Global. Camp HOK ranks them Tier B with 54.4% win rate and 0.1% pick rate as of 2026-06-05.",
     "Best build path: Giant's Grip → Boots of Resistance → Blazing Cape → Dragon's Rage → Blood Rage → Overlord's Platemail.",
     "Run Red for stats that match Athena's Assassin kit. Take Smite — swap to Purify against heavy CC or Smite when jungling.",
-    "Standard trade: Holy Advance → Unstoppable Spear → Immovable Aegis → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "Standard trade: Holy Advance → Unstoppable Spear → Immovable Aegis → weave basic attacks. Weave basic attacks between skill casts for passive value.",
     "Laning: Clear to level four, then gank the lane with the least escape. Secure Tyrant when your bot or mid has crash wave.",
     "Teamfight: Wait for CC from your team, then dive carry with full combo. Exit with reset or flash if focus fired.",
     "Athena excels into Dharma, Gao Changgong. Avoid blind picking into Sun Bin, Guan Yu without team peel.",
@@ -438,9 +438,66 @@
   ],
   "guide": {
     "overview": "Athena is a Medium Assassin (Jungling) on Honor of Kings Global. Camp HOK ranks them Tier B with 54.4% win rate and 0.1% pick rate as of 2026-06-05.",
+    "hook": "Athena: Able to move in true form after dying.",
     "bestBuild": "Rush Giant's Grip, Boots of Resistance, Blazing Cape, then complete Dragon's Rage, Blood Rage, Overlord's Platemail. Use preset tabs for jungle, clash, or CN-style paths when draft requires it.",
     "arcanaSpells": "Run Red for stats that match Athena's Assassin kit. Take Smite — swap to Purify against heavy CC or Smite when jungling.",
-    "combo": "Standard trade: Holy Advance → Unstoppable Spear → Immovable Aegis → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "combo": "Standard trade: Holy Advance → Unstoppable Spear → Immovable Aegis → weave basic attacks. Weave basic attacks between skill casts for passive value.",
+    "skillOrder": {
+      "priority": "Skill 2 → Skill 1 → Immovable Aegis (max Skill 2 first)",
+      "reason": "Unstoppable Spear provides mobility or stick—max first. Holy Advance second for damage. Immovable Aegis on every level."
+    },
+    "combos": [
+      {
+        "id": "standard",
+        "name": "Standard trade",
+        "steps": "Holy Advance → Unstoppable Spear → Immovable Aegis → weave basic attacks",
+        "when": "Jungling skirmish or objective fight"
+      },
+      {
+        "id": "all-in",
+        "name": "All-in",
+        "steps": "Immovable Aegis after full rotation when Flash is down",
+        "when": "Gank or backline dive with team CC"
+      }
+    ],
+    "itemNotes": [
+      {
+        "slot": 1,
+        "why": "Monster kills boost Health"
+      },
+      {
+        "slot": 2,
+        "why": "Shortens CC"
+      },
+      {
+        "slot": 3,
+        "why": "Burns nearby enemies"
+      },
+      {
+        "slot": 4,
+        "why": "Boosts BA damage"
+      },
+      {
+        "slot": 5,
+        "why": "Grants temporary shield"
+      },
+      {
+        "slot": 6,
+        "why": "Extra Health"
+      }
+    ],
+    "arcanaRows": [
+      {
+        "slot": "Primary",
+        "rune": "Red",
+        "effect": "Recommended for Assassin Jungling"
+      },
+      {
+        "slot": "Spell",
+        "rune": "Smite",
+        "effect": "Adjust Purify/Execute based on enemy dive."
+      }
+    ],
     "laning": "Clear to level four, then gank the lane with the least escape. Secure Tyrant when your bot or mid has crash wave.",
     "teamfight": "Wait for CC from your team, then dive carry with full combo. Exit with reset or flash if focus fired.",
     "highRank": "Athena sits at Tier B globally (54.4% WR). In high rank, pick only into favorable matchups or when you have a dedicated pocket pick. Low pick rate 0.1% — niche in high rank; surprise value if you perfect the kit. Camp data shows above-average win rate — prioritize when not hard-countered in draft.",

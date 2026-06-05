@@ -110,7 +110,7 @@
     "Sun Ce is a Easy Tank (Clash Lane) on Honor of Kings Global. Camp HOK ranks them Tier A with 49.1% win rate and 0.9% pick rate as of 2026-06-05.",
     "Best build path: Boots of Resistance → Axe of Torment → Blazing Cape → Pure Sky → Succubus Cloak → Starbreaker.",
     "Run Red for stats that match Sun Ce's Tank kit. Take Flash — swap to Purify against heavy CC or Smite when jungling.",
-    "Standard trade: Wave Render → Typhoon → Set Sail! → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "Standard trade: Wave Render → Typhoon → Set Sail! → weave basic attacks. Weave basic attacks between skill casts for passive value.",
     "Laning: Trade on your power spike levels (2/4). Call jungler for dive only when enemy flash is down.",
     "Teamfight: Engage on enemy carry when your team has follow-up. Body-block skillshots for your marksman.",
     "Sun Ce excels into Liang, Gan & Mo, Mi Yue. Avoid blind picking into Wukong, Musashi, Ying without team peel.",
@@ -640,9 +640,60 @@
   ],
   "guide": {
     "overview": "Sun Ce is a Easy Tank (Clash Lane) on Honor of Kings Global. Camp HOK ranks them Tier A with 49.1% win rate and 0.9% pick rate as of 2026-06-05.",
+    "hook": "Sun Ce — built around Raging Tide (Tank).",
     "bestBuild": "Rush Boots of Resistance, Axe of Torment, Blazing Cape, then complete Pure Sky, Succubus Cloak, Starbreaker. Use preset tabs for jungle, clash, or CN-style paths when draft requires it.",
     "arcanaSpells": "Run Red for stats that match Sun Ce's Tank kit. Take Flash — swap to Purify against heavy CC or Smite when jungling.",
-    "combo": "Standard trade: Wave Render → Typhoon → Set Sail! → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "combo": "Standard trade: Wave Render → Typhoon → Set Sail! → weave basic attacks. Weave basic attacks between skill casts for passive value.",
+    "skillOrder": {
+      "priority": "Skill 2 → Skill 1 → Set Sail! (max Skill 2 first)",
+      "reason": "Max primary utility/damage skill first, then Wave Render, and Set Sail! on cooldown."
+    },
+    "combos": [
+      {
+        "id": "standard",
+        "name": "Standard trade",
+        "steps": "Wave Render → Typhoon → Set Sail! → weave basic attacks",
+        "when": "Clash Lane skirmish or objective fight"
+      }
+    ],
+    "itemNotes": [
+      {
+        "slot": 1,
+        "why": "Shortens CC"
+      },
+      {
+        "slot": 2,
+        "why": "Anti-squishy"
+      },
+      {
+        "slot": 3,
+        "why": "Burns nearby enemies"
+      },
+      {
+        "slot": 4,
+        "why": "Temp. damage reduction"
+      },
+      {
+        "slot": 5,
+        "why": "Negates magical damage"
+      },
+      {
+        "slot": 6,
+        "why": "Anti-tank"
+      }
+    ],
+    "arcanaRows": [
+      {
+        "slot": "Primary",
+        "rune": "Red",
+        "effect": "Recommended for Tank Clash Lane"
+      },
+      {
+        "slot": "Spell",
+        "rune": "Flash",
+        "effect": "Adjust Purify/Execute based on enemy dive."
+      }
+    ],
     "laning": "Trade on your power spike levels (2/4). Call jungler for dive only when enemy flash is down.",
     "teamfight": "Engage on enemy carry when your team has follow-up. Body-block skillshots for your marksman.",
     "highRank": "Sun Ce is a viable Tier A pick in high rank with 49.1% win rate — strong in one-trick hands or as a counter-pick. Pick rate 0.9% — frequently seen in ranked; learn the matchup even if you do not main Sun Ce.",

@@ -110,7 +110,7 @@
     "Ying is a Medium Assassin (Jungling) on Honor of Kings Global. Camp HOK ranks them Tier A with 52.4% win rate and 1.0% pick rate as of 2026-06-05.",
     "Best build path: Boots of Resistance → Rapacious Bite → Axe of Torment → Frostscar's Embrace → Destiny.",
     "Run Mutation for stats that match Ying's Assassin kit. Take Smite — swap to Purify against heavy CC or Smite when jungling.",
-    "Standard trade: Moonslash → Cloudchaser → Starburn → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "Standard trade: Moonslash → Cloudchaser → Starburn → weave basic attacks. Weave basic attacks between skill casts for passive value.",
     "Laning: Clear to level four, then gank the lane with the least escape. Secure Tyrant when your bot or mid has crash wave.",
     "Teamfight: Wait for CC from your team, then dive carry with full combo. Exit with reset or flash if focus fired.",
     "Ying excels into Kongming, Liang, Yuhuan. Avoid blind picking into Di Renjie, Erin, Lady Sun without team peel.",
@@ -139,7 +139,7 @@
     {
       "id": "faq-best-build",
       "question": "What is the best Ying build?",
-      "answer": "Core item path: Boots of Resistance, Rapacious Bite, Axe of Torment, Frostscar's Embrace, siege breaker, Destiny. Run Mutation arcana with Smite. Switch to alternate build presets on this page for jungle, clash, or late-game setups."
+      "answer": "Core item path: Boots of Resistance, Rapacious Bite, Axe of Torment, Frostscar's Embrace, Destiny. Run Mutation arcana with Smite. Switch to alternate build presets on this page for jungle, clash, or late-game setups."
     },
     {
       "id": "faq-counter",
@@ -690,9 +690,62 @@
   ],
   "guide": {
     "overview": "Ying is a Medium Assassin (Jungling) on Honor of Kings Global. Camp HOK ranks them Tier A with 52.4% win rate and 1.0% pick rate as of 2026-06-05.",
-    "bestBuild": "Rush Boots of Resistance, Rapacious Bite, Axe of Torment, then complete Frostscar's Embrace, siege breaker, Destiny. Use preset tabs for jungle, clash, or CN-style paths when draft requires it.",
+    "hook": "Ying: Skills grant marks (up to 3 stacks), and different stacks upgrade thefollowing Basic Attacks into different skills.",
+    "bestBuild": "Rush Boots of Resistance, Rapacious Bite, Axe of Torment, then complete Frostscar's Embrace, Destiny. Use preset tabs for jungle, clash, or CN-style paths when draft requires it.",
     "arcanaSpells": "Run Mutation for stats that match Ying's Assassin kit. Take Smite — swap to Purify against heavy CC or Smite when jungling.",
-    "combo": "Standard trade: Moonslash → Cloudchaser → Starburn → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "combo": "Standard trade: Moonslash → Cloudchaser → Starburn → weave basic attacks. Weave basic attacks between skill casts for passive value.",
+    "skillOrder": {
+      "priority": "Skill 2 → Skill 1 → Starburn (max Skill 2 first)",
+      "reason": "Cloudchaser provides mobility or stick—max first. Moonslash second for damage. Starburn on every level."
+    },
+    "combos": [
+      {
+        "id": "standard",
+        "name": "Standard trade",
+        "steps": "Moonslash → Cloudchaser → Starburn → weave basic attacks",
+        "when": "Jungling skirmish or objective fight"
+      },
+      {
+        "id": "all-in",
+        "name": "All-in",
+        "steps": "Starburn after full rotation when Flash is down",
+        "when": "Gank or backline dive with team CC"
+      }
+    ],
+    "itemNotes": [
+      {
+        "slot": 1,
+        "why": "Shortens CC"
+      },
+      {
+        "slot": 2,
+        "why": "Monster kills boost PATK"
+      },
+      {
+        "slot": 3,
+        "why": "Anti-squishy"
+      },
+      {
+        "slot": 4,
+        "why": "Enhanced BAs slow"
+      },
+      {
+        "slot": 5,
+        "why": "Negates fatal damage"
+      }
+    ],
+    "arcanaRows": [
+      {
+        "slot": "Primary",
+        "rune": "Mutation",
+        "effect": "Recommended for Assassin Jungling"
+      },
+      {
+        "slot": "Spell",
+        "rune": "Smite",
+        "effect": "Adjust Purify/Execute based on enemy dive."
+      }
+    ],
     "laning": "Clear to level four, then gank the lane with the least escape. Secure Tyrant when your bot or mid has crash wave.",
     "teamfight": "Wait for CC from your team, then dive carry with full combo. Exit with reset or flash if focus fired.",
     "highRank": "Ying is a viable Tier A pick in high rank with 52.4% win rate — strong in one-trick hands or as a counter-pick. Pick rate 1.0% — frequently seen in ranked; learn the matchup even if you do not main Ying. Camp data shows above-average win rate — prioritize when not hard-countered in draft.",

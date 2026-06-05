@@ -109,7 +109,7 @@
     "Agudo is a Medium Marksman (Jungling) on Honor of Kings Global. Camp HOK ranks them Tier B with 51.9% win rate and 0.4% pick rate as of 2026-06-05.",
     "Best build path: Eternity Blade → Boots of Resistance → Shadow Ripper → Daybreaker's Virtue → Doomsday → Starbreaker.",
     "Run Fate for stats that match Agudo's Marksman kit. Take Haste & Smite — swap to Purify against heavy CC or Smite when jungling.",
-    "Standard trade: Wild Growth → Tumble, Furball! → Seed Mines → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "Standard trade: Wild Growth → Tumble, Furball! → Seed Mines → weave basic attacks. Weave basic attacks between skill casts for passive value.",
     "Laning: Clear to level four, then gank the lane with the least escape. Secure Tyrant when your bot or mid has crash wave.",
     "Teamfight: Position behind frontline; attack closest safe target. Join fight only after enemy dive cooldowns are used.",
     "Agudo excels into Kongming, Daji. Avoid blind picking into Ata, Han Xin without team peel.",
@@ -589,9 +589,66 @@
   ],
   "guide": {
     "overview": "Agudo is a Medium Marksman (Jungling) on Honor of Kings Global. Camp HOK ranks them Tier B with 51.9% win rate and 0.4% pick rate as of 2026-06-05.",
+    "hook": "Agudo: Replaces Recovery with Release.",
     "bestBuild": "Rush Eternity Blade, Boots of Resistance, Shadow Ripper, then complete Daybreaker's Virtue, Doomsday, Starbreaker. Use preset tabs for jungle, clash, or CN-style paths when draft requires it.",
     "arcanaSpells": "Run Fate for stats that match Agudo's Marksman kit. Take Haste & Smite — swap to Purify against heavy CC or Smite when jungling.",
-    "combo": "Standard trade: Wild Growth → Tumble, Furball! → Seed Mines → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "combo": "Standard trade: Wild Growth → Tumble, Furball! → Seed Mines → weave basic attacks. Weave basic attacks between skill casts for passive value.",
+    "skillOrder": {
+      "priority": "Skill 2 → Skill 1 → Seed Mines (max Skill 2 first)",
+      "reason": "Tumble, Furball! provides mobility or stick—max first. Wild Growth second for damage. Seed Mines on every level."
+    },
+    "combos": [
+      {
+        "id": "standard",
+        "name": "Standard trade",
+        "steps": "Wild Growth → Tumble, Furball! → Seed Mines → weave basic attacks",
+        "when": "Jungling skirmish or objective fight"
+      },
+      {
+        "id": "all-in",
+        "name": "All-in",
+        "steps": "Seed Mines after full rotation when Flash is down",
+        "when": "Gank or backline dive with team CC"
+      }
+    ],
+    "itemNotes": [
+      {
+        "slot": 1,
+        "why": "High crit damage"
+      },
+      {
+        "slot": 2,
+        "why": "Shortens CC"
+      },
+      {
+        "slot": 3,
+        "why": "Crits boost ASPD"
+      },
+      {
+        "slot": 4,
+        "why": "Great for marksmen"
+      },
+      {
+        "slot": 5,
+        "why": "Boosts BA damage"
+      },
+      {
+        "slot": 6,
+        "why": "Anti-tank"
+      }
+    ],
+    "arcanaRows": [
+      {
+        "slot": "Primary",
+        "rune": "Fate",
+        "effect": "Recommended for Marksman Jungling"
+      },
+      {
+        "slot": "Spell",
+        "rune": "Haste / Smite",
+        "effect": "Adjust Purify/Execute based on enemy dive."
+      }
+    ],
     "laning": "Clear to level four, then gank the lane with the least escape. Secure Tyrant when your bot or mid has crash wave.",
     "teamfight": "Position behind frontline; attack closest safe target. Join fight only after enemy dive cooldowns are used.",
     "highRank": "Agudo sits at Tier B globally (51.9% WR). In high rank, pick only into favorable matchups or when you have a dedicated pocket pick.",

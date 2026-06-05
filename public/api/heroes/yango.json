@@ -110,7 +110,7 @@
     "Yango is a Medium Assassin (Clash Lane) on Honor of Kings Global. Camp HOK ranks them Tier B with 49.5% win rate and 0.5% pick rate as of 2026-06-05.",
     "Best build path: Boots of Fortitude → Axe of Torment → Deepfrost Siege → Pure Sky → Starbreaker.",
     "Run Mutation for stats that match Yango's Assassin kit. Take Flash — swap to Purify against heavy CC or Smite when jungling.",
-    "Standard trade: Occult Arts - Umbra → Occult Arts - Zhi Chu Luan → Occult Arts - Shadow Crucifixion → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "Standard trade: Occult Arts - Umbra → Occult Arts - Zhi Chu Luan → Occult Arts - Shadow Crucifixion → weave basic attacks. Weave basic attacks between skill casts for passive value.",
     "Laning: Trade on your power spike levels (2/4). Call jungler for dive only when enemy flash is down.",
     "Teamfight: Wait for CC from your team, then dive carry with full combo. Exit with reset or flash if focus fired.",
     "Yango excels into Lapulapu, Ata, Sakeer. Avoid blind picking into Hou Yi, Daji, Angela without team peel.",
@@ -139,7 +139,7 @@
     {
       "id": "faq-best-build",
       "question": "What is the best Yango build?",
-      "answer": "Core item path: Boots of Fortitude, Axe of Torment, Deepfrost Siege, siege breaker, Pure Sky, Starbreaker. Run Mutation arcana with Flash. Switch to alternate build presets on this page for jungle, clash, or late-game setups."
+      "answer": "Core item path: Boots of Fortitude, Axe of Torment, Deepfrost Siege, Pure Sky, Starbreaker. Run Mutation arcana with Flash. Switch to alternate build presets on this page for jungle, clash, or late-game setups."
     },
     {
       "id": "faq-counter",
@@ -640,9 +640,62 @@
   ],
   "guide": {
     "overview": "Yango is a Medium Assassin (Clash Lane) on Honor of Kings Global. Camp HOK ranks them Tier B with 49.5% win rate and 0.5% pick rate as of 2026-06-05.",
-    "bestBuild": "Rush Boots of Fortitude, Axe of Torment, Deepfrost Siege, then complete siege breaker, Pure Sky, Starbreaker. Use preset tabs for jungle, clash, or CN-style paths when draft requires it.",
+    "hook": "Yango: PuppetRecovery Chance gaining Hero Shards and recover Health when attacking.",
+    "bestBuild": "Rush Boots of Fortitude, Axe of Torment, Deepfrost Siege, then complete Pure Sky, Starbreaker. Use preset tabs for jungle, clash, or CN-style paths when draft requires it.",
     "arcanaSpells": "Run Mutation for stats that match Yango's Assassin kit. Take Flash — swap to Purify against heavy CC or Smite when jungling.",
-    "combo": "Standard trade: Occult Arts - Umbra → Occult Arts - Zhi Chu Luan → Occult Arts - Shadow Crucifixion → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "combo": "Standard trade: Occult Arts - Umbra → Occult Arts - Zhi Chu Luan → Occult Arts - Shadow Crucifixion → weave basic attacks. Weave basic attacks between skill casts for passive value.",
+    "skillOrder": {
+      "priority": "Skill 2 → Skill 1 → Occult Arts - Shadow Crucifixion (max Skill 2 first)",
+      "reason": "Occult Arts - Zhi Chu Luan provides mobility or stick—max first. Occult Arts - Umbra second for damage. Occult Arts - Shadow Crucifixion on every level."
+    },
+    "combos": [
+      {
+        "id": "standard",
+        "name": "Standard trade",
+        "steps": "Occult Arts - Umbra → Occult Arts - Zhi Chu Luan → Occult Arts - Shadow Crucifixion → weave basic attacks",
+        "when": "Clash Lane skirmish or objective fight"
+      },
+      {
+        "id": "all-in",
+        "name": "All-in",
+        "steps": "Occult Arts - Shadow Crucifixion after full rotation when Flash is down",
+        "when": "Gank or backline dive with team CC"
+      }
+    ],
+    "itemNotes": [
+      {
+        "slot": 1,
+        "why": "Reduces physical damage"
+      },
+      {
+        "slot": 2,
+        "why": "Anti-squishy"
+      },
+      {
+        "slot": 3,
+        "why": "Slows on hit"
+      },
+      {
+        "slot": 4,
+        "why": "Temp. damage reduction"
+      },
+      {
+        "slot": 5,
+        "why": "Anti-tank"
+      }
+    ],
+    "arcanaRows": [
+      {
+        "slot": "Primary",
+        "rune": "Mutation",
+        "effect": "Recommended for Assassin Clash Lane"
+      },
+      {
+        "slot": "Spell",
+        "rune": "Flash",
+        "effect": "Adjust Purify/Execute based on enemy dive."
+      }
+    ],
     "laning": "Trade on your power spike levels (2/4). Call jungler for dive only when enemy flash is down.",
     "teamfight": "Wait for CC from your team, then dive carry with full combo. Exit with reset or flash if focus fired.",
     "highRank": "Yango sits at Tier B globally (49.5% WR). In high rank, pick only into favorable matchups or when you have a dedicated pocket pick.",

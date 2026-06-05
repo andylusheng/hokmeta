@@ -111,7 +111,7 @@
     "Yaria is a Easy Support (Roaming) on Honor of Kings Global. Camp HOK ranks them Tier S with 48.0% win rate and 1.1% pick rate as of 2026-06-05.",
     "Best build path: Crimson Shadow → Boots of Tranquility → Frozen Breath → Ominous Premonition → Succubus Cloak → Overlord's Platemail.",
     "Run Fate for stats that match Yaria's Support kit. Take Flash & Execute — swap to Purify against heavy CC or Smite when jungling.",
-    "Standard trade: Wandering Beam → Accelerating Blitz → Verdant Protector → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "Standard trade: Wandering Beam → Accelerating Blitz → Verdant Protector → weave basic attacks. Weave basic attacks between skill casts for passive value.",
     "Laning: Help marksman crash wave, then rotate mid for picks. Return before Tyrant if your carry has no escape.",
     "Teamfight: Peel carry first, then look for pick on out-of-position enemies. Ward Tyrant 30s before spawn.",
     "Yaria excels into Dian Wei, Dun, Mayene. Avoid blind picking into Dolia, Wukong, Musashi without team peel.",
@@ -491,9 +491,60 @@
   ],
   "guide": {
     "overview": "Yaria is a Easy Support (Roaming) on Honor of Kings Global. Camp HOK ranks them Tier S with 48.0% win rate and 1.1% pick rate as of 2026-06-05.",
+    "hook": "Yaria: When inflicted with crowd control effects (excluding suppression), gains immunity to all effects.",
     "bestBuild": "Rush Crimson Shadow, Boots of Tranquility, Frozen Breath, then complete Ominous Premonition, Succubus Cloak, Overlord's Platemail. Use preset tabs for jungle, clash, or CN-style paths when draft requires it.",
     "arcanaSpells": "Run Fate for stats that match Yaria's Support kit. Take Flash & Execute — swap to Purify against heavy CC or Smite when jungling.",
-    "combo": "Standard trade: Wandering Beam → Accelerating Blitz → Verdant Protector → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "combo": "Standard trade: Wandering Beam → Accelerating Blitz → Verdant Protector → weave basic attacks. Weave basic attacks between skill casts for passive value.",
+    "skillOrder": {
+      "priority": "Skill 2 → Skill 1 → Verdant Protector (max Skill 2 first)",
+      "reason": "Max primary utility/damage skill first, then Wandering Beam, and Verdant Protector on cooldown."
+    },
+    "combos": [
+      {
+        "id": "standard",
+        "name": "Standard trade",
+        "steps": "Wandering Beam → Accelerating Blitz → Verdant Protector → weave basic attacks",
+        "when": "Roaming skirmish or objective fight"
+      }
+    ],
+    "itemNotes": [
+      {
+        "slot": 1,
+        "why": "DPS aura"
+      },
+      {
+        "slot": 2,
+        "why": "Reduces Skill CD"
+      },
+      {
+        "slot": 3,
+        "why": "Slows on hit"
+      },
+      {
+        "slot": 4,
+        "why": "Slows attackers"
+      },
+      {
+        "slot": 5,
+        "why": "Negates magical damage"
+      },
+      {
+        "slot": 6,
+        "why": "Extra Health"
+      }
+    ],
+    "arcanaRows": [
+      {
+        "slot": "Primary",
+        "rune": "Fate",
+        "effect": "Recommended for Support Roaming"
+      },
+      {
+        "slot": "Spell",
+        "rune": "Flash / Execute",
+        "effect": "Adjust Purify/Execute based on enemy dive."
+      }
+    ],
     "laning": "Help marksman crash wave, then rotate mid for picks. Return before Tyrant if your carry has no escape.",
     "teamfight": "Peel carry first, then look for pick on out-of-position enemies. Ward Tyrant 30s before spawn.",
     "highRank": "Yaria is a Tier S staple in high-elo (Diamond+) on the international server — worth mastering for climb. Ban rate 1.3% — expect Yaria to be removed in tryhard lobbies; have a backup in the same role. Below 49% global WR — high-rank players often avoid unless compensating for team comp.",

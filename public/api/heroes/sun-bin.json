@@ -109,7 +109,7 @@
     "Sun Bin is a Easy Support (Roaming) on Honor of Kings Global. Camp HOK ranks them Tier B with 50.2% win rate and 0.4% pick rate as of 2026-06-05.",
     "Best build path: Boots of Tranquility → Glacial Buckler → Succubus Cloak → Venomous Staff → Sage's Sanctuary.",
     "Run Nightmare for stats that match Sun Bin's Support kit. Take Heal — swap to Purify against heavy CC or Smite when jungling.",
-    "Standard trade: Time Bomb → Time Flux → Time Lapse → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "Standard trade: Time Bomb → Time Flux → Time Lapse → weave basic attacks. Weave basic attacks between skill casts for passive value.",
     "Laning: Help marksman crash wave, then rotate mid for picks. Return before Tyrant if your carry has no escape.",
     "Teamfight: Peel carry first, then look for pick on out-of-position enemies. Ward Tyrant 30s before spawn.",
     "Sun Bin excels into Kaizer, Musashi. Avoid blind picking into Wukong, Musashi, Ying without team peel.",
@@ -138,7 +138,7 @@
     {
       "id": "faq-best-build",
       "question": "What is the best Sun Bin build?",
-      "answer": "Core item path: Boots of Tranquility, Glacial Buckler, Succubus Cloak, Venomous Staff, Sage's Sanctuary, nightmare. Run Nightmare arcana with Heal. Switch to alternate build presets on this page for jungle, clash, or late-game setups."
+      "answer": "Core item path: Boots of Tranquility, Glacial Buckler, Succubus Cloak, Venomous Staff, Sage's Sanctuary. Run Nightmare arcana with Heal. Switch to alternate build presets on this page for jungle, clash, or late-game setups."
     },
     {
       "id": "faq-counter",
@@ -439,9 +439,56 @@
   ],
   "guide": {
     "overview": "Sun Bin is a Easy Support (Roaming) on Honor of Kings Global. Camp HOK ranks them Tier B with 50.2% win rate and 0.4% pick rate as of 2026-06-05.",
-    "bestBuild": "Rush Boots of Tranquility, Glacial Buckler, Succubus Cloak, then complete Venomous Staff, Sage's Sanctuary, nightmare. Use preset tabs for jungle, clash, or CN-style paths when draft requires it.",
+    "hook": "Sun Bin: Gains a Movement Speed bonus after using skills.",
+    "bestBuild": "Rush Boots of Tranquility, Glacial Buckler, Succubus Cloak, then complete Venomous Staff, Sage's Sanctuary. Use preset tabs for jungle, clash, or CN-style paths when draft requires it.",
     "arcanaSpells": "Run Nightmare for stats that match Sun Bin's Support kit. Take Heal — swap to Purify against heavy CC or Smite when jungling.",
-    "combo": "Standard trade: Time Bomb → Time Flux → Time Lapse → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "combo": "Standard trade: Time Bomb → Time Flux → Time Lapse → weave basic attacks. Weave basic attacks between skill casts for passive value.",
+    "skillOrder": {
+      "priority": "Skill 2 → Skill 1 → Time Lapse (max Skill 2 first)",
+      "reason": "Max primary utility/damage skill first, then Time Bomb, and Time Lapse on cooldown."
+    },
+    "combos": [
+      {
+        "id": "standard",
+        "name": "Standard trade",
+        "steps": "Time Bomb → Time Flux → Time Lapse → weave basic attacks",
+        "when": "Roaming skirmish or objective fight"
+      }
+    ],
+    "itemNotes": [
+      {
+        "slot": 1,
+        "why": "Reduces Skill CD"
+      },
+      {
+        "slot": 2,
+        "why": "Group damage & slow"
+      },
+      {
+        "slot": 3,
+        "why": "Negates magical damage"
+      },
+      {
+        "slot": 4,
+        "why": "Lowers Health regen"
+      },
+      {
+        "slot": 5,
+        "why": "Resurrect on the spot"
+      }
+    ],
+    "arcanaRows": [
+      {
+        "slot": "Primary",
+        "rune": "Nightmare",
+        "effect": "Recommended for Support Roaming"
+      },
+      {
+        "slot": "Spell",
+        "rune": "Heal",
+        "effect": "Adjust Purify/Execute based on enemy dive."
+      }
+    ],
     "laning": "Help marksman crash wave, then rotate mid for picks. Return before Tyrant if your carry has no escape.",
     "teamfight": "Peel carry first, then look for pick on out-of-position enemies. Ward Tyrant 30s before spawn.",
     "highRank": "Sun Bin sits at Tier B globally (50.2% WR). In high rank, pick only into favorable matchups or when you have a dedicated pocket pick.",

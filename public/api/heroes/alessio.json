@@ -109,7 +109,7 @@
     "Alessio is a Medium Marksman (Farm Lane) on Honor of Kings Global. Camp HOK ranks them Tier A with 51.5% win rate and 0.9% pick rate as of 2026-06-05.",
     "Best build path: Sparkforged Dagger → Boots of Dexterity → Eternity Blade → Bloodweeper → Shadow Ripper → Daybreaker's Virtue.",
     "Run Dominator for stats that match Alessio's Marksman kit. Take Haste & Flash — swap to Purify against heavy CC or Smite when jungling.",
-    "Standard trade: Upgraded Shell → Legendary Hero Debut → Sunset Fireworks Show → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "Standard trade: Upgraded Shell → Legendary Hero Debut → Sunset Fireworks Show → weave basic attacks. Weave basic attacks between skill casts for passive value.",
     "Laning: Last-hit safely until first core item. Ping jungler for river vision; never face-check brush without minion cover.",
     "Teamfight: Position behind frontline; attack closest safe target. Join fight only after enemy dive cooldowns are used.",
     "Alessio excels into Mai Shiranui, Lian Po. Avoid blind picking into Arke, Lady Sun without team peel.",
@@ -439,9 +439,60 @@
   ],
   "guide": {
     "overview": "Alessio is a Medium Marksman (Farm Lane) on Honor of Kings Global. Camp HOK ranks them Tier A with 51.5% win rate and 0.9% pick rate as of 2026-06-05.",
+    "hook": "Alessio: Alessio's Basic Attacks deal area damage, plus extra physical damage.",
     "bestBuild": "Rush Sparkforged Dagger, Boots of Dexterity, Eternity Blade, then complete Bloodweeper, Shadow Ripper, Daybreaker's Virtue. Use preset tabs for jungle, clash, or CN-style paths when draft requires it.",
     "arcanaSpells": "Run Dominator for stats that match Alessio's Marksman kit. Take Haste & Flash — swap to Purify against heavy CC or Smite when jungling.",
-    "combo": "Standard trade: Upgraded Shell → Legendary Hero Debut → Sunset Fireworks Show → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "combo": "Standard trade: Upgraded Shell → Legendary Hero Debut → Sunset Fireworks Show → weave basic attacks. Weave basic attacks between skill casts for passive value.",
+    "skillOrder": {
+      "priority": "Skill 1 → Skill 2 → Sunset Fireworks Show (max Skill 1 first)",
+      "reason": "Upgraded Shell is your lane trade tool. Legendary Hero Debut second. Sunset Fireworks Show whenever available."
+    },
+    "combos": [
+      {
+        "id": "standard",
+        "name": "Standard trade",
+        "steps": "Upgraded Shell → Legendary Hero Debut → Sunset Fireworks Show → weave basic attacks",
+        "when": "Farm Lane skirmish or objective fight"
+      }
+    ],
+    "itemNotes": [
+      {
+        "slot": 1,
+        "why": "Chain lightning BA"
+      },
+      {
+        "slot": 2,
+        "why": "Boosts ASPD"
+      },
+      {
+        "slot": 3,
+        "why": "High crit damage"
+      },
+      {
+        "slot": 4,
+        "why": "Physical Lifesteal"
+      },
+      {
+        "slot": 5,
+        "why": "Crits boost ASPD"
+      },
+      {
+        "slot": 6,
+        "why": "Great for marksmen"
+      }
+    ],
+    "arcanaRows": [
+      {
+        "slot": "Primary",
+        "rune": "Dominator",
+        "effect": "Recommended for Marksman Farm Lane"
+      },
+      {
+        "slot": "Spell",
+        "rune": "Haste / Flash",
+        "effect": "Adjust Purify/Execute based on enemy dive."
+      }
+    ],
     "laning": "Last-hit safely until first core item. Ping jungler for river vision; never face-check brush without minion cover.",
     "teamfight": "Position behind frontline; attack closest safe target. Join fight only after enemy dive cooldowns are used.",
     "highRank": "Alessio is a viable Tier A pick in high rank with 51.5% win rate — strong in one-trick hands or as a counter-pick. Pick rate 0.9% — frequently seen in ranked; learn the matchup even if you do not main Alessio.",

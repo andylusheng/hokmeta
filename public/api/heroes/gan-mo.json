@@ -109,7 +109,7 @@
     "Gan & Mo is a Medium Mage (Mid Lane) on Honor of Kings Global. Camp HOK ranks them Tier B with 50.4% win rate and 0.5% pick rate as of 2026-06-05.",
     "Best build path: Frozen Breath → Boots of Tranquility → Scepter of Reverberation → Mask of Agony → Savant's Wrath → Void Staff.",
     "Run Nightmare for stats that match Gan & Mo's Mage kit. Take Flash — swap to Purify against heavy CC or Smite when jungling.",
-    "Standard trade: Guard Her Grave → Coupled Blades - Short → Coupled Blades - Long → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "Standard trade: Guard Her Grave → Coupled Blades - Short → Coupled Blades - Long → weave basic attacks. Weave basic attacks between skill casts for passive value.",
     "Laning: Control first wave without taking free poke. Roam after pushing wave 2–4 to side lanes with your jungler.",
     "Teamfight: Poke from max range before objective. Save hard CC for enemy dive or your carry peel window.",
     "Gan & Mo excels into Pei, Jing. Avoid blind picking into Sun Ce, Li Xin, Kaizer without team peel.",
@@ -539,9 +539,60 @@
   ],
   "guide": {
     "overview": "Gan & Mo is a Medium Mage (Mid Lane) on Honor of Kings Global. Camp HOK ranks them Tier B with 50.4% win rate and 0.5% pick rate as of 2026-06-05.",
+    "hook": "Gan & Mo: Basic Attacks deal extra damage.",
     "bestBuild": "Rush Frozen Breath, Boots of Tranquility, Scepter of Reverberation, then complete Mask of Agony, Savant's Wrath, Void Staff. Use preset tabs for jungle, clash, or CN-style paths when draft requires it.",
     "arcanaSpells": "Run Nightmare for stats that match Gan & Mo's Mage kit. Take Flash — swap to Purify against heavy CC or Smite when jungling.",
-    "combo": "Standard trade: Guard Her Grave → Coupled Blades - Short → Coupled Blades - Long → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "combo": "Standard trade: Guard Her Grave → Coupled Blades - Short → Coupled Blades - Long → weave basic attacks. Weave basic attacks between skill casts for passive value.",
+    "skillOrder": {
+      "priority": "Skill 2 → Skill 1 → Coupled Blades - Long (max Skill 2 first)",
+      "reason": "Max primary utility/damage skill first, then Guard Her Grave, and Coupled Blades - Long on cooldown."
+    },
+    "combos": [
+      {
+        "id": "standard",
+        "name": "Standard trade",
+        "steps": "Guard Her Grave → Coupled Blades - Short → Coupled Blades - Long → weave basic attacks",
+        "when": "Mid Lane skirmish or objective fight"
+      }
+    ],
+    "itemNotes": [
+      {
+        "slot": 1,
+        "why": "Slows on hit"
+      },
+      {
+        "slot": 2,
+        "why": "Reduces Skill CD"
+      },
+      {
+        "slot": 3,
+        "why": "Skill hits trigger explosions"
+      },
+      {
+        "slot": 4,
+        "why": "Boosts skill damage"
+      },
+      {
+        "slot": 5,
+        "why": "Greatly boosts MATK"
+      },
+      {
+        "slot": 6,
+        "why": "Anti-tank"
+      }
+    ],
+    "arcanaRows": [
+      {
+        "slot": "Primary",
+        "rune": "Nightmare",
+        "effect": "Recommended for Mage Mid Lane"
+      },
+      {
+        "slot": "Spell",
+        "rune": "Flash",
+        "effect": "Adjust Purify/Execute based on enemy dive."
+      }
+    ],
     "laning": "Control first wave without taking free poke. Roam after pushing wave 2–4 to side lanes with your jungler.",
     "teamfight": "Poke from max range before objective. Save hard CC for enemy dive or your carry peel window.",
     "highRank": "Gan & Mo sits at Tier B globally (50.4% WR). In high rank, pick only into favorable matchups or when you have a dedicated pocket pick.",

@@ -110,7 +110,7 @@
     "Pei is a Medium Assassin (Jungling) on Honor of Kings Global. Camp HOK ranks them Tier B with 52.7% win rate and 0.3% pick rate as of 2026-06-05.",
     "Best build path: Rapacious Bite → Boots of Resistance → Axe of Torment → Master Sword → Doomsday.",
     "Run Conflict for stats that match Pei's Assassin kit. Take Smite — swap to Purify against heavy CC or Smite when jungling.",
-    "Standard trade: Striker Stance → Guarding Stance → Tiger Form → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "Standard trade: Striker Stance → Guarding Stance → Tiger Form → weave basic attacks. Weave basic attacks between skill casts for passive value.",
     "Laning: Clear to level four, then gank the lane with the least escape. Secure Tyrant when your bot or mid has crash wave.",
     "Teamfight: Wait for CC from your team, then dive carry with full combo. Exit with reset or flash if focus fired.",
     "Pei excels into Arthur, Lu Bu, Wuyan. Avoid blind picking into Gan & Mo, Meng Ya, Milady without team peel.",
@@ -139,7 +139,7 @@
     {
       "id": "faq-best-build",
       "question": "What is the best Pei build?",
-      "answer": "Core item path: Rapacious Bite, Boots of Resistance, Axe of Torment, Master Sword, siege breaker, Doomsday. Run Conflict arcana with Smite. Switch to alternate build presets on this page for jungle, clash, or late-game setups."
+      "answer": "Core item path: Rapacious Bite, Boots of Resistance, Axe of Torment, Master Sword, Doomsday. Run Conflict arcana with Smite. Switch to alternate build presets on this page for jungle, clash, or late-game setups."
     },
     {
       "id": "faq-counter",
@@ -440,9 +440,62 @@
   ],
   "guide": {
     "overview": "Pei is a Medium Assassin (Jungling) on Honor of Kings Global. Camp HOK ranks them Tier B with 52.7% win rate and 0.3% pick rate as of 2026-06-05.",
-    "bestBuild": "Rush Rapacious Bite, Boots of Resistance, Axe of Torment, then complete Master Sword, siege breaker, Doomsday. Use preset tabs for jungle, clash, or CN-style paths when draft requires it.",
+    "hook": "Pei: In human form, Basic Attacks have increased range and deal extra magical damage while recovering Energy.",
+    "bestBuild": "Rush Rapacious Bite, Boots of Resistance, Axe of Torment, then complete Master Sword, Doomsday. Use preset tabs for jungle, clash, or CN-style paths when draft requires it.",
     "arcanaSpells": "Run Conflict for stats that match Pei's Assassin kit. Take Smite — swap to Purify against heavy CC or Smite when jungling.",
-    "combo": "Standard trade: Striker Stance → Guarding Stance → Tiger Form → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "combo": "Standard trade: Striker Stance → Guarding Stance → Tiger Form → weave basic attacks. Weave basic attacks between skill casts for passive value.",
+    "skillOrder": {
+      "priority": "Skill 2 → Skill 1 → Tiger Form (max Skill 2 first)",
+      "reason": "Guarding Stance provides mobility or stick—max first. Striker Stance second for damage. Tiger Form on every level."
+    },
+    "combos": [
+      {
+        "id": "standard",
+        "name": "Standard trade",
+        "steps": "Striker Stance → Guarding Stance → Tiger Form → weave basic attacks",
+        "when": "Jungling skirmish or objective fight"
+      },
+      {
+        "id": "all-in",
+        "name": "All-in",
+        "steps": "Tiger Form after full rotation when Flash is down",
+        "when": "Gank or backline dive with team CC"
+      }
+    ],
+    "itemNotes": [
+      {
+        "slot": 1,
+        "why": "Monster kills boost PATK"
+      },
+      {
+        "slot": 2,
+        "why": "Shortens CC"
+      },
+      {
+        "slot": 3,
+        "why": "Anti-squishy"
+      },
+      {
+        "slot": 4,
+        "why": "Enhances BA"
+      },
+      {
+        "slot": 5,
+        "why": "Boosts BA damage"
+      }
+    ],
+    "arcanaRows": [
+      {
+        "slot": "Primary",
+        "rune": "Conflict",
+        "effect": "Recommended for Assassin Jungling"
+      },
+      {
+        "slot": "Spell",
+        "rune": "Smite",
+        "effect": "Adjust Purify/Execute based on enemy dive."
+      }
+    ],
     "laning": "Clear to level four, then gank the lane with the least escape. Secure Tyrant when your bot or mid has crash wave.",
     "teamfight": "Wait for CC from your team, then dive carry with full combo. Exit with reset or flash if focus fired.",
     "highRank": "Pei sits at Tier B globally (52.7% WR). In high rank, pick only into favorable matchups or when you have a dedicated pocket pick. Camp data shows above-average win rate — prioritize when not hard-countered in draft.",

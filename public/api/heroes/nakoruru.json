@@ -110,7 +110,7 @@
     "Nakoruru is a Medium Assassin (Jungling) on Honor of Kings Global. Camp HOK ranks them Tier A with 50.7% win rate and 0.8% pick rate as of 2026-06-05.",
     "Best build path: Rapacious Bite → Boots of Resistance → Axe of Torment → Frostscar's Embrace → Starbreaker.",
     "Run Mutation for stats that match Nakoruru's Assassin kit. Take Smite — swap to Purify against heavy CC or Smite when jungling.",
-    "Standard trade: AMUBE YATORO → RERA MUTSUBE → KAMUI MUTSUBE → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "Standard trade: AMUBE YATORO → RERA MUTSUBE → KAMUI MUTSUBE → weave basic attacks. Weave basic attacks between skill casts for passive value.",
     "Laning: Clear to level four, then gank the lane with the least escape. Secure Tyrant when your bot or mid has crash wave.",
     "Teamfight: Wait for CC from your team, then dive carry with full combo. Exit with reset or flash if focus fired.",
     "Nakoruru excels into Wukong, Athena, Xiang Yu. Avoid blind picking into Diaochan, Fang, Garo without team peel.",
@@ -139,7 +139,7 @@
     {
       "id": "faq-best-build",
       "question": "What is the best Nakoruru build?",
-      "answer": "Core item path: Rapacious Bite, Boots of Resistance, Axe of Torment, siege breaker, Frostscar's Embrace, Starbreaker. Run Mutation arcana with Smite. Switch to alternate build presets on this page for jungle, clash, or late-game setups."
+      "answer": "Core item path: Rapacious Bite, Boots of Resistance, Axe of Torment, Frostscar's Embrace, Starbreaker. Run Mutation arcana with Smite. Switch to alternate build presets on this page for jungle, clash, or late-game setups."
     },
     {
       "id": "faq-counter",
@@ -640,9 +640,62 @@
   ],
   "guide": {
     "overview": "Nakoruru is a Medium Assassin (Jungling) on Honor of Kings Global. Camp HOK ranks them Tier A with 50.7% win rate and 0.8% pick rate as of 2026-06-05.",
-    "bestBuild": "Rush Rapacious Bite, Boots of Resistance, Axe of Torment, then complete siege breaker, Frostscar's Embrace, Starbreaker. Use preset tabs for jungle, clash, or CN-style paths when draft requires it.",
+    "hook": "Nakoruru: After hitting an enemy with a skill, the next Basic Attack is enhanced, dealing extra damage.",
+    "bestBuild": "Rush Rapacious Bite, Boots of Resistance, Axe of Torment, then complete Frostscar's Embrace, Starbreaker. Use preset tabs for jungle, clash, or CN-style paths when draft requires it.",
     "arcanaSpells": "Run Mutation for stats that match Nakoruru's Assassin kit. Take Smite — swap to Purify against heavy CC or Smite when jungling.",
-    "combo": "Standard trade: AMUBE YATORO → RERA MUTSUBE → KAMUI MUTSUBE → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "combo": "Standard trade: AMUBE YATORO → RERA MUTSUBE → KAMUI MUTSUBE → weave basic attacks. Weave basic attacks between skill casts for passive value.",
+    "skillOrder": {
+      "priority": "Skill 2 → Skill 1 → KAMUI MUTSUBE (max Skill 2 first)",
+      "reason": "RERA MUTSUBE provides mobility or stick—max first. AMUBE YATORO second for damage. KAMUI MUTSUBE on every level."
+    },
+    "combos": [
+      {
+        "id": "standard",
+        "name": "Standard trade",
+        "steps": "AMUBE YATORO → RERA MUTSUBE → KAMUI MUTSUBE → weave basic attacks",
+        "when": "Jungling skirmish or objective fight"
+      },
+      {
+        "id": "all-in",
+        "name": "All-in",
+        "steps": "KAMUI MUTSUBE after full rotation when Flash is down",
+        "when": "Gank or backline dive with team CC"
+      }
+    ],
+    "itemNotes": [
+      {
+        "slot": 1,
+        "why": "Monster kills boost PATK"
+      },
+      {
+        "slot": 2,
+        "why": "Shortens CC"
+      },
+      {
+        "slot": 3,
+        "why": "Anti-squishy"
+      },
+      {
+        "slot": 4,
+        "why": "Enhanced BAs slow"
+      },
+      {
+        "slot": 5,
+        "why": "Anti-tank"
+      }
+    ],
+    "arcanaRows": [
+      {
+        "slot": "Primary",
+        "rune": "Mutation",
+        "effect": "Recommended for Assassin Jungling"
+      },
+      {
+        "slot": "Spell",
+        "rune": "Smite",
+        "effect": "Adjust Purify/Execute based on enemy dive."
+      }
+    ],
     "laning": "Clear to level four, then gank the lane with the least escape. Secure Tyrant when your bot or mid has crash wave.",
     "teamfight": "Wait for CC from your team, then dive carry with full combo. Exit with reset or flash if focus fired.",
     "highRank": "Nakoruru is a viable Tier A pick in high rank with 50.7% win rate — strong in one-trick hands or as a counter-pick.",

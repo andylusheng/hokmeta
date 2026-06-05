@@ -112,7 +112,7 @@
     "Flowborn (Tank) is a Easy Tank (Clash Lane) on Honor of Kings Global. Camp HOK ranks them Tier A with 48.5% win rate and 1.0% pick rate as of 2026-06-05.",
     "Best build path: Meteor → Boots of Tranquility → Axe of Torment → Nettle Gauntlet → Frostscar's Embrace → Longnight Guardian.",
     "Run Fate, Penetration for stats that match Flowborn (Tank)'s Tank kit. Take Flash & Execute — swap to Purify against heavy CC or Smite when jungling.",
-    "Standard trade: Convergence → Power From Within → All In → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "Standard trade: Convergence → Power From Within → All In → weave basic attacks. Weave basic attacks between skill casts for passive value.",
     "Laning: Trade on your power spike levels (2/4). Call jungler for dive only when enemy flash is down.",
     "Teamfight: Engage on enemy carry when your team has follow-up. Body-block skillshots for your marksman.",
     "Flowborn (Tank) excels into Meng Ya, Luara, Garo. Avoid blind picking into Wukong, Musashi, Ying without team peel.",
@@ -542,9 +542,65 @@
   ],
   "guide": {
     "overview": "Flowborn (Tank) is a Easy Tank (Clash Lane) on Honor of Kings Global. Camp HOK ranks them Tier A with 48.5% win rate and 1.0% pick rate as of 2026-06-05.",
+    "hook": "Flowborn (Tank): Can change Flow states at the Base to enhance stats.",
     "bestBuild": "Rush Meteor, Boots of Tranquility, Axe of Torment, then complete Nettle Gauntlet, Frostscar's Embrace, Longnight Guardian. Use preset tabs for jungle, clash, or CN-style paths when draft requires it.",
     "arcanaSpells": "Run Fate, Penetration for stats that match Flowborn (Tank)'s Tank kit. Take Flash & Execute — swap to Purify against heavy CC or Smite when jungling.",
-    "combo": "Standard trade: Convergence → Power From Within → All In → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "combo": "Standard trade: Convergence → Power From Within → All In → weave basic attacks. Weave basic attacks between skill casts for passive value.",
+    "skillOrder": {
+      "priority": "Skill 2 → Skill 1 → All In (max Skill 2 first)",
+      "reason": "Max primary utility/damage skill first, then Convergence, and All In on cooldown."
+    },
+    "combos": [
+      {
+        "id": "standard",
+        "name": "Standard trade",
+        "steps": "Convergence → Power From Within → All In → weave basic attacks",
+        "when": "Clash Lane skirmish or objective fight"
+      }
+    ],
+    "itemNotes": [
+      {
+        "slot": 1,
+        "why": "PATK +35\nCDR +7.5%"
+      },
+      {
+        "slot": 2,
+        "why": "Reduces Skill CD"
+      },
+      {
+        "slot": 3,
+        "why": "Anti-squishy"
+      },
+      {
+        "slot": 4,
+        "why": "Offense & defense"
+      },
+      {
+        "slot": 5,
+        "why": "Enhanced BAs slow"
+      },
+      {
+        "slot": 6,
+        "why": "Resists burst damage"
+      }
+    ],
+    "arcanaRows": [
+      {
+        "slot": "Primary",
+        "rune": "Fate",
+        "effect": "Recommended for Tank Clash Lane"
+      },
+      {
+        "slot": "Rune 2",
+        "rune": "Penetration",
+        "effect": "Recommended for Tank Clash Lane"
+      },
+      {
+        "slot": "Spell",
+        "rune": "Flash / Execute",
+        "effect": "Adjust Purify/Execute based on enemy dive."
+      }
+    ],
     "laning": "Trade on your power spike levels (2/4). Call jungler for dive only when enemy flash is down.",
     "teamfight": "Engage on enemy carry when your team has follow-up. Body-block skillshots for your marksman.",
     "highRank": "Flowborn (Tank) is a viable Tier A pick in high rank with 48.5% win rate — strong in one-trick hands or as a counter-pick. Pick rate 1.0% — frequently seen in ranked; learn the matchup even if you do not main Flowborn (Tank). Below 49% global WR — high-rank players often avoid unless compensating for team comp.",

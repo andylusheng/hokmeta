@@ -111,7 +111,7 @@
     "Huang Zhong is a Medium Marksman (Farm Lane) on Honor of Kings Global. Camp HOK ranks them Tier B with 51.2% win rate and 0.5% pick rate as of 2026-06-05.",
     "Best build path: Sparkforged Dagger → Boots of Dexterity → Eternity Blade → Daybreaker's Virtue → Starbreaker.",
     "Run Red for stats that match Huang Zhong's Marksman kit. Take Haste & Flash — swap to Purify against heavy CC or Smite when jungling.",
-    "Standard trade: Unleash Your Potential → Lay the Mines → Bring out the Artillery → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "Standard trade: Unleash Your Potential → Lay the Mines → Bring out the Artillery → weave basic attacks. Weave basic attacks between skill casts for passive value.",
     "Laning: Last-hit safely until first core item. Ping jungler for river vision; never face-check brush without minion cover.",
     "Teamfight: Position behind frontline; attack closest safe target. Join fight only after enemy dive cooldowns are used.",
     "Huang Zhong excels into Xuance, Mai Shiranui, Jing. Avoid blind picking into Kaizer, Dun, Arthur without team peel.",
@@ -140,7 +140,7 @@
     {
       "id": "faq-best-build",
       "question": "What is the best Huang Zhong build?",
-      "answer": "Core item path: Sparkforged Dagger, Boots of Dexterity, Eternity Blade, Daybreaker's Virtue, siege breaker, Starbreaker. Run Red arcana with Haste & Flash. Switch to alternate build presets on this page for jungle, clash, or late-game setups."
+      "answer": "Core item path: Sparkforged Dagger, Boots of Dexterity, Eternity Blade, Daybreaker's Virtue, Starbreaker. Run Red arcana with Haste & Flash. Switch to alternate build presets on this page for jungle, clash, or late-game setups."
     },
     {
       "id": "faq-counter",
@@ -541,9 +541,56 @@
   ],
   "guide": {
     "overview": "Huang Zhong is a Medium Marksman (Farm Lane) on Honor of Kings Global. Camp HOK ranks them Tier B with 51.2% win rate and 0.5% pick rate as of 2026-06-05.",
-    "bestBuild": "Rush Sparkforged Dagger, Boots of Dexterity, Eternity Blade, then complete Daybreaker's Virtue, siege breaker, Starbreaker. Use preset tabs for jungle, clash, or CN-style paths when draft requires it.",
+    "hook": "Huang Zhong: Basic Attacks increase attack and Critical Rate.",
+    "bestBuild": "Rush Sparkforged Dagger, Boots of Dexterity, Eternity Blade, then complete Daybreaker's Virtue, Starbreaker. Use preset tabs for jungle, clash, or CN-style paths when draft requires it.",
     "arcanaSpells": "Run Red for stats that match Huang Zhong's Marksman kit. Take Haste & Flash — swap to Purify against heavy CC or Smite when jungling.",
-    "combo": "Standard trade: Unleash Your Potential → Lay the Mines → Bring out the Artillery → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "combo": "Standard trade: Unleash Your Potential → Lay the Mines → Bring out the Artillery → weave basic attacks. Weave basic attacks between skill casts for passive value.",
+    "skillOrder": {
+      "priority": "Skill 1 → Skill 2 → Bring out the Artillery (max Skill 1 first)",
+      "reason": "Unleash Your Potential is your lane trade tool. Lay the Mines second. Bring out the Artillery whenever available."
+    },
+    "combos": [
+      {
+        "id": "standard",
+        "name": "Standard trade",
+        "steps": "Unleash Your Potential → Lay the Mines → Bring out the Artillery → weave basic attacks",
+        "when": "Farm Lane skirmish or objective fight"
+      }
+    ],
+    "itemNotes": [
+      {
+        "slot": 1,
+        "why": "Chain lightning BA"
+      },
+      {
+        "slot": 2,
+        "why": "Boosts ASPD"
+      },
+      {
+        "slot": 3,
+        "why": "High crit damage"
+      },
+      {
+        "slot": 4,
+        "why": "Great for marksmen"
+      },
+      {
+        "slot": 5,
+        "why": "Anti-tank"
+      }
+    ],
+    "arcanaRows": [
+      {
+        "slot": "Primary",
+        "rune": "Red",
+        "effect": "Recommended for Marksman Farm Lane"
+      },
+      {
+        "slot": "Spell",
+        "rune": "Haste / Flash",
+        "effect": "Adjust Purify/Execute based on enemy dive."
+      }
+    ],
     "laning": "Last-hit safely until first core item. Ping jungler for river vision; never face-check brush without minion cover.",
     "teamfight": "Position behind frontline; attack closest safe target. Join fight only after enemy dive cooldowns are used.",
     "highRank": "Huang Zhong sits at Tier B globally (51.2% WR). In high rank, pick only into favorable matchups or when you have a dedicated pocket pick.",

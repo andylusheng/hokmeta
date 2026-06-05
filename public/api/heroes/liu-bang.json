@@ -111,7 +111,7 @@
     "Liu Bang is a Easy Tank (Clash Lane) on Honor of Kings Global. Camp HOK ranks them Tier B with 50.2% win rate and 0.2% pick rate as of 2026-06-05.",
     "Best build path: Boots of Resistance → Spikemail → Blazing Cape → Eye of the Phoenix → Longnight Guardian → Frigid Charge.",
     "Run Fate for stats that match Liu Bang's Tank kit. Take Smite & Execute — swap to Purify against heavy CC or Smite when jungling.",
-    "Standard trade: Dominator's Shield → Staggering Charge → Battlefield Command → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "Standard trade: Dominator's Shield → Staggering Charge → Battlefield Command → weave basic attacks. Weave basic attacks between skill casts for passive value.",
     "Laning: Trade on your power spike levels (2/4). Call jungler for dive only when enemy flash is down.",
     "Teamfight: Engage on enemy carry when your team has follow-up. Body-block skillshots for your marksman.",
     "Liu Bang excels into Marco Polo, Meng Ya, Shouyue. Avoid blind picking into Wukong, Musashi, Ying without team peel.",
@@ -341,9 +341,60 @@
   ],
   "guide": {
     "overview": "Liu Bang is a Easy Tank (Clash Lane) on Honor of Kings Global. Camp HOK ranks them Tier B with 50.2% win rate and 0.2% pick rate as of 2026-06-05.",
+    "hook": "Liu Bang: Gains 1 mark every second, for up to 4 marks.",
     "bestBuild": "Rush Boots of Resistance, Spikemail, Blazing Cape, then complete Eye of the Phoenix, Longnight Guardian, Frigid Charge. Use preset tabs for jungle, clash, or CN-style paths when draft requires it.",
     "arcanaSpells": "Run Fate for stats that match Liu Bang's Tank kit. Take Smite & Execute — swap to Purify against heavy CC or Smite when jungling.",
-    "combo": "Standard trade: Dominator's Shield → Staggering Charge → Battlefield Command → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "combo": "Standard trade: Dominator's Shield → Staggering Charge → Battlefield Command → weave basic attacks. Weave basic attacks between skill casts for passive value.",
+    "skillOrder": {
+      "priority": "Skill 2 → Skill 1 → Battlefield Command (max Skill 2 first)",
+      "reason": "Max primary utility/damage skill first, then Dominator's Shield, and Battlefield Command on cooldown."
+    },
+    "combos": [
+      {
+        "id": "standard",
+        "name": "Standard trade",
+        "steps": "Dominator's Shield → Staggering Charge → Battlefield Command → weave basic attacks",
+        "when": "Clash Lane skirmish or objective fight"
+      }
+    ],
+    "itemNotes": [
+      {
+        "slot": 1,
+        "why": "Shortens CC"
+      },
+      {
+        "slot": 2,
+        "why": "Reflects damage"
+      },
+      {
+        "slot": 3,
+        "why": "Burns nearby enemies"
+      },
+      {
+        "slot": 4,
+        "why": "Boosts Health regen"
+      },
+      {
+        "slot": 5,
+        "why": "Resists burst damage"
+      },
+      {
+        "slot": 6,
+        "why": "Group CC"
+      }
+    ],
+    "arcanaRows": [
+      {
+        "slot": "Primary",
+        "rune": "Fate",
+        "effect": "Recommended for Tank Clash Lane"
+      },
+      {
+        "slot": "Spell",
+        "rune": "Smite / Execute",
+        "effect": "Adjust Purify/Execute based on enemy dive."
+      }
+    ],
     "laning": "Trade on your power spike levels (2/4). Call jungler for dive only when enemy flash is down.",
     "teamfight": "Engage on enemy carry when your team has follow-up. Body-block skillshots for your marksman.",
     "highRank": "Liu Bang sits at Tier B globally (50.2% WR). In high rank, pick only into favorable matchups or when you have a dedicated pocket pick.",

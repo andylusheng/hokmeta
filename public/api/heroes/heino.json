@@ -110,7 +110,7 @@
     "Heino is a Medium Mage (Mid Lane) on Honor of Kings Global. Camp HOK ranks them Tier S with 48.0% win rate and 1.2% pick rate as of 2026-06-05.",
     "Best build path: Boots of Tranquility → Holy Grail → Succubus Cloak → Savant's Wrath → Blazing Cape → Eye of the Phoenix.",
     "Run Fate for stats that match Heino's Mage kit. Take Flash — swap to Purify against heavy CC or Smite when jungling.",
-    "Standard trade: Scepter of Fate → Leap of Fate → Fate Rewind → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "Standard trade: Scepter of Fate → Leap of Fate → Fate Rewind → weave basic attacks. Weave basic attacks between skill casts for passive value.",
     "Laning: Control first wave without taking free poke. Roam after pushing wave 2–4 to side lanes with your jungler.",
     "Teamfight: Poke from max range before objective. Save hard CC for enemy dive or your carry peel window.",
     "Heino excels into Diaochan, Mulan, Wukong. Avoid blind picking into Butterfly, Dharma, Lu Bu without team peel.",
@@ -640,9 +640,60 @@
   ],
   "guide": {
     "overview": "Heino is a Medium Mage (Mid Lane) on Honor of Kings Global. Camp HOK ranks them Tier S with 48.0% win rate and 1.2% pick rate as of 2026-06-05.",
+    "hook": "Heino: Heino's Basic Attacks differ depending on whether he's in melee or ranged mode.",
     "bestBuild": "Rush Boots of Tranquility, Holy Grail, Succubus Cloak, then complete Savant's Wrath, Blazing Cape, Eye of the Phoenix. Use preset tabs for jungle, clash, or CN-style paths when draft requires it.",
     "arcanaSpells": "Run Fate for stats that match Heino's Mage kit. Take Flash — swap to Purify against heavy CC or Smite when jungling.",
-    "combo": "Standard trade: Scepter of Fate → Leap of Fate → Fate Rewind → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "combo": "Standard trade: Scepter of Fate → Leap of Fate → Fate Rewind → weave basic attacks. Weave basic attacks between skill casts for passive value.",
+    "skillOrder": {
+      "priority": "Skill 2 → Skill 1 → Fate Rewind (max Skill 2 first)",
+      "reason": "Max primary utility/damage skill first, then Scepter of Fate, and Fate Rewind on cooldown."
+    },
+    "combos": [
+      {
+        "id": "standard",
+        "name": "Standard trade",
+        "steps": "Scepter of Fate → Leap of Fate → Fate Rewind → weave basic attacks",
+        "when": "Mid Lane skirmish or objective fight"
+      }
+    ],
+    "itemNotes": [
+      {
+        "slot": 1,
+        "why": "Reduces Skill CD"
+      },
+      {
+        "slot": 2,
+        "why": "Rapid Health & Mana Regen"
+      },
+      {
+        "slot": 3,
+        "why": "Negates magical damage"
+      },
+      {
+        "slot": 4,
+        "why": "Greatly boosts MATK"
+      },
+      {
+        "slot": 5,
+        "why": "Burns nearby enemies"
+      },
+      {
+        "slot": 6,
+        "why": "Boosts Health regen"
+      }
+    ],
+    "arcanaRows": [
+      {
+        "slot": "Primary",
+        "rune": "Fate",
+        "effect": "Recommended for Mage Mid Lane"
+      },
+      {
+        "slot": "Spell",
+        "rune": "Flash",
+        "effect": "Adjust Purify/Execute based on enemy dive."
+      }
+    ],
     "laning": "Control first wave without taking free poke. Roam after pushing wave 2–4 to side lanes with your jungler.",
     "teamfight": "Poke from max range before objective. Save hard CC for enemy dive or your carry peel window.",
     "highRank": "Heino is a Tier S staple in high-elo (Diamond+) on the international server — worth mastering for climb. Pick rate 1.2% — frequently seen in ranked; learn the matchup even if you do not main Heino. Below 49% global WR — high-rank players often avoid unless compensating for team comp.",

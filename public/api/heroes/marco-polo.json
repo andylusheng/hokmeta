@@ -111,7 +111,7 @@
     "Marco Polo is a Medium Marksman (Farm Lane) on Honor of Kings Global. Camp HOK ranks them Tier S+ with 50.1% win rate and 2.1% pick rate as of 2026-06-05.",
     "Best build path: Doomsday → Boots of Dexterity → Sparkforged Dagger → Daybreaker's Virtue → Frostscar's Embrace.",
     "Run Red for stats that match Marco Polo's Marksman kit. Take Haste & Flash — swap to Purify against heavy CC or Smite when jungling.",
-    "Standard trade: Resplendent Revolver → Roaming Gun → Fevered Barrage → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "Standard trade: Resplendent Revolver → Roaming Gun → Fevered Barrage → weave basic attacks. Weave basic attacks between skill casts for passive value.",
     "Laning: Last-hit safely until first core item. Ping jungler for river vision; never face-check brush without minion cover.",
     "Teamfight: Position behind frontline; attack closest safe target. Join fight only after enemy dive cooldowns are used.",
     "Marco Polo excels into Cirrus, Mai Shiranui, Wukong. Avoid blind picking into Lian Po, Liu Bang, Zhang Fei without team peel.",
@@ -140,7 +140,7 @@
     {
       "id": "faq-best-build",
       "question": "What is the best Marco Polo build?",
-      "answer": "Core item path: Doomsday, Boots of Dexterity, Sparkforged Dagger, Daybreaker's Virtue, Frostscar's Embrace, siege breaker. Run Red arcana with Haste & Flash. Switch to alternate build presets on this page for jungle, clash, or late-game setups."
+      "answer": "Core item path: Doomsday, Boots of Dexterity, Sparkforged Dagger, Daybreaker's Virtue, Frostscar's Embrace. Run Red arcana with Haste & Flash. Switch to alternate build presets on this page for jungle, clash, or late-game setups."
     },
     {
       "id": "faq-counter",
@@ -691,9 +691,56 @@
   ],
   "guide": {
     "overview": "Marco Polo is a Medium Marksman (Farm Lane) on Honor of Kings Global. Camp HOK ranks them Tier S+ with 50.1% win rate and 2.1% pick rate as of 2026-06-05.",
-    "bestBuild": "Rush Doomsday, Boots of Dexterity, Sparkforged Dagger, then complete Daybreaker's Virtue, Frostscar's Embrace, siege breaker. Use preset tabs for jungle, clash, or CN-style paths when draft requires it.",
+    "hook": "Marco Polo: Basic Attack and skill hits inflict stacks on the opponent, dealing extra truedamage at max stacks.",
+    "bestBuild": "Rush Doomsday, Boots of Dexterity, Sparkforged Dagger, then complete Daybreaker's Virtue, Frostscar's Embrace. Use preset tabs for jungle, clash, or CN-style paths when draft requires it.",
     "arcanaSpells": "Run Red for stats that match Marco Polo's Marksman kit. Take Haste & Flash — swap to Purify against heavy CC or Smite when jungling.",
-    "combo": "Standard trade: Resplendent Revolver → Roaming Gun → Fevered Barrage → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "combo": "Standard trade: Resplendent Revolver → Roaming Gun → Fevered Barrage → weave basic attacks. Weave basic attacks between skill casts for passive value.",
+    "skillOrder": {
+      "priority": "Skill 1 → Skill 2 → Fevered Barrage (max Skill 1 first)",
+      "reason": "Resplendent Revolver is your lane trade tool. Roaming Gun second. Fevered Barrage whenever available."
+    },
+    "combos": [
+      {
+        "id": "standard",
+        "name": "Standard trade",
+        "steps": "Resplendent Revolver → Roaming Gun → Fevered Barrage → weave basic attacks",
+        "when": "Farm Lane skirmish or objective fight"
+      }
+    ],
+    "itemNotes": [
+      {
+        "slot": 1,
+        "why": "Boosts BA damage"
+      },
+      {
+        "slot": 2,
+        "why": "Boosts ASPD"
+      },
+      {
+        "slot": 3,
+        "why": "Chain lightning BA"
+      },
+      {
+        "slot": 4,
+        "why": "Great for marksmen"
+      },
+      {
+        "slot": 5,
+        "why": "Enhanced BAs slow"
+      }
+    ],
+    "arcanaRows": [
+      {
+        "slot": "Primary",
+        "rune": "Red",
+        "effect": "Recommended for Marksman Farm Lane"
+      },
+      {
+        "slot": "Spell",
+        "rune": "Haste / Flash",
+        "effect": "Adjust Purify/Execute based on enemy dive."
+      }
+    ],
     "laning": "Last-hit safely until first core item. Ping jungler for river vision; never face-check brush without minion cover.",
     "teamfight": "Position behind frontline; attack closest safe target. Join fight only after enemy dive cooldowns are used.",
     "highRank": "Marco Polo is a Tier S+ staple in high-elo (Diamond+) on the international server — worth mastering for climb. Pick rate 2.1% — frequently seen in ranked; learn the matchup even if you do not main Marco Polo.",

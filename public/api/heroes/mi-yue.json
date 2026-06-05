@@ -109,7 +109,7 @@
     "Mi Yue is a Medium Mage (Clash Lane) on Honor of Kings Global. Camp HOK ranks them Tier A with 49.5% win rate and 0.7% pick rate as of 2026-06-05.",
     "Best build path: Giant's Grip → Boots of Resistance → Golden Blade → Blazing Cape → Blood Rage → Breakthrough Robe.",
     "Run Fate for stats that match Mi Yue's Mage kit. Take Smite — swap to Purify against heavy CC or Smite when jungling.",
-    "Standard trade: Dark Transfer → Ravenous Tether → Umbral Moon → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "Standard trade: Dark Transfer → Ravenous Tether → Umbral Moon → weave basic attacks. Weave basic attacks between skill casts for passive value.",
     "Laning: Trade on your power spike levels (2/4). Call jungler for dive only when enemy flash is down.",
     "Teamfight: Poke from max range before objective. Save hard CC for enemy dive or your carry peel window.",
     "Mi Yue excels into Mai Shiranui, Wukong. Avoid blind picking into Cao Cao, Dharma, Dian Wei without team peel.",
@@ -489,9 +489,60 @@
   ],
   "guide": {
     "overview": "Mi Yue is a Medium Mage (Clash Lane) on Honor of Kings Global. Camp HOK ranks them Tier A with 49.5% win rate and 0.7% pick rate as of 2026-06-05.",
+    "hook": "Mi Yue: Summons a shadow servant that damages enemies and restores Health to her whenever using a skill.",
     "bestBuild": "Rush Giant's Grip, Boots of Resistance, Golden Blade, then complete Blazing Cape, Blood Rage, Breakthrough Robe. Use preset tabs for jungle, clash, or CN-style paths when draft requires it.",
     "arcanaSpells": "Run Fate for stats that match Mi Yue's Mage kit. Take Smite — swap to Purify against heavy CC or Smite when jungling.",
-    "combo": "Standard trade: Dark Transfer → Ravenous Tether → Umbral Moon → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "combo": "Standard trade: Dark Transfer → Ravenous Tether → Umbral Moon → weave basic attacks. Weave basic attacks between skill casts for passive value.",
+    "skillOrder": {
+      "priority": "Skill 2 → Skill 1 → Umbral Moon (max Skill 2 first)",
+      "reason": "Max primary utility/damage skill first, then Dark Transfer, and Umbral Moon on cooldown."
+    },
+    "combos": [
+      {
+        "id": "standard",
+        "name": "Standard trade",
+        "steps": "Dark Transfer → Ravenous Tether → Umbral Moon → weave basic attacks",
+        "when": "Clash Lane skirmish or objective fight"
+      }
+    ],
+    "itemNotes": [
+      {
+        "slot": 1,
+        "why": "Monster kills boost Health"
+      },
+      {
+        "slot": 2,
+        "why": "Shortens CC"
+      },
+      {
+        "slot": 3,
+        "why": "Keeps enhancing BA"
+      },
+      {
+        "slot": 4,
+        "why": "Burns nearby enemies"
+      },
+      {
+        "slot": 5,
+        "why": "Grants temporary shield"
+      },
+      {
+        "slot": 6,
+        "why": "Converts Health into M. Pierce"
+      }
+    ],
+    "arcanaRows": [
+      {
+        "slot": "Primary",
+        "rune": "Fate",
+        "effect": "Recommended for Mage Clash Lane"
+      },
+      {
+        "slot": "Spell",
+        "rune": "Smite",
+        "effect": "Adjust Purify/Execute based on enemy dive."
+      }
+    ],
     "laning": "Trade on your power spike levels (2/4). Call jungler for dive only when enemy flash is down.",
     "teamfight": "Poke from max range before objective. Save hard CC for enemy dive or your carry peel window.",
     "highRank": "Mi Yue is a viable Tier A pick in high rank with 49.5% win rate — strong in one-trick hands or as a counter-pick. Ban rate 0.7% — expect Mi Yue to be removed in tryhard lobbies; have a backup in the same role.",

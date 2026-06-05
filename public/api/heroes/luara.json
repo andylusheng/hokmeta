@@ -109,7 +109,7 @@
     "Luara is a Medium Marksman (Farm Lane) on Honor of Kings Global. Camp HOK ranks them Tier S with 53.0% win rate and 1.6% pick rate as of 2026-06-05.",
     "Best build path: Shadow Ripper → Boots of Fortitude → Eternity Blade → Bloodweeper → Daybreaker's Virtue → Cuirass of Savagery.",
     "Run Cataclysm for stats that match Luara's Marksman kit. Take Flash — swap to Purify against heavy CC or Smite when jungling.",
-    "Standard trade: Deadly Fang → Furtive Attack → Blazing Glare → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "Standard trade: Deadly Fang → Furtive Attack → Blazing Glare → weave basic attacks. Weave basic attacks between skill casts for passive value.",
     "Laning: Last-hit safely until first core item. Ping jungler for river vision; never face-check brush without minion cover.",
     "Teamfight: Position behind frontline; attack closest safe target. Join fight only after enemy dive cooldowns are used.",
     "Luara excels into Diaochan, Mulan, Lam. Avoid blind picking into Lapulapu, Ata without team peel.",
@@ -639,9 +639,60 @@
   ],
   "guide": {
     "overview": "Luara is a Medium Marksman (Farm Lane) on Honor of Kings Global. Camp HOK ranks them Tier S with 53.0% win rate and 1.6% pick rate as of 2026-06-05.",
+    "hook": "Luara: Basic Attacks unleash serpent blades to deal damage, reducing Skill 1's cooldown for every enemy hit.",
     "bestBuild": "Rush Shadow Ripper, Boots of Fortitude, Eternity Blade, then complete Bloodweeper, Daybreaker's Virtue, Cuirass of Savagery. Use preset tabs for jungle, clash, or CN-style paths when draft requires it.",
     "arcanaSpells": "Run Cataclysm for stats that match Luara's Marksman kit. Take Flash — swap to Purify against heavy CC or Smite when jungling.",
-    "combo": "Standard trade: Deadly Fang → Furtive Attack → Blazing Glare → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "combo": "Standard trade: Deadly Fang → Furtive Attack → Blazing Glare → weave basic attacks. Weave basic attacks between skill casts for passive value.",
+    "skillOrder": {
+      "priority": "Skill 1 → Skill 2 → Blazing Glare (max Skill 1 first)",
+      "reason": "Deadly Fang is your lane trade tool. Furtive Attack second. Blazing Glare whenever available."
+    },
+    "combos": [
+      {
+        "id": "standard",
+        "name": "Standard trade",
+        "steps": "Deadly Fang → Furtive Attack → Blazing Glare → weave basic attacks",
+        "when": "Farm Lane skirmish or objective fight"
+      }
+    ],
+    "itemNotes": [
+      {
+        "slot": 1,
+        "why": "Crits boost ASPD"
+      },
+      {
+        "slot": 2,
+        "why": "Reduces physical damage"
+      },
+      {
+        "slot": 3,
+        "why": "High crit damage"
+      },
+      {
+        "slot": 4,
+        "why": "Physical Lifesteal"
+      },
+      {
+        "slot": 5,
+        "why": "Great for marksmen"
+      },
+      {
+        "slot": 6,
+        "why": "Offense & defense"
+      }
+    ],
+    "arcanaRows": [
+      {
+        "slot": "Primary",
+        "rune": "Cataclysm",
+        "effect": "Recommended for Marksman Farm Lane"
+      },
+      {
+        "slot": "Spell",
+        "rune": "Flash",
+        "effect": "Adjust Purify/Execute based on enemy dive."
+      }
+    ],
     "laning": "Last-hit safely until first core item. Ping jungler for river vision; never face-check brush without minion cover.",
     "teamfight": "Position behind frontline; attack closest safe target. Join fight only after enemy dive cooldowns are used.",
     "highRank": "Luara is a Tier S staple in high-elo (Diamond+) on the international server — worth mastering for climb. Pick rate 1.6% — frequently seen in ranked; learn the matchup even if you do not main Luara. Camp data shows above-average win rate — prioritize when not hard-countered in draft.",

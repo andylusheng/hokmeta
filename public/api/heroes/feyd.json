@@ -111,7 +111,7 @@
     "Feyd is a Medium Assassin (Jungling) on Honor of Kings Global. Camp HOK ranks them Tier B with 51.1% win rate and 0.4% pick rate as of 2026-06-05.",
     "Best build path: Rapacious Bite → Boots of Tranquility → Axe of Torment → Master Sword → Ominous Premonition.",
     "Run Mutation for stats that match Feyd's Assassin kit. Take Haste & Smite — swap to Purify against heavy CC or Smite when jungling.",
-    "Standard trade: Jade Chase - Returning Strike → Stepping on Jade → Hardened Jade Seal → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "Standard trade: Jade Chase - Returning Strike → Stepping on Jade → Hardened Jade Seal → weave basic attacks. Weave basic attacks between skill casts for passive value.",
     "Laning: Clear to level four, then gank the lane with the least escape. Secure Tyrant when your bot or mid has crash wave.",
     "Teamfight: Wait for CC from your team, then dive carry with full combo. Exit with reset or flash if focus fired.",
     "Feyd excels into Lapulapu, Ata, Sakeer. Avoid blind picking into Hou Yi, Daji, Angela without team peel.",
@@ -140,7 +140,7 @@
     {
       "id": "faq-best-build",
       "question": "What is the best Feyd build?",
-      "answer": "Core item path: Rapacious Bite, Boots of Tranquility, Axe of Torment, Master Sword, Ominous Premonition, siege breaker. Run Mutation arcana with Haste & Smite. Switch to alternate build presets on this page for jungle, clash, or late-game setups."
+      "answer": "Core item path: Rapacious Bite, Boots of Tranquility, Axe of Torment, Master Sword, Ominous Premonition. Run Mutation arcana with Haste & Smite. Switch to alternate build presets on this page for jungle, clash, or late-game setups."
     },
     {
       "id": "faq-counter",
@@ -641,9 +641,62 @@
   ],
   "guide": {
     "overview": "Feyd is a Medium Assassin (Jungling) on Honor of Kings Global. Camp HOK ranks them Tier B with 51.1% win rate and 0.4% pick rate as of 2026-06-05.",
-    "bestBuild": "Rush Rapacious Bite, Boots of Tranquility, Axe of Torment, then complete Master Sword, Ominous Premonition, siege breaker. Use preset tabs for jungle, clash, or CN-style paths when draft requires it.",
+    "hook": "Feyd: Can jump onto and walk on natural walls while gaining Movement Speed.",
+    "bestBuild": "Rush Rapacious Bite, Boots of Tranquility, Axe of Torment, then complete Master Sword, Ominous Premonition. Use preset tabs for jungle, clash, or CN-style paths when draft requires it.",
     "arcanaSpells": "Run Mutation for stats that match Feyd's Assassin kit. Take Haste & Smite — swap to Purify against heavy CC or Smite when jungling.",
-    "combo": "Standard trade: Jade Chase - Returning Strike → Stepping on Jade → Hardened Jade Seal → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "combo": "Standard trade: Jade Chase - Returning Strike → Stepping on Jade → Hardened Jade Seal → weave basic attacks. Weave basic attacks between skill casts for passive value.",
+    "skillOrder": {
+      "priority": "Skill 2 → Skill 1 → Hardened Jade Seal (max Skill 2 first)",
+      "reason": "Stepping on Jade provides mobility or stick—max first. Jade Chase - Returning Strike second for damage. Hardened Jade Seal on every level."
+    },
+    "combos": [
+      {
+        "id": "standard",
+        "name": "Standard trade",
+        "steps": "Jade Chase - Returning Strike → Stepping on Jade → Hardened Jade Seal → weave basic attacks",
+        "when": "Jungling skirmish or objective fight"
+      },
+      {
+        "id": "all-in",
+        "name": "All-in",
+        "steps": "Hardened Jade Seal after full rotation when Flash is down",
+        "when": "Gank or backline dive with team CC"
+      }
+    ],
+    "itemNotes": [
+      {
+        "slot": 1,
+        "why": "Monster kills boost PATK"
+      },
+      {
+        "slot": 2,
+        "why": "Reduces Skill CD"
+      },
+      {
+        "slot": 3,
+        "why": "Anti-squishy"
+      },
+      {
+        "slot": 4,
+        "why": "Enhances BA"
+      },
+      {
+        "slot": 5,
+        "why": "Slows attackers"
+      }
+    ],
+    "arcanaRows": [
+      {
+        "slot": "Primary",
+        "rune": "Mutation",
+        "effect": "Recommended for Assassin Jungling"
+      },
+      {
+        "slot": "Spell",
+        "rune": "Haste / Smite",
+        "effect": "Adjust Purify/Execute based on enemy dive."
+      }
+    ],
     "laning": "Clear to level four, then gank the lane with the least escape. Secure Tyrant when your bot or mid has crash wave.",
     "teamfight": "Wait for CC from your team, then dive carry with full combo. Exit with reset or flash if focus fired.",
     "highRank": "Feyd sits at Tier B globally (51.1% WR). In high rank, pick only into favorable matchups or when you have a dedicated pocket pick.",

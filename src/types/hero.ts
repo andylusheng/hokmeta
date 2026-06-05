@@ -62,11 +62,40 @@ export interface HeroGuideMatchups {
   summary: string;
 }
 
+export interface HeroSkillOrder {
+  priority: string;
+  reason: string;
+}
+
+export interface HeroCombo {
+  id: string;
+  name: string;
+  steps: string;
+  when: string;
+}
+
+export interface HeroItemNote {
+  slot: number;
+  why: string;
+}
+
+export interface HeroArcanaRow {
+  slot: string;
+  rune: string;
+  effect: string;
+}
+
 export interface HeroGuide {
   overview: string;
+  /** One-line hero identity for the summary card */
+  hook?: string;
   bestBuild: string;
   arcanaSpells: string;
   combo: string;
+  skillOrder?: HeroSkillOrder;
+  combos?: HeroCombo[];
+  itemNotes?: HeroItemNote[];
+  arcanaRows?: HeroArcanaRow[];
   laning: string;
   teamfight: string;
   highRank: string;

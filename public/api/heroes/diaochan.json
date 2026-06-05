@@ -108,7 +108,7 @@
     "Diaochan is a Medium Mage (Mid Lane) on Honor of Kings Global. Camp HOK ranks them Tier A with 48.2% win rate and 0.8% pick rate as of 2026-06-05.",
     "Best build path: Insatiable Tome → Boots of Tranquility → Holy Grail → Augur's Word → Breakthrough Robe → Savant's Wrath.",
     "Run Saint for stats that match Diaochan's Mage kit. Take Flash — swap to Purify against heavy CC or Smite when jungling.",
-    "Standard trade: Returning Lotus → Petals in the Wind → Flowery Potential → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "Standard trade: Returning Lotus → Petals in the Wind → Flowery Potential → weave basic attacks. Weave basic attacks between skill casts for passive value.",
     "Laning: Control first wave without taking free poke. Roam after pushing wave 2–4 to side lanes with your jungler.",
     "Teamfight: Poke from max range before objective. Save hard CC for enemy dive or your carry peel window.",
     "Diaochan excels into Luna, Zhang Fei. Avoid blind picking into Liang, Mulan without team peel.",
@@ -688,9 +688,60 @@
   ],
   "guide": {
     "overview": "Diaochan is a Medium Mage (Mid Lane) on Honor of Kings Global. Camp HOK ranks them Tier A with 48.2% win rate and 0.8% pick rate as of 2026-06-05.",
+    "hook": "Diaochan: Applies stacks to the opponent.",
     "bestBuild": "Rush Insatiable Tome, Boots of Tranquility, Holy Grail, then complete Augur's Word, Breakthrough Robe, Savant's Wrath. Use preset tabs for jungle, clash, or CN-style paths when draft requires it.",
     "arcanaSpells": "Run Saint for stats that match Diaochan's Mage kit. Take Flash — swap to Purify against heavy CC or Smite when jungling.",
-    "combo": "Standard trade: Returning Lotus → Petals in the Wind → Flowery Potential → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "combo": "Standard trade: Returning Lotus → Petals in the Wind → Flowery Potential → weave basic attacks. Weave basic attacks between skill casts for passive value.",
+    "skillOrder": {
+      "priority": "Skill 2 → Skill 1 → Flowery Potential (max Skill 2 first)",
+      "reason": "Max primary utility/damage skill first, then Returning Lotus, and Flowery Potential on cooldown."
+    },
+    "combos": [
+      {
+        "id": "standard",
+        "name": "Standard trade",
+        "steps": "Returning Lotus → Petals in the Wind → Flowery Potential → weave basic attacks",
+        "when": "Mid Lane skirmish or objective fight"
+      }
+    ],
+    "itemNotes": [
+      {
+        "slot": 1,
+        "why": "Magical Lifesteal"
+      },
+      {
+        "slot": 2,
+        "why": "Reduces Skill CD"
+      },
+      {
+        "slot": 3,
+        "why": "Rapid Health & Mana Regen"
+      },
+      {
+        "slot": 4,
+        "why": "Offense & defense"
+      },
+      {
+        "slot": 5,
+        "why": "Converts Health into M. Pierce"
+      },
+      {
+        "slot": 6,
+        "why": "Greatly boosts MATK"
+      }
+    ],
+    "arcanaRows": [
+      {
+        "slot": "Primary",
+        "rune": "Saint",
+        "effect": "Recommended for Mage Mid Lane"
+      },
+      {
+        "slot": "Spell",
+        "rune": "Flash",
+        "effect": "Adjust Purify/Execute based on enemy dive."
+      }
+    ],
     "laning": "Control first wave without taking free poke. Roam after pushing wave 2–4 to side lanes with your jungler.",
     "teamfight": "Poke from max range before objective. Save hard CC for enemy dive or your carry peel window.",
     "highRank": "Diaochan is a viable Tier A pick in high rank with 48.2% win rate — strong in one-trick hands or as a counter-pick. Pick rate 0.8% — frequently seen in ranked; learn the matchup even if you do not main Diaochan. Below 49% global WR — high-rank players often avoid unless compensating for team comp.",

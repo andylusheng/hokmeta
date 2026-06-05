@@ -110,7 +110,7 @@
     "Lam is a Medium Assassin (Jungling) on Honor of Kings Global. Camp HOK ranks them Tier A with 48.8% win rate and 1.0% pick rate as of 2026-06-05.",
     "Best build path: Rapacious Bite → Boots of Resistance → Axe of Torment → Immovable - Sky Dome → Cuirass of Savagery.",
     "Run Mutation for stats that match Lam's Assassin kit. Take Smite — swap to Purify against heavy CC or Smite when jungling.",
-    "Standard trade: Wavebreaker → Space Split → Death From Below → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "Standard trade: Wavebreaker → Space Split → Death From Below → weave basic attacks. Weave basic attacks between skill casts for passive value.",
     "Laning: Clear to level four, then gank the lane with the least escape. Secure Tyrant when your bot or mid has crash wave.",
     "Teamfight: Wait for CC from your team, then dive carry with full combo. Exit with reset or flash if focus fired.",
     "Lam excels into Lu Bu, Wuyan, Xiang Yu. Avoid blind picking into Erin, Liang, Luara without team peel.",
@@ -139,7 +139,7 @@
     {
       "id": "faq-best-build",
       "question": "What is the best Lam build?",
-      "answer": "Core item path: Rapacious Bite, Boots of Resistance, Axe of Torment, Immovable - Sky Dome, siege breaker, Cuirass of Savagery. Run Mutation arcana with Smite. Switch to alternate build presets on this page for jungle, clash, or late-game setups."
+      "answer": "Core item path: Rapacious Bite, Boots of Resistance, Axe of Torment, Immovable - Sky Dome, Cuirass of Savagery. Run Mutation arcana with Smite. Switch to alternate build presets on this page for jungle, clash, or late-game setups."
     },
     {
       "id": "faq-counter",
@@ -690,9 +690,62 @@
   ],
   "guide": {
     "overview": "Lam is a Medium Assassin (Jungling) on Honor of Kings Global. Camp HOK ranks them Tier A with 48.8% win rate and 1.0% pick rate as of 2026-06-05.",
-    "bestBuild": "Rush Rapacious Bite, Boots of Resistance, Axe of Torment, then complete Immovable - Sky Dome, siege breaker, Cuirass of Savagery. Use preset tabs for jungle, clash, or CN-style paths when draft requires it.",
+    "hook": "Lam: Basic Attacks and skills deal extra true damage to targets with low Health.",
+    "bestBuild": "Rush Rapacious Bite, Boots of Resistance, Axe of Torment, then complete Immovable - Sky Dome, Cuirass of Savagery. Use preset tabs for jungle, clash, or CN-style paths when draft requires it.",
     "arcanaSpells": "Run Mutation for stats that match Lam's Assassin kit. Take Smite — swap to Purify against heavy CC or Smite when jungling.",
-    "combo": "Standard trade: Wavebreaker → Space Split → Death From Below → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "combo": "Standard trade: Wavebreaker → Space Split → Death From Below → weave basic attacks. Weave basic attacks between skill casts for passive value.",
+    "skillOrder": {
+      "priority": "Skill 2 → Skill 1 → Death From Below (max Skill 2 first)",
+      "reason": "Space Split provides mobility or stick—max first. Wavebreaker second for damage. Death From Below on every level."
+    },
+    "combos": [
+      {
+        "id": "standard",
+        "name": "Standard trade",
+        "steps": "Wavebreaker → Space Split → Death From Below → weave basic attacks",
+        "when": "Jungling skirmish or objective fight"
+      },
+      {
+        "id": "all-in",
+        "name": "All-in",
+        "steps": "Death From Below after full rotation when Flash is down",
+        "when": "Gank or backline dive with team CC"
+      }
+    ],
+    "itemNotes": [
+      {
+        "slot": 1,
+        "why": "Monster kills boost PATK"
+      },
+      {
+        "slot": 2,
+        "why": "Shortens CC"
+      },
+      {
+        "slot": 3,
+        "why": "Anti-squishy"
+      },
+      {
+        "slot": 4,
+        "why": "Temp. damage reduction"
+      },
+      {
+        "slot": 5,
+        "why": "Offense & defense"
+      }
+    ],
+    "arcanaRows": [
+      {
+        "slot": "Primary",
+        "rune": "Mutation",
+        "effect": "Recommended for Assassin Jungling"
+      },
+      {
+        "slot": "Spell",
+        "rune": "Smite",
+        "effect": "Adjust Purify/Execute based on enemy dive."
+      }
+    ],
     "laning": "Clear to level four, then gank the lane with the least escape. Secure Tyrant when your bot or mid has crash wave.",
     "teamfight": "Wait for CC from your team, then dive carry with full combo. Exit with reset or flash if focus fired.",
     "highRank": "Lam is a viable Tier A pick in high rank with 48.8% win rate — strong in one-trick hands or as a counter-pick. Pick rate 1.0% — frequently seen in ranked; learn the matchup even if you do not main Lam. Below 49% global WR — high-rank players often avoid unless compensating for team comp.",

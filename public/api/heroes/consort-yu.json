@@ -109,7 +109,7 @@
     "Consort Yu is a Medium Marksman (Farm Lane) on Honor of Kings Global. Camp HOK ranks them Tier S with 51.9% win rate and 1.5% pick rate as of 2026-06-05.",
     "Best build path: Doomsday → Boots of Dexterity → Bloodweeper → Eternity Blade → Daybreaker's Virtue.",
     "Run Red for stats that match Consort Yu's Marksman kit. Take Haste & Flash — swap to Purify against heavy CC or Smite when jungling.",
-    "Standard trade: Oak Bolt → Protecting Winds → Vaulting Shot → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "Standard trade: Oak Bolt → Protecting Winds → Vaulting Shot → weave basic attacks. Weave basic attacks between skill casts for passive value.",
     "Laning: Last-hit safely until first core item. Ping jungler for river vision; never face-check brush without minion cover.",
     "Teamfight: Position behind frontline; attack closest safe target. Join fight only after enemy dive cooldowns are used.",
     "Consort Yu excels into Marco Polo, Han Xin. Avoid blind picking into Luna, Diaochan without team peel.",
@@ -138,7 +138,7 @@
     {
       "id": "faq-best-build",
       "question": "What is the best Consort Yu build?",
-      "answer": "Core item path: Doomsday, Boots of Dexterity, Bloodweeper, Eternity Blade, Daybreaker's Virtue, siege breaker. Run Red arcana with Haste & Flash. Switch to alternate build presets on this page for jungle, clash, or late-game setups."
+      "answer": "Core item path: Doomsday, Boots of Dexterity, Bloodweeper, Eternity Blade, Daybreaker's Virtue. Run Red arcana with Haste & Flash. Switch to alternate build presets on this page for jungle, clash, or late-game setups."
     },
     {
       "id": "faq-counter",
@@ -689,9 +689,56 @@
   ],
   "guide": {
     "overview": "Consort Yu is a Medium Marksman (Farm Lane) on Honor of Kings Global. Camp HOK ranks them Tier S with 51.9% win rate and 1.5% pick rate as of 2026-06-05.",
-    "bestBuild": "Rush Doomsday, Boots of Dexterity, Bloodweeper, then complete Eternity Blade, Daybreaker's Virtue, siege breaker. Use preset tabs for jungle, clash, or CN-style paths when draft requires it.",
+    "hook": "Consort Yu: Basic Attacks have a chance to grant an extra Basic Attack that dealsdamage and slows the enemy.",
+    "bestBuild": "Rush Doomsday, Boots of Dexterity, Bloodweeper, then complete Eternity Blade, Daybreaker's Virtue. Use preset tabs for jungle, clash, or CN-style paths when draft requires it.",
     "arcanaSpells": "Run Red for stats that match Consort Yu's Marksman kit. Take Haste & Flash — swap to Purify against heavy CC or Smite when jungling.",
-    "combo": "Standard trade: Oak Bolt → Protecting Winds → Vaulting Shot → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "combo": "Standard trade: Oak Bolt → Protecting Winds → Vaulting Shot → weave basic attacks. Weave basic attacks between skill casts for passive value.",
+    "skillOrder": {
+      "priority": "Skill 1 → Skill 2 → Vaulting Shot (max Skill 1 first)",
+      "reason": "Oak Bolt is your lane trade tool. Protecting Winds second. Vaulting Shot whenever available."
+    },
+    "combos": [
+      {
+        "id": "standard",
+        "name": "Standard trade",
+        "steps": "Oak Bolt → Protecting Winds → Vaulting Shot → weave basic attacks",
+        "when": "Farm Lane skirmish or objective fight"
+      }
+    ],
+    "itemNotes": [
+      {
+        "slot": 1,
+        "why": "Boosts BA damage"
+      },
+      {
+        "slot": 2,
+        "why": "Boosts ASPD"
+      },
+      {
+        "slot": 3,
+        "why": "Physical Lifesteal"
+      },
+      {
+        "slot": 4,
+        "why": "High crit damage"
+      },
+      {
+        "slot": 5,
+        "why": "Great for marksmen"
+      }
+    ],
+    "arcanaRows": [
+      {
+        "slot": "Primary",
+        "rune": "Red",
+        "effect": "Recommended for Marksman Farm Lane"
+      },
+      {
+        "slot": "Spell",
+        "rune": "Haste / Flash",
+        "effect": "Adjust Purify/Execute based on enemy dive."
+      }
+    ],
     "laning": "Last-hit safely until first core item. Ping jungler for river vision; never face-check brush without minion cover.",
     "teamfight": "Position behind frontline; attack closest safe target. Join fight only after enemy dive cooldowns are used.",
     "highRank": "Consort Yu is a Tier S staple in high-elo (Diamond+) on the international server — worth mastering for climb. Pick rate 1.5% — frequently seen in ranked; learn the matchup even if you do not main Consort Yu.",

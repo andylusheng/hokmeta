@@ -110,7 +110,7 @@
     "Shouyue is a Medium Assassin (Farm Lane) on Honor of Kings Global. Camp HOK ranks them Tier A with 51.5% win rate and 0.8% pick rate as of 2026-06-05.",
     "Best build path: Starbreaker → Boots of Dexterity → Pure Sky → Bloodweeper → Master Sword.",
     "Run Cataclysm for stats that match Shouyue's Assassin kit. Take Haste & Flash — swap to Purify against heavy CC or Smite when jungling.",
-    "Standard trade: The Tranquil Eye → Wild Wind → Getaway → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "Standard trade: The Tranquil Eye → Wild Wind → Getaway → weave basic attacks. Weave basic attacks between skill casts for passive value.",
     "Laning: Last-hit safely until first core item. Ping jungler for river vision; never face-check brush without minion cover.",
     "Teamfight: Wait for CC from your team, then dive carry with full combo. Exit with reset or flash if focus fired.",
     "Shouyue excels into Diaochan, Nakoruru, Ying. Avoid blind picking into Liu Bang, Chano without team peel.",
@@ -139,7 +139,7 @@
     {
       "id": "faq-best-build",
       "question": "What is the best Shouyue build?",
-      "answer": "Core item path: Starbreaker, Boots of Dexterity, siege breaker, Pure Sky, Bloodweeper, Master Sword. Run Cataclysm arcana with Haste & Flash. Switch to alternate build presets on this page for jungle, clash, or late-game setups."
+      "answer": "Core item path: Starbreaker, Boots of Dexterity, Pure Sky, Bloodweeper, Master Sword. Run Cataclysm arcana with Haste & Flash. Switch to alternate build presets on this page for jungle, clash, or late-game setups."
     },
     {
       "id": "faq-counter",
@@ -640,9 +640,62 @@
   ],
   "guide": {
     "overview": "Shouyue is a Medium Assassin (Farm Lane) on Honor of Kings Global. Camp HOK ranks them Tier A with 51.5% win rate and 0.8% pick rate as of 2026-06-05.",
-    "bestBuild": "Rush Starbreaker, Boots of Dexterity, siege breaker, then complete Pure Sky, Bloodweeper, Master Sword. Use preset tabs for jungle, clash, or CN-style paths when draft requires it.",
+    "hook": "Shouyue: Basic Attacks deal extra damage, and Critical Rate is converted into Physical Attack.",
+    "bestBuild": "Rush Starbreaker, Boots of Dexterity, Pure Sky, then complete Bloodweeper, Master Sword. Use preset tabs for jungle, clash, or CN-style paths when draft requires it.",
     "arcanaSpells": "Run Cataclysm for stats that match Shouyue's Assassin kit. Take Haste & Flash — swap to Purify against heavy CC or Smite when jungling.",
-    "combo": "Standard trade: The Tranquil Eye → Wild Wind → Getaway → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "combo": "Standard trade: The Tranquil Eye → Wild Wind → Getaway → weave basic attacks. Weave basic attacks between skill casts for passive value.",
+    "skillOrder": {
+      "priority": "Skill 2 → Skill 1 → Getaway (max Skill 2 first)",
+      "reason": "Wild Wind provides mobility or stick—max first. The Tranquil Eye second for damage. Getaway on every level."
+    },
+    "combos": [
+      {
+        "id": "standard",
+        "name": "Standard trade",
+        "steps": "The Tranquil Eye → Wild Wind → Getaway → weave basic attacks",
+        "when": "Farm Lane skirmish or objective fight"
+      },
+      {
+        "id": "all-in",
+        "name": "All-in",
+        "steps": "Getaway after full rotation when Flash is down",
+        "when": "Gank or backline dive with team CC"
+      }
+    ],
+    "itemNotes": [
+      {
+        "slot": 1,
+        "why": "Anti-tank"
+      },
+      {
+        "slot": 2,
+        "why": "Boosts ASPD"
+      },
+      {
+        "slot": 3,
+        "why": "Temp. damage reduction"
+      },
+      {
+        "slot": 4,
+        "why": "Physical Lifesteal"
+      },
+      {
+        "slot": 5,
+        "why": "Enhances BA"
+      }
+    ],
+    "arcanaRows": [
+      {
+        "slot": "Primary",
+        "rune": "Cataclysm",
+        "effect": "Recommended for Assassin Farm Lane"
+      },
+      {
+        "slot": "Spell",
+        "rune": "Haste / Flash",
+        "effect": "Adjust Purify/Execute based on enemy dive."
+      }
+    ],
     "laning": "Last-hit safely until first core item. Ping jungler for river vision; never face-check brush without minion cover.",
     "teamfight": "Wait for CC from your team, then dive carry with full combo. Exit with reset or flash if focus fired.",
     "highRank": "Shouyue is a viable Tier A pick in high rank with 51.5% win rate — strong in one-trick hands or as a counter-pick.",

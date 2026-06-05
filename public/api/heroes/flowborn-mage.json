@@ -112,7 +112,7 @@
     "Flowborn (Mage) is a Medium Mage (Mid Lane) on Honor of Kings Global. Camp HOK ranks them Tier B with 51.4% win rate and 0.6% pick rate as of 2026-06-05.",
     "Best build path: Boots of the Arcane → Sage's Tome → Frozen Breath → Blood Clan's Grimoire → Insatiable Tome → Nebulon Wood.",
     "Run Fate, Penetration for stats that match Flowborn (Mage)'s Mage kit. Take Flash & Execute — swap to Purify against heavy CC or Smite when jungling.",
-    "Standard trade: Convergence → Flow Formation → Arcane Arts → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "Standard trade: Convergence → Flow Formation → Arcane Arts → weave basic attacks. Weave basic attacks between skill casts for passive value.",
     "Laning: Control first wave without taking free poke. Roam after pushing wave 2–4 to side lanes with your jungler.",
     "Teamfight: Poke from max range before objective. Save hard CC for enemy dive or your carry peel window.",
     "Flowborn (Mage) excels into Athena, Zilong, Pei. Avoid blind picking into Li Xin, Kaizer, Dun without team peel.",
@@ -542,9 +542,65 @@
   ],
   "guide": {
     "overview": "Flowborn (Mage) is a Medium Mage (Mid Lane) on Honor of Kings Global. Camp HOK ranks them Tier B with 51.4% win rate and 0.6% pick rate as of 2026-06-05.",
+    "hook": "Flowborn (Mage): Can change Flow states at the Base to enhance stats.",
     "bestBuild": "Rush Boots of the Arcane, Sage's Tome, Frozen Breath, then complete Blood Clan's Grimoire, Insatiable Tome, Nebulon Wood. Use preset tabs for jungle, clash, or CN-style paths when draft requires it.",
     "arcanaSpells": "Run Fate, Penetration for stats that match Flowborn (Mage)'s Mage kit. Take Flash & Execute — swap to Purify against heavy CC or Smite when jungling.",
-    "combo": "Standard trade: Convergence → Flow Formation → Arcane Arts → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "combo": "Standard trade: Convergence → Flow Formation → Arcane Arts → weave basic attacks. Weave basic attacks between skill casts for passive value.",
+    "skillOrder": {
+      "priority": "Skill 2 → Skill 1 → Arcane Arts (max Skill 2 first)",
+      "reason": "Max primary utility/damage skill first, then Convergence, and Arcane Arts on cooldown."
+    },
+    "combos": [
+      {
+        "id": "standard",
+        "name": "Standard trade",
+        "steps": "Convergence → Flow Formation → Arcane Arts → weave basic attacks",
+        "when": "Mid Lane skirmish or objective fight"
+      }
+    ],
+    "itemNotes": [
+      {
+        "slot": 1,
+        "why": "Magical Pierce"
+      },
+      {
+        "slot": 2,
+        "why": "Great for mages"
+      },
+      {
+        "slot": 3,
+        "why": "Slows on hit"
+      },
+      {
+        "slot": 4,
+        "why": "MATK +60, Magical Lifesteal +12%"
+      },
+      {
+        "slot": 5,
+        "why": "Magical Lifesteal"
+      },
+      {
+        "slot": 6,
+        "why": "MATK +60, HP +450"
+      }
+    ],
+    "arcanaRows": [
+      {
+        "slot": "Primary",
+        "rune": "Fate",
+        "effect": "Recommended for Mage Mid Lane"
+      },
+      {
+        "slot": "Rune 2",
+        "rune": "Penetration",
+        "effect": "Recommended for Mage Mid Lane"
+      },
+      {
+        "slot": "Spell",
+        "rune": "Flash / Execute",
+        "effect": "Adjust Purify/Execute based on enemy dive."
+      }
+    ],
     "laning": "Control first wave without taking free poke. Roam after pushing wave 2–4 to side lanes with your jungler.",
     "teamfight": "Poke from max range before objective. Save hard CC for enemy dive or your carry peel window.",
     "highRank": "Flowborn (Mage) sits at Tier B globally (51.4% WR). In high rank, pick only into favorable matchups or when you have a dedicated pocket pick.",

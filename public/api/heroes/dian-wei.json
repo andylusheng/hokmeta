@@ -108,7 +108,7 @@
     "Dian Wei is a Medium Warrior (Jungling) on Honor of Kings Global. Camp HOK ranks them Tier S with 51.8% win rate and 1.1% pick rate as of 2026-06-05.",
     "Best build path: Rapacious Bite → Boots of Resistance → Axe of Torment → Spikemail → Blazing Cape → Longnight Guardian.",
     "Run Cataclysm for stats that match Dian Wei's Warrior kit. Take Smite — swap to Purify against heavy CC or Smite when jungling.",
-    "Standard trade: Holding on to Sanity → Outburst → Leap of Fury → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "Standard trade: Holding on to Sanity → Outburst → Leap of Fury → weave basic attacks. Weave basic attacks between skill casts for passive value.",
     "Laning: Clear to level four, then gank the lane with the least escape. Secure Tyrant when your bot or mid has crash wave.",
     "Teamfight: Flank or dive backline after tanks commit. Do not start fights without vision on enemy jungler.",
     "Dian Wei excels into Marco Polo, Musashi. Avoid blind picking into Sun Bin, Diaochan without team peel.",
@@ -438,9 +438,66 @@
   ],
   "guide": {
     "overview": "Dian Wei is a Medium Warrior (Jungling) on Honor of Kings Global. Camp HOK ranks them Tier S with 51.8% win rate and 1.1% pick rate as of 2026-06-05.",
+    "hook": "Dian Wei: Gains stacks upon getting defeats and assits,for up to 20 stacks.",
     "bestBuild": "Rush Rapacious Bite, Boots of Resistance, Axe of Torment, then complete Spikemail, Blazing Cape, Longnight Guardian. Use preset tabs for jungle, clash, or CN-style paths when draft requires it.",
     "arcanaSpells": "Run Cataclysm for stats that match Dian Wei's Warrior kit. Take Smite — swap to Purify against heavy CC or Smite when jungling.",
-    "combo": "Standard trade: Holding on to Sanity → Outburst → Leap of Fury → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "combo": "Standard trade: Holding on to Sanity → Outburst → Leap of Fury → weave basic attacks. Weave basic attacks between skill casts for passive value.",
+    "skillOrder": {
+      "priority": "Skill 2 → Skill 1 → Leap of Fury (max Skill 2 first)",
+      "reason": "Outburst provides mobility or stick—max first. Holding on to Sanity second for damage. Leap of Fury on every level."
+    },
+    "combos": [
+      {
+        "id": "standard",
+        "name": "Standard trade",
+        "steps": "Holding on to Sanity → Outburst → Leap of Fury → weave basic attacks",
+        "when": "Jungling skirmish or objective fight"
+      },
+      {
+        "id": "all-in",
+        "name": "All-in",
+        "steps": "Leap of Fury after full rotation when Flash is down",
+        "when": "Gank or backline dive with team CC"
+      }
+    ],
+    "itemNotes": [
+      {
+        "slot": 1,
+        "why": "Monster kills boost PATK"
+      },
+      {
+        "slot": 2,
+        "why": "Shortens CC"
+      },
+      {
+        "slot": 3,
+        "why": "Anti-squishy"
+      },
+      {
+        "slot": 4,
+        "why": "Reflects damage"
+      },
+      {
+        "slot": 5,
+        "why": "Burns nearby enemies"
+      },
+      {
+        "slot": 6,
+        "why": "Resists burst damage"
+      }
+    ],
+    "arcanaRows": [
+      {
+        "slot": "Primary",
+        "rune": "Cataclysm",
+        "effect": "Recommended for Warrior Jungling"
+      },
+      {
+        "slot": "Spell",
+        "rune": "Smite",
+        "effect": "Adjust Purify/Execute based on enemy dive."
+      }
+    ],
     "laning": "Clear to level four, then gank the lane with the least escape. Secure Tyrant when your bot or mid has crash wave.",
     "teamfight": "Flank or dive backline after tanks commit. Do not start fights without vision on enemy jungler.",
     "highRank": "Dian Wei is a Tier S staple in high-elo (Diamond+) on the international server — worth mastering for climb. Pick rate 1.1% — frequently seen in ranked; learn the matchup even if you do not main Dian Wei.",

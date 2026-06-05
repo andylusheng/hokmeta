@@ -108,7 +108,7 @@
     "Daji is a Medium Mage (Mid Lane) on Honor of Kings Global. Camp HOK ranks them Tier S+ with 51.0% win rate and 2.4% pick rate as of 2026-06-05.",
     "Best build path: Scepter of Reverberation → Boots of the Arcane → Savant's Wrath → Void Staff → Splendor.",
     "Run Nightmare for stats that match Daji's Mage kit. Take Flash — swap to Purify against heavy CC or Smite when jungling.",
-    "Standard trade: Soul Impact → Strike a Pose → Heartbreaker → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "Standard trade: Soul Impact → Strike a Pose → Heartbreaker → weave basic attacks. Weave basic attacks between skill casts for passive value.",
     "Laning: Control first wave without taking free poke. Roam after pushing wave 2–4 to side lanes with your jungler.",
     "Teamfight: Poke from max range before objective. Save hard CC for enemy dive or your carry peel window.",
     "Daji excels into Luna, Diaochan. Avoid blind picking into Gao Changgong, Mulan without team peel.",
@@ -137,7 +137,7 @@
     {
       "id": "faq-best-build",
       "question": "What is the best Daji build?",
-      "answer": "Core item path: Scepter of Reverberation, Boots of the Arcane, Savant's Wrath, Void Staff, tome of wisdom, Splendor. Run Nightmare arcana with Flash. Switch to alternate build presets on this page for jungle, clash, or late-game setups."
+      "answer": "Core item path: Scepter of Reverberation, Boots of the Arcane, Savant's Wrath, Void Staff, Splendor. Run Nightmare arcana with Flash. Switch to alternate build presets on this page for jungle, clash, or late-game setups."
     },
     {
       "id": "faq-counter",
@@ -588,9 +588,56 @@
   ],
   "guide": {
     "overview": "Daji is a Medium Mage (Mid Lane) on Honor of Kings Global. Camp HOK ranks them Tier S+ with 51.0% win rate and 2.4% pick rate as of 2026-06-05.",
-    "bestBuild": "Rush Scepter of Reverberation, Boots of the Arcane, Savant's Wrath, then complete Void Staff, tome of wisdom, Splendor. Use preset tabs for jungle, clash, or CN-style paths when draft requires it.",
+    "hook": "Daji: Skill hits reduce the enemy's Magical Defense (up to 3 stacks).",
+    "bestBuild": "Rush Scepter of Reverberation, Boots of the Arcane, Savant's Wrath, then complete Void Staff, Splendor. Use preset tabs for jungle, clash, or CN-style paths when draft requires it.",
     "arcanaSpells": "Run Nightmare for stats that match Daji's Mage kit. Take Flash — swap to Purify against heavy CC or Smite when jungling.",
-    "combo": "Standard trade: Soul Impact → Strike a Pose → Heartbreaker → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "combo": "Standard trade: Soul Impact → Strike a Pose → Heartbreaker → weave basic attacks. Weave basic attacks between skill casts for passive value.",
+    "skillOrder": {
+      "priority": "Skill 2 → Skill 1 → Heartbreaker (max Skill 2 first)",
+      "reason": "Max primary utility/damage skill first, then Soul Impact, and Heartbreaker on cooldown."
+    },
+    "combos": [
+      {
+        "id": "standard",
+        "name": "Standard trade",
+        "steps": "Soul Impact → Strike a Pose → Heartbreaker → weave basic attacks",
+        "when": "Mid Lane skirmish or objective fight"
+      }
+    ],
+    "itemNotes": [
+      {
+        "slot": 1,
+        "why": "Skill hits trigger explosions"
+      },
+      {
+        "slot": 2,
+        "why": "Magical Pierce"
+      },
+      {
+        "slot": 3,
+        "why": "Greatly boosts MATK"
+      },
+      {
+        "slot": 4,
+        "why": "Anti-tank"
+      },
+      {
+        "slot": 5,
+        "why": "Temp. invincibility"
+      }
+    ],
+    "arcanaRows": [
+      {
+        "slot": "Primary",
+        "rune": "Nightmare",
+        "effect": "Recommended for Mage Mid Lane"
+      },
+      {
+        "slot": "Spell",
+        "rune": "Flash",
+        "effect": "Adjust Purify/Execute based on enemy dive."
+      }
+    ],
     "laning": "Control first wave without taking free poke. Roam after pushing wave 2–4 to side lanes with your jungler.",
     "teamfight": "Poke from max range before objective. Save hard CC for enemy dive or your carry peel window.",
     "highRank": "Daji is a Tier S+ staple in high-elo (Diamond+) on the international server — worth mastering for climb. Ban rate 3.1% — expect Daji to be removed in tryhard lobbies; have a backup in the same role.",

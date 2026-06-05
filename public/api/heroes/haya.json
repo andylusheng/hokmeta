@@ -110,7 +110,7 @@
     "Haya is a Medium Mage (Mid Lane) on Honor of Kings Global. Camp HOK ranks them Tier S+ with 49.8% win rate and 0.9% pick rate as of 2026-06-05.",
     "Best build path: Boots of Deftness → Insatiable Tome → Void Staff → Savant's Wrath → Venomous Staff.",
     "Run Fate for stats that match Haya's Mage kit. Take Flash — swap to Purify against heavy CC or Smite when jungling.",
-    "Standard trade: Crescent Wave → Wayward Rays → Moonscape Mirage → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "Standard trade: Crescent Wave → Wayward Rays → Moonscape Mirage → weave basic attacks. Weave basic attacks between skill casts for passive value.",
     "Laning: Control first wave without taking free poke. Roam after pushing wave 2–4 to side lanes with your jungler.",
     "Teamfight: Poke from max range before objective. Save hard CC for enemy dive or your carry peel window.",
     "Haya excels into Sakeer, Zilong, Milady. Avoid blind picking into Li Xin, Kaizer, Dun without team peel.",
@@ -139,7 +139,7 @@
     {
       "id": "faq-best-build",
       "question": "What is the best Haya build?",
-      "answer": "Core item path: tome of wisdom, Boots of Deftness, Insatiable Tome, Void Staff, Savant's Wrath, Venomous Staff. Run Fate arcana with Flash. Switch to alternate build presets on this page for jungle, clash, or late-game setups."
+      "answer": "Core item path: Boots of Deftness, Insatiable Tome, Void Staff, Savant's Wrath, Venomous Staff. Run Fate arcana with Flash. Switch to alternate build presets on this page for jungle, clash, or late-game setups."
     },
     {
       "id": "faq-counter",
@@ -640,9 +640,56 @@
   ],
   "guide": {
     "overview": "Haya is a Medium Mage (Mid Lane) on Honor of Kings Global. Camp HOK ranks them Tier S+ with 49.8% win rate and 0.9% pick rate as of 2026-06-05.",
-    "bestBuild": "Rush tome of wisdom, Boots of Deftness, Insatiable Tome, then complete Void Staff, Savant's Wrath, Venomous Staff. Use preset tabs for jungle, clash, or CN-style paths when draft requires it.",
+    "hook": "Haya: MarkEnhance Spends moon crystals to use skills.",
+    "bestBuild": "Rush Boots of Deftness, Insatiable Tome, Void Staff, then complete Savant's Wrath, Venomous Staff. Use preset tabs for jungle, clash, or CN-style paths when draft requires it.",
     "arcanaSpells": "Run Fate for stats that match Haya's Mage kit. Take Flash — swap to Purify against heavy CC or Smite when jungling.",
-    "combo": "Standard trade: Crescent Wave → Wayward Rays → Moonscape Mirage → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "combo": "Standard trade: Crescent Wave → Wayward Rays → Moonscape Mirage → weave basic attacks. Weave basic attacks between skill casts for passive value.",
+    "skillOrder": {
+      "priority": "Skill 2 → Skill 1 → Moonscape Mirage (max Skill 2 first)",
+      "reason": "Max primary utility/damage skill first, then Crescent Wave, and Moonscape Mirage on cooldown."
+    },
+    "combos": [
+      {
+        "id": "standard",
+        "name": "Standard trade",
+        "steps": "Crescent Wave → Wayward Rays → Moonscape Mirage → weave basic attacks",
+        "when": "Mid Lane skirmish or objective fight"
+      }
+    ],
+    "itemNotes": [
+      {
+        "slot": 1,
+        "why": "Extra Movement Speed"
+      },
+      {
+        "slot": 2,
+        "why": "Magical Lifesteal"
+      },
+      {
+        "slot": 3,
+        "why": "Anti-tank"
+      },
+      {
+        "slot": 4,
+        "why": "Greatly boosts MATK"
+      },
+      {
+        "slot": 5,
+        "why": "Lowers Health regen"
+      }
+    ],
+    "arcanaRows": [
+      {
+        "slot": "Primary",
+        "rune": "Fate",
+        "effect": "Recommended for Mage Mid Lane"
+      },
+      {
+        "slot": "Spell",
+        "rune": "Flash",
+        "effect": "Adjust Purify/Execute based on enemy dive."
+      }
+    ],
     "laning": "Control first wave without taking free poke. Roam after pushing wave 2–4 to side lanes with your jungler.",
     "teamfight": "Poke from max range before objective. Save hard CC for enemy dive or your carry peel window.",
     "highRank": "Haya is a Tier S+ staple in high-elo (Diamond+) on the international server — worth mastering for climb. Ban rate 3.0% — expect Haya to be removed in tryhard lobbies; have a backup in the same role.",

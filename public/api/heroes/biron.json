@@ -108,7 +108,7 @@
     "Biron is a Easy Tank (Clash Lane) on Honor of Kings Global. Camp HOK ranks them Tier A with 48.4% win rate and 0.8% pick rate as of 2026-06-05.",
     "Best build path: Boots of Resistance → Axe of Torment → Frostscar's Embrace → Pure Sky → Cuirass of Savagery → Demonsbane.",
     "Run Mutation for stats that match Biron's Tank kit. Take Flash — swap to Purify against heavy CC or Smite when jungling.",
-    "Standard trade: Electrifying Charge → Storm Strike → Force Field Suppression → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "Standard trade: Electrifying Charge → Storm Strike → Force Field Suppression → weave basic attacks. Weave basic attacks between skill casts for passive value.",
     "Laning: Trade on your power spike levels (2/4). Call jungler for dive only when enemy flash is down.",
     "Teamfight: Engage on enemy carry when your team has follow-up. Body-block skillshots for your marksman.",
     "Biron excels into Dun, Wukong. Avoid blind picking into Lady Sun, Sun Bin without team peel.",
@@ -688,9 +688,60 @@
   ],
   "guide": {
     "overview": "Biron is a Easy Tank (Clash Lane) on Honor of Kings Global. Camp HOK ranks them Tier A with 48.4% win rate and 0.8% pick rate as of 2026-06-05.",
+    "hook": "Biron: Accumulates charge when Basic Attacks or unenhanced skills land hits, for up to 3 bars of charge.",
     "bestBuild": "Rush Boots of Resistance, Axe of Torment, Frostscar's Embrace, then complete Pure Sky, Cuirass of Savagery, Demonsbane. Use preset tabs for jungle, clash, or CN-style paths when draft requires it.",
     "arcanaSpells": "Run Mutation for stats that match Biron's Tank kit. Take Flash — swap to Purify against heavy CC or Smite when jungling.",
-    "combo": "Standard trade: Electrifying Charge → Storm Strike → Force Field Suppression → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "combo": "Standard trade: Electrifying Charge → Storm Strike → Force Field Suppression → weave basic attacks. Weave basic attacks between skill casts for passive value.",
+    "skillOrder": {
+      "priority": "Skill 2 → Skill 1 → Force Field Suppression (max Skill 2 first)",
+      "reason": "Max primary utility/damage skill first, then Electrifying Charge, and Force Field Suppression on cooldown."
+    },
+    "combos": [
+      {
+        "id": "standard",
+        "name": "Standard trade",
+        "steps": "Electrifying Charge → Storm Strike → Force Field Suppression → weave basic attacks",
+        "when": "Clash Lane skirmish or objective fight"
+      }
+    ],
+    "itemNotes": [
+      {
+        "slot": 1,
+        "why": "Shortens CC"
+      },
+      {
+        "slot": 2,
+        "why": "Anti-squishy"
+      },
+      {
+        "slot": 3,
+        "why": "Enhanced BAs slow"
+      },
+      {
+        "slot": 4,
+        "why": "Temp. damage reduction"
+      },
+      {
+        "slot": 5,
+        "why": "Offense & defense"
+      },
+      {
+        "slot": 6,
+        "why": "Boosts MDEF"
+      }
+    ],
+    "arcanaRows": [
+      {
+        "slot": "Primary",
+        "rune": "Mutation",
+        "effect": "Recommended for Tank Clash Lane"
+      },
+      {
+        "slot": "Spell",
+        "rune": "Flash",
+        "effect": "Adjust Purify/Execute based on enemy dive."
+      }
+    ],
     "laning": "Trade on your power spike levels (2/4). Call jungler for dive only when enemy flash is down.",
     "teamfight": "Engage on enemy carry when your team has follow-up. Body-block skillshots for your marksman.",
     "highRank": "Biron is a viable Tier A pick in high rank with 48.4% win rate — strong in one-trick hands or as a counter-pick. Pick rate 0.8% — frequently seen in ranked; learn the matchup even if you do not main Biron. Below 49% global WR — high-rank players often avoid unless compensating for team comp.",

@@ -110,7 +110,7 @@
     "Ziya is a Medium Mage (Mid Lane) on Honor of Kings Global. Camp HOK ranks them Tier A with 51.3% win rate and 0.8% pick rate as of 2026-06-05.",
     "Best build path: Mask of Agony → Boots of the Arcane → Scepter of Reverberation → Savant's Wrath → Insatiable Tome → Void Staff.",
     "Run Saint for stats that match Ziya's Mage kit. Take Flash — swap to Purify against heavy CC or Smite when jungling.",
-    "Standard trade: Divine Seal → Divine Punishment → Universal Law → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "Standard trade: Divine Seal → Divine Punishment → Universal Law → weave basic attacks. Weave basic attacks between skill casts for passive value.",
     "Laning: Control first wave without taking free poke. Roam after pushing wave 2–4 to side lanes with your jungler.",
     "Teamfight: Poke from max range before objective. Save hard CC for enemy dive or your carry peel window.",
     "Ziya excels into Diaochan, Ying, Zilong. Avoid blind picking into Biron, Charlotte, Yao without team peel.",
@@ -590,9 +590,60 @@
   ],
   "guide": {
     "overview": "Ziya is a Medium Mage (Mid Lane) on Honor of Kings Global. Camp HOK ranks them Tier A with 51.3% win rate and 0.8% pick rate as of 2026-06-05.",
+    "hook": "Ziya: When Ziya deals damage to a target and they are defeated within 4s, he gains EXP.",
     "bestBuild": "Rush Mask of Agony, Boots of the Arcane, Scepter of Reverberation, then complete Savant's Wrath, Insatiable Tome, Void Staff. Use preset tabs for jungle, clash, or CN-style paths when draft requires it.",
     "arcanaSpells": "Run Saint for stats that match Ziya's Mage kit. Take Flash — swap to Purify against heavy CC or Smite when jungling.",
-    "combo": "Standard trade: Divine Seal → Divine Punishment → Universal Law → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "combo": "Standard trade: Divine Seal → Divine Punishment → Universal Law → weave basic attacks. Weave basic attacks between skill casts for passive value.",
+    "skillOrder": {
+      "priority": "Skill 2 → Skill 1 → Universal Law (max Skill 2 first)",
+      "reason": "Max primary utility/damage skill first, then Divine Seal, and Universal Law on cooldown."
+    },
+    "combos": [
+      {
+        "id": "standard",
+        "name": "Standard trade",
+        "steps": "Divine Seal → Divine Punishment → Universal Law → weave basic attacks",
+        "when": "Mid Lane skirmish or objective fight"
+      }
+    ],
+    "itemNotes": [
+      {
+        "slot": 1,
+        "why": "Boosts skill damage"
+      },
+      {
+        "slot": 2,
+        "why": "Magical Pierce"
+      },
+      {
+        "slot": 3,
+        "why": "Skill hits trigger explosions"
+      },
+      {
+        "slot": 4,
+        "why": "Greatly boosts MATK"
+      },
+      {
+        "slot": 5,
+        "why": "Magical Lifesteal"
+      },
+      {
+        "slot": 6,
+        "why": "Anti-tank"
+      }
+    ],
+    "arcanaRows": [
+      {
+        "slot": "Primary",
+        "rune": "Saint",
+        "effect": "Recommended for Mage Mid Lane"
+      },
+      {
+        "slot": "Spell",
+        "rune": "Flash",
+        "effect": "Adjust Purify/Execute based on enemy dive."
+      }
+    ],
     "laning": "Control first wave without taking free poke. Roam after pushing wave 2–4 to side lanes with your jungler.",
     "teamfight": "Poke from max range before objective. Save hard CC for enemy dive or your carry peel window.",
     "highRank": "Ziya is a viable Tier A pick in high rank with 51.3% win rate — strong in one-trick hands or as a counter-pick. Pick rate 0.8% — frequently seen in ranked; learn the matchup even if you do not main Ziya.",

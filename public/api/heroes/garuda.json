@@ -112,7 +112,7 @@
     "Garuda is a Medium Mage (Mid Lane) on Honor of Kings Global. Camp HOK ranks them Tier A with 51.1% win rate and 0.8% pick rate as of 2026-06-05.",
     "Best build path: Boots of Tranquility → Frozen Breath → Mask of Agony → Void Staff → Savant's Wrath → Venomous Staff.",
     "Run Nightmare, Hunt, Mind&#39;s eye for stats that match Garuda's Mage kit. Take Flash — swap to Purify against heavy CC or Smite when jungling.",
-    "Standard trade: Arrows of Gold → Golden Winged Blessing → Wings of Judgment → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "Standard trade: Arrows of Gold → Golden Winged Blessing → Wings of Judgment → weave basic attacks. Weave basic attacks between skill casts for passive value.",
     "Laning: Control first wave without taking free poke. Roam after pushing wave 2–4 to side lanes with your jungler.",
     "Teamfight: Poke from max range before objective. Save hard CC for enemy dive or your carry peel window.",
     "Garuda excels into Athena, Zilong, Pei. Avoid blind picking into Li Xin, Kaizer, Dun without team peel.",
@@ -642,9 +642,70 @@
   ],
   "guide": {
     "overview": "Garuda is a Medium Mage (Mid Lane) on Honor of Kings Global. Camp HOK ranks them Tier A with 51.1% win rate and 0.8% pick rate as of 2026-06-05.",
+    "hook": "Garuda: Damage Basic Attacks can pierce and deal damage to enemies in their path.",
     "bestBuild": "Rush Boots of Tranquility, Frozen Breath, Mask of Agony, then complete Void Staff, Savant's Wrath, Venomous Staff. Use preset tabs for jungle, clash, or CN-style paths when draft requires it.",
     "arcanaSpells": "Run Nightmare, Hunt, Mind&#39;s eye for stats that match Garuda's Mage kit. Take Flash — swap to Purify against heavy CC or Smite when jungling.",
-    "combo": "Standard trade: Arrows of Gold → Golden Winged Blessing → Wings of Judgment → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "combo": "Standard trade: Arrows of Gold → Golden Winged Blessing → Wings of Judgment → weave basic attacks. Weave basic attacks between skill casts for passive value.",
+    "skillOrder": {
+      "priority": "Skill 2 → Skill 1 → Wings of Judgment (max Skill 2 first)",
+      "reason": "Max primary utility/damage skill first, then Arrows of Gold, and Wings of Judgment on cooldown."
+    },
+    "combos": [
+      {
+        "id": "standard",
+        "name": "Standard trade",
+        "steps": "Arrows of Gold → Golden Winged Blessing → Wings of Judgment → weave basic attacks",
+        "when": "Mid Lane skirmish or objective fight"
+      }
+    ],
+    "itemNotes": [
+      {
+        "slot": 1,
+        "why": "Reduces Skill CD"
+      },
+      {
+        "slot": 2,
+        "why": "Slows on hit"
+      },
+      {
+        "slot": 3,
+        "why": "Boosts skill damage"
+      },
+      {
+        "slot": 4,
+        "why": "Anti-tank"
+      },
+      {
+        "slot": 5,
+        "why": "Greatly boosts MATK"
+      },
+      {
+        "slot": 6,
+        "why": "Lowers Health regen"
+      }
+    ],
+    "arcanaRows": [
+      {
+        "slot": "Primary",
+        "rune": "Nightmare",
+        "effect": "Recommended for Mage Mid Lane"
+      },
+      {
+        "slot": "Rune 2",
+        "rune": "Hunt",
+        "effect": "Recommended for Mage Mid Lane"
+      },
+      {
+        "slot": "Rune 3",
+        "rune": "Mind&#39;s eye",
+        "effect": "Recommended for Mage Mid Lane"
+      },
+      {
+        "slot": "Spell",
+        "rune": "Flash",
+        "effect": "Adjust Purify/Execute based on enemy dive."
+      }
+    ],
     "laning": "Control first wave without taking free poke. Roam after pushing wave 2–4 to side lanes with your jungler.",
     "teamfight": "Poke from max range before objective. Save hard CC for enemy dive or your carry peel window.",
     "highRank": "Garuda is a viable Tier A pick in high rank with 51.1% win rate — strong in one-trick hands or as a counter-pick. Pick rate 0.8% — frequently seen in ranked; learn the matchup even if you do not main Garuda.",

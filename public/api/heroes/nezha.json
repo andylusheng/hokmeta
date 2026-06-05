@@ -110,7 +110,7 @@
     "Nezha is a Easy Tank (Clash Lane) on Honor of Kings Global. Camp HOK ranks them Tier B with 51.6% win rate and 0.5% pick rate as of 2026-06-05.",
     "Best build path: Boots of Resistance → Frostscar's Embrace → Cuirass of Savagery → Blood Rage → Blazing Cape → Overlord's Platemail.",
     "Run Fate for stats that match Nezha's Tank kit. Take Execute — swap to Purify against heavy CC or Smite when jungling.",
-    "Standard trade: Fire-tipped Spear - Sweep → Red Armillary Sash - Bind → Universe Ring → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "Standard trade: Fire-tipped Spear - Sweep → Red Armillary Sash - Bind → Universe Ring → weave basic attacks. Weave basic attacks between skill casts for passive value.",
     "Laning: Trade on your power spike levels (2/4). Call jungler for dive only when enemy flash is down.",
     "Teamfight: Engage on enemy carry when your team has follow-up. Body-block skillshots for your marksman.",
     "Nezha excels into Mai Shiranui, Mozi, Nuwa. Avoid blind picking into Augran, Wukong, Musashi without team peel.",
@@ -690,9 +690,60 @@
   ],
   "guide": {
     "overview": "Nezha is a Easy Tank (Clash Lane) on Honor of Kings Global. Camp HOK ranks them Tier B with 51.6% win rate and 0.5% pick rate as of 2026-06-05.",
+    "hook": "Nezha: Gains Movement Speed and a shield that negates true damage when attacking the enemy.",
     "bestBuild": "Rush Boots of Resistance, Frostscar's Embrace, Cuirass of Savagery, then complete Blood Rage, Blazing Cape, Overlord's Platemail. Use preset tabs for jungle, clash, or CN-style paths when draft requires it.",
     "arcanaSpells": "Run Fate for stats that match Nezha's Tank kit. Take Execute — swap to Purify against heavy CC or Smite when jungling.",
-    "combo": "Standard trade: Fire-tipped Spear - Sweep → Red Armillary Sash - Bind → Universe Ring → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "combo": "Standard trade: Fire-tipped Spear - Sweep → Red Armillary Sash - Bind → Universe Ring → weave basic attacks. Weave basic attacks between skill casts for passive value.",
+    "skillOrder": {
+      "priority": "Skill 2 → Skill 1 → Universe Ring (max Skill 2 first)",
+      "reason": "Max primary utility/damage skill first, then Fire-tipped Spear - Sweep, and Universe Ring on cooldown."
+    },
+    "combos": [
+      {
+        "id": "standard",
+        "name": "Standard trade",
+        "steps": "Fire-tipped Spear - Sweep → Red Armillary Sash - Bind → Universe Ring → weave basic attacks",
+        "when": "Clash Lane skirmish or objective fight"
+      }
+    ],
+    "itemNotes": [
+      {
+        "slot": 1,
+        "why": "Shortens CC"
+      },
+      {
+        "slot": 2,
+        "why": "Enhanced BAs slow"
+      },
+      {
+        "slot": 3,
+        "why": "Offense & defense"
+      },
+      {
+        "slot": 4,
+        "why": "Grants temporary shield"
+      },
+      {
+        "slot": 5,
+        "why": "Burns nearby enemies"
+      },
+      {
+        "slot": 6,
+        "why": "Extra Health"
+      }
+    ],
+    "arcanaRows": [
+      {
+        "slot": "Primary",
+        "rune": "Fate",
+        "effect": "Recommended for Tank Clash Lane"
+      },
+      {
+        "slot": "Spell",
+        "rune": "Execute",
+        "effect": "Adjust Purify/Execute based on enemy dive."
+      }
+    ],
     "laning": "Trade on your power spike levels (2/4). Call jungler for dive only when enemy flash is down.",
     "teamfight": "Engage on enemy carry when your team has follow-up. Body-block skillshots for your marksman.",
     "highRank": "Nezha sits at Tier B globally (51.6% WR). In high rank, pick only into favorable matchups or when you have a dedicated pocket pick.",

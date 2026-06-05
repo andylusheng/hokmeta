@@ -110,7 +110,7 @@
     "Luban No.7 is a Medium Marksman (Farm Lane) on Honor of Kings Global. Camp HOK ranks them Tier S with 52.0% win rate and 1.8% pick rate as of 2026-06-05.",
     "Best build path: Sparkforged Dagger → Boots of Dexterity → Eternity Blade → Daybreaker's Virtue → Doomsday → Sage's Sanctuary.",
     "Run Tier for stats that match Luban No.7's Marksman kit. Take Flash — swap to Purify against heavy CC or Smite when jungling.",
-    "Standard trade: Blowfish Grenade → Shark Cannon → Air Support → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "Standard trade: Blowfish Grenade → Shark Cannon → Air Support → weave basic attacks. Weave basic attacks between skill casts for passive value.",
     "Laning: Last-hit safely until first core item. Ping jungler for river vision; never face-check brush without minion cover.",
     "Teamfight: Position behind frontline; attack closest safe target. Join fight only after enemy dive cooldowns are used.",
     "Luban No.7 excels into Ying, Ukyo Tachibana, Lam. Avoid blind picking into Lian Po, Kaizer, Dun without team peel.",
@@ -139,7 +139,7 @@
     {
       "id": "faq-best-build",
       "question": "What is the best Luban No.7 build?",
-      "answer": "Core item path: Sparkforged Dagger, Boots of Dexterity, Eternity Blade, Cloud Piercer, Doomsday, Sage's Sanctuary. Run Tier arcana with Flash. Switch to alternate build presets on this page for jungle, clash, or late-game setups."
+      "answer": "Core item path: Sparkforged Dagger, Boots of Dexterity, Eternity Blade, Daybreaker's Virtue, Doomsday, Sage's Sanctuary. Run Tier arcana with Flash. Switch to alternate build presets on this page for jungle, clash, or late-game setups."
     },
     {
       "id": "faq-counter",
@@ -240,9 +240,60 @@
   ],
   "guide": {
     "overview": "Luban No.7 is a Medium Marksman (Farm Lane) on Honor of Kings Global. Camp HOK ranks them Tier S with 52.0% win rate and 1.8% pick rate as of 2026-06-05.",
-    "bestBuild": "Rush Sparkforged Dagger, Boots of Dexterity, Eternity Blade, then complete Cloud Piercer, Doomsday, Sage's Sanctuary. Use preset tabs for jungle, clash, or CN-style paths when draft requires it.",
+    "hook": "Luban No.7: Every 5 Basic Attacks or the first Basic Attack after using a skill gains a piercing effect and deals continuous damage.",
+    "bestBuild": "Rush Sparkforged Dagger, Boots of Dexterity, Eternity Blade, then complete Daybreaker's Virtue, Doomsday, Sage's Sanctuary. Use preset tabs for jungle, clash, or CN-style paths when draft requires it.",
     "arcanaSpells": "Run Tier for stats that match Luban No.7's Marksman kit. Take Flash — swap to Purify against heavy CC or Smite when jungling.",
-    "combo": "Standard trade: Blowfish Grenade → Shark Cannon → Air Support → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "combo": "Standard trade: Blowfish Grenade → Shark Cannon → Air Support → weave basic attacks. Weave basic attacks between skill casts for passive value.",
+    "skillOrder": {
+      "priority": "Skill 1 → Skill 2 → Air Support (max Skill 1 first)",
+      "reason": "Blowfish Grenade is your lane trade tool. Shark Cannon second. Air Support whenever available."
+    },
+    "combos": [
+      {
+        "id": "standard",
+        "name": "Standard trade",
+        "steps": "Blowfish Grenade → Shark Cannon → Air Support → weave basic attacks",
+        "when": "Farm Lane skirmish or objective fight"
+      }
+    ],
+    "itemNotes": [
+      {
+        "slot": 1,
+        "why": "Chain lightning BA"
+      },
+      {
+        "slot": 2,
+        "why": "Boosts ASPD"
+      },
+      {
+        "slot": 3,
+        "why": "High crit damage"
+      },
+      {
+        "slot": 4,
+        "why": "Great for marksmen"
+      },
+      {
+        "slot": 5,
+        "why": "Boosts BA damage"
+      },
+      {
+        "slot": 6,
+        "why": "Resurrect on the spot"
+      }
+    ],
+    "arcanaRows": [
+      {
+        "slot": "Primary",
+        "rune": "Tier",
+        "effect": "Recommended for Marksman Farm Lane"
+      },
+      {
+        "slot": "Spell",
+        "rune": "Flash",
+        "effect": "Adjust Purify/Execute based on enemy dive."
+      }
+    ],
     "laning": "Last-hit safely until first core item. Ping jungler for river vision; never face-check brush without minion cover.",
     "teamfight": "Position behind frontline; attack closest safe target. Join fight only after enemy dive cooldowns are used.",
     "highRank": "Luban No.7 is a Tier S staple in high-elo (Diamond+) on the international server — worth mastering for climb. Pick rate 1.8% — frequently seen in ranked; learn the matchup even if you do not main Luban No.7. Camp data shows above-average win rate — prioritize when not hard-countered in draft.",

@@ -110,7 +110,7 @@
     "Liang is a Medium Mage (Mid Lane) on Honor of Kings Global. Camp HOK ranks them Tier S+ with 51.5% win rate and 0.8% pick rate as of 2026-06-05.",
     "Best build path: Boots of the Arcane → Scepter of Reverberation → Mask of Agony → Savant's Wrath → Splendor → Void Staff.",
     "Run Nightmare for stats that match Liang's Mage kit. Take Flash — swap to Purify against heavy CC or Smite when jungling.",
-    "Standard trade: Power Word - Barrier → Power Word - Fate → Power Word - Control → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "Standard trade: Power Word - Barrier → Power Word - Fate → Power Word - Control → weave basic attacks. Weave basic attacks between skill casts for passive value.",
     "Laning: Control first wave without taking free poke. Roam after pushing wave 2–4 to side lanes with your jungler.",
     "Teamfight: Poke from max range before objective. Save hard CC for enemy dive or your carry peel window.",
     "Liang excels into Han Xin, Lam, Mulan. Avoid blind picking into Li Xin, Mayene, Mulan without team peel.",
@@ -440,9 +440,60 @@
   ],
   "guide": {
     "overview": "Liang is a Medium Mage (Mid Lane) on Honor of Kings Global. Camp HOK ranks them Tier S+ with 51.5% win rate and 0.8% pick rate as of 2026-06-05.",
+    "hook": "Liang: Every second hit on the same target within a short time will deal an extra strike of damage.",
     "bestBuild": "Rush Boots of the Arcane, Scepter of Reverberation, Mask of Agony, then complete Savant's Wrath, Splendor, Void Staff. Use preset tabs for jungle, clash, or CN-style paths when draft requires it.",
     "arcanaSpells": "Run Nightmare for stats that match Liang's Mage kit. Take Flash — swap to Purify against heavy CC or Smite when jungling.",
-    "combo": "Standard trade: Power Word - Barrier → Power Word - Fate → Power Word - Control → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "combo": "Standard trade: Power Word - Barrier → Power Word - Fate → Power Word - Control → weave basic attacks. Weave basic attacks between skill casts for passive value.",
+    "skillOrder": {
+      "priority": "Skill 2 → Skill 1 → Power Word - Control (max Skill 2 first)",
+      "reason": "Max primary utility/damage skill first, then Power Word - Barrier, and Power Word - Control on cooldown."
+    },
+    "combos": [
+      {
+        "id": "standard",
+        "name": "Standard trade",
+        "steps": "Power Word - Barrier → Power Word - Fate → Power Word - Control → weave basic attacks",
+        "when": "Mid Lane skirmish or objective fight"
+      }
+    ],
+    "itemNotes": [
+      {
+        "slot": 1,
+        "why": "Magical Pierce"
+      },
+      {
+        "slot": 2,
+        "why": "Skill hits trigger explosions"
+      },
+      {
+        "slot": 3,
+        "why": "Boosts skill damage"
+      },
+      {
+        "slot": 4,
+        "why": "Greatly boosts MATK"
+      },
+      {
+        "slot": 5,
+        "why": "Temp. invincibility"
+      },
+      {
+        "slot": 6,
+        "why": "Anti-tank"
+      }
+    ],
+    "arcanaRows": [
+      {
+        "slot": "Primary",
+        "rune": "Nightmare",
+        "effect": "Recommended for Mage Mid Lane"
+      },
+      {
+        "slot": "Spell",
+        "rune": "Flash",
+        "effect": "Adjust Purify/Execute based on enemy dive."
+      }
+    ],
     "laning": "Control first wave without taking free poke. Roam after pushing wave 2–4 to side lanes with your jungler.",
     "teamfight": "Poke from max range before objective. Save hard CC for enemy dive or your carry peel window.",
     "highRank": "Liang is a Tier S+ staple in high-elo (Diamond+) on the international server — worth mastering for climb. Ban rate 5.0% — expect Liang to be removed in tryhard lobbies; have a backup in the same role.",

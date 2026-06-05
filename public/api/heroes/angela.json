@@ -109,7 +109,7 @@
     "Angela is a Medium Mage (Mid Lane) on Honor of Kings Global. Camp HOK ranks them Tier S+ with 51.8% win rate and 2.3% pick rate as of 2026-06-05.",
     "Best build path: Boots of the Arcane → Stone of Sorcery → Scepter of Reverberation → Blood Clan's Grimoire → Insatiable Tome → Savant's Wrath.",
     "Run Nightmare for stats that match Angela's Mage kit. Take Flash — swap to Purify against heavy CC or Smite when jungling.",
-    "Standard trade: Scorching Barrage → Chaos Cinder → Blazing Brilliance → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "Standard trade: Scorching Barrage → Chaos Cinder → Blazing Brilliance → weave basic attacks. Weave basic attacks between skill casts for passive value.",
     "Laning: Control first wave without taking free poke. Roam after pushing wave 2–4 to side lanes with your jungler.",
     "Teamfight: Poke from max range before objective. Save hard CC for enemy dive or your carry peel window.",
     "Angela excels into Jing, Athena, Zilong. Avoid blind picking into Han Xin, Gao Changgong without team peel.",
@@ -439,9 +439,60 @@
   ],
   "guide": {
     "overview": "Angela is a Medium Mage (Mid Lane) on Honor of Kings Global. Camp HOK ranks them Tier S+ with 51.8% win rate and 2.3% pick rate as of 2026-06-05.",
+    "hook": "Angela: Every time she damages an enemy with a skill, she increases her Movement Speed, and the enemy will take more damage from her subsequent skills.",
     "bestBuild": "Rush Boots of the Arcane, Stone of Sorcery, Scepter of Reverberation, then complete Blood Clan's Grimoire, Insatiable Tome, Savant's Wrath. Use preset tabs for jungle, clash, or CN-style paths when draft requires it.",
     "arcanaSpells": "Run Nightmare for stats that match Angela's Mage kit. Take Flash — swap to Purify against heavy CC or Smite when jungling.",
-    "combo": "Standard trade: Scorching Barrage → Chaos Cinder → Blazing Brilliance → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "combo": "Standard trade: Scorching Barrage → Chaos Cinder → Blazing Brilliance → weave basic attacks. Weave basic attacks between skill casts for passive value.",
+    "skillOrder": {
+      "priority": "Skill 2 → Skill 1 → Blazing Brilliance (max Skill 2 first)",
+      "reason": "Max primary utility/damage skill first, then Scorching Barrage, and Blazing Brilliance on cooldown."
+    },
+    "combos": [
+      {
+        "id": "standard",
+        "name": "Standard trade",
+        "steps": "Scorching Barrage → Chaos Cinder → Blazing Brilliance → weave basic attacks",
+        "when": "Mid Lane skirmish or objective fight"
+      }
+    ],
+    "itemNotes": [
+      {
+        "slot": 1,
+        "why": "Magical Pierce"
+      },
+      {
+        "slot": 2,
+        "why": "MATK +60\nMSPD +7.5%"
+      },
+      {
+        "slot": 3,
+        "why": "Skill hits trigger explosions"
+      },
+      {
+        "slot": 4,
+        "why": "MATK +60, Magical Lifesteal +12%"
+      },
+      {
+        "slot": 5,
+        "why": "Magical Lifesteal"
+      },
+      {
+        "slot": 6,
+        "why": "Greatly boosts MATK"
+      }
+    ],
+    "arcanaRows": [
+      {
+        "slot": "Primary",
+        "rune": "Nightmare",
+        "effect": "Recommended for Mage Mid Lane"
+      },
+      {
+        "slot": "Spell",
+        "rune": "Flash",
+        "effect": "Adjust Purify/Execute based on enemy dive."
+      }
+    ],
     "laning": "Control first wave without taking free poke. Roam after pushing wave 2–4 to side lanes with your jungler.",
     "teamfight": "Poke from max range before objective. Save hard CC for enemy dive or your carry peel window.",
     "highRank": "Angela is a Tier S+ staple in high-elo (Diamond+) on the international server — worth mastering for climb. Ban rate 3.0% — expect Angela to be removed in tryhard lobbies; have a backup in the same role.",

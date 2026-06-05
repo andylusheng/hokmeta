@@ -110,7 +110,7 @@
     "Shi is a Medium Mage (Mid Lane) on Honor of Kings Global. Camp HOK ranks them Tier B with 50.7% win rate and 0.6% pick rate as of 2026-06-05.",
     "Best build path: Scepter of Reverberation → Boots of the Arcane → Savant's Wrath → Insatiable Tome → Void Staff.",
     "Run Nightmare for stats that match Shi's Mage kit. Take Flash — swap to Purify against heavy CC or Smite when jungling.",
-    "Standard trade: Silk Imprint → Silky Beauty → Sole Focus → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "Standard trade: Silk Imprint → Silky Beauty → Sole Focus → weave basic attacks. Weave basic attacks between skill casts for passive value.",
     "Laning: Control first wave without taking free poke. Roam after pushing wave 2–4 to side lanes with your jungler.",
     "Teamfight: Poke from max range before objective. Save hard CC for enemy dive or your carry peel window.",
     "Shi excels into Li Bai, Wukong, Ukyo Tachibana. Avoid blind picking into Athena, Li Xin, Kaizer without team peel.",
@@ -139,7 +139,7 @@
     {
       "id": "faq-best-build",
       "question": "What is the best Shi build?",
-      "answer": "Core item path: Scepter of Reverberation, Boots of the Arcane, Savant's Wrath, Insatiable Tome, tome of wisdom, Void Staff. Run Nightmare arcana with Flash. Switch to alternate build presets on this page for jungle, clash, or late-game setups."
+      "answer": "Core item path: Scepter of Reverberation, Boots of the Arcane, Savant's Wrath, Insatiable Tome, Void Staff. Run Nightmare arcana with Flash. Switch to alternate build presets on this page for jungle, clash, or late-game setups."
     },
     {
       "id": "faq-counter",
@@ -690,9 +690,56 @@
   ],
   "guide": {
     "overview": "Shi is a Medium Mage (Mid Lane) on Honor of Kings Global. Camp HOK ranks them Tier B with 50.7% win rate and 0.6% pick rate as of 2026-06-05.",
-    "bestBuild": "Rush Scepter of Reverberation, Boots of the Arcane, Savant's Wrath, then complete Insatiable Tome, tome of wisdom, Void Staff. Use preset tabs for jungle, clash, or CN-style paths when draft requires it.",
+    "hook": "Shi: The farther away the enemy is, the more damage skills deal.",
+    "bestBuild": "Rush Scepter of Reverberation, Boots of the Arcane, Savant's Wrath, then complete Insatiable Tome, Void Staff. Use preset tabs for jungle, clash, or CN-style paths when draft requires it.",
     "arcanaSpells": "Run Nightmare for stats that match Shi's Mage kit. Take Flash — swap to Purify against heavy CC or Smite when jungling.",
-    "combo": "Standard trade: Silk Imprint → Silky Beauty → Sole Focus → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "combo": "Standard trade: Silk Imprint → Silky Beauty → Sole Focus → weave basic attacks. Weave basic attacks between skill casts for passive value.",
+    "skillOrder": {
+      "priority": "Skill 2 → Skill 1 → Sole Focus (max Skill 2 first)",
+      "reason": "Max primary utility/damage skill first, then Silk Imprint, and Sole Focus on cooldown."
+    },
+    "combos": [
+      {
+        "id": "standard",
+        "name": "Standard trade",
+        "steps": "Silk Imprint → Silky Beauty → Sole Focus → weave basic attacks",
+        "when": "Mid Lane skirmish or objective fight"
+      }
+    ],
+    "itemNotes": [
+      {
+        "slot": 1,
+        "why": "Skill hits trigger explosions"
+      },
+      {
+        "slot": 2,
+        "why": "Magical Pierce"
+      },
+      {
+        "slot": 3,
+        "why": "Greatly boosts MATK"
+      },
+      {
+        "slot": 4,
+        "why": "Magical Lifesteal"
+      },
+      {
+        "slot": 5,
+        "why": "Anti-tank"
+      }
+    ],
+    "arcanaRows": [
+      {
+        "slot": "Primary",
+        "rune": "Nightmare",
+        "effect": "Recommended for Mage Mid Lane"
+      },
+      {
+        "slot": "Spell",
+        "rune": "Flash",
+        "effect": "Adjust Purify/Execute based on enemy dive."
+      }
+    ],
     "laning": "Control first wave without taking free poke. Roam after pushing wave 2–4 to side lanes with your jungler.",
     "teamfight": "Poke from max range before objective. Save hard CC for enemy dive or your carry peel window.",
     "highRank": "Shi sits at Tier B globally (50.7% WR). In high rank, pick only into favorable matchups or when you have a dedicated pocket pick.",

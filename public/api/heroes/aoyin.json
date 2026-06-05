@@ -111,7 +111,7 @@
     "Ao'yin is a Medium Marksman (Farm Lane) on Honor of Kings Global. Camp HOK ranks them Tier S+ with 48.4% win rate and 1.6% pick rate as of 2026-06-05.",
     "Best build path: Eternity Blade → Boots of Dexterity → Shadow Ripper → Daybreaker's Virtue → Doomsday → Overlord's Might.",
     "Run Penetration for stats that match Ao'yin's Marksman kit. Take Flash & Execute — swap to Purify against heavy CC or Smite when jungling.",
-    "Standard trade: Flaming Palm → Downpour → Riding the Wind → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "Standard trade: Flaming Palm → Downpour → Riding the Wind → weave basic attacks. Weave basic attacks between skill casts for passive value.",
     "Laning: Last-hit safely until first core item. Ping jungler for river vision; never face-check brush without minion cover.",
     "Teamfight: Position behind frontline; attack closest safe target. Join fight only after enemy dive cooldowns are used.",
     "Ao'yin excels into Liu Bei, Athena, Zilong. Avoid blind picking into Kaizer, Dun, Arthur without team peel.",
@@ -140,7 +140,7 @@
     {
       "id": "faq-best-build",
       "question": "What is the best Ao'yin build?",
-      "answer": "Core item path: Lightfoot Shoes, Eternity Blade, Boots of Dexterity, Shadow Ripper, Daybreaker's Virtue, Doomsday. Run Penetration arcana with Flash & Execute. Switch to alternate build presets on this page for jungle, clash, or late-game setups."
+      "answer": "Core item path: Eternity Blade, Boots of Dexterity, Shadow Ripper, Daybreaker's Virtue, Doomsday, Overlord's Might. Run Penetration arcana with Flash & Execute. Switch to alternate build presets on this page for jungle, clash, or late-game setups."
     },
     {
       "id": "faq-counter",
@@ -641,9 +641,60 @@
   ],
   "guide": {
     "overview": "Ao'yin is a Medium Marksman (Farm Lane) on Honor of Kings Global. Camp HOK ranks them Tier S+ with 48.4% win rate and 1.6% pick rate as of 2026-06-05.",
-    "bestBuild": "Rush Lightfoot Shoes, Eternity Blade, Boots of Dexterity, then complete Shadow Ripper, Daybreaker's Virtue, Doomsday. Use preset tabs for jungle, clash, or CN-style paths when draft requires it.",
+    "hook": "Ao'yin: The Dragon Souls from his last 2 skill uses grant effects to his Basic Attacks, which deal physical damage to up to two enemies.",
+    "bestBuild": "Rush Eternity Blade, Boots of Dexterity, Shadow Ripper, then complete Daybreaker's Virtue, Doomsday, Overlord's Might. Use preset tabs for jungle, clash, or CN-style paths when draft requires it.",
     "arcanaSpells": "Run Penetration for stats that match Ao'yin's Marksman kit. Take Flash & Execute — swap to Purify against heavy CC or Smite when jungling.",
-    "combo": "Standard trade: Flaming Palm → Downpour → Riding the Wind → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "combo": "Standard trade: Flaming Palm → Downpour → Riding the Wind → weave basic attacks. Weave basic attacks between skill casts for passive value.",
+    "skillOrder": {
+      "priority": "Skill 1 → Skill 2 → Riding the Wind (max Skill 1 first)",
+      "reason": "Flaming Palm is your lane trade tool. Downpour second. Riding the Wind whenever available."
+    },
+    "combos": [
+      {
+        "id": "standard",
+        "name": "Standard trade",
+        "steps": "Flaming Palm → Downpour → Riding the Wind → weave basic attacks",
+        "when": "Farm Lane skirmish or objective fight"
+      }
+    ],
+    "itemNotes": [
+      {
+        "slot": 1,
+        "why": "High crit damage"
+      },
+      {
+        "slot": 2,
+        "why": "Boosts ASPD"
+      },
+      {
+        "slot": 3,
+        "why": "Crits boost ASPD"
+      },
+      {
+        "slot": 4,
+        "why": "Great for marksmen"
+      },
+      {
+        "slot": 5,
+        "why": "Boosts BA damage"
+      },
+      {
+        "slot": 6,
+        "why": "High-damage attack"
+      }
+    ],
+    "arcanaRows": [
+      {
+        "slot": "Primary",
+        "rune": "Penetration",
+        "effect": "Recommended for Marksman Farm Lane"
+      },
+      {
+        "slot": "Spell",
+        "rune": "Flash / Execute",
+        "effect": "Adjust Purify/Execute based on enemy dive."
+      }
+    ],
     "laning": "Last-hit safely until first core item. Ping jungler for river vision; never face-check brush without minion cover.",
     "teamfight": "Position behind frontline; attack closest safe target. Join fight only after enemy dive cooldowns are used.",
     "highRank": "Ao'yin is a Tier S+ staple in high-elo (Diamond+) on the international server — worth mastering for climb. Ban rate 5.1% — expect Ao'yin to be removed in tryhard lobbies; have a backup in the same role. Below 49% global WR — high-rank players often avoid unless compensating for team comp.",

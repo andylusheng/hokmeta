@@ -111,7 +111,7 @@
     "Wang Zhaojun is a Medium Mage (Mid Lane) on Honor of Kings Global. Camp HOK ranks them Tier S with 51.2% win rate and 1.9% pick rate as of 2026-06-05.",
     "Best build path: Boots of Deftness → Stone of Sorcery → Frozen Breath → Scepter of Reverberation → Savant's Wrath → Void Staff.",
     "Run Penetration for stats that match Wang Zhaojun's Mage kit. Take Flash & Execute — swap to Purify against heavy CC or Smite when jungling.",
-    "Standard trade: Shattered Ice → Frigid Prison → Winter is Here → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "Standard trade: Shattered Ice → Frigid Prison → Winter is Here → weave basic attacks. Weave basic attacks between skill casts for passive value.",
     "Laning: Control first wave without taking free poke. Roam after pushing wave 2–4 to side lanes with your jungler.",
     "Teamfight: Poke from max range before objective. Save hard CC for enemy dive or your carry peel window.",
     "Wang Zhaojun excels into Athena, Zilong, Pei. Avoid blind picking into Dharma, Li Xin, Kaizer without team peel.",
@@ -641,9 +641,60 @@
   ],
   "guide": {
     "overview": "Wang Zhaojun is a Medium Mage (Mid Lane) on Honor of Kings Global. Camp HOK ranks them Tier S with 51.2% win rate and 1.9% pick rate as of 2026-06-05.",
+    "hook": "Wang Zhaojun: Upon leaving combat, gains a shield that chills the attacker when taking damage.",
     "bestBuild": "Rush Boots of Deftness, Stone of Sorcery, Frozen Breath, then complete Scepter of Reverberation, Savant's Wrath, Void Staff. Use preset tabs for jungle, clash, or CN-style paths when draft requires it.",
     "arcanaSpells": "Run Penetration for stats that match Wang Zhaojun's Mage kit. Take Flash & Execute — swap to Purify against heavy CC or Smite when jungling.",
-    "combo": "Standard trade: Shattered Ice → Frigid Prison → Winter is Here → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "combo": "Standard trade: Shattered Ice → Frigid Prison → Winter is Here → weave basic attacks. Weave basic attacks between skill casts for passive value.",
+    "skillOrder": {
+      "priority": "Skill 2 → Skill 1 → Winter is Here (max Skill 2 first)",
+      "reason": "Max primary utility/damage skill first, then Shattered Ice, and Winter is Here on cooldown."
+    },
+    "combos": [
+      {
+        "id": "standard",
+        "name": "Standard trade",
+        "steps": "Shattered Ice → Frigid Prison → Winter is Here → weave basic attacks",
+        "when": "Mid Lane skirmish or objective fight"
+      }
+    ],
+    "itemNotes": [
+      {
+        "slot": 1,
+        "why": "Extra Movement Speed"
+      },
+      {
+        "slot": 2,
+        "why": "MATK +60\nMSPD +7.5%"
+      },
+      {
+        "slot": 3,
+        "why": "Slows on hit"
+      },
+      {
+        "slot": 4,
+        "why": "Skill hits trigger explosions"
+      },
+      {
+        "slot": 5,
+        "why": "Greatly boosts MATK"
+      },
+      {
+        "slot": 6,
+        "why": "Anti-tank"
+      }
+    ],
+    "arcanaRows": [
+      {
+        "slot": "Primary",
+        "rune": "Penetration",
+        "effect": "Recommended for Mage Mid Lane"
+      },
+      {
+        "slot": "Spell",
+        "rune": "Flash / Execute",
+        "effect": "Adjust Purify/Execute based on enemy dive."
+      }
+    ],
     "laning": "Control first wave without taking free poke. Roam after pushing wave 2–4 to side lanes with your jungler.",
     "teamfight": "Poke from max range before objective. Save hard CC for enemy dive or your carry peel window.",
     "highRank": "Wang Zhaojun is a Tier S staple in high-elo (Diamond+) on the international server — worth mastering for climb. Ban rate 0.6% — expect Wang Zhaojun to be removed in tryhard lobbies; have a backup in the same role.",

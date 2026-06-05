@@ -109,7 +109,7 @@
     "Arli is a Medium Marksman (Farm Lane) on Honor of Kings Global. Camp HOK ranks them Tier A with 47.0% win rate and 0.8% pick rate as of 2026-06-05.",
     "Best build path: Doomsday → Boots of Dexterity → Shadow Ripper → Eternity Blade → Daybreaker's Virtue → Sunchaser.",
     "Run Cataclysm for stats that match Arli's Marksman kit. Take Flash & Execute — swap to Purify against heavy CC or Smite when jungling.",
-    "Standard trade: Lithe Step → Maple Dance → Autumn Storm → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "Standard trade: Lithe Step → Maple Dance → Autumn Storm → weave basic attacks. Weave basic attacks between skill casts for passive value.",
     "Laning: Last-hit safely until first core item. Ping jungler for river vision; never face-check brush without minion cover.",
     "Teamfight: Position behind frontline; attack closest safe target. Join fight only after enemy dive cooldowns are used.",
     "Arli excels into Kaizer, Angela. Avoid blind picking into Donghuang, Daji without team peel.",
@@ -689,9 +689,60 @@
   ],
   "guide": {
     "overview": "Arli is a Medium Marksman (Farm Lane) on Honor of Kings Global. Camp HOK ranks them Tier A with 47.0% win rate and 0.8% pick rate as of 2026-06-05.",
+    "hook": "Arli: Basic Attack hits place marks on the target.",
     "bestBuild": "Rush Doomsday, Boots of Dexterity, Shadow Ripper, then complete Eternity Blade, Daybreaker's Virtue, Sunchaser. Use preset tabs for jungle, clash, or CN-style paths when draft requires it.",
     "arcanaSpells": "Run Cataclysm for stats that match Arli's Marksman kit. Take Flash & Execute — swap to Purify against heavy CC or Smite when jungling.",
-    "combo": "Standard trade: Lithe Step → Maple Dance → Autumn Storm → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "combo": "Standard trade: Lithe Step → Maple Dance → Autumn Storm → weave basic attacks. Weave basic attacks between skill casts for passive value.",
+    "skillOrder": {
+      "priority": "Skill 1 → Skill 2 → Autumn Storm (max Skill 1 first)",
+      "reason": "Lithe Step is your lane trade tool. Maple Dance second. Autumn Storm whenever available."
+    },
+    "combos": [
+      {
+        "id": "standard",
+        "name": "Standard trade",
+        "steps": "Lithe Step → Maple Dance → Autumn Storm → weave basic attacks",
+        "when": "Farm Lane skirmish or objective fight"
+      }
+    ],
+    "itemNotes": [
+      {
+        "slot": 1,
+        "why": "Boosts BA damage"
+      },
+      {
+        "slot": 2,
+        "why": "Boosts ASPD"
+      },
+      {
+        "slot": 3,
+        "why": "Crits boost ASPD"
+      },
+      {
+        "slot": 4,
+        "why": "High crit damage"
+      },
+      {
+        "slot": 5,
+        "why": "Great for marksmen"
+      },
+      {
+        "slot": 6,
+        "why": "Boosts attack range"
+      }
+    ],
+    "arcanaRows": [
+      {
+        "slot": "Primary",
+        "rune": "Cataclysm",
+        "effect": "Recommended for Marksman Farm Lane"
+      },
+      {
+        "slot": "Spell",
+        "rune": "Flash / Execute",
+        "effect": "Adjust Purify/Execute based on enemy dive."
+      }
+    ],
     "laning": "Last-hit safely until first core item. Ping jungler for river vision; never face-check brush without minion cover.",
     "teamfight": "Position behind frontline; attack closest safe target. Join fight only after enemy dive cooldowns are used.",
     "highRank": "Arli is a viable Tier A pick in high rank with 47.0% win rate — strong in one-trick hands or as a counter-pick. Below 49% global WR — high-rank players often avoid unless compensating for team comp.",

@@ -125,16 +125,101 @@ function buildItems(hero) {
     .filter((n) => n && n !== 'Data unavailable');
 }
 
-function skillCombo(hero) {
-  const s = hero.skills || [];
-  const names = s
+function passiveHook(hero) {
+  const passive = (hero.skills || []).find((s) => s.slot === 'passive');
+  if (!passive?.description) {
+    return `${hero.name} — ${hero.role} (${hero.lane || 'flex'}) on Honor of Kings Global.`;
+  }
+  const first = passive.description.split(/[.!?]/)[0]?.trim();
+  if (first && first.length > 20 && first.length < 160) {
+    return `${hero.name}: ${first}.`;
+  }
+  return `${hero.name} — built around ${passive.name} (${hero.role}).`;
+}
+
+function defaultSkillOrder(hero) {
+  const s1 = hero.skills?.find((x) => x.slot === 'skill1')?.name || 'Skill 1';
+  const s2 = hero.skills?.find((x) => x.slot === 'skill2')?.name || 'Skill 2';
+  const ult = hero.skills?.find((x) => x.slot === 'ultimate')?.name || 'Ultimate';
+  if (hero.role === 'Assassin' || hero.lane === 'Jungling') {
+    return {
+      priority: `Skill 2 → Skill 1 → ${ult} (max Skill 2 first)`,
+      reason: `${s2} provides mobility or stick—max first. ${s1} second for damage. ${ult} on every level.`,
+    };
+  }
+  if (hero.role === 'Marksman') {
+    return {
+      priority: `Skill 1 → Skill 2 → ${ult} (max Skill 1 first)`,
+      reason: `${s1} is your lane trade tool. ${s2} second. ${ult} whenever available.`,
+    };
+  }
+  return {
+    priority: `Skill 2 → Skill 1 → ${ult} (max Skill 2 first)`,
+    reason: `Max primary utility/damage skill first, then ${s1}, and ${ult} on cooldown.`,
+  };
+}
+
+function defaultCombos(hero) {
+  const names = (hero.skills || [])
     .filter((x) => x.slot !== 'passive')
     .map((x) => x.name)
-    .filter((n) => n && n !== 'Data unavailable');
-  if (names.length >= 2) {
-    return `Standard trade: ${names.join(' → ')} → reposition. Weave basic attacks between skill casts for maximum damage and passive value.`;
+    .filter(Boolean);
+  const steps =
+    names.length >= 2
+      ? `${names.join(' → ')} → weave basic attacks`
+      : 'Safest skill → ultimate when escape is down';
+  const combos = [
+    {
+      id: 'standard',
+      name: 'Standard trade',
+      steps,
+      when: `${hero.lane || hero.role} skirmish or objective fight`,
+    },
+  ];
+  if (hero.role === 'Assassin' || hero.lane === 'Jungling') {
+    combos.push({
+      id: 'all-in',
+      name: 'All-in',
+      steps: `${names[names.length - 1] || 'Ultimate'} after full rotation when Flash is down`,
+      when: 'Gank or backline dive with team CC',
+    });
   }
-  return 'Trade with your safest skill first, confirm cooldowns, then commit your ultimate when enemy escape is down.';
+  return combos;
+}
+
+function defaultItemNotes(hero) {
+  return (hero.build || [])
+    .filter((b) => b.name && b.name !== 'Data unavailable')
+    .map((b) => ({
+      slot: b.slot,
+      why:
+        b.description && b.description !== 'Data unavailable'
+          ? b.description
+          : `Slot ${b.slot} in the recommended ${hero.lane || hero.role} path.`,
+    }));
+}
+
+function defaultArcanaRows(hero) {
+  const arcana = (hero.arcana || []).filter(Boolean);
+  const spells = (hero.spells || []).filter(Boolean);
+  const rows = arcana.map((rune, i) => ({
+    slot: i === 0 ? 'Primary' : `Rune ${i + 1}`,
+    rune,
+    effect: `Recommended for ${hero.role} ${hero.lane || ''}`.trim(),
+  }));
+  if (spells.length) {
+    rows.push({
+      slot: 'Spell',
+      rune: spells.join(' / '),
+      effect: 'Adjust Purify/Execute based on enemy dive.',
+    });
+  }
+  return rows;
+}
+
+function skillCombo(hero) {
+  const combo = defaultCombos(hero)[0];
+  return `Standard trade: ${combo.steps}. Weave basic attacks between skill casts for passive value.`;
 }
 
 function laningTip(hero) {
@@ -316,11 +401,32 @@ function enrichHero(hero) {
     ? matchups.weakInto
     : ['Data unavailable'];
 
+  const kept =
+    hero.slug === 'musashi' && hero.guide?.hook
+      ? {
+          hook: hero.guide.hook,
+          skillOrder: hero.guide.skillOrder,
+          combos: hero.guide.combos,
+          itemNotes: hero.guide.itemNotes,
+          arcanaRows: hero.guide.arcanaRows,
+          laning: hero.guide.laning,
+          teamfight: hero.guide.teamfight,
+          bestBuild: hero.guide.bestBuild,
+          arcanaSpells: hero.guide.arcanaSpells,
+          combo: hero.guide.combo,
+        }
+      : null;
+
   hero.guide = {
     overview: `${hero.name} is a ${hero.difficulty} ${hero.role} (${hero.lane || 'flex'}) on Honor of Kings Global. Camp HOK ranks them Tier ${hero.tier} with ${fmtRate(hero.winRate)} win rate and ${fmtRate(hero.pickRate)} pick rate as of ${SYNC_DATE}.`,
+    hook: passiveHook(hero),
     bestBuild: `Rush ${buildNames.slice(0, 3).join(', ') || 'core items from the Build tab'}, then complete ${buildNames.slice(3, 6).join(', ') || 'situational defense or damage'}. Use preset tabs for jungle, clash, or CN-style paths when draft requires it.`,
     arcanaSpells: `Run ${arcana} for stats that match ${hero.name}'s ${hero.role} kit. Take ${spells} — swap to Purify against heavy CC or Smite when jungling.`,
     combo: skillCombo(hero),
+    skillOrder: defaultSkillOrder(hero),
+    combos: defaultCombos(hero),
+    itemNotes: defaultItemNotes(hero),
+    arcanaRows: defaultArcanaRows(hero),
     laning: laningTip(hero),
     teamfight: teamfightTip(hero),
     highRank: highRankNote(hero),
@@ -330,6 +436,7 @@ function enrichHero(hero) {
       weakInto: matchups.weakInto,
       summary: `${hero.name} excels into ${matchups.strongInto.join(', ') || 'squishy targets'}. Avoid blind picking into ${matchups.weakInto.join(', ') || 'hard counters'} without team peel.`,
     },
+    ...(kept || {}),
   };
 
   hero.tips = [

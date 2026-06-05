@@ -110,7 +110,7 @@
     "Milady is a Medium Mage (Mid Lane) on Honor of Kings Global. Camp HOK ranks them Tier S+ with 49.0% win rate and 1.9% pick rate as of 2026-06-05.",
     "Best build path: Boots of Tranquility → Mask of Agony → Void Staff → Twilight Stream → Venomous Staff.",
     "Run Nightmare for stats that match Milady's Mage kit. Take Flash — swap to Purify against heavy CC or Smite when jungling.",
-    "Standard trade: Air Superiority → Forced Invasion → Chaos Field → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "Standard trade: Air Superiority → Forced Invasion → Chaos Field → weave basic attacks. Weave basic attacks between skill casts for passive value.",
     "Laning: Control first wave without taking free poke. Roam after pushing wave 2–4 to side lanes with your jungler.",
     "Teamfight: Poke from max range before objective. Save hard CC for enemy dive or your carry peel window.",
     "Milady excels into Nakoruru, Pei, Mai Shiranui. Avoid blind picking into Allain, Fuzi, Haya without team peel.",
@@ -139,7 +139,7 @@
     {
       "id": "faq-best-build",
       "question": "What is the best Milady build?",
-      "answer": "Core item path: Boots of Tranquility, Mask of Agony, Void Staff, Twilight Stream, ardent dominator, Venomous Staff. Run Nightmare arcana with Flash. Switch to alternate build presets on this page for jungle, clash, or late-game setups."
+      "answer": "Core item path: Boots of Tranquility, Mask of Agony, Void Staff, Twilight Stream, Venomous Staff. Run Nightmare arcana with Flash. Switch to alternate build presets on this page for jungle, clash, or late-game setups."
     },
     {
       "id": "faq-counter",
@@ -390,9 +390,56 @@
   ],
   "guide": {
     "overview": "Milady is a Medium Mage (Mid Lane) on Honor of Kings Global. Camp HOK ranks them Tier S+ with 49.0% win rate and 1.9% pick rate as of 2026-06-05.",
-    "bestBuild": "Rush Boots of Tranquility, Mask of Agony, Void Staff, then complete Twilight Stream, ardent dominator, Venomous Staff. Use preset tabs for jungle, clash, or CN-style paths when draft requires it.",
+    "hook": "Milady: Summons minions upon killing a unit.",
+    "bestBuild": "Rush Boots of Tranquility, Mask of Agony, Void Staff, then complete Twilight Stream, Venomous Staff. Use preset tabs for jungle, clash, or CN-style paths when draft requires it.",
     "arcanaSpells": "Run Nightmare for stats that match Milady's Mage kit. Take Flash — swap to Purify against heavy CC or Smite when jungling.",
-    "combo": "Standard trade: Air Superiority → Forced Invasion → Chaos Field → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "combo": "Standard trade: Air Superiority → Forced Invasion → Chaos Field → weave basic attacks. Weave basic attacks between skill casts for passive value.",
+    "skillOrder": {
+      "priority": "Skill 2 → Skill 1 → Chaos Field (max Skill 2 first)",
+      "reason": "Max primary utility/damage skill first, then Air Superiority, and Chaos Field on cooldown."
+    },
+    "combos": [
+      {
+        "id": "standard",
+        "name": "Standard trade",
+        "steps": "Air Superiority → Forced Invasion → Chaos Field → weave basic attacks",
+        "when": "Mid Lane skirmish or objective fight"
+      }
+    ],
+    "itemNotes": [
+      {
+        "slot": 1,
+        "why": "Reduces Skill CD"
+      },
+      {
+        "slot": 2,
+        "why": "Boosts skill damage"
+      },
+      {
+        "slot": 3,
+        "why": "Anti-tank"
+      },
+      {
+        "slot": 4,
+        "why": "Boosts Magical Pierce"
+      },
+      {
+        "slot": 5,
+        "why": "Lowers Health regen"
+      }
+    ],
+    "arcanaRows": [
+      {
+        "slot": "Primary",
+        "rune": "Nightmare",
+        "effect": "Recommended for Mage Mid Lane"
+      },
+      {
+        "slot": "Spell",
+        "rune": "Flash",
+        "effect": "Adjust Purify/Execute based on enemy dive."
+      }
+    ],
     "laning": "Control first wave without taking free poke. Roam after pushing wave 2–4 to side lanes with your jungler.",
     "teamfight": "Poke from max range before objective. Save hard CC for enemy dive or your carry peel window.",
     "highRank": "Milady is a Tier S+ staple in high-elo (Diamond+) on the international server — worth mastering for climb. Ban rate 2.4% — expect Milady to be removed in tryhard lobbies; have a backup in the same role. Below 49% global WR — high-rank players often avoid unless compensating for team comp.",

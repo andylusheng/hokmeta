@@ -111,7 +111,7 @@
     "Umbrosa is a Medium Warrior (Clash Lane) on Honor of Kings Global. Camp HOK ranks them Tier B with 49.5% win rate and 0.6% pick rate as of 2026-06-05.",
     "Best build path: Boots of Resistance → Axe of Torment → Master Sword → Pure Sky → Eternity Blade → Starbreaker.",
     "Run Mutation for stats that match Umbrosa's Warrior kit. Take Flash & Smite — swap to Purify against heavy CC or Smite when jungling.",
-    "Standard trade: Feverish Dance → Feathered Tempest → Final Frenzy → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "Standard trade: Feverish Dance → Feathered Tempest → Final Frenzy → weave basic attacks. Weave basic attacks between skill casts for passive value.",
     "Laning: Trade on your power spike levels (2/4). Call jungler for dive only when enemy flash is down.",
     "Teamfight: Flank or dive backline after tanks commit. Do not start fights without vision on enemy jungler.",
     "Umbrosa excels into Sakeer, Angela, Guiguzi. Avoid blind picking into Hou Yi, Marco Polo, Lady Sun without team peel.",
@@ -641,9 +641,60 @@
   ],
   "guide": {
     "overview": "Umbrosa is a Medium Warrior (Clash Lane) on Honor of Kings Global. Camp HOK ranks them Tier B with 49.5% win rate and 0.6% pick rate as of 2026-06-05.",
+    "hook": "Umbrosa: Mark Damage When attacking at a distance, Basic Attacks throw a blade that returns to her.",
     "bestBuild": "Rush Boots of Resistance, Axe of Torment, Master Sword, then complete Pure Sky, Eternity Blade, Starbreaker. Use preset tabs for jungle, clash, or CN-style paths when draft requires it.",
     "arcanaSpells": "Run Mutation for stats that match Umbrosa's Warrior kit. Take Flash & Smite — swap to Purify against heavy CC or Smite when jungling.",
-    "combo": "Standard trade: Feverish Dance → Feathered Tempest → Final Frenzy → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "combo": "Standard trade: Feverish Dance → Feathered Tempest → Final Frenzy → weave basic attacks. Weave basic attacks between skill casts for passive value.",
+    "skillOrder": {
+      "priority": "Skill 2 → Skill 1 → Final Frenzy (max Skill 2 first)",
+      "reason": "Max primary utility/damage skill first, then Feverish Dance, and Final Frenzy on cooldown."
+    },
+    "combos": [
+      {
+        "id": "standard",
+        "name": "Standard trade",
+        "steps": "Feverish Dance → Feathered Tempest → Final Frenzy → weave basic attacks",
+        "when": "Clash Lane skirmish or objective fight"
+      }
+    ],
+    "itemNotes": [
+      {
+        "slot": 1,
+        "why": "Shortens CC"
+      },
+      {
+        "slot": 2,
+        "why": "Anti-squishy"
+      },
+      {
+        "slot": 3,
+        "why": "Enhances BA"
+      },
+      {
+        "slot": 4,
+        "why": "Temp. damage reduction"
+      },
+      {
+        "slot": 5,
+        "why": "High crit damage"
+      },
+      {
+        "slot": 6,
+        "why": "Anti-tank"
+      }
+    ],
+    "arcanaRows": [
+      {
+        "slot": "Primary",
+        "rune": "Mutation",
+        "effect": "Recommended for Warrior Clash Lane"
+      },
+      {
+        "slot": "Spell",
+        "rune": "Flash / Smite",
+        "effect": "Adjust Purify/Execute based on enemy dive."
+      }
+    ],
     "laning": "Trade on your power spike levels (2/4). Call jungler for dive only when enemy flash is down.",
     "teamfight": "Flank or dive backline after tanks commit. Do not start fights without vision on enemy jungler.",
     "highRank": "Umbrosa sits at Tier B globally (49.5% WR). In high rank, pick only into favorable matchups or when you have a dedicated pocket pick.",

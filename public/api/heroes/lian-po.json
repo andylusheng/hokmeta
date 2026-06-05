@@ -108,7 +108,7 @@
     "Lian Po is a Easy Tank (Clash Lane) on Honor of Kings Global. Camp HOK ranks them Tier A with 51.1% win rate and 0.9% pick rate as of 2026-06-05.",
     "Best build path: Boots of Fortitude → Axe of Torment → Frigid Charge → Ominous Premonition → Succubus Cloak → Overlord's Platemail.",
     "Run Fate for stats that match Lian Po's Tank kit. Take Flash — swap to Purify against heavy CC or Smite when jungling.",
-    "Standard trade: Burst Ram → Magma Slam → Tremor Smash → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "Standard trade: Burst Ram → Magma Slam → Tremor Smash → weave basic attacks. Weave basic attacks between skill casts for passive value.",
     "Laning: Trade on your power spike levels (2/4). Call jungler for dive only when enemy flash is down.",
     "Teamfight: Engage on enemy carry when your team has follow-up. Body-block skillshots for your marksman.",
     "Lian Po excels into Marco Polo. Avoid blind picking into Jing, Li Bai, Ukyo Tachibana without team peel.",
@@ -638,9 +638,60 @@
   ],
   "guide": {
     "overview": "Lian Po is a Easy Tank (Clash Lane) on Honor of Kings Global. Camp HOK ranks them Tier A with 51.1% win rate and 0.9% pick rate as of 2026-06-05.",
+    "hook": "Lian Po: Gains immunity while using skills.",
     "bestBuild": "Rush Boots of Fortitude, Axe of Torment, Frigid Charge, then complete Ominous Premonition, Succubus Cloak, Overlord's Platemail. Use preset tabs for jungle, clash, or CN-style paths when draft requires it.",
     "arcanaSpells": "Run Fate for stats that match Lian Po's Tank kit. Take Flash — swap to Purify against heavy CC or Smite when jungling.",
-    "combo": "Standard trade: Burst Ram → Magma Slam → Tremor Smash → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "combo": "Standard trade: Burst Ram → Magma Slam → Tremor Smash → weave basic attacks. Weave basic attacks between skill casts for passive value.",
+    "skillOrder": {
+      "priority": "Skill 2 → Skill 1 → Tremor Smash (max Skill 2 first)",
+      "reason": "Max primary utility/damage skill first, then Burst Ram, and Tremor Smash on cooldown."
+    },
+    "combos": [
+      {
+        "id": "standard",
+        "name": "Standard trade",
+        "steps": "Burst Ram → Magma Slam → Tremor Smash → weave basic attacks",
+        "when": "Clash Lane skirmish or objective fight"
+      }
+    ],
+    "itemNotes": [
+      {
+        "slot": 1,
+        "why": "Reduces physical damage"
+      },
+      {
+        "slot": 2,
+        "why": "Anti-squishy"
+      },
+      {
+        "slot": 3,
+        "why": "Group CC"
+      },
+      {
+        "slot": 4,
+        "why": "Slows attackers"
+      },
+      {
+        "slot": 5,
+        "why": "Negates magical damage"
+      },
+      {
+        "slot": 6,
+        "why": "Extra Health"
+      }
+    ],
+    "arcanaRows": [
+      {
+        "slot": "Primary",
+        "rune": "Fate",
+        "effect": "Recommended for Tank Clash Lane"
+      },
+      {
+        "slot": "Spell",
+        "rune": "Flash",
+        "effect": "Adjust Purify/Execute based on enemy dive."
+      }
+    ],
     "laning": "Trade on your power spike levels (2/4). Call jungler for dive only when enemy flash is down.",
     "teamfight": "Engage on enemy carry when your team has follow-up. Body-block skillshots for your marksman.",
     "highRank": "Lian Po is a viable Tier A pick in high rank with 51.1% win rate — strong in one-trick hands or as a counter-pick. Pick rate 0.9% — frequently seen in ranked; learn the matchup even if you do not main Lian Po.",

@@ -110,7 +110,7 @@
     "Yang Jian is a Medium Warrior (Clash Lane) on Honor of Kings Global. Camp HOK ranks them Tier B with 50.6% win rate and 0.4% pick rate as of 2026-06-05.",
     "Best build path: Boots of Resistance → Axe of Torment → Frostscar's Embrace → Eye of the Phoenix → Immovable - Sky Dome → Cuirass of Savagery.",
     "Run Mutation for stats that match Yang Jian's Warrior kit. Take Flash — swap to Purify against heavy CC or Smite when jungling.",
-    "Standard trade: Unleash the Hound → Vain Disillusionment → Sight of Origin → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "Standard trade: Unleash the Hound → Vain Disillusionment → Sight of Origin → weave basic attacks. Weave basic attacks between skill casts for passive value.",
     "Laning: Trade on your power spike levels (2/4). Call jungler for dive only when enemy flash is down.",
     "Teamfight: Flank or dive backline after tanks commit. Do not start fights without vision on enemy jungler.",
     "Yang Jian excels into Diaochan, Luna, Dr Bian. Avoid blind picking into Hou Yi, Marco Polo, Lady Sun without team peel.",
@@ -440,9 +440,60 @@
   ],
   "guide": {
     "overview": "Yang Jian is a Medium Warrior (Clash Lane) on Honor of Kings Global. Camp HOK ranks them Tier B with 50.6% win rate and 0.4% pick rate as of 2026-06-05.",
+    "hook": "Yang Jian: Yang Jian's Resistance increases for each nearby enemy hero.",
     "bestBuild": "Rush Boots of Resistance, Axe of Torment, Frostscar's Embrace, then complete Eye of the Phoenix, Immovable - Sky Dome, Cuirass of Savagery. Use preset tabs for jungle, clash, or CN-style paths when draft requires it.",
     "arcanaSpells": "Run Mutation for stats that match Yang Jian's Warrior kit. Take Flash — swap to Purify against heavy CC or Smite when jungling.",
-    "combo": "Standard trade: Unleash the Hound → Vain Disillusionment → Sight of Origin → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "combo": "Standard trade: Unleash the Hound → Vain Disillusionment → Sight of Origin → weave basic attacks. Weave basic attacks between skill casts for passive value.",
+    "skillOrder": {
+      "priority": "Skill 2 → Skill 1 → Sight of Origin (max Skill 2 first)",
+      "reason": "Max primary utility/damage skill first, then Unleash the Hound, and Sight of Origin on cooldown."
+    },
+    "combos": [
+      {
+        "id": "standard",
+        "name": "Standard trade",
+        "steps": "Unleash the Hound → Vain Disillusionment → Sight of Origin → weave basic attacks",
+        "when": "Clash Lane skirmish or objective fight"
+      }
+    ],
+    "itemNotes": [
+      {
+        "slot": 1,
+        "why": "Shortens CC"
+      },
+      {
+        "slot": 2,
+        "why": "Anti-squishy"
+      },
+      {
+        "slot": 3,
+        "why": "Enhanced BAs slow"
+      },
+      {
+        "slot": 4,
+        "why": "Boosts Health regen"
+      },
+      {
+        "slot": 5,
+        "why": "Temp. damage reduction"
+      },
+      {
+        "slot": 6,
+        "why": "Offense & defense"
+      }
+    ],
+    "arcanaRows": [
+      {
+        "slot": "Primary",
+        "rune": "Mutation",
+        "effect": "Recommended for Warrior Clash Lane"
+      },
+      {
+        "slot": "Spell",
+        "rune": "Flash",
+        "effect": "Adjust Purify/Execute based on enemy dive."
+      }
+    ],
     "laning": "Trade on your power spike levels (2/4). Call jungler for dive only when enemy flash is down.",
     "teamfight": "Flank or dive backline after tanks commit. Do not start fights without vision on enemy jungler.",
     "highRank": "Yang Jian sits at Tier B globally (50.6% WR). In high rank, pick only into favorable matchups or when you have a dedicated pocket pick.",

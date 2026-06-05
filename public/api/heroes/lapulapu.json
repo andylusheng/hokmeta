@@ -112,7 +112,7 @@
     "Lapulapu is a Easy Tank (Roaming) on Honor of Kings Global. Camp HOK ranks them Tier B with 55.3% win rate and 0.5% pick rate as of 2026-06-05.",
     "Best build path: Knowledge Gem → Boots of Resistance → Guardian → Glacial Buckler → Longnight Guardian → Guardian - Redemption.",
     "Run Fate, Harmony, Vacuity for stats that match Lapulapu's Tank kit. Take Flash — swap to Purify against heavy CC or Smite when jungling.",
-    "Standard trade: Torrential Blade → Island's Blessing → Raging Sea → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "Standard trade: Torrential Blade → Island's Blessing → Raging Sea → weave basic attacks. Weave basic attacks between skill casts for passive value.",
     "Laning: Help marksman crash wave, then rotate mid for picks. Return before Tyrant if your carry has no escape.",
     "Teamfight: Engage on enemy carry when your team has follow-up. Body-block skillshots for your marksman.",
     "Lapulapu excels into Meng Ya, Luara, Garo. Avoid blind picking into Wukong, Musashi, Ying without team peel.",
@@ -592,9 +592,70 @@
   ],
   "guide": {
     "overview": "Lapulapu is a Easy Tank (Roaming) on Honor of Kings Global. Camp HOK ranks them Tier B with 55.3% win rate and 0.5% pick rate as of 2026-06-05.",
+    "hook": "Lapulapu: Enhance Increases the Physical and Magical Defense of himself and the teammate with the lowest Health nearby.",
     "bestBuild": "Rush Knowledge Gem, Boots of Resistance, Guardian, then complete Glacial Buckler, Longnight Guardian, Guardian - Redemption. Use preset tabs for jungle, clash, or CN-style paths when draft requires it.",
     "arcanaSpells": "Run Fate, Harmony, Vacuity for stats that match Lapulapu's Tank kit. Take Flash — swap to Purify against heavy CC or Smite when jungling.",
-    "combo": "Standard trade: Torrential Blade → Island's Blessing → Raging Sea → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "combo": "Standard trade: Torrential Blade → Island's Blessing → Raging Sea → weave basic attacks. Weave basic attacks between skill casts for passive value.",
+    "skillOrder": {
+      "priority": "Skill 2 → Skill 1 → Raging Sea (max Skill 2 first)",
+      "reason": "Max primary utility/damage skill first, then Torrential Blade, and Raging Sea on cooldown."
+    },
+    "combos": [
+      {
+        "id": "standard",
+        "name": "Standard trade",
+        "steps": "Torrential Blade → Island's Blessing → Raging Sea → weave basic attacks",
+        "when": "Roaming skirmish or objective fight"
+      }
+    ],
+    "itemNotes": [
+      {
+        "slot": 1,
+        "why": "Extra Gold & EXP"
+      },
+      {
+        "slot": 2,
+        "why": "Shortens CC"
+      },
+      {
+        "slot": 3,
+        "why": "Survivability aura"
+      },
+      {
+        "slot": 4,
+        "why": "Group damage & slow"
+      },
+      {
+        "slot": 5,
+        "why": "Resists burst damage"
+      },
+      {
+        "slot": 6,
+        "why": "Group shield"
+      }
+    ],
+    "arcanaRows": [
+      {
+        "slot": "Primary",
+        "rune": "Fate",
+        "effect": "Recommended for Tank Roaming"
+      },
+      {
+        "slot": "Rune 2",
+        "rune": "Harmony",
+        "effect": "Recommended for Tank Roaming"
+      },
+      {
+        "slot": "Rune 3",
+        "rune": "Vacuity",
+        "effect": "Recommended for Tank Roaming"
+      },
+      {
+        "slot": "Spell",
+        "rune": "Flash",
+        "effect": "Adjust Purify/Execute based on enemy dive."
+      }
+    ],
     "laning": "Help marksman crash wave, then rotate mid for picks. Return before Tyrant if your carry has no escape.",
     "teamfight": "Engage on enemy carry when your team has follow-up. Body-block skillshots for your marksman.",
     "highRank": "Lapulapu sits at Tier B globally (55.3% WR). In high rank, pick only into favorable matchups or when you have a dedicated pocket pick. Camp data shows above-average win rate — prioritize when not hard-countered in draft.",

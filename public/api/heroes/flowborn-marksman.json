@@ -112,7 +112,7 @@
     "Flowborn (Marksman) is a Medium Marksman (Farm Lane) on Honor of Kings Global. Camp HOK ranks them Tier A with 51.8% win rate and 1.0% pick rate as of 2026-06-05.",
     "Best build path: Boots of Dexterity → Sparkforged Dagger → Doomsday → Mortal Punisher → Shadow Ripper → Eternity Blade.",
     "Run Fate, Penetration for stats that match Flowborn (Marksman)'s Marksman kit. Take Flash & Execute — swap to Purify against heavy CC or Smite when jungling.",
-    "Standard trade: Convergence → Arrow of No Retreat → Arrowstorm → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "Standard trade: Convergence → Arrow of No Retreat → Arrowstorm → weave basic attacks. Weave basic attacks between skill casts for passive value.",
     "Laning: Last-hit safely until first core item. Ping jungler for river vision; never face-check brush without minion cover.",
     "Teamfight: Position behind frontline; attack closest safe target. Join fight only after enemy dive cooldowns are used.",
     "Flowborn (Marksman) excels into Liu Bei, Athena, Zilong. Avoid blind picking into Kaizer, Dun, Arthur without team peel.",
@@ -642,9 +642,65 @@
   ],
   "guide": {
     "overview": "Flowborn (Marksman) is a Medium Marksman (Farm Lane) on Honor of Kings Global. Camp HOK ranks them Tier A with 51.8% win rate and 1.0% pick rate as of 2026-06-05.",
+    "hook": "Flowborn (Marksman): Channels the Flow into the body to gain Attack Speed and enhance one of four stats: Health/Attack/Movement Speed/Cooldown.",
     "bestBuild": "Rush Boots of Dexterity, Sparkforged Dagger, Doomsday, then complete Mortal Punisher, Shadow Ripper, Eternity Blade. Use preset tabs for jungle, clash, or CN-style paths when draft requires it.",
     "arcanaSpells": "Run Fate, Penetration for stats that match Flowborn (Marksman)'s Marksman kit. Take Flash & Execute — swap to Purify against heavy CC or Smite when jungling.",
-    "combo": "Standard trade: Convergence → Arrow of No Retreat → Arrowstorm → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "combo": "Standard trade: Convergence → Arrow of No Retreat → Arrowstorm → weave basic attacks. Weave basic attacks between skill casts for passive value.",
+    "skillOrder": {
+      "priority": "Skill 1 → Skill 2 → Arrowstorm (max Skill 1 first)",
+      "reason": "Convergence is your lane trade tool. Arrow of No Retreat second. Arrowstorm whenever available."
+    },
+    "combos": [
+      {
+        "id": "standard",
+        "name": "Standard trade",
+        "steps": "Convergence → Arrow of No Retreat → Arrowstorm → weave basic attacks",
+        "when": "Farm Lane skirmish or objective fight"
+      }
+    ],
+    "itemNotes": [
+      {
+        "slot": 1,
+        "why": "Boosts ASPD"
+      },
+      {
+        "slot": 2,
+        "why": "Chain lightning BA"
+      },
+      {
+        "slot": 3,
+        "why": "Boosts BA damage"
+      },
+      {
+        "slot": 4,
+        "why": "Lowers Health regen"
+      },
+      {
+        "slot": 5,
+        "why": "Crits boost ASPD"
+      },
+      {
+        "slot": 6,
+        "why": "High crit damage"
+      }
+    ],
+    "arcanaRows": [
+      {
+        "slot": "Primary",
+        "rune": "Fate",
+        "effect": "Recommended for Marksman Farm Lane"
+      },
+      {
+        "slot": "Rune 2",
+        "rune": "Penetration",
+        "effect": "Recommended for Marksman Farm Lane"
+      },
+      {
+        "slot": "Spell",
+        "rune": "Flash / Execute",
+        "effect": "Adjust Purify/Execute based on enemy dive."
+      }
+    ],
     "laning": "Last-hit safely until first core item. Ping jungler for river vision; never face-check brush without minion cover.",
     "teamfight": "Position behind frontline; attack closest safe target. Join fight only after enemy dive cooldowns are used.",
     "highRank": "Flowborn (Marksman) is a viable Tier A pick in high rank with 51.8% win rate — strong in one-trick hands or as a counter-pick. Pick rate 1.0% — frequently seen in ranked; learn the matchup even if you do not main Flowborn (Marksman).",

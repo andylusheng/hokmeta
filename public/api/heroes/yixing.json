@@ -110,7 +110,7 @@
     "Yixing is a Medium Mage (Mid Lane) on Honor of Kings Global. Camp HOK ranks them Tier A with 51.8% win rate and 0.7% pick rate as of 2026-06-05.",
     "Best build path: Scepter of Reverberation → Boots of Tranquility → Savant's Wrath → Breakthrough Robe → Void Staff.",
     "Run Nightmare for stats that match Yixing's Mage kit. Take Flash — swap to Purify against heavy CC or Smite when jungling.",
-    "Standard trade: Sliding Stones → Taking Liberties → The World is My Board → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "Standard trade: Sliding Stones → Taking Liberties → The World is My Board → weave basic attacks. Weave basic attacks between skill casts for passive value.",
     "Laning: Control first wave without taking free poke. Roam after pushing wave 2–4 to side lanes with your jungler.",
     "Teamfight: Poke from max range before objective. Save hard CC for enemy dive or your carry peel window.",
     "Yixing excels into Augran, Cirrus, Lam. Avoid blind picking into Allain, Dharma, Dian Wei without team peel.",
@@ -139,7 +139,7 @@
     {
       "id": "faq-best-build",
       "question": "What is the best Yixing build?",
-      "answer": "Core item path: Scepter of Reverberation, Boots of Tranquility, Savant's Wrath, tome of wisdom, Breakthrough Robe, Void Staff. Run Nightmare arcana with Flash. Switch to alternate build presets on this page for jungle, clash, or late-game setups."
+      "answer": "Core item path: Scepter of Reverberation, Boots of Tranquility, Savant's Wrath, Breakthrough Robe, Void Staff. Run Nightmare arcana with Flash. Switch to alternate build presets on this page for jungle, clash, or late-game setups."
     },
     {
       "id": "faq-counter",
@@ -590,9 +590,56 @@
   ],
   "guide": {
     "overview": "Yixing is a Medium Mage (Mid Lane) on Honor of Kings Global. Camp HOK ranks them Tier A with 51.8% win rate and 0.7% pick rate as of 2026-06-05.",
-    "bestBuild": "Rush Scepter of Reverberation, Boots of Tranquility, Savant's Wrath, then complete tome of wisdom, Breakthrough Robe, Void Staff. Use preset tabs for jungle, clash, or CN-style paths when draft requires it.",
+    "hook": "Yixing: Basic Attacks deal magical damage.",
+    "bestBuild": "Rush Scepter of Reverberation, Boots of Tranquility, Savant's Wrath, then complete Breakthrough Robe, Void Staff. Use preset tabs for jungle, clash, or CN-style paths when draft requires it.",
     "arcanaSpells": "Run Nightmare for stats that match Yixing's Mage kit. Take Flash — swap to Purify against heavy CC or Smite when jungling.",
-    "combo": "Standard trade: Sliding Stones → Taking Liberties → The World is My Board → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "combo": "Standard trade: Sliding Stones → Taking Liberties → The World is My Board → weave basic attacks. Weave basic attacks between skill casts for passive value.",
+    "skillOrder": {
+      "priority": "Skill 2 → Skill 1 → The World is My Board (max Skill 2 first)",
+      "reason": "Max primary utility/damage skill first, then Sliding Stones, and The World is My Board on cooldown."
+    },
+    "combos": [
+      {
+        "id": "standard",
+        "name": "Standard trade",
+        "steps": "Sliding Stones → Taking Liberties → The World is My Board → weave basic attacks",
+        "when": "Mid Lane skirmish or objective fight"
+      }
+    ],
+    "itemNotes": [
+      {
+        "slot": 1,
+        "why": "Skill hits trigger explosions"
+      },
+      {
+        "slot": 2,
+        "why": "Reduces Skill CD"
+      },
+      {
+        "slot": 3,
+        "why": "Greatly boosts MATK"
+      },
+      {
+        "slot": 4,
+        "why": "Converts Health into M. Pierce"
+      },
+      {
+        "slot": 5,
+        "why": "Anti-tank"
+      }
+    ],
+    "arcanaRows": [
+      {
+        "slot": "Primary",
+        "rune": "Nightmare",
+        "effect": "Recommended for Mage Mid Lane"
+      },
+      {
+        "slot": "Spell",
+        "rune": "Flash",
+        "effect": "Adjust Purify/Execute based on enemy dive."
+      }
+    ],
     "laning": "Control first wave without taking free poke. Roam after pushing wave 2–4 to side lanes with your jungler.",
     "teamfight": "Poke from max range before objective. Save hard CC for enemy dive or your carry peel window.",
     "highRank": "Yixing is a viable Tier A pick in high rank with 51.8% win rate — strong in one-trick hands or as a counter-pick.",

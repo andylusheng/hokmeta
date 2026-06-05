@@ -111,7 +111,7 @@
     "Zhuangzi is a Easy Tank (Roaming) on Honor of Kings Global. Camp HOK ranks them Tier A with 49.9% win rate and 0.7% pick rate as of 2026-06-05.",
     "Best build path: Boots of Fortitude → Glacial Buckler → Ominous Premonition → Longnight Guardian → Overlord's Platemail.",
     "Run Fate for stats that match Zhuangzi's Tank kit. Take Smite & Heal — swap to Purify against heavy CC or Smite when jungling.",
-    "Standard trade: Kaleidoscope → Sleep Starts → Butterfly Effect → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "Standard trade: Kaleidoscope → Sleep Starts → Butterfly Effect → weave basic attacks. Weave basic attacks between skill casts for passive value.",
     "Laning: Help marksman crash wave, then rotate mid for picks. Return before Tyrant if your carry has no escape.",
     "Teamfight: Engage on enemy carry when your team has follow-up. Body-block skillshots for your marksman.",
     "Zhuangzi excels into Cirrus, Dian Wei, Menki. Avoid blind picking into Allain, Wukong, Musashi without team peel.",
@@ -341,9 +341,56 @@
   ],
   "guide": {
     "overview": "Zhuangzi is a Easy Tank (Roaming) on Honor of Kings Global. Camp HOK ranks them Tier A with 49.9% win rate and 0.7% pick rate as of 2026-06-05.",
+    "hook": "Zhuangzi: Periodically removes crowd control effects and increases Movement Speed and damage reduction.",
     "bestBuild": "Rush Boots of Fortitude, Glacial Buckler, Ominous Premonition, then complete Longnight Guardian, Overlord's Platemail. Use preset tabs for jungle, clash, or CN-style paths when draft requires it.",
     "arcanaSpells": "Run Fate for stats that match Zhuangzi's Tank kit. Take Smite & Heal — swap to Purify against heavy CC or Smite when jungling.",
-    "combo": "Standard trade: Kaleidoscope → Sleep Starts → Butterfly Effect → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "combo": "Standard trade: Kaleidoscope → Sleep Starts → Butterfly Effect → weave basic attacks. Weave basic attacks between skill casts for passive value.",
+    "skillOrder": {
+      "priority": "Skill 2 → Skill 1 → Butterfly Effect (max Skill 2 first)",
+      "reason": "Max primary utility/damage skill first, then Kaleidoscope, and Butterfly Effect on cooldown."
+    },
+    "combos": [
+      {
+        "id": "standard",
+        "name": "Standard trade",
+        "steps": "Kaleidoscope → Sleep Starts → Butterfly Effect → weave basic attacks",
+        "when": "Roaming skirmish or objective fight"
+      }
+    ],
+    "itemNotes": [
+      {
+        "slot": 1,
+        "why": "Reduces physical damage"
+      },
+      {
+        "slot": 2,
+        "why": "Group damage & slow"
+      },
+      {
+        "slot": 3,
+        "why": "Slows attackers"
+      },
+      {
+        "slot": 4,
+        "why": "Resists burst damage"
+      },
+      {
+        "slot": 5,
+        "why": "Extra Health"
+      }
+    ],
+    "arcanaRows": [
+      {
+        "slot": "Primary",
+        "rune": "Fate",
+        "effect": "Recommended for Tank Roaming"
+      },
+      {
+        "slot": "Spell",
+        "rune": "Smite / Heal",
+        "effect": "Adjust Purify/Execute based on enemy dive."
+      }
+    ],
     "laning": "Help marksman crash wave, then rotate mid for picks. Return before Tyrant if your carry has no escape.",
     "teamfight": "Engage on enemy carry when your team has follow-up. Body-block skillshots for your marksman.",
     "highRank": "Zhuangzi is a viable Tier A pick in high rank with 49.9% win rate — strong in one-trick hands or as a counter-pick. Ban rate 1.1% — expect Zhuangzi to be removed in tryhard lobbies; have a backup in the same role.",

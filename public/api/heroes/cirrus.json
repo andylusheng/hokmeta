@@ -108,7 +108,7 @@
     "Cirrus is a Medium Assassin (Jungling) on Honor of Kings Global. Camp HOK ranks them Tier B with 52.2% win rate and 0.2% pick rate as of 2026-06-05.",
     "Best build path: Rapacious Bite → Boots of Dexterity → Axe of Torment → Shadow Ripper → Eternity Blade.",
     "Run Red for stats that match Cirrus's Assassin kit. Take Smite — swap to Purify against heavy CC or Smite when jungling.",
-    "Standard trade: Cloud Descending → Razor Wind → Soaring Whirlwind → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "Standard trade: Cloud Descending → Razor Wind → Soaring Whirlwind → weave basic attacks. Weave basic attacks between skill casts for passive value.",
     "Laning: Clear to level four, then gank the lane with the least escape. Secure Tyrant when your bot or mid has crash wave.",
     "Teamfight: Wait for CC from your team, then dive carry with full combo. Exit with reset or flash if focus fired.",
     "Cirrus excels into Hou Yi, Xiao Qiao. Avoid blind picking into Di Renjie, Mulan without team peel.",
@@ -137,7 +137,7 @@
     {
       "id": "faq-best-build",
       "question": "What is the best Cirrus build?",
-      "answer": "Core item path: Rapacious Bite, Boots of Dexterity, Axe of Torment, Shadow Ripper, Eternity Blade, siege breaker. Run Red arcana with Smite. Switch to alternate build presets on this page for jungle, clash, or late-game setups."
+      "answer": "Core item path: Rapacious Bite, Boots of Dexterity, Axe of Torment, Shadow Ripper, Eternity Blade. Run Red arcana with Smite. Switch to alternate build presets on this page for jungle, clash, or late-game setups."
     },
     {
       "id": "faq-counter",
@@ -338,9 +338,62 @@
   ],
   "guide": {
     "overview": "Cirrus is a Medium Assassin (Jungling) on Honor of Kings Global. Camp HOK ranks them Tier B with 52.2% win rate and 0.2% pick rate as of 2026-06-05.",
-    "bestBuild": "Rush Rapacious Bite, Boots of Dexterity, Axe of Torment, then complete Shadow Ripper, Eternity Blade, siege breaker. Use preset tabs for jungle, clash, or CN-style paths when draft requires it.",
+    "hook": "Cirrus: lgnores terrain after reaching level 4 and gains Movement Speed when usingBasic Attacks.",
+    "bestBuild": "Rush Rapacious Bite, Boots of Dexterity, Axe of Torment, then complete Shadow Ripper, Eternity Blade. Use preset tabs for jungle, clash, or CN-style paths when draft requires it.",
     "arcanaSpells": "Run Red for stats that match Cirrus's Assassin kit. Take Smite — swap to Purify against heavy CC or Smite when jungling.",
-    "combo": "Standard trade: Cloud Descending → Razor Wind → Soaring Whirlwind → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "combo": "Standard trade: Cloud Descending → Razor Wind → Soaring Whirlwind → weave basic attacks. Weave basic attacks between skill casts for passive value.",
+    "skillOrder": {
+      "priority": "Skill 2 → Skill 1 → Soaring Whirlwind (max Skill 2 first)",
+      "reason": "Razor Wind provides mobility or stick—max first. Cloud Descending second for damage. Soaring Whirlwind on every level."
+    },
+    "combos": [
+      {
+        "id": "standard",
+        "name": "Standard trade",
+        "steps": "Cloud Descending → Razor Wind → Soaring Whirlwind → weave basic attacks",
+        "when": "Jungling skirmish or objective fight"
+      },
+      {
+        "id": "all-in",
+        "name": "All-in",
+        "steps": "Soaring Whirlwind after full rotation when Flash is down",
+        "when": "Gank or backline dive with team CC"
+      }
+    ],
+    "itemNotes": [
+      {
+        "slot": 1,
+        "why": "Monster kills boost PATK"
+      },
+      {
+        "slot": 2,
+        "why": "Boosts ASPD"
+      },
+      {
+        "slot": 3,
+        "why": "Anti-squishy"
+      },
+      {
+        "slot": 4,
+        "why": "Crits boost ASPD"
+      },
+      {
+        "slot": 5,
+        "why": "High crit damage"
+      }
+    ],
+    "arcanaRows": [
+      {
+        "slot": "Primary",
+        "rune": "Red",
+        "effect": "Recommended for Assassin Jungling"
+      },
+      {
+        "slot": "Spell",
+        "rune": "Smite",
+        "effect": "Adjust Purify/Execute based on enemy dive."
+      }
+    ],
     "laning": "Clear to level four, then gank the lane with the least escape. Secure Tyrant when your bot or mid has crash wave.",
     "teamfight": "Wait for CC from your team, then dive carry with full combo. Exit with reset or flash if focus fired.",
     "highRank": "Cirrus sits at Tier B globally (52.2% WR). In high rank, pick only into favorable matchups or when you have a dedicated pocket pick. Camp data shows above-average win rate — prioritize when not hard-countered in draft.",

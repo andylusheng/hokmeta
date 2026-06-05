@@ -111,7 +111,7 @@
     "Meng Ya is a Medium Marksman (Farm Lane) on Honor of Kings Global. Camp HOK ranks them Tier B with 53.6% win rate and 0.4% pick rate as of 2026-06-05.",
     "Best build path: Eternity Blade → Boots of Resistance → Daybreaker's Virtue → Shadow Ripper → Cuirass of Savagery.",
     "Run Cataclysm for stats that match Meng Ya's Marksman kit. Take Haste & Flash — swap to Purify against heavy CC or Smite when jungling.",
-    "Standard trade: Awesome Barrage → Heavy Shot → Missile Mayhem → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "Standard trade: Awesome Barrage → Heavy Shot → Missile Mayhem → weave basic attacks. Weave basic attacks between skill casts for passive value.",
     "Laning: Last-hit safely until first core item. Ping jungler for river vision; never face-check brush without minion cover.",
     "Teamfight: Position behind frontline; attack closest safe target. Join fight only after enemy dive cooldowns are used.",
     "Meng Ya excels into Mai Shiranui, Pei, Diaochan. Avoid blind picking into Liu Bang, Lapulapu, Ata without team peel.",
@@ -140,7 +140,7 @@
     {
       "id": "faq-best-build",
       "question": "What is the best Meng Ya build?",
-      "answer": "Core item path: Eternity Blade, Boots of Resistance, Daybreaker's Virtue, Shadow Ripper, siege breaker, Cuirass of Savagery. Run Cataclysm arcana with Haste & Flash. Switch to alternate build presets on this page for jungle, clash, or late-game setups."
+      "answer": "Core item path: Eternity Blade, Boots of Resistance, Daybreaker's Virtue, Shadow Ripper, Cuirass of Savagery. Run Cataclysm arcana with Haste & Flash. Switch to alternate build presets on this page for jungle, clash, or late-game setups."
     },
     {
       "id": "faq-counter",
@@ -691,9 +691,56 @@
   ],
   "guide": {
     "overview": "Meng Ya is a Medium Marksman (Farm Lane) on Honor of Kings Global. Camp HOK ranks them Tier B with 53.6% win rate and 0.4% pick rate as of 2026-06-05.",
-    "bestBuild": "Rush Eternity Blade, Boots of Resistance, Daybreaker's Virtue, then complete Shadow Ripper, siege breaker, Cuirass of Savagery. Use preset tabs for jungle, clash, or CN-style paths when draft requires it.",
+    "hook": "Meng Ya: Cooldown is reduced when Attack Speed is increased.",
+    "bestBuild": "Rush Eternity Blade, Boots of Resistance, Daybreaker's Virtue, then complete Shadow Ripper, Cuirass of Savagery. Use preset tabs for jungle, clash, or CN-style paths when draft requires it.",
     "arcanaSpells": "Run Cataclysm for stats that match Meng Ya's Marksman kit. Take Haste & Flash — swap to Purify against heavy CC or Smite when jungling.",
-    "combo": "Standard trade: Awesome Barrage → Heavy Shot → Missile Mayhem → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "combo": "Standard trade: Awesome Barrage → Heavy Shot → Missile Mayhem → weave basic attacks. Weave basic attacks between skill casts for passive value.",
+    "skillOrder": {
+      "priority": "Skill 1 → Skill 2 → Missile Mayhem (max Skill 1 first)",
+      "reason": "Awesome Barrage is your lane trade tool. Heavy Shot second. Missile Mayhem whenever available."
+    },
+    "combos": [
+      {
+        "id": "standard",
+        "name": "Standard trade",
+        "steps": "Awesome Barrage → Heavy Shot → Missile Mayhem → weave basic attacks",
+        "when": "Farm Lane skirmish or objective fight"
+      }
+    ],
+    "itemNotes": [
+      {
+        "slot": 1,
+        "why": "High crit damage"
+      },
+      {
+        "slot": 2,
+        "why": "Shortens CC"
+      },
+      {
+        "slot": 3,
+        "why": "Great for marksmen"
+      },
+      {
+        "slot": 4,
+        "why": "Crits boost ASPD"
+      },
+      {
+        "slot": 5,
+        "why": "Offense & defense"
+      }
+    ],
+    "arcanaRows": [
+      {
+        "slot": "Primary",
+        "rune": "Cataclysm",
+        "effect": "Recommended for Marksman Farm Lane"
+      },
+      {
+        "slot": "Spell",
+        "rune": "Haste / Flash",
+        "effect": "Adjust Purify/Execute based on enemy dive."
+      }
+    ],
     "laning": "Last-hit safely until first core item. Ping jungler for river vision; never face-check brush without minion cover.",
     "teamfight": "Position behind frontline; attack closest safe target. Join fight only after enemy dive cooldowns are used.",
     "highRank": "Meng Ya sits at Tier B globally (53.6% WR). In high rank, pick only into favorable matchups or when you have a dedicated pocket pick. Camp data shows above-average win rate — prioritize when not hard-countered in draft.",

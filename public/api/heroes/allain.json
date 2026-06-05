@@ -108,7 +108,7 @@
     "Allain is a Medium Warrior (Clash Lane) on Honor of Kings Global. Camp HOK ranks them Tier A with 51.0% win rate and 1.1% pick rate as of 2026-06-05.",
     "Best build path: Blazing Cape → Boots of Fortitude → Doomsday → Sparkforged Dagger → Blood Rage → Cuirass of Savagery.",
     "Run Red for stats that match Allain's Warrior kit. Take Flash — swap to Purify against heavy CC or Smite when jungling.",
-    "Standard trade: Meteor Kill → Moonlight Flash → Death at Sunset → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "Standard trade: Meteor Kill → Moonlight Flash → Death at Sunset → weave basic attacks. Weave basic attacks between skill casts for passive value.",
     "Laning: Trade on your power spike levels (2/4). Call jungler for dive only when enemy flash is down.",
     "Teamfight: Flank or dive backline after tanks commit. Do not start fights without vision on enemy jungler.",
     "Allain excels into Lu Bu, Zhuangzi. Avoid blind picking into Sima Yi, Marco Polo without team peel.",
@@ -688,9 +688,60 @@
   ],
   "guide": {
     "overview": "Allain is a Medium Warrior (Clash Lane) on Honor of Kings Global. Camp HOK ranks them Tier A with 51.0% win rate and 1.1% pick rate as of 2026-06-05.",
+    "hook": "Allain: Basic Attacks and skills grant Fury, which increases his Physical and Magical Pierce and grants damage reduction.",
     "bestBuild": "Rush Blazing Cape, Boots of Fortitude, Doomsday, then complete Sparkforged Dagger, Blood Rage, Cuirass of Savagery. Use preset tabs for jungle, clash, or CN-style paths when draft requires it.",
     "arcanaSpells": "Run Red for stats that match Allain's Warrior kit. Take Flash — swap to Purify against heavy CC or Smite when jungling.",
-    "combo": "Standard trade: Meteor Kill → Moonlight Flash → Death at Sunset → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "combo": "Standard trade: Meteor Kill → Moonlight Flash → Death at Sunset → weave basic attacks. Weave basic attacks between skill casts for passive value.",
+    "skillOrder": {
+      "priority": "Skill 2 → Skill 1 → Death at Sunset (max Skill 2 first)",
+      "reason": "Max primary utility/damage skill first, then Meteor Kill, and Death at Sunset on cooldown."
+    },
+    "combos": [
+      {
+        "id": "standard",
+        "name": "Standard trade",
+        "steps": "Meteor Kill → Moonlight Flash → Death at Sunset → weave basic attacks",
+        "when": "Clash Lane skirmish or objective fight"
+      }
+    ],
+    "itemNotes": [
+      {
+        "slot": 1,
+        "why": "Burns nearby enemies"
+      },
+      {
+        "slot": 2,
+        "why": "Reduces physical damage"
+      },
+      {
+        "slot": 3,
+        "why": "Boosts BA damage"
+      },
+      {
+        "slot": 4,
+        "why": "Chain lightning BA"
+      },
+      {
+        "slot": 5,
+        "why": "Grants temporary shield"
+      },
+      {
+        "slot": 6,
+        "why": "Offense & defense"
+      }
+    ],
+    "arcanaRows": [
+      {
+        "slot": "Primary",
+        "rune": "Red",
+        "effect": "Recommended for Warrior Clash Lane"
+      },
+      {
+        "slot": "Spell",
+        "rune": "Flash",
+        "effect": "Adjust Purify/Execute based on enemy dive."
+      }
+    ],
     "laning": "Trade on your power spike levels (2/4). Call jungler for dive only when enemy flash is down.",
     "teamfight": "Flank or dive backline after tanks commit. Do not start fights without vision on enemy jungler.",
     "highRank": "Allain is a viable Tier A pick in high rank with 51.0% win rate — strong in one-trick hands or as a counter-pick. Pick rate 1.1% — frequently seen in ranked; learn the matchup even if you do not main Allain.",

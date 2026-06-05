@@ -110,7 +110,7 @@
     "Menki is a Medium Mage (Jungling) on Honor of Kings Global. Camp HOK ranks them Tier B with 51.7% win rate and 0.2% pick rate as of 2026-06-05.",
     "Best build path: Giant's Grip → Boots of Resistance → Shadow Ripper → Blazing Cape → Pure Sky → Blood Rage.",
     "Run Fate for stats that match Menki's Mage kit. Take Smite — swap to Purify against heavy CC or Smite when jungling.",
-    "Standard trade: Lingering Dream → Dream Bubble → Dream Roam → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "Standard trade: Lingering Dream → Dream Bubble → Dream Roam → weave basic attacks. Weave basic attacks between skill casts for passive value.",
     "Laning: Clear to level four, then gank the lane with the least escape. Secure Tyrant when your bot or mid has crash wave.",
     "Teamfight: Poke from max range before objective. Save hard CC for enemy dive or your carry peel window.",
     "Menki excels into Lady Zhen, Mai Shiranui, Xiao Qiao. Avoid blind picking into Ming, Sima Yi, Zhuangzi without team peel.",
@@ -490,9 +490,66 @@
   ],
   "guide": {
     "overview": "Menki is a Medium Mage (Jungling) on Honor of Kings Global. Camp HOK ranks them Tier B with 51.7% win rate and 0.2% pick rate as of 2026-06-05.",
+    "hook": "Menki: Gains Mass when using skills.",
     "bestBuild": "Rush Giant's Grip, Boots of Resistance, Shadow Ripper, then complete Blazing Cape, Pure Sky, Blood Rage. Use preset tabs for jungle, clash, or CN-style paths when draft requires it.",
     "arcanaSpells": "Run Fate for stats that match Menki's Mage kit. Take Smite — swap to Purify against heavy CC or Smite when jungling.",
-    "combo": "Standard trade: Lingering Dream → Dream Bubble → Dream Roam → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "combo": "Standard trade: Lingering Dream → Dream Bubble → Dream Roam → weave basic attacks. Weave basic attacks between skill casts for passive value.",
+    "skillOrder": {
+      "priority": "Skill 2 → Skill 1 → Dream Roam (max Skill 2 first)",
+      "reason": "Dream Bubble provides mobility or stick—max first. Lingering Dream second for damage. Dream Roam on every level."
+    },
+    "combos": [
+      {
+        "id": "standard",
+        "name": "Standard trade",
+        "steps": "Lingering Dream → Dream Bubble → Dream Roam → weave basic attacks",
+        "when": "Jungling skirmish or objective fight"
+      },
+      {
+        "id": "all-in",
+        "name": "All-in",
+        "steps": "Dream Roam after full rotation when Flash is down",
+        "when": "Gank or backline dive with team CC"
+      }
+    ],
+    "itemNotes": [
+      {
+        "slot": 1,
+        "why": "Monster kills boost Health"
+      },
+      {
+        "slot": 2,
+        "why": "Shortens CC"
+      },
+      {
+        "slot": 3,
+        "why": "Crits boost ASPD"
+      },
+      {
+        "slot": 4,
+        "why": "Burns nearby enemies"
+      },
+      {
+        "slot": 5,
+        "why": "Temp. damage reduction"
+      },
+      {
+        "slot": 6,
+        "why": "Grants temporary shield"
+      }
+    ],
+    "arcanaRows": [
+      {
+        "slot": "Primary",
+        "rune": "Fate",
+        "effect": "Recommended for Mage Jungling"
+      },
+      {
+        "slot": "Spell",
+        "rune": "Smite",
+        "effect": "Adjust Purify/Execute based on enemy dive."
+      }
+    ],
     "laning": "Clear to level four, then gank the lane with the least escape. Secure Tyrant when your bot or mid has crash wave.",
     "teamfight": "Poke from max range before objective. Save hard CC for enemy dive or your carry peel window.",
     "highRank": "Menki sits at Tier B globally (51.7% WR). In high rank, pick only into favorable matchups or when you have a dedicated pocket pick.",

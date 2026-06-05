@@ -110,7 +110,7 @@
     "Mai Shiranui is a Medium Assassin (Mid Lane) on Honor of Kings Global. Camp HOK ranks them Tier A with 48.7% win rate and 0.8% pick rate as of 2026-06-05.",
     "Best build path: Scepter of Reverberation → Boots of Resistance → Savant's Wrath → Insatiable Tome → Void Staff → Splendor.",
     "Run Nightmare for stats that match Mai Shiranui's Assassin kit. Take Flash — swap to Purify against heavy CC or Smite when jungling.",
-    "Standard trade: HISHOU RYUUENJIN → KACHOUSEN → CHOU HISSATSU SHINOBI-BACHI → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "Standard trade: HISHOU RYUUENJIN → KACHOUSEN → CHOU HISSATSU SHINOBI-BACHI → weave basic attacks. Weave basic attacks between skill casts for passive value.",
     "Laning: Control first wave without taking free poke. Roam after pushing wave 2–4 to side lanes with your jungler.",
     "Teamfight: Wait for CC from your team, then dive carry with full combo. Exit with reset or flash if focus fired.",
     "Mai Shiranui excels into Chano, Lapulapu, Ata. Avoid blind picking into Alessio, Charlotte, Di Renjie without team peel.",
@@ -640,9 +640,66 @@
   ],
   "guide": {
     "overview": "Mai Shiranui is a Medium Assassin (Mid Lane) on Honor of Kings Global. Camp HOK ranks them Tier A with 48.7% win rate and 0.8% pick rate as of 2026-06-05.",
+    "hook": "Mai Shiranui: Periodically gains an enhanced Basic Attack that lets her dash while dealing damage and knocking back enemies in her path.",
     "bestBuild": "Rush Scepter of Reverberation, Boots of Resistance, Savant's Wrath, then complete Insatiable Tome, Void Staff, Splendor. Use preset tabs for jungle, clash, or CN-style paths when draft requires it.",
     "arcanaSpells": "Run Nightmare for stats that match Mai Shiranui's Assassin kit. Take Flash — swap to Purify against heavy CC or Smite when jungling.",
-    "combo": "Standard trade: HISHOU RYUUENJIN → KACHOUSEN → CHOU HISSATSU SHINOBI-BACHI → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "combo": "Standard trade: HISHOU RYUUENJIN → KACHOUSEN → CHOU HISSATSU SHINOBI-BACHI → weave basic attacks. Weave basic attacks between skill casts for passive value.",
+    "skillOrder": {
+      "priority": "Skill 2 → Skill 1 → CHOU HISSATSU SHINOBI-BACHI (max Skill 2 first)",
+      "reason": "KACHOUSEN provides mobility or stick—max first. HISHOU RYUUENJIN second for damage. CHOU HISSATSU SHINOBI-BACHI on every level."
+    },
+    "combos": [
+      {
+        "id": "standard",
+        "name": "Standard trade",
+        "steps": "HISHOU RYUUENJIN → KACHOUSEN → CHOU HISSATSU SHINOBI-BACHI → weave basic attacks",
+        "when": "Mid Lane skirmish or objective fight"
+      },
+      {
+        "id": "all-in",
+        "name": "All-in",
+        "steps": "CHOU HISSATSU SHINOBI-BACHI after full rotation when Flash is down",
+        "when": "Gank or backline dive with team CC"
+      }
+    ],
+    "itemNotes": [
+      {
+        "slot": 1,
+        "why": "Skill hits trigger explosions"
+      },
+      {
+        "slot": 2,
+        "why": "Shortens CC"
+      },
+      {
+        "slot": 3,
+        "why": "Greatly boosts MATK"
+      },
+      {
+        "slot": 4,
+        "why": "Magical Lifesteal"
+      },
+      {
+        "slot": 5,
+        "why": "Anti-tank"
+      },
+      {
+        "slot": 6,
+        "why": "Temp. invincibility"
+      }
+    ],
+    "arcanaRows": [
+      {
+        "slot": "Primary",
+        "rune": "Nightmare",
+        "effect": "Recommended for Assassin Mid Lane"
+      },
+      {
+        "slot": "Spell",
+        "rune": "Flash",
+        "effect": "Adjust Purify/Execute based on enemy dive."
+      }
+    ],
     "laning": "Control first wave without taking free poke. Roam after pushing wave 2–4 to side lanes with your jungler.",
     "teamfight": "Wait for CC from your team, then dive carry with full combo. Exit with reset or flash if focus fired.",
     "highRank": "Mai Shiranui is a viable Tier A pick in high rank with 48.7% win rate — strong in one-trick hands or as a counter-pick. Below 49% global WR — high-rank players often avoid unless compensating for team comp.",

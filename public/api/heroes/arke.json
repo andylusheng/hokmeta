@@ -109,7 +109,7 @@
     "Arke is a Medium Assassin (Jungling) on Honor of Kings Global. Camp HOK ranks them Tier A with 52.4% win rate and 0.6% pick rate as of 2026-06-05.",
     "Best build path: Rapacious Bite → Boots of Resistance → Axe of Torment → Eternity Blade → Master Sword → Starbreaker.",
     "Run Dominator for stats that match Arke's Assassin kit. Take Smite — swap to Purify against heavy CC or Smite when jungling.",
-    "Standard trade: Arclight → Untouchable → Phantom Dance → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "Standard trade: Arclight → Untouchable → Phantom Dance → weave basic attacks. Weave basic attacks between skill casts for passive value.",
     "Laning: Clear to level four, then gank the lane with the least escape. Secure Tyrant when your bot or mid has crash wave.",
     "Teamfight: Wait for CC from your team, then dive carry with full combo. Exit with reset or flash if focus fired.",
     "Arke excels into Alessio, Da Qiao. Avoid blind picking into Bai Qi, Arthur, Cai Yan without team peel.",
@@ -439,9 +439,66 @@
   ],
   "guide": {
     "overview": "Arke is a Medium Assassin (Jungling) on Honor of Kings Global. Camp HOK ranks them Tier A with 52.4% win rate and 0.6% pick rate as of 2026-06-05.",
+    "hook": "Arke: Attacks launched from the front of the target will not crit, but backstabs are guaranteed to crit.",
     "bestBuild": "Rush Rapacious Bite, Boots of Resistance, Axe of Torment, then complete Eternity Blade, Master Sword, Starbreaker. Use preset tabs for jungle, clash, or CN-style paths when draft requires it.",
     "arcanaSpells": "Run Dominator for stats that match Arke's Assassin kit. Take Smite — swap to Purify against heavy CC or Smite when jungling.",
-    "combo": "Standard trade: Arclight → Untouchable → Phantom Dance → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "combo": "Standard trade: Arclight → Untouchable → Phantom Dance → weave basic attacks. Weave basic attacks between skill casts for passive value.",
+    "skillOrder": {
+      "priority": "Skill 2 → Skill 1 → Phantom Dance (max Skill 2 first)",
+      "reason": "Untouchable provides mobility or stick—max first. Arclight second for damage. Phantom Dance on every level."
+    },
+    "combos": [
+      {
+        "id": "standard",
+        "name": "Standard trade",
+        "steps": "Arclight → Untouchable → Phantom Dance → weave basic attacks",
+        "when": "Jungling skirmish or objective fight"
+      },
+      {
+        "id": "all-in",
+        "name": "All-in",
+        "steps": "Phantom Dance after full rotation when Flash is down",
+        "when": "Gank or backline dive with team CC"
+      }
+    ],
+    "itemNotes": [
+      {
+        "slot": 1,
+        "why": "Monster kills boost PATK"
+      },
+      {
+        "slot": 2,
+        "why": "Shortens CC"
+      },
+      {
+        "slot": 3,
+        "why": "Anti-squishy"
+      },
+      {
+        "slot": 4,
+        "why": "High crit damage"
+      },
+      {
+        "slot": 5,
+        "why": "Enhances BA"
+      },
+      {
+        "slot": 6,
+        "why": "Anti-tank"
+      }
+    ],
+    "arcanaRows": [
+      {
+        "slot": "Primary",
+        "rune": "Dominator",
+        "effect": "Recommended for Assassin Jungling"
+      },
+      {
+        "slot": "Spell",
+        "rune": "Smite",
+        "effect": "Adjust Purify/Execute based on enemy dive."
+      }
+    ],
     "laning": "Clear to level four, then gank the lane with the least escape. Secure Tyrant when your bot or mid has crash wave.",
     "teamfight": "Wait for CC from your team, then dive carry with full combo. Exit with reset or flash if focus fired.",
     "highRank": "Arke is a viable Tier A pick in high rank with 52.4% win rate — strong in one-trick hands or as a counter-pick. Ban rate 0.8% — expect Arke to be removed in tryhard lobbies; have a backup in the same role. Camp data shows above-average win rate — prioritize when not hard-countered in draft.",

@@ -109,7 +109,7 @@
     "Augran is a Medium Warrior (Jungling) on Honor of Kings Global. Camp HOK ranks them Tier S+ with 46.9% win rate and 1.2% pick rate as of 2026-06-05.",
     "Best build path: Rapacious Bite → Boots of Resistance → Shadow Ripper → Bloodweeper → Eternity Blade → Mortal Punisher.",
     "Run Cataclysm for stats that match Augran's Warrior kit. Take Smite — swap to Purify against heavy CC or Smite when jungling.",
-    "Standard trade: Path of Passing → Death's Precipice → Conductor of Souls → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "Standard trade: Path of Passing → Death's Precipice → Conductor of Souls → weave basic attacks. Weave basic attacks between skill casts for passive value.",
     "Laning: Clear to level four, then gank the lane with the least escape. Secure Tyrant when your bot or mid has crash wave.",
     "Teamfight: Flank or dive backline after tanks commit. Do not start fights without vision on enemy jungler.",
     "Augran excels into Mai Shiranui, Nezha. Avoid blind picking into Liu Bei, Yixing, Liu Shan without team peel.",
@@ -689,9 +689,66 @@
   ],
   "guide": {
     "overview": "Augran is a Medium Warrior (Jungling) on Honor of Kings Global. Camp HOK ranks them Tier S+ with 46.9% win rate and 1.2% pick rate as of 2026-06-05.",
+    "hook": "Augran: Basic Attacks can connect to an enemy's soul, dealing damage continuously unless the enemy breaks free.",
     "bestBuild": "Rush Rapacious Bite, Boots of Resistance, Shadow Ripper, then complete Bloodweeper, Eternity Blade, Mortal Punisher. Use preset tabs for jungle, clash, or CN-style paths when draft requires it.",
     "arcanaSpells": "Run Cataclysm for stats that match Augran's Warrior kit. Take Smite — swap to Purify against heavy CC or Smite when jungling.",
-    "combo": "Standard trade: Path of Passing → Death's Precipice → Conductor of Souls → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "combo": "Standard trade: Path of Passing → Death's Precipice → Conductor of Souls → weave basic attacks. Weave basic attacks between skill casts for passive value.",
+    "skillOrder": {
+      "priority": "Skill 2 → Skill 1 → Conductor of Souls (max Skill 2 first)",
+      "reason": "Death's Precipice provides mobility or stick—max first. Path of Passing second for damage. Conductor of Souls on every level."
+    },
+    "combos": [
+      {
+        "id": "standard",
+        "name": "Standard trade",
+        "steps": "Path of Passing → Death's Precipice → Conductor of Souls → weave basic attacks",
+        "when": "Jungling skirmish or objective fight"
+      },
+      {
+        "id": "all-in",
+        "name": "All-in",
+        "steps": "Conductor of Souls after full rotation when Flash is down",
+        "when": "Gank or backline dive with team CC"
+      }
+    ],
+    "itemNotes": [
+      {
+        "slot": 1,
+        "why": "Monster kills boost PATK"
+      },
+      {
+        "slot": 2,
+        "why": "Shortens CC"
+      },
+      {
+        "slot": 3,
+        "why": "Crits boost ASPD"
+      },
+      {
+        "slot": 4,
+        "why": "Physical Lifesteal"
+      },
+      {
+        "slot": 5,
+        "why": "High crit damage"
+      },
+      {
+        "slot": 6,
+        "why": "Lowers Health regen"
+      }
+    ],
+    "arcanaRows": [
+      {
+        "slot": "Primary",
+        "rune": "Cataclysm",
+        "effect": "Recommended for Warrior Jungling"
+      },
+      {
+        "slot": "Spell",
+        "rune": "Smite",
+        "effect": "Adjust Purify/Execute based on enemy dive."
+      }
+    ],
     "laning": "Clear to level four, then gank the lane with the least escape. Secure Tyrant when your bot or mid has crash wave.",
     "teamfight": "Flank or dive backline after tanks commit. Do not start fights without vision on enemy jungler.",
     "highRank": "Augran is a Tier S+ staple in high-elo (Diamond+) on the international server — worth mastering for climb. Ban rate 5.0% — expect Augran to be removed in tryhard lobbies; have a backup in the same role. Below 49% global WR — high-rank players often avoid unless compensating for team comp.",

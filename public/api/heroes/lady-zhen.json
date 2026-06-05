@@ -110,7 +110,7 @@
     "Lady Zhen is a Medium Mage (Mid Lane) on Honor of Kings Global. Camp HOK ranks them Tier A with 51.4% win rate and 1.0% pick rate as of 2026-06-05.",
     "Best build path: Mask of Agony → Boots of Tranquility → Twilight Stream → Augur's Word → Frozen Breath → Void Staff.",
     "Run Nightmare for stats that match Lady Zhen's Mage kit. Take Flash — swap to Purify against heavy CC or Smite when jungling.",
-    "Standard trade: Ocean of Tears → Flowing Sigh → Destructive Deluge → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "Standard trade: Ocean of Tears → Flowing Sigh → Destructive Deluge → weave basic attacks. Weave basic attacks between skill casts for passive value.",
     "Laning: Control first wave without taking free poke. Roam after pushing wave 2–4 to side lanes with your jungler.",
     "Teamfight: Poke from max range before objective. Save hard CC for enemy dive or your carry peel window.",
     "Lady Zhen excels into Cirrus, Nakoruru, Sima Yi. Avoid blind picking into Charlotte, Liu Bei, Luna without team peel.",
@@ -540,9 +540,60 @@
   ],
   "guide": {
     "overview": "Lady Zhen is a Medium Mage (Mid Lane) on Honor of Kings Global. Camp HOK ranks them Tier A with 51.4% win rate and 1.0% pick rate as of 2026-06-05.",
+    "hook": "Lady Zhen: Places marks on enemies when hitting them with skills, for up to 3 stacks.",
     "bestBuild": "Rush Mask of Agony, Boots of Tranquility, Twilight Stream, then complete Augur's Word, Frozen Breath, Void Staff. Use preset tabs for jungle, clash, or CN-style paths when draft requires it.",
     "arcanaSpells": "Run Nightmare for stats that match Lady Zhen's Mage kit. Take Flash — swap to Purify against heavy CC or Smite when jungling.",
-    "combo": "Standard trade: Ocean of Tears → Flowing Sigh → Destructive Deluge → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "combo": "Standard trade: Ocean of Tears → Flowing Sigh → Destructive Deluge → weave basic attacks. Weave basic attacks between skill casts for passive value.",
+    "skillOrder": {
+      "priority": "Skill 2 → Skill 1 → Destructive Deluge (max Skill 2 first)",
+      "reason": "Max primary utility/damage skill first, then Ocean of Tears, and Destructive Deluge on cooldown."
+    },
+    "combos": [
+      {
+        "id": "standard",
+        "name": "Standard trade",
+        "steps": "Ocean of Tears → Flowing Sigh → Destructive Deluge → weave basic attacks",
+        "when": "Mid Lane skirmish or objective fight"
+      }
+    ],
+    "itemNotes": [
+      {
+        "slot": 1,
+        "why": "Boosts skill damage"
+      },
+      {
+        "slot": 2,
+        "why": "Reduces Skill CD"
+      },
+      {
+        "slot": 3,
+        "why": "Boosts Magical Pierce"
+      },
+      {
+        "slot": 4,
+        "why": "Offense & defense"
+      },
+      {
+        "slot": 5,
+        "why": "Slows on hit"
+      },
+      {
+        "slot": 6,
+        "why": "Anti-tank"
+      }
+    ],
+    "arcanaRows": [
+      {
+        "slot": "Primary",
+        "rune": "Nightmare",
+        "effect": "Recommended for Mage Mid Lane"
+      },
+      {
+        "slot": "Spell",
+        "rune": "Flash",
+        "effect": "Adjust Purify/Execute based on enemy dive."
+      }
+    ],
     "laning": "Control first wave without taking free poke. Roam after pushing wave 2–4 to side lanes with your jungler.",
     "teamfight": "Poke from max range before objective. Save hard CC for enemy dive or your carry peel window.",
     "highRank": "Lady Zhen is a viable Tier A pick in high rank with 51.4% win rate — strong in one-trick hands or as a counter-pick. Pick rate 1.0% — frequently seen in ranked; learn the matchup even if you do not main Lady Zhen.",

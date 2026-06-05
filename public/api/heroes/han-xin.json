@@ -110,7 +110,7 @@
     "Han Xin is a Medium Assassin (Jungling) on Honor of Kings Global. Camp HOK ranks them Tier B with 52.1% win rate and 0.6% pick rate as of 2026-06-05.",
     "Best build path: Rapacious Bite → Boots of Resistance → Axe of Torment → Cuirass of Savagery → Master Sword → Eternity Blade.",
     "Run Cataclysm for stats that match Han Xin's Assassin kit. Take Smite — swap to Purify against heavy CC or Smite when jungling.",
-    "Standard trade: Ruthless Assault → Fight or Die! → The Unrivaled Spear → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "Standard trade: Ruthless Assault → Fight or Die! → The Unrivaled Spear → weave basic attacks. Weave basic attacks between skill casts for passive value.",
     "Laning: Clear to level four, then gank the lane with the least escape. Secure Tyrant when your bot or mid has crash wave.",
     "Teamfight: Wait for CC from your team, then dive carry with full combo. Exit with reset or flash if focus fired.",
     "Han Xin excels into Lu Bu, Dun, Xiang Yu. Avoid blind picking into Agudo, Alessio, Erin without team peel.",
@@ -690,9 +690,66 @@
   ],
   "guide": {
     "overview": "Han Xin is a Medium Assassin (Jungling) on Honor of Kings Global. Camp HOK ranks them Tier B with 52.1% win rate and 0.6% pick rate as of 2026-06-05.",
+    "hook": "Han Xin: Han Xin's every 4th Basic Attack launches the target.",
     "bestBuild": "Rush Rapacious Bite, Boots of Resistance, Axe of Torment, then complete Cuirass of Savagery, Master Sword, Eternity Blade. Use preset tabs for jungle, clash, or CN-style paths when draft requires it.",
     "arcanaSpells": "Run Cataclysm for stats that match Han Xin's Assassin kit. Take Smite — swap to Purify against heavy CC or Smite when jungling.",
-    "combo": "Standard trade: Ruthless Assault → Fight or Die! → The Unrivaled Spear → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "combo": "Standard trade: Ruthless Assault → Fight or Die! → The Unrivaled Spear → weave basic attacks. Weave basic attacks between skill casts for passive value.",
+    "skillOrder": {
+      "priority": "Skill 2 → Skill 1 → The Unrivaled Spear (max Skill 2 first)",
+      "reason": "Fight or Die! provides mobility or stick—max first. Ruthless Assault second for damage. The Unrivaled Spear on every level."
+    },
+    "combos": [
+      {
+        "id": "standard",
+        "name": "Standard trade",
+        "steps": "Ruthless Assault → Fight or Die! → The Unrivaled Spear → weave basic attacks",
+        "when": "Jungling skirmish or objective fight"
+      },
+      {
+        "id": "all-in",
+        "name": "All-in",
+        "steps": "The Unrivaled Spear after full rotation when Flash is down",
+        "when": "Gank or backline dive with team CC"
+      }
+    ],
+    "itemNotes": [
+      {
+        "slot": 1,
+        "why": "Monster kills boost PATK"
+      },
+      {
+        "slot": 2,
+        "why": "Shortens CC"
+      },
+      {
+        "slot": 3,
+        "why": "Anti-squishy"
+      },
+      {
+        "slot": 4,
+        "why": "Offense & defense"
+      },
+      {
+        "slot": 5,
+        "why": "Enhances BA"
+      },
+      {
+        "slot": 6,
+        "why": "High crit damage"
+      }
+    ],
+    "arcanaRows": [
+      {
+        "slot": "Primary",
+        "rune": "Cataclysm",
+        "effect": "Recommended for Assassin Jungling"
+      },
+      {
+        "slot": "Spell",
+        "rune": "Smite",
+        "effect": "Adjust Purify/Execute based on enemy dive."
+      }
+    ],
     "laning": "Clear to level four, then gank the lane with the least escape. Secure Tyrant when your bot or mid has crash wave.",
     "teamfight": "Wait for CC from your team, then dive carry with full combo. Exit with reset or flash if focus fired.",
     "highRank": "Han Xin sits at Tier B globally (52.1% WR). In high rank, pick only into favorable matchups or when you have a dedicated pocket pick. Camp data shows above-average win rate — prioritize when not hard-countered in draft.",

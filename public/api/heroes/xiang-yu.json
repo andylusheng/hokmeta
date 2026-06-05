@@ -109,7 +109,7 @@
     "Xiang Yu is a Easy Tank (Clash Lane) on Honor of Kings Global. Camp HOK ranks them Tier A with 50.7% win rate and 0.8% pick rate as of 2026-06-05.",
     "Best build path: Boots of Resistance → Eye of the Phoenix → Blazing Cape → Spikemail → Longnight Guardian.",
     "Run Fate for stats that match Xiang Yu's Tank kit. Take Flash — swap to Purify against heavy CC or Smite when jungling.",
-    "Standard trade: Righteous Fervor → No Retreat → Hegemon's Slash → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "Standard trade: Righteous Fervor → No Retreat → Hegemon's Slash → weave basic attacks. Weave basic attacks between skill casts for passive value.",
     "Laning: Trade on your power spike levels (2/4). Call jungler for dive only when enemy flash is down.",
     "Teamfight: Engage on enemy carry when your team has follow-up. Body-block skillshots for your marksman.",
     "Xiang Yu excels into Dharma, Arthur. Avoid blind picking into Han Xin, Kui, Lam without team peel.",
@@ -539,9 +539,56 @@
   ],
   "guide": {
     "overview": "Xiang Yu is a Easy Tank (Clash Lane) on Honor of Kings Global. Camp HOK ranks them Tier A with 50.7% win rate and 0.8% pick rate as of 2026-06-05.",
+    "hook": "Xiang Yu: Gains damage immunity when Health falls below 30%.",
     "bestBuild": "Rush Boots of Resistance, Eye of the Phoenix, Blazing Cape, then complete Spikemail, Longnight Guardian. Use preset tabs for jungle, clash, or CN-style paths when draft requires it.",
     "arcanaSpells": "Run Fate for stats that match Xiang Yu's Tank kit. Take Flash — swap to Purify against heavy CC or Smite when jungling.",
-    "combo": "Standard trade: Righteous Fervor → No Retreat → Hegemon's Slash → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "combo": "Standard trade: Righteous Fervor → No Retreat → Hegemon's Slash → weave basic attacks. Weave basic attacks between skill casts for passive value.",
+    "skillOrder": {
+      "priority": "Skill 2 → Skill 1 → Hegemon's Slash (max Skill 2 first)",
+      "reason": "Max primary utility/damage skill first, then Righteous Fervor, and Hegemon's Slash on cooldown."
+    },
+    "combos": [
+      {
+        "id": "standard",
+        "name": "Standard trade",
+        "steps": "Righteous Fervor → No Retreat → Hegemon's Slash → weave basic attacks",
+        "when": "Clash Lane skirmish or objective fight"
+      }
+    ],
+    "itemNotes": [
+      {
+        "slot": 1,
+        "why": "Shortens CC"
+      },
+      {
+        "slot": 2,
+        "why": "Boosts Health regen"
+      },
+      {
+        "slot": 3,
+        "why": "Burns nearby enemies"
+      },
+      {
+        "slot": 4,
+        "why": "Reflects damage"
+      },
+      {
+        "slot": 5,
+        "why": "Resists burst damage"
+      }
+    ],
+    "arcanaRows": [
+      {
+        "slot": "Primary",
+        "rune": "Fate",
+        "effect": "Recommended for Tank Clash Lane"
+      },
+      {
+        "slot": "Spell",
+        "rune": "Flash",
+        "effect": "Adjust Purify/Execute based on enemy dive."
+      }
+    ],
     "laning": "Trade on your power spike levels (2/4). Call jungler for dive only when enemy flash is down.",
     "teamfight": "Engage on enemy carry when your team has follow-up. Body-block skillshots for your marksman.",
     "highRank": "Xiang Yu is a viable Tier A pick in high rank with 50.7% win rate — strong in one-trick hands or as a counter-pick. Pick rate 0.8% — frequently seen in ranked; learn the matchup even if you do not main Xiang Yu.",

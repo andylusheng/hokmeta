@@ -110,7 +110,7 @@
     "Hou Yi is a Medium Marksman (Farm Lane) on Honor of Kings Global. Camp HOK ranks them Tier S+ with 49.3% win rate and 2.9% pick rate as of 2026-06-05.",
     "Best build path: Shadow Ripper → Boots of Dexterity → Eternity Blade → Bloodweeper → Sunchaser → Daybreaker's Virtue.",
     "Run Dominator for stats that match Hou Yi's Marksman kit. Take Haste & Flash — swap to Purify against heavy CC or Smite when jungling.",
-    "Standard trade: Arrow Volley → Afterglow → Burning Sun Arrow → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "Standard trade: Arrow Volley → Afterglow → Burning Sun Arrow → weave basic attacks. Weave basic attacks between skill casts for passive value.",
     "Laning: Last-hit safely until first core item. Ping jungler for river vision; never face-check brush without minion cover.",
     "Teamfight: Position behind frontline; attack closest safe target. Join fight only after enemy dive cooldowns are used.",
     "Hou Yi excels into Cirrus, Mulan, Xuance. Avoid blind picking into Agudo, Master Luban without team peel.",
@@ -540,9 +540,60 @@
   ],
   "guide": {
     "overview": "Hou Yi is a Medium Marksman (Farm Lane) on Honor of Kings Global. Camp HOK ranks them Tier S+ with 49.3% win rate and 2.9% pick rate as of 2026-06-05.",
+    "hook": "Hou Yi: Basic Attack hits grant Attack Speed and 1 stack of enhancement.",
     "bestBuild": "Rush Shadow Ripper, Boots of Dexterity, Eternity Blade, then complete Bloodweeper, Sunchaser, Daybreaker's Virtue. Use preset tabs for jungle, clash, or CN-style paths when draft requires it.",
     "arcanaSpells": "Run Dominator for stats that match Hou Yi's Marksman kit. Take Haste & Flash — swap to Purify against heavy CC or Smite when jungling.",
-    "combo": "Standard trade: Arrow Volley → Afterglow → Burning Sun Arrow → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "combo": "Standard trade: Arrow Volley → Afterglow → Burning Sun Arrow → weave basic attacks. Weave basic attacks between skill casts for passive value.",
+    "skillOrder": {
+      "priority": "Skill 1 → Skill 2 → Burning Sun Arrow (max Skill 1 first)",
+      "reason": "Arrow Volley is your lane trade tool. Afterglow second. Burning Sun Arrow whenever available."
+    },
+    "combos": [
+      {
+        "id": "standard",
+        "name": "Standard trade",
+        "steps": "Arrow Volley → Afterglow → Burning Sun Arrow → weave basic attacks",
+        "when": "Farm Lane skirmish or objective fight"
+      }
+    ],
+    "itemNotes": [
+      {
+        "slot": 1,
+        "why": "Crits boost ASPD"
+      },
+      {
+        "slot": 2,
+        "why": "Boosts ASPD"
+      },
+      {
+        "slot": 3,
+        "why": "High crit damage"
+      },
+      {
+        "slot": 4,
+        "why": "Physical Lifesteal"
+      },
+      {
+        "slot": 5,
+        "why": "Boosts attack range"
+      },
+      {
+        "slot": 6,
+        "why": "Great for marksmen"
+      }
+    ],
+    "arcanaRows": [
+      {
+        "slot": "Primary",
+        "rune": "Dominator",
+        "effect": "Recommended for Marksman Farm Lane"
+      },
+      {
+        "slot": "Spell",
+        "rune": "Haste / Flash",
+        "effect": "Adjust Purify/Execute based on enemy dive."
+      }
+    ],
     "laning": "Last-hit safely until first core item. Ping jungler for river vision; never face-check brush without minion cover.",
     "teamfight": "Position behind frontline; attack closest safe target. Join fight only after enemy dive cooldowns are used.",
     "highRank": "Hou Yi is a Tier S+ staple in high-elo (Diamond+) on the international server — worth mastering for climb. Pick rate 2.9% — frequently seen in ranked; learn the matchup even if you do not main Hou Yi.",

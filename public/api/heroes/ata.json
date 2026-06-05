@@ -110,7 +110,7 @@
     "Ata is a Easy Tank (Clash Lane) on Honor of Kings Global. Camp HOK ranks them Tier B with 54.1% win rate and 0.7% pick rate as of 2026-06-05.",
     "Best build path: Boots of Tranquility → Dragon's Rage → Blazing Cape → Eye of the Phoenix → Overlord's Platemail → Ominous Premonition.",
     "Run Fate for stats that match Ata's Tank kit. Take Execute — swap to Purify against heavy CC or Smite when jungling.",
-    "Standard trade: Wavewalking → Sea Anchor → Ghost Ship → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "Standard trade: Wavewalking → Sea Anchor → Ghost Ship → weave basic attacks. Weave basic attacks between skill casts for passive value.",
     "Laning: Trade on your power spike levels (2/4). Call jungler for dive only when enemy flash is down.",
     "Teamfight: Engage on enemy carry when your team has follow-up. Body-block skillshots for your marksman.",
     "Ata excels into Agudo, Meng Ya, Luara. Avoid blind picking into Jing, Wukong, Musashi without team peel.",
@@ -590,9 +590,60 @@
   ],
   "guide": {
     "overview": "Ata is a Easy Tank (Clash Lane) on Honor of Kings Global. Camp HOK ranks them Tier B with 54.1% win rate and 0.7% pick rate as of 2026-06-05.",
+    "hook": "Ata — built around Child of the Sea (Tank).",
     "bestBuild": "Rush Boots of Tranquility, Dragon's Rage, Blazing Cape, then complete Eye of the Phoenix, Overlord's Platemail, Ominous Premonition. Use preset tabs for jungle, clash, or CN-style paths when draft requires it.",
     "arcanaSpells": "Run Fate for stats that match Ata's Tank kit. Take Execute — swap to Purify against heavy CC or Smite when jungling.",
-    "combo": "Standard trade: Wavewalking → Sea Anchor → Ghost Ship → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "combo": "Standard trade: Wavewalking → Sea Anchor → Ghost Ship → weave basic attacks. Weave basic attacks between skill casts for passive value.",
+    "skillOrder": {
+      "priority": "Skill 2 → Skill 1 → Ghost Ship (max Skill 2 first)",
+      "reason": "Max primary utility/damage skill first, then Wavewalking, and Ghost Ship on cooldown."
+    },
+    "combos": [
+      {
+        "id": "standard",
+        "name": "Standard trade",
+        "steps": "Wavewalking → Sea Anchor → Ghost Ship → weave basic attacks",
+        "when": "Clash Lane skirmish or objective fight"
+      }
+    ],
+    "itemNotes": [
+      {
+        "slot": 1,
+        "why": "Reduces Skill CD"
+      },
+      {
+        "slot": 2,
+        "why": "Boosts BA damage"
+      },
+      {
+        "slot": 3,
+        "why": "Burns nearby enemies"
+      },
+      {
+        "slot": 4,
+        "why": "Boosts Health regen"
+      },
+      {
+        "slot": 5,
+        "why": "Extra Health"
+      },
+      {
+        "slot": 6,
+        "why": "Slows attackers"
+      }
+    ],
+    "arcanaRows": [
+      {
+        "slot": "Primary",
+        "rune": "Fate",
+        "effect": "Recommended for Tank Clash Lane"
+      },
+      {
+        "slot": "Spell",
+        "rune": "Execute",
+        "effect": "Adjust Purify/Execute based on enemy dive."
+      }
+    ],
     "laning": "Trade on your power spike levels (2/4). Call jungler for dive only when enemy flash is down.",
     "teamfight": "Engage on enemy carry when your team has follow-up. Body-block skillshots for your marksman.",
     "highRank": "Ata sits at Tier B globally (54.1% WR). In high rank, pick only into favorable matchups or when you have a dedicated pocket pick. Camp data shows above-average win rate — prioritize when not hard-countered in draft.",

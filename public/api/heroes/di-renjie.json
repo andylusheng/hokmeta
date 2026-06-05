@@ -110,7 +110,7 @@
     "Di Renjie is a Medium Marksman (Farm Lane) on Honor of Kings Global. Camp HOK ranks them Tier A with 51.7% win rate and 0.8% pick rate as of 2026-06-05.",
     "Best build path: Doomsday → Boots of Dexterity → Eternity Blade → Daybreaker's Virtue → Ominous Premonition → Longnight Guardian.",
     "Run Red for stats that match Di Renjie's Marksman kit. Take Flash — swap to Purify against heavy CC or Smite when jungling.",
-    "Standard trade: Respect the Law → Legal Immunity → Imperial Order → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "Standard trade: Respect the Law → Legal Immunity → Imperial Order → weave basic attacks. Weave basic attacks between skill casts for passive value.",
     "Laning: Last-hit safely until first core item. Ping jungler for river vision; never face-check brush without minion cover.",
     "Teamfight: Position behind frontline; attack closest safe target. Join fight only after enemy dive cooldowns are used.",
     "Di Renjie excels into Mai Shiranui, Ukyo Tachibana, Ying. Avoid blind picking into Kaizer, Dun, Arthur without team peel.",
@@ -590,9 +590,60 @@
   ],
   "guide": {
     "overview": "Di Renjie is a Medium Marksman (Farm Lane) on Honor of Kings Global. Camp HOK ranks them Tier A with 51.7% win rate and 0.8% pick rate as of 2026-06-05.",
+    "hook": "Di Renjie: Basic atacks add stacks,with each stack granting extra atack speed and movement speed.",
     "bestBuild": "Rush Doomsday, Boots of Dexterity, Eternity Blade, then complete Daybreaker's Virtue, Ominous Premonition, Longnight Guardian. Use preset tabs for jungle, clash, or CN-style paths when draft requires it.",
     "arcanaSpells": "Run Red for stats that match Di Renjie's Marksman kit. Take Flash — swap to Purify against heavy CC or Smite when jungling.",
-    "combo": "Standard trade: Respect the Law → Legal Immunity → Imperial Order → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "combo": "Standard trade: Respect the Law → Legal Immunity → Imperial Order → weave basic attacks. Weave basic attacks between skill casts for passive value.",
+    "skillOrder": {
+      "priority": "Skill 1 → Skill 2 → Imperial Order (max Skill 1 first)",
+      "reason": "Respect the Law is your lane trade tool. Legal Immunity second. Imperial Order whenever available."
+    },
+    "combos": [
+      {
+        "id": "standard",
+        "name": "Standard trade",
+        "steps": "Respect the Law → Legal Immunity → Imperial Order → weave basic attacks",
+        "when": "Farm Lane skirmish or objective fight"
+      }
+    ],
+    "itemNotes": [
+      {
+        "slot": 1,
+        "why": "Boosts BA damage"
+      },
+      {
+        "slot": 2,
+        "why": "Boosts ASPD"
+      },
+      {
+        "slot": 3,
+        "why": "High crit damage"
+      },
+      {
+        "slot": 4,
+        "why": "Great for marksmen"
+      },
+      {
+        "slot": 5,
+        "why": "Slows attackers"
+      },
+      {
+        "slot": 6,
+        "why": "Resists burst damage"
+      }
+    ],
+    "arcanaRows": [
+      {
+        "slot": "Primary",
+        "rune": "Red",
+        "effect": "Recommended for Marksman Farm Lane"
+      },
+      {
+        "slot": "Spell",
+        "rune": "Flash",
+        "effect": "Adjust Purify/Execute based on enemy dive."
+      }
+    ],
     "laning": "Last-hit safely until first core item. Ping jungler for river vision; never face-check brush without minion cover.",
     "teamfight": "Position behind frontline; attack closest safe target. Join fight only after enemy dive cooldowns are used.",
     "highRank": "Di Renjie is a viable Tier A pick in high rank with 51.7% win rate — strong in one-trick hands or as a counter-pick.",

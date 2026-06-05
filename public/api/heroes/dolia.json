@@ -108,7 +108,7 @@
     "Dolia is a Easy Support (Roaming) on Honor of Kings Global. Camp HOK ranks them Tier S with 46.1% win rate and 1.8% pick rate as of 2026-06-05.",
     "Best build path: Boots of the Arcane → Dawnlight → Venomous Staff → Sage's Sanctuary → Succubus Cloak.",
     "Run Fate for stats that match Dolia's Support kit. Take Flash — swap to Purify against heavy CC or Smite when jungling.",
-    "Standard trade: Ode → Wavemaker → Celestial Melody → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "Standard trade: Ode → Wavemaker → Celestial Melody → weave basic attacks. Weave basic attacks between skill casts for passive value.",
     "Laning: Help marksman crash wave, then rotate mid for picks. Return before Tyrant if your carry has no escape.",
     "Teamfight: Peel carry first, then look for pick on out-of-position enemies. Ward Tyrant 30s before spawn.",
     "Dolia excels into Dun, Yaria. Avoid blind picking into Sima Yi, Guiguzi without team peel.",
@@ -688,9 +688,56 @@
   ],
   "guide": {
     "overview": "Dolia is a Easy Support (Roaming) on Honor of Kings Global. Camp HOK ranks them Tier S with 46.1% win rate and 1.8% pick rate as of 2026-06-05.",
+    "hook": "Dolia: Dolia takes on mermaid form when in water (rivers are also considered water), reducing the slows taken by 50% and returning life and mana every second.",
     "bestBuild": "Rush Boots of the Arcane, Dawnlight, Venomous Staff, then complete Sage's Sanctuary, Succubus Cloak. Use preset tabs for jungle, clash, or CN-style paths when draft requires it.",
     "arcanaSpells": "Run Fate for stats that match Dolia's Support kit. Take Flash — swap to Purify against heavy CC or Smite when jungling.",
-    "combo": "Standard trade: Ode → Wavemaker → Celestial Melody → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "combo": "Standard trade: Ode → Wavemaker → Celestial Melody → weave basic attacks. Weave basic attacks between skill casts for passive value.",
+    "skillOrder": {
+      "priority": "Skill 2 → Skill 1 → Celestial Melody (max Skill 2 first)",
+      "reason": "Max primary utility/damage skill first, then Ode, and Celestial Melody on cooldown."
+    },
+    "combos": [
+      {
+        "id": "standard",
+        "name": "Standard trade",
+        "steps": "Ode → Wavemaker → Celestial Melody → weave basic attacks",
+        "when": "Roaming skirmish or objective fight"
+      }
+    ],
+    "itemNotes": [
+      {
+        "slot": 1,
+        "why": "Magical Pierce"
+      },
+      {
+        "slot": 2,
+        "why": "Shields on dealing damage"
+      },
+      {
+        "slot": 3,
+        "why": "Lowers Health regen"
+      },
+      {
+        "slot": 4,
+        "why": "Resurrect on the spot"
+      },
+      {
+        "slot": 5,
+        "why": "Negates magical damage"
+      }
+    ],
+    "arcanaRows": [
+      {
+        "slot": "Primary",
+        "rune": "Fate",
+        "effect": "Recommended for Support Roaming"
+      },
+      {
+        "slot": "Spell",
+        "rune": "Flash",
+        "effect": "Adjust Purify/Execute based on enemy dive."
+      }
+    ],
     "laning": "Help marksman crash wave, then rotate mid for picks. Return before Tyrant if your carry has no escape.",
     "teamfight": "Peel carry first, then look for pick on out-of-position enemies. Ward Tyrant 30s before spawn.",
     "highRank": "Dolia is a Tier S staple in high-elo (Diamond+) on the international server — worth mastering for climb. Ban rate 0.5% — expect Dolia to be removed in tryhard lobbies; have a backup in the same role. Below 49% global WR — high-rank players often avoid unless compensating for team comp.",

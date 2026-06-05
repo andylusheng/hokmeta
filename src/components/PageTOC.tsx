@@ -1,14 +1,13 @@
 const SECTIONS = [
-  { id: 'overview', label: 'Overview' },
-  { id: 'skills', label: 'Skills' },
+  { id: 'overview', label: 'Summary' },
   { id: 'build', label: 'Build' },
   { id: 'arcana', label: 'Arcana' },
-  { id: 'guide', label: 'Guide' },
+  { id: 'skill-order', label: 'Skill Order' },
+  { id: 'combos', label: 'Combos' },
+  { id: 'skills', label: 'Abilities' },
   { id: 'counters', label: 'Counters' },
-  { id: 'high-rank', label: 'High Rank' },
-  { id: 'comparisons', label: 'Comparisons' },
+  { id: 'guide', label: 'Playstyle' },
   { id: 'faq', label: 'FAQ' },
-  { id: 'meta-analysis', label: 'Meta Analysis' },
 ] as const;
 
 export function PageTOC() {

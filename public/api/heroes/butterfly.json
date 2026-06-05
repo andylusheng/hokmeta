@@ -110,7 +110,7 @@
     "Butterfly is a Medium Warrior (Jungling) on Honor of Kings Global. Camp HOK ranks them Tier B with 52.4% win rate and 0.5% pick rate as of 2026-06-05.",
     "Best build path: Boots of Resistance → Rapacious Bite → Axe of Torment → Master Sword → Immovable - Sky Dome → Cuirass of Savagery.",
     "Run Mutation for stats that match Butterfly's Warrior kit. Take Smite — swap to Purify against heavy CC or Smite when jungling.",
-    "Standard trade: Whirlwind → Sword Propel → Death Dealer → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "Standard trade: Whirlwind → Sword Propel → Death Dealer → weave basic attacks. Weave basic attacks between skill casts for passive value.",
     "Laning: Clear to level four, then gank the lane with the least escape. Secure Tyrant when your bot or mid has crash wave.",
     "Teamfight: Flank or dive backline after tanks commit. Do not start fights without vision on enemy jungler.",
     "Butterfly excels into Heino, Sakeer, Angela. Avoid blind picking into Hou Yi, Marco Polo, Lady Sun without team peel.",
@@ -540,9 +540,66 @@
   ],
   "guide": {
     "overview": "Butterfly is a Medium Warrior (Jungling) on Honor of Kings Global. Camp HOK ranks them Tier B with 52.4% win rate and 0.5% pick rate as of 2026-06-05.",
+    "hook": "Butterfly: Butterfly gains 2 stacks of mark from defeating heroes and 1 stack fromassisting or killing monsters/minions.",
     "bestBuild": "Rush Boots of Resistance, Rapacious Bite, Axe of Torment, then complete Master Sword, Immovable - Sky Dome, Cuirass of Savagery. Use preset tabs for jungle, clash, or CN-style paths when draft requires it.",
     "arcanaSpells": "Run Mutation for stats that match Butterfly's Warrior kit. Take Smite — swap to Purify against heavy CC or Smite when jungling.",
-    "combo": "Standard trade: Whirlwind → Sword Propel → Death Dealer → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "combo": "Standard trade: Whirlwind → Sword Propel → Death Dealer → weave basic attacks. Weave basic attacks between skill casts for passive value.",
+    "skillOrder": {
+      "priority": "Skill 2 → Skill 1 → Death Dealer (max Skill 2 first)",
+      "reason": "Sword Propel provides mobility or stick—max first. Whirlwind second for damage. Death Dealer on every level."
+    },
+    "combos": [
+      {
+        "id": "standard",
+        "name": "Standard trade",
+        "steps": "Whirlwind → Sword Propel → Death Dealer → weave basic attacks",
+        "when": "Jungling skirmish or objective fight"
+      },
+      {
+        "id": "all-in",
+        "name": "All-in",
+        "steps": "Death Dealer after full rotation when Flash is down",
+        "when": "Gank or backline dive with team CC"
+      }
+    ],
+    "itemNotes": [
+      {
+        "slot": 1,
+        "why": "Shortens CC"
+      },
+      {
+        "slot": 2,
+        "why": "Monster kills boost PATK"
+      },
+      {
+        "slot": 3,
+        "why": "Anti-squishy"
+      },
+      {
+        "slot": 4,
+        "why": "Enhances BA"
+      },
+      {
+        "slot": 5,
+        "why": "Temp. damage reduction"
+      },
+      {
+        "slot": 6,
+        "why": "Offense & defense"
+      }
+    ],
+    "arcanaRows": [
+      {
+        "slot": "Primary",
+        "rune": "Mutation",
+        "effect": "Recommended for Warrior Jungling"
+      },
+      {
+        "slot": "Spell",
+        "rune": "Smite",
+        "effect": "Adjust Purify/Execute based on enemy dive."
+      }
+    ],
     "laning": "Clear to level four, then gank the lane with the least escape. Secure Tyrant when your bot or mid has crash wave.",
     "teamfight": "Flank or dive backline after tanks commit. Do not start fights without vision on enemy jungler.",
     "highRank": "Butterfly sits at Tier B globally (52.4% WR). In high rank, pick only into favorable matchups or when you have a dedicated pocket pick. Camp data shows above-average win rate — prioritize when not hard-countered in draft.",

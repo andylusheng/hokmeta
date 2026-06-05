@@ -111,7 +111,7 @@
     "Gao Changgong is a Medium Assassin (Jungling) on Honor of Kings Global. Camp HOK ranks them Tier A with 49.2% win rate and 0.5% pick rate as of 2026-06-05.",
     "Best build path: Relentless Blade → Boots of Resistance → Meteor → Axe of Torment → Rapacious Bite → Master Sword.",
     "Run Penetration for stats that match Gao Changgong's Assassin kit. Take Flash & Execute — swap to Purify against heavy CC or Smite when jungling.",
-    "Standard trade: Secret Skill - Split → Secret Skill - Sling → Secret Skill - Strike → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "Standard trade: Secret Skill - Split → Secret Skill - Sling → Secret Skill - Strike → weave basic attacks. Weave basic attacks between skill casts for passive value.",
     "Laning: Clear to level four, then gank the lane with the least escape. Secure Tyrant when your bot or mid has crash wave.",
     "Teamfight: Wait for CC from your team, then dive carry with full combo. Exit with reset or flash if focus fired.",
     "Gao Changgong excels into Angela, Daji, Cai Yan. Avoid blind picking into Athena, Hou Yi, Daji without team peel.",
@@ -341,9 +341,66 @@
   ],
   "guide": {
     "overview": "Gao Changgong is a Medium Assassin (Jungling) on Honor of Kings Global. Camp HOK ranks them Tier A with 49.2% win rate and 0.5% pick rate as of 2026-06-05.",
+    "hook": "Gao Changgong: When an enemy is within a certain range from Prince of Lanling, moving toward them will grant him increased Movement Speed.",
     "bestBuild": "Rush Relentless Blade, Boots of Resistance, Meteor, then complete Axe of Torment, Rapacious Bite, Master Sword. Use preset tabs for jungle, clash, or CN-style paths when draft requires it.",
     "arcanaSpells": "Run Penetration for stats that match Gao Changgong's Assassin kit. Take Flash & Execute — swap to Purify against heavy CC or Smite when jungling.",
-    "combo": "Standard trade: Secret Skill - Split → Secret Skill - Sling → Secret Skill - Strike → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "combo": "Standard trade: Secret Skill - Split → Secret Skill - Sling → Secret Skill - Strike → weave basic attacks. Weave basic attacks between skill casts for passive value.",
+    "skillOrder": {
+      "priority": "Skill 2 → Skill 1 → Secret Skill - Strike (max Skill 2 first)",
+      "reason": "Secret Skill - Sling provides mobility or stick—max first. Secret Skill - Split second for damage. Secret Skill - Strike on every level."
+    },
+    "combos": [
+      {
+        "id": "standard",
+        "name": "Standard trade",
+        "steps": "Secret Skill - Split → Secret Skill - Sling → Secret Skill - Strike → weave basic attacks",
+        "when": "Jungling skirmish or objective fight"
+      },
+      {
+        "id": "all-in",
+        "name": "All-in",
+        "steps": "Secret Skill - Strike after full rotation when Flash is down",
+        "when": "Gank or backline dive with team CC"
+      }
+    ],
+    "itemNotes": [
+      {
+        "slot": 1,
+        "why": "Monster kills boost PATK"
+      },
+      {
+        "slot": 2,
+        "why": "Shortens CC"
+      },
+      {
+        "slot": 3,
+        "why": "PATK +35\nCDR +7.5%"
+      },
+      {
+        "slot": 4,
+        "why": "Anti-squishy"
+      },
+      {
+        "slot": 5,
+        "why": "Monster kills boost PATK"
+      },
+      {
+        "slot": 6,
+        "why": "Enhances BA"
+      }
+    ],
+    "arcanaRows": [
+      {
+        "slot": "Primary",
+        "rune": "Penetration",
+        "effect": "Recommended for Assassin Jungling"
+      },
+      {
+        "slot": "Spell",
+        "rune": "Flash / Execute",
+        "effect": "Adjust Purify/Execute based on enemy dive."
+      }
+    ],
     "laning": "Clear to level four, then gank the lane with the least escape. Secure Tyrant when your bot or mid has crash wave.",
     "teamfight": "Wait for CC from your team, then dive carry with full combo. Exit with reset or flash if focus fired.",
     "highRank": "Gao Changgong is a viable Tier A pick in high rank with 49.2% win rate — strong in one-trick hands or as a counter-pick. Ban rate 0.7% — expect Gao Changgong to be removed in tryhard lobbies; have a backup in the same role.",

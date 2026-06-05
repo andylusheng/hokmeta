@@ -111,7 +111,7 @@
     "Ukyo Tachibana is a Medium Assassin (Jungling) on Honor of Kings Global. Camp HOK ranks them Tier B with 51.3% win rate and 0.4% pick rate as of 2026-06-05.",
     "Best build path: Rapacious Bite → Boots of Tranquility → Axe of Torment → Pure Sky → Spikemail.",
     "Run Cataclysm for stats that match Ukyo Tachibana's Assassin kit. Take Smite & Execute — swap to Purify against heavy CC or Smite when jungling.",
-    "Standard trade: CONCEALED SABRE SWALLOW SWIPE → CONCEALED SABRE HEAVENLY HACK → CONCEALED SABRE SNOWFALL SLASH → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "Standard trade: CONCEALED SABRE SWALLOW SWIPE → CONCEALED SABRE HEAVENLY HACK → CONCEALED SABRE SNOWFALL SLASH → weave basic attacks. Weave basic attacks between skill casts for passive value.",
     "Laning: Clear to level four, then gank the lane with the least escape. Secure Tyrant when your bot or mid has crash wave.",
     "Teamfight: Wait for CC from your team, then dive carry with full combo. Exit with reset or flash if focus fired.",
     "Ukyo Tachibana excels into Arthur, Lian Po, Wuyan. Avoid blind picking into Di Renjie, Shi, Kongming without team peel.",
@@ -140,7 +140,7 @@
     {
       "id": "faq-best-build",
       "question": "What is the best Ukyo Tachibana build?",
-      "answer": "Core item path: Rapacious Bite, Boots of Tranquility, Axe of Torment, Pure Sky, Spikemail, siege breaker. Run Cataclysm arcana with Smite & Execute. Switch to alternate build presets on this page for jungle, clash, or late-game setups."
+      "answer": "Core item path: Rapacious Bite, Boots of Tranquility, Axe of Torment, Pure Sky, Spikemail. Run Cataclysm arcana with Smite & Execute. Switch to alternate build presets on this page for jungle, clash, or late-game setups."
     },
     {
       "id": "faq-counter",
@@ -691,9 +691,62 @@
   ],
   "guide": {
     "overview": "Ukyo Tachibana is a Medium Assassin (Jungling) on Honor of Kings Global. Camp HOK ranks them Tier B with 51.3% win rate and 0.4% pick rate as of 2026-06-05.",
-    "bestBuild": "Rush Rapacious Bite, Boots of Tranquility, Axe of Torment, then complete Pure Sky, Spikemail, siege breaker. Use preset tabs for jungle, clash, or CN-style paths when draft requires it.",
+    "hook": "Ukyo Tachibana: Every 5–4s, Ukyo Tachibana gains one enhanced Basic Attack that has increased range, restores Health, deals extra damage, and slows enemies.",
+    "bestBuild": "Rush Rapacious Bite, Boots of Tranquility, Axe of Torment, then complete Pure Sky, Spikemail. Use preset tabs for jungle, clash, or CN-style paths when draft requires it.",
     "arcanaSpells": "Run Cataclysm for stats that match Ukyo Tachibana's Assassin kit. Take Smite & Execute — swap to Purify against heavy CC or Smite when jungling.",
-    "combo": "Standard trade: CONCEALED SABRE SWALLOW SWIPE → CONCEALED SABRE HEAVENLY HACK → CONCEALED SABRE SNOWFALL SLASH → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "combo": "Standard trade: CONCEALED SABRE SWALLOW SWIPE → CONCEALED SABRE HEAVENLY HACK → CONCEALED SABRE SNOWFALL SLASH → weave basic attacks. Weave basic attacks between skill casts for passive value.",
+    "skillOrder": {
+      "priority": "Skill 2 → Skill 1 → CONCEALED SABRE SNOWFALL SLASH (max Skill 2 first)",
+      "reason": "CONCEALED SABRE HEAVENLY HACK provides mobility or stick—max first. CONCEALED SABRE SWALLOW SWIPE second for damage. CONCEALED SABRE SNOWFALL SLASH on every level."
+    },
+    "combos": [
+      {
+        "id": "standard",
+        "name": "Standard trade",
+        "steps": "CONCEALED SABRE SWALLOW SWIPE → CONCEALED SABRE HEAVENLY HACK → CONCEALED SABRE SNOWFALL SLASH → weave basic attacks",
+        "when": "Jungling skirmish or objective fight"
+      },
+      {
+        "id": "all-in",
+        "name": "All-in",
+        "steps": "CONCEALED SABRE SNOWFALL SLASH after full rotation when Flash is down",
+        "when": "Gank or backline dive with team CC"
+      }
+    ],
+    "itemNotes": [
+      {
+        "slot": 1,
+        "why": "Monster kills boost PATK"
+      },
+      {
+        "slot": 2,
+        "why": "Reduces Skill CD"
+      },
+      {
+        "slot": 3,
+        "why": "Anti-squishy"
+      },
+      {
+        "slot": 4,
+        "why": "Temp. damage reduction"
+      },
+      {
+        "slot": 5,
+        "why": "Reflects damage"
+      }
+    ],
+    "arcanaRows": [
+      {
+        "slot": "Primary",
+        "rune": "Cataclysm",
+        "effect": "Recommended for Assassin Jungling"
+      },
+      {
+        "slot": "Spell",
+        "rune": "Smite / Execute",
+        "effect": "Adjust Purify/Execute based on enemy dive."
+      }
+    ],
     "laning": "Clear to level four, then gank the lane with the least escape. Secure Tyrant when your bot or mid has crash wave.",
     "teamfight": "Wait for CC from your team, then dive carry with full combo. Exit with reset or flash if focus fired.",
     "highRank": "Ukyo Tachibana sits at Tier B globally (51.3% WR). In high rank, pick only into favorable matchups or when you have a dedicated pocket pick.",

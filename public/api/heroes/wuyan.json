@@ -110,7 +110,7 @@
     "Wuyan is a Easy Tank (Clash Lane) on Honor of Kings Global. Camp HOK ranks them Tier B with 50.8% win rate and 0.4% pick rate as of 2026-06-05.",
     "Best build path: Boots of Resistance → Axe of Torment → Glacial Buckler → Blazing Cape → Starbreaker.",
     "Run Mutation for stats that match Wuyan's Tank kit. Take Flash — swap to Purify against heavy CC or Smite when jungling.",
-    "Standard trade: Storm and Stress → Shock and Awe → Hurricane Hammer → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "Standard trade: Storm and Stress → Shock and Awe → Hurricane Hammer → weave basic attacks. Weave basic attacks between skill casts for passive value.",
     "Laning: Trade on your power spike levels (2/4). Call jungler for dive only when enemy flash is down.",
     "Teamfight: Engage on enemy carry when your team has follow-up. Body-block skillshots for your marksman.",
     "Wuyan excels into Kongming, Lady Zhen, Liang. Avoid blind picking into Lam, Ming, Pei without team peel.",
@@ -139,7 +139,7 @@
     {
       "id": "faq-best-build",
       "question": "What is the best Wuyan build?",
-      "answer": "Core item path: Boots of Resistance, Axe of Torment, Glacial Buckler, Blazing Cape, siege breaker, Starbreaker. Run Mutation arcana with Flash. Switch to alternate build presets on this page for jungle, clash, or late-game setups."
+      "answer": "Core item path: Boots of Resistance, Axe of Torment, Glacial Buckler, Blazing Cape, Starbreaker. Run Mutation arcana with Flash. Switch to alternate build presets on this page for jungle, clash, or late-game setups."
     },
     {
       "id": "faq-counter",
@@ -590,9 +590,56 @@
   ],
   "guide": {
     "overview": "Wuyan is a Easy Tank (Clash Lane) on Honor of Kings Global. Camp HOK ranks them Tier B with 50.8% win rate and 0.4% pick rate as of 2026-06-05.",
-    "bestBuild": "Rush Boots of Resistance, Axe of Torment, Glacial Buckler, then complete Blazing Cape, siege breaker, Starbreaker. Use preset tabs for jungle, clash, or CN-style paths when draft requires it.",
+    "hook": "Wuyan: Skills and Basic Attacks have a chance to petrify enemy heroes.",
+    "bestBuild": "Rush Boots of Resistance, Axe of Torment, Glacial Buckler, then complete Blazing Cape, Starbreaker. Use preset tabs for jungle, clash, or CN-style paths when draft requires it.",
     "arcanaSpells": "Run Mutation for stats that match Wuyan's Tank kit. Take Flash — swap to Purify against heavy CC or Smite when jungling.",
-    "combo": "Standard trade: Storm and Stress → Shock and Awe → Hurricane Hammer → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "combo": "Standard trade: Storm and Stress → Shock and Awe → Hurricane Hammer → weave basic attacks. Weave basic attacks between skill casts for passive value.",
+    "skillOrder": {
+      "priority": "Skill 2 → Skill 1 → Hurricane Hammer (max Skill 2 first)",
+      "reason": "Max primary utility/damage skill first, then Storm and Stress, and Hurricane Hammer on cooldown."
+    },
+    "combos": [
+      {
+        "id": "standard",
+        "name": "Standard trade",
+        "steps": "Storm and Stress → Shock and Awe → Hurricane Hammer → weave basic attacks",
+        "when": "Clash Lane skirmish or objective fight"
+      }
+    ],
+    "itemNotes": [
+      {
+        "slot": 1,
+        "why": "Shortens CC"
+      },
+      {
+        "slot": 2,
+        "why": "Anti-squishy"
+      },
+      {
+        "slot": 3,
+        "why": "Group damage & slow"
+      },
+      {
+        "slot": 4,
+        "why": "Burns nearby enemies"
+      },
+      {
+        "slot": 5,
+        "why": "Anti-tank"
+      }
+    ],
+    "arcanaRows": [
+      {
+        "slot": "Primary",
+        "rune": "Mutation",
+        "effect": "Recommended for Tank Clash Lane"
+      },
+      {
+        "slot": "Spell",
+        "rune": "Flash",
+        "effect": "Adjust Purify/Execute based on enemy dive."
+      }
+    ],
     "laning": "Trade on your power spike levels (2/4). Call jungler for dive only when enemy flash is down.",
     "teamfight": "Engage on enemy carry when your team has follow-up. Body-block skillshots for your marksman.",
     "highRank": "Wuyan sits at Tier B globally (50.8% WR). In high rank, pick only into favorable matchups or when you have a dedicated pocket pick.",

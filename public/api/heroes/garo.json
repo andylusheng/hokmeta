@@ -110,7 +110,7 @@
     "Garo is a Medium Marksman (Farm Lane) on Honor of Kings Global. Camp HOK ranks them Tier S with 52.9% win rate and 1.3% pick rate as of 2026-06-05.",
     "Best build path: Sparkforged Dagger → Boots of Dexterity → Bloodweeper → Eternity Blade → Daybreaker's Virtue → Sunchaser.",
     "Run Dominator for stats that match Garo's Marksman kit. Take Haste & Flash — swap to Purify against heavy CC or Smite when jungling.",
-    "Standard trade: Enchanted Arrows → Silent Arrow → Sphere of Purity → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "Standard trade: Enchanted Arrows → Silent Arrow → Sphere of Purity → weave basic attacks. Weave basic attacks between skill casts for passive value.",
     "Laning: Last-hit safely until first core item. Ping jungler for river vision; never face-check brush without minion cover.",
     "Teamfight: Position behind frontline; attack closest safe target. Join fight only after enemy dive cooldowns are used.",
     "Garo excels into Nakoruru, Xuance, Li Bai. Avoid blind picking into Lapulapu, Bai Qi without team peel.",
@@ -640,9 +640,60 @@
   ],
   "guide": {
     "overview": "Garo is a Medium Marksman (Farm Lane) on Honor of Kings Global. Camp HOK ranks them Tier S with 52.9% win rate and 1.3% pick rate as of 2026-06-05.",
+    "hook": "Garo: Deals double damage to shields with Basic Attacks and skills.",
     "bestBuild": "Rush Sparkforged Dagger, Boots of Dexterity, Bloodweeper, then complete Eternity Blade, Daybreaker's Virtue, Sunchaser. Use preset tabs for jungle, clash, or CN-style paths when draft requires it.",
     "arcanaSpells": "Run Dominator for stats that match Garo's Marksman kit. Take Haste & Flash — swap to Purify against heavy CC or Smite when jungling.",
-    "combo": "Standard trade: Enchanted Arrows → Silent Arrow → Sphere of Purity → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "combo": "Standard trade: Enchanted Arrows → Silent Arrow → Sphere of Purity → weave basic attacks. Weave basic attacks between skill casts for passive value.",
+    "skillOrder": {
+      "priority": "Skill 1 → Skill 2 → Sphere of Purity (max Skill 1 first)",
+      "reason": "Enchanted Arrows is your lane trade tool. Silent Arrow second. Sphere of Purity whenever available."
+    },
+    "combos": [
+      {
+        "id": "standard",
+        "name": "Standard trade",
+        "steps": "Enchanted Arrows → Silent Arrow → Sphere of Purity → weave basic attacks",
+        "when": "Farm Lane skirmish or objective fight"
+      }
+    ],
+    "itemNotes": [
+      {
+        "slot": 1,
+        "why": "Chain lightning BA"
+      },
+      {
+        "slot": 2,
+        "why": "Boosts ASPD"
+      },
+      {
+        "slot": 3,
+        "why": "Physical Lifesteal"
+      },
+      {
+        "slot": 4,
+        "why": "High crit damage"
+      },
+      {
+        "slot": 5,
+        "why": "Great for marksmen"
+      },
+      {
+        "slot": 6,
+        "why": "Boosts attack range"
+      }
+    ],
+    "arcanaRows": [
+      {
+        "slot": "Primary",
+        "rune": "Dominator",
+        "effect": "Recommended for Marksman Farm Lane"
+      },
+      {
+        "slot": "Spell",
+        "rune": "Haste / Flash",
+        "effect": "Adjust Purify/Execute based on enemy dive."
+      }
+    ],
     "laning": "Last-hit safely until first core item. Ping jungler for river vision; never face-check brush without minion cover.",
     "teamfight": "Position behind frontline; attack closest safe target. Join fight only after enemy dive cooldowns are used.",
     "highRank": "Garo is a Tier S staple in high-elo (Diamond+) on the international server — worth mastering for climb. Pick rate 1.3% — frequently seen in ranked; learn the matchup even if you do not main Garo. Camp data shows above-average win rate — prioritize when not hard-countered in draft.",

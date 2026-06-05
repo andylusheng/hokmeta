@@ -110,7 +110,7 @@
     "Zilong is a Medium Assassin (Jungling) on Honor of Kings Global. Camp HOK ranks them Tier B with 52.7% win rate and 0.6% pick rate as of 2026-06-05.",
     "Best build path: Rapacious Bite → Boots of Resistance → Axe of Torment → Master Sword → Pure Sky → Eternity Blade.",
     "Run Mutation for stats that match Zilong's Assassin kit. Take Smite — swap to Purify against heavy CC or Smite when jungling.",
-    "Standard trade: Thunderbreaker → Stormpiercer → Skysplitter → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "Standard trade: Thunderbreaker → Stormpiercer → Skysplitter → weave basic attacks. Weave basic attacks between skill casts for passive value.",
     "Laning: Clear to level four, then gank the lane with the least escape. Secure Tyrant when your bot or mid has crash wave.",
     "Teamfight: Wait for CC from your team, then dive carry with full combo. Exit with reset or flash if focus fired.",
     "Zilong excels into Lapulapu, Ata, Sakeer. Avoid blind picking into Guiguzi, Ziya, Fang without team peel.",
@@ -390,9 +390,66 @@
   ],
   "guide": {
     "overview": "Zilong is a Medium Assassin (Jungling) on Honor of Kings Global. Camp HOK ranks them Tier B with 52.7% win rate and 0.6% pick rate as of 2026-06-05.",
+    "hook": "Zilong: The lower his Health, the greater his damage reduction and skills.",
     "bestBuild": "Rush Rapacious Bite, Boots of Resistance, Axe of Torment, then complete Master Sword, Pure Sky, Eternity Blade. Use preset tabs for jungle, clash, or CN-style paths when draft requires it.",
     "arcanaSpells": "Run Mutation for stats that match Zilong's Assassin kit. Take Smite — swap to Purify against heavy CC or Smite when jungling.",
-    "combo": "Standard trade: Thunderbreaker → Stormpiercer → Skysplitter → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "combo": "Standard trade: Thunderbreaker → Stormpiercer → Skysplitter → weave basic attacks. Weave basic attacks between skill casts for passive value.",
+    "skillOrder": {
+      "priority": "Skill 2 → Skill 1 → Skysplitter (max Skill 2 first)",
+      "reason": "Stormpiercer provides mobility or stick—max first. Thunderbreaker second for damage. Skysplitter on every level."
+    },
+    "combos": [
+      {
+        "id": "standard",
+        "name": "Standard trade",
+        "steps": "Thunderbreaker → Stormpiercer → Skysplitter → weave basic attacks",
+        "when": "Jungling skirmish or objective fight"
+      },
+      {
+        "id": "all-in",
+        "name": "All-in",
+        "steps": "Skysplitter after full rotation when Flash is down",
+        "when": "Gank or backline dive with team CC"
+      }
+    ],
+    "itemNotes": [
+      {
+        "slot": 1,
+        "why": "Monster kills boost PATK"
+      },
+      {
+        "slot": 2,
+        "why": "Shortens CC"
+      },
+      {
+        "slot": 3,
+        "why": "Anti-squishy"
+      },
+      {
+        "slot": 4,
+        "why": "Enhances BA"
+      },
+      {
+        "slot": 5,
+        "why": "Temp. damage reduction"
+      },
+      {
+        "slot": 6,
+        "why": "High crit damage"
+      }
+    ],
+    "arcanaRows": [
+      {
+        "slot": "Primary",
+        "rune": "Mutation",
+        "effect": "Recommended for Assassin Jungling"
+      },
+      {
+        "slot": "Spell",
+        "rune": "Smite",
+        "effect": "Adjust Purify/Execute based on enemy dive."
+      }
+    ],
     "laning": "Clear to level four, then gank the lane with the least escape. Secure Tyrant when your bot or mid has crash wave.",
     "teamfight": "Wait for CC from your team, then dive carry with full combo. Exit with reset or flash if focus fired.",
     "highRank": "Zilong sits at Tier B globally (52.7% WR). In high rank, pick only into favorable matchups or when you have a dedicated pocket pick. Camp data shows above-average win rate — prioritize when not hard-countered in draft.",

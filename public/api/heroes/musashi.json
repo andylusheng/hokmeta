@@ -108,10 +108,10 @@
   "tips": [
     "Musashi is a Medium Assassin (Jungling) on Honor of Kings Global. Camp HOK ranks them Tier A with 50.7% win rate and 1.1% pick rate as of 2026-06-05.",
     "Best build path: Rapacious Bite → Boots of Resistance → Axe of Torment → Frostscar's Embrace → Succubus Cloak → Cuirass of Savagery.",
-    "Run Mutation for stats that match Musashi's Assassin kit. Take Smite — swap to Purify against heavy CC or Smite when jungling.",
-    "Standard trade: Illuminating Slash → Extreme Speed → Duel to the Death → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
-    "Laning: Clear to level four, then gank the lane with the least escape. Secure Tyrant when your bot or mid has crash wave.",
-    "Teamfight: Wait for CC from your team, then dive carry with full combo. Exit with reset or flash if focus fired.",
+    "Mutation arcana for assassin burst on Vigor autos. Smite standard; Purify vs heavy CC.",
+    "Gank: Extreme Speed → AA (2× Vigor) → Illuminating Slash → Duel to the Death → chase.",
+    "Laning: Full clear to level four with Vigor management—never gank at half health. Secure Tyrant when bot/mid has crash wave; prioritize the lane without Flash.",
+    "Teamfight: Wait for hard CC, then Duel to the Death the carry. Use Illuminating Slash to block key projectiles before diving. Exit with Skill 2 if anti-heal does not secure the kill.",
     "Musashi excels into Diaochan, Luna, Shangguan. Avoid blind picking into Dyadia, Sun Bin without team peel.",
     "Musashi is a viable Tier A pick in high rank with 50.7% win rate — strong in one-trick hands or as a counter-pick. Pick rate 1.1% — frequently seen in ranked; learn the matchup even if you do not main Musashi."
   ],
@@ -689,11 +689,74 @@
   ],
   "guide": {
     "overview": "Musashi is a Medium Assassin (Jungling) on Honor of Kings Global. Camp HOK ranks them Tier A with 50.7% win rate and 1.1% pick rate as of 2026-06-05.",
-    "bestBuild": "Rush Rapacious Bite, Boots of Resistance, Axe of Torment, then complete Frostscar's Embrace, Succubus Cloak, Cuirass of Savagery. Use preset tabs for jungle, clash, or CN-style paths when draft requires it.",
-    "arcanaSpells": "Run Mutation for stats that match Musashi's Assassin kit. Take Smite — swap to Purify against heavy CC or Smite when jungling.",
-    "combo": "Standard trade: Illuminating Slash → Extreme Speed → Duel to the Death → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
-    "laning": "Clear to level four, then gank the lane with the least escape. Secure Tyrant when your bot or mid has crash wave.",
-    "teamfight": "Wait for CC from your team, then dive carry with full combo. Exit with reset or flash if focus fired.",
+    "hook": "Dual-blade jungler who stacks Vigor with skills, then cashes it in on enhanced basic attacks for burst, slow, and kill pressure.",
+    "bestBuild": "Jungle: Rapacious Bite → Boots of Resistance → Axe of Torment → Frostscar's Embrace → Succubus Cloak → Cuirass of Savagery. Skill 2 max first for gank tempo.",
+    "arcanaSpells": "Mutation arcana for assassin burst on Vigor autos. Smite standard; Purify vs heavy CC.",
+    "combo": "Gank: Extreme Speed → AA (2× Vigor) → Illuminating Slash → Duel to the Death → chase.",
+    "skillOrder": {
+      "priority": "Skill 2 → Skill 1 → Ultimate (max Skill 2 first)",
+      "reason": "Extreme Speed is your gap-close, shield, and trade tool—max it first for safer ganks. Illuminating Slash second for range, wave clear, and projectile block. Take Ultimate whenever available."
+    },
+    "combos": [
+      {
+        "id": "gank",
+        "name": "Lv4 river gank",
+        "steps": "Skill 2 (dash) → AA with 2× Vigor → Skill 1 → Ultimate → chase with autos",
+        "when": "Enemy flash down; crash wave with laner first"
+      },
+      {
+        "id": "burst",
+        "name": "Carry delete",
+        "steps": "Skill 1 (line) → Skill 2 → AA (Vigor slow) → Ultimate → AA resets",
+        "when": "After ally CC; target has no cleanse"
+      },
+      {
+        "id": "escape",
+        "name": "Disengage",
+        "steps": "Skill 1 (block projectiles) → Skill 2 out → jungle camp for Vigor",
+        "when": "Dive failed or Dyadia/Sun Bin peel arrives"
+      }
+    ],
+    "itemNotes": [
+      {
+        "slot": 1,
+        "why": "Rapacious Bite — jungle core; camp stacks boost PATK for faster clears and duels."
+      },
+      {
+        "slot": 2,
+        "why": "Boots of Resistance — CC reduction keeps you casting through peel attempts."
+      },
+      {
+        "slot": 3,
+        "why": "Axe of Torment — anti-squishy spike once Smite levels are online."
+      },
+      {
+        "slot": 4,
+        "why": "Frostscar's Embrace — slows on enhanced autos stick to fleeing carries."
+      },
+      {
+        "slot": 5,
+        "why": "Succubus Cloak — magic shield vs burst mages during dive windows."
+      },
+      {
+        "slot": 6,
+        "why": "Cuirass of Savagery — late bruiser item to survive focus after assassination."
+      }
+    ],
+    "arcanaRows": [
+      {
+        "slot": "Set",
+        "rune": "Mutation",
+        "effect": "Assassin scaling for Vigor-enhanced basic attacks and burst windows."
+      },
+      {
+        "slot": "Spell",
+        "rune": "Smite",
+        "effect": "Standard jungle clear; swap Purify vs heavy hard-CC drafts."
+      }
+    ],
+    "laning": "Full clear to level four with Vigor management—never gank at half health. Secure Tyrant when bot/mid has crash wave; prioritize the lane without Flash.",
+    "teamfight": "Wait for hard CC, then Duel to the Death the carry. Use Illuminating Slash to block key projectiles before diving. Exit with Skill 2 if anti-heal does not secure the kill.",
     "highRank": "Musashi is a viable Tier A pick in high rank with 50.7% win rate — strong in one-trick hands or as a counter-pick. Pick rate 1.1% — frequently seen in ranked; learn the matchup even if you do not main Musashi.",
     "comparisons": [
       "Musashi vs Wukong (Assassin, Tier S): Wukong is 1.3% pick / 49.7% WR. Musashi has +1.0% WR vs Wukong in Camp data. Choose Musashi when you need Jungling identity; choose Wukong for Jungling comfort.",

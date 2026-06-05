@@ -6,14 +6,17 @@ import {
   getKeywordsForHero,
 } from '@/lib/data';
 import { buildMetadata, defaultTitle } from '@/lib/seo';
+import { heroPageTitle } from '@/lib/meta-season';
+import { getFeaturedFaqs } from '@/lib/hero-playbook';
 import { Breadcrumb } from '@/components/Breadcrumb';
-import { HeroAvatar } from '@/components/HeroAvatar';
-import { HeroStatTable } from '@/components/HeroStatTable';
+import { HeroSummary } from '@/components/HeroSummary';
 import { BuildBlock } from '@/components/BuildBlock';
 import { SkillBlock } from '@/components/SkillBlock';
-import { ArcanaBlock } from '@/components/ArcanaBlock';
+import { ArcanaTable } from '@/components/ArcanaTable';
 import { CounterBlock } from '@/components/CounterBlock';
 import { HeroGuideBlock } from '@/components/HeroGuideBlock';
+import { SkillOrderBlock } from '@/components/SkillOrderBlock';
+import { ComboListBlock } from '@/components/ComboListBlock';
 import { FaqAccordion } from '@/components/FaqAccordion';
 import { PageTOC } from '@/components/PageTOC';
 import { RelatedSearchBox } from '@/components/RelatedSearchBox';
@@ -39,8 +42,8 @@ export function generateMetadata({
   if (!hero) return {};
   const kw = getKeywordsForHero(hero.slug);
   return buildMetadata({
-    title: defaultTitle(`${hero.name} Build, Counters & Guide`),
-    description: `${hero.name} ${hero.role} guide — best build, arcana, combos, counters, high-rank tips, hero comparisons, and ${hero.faqs.length}+ FAQs (Camp HOK ${hero.dataUpdated ?? 'meta'}).`,
+    title: defaultTitle(heroPageTitle(hero.name)),
+    description: `${hero.name} ${hero.lane ?? hero.role} guide — best build, skill order, combos, counters, and arcana for Honor of Kings Global (${hero.dataUpdated ?? 'meta'}).`,
     path: `/hero/${hero.slug}`,
     ogImage: hero.avatar,
     keywords: kw.length ? kw : undefined,
@@ -56,6 +59,7 @@ export default function HeroPage({
   if (!hero) notFound();
 
   const keywords = getKeywordsForHero(hero.slug);
+  const featuredFaqs = getFeaturedFaqs(hero, 5);
 
   return (
     <div className="container-page">
@@ -68,13 +72,11 @@ export default function HeroPage({
       />
       <JsonLd
         data={faqPageSchema(
-          hero.faqs.map((f) => ({ question: f.question, answer: f.answer }))
+          featuredFaqs.map((f) => ({ question: f.question, answer: f.answer }))
         )}
       />
       <JsonLd data={heroGameSchema(hero, `/hero/${hero.slug}`)} />
-      <JsonLd
-        data={heroArticleSchema(hero, `/hero/${hero.slug}`)}
-      />
+      <JsonLd data={heroArticleSchema(hero, `/hero/${hero.slug}`)} />
 
       <Breadcrumb
         items={[
@@ -86,44 +88,35 @@ export default function HeroPage({
 
       <div className="grid gap-8 lg:grid-cols-[1fr_220px]">
         <article>
-          <header id="overview" className="scroll-mt-20 mb-8 flex flex-col gap-4 sm:flex-row sm:items-center">
-            <HeroAvatar hero={hero} size={96} priority />
-            <div>
-              <h1 className="text-3xl font-bold text-white">{hero.name}</h1>
-              <p className="text-gray-400">
-                {hero.role} · Tier {hero.tier} · {hero.difficulty}
-              </p>
-            </div>
-          </header>
-
-          <DataAttribution
-            subject={hero.name}
-            dataSource={hero.dataSource}
-            dataUpdated={hero.dataUpdated}
-          />
-
-          <section className="card mb-8">
-            <HeroStatTable hero={hero} />
-          </section>
-
-          <section id="skills" className="scroll-mt-20 mb-8">
-            <h2 className="section-title">Skills</h2>
-            <SkillBlock hero={hero} />
-          </section>
+          <HeroSummary hero={hero} />
 
           <section id="build" className="scroll-mt-20 mb-8">
-            <h2 className="section-title">Build</h2>
+            <h2 className="section-title">Best Build for {hero.name}</h2>
+            <p className="mb-4 text-sm text-gray-400">
+              End-game item order with gold costs and slot notes. Purchase path
+              may differ in-match.
+            </p>
             <BuildBlock hero={hero} />
           </section>
 
           <section id="arcana" className="scroll-mt-20 mb-8">
-            <h2 className="section-title">Arcana &amp; Spells</h2>
-            <ArcanaBlock hero={hero} />
+            <h2 className="section-title">Best Arcana &amp; Spells</h2>
+            <ArcanaTable hero={hero} />
           </section>
 
-          <section id="guide" className="scroll-mt-20 mb-8">
-            <h2 className="section-title">{hero.name} Guide</h2>
-            <HeroGuideBlock hero={hero} />
+          <section id="skill-order" className="scroll-mt-20 mb-8">
+            <h2 className="section-title">Skill Order</h2>
+            <SkillOrderBlock hero={hero} />
+          </section>
+
+          <section id="combos" className="scroll-mt-20 mb-8">
+            <h2 className="section-title">Combos</h2>
+            <ComboListBlock hero={hero} />
+          </section>
+
+          <section id="skills" className="scroll-mt-20 mb-8">
+            <h2 className="section-title">Abilities</h2>
+            <SkillBlock hero={hero} />
           </section>
 
           <section id="counters" className="scroll-mt-20 mb-8">
@@ -131,33 +124,21 @@ export default function HeroPage({
             <CounterBlock hero={hero} />
           </section>
 
-          <section id="patch-history" className="scroll-mt-20 mb-8">
-            <h2 className="section-title">Patch History</h2>
-            <ul className="space-y-2">
-              {hero.patchHistory.map((p) => (
-                <li
-                  key={p.version}
-                  className="rounded border border-hok-border px-3 py-2 text-sm text-gray-300"
-                >
-                  <strong className="text-hok-gold">{p.version}</strong>: {p.change}
-                </li>
-              ))}
-            </ul>
+          <section id="guide" className="scroll-mt-20 mb-8">
+            <h2 className="section-title">Playstyle &amp; Ranked Tips</h2>
+            <HeroGuideBlock hero={hero} />
           </section>
 
           <section id="faq" className="scroll-mt-20 mb-8">
             <h2 className="section-title">FAQ</h2>
-            <FaqAccordion faqs={hero.faqs} />
+            <FaqAccordion faqs={featuredFaqs} />
           </section>
 
-          <section id="meta-analysis" className="scroll-mt-20 mb-8">
-            <h2 className="section-title">Meta Analysis</h2>
-            <div className="card space-y-3 text-sm leading-relaxed text-gray-300">
-              {hero.metaAnalysis.map((line) => (
-                <p key={line}>{line}</p>
-              ))}
-            </div>
-          </section>
+          <DataAttribution
+            subject={hero.name}
+            dataSource={hero.dataSource}
+            dataUpdated={hero.dataUpdated}
+          />
 
           <RelatedSearchBox terms={keywords} />
         </article>

@@ -108,7 +108,7 @@
     "Da Qiao is a Easy Support (Roaming) on Honor of Kings Global. Camp HOK ranks them Tier A with 49.1% win rate and 0.9% pick rate as of 2026-06-05.",
     "Best build path: Boots of Resistance → Frozen Breath → Breakthrough Robe → Venomous Staff → Mask of Agony.",
     "Run Nightmare for stats that match Da Qiao's Support kit. Take Heal — swap to Purify against heavy CC or Smite when jungling.",
-    "Standard trade: Leaping Koi Tide → Sea of Fate → Severing Surge → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "Standard trade: Leaping Koi Tide → Sea of Fate → Severing Surge → weave basic attacks. Weave basic attacks between skill casts for passive value.",
     "Laning: Help marksman crash wave, then rotate mid for picks. Return before Tyrant if your carry has no escape.",
     "Teamfight: Peel carry first, then look for pick on out-of-position enemies. Ward Tyrant 30s before spawn.",
     "Da Qiao excels into Luna, Mozi. Avoid blind picking into Arke, Han Xin without team peel.",
@@ -137,7 +137,7 @@
     {
       "id": "faq-best-build",
       "question": "What is the best Da Qiao build?",
-      "answer": "Core item path: Boots of Resistance, Frozen Breath, Breakthrough Robe, Venomous Staff, Mask of Agony, nightmare. Run Nightmare arcana with Heal. Switch to alternate build presets on this page for jungle, clash, or late-game setups."
+      "answer": "Core item path: Boots of Resistance, Frozen Breath, Breakthrough Robe, Venomous Staff, Mask of Agony. Run Nightmare arcana with Heal. Switch to alternate build presets on this page for jungle, clash, or late-game setups."
     },
     {
       "id": "faq-counter",
@@ -488,9 +488,56 @@
   ],
   "guide": {
     "overview": "Da Qiao is a Easy Support (Roaming) on Honor of Kings Global. Camp HOK ranks them Tier A with 49.1% win rate and 0.9% pick rate as of 2026-06-05.",
-    "bestBuild": "Rush Boots of Resistance, Frozen Breath, Breakthrough Robe, then complete Venomous Staff, Mask of Agony, nightmare. Use preset tabs for jungle, clash, or CN-style paths when draft requires it.",
+    "hook": "Da Qiao: Grants a Movement Speed boost to herself and a nearby teammate.",
+    "bestBuild": "Rush Boots of Resistance, Frozen Breath, Breakthrough Robe, then complete Venomous Staff, Mask of Agony. Use preset tabs for jungle, clash, or CN-style paths when draft requires it.",
     "arcanaSpells": "Run Nightmare for stats that match Da Qiao's Support kit. Take Heal — swap to Purify against heavy CC or Smite when jungling.",
-    "combo": "Standard trade: Leaping Koi Tide → Sea of Fate → Severing Surge → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "combo": "Standard trade: Leaping Koi Tide → Sea of Fate → Severing Surge → weave basic attacks. Weave basic attacks between skill casts for passive value.",
+    "skillOrder": {
+      "priority": "Skill 2 → Skill 1 → Severing Surge (max Skill 2 first)",
+      "reason": "Max primary utility/damage skill first, then Leaping Koi Tide, and Severing Surge on cooldown."
+    },
+    "combos": [
+      {
+        "id": "standard",
+        "name": "Standard trade",
+        "steps": "Leaping Koi Tide → Sea of Fate → Severing Surge → weave basic attacks",
+        "when": "Roaming skirmish or objective fight"
+      }
+    ],
+    "itemNotes": [
+      {
+        "slot": 1,
+        "why": "Shortens CC"
+      },
+      {
+        "slot": 2,
+        "why": "Slows on hit"
+      },
+      {
+        "slot": 3,
+        "why": "Converts Health into M. Pierce"
+      },
+      {
+        "slot": 4,
+        "why": "Lowers Health regen"
+      },
+      {
+        "slot": 5,
+        "why": "Boosts skill damage"
+      }
+    ],
+    "arcanaRows": [
+      {
+        "slot": "Primary",
+        "rune": "Nightmare",
+        "effect": "Recommended for Support Roaming"
+      },
+      {
+        "slot": "Spell",
+        "rune": "Heal",
+        "effect": "Adjust Purify/Execute based on enemy dive."
+      }
+    ],
     "laning": "Help marksman crash wave, then rotate mid for picks. Return before Tyrant if your carry has no escape.",
     "teamfight": "Peel carry first, then look for pick on out-of-position enemies. Ward Tyrant 30s before spawn.",
     "highRank": "Da Qiao is a viable Tier A pick in high rank with 49.1% win rate — strong in one-trick hands or as a counter-pick. Pick rate 0.9% — frequently seen in ranked; learn the matchup even if you do not main Da Qiao.",

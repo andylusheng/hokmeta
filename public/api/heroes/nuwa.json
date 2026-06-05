@@ -110,7 +110,7 @@
     "Nuwa is a Medium Mage (Mid Lane) on Honor of Kings Global. Camp HOK ranks them Tier A with 51.5% win rate and 0.8% pick rate as of 2026-06-05.",
     "Best build path: Boots of the Arcane → Scepter of Reverberation → Savant's Wrath → Insatiable Tome → Void Staff.",
     "Run Nightmare for stats that match Nuwa's Mage kit. Take Flash — swap to Purify against heavy CC or Smite when jungling.",
-    "Standard trade: Divine Glow - Creation → Divine Glow - Coalescence → Divine Glow - Emergence → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "Standard trade: Divine Glow - Creation → Divine Glow - Coalescence → Divine Glow - Emergence → weave basic attacks. Weave basic attacks between skill casts for passive value.",
     "Laning: Control first wave without taking free poke. Roam after pushing wave 2–4 to side lanes with your jungler.",
     "Teamfight: Poke from max range before objective. Save hard CC for enemy dive or your carry peel window.",
     "Nuwa excels into Mulan, Nakoruru, Pei. Avoid blind picking into Liu Bei, Mayene, Mulan without team peel.",
@@ -139,7 +139,7 @@
     {
       "id": "faq-best-build",
       "question": "What is the best Nuwa build?",
-      "answer": "Core item path: Boots of the Arcane, Scepter of Reverberation, Savant's Wrath, Insatiable Tome, tome of wisdom, Void Staff. Run Nightmare arcana with Flash. Switch to alternate build presets on this page for jungle, clash, or late-game setups."
+      "answer": "Core item path: Boots of the Arcane, Scepter of Reverberation, Savant's Wrath, Insatiable Tome, Void Staff. Run Nightmare arcana with Flash. Switch to alternate build presets on this page for jungle, clash, or late-game setups."
     },
     {
       "id": "faq-counter",
@@ -690,9 +690,56 @@
   ],
   "guide": {
     "overview": "Nuwa is a Medium Mage (Mid Lane) on Honor of Kings Global. Camp HOK ranks them Tier A with 51.5% win rate and 0.8% pick rate as of 2026-06-05.",
-    "bestBuild": "Rush Boots of the Arcane, Scepter of Reverberation, Savant's Wrath, then complete Insatiable Tome, tome of wisdom, Void Staff. Use preset tabs for jungle, clash, or CN-style paths when draft requires it.",
+    "hook": "Nuwa: Gains enhanced vision and range when leveling up.",
+    "bestBuild": "Rush Boots of the Arcane, Scepter of Reverberation, Savant's Wrath, then complete Insatiable Tome, Void Staff. Use preset tabs for jungle, clash, or CN-style paths when draft requires it.",
     "arcanaSpells": "Run Nightmare for stats that match Nuwa's Mage kit. Take Flash — swap to Purify against heavy CC or Smite when jungling.",
-    "combo": "Standard trade: Divine Glow - Creation → Divine Glow - Coalescence → Divine Glow - Emergence → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "combo": "Standard trade: Divine Glow - Creation → Divine Glow - Coalescence → Divine Glow - Emergence → weave basic attacks. Weave basic attacks between skill casts for passive value.",
+    "skillOrder": {
+      "priority": "Skill 2 → Skill 1 → Divine Glow - Emergence (max Skill 2 first)",
+      "reason": "Max primary utility/damage skill first, then Divine Glow - Creation, and Divine Glow - Emergence on cooldown."
+    },
+    "combos": [
+      {
+        "id": "standard",
+        "name": "Standard trade",
+        "steps": "Divine Glow - Creation → Divine Glow - Coalescence → Divine Glow - Emergence → weave basic attacks",
+        "when": "Mid Lane skirmish or objective fight"
+      }
+    ],
+    "itemNotes": [
+      {
+        "slot": 1,
+        "why": "Magical Pierce"
+      },
+      {
+        "slot": 2,
+        "why": "Skill hits trigger explosions"
+      },
+      {
+        "slot": 3,
+        "why": "Greatly boosts MATK"
+      },
+      {
+        "slot": 4,
+        "why": "Magical Lifesteal"
+      },
+      {
+        "slot": 5,
+        "why": "Anti-tank"
+      }
+    ],
+    "arcanaRows": [
+      {
+        "slot": "Primary",
+        "rune": "Nightmare",
+        "effect": "Recommended for Mage Mid Lane"
+      },
+      {
+        "slot": "Spell",
+        "rune": "Flash",
+        "effect": "Adjust Purify/Execute based on enemy dive."
+      }
+    ],
     "laning": "Control first wave without taking free poke. Roam after pushing wave 2–4 to side lanes with your jungler.",
     "teamfight": "Poke from max range before objective. Save hard CC for enemy dive or your carry peel window.",
     "highRank": "Nuwa is a viable Tier A pick in high rank with 51.5% win rate — strong in one-trick hands or as a counter-pick. Pick rate 0.8% — frequently seen in ranked; learn the matchup even if you do not main Nuwa.",

@@ -110,7 +110,7 @@
     "Yao is a Medium Assassin (Jungling) on Honor of Kings Global. Camp HOK ranks them Tier B with 51.4% win rate and 0.5% pick rate as of 2026-06-05.",
     "Best build path: Rapacious Bite → Boots of Resistance → Axe of Torment → Spikemail → Starbreaker.",
     "Run Mutation for stats that match Yao's Assassin kit. Take Smite — swap to Purify against heavy CC or Smite when jungling.",
-    "Standard trade: Starlight Slice → Starburn (Yao) → Return to Dust → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "Standard trade: Starlight Slice → Starburn (Yao) → Return to Dust → weave basic attacks. Weave basic attacks between skill casts for passive value.",
     "Laning: Clear to level four, then gank the lane with the least escape. Secure Tyrant when your bot or mid has crash wave.",
     "Teamfight: Wait for CC from your team, then dive carry with full combo. Exit with reset or flash if focus fired.",
     "Yao excels into Angela, Mi Yue, Ziya. Avoid blind picking into Hou Yi, Daji, Angela without team peel.",
@@ -139,7 +139,7 @@
     {
       "id": "faq-best-build",
       "question": "What is the best Yao build?",
-      "answer": "Core item path: Rapacious Bite, Boots of Resistance, Axe of Torment, Spikemail, siege breaker, Starbreaker. Run Mutation arcana with Smite. Switch to alternate build presets on this page for jungle, clash, or late-game setups."
+      "answer": "Core item path: Rapacious Bite, Boots of Resistance, Axe of Torment, Spikemail, Starbreaker. Run Mutation arcana with Smite. Switch to alternate build presets on this page for jungle, clash, or late-game setups."
     },
     {
       "id": "faq-counter",
@@ -640,9 +640,62 @@
   ],
   "guide": {
     "overview": "Yao is a Medium Assassin (Jungling) on Honor of Kings Global. Camp HOK ranks them Tier B with 51.4% win rate and 0.5% pick rate as of 2026-06-05.",
-    "bestBuild": "Rush Rapacious Bite, Boots of Resistance, Axe of Torment, then complete Spikemail, siege breaker, Starbreaker. Use preset tabs for jungle, clash, or CN-style paths when draft requires it.",
+    "hook": "Yao: Recovers Health when landing skill hits.",
+    "bestBuild": "Rush Rapacious Bite, Boots of Resistance, Axe of Torment, then complete Spikemail, Starbreaker. Use preset tabs for jungle, clash, or CN-style paths when draft requires it.",
     "arcanaSpells": "Run Mutation for stats that match Yao's Assassin kit. Take Smite — swap to Purify against heavy CC or Smite when jungling.",
-    "combo": "Standard trade: Starlight Slice → Starburn (Yao) → Return to Dust → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "combo": "Standard trade: Starlight Slice → Starburn (Yao) → Return to Dust → weave basic attacks. Weave basic attacks between skill casts for passive value.",
+    "skillOrder": {
+      "priority": "Skill 2 → Skill 1 → Return to Dust (max Skill 2 first)",
+      "reason": "Starburn (Yao) provides mobility or stick—max first. Starlight Slice second for damage. Return to Dust on every level."
+    },
+    "combos": [
+      {
+        "id": "standard",
+        "name": "Standard trade",
+        "steps": "Starlight Slice → Starburn (Yao) → Return to Dust → weave basic attacks",
+        "when": "Jungling skirmish or objective fight"
+      },
+      {
+        "id": "all-in",
+        "name": "All-in",
+        "steps": "Return to Dust after full rotation when Flash is down",
+        "when": "Gank or backline dive with team CC"
+      }
+    ],
+    "itemNotes": [
+      {
+        "slot": 1,
+        "why": "Monster kills boost PATK"
+      },
+      {
+        "slot": 2,
+        "why": "Shortens CC"
+      },
+      {
+        "slot": 3,
+        "why": "Anti-squishy"
+      },
+      {
+        "slot": 4,
+        "why": "Reflects damage"
+      },
+      {
+        "slot": 5,
+        "why": "Anti-tank"
+      }
+    ],
+    "arcanaRows": [
+      {
+        "slot": "Primary",
+        "rune": "Mutation",
+        "effect": "Recommended for Assassin Jungling"
+      },
+      {
+        "slot": "Spell",
+        "rune": "Smite",
+        "effect": "Adjust Purify/Execute based on enemy dive."
+      }
+    ],
     "laning": "Clear to level four, then gank the lane with the least escape. Secure Tyrant when your bot or mid has crash wave.",
     "teamfight": "Wait for CC from your team, then dive carry with full combo. Exit with reset or flash if focus fired.",
     "highRank": "Yao sits at Tier B globally (51.4% WR). In high rank, pick only into favorable matchups or when you have a dedicated pocket pick.",

@@ -110,7 +110,7 @@
     "Dyadia is a Easy Support (Roaming) on Honor of Kings Global. Camp HOK ranks them Tier S with 48.1% win rate and 1.1% pick rate as of 2026-06-05.",
     "Best build path: Boots of the Arcane → Frozen Breath → Augur's Word → Venomous Staff → Mask of Agony.",
     "Run Fate for stats that match Dyadia's Support kit. Take Flash — swap to Purify against heavy CC or Smite when jungling.",
-    "Standard trade: Heartlink → Bitter Farewell → Destined Encounter → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "Standard trade: Heartlink → Bitter Farewell → Destined Encounter → weave basic attacks. Weave basic attacks between skill casts for passive value.",
     "Laning: Help marksman crash wave, then rotate mid for picks. Return before Tyrant if your carry has no escape.",
     "Teamfight: Peel carry first, then look for pick on out-of-position enemies. Ward Tyrant 30s before spawn.",
     "Dyadia excels into Dian Wei, Liu Bei, Musashi. Avoid blind picking into Wukong, Musashi, Ying without team peel.",
@@ -690,9 +690,56 @@
   ],
   "guide": {
     "overview": "Dyadia is a Easy Support (Roaming) on Honor of Kings Global. Camp HOK ranks them Tier S with 48.1% win rate and 1.1% pick rate as of 2026-06-05.",
+    "hook": "Dyadia: Enhances her next Basic Attack periodically to swing toward the enemy, dealing damage and knocking them back, then jumping back.",
     "bestBuild": "Rush Boots of the Arcane, Frozen Breath, Augur's Word, then complete Venomous Staff, Mask of Agony. Use preset tabs for jungle, clash, or CN-style paths when draft requires it.",
     "arcanaSpells": "Run Fate for stats that match Dyadia's Support kit. Take Flash — swap to Purify against heavy CC or Smite when jungling.",
-    "combo": "Standard trade: Heartlink → Bitter Farewell → Destined Encounter → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "combo": "Standard trade: Heartlink → Bitter Farewell → Destined Encounter → weave basic attacks. Weave basic attacks between skill casts for passive value.",
+    "skillOrder": {
+      "priority": "Skill 2 → Skill 1 → Destined Encounter (max Skill 2 first)",
+      "reason": "Max primary utility/damage skill first, then Heartlink, and Destined Encounter on cooldown."
+    },
+    "combos": [
+      {
+        "id": "standard",
+        "name": "Standard trade",
+        "steps": "Heartlink → Bitter Farewell → Destined Encounter → weave basic attacks",
+        "when": "Roaming skirmish or objective fight"
+      }
+    ],
+    "itemNotes": [
+      {
+        "slot": 1,
+        "why": "Magical Pierce"
+      },
+      {
+        "slot": 2,
+        "why": "Slows on hit"
+      },
+      {
+        "slot": 3,
+        "why": "Offense & defense"
+      },
+      {
+        "slot": 4,
+        "why": "Lowers Health regen"
+      },
+      {
+        "slot": 5,
+        "why": "Boosts skill damage"
+      }
+    ],
+    "arcanaRows": [
+      {
+        "slot": "Primary",
+        "rune": "Fate",
+        "effect": "Recommended for Support Roaming"
+      },
+      {
+        "slot": "Spell",
+        "rune": "Flash",
+        "effect": "Adjust Purify/Execute based on enemy dive."
+      }
+    ],
     "laning": "Help marksman crash wave, then rotate mid for picks. Return before Tyrant if your carry has no escape.",
     "teamfight": "Peel carry first, then look for pick on out-of-position enemies. Ward Tyrant 30s before spawn.",
     "highRank": "Dyadia is a Tier S staple in high-elo (Diamond+) on the international server — worth mastering for climb. Ban rate 1.1% — expect Dyadia to be removed in tryhard lobbies; have a backup in the same role. Below 49% global WR — high-rank players often avoid unless compensating for team comp.",

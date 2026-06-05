@@ -110,7 +110,7 @@
     "Zhang Fei is a Easy Tank (Roaming) on Honor of Kings Global. Camp HOK ranks them Tier S with 50.1% win rate and 1.2% pick rate as of 2026-06-05.",
     "Best build path: Boots of Resistance → Blazing Cape → Ominous Premonition → Eye of the Phoenix → Overlord's Platemail.",
     "Run Fate for stats that match Zhang Fei's Tank kit. Take Heal — swap to Purify against heavy CC or Smite when jungling.",
-    "Standard trade: Forbidden Domain → Leaping Savior → Unbridled Outburst → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "Standard trade: Forbidden Domain → Leaping Savior → Unbridled Outburst → weave basic attacks. Weave basic attacks between skill casts for passive value.",
     "Laning: Help marksman crash wave, then rotate mid for picks. Return before Tyrant if your carry has no escape.",
     "Teamfight: Engage on enemy carry when your team has follow-up. Body-block skillshots for your marksman.",
     "Zhang Fei excels into Arli, Consort Yu, Marco Polo. Avoid blind picking into Diaochan, Wukong, Musashi without team peel.",
@@ -540,9 +540,56 @@
   ],
   "guide": {
     "overview": "Zhang Fei is a Easy Tank (Roaming) on Honor of Kings Global. Camp HOK ranks them Tier S with 50.1% win rate and 1.2% pick rate as of 2026-06-05.",
+    "hook": "Zhang Fei: Human Form: Hits from Basic Attacks and skills grant madness.",
     "bestBuild": "Rush Boots of Resistance, Blazing Cape, Ominous Premonition, then complete Eye of the Phoenix, Overlord's Platemail. Use preset tabs for jungle, clash, or CN-style paths when draft requires it.",
     "arcanaSpells": "Run Fate for stats that match Zhang Fei's Tank kit. Take Heal — swap to Purify against heavy CC or Smite when jungling.",
-    "combo": "Standard trade: Forbidden Domain → Leaping Savior → Unbridled Outburst → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "combo": "Standard trade: Forbidden Domain → Leaping Savior → Unbridled Outburst → weave basic attacks. Weave basic attacks between skill casts for passive value.",
+    "skillOrder": {
+      "priority": "Skill 2 → Skill 1 → Unbridled Outburst (max Skill 2 first)",
+      "reason": "Max primary utility/damage skill first, then Forbidden Domain, and Unbridled Outburst on cooldown."
+    },
+    "combos": [
+      {
+        "id": "standard",
+        "name": "Standard trade",
+        "steps": "Forbidden Domain → Leaping Savior → Unbridled Outburst → weave basic attacks",
+        "when": "Roaming skirmish or objective fight"
+      }
+    ],
+    "itemNotes": [
+      {
+        "slot": 1,
+        "why": "Shortens CC"
+      },
+      {
+        "slot": 2,
+        "why": "Burns nearby enemies"
+      },
+      {
+        "slot": 3,
+        "why": "Slows attackers"
+      },
+      {
+        "slot": 4,
+        "why": "Boosts Health regen"
+      },
+      {
+        "slot": 5,
+        "why": "Extra Health"
+      }
+    ],
+    "arcanaRows": [
+      {
+        "slot": "Primary",
+        "rune": "Fate",
+        "effect": "Recommended for Tank Roaming"
+      },
+      {
+        "slot": "Spell",
+        "rune": "Heal",
+        "effect": "Adjust Purify/Execute based on enemy dive."
+      }
+    ],
     "laning": "Help marksman crash wave, then rotate mid for picks. Return before Tyrant if your carry has no escape.",
     "teamfight": "Engage on enemy carry when your team has follow-up. Body-block skillshots for your marksman.",
     "highRank": "Zhang Fei is a Tier S staple in high-elo (Diamond+) on the international server — worth mastering for climb. Pick rate 1.2% — frequently seen in ranked; learn the matchup even if you do not main Zhang Fei.",

@@ -110,7 +110,7 @@
     "Xuance is a Medium Assassin (Jungling) on Honor of Kings Global. Camp HOK ranks them Tier B with 52.3% win rate and 0.2% pick rate as of 2026-06-05.",
     "Best build path: Rapacious Bite → Boots of Dexterity → Axe of Torment → Master Sword → Bloodweeper → Shadow Ripper.",
     "Run Red for stats that match Xuance's Assassin kit. Take Smite — swap to Purify against heavy CC or Smite when jungling.",
-    "Standard trade: Flailing Sickles → Nightmare Hooks → Crimson Blur → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "Standard trade: Flailing Sickles → Nightmare Hooks → Crimson Blur → weave basic attacks. Weave basic attacks between skill casts for passive value.",
     "Laning: Clear to level four, then gank the lane with the least escape. Secure Tyrant when your bot or mid has crash wave.",
     "Teamfight: Wait for CC from your team, then dive carry with full combo. Exit with reset or flash if focus fired.",
     "Xuance excels into Lapulapu, Ata, Sakeer. Avoid blind picking into Daji, Diaochan, Gao without team peel.",
@@ -440,9 +440,66 @@
   ],
   "guide": {
     "overview": "Xuance is a Medium Assassin (Jungling) on Honor of Kings Global. Camp HOK ranks them Tier B with 52.3% win rate and 0.2% pick rate as of 2026-06-05.",
+    "hook": "Xuance: Deals extra damage to enemies at long range and slows them, while gaining a Movement Speed boost.",
     "bestBuild": "Rush Rapacious Bite, Boots of Dexterity, Axe of Torment, then complete Master Sword, Bloodweeper, Shadow Ripper. Use preset tabs for jungle, clash, or CN-style paths when draft requires it.",
     "arcanaSpells": "Run Red for stats that match Xuance's Assassin kit. Take Smite — swap to Purify against heavy CC or Smite when jungling.",
-    "combo": "Standard trade: Flailing Sickles → Nightmare Hooks → Crimson Blur → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "combo": "Standard trade: Flailing Sickles → Nightmare Hooks → Crimson Blur → weave basic attacks. Weave basic attacks between skill casts for passive value.",
+    "skillOrder": {
+      "priority": "Skill 2 → Skill 1 → Crimson Blur (max Skill 2 first)",
+      "reason": "Nightmare Hooks provides mobility or stick—max first. Flailing Sickles second for damage. Crimson Blur on every level."
+    },
+    "combos": [
+      {
+        "id": "standard",
+        "name": "Standard trade",
+        "steps": "Flailing Sickles → Nightmare Hooks → Crimson Blur → weave basic attacks",
+        "when": "Jungling skirmish or objective fight"
+      },
+      {
+        "id": "all-in",
+        "name": "All-in",
+        "steps": "Crimson Blur after full rotation when Flash is down",
+        "when": "Gank or backline dive with team CC"
+      }
+    ],
+    "itemNotes": [
+      {
+        "slot": 1,
+        "why": "Monster kills boost PATK"
+      },
+      {
+        "slot": 2,
+        "why": "Boosts ASPD"
+      },
+      {
+        "slot": 3,
+        "why": "Anti-squishy"
+      },
+      {
+        "slot": 4,
+        "why": "Enhances BA"
+      },
+      {
+        "slot": 5,
+        "why": "Physical Lifesteal"
+      },
+      {
+        "slot": 6,
+        "why": "Crits boost ASPD"
+      }
+    ],
+    "arcanaRows": [
+      {
+        "slot": "Primary",
+        "rune": "Red",
+        "effect": "Recommended for Assassin Jungling"
+      },
+      {
+        "slot": "Spell",
+        "rune": "Smite",
+        "effect": "Adjust Purify/Execute based on enemy dive."
+      }
+    ],
     "laning": "Clear to level four, then gank the lane with the least escape. Secure Tyrant when your bot or mid has crash wave.",
     "teamfight": "Wait for CC from your team, then dive carry with full combo. Exit with reset or flash if focus fired.",
     "highRank": "Xuance sits at Tier B globally (52.3% WR). In high rank, pick only into favorable matchups or when you have a dedicated pocket pick. Low pick rate 0.2% — niche in high rank; surprise value if you perfect the kit. Camp data shows above-average win rate — prioritize when not hard-countered in draft.",

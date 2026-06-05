@@ -110,7 +110,7 @@
     "Wukong is a Medium Assassin (Jungling) on Honor of Kings Global. Camp HOK ranks them Tier S with 49.7% win rate and 1.3% pick rate as of 2026-06-05.",
     "Best build path: Rapacious Bite → Boots of Dexterity → Eternity Blade → Shadow Ripper → Bloodweeper → Starbreaker.",
     "Run Dominator for stats that match Wukong's Assassin kit. Take Smite — swap to Purify against heavy CC or Smite when jungling.",
-    "Standard trade: Protective Shroud → Furious Advance → Golden Cudgel → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "Standard trade: Protective Shroud → Furious Advance → Golden Cudgel → weave basic attacks. Weave basic attacks between skill casts for passive value.",
     "Laning: Clear to level four, then gank the lane with the least escape. Secure Tyrant when your bot or mid has crash wave.",
     "Teamfight: Wait for CC from your team, then dive carry with full combo. Exit with reset or flash if focus fired.",
     "Wukong excels into Dun, Lian Po, Xiang Yu. Avoid blind picking into Agudo, Gao, Heino without team peel.",
@@ -640,9 +640,66 @@
   ],
   "guide": {
     "overview": "Wukong is a Medium Assassin (Jungling) on Honor of Kings Global. Camp HOK ranks them Tier S with 49.7% win rate and 1.3% pick rate as of 2026-06-05.",
+    "hook": "Wukong: Using skills enhances the next Basic Attack to a dash strike that deals extra damage.",
     "bestBuild": "Rush Rapacious Bite, Boots of Dexterity, Eternity Blade, then complete Shadow Ripper, Bloodweeper, Starbreaker. Use preset tabs for jungle, clash, or CN-style paths when draft requires it.",
     "arcanaSpells": "Run Dominator for stats that match Wukong's Assassin kit. Take Smite — swap to Purify against heavy CC or Smite when jungling.",
-    "combo": "Standard trade: Protective Shroud → Furious Advance → Golden Cudgel → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "combo": "Standard trade: Protective Shroud → Furious Advance → Golden Cudgel → weave basic attacks. Weave basic attacks between skill casts for passive value.",
+    "skillOrder": {
+      "priority": "Skill 2 → Skill 1 → Golden Cudgel (max Skill 2 first)",
+      "reason": "Furious Advance provides mobility or stick—max first. Protective Shroud second for damage. Golden Cudgel on every level."
+    },
+    "combos": [
+      {
+        "id": "standard",
+        "name": "Standard trade",
+        "steps": "Protective Shroud → Furious Advance → Golden Cudgel → weave basic attacks",
+        "when": "Jungling skirmish or objective fight"
+      },
+      {
+        "id": "all-in",
+        "name": "All-in",
+        "steps": "Golden Cudgel after full rotation when Flash is down",
+        "when": "Gank or backline dive with team CC"
+      }
+    ],
+    "itemNotes": [
+      {
+        "slot": 1,
+        "why": "Monster kills boost PATK"
+      },
+      {
+        "slot": 2,
+        "why": "Boosts ASPD"
+      },
+      {
+        "slot": 3,
+        "why": "High crit damage"
+      },
+      {
+        "slot": 4,
+        "why": "Crits boost ASPD"
+      },
+      {
+        "slot": 5,
+        "why": "Physical Lifesteal"
+      },
+      {
+        "slot": 6,
+        "why": "Anti-tank"
+      }
+    ],
+    "arcanaRows": [
+      {
+        "slot": "Primary",
+        "rune": "Dominator",
+        "effect": "Recommended for Assassin Jungling"
+      },
+      {
+        "slot": "Spell",
+        "rune": "Smite",
+        "effect": "Adjust Purify/Execute based on enemy dive."
+      }
+    ],
     "laning": "Clear to level four, then gank the lane with the least escape. Secure Tyrant when your bot or mid has crash wave.",
     "teamfight": "Wait for CC from your team, then dive carry with full combo. Exit with reset or flash if focus fired.",
     "highRank": "Wukong is a Tier S staple in high-elo (Diamond+) on the international server — worth mastering for climb. Pick rate 1.3% — frequently seen in ranked; learn the matchup even if you do not main Wukong.",

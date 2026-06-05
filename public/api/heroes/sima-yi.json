@@ -110,7 +110,7 @@
     "Sima Yi is a Medium Assassin (Jungling) on Honor of Kings Global. Camp HOK ranks them Tier B with 46.2% win rate and 0.2% pick rate as of 2026-06-05.",
     "Best build path: Runeblade → Boots of Tranquility → Insatiable Tome → Staves of Sorcery → Savant's Wrath → Breakthrough Robe.",
     "Run Fate for stats that match Sima Yi's Assassin kit. Take Smite — swap to Purify against heavy CC or Smite when jungling.",
-    "Standard trade: Shadow Stings → Barren Lands → Death Descends → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "Standard trade: Shadow Stings → Barren Lands → Death Descends → weave basic attacks. Weave basic attacks between skill casts for passive value.",
     "Laning: Clear to level four, then gank the lane with the least escape. Secure Tyrant when your bot or mid has crash wave.",
     "Teamfight: Wait for CC from your team, then dive carry with full combo. Exit with reset or flash if focus fired.",
     "Sima Yi excels into Lu Bu, Wuyan, Menki. Avoid blind picking into Alessio, Arli, Lady Zhen without team peel.",
@@ -540,9 +540,66 @@
   ],
   "guide": {
     "overview": "Sima Yi is a Medium Assassin (Jungling) on Honor of Kings Global. Camp HOK ranks them Tier B with 46.2% win rate and 0.2% pick rate as of 2026-06-05.",
+    "hook": "Sima Yi: Gains vision of casters within a range of 2000.",
     "bestBuild": "Rush Runeblade, Boots of Tranquility, Insatiable Tome, then complete Staves of Sorcery, Savant's Wrath, Breakthrough Robe. Use preset tabs for jungle, clash, or CN-style paths when draft requires it.",
     "arcanaSpells": "Run Fate for stats that match Sima Yi's Assassin kit. Take Smite — swap to Purify against heavy CC or Smite when jungling.",
-    "combo": "Standard trade: Shadow Stings → Barren Lands → Death Descends → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "combo": "Standard trade: Shadow Stings → Barren Lands → Death Descends → weave basic attacks. Weave basic attacks between skill casts for passive value.",
+    "skillOrder": {
+      "priority": "Skill 2 → Skill 1 → Death Descends (max Skill 2 first)",
+      "reason": "Barren Lands provides mobility or stick—max first. Shadow Stings second for damage. Death Descends on every level."
+    },
+    "combos": [
+      {
+        "id": "standard",
+        "name": "Standard trade",
+        "steps": "Shadow Stings → Barren Lands → Death Descends → weave basic attacks",
+        "when": "Jungling skirmish or objective fight"
+      },
+      {
+        "id": "all-in",
+        "name": "All-in",
+        "steps": "Death Descends after full rotation when Flash is down",
+        "when": "Gank or backline dive with team CC"
+      }
+    ],
+    "itemNotes": [
+      {
+        "slot": 1,
+        "why": "Monster kills boost MATK"
+      },
+      {
+        "slot": 2,
+        "why": "Reduces Skill CD"
+      },
+      {
+        "slot": 3,
+        "why": "Magical Lifesteal"
+      },
+      {
+        "slot": 4,
+        "why": "Enhances BA"
+      },
+      {
+        "slot": 5,
+        "why": "Greatly boosts MATK"
+      },
+      {
+        "slot": 6,
+        "why": "Converts Health into M. Pierce"
+      }
+    ],
+    "arcanaRows": [
+      {
+        "slot": "Primary",
+        "rune": "Fate",
+        "effect": "Recommended for Assassin Jungling"
+      },
+      {
+        "slot": "Spell",
+        "rune": "Smite",
+        "effect": "Adjust Purify/Execute based on enemy dive."
+      }
+    ],
     "laning": "Clear to level four, then gank the lane with the least escape. Secure Tyrant when your bot or mid has crash wave.",
     "teamfight": "Wait for CC from your team, then dive carry with full combo. Exit with reset or flash if focus fired.",
     "highRank": "Sima Yi sits at Tier B globally (46.2% WR). In high rank, pick only into favorable matchups or when you have a dedicated pocket pick. Below 49% global WR — high-rank players often avoid unless compensating for team comp.",

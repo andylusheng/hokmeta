@@ -109,7 +109,7 @@
     "Liu Bei is a Medium Warrior (Jungling) on Honor of Kings Global. Camp HOK ranks them Tier B with 54.5% win rate and 0.4% pick rate as of 2026-06-05.",
     "Best build path: Rapacious Bite → Boots of Dexterity → Axe of Torment → Doomsday → Cuirass of Savagery → Master Sword.",
     "Run Red for stats that match Liu Bei's Warrior kit. Take Smite — swap to Purify against heavy CC or Smite when jungling.",
-    "Standard trade: Dual Shot → Leading the Charge → Hearts and Minds → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "Standard trade: Dual Shot → Leading the Charge → Hearts and Minds → weave basic attacks. Weave basic attacks between skill casts for passive value.",
     "Laning: Clear to level four, then gank the lane with the least escape. Secure Tyrant when your bot or mid has crash wave.",
     "Teamfight: Flank or dive backline after tanks commit. Do not start fights without vision on enemy jungler.",
     "Liu Bei excels into Lady Zhen, Nuwa, Xiao Qiao. Avoid blind picking into Dyadia, Chano without team peel.",
@@ -589,9 +589,66 @@
   ],
   "guide": {
     "overview": "Liu Bei is a Medium Warrior (Jungling) on Honor of Kings Global. Camp HOK ranks them Tier B with 54.5% win rate and 0.4% pick rate as of 2026-06-05.",
+    "hook": "Liu Bei: When Basic Attacks hit a hero, it increases his Physical Pierce.",
     "bestBuild": "Rush Rapacious Bite, Boots of Dexterity, Axe of Torment, then complete Doomsday, Cuirass of Savagery, Master Sword. Use preset tabs for jungle, clash, or CN-style paths when draft requires it.",
     "arcanaSpells": "Run Red for stats that match Liu Bei's Warrior kit. Take Smite — swap to Purify against heavy CC or Smite when jungling.",
-    "combo": "Standard trade: Dual Shot → Leading the Charge → Hearts and Minds → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "combo": "Standard trade: Dual Shot → Leading the Charge → Hearts and Minds → weave basic attacks. Weave basic attacks between skill casts for passive value.",
+    "skillOrder": {
+      "priority": "Skill 2 → Skill 1 → Hearts and Minds (max Skill 2 first)",
+      "reason": "Leading the Charge provides mobility or stick—max first. Dual Shot second for damage. Hearts and Minds on every level."
+    },
+    "combos": [
+      {
+        "id": "standard",
+        "name": "Standard trade",
+        "steps": "Dual Shot → Leading the Charge → Hearts and Minds → weave basic attacks",
+        "when": "Jungling skirmish or objective fight"
+      },
+      {
+        "id": "all-in",
+        "name": "All-in",
+        "steps": "Hearts and Minds after full rotation when Flash is down",
+        "when": "Gank or backline dive with team CC"
+      }
+    ],
+    "itemNotes": [
+      {
+        "slot": 1,
+        "why": "Monster kills boost PATK"
+      },
+      {
+        "slot": 2,
+        "why": "Boosts ASPD"
+      },
+      {
+        "slot": 3,
+        "why": "Anti-squishy"
+      },
+      {
+        "slot": 4,
+        "why": "Boosts BA damage"
+      },
+      {
+        "slot": 5,
+        "why": "Offense & defense"
+      },
+      {
+        "slot": 6,
+        "why": "Enhances BA"
+      }
+    ],
+    "arcanaRows": [
+      {
+        "slot": "Primary",
+        "rune": "Red",
+        "effect": "Recommended for Warrior Jungling"
+      },
+      {
+        "slot": "Spell",
+        "rune": "Smite",
+        "effect": "Adjust Purify/Execute based on enemy dive."
+      }
+    ],
     "laning": "Clear to level four, then gank the lane with the least escape. Secure Tyrant when your bot or mid has crash wave.",
     "teamfight": "Flank or dive backline after tanks commit. Do not start fights without vision on enemy jungler.",
     "highRank": "Liu Bei sits at Tier B globally (54.5% WR). In high rank, pick only into favorable matchups or when you have a dedicated pocket pick. Camp data shows above-average win rate — prioritize when not hard-countered in draft.",

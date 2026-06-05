@@ -109,7 +109,7 @@
     "Chano is a Medium Marksman (Farm Lane) on Honor of Kings Global. Camp HOK ranks them Tier B with 50.5% win rate and 0.7% pick rate as of 2026-06-05.",
     "Best build path: Boots of Dexterity → Eternity Blade → Shadow Ripper → Bloodweeper → Daybreaker's Virtue → Master Sword.",
     "Run Cataclysm for stats that match Chano's Marksman kit. Take Haste & Flash — swap to Purify against heavy CC or Smite when jungling.",
-    "Standard trade: Soaring Signal → Lupine Trap → Leader Stance → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "Standard trade: Soaring Signal → Lupine Trap → Leader Stance → weave basic attacks. Weave basic attacks between skill casts for passive value.",
     "Laning: Last-hit safely until first core item. Ping jungler for river vision; never face-check brush without minion cover.",
     "Teamfight: Position behind frontline; attack closest safe target. Join fight only after enemy dive cooldowns are used.",
     "Chano excels into Liu Bei, Shouyue. Avoid blind picking into Ziya, Mai Shiranui without team peel.",
@@ -689,9 +689,60 @@
   ],
   "guide": {
     "overview": "Chano is a Medium Marksman (Farm Lane) on Honor of Kings Global. Camp HOK ranks them Tier B with 50.5% win rate and 0.7% pick rate as of 2026-06-05.",
+    "hook": "Chano: Whenever he moves through brush, gains Movement Speed and enhances his next Basic Attack to a double shot that deals extra damage.",
     "bestBuild": "Rush Boots of Dexterity, Eternity Blade, Shadow Ripper, then complete Bloodweeper, Daybreaker's Virtue, Master Sword. Use preset tabs for jungle, clash, or CN-style paths when draft requires it.",
     "arcanaSpells": "Run Cataclysm for stats that match Chano's Marksman kit. Take Haste & Flash — swap to Purify against heavy CC or Smite when jungling.",
-    "combo": "Standard trade: Soaring Signal → Lupine Trap → Leader Stance → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "combo": "Standard trade: Soaring Signal → Lupine Trap → Leader Stance → weave basic attacks. Weave basic attacks between skill casts for passive value.",
+    "skillOrder": {
+      "priority": "Skill 1 → Skill 2 → Leader Stance (max Skill 1 first)",
+      "reason": "Soaring Signal is your lane trade tool. Lupine Trap second. Leader Stance whenever available."
+    },
+    "combos": [
+      {
+        "id": "standard",
+        "name": "Standard trade",
+        "steps": "Soaring Signal → Lupine Trap → Leader Stance → weave basic attacks",
+        "when": "Farm Lane skirmish or objective fight"
+      }
+    ],
+    "itemNotes": [
+      {
+        "slot": 1,
+        "why": "Boosts ASPD"
+      },
+      {
+        "slot": 2,
+        "why": "High crit damage"
+      },
+      {
+        "slot": 3,
+        "why": "Crits boost ASPD"
+      },
+      {
+        "slot": 4,
+        "why": "Physical Lifesteal"
+      },
+      {
+        "slot": 5,
+        "why": "Great for marksmen"
+      },
+      {
+        "slot": 6,
+        "why": "Enhances BA"
+      }
+    ],
+    "arcanaRows": [
+      {
+        "slot": "Primary",
+        "rune": "Cataclysm",
+        "effect": "Recommended for Marksman Farm Lane"
+      },
+      {
+        "slot": "Spell",
+        "rune": "Haste / Flash",
+        "effect": "Adjust Purify/Execute based on enemy dive."
+      }
+    ],
     "laning": "Last-hit safely until first core item. Ping jungler for river vision; never face-check brush without minion cover.",
     "teamfight": "Position behind frontline; attack closest safe target. Join fight only after enemy dive cooldowns are used.",
     "highRank": "Chano sits at Tier B globally (50.5% WR). In high rank, pick only into favorable matchups or when you have a dedicated pocket pick.",

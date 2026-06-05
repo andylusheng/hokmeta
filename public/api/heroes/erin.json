@@ -109,7 +109,7 @@
     "Erin is a Medium Marksman (Farm Lane) on Honor of Kings Global. Camp HOK ranks them Tier S with 51.5% win rate and 1.5% pick rate as of 2026-06-05.",
     "Best build path: Golden Blade → Boots of the Arcane → Savant's Wrath → Staves of Sorcery → Void Staff.",
     "Run Red for stats that match Erin's Marksman kit. Take Haste & Flash — swap to Purify against heavy CC or Smite when jungling.",
-    "Standard trade: Dance - Leaf Greeting → Twirl - Forest Whisper → Waltz - Laurel Bloom → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "Standard trade: Dance - Leaf Greeting → Twirl - Forest Whisper → Waltz - Laurel Bloom → weave basic attacks. Weave basic attacks between skill casts for passive value.",
     "Laning: Last-hit safely until first core item. Ping jungler for river vision; never face-check brush without minion cover.",
     "Teamfight: Position behind frontline; attack closest safe target. Join fight only after enemy dive cooldowns are used.",
     "Erin excels into Ying, Han Xin, Lam. Avoid blind picking into Dun without team peel.",
@@ -138,7 +138,7 @@
     {
       "id": "faq-best-build",
       "question": "What is the best Erin build?",
-      "answer": "Core item path: Golden Blade, Boots of the Arcane, Savant's Wrath, Staves of Sorcery, Void Staff, ardent dominator. Run Red arcana with Haste & Flash. Switch to alternate build presets on this page for jungle, clash, or late-game setups."
+      "answer": "Core item path: Golden Blade, Boots of the Arcane, Savant's Wrath, Staves of Sorcery, Void Staff. Run Red arcana with Haste & Flash. Switch to alternate build presets on this page for jungle, clash, or late-game setups."
     },
     {
       "id": "faq-counter",
@@ -689,9 +689,56 @@
   ],
   "guide": {
     "overview": "Erin is a Medium Marksman (Farm Lane) on Honor of Kings Global. Camp HOK ranks them Tier S with 51.5% win rate and 1.5% pick rate as of 2026-06-05.",
-    "bestBuild": "Rush Golden Blade, Boots of the Arcane, Savant's Wrath, then complete Staves of Sorcery, Void Staff, ardent dominator. Use preset tabs for jungle, clash, or CN-style paths when draft requires it.",
+    "hook": "Erin: Her Basic Attack grants Energy.",
+    "bestBuild": "Rush Golden Blade, Boots of the Arcane, Savant's Wrath, then complete Staves of Sorcery, Void Staff. Use preset tabs for jungle, clash, or CN-style paths when draft requires it.",
     "arcanaSpells": "Run Red for stats that match Erin's Marksman kit. Take Haste & Flash — swap to Purify against heavy CC or Smite when jungling.",
-    "combo": "Standard trade: Dance - Leaf Greeting → Twirl - Forest Whisper → Waltz - Laurel Bloom → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "combo": "Standard trade: Dance - Leaf Greeting → Twirl - Forest Whisper → Waltz - Laurel Bloom → weave basic attacks. Weave basic attacks between skill casts for passive value.",
+    "skillOrder": {
+      "priority": "Skill 1 → Skill 2 → Waltz - Laurel Bloom (max Skill 1 first)",
+      "reason": "Dance - Leaf Greeting is your lane trade tool. Twirl - Forest Whisper second. Waltz - Laurel Bloom whenever available."
+    },
+    "combos": [
+      {
+        "id": "standard",
+        "name": "Standard trade",
+        "steps": "Dance - Leaf Greeting → Twirl - Forest Whisper → Waltz - Laurel Bloom → weave basic attacks",
+        "when": "Farm Lane skirmish or objective fight"
+      }
+    ],
+    "itemNotes": [
+      {
+        "slot": 1,
+        "why": "Keeps enhancing BA"
+      },
+      {
+        "slot": 2,
+        "why": "Magical Pierce"
+      },
+      {
+        "slot": 3,
+        "why": "Greatly boosts MATK"
+      },
+      {
+        "slot": 4,
+        "why": "Enhances BA"
+      },
+      {
+        "slot": 5,
+        "why": "Anti-tank"
+      }
+    ],
+    "arcanaRows": [
+      {
+        "slot": "Primary",
+        "rune": "Red",
+        "effect": "Recommended for Marksman Farm Lane"
+      },
+      {
+        "slot": "Spell",
+        "rune": "Haste / Flash",
+        "effect": "Adjust Purify/Execute based on enemy dive."
+      }
+    ],
     "laning": "Last-hit safely until first core item. Ping jungler for river vision; never face-check brush without minion cover.",
     "teamfight": "Position behind frontline; attack closest safe target. Join fight only after enemy dive cooldowns are used.",
     "highRank": "Erin is a Tier S staple in high-elo (Diamond+) on the international server — worth mastering for climb. Pick rate 1.5% — frequently seen in ranked; learn the matchup even if you do not main Erin.",

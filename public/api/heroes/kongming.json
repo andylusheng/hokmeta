@@ -111,7 +111,7 @@
     "Kongming is a Medium Mage (Mid Lane) on Honor of Kings Global. Camp HOK ranks them Tier S with 49.2% win rate and 1.4% pick rate as of 2026-06-05.",
     "Best build path: Boots of the Arcane → Savant's Wrath → Insatiable Tome → Void Staff → Enigma - Moon Goddess.",
     "Run Nightmare for stats that match Kongming's Mage kit. Take Smite & Flash — swap to Purify against heavy CC or Smite when jungling.",
-    "Standard trade: Arcane Assault → Time Shift → Winning Strategy → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "Standard trade: Arcane Assault → Time Shift → Winning Strategy → weave basic attacks. Weave basic attacks between skill casts for passive value.",
     "Laning: Control first wave without taking free poke. Roam after pushing wave 2–4 to side lanes with your jungler.",
     "Teamfight: Poke from max range before objective. Save hard CC for enemy dive or your carry peel window.",
     "Kongming excels into Han Xin, Jing, Ukyo Tachibana. Avoid blind picking into Allain, Biron, Wuyan without team peel.",
@@ -140,7 +140,7 @@
     {
       "id": "faq-best-build",
       "question": "What is the best Kongming build?",
-      "answer": "Core item path: Boots of the Arcane, Savant's Wrath, Insatiable Tome, Void Staff, tome of wisdom, Enigma - Moon Goddess. Run Nightmare arcana with Smite & Flash. Switch to alternate build presets on this page for jungle, clash, or late-game setups."
+      "answer": "Core item path: Boots of the Arcane, Savant's Wrath, Insatiable Tome, Void Staff, Enigma - Moon Goddess. Run Nightmare arcana with Smite & Flash. Switch to alternate build presets on this page for jungle, clash, or late-game setups."
     },
     {
       "id": "faq-counter",
@@ -491,9 +491,56 @@
   ],
   "guide": {
     "overview": "Kongming is a Medium Mage (Mid Lane) on Honor of Kings Global. Camp HOK ranks them Tier S with 49.2% win rate and 1.4% pick rate as of 2026-06-05.",
-    "bestBuild": "Rush Boots of the Arcane, Savant's Wrath, Insatiable Tome, then complete Void Staff, tome of wisdom, Enigma - Moon Goddess. Use preset tabs for jungle, clash, or CN-style paths when draft requires it.",
+    "hook": "Kongming: Active skill hits on enemies grant 1 stack.",
+    "bestBuild": "Rush Boots of the Arcane, Savant's Wrath, Insatiable Tome, then complete Void Staff, Enigma - Moon Goddess. Use preset tabs for jungle, clash, or CN-style paths when draft requires it.",
     "arcanaSpells": "Run Nightmare for stats that match Kongming's Mage kit. Take Smite & Flash — swap to Purify against heavy CC or Smite when jungling.",
-    "combo": "Standard trade: Arcane Assault → Time Shift → Winning Strategy → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "combo": "Standard trade: Arcane Assault → Time Shift → Winning Strategy → weave basic attacks. Weave basic attacks between skill casts for passive value.",
+    "skillOrder": {
+      "priority": "Skill 2 → Skill 1 → Winning Strategy (max Skill 2 first)",
+      "reason": "Max primary utility/damage skill first, then Arcane Assault, and Winning Strategy on cooldown."
+    },
+    "combos": [
+      {
+        "id": "standard",
+        "name": "Standard trade",
+        "steps": "Arcane Assault → Time Shift → Winning Strategy → weave basic attacks",
+        "when": "Mid Lane skirmish or objective fight"
+      }
+    ],
+    "itemNotes": [
+      {
+        "slot": 1,
+        "why": "Magical Pierce"
+      },
+      {
+        "slot": 2,
+        "why": "Greatly boosts MATK"
+      },
+      {
+        "slot": 3,
+        "why": "Magical Lifesteal"
+      },
+      {
+        "slot": 4,
+        "why": "Anti-tank"
+      },
+      {
+        "slot": 5,
+        "why": "Temp. invincibility"
+      }
+    ],
+    "arcanaRows": [
+      {
+        "slot": "Primary",
+        "rune": "Nightmare",
+        "effect": "Recommended for Mage Mid Lane"
+      },
+      {
+        "slot": "Spell",
+        "rune": "Smite / Flash",
+        "effect": "Adjust Purify/Execute based on enemy dive."
+      }
+    ],
     "laning": "Control first wave without taking free poke. Roam after pushing wave 2–4 to side lanes with your jungler.",
     "teamfight": "Poke from max range before objective. Save hard CC for enemy dive or your carry peel window.",
     "highRank": "Kongming is a Tier S staple in high-elo (Diamond+) on the international server — worth mastering for climb. Pick rate 1.4% — frequently seen in ranked; learn the matchup even if you do not main Kongming.",

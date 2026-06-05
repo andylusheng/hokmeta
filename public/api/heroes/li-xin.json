@@ -109,7 +109,7 @@
     "Li Xin is a Medium Warrior (Clash Lane) on Honor of Kings Global. Camp HOK ranks them Tier S+ with 52.6% win rate and 1.9% pick rate as of 2026-06-05.",
     "Best build path: Boots of Resistance → Axe of Torment → Spikemail → Cuirass of Savagery → Destiny.",
     "Run Conflict for stats that match Li Xin's Warrior kit. Take Flash — swap to Purify against heavy CC or Smite when jungling.",
-    "Standard trade: Lightning Dash → Chaos Wave → Light Awakening → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "Standard trade: Lightning Dash → Chaos Wave → Light Awakening → weave basic attacks. Weave basic attacks between skill casts for passive value.",
     "Laning: Trade on your power spike levels (2/4). Call jungler for dive only when enemy flash is down.",
     "Teamfight: Flank or dive backline after tanks commit. Do not start fights without vision on enemy jungler.",
     "Li Xin excels into Da Qiao, Liang. Avoid blind picking into Cai Yan, Da Qiao, Guiguzi without team peel.",
@@ -138,7 +138,7 @@
     {
       "id": "faq-best-build",
       "question": "What is the best Li Xin build?",
-      "answer": "Core item path: Boots of Resistance, Axe of Torment, Spikemail, siege breaker, Cuirass of Savagery, Destiny. Run Conflict arcana with Flash. Switch to alternate build presets on this page for jungle, clash, or late-game setups."
+      "answer": "Core item path: Boots of Resistance, Axe of Torment, Spikemail, Cuirass of Savagery, Destiny. Run Conflict arcana with Flash. Switch to alternate build presets on this page for jungle, clash, or late-game setups."
     },
     {
       "id": "faq-counter",
@@ -589,9 +589,56 @@
   ],
   "guide": {
     "overview": "Li Xin is a Medium Warrior (Clash Lane) on Honor of Kings Global. Camp HOK ranks them Tier S+ with 52.6% win rate and 1.9% pick rate as of 2026-06-05.",
-    "bestBuild": "Rush Boots of Resistance, Axe of Torment, Spikemail, then complete siege breaker, Cuirass of Savagery, Destiny. Use preset tabs for jungle, clash, or CN-style paths when draft requires it.",
+    "hook": "Li Xin: Basic Attacks and Skill 2 grant EXP when they hit enemy heroes.",
+    "bestBuild": "Rush Boots of Resistance, Axe of Torment, Spikemail, then complete Cuirass of Savagery, Destiny. Use preset tabs for jungle, clash, or CN-style paths when draft requires it.",
     "arcanaSpells": "Run Conflict for stats that match Li Xin's Warrior kit. Take Flash — swap to Purify against heavy CC or Smite when jungling.",
-    "combo": "Standard trade: Lightning Dash → Chaos Wave → Light Awakening → reposition. Weave basic attacks between skill casts for maximum damage and passive value.",
+    "combo": "Standard trade: Lightning Dash → Chaos Wave → Light Awakening → weave basic attacks. Weave basic attacks between skill casts for passive value.",
+    "skillOrder": {
+      "priority": "Skill 2 → Skill 1 → Light Awakening (max Skill 2 first)",
+      "reason": "Max primary utility/damage skill first, then Lightning Dash, and Light Awakening on cooldown."
+    },
+    "combos": [
+      {
+        "id": "standard",
+        "name": "Standard trade",
+        "steps": "Lightning Dash → Chaos Wave → Light Awakening → weave basic attacks",
+        "when": "Clash Lane skirmish or objective fight"
+      }
+    ],
+    "itemNotes": [
+      {
+        "slot": 1,
+        "why": "Shortens CC"
+      },
+      {
+        "slot": 2,
+        "why": "Anti-squishy"
+      },
+      {
+        "slot": 3,
+        "why": "Reflects damage"
+      },
+      {
+        "slot": 4,
+        "why": "Offense & defense"
+      },
+      {
+        "slot": 5,
+        "why": "Negates fatal damage"
+      }
+    ],
+    "arcanaRows": [
+      {
+        "slot": "Primary",
+        "rune": "Conflict",
+        "effect": "Recommended for Warrior Clash Lane"
+      },
+      {
+        "slot": "Spell",
+        "rune": "Flash",
+        "effect": "Adjust Purify/Execute based on enemy dive."
+      }
+    ],
     "laning": "Trade on your power spike levels (2/4). Call jungler for dive only when enemy flash is down.",
     "teamfight": "Flank or dive backline after tanks commit. Do not start fights without vision on enemy jungler.",
     "highRank": "Li Xin is a Tier S+ staple in high-elo (Diamond+) on the international server — worth mastering for climb. Ban rate 1.3% — expect Li Xin to be removed in tryhard lobbies; have a backup in the same role. Camp data shows above-average win rate — prioritize when not hard-countered in draft.",
