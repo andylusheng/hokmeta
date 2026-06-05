@@ -49,45 +49,45 @@
   "build": [
     {
       "slot": 1,
-      "itemId": "1511",
-      "name": "Hunting Knife",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1511.jpg",
-      "description": "Speeds up jungling"
-    },
-    {
-      "slot": 2,
-      "itemId": "1523",
-      "name": "Relentless Blade",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1523.jpg",
-      "description": "Monster kills boost PATK"
-    },
-    {
-      "slot": 3,
-      "itemId": "1425",
-      "name": "Boots of Dexterity",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1425.jpg",
-      "description": "Boosts ASPD"
-    },
-    {
-      "slot": 4,
-      "itemId": "1136",
-      "name": "Shadow Ripper",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1136.jpg",
-      "description": "Crits boost ASPD"
-    },
-    {
-      "slot": 5,
       "itemId": "1133",
       "name": "Eternity Blade",
       "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1133.jpg",
       "description": "High crit damage"
     },
     {
+      "slot": 2,
+      "itemId": "1422",
+      "name": "Boots of Resistance",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
+      "description": "Shortens CC"
+    },
+    {
+      "slot": 3,
+      "itemId": "1136",
+      "name": "Shadow Ripper",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1136.jpg",
+      "description": "Crits boost ASPD"
+    },
+    {
+      "slot": 4,
+      "itemId": "1155",
+      "name": "Daybreaker's Virtue",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1155.jpg",
+      "description": "Great for marksmen"
+    },
+    {
+      "slot": 5,
+      "itemId": "1126",
+      "name": "Doomsday",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1126.jpg",
+      "description": "Boosts BA damage"
+    },
+    {
       "slot": 6,
-      "itemId": "1533",
-      "name": "Rapacious Bite",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1533.jpg",
-      "description": "Monster kills boost PATK"
+      "itemId": "1131",
+      "name": "Starbreaker",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1131.jpg",
+      "description": "Anti-tank"
     }
   ],
   "arcana": [
@@ -142,5 +142,407 @@
     "Pick rate 0.44% in global ranked.",
     "Ban rate 0.04%.",
     "Counters: Kongming, Daji. Countered by: Ata, Han Xin."
+  ],
+  "builds": [
+    {
+      "id": "recommended",
+      "label": "Recommended",
+      "position": null,
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1133",
+          "name": "Eternity Blade",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1133.jpg",
+          "description": "High crit damage"
+        },
+        {
+          "slot": 2,
+          "itemId": "1422",
+          "name": "Boots of Resistance",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
+          "description": "Shortens CC"
+        },
+        {
+          "slot": 3,
+          "itemId": "1136",
+          "name": "Shadow Ripper",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1136.jpg",
+          "description": "Crits boost ASPD"
+        },
+        {
+          "slot": 4,
+          "itemId": "1155",
+          "name": "Daybreaker's Virtue",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1155.jpg",
+          "description": "Great for marksmen"
+        },
+        {
+          "slot": 5,
+          "itemId": "1126",
+          "name": "Doomsday",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1126.jpg",
+          "description": "Boosts BA damage"
+        },
+        {
+          "slot": 6,
+          "itemId": "1131",
+          "name": "Starbreaker",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1131.jpg",
+          "description": "Anti-tank"
+        }
+      ]
+    },
+    {
+      "id": "国服套装",
+      "label": "国服套装",
+      "position": "Position 3",
+      "lane": "CN preset",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1523",
+          "name": "Relentless Blade",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1523.jpg",
+          "description": "Monster kills boost PATK"
+        },
+        {
+          "slot": 2,
+          "itemId": "1135",
+          "name": "Sparkforged Dagger",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1135.jpg",
+          "description": "Chain lightning BA"
+        },
+        {
+          "slot": 3,
+          "itemId": "1422",
+          "name": "Boots of Resistance",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
+          "description": "Shortens CC"
+        },
+        {
+          "slot": 4,
+          "itemId": "1126",
+          "name": "Doomsday",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1126.jpg",
+          "description": "Boosts BA damage"
+        },
+        {
+          "slot": 5,
+          "itemId": "1332",
+          "name": "Overlord's Platemail",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1332.jpg",
+          "description": "Extra Health"
+        },
+        {
+          "slot": 6,
+          "itemId": "1533",
+          "name": "Rapacious Bite",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1533.jpg",
+          "description": "Monster kills boost PATK"
+        }
+      ]
+    },
+    {
+      "id": "top",
+      "label": "Top",
+      "position": "Position 3",
+      "lane": "Clash Lane",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1523",
+          "name": "Relentless Blade",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1523.jpg",
+          "description": "Monster kills boost PATK"
+        },
+        {
+          "slot": 2,
+          "itemId": "1425",
+          "name": "Boots of Dexterity",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1425.jpg",
+          "description": "Boosts ASPD"
+        },
+        {
+          "slot": 3,
+          "itemId": "1128",
+          "name": "Deepfrost Siege",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1128.jpg",
+          "description": "Slows on hit"
+        },
+        {
+          "slot": 4,
+          "itemId": "1126",
+          "name": "Doomsday",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1126.jpg",
+          "description": "Boosts BA damage"
+        },
+        {
+          "slot": 5,
+          "itemId": "1533",
+          "name": "Rapacious Bite",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1533.jpg",
+          "description": "Monster kills boost PATK"
+        },
+        {
+          "slot": 6,
+          "itemId": "13310",
+          "name": "Frostscar's Embrace",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/13310.jpg",
+          "description": "Enhanced BAs slow"
+        }
+      ]
+    },
+    {
+      "id": "adc",
+      "label": "adc",
+      "position": "Position 4",
+      "lane": "Farm Lane",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1425",
+          "name": "Boots of Dexterity",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1425.jpg",
+          "description": "Boosts ASPD"
+        },
+        {
+          "slot": 2,
+          "itemId": "1136",
+          "name": "Shadow Ripper",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1136.jpg",
+          "description": "Crits boost ASPD"
+        },
+        {
+          "slot": 3,
+          "itemId": "1133",
+          "name": "Eternity Blade",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1133.jpg",
+          "description": "High crit damage"
+        },
+        {
+          "slot": 4,
+          "itemId": "1126",
+          "name": "Doomsday",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1126.jpg",
+          "description": "Boosts BA damage"
+        },
+        {
+          "slot": 5,
+          "itemId": "1134",
+          "name": "Master Sword",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1134.jpg",
+          "description": "Enhances BA"
+        },
+        {
+          "slot": 6,
+          "itemId": "1141",
+          "name": "Sunchaser",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1141.jpg",
+          "description": "Boosts attack range"
+        }
+      ]
+    },
+    {
+      "id": "phznkwin",
+      "label": "PHZN✘Kwin",
+      "position": "Position 3",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1523",
+          "name": "Relentless Blade",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1523.jpg",
+          "description": "Monster kills boost PATK"
+        },
+        {
+          "slot": 2,
+          "itemId": "1135",
+          "name": "Sparkforged Dagger",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1135.jpg",
+          "description": "Chain lightning BA"
+        },
+        {
+          "slot": 3,
+          "itemId": "1425",
+          "name": "Boots of Dexterity",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1425.jpg",
+          "description": "Boosts ASPD"
+        },
+        {
+          "slot": 4,
+          "itemId": "1114",
+          "name": "Vampiric Scythe",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1114.jpg",
+          "description": "Physical Lifesteal"
+        },
+        {
+          "slot": 5,
+          "itemId": "1533",
+          "name": "Rapacious Bite",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1533.jpg",
+          "description": "Monster kills boost PATK"
+        },
+        {
+          "slot": 6,
+          "itemId": "1126",
+          "name": "Doomsday",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1126.jpg",
+          "description": "Boosts BA damage"
+        }
+      ]
+    },
+    {
+      "id": "use-buff-porco",
+      "label": "Use buff porco",
+      "position": "Position 3",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1511",
+          "name": "Hunting Knife",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1511.jpg",
+          "description": "Speeds up jungling"
+        },
+        {
+          "slot": 2,
+          "itemId": "1523",
+          "name": "Relentless Blade",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1523.jpg",
+          "description": "Monster kills boost PATK"
+        },
+        {
+          "slot": 3,
+          "itemId": "1425",
+          "name": "Boots of Dexterity",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1425.jpg",
+          "description": "Boosts ASPD"
+        },
+        {
+          "slot": 4,
+          "itemId": "1136",
+          "name": "Shadow Ripper",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1136.jpg",
+          "description": "Crits boost ASPD"
+        },
+        {
+          "slot": 5,
+          "itemId": "1133",
+          "name": "Eternity Blade",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1133.jpg",
+          "description": "High crit damage"
+        },
+        {
+          "slot": 6,
+          "itemId": "1533",
+          "name": "Rapacious Bite",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1533.jpg",
+          "description": "Monster kills boost PATK"
+        }
+      ]
+    },
+    {
+      "id": "tiktokduoduo",
+      "label": "TikTok.DuoDuo",
+      "position": "Position 3",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1523",
+          "name": "Relentless Blade",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1523.jpg",
+          "description": "Monster kills boost PATK"
+        },
+        {
+          "slot": 2,
+          "itemId": "1135",
+          "name": "Sparkforged Dagger",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1135.jpg",
+          "description": "Chain lightning BA"
+        },
+        {
+          "slot": 3,
+          "itemId": "1425",
+          "name": "Boots of Dexterity",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1425.jpg",
+          "description": "Boosts ASPD"
+        },
+        {
+          "slot": 4,
+          "itemId": "1422",
+          "name": "Boots of Resistance",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
+          "description": "Shortens CC"
+        },
+        {
+          "slot": 5,
+          "itemId": "1126",
+          "name": "Doomsday",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1126.jpg",
+          "description": "Boosts BA damage"
+        },
+        {
+          "slot": 6,
+          "itemId": "1335",
+          "name": "Succubus Cloak",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1335.jpg",
+          "description": "Negates magical damage"
+        }
+      ]
+    },
+    {
+      "id": "ttay-延斯",
+      "label": "TT:AY | 延斯",
+      "position": "Position 3",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1533",
+          "name": "Rapacious Bite",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1533.jpg",
+          "description": "Monster kills boost PATK"
+        },
+        {
+          "slot": 2,
+          "itemId": "1425",
+          "name": "Boots of Dexterity",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1425.jpg",
+          "description": "Boosts ASPD"
+        },
+        {
+          "slot": 3,
+          "itemId": "1135",
+          "name": "Sparkforged Dagger",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1135.jpg",
+          "description": "Chain lightning BA"
+        },
+        {
+          "slot": 4,
+          "itemId": "1333",
+          "name": "Ominous Premonition",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1333.jpg",
+          "description": "Slows attackers"
+        },
+        {
+          "slot": 5,
+          "itemId": "1335",
+          "name": "Succubus Cloak",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1335.jpg",
+          "description": "Negates magical damage"
+        },
+        {
+          "slot": 6,
+          "itemId": "1126",
+          "name": "Doomsday",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1126.jpg",
+          "description": "Boosts BA damage"
+        }
+      ]
+    }
   ]
 }

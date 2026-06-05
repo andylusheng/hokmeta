@@ -49,45 +49,45 @@
   "build": [
     {
       "slot": 1,
-      "itemId": "1523",
-      "name": "Relentless Blade",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1523.jpg",
-      "description": "Monster kills boost PATK"
-    },
-    {
-      "slot": 2,
-      "itemId": "1425",
-      "name": "Boots of Dexterity",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1425.jpg",
-      "description": "Boosts ASPD"
-    },
-    {
-      "slot": 3,
-      "itemId": "1124",
-      "name": "Meteor",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1124.jpg",
-      "description": "PATK +35\nCDR +7.5%"
-    },
-    {
-      "slot": 4,
-      "itemId": "1137",
-      "name": "Axe of Torment",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1137.jpg",
-      "description": "Anti-squishy"
-    },
-    {
-      "slot": 5,
       "itemId": "1533",
       "name": "Rapacious Bite",
       "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1533.jpg",
       "description": "Monster kills boost PATK"
     },
     {
+      "slot": 2,
+      "itemId": "1422",
+      "name": "Boots of Resistance",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
+      "description": "Shortens CC"
+    },
+    {
+      "slot": 3,
+      "itemId": "1137",
+      "name": "Axe of Torment",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1137.jpg",
+      "description": "Anti-squishy"
+    },
+    {
+      "slot": 4,
+      "itemId": "1134",
+      "name": "Master Sword",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1134.jpg",
+      "description": "Enhances BA"
+    },
+    {
+      "slot": 5,
+      "itemId": null,
+      "name": "siege breaker",
+      "icon": null,
+      "description": null
+    },
+    {
       "slot": 6,
-      "itemId": "1421",
-      "name": "Boots of Fortitude",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1421.jpg",
-      "description": "Reduces physical damage"
+      "itemId": "1126",
+      "name": "Doomsday",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1126.jpg",
+      "description": "Boosts BA damage"
     }
   ],
   "arcana": [
@@ -143,5 +143,257 @@
     "Pick rate 0.29% in global ranked.",
     "Ban rate 0.11%.",
     "Counters: Arthur, Lu Bu, Wuyan. Countered by: Gan & Mo, Meng Ya, Milady."
+  ],
+  "builds": [
+    {
+      "id": "recommended",
+      "label": "Recommended",
+      "position": null,
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1533",
+          "name": "Rapacious Bite",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1533.jpg",
+          "description": "Monster kills boost PATK"
+        },
+        {
+          "slot": 2,
+          "itemId": "1422",
+          "name": "Boots of Resistance",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
+          "description": "Shortens CC"
+        },
+        {
+          "slot": 3,
+          "itemId": "1137",
+          "name": "Axe of Torment",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1137.jpg",
+          "description": "Anti-squishy"
+        },
+        {
+          "slot": 4,
+          "itemId": "1134",
+          "name": "Master Sword",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1134.jpg",
+          "description": "Enhances BA"
+        },
+        {
+          "slot": 5,
+          "itemId": null,
+          "name": "siege breaker",
+          "icon": null,
+          "description": null
+        },
+        {
+          "slot": 6,
+          "itemId": "1126",
+          "name": "Doomsday",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1126.jpg",
+          "description": "Boosts BA damage"
+        }
+      ]
+    },
+    {
+      "id": "royals-tank",
+      "label": "Royal's tank",
+      "position": "Position 3",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1523",
+          "name": "Relentless Blade",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1523.jpg",
+          "description": "Monster kills boost PATK"
+        },
+        {
+          "slot": 2,
+          "itemId": "1425",
+          "name": "Boots of Dexterity",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1425.jpg",
+          "description": "Boosts ASPD"
+        },
+        {
+          "slot": 3,
+          "itemId": "1533",
+          "name": "Rapacious Bite",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1533.jpg",
+          "description": "Monster kills boost PATK"
+        },
+        {
+          "slot": 4,
+          "itemId": "1137",
+          "name": "Axe of Torment",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1137.jpg",
+          "description": "Anti-squishy"
+        },
+        {
+          "slot": 5,
+          "itemId": "13310",
+          "name": "Frostscar's Embrace",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/13310.jpg",
+          "description": "Enhanced BAs slow"
+        },
+        {
+          "slot": 6,
+          "itemId": "1422",
+          "name": "Boots of Resistance",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
+          "description": "Shortens CC"
+        }
+      ]
+    },
+    {
+      "id": "ryuens-pei",
+      "label": "Ryuen's Pei",
+      "position": "Position 3",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1523",
+          "name": "Relentless Blade",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1523.jpg",
+          "description": "Monster kills boost PATK"
+        },
+        {
+          "slot": 2,
+          "itemId": "1425",
+          "name": "Boots of Dexterity",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1425.jpg",
+          "description": "Boosts ASPD"
+        },
+        {
+          "slot": 3,
+          "itemId": "1137",
+          "name": "Axe of Torment",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1137.jpg",
+          "description": "Anti-squishy"
+        },
+        {
+          "slot": 4,
+          "itemId": "1533",
+          "name": "Rapacious Bite",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1533.jpg",
+          "description": "Monster kills boost PATK"
+        },
+        {
+          "slot": 5,
+          "itemId": "1134",
+          "name": "Master Sword",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1134.jpg",
+          "description": "Enhances BA"
+        },
+        {
+          "slot": 6,
+          "itemId": "1422",
+          "name": "Boots of Resistance",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
+          "description": "Shortens CC"
+        }
+      ]
+    },
+    {
+      "id": "ranged-damage",
+      "label": "Ranged Damage",
+      "position": "Position 3",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1523",
+          "name": "Relentless Blade",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1523.jpg",
+          "description": "Monster kills boost PATK"
+        },
+        {
+          "slot": 2,
+          "itemId": "1422",
+          "name": "Boots of Resistance",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
+          "description": "Shortens CC"
+        },
+        {
+          "slot": 3,
+          "itemId": "1134",
+          "name": "Master Sword",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1134.jpg",
+          "description": "Enhances BA"
+        },
+        {
+          "slot": 4,
+          "itemId": "1137",
+          "name": "Axe of Torment",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1137.jpg",
+          "description": "Anti-squishy"
+        },
+        {
+          "slot": 5,
+          "itemId": "1533",
+          "name": "Rapacious Bite",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1533.jpg",
+          "description": "Monster kills boost PATK"
+        },
+        {
+          "slot": 6,
+          "itemId": "1126",
+          "name": "Doomsday",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1126.jpg",
+          "description": "Boosts BA damage"
+        }
+      ]
+    },
+    {
+      "id": "meta",
+      "label": "META",
+      "position": "Position 3",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1523",
+          "name": "Relentless Blade",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1523.jpg",
+          "description": "Monster kills boost PATK"
+        },
+        {
+          "slot": 2,
+          "itemId": "1425",
+          "name": "Boots of Dexterity",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1425.jpg",
+          "description": "Boosts ASPD"
+        },
+        {
+          "slot": 3,
+          "itemId": "1124",
+          "name": "Meteor",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1124.jpg",
+          "description": "PATK +35\nCDR +7.5%"
+        },
+        {
+          "slot": 4,
+          "itemId": "1137",
+          "name": "Axe of Torment",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1137.jpg",
+          "description": "Anti-squishy"
+        },
+        {
+          "slot": 5,
+          "itemId": "1533",
+          "name": "Rapacious Bite",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1533.jpg",
+          "description": "Monster kills boost PATK"
+        },
+        {
+          "slot": 6,
+          "itemId": "1421",
+          "name": "Boots of Fortitude",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1421.jpg",
+          "description": "Reduces physical damage"
+        }
+      ]
+    }
   ]
 }

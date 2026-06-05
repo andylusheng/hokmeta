@@ -49,45 +49,45 @@
   "build": [
     {
       "slot": 1,
-      "itemId": "1521",
-      "name": "Guerrilla Machete",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1521.jpg",
-      "description": "Monster kills boost MATK"
-    },
-    {
-      "slot": 2,
-      "itemId": "1425",
-      "name": "Boots of Dexterity",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1425.jpg",
-      "description": "Boosts ASPD"
-    },
-    {
-      "slot": 3,
-      "itemId": "1222",
-      "name": "Blood Clan's Grimoire",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1222.jpg",
-      "description": "MATK +60, Magical Lifesteal +12%"
-    },
-    {
-      "slot": 4,
-      "itemId": "1237",
-      "name": "Augur's Word",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1237.jpg",
-      "description": "Offense & defense"
-    },
-    {
-      "slot": 5,
       "itemId": "1531",
       "name": "Runeblade",
       "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1531.jpg",
       "description": "Monster kills boost MATK"
     },
     {
-      "slot": 6,
+      "slot": 2,
+      "itemId": "1422",
+      "name": "Boots of Resistance",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
+      "description": "Shortens CC"
+    },
+    {
+      "slot": 3,
+      "itemId": "1237",
+      "name": "Augur's Word",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1237.jpg",
+      "description": "Offense & defense"
+    },
+    {
+      "slot": 4,
       "itemId": "1240",
       "name": "Insatiable Tome",
       "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1240.jpg",
       "description": "Magical Lifesteal"
+    },
+    {
+      "slot": 5,
+      "itemId": "1333",
+      "name": "Ominous Premonition",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1333.jpg",
+      "description": "Slows attackers"
+    },
+    {
+      "slot": 6,
+      "itemId": "1244",
+      "name": "Breakthrough Robe",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1244.jpg",
+      "description": "Converts Health into M. Pierce"
     }
   ],
   "arcana": [
@@ -143,5 +143,457 @@
     "Pick rate 0.54% in global ranked.",
     "Ban rate 0.32%.",
     "Counters: Yuhuan, Lady Zhen, Heino. Countered by: Athena, Augran, Fuzi."
+  ],
+  "builds": [
+    {
+      "id": "recommended",
+      "label": "Recommended",
+      "position": null,
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1531",
+          "name": "Runeblade",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1531.jpg",
+          "description": "Monster kills boost MATK"
+        },
+        {
+          "slot": 2,
+          "itemId": "1422",
+          "name": "Boots of Resistance",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
+          "description": "Shortens CC"
+        },
+        {
+          "slot": 3,
+          "itemId": "1237",
+          "name": "Augur's Word",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1237.jpg",
+          "description": "Offense & defense"
+        },
+        {
+          "slot": 4,
+          "itemId": "1240",
+          "name": "Insatiable Tome",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1240.jpg",
+          "description": "Magical Lifesteal"
+        },
+        {
+          "slot": 5,
+          "itemId": "1333",
+          "name": "Ominous Premonition",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1333.jpg",
+          "description": "Slows attackers"
+        },
+        {
+          "slot": 6,
+          "itemId": "1244",
+          "name": "Breakthrough Robe",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1244.jpg",
+          "description": "Converts Health into M. Pierce"
+        }
+      ]
+    },
+    {
+      "id": "zixx-luna-sigma",
+      "label": "Zixx Luna Sigma",
+      "position": "Position 3",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1531",
+          "name": "Runeblade",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1531.jpg",
+          "description": "Monster kills boost MATK"
+        },
+        {
+          "slot": 2,
+          "itemId": "1422",
+          "name": "Boots of Resistance",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
+          "description": "Shortens CC"
+        },
+        {
+          "slot": 3,
+          "itemId": "1237",
+          "name": "Augur's Word",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1237.jpg",
+          "description": "Offense & defense"
+        },
+        {
+          "slot": 4,
+          "itemId": "1240",
+          "name": "Insatiable Tome",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1240.jpg",
+          "description": "Magical Lifesteal"
+        },
+        {
+          "slot": 5,
+          "itemId": "1244",
+          "name": "Breakthrough Robe",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1244.jpg",
+          "description": "Converts Health into M. Pierce"
+        },
+        {
+          "slot": 6,
+          "itemId": "1231",
+          "name": "Void Staff",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1231.jpg",
+          "description": "Anti-tank"
+        }
+      ]
+    },
+    {
+      "id": "build",
+      "label": "ﺔﻌﺋﺎﺷ",
+      "position": "Position 3",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1521",
+          "name": "Guerrilla Machete",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1521.jpg",
+          "description": "Monster kills boost MATK"
+        },
+        {
+          "slot": 2,
+          "itemId": "1425",
+          "name": "Boots of Dexterity",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1425.jpg",
+          "description": "Boosts ASPD"
+        },
+        {
+          "slot": 3,
+          "itemId": "1222",
+          "name": "Blood Clan's Grimoire",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1222.jpg",
+          "description": "MATK +60, Magical Lifesteal +12%"
+        },
+        {
+          "slot": 4,
+          "itemId": "1237",
+          "name": "Augur's Word",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1237.jpg",
+          "description": "Offense & defense"
+        },
+        {
+          "slot": 5,
+          "itemId": "1531",
+          "name": "Runeblade",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1531.jpg",
+          "description": "Monster kills boost MATK"
+        },
+        {
+          "slot": 6,
+          "itemId": "1240",
+          "name": "Insatiable Tome",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1240.jpg",
+          "description": "Magical Lifesteal"
+        }
+      ]
+    },
+    {
+      "id": "royals",
+      "label": "Royal's",
+      "position": "Position 3",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1521",
+          "name": "Guerrilla Machete",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1521.jpg",
+          "description": "Monster kills boost MATK"
+        },
+        {
+          "slot": 2,
+          "itemId": "1424",
+          "name": "Boots of the Arcane",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1424.jpg",
+          "description": "Magical Pierce"
+        },
+        {
+          "slot": 3,
+          "itemId": "1240",
+          "name": "Insatiable Tome",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1240.jpg",
+          "description": "Magical Lifesteal"
+        },
+        {
+          "slot": 4,
+          "itemId": "1237",
+          "name": "Augur's Word",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1237.jpg",
+          "description": "Offense & defense"
+        },
+        {
+          "slot": 5,
+          "itemId": "1422",
+          "name": "Boots of Resistance",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
+          "description": "Shortens CC"
+        },
+        {
+          "slot": 6,
+          "itemId": "1531",
+          "name": "Runeblade",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1531.jpg",
+          "description": "Monster kills boost MATK"
+        }
+      ]
+    },
+    {
+      "id": "uno-luna",
+      "label": "UNO' LUNA",
+      "position": "Position 3",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1521",
+          "name": "Guerrilla Machete",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1521.jpg",
+          "description": "Monster kills boost MATK"
+        },
+        {
+          "slot": 2,
+          "itemId": "1422",
+          "name": "Boots of Resistance",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
+          "description": "Shortens CC"
+        },
+        {
+          "slot": 3,
+          "itemId": "1222",
+          "name": "Blood Clan's Grimoire",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1222.jpg",
+          "description": "MATK +60, Magical Lifesteal +12%"
+        },
+        {
+          "slot": 4,
+          "itemId": "1240",
+          "name": "Insatiable Tome",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1240.jpg",
+          "description": "Magical Lifesteal"
+        },
+        {
+          "slot": 5,
+          "itemId": "1237",
+          "name": "Augur's Word",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1237.jpg",
+          "description": "Offense & defense"
+        },
+        {
+          "slot": 6,
+          "itemId": "1243",
+          "name": "Nebulon Wood",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1243.jpg",
+          "description": "MATK +60, HP +450"
+        }
+      ]
+    },
+    {
+      "id": "vs-regen-hero",
+      "label": "VS Regen Hero",
+      "position": "Position 3",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1521",
+          "name": "Guerrilla Machete",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1521.jpg",
+          "description": "Monster kills boost MATK"
+        },
+        {
+          "slot": 2,
+          "itemId": "1425",
+          "name": "Boots of Dexterity",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1425.jpg",
+          "description": "Boosts ASPD"
+        },
+        {
+          "slot": 3,
+          "itemId": "1222",
+          "name": "Blood Clan's Grimoire",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1222.jpg",
+          "description": "MATK +60, Magical Lifesteal +12%"
+        },
+        {
+          "slot": 4,
+          "itemId": "1237",
+          "name": "Augur's Word",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1237.jpg",
+          "description": "Offense & defense"
+        },
+        {
+          "slot": 5,
+          "itemId": "1422",
+          "name": "Boots of Resistance",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
+          "description": "Shortens CC"
+        },
+        {
+          "slot": 6,
+          "itemId": "1240",
+          "name": "Insatiable Tome",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1240.jpg",
+          "description": "Magical Lifesteal"
+        }
+      ]
+    },
+    {
+      "id": "anti-healtank",
+      "label": "Anti heal/tank",
+      "position": "Position 3",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1521",
+          "name": "Guerrilla Machete",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1521.jpg",
+          "description": "Monster kills boost MATK"
+        },
+        {
+          "slot": 2,
+          "itemId": "1222",
+          "name": "Blood Clan's Grimoire",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1222.jpg",
+          "description": "MATK +60, Magical Lifesteal +12%"
+        },
+        {
+          "slot": 3,
+          "itemId": "1422",
+          "name": "Boots of Resistance",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
+          "description": "Shortens CC"
+        },
+        {
+          "slot": 4,
+          "itemId": "1237",
+          "name": "Augur's Word",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1237.jpg",
+          "description": "Offense & defense"
+        },
+        {
+          "slot": 5,
+          "itemId": "1240",
+          "name": "Insatiable Tome",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1240.jpg",
+          "description": "Magical Lifesteal"
+        },
+        {
+          "slot": 6,
+          "itemId": "12211",
+          "name": "Venomous Staff",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/12211.jpg",
+          "description": "Lowers Health regen"
+        }
+      ]
+    },
+    {
+      "id": "sss-luna",
+      "label": "SSS-Luna",
+      "position": "Position 3",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1521",
+          "name": "Guerrilla Machete",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1521.jpg",
+          "description": "Monster kills boost MATK"
+        },
+        {
+          "slot": 2,
+          "itemId": "1422",
+          "name": "Boots of Resistance",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
+          "description": "Shortens CC"
+        },
+        {
+          "slot": 3,
+          "itemId": "1237",
+          "name": "Augur's Word",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1237.jpg",
+          "description": "Offense & defense"
+        },
+        {
+          "slot": 4,
+          "itemId": "1240",
+          "name": "Insatiable Tome",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1240.jpg",
+          "description": "Magical Lifesteal"
+        },
+        {
+          "slot": 5,
+          "itemId": "1531",
+          "name": "Runeblade",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1531.jpg",
+          "description": "Monster kills boost MATK"
+        },
+        {
+          "slot": 6,
+          "itemId": "1244",
+          "name": "Breakthrough Robe",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1244.jpg",
+          "description": "Converts Health into M. Pierce"
+        }
+      ]
+    },
+    {
+      "id": "tank",
+      "label": "Tank",
+      "position": "Position 3",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1532",
+          "name": "Giant's Grip",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1532.jpg",
+          "description": "Monster kills boost Health"
+        },
+        {
+          "slot": 2,
+          "itemId": "1422",
+          "name": "Boots of Resistance",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
+          "description": "Shortens CC"
+        },
+        {
+          "slot": 3,
+          "itemId": "1240",
+          "name": "Insatiable Tome",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1240.jpg",
+          "description": "Magical Lifesteal"
+        },
+        {
+          "slot": 4,
+          "itemId": "1244",
+          "name": "Breakthrough Robe",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1244.jpg",
+          "description": "Converts Health into M. Pierce"
+        },
+        {
+          "slot": 5,
+          "itemId": "1237",
+          "name": "Augur's Word",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1237.jpg",
+          "description": "Offense & defense"
+        },
+        {
+          "slot": 6,
+          "itemId": "1231",
+          "name": "Void Staff",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1231.jpg",
+          "description": "Anti-tank"
+        }
+      ]
+    }
   ]
 }

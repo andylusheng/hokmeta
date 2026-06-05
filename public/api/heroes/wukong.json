@@ -49,9 +49,9 @@
   "build": [
     {
       "slot": 1,
-      "itemId": "1523",
-      "name": "Relentless Blade",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1523.jpg",
+      "itemId": "1533",
+      "name": "Rapacious Bite",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1533.jpg",
       "description": "Monster kills boost PATK"
     },
     {
@@ -70,17 +70,17 @@
     },
     {
       "slot": 4,
-      "itemId": "1533",
-      "name": "Rapacious Bite",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1533.jpg",
-      "description": "Monster kills boost PATK"
-    },
-    {
-      "slot": 5,
       "itemId": "1136",
       "name": "Shadow Ripper",
       "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1136.jpg",
       "description": "Crits boost ASPD"
+    },
+    {
+      "slot": 5,
+      "itemId": "1132",
+      "name": "Bloodweeper",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1132.jpg",
+      "description": "Physical Lifesteal"
     },
     {
       "slot": 6,
@@ -143,5 +143,457 @@
     "Pick rate 1.29% in global ranked.",
     "Ban rate 0.26%.",
     "Counters: Dun, Lian Po, Xiang Yu. Countered by: Agudo, Gao, Heino."
+  ],
+  "builds": [
+    {
+      "id": "recommended",
+      "label": "Recommended",
+      "position": null,
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1533",
+          "name": "Rapacious Bite",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1533.jpg",
+          "description": "Monster kills boost PATK"
+        },
+        {
+          "slot": 2,
+          "itemId": "1425",
+          "name": "Boots of Dexterity",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1425.jpg",
+          "description": "Boosts ASPD"
+        },
+        {
+          "slot": 3,
+          "itemId": "1133",
+          "name": "Eternity Blade",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1133.jpg",
+          "description": "High crit damage"
+        },
+        {
+          "slot": 4,
+          "itemId": "1136",
+          "name": "Shadow Ripper",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1136.jpg",
+          "description": "Crits boost ASPD"
+        },
+        {
+          "slot": 5,
+          "itemId": "1132",
+          "name": "Bloodweeper",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1132.jpg",
+          "description": "Physical Lifesteal"
+        },
+        {
+          "slot": 6,
+          "itemId": "1131",
+          "name": "Starbreaker",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1131.jpg",
+          "description": "Anti-tank"
+        }
+      ]
+    },
+    {
+      "id": "jungling-2",
+      "label": "Jungling 2",
+      "position": "Position 3",
+      "lane": "Jungling",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1511",
+          "name": "Hunting Knife",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1511.jpg",
+          "description": "Speeds up jungling"
+        },
+        {
+          "slot": 2,
+          "itemId": "1425",
+          "name": "Boots of Dexterity",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1425.jpg",
+          "description": "Boosts ASPD"
+        },
+        {
+          "slot": 3,
+          "itemId": "1523",
+          "name": "Relentless Blade",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1523.jpg",
+          "description": "Monster kills boost PATK"
+        },
+        {
+          "slot": 4,
+          "itemId": "1533",
+          "name": "Rapacious Bite",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1533.jpg",
+          "description": "Monster kills boost PATK"
+        },
+        {
+          "slot": 5,
+          "itemId": "1133",
+          "name": "Eternity Blade",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1133.jpg",
+          "description": "High crit damage"
+        },
+        {
+          "slot": 6,
+          "itemId": "1136",
+          "name": "Shadow Ripper",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1136.jpg",
+          "description": "Crits boost ASPD"
+        }
+      ]
+    },
+    {
+      "id": "jungling-3",
+      "label": "Jungling 3",
+      "position": "Position 3",
+      "lane": "Jungling",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1511",
+          "name": "Hunting Knife",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1511.jpg",
+          "description": "Speeds up jungling"
+        },
+        {
+          "slot": 2,
+          "itemId": "1425",
+          "name": "Boots of Dexterity",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1425.jpg",
+          "description": "Boosts ASPD"
+        },
+        {
+          "slot": 3,
+          "itemId": "1523",
+          "name": "Relentless Blade",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1523.jpg",
+          "description": "Monster kills boost PATK"
+        },
+        {
+          "slot": 4,
+          "itemId": "1533",
+          "name": "Rapacious Bite",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1533.jpg",
+          "description": "Monster kills boost PATK"
+        },
+        {
+          "slot": 5,
+          "itemId": "1133",
+          "name": "Eternity Blade",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1133.jpg",
+          "description": "High crit damage"
+        },
+        {
+          "slot": 6,
+          "itemId": "1331",
+          "name": "Blazing Cape",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1331.jpg",
+          "description": "Burns nearby enemies"
+        }
+      ]
+    },
+    {
+      "id": "seisuke-build",
+      "label": "Seisuke build",
+      "position": "Position 3",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1523",
+          "name": "Relentless Blade",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1523.jpg",
+          "description": "Monster kills boost PATK"
+        },
+        {
+          "slot": 2,
+          "itemId": "1425",
+          "name": "Boots of Dexterity",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1425.jpg",
+          "description": "Boosts ASPD"
+        },
+        {
+          "slot": 3,
+          "itemId": "1133",
+          "name": "Eternity Blade",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1133.jpg",
+          "description": "High crit damage"
+        },
+        {
+          "slot": 4,
+          "itemId": "1136",
+          "name": "Shadow Ripper",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1136.jpg",
+          "description": "Crits boost ASPD"
+        },
+        {
+          "slot": 5,
+          "itemId": "1533",
+          "name": "Rapacious Bite",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1533.jpg",
+          "description": "Monster kills boost PATK"
+        },
+        {
+          "slot": 6,
+          "itemId": "1134",
+          "name": "Master Sword",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1134.jpg",
+          "description": "Enhances BA"
+        }
+      ]
+    },
+    {
+      "id": "damage",
+      "label": "Damage",
+      "position": "Position 3",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1533",
+          "name": "Rapacious Bite",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1533.jpg",
+          "description": "Monster kills boost PATK"
+        },
+        {
+          "slot": 2,
+          "itemId": "1425",
+          "name": "Boots of Dexterity",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1425.jpg",
+          "description": "Boosts ASPD"
+        },
+        {
+          "slot": 3,
+          "itemId": "1133",
+          "name": "Eternity Blade",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1133.jpg",
+          "description": "High crit damage"
+        },
+        {
+          "slot": 4,
+          "itemId": "1136",
+          "name": "Shadow Ripper",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1136.jpg",
+          "description": "Crits boost ASPD"
+        },
+        {
+          "slot": 5,
+          "itemId": "1141",
+          "name": "Sunchaser",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1141.jpg",
+          "description": "Boosts attack range"
+        },
+        {
+          "slot": 6,
+          "itemId": "1138",
+          "name": "Overlord's Might",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1138.jpg",
+          "description": "High-damage attack"
+        }
+      ]
+    },
+    {
+      "id": "popular",
+      "label": "Popular",
+      "position": "Position 3",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1523",
+          "name": "Relentless Blade",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1523.jpg",
+          "description": "Monster kills boost PATK"
+        },
+        {
+          "slot": 2,
+          "itemId": "1425",
+          "name": "Boots of Dexterity",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1425.jpg",
+          "description": "Boosts ASPD"
+        },
+        {
+          "slot": 3,
+          "itemId": "1137",
+          "name": "Axe of Torment",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1137.jpg",
+          "description": "Anti-squishy"
+        },
+        {
+          "slot": 4,
+          "itemId": "1133",
+          "name": "Eternity Blade",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1133.jpg",
+          "description": "High crit damage"
+        },
+        {
+          "slot": 5,
+          "itemId": "1421",
+          "name": "Boots of Fortitude",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1421.jpg",
+          "description": "Reduces physical damage"
+        },
+        {
+          "slot": 6,
+          "itemId": "1136",
+          "name": "Shadow Ripper",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1136.jpg",
+          "description": "Crits boost ASPD"
+        }
+      ]
+    },
+    {
+      "id": "hit-run",
+      "label": "Hit & Run",
+      "position": "Position 3",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1523",
+          "name": "Relentless Blade",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1523.jpg",
+          "description": "Monster kills boost PATK"
+        },
+        {
+          "slot": 2,
+          "itemId": "1425",
+          "name": "Boots of Dexterity",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1425.jpg",
+          "description": "Boosts ASPD"
+        },
+        {
+          "slot": 3,
+          "itemId": "1133",
+          "name": "Eternity Blade",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1133.jpg",
+          "description": "High crit damage"
+        },
+        {
+          "slot": 4,
+          "itemId": "1533",
+          "name": "Rapacious Bite",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1533.jpg",
+          "description": "Monster kills boost PATK"
+        },
+        {
+          "slot": 5,
+          "itemId": "1136",
+          "name": "Shadow Ripper",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1136.jpg",
+          "description": "Crits boost ASPD"
+        },
+        {
+          "slot": 6,
+          "itemId": "1131",
+          "name": "Starbreaker",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1131.jpg",
+          "description": "Anti-tank"
+        }
+      ]
+    },
+    {
+      "id": "青帝斜阳流",
+      "label": "青帝斜阳流",
+      "position": "Position 3",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1522",
+          "name": "Patrol Axe",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1522.jpg",
+          "description": "Monster kills boost Health"
+        },
+        {
+          "slot": 2,
+          "itemId": "1425",
+          "name": "Boots of Dexterity",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1425.jpg",
+          "description": "Boosts ASPD"
+        },
+        {
+          "slot": 3,
+          "itemId": "1133",
+          "name": "Eternity Blade",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1133.jpg",
+          "description": "High crit damage"
+        },
+        {
+          "slot": 4,
+          "itemId": "1134",
+          "name": "Master Sword",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1134.jpg",
+          "description": "Enhances BA"
+        },
+        {
+          "slot": 5,
+          "itemId": "1137",
+          "name": "Axe of Torment",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1137.jpg",
+          "description": "Anti-squishy"
+        },
+        {
+          "slot": 6,
+          "itemId": "1126",
+          "name": "Doomsday",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1126.jpg",
+          "description": "Boosts BA damage"
+        }
+      ]
+    },
+    {
+      "id": "houzi1",
+      "label": "houzi1",
+      "position": "Position 3",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1511",
+          "name": "Hunting Knife",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1511.jpg",
+          "description": "Speeds up jungling"
+        },
+        {
+          "slot": 2,
+          "itemId": "1425",
+          "name": "Boots of Dexterity",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1425.jpg",
+          "description": "Boosts ASPD"
+        },
+        {
+          "slot": 3,
+          "itemId": "1523",
+          "name": "Relentless Blade",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1523.jpg",
+          "description": "Monster kills boost PATK"
+        },
+        {
+          "slot": 4,
+          "itemId": "1133",
+          "name": "Eternity Blade",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1133.jpg",
+          "description": "High crit damage"
+        },
+        {
+          "slot": 5,
+          "itemId": "1136",
+          "name": "Shadow Ripper",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1136.jpg",
+          "description": "Crits boost ASPD"
+        },
+        {
+          "slot": 6,
+          "itemId": "1114",
+          "name": "Vampiric Scythe",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1114.jpg",
+          "description": "Physical Lifesteal"
+        }
+      ]
+    }
   ]
 }

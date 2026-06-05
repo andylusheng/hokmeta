@@ -49,45 +49,45 @@
   "build": [
     {
       "slot": 1,
-      "itemId": "1523",
-      "name": "Relentless Blade",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1523.jpg",
+      "itemId": "1533",
+      "name": "Rapacious Bite",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1533.jpg",
       "description": "Monster kills boost PATK"
     },
     {
       "slot": 2,
-      "itemId": "1411",
-      "name": "Lightfoot Shoes",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1411.jpg",
-      "description": "Movement Speed"
-    },
-    {
-      "slot": 3,
-      "itemId": "1124",
-      "name": "Meteor",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1124.jpg",
-      "description": "PATK +35\nCDR +7.5%"
-    },
-    {
-      "slot": 4,
       "itemId": "1425",
       "name": "Boots of Dexterity",
       "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1425.jpg",
       "description": "Boosts ASPD"
     },
     {
-      "slot": 5,
+      "slot": 3,
       "itemId": "1137",
       "name": "Axe of Torment",
       "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1137.jpg",
       "description": "Anti-squishy"
     },
     {
-      "slot": 6,
+      "slot": 4,
       "itemId": "1132",
       "name": "Bloodweeper",
       "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1132.jpg",
       "description": "Physical Lifesteal"
+    },
+    {
+      "slot": 5,
+      "itemId": "1134",
+      "name": "Master Sword",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1134.jpg",
+      "description": "Enhances BA"
+    },
+    {
+      "slot": 6,
+      "itemId": "1136",
+      "name": "Shadow Ripper",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1136.jpg",
+      "description": "Crits boost ASPD"
     }
   ],
   "arcana": [
@@ -143,5 +143,257 @@
     "Pick rate 0.7% in global ranked.",
     "Ban rate 0.17%.",
     "Counters: Dun, Lian Po, Liu Shan. Countered by: Garo, Mozi, Shi."
+  ],
+  "builds": [
+    {
+      "id": "recommended",
+      "label": "Recommended",
+      "position": null,
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1533",
+          "name": "Rapacious Bite",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1533.jpg",
+          "description": "Monster kills boost PATK"
+        },
+        {
+          "slot": 2,
+          "itemId": "1425",
+          "name": "Boots of Dexterity",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1425.jpg",
+          "description": "Boosts ASPD"
+        },
+        {
+          "slot": 3,
+          "itemId": "1137",
+          "name": "Axe of Torment",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1137.jpg",
+          "description": "Anti-squishy"
+        },
+        {
+          "slot": 4,
+          "itemId": "1132",
+          "name": "Bloodweeper",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1132.jpg",
+          "description": "Physical Lifesteal"
+        },
+        {
+          "slot": 5,
+          "itemId": "1134",
+          "name": "Master Sword",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1134.jpg",
+          "description": "Enhances BA"
+        },
+        {
+          "slot": 6,
+          "itemId": "1136",
+          "name": "Shadow Ripper",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1136.jpg",
+          "description": "Crits boost ASPD"
+        }
+      ]
+    },
+    {
+      "id": "jungling-2",
+      "label": "Jungling 2",
+      "position": "Position 3",
+      "lane": "Jungling",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1523",
+          "name": "Relentless Blade",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1523.jpg",
+          "description": "Monster kills boost PATK"
+        },
+        {
+          "slot": 2,
+          "itemId": "1425",
+          "name": "Boots of Dexterity",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1425.jpg",
+          "description": "Boosts ASPD"
+        },
+        {
+          "slot": 3,
+          "itemId": "1533",
+          "name": "Rapacious Bite",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1533.jpg",
+          "description": "Monster kills boost PATK"
+        },
+        {
+          "slot": 4,
+          "itemId": "1137",
+          "name": "Axe of Torment",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1137.jpg",
+          "description": "Anti-squishy"
+        },
+        {
+          "slot": 5,
+          "itemId": "1132",
+          "name": "Bloodweeper",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1132.jpg",
+          "description": "Physical Lifesteal"
+        },
+        {
+          "slot": 6,
+          "itemId": "1159",
+          "name": "Tempest",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1159.jpg",
+          "description": "Stacks Attack Speed & Movement Speed"
+        }
+      ]
+    },
+    {
+      "id": "jungling-1",
+      "label": "Jungling 1",
+      "position": "Position 3",
+      "lane": "Jungling",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1523",
+          "name": "Relentless Blade",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1523.jpg",
+          "description": "Monster kills boost PATK"
+        },
+        {
+          "slot": 2,
+          "itemId": "1411",
+          "name": "Lightfoot Shoes",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1411.jpg",
+          "description": "Movement Speed"
+        },
+        {
+          "slot": 3,
+          "itemId": "1124",
+          "name": "Meteor",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1124.jpg",
+          "description": "PATK +35\nCDR +7.5%"
+        },
+        {
+          "slot": 4,
+          "itemId": "1425",
+          "name": "Boots of Dexterity",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1425.jpg",
+          "description": "Boosts ASPD"
+        },
+        {
+          "slot": 5,
+          "itemId": "1137",
+          "name": "Axe of Torment",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1137.jpg",
+          "description": "Anti-squishy"
+        },
+        {
+          "slot": 6,
+          "itemId": "1132",
+          "name": "Bloodweeper",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1132.jpg",
+          "description": "Physical Lifesteal"
+        }
+      ]
+    },
+    {
+      "id": "zhn红鬼",
+      "label": "Zhàn红鬼",
+      "position": "Position 3",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1523",
+          "name": "Relentless Blade",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1523.jpg",
+          "description": "Monster kills boost PATK"
+        },
+        {
+          "slot": 2,
+          "itemId": "1425",
+          "name": "Boots of Dexterity",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1425.jpg",
+          "description": "Boosts ASPD"
+        },
+        {
+          "slot": 3,
+          "itemId": "1124",
+          "name": "Meteor",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1124.jpg",
+          "description": "PATK +35\nCDR +7.5%"
+        },
+        {
+          "slot": 4,
+          "itemId": "1137",
+          "name": "Axe of Torment",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1137.jpg",
+          "description": "Anti-squishy"
+        },
+        {
+          "slot": 5,
+          "itemId": "1158",
+          "name": "Bloodsoul",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1158.jpg",
+          "description": "PATK +35, Physical Lifesteal +12%"
+        },
+        {
+          "slot": 6,
+          "itemId": "1533",
+          "name": "Rapacious Bite",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1533.jpg",
+          "description": "Monster kills boost PATK"
+        }
+      ]
+    },
+    {
+      "id": "popular",
+      "label": "Popular",
+      "position": "Position 3",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1523",
+          "name": "Relentless Blade",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1523.jpg",
+          "description": "Monster kills boost PATK"
+        },
+        {
+          "slot": 2,
+          "itemId": "1425",
+          "name": "Boots of Dexterity",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1425.jpg",
+          "description": "Boosts ASPD"
+        },
+        {
+          "slot": 3,
+          "itemId": "1137",
+          "name": "Axe of Torment",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1137.jpg",
+          "description": "Anti-squishy"
+        },
+        {
+          "slot": 4,
+          "itemId": "1132",
+          "name": "Bloodweeper",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1132.jpg",
+          "description": "Physical Lifesteal"
+        },
+        {
+          "slot": 5,
+          "itemId": "1533",
+          "name": "Rapacious Bite",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1533.jpg",
+          "description": "Monster kills boost PATK"
+        },
+        {
+          "slot": 6,
+          "itemId": "1138",
+          "name": "Overlord's Might",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1138.jpg",
+          "description": "High-damage attack"
+        }
+      ]
+    }
   ]
 }

@@ -5,6 +5,7 @@
   "scripts": {
     "predev": "node scripts/copy-api.js",
     "dev": "next dev -p 3001",
+    "dev:clean": "node scripts/clean-dev-cache.js && npm run dev",
     "prebuild": "node scripts/copy-api.js",
     "build": "next build",
     "start": "next start",
@@ -14,6 +15,7 @@
     "fix-skill-icons": "node scripts/fix-skill-icons.js",
     "fix-all-icons": "node scripts/fix-all-icons-fast.js",
     "repair-heroes": "node scripts/repair-heroes.js",
+    "repair-builds": "node scripts/repair-builds-only.js",
     "postbuild": "node scripts/copy-api.js"
   },
   "dependencies": {

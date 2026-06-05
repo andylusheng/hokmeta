@@ -49,17 +49,17 @@
   "build": [
     {
       "slot": 1,
+      "itemId": "1135",
+      "name": "Sparkforged Dagger",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1135.jpg",
+      "description": "Chain lightning BA"
+    },
+    {
+      "slot": 2,
       "itemId": "1425",
       "name": "Boots of Dexterity",
       "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1425.jpg",
       "description": "Boosts ASPD"
-    },
-    {
-      "slot": 2,
-      "itemId": "1136",
-      "name": "Shadow Ripper",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1136.jpg",
-      "description": "Crits boost ASPD"
     },
     {
       "slot": 3,
@@ -70,24 +70,24 @@
     },
     {
       "slot": 4,
-      "itemId": "1159",
-      "name": "Tempest",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1159.jpg",
-      "description": "Stacks Attack Speed & Movement Speed"
-    },
-    {
-      "slot": 5,
       "itemId": "1155",
       "name": "Daybreaker's Virtue",
       "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1155.jpg",
       "description": "Great for marksmen"
     },
     {
+      "slot": 5,
+      "itemId": null,
+      "name": "siege breaker",
+      "icon": null,
+      "description": null
+    },
+    {
       "slot": 6,
-      "itemId": "1141",
-      "name": "Sunchaser",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1141.jpg",
-      "description": "Boosts attack range"
+      "itemId": "1131",
+      "name": "Starbreaker",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1131.jpg",
+      "description": "Anti-tank"
     }
   ],
   "arcana": [
@@ -144,5 +144,357 @@
     "Pick rate 0.49% in global ranked.",
     "Ban rate 0.02%.",
     "Counters: Xuance, Mai Shiranui, Jing. Countered by: Data unavailable, Data unavailable, Data unavailable."
+  ],
+  "builds": [
+    {
+      "id": "recommended",
+      "label": "Recommended",
+      "position": null,
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1135",
+          "name": "Sparkforged Dagger",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1135.jpg",
+          "description": "Chain lightning BA"
+        },
+        {
+          "slot": 2,
+          "itemId": "1425",
+          "name": "Boots of Dexterity",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1425.jpg",
+          "description": "Boosts ASPD"
+        },
+        {
+          "slot": 3,
+          "itemId": "1133",
+          "name": "Eternity Blade",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1133.jpg",
+          "description": "High crit damage"
+        },
+        {
+          "slot": 4,
+          "itemId": "1155",
+          "name": "Daybreaker's Virtue",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1155.jpg",
+          "description": "Great for marksmen"
+        },
+        {
+          "slot": 5,
+          "itemId": null,
+          "name": "siege breaker",
+          "icon": null,
+          "description": null
+        },
+        {
+          "slot": 6,
+          "itemId": "1131",
+          "name": "Starbreaker",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1131.jpg",
+          "description": "Anti-tank"
+        }
+      ]
+    },
+    {
+      "id": "farm-lane-1",
+      "label": "Farm Lane 1",
+      "position": "Position 4",
+      "lane": "Farm Lane",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1129",
+          "name": "Swiftstrike Lance",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1129.jpg",
+          "description": "ASPD +15%, PATK +35"
+        },
+        {
+          "slot": 2,
+          "itemId": "1425",
+          "name": "Boots of Dexterity",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1425.jpg",
+          "description": "Boosts ASPD"
+        },
+        {
+          "slot": 3,
+          "itemId": "1136",
+          "name": "Shadow Ripper",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1136.jpg",
+          "description": "Crits boost ASPD"
+        },
+        {
+          "slot": 4,
+          "itemId": "1159",
+          "name": "Tempest",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1159.jpg",
+          "description": "Stacks Attack Speed & Movement Speed"
+        },
+        {
+          "slot": 5,
+          "itemId": "1133",
+          "name": "Eternity Blade",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1133.jpg",
+          "description": "High crit damage"
+        },
+        {
+          "slot": 6,
+          "itemId": "1154",
+          "name": "Cloud Piercer",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1154.jpg",
+          "description": "Crit Rate +12%, ASPD +15%"
+        }
+      ]
+    },
+    {
+      "id": "hz",
+      "label": "HZ",
+      "position": "Position 4",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1425",
+          "name": "Boots of Dexterity",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1425.jpg",
+          "description": "Boosts ASPD"
+        },
+        {
+          "slot": 2,
+          "itemId": "1136",
+          "name": "Shadow Ripper",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1136.jpg",
+          "description": "Crits boost ASPD"
+        },
+        {
+          "slot": 3,
+          "itemId": "1133",
+          "name": "Eternity Blade",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1133.jpg",
+          "description": "High crit damage"
+        },
+        {
+          "slot": 4,
+          "itemId": "1159",
+          "name": "Tempest",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1159.jpg",
+          "description": "Stacks Attack Speed & Movement Speed"
+        },
+        {
+          "slot": 5,
+          "itemId": "1155",
+          "name": "Daybreaker's Virtue",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1155.jpg",
+          "description": "Great for marksmen"
+        },
+        {
+          "slot": 6,
+          "itemId": "1141",
+          "name": "Sunchaser",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1141.jpg",
+          "description": "Boosts attack range"
+        }
+      ]
+    },
+    {
+      "id": "tex",
+      "label": "ᵀᵀᴷ  TEX",
+      "position": "Position 4",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1425",
+          "name": "Boots of Dexterity",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1425.jpg",
+          "description": "Boosts ASPD"
+        },
+        {
+          "slot": 2,
+          "itemId": "1136",
+          "name": "Shadow Ripper",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1136.jpg",
+          "description": "Crits boost ASPD"
+        },
+        {
+          "slot": 3,
+          "itemId": "1159",
+          "name": "Tempest",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1159.jpg",
+          "description": "Stacks Attack Speed & Movement Speed"
+        },
+        {
+          "slot": 4,
+          "itemId": "1126",
+          "name": "Doomsday",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1126.jpg",
+          "description": "Boosts BA damage"
+        },
+        {
+          "slot": 5,
+          "itemId": "1133",
+          "name": "Eternity Blade",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1133.jpg",
+          "description": "High crit damage"
+        },
+        {
+          "slot": 6,
+          "itemId": "1132",
+          "name": "Bloodweeper",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1132.jpg",
+          "description": "Physical Lifesteal"
+        }
+      ]
+    },
+    {
+      "id": "tex",
+      "label": "ᵀᵀᴷ  TEX",
+      "position": "Position 4",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1425",
+          "name": "Boots of Dexterity",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1425.jpg",
+          "description": "Boosts ASPD"
+        },
+        {
+          "slot": 2,
+          "itemId": "1123",
+          "name": "Twinblades of Destruction",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1123.jpg",
+          "description": "ASPD +15%, MSPD +7.5%"
+        },
+        {
+          "slot": 3,
+          "itemId": "1136",
+          "name": "Shadow Ripper",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1136.jpg",
+          "description": "Crits boost ASPD"
+        },
+        {
+          "slot": 4,
+          "itemId": "1159",
+          "name": "Tempest",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1159.jpg",
+          "description": "Stacks Attack Speed & Movement Speed"
+        },
+        {
+          "slot": 5,
+          "itemId": "1133",
+          "name": "Eternity Blade",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1133.jpg",
+          "description": "High crit damage"
+        },
+        {
+          "slot": 6,
+          "itemId": "1155",
+          "name": "Daybreaker's Virtue",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1155.jpg",
+          "description": "Great for marksmen"
+        }
+      ]
+    },
+    {
+      "id": "黄忠",
+      "label": "黄忠",
+      "position": "Position 4",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1123",
+          "name": "Twinblades of Destruction",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1123.jpg",
+          "description": "ASPD +15%, MSPD +7.5%"
+        },
+        {
+          "slot": 2,
+          "itemId": "1425",
+          "name": "Boots of Dexterity",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1425.jpg",
+          "description": "Boosts ASPD"
+        },
+        {
+          "slot": 3,
+          "itemId": "1136",
+          "name": "Shadow Ripper",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1136.jpg",
+          "description": "Crits boost ASPD"
+        },
+        {
+          "slot": 4,
+          "itemId": "1133",
+          "name": "Eternity Blade",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1133.jpg",
+          "description": "High crit damage"
+        },
+        {
+          "slot": 5,
+          "itemId": "1132",
+          "name": "Bloodweeper",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1132.jpg",
+          "description": "Physical Lifesteal"
+        },
+        {
+          "slot": 6,
+          "itemId": "1159",
+          "name": "Tempest",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1159.jpg",
+          "description": "Stacks Attack Speed & Movement Speed"
+        }
+      ]
+    },
+    {
+      "id": "hosh1",
+      "label": "Hosh1",
+      "position": "Position 4",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1425",
+          "name": "Boots of Dexterity",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1425.jpg",
+          "description": "Boosts ASPD"
+        },
+        {
+          "slot": 2,
+          "itemId": "1116",
+          "name": "Thunderclap Brand",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1116.jpg",
+          "description": "PATK +35, Crit Rate +12%"
+        },
+        {
+          "slot": 3,
+          "itemId": "1136",
+          "name": "Shadow Ripper",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1136.jpg",
+          "description": "Crits boost ASPD"
+        },
+        {
+          "slot": 4,
+          "itemId": "1133",
+          "name": "Eternity Blade",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1133.jpg",
+          "description": "High crit damage"
+        },
+        {
+          "slot": 5,
+          "itemId": "1155",
+          "name": "Daybreaker's Virtue",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1155.jpg",
+          "description": "Great for marksmen"
+        },
+        {
+          "slot": 6,
+          "itemId": "1126",
+          "name": "Doomsday",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1126.jpg",
+          "description": "Boosts BA damage"
+        }
+      ]
+    }
   ]
 }

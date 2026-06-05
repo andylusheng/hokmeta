@@ -3,6 +3,7 @@
 import { useMemo, useState } from 'react';
 import type { Hero } from '@/types/hero';
 import { BuildBlock } from '@/components/BuildBlock';
+import { HeroSelect } from '@/components/HeroSelect';
 
 export function BuildGeneratorClient({ heroes }: { heroes: Hero[] }) {
   const [slug, setSlug] = useState(heroes[0]?.slug ?? '');
@@ -14,20 +15,10 @@ export function BuildGeneratorClient({ heroes }: { heroes: Hero[] }) {
 
   return (
     <div className="space-y-6">
-      <label className="block">
+      <div>
         <span className="mb-2 block text-sm text-gray-400">Select hero</span>
-        <select
-          value={slug}
-          onChange={(e) => setSlug(e.target.value)}
-          className="w-full max-w-md rounded border border-hok-border bg-hok-card px-3 py-2 text-white"
-        >
-          {heroes.map((h) => (
-            <option key={h.slug} value={h.slug}>
-              {h.name} ({h.role})
-            </option>
-          ))}
-        </select>
-      </label>
+        <HeroSelect heroes={heroes} value={slug} onChange={setSlug} />
+      </div>
       {hero ? (
         <div className="card">
           <h2 className="section-title">{hero.name} build path</h2>

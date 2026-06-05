@@ -7,7 +7,13 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  distDir: 'out',
+  // Windows: filesystem webpack cache often races → ENOENT on .pack.gz rename → 500 on chunks.
+  webpack: (config, { dev }) => {
+    if (dev) {
+      config.cache = { type: 'memory' };
+    }
+    return config;
+  },
 };
 
 export default nextConfig;

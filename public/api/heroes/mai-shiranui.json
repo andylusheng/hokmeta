@@ -49,45 +49,45 @@
   "build": [
     {
       "slot": 1,
-      "itemId": "1224",
-      "name": "Stone of Sorcery",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1224.jpg",
-      "description": "MATK +60\nMSPD +7.5%"
-    },
-    {
-      "slot": 2,
       "itemId": "1233",
       "name": "Scepter of Reverberation",
       "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1233.jpg",
       "description": "Skill hits trigger explosions"
     },
     {
-      "slot": 3,
-      "itemId": "1411",
-      "name": "Lightfoot Shoes",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1411.jpg",
-      "description": "Movement Speed"
-    },
-    {
-      "slot": 4,
-      "itemId": "1232",
-      "name": "Savant's Wrath",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1232.jpg",
-      "description": "Greatly boosts MATK"
-    },
-    {
-      "slot": 5,
+      "slot": 2,
       "itemId": "1422",
       "name": "Boots of Resistance",
       "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
       "description": "Shortens CC"
     },
     {
+      "slot": 3,
+      "itemId": "1232",
+      "name": "Savant's Wrath",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1232.jpg",
+      "description": "Greatly boosts MATK"
+    },
+    {
+      "slot": 4,
+      "itemId": "1240",
+      "name": "Insatiable Tome",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1240.jpg",
+      "description": "Magical Lifesteal"
+    },
+    {
+      "slot": 5,
+      "itemId": "1231",
+      "name": "Void Staff",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1231.jpg",
+      "description": "Anti-tank"
+    },
+    {
       "slot": 6,
-      "itemId": "1222",
-      "name": "Blood Clan's Grimoire",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1222.jpg",
-      "description": "MATK +60, Magical Lifesteal +12%"
+      "itemId": "1239",
+      "name": "Splendor",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1239.jpg",
+      "description": "Temp. invincibility"
     }
   ],
   "arcana": [
@@ -143,5 +143,457 @@
     "Pick rate 0.76% in global ranked.",
     "Ban rate 0.16%.",
     "Counters: Data unavailable, Data unavailable, Data unavailable. Countered by: Alessio, Charlotte, Di Renjie."
+  ],
+  "builds": [
+    {
+      "id": "recommended",
+      "label": "Recommended",
+      "position": null,
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1233",
+          "name": "Scepter of Reverberation",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1233.jpg",
+          "description": "Skill hits trigger explosions"
+        },
+        {
+          "slot": 2,
+          "itemId": "1422",
+          "name": "Boots of Resistance",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
+          "description": "Shortens CC"
+        },
+        {
+          "slot": 3,
+          "itemId": "1232",
+          "name": "Savant's Wrath",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1232.jpg",
+          "description": "Greatly boosts MATK"
+        },
+        {
+          "slot": 4,
+          "itemId": "1240",
+          "name": "Insatiable Tome",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1240.jpg",
+          "description": "Magical Lifesteal"
+        },
+        {
+          "slot": 5,
+          "itemId": "1231",
+          "name": "Void Staff",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1231.jpg",
+          "description": "Anti-tank"
+        },
+        {
+          "slot": 6,
+          "itemId": "1239",
+          "name": "Splendor",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1239.jpg",
+          "description": "Temp. invincibility"
+        }
+      ]
+    },
+    {
+      "id": "principal",
+      "label": "Principal.",
+      "position": "Position 2",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1224",
+          "name": "Stone of Sorcery",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1224.jpg",
+          "description": "MATK +60\nMSPD +7.5%"
+        },
+        {
+          "slot": 2,
+          "itemId": "1411",
+          "name": "Lightfoot Shoes",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1411.jpg",
+          "description": "Movement Speed"
+        },
+        {
+          "slot": 3,
+          "itemId": "1233",
+          "name": "Scepter of Reverberation",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1233.jpg",
+          "description": "Skill hits trigger explosions"
+        },
+        {
+          "slot": 4,
+          "itemId": "1422",
+          "name": "Boots of Resistance",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
+          "description": "Shortens CC"
+        },
+        {
+          "slot": 5,
+          "itemId": "1232",
+          "name": "Savant's Wrath",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1232.jpg",
+          "description": "Greatly boosts MATK"
+        },
+        {
+          "slot": 6,
+          "itemId": "1222",
+          "name": "Blood Clan's Grimoire",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1222.jpg",
+          "description": "MATK +60, Magical Lifesteal +12%"
+        }
+      ]
+    },
+    {
+      "id": "boom-pamaypay",
+      "label": "Boom Pamaypay",
+      "position": "Position 2",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1240",
+          "name": "Insatiable Tome",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1240.jpg",
+          "description": "Magical Lifesteal"
+        },
+        {
+          "slot": 2,
+          "itemId": "1232",
+          "name": "Savant's Wrath",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1232.jpg",
+          "description": "Greatly boosts MATK"
+        },
+        {
+          "slot": 3,
+          "itemId": "1422",
+          "name": "Boots of Resistance",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
+          "description": "Shortens CC"
+        },
+        {
+          "slot": 4,
+          "itemId": "1231",
+          "name": "Void Staff",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1231.jpg",
+          "description": "Anti-tank"
+        },
+        {
+          "slot": 5,
+          "itemId": "1233",
+          "name": "Scepter of Reverberation",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1233.jpg",
+          "description": "Skill hits trigger explosions"
+        },
+        {
+          "slot": 6,
+          "itemId": "1238",
+          "name": "Sage's Tome",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1238.jpg",
+          "description": "Great for mages"
+        }
+      ]
+    },
+    {
+      "id": "maiii",
+      "label": "Maiii",
+      "position": "Position 2",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1224",
+          "name": "Stone of Sorcery",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1224.jpg",
+          "description": "MATK +60\nMSPD +7.5%"
+        },
+        {
+          "slot": 2,
+          "itemId": "1233",
+          "name": "Scepter of Reverberation",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1233.jpg",
+          "description": "Skill hits trigger explosions"
+        },
+        {
+          "slot": 3,
+          "itemId": "1411",
+          "name": "Lightfoot Shoes",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1411.jpg",
+          "description": "Movement Speed"
+        },
+        {
+          "slot": 4,
+          "itemId": "1232",
+          "name": "Savant's Wrath",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1232.jpg",
+          "description": "Greatly boosts MATK"
+        },
+        {
+          "slot": 5,
+          "itemId": "1422",
+          "name": "Boots of Resistance",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
+          "description": "Shortens CC"
+        },
+        {
+          "slot": 6,
+          "itemId": "1222",
+          "name": "Blood Clan's Grimoire",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1222.jpg",
+          "description": "MATK +60, Magical Lifesteal +12%"
+        }
+      ]
+    },
+    {
+      "id": "popular",
+      "label": "Popular",
+      "position": "Position 2",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1233",
+          "name": "Scepter of Reverberation",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1233.jpg",
+          "description": "Skill hits trigger explosions"
+        },
+        {
+          "slot": 2,
+          "itemId": "1424",
+          "name": "Boots of the Arcane",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1424.jpg",
+          "description": "Magical Pierce"
+        },
+        {
+          "slot": 3,
+          "itemId": "1238",
+          "name": "Sage's Tome",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1238.jpg",
+          "description": "Great for mages"
+        },
+        {
+          "slot": 4,
+          "itemId": "1231",
+          "name": "Void Staff",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1231.jpg",
+          "description": "Anti-tank"
+        },
+        {
+          "slot": 5,
+          "itemId": "1235",
+          "name": "Mask of Agony",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1235.jpg",
+          "description": "Boosts skill damage"
+        },
+        {
+          "slot": 6,
+          "itemId": "1232",
+          "name": "Savant's Wrath",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1232.jpg",
+          "description": "Greatly boosts MATK"
+        }
+      ]
+    },
+    {
+      "id": "burstpoke",
+      "label": "Burst/poke",
+      "position": "Position 2",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1224",
+          "name": "Stone of Sorcery",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1224.jpg",
+          "description": "MATK +60\nMSPD +7.5%"
+        },
+        {
+          "slot": 2,
+          "itemId": "1222",
+          "name": "Blood Clan's Grimoire",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1222.jpg",
+          "description": "MATK +60, Magical Lifesteal +12%"
+        },
+        {
+          "slot": 3,
+          "itemId": "1240",
+          "name": "Insatiable Tome",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1240.jpg",
+          "description": "Magical Lifesteal"
+        },
+        {
+          "slot": 4,
+          "itemId": "1421",
+          "name": "Boots of Fortitude",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1421.jpg",
+          "description": "Reduces physical damage"
+        },
+        {
+          "slot": 5,
+          "itemId": "1232",
+          "name": "Savant's Wrath",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1232.jpg",
+          "description": "Greatly boosts MATK"
+        },
+        {
+          "slot": 6,
+          "itemId": "1233",
+          "name": "Scepter of Reverberation",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1233.jpg",
+          "description": "Skill hits trigger explosions"
+        }
+      ]
+    },
+    {
+      "id": "popular",
+      "label": "Popular",
+      "position": "Position 2",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1411",
+          "name": "Lightfoot Shoes",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1411.jpg",
+          "description": "Movement Speed"
+        },
+        {
+          "slot": 2,
+          "itemId": "1240",
+          "name": "Insatiable Tome",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1240.jpg",
+          "description": "Magical Lifesteal"
+        },
+        {
+          "slot": 3,
+          "itemId": "1422",
+          "name": "Boots of Resistance",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
+          "description": "Shortens CC"
+        },
+        {
+          "slot": 4,
+          "itemId": "12211",
+          "name": "Venomous Staff",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/12211.jpg",
+          "description": "Lowers Health regen"
+        },
+        {
+          "slot": 5,
+          "itemId": "1232",
+          "name": "Savant's Wrath",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1232.jpg",
+          "description": "Greatly boosts MATK"
+        },
+        {
+          "slot": 6,
+          "itemId": "1231",
+          "name": "Void Staff",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1231.jpg",
+          "description": "Anti-tank"
+        }
+      ]
+    },
+    {
+      "id": "meta-build",
+      "label": "Meta Build",
+      "position": "Position 2",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1240",
+          "name": "Insatiable Tome",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1240.jpg",
+          "description": "Magical Lifesteal"
+        },
+        {
+          "slot": 2,
+          "itemId": "1422",
+          "name": "Boots of Resistance",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
+          "description": "Shortens CC"
+        },
+        {
+          "slot": 3,
+          "itemId": "1232",
+          "name": "Savant's Wrath",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1232.jpg",
+          "description": "Greatly boosts MATK"
+        },
+        {
+          "slot": 4,
+          "itemId": "1238",
+          "name": "Sage's Tome",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1238.jpg",
+          "description": "Great for mages"
+        },
+        {
+          "slot": 5,
+          "itemId": "1231",
+          "name": "Void Staff",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1231.jpg",
+          "description": "Anti-tank"
+        },
+        {
+          "slot": 6,
+          "itemId": "1236",
+          "name": "Staves of Sorcery",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1236.jpg",
+          "description": "Enhances BA"
+        }
+      ]
+    },
+    {
+      "id": "waifu",
+      "label": "Waifu",
+      "position": "Position 2",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1224",
+          "name": "Stone of Sorcery",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1224.jpg",
+          "description": "MATK +60\nMSPD +7.5%"
+        },
+        {
+          "slot": 2,
+          "itemId": "1422",
+          "name": "Boots of Resistance",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
+          "description": "Shortens CC"
+        },
+        {
+          "slot": 3,
+          "itemId": "1233",
+          "name": "Scepter of Reverberation",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1233.jpg",
+          "description": "Skill hits trigger explosions"
+        },
+        {
+          "slot": 4,
+          "itemId": "1235",
+          "name": "Mask of Agony",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1235.jpg",
+          "description": "Boosts skill damage"
+        },
+        {
+          "slot": 5,
+          "itemId": "1232",
+          "name": "Savant's Wrath",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1232.jpg",
+          "description": "Greatly boosts MATK"
+        },
+        {
+          "slot": 6,
+          "itemId": "1238",
+          "name": "Sage's Tome",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1238.jpg",
+          "description": "Great for mages"
+        }
+      ]
+    }
   ]
 }

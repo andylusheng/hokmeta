@@ -49,45 +49,45 @@
   "build": [
     {
       "slot": 1,
-      "itemId": "1421",
-      "name": "Boots of Fortitude",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1421.jpg",
-      "description": "Reduces physical damage"
+      "itemId": "1426",
+      "name": "Boots of Deftness",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1426.jpg",
+      "description": "Extra Movement Speed"
     },
     {
       "slot": 2,
-      "itemId": "1341",
-      "name": "Frigid Charge",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1341.jpg",
-      "description": "Group CC"
+      "itemId": "1233",
+      "name": "Scepter of Reverberation",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1233.jpg",
+      "description": "Skill hits trigger explosions"
     },
     {
       "slot": 3,
-      "itemId": "1422",
-      "name": "Boots of Resistance",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
-      "description": "Shortens CC"
+      "itemId": "1232",
+      "name": "Savant's Wrath",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1232.jpg",
+      "description": "Greatly boosts MATK"
     },
     {
       "slot": 4,
-      "itemId": "1226",
-      "name": "Holy Grail",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1226.jpg",
-      "description": "Rapid Health & Mana Regen"
+      "itemId": "1237",
+      "name": "Augur's Word",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1237.jpg",
+      "description": "Offense & defense"
     },
     {
       "slot": 5,
-      "itemId": "1332",
-      "name": "Overlord's Platemail",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1332.jpg",
-      "description": "Extra Health"
+      "itemId": "1231",
+      "name": "Void Staff",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1231.jpg",
+      "description": "Anti-tank"
     },
     {
       "slot": 6,
-      "itemId": "1244",
-      "name": "Breakthrough Robe",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1244.jpg",
-      "description": "Converts Health into M. Pierce"
+      "itemId": null,
+      "name": "nightmare",
+      "icon": null,
+      "description": null
     }
   ],
   "arcana": [
@@ -143,5 +143,407 @@
     "Pick rate 0.79% in global ranked.",
     "Ban rate 3.39%.",
     "Counters: Allain, Cirrus, Kaizer. Countered by: Data unavailable, Data unavailable, Data unavailable."
+  ],
+  "builds": [
+    {
+      "id": "recommended",
+      "label": "Recommended",
+      "position": null,
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1426",
+          "name": "Boots of Deftness",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1426.jpg",
+          "description": "Extra Movement Speed"
+        },
+        {
+          "slot": 2,
+          "itemId": "1233",
+          "name": "Scepter of Reverberation",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1233.jpg",
+          "description": "Skill hits trigger explosions"
+        },
+        {
+          "slot": 3,
+          "itemId": "1232",
+          "name": "Savant's Wrath",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1232.jpg",
+          "description": "Greatly boosts MATK"
+        },
+        {
+          "slot": 4,
+          "itemId": "1237",
+          "name": "Augur's Word",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1237.jpg",
+          "description": "Offense & defense"
+        },
+        {
+          "slot": 5,
+          "itemId": "1231",
+          "name": "Void Staff",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1231.jpg",
+          "description": "Anti-tank"
+        },
+        {
+          "slot": 6,
+          "itemId": null,
+          "name": "nightmare",
+          "icon": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "id": "roaming-2",
+      "label": "Roaming 2",
+      "position": "Position 5",
+      "lane": "Roaming",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1701",
+          "name": "Knowledge Gem",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1701.jpg",
+          "description": "Extra Gold & EXP"
+        },
+        {
+          "slot": 2,
+          "itemId": "1422",
+          "name": "Boots of Resistance",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
+          "description": "Shortens CC"
+        },
+        {
+          "slot": 3,
+          "itemId": "1711",
+          "name": "Crimson Shadow",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1711.jpg",
+          "description": "DPS aura"
+        },
+        {
+          "slot": 4,
+          "itemId": "1737",
+          "name": "Crimson Shadow - Radiance",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1737.jpg",
+          "description": "Area damage & vision"
+        },
+        {
+          "slot": 5,
+          "itemId": "1333",
+          "name": "Ominous Premonition",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1333.jpg",
+          "description": "Slows attackers"
+        },
+        {
+          "slot": 6,
+          "itemId": "1347",
+          "name": "Longnight Guardian",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1347.jpg",
+          "description": "Resists burst damage"
+        }
+      ]
+    },
+    {
+      "id": "executor-2",
+      "label": "Executor 2",
+      "position": "Position 1",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1422",
+          "name": "Boots of Resistance",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
+          "description": "Shortens CC"
+        },
+        {
+          "slot": 2,
+          "itemId": "1237",
+          "name": "Augur's Word",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1237.jpg",
+          "description": "Offense & defense"
+        },
+        {
+          "slot": 3,
+          "itemId": "1240",
+          "name": "Insatiable Tome",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1240.jpg",
+          "description": "Magical Lifesteal"
+        },
+        {
+          "slot": 4,
+          "itemId": "1332",
+          "name": "Overlord's Platemail",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1332.jpg",
+          "description": "Extra Health"
+        },
+        {
+          "slot": 5,
+          "itemId": "1244",
+          "name": "Breakthrough Robe",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1244.jpg",
+          "description": "Converts Health into M. Pierce"
+        },
+        {
+          "slot": 6,
+          "itemId": "1232",
+          "name": "Savant's Wrath",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1232.jpg",
+          "description": "Greatly boosts MATK"
+        }
+      ]
+    },
+    {
+      "id": "nara",
+      "label": "Nara",
+      "position": "Position 5",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1422",
+          "name": "Boots of Resistance",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
+          "description": "Shortens CC"
+        },
+        {
+          "slot": 2,
+          "itemId": "1737",
+          "name": "Crimson Shadow - Radiance",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1737.jpg",
+          "description": "Area damage & vision"
+        },
+        {
+          "slot": 3,
+          "itemId": "1333",
+          "name": "Ominous Premonition",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1333.jpg",
+          "description": "Slows attackers"
+        },
+        {
+          "slot": 4,
+          "itemId": "1347",
+          "name": "Longnight Guardian",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1347.jpg",
+          "description": "Resists burst damage"
+        },
+        {
+          "slot": 5,
+          "itemId": "1332",
+          "name": "Overlord's Platemail",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1332.jpg",
+          "description": "Extra Health"
+        },
+        {
+          "slot": 6,
+          "itemId": "1334",
+          "name": "Eye of the Phoenix",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1334.jpg",
+          "description": "Boosts Health regen"
+        }
+      ]
+    },
+    {
+      "id": "semi-tanque",
+      "label": "Semi Tanque",
+      "position": "Position 1",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1421",
+          "name": "Boots of Fortitude",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1421.jpg",
+          "description": "Reduces physical damage"
+        },
+        {
+          "slot": 2,
+          "itemId": "1341",
+          "name": "Frigid Charge",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1341.jpg",
+          "description": "Group CC"
+        },
+        {
+          "slot": 3,
+          "itemId": "1422",
+          "name": "Boots of Resistance",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
+          "description": "Shortens CC"
+        },
+        {
+          "slot": 4,
+          "itemId": "1226",
+          "name": "Holy Grail",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1226.jpg",
+          "description": "Rapid Health & Mana Regen"
+        },
+        {
+          "slot": 5,
+          "itemId": "1332",
+          "name": "Overlord's Platemail",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1332.jpg",
+          "description": "Extra Health"
+        },
+        {
+          "slot": 6,
+          "itemId": "1244",
+          "name": "Breakthrough Robe",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1244.jpg",
+          "description": "Converts Health into M. Pierce"
+        }
+      ]
+    },
+    {
+      "id": "rotao",
+      "label": "Rotação",
+      "position": "Position 5",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1714",
+          "name": "Guardian",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1714.jpg",
+          "description": "Survivability aura"
+        },
+        {
+          "slot": 2,
+          "itemId": "1422",
+          "name": "Boots of Resistance",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
+          "description": "Shortens CC"
+        },
+        {
+          "slot": 3,
+          "itemId": "1341",
+          "name": "Frigid Charge",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1341.jpg",
+          "description": "Group CC"
+        },
+        {
+          "slot": 4,
+          "itemId": "1724",
+          "name": "Guardian - Redemption",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1724.jpg",
+          "description": "Group shield"
+        },
+        {
+          "slot": 5,
+          "itemId": "1226",
+          "name": "Holy Grail",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1226.jpg",
+          "description": "Rapid Health & Mana Regen"
+        },
+        {
+          "slot": 6,
+          "itemId": "1332",
+          "name": "Overlord's Platemail",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1332.jpg",
+          "description": "Extra Health"
+        }
+      ]
+    },
+    {
+      "id": "executor-dano",
+      "label": "Executor Dano",
+      "position": "Position 1",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1423",
+          "name": "Boots of Tranquility",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1423.jpg",
+          "description": "Reduces Skill CD"
+        },
+        {
+          "slot": 2,
+          "itemId": "1226",
+          "name": "Holy Grail",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1226.jpg",
+          "description": "Rapid Health & Mana Regen"
+        },
+        {
+          "slot": 3,
+          "itemId": "1237",
+          "name": "Augur's Word",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1237.jpg",
+          "description": "Offense & defense"
+        },
+        {
+          "slot": 4,
+          "itemId": "1238",
+          "name": "Sage's Tome",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1238.jpg",
+          "description": "Great for mages"
+        },
+        {
+          "slot": 5,
+          "itemId": "1244",
+          "name": "Breakthrough Robe",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1244.jpg",
+          "description": "Converts Health into M. Pierce"
+        },
+        {
+          "slot": 6,
+          "itemId": "1232",
+          "name": "Savant's Wrath",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1232.jpg",
+          "description": "Greatly boosts MATK"
+        }
+      ]
+    },
+    {
+      "id": "mary",
+      "label": "Mary..",
+      "position": "Position 5",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1737",
+          "name": "Crimson Shadow - Radiance",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1737.jpg",
+          "description": "Area damage & vision"
+        },
+        {
+          "slot": 2,
+          "itemId": "1422",
+          "name": "Boots of Resistance",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
+          "description": "Shortens CC"
+        },
+        {
+          "slot": 3,
+          "itemId": "1333",
+          "name": "Ominous Premonition",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1333.jpg",
+          "description": "Slows attackers"
+        },
+        {
+          "slot": 4,
+          "itemId": "1347",
+          "name": "Longnight Guardian",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1347.jpg",
+          "description": "Resists burst damage"
+        },
+        {
+          "slot": 5,
+          "itemId": "1332",
+          "name": "Overlord's Platemail",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1332.jpg",
+          "description": "Extra Health"
+        },
+        {
+          "slot": 6,
+          "itemId": "1334",
+          "name": "Eye of the Phoenix",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1334.jpg",
+          "description": "Boosts Health regen"
+        }
+      ]
+    }
   ]
 }

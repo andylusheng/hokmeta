@@ -19,6 +19,8 @@ const {
   discoverSkillIcons,
   resolveTencentAvatarUrl,
   parseBuildFromHtml,
+  parseBuildPresetsFromHtml,
+  pickDefaultBuildItems,
   buildItemLookup,
   tencentItemIcon,
 } = require('./hokstats-parse');
@@ -335,7 +337,15 @@ async function main() {
           }));
         }
 
-        hero.build = parseBuildFromHtml(html, itemLookup);
+        const buildPresets = parseBuildPresetsFromHtml(html, itemLookup);
+        if (buildPresets.length) {
+          hero.builds = buildPresets;
+          hero.build =
+            pickDefaultBuildItems(buildPresets, hero.lane) ||
+            buildPresets[0].items;
+        } else {
+          hero.build = parseBuildFromHtml(html, itemLookup, hero.lane);
+        }
         const arc = parseArcana(html);
         if (arc.length) hero.arcana = arc;
         const sp = parseSpells(html);

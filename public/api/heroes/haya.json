@@ -49,31 +49,31 @@
   "build": [
     {
       "slot": 1,
-      "itemId": "1424",
-      "name": "Boots of the Arcane",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1424.jpg",
-      "description": "Magical Pierce"
+      "itemId": null,
+      "name": "tome of wisdom",
+      "icon": null,
+      "description": null
     },
     {
       "slot": 2,
-      "itemId": "12211",
-      "name": "Venomous Staff",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/12211.jpg",
-      "description": "Lowers Health regen"
+      "itemId": "1426",
+      "name": "Boots of Deftness",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1426.jpg",
+      "description": "Extra Movement Speed"
     },
     {
       "slot": 3,
-      "itemId": "1727",
-      "name": "Twilight Stream",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1727.jpg",
-      "description": "Boosts Magical Pierce"
-    },
-    {
-      "slot": 4,
       "itemId": "1240",
       "name": "Insatiable Tome",
       "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1240.jpg",
       "description": "Magical Lifesteal"
+    },
+    {
+      "slot": 4,
+      "itemId": "1231",
+      "name": "Void Staff",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1231.jpg",
+      "description": "Anti-tank"
     },
     {
       "slot": 5,
@@ -84,10 +84,10 @@
     },
     {
       "slot": 6,
-      "itemId": "1227",
-      "name": "Ardent Dominion",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1227.jpg",
-      "description": "Shield at low Health"
+      "itemId": "12211",
+      "name": "Venomous Staff",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/12211.jpg",
+      "description": "Lowers Health regen"
     }
   ],
   "arcana": [
@@ -143,5 +143,457 @@
     "Pick rate 0.93% in global ranked.",
     "Ban rate 3.01%.",
     "Counters: Sakeer, Zilong, Milady. Countered by: Data unavailable, Data unavailable, Data unavailable."
+  ],
+  "builds": [
+    {
+      "id": "recommended",
+      "label": "Recommended",
+      "position": null,
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": null,
+          "name": "tome of wisdom",
+          "icon": null,
+          "description": null
+        },
+        {
+          "slot": 2,
+          "itemId": "1426",
+          "name": "Boots of Deftness",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1426.jpg",
+          "description": "Extra Movement Speed"
+        },
+        {
+          "slot": 3,
+          "itemId": "1240",
+          "name": "Insatiable Tome",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1240.jpg",
+          "description": "Magical Lifesteal"
+        },
+        {
+          "slot": 4,
+          "itemId": "1231",
+          "name": "Void Staff",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1231.jpg",
+          "description": "Anti-tank"
+        },
+        {
+          "slot": 5,
+          "itemId": "1232",
+          "name": "Savant's Wrath",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1232.jpg",
+          "description": "Greatly boosts MATK"
+        },
+        {
+          "slot": 6,
+          "itemId": "12211",
+          "name": "Venomous Staff",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/12211.jpg",
+          "description": "Lowers Health regen"
+        }
+      ]
+    },
+    {
+      "id": "mid-lane-1",
+      "label": "Mid Lane 1",
+      "position": "Position 2",
+      "lane": "Mid Lane",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1424",
+          "name": "Boots of the Arcane",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1424.jpg",
+          "description": "Magical Pierce"
+        },
+        {
+          "slot": 2,
+          "itemId": "1727",
+          "name": "Twilight Stream",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1727.jpg",
+          "description": "Boosts Magical Pierce"
+        },
+        {
+          "slot": 3,
+          "itemId": "12211",
+          "name": "Venomous Staff",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/12211.jpg",
+          "description": "Lowers Health regen"
+        },
+        {
+          "slot": 4,
+          "itemId": "1233",
+          "name": "Scepter of Reverberation",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1233.jpg",
+          "description": "Skill hits trigger explosions"
+        },
+        {
+          "slot": 5,
+          "itemId": "1238",
+          "name": "Sage's Tome",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1238.jpg",
+          "description": "Great for mages"
+        },
+        {
+          "slot": 6,
+          "itemId": "1231",
+          "name": "Void Staff",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1231.jpg",
+          "description": "Anti-tank"
+        }
+      ]
+    },
+    {
+      "id": "贤者流",
+      "label": "贤者流",
+      "position": "Position 2",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1211",
+          "name": "Spell Tome",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1211.jpg",
+          "description": "MATK +35"
+        },
+        {
+          "slot": 2,
+          "itemId": "1424",
+          "name": "Boots of the Arcane",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1424.jpg",
+          "description": "Magical Pierce"
+        },
+        {
+          "slot": 3,
+          "itemId": "1238",
+          "name": "Sage's Tome",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1238.jpg",
+          "description": "Great for mages"
+        },
+        {
+          "slot": 4,
+          "itemId": "12211",
+          "name": "Venomous Staff",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/12211.jpg",
+          "description": "Lowers Health regen"
+        },
+        {
+          "slot": 5,
+          "itemId": "1231",
+          "name": "Void Staff",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1231.jpg",
+          "description": "Anti-tank"
+        },
+        {
+          "slot": 6,
+          "itemId": "1232",
+          "name": "Savant's Wrath",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1232.jpg",
+          "description": "Greatly boosts MATK"
+        }
+      ]
+    },
+    {
+      "id": "barbaridade",
+      "label": "Barbaridade",
+      "position": "Position 2",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1211",
+          "name": "Spell Tome",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1211.jpg",
+          "description": "MATK +35"
+        },
+        {
+          "slot": 2,
+          "itemId": "1426",
+          "name": "Boots of Deftness",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1426.jpg",
+          "description": "Extra Movement Speed"
+        },
+        {
+          "slot": 3,
+          "itemId": "12211",
+          "name": "Venomous Staff",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/12211.jpg",
+          "description": "Lowers Health regen"
+        },
+        {
+          "slot": 4,
+          "itemId": "1727",
+          "name": "Twilight Stream",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1727.jpg",
+          "description": "Boosts Magical Pierce"
+        },
+        {
+          "slot": 5,
+          "itemId": "1240",
+          "name": "Insatiable Tome",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1240.jpg",
+          "description": "Magical Lifesteal"
+        },
+        {
+          "slot": 6,
+          "itemId": "1422",
+          "name": "Boots of Resistance",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
+          "description": "Shortens CC"
+        }
+      ]
+    },
+    {
+      "id": "1v9",
+      "label": "1v9",
+      "position": "Position 2",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1211",
+          "name": "Spell Tome",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1211.jpg",
+          "description": "MATK +35"
+        },
+        {
+          "slot": 2,
+          "itemId": "1424",
+          "name": "Boots of the Arcane",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1424.jpg",
+          "description": "Magical Pierce"
+        },
+        {
+          "slot": 3,
+          "itemId": "12211",
+          "name": "Venomous Staff",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/12211.jpg",
+          "description": "Lowers Health regen"
+        },
+        {
+          "slot": 4,
+          "itemId": "1240",
+          "name": "Insatiable Tome",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1240.jpg",
+          "description": "Magical Lifesteal"
+        },
+        {
+          "slot": 5,
+          "itemId": "1727",
+          "name": "Twilight Stream",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1727.jpg",
+          "description": "Boosts Magical Pierce"
+        },
+        {
+          "slot": 6,
+          "itemId": "1232",
+          "name": "Savant's Wrath",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1232.jpg",
+          "description": "Greatly boosts MATK"
+        }
+      ]
+    },
+    {
+      "id": "steal",
+      "label": "Steal",
+      "position": "Position 2",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1211",
+          "name": "Spell Tome",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1211.jpg",
+          "description": "MATK +35"
+        },
+        {
+          "slot": 2,
+          "itemId": "12211",
+          "name": "Venomous Staff",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/12211.jpg",
+          "description": "Lowers Health regen"
+        },
+        {
+          "slot": 3,
+          "itemId": "1424",
+          "name": "Boots of the Arcane",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1424.jpg",
+          "description": "Magical Pierce"
+        },
+        {
+          "slot": 4,
+          "itemId": "1727",
+          "name": "Twilight Stream",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1727.jpg",
+          "description": "Boosts Magical Pierce"
+        },
+        {
+          "slot": 5,
+          "itemId": "1227",
+          "name": "Ardent Dominion",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1227.jpg",
+          "description": "Shield at low Health"
+        },
+        {
+          "slot": 6,
+          "itemId": "1232",
+          "name": "Savant's Wrath",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1232.jpg",
+          "description": "Greatly boosts MATK"
+        }
+      ]
+    },
+    {
+      "id": "all-in-pick-off",
+      "label": "All In Pick-Off",
+      "position": "Position 2",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1424",
+          "name": "Boots of the Arcane",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1424.jpg",
+          "description": "Magical Pierce"
+        },
+        {
+          "slot": 2,
+          "itemId": "12211",
+          "name": "Venomous Staff",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/12211.jpg",
+          "description": "Lowers Health regen"
+        },
+        {
+          "slot": 3,
+          "itemId": "1727",
+          "name": "Twilight Stream",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1727.jpg",
+          "description": "Boosts Magical Pierce"
+        },
+        {
+          "slot": 4,
+          "itemId": "1240",
+          "name": "Insatiable Tome",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1240.jpg",
+          "description": "Magical Lifesteal"
+        },
+        {
+          "slot": 5,
+          "itemId": "1232",
+          "name": "Savant's Wrath",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1232.jpg",
+          "description": "Greatly boosts MATK"
+        },
+        {
+          "slot": 6,
+          "itemId": "1227",
+          "name": "Ardent Dominion",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1227.jpg",
+          "description": "Shield at low Health"
+        }
+      ]
+    },
+    {
+      "id": "121瞬秒流",
+      "label": "121瞬秒流",
+      "position": "Position 2",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1221",
+          "name": "Grand Staff",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1221.jpg",
+          "description": "Magical Attack"
+        },
+        {
+          "slot": 2,
+          "itemId": "1423",
+          "name": "Boots of Tranquility",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1423.jpg",
+          "description": "Reduces Skill CD"
+        },
+        {
+          "slot": 3,
+          "itemId": "1233",
+          "name": "Scepter of Reverberation",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1233.jpg",
+          "description": "Skill hits trigger explosions"
+        },
+        {
+          "slot": 4,
+          "itemId": "1232",
+          "name": "Savant's Wrath",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1232.jpg",
+          "description": "Greatly boosts MATK"
+        },
+        {
+          "slot": 5,
+          "itemId": "1424",
+          "name": "Boots of the Arcane",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1424.jpg",
+          "description": "Magical Pierce"
+        },
+        {
+          "slot": 6,
+          "itemId": "1238",
+          "name": "Sage's Tome",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1238.jpg",
+          "description": "Great for mages"
+        }
+      ]
+    },
+    {
+      "id": "rota-do-meio-2",
+      "label": "Rota do meio 2",
+      "position": "Position 2",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1424",
+          "name": "Boots of the Arcane",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1424.jpg",
+          "description": "Magical Pierce"
+        },
+        {
+          "slot": 2,
+          "itemId": "1233",
+          "name": "Scepter of Reverberation",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1233.jpg",
+          "description": "Skill hits trigger explosions"
+        },
+        {
+          "slot": 3,
+          "itemId": "12211",
+          "name": "Venomous Staff",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/12211.jpg",
+          "description": "Lowers Health regen"
+        },
+        {
+          "slot": 4,
+          "itemId": "1238",
+          "name": "Sage's Tome",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1238.jpg",
+          "description": "Great for mages"
+        },
+        {
+          "slot": 5,
+          "itemId": "1231",
+          "name": "Void Staff",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1231.jpg",
+          "description": "Anti-tank"
+        },
+        {
+          "slot": 6,
+          "itemId": "1232",
+          "name": "Savant's Wrath",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1232.jpg",
+          "description": "Greatly boosts MATK"
+        }
+      ]
+    }
   ]
 }

@@ -5,25 +5,42 @@ import {
   getRecentMetaChanges,
   site,
 } from '@/lib/data';
+import {
+  getPatchStrongest,
+  getSoloQueueKings,
+  getProScenePressure,
+  getBestDuos,
+  getBestComps,
+} from '@/lib/trends';
 import patchesMeta from '../../../data/patches.json';
 import { buildMetadata, defaultTitle } from '@/lib/seo';
 import { TrendList } from '@/components/TrendList';
+import { TrendDuoList } from '@/components/TrendDuoList';
+import { TrendCompList } from '@/components/TrendCompList';
 import { Breadcrumb } from '@/components/Breadcrumb';
 import { JsonLd, breadcrumbSchema } from '@/lib/schema';
 import Link from 'next/link';
 
 export const metadata = buildMetadata({
-  title: defaultTitle('Hero Trends'),
+  title: defaultTitle('Hero Trends & Meta Rankings'),
   description:
-    'Top rising, most picked, most banned heroes and recent meta changes from HOK Meta data.',
+    'Honor of Kings global meta rankings — win rate, pick/ban, patch strongest, solo queue, duos, comps, and pro draft pressure from Camp HOK.',
   path: '/hero-trends',
 });
 
 export default function HeroTrendsPage() {
-  const rising = getTopRisingHeroes(5);
-  const picked = getMostPickedHeroes(5);
-  const banned = getMostBannedHeroes(5);
-  const changes = getRecentMetaChanges(8);
+  const rising = getTopRisingHeroes(10);
+  const picked = getMostPickedHeroes(10);
+  const banned = getMostBannedHeroes(10);
+  const changes = getRecentMetaChanges(10);
+  const patchStrong = getPatchStrongest(10);
+  const soloKings = getSoloQueueKings(10);
+  const proPressure = getProScenePressure(10);
+  const duos = getBestDuos(8);
+  const comps = getBestComps(4);
+
+  const syncDate =
+    'updated' in patchesMeta ? patchesMeta.updated : site.dateModified;
 
   return (
     <div className="container-page">
@@ -37,25 +54,76 @@ export default function HeroTrendsPage() {
         items={[{ label: 'Home', href: '/' }, { label: 'Hero Trends' }]}
       />
       <h1 className="mb-2 text-3xl font-bold text-white">Hero Trends</h1>
+      <p className="mb-4 text-gray-400">
+        Meta leaderboards from Camp HOK international ranked — updated each sync.
+      </p>
       <p className="mb-8 text-sm text-gray-500">
-        Live stats from Camp HOK · Last sync:{' '}
-        {'updated' in patchesMeta ? patchesMeta.updated : site.dateModified}
+        Last sync: {syncDate} · Duo/comp/KPL boards are{' '}
+        <strong className="font-medium text-gray-400">data-derived proxies</strong>{' '}
+        (no live KPL or duo win-rate API). Use for draft ideas; verify on{' '}
+        <Link href="/tier-list/" className="text-hok-gold hover:underline">
+          Tier List
+        </Link>{' '}
+        and hero pages.
       </p>
 
       <div className="grid gap-8 lg:grid-cols-2">
         <section className="card">
-          <h2 className="section-title">Top Rising Heroes</h2>
+          <h2 className="section-title">版本最强 · Patch Strongest</h2>
+          <p className="mb-3 text-xs text-gray-500">
+            Tier S+ / S heroes with highest win rate this sync
+          </p>
+          <TrendList heroes={patchStrong} metric="winRate" />
+        </section>
+
+        <section className="card">
+          <h2 className="section-title">路人王 · Solo Queue Kings</h2>
+          <p className="mb-3 text-xs text-gray-500">
+            High WR + healthy pick rate — strong without a premade
+          </p>
+          <TrendList heroes={soloKings} metric="winRate" />
+        </section>
+
+        <section className="card">
+          <h2 className="section-title">Highest Win Rate</h2>
           <TrendList heroes={rising} metric="winRate" />
         </section>
+
         <section className="card">
-          <h2 className="section-title">Most Picked Heroes</h2>
+          <h2 className="section-title">Most Picked</h2>
           <TrendList heroes={picked} metric="pickRate" />
         </section>
+
         <section className="card">
-          <h2 className="section-title">Most Banned Heroes</h2>
+          <h2 className="section-title">Most Banned</h2>
           <TrendList heroes={banned} metric="banRate" />
         </section>
+
         <section className="card">
+          <h2 className="section-title">KPL / Pro Draft Pressure</h2>
+          <p className="mb-3 text-xs text-gray-500">
+            Proxy: ban + pick weight on global Camp (国服 KPL 无实时 API)
+          </p>
+          <TrendList heroes={proPressure} metric="banRate" />
+        </section>
+
+        <section className="card lg:col-span-2">
+          <h2 className="section-title">最强搭档 · Best Duos</h2>
+          <p className="mb-3 text-xs text-gray-500">
+            Top pick pairs by lane/role synergy — not official duo win rates
+          </p>
+          <TrendDuoList duos={duos} />
+        </section>
+
+        <section className="card lg:col-span-2">
+          <h2 className="section-title">最强阵容 · Meta Comps</h2>
+          <p className="mb-3 text-xs text-gray-500">
+            Five-hero templates: balanced, fast push, piggyback, ban core
+          </p>
+          <TrendCompList comps={comps} />
+        </section>
+
+        <section className="card lg:col-span-2">
           <h2 className="section-title">Recent Meta Changes</h2>
           <ul className="space-y-2 text-sm text-gray-300">
             {changes.map(({ hero, patch }) => (

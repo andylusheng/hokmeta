@@ -49,45 +49,45 @@
   "build": [
     {
       "slot": 1,
-      "itemId": "1721",
-      "name": "Crimson Shadow - Redemption",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1721.jpg",
-      "description": "Group shield"
+      "itemId": "1424",
+      "name": "Boots of the Arcane",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1424.jpg",
+      "description": "Magical Pierce"
     },
     {
       "slot": 2,
-      "itemId": "1426",
-      "name": "Boots of Deftness",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1426.jpg",
-      "description": "Extra Movement Speed"
-    },
-    {
-      "slot": 3,
-      "itemId": "1353",
-      "name": "Dawnlight",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1353.jpg",
-      "description": "Shields on dealing damage"
-    },
-    {
-      "slot": 4,
-      "itemId": "1334",
-      "name": "Eye of the Phoenix",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1334.jpg",
-      "description": "Boosts Health regen"
-    },
-    {
-      "slot": 5,
       "itemId": "1332",
       "name": "Overlord's Platemail",
       "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1332.jpg",
       "description": "Extra Health"
     },
     {
+      "slot": 3,
+      "itemId": "1244",
+      "name": "Breakthrough Robe",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1244.jpg",
+      "description": "Converts Health into M. Pierce"
+    },
+    {
+      "slot": 4,
+      "itemId": "1237",
+      "name": "Augur's Word",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1237.jpg",
+      "description": "Offense & defense"
+    },
+    {
+      "slot": 5,
+      "itemId": "1234",
+      "name": "Frozen Breath",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1234.jpg",
+      "description": "Slows on hit"
+    },
+    {
       "slot": 6,
-      "itemId": "1333",
-      "name": "Ominous Premonition",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1333.jpg",
-      "description": "Slows attackers"
+      "itemId": null,
+      "name": "longevity",
+      "icon": null,
+      "description": null
     }
   ],
   "arcana": [
@@ -141,5 +141,207 @@
     "Pick rate 0.52% in global ranked.",
     "Ban rate 0.03%.",
     "Counters: Ying, Luna. Countered by: Haya."
+  ],
+  "builds": [
+    {
+      "id": "recommended",
+      "label": "Recommended",
+      "position": null,
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1424",
+          "name": "Boots of the Arcane",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1424.jpg",
+          "description": "Magical Pierce"
+        },
+        {
+          "slot": 2,
+          "itemId": "1332",
+          "name": "Overlord's Platemail",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1332.jpg",
+          "description": "Extra Health"
+        },
+        {
+          "slot": 3,
+          "itemId": "1244",
+          "name": "Breakthrough Robe",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1244.jpg",
+          "description": "Converts Health into M. Pierce"
+        },
+        {
+          "slot": 4,
+          "itemId": "1237",
+          "name": "Augur's Word",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1237.jpg",
+          "description": "Offense & defense"
+        },
+        {
+          "slot": 5,
+          "itemId": "1234",
+          "name": "Frozen Breath",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1234.jpg",
+          "description": "Slows on hit"
+        },
+        {
+          "slot": 6,
+          "itemId": null,
+          "name": "longevity",
+          "icon": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "id": "with-shield",
+      "label": "with shield",
+      "position": "Position 5",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1721",
+          "name": "Crimson Shadow - Redemption",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1721.jpg",
+          "description": "Group shield"
+        },
+        {
+          "slot": 2,
+          "itemId": "1426",
+          "name": "Boots of Deftness",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1426.jpg",
+          "description": "Extra Movement Speed"
+        },
+        {
+          "slot": 3,
+          "itemId": "1353",
+          "name": "Dawnlight",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1353.jpg",
+          "description": "Shields on dealing damage"
+        },
+        {
+          "slot": 4,
+          "itemId": "1334",
+          "name": "Eye of the Phoenix",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1334.jpg",
+          "description": "Boosts Health regen"
+        },
+        {
+          "slot": 5,
+          "itemId": "1332",
+          "name": "Overlord's Platemail",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1332.jpg",
+          "description": "Extra Health"
+        },
+        {
+          "slot": 6,
+          "itemId": "1333",
+          "name": "Ominous Premonition",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1333.jpg",
+          "description": "Slows attackers"
+        }
+      ]
+    },
+    {
+      "id": "without-shield",
+      "label": "without shield",
+      "position": "Position 5",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1711",
+          "name": "Crimson Shadow",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1711.jpg",
+          "description": "DPS aura"
+        },
+        {
+          "slot": 2,
+          "itemId": "1426",
+          "name": "Boots of Deftness",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1426.jpg",
+          "description": "Extra Movement Speed"
+        },
+        {
+          "slot": 3,
+          "itemId": "1721",
+          "name": "Crimson Shadow - Redemption",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1721.jpg",
+          "description": "Group shield"
+        },
+        {
+          "slot": 4,
+          "itemId": "1332",
+          "name": "Overlord's Platemail",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1332.jpg",
+          "description": "Extra Health"
+        },
+        {
+          "slot": 5,
+          "itemId": "1334",
+          "name": "Eye of the Phoenix",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1334.jpg",
+          "description": "Boosts Health regen"
+        },
+        {
+          "slot": 6,
+          "itemId": "1333",
+          "name": "Ominous Premonition",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1333.jpg",
+          "description": "Slows attackers"
+        }
+      ]
+    },
+    {
+      "id": "heals",
+      "label": "Heals",
+      "position": "Position 5",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1701",
+          "name": "Knowledge Gem",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1701.jpg",
+          "description": "Extra Gold & EXP"
+        },
+        {
+          "slot": 2,
+          "itemId": "1424",
+          "name": "Boots of the Arcane",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1424.jpg",
+          "description": "Magical Pierce"
+        },
+        {
+          "slot": 3,
+          "itemId": "1714",
+          "name": "Guardian",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1714.jpg",
+          "description": "Survivability aura"
+        },
+        {
+          "slot": 4,
+          "itemId": "1724",
+          "name": "Guardian - Redemption",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1724.jpg",
+          "description": "Group shield"
+        },
+        {
+          "slot": 5,
+          "itemId": "12211",
+          "name": "Venomous Staff",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/12211.jpg",
+          "description": "Lowers Health regen"
+        },
+        {
+          "slot": 6,
+          "itemId": "1333",
+          "name": "Ominous Premonition",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1333.jpg",
+          "description": "Slows attackers"
+        }
+      ]
+    }
   ]
 }

@@ -49,9 +49,9 @@
   "build": [
     {
       "slot": 1,
-      "itemId": "1523",
-      "name": "Relentless Blade",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1523.jpg",
+      "itemId": "1533",
+      "name": "Rapacious Bite",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1533.jpg",
       "description": "Monster kills boost PATK"
     },
     {
@@ -63,31 +63,31 @@
     },
     {
       "slot": 3,
-      "itemId": "1126",
-      "name": "Doomsday",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1126.jpg",
-      "description": "Boosts BA damage"
+      "itemId": "1137",
+      "name": "Axe of Torment",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1137.jpg",
+      "description": "Anti-squishy"
     },
     {
       "slot": 4,
-      "itemId": "1131",
-      "name": "Starbreaker",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1131.jpg",
-      "description": "Anti-tank"
+      "itemId": "1136",
+      "name": "Shadow Ripper",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1136.jpg",
+      "description": "Crits boost ASPD"
     },
     {
       "slot": 5,
-      "itemId": "1533",
-      "name": "Rapacious Bite",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1533.jpg",
-      "description": "Monster kills boost PATK"
+      "itemId": "1133",
+      "name": "Eternity Blade",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1133.jpg",
+      "description": "High crit damage"
     },
     {
       "slot": 6,
-      "itemId": "1127",
-      "name": "Destiny",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1127.jpg",
-      "description": "Negates fatal damage"
+      "itemId": null,
+      "name": "siege breaker",
+      "icon": null,
+      "description": null
     }
   ],
   "arcana": [
@@ -141,5 +141,157 @@
     "Pick rate 0.23% in global ranked.",
     "Ban rate 0.01%.",
     "Counters: Hou Yi, Xiao Qiao. Countered by: Di Renjie, Mulan."
+  ],
+  "builds": [
+    {
+      "id": "recommended",
+      "label": "Recommended",
+      "position": null,
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1533",
+          "name": "Rapacious Bite",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1533.jpg",
+          "description": "Monster kills boost PATK"
+        },
+        {
+          "slot": 2,
+          "itemId": "1425",
+          "name": "Boots of Dexterity",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1425.jpg",
+          "description": "Boosts ASPD"
+        },
+        {
+          "slot": 3,
+          "itemId": "1137",
+          "name": "Axe of Torment",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1137.jpg",
+          "description": "Anti-squishy"
+        },
+        {
+          "slot": 4,
+          "itemId": "1136",
+          "name": "Shadow Ripper",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1136.jpg",
+          "description": "Crits boost ASPD"
+        },
+        {
+          "slot": 5,
+          "itemId": "1133",
+          "name": "Eternity Blade",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1133.jpg",
+          "description": "High crit damage"
+        },
+        {
+          "slot": 6,
+          "itemId": null,
+          "name": "siege breaker",
+          "icon": null,
+          "description": null
+        }
+      ]
+    },
+    {
+      "id": "nashr",
+      "label": "nashr",
+      "position": "Position 3",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1523",
+          "name": "Relentless Blade",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1523.jpg",
+          "description": "Monster kills boost PATK"
+        },
+        {
+          "slot": 2,
+          "itemId": "1425",
+          "name": "Boots of Dexterity",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1425.jpg",
+          "description": "Boosts ASPD"
+        },
+        {
+          "slot": 3,
+          "itemId": "1126",
+          "name": "Doomsday",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1126.jpg",
+          "description": "Boosts BA damage"
+        },
+        {
+          "slot": 4,
+          "itemId": "1131",
+          "name": "Starbreaker",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1131.jpg",
+          "description": "Anti-tank"
+        },
+        {
+          "slot": 5,
+          "itemId": "1533",
+          "name": "Rapacious Bite",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1533.jpg",
+          "description": "Monster kills boost PATK"
+        },
+        {
+          "slot": 6,
+          "itemId": "1127",
+          "name": "Destiny",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1127.jpg",
+          "description": "Negates fatal damage"
+        }
+      ]
+    },
+    {
+      "id": "lunjayy",
+      "label": "LUNJAYY",
+      "position": "Position 3",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1533",
+          "name": "Rapacious Bite",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1533.jpg",
+          "description": "Monster kills boost PATK"
+        },
+        {
+          "slot": 2,
+          "itemId": "1425",
+          "name": "Boots of Dexterity",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1425.jpg",
+          "description": "Boosts ASPD"
+        },
+        {
+          "slot": 3,
+          "itemId": "1137",
+          "name": "Axe of Torment",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1137.jpg",
+          "description": "Anti-squishy"
+        },
+        {
+          "slot": 4,
+          "itemId": "11210",
+          "name": "Mortal Punisher",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/11210.jpg",
+          "description": "Lowers Health regen"
+        },
+        {
+          "slot": 5,
+          "itemId": "1138",
+          "name": "Overlord's Might",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1138.jpg",
+          "description": "High-damage attack"
+        },
+        {
+          "slot": 6,
+          "itemId": "1134",
+          "name": "Master Sword",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1134.jpg",
+          "description": "Enhances BA"
+        }
+      ]
+    }
   ]
 }

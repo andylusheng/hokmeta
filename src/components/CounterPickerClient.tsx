@@ -3,6 +3,7 @@
 import { useMemo, useState } from 'react';
 import type { Hero } from '@/types/hero';
 import Link from 'next/link';
+import { HeroSelect } from '@/components/HeroSelect';
 
 export function CounterPickerClient({ heroes }: { heroes: Hero[] }) {
   const [slug, setSlug] = useState(heroes[0]?.slug ?? '');
@@ -14,20 +15,10 @@ export function CounterPickerClient({ heroes }: { heroes: Hero[] }) {
 
   return (
     <div className="space-y-6">
-      <label className="block">
+      <div>
         <span className="mb-2 block text-sm text-gray-400">Enemy hero</span>
-        <select
-          value={slug}
-          onChange={(e) => setSlug(e.target.value)}
-          className="w-full max-w-md rounded border border-hok-border bg-hok-card px-3 py-2 text-white"
-        >
-          {heroes.map((h) => (
-            <option key={h.slug} value={h.slug}>
-              {h.name}
-            </option>
-          ))}
-        </select>
-      </label>
+        <HeroSelect heroes={heroes} value={slug} onChange={setSlug} />
+      </div>
       {hero ? (
         <div className="card">
           <h2 className="section-title">Counters for {hero.name}</h2>

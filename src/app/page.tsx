@@ -144,6 +144,7 @@ export default function HomePage() {
               title={a.title}
               description={a.description}
               href={`/learn/${a.slug}/`}
+              badge={a.badge}
             />
           ))}
         </div>

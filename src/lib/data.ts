@@ -2,7 +2,14 @@ import heroesData from '../../data/heroes.json';
 import itemsData from '../../data/items.json';
 import keywordsData from '../../data/keywords.json';
 import siteConfig from '../../config/site.json';
-import type { GameItem, Hero, HeroRole, HeroTier, KeywordsMap } from '@/types/hero';
+import type {
+  GameItem,
+  Hero,
+  HeroBuildPreset,
+  HeroRole,
+  HeroTier,
+  KeywordsMap,
+} from '@/types/hero';
 
 export const site = siteConfig;
 export const heroes = heroesData as Hero[];
@@ -15,6 +22,55 @@ export function getItemById(id: string): GameItem | undefined {
 
 export function getHeroBySlug(slug: string): Hero | undefined {
   return heroes.find((h) => h.slug === slug);
+}
+
+export function getHeroBuildPresets(hero: Hero): HeroBuildPreset[] {
+  if (hero.builds?.length) {
+    return hero.builds.filter((b) => b.items?.length);
+  }
+  if (hero.build?.length) {
+    return [{ id: 'default', label: 'Recommended', items: hero.build }];
+  }
+  return [];
+}
+
+export function defaultBuildPresetIndex(hero: Hero): number {
+  const presets = getHeroBuildPresets(hero);
+  if (!presets.length) return 0;
+  if (hero.lane) {
+    const laneIdx = presets.findIndex(
+      (p) =>
+        p.lane === hero.lane ||
+        p.label.toLowerCase().includes(hero.lane!.split(' ')[0].toLowerCase())
+    );
+    if (laneIdx >= 0) return laneIdx;
+  }
+  const recIdx = presets.findIndex(
+    (p) => p.id === 'recommended' || /principal|recommend/i.test(p.label)
+  );
+  return recIdx >= 0 ? recIdx : 0;
+}
+
+export function getHeroByName(name: string): Hero | undefined {
+  const key = name.trim().toLowerCase();
+  if (!key || key === 'data unavailable') return undefined;
+  return heroes.find((h) => h.name.toLowerCase() === key);
+}
+
+export function getHeroesGroupedByRole(): Record<HeroRole, Hero[]> {
+  const roles = [
+    'Tank',
+    'Warrior',
+    'Assassin',
+    'Mage',
+    'Marksman',
+    'Support',
+  ] as HeroRole[];
+  const result = {} as Record<HeroRole, Hero[]>;
+  for (const role of roles) {
+    result[role] = sortByWinRate(heroes.filter((h) => h.role === role));
+  }
+  return result;
 }
 
 export function getHeroSlugs(): string[] {
@@ -43,6 +99,10 @@ export function getHeroesByTier(tier: HeroTier): Hero[] {
   return heroes.filter((h) => h.tier === tier);
 }
 
+function sortByWinRate(list: Hero[]): Hero[] {
+  return [...list].sort((a, b) => (b.winRate ?? -1) - (a.winRate ?? -1));
+}
+
 export function getTierListGrouped(): Record<HeroTier, Record<HeroRole, Hero[]>> {
   const tiers = ['S+', 'S', 'A', 'B', 'C'] as HeroTier[];
   const roles = [
@@ -58,7 +118,33 @@ export function getTierListGrouped(): Record<HeroTier, Record<HeroRole, Hero[]>>
   for (const tier of tiers) {
     result[tier] = {} as Record<HeroRole, Hero[]>;
     for (const role of roles) {
-      result[tier][role] = heroes.filter((h) => h.tier === tier && h.role === role);
+      result[tier][role] = sortByWinRate(
+        heroes.filter((h) => h.tier === tier && h.role === role)
+      );
+    }
+  }
+  return result;
+}
+
+/** Tier list: primary role → S+ / S / A / B bands. */
+export function getTierListByRole(): Record<HeroRole, Record<HeroTier, Hero[]>> {
+  const tiers = ['S+', 'S', 'A', 'B', 'C'] as HeroTier[];
+  const roles = [
+    'Tank',
+    'Warrior',
+    'Assassin',
+    'Mage',
+    'Marksman',
+    'Support',
+  ] as HeroRole[];
+
+  const result = {} as Record<HeroRole, Record<HeroTier, Hero[]>>;
+  for (const role of roles) {
+    result[role] = {} as Record<HeroTier, Hero[]>;
+    for (const tier of tiers) {
+      result[role][tier] = sortByWinRate(
+        heroes.filter((h) => h.role === role && h.tier === tier)
+      );
     }
   }
   return result;

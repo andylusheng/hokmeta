@@ -63,31 +63,31 @@
     },
     {
       "slot": 3,
-      "itemId": "1235",
-      "name": "Mask of Agony",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1235.jpg",
-      "description": "Boosts skill damage"
+      "itemId": "1335",
+      "name": "Succubus Cloak",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1335.jpg",
+      "description": "Negates magical damage"
     },
     {
       "slot": 4,
-      "itemId": "1218",
-      "name": "Primordial Crystal",
-      "icon": "https://hokstats.gg/items/1218.png",
-      "description": "CDR +5%"
+      "itemId": "1232",
+      "name": "Savant's Wrath",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1232.jpg",
+      "description": "Greatly boosts MATK"
     },
     {
       "slot": 5,
-      "itemId": "1424",
-      "name": "Boots of the Arcane",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1424.jpg",
-      "description": "Magical Pierce"
+      "itemId": "1331",
+      "name": "Blazing Cape",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1331.jpg",
+      "description": "Burns nearby enemies"
     },
     {
       "slot": 6,
-      "itemId": "1727",
-      "name": "Twilight Stream",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1727.jpg",
-      "description": "Boosts Magical Pierce"
+      "itemId": "1334",
+      "name": "Eye of the Phoenix",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1334.jpg",
+      "description": "Boosts Health regen"
     }
   ],
   "arcana": [
@@ -143,5 +143,457 @@
     "Pick rate 1.16% in global ranked.",
     "Ban rate 0.24%.",
     "Counters: Diaochan, Mulan, Wukong. Countered by: Butterfly, Dharma, Lu Bu."
+  ],
+  "builds": [
+    {
+      "id": "recommended",
+      "label": "Recommended",
+      "position": null,
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1423",
+          "name": "Boots of Tranquility",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1423.jpg",
+          "description": "Reduces Skill CD"
+        },
+        {
+          "slot": 2,
+          "itemId": "1226",
+          "name": "Holy Grail",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1226.jpg",
+          "description": "Rapid Health & Mana Regen"
+        },
+        {
+          "slot": 3,
+          "itemId": "1335",
+          "name": "Succubus Cloak",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1335.jpg",
+          "description": "Negates magical damage"
+        },
+        {
+          "slot": 4,
+          "itemId": "1232",
+          "name": "Savant's Wrath",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1232.jpg",
+          "description": "Greatly boosts MATK"
+        },
+        {
+          "slot": 5,
+          "itemId": "1331",
+          "name": "Blazing Cape",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1331.jpg",
+          "description": "Burns nearby enemies"
+        },
+        {
+          "slot": 6,
+          "itemId": "1334",
+          "name": "Eye of the Phoenix",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1334.jpg",
+          "description": "Boosts Health regen"
+        }
+      ]
+    },
+    {
+      "id": "mid",
+      "label": "mid",
+      "position": "Position 2",
+      "lane": "Mid Lane",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1423",
+          "name": "Boots of Tranquility",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1423.jpg",
+          "description": "Reduces Skill CD"
+        },
+        {
+          "slot": 2,
+          "itemId": "1226",
+          "name": "Holy Grail",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1226.jpg",
+          "description": "Rapid Health & Mana Regen"
+        },
+        {
+          "slot": 3,
+          "itemId": "1237",
+          "name": "Augur's Word",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1237.jpg",
+          "description": "Offense & defense"
+        },
+        {
+          "slot": 4,
+          "itemId": "1238",
+          "name": "Sage's Tome",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1238.jpg",
+          "description": "Great for mages"
+        },
+        {
+          "slot": 5,
+          "itemId": "1231",
+          "name": "Void Staff",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1231.jpg",
+          "description": "Anti-tank"
+        },
+        {
+          "slot": 6,
+          "itemId": "1240",
+          "name": "Insatiable Tome",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1240.jpg",
+          "description": "Magical Lifesteal"
+        }
+      ]
+    },
+    {
+      "id": "dame",
+      "label": "dame",
+      "position": "Position 2",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1423",
+          "name": "Boots of Tranquility",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1423.jpg",
+          "description": "Reduces Skill CD"
+        },
+        {
+          "slot": 2,
+          "itemId": "1226",
+          "name": "Holy Grail",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1226.jpg",
+          "description": "Rapid Health & Mana Regen"
+        },
+        {
+          "slot": 3,
+          "itemId": "1222",
+          "name": "Blood Clan's Grimoire",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1222.jpg",
+          "description": "MATK +60, Magical Lifesteal +12%"
+        },
+        {
+          "slot": 4,
+          "itemId": "1243",
+          "name": "Nebulon Wood",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1243.jpg",
+          "description": "MATK +60, HP +450"
+        },
+        {
+          "slot": 5,
+          "itemId": "1240",
+          "name": "Insatiable Tome",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1240.jpg",
+          "description": "Magical Lifesteal"
+        },
+        {
+          "slot": 6,
+          "itemId": "1727",
+          "name": "Twilight Stream",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1727.jpg",
+          "description": "Boosts Magical Pierce"
+        }
+      ]
+    },
+    {
+      "id": "principais",
+      "label": "Principais",
+      "position": "Position 2",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1423",
+          "name": "Boots of Tranquility",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1423.jpg",
+          "description": "Reduces Skill CD"
+        },
+        {
+          "slot": 2,
+          "itemId": "1226",
+          "name": "Holy Grail",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1226.jpg",
+          "description": "Rapid Health & Mana Regen"
+        },
+        {
+          "slot": 3,
+          "itemId": "1235",
+          "name": "Mask of Agony",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1235.jpg",
+          "description": "Boosts skill damage"
+        },
+        {
+          "slot": 4,
+          "itemId": "1218",
+          "name": "Primordial Crystal",
+          "icon": "https://hokstats.gg/items/1218.png",
+          "description": "CDR +5%"
+        },
+        {
+          "slot": 5,
+          "itemId": "1424",
+          "name": "Boots of the Arcane",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1424.jpg",
+          "description": "Magical Pierce"
+        },
+        {
+          "slot": 6,
+          "itemId": "1727",
+          "name": "Twilight Stream",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1727.jpg",
+          "description": "Boosts Magical Pierce"
+        }
+      ]
+    },
+    {
+      "id": "damage",
+      "label": "Damage",
+      "position": "Position 2",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1423",
+          "name": "Boots of Tranquility",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1423.jpg",
+          "description": "Reduces Skill CD"
+        },
+        {
+          "slot": 2,
+          "itemId": "1226",
+          "name": "Holy Grail",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1226.jpg",
+          "description": "Rapid Health & Mana Regen"
+        },
+        {
+          "slot": 3,
+          "itemId": "1321",
+          "name": "Belt of Might",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1321.jpg",
+          "description": "HP +900"
+        },
+        {
+          "slot": 4,
+          "itemId": "1237",
+          "name": "Augur's Word",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1237.jpg",
+          "description": "Offense & defense"
+        },
+        {
+          "slot": 5,
+          "itemId": "1243",
+          "name": "Nebulon Wood",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1243.jpg",
+          "description": "MATK +60, HP +450"
+        },
+        {
+          "slot": 6,
+          "itemId": "1238",
+          "name": "Sage's Tome",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1238.jpg",
+          "description": "Great for mages"
+        }
+      ]
+    },
+    {
+      "id": "huan",
+      "label": "Huan.",
+      "position": "Position 1",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1423",
+          "name": "Boots of Tranquility",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1423.jpg",
+          "description": "Reduces Skill CD"
+        },
+        {
+          "slot": 2,
+          "itemId": "1226",
+          "name": "Holy Grail",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1226.jpg",
+          "description": "Rapid Health & Mana Regen"
+        },
+        {
+          "slot": 3,
+          "itemId": "1331",
+          "name": "Blazing Cape",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1331.jpg",
+          "description": "Burns nearby enemies"
+        },
+        {
+          "slot": 4,
+          "itemId": "1347",
+          "name": "Longnight Guardian",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1347.jpg",
+          "description": "Resists burst damage"
+        },
+        {
+          "slot": 5,
+          "itemId": "1422",
+          "name": "Boots of Resistance",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
+          "description": "Shortens CC"
+        },
+        {
+          "slot": 6,
+          "itemId": "1334",
+          "name": "Eye of the Phoenix",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1334.jpg",
+          "description": "Boosts Health regen"
+        }
+      ]
+    },
+    {
+      "id": "kurenghoki",
+      "label": "KURENGHOKI",
+      "position": "Position 1",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1211",
+          "name": "Spell Tome",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1211.jpg",
+          "description": "MATK +35"
+        },
+        {
+          "slot": 2,
+          "itemId": "1423",
+          "name": "Boots of Tranquility",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1423.jpg",
+          "description": "Reduces Skill CD"
+        },
+        {
+          "slot": 3,
+          "itemId": "1226",
+          "name": "Holy Grail",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1226.jpg",
+          "description": "Rapid Health & Mana Regen"
+        },
+        {
+          "slot": 4,
+          "itemId": "1727",
+          "name": "Twilight Stream",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1727.jpg",
+          "description": "Boosts Magical Pierce"
+        },
+        {
+          "slot": 5,
+          "itemId": "1240",
+          "name": "Insatiable Tome",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1240.jpg",
+          "description": "Magical Lifesteal"
+        },
+        {
+          "slot": 6,
+          "itemId": "1422",
+          "name": "Boots of Resistance",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
+          "description": "Shortens CC"
+        }
+      ]
+    },
+    {
+      "id": "cdr",
+      "label": "CDR",
+      "position": "Position 2",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1423",
+          "name": "Boots of Tranquility",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1423.jpg",
+          "description": "Reduces Skill CD"
+        },
+        {
+          "slot": 2,
+          "itemId": "1226",
+          "name": "Holy Grail",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1226.jpg",
+          "description": "Rapid Health & Mana Regen"
+        },
+        {
+          "slot": 3,
+          "itemId": "12211",
+          "name": "Venomous Staff",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/12211.jpg",
+          "description": "Lowers Health regen"
+        },
+        {
+          "slot": 4,
+          "itemId": "1240",
+          "name": "Insatiable Tome",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1240.jpg",
+          "description": "Magical Lifesteal"
+        },
+        {
+          "slot": 5,
+          "itemId": "1237",
+          "name": "Augur's Word",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1237.jpg",
+          "description": "Offense & defense"
+        },
+        {
+          "slot": 6,
+          "itemId": "1244",
+          "name": "Breakthrough Robe",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1244.jpg",
+          "description": "Converts Health into M. Pierce"
+        }
+      ]
+    },
+    {
+      "id": "yue",
+      "label": "Yue",
+      "position": "Position 2",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1423",
+          "name": "Boots of Tranquility",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1423.jpg",
+          "description": "Reduces Skill CD"
+        },
+        {
+          "slot": 2,
+          "itemId": "1226",
+          "name": "Holy Grail",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1226.jpg",
+          "description": "Rapid Health & Mana Regen"
+        },
+        {
+          "slot": 3,
+          "itemId": "1727",
+          "name": "Twilight Stream",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1727.jpg",
+          "description": "Boosts Magical Pierce"
+        },
+        {
+          "slot": 4,
+          "itemId": "1233",
+          "name": "Scepter of Reverberation",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1233.jpg",
+          "description": "Skill hits trigger explosions"
+        },
+        {
+          "slot": 5,
+          "itemId": "1237",
+          "name": "Augur's Word",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1237.jpg",
+          "description": "Offense & defense"
+        },
+        {
+          "slot": 6,
+          "itemId": "1231",
+          "name": "Void Staff",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1231.jpg",
+          "description": "Anti-tank"
+        }
+      ]
+    }
   ]
 }

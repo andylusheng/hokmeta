@@ -17,6 +17,14 @@ export interface HeroBuildItem {
   description?: string | null;
 }
 
+export interface HeroBuildPreset {
+  id: string;
+  label: string;
+  position?: string | null;
+  lane?: string | null;
+  items: HeroBuildItem[];
+}
+
 export type HeroSkillSlot = 'passive' | 'skill1' | 'skill2' | 'ultimate';
 
 export interface HeroSkill {
@@ -68,6 +76,7 @@ export interface Hero {
   dataUpdated?: string;
   skills: HeroSkill[];
   build: HeroBuildItem[];
+  builds?: HeroBuildPreset[];
   arcana: string[];
   spells: string[];
   counters: string[];
@@ -88,5 +97,10 @@ export const ROLES: HeroRole[] = [
   'Marksman',
   'Support',
 ];
+
+/** Primary role sections — alphabetical (Assassin → Warrior). */
+export const ROLES_AZ: HeroRole[] = [...ROLES].sort((a, b) =>
+  a.localeCompare(b)
+);
 
 export const TIERS: HeroTier[] = ['S+', 'S', 'A', 'B', 'C'];

@@ -49,45 +49,45 @@
   "build": [
     {
       "slot": 1,
-      "itemId": "1523",
-      "name": "Relentless Blade",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1523.jpg",
+      "itemId": "1533",
+      "name": "Rapacious Bite",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1533.jpg",
       "description": "Monster kills boost PATK"
     },
     {
       "slot": 2,
-      "itemId": "1411",
-      "name": "Lightfoot Shoes",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1411.jpg",
-      "description": "Movement Speed"
-    },
-    {
-      "slot": 3,
-      "itemId": "1124",
-      "name": "Meteor",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1124.jpg",
-      "description": "PATK +35\nCDR +7.5%"
-    },
-    {
-      "slot": 4,
       "itemId": "1422",
       "name": "Boots of Resistance",
       "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
       "description": "Shortens CC"
     },
     {
-      "slot": 5,
+      "slot": 3,
       "itemId": "1137",
       "name": "Axe of Torment",
       "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1137.jpg",
       "description": "Anti-squishy"
     },
     {
-      "slot": 6,
+      "slot": 4,
       "itemId": "1327",
       "name": "Spikemail",
       "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1327.jpg",
       "description": "Reflects damage"
+    },
+    {
+      "slot": 5,
+      "itemId": "1331",
+      "name": "Blazing Cape",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1331.jpg",
+      "description": "Burns nearby enemies"
+    },
+    {
+      "slot": 6,
+      "itemId": "1347",
+      "name": "Longnight Guardian",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1347.jpg",
+      "description": "Resists burst damage"
     }
   ],
   "arcana": [
@@ -141,5 +141,257 @@
     "Pick rate 1.13% in global ranked.",
     "Ban rate 0.41%.",
     "Counters: Marco Polo, Musashi. Countered by: Sun Bin, Diaochan."
+  ],
+  "builds": [
+    {
+      "id": "recommended",
+      "label": "Recommended",
+      "position": null,
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1533",
+          "name": "Rapacious Bite",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1533.jpg",
+          "description": "Monster kills boost PATK"
+        },
+        {
+          "slot": 2,
+          "itemId": "1422",
+          "name": "Boots of Resistance",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
+          "description": "Shortens CC"
+        },
+        {
+          "slot": 3,
+          "itemId": "1137",
+          "name": "Axe of Torment",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1137.jpg",
+          "description": "Anti-squishy"
+        },
+        {
+          "slot": 4,
+          "itemId": "1327",
+          "name": "Spikemail",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1327.jpg",
+          "description": "Reflects damage"
+        },
+        {
+          "slot": 5,
+          "itemId": "1331",
+          "name": "Blazing Cape",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1331.jpg",
+          "description": "Burns nearby enemies"
+        },
+        {
+          "slot": 6,
+          "itemId": "1347",
+          "name": "Longnight Guardian",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1347.jpg",
+          "description": "Resists burst damage"
+        }
+      ]
+    },
+    {
+      "id": "jungling-1",
+      "label": "Jungling 1",
+      "position": "Position 3",
+      "lane": "Jungling",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1523",
+          "name": "Relentless Blade",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1523.jpg",
+          "description": "Monster kills boost PATK"
+        },
+        {
+          "slot": 2,
+          "itemId": "1411",
+          "name": "Lightfoot Shoes",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1411.jpg",
+          "description": "Movement Speed"
+        },
+        {
+          "slot": 3,
+          "itemId": "1124",
+          "name": "Meteor",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1124.jpg",
+          "description": "PATK +35\nCDR +7.5%"
+        },
+        {
+          "slot": 4,
+          "itemId": "1422",
+          "name": "Boots of Resistance",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
+          "description": "Shortens CC"
+        },
+        {
+          "slot": 5,
+          "itemId": "1137",
+          "name": "Axe of Torment",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1137.jpg",
+          "description": "Anti-squishy"
+        },
+        {
+          "slot": 6,
+          "itemId": "1327",
+          "name": "Spikemail",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1327.jpg",
+          "description": "Reflects damage"
+        }
+      ]
+    },
+    {
+      "id": "jungling-1",
+      "label": "Jungling 1",
+      "position": "Position 3",
+      "lane": "Jungling",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1533",
+          "name": "Rapacious Bite",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1533.jpg",
+          "description": "Monster kills boost PATK"
+        },
+        {
+          "slot": 2,
+          "itemId": "1422",
+          "name": "Boots of Resistance",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
+          "description": "Shortens CC"
+        },
+        {
+          "slot": 3,
+          "itemId": "1137",
+          "name": "Axe of Torment",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1137.jpg",
+          "description": "Anti-squishy"
+        },
+        {
+          "slot": 4,
+          "itemId": "1338",
+          "name": "Cuirass of Savagery",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1338.jpg",
+          "description": "Offense & defense"
+        },
+        {
+          "slot": 5,
+          "itemId": "1134",
+          "name": "Master Sword",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1134.jpg",
+          "description": "Enhances BA"
+        },
+        {
+          "slot": 6,
+          "itemId": "1331",
+          "name": "Blazing Cape",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1331.jpg",
+          "description": "Burns nearby enemies"
+        }
+      ]
+    },
+    {
+      "id": "preset",
+      "label": "Preset",
+      "position": "Position 3",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1523",
+          "name": "Relentless Blade",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1523.jpg",
+          "description": "Monster kills boost PATK"
+        },
+        {
+          "slot": 2,
+          "itemId": "1423",
+          "name": "Boots of Tranquility",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1423.jpg",
+          "description": "Reduces Skill CD"
+        },
+        {
+          "slot": 3,
+          "itemId": "1137",
+          "name": "Axe of Torment",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1137.jpg",
+          "description": "Anti-squishy"
+        },
+        {
+          "slot": 4,
+          "itemId": "1533",
+          "name": "Rapacious Bite",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1533.jpg",
+          "description": "Monster kills boost PATK"
+        },
+        {
+          "slot": 5,
+          "itemId": "1327",
+          "name": "Spikemail",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1327.jpg",
+          "description": "Reflects damage"
+        },
+        {
+          "slot": 6,
+          "itemId": "1125",
+          "name": "Demonsbane",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1125.jpg",
+          "description": "Boosts MDEF"
+        }
+      ]
+    },
+    {
+      "id": "scarlett666",
+      "label": "Scarlett666",
+      "position": "Position 3",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1523",
+          "name": "Relentless Blade",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1523.jpg",
+          "description": "Monster kills boost PATK"
+        },
+        {
+          "slot": 2,
+          "itemId": "1423",
+          "name": "Boots of Tranquility",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1423.jpg",
+          "description": "Reduces Skill CD"
+        },
+        {
+          "slot": 3,
+          "itemId": "1137",
+          "name": "Axe of Torment",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1137.jpg",
+          "description": "Anti-squishy"
+        },
+        {
+          "slot": 4,
+          "itemId": "1533",
+          "name": "Rapacious Bite",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1533.jpg",
+          "description": "Monster kills boost PATK"
+        },
+        {
+          "slot": 5,
+          "itemId": "1331",
+          "name": "Blazing Cape",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1331.jpg",
+          "description": "Burns nearby enemies"
+        },
+        {
+          "slot": 6,
+          "itemId": "1328",
+          "name": "Blood Rage",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1328.jpg",
+          "description": "Grants temporary shield"
+        }
+      ]
+    }
   ]
 }

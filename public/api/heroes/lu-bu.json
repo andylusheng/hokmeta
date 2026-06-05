@@ -49,45 +49,45 @@
   "build": [
     {
       "slot": 1,
-      "itemId": "1111",
-      "name": "Iron Sword",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1111.jpg",
-      "description": "PATK +20"
-    },
-    {
-      "slot": 2,
-      "itemId": "1345",
-      "name": "Nettle Gauntlet",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1345.jpg",
-      "description": "Offense & defense"
-    },
-    {
-      "slot": 3,
-      "itemId": "1423",
-      "name": "Boots of Tranquility",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1423.jpg",
-      "description": "Reduces Skill CD"
-    },
-    {
-      "slot": 4,
-      "itemId": "11311",
-      "name": "Pure Sky",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/11311.jpg",
-      "description": "Temp. damage reduction"
-    },
-    {
-      "slot": 5,
       "itemId": "1422",
       "name": "Boots of Resistance",
       "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
       "description": "Shortens CC"
     },
     {
+      "slot": 2,
+      "itemId": "1335",
+      "name": "Succubus Cloak",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1335.jpg",
+      "description": "Negates magical damage"
+    },
+    {
+      "slot": 3,
+      "itemId": "1331",
+      "name": "Blazing Cape",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1331.jpg",
+      "description": "Burns nearby enemies"
+    },
+    {
+      "slot": 4,
+      "itemId": "1332",
+      "name": "Overlord's Platemail",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1332.jpg",
+      "description": "Extra Health"
+    },
+    {
+      "slot": 5,
+      "itemId": null,
+      "name": "siege breaker",
+      "icon": null,
+      "description": null
+    },
+    {
       "slot": 6,
-      "itemId": "1127",
-      "name": "Destiny",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1127.jpg",
-      "description": "Negates fatal damage"
+      "itemId": "1337",
+      "name": "Sage's Sanctuary",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1337.jpg",
+      "description": "Resurrect on the spot"
     }
   ],
   "arcana": [
@@ -143,5 +143,407 @@
     "Pick rate 1.18% in global ranked.",
     "Ban rate 0.15%.",
     "Counters: Heino, Daji, Luna. Countered by: Han Xin, Lam, Pei."
+  ],
+  "builds": [
+    {
+      "id": "recommended",
+      "label": "Recommended",
+      "position": null,
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1422",
+          "name": "Boots of Resistance",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
+          "description": "Shortens CC"
+        },
+        {
+          "slot": 2,
+          "itemId": "1335",
+          "name": "Succubus Cloak",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1335.jpg",
+          "description": "Negates magical damage"
+        },
+        {
+          "slot": 3,
+          "itemId": "1331",
+          "name": "Blazing Cape",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1331.jpg",
+          "description": "Burns nearby enemies"
+        },
+        {
+          "slot": 4,
+          "itemId": "1332",
+          "name": "Overlord's Platemail",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1332.jpg",
+          "description": "Extra Health"
+        },
+        {
+          "slot": 5,
+          "itemId": null,
+          "name": "siege breaker",
+          "icon": null,
+          "description": null
+        },
+        {
+          "slot": 6,
+          "itemId": "1337",
+          "name": "Sage's Sanctuary",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1337.jpg",
+          "description": "Resurrect on the spot"
+        }
+      ]
+    },
+    {
+      "id": "国服套装",
+      "label": "国服套装",
+      "position": "Position 1",
+      "lane": "CN preset",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1111",
+          "name": "Iron Sword",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1111.jpg",
+          "description": "PATK +20"
+        },
+        {
+          "slot": 2,
+          "itemId": "1345",
+          "name": "Nettle Gauntlet",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1345.jpg",
+          "description": "Offense & defense"
+        },
+        {
+          "slot": 3,
+          "itemId": "1423",
+          "name": "Boots of Tranquility",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1423.jpg",
+          "description": "Reduces Skill CD"
+        },
+        {
+          "slot": 4,
+          "itemId": "11311",
+          "name": "Pure Sky",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/11311.jpg",
+          "description": "Temp. damage reduction"
+        },
+        {
+          "slot": 5,
+          "itemId": "1422",
+          "name": "Boots of Resistance",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
+          "description": "Shortens CC"
+        },
+        {
+          "slot": 6,
+          "itemId": "1127",
+          "name": "Destiny",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1127.jpg",
+          "description": "Negates fatal damage"
+        }
+      ]
+    },
+    {
+      "id": "clash-lane-1",
+      "label": "Clash Lane 1",
+      "position": "Position 1",
+      "lane": "Clash Lane",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1422",
+          "name": "Boots of Resistance",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
+          "description": "Shortens CC"
+        },
+        {
+          "slot": 2,
+          "itemId": "13310",
+          "name": "Frostscar's Embrace",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/13310.jpg",
+          "description": "Enhanced BAs slow"
+        },
+        {
+          "slot": 3,
+          "itemId": "1331",
+          "name": "Blazing Cape",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1331.jpg",
+          "description": "Burns nearby enemies"
+        },
+        {
+          "slot": 4,
+          "itemId": "1335",
+          "name": "Succubus Cloak",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1335.jpg",
+          "description": "Negates magical damage"
+        },
+        {
+          "slot": 5,
+          "itemId": "1332",
+          "name": "Overlord's Platemail",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1332.jpg",
+          "description": "Extra Health"
+        },
+        {
+          "slot": 6,
+          "itemId": "1337",
+          "name": "Sage's Sanctuary",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1337.jpg",
+          "description": "Resurrect on the spot"
+        }
+      ]
+    },
+    {
+      "id": "dmg-late-game",
+      "label": "DMG Late Game",
+      "position": "Position 1",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1411",
+          "name": "Lightfoot Shoes",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1411.jpg",
+          "description": "Movement Speed"
+        },
+        {
+          "slot": 2,
+          "itemId": "11311",
+          "name": "Pure Sky",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/11311.jpg",
+          "description": "Temp. damage reduction"
+        },
+        {
+          "slot": 3,
+          "itemId": "1421",
+          "name": "Boots of Fortitude",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1421.jpg",
+          "description": "Reduces physical damage"
+        },
+        {
+          "slot": 4,
+          "itemId": "1138",
+          "name": "Overlord's Might",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1138.jpg",
+          "description": "High-damage attack"
+        },
+        {
+          "slot": 5,
+          "itemId": "1127",
+          "name": "Destiny",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1127.jpg",
+          "description": "Negates fatal damage"
+        },
+        {
+          "slot": 6,
+          "itemId": "1422",
+          "name": "Boots of Resistance",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
+          "description": "Shortens CC"
+        }
+      ]
+    },
+    {
+      "id": "lubu-gang",
+      "label": "Lubu Gang",
+      "position": "Position 1",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1345",
+          "name": "Nettle Gauntlet",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1345.jpg",
+          "description": "Offense & defense"
+        },
+        {
+          "slot": 2,
+          "itemId": "1421",
+          "name": "Boots of Fortitude",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1421.jpg",
+          "description": "Reduces physical damage"
+        },
+        {
+          "slot": 3,
+          "itemId": "1121",
+          "name": "Storm Sword",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1121.jpg",
+          "description": "Physical Attack +75"
+        },
+        {
+          "slot": 4,
+          "itemId": "1138",
+          "name": "Overlord's Might",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1138.jpg",
+          "description": "High-damage attack"
+        },
+        {
+          "slot": 5,
+          "itemId": "11311",
+          "name": "Pure Sky",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/11311.jpg",
+          "description": "Temp. damage reduction"
+        },
+        {
+          "slot": 6,
+          "itemId": "1125",
+          "name": "Demonsbane",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1125.jpg",
+          "description": "Boosts MDEF"
+        }
+      ]
+    },
+    {
+      "id": "lubu",
+      "label": "Lubu",
+      "position": "Position 1",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1345",
+          "name": "Nettle Gauntlet",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1345.jpg",
+          "description": "Offense & defense"
+        },
+        {
+          "slot": 2,
+          "itemId": "1425",
+          "name": "Boots of Dexterity",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1425.jpg",
+          "description": "Boosts ASPD"
+        },
+        {
+          "slot": 3,
+          "itemId": "1534",
+          "name": "Dragon's Rage",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1534.jpg",
+          "description": "Boosts BA damage"
+        },
+        {
+          "slot": 4,
+          "itemId": "1338",
+          "name": "Cuirass of Savagery",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1338.jpg",
+          "description": "Offense & defense"
+        },
+        {
+          "slot": 5,
+          "itemId": "11210",
+          "name": "Mortal Punisher",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/11210.jpg",
+          "description": "Lowers Health regen"
+        },
+        {
+          "slot": 6,
+          "itemId": "1422",
+          "name": "Boots of Resistance",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
+          "description": "Shortens CC"
+        }
+      ]
+    },
+    {
+      "id": "semo-gaming",
+      "label": "SEMO GAMING",
+      "position": "Position 1",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1111",
+          "name": "Iron Sword",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1111.jpg",
+          "description": "PATK +20"
+        },
+        {
+          "slot": 2,
+          "itemId": "1345",
+          "name": "Nettle Gauntlet",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1345.jpg",
+          "description": "Offense & defense"
+        },
+        {
+          "slot": 3,
+          "itemId": "1421",
+          "name": "Boots of Fortitude",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1421.jpg",
+          "description": "Reduces physical damage"
+        },
+        {
+          "slot": 4,
+          "itemId": "11311",
+          "name": "Pure Sky",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/11311.jpg",
+          "description": "Temp. damage reduction"
+        },
+        {
+          "slot": 5,
+          "itemId": "1138",
+          "name": "Overlord's Might",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1138.jpg",
+          "description": "High-damage attack"
+        },
+        {
+          "slot": 6,
+          "itemId": "1331",
+          "name": "Blazing Cape",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1331.jpg",
+          "description": "Burns nearby enemies"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "label": "مسار الاشتباك 3",
+      "position": "Position 1",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1423",
+          "name": "Boots of Tranquility",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1423.jpg",
+          "description": "Reduces Skill CD"
+        },
+        {
+          "slot": 2,
+          "itemId": "1138",
+          "name": "Overlord's Might",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1138.jpg",
+          "description": "High-damage attack"
+        },
+        {
+          "slot": 3,
+          "itemId": "1127",
+          "name": "Destiny",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1127.jpg",
+          "description": "Negates fatal damage"
+        },
+        {
+          "slot": 4,
+          "itemId": "11311",
+          "name": "Pure Sky",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/11311.jpg",
+          "description": "Temp. damage reduction"
+        },
+        {
+          "slot": 5,
+          "itemId": "1422",
+          "name": "Boots of Resistance",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
+          "description": "Shortens CC"
+        },
+        {
+          "slot": 6,
+          "itemId": "1136",
+          "name": "Shadow Ripper",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1136.jpg",
+          "description": "Crits boost ASPD"
+        }
+      ]
+    }
   ]
 }

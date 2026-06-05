@@ -49,38 +49,38 @@
   "build": [
     {
       "slot": 1,
-      "itemId": "1124",
-      "name": "Meteor",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1124.jpg",
-      "description": "PATK +35\nCDR +7.5%"
+      "itemId": "1423",
+      "name": "Boots of Tranquility",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1423.jpg",
+      "description": "Reduces Skill CD"
     },
     {
       "slot": 2,
-      "itemId": "1421",
-      "name": "Boots of Fortitude",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1421.jpg",
-      "description": "Reduces physical damage"
-    },
-    {
-      "slot": 3,
       "itemId": "1137",
       "name": "Axe of Torment",
       "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1137.jpg",
       "description": "Anti-squishy"
     },
     {
-      "slot": 4,
-      "itemId": "1345",
-      "name": "Nettle Gauntlet",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1345.jpg",
-      "description": "Offense & defense"
-    },
-    {
-      "slot": 5,
+      "slot": 3,
       "itemId": "11311",
       "name": "Pure Sky",
       "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/11311.jpg",
       "description": "Temp. damage reduction"
+    },
+    {
+      "slot": 4,
+      "itemId": "1338",
+      "name": "Cuirass of Savagery",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1338.jpg",
+      "description": "Offense & defense"
+    },
+    {
+      "slot": 5,
+      "itemId": null,
+      "name": "siege breaker",
+      "icon": null,
+      "description": null
     },
     {
       "slot": 6,
@@ -141,5 +141,457 @@
     "Pick rate 0.67% in global ranked.",
     "Ban rate 0.11%.",
     "Counters: Nuwa, Mi Yue, Liang. Countered by: Yaria."
+  ],
+  "builds": [
+    {
+      "id": "recommended",
+      "label": "Recommended",
+      "position": null,
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1423",
+          "name": "Boots of Tranquility",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1423.jpg",
+          "description": "Reduces Skill CD"
+        },
+        {
+          "slot": 2,
+          "itemId": "1137",
+          "name": "Axe of Torment",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1137.jpg",
+          "description": "Anti-squishy"
+        },
+        {
+          "slot": 3,
+          "itemId": "11311",
+          "name": "Pure Sky",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/11311.jpg",
+          "description": "Temp. damage reduction"
+        },
+        {
+          "slot": 4,
+          "itemId": "1338",
+          "name": "Cuirass of Savagery",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1338.jpg",
+          "description": "Offense & defense"
+        },
+        {
+          "slot": 5,
+          "itemId": null,
+          "name": "siege breaker",
+          "icon": null,
+          "description": null
+        },
+        {
+          "slot": 6,
+          "itemId": "1131",
+          "name": "Starbreaker",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1131.jpg",
+          "description": "Anti-tank"
+        }
+      ]
+    },
+    {
+      "id": "principal",
+      "label": "Principal",
+      "position": "Position 1",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1124",
+          "name": "Meteor",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1124.jpg",
+          "description": "PATK +35\nCDR +7.5%"
+        },
+        {
+          "slot": 2,
+          "itemId": "1423",
+          "name": "Boots of Tranquility",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1423.jpg",
+          "description": "Reduces Skill CD"
+        },
+        {
+          "slot": 3,
+          "itemId": "1137",
+          "name": "Axe of Torment",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1137.jpg",
+          "description": "Anti-squishy"
+        },
+        {
+          "slot": 4,
+          "itemId": "1138",
+          "name": "Overlord's Might",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1138.jpg",
+          "description": "High-damage attack"
+        },
+        {
+          "slot": 5,
+          "itemId": "13310",
+          "name": "Frostscar's Embrace",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/13310.jpg",
+          "description": "Enhanced BAs slow"
+        },
+        {
+          "slot": 6,
+          "itemId": "1422",
+          "name": "Boots of Resistance",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
+          "description": "Shortens CC"
+        }
+      ]
+    },
+    {
+      "id": "bestmayene",
+      "label": "BestMayene",
+      "position": "Position 1",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1423",
+          "name": "Boots of Tranquility",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1423.jpg",
+          "description": "Reduces Skill CD"
+        },
+        {
+          "slot": 2,
+          "itemId": "1137",
+          "name": "Axe of Torment",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1137.jpg",
+          "description": "Anti-squishy"
+        },
+        {
+          "slot": 3,
+          "itemId": "11311",
+          "name": "Pure Sky",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/11311.jpg",
+          "description": "Temp. damage reduction"
+        },
+        {
+          "slot": 4,
+          "itemId": "1138",
+          "name": "Overlord's Might",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1138.jpg",
+          "description": "High-damage attack"
+        },
+        {
+          "slot": 5,
+          "itemId": "1338",
+          "name": "Cuirass of Savagery",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1338.jpg",
+          "description": "Offense & defense"
+        },
+        {
+          "slot": 6,
+          "itemId": "1125",
+          "name": "Demonsbane",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1125.jpg",
+          "description": "Boosts MDEF"
+        }
+      ]
+    },
+    {
+      "id": "打爆对面假牙",
+      "label": "打爆对面假牙",
+      "position": "Position 1",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1124",
+          "name": "Meteor",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1124.jpg",
+          "description": "PATK +35\nCDR +7.5%"
+        },
+        {
+          "slot": 2,
+          "itemId": "1423",
+          "name": "Boots of Tranquility",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1423.jpg",
+          "description": "Reduces Skill CD"
+        },
+        {
+          "slot": 3,
+          "itemId": "1137",
+          "name": "Axe of Torment",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1137.jpg",
+          "description": "Anti-squishy"
+        },
+        {
+          "slot": 4,
+          "itemId": "1134",
+          "name": "Master Sword",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1134.jpg",
+          "description": "Enhances BA"
+        },
+        {
+          "slot": 5,
+          "itemId": "1133",
+          "name": "Eternity Blade",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1133.jpg",
+          "description": "High crit damage"
+        },
+        {
+          "slot": 6,
+          "itemId": "1131",
+          "name": "Starbreaker",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1131.jpg",
+          "description": "Anti-tank"
+        }
+      ]
+    },
+    {
+      "id": "mayene",
+      "label": "MaYeNe",
+      "position": "Position 1",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1137",
+          "name": "Axe of Torment",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1137.jpg",
+          "description": "Anti-squishy"
+        },
+        {
+          "slot": 2,
+          "itemId": "1423",
+          "name": "Boots of Tranquility",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1423.jpg",
+          "description": "Reduces Skill CD"
+        },
+        {
+          "slot": 3,
+          "itemId": "1331",
+          "name": "Blazing Cape",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1331.jpg",
+          "description": "Burns nearby enemies"
+        },
+        {
+          "slot": 4,
+          "itemId": "1138",
+          "name": "Overlord's Might",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1138.jpg",
+          "description": "High-damage attack"
+        },
+        {
+          "slot": 5,
+          "itemId": "1335",
+          "name": "Succubus Cloak",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1335.jpg",
+          "description": "Negates magical damage"
+        },
+        {
+          "slot": 6,
+          "itemId": "1131",
+          "name": "Starbreaker",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1131.jpg",
+          "description": "Anti-tank"
+        }
+      ]
+    },
+    {
+      "id": "冰脉冰甲流",
+      "label": "冰脉冰甲流",
+      "position": "Position 1",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1111",
+          "name": "Iron Sword",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1111.jpg",
+          "description": "PATK +20"
+        },
+        {
+          "slot": 2,
+          "itemId": "1124",
+          "name": "Meteor",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1124.jpg",
+          "description": "PATK +35\nCDR +7.5%"
+        },
+        {
+          "slot": 3,
+          "itemId": "1137",
+          "name": "Axe of Torment",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1137.jpg",
+          "description": "Anti-squishy"
+        },
+        {
+          "slot": 4,
+          "itemId": "1324",
+          "name": "Frosthold Targe",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1324.jpg",
+          "description": "PDEF +150, CDR +7.5%"
+        },
+        {
+          "slot": 5,
+          "itemId": "13310",
+          "name": "Frostscar's Embrace",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/13310.jpg",
+          "description": "Enhanced BAs slow"
+        },
+        {
+          "slot": 6,
+          "itemId": "1423",
+          "name": "Boots of Tranquility",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1423.jpg",
+          "description": "Reduces Skill CD"
+        }
+      ]
+    },
+    {
+      "id": "popular",
+      "label": "Popular",
+      "position": "Position 1",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1422",
+          "name": "Boots of Resistance",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
+          "description": "Shortens CC"
+        },
+        {
+          "slot": 2,
+          "itemId": "1124",
+          "name": "Meteor",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1124.jpg",
+          "description": "PATK +35\nCDR +7.5%"
+        },
+        {
+          "slot": 3,
+          "itemId": "1345",
+          "name": "Nettle Gauntlet",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1345.jpg",
+          "description": "Offense & defense"
+        },
+        {
+          "slot": 4,
+          "itemId": "1137",
+          "name": "Axe of Torment",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1137.jpg",
+          "description": "Anti-squishy"
+        },
+        {
+          "slot": 5,
+          "itemId": "1331",
+          "name": "Blazing Cape",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1331.jpg",
+          "description": "Burns nearby enemies"
+        },
+        {
+          "slot": 6,
+          "itemId": "1138",
+          "name": "Overlord's Might",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1138.jpg",
+          "description": "High-damage attack"
+        }
+      ]
+    },
+    {
+      "id": "preset",
+      "label": "Preset",
+      "position": "Position 1",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1137",
+          "name": "Axe of Torment",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1137.jpg",
+          "description": "Anti-squishy"
+        },
+        {
+          "slot": 2,
+          "itemId": "1421",
+          "name": "Boots of Fortitude",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1421.jpg",
+          "description": "Reduces physical damage"
+        },
+        {
+          "slot": 3,
+          "itemId": "1138",
+          "name": "Overlord's Might",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1138.jpg",
+          "description": "High-damage attack"
+        },
+        {
+          "slot": 4,
+          "itemId": "1131",
+          "name": "Starbreaker",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1131.jpg",
+          "description": "Anti-tank"
+        },
+        {
+          "slot": 5,
+          "itemId": "13310",
+          "name": "Frostscar's Embrace",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/13310.jpg",
+          "description": "Enhanced BAs slow"
+        },
+        {
+          "slot": 6,
+          "itemId": "1335",
+          "name": "Succubus Cloak",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1335.jpg",
+          "description": "Negates magical damage"
+        }
+      ]
+    },
+    {
+      "id": "semojo",
+      "label": "SEMO.JO",
+      "position": "Position 1",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1124",
+          "name": "Meteor",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1124.jpg",
+          "description": "PATK +35\nCDR +7.5%"
+        },
+        {
+          "slot": 2,
+          "itemId": "1421",
+          "name": "Boots of Fortitude",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1421.jpg",
+          "description": "Reduces physical damage"
+        },
+        {
+          "slot": 3,
+          "itemId": "1137",
+          "name": "Axe of Torment",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1137.jpg",
+          "description": "Anti-squishy"
+        },
+        {
+          "slot": 4,
+          "itemId": "1345",
+          "name": "Nettle Gauntlet",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1345.jpg",
+          "description": "Offense & defense"
+        },
+        {
+          "slot": 5,
+          "itemId": "11311",
+          "name": "Pure Sky",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/11311.jpg",
+          "description": "Temp. damage reduction"
+        },
+        {
+          "slot": 6,
+          "itemId": "1131",
+          "name": "Starbreaker",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1131.jpg",
+          "description": "Anti-tank"
+        }
+      ]
+    }
   ]
 }

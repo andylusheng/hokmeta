@@ -7,6 +7,8 @@ const path = require('path');
 const {
   parseSkills,
   parseBuildFromHtml,
+  parseBuildPresetsFromHtml,
+  pickDefaultBuildItems,
   parseArcana,
   parseSpells,
   parseCounters,
@@ -51,7 +53,8 @@ function needsRepair(h) {
   const buildOk = (h.build || []).filter((b) => b.name !== 'Data unavailable' && b.icon).length;
   const badCounters = [...(h.counters || []), ...(h.counteredBy || [])].some(isBadCounterName);
   const noArcana = !(h.arcana || []).length;
-  return buildOk < 4 || badCounters || noArcana;
+  const noBuilds = !(h.builds || []).length;
+  return buildOk < 4 || badCounters || noArcana || noBuilds;
 }
 
 function faqs(hero, buildNames) {
@@ -85,7 +88,9 @@ function refreshDerived(hero) {
   hero.tips = [
     `${hero.name} (${hero.role}): Tier ${hero.tier} on international ranked — ${hero.winRate != null ? hero.winRate + '% WR' : 'WR unavailable'}.`,
     hero.lane ? `Primary lane: ${hero.lane}.` : 'Lane data unavailable.',
-    `Build core: ${buildNames.filter((n) => n !== 'Data unavailable').slice(0, 3).join(', ') || 'Data unavailable'}.`,
+    hero.builds?.length
+      ? `${hero.builds.length} build presets (lane / CN / community) — switch tabs on build section.`
+      : `Build core: ${buildNames.filter((n) => n !== 'Data unavailable').slice(0, 3).join(', ') || 'Data unavailable'}.`,
   ];
   const wrText = hero.winRate != null ? `${hero.winRate}%` : 'Data unavailable';
   const prText = hero.pickRate != null ? `${hero.pickRate}%` : 'Data unavailable';
@@ -131,8 +136,15 @@ async function enrichHero(hero, hokSlug, lookup) {
     });
   }
 
-  const build = parseBuildFromHtml(html, lookup);
-  if (build.filter((b) => b.icon).length >= 4) hero.build = build;
+  const presets = parseBuildPresetsFromHtml(html, lookup);
+  if (presets.length) {
+    hero.builds = presets;
+    hero.build =
+      pickDefaultBuildItems(presets, hero.lane) || presets[0].items;
+  } else {
+    const build = parseBuildFromHtml(html, lookup, hero.lane);
+    if (build.filter((b) => b.icon).length >= 4) hero.build = build;
+  }
 
   const arc = parseArcana(html);
   if (arc.length) hero.arcana = arc;

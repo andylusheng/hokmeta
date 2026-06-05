@@ -49,31 +49,31 @@
   "build": [
     {
       "slot": 1,
-      "itemId": "1411",
-      "name": "Lightfoot Shoes",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1411.jpg",
-      "description": "Movement Speed"
-    },
-    {
-      "slot": 2,
-      "itemId": "1331",
-      "name": "Blazing Cape",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1331.jpg",
-      "description": "Burns nearby enemies"
-    },
-    {
-      "slot": 3,
-      "itemId": "1323",
-      "name": "Clandestine Cape",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1323.jpg",
-      "description": "MDEF +150, HP +450"
-    },
-    {
-      "slot": 4,
       "itemId": "1421",
       "name": "Boots of Fortitude",
       "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1421.jpg",
       "description": "Reduces physical damage"
+    },
+    {
+      "slot": 2,
+      "itemId": "1137",
+      "name": "Axe of Torment",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1137.jpg",
+      "description": "Anti-squishy"
+    },
+    {
+      "slot": 3,
+      "itemId": "1341",
+      "name": "Frigid Charge",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1341.jpg",
+      "description": "Group CC"
+    },
+    {
+      "slot": 4,
+      "itemId": "1333",
+      "name": "Ominous Premonition",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1333.jpg",
+      "description": "Slows attackers"
     },
     {
       "slot": 5,
@@ -143,5 +143,457 @@
     "Pick rate 0.91% in global ranked.",
     "Ban rate 0.1%.",
     "Counters: Data unavailable, Data unavailable, Data unavailable. Countered by: Jing, Li Bai, Ukyo Tachibana."
+  ],
+  "builds": [
+    {
+      "id": "recommended",
+      "label": "Recommended",
+      "position": null,
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1421",
+          "name": "Boots of Fortitude",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1421.jpg",
+          "description": "Reduces physical damage"
+        },
+        {
+          "slot": 2,
+          "itemId": "1137",
+          "name": "Axe of Torment",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1137.jpg",
+          "description": "Anti-squishy"
+        },
+        {
+          "slot": 3,
+          "itemId": "1341",
+          "name": "Frigid Charge",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1341.jpg",
+          "description": "Group CC"
+        },
+        {
+          "slot": 4,
+          "itemId": "1333",
+          "name": "Ominous Premonition",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1333.jpg",
+          "description": "Slows attackers"
+        },
+        {
+          "slot": 5,
+          "itemId": "1335",
+          "name": "Succubus Cloak",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1335.jpg",
+          "description": "Negates magical damage"
+        },
+        {
+          "slot": 6,
+          "itemId": "1332",
+          "name": "Overlord's Platemail",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1332.jpg",
+          "description": "Extra Health"
+        }
+      ]
+    },
+    {
+      "id": "roaming-1",
+      "label": "Roaming 1",
+      "position": "Position 5",
+      "lane": "Roaming",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1701",
+          "name": "Knowledge Gem",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1701.jpg",
+          "description": "Extra Gold & EXP"
+        },
+        {
+          "slot": 2,
+          "itemId": "1421",
+          "name": "Boots of Fortitude",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1421.jpg",
+          "description": "Reduces physical damage"
+        },
+        {
+          "slot": 3,
+          "itemId": "1724",
+          "name": "Guardian - Redemption",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1724.jpg",
+          "description": "Group shield"
+        },
+        {
+          "slot": 4,
+          "itemId": "1325",
+          "name": "Protector's Cuirass",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1325.jpg",
+          "description": "PDEF +150, HP +450"
+        },
+        {
+          "slot": 5,
+          "itemId": "1323",
+          "name": "Clandestine Cape",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1323.jpg",
+          "description": "MDEF +150, HP +450"
+        },
+        {
+          "slot": 6,
+          "itemId": "1333",
+          "name": "Ominous Premonition",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1333.jpg",
+          "description": "Slows attackers"
+        }
+      ]
+    },
+    {
+      "id": "fast-rotation",
+      "label": "Fast Rotation",
+      "position": "Position 1",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1411",
+          "name": "Lightfoot Shoes",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1411.jpg",
+          "description": "Movement Speed"
+        },
+        {
+          "slot": 2,
+          "itemId": "1331",
+          "name": "Blazing Cape",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1331.jpg",
+          "description": "Burns nearby enemies"
+        },
+        {
+          "slot": 3,
+          "itemId": "1323",
+          "name": "Clandestine Cape",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1323.jpg",
+          "description": "MDEF +150, HP +450"
+        },
+        {
+          "slot": 4,
+          "itemId": "1421",
+          "name": "Boots of Fortitude",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1421.jpg",
+          "description": "Reduces physical damage"
+        },
+        {
+          "slot": 5,
+          "itemId": "1335",
+          "name": "Succubus Cloak",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1335.jpg",
+          "description": "Negates magical damage"
+        },
+        {
+          "slot": 6,
+          "itemId": "1332",
+          "name": "Overlord's Platemail",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1332.jpg",
+          "description": "Extra Health"
+        }
+      ]
+    },
+    {
+      "id": "quiyo",
+      "label": "Quiyo",
+      "position": "Position 5",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1701",
+          "name": "Knowledge Gem",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1701.jpg",
+          "description": "Extra Gold & EXP"
+        },
+        {
+          "slot": 2,
+          "itemId": "1421",
+          "name": "Boots of Fortitude",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1421.jpg",
+          "description": "Reduces physical damage"
+        },
+        {
+          "slot": 3,
+          "itemId": "1724",
+          "name": "Guardian - Redemption",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1724.jpg",
+          "description": "Group shield"
+        },
+        {
+          "slot": 4,
+          "itemId": "1341",
+          "name": "Frigid Charge",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1341.jpg",
+          "description": "Group CC"
+        },
+        {
+          "slot": 5,
+          "itemId": "1333",
+          "name": "Ominous Premonition",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1333.jpg",
+          "description": "Slows attackers"
+        },
+        {
+          "slot": 6,
+          "itemId": "1335",
+          "name": "Succubus Cloak",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1335.jpg",
+          "description": "Negates magical damage"
+        }
+      ]
+    },
+    {
+      "id": "top1",
+      "label": "Top1",
+      "position": "Position 5",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1754",
+          "name": "Guardian - Radiance",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1754.jpg",
+          "description": "Area damage & vision"
+        },
+        {
+          "slot": 2,
+          "itemId": "1422",
+          "name": "Boots of Resistance",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
+          "description": "Shortens CC"
+        },
+        {
+          "slot": 3,
+          "itemId": "1341",
+          "name": "Frigid Charge",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1341.jpg",
+          "description": "Group CC"
+        },
+        {
+          "slot": 4,
+          "itemId": "1325",
+          "name": "Protector's Cuirass",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1325.jpg",
+          "description": "PDEF +150, HP +450"
+        },
+        {
+          "slot": 5,
+          "itemId": "1353",
+          "name": "Dawnlight",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1353.jpg",
+          "description": "Shields on dealing damage"
+        },
+        {
+          "slot": 6,
+          "itemId": "1333",
+          "name": "Ominous Premonition",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1333.jpg",
+          "description": "Slows attackers"
+        }
+      ]
+    },
+    {
+      "id": "cn",
+      "label": "Cn",
+      "position": "Position 5",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1701",
+          "name": "Knowledge Gem",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1701.jpg",
+          "description": "Extra Gold & EXP"
+        },
+        {
+          "slot": 2,
+          "itemId": "1423",
+          "name": "Boots of Tranquility",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1423.jpg",
+          "description": "Reduces Skill CD"
+        },
+        {
+          "slot": 3,
+          "itemId": "1754",
+          "name": "Guardian - Radiance",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1754.jpg",
+          "description": "Area damage & vision"
+        },
+        {
+          "slot": 4,
+          "itemId": "1331",
+          "name": "Blazing Cape",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1331.jpg",
+          "description": "Burns nearby enemies"
+        },
+        {
+          "slot": 5,
+          "itemId": "1534",
+          "name": "Dragon's Rage",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1534.jpg",
+          "description": "Boosts BA damage"
+        },
+        {
+          "slot": 6,
+          "itemId": "1341",
+          "name": "Frigid Charge",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1341.jpg",
+          "description": "Group CC"
+        }
+      ]
+    },
+    {
+      "id": "boom-po-felon",
+      "label": "Boom po felon",
+      "position": "Position 5",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1701",
+          "name": "Knowledge Gem",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1701.jpg",
+          "description": "Extra Gold & EXP"
+        },
+        {
+          "slot": 2,
+          "itemId": "1421",
+          "name": "Boots of Fortitude",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1421.jpg",
+          "description": "Reduces physical damage"
+        },
+        {
+          "slot": 3,
+          "itemId": "1724",
+          "name": "Guardian - Redemption",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1724.jpg",
+          "description": "Group shield"
+        },
+        {
+          "slot": 4,
+          "itemId": "1333",
+          "name": "Ominous Premonition",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1333.jpg",
+          "description": "Slows attackers"
+        },
+        {
+          "slot": 5,
+          "itemId": "1331",
+          "name": "Blazing Cape",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1331.jpg",
+          "description": "Burns nearby enemies"
+        },
+        {
+          "slot": 6,
+          "itemId": "1335",
+          "name": "Succubus Cloak",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1335.jpg",
+          "description": "Negates magical damage"
+        }
+      ]
+    },
+    {
+      "id": "xnxxboyy",
+      "label": "XNXXBOYY",
+      "position": "Position 5",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1724",
+          "name": "Guardian - Redemption",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1724.jpg",
+          "description": "Group shield"
+        },
+        {
+          "slot": 2,
+          "itemId": "1421",
+          "name": "Boots of Fortitude",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1421.jpg",
+          "description": "Reduces physical damage"
+        },
+        {
+          "slot": 3,
+          "itemId": "1331",
+          "name": "Blazing Cape",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1331.jpg",
+          "description": "Burns nearby enemies"
+        },
+        {
+          "slot": 4,
+          "itemId": "1333",
+          "name": "Ominous Premonition",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1333.jpg",
+          "description": "Slows attackers"
+        },
+        {
+          "slot": 5,
+          "itemId": "1335",
+          "name": "Succubus Cloak",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1335.jpg",
+          "description": "Negates magical damage"
+        },
+        {
+          "slot": 6,
+          "itemId": "1347",
+          "name": "Longnight Guardian",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1347.jpg",
+          "description": "Resists burst damage"
+        }
+      ]
+    },
+    {
+      "id": "shea",
+      "label": "Shea",
+      "position": "Position 5",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1701",
+          "name": "Knowledge Gem",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1701.jpg",
+          "description": "Extra Gold & EXP"
+        },
+        {
+          "slot": 2,
+          "itemId": "1421",
+          "name": "Boots of Fortitude",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1421.jpg",
+          "description": "Reduces physical damage"
+        },
+        {
+          "slot": 3,
+          "itemId": "1754",
+          "name": "Guardian - Radiance",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1754.jpg",
+          "description": "Area damage & vision"
+        },
+        {
+          "slot": 4,
+          "itemId": "1341",
+          "name": "Frigid Charge",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1341.jpg",
+          "description": "Group CC"
+        },
+        {
+          "slot": 5,
+          "itemId": "1333",
+          "name": "Ominous Premonition",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1333.jpg",
+          "description": "Slows attackers"
+        },
+        {
+          "slot": 6,
+          "itemId": "1347",
+          "name": "Longnight Guardian",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1347.jpg",
+          "description": "Resists burst damage"
+        }
+      ]
+    }
   ]
 }

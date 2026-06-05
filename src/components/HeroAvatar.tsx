@@ -12,10 +12,15 @@ export function HeroAvatar({
   size?: number;
 }) {
   const alt = `${hero.name} HOK Build & Guide`;
-  const [src, setSrc] = useState(hero.avatar);
+  const [fallbackSlug, setFallbackSlug] = useState<string | null>(null);
+  const src =
+    fallbackSlug === hero.slug && hero.avatarFallback
+      ? hero.avatarFallback
+      : hero.avatar;
 
   return (
     <Image
+      key={hero.slug}
       src={src}
       alt={alt}
       width={size}
@@ -23,8 +28,8 @@ export function HeroAvatar({
       className="rounded-full bg-hok-border object-cover"
       unoptimized
       onError={() => {
-        if (hero.avatarFallback && src !== hero.avatarFallback) {
-          setSrc(hero.avatarFallback);
+        if (hero.avatarFallback) {
+          setFallbackSlug(hero.slug);
         }
       }}
     />

@@ -1,5 +1,5 @@
 import { notFound } from 'next/navigation';
-import { getLearnArticle, getLearnSlugs } from '@/lib/learn';
+import { getLearnArticle, getLearnSlugs, learnDataNote, learnDataSync } from '@/lib/learn';
 import { buildMetadata, defaultTitle, authorMeta } from '@/lib/seo';
 import { Breadcrumb } from '@/components/Breadcrumb';
 import { JsonLd, breadcrumbSchema, articleSchema } from '@/lib/schema';
@@ -57,9 +57,12 @@ export default function LearnArticlePage({
       <h1 className="mb-2 text-3xl font-bold text-white">{article.title}</h1>
       <p className="mb-4 text-sm text-gray-500">
         By {authorMeta.name} · Published {authorMeta.datePublished} · Updated{' '}
-        {authorMeta.dateModified}
+        {learnDataSync}
       </p>
-      <p className="mb-8 text-gray-400">{article.description}</p>
+      <p className="mb-4 text-gray-400">{article.description}</p>
+      <p className="mb-8 rounded border border-hok-border bg-hok-card/50 px-3 py-2 text-sm text-gray-500" lang="en">
+        {learnDataNote}
+      </p>
       {article.sections.map((s) => (
         <section key={s.heading} className="mb-8">
           <h2 className="section-title">{s.heading}</h2>

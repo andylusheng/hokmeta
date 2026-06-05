@@ -651,7 +651,124 @@ function resolveBuildFromNames(names, lookup) {
   return build;
 }
 
-function parseBuildFromHtml(html, lookup) {
+function slugifyBuildLabel(label) {
+  return (
+    String(label)
+      .toLowerCase()
+      .replace(/\s+/g, '-')
+      .replace(/[^a-z0-9\u4e00-\u9fff-]/g, '')
+      .replace(/-+/g, '-')
+      .replace(/^-|-$/g, '') || 'build'
+  );
+}
+
+function inferBuildLane(label) {
+  const l = String(label).toLowerCase();
+  if (/jungl/.test(l)) return 'Jungling';
+  if (/clash|\btop\b/.test(l)) return 'Clash Lane';
+  if (/farm|bot|marksman|adc/.test(l)) return 'Farm Lane';
+  if (/\bmid\b/.test(l)) return 'Mid Lane';
+  if (/roam|support/.test(l)) return 'Roaming';
+  if (/国服|cn\s*set/.test(l)) return 'CN preset';
+  return null;
+}
+
+function buildPresetPriority(preset) {
+  const label = preset.label.toLowerCase();
+  if (/principal|recommend|default/.test(label) || preset.id === 'recommended') return 0;
+  if (/国服/.test(preset.label)) return 1;
+  if (preset.lane && preset.lane !== 'CN preset') return 2;
+  return 3;
+}
+
+function pickDefaultBuildItems(presets, heroLane) {
+  if (!presets.length) return null;
+  const recommended = presets.find(
+    (p) => p.id === 'recommended' || /principal|recommend/i.test(p.label)
+  );
+  if (recommended) return recommended.items;
+
+  if (heroLane) {
+    const laneMatch = presets.find(
+      (p) =>
+        p.lane === heroLane ||
+        new RegExp(heroLane.split(' ')[0], 'i').test(p.label)
+    );
+    if (laneMatch) return laneMatch.items;
+  }
+
+  return presets[0].items;
+}
+
+/** HoKStats preset cards: Late Game, Clash Lane, 国服套装, Jungling, etc. */
+function parseBuildPresetsFromHtml(html, lookup) {
+  const presets = [];
+  const seen = new Set();
+  const cardRe =
+    /<h3 class="text-sm font-bold text-text-primary truncate">([^<]+)<\/h3>[\s\S]*?<span class="text-\[11px\] text-text-muted shrink-0">([^<]*)<\/span>[\s\S]*?<div class="flex flex-wrap items-center gap-1\.5">([\s\S]*?)<\/div>/g;
+
+  let m;
+  while ((m = cardRe.exec(html))) {
+    const label = decodeHtml(m[1].trim());
+    const position = decodeHtml(m[2].trim()) || null;
+    const entries = [];
+    const itemRe =
+      /href="\/items\/(\d+)\/"[^>]*>[\s\S]*?<span[^>]*>\s*([^<]+?)\s*<\/span>/g;
+    let im;
+    while ((im = itemRe.exec(m[3]))) {
+      const id = im[1];
+      const name = decodeHtml(im[2].trim());
+      if (!entries.some((x) => x.id === id)) entries.push({ id, name });
+    }
+    if (entries.length < 3) continue;
+
+    const items = resolveBuildFromIds(entries.slice(0, 6), lookup);
+    if (items.filter((b) => b.icon).length < 3) continue;
+
+    const key = items.map((b) => b.itemId || b.name).join('|');
+    if (seen.has(key)) continue;
+    seen.add(key);
+
+    presets.push({
+      id: slugifyBuildLabel(label),
+      label,
+      position,
+      lane: inferBuildLane(label),
+      items,
+    });
+  }
+
+  const slugs = parseBuildItemSlugs(html);
+  if (slugs.length >= 4) {
+    const fromSlugs = resolveBuildFromNames(
+      slugs.map((s) => s.replace(/-/g, ' ')),
+      lookup
+    );
+    if (fromSlugs.filter((b) => b.icon).length >= 4) {
+      const key = fromSlugs.map((b) => b.itemId || b.name).join('|');
+      if (!seen.has(key)) {
+        presets.unshift({
+          id: 'recommended',
+          label: 'Recommended',
+          position: null,
+          lane: null,
+          items: fromSlugs,
+        });
+        seen.add(key);
+      }
+    }
+  }
+
+  presets.sort((a, b) => buildPresetPriority(a) - buildPresetPriority(b));
+  return presets.slice(0, 10);
+}
+
+function parseBuildFromHtml(html, lookup, heroLane) {
+  const presets = parseBuildPresetsFromHtml(html, lookup);
+  if (presets.length) {
+    return pickDefaultBuildItems(presets, heroLane) || presets[0].items;
+  }
+
   const chains = parseBuildItemChains(html);
   if (chains.length) {
     const best = chains.reduce((a, b) => (b.length > a.length ? b : a), chains[0]);
@@ -702,6 +819,8 @@ module.exports = {
   buildItemEntry,
   resolveBuildFromNames,
   parseBuildFromHtml,
+  parseBuildPresetsFromHtml,
+  pickDefaultBuildItems,
   parseItemListFromHtml,
   parseItemDetail,
   parseSkills,

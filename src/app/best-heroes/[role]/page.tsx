@@ -1,5 +1,6 @@
+import Link from 'next/link';
 import { notFound } from 'next/navigation';
-import { getHeroesByRole, heroes } from '@/lib/data';
+import { getHeroesByRole } from '@/lib/data';
 import { absoluteUrl, buildMetadata, defaultTitle } from '@/lib/seo';
 import { HeroCard } from '@/components/HeroCard';
 import { Breadcrumb } from '@/components/Breadcrumb';
@@ -44,7 +45,9 @@ export default function BestHeroesRolePage({
 
   const list = getHeroesByRole(role).sort((a, b) => {
     const tierOrder = ['S+', 'S', 'A', 'B', 'C'];
-    return tierOrder.indexOf(a.tier) - tierOrder.indexOf(b.tier);
+    const tierDiff = tierOrder.indexOf(a.tier) - tierOrder.indexOf(b.tier);
+    if (tierDiff !== 0) return tierDiff;
+    return (b.winRate ?? -1) - (a.winRate ?? -1);
   });
 
   return (
@@ -74,7 +77,14 @@ export default function BestHeroesRolePage({
       />
       <h1 className="mb-2 text-3xl font-bold text-white">Best {role} Heroes</h1>
       <p className="mb-8 text-gray-400">
-        {list.length} heroes · sorted by tier from {heroes.length}-hero meta pool
+        {list.length} {role} heroes · tier then win rate ·{' '}
+        <Link
+          href={`/tier-list/#role-${role.toLowerCase()}`}
+          className="text-hok-gold hover:underline"
+        >
+          Tier bands
+        </Link>{' '}
+        on Tier List
       </p>
       <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
         {list.map((hero) => (

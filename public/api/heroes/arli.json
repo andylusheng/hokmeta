@@ -49,38 +49,38 @@
   "build": [
     {
       "slot": 1,
-      "itemId": "1425",
-      "name": "Boots of Dexterity",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1425.jpg",
-      "description": "Boosts ASPD"
-    },
-    {
-      "slot": 2,
-      "itemId": "1135",
-      "name": "Sparkforged Dagger",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1135.jpg",
-      "description": "Chain lightning BA"
-    },
-    {
-      "slot": 3,
       "itemId": "1126",
       "name": "Doomsday",
       "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1126.jpg",
       "description": "Boosts BA damage"
     },
     {
-      "slot": 4,
-      "itemId": "1155",
-      "name": "Daybreaker's Virtue",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1155.jpg",
-      "description": "Great for marksmen"
+      "slot": 2,
+      "itemId": "1425",
+      "name": "Boots of Dexterity",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1425.jpg",
+      "description": "Boosts ASPD"
     },
     {
-      "slot": 5,
+      "slot": 3,
+      "itemId": "1136",
+      "name": "Shadow Ripper",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1136.jpg",
+      "description": "Crits boost ASPD"
+    },
+    {
+      "slot": 4,
       "itemId": "1133",
       "name": "Eternity Blade",
       "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1133.jpg",
       "description": "High crit damage"
+    },
+    {
+      "slot": 5,
+      "itemId": "1155",
+      "name": "Daybreaker's Virtue",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1155.jpg",
+      "description": "Great for marksmen"
     },
     {
       "slot": 6,
@@ -142,5 +142,507 @@
     "Pick rate 0.79% in global ranked.",
     "Ban rate 0.36%.",
     "Counters: Kaizer, Angela. Countered by: Donghuang, Daji."
+  ],
+  "builds": [
+    {
+      "id": "recommended",
+      "label": "Recommended",
+      "position": null,
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1126",
+          "name": "Doomsday",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1126.jpg",
+          "description": "Boosts BA damage"
+        },
+        {
+          "slot": 2,
+          "itemId": "1425",
+          "name": "Boots of Dexterity",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1425.jpg",
+          "description": "Boosts ASPD"
+        },
+        {
+          "slot": 3,
+          "itemId": "1136",
+          "name": "Shadow Ripper",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1136.jpg",
+          "description": "Crits boost ASPD"
+        },
+        {
+          "slot": 4,
+          "itemId": "1133",
+          "name": "Eternity Blade",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1133.jpg",
+          "description": "High crit damage"
+        },
+        {
+          "slot": 5,
+          "itemId": "1155",
+          "name": "Daybreaker's Virtue",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1155.jpg",
+          "description": "Great for marksmen"
+        },
+        {
+          "slot": 6,
+          "itemId": "1141",
+          "name": "Sunchaser",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1141.jpg",
+          "description": "Boosts attack range"
+        }
+      ]
+    },
+    {
+      "id": "暴击攻速流",
+      "label": "暴击攻速流",
+      "position": "Position 4",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1425",
+          "name": "Boots of Dexterity",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1425.jpg",
+          "description": "Boosts ASPD"
+        },
+        {
+          "slot": 2,
+          "itemId": "1135",
+          "name": "Sparkforged Dagger",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1135.jpg",
+          "description": "Chain lightning BA"
+        },
+        {
+          "slot": 3,
+          "itemId": "1126",
+          "name": "Doomsday",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1126.jpg",
+          "description": "Boosts BA damage"
+        },
+        {
+          "slot": 4,
+          "itemId": "1141",
+          "name": "Sunchaser",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1141.jpg",
+          "description": "Boosts attack range"
+        },
+        {
+          "slot": 5,
+          "itemId": "1133",
+          "name": "Eternity Blade",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1133.jpg",
+          "description": "High crit damage"
+        },
+        {
+          "slot": 6,
+          "itemId": "1155",
+          "name": "Daybreaker's Virtue",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1155.jpg",
+          "description": "Great for marksmen"
+        }
+      ]
+    },
+    {
+      "id": "arli-x2",
+      "label": "Arli x2",
+      "position": "Position 4",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1422",
+          "name": "Boots of Resistance",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
+          "description": "Shortens CC"
+        },
+        {
+          "slot": 2,
+          "itemId": "1135",
+          "name": "Sparkforged Dagger",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1135.jpg",
+          "description": "Chain lightning BA"
+        },
+        {
+          "slot": 3,
+          "itemId": "1126",
+          "name": "Doomsday",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1126.jpg",
+          "description": "Boosts BA damage"
+        },
+        {
+          "slot": 4,
+          "itemId": "1133",
+          "name": "Eternity Blade",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1133.jpg",
+          "description": "High crit damage"
+        },
+        {
+          "slot": 5,
+          "itemId": "1155",
+          "name": "Daybreaker's Virtue",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1155.jpg",
+          "description": "Great for marksmen"
+        },
+        {
+          "slot": 6,
+          "itemId": "1141",
+          "name": "Sunchaser",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1141.jpg",
+          "description": "Boosts attack range"
+        }
+      ]
+    },
+    {
+      "id": "ad-carry",
+      "label": "ad carry",
+      "position": "Position 4",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1425",
+          "name": "Boots of Dexterity",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1425.jpg",
+          "description": "Boosts ASPD"
+        },
+        {
+          "slot": 2,
+          "itemId": "1135",
+          "name": "Sparkforged Dagger",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1135.jpg",
+          "description": "Chain lightning BA"
+        },
+        {
+          "slot": 3,
+          "itemId": "1126",
+          "name": "Doomsday",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1126.jpg",
+          "description": "Boosts BA damage"
+        },
+        {
+          "slot": 4,
+          "itemId": "1155",
+          "name": "Daybreaker's Virtue",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1155.jpg",
+          "description": "Great for marksmen"
+        },
+        {
+          "slot": 5,
+          "itemId": "1133",
+          "name": "Eternity Blade",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1133.jpg",
+          "description": "High crit damage"
+        },
+        {
+          "slot": 6,
+          "itemId": "1141",
+          "name": "Sunchaser",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1141.jpg",
+          "description": "Boosts attack range"
+        }
+      ]
+    },
+    {
+      "id": "tankyy",
+      "label": "Tankyy",
+      "position": "Position 4",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1135",
+          "name": "Sparkforged Dagger",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1135.jpg",
+          "description": "Chain lightning BA"
+        },
+        {
+          "slot": 2,
+          "itemId": "1425",
+          "name": "Boots of Dexterity",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1425.jpg",
+          "description": "Boosts ASPD"
+        },
+        {
+          "slot": 3,
+          "itemId": "1126",
+          "name": "Doomsday",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1126.jpg",
+          "description": "Boosts BA damage"
+        },
+        {
+          "slot": 4,
+          "itemId": "1534",
+          "name": "Dragon's Rage",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1534.jpg",
+          "description": "Boosts BA damage"
+        },
+        {
+          "slot": 5,
+          "itemId": "1155",
+          "name": "Daybreaker's Virtue",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1155.jpg",
+          "description": "Great for marksmen"
+        },
+        {
+          "slot": 6,
+          "itemId": "13310",
+          "name": "Frostscar's Embrace",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/13310.jpg",
+          "description": "Enhanced BAs slow"
+        }
+      ]
+    },
+    {
+      "id": "shyyy",
+      "label": "shyyy",
+      "position": "Position 4",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1135",
+          "name": "Sparkforged Dagger",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1135.jpg",
+          "description": "Chain lightning BA"
+        },
+        {
+          "slot": 2,
+          "itemId": "1421",
+          "name": "Boots of Fortitude",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1421.jpg",
+          "description": "Reduces physical damage"
+        },
+        {
+          "slot": 3,
+          "itemId": "1126",
+          "name": "Doomsday",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1126.jpg",
+          "description": "Boosts BA damage"
+        },
+        {
+          "slot": 4,
+          "itemId": "1155",
+          "name": "Daybreaker's Virtue",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1155.jpg",
+          "description": "Great for marksmen"
+        },
+        {
+          "slot": 5,
+          "itemId": "1141",
+          "name": "Sunchaser",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1141.jpg",
+          "description": "Boosts attack range"
+        },
+        {
+          "slot": 6,
+          "itemId": "1133",
+          "name": "Eternity Blade",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1133.jpg",
+          "description": "High crit damage"
+        }
+      ]
+    },
+    {
+      "id": "jogadorgg",
+      "label": "JOGADOR_GG",
+      "position": "Position 4",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1154",
+          "name": "Cloud Piercer",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1154.jpg",
+          "description": "Crit Rate +12%, ASPD +15%"
+        },
+        {
+          "slot": 2,
+          "itemId": "1425",
+          "name": "Boots of Dexterity",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1425.jpg",
+          "description": "Boosts ASPD"
+        },
+        {
+          "slot": 3,
+          "itemId": "1126",
+          "name": "Doomsday",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1126.jpg",
+          "description": "Boosts BA damage"
+        },
+        {
+          "slot": 4,
+          "itemId": "1135",
+          "name": "Sparkforged Dagger",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1135.jpg",
+          "description": "Chain lightning BA"
+        },
+        {
+          "slot": 5,
+          "itemId": "1136",
+          "name": "Shadow Ripper",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1136.jpg",
+          "description": "Crits boost ASPD"
+        },
+        {
+          "slot": 6,
+          "itemId": "1134",
+          "name": "Master Sword",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1134.jpg",
+          "description": "Enhances BA"
+        }
+      ]
+    },
+    {
+      "id": "meta",
+      "label": "META",
+      "position": "Position 4",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1411",
+          "name": "Lightfoot Shoes",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1411.jpg",
+          "description": "Movement Speed"
+        },
+        {
+          "slot": 2,
+          "itemId": "1135",
+          "name": "Sparkforged Dagger",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1135.jpg",
+          "description": "Chain lightning BA"
+        },
+        {
+          "slot": 3,
+          "itemId": "1425",
+          "name": "Boots of Dexterity",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1425.jpg",
+          "description": "Boosts ASPD"
+        },
+        {
+          "slot": 4,
+          "itemId": "1126",
+          "name": "Doomsday",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1126.jpg",
+          "description": "Boosts BA damage"
+        },
+        {
+          "slot": 5,
+          "itemId": "1155",
+          "name": "Daybreaker's Virtue",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1155.jpg",
+          "description": "Great for marksmen"
+        },
+        {
+          "slot": 6,
+          "itemId": "1133",
+          "name": "Eternity Blade",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1133.jpg",
+          "description": "High crit damage"
+        }
+      ]
+    },
+    {
+      "id": "cn-arli",
+      "label": "CN Arli",
+      "position": "Position 4",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1135",
+          "name": "Sparkforged Dagger",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1135.jpg",
+          "description": "Chain lightning BA"
+        },
+        {
+          "slot": 2,
+          "itemId": "1425",
+          "name": "Boots of Dexterity",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1425.jpg",
+          "description": "Boosts ASPD"
+        },
+        {
+          "slot": 3,
+          "itemId": "1126",
+          "name": "Doomsday",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1126.jpg",
+          "description": "Boosts BA damage"
+        },
+        {
+          "slot": 4,
+          "itemId": "1159",
+          "name": "Tempest",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1159.jpg",
+          "description": "Stacks Attack Speed & Movement Speed"
+        },
+        {
+          "slot": 5,
+          "itemId": "1155",
+          "name": "Daybreaker's Virtue",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1155.jpg",
+          "description": "Great for marksmen"
+        },
+        {
+          "slot": 6,
+          "itemId": "1338",
+          "name": "Cuirass of Savagery",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1338.jpg",
+          "description": "Offense & defense"
+        }
+      ]
+    },
+    {
+      "id": "ghazal",
+      "label": "ghazal",
+      "position": "Position 4",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1421",
+          "name": "Boots of Fortitude",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1421.jpg",
+          "description": "Reduces physical damage"
+        },
+        {
+          "slot": 2,
+          "itemId": "1126",
+          "name": "Doomsday",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1126.jpg",
+          "description": "Boosts BA damage"
+        },
+        {
+          "slot": 3,
+          "itemId": "1135",
+          "name": "Sparkforged Dagger",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1135.jpg",
+          "description": "Chain lightning BA"
+        },
+        {
+          "slot": 4,
+          "itemId": "1136",
+          "name": "Shadow Ripper",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1136.jpg",
+          "description": "Crits boost ASPD"
+        },
+        {
+          "slot": 5,
+          "itemId": "1155",
+          "name": "Daybreaker's Virtue",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1155.jpg",
+          "description": "Great for marksmen"
+        },
+        {
+          "slot": 6,
+          "itemId": "1132",
+          "name": "Bloodweeper",
+          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1132.jpg",
+          "description": "Physical Lifesteal"
+        }
+      ]
+    }
   ]
 }
