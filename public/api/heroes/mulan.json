@@ -1,0 +1,147 @@
+{
+  "id": "mulan",
+  "slug": "mulan",
+  "name": "Mulan",
+  "role": "Assassin",
+  "roles": "Fighter, Assassin",
+  "lane": "Clash Lane",
+  "difficulty": "Medium",
+  "tier": "B",
+  "winRate": 51.15,
+  "pickRate": 0.38,
+  "banRate": 0.04,
+  "rank": 49,
+  "avatar": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/p4dfuWXS.png",
+  "avatarFallback": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/154/154.jpg",
+  "tencentId": 154,
+  "dataSource": "Camp HOK + HoKStats.gg (intl)",
+  "dataUpdated": "2026-06-05",
+  "skills": [
+    {
+      "slot": "passive",
+      "name": "Great Wall Guardian (Dual Swords Form)",
+      "description": "Gains Movement Speed when using dual swords. Skills and Basic Attacks apply marks to enemies. At 5 stacks, the marks disappear, dealing damage and inflicting silence and slow on the enemy.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/154/15400.png",
+      "cooldown": null
+    },
+    {
+      "slot": "skill1",
+      "name": "Snaking Strike",
+      "description": "Dashes twice in the target direction, and the direction of the 2nd dash can be controlled. Deals damage to enemies in her path. lf the skill hits an enemy, she can use it again before it enters cooldown.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/154/15410.png",
+      "cooldown": null
+    },
+    {
+      "slot": "skill2",
+      "name": "Dagger Waltz",
+      "description": "Throws a light sword in the target direction, slowing and dealing damage to enemies in range when it reaches max range. When Hua Mulan reaches the light sword, she puts it away, reducing thecooldown of Dagger Waltz.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/154/15420.png",
+      "cooldown": null
+    },
+    {
+      "slot": "ultimate",
+      "name": "Blooming Blade (Dual Swords Form)",
+      "description": "Deals damage to enemies within range, gaining damage reduction during this time. Enhances herself, gaining Physical Attack during the enhancement. Switches to Heavy Sword Form.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/154/15430.png",
+      "cooldown": null
+    }
+  ],
+  "build": [
+    {
+      "slot": 1,
+      "itemId": "1111",
+      "name": "Iron Sword",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1111.jpg",
+      "description": "PATK +20"
+    },
+    {
+      "slot": 2,
+      "itemId": "1421",
+      "name": "Boots of Fortitude",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1421.jpg",
+      "description": "Reduces physical damage"
+    },
+    {
+      "slot": 3,
+      "itemId": "1137",
+      "name": "Axe of Torment",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1137.jpg",
+      "description": "Anti-squishy"
+    },
+    {
+      "slot": 4,
+      "itemId": "1338",
+      "name": "Cuirass of Savagery",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1338.jpg",
+      "description": "Offense & defense"
+    },
+    {
+      "slot": 5,
+      "itemId": "1121",
+      "name": "Storm Sword",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1121.jpg",
+      "description": "Physical Attack +75"
+    },
+    {
+      "slot": 6,
+      "itemId": "1131",
+      "name": "Starbreaker",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1131.jpg",
+      "description": "Anti-tank"
+    }
+  ],
+  "arcana": [
+    "Mutation"
+  ],
+  "spells": [
+    "Flash"
+  ],
+  "counters": [
+    "Liang",
+    "Mi Yue",
+    "Nuwa"
+  ],
+  "counteredBy": [
+    "Diaochan",
+    "Heino",
+    "Hou Yi"
+  ],
+  "tips": [
+    "Mulan (Assassin): Tier B on international ranked — 51.15% WR.",
+    "Primary lane: Clash Lane.",
+    "Build core: Iron Sword, Boots of Fortitude, Axe of Torment."
+  ],
+  "patchHistory": [
+    {
+      "version": "Live meta",
+      "change": "Camp HOK — WR 51.15%, pick 0.38%, ban 0.04%, popularity tier B."
+    },
+    {
+      "version": "Matchups",
+      "change": "Counters Liang, Mi Yue, Nuwa · Weak into Diaochan, Heino, Hou Yi."
+    }
+  ],
+  "faqs": [
+    {
+      "id": "faq-good-season",
+      "question": "Is Mulan good in current season?",
+      "answer": "Mulan is Tier B Assassin with 51.15% win rate, 0.38% pick rate, and 0.04% ban rate on the international server (Camp HOK)."
+    },
+    {
+      "id": "faq-best-build",
+      "question": "What is the best Mulan build?",
+      "answer": "Recommended item path: Iron Sword, Boots of Fortitude, Axe of Torment, Cuirass of Savagery, Storm Sword, Starbreaker. Spells and Arcana are listed on this page."
+    },
+    {
+      "id": "faq-counter",
+      "question": "How to counter Mulan?",
+      "answer": "Strong picks into Mulan: Diaochan, Heino, Hou Yi. Mulan is strong into Liang, Mi Yue, Nuwa."
+    }
+  ],
+  "metaAnalysis": [
+    "Mulan win rate 51.15% (Camp HOK, 2026-06-04).",
+    "Pick rate 0.38% in global ranked.",
+    "Ban rate 0.04%.",
+    "Counters: Liang, Mi Yue, Nuwa. Countered by: Diaochan, Heino, Hou Yi."
+  ]
+}

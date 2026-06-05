@@ -1,0 +1,148 @@
+{
+  "id": "liu-bang",
+  "slug": "liu-bang",
+  "name": "Liu Bang",
+  "role": "Tank",
+  "roles": "Tank, Mage",
+  "lane": "Clash Lane",
+  "difficulty": "Easy",
+  "tier": "B",
+  "winRate": 50.2,
+  "pickRate": 0.24,
+  "banRate": 0.01,
+  "rank": 70,
+  "avatar": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/bVHGeH45.png",
+  "avatarFallback": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/149/149.jpg",
+  "tencentId": 149,
+  "dataSource": "Camp HOK + HoKStats.gg (intl)",
+  "dataUpdated": "2026-06-05",
+  "skills": [
+    {
+      "slot": "passive",
+      "name": "Royal Ambition",
+      "description": "Gains 1 mark every second, for up to 4 marks. Basic Attacks expend all marks, dealing additional magical damage per mark. At maximum marks, the next Basic Attack is enhanced into a ranged attack.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/149/14900.png",
+      "cooldown": null
+    },
+    {
+      "slot": "skill1",
+      "name": "Dominator's Shield",
+      "description": "Grants himself a shield. If the shield is still intact when it expires, it will deal damage to nearby enemies.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/149/14910.png",
+      "cooldown": null
+    },
+    {
+      "slot": "skill2",
+      "name": "Staggering Charge",
+      "description": "Charges up and dashes forward, damaging and stunning enemies in his path.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/149/14920.png",
+      "cooldown": null
+    },
+    {
+      "slot": "ultimate",
+      "name": "Battlefield Command",
+      "description": "Provides a shield to a teammate. After a short delay, teleports to the teammate and gains Movement Speed.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/149/14930.png",
+      "cooldown": null
+    }
+  ],
+  "build": [
+    {
+      "slot": 1,
+      "itemId": "1312",
+      "name": "Cloth Jerkin",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1312.jpg",
+      "description": "PDEF +100"
+    },
+    {
+      "slot": 2,
+      "itemId": "1423",
+      "name": "Boots of Tranquility",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1423.jpg",
+      "description": "Reduces Skill CD"
+    },
+    {
+      "slot": 3,
+      "itemId": "1324",
+      "name": "Frosthold Targe",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1324.jpg",
+      "description": "PDEF +150, CDR +7.5%"
+    },
+    {
+      "slot": 4,
+      "itemId": "1336",
+      "name": "Glacial Buckler",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1336.jpg",
+      "description": "Group damage & slow"
+    },
+    {
+      "slot": 5,
+      "itemId": "1325",
+      "name": "Protector's Cuirass",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1325.jpg",
+      "description": "PDEF +150, HP +450"
+    },
+    {
+      "slot": 6,
+      "itemId": "1331",
+      "name": "Blazing Cape",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1331.jpg",
+      "description": "Burns nearby enemies"
+    }
+  ],
+  "arcana": [
+    "Fate"
+  ],
+  "spells": [
+    "Smite",
+    "Execute"
+  ],
+  "counters": [
+    "Marco Polo",
+    "Meng Ya",
+    "Shouyue"
+  ],
+  "counteredBy": [
+    "Data unavailable",
+    "Data unavailable",
+    "Data unavailable"
+  ],
+  "tips": [
+    "Liu Bang (Tank): Tier B on international ranked — 50.2% WR.",
+    "Primary lane: Clash Lane.",
+    "Build core: Cloth Jerkin, Boots of Tranquility, Frosthold Targe."
+  ],
+  "patchHistory": [
+    {
+      "version": "Live meta",
+      "change": "Camp HOK — WR 50.2%, pick 0.24%, ban 0.01%, popularity tier B."
+    },
+    {
+      "version": "Matchups",
+      "change": "Counters Marco Polo, Meng Ya, Shouyue · Weak into Data unavailable, Data unavailable, Data unavailable."
+    }
+  ],
+  "faqs": [
+    {
+      "id": "faq-good-season",
+      "question": "Is Liu Bang good in current season?",
+      "answer": "Liu Bang is Tier B Tank with 50.2% win rate, 0.24% pick rate, and 0.01% ban rate on the international server (Camp HOK)."
+    },
+    {
+      "id": "faq-best-build",
+      "question": "What is the best Liu Bang build?",
+      "answer": "Recommended item path: Cloth Jerkin, Boots of Tranquility, Frosthold Targe, Glacial Buckler, Protector's Cuirass, Blazing Cape. Spells and Arcana are listed on this page."
+    },
+    {
+      "id": "faq-counter",
+      "question": "How to counter Liu Bang?",
+      "answer": "Strong picks into Liu Bang: Data unavailable, Data unavailable, Data unavailable. Liu Bang is strong into Marco Polo, Meng Ya, Shouyue."
+    }
+  ],
+  "metaAnalysis": [
+    "Liu Bang win rate 50.2% (Camp HOK, 2026-06-04).",
+    "Pick rate 0.24% in global ranked.",
+    "Ban rate 0.01%.",
+    "Counters: Marco Polo, Meng Ya, Shouyue. Countered by: Data unavailable, Data unavailable, Data unavailable."
+  ]
+}

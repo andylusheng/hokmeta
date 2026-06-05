@@ -1,0 +1,149 @@
+{
+  "id": "flowborn-mage",
+  "slug": "flowborn-mage",
+  "name": "Flowborn (Mage)",
+  "role": "Mage",
+  "roles": "Mage",
+  "lane": "Mid Lane",
+  "difficulty": "Medium",
+  "tier": "B",
+  "winRate": 51.38,
+  "pickRate": 0.58,
+  "banRate": 0.07,
+  "rank": 42,
+  "avatar": "https://camp.honorofkings.com/camp/admin/hero/head_128-128/66xErXNs.jpeg",
+  "avatarFallback": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/582/582.jpg",
+  "tencentId": 582,
+  "dataSource": "Camp HOK + HoKStats.gg (intl)",
+  "dataUpdated": "2026-06-05",
+  "skills": [
+    {
+      "slot": "passive",
+      "name": "Flow of the World",
+      "description": "Can change Flow states at the Base to enhance stats.\nSpends 1 stack of Flow to perform an enhanced Basic Attack that deals area damage.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/582/58200.png",
+      "cooldown": null
+    },
+    {
+      "slot": "skill1",
+      "name": "Convergence",
+      "description": "Channels the Flow, reducing the cooldown of other skills by 50%. Also gains 5–9 stacks of Flow based on the number of nearby heroes and minions and recovers Health based on Flow stacks.\nDamages and knocks back nearby enemies (without applying crowd control).",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/582/58210.png",
+      "cooldown": null
+    },
+    {
+      "slot": "skill2",
+      "name": "Flow Formation",
+      "description": "Deals damage and slows enemies within range, then deals damage over time.\nUsing the skill repeatedly within a short time enhances it, dealing damage and launching or stunning enemies. When new magic circles overlap with the initial one, they increase its damage and refresh its duration.\nCan spend 4 stacks of Flow to use the skill without triggering cooldown.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/582/58220.png",
+      "cooldown": null
+    },
+    {
+      "slot": "ultimate",
+      "name": "Arcane Arts",
+      "description": "Continuously channels a beam to deal damage over time.\nWhile the beam is linked with a hero, continuously throws Energy Bombs that deal area damage.\nCan spend 5 stacks of Flow to stop the skill from entering cooldown after this use.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/582/58230.png",
+      "cooldown": null
+    }
+  ],
+  "build": [
+    {
+      "slot": 1,
+      "itemId": "1424",
+      "name": "Boots of the Arcane",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1424.jpg",
+      "description": "Magical Pierce"
+    },
+    {
+      "slot": 2,
+      "itemId": "1234",
+      "name": "Frozen Breath",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1234.jpg",
+      "description": "Slows on hit"
+    },
+    {
+      "slot": 3,
+      "itemId": "12211",
+      "name": "Venomous Staff",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/12211.jpg",
+      "description": "Lowers Health regen"
+    },
+    {
+      "slot": 4,
+      "itemId": "1243",
+      "name": "Nebulon Wood",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1243.jpg",
+      "description": "MATK +60, HP +450"
+    },
+    {
+      "slot": 5,
+      "itemId": "1727",
+      "name": "Twilight Stream",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1727.jpg",
+      "description": "Boosts Magical Pierce"
+    },
+    {
+      "slot": 6,
+      "itemId": "1222",
+      "name": "Blood Clan's Grimoire",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1222.jpg",
+      "description": "MATK +60, Magical Lifesteal +12%"
+    }
+  ],
+  "arcana": [
+    "Fate",
+    "Penetration"
+  ],
+  "spells": [
+    "Flash",
+    "Execute"
+  ],
+  "counters": [
+    "Data unavailable",
+    "Data unavailable",
+    "Data unavailable"
+  ],
+  "counteredBy": [
+    "Data unavailable",
+    "Data unavailable",
+    "Data unavailable"
+  ],
+  "tips": [
+    "Flowborn (Mage) (Mage): Tier B on international ranked — 51.38% WR.",
+    "Primary lane: Mid Lane.",
+    "Build core: Boots of the Arcane, Frozen Breath, Venomous Staff."
+  ],
+  "patchHistory": [
+    {
+      "version": "Live meta",
+      "change": "Camp HOK — WR 51.38%, pick 0.58%, ban 0.07%, popularity tier B."
+    },
+    {
+      "version": "Matchups",
+      "change": "Counters Data unavailable, Data unavailable, Data unavailable · Weak into Data unavailable, Data unavailable, Data unavailable."
+    }
+  ],
+  "faqs": [
+    {
+      "id": "faq-good-season",
+      "question": "Is Flowborn (Mage) good in current season?",
+      "answer": "Flowborn (Mage) is Tier B Mage with 51.38% win rate, 0.58% pick rate, and 0.07% ban rate on the international server (Camp HOK)."
+    },
+    {
+      "id": "faq-best-build",
+      "question": "What is the best Flowborn (Mage) build?",
+      "answer": "Recommended item path: Boots of the Arcane, Frozen Breath, Venomous Staff, Nebulon Wood, Twilight Stream, Blood Clan's Grimoire. Spells and Arcana are listed on this page."
+    },
+    {
+      "id": "faq-counter",
+      "question": "How to counter Flowborn (Mage)?",
+      "answer": "Strong picks into Flowborn (Mage): Data unavailable, Data unavailable, Data unavailable. Flowborn (Mage) is strong into Data unavailable, Data unavailable, Data unavailable."
+    }
+  ],
+  "metaAnalysis": [
+    "Flowborn (Mage) win rate 51.38% (Camp HOK, 2026-06-04).",
+    "Pick rate 0.58% in global ranked.",
+    "Ban rate 0.07%.",
+    "Counters: Data unavailable, Data unavailable, Data unavailable. Countered by: Data unavailable, Data unavailable, Data unavailable."
+  ]
+}

@@ -31,10 +31,10 @@ export default function AboutPage() {
       <div className="space-y-4 text-sm leading-relaxed text-gray-300">
         <p>{site.description}</p>
         <p>
-          We cover {heroes.length} high-priority meta heroes with builds, counters,
-          patch history, and FAQ content sourced from structured data — not generic
-          filler. Win, pick, and ban rates show &quot;Data unavailable&quot; until
-          verified stats are added.
+          We cover {heroes.length} Honor of Kings <strong className="text-white">global server</strong> heroes
+          with English skills, item builds (icons + descriptions), Arcana, counters,
+          and Camp HOK win/pick/ban stats. Data is synced from official Camp metrics
+          and HoKStats.gg international references — not invented.
         </p>
         <p>
           <strong className="text-white">Editorial:</strong> {authorMeta.name}

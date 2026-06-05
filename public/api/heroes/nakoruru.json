@@ -1,0 +1,147 @@
+{
+  "id": "nakoruru",
+  "slug": "nakoruru",
+  "name": "Nakoruru",
+  "role": "Assassin",
+  "roles": "Assassin",
+  "lane": "Jungling",
+  "difficulty": "Medium",
+  "tier": "A",
+  "winRate": 50.67,
+  "pickRate": 0.76,
+  "banRate": 0.1,
+  "rank": 59,
+  "avatar": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/H9WAmWdN.png",
+  "avatarFallback": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/162/162.jpg",
+  "tencentId": 162,
+  "dataSource": "Camp HOK + HoKStats.gg (intl)",
+  "dataUpdated": "2026-06-05",
+  "skills": [
+    {
+      "slot": "passive",
+      "name": "DANCING SWORD ARTS",
+      "description": "After hitting an enemy with a skill, the next Basic Attack is enhanced, dealing extra damage.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/162/16200.png",
+      "cooldown": null
+    },
+    {
+      "slot": "skill1",
+      "name": "AMUBE YATORO",
+      "description": "Deals damage to a targeted enemy and marks the target. Her attacks can trigger the mark to deal extra damage.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/162/16210.png",
+      "cooldown": null
+    },
+    {
+      "slot": "skill2",
+      "name": "RERA MUTSUBE",
+      "description": "Dashes in the target direction, dealing damage to enemies in her path. Recovers Health for each enemy hit.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/162/16220.png",
+      "cooldown": null
+    },
+    {
+      "slot": "ultimate",
+      "name": "KAMUI MUTSUBE",
+      "description": "Gains Movement Speed. Using the skill again deals damage to enemies in the target area, slows them, and reduces their attack.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/162/16230.png",
+      "cooldown": null
+    }
+  ],
+  "build": [
+    {
+      "slot": 1,
+      "itemId": "1533",
+      "name": "Rapacious Bite",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1533.jpg",
+      "description": "Monster kills boost PATK"
+    },
+    {
+      "slot": 2,
+      "itemId": "1423",
+      "name": "Boots of Tranquility",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1423.jpg",
+      "description": "Reduces Skill CD"
+    },
+    {
+      "slot": 3,
+      "itemId": "1137",
+      "name": "Axe of Torment",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1137.jpg",
+      "description": "Anti-squishy"
+    },
+    {
+      "slot": 4,
+      "itemId": "11210",
+      "name": "Mortal Punisher",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/11210.jpg",
+      "description": "Lowers Health regen"
+    },
+    {
+      "slot": 5,
+      "itemId": "1138",
+      "name": "Overlord's Might",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1138.jpg",
+      "description": "High-damage attack"
+    },
+    {
+      "slot": 6,
+      "itemId": "1327",
+      "name": "Spikemail",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1327.jpg",
+      "description": "Reflects damage"
+    }
+  ],
+  "arcana": [
+    "Mutation"
+  ],
+  "spells": [
+    "Smite"
+  ],
+  "counters": [
+    "Wukong",
+    "Athena",
+    "Xiang Yu"
+  ],
+  "counteredBy": [
+    "Diaochan",
+    "Fang",
+    "Garo"
+  ],
+  "tips": [
+    "Nakoruru (Assassin): Tier A on international ranked — 50.67% WR.",
+    "Primary lane: Jungling.",
+    "Build core: Rapacious Bite, Boots of Tranquility, Axe of Torment."
+  ],
+  "patchHistory": [
+    {
+      "version": "Live meta",
+      "change": "Camp HOK — WR 50.67%, pick 0.76%, ban 0.1%, popularity tier A."
+    },
+    {
+      "version": "Matchups",
+      "change": "Counters Wukong, Athena, Xiang Yu · Weak into Diaochan, Fang, Garo."
+    }
+  ],
+  "faqs": [
+    {
+      "id": "faq-good-season",
+      "question": "Is Nakoruru good in current season?",
+      "answer": "Nakoruru is Tier A Assassin with 50.67% win rate, 0.76% pick rate, and 0.1% ban rate on the international server (Camp HOK)."
+    },
+    {
+      "id": "faq-best-build",
+      "question": "What is the best Nakoruru build?",
+      "answer": "Recommended item path: Rapacious Bite, Boots of Tranquility, Axe of Torment, Mortal Punisher, Overlord's Might, Spikemail. Spells and Arcana are listed on this page."
+    },
+    {
+      "id": "faq-counter",
+      "question": "How to counter Nakoruru?",
+      "answer": "Strong picks into Nakoruru: Diaochan, Fang, Garo. Nakoruru is strong into Wukong, Athena, Xiang Yu."
+    }
+  ],
+  "metaAnalysis": [
+    "Nakoruru win rate 50.67% (Camp HOK, 2026-06-04).",
+    "Pick rate 0.76% in global ranked.",
+    "Ban rate 0.1%.",
+    "Counters: Wukong, Athena, Xiang Yu. Countered by: Diaochan, Fang, Garo."
+  ]
+}

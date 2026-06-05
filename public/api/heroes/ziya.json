@@ -1,0 +1,147 @@
+{
+  "id": "ziya",
+  "slug": "ziya",
+  "name": "Ziya",
+  "role": "Mage",
+  "roles": "Mage",
+  "lane": "Mid Lane",
+  "difficulty": "Medium",
+  "tier": "A",
+  "winRate": 51.28,
+  "pickRate": 0.83,
+  "banRate": 0.1,
+  "rank": 45,
+  "avatar": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/km2HzQ71.png",
+  "avatarFallback": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/148/148.jpg",
+  "tencentId": 148,
+  "dataSource": "Camp HOK + HoKStats.gg (intl)",
+  "dataUpdated": "2026-06-05",
+  "skills": [
+    {
+      "slot": "passive",
+      "name": "Sanctification (Ziya)",
+      "description": "When Ziya deals damage to a target and they are defeated within 4s, he gains EXP. When reaching level, he gains Sanctify, and increases his level cap to 25. Sanctify allows him to increase a teammate's level cap, and potentially earn EXP.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/148/14800.png",
+      "cooldown": null
+    },
+    {
+      "slot": "skill1",
+      "name": "Divine Seal",
+      "description": "Seals enemies within range, dealing magical damage while reducing their Movement Speed, Physical and Magical Defense for 3.5s. If the skill hits an enemy, he gains a Movement Speed boost.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/148/14810.png",
+      "cooldown": null
+    },
+    {
+      "slot": "skill2",
+      "name": "Divine Punishment",
+      "description": "Conjures a magic circle that deals 3 strikes of damage to nearby enemies. After a short delay, the magic circle explodes, dealing extra magical damage and launching enemies for 0.8s.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/148/14820.png",
+      "cooldown": null
+    },
+    {
+      "slot": "ultimate",
+      "name": "Universal Law",
+      "description": "Unleashes 3 shockwaves to deal magical damage. Reaching level 15 increases the Ultimate's charging speed by 10% and grants a chance to allow him to move after initiating the charge.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/148/14830.png",
+      "cooldown": null
+    }
+  ],
+  "build": [
+    {
+      "slot": 1,
+      "itemId": "1424",
+      "name": "Boots of the Arcane",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1424.jpg",
+      "description": "Magical Pierce"
+    },
+    {
+      "slot": 2,
+      "itemId": "1224",
+      "name": "Stone of Sorcery",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1224.jpg",
+      "description": "MATK +60\nMSPD +7.5%"
+    },
+    {
+      "slot": 3,
+      "itemId": "1233",
+      "name": "Scepter of Reverberation",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1233.jpg",
+      "description": "Skill hits trigger explosions"
+    },
+    {
+      "slot": 4,
+      "itemId": "1222",
+      "name": "Blood Clan's Grimoire",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1222.jpg",
+      "description": "MATK +60, Magical Lifesteal +12%"
+    },
+    {
+      "slot": 5,
+      "itemId": "1243",
+      "name": "Nebulon Wood",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1243.jpg",
+      "description": "MATK +60, HP +450"
+    },
+    {
+      "slot": 6,
+      "itemId": "1240",
+      "name": "Insatiable Tome",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1240.jpg",
+      "description": "Magical Lifesteal"
+    }
+  ],
+  "arcana": [
+    "Saint"
+  ],
+  "spells": [
+    "Flash"
+  ],
+  "counters": [
+    "Diaochan",
+    "Ying",
+    "Zilong"
+  ],
+  "counteredBy": [
+    "Biron",
+    "Charlotte",
+    "Yao"
+  ],
+  "tips": [
+    "Ziya (Mage): Tier A on international ranked — 51.28% WR.",
+    "Primary lane: Mid Lane.",
+    "Build core: Boots of the Arcane, Stone of Sorcery, Scepter of Reverberation."
+  ],
+  "patchHistory": [
+    {
+      "version": "Live meta",
+      "change": "Camp HOK — WR 51.28%, pick 0.83%, ban 0.1%, popularity tier A."
+    },
+    {
+      "version": "Matchups",
+      "change": "Counters Diaochan, Ying, Zilong · Weak into Biron, Charlotte, Yao."
+    }
+  ],
+  "faqs": [
+    {
+      "id": "faq-good-season",
+      "question": "Is Ziya good in current season?",
+      "answer": "Ziya is Tier A Mage with 51.28% win rate, 0.83% pick rate, and 0.1% ban rate on the international server (Camp HOK)."
+    },
+    {
+      "id": "faq-best-build",
+      "question": "What is the best Ziya build?",
+      "answer": "Recommended item path: Boots of the Arcane, Stone of Sorcery, Scepter of Reverberation, Blood Clan's Grimoire, Nebulon Wood, Insatiable Tome. Spells and Arcana are listed on this page."
+    },
+    {
+      "id": "faq-counter",
+      "question": "How to counter Ziya?",
+      "answer": "Strong picks into Ziya: Biron, Charlotte, Yao. Ziya is strong into Diaochan, Ying, Zilong."
+    }
+  ],
+  "metaAnalysis": [
+    "Ziya win rate 51.28% (Camp HOK, 2026-06-04).",
+    "Pick rate 0.83% in global ranked.",
+    "Ban rate 0.1%.",
+    "Counters: Diaochan, Ying, Zilong. Countered by: Biron, Charlotte, Yao."
+  ]
+}

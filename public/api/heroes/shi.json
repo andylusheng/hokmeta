@@ -1,0 +1,145 @@
+{
+  "id": "shi",
+  "slug": "shi",
+  "name": "Shi",
+  "role": "Mage",
+  "roles": "Mage",
+  "lane": "Mid Lane",
+  "difficulty": "Medium",
+  "tier": "B",
+  "winRate": 50.7,
+  "pickRate": 0.58,
+  "banRate": 0.26,
+  "rank": 58,
+  "avatar": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/MjBadKpJ.png",
+  "avatarFallback": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/523/523.jpg",
+  "tencentId": 523,
+  "dataSource": "Camp HOK + HoKStats.gg (intl)",
+  "dataUpdated": "2026-06-05",
+  "skills": [
+    {
+      "slot": "passive",
+      "name": "Maiden's Trick",
+      "description": "The farther away the enemy is, the more damage skills deal.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/523/52300.png",
+      "cooldown": null
+    },
+    {
+      "slot": "skill1",
+      "name": "Silk Imprint",
+      "description": "Throws her artifact, damaging enemies and pulling them toward it. Can be used again to pull the enemy in the target direction.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/523/52310.png",
+      "cooldown": null
+    },
+    {
+      "slot": "skill2",
+      "name": "Silky Beauty",
+      "description": "Releases an energy orb that continuously deals damage to enemies within range for a short time, and then explodes to deal additional damage. Enemies are slowed the first time the orb hits them.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/523/52320.png",
+      "cooldown": null
+    },
+    {
+      "slot": "ultimate",
+      "name": "Sole Focus",
+      "description": "Resets Skill 2's cooldown and enhances herself. While enhanced, gains Movement Speed and reduces Skill 2's cooldown by half. Skill 1 can pull the enemy twice.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/523/52330.png",
+      "cooldown": null
+    }
+  ],
+  "build": [
+    {
+      "slot": 1,
+      "itemId": "1701",
+      "name": "Knowledge Gem",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1701.jpg",
+      "description": "Extra Gold & EXP"
+    },
+    {
+      "slot": 2,
+      "itemId": "1426",
+      "name": "Boots of Deftness",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1426.jpg",
+      "description": "Extra Movement Speed"
+    },
+    {
+      "slot": 3,
+      "itemId": "1737",
+      "name": "Crimson Shadow - Radiance",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1737.jpg",
+      "description": "Area damage & vision"
+    },
+    {
+      "slot": 4,
+      "itemId": "1221",
+      "name": "Grand Staff",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1221.jpg",
+      "description": "Magical Attack"
+    },
+    {
+      "slot": 5,
+      "itemId": "1234",
+      "name": "Frozen Breath",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1234.jpg",
+      "description": "Slows on hit"
+    },
+    {
+      "slot": 6,
+      "itemId": "1333",
+      "name": "Ominous Premonition",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1333.jpg",
+      "description": "Slows attackers"
+    }
+  ],
+  "arcana": [
+    "Nightmare"
+  ],
+  "spells": [
+    "Flash"
+  ],
+  "counters": [
+    "Li Bai",
+    "Wukong",
+    "Ukyo Tachibana"
+  ],
+  "counteredBy": [
+    "Athena"
+  ],
+  "tips": [
+    "Shi (Mage): Tier B on international ranked — 50.7% WR.",
+    "Primary lane: Mid Lane.",
+    "Build core: Knowledge Gem, Boots of Deftness, Crimson Shadow - Radiance."
+  ],
+  "patchHistory": [
+    {
+      "version": "Live meta",
+      "change": "Camp HOK — WR 50.7%, pick 0.58%, ban 0.26%, popularity tier B."
+    },
+    {
+      "version": "Matchups",
+      "change": "Counters Li Bai, Wukong, Ukyo Tachibana · Weak into Athena."
+    }
+  ],
+  "faqs": [
+    {
+      "id": "faq-good-season",
+      "question": "Is Shi good in current season?",
+      "answer": "Shi is Tier B Mage with 50.7% win rate, 0.58% pick rate, and 0.26% ban rate on the international server (Camp HOK)."
+    },
+    {
+      "id": "faq-best-build",
+      "question": "What is the best Shi build?",
+      "answer": "Recommended item path: Knowledge Gem, Boots of Deftness, Crimson Shadow - Radiance, Grand Staff, Frozen Breath, Ominous Premonition. Spells and Arcana are listed on this page."
+    },
+    {
+      "id": "faq-counter",
+      "question": "How to counter Shi?",
+      "answer": "Strong picks into Shi: Athena. Shi is strong into Li Bai, Wukong, Ukyo Tachibana."
+    }
+  ],
+  "metaAnalysis": [
+    "Shi win rate 50.7% (Camp HOK, 2026-06-04).",
+    "Pick rate 0.58% in global ranked.",
+    "Ban rate 0.26%.",
+    "Counters: Li Bai, Wukong, Ukyo Tachibana. Countered by: Athena."
+  ]
+}

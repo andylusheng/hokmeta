@@ -1,0 +1,147 @@
+{
+  "id": "butterfly",
+  "slug": "butterfly",
+  "name": "Butterfly",
+  "role": "Warrior",
+  "roles": "Fighter",
+  "lane": "Jungling",
+  "difficulty": "Medium",
+  "tier": "B",
+  "winRate": 52.36,
+  "pickRate": 0.54,
+  "banRate": 0.07,
+  "rank": 14,
+  "avatar": "https://camp.honorofkings.com/camp/admin/hero/head_128-128/FPq2P4ew.png",
+  "avatarFallback": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/646/646.jpg",
+  "tencentId": 646,
+  "dataSource": "Camp HOK + HoKStats.gg (intl)",
+  "dataUpdated": "2026-06-05",
+  "skills": [
+    {
+      "slot": "passive",
+      "name": "Assassination",
+      "description": "Butterfly gains 2 stacks of mark from defeating heroes and 1 stack fromassisting or killing monsters/minions. At 3 stacks, the next skill used willnot enter cooldown.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/646/64600.png",
+      "cooldown": null
+    },
+    {
+      "slot": "skill1",
+      "name": "Whirlwind",
+      "description": "Butterfly deals damage to enemies around her and gains a shield. HerMovement Speed increases during this time.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/646/64610.png",
+      "cooldown": null
+    },
+    {
+      "slot": "skill2",
+      "name": "Sword Propel",
+      "description": "Butterfly deals damage in the target direction and inflicts slow.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/646/64620.png",
+      "cooldown": null
+    },
+    {
+      "slot": "ultimate",
+      "name": "Death Dealer",
+      "description": "Butterfly jumps to the target and deals damagelf the target is defeated within a certain period of time, the cooldown of thisskill is refreshed.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/646/64630.png",
+      "cooldown": null
+    }
+  ],
+  "build": [
+    {
+      "slot": 1,
+      "itemId": "1523",
+      "name": "Relentless Blade",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1523.jpg",
+      "description": "Monster kills boost PATK"
+    },
+    {
+      "slot": 2,
+      "itemId": "1411",
+      "name": "Lightfoot Shoes",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1411.jpg",
+      "description": "Movement Speed"
+    },
+    {
+      "slot": 3,
+      "itemId": "1533",
+      "name": "Rapacious Bite",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1533.jpg",
+      "description": "Monster kills boost PATK"
+    },
+    {
+      "slot": 4,
+      "itemId": "1425",
+      "name": "Boots of Dexterity",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1425.jpg",
+      "description": "Boosts ASPD"
+    },
+    {
+      "slot": 5,
+      "itemId": "1422",
+      "name": "Boots of Resistance",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
+      "description": "Shortens CC"
+    },
+    {
+      "slot": 6,
+      "itemId": "1137",
+      "name": "Axe of Torment",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1137.jpg",
+      "description": "Anti-squishy"
+    }
+  ],
+  "arcana": [
+    "Mutation"
+  ],
+  "spells": [
+    "Smite"
+  ],
+  "counters": [
+    "Data unavailable",
+    "Data unavailable",
+    "Data unavailable"
+  ],
+  "counteredBy": [
+    "Data unavailable",
+    "Data unavailable",
+    "Data unavailable"
+  ],
+  "tips": [
+    "Butterfly (Warrior): Tier B on international ranked — 52.36% WR.",
+    "Primary lane: Jungling.",
+    "Build core: Relentless Blade, Lightfoot Shoes, Rapacious Bite."
+  ],
+  "patchHistory": [
+    {
+      "version": "Live meta",
+      "change": "Camp HOK — WR 52.36%, pick 0.54%, ban 0.07%, popularity tier B."
+    },
+    {
+      "version": "Matchups",
+      "change": "Counters Data unavailable, Data unavailable, Data unavailable · Weak into Data unavailable, Data unavailable, Data unavailable."
+    }
+  ],
+  "faqs": [
+    {
+      "id": "faq-good-season",
+      "question": "Is Butterfly good in current season?",
+      "answer": "Butterfly is Tier B Warrior with 52.36% win rate, 0.54% pick rate, and 0.07% ban rate on the international server (Camp HOK)."
+    },
+    {
+      "id": "faq-best-build",
+      "question": "What is the best Butterfly build?",
+      "answer": "Recommended item path: Relentless Blade, Lightfoot Shoes, Rapacious Bite, Boots of Dexterity, Boots of Resistance, Axe of Torment. Spells and Arcana are listed on this page."
+    },
+    {
+      "id": "faq-counter",
+      "question": "How to counter Butterfly?",
+      "answer": "Strong picks into Butterfly: Data unavailable, Data unavailable, Data unavailable. Butterfly is strong into Data unavailable, Data unavailable, Data unavailable."
+    }
+  ],
+  "metaAnalysis": [
+    "Butterfly win rate 52.36% (Camp HOK, 2026-06-04).",
+    "Pick rate 0.54% in global ranked.",
+    "Ban rate 0.07%.",
+    "Counters: Data unavailable, Data unavailable, Data unavailable. Countered by: Data unavailable, Data unavailable, Data unavailable."
+  ]
+}

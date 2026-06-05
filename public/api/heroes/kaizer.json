@@ -2,101 +2,147 @@
   "id": "kaizer",
   "slug": "kaizer",
   "name": "Kaizer",
-  "role": "Warrior",
-  "difficulty": "Medium",
+  "role": "Tank",
+  "roles": "Fighter, Tank",
+  "lane": "Clash Lane",
+  "difficulty": "Easy",
   "tier": "S",
   "winRate": 51.38,
   "pickRate": 1.63,
   "banRate": 0.17,
-  "rank": 7,
+  "rank": 41,
   "avatar": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/xUdtJiLO.png",
+  "avatarFallback": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/193/193.jpg",
+  "tencentId": 193,
+  "dataSource": "Camp HOK + HoKStats.gg (intl)",
+  "dataUpdated": "2026-06-05",
+  "skills": [
+    {
+      "slot": "passive",
+      "name": "Demon Soul",
+      "description": "Basic Attacks and Skill 2 deal extra damage to single targets",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/193/19300.png",
+      "cooldown": null
+    },
+    {
+      "slot": "skill1",
+      "name": "Vortex Brand",
+      "description": "Throws a ricocheting blade in the target direction, damaging and slowing enemies hit. The blade returns on hit, restoring Health and granting Move and Attack Speed.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/193/19310.png",
+      "cooldown": null
+    },
+    {
+      "slot": "skill2",
+      "name": "Blade Tempest",
+      "description": "Slashes twice, dealing damage. The second slash launches enemies and increases the damage of the next Basic Attack. Gains increased Health recovery, Mana recovery, and Movement Speed when out of combat.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/193/19320.png",
+      "cooldown": null
+    },
+    {
+      "slot": "ultimate",
+      "name": "Invincible Warrior",
+      "description": "Becomes enhanced, gaining Movement Speed, max Health, Physical AttackBlock, and damaging nearby enemies over time.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/193/19330.png",
+      "cooldown": null
+    }
+  ],
   "build": [
     {
-      "name": "Gilded",
-      "slot": 1
+      "slot": 1,
+      "itemId": "1523",
+      "name": "Relentless Blade",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1523.jpg",
+      "description": "Monster kills boost PATK"
     },
     {
-      "name": "Mantle",
-      "slot": 2
+      "slot": 2,
+      "itemId": "1422",
+      "name": "Boots of Resistance",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
+      "description": "Shortens CC"
     },
     {
-      "name": "Frost Cape",
-      "slot": 3
+      "slot": 3,
+      "itemId": "1137",
+      "name": "Axe of Torment",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1137.jpg",
+      "description": "Anti-squishy"
     },
     {
-      "name": "Antique",
-      "slot": 4
+      "slot": 4,
+      "itemId": "1533",
+      "name": "Rapacious Bite",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1533.jpg",
+      "description": "Monster kills boost PATK"
     },
     {
-      "name": "Dominance",
-      "slot": 5
+      "slot": 5,
+      "itemId": "1345",
+      "name": "Nettle Gauntlet",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1345.jpg",
+      "description": "Offense & defense"
     },
     {
-      "name": "Helm",
-      "slot": 6
+      "slot": 6,
+      "itemId": "1338",
+      "name": "Cuirass of Savagery",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1338.jpg",
+      "description": "Offense & defense"
     }
   ],
   "arcana": [
-    "Attack",
-    "Penetration",
-    "HP"
+    "Cataclysm"
   ],
   "spells": [
     "Flash",
-    "Execute"
+    "Smite"
   ],
   "counters": [
-    "Dun",
-    "Wukong"
+    "Da Qiao",
+    "Diaochan",
+    "Daji"
   ],
   "counteredBy": [
-    "Lady Sun",
+    "Donghuang",
+    "Kui",
     "Sun Bin"
   ],
   "tips": [
-    "Kaizer: prioritize A tier Warrior power spikes from patch history.",
-    "Watch pick rate — pick data unavailable.",
-    "Lane into Angela with listed build order."
+    "Kaizer (Tank): Tier S on international ranked — 51.38% WR.",
+    "Primary lane: Clash Lane.",
+    "Build core: Relentless Blade, Boots of Resistance, Axe of Torment."
   ],
   "patchHistory": [
     {
       "version": "Live meta",
-      "change": "Camp HOK ranked stats — WR 51.38%, pick 1.63%, ban 0.17%, tier band A."
+      "change": "Camp HOK — WR 51.38%, pick 1.63%, ban 0.17%, popularity tier S."
     },
     {
       "version": "Matchups",
-      "change": "Counters Dun, Wukong · Weak into Lady Sun, Sun Bin (Tencent hero data)."
-    },
-    {
-      "version": "S37",
-      "change": "Data unavailable"
+      "change": "Counters Da Qiao, Diaochan, Daji · Weak into Donghuang, Kui, Sun Bin."
     }
   ],
   "faqs": [
     {
       "id": "faq-good-season",
       "question": "Is Kaizer good in current season?",
-      "answer": "Kaizer shows 51.38% win rate, 1.63% pick rate, 0.17% ban rate (Camp HOK). Tier S Warrior."
+      "answer": "Kaizer is Tier S Tank with 51.38% win rate, 1.63% pick rate, and 0.17% ban rate on the international server (Camp HOK)."
     },
     {
       "id": "faq-best-build",
       "question": "What is the best Kaizer build?",
-      "answer": "Core item path for Kaizer: Gilded, Mantle, Frost Cape, Antique, Dominance, Helm. Spells and arcana sets are listed in the Build section. Adjust final slot by enemy Angela."
+      "answer": "Recommended item path: Relentless Blade, Boots of Resistance, Axe of Torment, Rapacious Bite, Nettle Gauntlet, Cuirass of Savagery. Spells and Arcana are listed on this page."
     },
     {
       "id": "faq-counter",
       "question": "How to counter Kaizer?",
-      "answer": "Use Dun, Wukong. Ban rate 0.17% reflects draft priority against Kaizer."
+      "answer": "Strong picks into Kaizer: Donghuang, Kui, Sun Bin. Kaizer is strong into Da Qiao, Diaochan, Daji."
     }
   ],
   "metaAnalysis": [
     "Kaizer win rate 51.38% (Camp HOK, 2026-06-04).",
-    "Pick rate 1.63% for Kaizer in current ranked meta.",
-    "Ban rate 0.17% — moderate bans.",
-    "Counters: Dun, Wukong. Countered by: Lady Sun, Sun Bin."
-  ],
-  "tencentId": 503,
-  "avatarFallback": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/503/503.jpg",
-  "dataSource": "Camp HOK + Tencent official",
-  "dataUpdated": "2026-06-04"
+    "Pick rate 1.63% in global ranked.",
+    "Ban rate 0.17%.",
+    "Counters: Da Qiao, Diaochan, Daji. Countered by: Donghuang, Kui, Sun Bin."
+  ]
 }

@@ -6,7 +6,8 @@ import { JsonLd, breadcrumbSchema, itemListSchema } from '@/lib/schema';
 
 export const metadata = buildMetadata({
   title: defaultTitle('All Heroes'),
-  description: 'Browse all 30 top Honor of Kings meta heroes with builds, stats, and counters.',
+  description:
+    'Browse all Honor of Kings global heroes with skills, builds, stats, and counters.',
   path: '/heroes',
 });
 

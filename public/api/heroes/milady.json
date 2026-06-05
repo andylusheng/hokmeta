@@ -3,100 +3,145 @@
   "slug": "milady",
   "name": "Milady",
   "role": "Mage",
+  "roles": "Mage",
+  "lane": "Mid Lane",
   "difficulty": "Medium",
   "tier": "S+",
   "winRate": 48.95,
   "pickRate": 1.9,
   "banRate": 2.4,
-  "rank": 18,
+  "rank": 90,
   "avatar": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/orlOit3f.png",
+  "avatarFallback": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/504/504.jpg",
+  "tencentId": 504,
+  "dataSource": "Camp HOK + HoKStats.gg (intl)",
+  "dataUpdated": "2026-06-05",
+  "skills": [
+    {
+      "slot": "passive",
+      "name": "Mechanical Minions",
+      "description": "Summons minions upon killing a unit. Minions attack automatically, then merge into an advanced bot or explode at the end of their duration, dealing damage to nearby enemies.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/504/50400.png",
+      "cooldown": null
+    },
+    {
+      "slot": "skill1",
+      "name": "Air Superiority",
+      "description": "Commands her aircraft to move in the target direction, dealing damage to enemies in its path. Using the skill again splits the aircraft in two, dealing damage and inflicting slow.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/504/50410.png",
+      "cooldown": null
+    },
+    {
+      "slot": "skill2",
+      "name": "Forced Invasion",
+      "description": "Summons mechanical minions in the target area, dealing area damage before automatically attacking nearby enemies.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/504/50420.png",
+      "cooldown": null
+    },
+    {
+      "slot": "ultimate",
+      "name": "Chaos Field",
+      "description": "Marks a target enemy or structure, damaging them over time. Non-structures are also stunned and slowed. Nearby mechanical minions are enhanced while marks are active. Marks explode upon expiry, dealing damage proportional to the damage taken while marked.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/504/50430.png",
+      "cooldown": null
+    }
+  ],
   "build": [
     {
-      "name": "Arcane",
-      "slot": 1
+      "slot": 1,
+      "itemId": "1211",
+      "name": "Spell Tome",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1211.jpg",
+      "description": "MATK +35"
     },
     {
-      "name": "Swift",
-      "slot": 2
+      "slot": 2,
+      "itemId": "1423",
+      "name": "Boots of Tranquility",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1423.jpg",
+      "description": "Reduces Skill CD"
     },
     {
-      "name": "Lightning",
-      "slot": 3
+      "slot": 3,
+      "itemId": "1243",
+      "name": "Nebulon Wood",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1243.jpg",
+      "description": "MATK +60, HP +450"
     },
     {
-      "name": "Robe",
-      "slot": 4
+      "slot": 4,
+      "itemId": "1235",
+      "name": "Mask of Agony",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1235.jpg",
+      "description": "Boosts skill damage"
     },
     {
-      "name": "Brilliant",
-      "slot": 5
+      "slot": 5,
+      "itemId": "1424",
+      "name": "Boots of the Arcane",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1424.jpg",
+      "description": "Magical Pierce"
     },
     {
-      "name": "Dominance",
-      "slot": 6
+      "slot": 6,
+      "itemId": "12211",
+      "name": "Venomous Staff",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/12211.jpg",
+      "description": "Lowers Health regen"
     }
   ],
   "arcana": [
-    "AP",
-    "CDR",
-    "Mana"
+    "Nightmare"
   ],
   "spells": [
-    "Flash",
-    "Punish"
+    "Flash"
   ],
   "counters": [
-    "Xiang Yu",
-    "Hou Yi"
+    "Nakoruru",
+    "Pei",
+    "Mai Shiranui"
   ],
   "counteredBy": [
-    "Li Bai",
-    "Shouyue"
+    "Allain",
+    "Fuzi",
+    "Haya"
   ],
   "tips": [
-    "Milady: prioritize A tier Mage power spikes from patch history.",
-    "Watch pick rate — pick data unavailable.",
-    "Lane into Musashi with listed build order."
+    "Milady (Mage): Tier S+ on international ranked — 48.95% WR.",
+    "Primary lane: Mid Lane.",
+    "Build core: Spell Tome, Boots of Tranquility, Nebulon Wood."
   ],
   "patchHistory": [
     {
       "version": "Live meta",
-      "change": "Camp HOK ranked stats — WR 48.95%, pick 1.9%, ban 2.4%, tier band S."
+      "change": "Camp HOK — WR 48.95%, pick 1.9%, ban 2.4%, popularity tier S+."
     },
     {
       "version": "Matchups",
-      "change": "Counters Xiang Yu, Hou Yi · Weak into Li Bai, Shouyue (Tencent hero data)."
-    },
-    {
-      "version": "S37",
-      "change": "Data unavailable"
+      "change": "Counters Nakoruru, Pei, Mai Shiranui · Weak into Allain, Fuzi, Haya."
     }
   ],
   "faqs": [
     {
       "id": "faq-good-season",
       "question": "Is Milady good in current season?",
-      "answer": "Milady shows 48.95% win rate, 1.9% pick rate, 2.4% ban rate (Camp HOK). Tier S+ Mage."
+      "answer": "Milady is Tier S+ Mage with 48.95% win rate, 1.9% pick rate, and 2.4% ban rate on the international server (Camp HOK)."
     },
     {
       "id": "faq-best-build",
       "question": "What is the best Milady build?",
-      "answer": "Core item path for Milady: Arcane, Swift, Lightning, Robe, Brilliant, Dominance. Spells and arcana sets are listed in the Build section. Adjust final slot by enemy Musashi."
+      "answer": "Recommended item path: Spell Tome, Boots of Tranquility, Nebulon Wood, Mask of Agony, Boots of the Arcane, Venomous Staff. Spells and Arcana are listed on this page."
     },
     {
       "id": "faq-counter",
       "question": "How to counter Milady?",
-      "answer": "Use Xiang Yu, Hou Yi. Ban rate 2.4% reflects draft priority against Milady."
+      "answer": "Strong picks into Milady: Allain, Fuzi, Haya. Milady is strong into Nakoruru, Pei, Mai Shiranui."
     }
   ],
   "metaAnalysis": [
     "Milady win rate 48.95% (Camp HOK, 2026-06-04).",
-    "Pick rate 1.9% for Milady in current ranked meta.",
-    "Ban rate 2.4% — moderate bans.",
-    "Counters: Xiang Yu, Hou Yi. Countered by: Li Bai, Shouyue."
-  ],
-  "tencentId": 511,
-  "avatarFallback": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/511/511.jpg",
-  "dataSource": "Camp HOK + Tencent official",
-  "dataUpdated": "2026-06-04"
+    "Pick rate 1.9% in global ranked.",
+    "Ban rate 2.4%.",
+    "Counters: Nakoruru, Pei, Mai Shiranui. Countered by: Allain, Fuzi, Haya."
+  ]
 }

@@ -1,6 +1,6 @@
 # HOK Meta (https://hokmeta.com)
 
-Production **Next.js 14** static site for Honor of Kings meta: 30 heroes, tier list, builds, counters, trends, and learn hub.
+Production **Next.js 14** static site for **Honor of Kings Global**: full hero roster (~112), tier list, skills, item builds, counters, trends, and learn hub.
 
 ## Local development
 
@@ -23,22 +23,26 @@ npm run build
 
 1. Connect repo `hokmeta`, branch `main`
 2. Build: `npm run build`
-3. Output directory: **`out`** — keep `distDir: 'out'` in `next.config.mjs` (required for Hostinger)
+3. Output directory: **`out`** (from `npm run build` — Hostinger panel only; do not set `distDir` to `out`)
 4. `config/site.json` → `domain` must match live URL
 
 ## Data
 
-- `data/heroes.json` — hero meta (builds, counters, FAQs + live stats)
+- `data/heroes.json` — global heroes (skills, builds, counters, Camp stats)
+- `data/items.json` — item icons + English descriptions
 - `data/keywords.json` — related search terms
 - `data/hero-id-map.json` — slug → Tencent hero ID / Camp name
-- Regenerate skeleton: `node scripts/generate-data.js`
-- **Refresh win/pick/ban + avatars** (Camp HOK metrics):
+- **Full global sync** (112 heroes + ~107 items):
 
 ```bash
-npm run sync-meta
+npm run sync-global
 ```
 
-Sources: [Camp HOK](https://camp.honorofkings.com/) win/pick/ban via [hok-meta-analyzer](https://github.com/lnsdeep/hok-meta-analyzer); matchups from [qing762 honor-of-kings-api](https://github.com/qing762/honor-of-kings-api); avatars Camp + `game.gtimg.cn` fallback.
+Options: `--skip-items` (heroes only), `--skip-enrich` (Camp stats only, no HoKStats scrape).
+
+Sources: [Camp HOK](https://camp.honorofkings.com/) via [hok-meta-analyzer](https://github.com/lnsdeep/hok-meta-analyzer); English skills/builds/items from [HoKStats.gg](https://hokstats.gg/) (intl); icons `game.gtimg.cn`.
+
+Legacy 30-hero patch sync: `npm run sync-meta` (deprecated for counters — use `sync-global`).
 
 ## API (static JSON)
 

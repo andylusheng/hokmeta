@@ -1,0 +1,145 @@
+{
+  "id": "allain",
+  "slug": "allain",
+  "name": "Allain",
+  "role": "Warrior",
+  "roles": "Fighter",
+  "lane": "Clash Lane",
+  "difficulty": "Medium",
+  "tier": "A",
+  "winRate": 51.02,
+  "pickRate": 1.09,
+  "banRate": 0.1,
+  "rank": 54,
+  "avatar": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/Ek9OHopQ.png",
+  "avatarFallback": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/514/514.jpg",
+  "tencentId": 514,
+  "dataSource": "Camp HOK + HoKStats.gg (intl)",
+  "dataUpdated": "2026-06-05",
+  "skills": [
+    {
+      "slot": "passive",
+      "name": "Howling Blade",
+      "description": "Basic Attacks and skills grant Fury, which increases his Physical and Magical Pierce and grants damage reduction. At max Fury, he recovers Health, and the lower his Health, the more he recovers.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/514/51400.png",
+      "cooldown": null
+    },
+    {
+      "slot": "skill1",
+      "name": "Meteor Kill",
+      "description": "Based on how many stacks of mark he has, Allain deals damage multiple times in the target direction and launches enemies. He gains marks by hitting enemies with Basic Attacks and Ultimate.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/514/51410.png",
+      "cooldown": null
+    },
+    {
+      "slot": "skill2",
+      "name": "Moonlight Flash",
+      "description": "Dashes in the target direction, damaging and slowing enemies. He gains Movement Speed and his next 3 Basic Attacks gain increased Attack Speed.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/514/51420.png",
+      "cooldown": null
+    },
+    {
+      "slot": "ultimate",
+      "name": "Death at Sunset",
+      "description": "Allain leaps toward the targeted enemy hero and becomes untargetable. After a short delay, he lands and deals area damage. For every enemy hero hit, he gains marks and Fury.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/514/51430.png",
+      "cooldown": null
+    }
+  ],
+  "build": [
+    {
+      "slot": 1,
+      "itemId": "1421",
+      "name": "Boots of Fortitude",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1421.jpg",
+      "description": "Reduces physical damage"
+    },
+    {
+      "slot": 2,
+      "itemId": "1114",
+      "name": "Vampiric Scythe",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1114.jpg",
+      "description": "Physical Lifesteal"
+    },
+    {
+      "slot": 3,
+      "itemId": "1331",
+      "name": "Blazing Cape",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1331.jpg",
+      "description": "Burns nearby enemies"
+    },
+    {
+      "slot": 4,
+      "itemId": "1126",
+      "name": "Doomsday",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1126.jpg",
+      "description": "Boosts BA damage"
+    },
+    {
+      "slot": 5,
+      "itemId": "1422",
+      "name": "Boots of Resistance",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
+      "description": "Shortens CC"
+    },
+    {
+      "slot": 6,
+      "itemId": "1136",
+      "name": "Shadow Ripper",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1136.jpg",
+      "description": "Crits boost ASPD"
+    }
+  ],
+  "arcana": [
+    "Red"
+  ],
+  "spells": [
+    "Flash"
+  ],
+  "counters": [
+    "Lu Bu",
+    "Zhuangzi"
+  ],
+  "counteredBy": [
+    "Sima Yi",
+    "Marco Polo"
+  ],
+  "tips": [
+    "Allain (Warrior): Tier A on international ranked — 51.02% WR.",
+    "Primary lane: Clash Lane.",
+    "Build core: Boots of Fortitude, Vampiric Scythe, Blazing Cape."
+  ],
+  "patchHistory": [
+    {
+      "version": "Live meta",
+      "change": "Camp HOK — WR 51.02%, pick 1.09%, ban 0.1%, popularity tier A."
+    },
+    {
+      "version": "Matchups",
+      "change": "Counters Lu Bu, Zhuangzi · Weak into Sima Yi, Marco Polo."
+    }
+  ],
+  "faqs": [
+    {
+      "id": "faq-good-season",
+      "question": "Is Allain good in current season?",
+      "answer": "Allain is Tier A Warrior with 51.02% win rate, 1.09% pick rate, and 0.1% ban rate on the international server (Camp HOK)."
+    },
+    {
+      "id": "faq-best-build",
+      "question": "What is the best Allain build?",
+      "answer": "Recommended item path: Boots of Fortitude, Vampiric Scythe, Blazing Cape, Doomsday, Boots of Resistance, Shadow Ripper. Spells and Arcana are listed on this page."
+    },
+    {
+      "id": "faq-counter",
+      "question": "How to counter Allain?",
+      "answer": "Strong picks into Allain: Sima Yi, Marco Polo. Allain is strong into Lu Bu, Zhuangzi."
+    }
+  ],
+  "metaAnalysis": [
+    "Allain win rate 51.02% (Camp HOK, 2026-06-04).",
+    "Pick rate 1.09% in global ranked.",
+    "Ban rate 0.1%.",
+    "Counters: Lu Bu, Zhuangzi. Countered by: Sima Yi, Marco Polo."
+  ]
+}

@@ -2,101 +2,145 @@
   "id": "shouyue",
   "slug": "shouyue",
   "name": "Shouyue",
-  "role": "Marksman",
-  "difficulty": "Hard",
+  "role": "Assassin",
+  "roles": "Marksman, Assassin",
+  "lane": "Farm Lane",
+  "difficulty": "Medium",
   "tier": "A",
   "winRate": 51.5,
   "pickRate": 0.79,
   "banRate": 0.09,
-  "rank": 5,
+  "rank": 37,
   "avatar": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/4bUKKH66.png",
+  "avatarFallback": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/196/196.jpg",
+  "tencentId": 196,
+  "dataSource": "Camp HOK + HoKStats.gg (intl)",
+  "dataUpdated": "2026-06-05",
+  "skills": [
+    {
+      "slot": "passive",
+      "name": "Accuracy",
+      "description": "Basic Attacks deal extra damage, and Critical Rate is converted into Physical Attack. Extra Critical Rate increases Basic Attack damage. When out of combat and next to a wall, gains disguise and Movement Speed.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/196/19600.png",
+      "cooldown": null
+    },
+    {
+      "slot": "skill1",
+      "name": "The Tranquil Eye",
+      "description": "Plants a device that continuously grants vision Passive: Gains increased Physical Pierce when standing still, but loses it when moving.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/196/19610.png",
+      "cooldown": null
+    },
+    {
+      "slot": "skill2",
+      "name": "Wild Wind",
+      "description": "Fires in the target direction, damaging and slowing the target hit.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/196/19620.png",
+      "cooldown": null
+    },
+    {
+      "slot": "ultimate",
+      "name": "Getaway",
+      "description": "Leaps backwards and fires in the target direction, damaging and slowing the target hit while gaining Movement Speed. Rounds stocked are shared with Skill 2. Passive: Increases Basic Attack range.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/196/19630.png",
+      "cooldown": null
+    }
+  ],
   "build": [
     {
-      "name": "Hunter",
-      "slot": 1
+      "slot": 1,
+      "itemId": "1135",
+      "name": "Sparkforged Dagger",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1135.jpg",
+      "description": "Chain lightning BA"
     },
     {
-      "name": "Swift",
-      "slot": 2
+      "slot": 2,
+      "itemId": "1425",
+      "name": "Boots of Dexterity",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1425.jpg",
+      "description": "Boosts ASPD"
     },
     {
-      "name": "Wind",
-      "slot": 3
+      "slot": 3,
+      "itemId": "1126",
+      "name": "Doomsday",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1126.jpg",
+      "description": "Boosts BA damage"
     },
     {
-      "name": "Blade",
-      "slot": 4
+      "slot": 4,
+      "itemId": "1136",
+      "name": "Shadow Ripper",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1136.jpg",
+      "description": "Crits boost ASPD"
     },
     {
-      "name": "Immortal",
-      "slot": 5
+      "slot": 5,
+      "itemId": "1138",
+      "name": "Overlord's Might",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1138.jpg",
+      "description": "High-damage attack"
     },
     {
-      "name": "Rose Gold",
-      "slot": 6
+      "slot": 6,
+      "itemId": "1133",
+      "name": "Eternity Blade",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1133.jpg",
+      "description": "High crit damage"
     }
   ],
   "arcana": [
-    "Crit",
-    "Penetration",
-    "Attack Speed"
+    "Cataclysm"
   ],
   "spells": [
-    "Flash",
-    "Heal"
+    "Haste",
+    "Flash"
   ],
   "counters": [
-    "Dian Wei",
-    "Arthur"
+    "Diaochan",
+    "Nakoruru",
+    "Ying"
   ],
   "counteredBy": [
-    "Musashi",
-    "Daji"
+    "Liu Bang"
   ],
   "tips": [
-    "Shouyue: prioritize S+ tier Marksman power spikes from patch history.",
-    "Watch pick rate — pick data unavailable.",
-    "Lane into Loong with listed build order."
+    "Shouyue (Assassin): Tier A on international ranked — 51.5% WR.",
+    "Primary lane: Farm Lane.",
+    "Build core: Sparkforged Dagger, Boots of Dexterity, Doomsday."
   ],
   "patchHistory": [
     {
       "version": "Live meta",
-      "change": "Camp HOK ranked stats — WR 51.5%, pick 0.79%, ban 0.09%, tier band B."
+      "change": "Camp HOK — WR 51.5%, pick 0.79%, ban 0.09%, popularity tier A."
     },
     {
       "version": "Matchups",
-      "change": "Counters Dian Wei, Arthur · Weak into Musashi, Daji (Tencent hero data)."
-    },
-    {
-      "version": "S37",
-      "change": "Data unavailable"
+      "change": "Counters Diaochan, Nakoruru, Ying · Weak into Liu Bang."
     }
   ],
   "faqs": [
     {
       "id": "faq-good-season",
       "question": "Is Shouyue good in current season?",
-      "answer": "Shouyue shows 51.5% win rate, 0.79% pick rate, 0.09% ban rate (Camp HOK). Tier A Marksman."
+      "answer": "Shouyue is Tier A Assassin with 51.5% win rate, 0.79% pick rate, and 0.09% ban rate on the international server (Camp HOK)."
     },
     {
       "id": "faq-best-build",
       "question": "What is the best Shouyue build?",
-      "answer": "Core item path for Shouyue: Hunter, Swift, Wind, Blade, Immortal, Rose Gold. Spells and arcana sets are listed in the Build section. Adjust final slot by enemy Loong."
+      "answer": "Recommended item path: Sparkforged Dagger, Boots of Dexterity, Doomsday, Shadow Ripper, Overlord's Might, Eternity Blade. Spells and Arcana are listed on this page."
     },
     {
       "id": "faq-counter",
       "question": "How to counter Shouyue?",
-      "answer": "Use Dian Wei, Arthur. Ban rate 0.09% reflects draft priority against Shouyue."
+      "answer": "Strong picks into Shouyue: Liu Bang. Shouyue is strong into Diaochan, Nakoruru, Ying."
     }
   ],
   "metaAnalysis": [
     "Shouyue win rate 51.5% (Camp HOK, 2026-06-04).",
-    "Pick rate 0.79% for Shouyue in current ranked meta.",
-    "Ban rate 0.09% — moderate bans.",
-    "Counters: Dian Wei, Arthur. Countered by: Musashi, Daji."
-  ],
-  "tencentId": 196,
-  "avatarFallback": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/196/196.jpg",
-  "dataSource": "Camp HOK + Tencent official",
-  "dataUpdated": "2026-06-04"
+    "Pick rate 0.79% in global ranked.",
+    "Ban rate 0.09%.",
+    "Counters: Diaochan, Nakoruru, Ying. Countered by: Liu Bang."
+  ]
 }

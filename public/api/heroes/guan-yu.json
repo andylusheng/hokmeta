@@ -1,0 +1,148 @@
+{
+  "id": "guan-yu",
+  "slug": "guan-yu",
+  "name": "Guan Yu",
+  "role": "Warrior",
+  "roles": "Fighter",
+  "lane": "Clash Lane",
+  "difficulty": "Medium",
+  "tier": "B",
+  "winRate": 48.31,
+  "pickRate": 0.36,
+  "banRate": 0.11,
+  "rank": 101,
+  "avatar": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/V5e2k18Z.png",
+  "avatarFallback": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/140/140.jpg",
+  "tencentId": 140,
+  "dataSource": "Camp HOK + HoKStats.gg (intl)",
+  "dataUpdated": "2026-06-05",
+  "skills": [
+    {
+      "slot": "passive",
+      "name": "Rider of Triumph",
+      "description": "'''Normal Stance:''' Moving constantly accumulates a Movement Speed bonus, and reaching a certain distance activates the Charge Stance. '''Charge Stance:''' Enhances the next skill and Basic Attack.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/140/14000.png",
+      "cooldown": null
+    },
+    {
+      "slot": "skill1",
+      "name": "Heroic Charge",
+      "description": "'''Normal Stance:''' Deals damage to enemies within range. '''Charge Stance:''' Charges forward, knocking back enemies in his path while dealing damage.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/140/14010.png",
+      "cooldown": null
+    },
+    {
+      "slot": "skill2",
+      "name": "Soaring Green Dragon",
+      "description": "'''Normal Stance:''' Removes crowd control effects and gains Movement Speed. '''Charge Stance:''' Removes crowd control effects and leaps forward, knocking back enemies within the landing area and dealing damage.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/140/14020.png",
+      "cooldown": null
+    },
+    {
+      "slot": "ultimate",
+      "name": "Razor Cavalry",
+      "description": "'''Normal Stance:''' Enhances himself, reducing the movement distance required to enter Charge stance. '''Charge Stance:''' Summons heavy cavalry that dash forward, dealing damage and knocking back enemies in their path.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/140/14030.png",
+      "cooldown": null
+    }
+  ],
+  "build": [
+    {
+      "slot": 1,
+      "itemId": "1426",
+      "name": "Boots of Deftness",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1426.jpg",
+      "description": "Extra Movement Speed"
+    },
+    {
+      "slot": 2,
+      "itemId": "1122",
+      "name": "Sunglow Striker",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1122.jpg",
+      "description": "PATK +35, HP +450"
+    },
+    {
+      "slot": 3,
+      "itemId": "1137",
+      "name": "Axe of Torment",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1137.jpg",
+      "description": "Anti-squishy"
+    },
+    {
+      "slot": 4,
+      "itemId": "1328",
+      "name": "Blood Rage",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1328.jpg",
+      "description": "Grants temporary shield"
+    },
+    {
+      "slot": 5,
+      "itemId": "1127",
+      "name": "Destiny",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1127.jpg",
+      "description": "Negates fatal damage"
+    },
+    {
+      "slot": 6,
+      "itemId": "1534",
+      "name": "Dragon's Rage",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1534.jpg",
+      "description": "Boosts BA damage"
+    }
+  ],
+  "arcana": [
+    "Fate"
+  ],
+  "spells": [
+    "Flash",
+    "Execute"
+  ],
+  "counters": [
+    "Daji",
+    "Mi Yue",
+    "Yixing"
+  ],
+  "counteredBy": [
+    "Data unavailable",
+    "Data unavailable",
+    "Data unavailable"
+  ],
+  "tips": [
+    "Guan Yu (Warrior): Tier B on international ranked — 48.31% WR.",
+    "Primary lane: Clash Lane.",
+    "Build core: Boots of Deftness, Sunglow Striker, Axe of Torment."
+  ],
+  "patchHistory": [
+    {
+      "version": "Live meta",
+      "change": "Camp HOK — WR 48.31%, pick 0.36%, ban 0.11%, popularity tier B."
+    },
+    {
+      "version": "Matchups",
+      "change": "Counters Daji, Mi Yue, Yixing · Weak into Data unavailable, Data unavailable, Data unavailable."
+    }
+  ],
+  "faqs": [
+    {
+      "id": "faq-good-season",
+      "question": "Is Guan Yu good in current season?",
+      "answer": "Guan Yu is Tier B Warrior with 48.31% win rate, 0.36% pick rate, and 0.11% ban rate on the international server (Camp HOK)."
+    },
+    {
+      "id": "faq-best-build",
+      "question": "What is the best Guan Yu build?",
+      "answer": "Recommended item path: Boots of Deftness, Sunglow Striker, Axe of Torment, Blood Rage, Destiny, Dragon's Rage. Spells and Arcana are listed on this page."
+    },
+    {
+      "id": "faq-counter",
+      "question": "How to counter Guan Yu?",
+      "answer": "Strong picks into Guan Yu: Data unavailable, Data unavailable, Data unavailable. Guan Yu is strong into Daji, Mi Yue, Yixing."
+    }
+  ],
+  "metaAnalysis": [
+    "Guan Yu win rate 48.31% (Camp HOK, 2026-06-04).",
+    "Pick rate 0.36% in global ranked.",
+    "Ban rate 0.11%.",
+    "Counters: Daji, Mi Yue, Yixing. Countered by: Data unavailable, Data unavailable, Data unavailable."
+  ]
+}

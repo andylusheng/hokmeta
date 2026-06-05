@@ -1,0 +1,147 @@
+{
+  "id": "nuwa",
+  "slug": "nuwa",
+  "name": "Nuwa",
+  "role": "Mage",
+  "roles": "Mage",
+  "lane": "Mid Lane",
+  "difficulty": "Medium",
+  "tier": "A",
+  "winRate": 51.54,
+  "pickRate": 0.83,
+  "banRate": 0.42,
+  "rank": 35,
+  "avatar": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/E39kxNsD.png",
+  "avatarFallback": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/179/179.jpg",
+  "tencentId": 179,
+  "dataSource": "Camp HOK + HoKStats.gg (intl)",
+  "dataUpdated": "2026-06-05",
+  "skills": [
+    {
+      "slot": "passive",
+      "name": "Divine Consciousness",
+      "description": "Gains enhanced vision and range when leveling up.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/179/17900.png",
+      "cooldown": null
+    },
+    {
+      "slot": "skill1",
+      "name": "Divine Glow - Creation",
+      "description": "Unleashes energy that deals damage, knocks back enemies, and creates a matrix. When the energy stops, it expands to deal extra damage.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/179/17910.png",
+      "cooldown": null
+    },
+    {
+      "slot": "skill2",
+      "name": "Divine Glow - Coalescence",
+      "description": "Creates a matrix and allows her to teleport. The matrix blocks enemy heroes' movement. Matrices can be fused twice.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/179/17920.png",
+      "cooldown": null
+    },
+    {
+      "slot": "ultimate",
+      "name": "Divine Glow - Emergence",
+      "description": "Teleports to the target area after a short delay. Generates a shield, gains Movement Speed, deals damage, and slows the enemy. Passive: Magical Attack can reduce cast time.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/179/17930.png",
+      "cooldown": null
+    }
+  ],
+  "build": [
+    {
+      "slot": 1,
+      "itemId": "1424",
+      "name": "Boots of the Arcane",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1424.jpg",
+      "description": "Magical Pierce"
+    },
+    {
+      "slot": 2,
+      "itemId": "12211",
+      "name": "Venomous Staff",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/12211.jpg",
+      "description": "Lowers Health regen"
+    },
+    {
+      "slot": 3,
+      "itemId": "1240",
+      "name": "Insatiable Tome",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1240.jpg",
+      "description": "Magical Lifesteal"
+    },
+    {
+      "slot": 4,
+      "itemId": "1235",
+      "name": "Mask of Agony",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1235.jpg",
+      "description": "Boosts skill damage"
+    },
+    {
+      "slot": 5,
+      "itemId": "1232",
+      "name": "Savant's Wrath",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1232.jpg",
+      "description": "Greatly boosts MATK"
+    },
+    {
+      "slot": 6,
+      "itemId": "1234",
+      "name": "Frozen Breath",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1234.jpg",
+      "description": "Slows on hit"
+    }
+  ],
+  "arcana": [
+    "Nightmare"
+  ],
+  "spells": [
+    "Flash"
+  ],
+  "counters": [
+    "Mulan",
+    "Nakoruru",
+    "Pei"
+  ],
+  "counteredBy": [
+    "Liu Bei",
+    "Mayene",
+    "Mulan"
+  ],
+  "tips": [
+    "Nuwa (Mage): Tier A on international ranked — 51.54% WR.",
+    "Primary lane: Mid Lane.",
+    "Build core: Boots of the Arcane, Venomous Staff, Insatiable Tome."
+  ],
+  "patchHistory": [
+    {
+      "version": "Live meta",
+      "change": "Camp HOK — WR 51.54%, pick 0.83%, ban 0.42%, popularity tier A."
+    },
+    {
+      "version": "Matchups",
+      "change": "Counters Mulan, Nakoruru, Pei · Weak into Liu Bei, Mayene, Mulan."
+    }
+  ],
+  "faqs": [
+    {
+      "id": "faq-good-season",
+      "question": "Is Nuwa good in current season?",
+      "answer": "Nuwa is Tier A Mage with 51.54% win rate, 0.83% pick rate, and 0.42% ban rate on the international server (Camp HOK)."
+    },
+    {
+      "id": "faq-best-build",
+      "question": "What is the best Nuwa build?",
+      "answer": "Recommended item path: Boots of the Arcane, Venomous Staff, Insatiable Tome, Mask of Agony, Savant's Wrath, Frozen Breath. Spells and Arcana are listed on this page."
+    },
+    {
+      "id": "faq-counter",
+      "question": "How to counter Nuwa?",
+      "answer": "Strong picks into Nuwa: Liu Bei, Mayene, Mulan. Nuwa is strong into Mulan, Nakoruru, Pei."
+    }
+  ],
+  "metaAnalysis": [
+    "Nuwa win rate 51.54% (Camp HOK, 2026-06-04).",
+    "Pick rate 0.83% in global ranked.",
+    "Ban rate 0.42%.",
+    "Counters: Mulan, Nakoruru, Pei. Countered by: Liu Bei, Mayene, Mulan."
+  ]
+}

@@ -10,6 +10,7 @@ import { Breadcrumb } from '@/components/Breadcrumb';
 import { HeroAvatar } from '@/components/HeroAvatar';
 import { HeroStatTable } from '@/components/HeroStatTable';
 import { BuildBlock } from '@/components/BuildBlock';
+import { SkillBlock } from '@/components/SkillBlock';
 import { ArcanaBlock } from '@/components/ArcanaBlock';
 import { CounterBlock } from '@/components/CounterBlock';
 import { FaqAccordion } from '@/components/FaqAccordion';
@@ -95,6 +96,11 @@ export default function HeroPage({
 
           <section className="card mb-8">
             <HeroStatTable hero={hero} />
+          </section>
+
+          <section id="skills" className="scroll-mt-20 mb-8">
+            <h2 className="section-title">Skills</h2>
+            <SkillBlock hero={hero} />
           </section>
 
           <section id="build" className="scroll-mt-20 mb-8">

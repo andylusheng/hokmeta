@@ -1,0 +1,148 @@
+{
+  "id": "garo",
+  "slug": "garo",
+  "name": "Garo",
+  "role": "Marksman",
+  "roles": "Marksman",
+  "lane": "Farm Lane",
+  "difficulty": "Medium",
+  "tier": "S",
+  "winRate": 52.89,
+  "pickRate": 1.27,
+  "banRate": 0.25,
+  "rank": 8,
+  "avatar": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/g0jHNDf6.png",
+  "avatarFallback": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/508/508.jpg",
+  "tencentId": 508,
+  "dataSource": "Camp HOK + HoKStats.gg (intl)",
+  "dataUpdated": "2026-06-05",
+  "skills": [
+    {
+      "slot": "passive",
+      "name": "Piercing Arrow",
+      "description": "Deals double damage to shields with Basic Attacks and skills.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/508/50800.png",
+      "cooldown": null
+    },
+    {
+      "slot": "skill1",
+      "name": "Enchanted Arrows",
+      "description": ";On: Range and Basic Attack interval increase. Basic Attack costs Mana and deals damage over time. ;Off: Gains Movement Speed and restores range and Basic Attack interval toinitial values.Basic Attack hits restore Mana.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/508/50810.png",
+      "cooldown": null
+    },
+    {
+      "slot": "skill2",
+      "name": "Silent Arrow",
+      "description": "Fires an arrow in the target direction, dealing damage to enemies hit while silencing and slowing them. After a brief delay, deals another strike of damage to enemies within range of the same location.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/508/50820.png",
+      "cooldown": null
+    },
+    {
+      "slot": "ultimate",
+      "name": "Sphere of Purity",
+      "description": "Damages enemies in range. Gains Attack Speed and Critical Rate when in the magic circle.Use this skill again to grant Critical Rate and Move Speed to teammates in the circle and damage enemies in the circle",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/508/50830.png",
+      "cooldown": null
+    }
+  ],
+  "build": [
+    {
+      "slot": 1,
+      "itemId": "1135",
+      "name": "Sparkforged Dagger",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1135.jpg",
+      "description": "Chain lightning BA"
+    },
+    {
+      "slot": 2,
+      "itemId": "1425",
+      "name": "Boots of Dexterity",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1425.jpg",
+      "description": "Boosts ASPD"
+    },
+    {
+      "slot": 3,
+      "itemId": "1126",
+      "name": "Doomsday",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1126.jpg",
+      "description": "Boosts BA damage"
+    },
+    {
+      "slot": 4,
+      "itemId": "1136",
+      "name": "Shadow Ripper",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1136.jpg",
+      "description": "Crits boost ASPD"
+    },
+    {
+      "slot": 5,
+      "itemId": "1133",
+      "name": "Eternity Blade",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1133.jpg",
+      "description": "High crit damage"
+    },
+    {
+      "slot": 6,
+      "itemId": "1156",
+      "name": "Haste - Sunpool",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1156.jpg",
+      "description": "Boosts attack range"
+    }
+  ],
+  "arcana": [
+    "Dominator"
+  ],
+  "spells": [
+    "Haste",
+    "Flash"
+  ],
+  "counters": [
+    "Nakoruru",
+    "Xuance",
+    "Li Bai"
+  ],
+  "counteredBy": [
+    "Data unavailable",
+    "Data unavailable",
+    "Data unavailable"
+  ],
+  "tips": [
+    "Garo (Marksman): Tier S on international ranked — 52.89% WR.",
+    "Primary lane: Farm Lane.",
+    "Build core: Sparkforged Dagger, Boots of Dexterity, Doomsday."
+  ],
+  "patchHistory": [
+    {
+      "version": "Live meta",
+      "change": "Camp HOK — WR 52.89%, pick 1.27%, ban 0.25%, popularity tier S."
+    },
+    {
+      "version": "Matchups",
+      "change": "Counters Nakoruru, Xuance, Li Bai · Weak into Data unavailable, Data unavailable, Data unavailable."
+    }
+  ],
+  "faqs": [
+    {
+      "id": "faq-good-season",
+      "question": "Is Garo good in current season?",
+      "answer": "Garo is Tier S Marksman with 52.89% win rate, 1.27% pick rate, and 0.25% ban rate on the international server (Camp HOK)."
+    },
+    {
+      "id": "faq-best-build",
+      "question": "What is the best Garo build?",
+      "answer": "Recommended item path: Sparkforged Dagger, Boots of Dexterity, Doomsday, Shadow Ripper, Eternity Blade, Haste - Sunpool. Spells and Arcana are listed on this page."
+    },
+    {
+      "id": "faq-counter",
+      "question": "How to counter Garo?",
+      "answer": "Strong picks into Garo: Data unavailable, Data unavailable, Data unavailable. Garo is strong into Nakoruru, Xuance, Li Bai."
+    }
+  ],
+  "metaAnalysis": [
+    "Garo win rate 52.89% (Camp HOK, 2026-06-04).",
+    "Pick rate 1.27% in global ranked.",
+    "Ban rate 0.25%.",
+    "Counters: Nakoruru, Xuance, Li Bai. Countered by: Data unavailable, Data unavailable, Data unavailable."
+  ]
+}

@@ -1,0 +1,965 @@
+[
+  {
+    "id": "1351",
+    "name": "Amble - Winter",
+    "description": "Group CC",
+    "gold": 3190,
+    "type": "Defense",
+    "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1351.jpg",
+    "slug": "amble---winter"
+  },
+  {
+    "id": "1227",
+    "name": "Ardent Dominion",
+    "description": "Shield at low Health",
+    "gold": 2040,
+    "type": "Magic",
+    "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1227.jpg",
+    "slug": "ardent-dominion"
+  },
+  {
+    "id": "1237",
+    "name": "Augur's Word",
+    "description": "Offense & defense",
+    "gold": 2150,
+    "type": "Magic",
+    "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1237.jpg",
+    "slug": "augurs-word"
+  },
+  {
+    "id": "1137",
+    "name": "Axe of Torment",
+    "description": "Anti-squishy",
+    "gold": 2090,
+    "type": "Attack",
+    "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1137.jpg",
+    "slug": "axe-of-torment"
+  },
+  {
+    "id": "1321",
+    "name": "Belt of Might",
+    "description": "HP +900",
+    "gold": 850,
+    "type": "Defense",
+    "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1321.jpg",
+    "slug": "belt-of-might"
+  },
+  {
+    "id": "1331",
+    "name": "Blazing Cape",
+    "description": "Burns nearby enemies",
+    "gold": 2040,
+    "type": "Defense",
+    "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1331.jpg",
+    "slug": "blazing-cape"
+  },
+  {
+    "id": "1222",
+    "name": "Blood Clan's Grimoire",
+    "description": "MATK +60, Magical Lifesteal +12%",
+    "gold": 800,
+    "type": "Magic",
+    "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1222.jpg",
+    "slug": "blood-clans-grimoire"
+  },
+  {
+    "id": "1328",
+    "name": "Blood Rage",
+    "description": "Grants temporary shield",
+    "gold": 2180,
+    "type": "Defense",
+    "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1328.jpg",
+    "slug": "blood-rage"
+  },
+  {
+    "id": "1158",
+    "name": "Bloodsoul",
+    "description": "PATK +35, Physical Lifesteal +12%",
+    "gold": 800,
+    "type": "Attack",
+    "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1158.jpg",
+    "slug": "bloodsoul"
+  },
+  {
+    "id": "1132",
+    "name": "Bloodweeper",
+    "description": "Physical Lifesteal",
+    "gold": 2000,
+    "type": "Attack",
+    "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1132.jpg",
+    "slug": "bloodweeper"
+  },
+  {
+    "id": "1426",
+    "name": "Boots of Deftness",
+    "description": "Extra Movement Speed",
+    "gold": 700,
+    "type": "Movement",
+    "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1426.jpg",
+    "slug": "boots-of-deftness"
+  },
+  {
+    "id": "1425",
+    "name": "Boots of Dexterity",
+    "description": "Boosts ASPD",
+    "gold": 700,
+    "type": "Movement",
+    "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1425.jpg",
+    "slug": "boots-of-dexterity"
+  },
+  {
+    "id": "1421",
+    "name": "Boots of Fortitude",
+    "description": "Reduces physical damage",
+    "gold": 700,
+    "type": "Movement",
+    "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1421.jpg",
+    "slug": "boots-of-fortitude"
+  },
+  {
+    "id": "1422",
+    "name": "Boots of Resistance",
+    "description": "Shortens CC",
+    "gold": 700,
+    "type": "Movement",
+    "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
+    "slug": "boots-of-resistance"
+  },
+  {
+    "id": "1424",
+    "name": "Boots of the Arcane",
+    "description": "Magical Pierce",
+    "gold": 700,
+    "type": "Movement",
+    "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1424.jpg",
+    "slug": "boots-of-the-arcane"
+  },
+  {
+    "id": "1423",
+    "name": "Boots of Tranquility",
+    "description": "Reduces Skill CD",
+    "gold": 700,
+    "type": "Movement",
+    "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1423.jpg",
+    "slug": "boots-of-tranquility"
+  },
+  {
+    "id": "1244",
+    "name": "Breakthrough Robe",
+    "description": "Converts Health into M. Pierce",
+    "gold": 2120,
+    "type": "Magic",
+    "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1244.jpg",
+    "slug": "breakthrough-robe"
+  },
+  {
+    "id": "1323",
+    "name": "Clandestine Cape",
+    "description": "MDEF +150, HP +450",
+    "gold": 800,
+    "type": "Defense",
+    "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1323.jpg",
+    "slug": "clandestine-cape"
+  },
+  {
+    "id": "1312",
+    "name": "Cloth Jerkin",
+    "description": "PDEF +100",
+    "gold": 275,
+    "type": "Defense",
+    "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1312.jpg",
+    "slug": "cloth-jerkin"
+  },
+  {
+    "id": "1154",
+    "name": "Cloud Piercer",
+    "description": "Crit Rate +12%, ASPD +15%",
+    "gold": 800,
+    "type": "Attack",
+    "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1154.jpg",
+    "slug": "cloud-piercer"
+  },
+  {
+    "id": "1711",
+    "name": "Crimson Shadow",
+    "description": "DPS aura",
+    "gold": 850,
+    "type": null,
+    "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1711.jpg",
+    "slug": "crimson-shadow"
+  },
+  {
+    "id": "1723",
+    "name": "Crimson Shadow - Howl",
+    "description": "Group speedup",
+    "gold": 2080,
+    "type": null,
+    "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1723.jpg",
+    "slug": "crimson-shadow---howl"
+  },
+  {
+    "id": "1737",
+    "name": "Crimson Shadow - Radiance",
+    "description": "Area damage & vision",
+    "gold": 2080,
+    "type": null,
+    "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1737.jpg",
+    "slug": "crimson-shadow---radiance"
+  },
+  {
+    "id": "1721",
+    "name": "Crimson Shadow - Redemption",
+    "description": "Group shield",
+    "gold": 2080,
+    "type": null,
+    "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1721.jpg",
+    "slug": "crimson-shadow---redemption"
+  },
+  {
+    "id": "1747",
+    "name": "Crimson Shadow - Starspring",
+    "description": "Restores teammate Health & Mana",
+    "gold": 2080,
+    "type": null,
+    "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1747.jpg",
+    "slug": "crimson-shadow---starspring"
+  },
+  {
+    "id": "1338",
+    "name": "Cuirass of Savagery",
+    "description": "Offense & defense",
+    "gold": 2050,
+    "type": "Defense",
+    "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1338.jpg",
+    "slug": "cuirass-of-savagery"
+  },
+  {
+    "id": "1317",
+    "name": "Cuirass of Swiftness",
+    "description": "HP +450, CDR +7.5%",
+    "gold": 800,
+    "type": "Defense",
+    "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1317.jpg",
+    "slug": "cuirass-of-swiftness"
+  },
+  {
+    "id": "1112",
+    "name": "Dagger",
+    "description": "Attack Speed",
+    "gold": 300,
+    "type": "Attack",
+    "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1112.jpg",
+    "slug": "dagger"
+  },
+  {
+    "id": "1353",
+    "name": "Dawnlight",
+    "description": "Shields on dealing damage",
+    "gold": 2040,
+    "type": "Defense",
+    "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1353.jpg",
+    "slug": "dawnlight"
+  },
+  {
+    "id": "1155",
+    "name": "Daybreaker's Virtue",
+    "description": "Great for marksmen",
+    "gold": 2570,
+    "type": "Attack",
+    "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1155.jpg",
+    "slug": "daybreakers-virtue"
+  },
+  {
+    "id": "1128",
+    "name": "Deepfrost Siege",
+    "description": "Slows on hit",
+    "gold": 2040,
+    "type": "Attack",
+    "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1128.jpg",
+    "slug": "deepfrost-siege"
+  },
+  {
+    "id": "1125",
+    "name": "Demonsbane",
+    "description": "Boosts MDEF",
+    "gold": 2060,
+    "type": "Attack",
+    "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1125.jpg",
+    "slug": "demonsbane"
+  },
+  {
+    "id": "1127",
+    "name": "Destiny",
+    "description": "Negates fatal damage",
+    "gold": 2060,
+    "type": "Attack",
+    "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1127.jpg",
+    "slug": "destiny"
+  },
+  {
+    "id": "1126",
+    "name": "Doomsday",
+    "description": "Boosts BA damage",
+    "gold": 2100,
+    "type": "Attack",
+    "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1126.jpg",
+    "slug": "doomsday"
+  },
+  {
+    "id": "1534",
+    "name": "Dragon's Rage",
+    "description": "Boosts BA damage",
+    "gold": 2040,
+    "type": "Defense",
+    "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1534.jpg",
+    "slug": "dragons-rage"
+  },
+  {
+    "id": "1242",
+    "name": "Enigma - Moon Goddess",
+    "description": "Temp. invincibility",
+    "gold": 3340,
+    "type": "Magic",
+    "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1242.jpg",
+    "slug": "enigma---moon-goddess"
+  },
+  {
+    "id": "1133",
+    "name": "Eternity Blade",
+    "description": "High crit damage",
+    "gold": 2110,
+    "type": "Attack",
+    "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1133.jpg",
+    "slug": "eternity-blade"
+  },
+  {
+    "id": "1334",
+    "name": "Eye of the Phoenix",
+    "description": "Boosts Health regen",
+    "gold": 2020,
+    "type": "Defense",
+    "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1334.jpg",
+    "slug": "eye-of-the-phoenix"
+  },
+  {
+    "id": "1341",
+    "name": "Frigid Charge",
+    "description": "Group CC",
+    "gold": 2030,
+    "type": "Defense",
+    "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1341.jpg",
+    "slug": "frigid-charge"
+  },
+  {
+    "id": "1324",
+    "name": "Frosthold Targe",
+    "description": "PDEF +150, CDR +7.5%",
+    "gold": 750,
+    "type": "Defense",
+    "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1324.jpg",
+    "slug": "frosthold-targe"
+  },
+  {
+    "id": "13310",
+    "name": "Frostscar's Embrace",
+    "description": "Enhanced BAs slow",
+    "gold": 2060,
+    "type": "Defense",
+    "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/13310.jpg",
+    "slug": "frostscars-embrace"
+  },
+  {
+    "id": "1234",
+    "name": "Frozen Breath",
+    "description": "Slows on hit",
+    "gold": 2100,
+    "type": "Magic",
+    "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1234.jpg",
+    "slug": "frozen-breath"
+  },
+  {
+    "id": "1532",
+    "name": "Giant's Grip",
+    "description": "Monster kills boost Health",
+    "gold": 2160,
+    "type": "Jungle",
+    "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1532.jpg",
+    "slug": "giants-grip"
+  },
+  {
+    "id": "1336",
+    "name": "Glacial Buckler",
+    "description": "Group damage & slow",
+    "gold": 2040,
+    "type": "Defense",
+    "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1336.jpg",
+    "slug": "glacial-buckler"
+  },
+  {
+    "id": "1728",
+    "name": "Golden Blade",
+    "description": "Keeps enhancing BA",
+    "gold": 2070,
+    "type": "Magic",
+    "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1728.jpg",
+    "slug": "golden-blade"
+  },
+  {
+    "id": "1221",
+    "name": "Grand Staff",
+    "description": "Magical Attack",
+    "gold": 820,
+    "type": "Magic",
+    "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1221.jpg",
+    "slug": "grand-staff"
+  },
+  {
+    "id": "1714",
+    "name": "Guardian",
+    "description": "Survivability aura",
+    "gold": 850,
+    "type": null,
+    "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1714.jpg",
+    "slug": "guardian"
+  },
+  {
+    "id": "1754",
+    "name": "Guardian - Radiance",
+    "description": "Area damage & vision",
+    "gold": 2080,
+    "type": null,
+    "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1754.jpg",
+    "slug": "guardian---radiance"
+  },
+  {
+    "id": "1724",
+    "name": "Guardian - Redemption",
+    "description": "Group shield",
+    "gold": 2080,
+    "type": null,
+    "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1724.jpg",
+    "slug": "guardian---redemption"
+  },
+  {
+    "id": "1725",
+    "name": "Guardian - Starspring",
+    "description": "Restores teammate Health & Mana",
+    "gold": 2080,
+    "type": null,
+    "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1725.jpg",
+    "slug": "guardian---starspring"
+  },
+  {
+    "id": "1521",
+    "name": "Guerrilla Machete",
+    "description": "Monster kills boost MATK",
+    "gold": 700,
+    "type": "Jungle",
+    "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1521.jpg",
+    "slug": "guerrilla-machete"
+  },
+  {
+    "id": "1156",
+    "name": "Haste - Sunpool",
+    "description": "Boosts attack range",
+    "gold": 3320,
+    "type": "Attack",
+    "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1156.jpg",
+    "slug": "haste---sunpool"
+  },
+  {
+    "id": "1226",
+    "name": "Holy Grail",
+    "description": "Rapid Health & Mana Regen",
+    "gold": 2020,
+    "type": "Magic",
+    "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1226.jpg",
+    "slug": "holy-grail"
+  },
+  {
+    "id": "1511",
+    "name": "Hunting Knife",
+    "description": "Speeds up jungling",
+    "gold": 250,
+    "type": "Jungle",
+    "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1511.jpg",
+    "slug": "hunting-knife"
+  },
+  {
+    "id": "1157",
+    "name": "Immovable - Sky Dome",
+    "description": "Temp. damage reduction",
+    "gold": 3280,
+    "type": "Attack",
+    "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1157.jpg",
+    "slug": "immovable---sky-dome"
+  },
+  {
+    "id": "1240",
+    "name": "Insatiable Tome",
+    "description": "Magical Lifesteal",
+    "gold": 2060,
+    "type": "Magic",
+    "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1240.jpg",
+    "slug": "insatiable-tome"
+  },
+  {
+    "id": "1111",
+    "name": "Iron Sword",
+    "description": "PATK +20",
+    "gold": 275,
+    "type": "Attack",
+    "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1111.jpg",
+    "slug": "iron-sword"
+  },
+  {
+    "id": "1701",
+    "name": "Knowledge Gem",
+    "description": "Extra Gold & EXP",
+    "gold": 300,
+    "type": null,
+    "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1701.jpg",
+    "slug": "knowledge-gem"
+  },
+  {
+    "id": "1411",
+    "name": "Lightfoot Shoes",
+    "description": "Movement Speed",
+    "gold": 250,
+    "type": "Movement",
+    "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1411.jpg",
+    "slug": "lightfoot-shoes"
+  },
+  {
+    "id": "1347",
+    "name": "Longnight Guardian",
+    "description": "Resists burst damage",
+    "gold": 2020,
+    "type": "Defense",
+    "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1347.jpg",
+    "slug": "longnight-guardian"
+  },
+  {
+    "id": "1235",
+    "name": "Mask of Agony",
+    "description": "Boosts skill damage",
+    "gold": 2080,
+    "type": "Magic",
+    "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1235.jpg",
+    "slug": "mask-of-agony"
+  },
+  {
+    "id": "1134",
+    "name": "Master Sword",
+    "description": "Enhances BA",
+    "gold": 2100,
+    "type": "Attack",
+    "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1134.jpg",
+    "slug": "master-sword"
+  },
+  {
+    "id": "1124",
+    "name": "Meteor",
+    "description": "PATK +35\nCDR +7.5%",
+    "gold": 760,
+    "type": "Attack",
+    "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1124.jpg",
+    "slug": "meteor"
+  },
+  {
+    "id": "13211",
+    "name": "Mirror of Radiance",
+    "description": "HP +450, MSPD +7.5%",
+    "gold": 800,
+    "type": "Defense",
+    "icon": "https://hokstats.gg/items/13211.png",
+    "slug": "mirror-of-radiance"
+  },
+  {
+    "id": "11210",
+    "name": "Mortal Punisher",
+    "description": "Lowers Health regen",
+    "gold": 2080,
+    "type": "Attack",
+    "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/11210.jpg",
+    "slug": "mortal-punisher"
+  },
+  {
+    "id": "1217",
+    "name": "Mystic Page",
+    "description": "Magical Lifesteal +8%",
+    "gold": 300,
+    "type": "Magic",
+    "icon": "https://hokstats.gg/items/1217.png",
+    "slug": "mystic-page"
+  },
+  {
+    "id": "1243",
+    "name": "Nebulon Wood",
+    "description": "MATK +60, HP +450",
+    "gold": 840,
+    "type": "Magic",
+    "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1243.jpg",
+    "slug": "nebulon-wood"
+  },
+  {
+    "id": "1345",
+    "name": "Nettle Gauntlet",
+    "description": "Offense & defense",
+    "gold": 750,
+    "type": "Defense",
+    "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1345.jpg",
+    "slug": "nettle-gauntlet"
+  },
+  {
+    "id": "1333",
+    "name": "Ominous Premonition",
+    "description": "Slows attackers",
+    "gold": 2020,
+    "type": "Defense",
+    "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1333.jpg",
+    "slug": "ominous-premonition"
+  },
+  {
+    "id": "1138",
+    "name": "Overlord's Might",
+    "description": "High-damage attack",
+    "gold": 2540,
+    "type": "Attack",
+    "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1138.jpg",
+    "slug": "overlords-might"
+  },
+  {
+    "id": "1332",
+    "name": "Overlord's Platemail",
+    "description": "Extra Health",
+    "gold": 2450,
+    "type": "Defense",
+    "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1332.jpg",
+    "slug": "overlords-platemail"
+  },
+  {
+    "id": "1522",
+    "name": "Patrol Axe",
+    "description": "Monster kills boost Health",
+    "gold": 700,
+    "type": "Jungle",
+    "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1522.jpg",
+    "slug": "patrol-axe"
+  },
+  {
+    "id": "11110",
+    "name": "Plume of Enchantment",
+    "description": "MSPD +5%",
+    "gold": 300,
+    "type": "Attack",
+    "icon": "https://hokstats.gg/items/11110.png",
+    "slug": "plume-of-enchantment"
+  },
+  {
+    "id": "1218",
+    "name": "Primordial Crystal",
+    "description": "CDR +5%",
+    "gold": 300,
+    "type": "Magic",
+    "icon": "https://hokstats.gg/items/1218.png",
+    "slug": "primordial-crystal"
+  },
+  {
+    "id": "1325",
+    "name": "Protector's Cuirass",
+    "description": "PDEF +150, HP +450",
+    "gold": 800,
+    "type": "Defense",
+    "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1325.jpg",
+    "slug": "protectors-cuirass"
+  },
+  {
+    "id": "1113",
+    "name": "Pugilist's Gauntlet",
+    "description": "Critical Rate",
+    "gold": 300,
+    "type": "Attack",
+    "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1113.jpg",
+    "slug": "pugilists-gauntlet"
+  },
+  {
+    "id": "11311",
+    "name": "Pure Sky",
+    "description": "Temp. damage reduction",
+    "gold": 2140,
+    "type": "Attack",
+    "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/11311.jpg",
+    "slug": "pure-sky"
+  },
+  {
+    "id": "1533",
+    "name": "Rapacious Bite",
+    "description": "Monster kills boost PATK",
+    "gold": 2160,
+    "type": "Jungle",
+    "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1533.jpg",
+    "slug": "rapacious-bite"
+  },
+  {
+    "id": "1350",
+    "name": "Ravage - Phantom",
+    "description": "Temp. shield & PATK",
+    "gold": 3350,
+    "type": "Defense",
+    "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1350.jpg",
+    "slug": "ravage---phantom"
+  },
+  {
+    "id": "1523",
+    "name": "Relentless Blade",
+    "description": "Monster kills boost PATK",
+    "gold": 700,
+    "type": "Jungle",
+    "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1523.jpg",
+    "slug": "relentless-blade"
+  },
+  {
+    "id": "1311",
+    "name": "Resilient Agate",
+    "description": "Health",
+    "gold": 300,
+    "type": "Defense",
+    "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1311.jpg",
+    "slug": "resilient-agate"
+  },
+  {
+    "id": "1531",
+    "name": "Runeblade",
+    "description": "Monster kills boost MATK",
+    "gold": 2160,
+    "type": "Jungle",
+    "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1531.jpg",
+    "slug": "runeblade"
+  },
+  {
+    "id": "1214",
+    "name": "Sage's Codex",
+    "description": "MATK +60, CDR +7.5%",
+    "gold": 800,
+    "type": "Magic",
+    "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1214.jpg",
+    "slug": "sages-codex"
+  },
+  {
+    "id": "1337",
+    "name": "Sage's Sanctuary",
+    "description": "Resurrect on the spot",
+    "gold": 2280,
+    "type": "Defense",
+    "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1337.jpg",
+    "slug": "sages-sanctuary"
+  },
+  {
+    "id": "1238",
+    "name": "Sage's Tome",
+    "description": "Great for mages",
+    "gold": 2610,
+    "type": "Magic",
+    "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1238.jpg",
+    "slug": "sages-tome"
+  },
+  {
+    "id": "1232",
+    "name": "Savant's Wrath",
+    "description": "Greatly boosts MATK",
+    "gold": 2140,
+    "type": "Magic",
+    "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1232.jpg",
+    "slug": "savants-wrath"
+  },
+  {
+    "id": "1233",
+    "name": "Scepter of Reverberation",
+    "description": "Skill hits trigger explosions",
+    "gold": 2100,
+    "type": "Magic",
+    "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1233.jpg",
+    "slug": "scepter-of-reverberation"
+  },
+  {
+    "id": "1136",
+    "name": "Shadow Ripper",
+    "description": "Crits boost ASPD",
+    "gold": 2040,
+    "type": "Attack",
+    "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1136.jpg",
+    "slug": "shadow-ripper"
+  },
+  {
+    "id": "1135",
+    "name": "Sparkforged Dagger",
+    "description": "Chain lightning BA",
+    "gold": 2040,
+    "type": "Attack",
+    "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1135.jpg",
+    "slug": "sparkforged-dagger"
+  },
+  {
+    "id": "1211",
+    "name": "Spell Tome",
+    "description": "MATK +35",
+    "gold": 275,
+    "type": "Magic",
+    "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1211.jpg",
+    "slug": "spell-tome"
+  },
+  {
+    "id": "1327",
+    "name": "Spikemail",
+    "description": "Reflects damage",
+    "gold": 2020,
+    "type": "Defense",
+    "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1327.jpg",
+    "slug": "spikemail"
+  },
+  {
+    "id": "1239",
+    "name": "Splendor",
+    "description": "Temp. invincibility",
+    "gold": 2080,
+    "type": "Magic",
+    "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1239.jpg",
+    "slug": "splendor"
+  },
+  {
+    "id": "1131",
+    "name": "Starbreaker",
+    "description": "Anti-tank",
+    "gold": 2080,
+    "type": "Attack",
+    "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1131.jpg",
+    "slug": "starbreaker"
+  },
+  {
+    "id": "1236",
+    "name": "Staves of Sorcery",
+    "description": "Enhances BA",
+    "gold": 2080,
+    "type": "Magic",
+    "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1236.jpg",
+    "slug": "staves-of-sorcery"
+  },
+  {
+    "id": "1224",
+    "name": "Stone of Sorcery",
+    "description": "MATK +60\nMSPD +7.5%",
+    "gold": 800,
+    "type": "Magic",
+    "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1224.jpg",
+    "slug": "stone-of-sorcery"
+  },
+  {
+    "id": "1121",
+    "name": "Storm Sword",
+    "description": "Physical Attack +75",
+    "gold": 850,
+    "type": "Attack",
+    "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1121.jpg",
+    "slug": "storm-sword"
+  },
+  {
+    "id": "1335",
+    "name": "Succubus Cloak",
+    "description": "Negates magical damage",
+    "gold": 2020,
+    "type": "Defense",
+    "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1335.jpg",
+    "slug": "succubus-cloak"
+  },
+  {
+    "id": "1141",
+    "name": "Sunchaser",
+    "description": "Boosts attack range",
+    "gold": 2100,
+    "type": "Attack",
+    "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1141.jpg",
+    "slug": "sunchaser"
+  },
+  {
+    "id": "1122",
+    "name": "Sunglow Striker",
+    "description": "PATK +35, HP +450",
+    "gold": 760,
+    "type": "Attack",
+    "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1122.jpg",
+    "slug": "sunglow-striker"
+  },
+  {
+    "id": "1129",
+    "name": "Swiftstrike Lance",
+    "description": "ASPD +15%, PATK +35",
+    "gold": 800,
+    "type": "Attack",
+    "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1129.jpg",
+    "slug": "swiftstrike-lance"
+  },
+  {
+    "id": "1159",
+    "name": "Tempest",
+    "description": "Stacks Attack Speed & Movement Speed",
+    "gold": 2080,
+    "type": "Attack",
+    "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1159.jpg",
+    "slug": "tempest"
+  },
+  {
+    "id": "1116",
+    "name": "Thunderclap Brand",
+    "description": "PATK +35, Crit Rate +12%",
+    "gold": 820,
+    "type": "Attack",
+    "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1116.jpg",
+    "slug": "thunderclap-brand"
+  },
+  {
+    "id": "1727",
+    "name": "Twilight Stream",
+    "description": "Boosts Magical Pierce",
+    "gold": 2040,
+    "type": "Magic",
+    "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1727.jpg",
+    "slug": "twilight-stream"
+  },
+  {
+    "id": "1123",
+    "name": "Twinblades of Destruction",
+    "description": "ASPD +15%, MSPD +7.5%",
+    "gold": 760,
+    "type": "Attack",
+    "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1123.jpg",
+    "slug": "twinblades-of-destruction"
+  },
+  {
+    "id": "1114",
+    "name": "Vampiric Scythe",
+    "description": "Physical Lifesteal",
+    "gold": 300,
+    "type": "Attack",
+    "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1114.jpg",
+    "slug": "vampiric-scythe"
+  },
+  {
+    "id": "12211",
+    "name": "Venomous Staff",
+    "description": "Lowers Health regen",
+    "gold": 2040,
+    "type": "Magic",
+    "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/12211.jpg",
+    "slug": "venomous-staff"
+  },
+  {
+    "id": "1231",
+    "name": "Void Staff",
+    "description": "Anti-tank",
+    "gold": 2040,
+    "type": "Magic",
+    "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1231.jpg",
+    "slug": "void-staff"
+  }
+]

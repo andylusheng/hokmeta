@@ -1,0 +1,147 @@
+{
+  "id": "han-xin",
+  "slug": "han-xin",
+  "name": "Han Xin",
+  "role": "Assassin",
+  "roles": "Assassin",
+  "lane": "Jungling",
+  "difficulty": "Medium",
+  "tier": "B",
+  "winRate": 52.14,
+  "pickRate": 0.6,
+  "banRate": 0.2,
+  "rank": 20,
+  "avatar": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/QTcSGEgM.png",
+  "avatarFallback": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/150/150.jpg",
+  "tencentId": 150,
+  "dataSource": "Camp HOK + HoKStats.gg (intl)",
+  "dataUpdated": "2026-06-05",
+  "skills": [
+    {
+      "slot": "passive",
+      "name": "Killing Spear",
+      "description": "Han Xin's every 4th Basic Attack launches the target. Hits from skills andenhanced Basic Attacks grant increased Attack Speed.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/150/15000.png",
+      "cooldown": null
+    },
+    {
+      "slot": "skill1",
+      "name": "Ruthless Assault",
+      "description": "Charges to the target location to deal damage and launch the enemy. The 2nd charge will not launch the enemy.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/150/15010.png",
+      "cooldown": null
+    },
+    {
+      "slot": "skill2",
+      "name": "Fight or Die!",
+      "description": "Shifts backward and enhances the next Basic Attack, causing it to deal extra damage.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/150/15020.png",
+      "cooldown": null
+    },
+    {
+      "slot": "ultimate",
+      "name": "The Unrivaled Spear",
+      "description": "Swings spear 4 times, gaining immunity to damage and crowd control. Deals damage each time and launches enemies the 4th time.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/150/15030.png",
+      "cooldown": null
+    }
+  ],
+  "build": [
+    {
+      "slot": 1,
+      "itemId": "1523",
+      "name": "Relentless Blade",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1523.jpg",
+      "description": "Monster kills boost PATK"
+    },
+    {
+      "slot": 2,
+      "itemId": "1124",
+      "name": "Meteor",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1124.jpg",
+      "description": "PATK +35\nCDR +7.5%"
+    },
+    {
+      "slot": 3,
+      "itemId": "1422",
+      "name": "Boots of Resistance",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
+      "description": "Shortens CC"
+    },
+    {
+      "slot": 4,
+      "itemId": "1158",
+      "name": "Bloodsoul",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1158.jpg",
+      "description": "PATK +35, Physical Lifesteal +12%"
+    },
+    {
+      "slot": 5,
+      "itemId": "1134",
+      "name": "Master Sword",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1134.jpg",
+      "description": "Enhances BA"
+    },
+    {
+      "slot": 6,
+      "itemId": "1137",
+      "name": "Axe of Torment",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1137.jpg",
+      "description": "Anti-squishy"
+    }
+  ],
+  "arcana": [
+    "Cataclysm"
+  ],
+  "spells": [
+    "Smite"
+  ],
+  "counters": [
+    "Lu Bu",
+    "Dun",
+    "Xiang Yu"
+  ],
+  "counteredBy": [
+    "Agudo",
+    "Alessio",
+    "Erin"
+  ],
+  "tips": [
+    "Han Xin (Assassin): Tier B on international ranked — 52.14% WR.",
+    "Primary lane: Jungling.",
+    "Build core: Relentless Blade, Meteor, Boots of Resistance."
+  ],
+  "patchHistory": [
+    {
+      "version": "Live meta",
+      "change": "Camp HOK — WR 52.14%, pick 0.6%, ban 0.2%, popularity tier B."
+    },
+    {
+      "version": "Matchups",
+      "change": "Counters Lu Bu, Dun, Xiang Yu · Weak into Agudo, Alessio, Erin."
+    }
+  ],
+  "faqs": [
+    {
+      "id": "faq-good-season",
+      "question": "Is Han Xin good in current season?",
+      "answer": "Han Xin is Tier B Assassin with 52.14% win rate, 0.6% pick rate, and 0.2% ban rate on the international server (Camp HOK)."
+    },
+    {
+      "id": "faq-best-build",
+      "question": "What is the best Han Xin build?",
+      "answer": "Recommended item path: Relentless Blade, Meteor, Boots of Resistance, Bloodsoul, Master Sword, Axe of Torment. Spells and Arcana are listed on this page."
+    },
+    {
+      "id": "faq-counter",
+      "question": "How to counter Han Xin?",
+      "answer": "Strong picks into Han Xin: Agudo, Alessio, Erin. Han Xin is strong into Lu Bu, Dun, Xiang Yu."
+    }
+  ],
+  "metaAnalysis": [
+    "Han Xin win rate 52.14% (Camp HOK, 2026-06-04).",
+    "Pick rate 0.6% in global ranked.",
+    "Ban rate 0.2%.",
+    "Counters: Lu Bu, Dun, Xiang Yu. Countered by: Agudo, Alessio, Erin."
+  ]
+}

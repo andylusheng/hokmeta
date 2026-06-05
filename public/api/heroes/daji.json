@@ -1,0 +1,145 @@
+{
+  "id": "daji",
+  "slug": "daji",
+  "name": "Daji",
+  "role": "Mage",
+  "roles": "Mage",
+  "lane": "Mid Lane",
+  "difficulty": "Medium",
+  "tier": "S+",
+  "winRate": 51.03,
+  "pickRate": 2.38,
+  "banRate": 3.13,
+  "rank": 53,
+  "avatar": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/dYxuS6IA.png",
+  "avatarFallback": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/109/109.jpg",
+  "tencentId": 109,
+  "dataSource": "Camp HOK + HoKStats.gg (intl)",
+  "dataUpdated": "2026-06-05",
+  "skills": [
+    {
+      "slot": "passive",
+      "name": "Captivate",
+      "description": "Skill hits reduce the enemy's Magical Defense (up to 3 stacks).",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/109/10900.png",
+      "cooldown": null
+    },
+    {
+      "slot": "skill1",
+      "name": "Soul Impact",
+      "description": "Unleashes a shockwave in the target direction, dealing damage.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/109/10910.png",
+      "cooldown": null
+    },
+    {
+      "slot": "skill2",
+      "name": "Strike a Pose",
+      "description": "Casts a love spell at the target, dealing damage and stunning them.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/109/10920.png",
+      "cooldown": null
+    },
+    {
+      "slot": "ultimate",
+      "name": "Heartbreaker",
+      "description": "Deals damage to random enemies within range 5 times.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/109/10930.png",
+      "cooldown": null
+    }
+  ],
+  "build": [
+    {
+      "slot": 1,
+      "itemId": "1426",
+      "name": "Boots of Deftness",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1426.jpg",
+      "description": "Extra Movement Speed"
+    },
+    {
+      "slot": 2,
+      "itemId": "1224",
+      "name": "Stone of Sorcery",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1224.jpg",
+      "description": "MATK +60\nMSPD +7.5%"
+    },
+    {
+      "slot": 3,
+      "itemId": "1233",
+      "name": "Scepter of Reverberation",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1233.jpg",
+      "description": "Skill hits trigger explosions"
+    },
+    {
+      "slot": 4,
+      "itemId": "1232",
+      "name": "Savant's Wrath",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1232.jpg",
+      "description": "Greatly boosts MATK"
+    },
+    {
+      "slot": 5,
+      "itemId": "1243",
+      "name": "Nebulon Wood",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1243.jpg",
+      "description": "MATK +60, HP +450"
+    },
+    {
+      "slot": 6,
+      "itemId": "1231",
+      "name": "Void Staff",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1231.jpg",
+      "description": "Anti-tank"
+    }
+  ],
+  "arcana": [
+    "Nightmare"
+  ],
+  "spells": [
+    "Flash"
+  ],
+  "counters": [
+    "Luna",
+    "Diaochan"
+  ],
+  "counteredBy": [
+    "Gao Changgong",
+    "Mulan"
+  ],
+  "tips": [
+    "Daji (Mage): Tier S+ on international ranked — 51.03% WR.",
+    "Primary lane: Mid Lane.",
+    "Build core: Boots of Deftness, Stone of Sorcery, Scepter of Reverberation."
+  ],
+  "patchHistory": [
+    {
+      "version": "Live meta",
+      "change": "Camp HOK — WR 51.03%, pick 2.38%, ban 3.13%, popularity tier S+."
+    },
+    {
+      "version": "Matchups",
+      "change": "Counters Luna, Diaochan · Weak into Gao Changgong, Mulan."
+    }
+  ],
+  "faqs": [
+    {
+      "id": "faq-good-season",
+      "question": "Is Daji good in current season?",
+      "answer": "Daji is Tier S+ Mage with 51.03% win rate, 2.38% pick rate, and 3.13% ban rate on the international server (Camp HOK)."
+    },
+    {
+      "id": "faq-best-build",
+      "question": "What is the best Daji build?",
+      "answer": "Recommended item path: Boots of Deftness, Stone of Sorcery, Scepter of Reverberation, Savant's Wrath, Nebulon Wood, Void Staff. Spells and Arcana are listed on this page."
+    },
+    {
+      "id": "faq-counter",
+      "question": "How to counter Daji?",
+      "answer": "Strong picks into Daji: Gao Changgong, Mulan. Daji is strong into Luna, Diaochan."
+    }
+  ],
+  "metaAnalysis": [
+    "Daji win rate 51.03% (Camp HOK, 2026-06-04).",
+    "Pick rate 2.38% in global ranked.",
+    "Ban rate 3.13%.",
+    "Counters: Luna, Diaochan. Countered by: Gao Changgong, Mulan."
+  ]
+}

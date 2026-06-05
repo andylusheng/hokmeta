@@ -1,0 +1,146 @@
+{
+  "id": "sun-bin",
+  "slug": "sun-bin",
+  "name": "Sun Bin",
+  "role": "Support",
+  "roles": "Support, Mage",
+  "lane": "Roaming",
+  "difficulty": "Easy",
+  "tier": "B",
+  "winRate": 50.21,
+  "pickRate": 0.4,
+  "banRate": 0.03,
+  "rank": 69,
+  "avatar": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/1zkBQ1l1.png",
+  "avatarFallback": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/118/118.jpg",
+  "tencentId": 118,
+  "dataSource": "Camp HOK + HoKStats.gg (intl)",
+  "dataUpdated": "2026-06-05",
+  "skills": [
+    {
+      "slot": "passive",
+      "name": "Hourglass of Time",
+      "description": "Gains a Movement Speed bonus after using skills.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/118/11800.png",
+      "cooldown": null
+    },
+    {
+      "slot": "skill1",
+      "name": "Time Bomb",
+      "description": "Fires a bomb in the target direction, which deals damage and attaches itself to the hit enemy. After a brief delay, inflicts AoE damage and slow.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/118/11810.png",
+      "cooldown": null
+    },
+    {
+      "slot": "skill2",
+      "name": "Time Flux",
+      "description": "Timebender and nearby teammates within range gain increased Movement Speed. When the effect ends, restores Health equal to 25% of the damage taken while the effect was active. Passive: Gains Cooldown Reduction.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/118/11820.png",
+      "cooldown": null
+    },
+    {
+      "slot": "ultimate",
+      "name": "Time Lapse",
+      "description": "Throws a bomb in the target direction, inflicting AoE damage, slow, and silence upon coming in contact with an enemy or reaching its max range. After a brief delay, the bomb deals AoE damage again.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/118/11830.png",
+      "cooldown": null
+    }
+  ],
+  "build": [
+    {
+      "slot": 1,
+      "itemId": "1701",
+      "name": "Knowledge Gem",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1701.jpg",
+      "description": "Extra Gold & EXP"
+    },
+    {
+      "slot": 2,
+      "itemId": "1714",
+      "name": "Guardian",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1714.jpg",
+      "description": "Survivability aura"
+    },
+    {
+      "slot": 3,
+      "itemId": "1423",
+      "name": "Boots of Tranquility",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1423.jpg",
+      "description": "Reduces Skill CD"
+    },
+    {
+      "slot": 4,
+      "itemId": "1754",
+      "name": "Guardian - Radiance",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1754.jpg",
+      "description": "Area damage & vision"
+    },
+    {
+      "slot": 5,
+      "itemId": "1336",
+      "name": "Glacial Buckler",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1336.jpg",
+      "description": "Group damage & slow"
+    },
+    {
+      "slot": 6,
+      "itemId": "1424",
+      "name": "Boots of the Arcane",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1424.jpg",
+      "description": "Magical Pierce"
+    }
+  ],
+  "arcana": [
+    "Nightmare"
+  ],
+  "spells": [
+    "Heal"
+  ],
+  "counters": [
+    "Kaizer",
+    "Musashi"
+  ],
+  "counteredBy": [
+    "Data unavailable",
+    "Data unavailable",
+    "Data unavailable"
+  ],
+  "tips": [
+    "Sun Bin (Support): Tier B on international ranked — 50.21% WR.",
+    "Primary lane: Roaming.",
+    "Build core: Knowledge Gem, Guardian, Boots of Tranquility."
+  ],
+  "patchHistory": [
+    {
+      "version": "Live meta",
+      "change": "Camp HOK — WR 50.21%, pick 0.4%, ban 0.03%, popularity tier B."
+    },
+    {
+      "version": "Matchups",
+      "change": "Counters Kaizer, Musashi · Weak into Data unavailable, Data unavailable, Data unavailable."
+    }
+  ],
+  "faqs": [
+    {
+      "id": "faq-good-season",
+      "question": "Is Sun Bin good in current season?",
+      "answer": "Sun Bin is Tier B Support with 50.21% win rate, 0.4% pick rate, and 0.03% ban rate on the international server (Camp HOK)."
+    },
+    {
+      "id": "faq-best-build",
+      "question": "What is the best Sun Bin build?",
+      "answer": "Recommended item path: Knowledge Gem, Guardian, Boots of Tranquility, Guardian - Radiance, Glacial Buckler, Boots of the Arcane. Spells and Arcana are listed on this page."
+    },
+    {
+      "id": "faq-counter",
+      "question": "How to counter Sun Bin?",
+      "answer": "Strong picks into Sun Bin: Data unavailable, Data unavailable, Data unavailable. Sun Bin is strong into Kaizer, Musashi."
+    }
+  ],
+  "metaAnalysis": [
+    "Sun Bin win rate 50.21% (Camp HOK, 2026-06-04).",
+    "Pick rate 0.4% in global ranked.",
+    "Ban rate 0.03%.",
+    "Counters: Kaizer, Musashi. Countered by: Data unavailable, Data unavailable, Data unavailable."
+  ]
+}

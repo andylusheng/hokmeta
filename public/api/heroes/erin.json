@@ -1,0 +1,146 @@
+{
+  "id": "erin",
+  "slug": "erin",
+  "name": "Erin",
+  "role": "Marksman",
+  "roles": "Marksman",
+  "lane": "Farm Lane",
+  "difficulty": "Medium",
+  "tier": "S",
+  "winRate": 51.52,
+  "pickRate": 1.5,
+  "banRate": 0.16,
+  "rank": 36,
+  "avatar": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/joVNQWhw.png",
+  "avatarFallback": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/155/155.jpg",
+  "tencentId": 155,
+  "dataSource": "Camp HOK + HoKStats.gg (intl)",
+  "dataUpdated": "2026-06-05",
+  "skills": [
+    {
+      "slot": "passive",
+      "name": "Elf Dance",
+      "description": "Her Basic Attack grants Energy. At max Energy, she speeds up, gains a stack of Laurel, and enhances her next Basic Attack. The speed-up increases with her Magical Attack. Her Pierce and Lifesteal stats are linked, using whichever is higher.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/155/15500.png",
+      "cooldown": null
+    },
+    {
+      "slot": "skill1",
+      "name": "Dance - Leaf Greeting",
+      "description": "Shoots a leaf to deal damage and gain marks. The leaf then forms a circle, damaging and slowing enemies. Magical Attack reduces the skill's cooldown.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/155/15510.png",
+      "cooldown": null
+    },
+    {
+      "slot": "skill2",
+      "name": "Twirl - Forest Whisper",
+      "description": "Recovers full Energy and gains marks, immunity to slow, and Attack Speed.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/155/15520.png",
+      "cooldown": null
+    },
+    {
+      "slot": "ultimate",
+      "name": "Waltz - Laurel Bloom",
+      "description": "This skill is unlocked when Erin gains enough Laurels. She consumes Laurels to deal damage and gain Movement Speed, while reducing the cooldown of Skill 2.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/155/15530.png",
+      "cooldown": null
+    }
+  ],
+  "build": [
+    {
+      "slot": 1,
+      "itemId": "1129",
+      "name": "Swiftstrike Lance",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1129.jpg",
+      "description": "ASPD +15%, PATK +35"
+    },
+    {
+      "slot": 2,
+      "itemId": "1424",
+      "name": "Boots of the Arcane",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1424.jpg",
+      "description": "Magical Pierce"
+    },
+    {
+      "slot": 3,
+      "itemId": "1136",
+      "name": "Shadow Ripper",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1136.jpg",
+      "description": "Crits boost ASPD"
+    },
+    {
+      "slot": 4,
+      "itemId": "1121",
+      "name": "Storm Sword",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1121.jpg",
+      "description": "Physical Attack +75"
+    },
+    {
+      "slot": 5,
+      "itemId": "1133",
+      "name": "Eternity Blade",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1133.jpg",
+      "description": "High crit damage"
+    },
+    {
+      "slot": 6,
+      "itemId": "1132",
+      "name": "Bloodweeper",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1132.jpg",
+      "description": "Physical Lifesteal"
+    }
+  ],
+  "arcana": [
+    "Red"
+  ],
+  "spells": [
+    "Haste",
+    "Flash"
+  ],
+  "counters": [
+    "Ying",
+    "Han Xin",
+    "Lam"
+  ],
+  "counteredBy": [
+    "Dun"
+  ],
+  "tips": [
+    "Erin (Marksman): Tier S on international ranked — 51.52% WR.",
+    "Primary lane: Farm Lane.",
+    "Build core: Swiftstrike Lance, Boots of the Arcane, Shadow Ripper."
+  ],
+  "patchHistory": [
+    {
+      "version": "Live meta",
+      "change": "Camp HOK — WR 51.52%, pick 1.5%, ban 0.16%, popularity tier S."
+    },
+    {
+      "version": "Matchups",
+      "change": "Counters Ying, Han Xin, Lam · Weak into Dun."
+    }
+  ],
+  "faqs": [
+    {
+      "id": "faq-good-season",
+      "question": "Is Erin good in current season?",
+      "answer": "Erin is Tier S Marksman with 51.52% win rate, 1.5% pick rate, and 0.16% ban rate on the international server (Camp HOK)."
+    },
+    {
+      "id": "faq-best-build",
+      "question": "What is the best Erin build?",
+      "answer": "Recommended item path: Swiftstrike Lance, Boots of the Arcane, Shadow Ripper, Storm Sword, Eternity Blade, Bloodweeper. Spells and Arcana are listed on this page."
+    },
+    {
+      "id": "faq-counter",
+      "question": "How to counter Erin?",
+      "answer": "Strong picks into Erin: Dun. Erin is strong into Ying, Han Xin, Lam."
+    }
+  ],
+  "metaAnalysis": [
+    "Erin win rate 51.52% (Camp HOK, 2026-06-04).",
+    "Pick rate 1.5% in global ranked.",
+    "Ban rate 0.16%.",
+    "Counters: Ying, Han Xin, Lam. Countered by: Dun."
+  ]
+}

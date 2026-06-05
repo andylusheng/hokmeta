@@ -1,0 +1,148 @@
+{
+  "id": "huang-zhong",
+  "slug": "huang-zhong",
+  "name": "Huang Zhong",
+  "role": "Marksman",
+  "roles": "Marksman",
+  "lane": "Farm Lane",
+  "difficulty": "Medium",
+  "tier": "B",
+  "winRate": 51.19,
+  "pickRate": 0.49,
+  "banRate": 0.02,
+  "rank": 47,
+  "avatar": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/LNECT7PW.png",
+  "avatarFallback": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/192/192.jpg",
+  "tencentId": 192,
+  "dataSource": "Camp HOK + HoKStats.gg (intl)",
+  "dataUpdated": "2026-06-05",
+  "skills": [
+    {
+      "slot": "passive",
+      "name": "Gunner's Spirit",
+      "description": "Basic Attacks increase attack and Critical Rate",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/192/19200.png",
+      "cooldown": null
+    },
+    {
+      "slot": "skill1",
+      "name": "Unleash Your Potential",
+      "description": "Gains Movement Speed and permanently increased attack. Cast while in Cannon form to immediately exit the state.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/192/19210.png",
+      "cooldown": null
+    },
+    {
+      "slot": "skill2",
+      "name": "Lay the Mines",
+      "description": "Places a trap in the target area. The trap grants vision of enemies that touchit, while also inflicting damage, slow, and Sunder on them and granting Huang Zhong a shield.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/192/19220.png",
+      "cooldown": null
+    },
+    {
+      "slot": "ultimate",
+      "name": "Bring out the Artillery",
+      "description": "Huang Zhong dashes for a certain distance and deploys a turret while refreshing his Skill 1. He becomes immobile, gains range and Physical and Magical Defense Basic Attacks deal area damage.The turret will be deactivated after a certain number of Basic Attacks.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/192/19230.png",
+      "cooldown": null
+    }
+  ],
+  "build": [
+    {
+      "slot": 1,
+      "itemId": "1425",
+      "name": "Boots of Dexterity",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1425.jpg",
+      "description": "Boosts ASPD"
+    },
+    {
+      "slot": 2,
+      "itemId": "1136",
+      "name": "Shadow Ripper",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1136.jpg",
+      "description": "Crits boost ASPD"
+    },
+    {
+      "slot": 3,
+      "itemId": "1133",
+      "name": "Eternity Blade",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1133.jpg",
+      "description": "High crit damage"
+    },
+    {
+      "slot": 4,
+      "itemId": "1159",
+      "name": "Tempest",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1159.jpg",
+      "description": "Stacks Attack Speed & Movement Speed"
+    },
+    {
+      "slot": 5,
+      "itemId": "1155",
+      "name": "Daybreaker's Virtue",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1155.jpg",
+      "description": "Great for marksmen"
+    },
+    {
+      "slot": 6,
+      "itemId": "1141",
+      "name": "Sunchaser",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1141.jpg",
+      "description": "Boosts attack range"
+    }
+  ],
+  "arcana": [
+    "Red"
+  ],
+  "spells": [
+    "Haste",
+    "Flash"
+  ],
+  "counters": [
+    "Xuance",
+    "Mai Shiranui",
+    "Jing"
+  ],
+  "counteredBy": [
+    "Data unavailable",
+    "Data unavailable",
+    "Data unavailable"
+  ],
+  "tips": [
+    "Huang Zhong (Marksman): Tier B on international ranked — 51.19% WR.",
+    "Primary lane: Farm Lane.",
+    "Build core: Boots of Dexterity, Shadow Ripper, Eternity Blade."
+  ],
+  "patchHistory": [
+    {
+      "version": "Live meta",
+      "change": "Camp HOK — WR 51.19%, pick 0.49%, ban 0.02%, popularity tier B."
+    },
+    {
+      "version": "Matchups",
+      "change": "Counters Xuance, Mai Shiranui, Jing · Weak into Data unavailable, Data unavailable, Data unavailable."
+    }
+  ],
+  "faqs": [
+    {
+      "id": "faq-good-season",
+      "question": "Is Huang Zhong good in current season?",
+      "answer": "Huang Zhong is Tier B Marksman with 51.19% win rate, 0.49% pick rate, and 0.02% ban rate on the international server (Camp HOK)."
+    },
+    {
+      "id": "faq-best-build",
+      "question": "What is the best Huang Zhong build?",
+      "answer": "Recommended item path: Boots of Dexterity, Shadow Ripper, Eternity Blade, Tempest, Daybreaker's Virtue, Sunchaser. Spells and Arcana are listed on this page."
+    },
+    {
+      "id": "faq-counter",
+      "question": "How to counter Huang Zhong?",
+      "answer": "Strong picks into Huang Zhong: Data unavailable, Data unavailable, Data unavailable. Huang Zhong is strong into Xuance, Mai Shiranui, Jing."
+    }
+  ],
+  "metaAnalysis": [
+    "Huang Zhong win rate 51.19% (Camp HOK, 2026-06-04).",
+    "Pick rate 0.49% in global ranked.",
+    "Ban rate 0.02%.",
+    "Counters: Xuance, Mai Shiranui, Jing. Countered by: Data unavailable, Data unavailable, Data unavailable."
+  ]
+}

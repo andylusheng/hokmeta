@@ -1,0 +1,148 @@
+{
+  "id": "chicha",
+  "slug": "chicha",
+  "name": "Chicha",
+  "role": "Warrior",
+  "roles": "Fighter",
+  "lane": "Clash Lane",
+  "difficulty": "Medium",
+  "tier": "S",
+  "winRate": 50.17,
+  "pickRate": 1.47,
+  "banRate": 0.37,
+  "rank": 71,
+  "avatar": "https://camp.honorofkings.com/camp/admin/hero/head_128-128/lkU98jAV.png",
+  "avatarFallback": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/172/172.jpg",
+  "tencentId": 172,
+  "dataSource": "Camp HOK + HoKStats.gg (intl)",
+  "dataUpdated": "2026-06-05",
+  "skills": [
+    {
+      "slot": "passive",
+      "name": "Forge Inheritor",
+      "description": "Basic Attacks restore Health and switch her weapons and combat forms. When hitting enemies with Basic Attacks or skills, she gains Attack Speed.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/172/17200.png",
+      "cooldown": null
+    },
+    {
+      "slot": "skill1",
+      "name": "Peak-Crushing Polearm",
+      "description": "Dashes in the target direction, dealing damage to enemies in her path and launching them.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/172/17210.png",
+      "cooldown": null
+    },
+    {
+      "slot": "skill2",
+      "name": "World-Splitting Spear",
+      "description": "Thrusts forward in the target direction, dealing damage, knocking enemies back, and recovering Health.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/172/17220.png",
+      "cooldown": null
+    },
+    {
+      "slot": "ultimate",
+      "name": "Return of the Armsmaster",
+      "description": "Enhances herself, gaining Movement Speed and Attack Speed, and breaking the Fighting Spirit stack limit. Her Basic Attacks will also deal extra damage, and she will be able to use them while moving.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/172/17230.png",
+      "cooldown": null
+    }
+  ],
+  "build": [
+    {
+      "slot": 1,
+      "itemId": "1425",
+      "name": "Boots of Dexterity",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1425.jpg",
+      "description": "Boosts ASPD"
+    },
+    {
+      "slot": 2,
+      "itemId": "1135",
+      "name": "Sparkforged Dagger",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1135.jpg",
+      "description": "Chain lightning BA"
+    },
+    {
+      "slot": 3,
+      "itemId": "1328",
+      "name": "Blood Rage",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1328.jpg",
+      "description": "Grants temporary shield"
+    },
+    {
+      "slot": 4,
+      "itemId": "1333",
+      "name": "Ominous Premonition",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1333.jpg",
+      "description": "Slows attackers"
+    },
+    {
+      "slot": 5,
+      "itemId": "1331",
+      "name": "Blazing Cape",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1331.jpg",
+      "description": "Burns nearby enemies"
+    },
+    {
+      "slot": 6,
+      "itemId": "1335",
+      "name": "Succubus Cloak",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1335.jpg",
+      "description": "Negates magical damage"
+    }
+  ],
+  "arcana": [
+    "Penetration"
+  ],
+  "spells": [
+    "Flash",
+    "Execute"
+  ],
+  "counters": [
+    "Data unavailable",
+    "Data unavailable",
+    "Data unavailable"
+  ],
+  "counteredBy": [
+    "Data unavailable",
+    "Data unavailable",
+    "Data unavailable"
+  ],
+  "tips": [
+    "Chicha (Warrior): Tier S on international ranked — 50.17% WR.",
+    "Primary lane: Clash Lane.",
+    "Build core: Boots of Dexterity, Sparkforged Dagger, Blood Rage."
+  ],
+  "patchHistory": [
+    {
+      "version": "Live meta",
+      "change": "Camp HOK — WR 50.17%, pick 1.47%, ban 0.37%, popularity tier S."
+    },
+    {
+      "version": "Matchups",
+      "change": "Counters Data unavailable, Data unavailable, Data unavailable · Weak into Data unavailable, Data unavailable, Data unavailable."
+    }
+  ],
+  "faqs": [
+    {
+      "id": "faq-good-season",
+      "question": "Is Chicha good in current season?",
+      "answer": "Chicha is Tier S Warrior with 50.17% win rate, 1.47% pick rate, and 0.37% ban rate on the international server (Camp HOK)."
+    },
+    {
+      "id": "faq-best-build",
+      "question": "What is the best Chicha build?",
+      "answer": "Recommended item path: Boots of Dexterity, Sparkforged Dagger, Blood Rage, Ominous Premonition, Blazing Cape, Succubus Cloak. Spells and Arcana are listed on this page."
+    },
+    {
+      "id": "faq-counter",
+      "question": "How to counter Chicha?",
+      "answer": "Strong picks into Chicha: Data unavailable, Data unavailable, Data unavailable. Chicha is strong into Data unavailable, Data unavailable, Data unavailable."
+    }
+  ],
+  "metaAnalysis": [
+    "Chicha win rate 50.17% (Camp HOK, 2026-06-04).",
+    "Pick rate 1.47% in global ranked.",
+    "Ban rate 0.37%.",
+    "Counters: Data unavailable, Data unavailable, Data unavailable. Countered by: Data unavailable, Data unavailable, Data unavailable."
+  ]
+}

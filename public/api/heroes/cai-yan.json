@@ -2,48 +2,100 @@
   "id": "cai-yan",
   "slug": "cai-yan",
   "name": "Cai Yan",
-  "role": "Mage",
-  "difficulty": "Medium",
+  "role": "Support",
+  "roles": "Support",
+  "lane": "Roaming",
+  "difficulty": "Easy",
   "tier": "S",
   "winRate": 50.31,
   "pickRate": 1.27,
   "banRate": 1.89,
-  "rank": 12,
+  "rank": 68,
   "avatar": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/kQXkW7ab.png",
+  "avatarFallback": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/184/184.jpg",
+  "tencentId": 184,
+  "dataSource": "Camp HOK + HoKStats.gg (intl)",
+  "dataUpdated": "2026-06-05",
+  "skills": [
+    {
+      "slot": "passive",
+      "name": "Can't Touch This",
+      "description": "Periodic Passive Effect: Restores Health and gains a Movement Speedbonus when taking damage.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/184/18400.png",
+      "cooldown": null
+    },
+    {
+      "slot": "skill1",
+      "name": "Healing Hymn",
+      "description": "Continuously restores Health to nearby allies in range while gaining",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/184/18410.png",
+      "cooldown": null
+    },
+    {
+      "slot": "skill2",
+      "name": "Earworm",
+      "description": "Fires a sound wave in the target direction, stunning and dealing damage to enemies hit. Sound waves bounce between nearby enemies.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/184/18420.png",
+      "cooldown": null
+    },
+    {
+      "slot": "ultimate",
+      "name": "Tune of Tranquility",
+      "description": "Continuously heals the nearby ally with the lowest Health within rangewhile granting them increased Physical and Magical Defense.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/184/18430.png",
+      "cooldown": null
+    }
+  ],
   "build": [
     {
-      "name": "Arcane",
-      "slot": 1
+      "slot": 1,
+      "itemId": "1423",
+      "name": "Boots of Tranquility",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1423.jpg",
+      "description": "Reduces Skill CD"
     },
     {
-      "name": "Swift",
-      "slot": 2
+      "slot": 2,
+      "itemId": "1226",
+      "name": "Holy Grail",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1226.jpg",
+      "description": "Rapid Health & Mana Regen"
     },
     {
-      "name": "Lightning",
-      "slot": 3
+      "slot": 3,
+      "itemId": "1237",
+      "name": "Augur's Word",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1237.jpg",
+      "description": "Offense & defense"
     },
     {
-      "name": "Robe",
-      "slot": 4
+      "slot": 4,
+      "itemId": "12211",
+      "name": "Venomous Staff",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/12211.jpg",
+      "description": "Lowers Health regen"
     },
     {
-      "name": "Brilliant",
-      "slot": 5
+      "slot": 5,
+      "itemId": "1239",
+      "name": "Splendor",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1239.jpg",
+      "description": "Temp. invincibility"
     },
     {
-      "name": "Dominance",
-      "slot": 6
+      "slot": 6,
+      "itemId": null,
+      "name": "Data unavailable",
+      "icon": null,
+      "description": null
     }
   ],
   "arcana": [
-    "AP",
-    "CDR",
-    "Mana"
+    "Fate"
   ],
   "spells": [
-    "Flash",
-    "Punish"
+    "Smite",
+    "Heal"
   ],
   "counters": [
     "Diaochan",
@@ -54,49 +106,41 @@
     "Mulan"
   ],
   "tips": [
-    "Cai Yan: prioritize B tier Mage power spikes from patch history.",
-    "Watch pick rate — pick data unavailable.",
-    "Lane into Musashi with listed build order."
+    "Cai Yan (Support): Tier S on international ranked — 50.31% WR.",
+    "Primary lane: Roaming.",
+    "Build core: Boots of Tranquility, Holy Grail, Augur's Word."
   ],
   "patchHistory": [
     {
       "version": "Live meta",
-      "change": "Camp HOK ranked stats — WR 50.31%, pick 1.27%, ban 1.89%, tier band A."
+      "change": "Camp HOK — WR 50.31%, pick 1.27%, ban 1.89%, popularity tier S."
     },
     {
       "version": "Matchups",
-      "change": "Counters Diaochan, Arke · Weak into Gao Changgong, Mulan (Tencent hero data)."
-    },
-    {
-      "version": "S37",
-      "change": "Data unavailable"
+      "change": "Counters Diaochan, Arke · Weak into Gao Changgong, Mulan."
     }
   ],
   "faqs": [
     {
       "id": "faq-good-season",
       "question": "Is Cai Yan good in current season?",
-      "answer": "Cai Yan shows 50.31% win rate, 1.27% pick rate, 1.89% ban rate (Camp HOK). Tier S Mage."
+      "answer": "Cai Yan is Tier S Support with 50.31% win rate, 1.27% pick rate, and 1.89% ban rate on the international server (Camp HOK)."
     },
     {
       "id": "faq-best-build",
       "question": "What is the best Cai Yan build?",
-      "answer": "Core item path for Cai Yan: Arcane, Swift, Lightning, Robe, Brilliant, Dominance. Spells and arcana sets are listed in the Build section. Adjust final slot by enemy Musashi."
+      "answer": "Recommended item path: Boots of Tranquility, Holy Grail, Augur's Word, Venomous Staff, Splendor, Data unavailable. Spells and Arcana are listed on this page."
     },
     {
       "id": "faq-counter",
       "question": "How to counter Cai Yan?",
-      "answer": "Use Diaochan, Arke. Ban rate 1.89% reflects draft priority against Cai Yan."
+      "answer": "Strong picks into Cai Yan: Gao Changgong, Mulan. Cai Yan is strong into Diaochan, Arke."
     }
   ],
   "metaAnalysis": [
     "Cai Yan win rate 50.31% (Camp HOK, 2026-06-04).",
-    "Pick rate 1.27% for Cai Yan in current ranked meta.",
-    "Ban rate 1.89% — moderate bans.",
+    "Pick rate 1.27% in global ranked.",
+    "Ban rate 1.89%.",
     "Counters: Diaochan, Arke. Countered by: Gao Changgong, Mulan."
-  ],
-  "tencentId": 184,
-  "avatarFallback": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/184/184.jpg",
-  "dataSource": "Camp HOK + Tencent official",
-  "dataUpdated": "2026-06-04"
+  ]
 }

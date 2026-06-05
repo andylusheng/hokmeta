@@ -1,0 +1,147 @@
+{
+  "id": "lady-zhen",
+  "slug": "lady-zhen",
+  "name": "Lady Zhen",
+  "role": "Mage",
+  "roles": "Mage",
+  "lane": "Mid Lane",
+  "difficulty": "Medium",
+  "tier": "A",
+  "winRate": 51.37,
+  "pickRate": 1.02,
+  "banRate": 0.05,
+  "rank": 43,
+  "avatar": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/gqPEOybC.png",
+  "avatarFallback": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/127/127.jpg",
+  "tencentId": 127,
+  "dataSource": "Camp HOK + HoKStats.gg (intl)",
+  "dataUpdated": "2026-06-05",
+  "skills": [
+    {
+      "slot": "passive",
+      "name": "Frozen Touch",
+      "description": "Places marks on enemies when hitting them with skills, for up to 3 stacks. Upon reaching max stacks, she freezes and damages the enemy.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/127/12700.png",
+      "cooldown": null
+    },
+    {
+      "slot": "skill1",
+      "name": "Ocean of Tears",
+      "description": "Damages and launches enemies within the target area",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/127/12710.png",
+      "cooldown": null
+    },
+    {
+      "slot": "skill2",
+      "name": "Flowing Sigh",
+      "description": "Fires a water orb at the target, which deals damage and bounces between nearby enemies.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/127/12720.png",
+      "cooldown": null
+    },
+    {
+      "slot": "ultimate",
+      "name": "Destructive Deluge",
+      "description": "Fires a stream of water in the target direction. For a period of time after hitting an enemy hero or reaching its maximum range, the stream of water reforms into a pool, dealing damage and slowing enemies within it.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/127/12730.png",
+      "cooldown": null
+    }
+  ],
+  "build": [
+    {
+      "slot": 1,
+      "itemId": "1423",
+      "name": "Boots of Tranquility",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1423.jpg",
+      "description": "Reduces Skill CD"
+    },
+    {
+      "slot": 2,
+      "itemId": "1226",
+      "name": "Holy Grail",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1226.jpg",
+      "description": "Rapid Health & Mana Regen"
+    },
+    {
+      "slot": 3,
+      "itemId": "12211",
+      "name": "Venomous Staff",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/12211.jpg",
+      "description": "Lowers Health regen"
+    },
+    {
+      "slot": 4,
+      "itemId": "1233",
+      "name": "Scepter of Reverberation",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1233.jpg",
+      "description": "Skill hits trigger explosions"
+    },
+    {
+      "slot": 5,
+      "itemId": "1237",
+      "name": "Augur's Word",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1237.jpg",
+      "description": "Offense & defense"
+    },
+    {
+      "slot": 6,
+      "itemId": "1244",
+      "name": "Breakthrough Robe",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1244.jpg",
+      "description": "Converts Health into M. Pierce"
+    }
+  ],
+  "arcana": [
+    "Nightmare"
+  ],
+  "spells": [
+    "Flash"
+  ],
+  "counters": [
+    "Cirrus",
+    "Nakoruru",
+    "Sima Yi"
+  ],
+  "counteredBy": [
+    "Charlotte",
+    "Liu Bei",
+    "Luna"
+  ],
+  "tips": [
+    "Lady Zhen (Mage): Tier A on international ranked — 51.37% WR.",
+    "Primary lane: Mid Lane.",
+    "Build core: Boots of Tranquility, Holy Grail, Venomous Staff."
+  ],
+  "patchHistory": [
+    {
+      "version": "Live meta",
+      "change": "Camp HOK — WR 51.37%, pick 1.02%, ban 0.05%, popularity tier A."
+    },
+    {
+      "version": "Matchups",
+      "change": "Counters Cirrus, Nakoruru, Sima Yi · Weak into Charlotte, Liu Bei, Luna."
+    }
+  ],
+  "faqs": [
+    {
+      "id": "faq-good-season",
+      "question": "Is Lady Zhen good in current season?",
+      "answer": "Lady Zhen is Tier A Mage with 51.37% win rate, 1.02% pick rate, and 0.05% ban rate on the international server (Camp HOK)."
+    },
+    {
+      "id": "faq-best-build",
+      "question": "What is the best Lady Zhen build?",
+      "answer": "Recommended item path: Boots of Tranquility, Holy Grail, Venomous Staff, Scepter of Reverberation, Augur's Word, Breakthrough Robe. Spells and Arcana are listed on this page."
+    },
+    {
+      "id": "faq-counter",
+      "question": "How to counter Lady Zhen?",
+      "answer": "Strong picks into Lady Zhen: Charlotte, Liu Bei, Luna. Lady Zhen is strong into Cirrus, Nakoruru, Sima Yi."
+    }
+  ],
+  "metaAnalysis": [
+    "Lady Zhen win rate 51.37% (Camp HOK, 2026-06-04).",
+    "Pick rate 1.02% in global ranked.",
+    "Ban rate 0.05%.",
+    "Counters: Cirrus, Nakoruru, Sima Yi. Countered by: Charlotte, Liu Bei, Luna."
+  ]
+}

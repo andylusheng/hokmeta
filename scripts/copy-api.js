@@ -5,6 +5,10 @@ const root = path.join(__dirname, '..');
 const heroes = JSON.parse(
   fs.readFileSync(path.join(root, 'data', 'heroes.json'), 'utf8')
 );
+const itemsPath = path.join(root, 'data', 'items.json');
+const items = fs.existsSync(itemsPath)
+  ? JSON.parse(fs.readFileSync(itemsPath, 'utf8'))
+  : [];
 
 const outDir = path.join(root, 'public', 'api', 'heroes');
 fs.mkdirSync(outDir, { recursive: true });
@@ -12,6 +16,10 @@ fs.mkdirSync(outDir, { recursive: true });
 fs.writeFileSync(
   path.join(root, 'public', 'api', 'heroes.json'),
   JSON.stringify(heroes, null, 2)
+);
+fs.writeFileSync(
+  path.join(root, 'public', 'api', 'items.json'),
+  JSON.stringify(items, null, 2)
 );
 
 for (const hero of heroes) {

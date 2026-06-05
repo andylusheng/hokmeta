@@ -1,5 +1,6 @@
 const SECTIONS = [
   { id: 'overview', label: 'Overview' },
+  { id: 'skills', label: 'Skills' },
   { id: 'build', label: 'Build' },
   { id: 'arcana', label: 'Arcana' },
   { id: 'counters', label: 'Counters' },

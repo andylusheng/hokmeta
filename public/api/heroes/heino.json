@@ -1,0 +1,147 @@
+{
+  "id": "heino",
+  "slug": "heino",
+  "name": "Heino",
+  "role": "Mage",
+  "roles": "Mage, Fighter",
+  "lane": "Mid Lane",
+  "difficulty": "Medium",
+  "tier": "S",
+  "winRate": 48.03,
+  "pickRate": 1.16,
+  "banRate": 0.24,
+  "rank": 104,
+  "avatar": "https://camp.honorofkings.com/camp/admin/hero/head_128-128/YO6iwLAg.jpg",
+  "avatarFallback": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/563/563.jpg",
+  "tencentId": 563,
+  "dataSource": "Camp HOK + HoKStats.gg (intl)",
+  "dataUpdated": "2026-06-05",
+  "skills": [
+    {
+      "slot": "passive",
+      "name": "Fate's Guidance",
+      "description": "Heino's Basic Attacks differ depending on whether he's in melee or ranged mode. Basic Attacks deal physical and magical damage, and melee Basic Attacks and skills place marks on hit enemies.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/563/56300.png",
+      "cooldown": null
+    },
+    {
+      "slot": "skill1",
+      "name": "Scepter of Fate",
+      "description": "Reduces cooldown by 0.2s for each marked enemy hit, up to 1s. ;Ranged: Throws scepter to deal magical damage and again to marked targets forward. ;Melee: Throws scepter to damage and slow enemies. Recovers Health on hitting marked enemies.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/563/56310.png",
+      "cooldown": null
+    },
+    {
+      "slot": "skill2",
+      "name": "Leap of Fate",
+      "description": "Dashes forward. lf there are enemy heroes near the end of the dash, goesinto melee mode, recovers Health, and increases Max Health, Physical Defense and Magical Defense. Otherwise, goes into ranged mode and gains Movement Speed.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/563/56320.png",
+      "cooldown": null
+    },
+    {
+      "slot": "ultimate",
+      "name": "Fate Rewind",
+      "description": "Heino gains damage reduction and crowd control immunity, recovers Health, but cannot move. After 1.5s, he deals magical damage and travels back in time. The allied tower within range travels 5s back in time. He recovers more Health the less he has left.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/563/56330.png",
+      "cooldown": null
+    }
+  ],
+  "build": [
+    {
+      "slot": 1,
+      "itemId": "1423",
+      "name": "Boots of Tranquility",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1423.jpg",
+      "description": "Reduces Skill CD"
+    },
+    {
+      "slot": 2,
+      "itemId": "1226",
+      "name": "Holy Grail",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1226.jpg",
+      "description": "Rapid Health & Mana Regen"
+    },
+    {
+      "slot": 3,
+      "itemId": "1235",
+      "name": "Mask of Agony",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1235.jpg",
+      "description": "Boosts skill damage"
+    },
+    {
+      "slot": 4,
+      "itemId": "1218",
+      "name": "Primordial Crystal",
+      "icon": "https://hokstats.gg/items/1218.png",
+      "description": "CDR +5%"
+    },
+    {
+      "slot": 5,
+      "itemId": "1424",
+      "name": "Boots of the Arcane",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1424.jpg",
+      "description": "Magical Pierce"
+    },
+    {
+      "slot": 6,
+      "itemId": "1727",
+      "name": "Twilight Stream",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1727.jpg",
+      "description": "Boosts Magical Pierce"
+    }
+  ],
+  "arcana": [
+    "Fate"
+  ],
+  "spells": [
+    "Flash"
+  ],
+  "counters": [
+    "Diaochan",
+    "Mulan",
+    "Wukong"
+  ],
+  "counteredBy": [
+    "Butterfly",
+    "Dharma",
+    "Lu Bu"
+  ],
+  "tips": [
+    "Heino (Mage): Tier S on international ranked — 48.03% WR.",
+    "Primary lane: Mid Lane.",
+    "Build core: Boots of Tranquility, Holy Grail, Mask of Agony."
+  ],
+  "patchHistory": [
+    {
+      "version": "Live meta",
+      "change": "Camp HOK — WR 48.03%, pick 1.16%, ban 0.24%, popularity tier S."
+    },
+    {
+      "version": "Matchups",
+      "change": "Counters Diaochan, Mulan, Wukong · Weak into Butterfly, Dharma, Lu Bu."
+    }
+  ],
+  "faqs": [
+    {
+      "id": "faq-good-season",
+      "question": "Is Heino good in current season?",
+      "answer": "Heino is Tier S Mage with 48.03% win rate, 1.16% pick rate, and 0.24% ban rate on the international server (Camp HOK)."
+    },
+    {
+      "id": "faq-best-build",
+      "question": "What is the best Heino build?",
+      "answer": "Recommended item path: Boots of Tranquility, Holy Grail, Mask of Agony, Primordial Crystal, Boots of the Arcane, Twilight Stream. Spells and Arcana are listed on this page."
+    },
+    {
+      "id": "faq-counter",
+      "question": "How to counter Heino?",
+      "answer": "Strong picks into Heino: Butterfly, Dharma, Lu Bu. Heino is strong into Diaochan, Mulan, Wukong."
+    }
+  ],
+  "metaAnalysis": [
+    "Heino win rate 48.03% (Camp HOK, 2026-06-04).",
+    "Pick rate 1.16% in global ranked.",
+    "Ban rate 0.24%.",
+    "Counters: Diaochan, Mulan, Wukong. Countered by: Butterfly, Dharma, Lu Bu."
+  ]
+}

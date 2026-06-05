@@ -3,100 +3,145 @@
   "slug": "lam",
   "name": "Lam",
   "role": "Assassin",
-  "difficulty": "Hard",
+  "roles": "Assassin, Fighter",
+  "lane": "Jungling",
+  "difficulty": "Medium",
   "tier": "A",
   "winRate": 48.8,
   "pickRate": 1.01,
   "banRate": 0.48,
-  "rank": 20,
+  "rank": 92,
   "avatar": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/02i6M2YK.png",
+  "avatarFallback": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/528/528.jpg",
+  "tencentId": 528,
+  "dataSource": "Camp HOK + HoKStats.gg (intl)",
+  "dataUpdated": "2026-06-05",
+  "skills": [
+    {
+      "slot": "passive",
+      "name": "Hunter",
+      "description": "Basic Attacks and skills deal extra true damage to targets with low Health",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/528/52800.png",
+      "cooldown": null
+    },
+    {
+      "slot": "skill1",
+      "name": "Wavebreaker",
+      "description": "Lam enters “Submerged” state, greatly increasing his Movement Speed for 3 seconds. When the duration ends, Lam leaps out of the water, immediately restoring 50% of this skill’s cooldown. While in Submerged state, casting the skill again will cause Lam to surface early, dealing 300 (+120% Bonus Physical Attack) Physical Damage to nearby enemies and slowing their Movement Speed by 50% for 1.5 seconds. Passive: While in river terrain, the Submerged state has no time limit. If an enemy hero with below 30% Health appears within 1500 range, Lam gains 450 Movement Speed.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/528/52810.png",
+      "cooldown": null
+    },
+    {
+      "slot": "skill2",
+      "name": "Space Split",
+      "description": "Damages nearby enemies while gaining a mark. Basic Attacks spend marks to gain a dash and Health recovery effect. While submerged, Skill 2 has an extra dash effect.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/528/52820.png",
+      "cooldown": null
+    },
+    {
+      "slot": "ultimate",
+      "name": "Death From Below",
+      "description": "Throws a dagger in the target direction, then dashes to the dagger after a short delay, dragging enemies in his path to the dagger and dealing damage to them. Submerged: Cancels the cast animation and skill delay.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/528/52830.png",
+      "cooldown": null
+    }
+  ],
   "build": [
     {
-      "name": "Shadow Blade",
-      "slot": 1
+      "slot": 1,
+      "itemId": "1523",
+      "name": "Relentless Blade",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1523.jpg",
+      "description": "Monster kills boost PATK"
     },
     {
-      "name": "Hermes Boots",
-      "slot": 2
+      "slot": 2,
+      "itemId": "1423",
+      "name": "Boots of Tranquility",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1423.jpg",
+      "description": "Reduces Skill CD"
     },
     {
-      "name": "Bloodthirsty",
-      "slot": 3
+      "slot": 3,
+      "itemId": "1137",
+      "name": "Axe of Torment",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1137.jpg",
+      "description": "Anti-squishy"
     },
     {
-      "name": "Blade of Despair",
-      "slot": 4
+      "slot": 4,
+      "itemId": "1533",
+      "name": "Rapacious Bite",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1533.jpg",
+      "description": "Monster kills boost PATK"
     },
     {
-      "name": "Immortal",
-      "slot": 5
+      "slot": 5,
+      "itemId": "11311",
+      "name": "Pure Sky",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/11311.jpg",
+      "description": "Temp. damage reduction"
     },
     {
-      "name": "Guardian",
-      "slot": 6
+      "slot": 6,
+      "itemId": "1327",
+      "name": "Spikemail",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1327.jpg",
+      "description": "Reflects damage"
     }
   ],
   "arcana": [
-    "Attack",
-    "Penetration",
-    "HP"
+    "Mutation"
   ],
   "spells": [
-    "Flash",
-    "Execute"
+    "Smite"
   ],
   "counters": [
-    "Shangguan",
-    "Li Bai"
+    "Lu Bu",
+    "Wuyan",
+    "Xiang Yu"
   ],
   "counteredBy": [
-    "Garo",
-    "Lu Bu"
+    "Erin",
+    "Liang",
+    "Luara"
   ],
   "tips": [
-    "Lam: prioritize S+ tier Assassin power spikes from patch history.",
-    "Watch pick rate — pick data unavailable.",
-    "Lane into Angela with listed build order."
+    "Lam (Assassin): Tier A on international ranked — 48.8% WR.",
+    "Primary lane: Jungling.",
+    "Build core: Relentless Blade, Boots of Tranquility, Axe of Torment."
   ],
   "patchHistory": [
     {
       "version": "Live meta",
-      "change": "Camp HOK ranked stats — WR 48.8%, pick 1.01%, ban 0.48%, tier band B."
+      "change": "Camp HOK — WR 48.8%, pick 1.01%, ban 0.48%, popularity tier A."
     },
     {
       "version": "Matchups",
-      "change": "Counters Shangguan, Li Bai · Weak into Garo, Lu Bu (Tencent hero data)."
-    },
-    {
-      "version": "S37",
-      "change": "Data unavailable"
+      "change": "Counters Lu Bu, Wuyan, Xiang Yu · Weak into Erin, Liang, Luara."
     }
   ],
   "faqs": [
     {
       "id": "faq-good-season",
       "question": "Is Lam good in current season?",
-      "answer": "Lam shows 48.8% win rate, 1.01% pick rate, 0.48% ban rate (Camp HOK). Tier A Assassin."
+      "answer": "Lam is Tier A Assassin with 48.8% win rate, 1.01% pick rate, and 0.48% ban rate on the international server (Camp HOK)."
     },
     {
       "id": "faq-best-build",
       "question": "What is the best Lam build?",
-      "answer": "Core item path for Lam: Shadow Blade, Hermes Boots, Bloodthirsty, Blade of Despair, Immortal, Guardian. Spells and arcana sets are listed in the Build section. Adjust final slot by enemy Angela."
+      "answer": "Recommended item path: Relentless Blade, Boots of Tranquility, Axe of Torment, Rapacious Bite, Pure Sky, Spikemail. Spells and Arcana are listed on this page."
     },
     {
       "id": "faq-counter",
       "question": "How to counter Lam?",
-      "answer": "Use Shangguan, Li Bai. Ban rate 0.48% reflects draft priority against Lam."
+      "answer": "Strong picks into Lam: Erin, Liang, Luara. Lam is strong into Lu Bu, Wuyan, Xiang Yu."
     }
   ],
   "metaAnalysis": [
     "Lam win rate 48.8% (Camp HOK, 2026-06-04).",
-    "Pick rate 1.01% for Lam in current ranked meta.",
-    "Ban rate 0.48% — moderate bans.",
-    "Counters: Shangguan, Li Bai. Countered by: Garo, Lu Bu."
-  ],
-  "tencentId": 515,
-  "avatarFallback": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/515/515.jpg",
-  "dataSource": "Camp HOK + Tencent official",
-  "dataUpdated": "2026-06-04"
+    "Pick rate 1.01% in global ranked.",
+    "Ban rate 0.48%.",
+    "Counters: Lu Bu, Wuyan, Xiang Yu. Countered by: Erin, Liang, Luara."
+  ]
 }

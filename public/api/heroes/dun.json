@@ -1,0 +1,147 @@
+{
+  "id": "dun",
+  "slug": "dun",
+  "name": "Dun",
+  "role": "Tank",
+  "roles": "Tank, Fighter",
+  "lane": "Clash Lane",
+  "difficulty": "Easy",
+  "tier": "S",
+  "winRate": 52.28,
+  "pickRate": 1.5,
+  "banRate": 0.31,
+  "rank": 17,
+  "avatar": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/23rrkYYy.png",
+  "avatarFallback": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/126/126.jpg",
+  "tencentId": 126,
+  "dataSource": "Camp HOK + HoKStats.gg (intl)",
+  "dataUpdated": "2026-06-05",
+  "skills": [
+    {
+      "slot": "passive",
+      "name": "Unyielding Might",
+      "description": "Periodic Passive Effect: When Health drops too low, taking damage will enhance Dun. While enhanced, hits from skills and Basic Attacks recover Health.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/126/12600.png",
+      "cooldown": null
+    },
+    {
+      "slot": "skill1",
+      "name": "Wind Slash",
+      "description": "Slashes in the target direction, dealing damage to enemies within range and slowing them. If the skill hits an enemy hero, it can be used again before going into cooldown, dealing damage to enemies in range and launching them.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/126/12610.png",
+      "cooldown": null
+    },
+    {
+      "slot": "skill2",
+      "name": "Gale's Benediction",
+      "description": "Deals damage to enemies in range and grants shieldEnhances the next 3 Basic Attacks, dealing extra true damageEvery enhanced Basic Attack reduces the cooldown of Unruly Blade",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/126/12620.png",
+      "cooldown": null
+    },
+    {
+      "slot": "ultimate",
+      "name": "Unruly Blade",
+      "description": "Tosses his chain blade in the target location, stunning and dealing damageto enemies hit.When max range is reached or an enemy is hit, the chain blade will pullXiahou Dun to its location, dealing damage to nearby enemies",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/126/12630.png",
+      "cooldown": null
+    }
+  ],
+  "build": [
+    {
+      "slot": 1,
+      "itemId": "1421",
+      "name": "Boots of Fortitude",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1421.jpg",
+      "description": "Reduces physical damage"
+    },
+    {
+      "slot": 2,
+      "itemId": "1331",
+      "name": "Blazing Cape",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1331.jpg",
+      "description": "Burns nearby enemies"
+    },
+    {
+      "slot": 3,
+      "itemId": "1534",
+      "name": "Dragon's Rage",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1534.jpg",
+      "description": "Boosts BA damage"
+    },
+    {
+      "slot": 4,
+      "itemId": "1334",
+      "name": "Eye of the Phoenix",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1334.jpg",
+      "description": "Boosts Health regen"
+    },
+    {
+      "slot": 5,
+      "itemId": "1333",
+      "name": "Ominous Premonition",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1333.jpg",
+      "description": "Slows attackers"
+    },
+    {
+      "slot": 6,
+      "itemId": "1332",
+      "name": "Overlord's Platemail",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1332.jpg",
+      "description": "Extra Health"
+    }
+  ],
+  "arcana": [
+    "Fate"
+  ],
+  "spells": [
+    "Execute"
+  ],
+  "counters": [
+    "Diaochan",
+    "Fang",
+    "Erin"
+  ],
+  "counteredBy": [
+    "Han Xin",
+    "Li Bai",
+    "Wukong"
+  ],
+  "tips": [
+    "Dun (Tank): Tier S on international ranked — 52.28% WR.",
+    "Primary lane: Clash Lane.",
+    "Build core: Boots of Fortitude, Blazing Cape, Dragon's Rage."
+  ],
+  "patchHistory": [
+    {
+      "version": "Live meta",
+      "change": "Camp HOK — WR 52.28%, pick 1.5%, ban 0.31%, popularity tier S."
+    },
+    {
+      "version": "Matchups",
+      "change": "Counters Diaochan, Fang, Erin · Weak into Han Xin, Li Bai, Wukong."
+    }
+  ],
+  "faqs": [
+    {
+      "id": "faq-good-season",
+      "question": "Is Dun good in current season?",
+      "answer": "Dun is Tier S Tank with 52.28% win rate, 1.5% pick rate, and 0.31% ban rate on the international server (Camp HOK)."
+    },
+    {
+      "id": "faq-best-build",
+      "question": "What is the best Dun build?",
+      "answer": "Recommended item path: Boots of Fortitude, Blazing Cape, Dragon's Rage, Eye of the Phoenix, Ominous Premonition, Overlord's Platemail. Spells and Arcana are listed on this page."
+    },
+    {
+      "id": "faq-counter",
+      "question": "How to counter Dun?",
+      "answer": "Strong picks into Dun: Han Xin, Li Bai, Wukong. Dun is strong into Diaochan, Fang, Erin."
+    }
+  ],
+  "metaAnalysis": [
+    "Dun win rate 52.28% (Camp HOK, 2026-06-04).",
+    "Pick rate 1.5% in global ranked.",
+    "Ban rate 0.31%.",
+    "Counters: Diaochan, Fang, Erin. Countered by: Han Xin, Li Bai, Wukong."
+  ]
+}

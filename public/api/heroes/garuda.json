@@ -1,0 +1,149 @@
+{
+  "id": "garuda",
+  "slug": "garuda",
+  "name": "Garuda",
+  "role": "Mage",
+  "roles": "Mage",
+  "lane": "Mid Lane",
+  "difficulty": "Medium",
+  "tier": "A",
+  "winRate": 51.06,
+  "pickRate": 0.83,
+  "banRate": 0.04,
+  "rank": 52,
+  "avatar": "https://camp.honorofkings.com/camp/admin/default/h6UHy1TN.png",
+  "avatarFallback": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/110/110.jpg",
+  "tencentId": 110,
+  "dataSource": "Camp HOK + HoKStats.gg (intl)",
+  "dataUpdated": "2026-06-05",
+  "skills": [
+    {
+      "slot": "passive",
+      "name": "Keen Feathers",
+      "description": "Damage Basic Attacks can pierce and deal damage to enemies in their path.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/110/11000.png",
+      "cooldown": null
+    },
+    {
+      "slot": "skill1",
+      "name": "Arrows of Gold",
+      "description": "Damage Slow Conjures an arrow formation that deals continuous damage to targets within range while slowing them.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/110/11010.png",
+      "cooldown": null
+    },
+    {
+      "slot": "skill2",
+      "name": "Golden Winged Blessing",
+      "description": "Speed Up Shield Damage Gains Movement Speed and a shield while dealing damage to nearby enemies.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/110/11020.png",
+      "cooldown": null
+    },
+    {
+      "slot": "ultimate",
+      "name": "Wings of Judgment",
+      "description": "Damage Speed Up Sends arrows surging forward, dealing damage. Using the skill again shoots all remaining arrows, damaging nearby enemies, inflicting them with Dread, and removing all Physical Attack bonuses granted by their equipment.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/110/11030.png",
+      "cooldown": null
+    }
+  ],
+  "build": [
+    {
+      "slot": 1,
+      "itemId": "1211",
+      "name": "Spell Tome",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1211.jpg",
+      "description": "MATK +35"
+    },
+    {
+      "slot": 2,
+      "itemId": "1424",
+      "name": "Boots of the Arcane",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1424.jpg",
+      "description": "Magical Pierce"
+    },
+    {
+      "slot": 3,
+      "itemId": "1235",
+      "name": "Mask of Agony",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1235.jpg",
+      "description": "Boosts skill damage"
+    },
+    {
+      "slot": 4,
+      "itemId": "1727",
+      "name": "Twilight Stream",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1727.jpg",
+      "description": "Boosts Magical Pierce"
+    },
+    {
+      "slot": 5,
+      "itemId": "12211",
+      "name": "Venomous Staff",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/12211.jpg",
+      "description": "Lowers Health regen"
+    },
+    {
+      "slot": 6,
+      "itemId": "1234",
+      "name": "Frozen Breath",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1234.jpg",
+      "description": "Slows on hit"
+    }
+  ],
+  "arcana": [
+    "Nightmare",
+    "Hunt",
+    "Mind&#39;s eye"
+  ],
+  "spells": [
+    "Flash"
+  ],
+  "counters": [
+    "Data unavailable",
+    "Data unavailable",
+    "Data unavailable"
+  ],
+  "counteredBy": [
+    "Data unavailable",
+    "Data unavailable",
+    "Data unavailable"
+  ],
+  "tips": [
+    "Garuda (Mage): Tier A on international ranked — 51.06% WR.",
+    "Primary lane: Mid Lane.",
+    "Build core: Spell Tome, Boots of the Arcane, Mask of Agony."
+  ],
+  "patchHistory": [
+    {
+      "version": "Live meta",
+      "change": "Camp HOK — WR 51.06%, pick 0.83%, ban 0.04%, popularity tier A."
+    },
+    {
+      "version": "Matchups",
+      "change": "Counters Data unavailable, Data unavailable, Data unavailable · Weak into Data unavailable, Data unavailable, Data unavailable."
+    }
+  ],
+  "faqs": [
+    {
+      "id": "faq-good-season",
+      "question": "Is Garuda good in current season?",
+      "answer": "Garuda is Tier A Mage with 51.06% win rate, 0.83% pick rate, and 0.04% ban rate on the international server (Camp HOK)."
+    },
+    {
+      "id": "faq-best-build",
+      "question": "What is the best Garuda build?",
+      "answer": "Recommended item path: Spell Tome, Boots of the Arcane, Mask of Agony, Twilight Stream, Venomous Staff, Frozen Breath. Spells and Arcana are listed on this page."
+    },
+    {
+      "id": "faq-counter",
+      "question": "How to counter Garuda?",
+      "answer": "Strong picks into Garuda: Data unavailable, Data unavailable, Data unavailable. Garuda is strong into Data unavailable, Data unavailable, Data unavailable."
+    }
+  ],
+  "metaAnalysis": [
+    "Garuda win rate 51.06% (Camp HOK, 2026-06-04).",
+    "Pick rate 0.83% in global ranked.",
+    "Ban rate 0.04%.",
+    "Counters: Data unavailable, Data unavailable, Data unavailable. Countered by: Data unavailable, Data unavailable, Data unavailable."
+  ]
+}

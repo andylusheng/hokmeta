@@ -3,100 +3,146 @@
   "slug": "marco-polo",
   "name": "Marco Polo",
   "role": "Marksman",
-  "difficulty": "Hard",
+  "roles": "Marksman",
+  "lane": "Farm Lane",
+  "difficulty": "Medium",
   "tier": "S+",
   "winRate": 50.06,
   "pickRate": 2.12,
   "banRate": 0.3,
-  "rank": 13,
+  "rank": 74,
   "avatar": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/48d8GxkP.png",
+  "avatarFallback": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/132/132.jpg",
+  "tencentId": 132,
+  "dataSource": "Camp HOK + HoKStats.gg (intl)",
+  "dataUpdated": "2026-06-05",
+  "skills": [
+    {
+      "slot": "passive",
+      "name": "Chain Reaction",
+      "description": "Basic Attack and skill hits inflict stacks on the opponent, dealing extra truedamage at max stacks. Extra Attack Speed bonuses increase the number ofbullets fired by Skill 1 and 3.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/132/13200.png",
+      "cooldown": null
+    },
+    {
+      "slot": "skill1",
+      "name": "Resplendent Revolver",
+      "description": "Fires in the target direction for a period of time and gains increasedMovement Speed while firing.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/132/13210.png",
+      "cooldown": null
+    },
+    {
+      "slot": "skill2",
+      "name": "Roaming Gun",
+      "description": "Teleports in the target direction.Passive: Gains Attack and Movement Speed when a nearby enemy hero is within range.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/132/13220.png",
+      "cooldown": null
+    },
+    {
+      "slot": "ultimate",
+      "name": "Fevered Barrage",
+      "description": "Shifts in the target direction and deals damage over time to nearby enemies within range.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/132/13230.png",
+      "cooldown": null
+    }
+  ],
   "build": [
     {
-      "name": "Hunter",
-      "slot": 1
+      "slot": 1,
+      "itemId": "1425",
+      "name": "Boots of Dexterity",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1425.jpg",
+      "description": "Boosts ASPD"
     },
     {
-      "name": "Swift",
-      "slot": 2
+      "slot": 2,
+      "itemId": "1112",
+      "name": "Dagger",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1112.jpg",
+      "description": "Attack Speed"
     },
     {
-      "name": "Wind",
-      "slot": 3
+      "slot": 3,
+      "itemId": "1135",
+      "name": "Sparkforged Dagger",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1135.jpg",
+      "description": "Chain lightning BA"
     },
     {
-      "name": "Blade",
-      "slot": 4
+      "slot": 4,
+      "itemId": "1129",
+      "name": "Swiftstrike Lance",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1129.jpg",
+      "description": "ASPD +15%, PATK +35"
     },
     {
-      "name": "Immortal",
-      "slot": 5
+      "slot": 5,
+      "itemId": "1126",
+      "name": "Doomsday",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1126.jpg",
+      "description": "Boosts BA damage"
     },
     {
-      "name": "Rose Gold",
-      "slot": 6
+      "slot": 6,
+      "itemId": "1321",
+      "name": "Belt of Might",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1321.jpg",
+      "description": "HP +900"
     }
   ],
   "arcana": [
-    "Crit",
-    "Penetration",
-    "Attack Speed"
+    "Red"
   ],
   "spells": [
-    "Flash",
-    "Heal"
+    "Haste",
+    "Flash"
   ],
   "counters": [
-    "Lu Bu",
-    "Donghuang"
+    "Cirrus",
+    "Mai Shiranui",
+    "Wukong"
   ],
   "counteredBy": [
-    "Gan & Mo",
-    "Mulan"
+    "Lian Po",
+    "Liu Bang",
+    "Zhang Fei"
   ],
   "tips": [
-    "Marco Polo: prioritize S tier Marksman power spikes from patch history.",
-    "Watch pick rate — pick data unavailable.",
-    "Lane into Loong with listed build order."
+    "Marco Polo (Marksman): Tier S+ on international ranked — 50.06% WR.",
+    "Primary lane: Farm Lane.",
+    "Build core: Boots of Dexterity, Dagger, Sparkforged Dagger."
   ],
   "patchHistory": [
     {
       "version": "Live meta",
-      "change": "Camp HOK ranked stats — WR 50.06%, pick 2.12%, ban 0.3%, tier band S."
+      "change": "Camp HOK — WR 50.06%, pick 2.12%, ban 0.3%, popularity tier S+."
     },
     {
       "version": "Matchups",
-      "change": "Counters Lu Bu, Donghuang · Weak into Gan & Mo, Mulan (Tencent hero data)."
-    },
-    {
-      "version": "S37",
-      "change": "Data unavailable"
+      "change": "Counters Cirrus, Mai Shiranui, Wukong · Weak into Lian Po, Liu Bang, Zhang Fei."
     }
   ],
   "faqs": [
     {
       "id": "faq-good-season",
       "question": "Is Marco Polo good in current season?",
-      "answer": "Marco Polo shows 50.06% win rate, 2.12% pick rate, 0.3% ban rate (Camp HOK). Tier S+ Marksman."
+      "answer": "Marco Polo is Tier S+ Marksman with 50.06% win rate, 2.12% pick rate, and 0.3% ban rate on the international server (Camp HOK)."
     },
     {
       "id": "faq-best-build",
       "question": "What is the best Marco Polo build?",
-      "answer": "Core item path for Marco Polo: Hunter, Swift, Wind, Blade, Immortal, Rose Gold. Spells and arcana sets are listed in the Build section. Adjust final slot by enemy Loong."
+      "answer": "Recommended item path: Boots of Dexterity, Dagger, Sparkforged Dagger, Swiftstrike Lance, Doomsday, Belt of Might. Spells and Arcana are listed on this page."
     },
     {
       "id": "faq-counter",
       "question": "How to counter Marco Polo?",
-      "answer": "Use Lu Bu, Donghuang. Ban rate 0.3% reflects draft priority against Marco Polo."
+      "answer": "Strong picks into Marco Polo: Lian Po, Liu Bang, Zhang Fei. Marco Polo is strong into Cirrus, Mai Shiranui, Wukong."
     }
   ],
   "metaAnalysis": [
     "Marco Polo win rate 50.06% (Camp HOK, 2026-06-04).",
-    "Pick rate 2.12% for Marco Polo in current ranked meta.",
-    "Ban rate 0.3% — moderate bans.",
-    "Counters: Lu Bu, Donghuang. Countered by: Gan & Mo, Mulan."
-  ],
-  "tencentId": 132,
-  "avatarFallback": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/132/132.jpg",
-  "dataSource": "Camp HOK + Tencent official",
-  "dataUpdated": "2026-06-04"
+    "Pick rate 2.12% in global ranked.",
+    "Ban rate 0.3%.",
+    "Counters: Cirrus, Mai Shiranui, Wukong. Countered by: Lian Po, Liu Bang, Zhang Fei."
+  ]
 }

@@ -2,101 +2,146 @@
   "id": "wukong",
   "slug": "wukong",
   "name": "Wukong",
-  "role": "Warrior",
+  "role": "Assassin",
+  "roles": "Assassin",
+  "lane": "Jungling",
   "difficulty": "Medium",
   "tier": "S",
   "winRate": 49.74,
   "pickRate": 1.29,
   "banRate": 0.26,
-  "rank": 15,
+  "rank": 80,
   "avatar": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/Go3mMeu4.png",
+  "avatarFallback": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/167/167.jpg",
+  "tencentId": 167,
+  "dataSource": "Camp HOK + HoKStats.gg (intl)",
+  "dataUpdated": "2026-06-05",
+  "skills": [
+    {
+      "slot": "passive",
+      "name": "The Great Sage",
+      "description": "Using skills enhances the next Basic Attack to a dash strike that deals extra damage. Base Critical Rate increases, but Critical Damage decreases.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/167/16700.png",
+      "cooldown": null
+    },
+    {
+      "slot": "skill1",
+      "name": "Protective Shroud",
+      "description": "Gains increased Movement Speed and blocks the damage and effects of the next enemy hero skill. After a successful block, gains temporary invulnerability to damage andskills, as well as a shield.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/167/16710.png",
+      "cooldown": null
+    },
+    {
+      "slot": "skill2",
+      "name": "Furious Advance",
+      "description": "Wukong shifts in the target direction. Hitting units during the shift will trigger another shift and grant a Movement Speed boost. The shift deals damage to monsters, and grievous damage to monsters at low Health.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/167/16720.png",
+      "cooldown": null
+    },
+    {
+      "slot": "ultimate",
+      "name": "Golden Cudgel",
+      "description": "Launches enemies in range, damaging and placing 3 marks on them. BasicAttack removes 1 mark and deals extra damage every time.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/167/16730.png",
+      "cooldown": null
+    }
+  ],
   "build": [
     {
-      "name": "Gilded",
-      "slot": 1
+      "slot": 1,
+      "itemId": "1523",
+      "name": "Relentless Blade",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1523.jpg",
+      "description": "Monster kills boost PATK"
     },
     {
-      "name": "Mantle",
-      "slot": 2
+      "slot": 2,
+      "itemId": "1425",
+      "name": "Boots of Dexterity",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1425.jpg",
+      "description": "Boosts ASPD"
     },
     {
-      "name": "Frost Cape",
-      "slot": 3
+      "slot": 3,
+      "itemId": "1133",
+      "name": "Eternity Blade",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1133.jpg",
+      "description": "High crit damage"
     },
     {
-      "name": "Antique",
-      "slot": 4
+      "slot": 4,
+      "itemId": "1533",
+      "name": "Rapacious Bite",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1533.jpg",
+      "description": "Monster kills boost PATK"
     },
     {
-      "name": "Dominance",
-      "slot": 5
+      "slot": 5,
+      "itemId": "1136",
+      "name": "Shadow Ripper",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1136.jpg",
+      "description": "Crits boost ASPD"
     },
     {
-      "name": "Helm",
-      "slot": 6
+      "slot": 6,
+      "itemId": "1131",
+      "name": "Starbreaker",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1131.jpg",
+      "description": "Anti-tank"
     }
   ],
   "arcana": [
-    "Attack",
-    "Penetration",
-    "HP"
+    "Dominator"
   ],
   "spells": [
-    "Flash",
-    "Execute"
+    "Smite"
   ],
   "counters": [
-    "Daji",
-    "Marco Polo"
-  ],
-  "counteredBy": [
-    "Mi Yue",
+    "Dun",
+    "Lian Po",
     "Xiang Yu"
   ],
+  "counteredBy": [
+    "Agudo",
+    "Gao",
+    "Heino"
+  ],
   "tips": [
-    "Wukong: prioritize S tier Warrior power spikes from patch history.",
-    "Watch pick rate — pick data unavailable.",
-    "Lane into Angela with listed build order."
+    "Wukong (Assassin): Tier S on international ranked — 49.74% WR.",
+    "Primary lane: Jungling.",
+    "Build core: Relentless Blade, Boots of Dexterity, Eternity Blade."
   ],
   "patchHistory": [
     {
       "version": "Live meta",
-      "change": "Camp HOK ranked stats — WR 49.74%, pick 1.29%, ban 0.26%, tier band A."
+      "change": "Camp HOK — WR 49.74%, pick 1.29%, ban 0.26%, popularity tier S."
     },
     {
       "version": "Matchups",
-      "change": "Counters Daji, Marco Polo · Weak into Mi Yue, Xiang Yu (Tencent hero data)."
-    },
-    {
-      "version": "S37",
-      "change": "Data unavailable"
+      "change": "Counters Dun, Lian Po, Xiang Yu · Weak into Agudo, Gao, Heino."
     }
   ],
   "faqs": [
     {
       "id": "faq-good-season",
       "question": "Is Wukong good in current season?",
-      "answer": "Wukong shows 49.74% win rate, 1.29% pick rate, 0.26% ban rate (Camp HOK). Tier S Warrior."
+      "answer": "Wukong is Tier S Assassin with 49.74% win rate, 1.29% pick rate, and 0.26% ban rate on the international server (Camp HOK)."
     },
     {
       "id": "faq-best-build",
       "question": "What is the best Wukong build?",
-      "answer": "Core item path for Wukong: Gilded, Mantle, Frost Cape, Antique, Dominance, Helm. Spells and arcana sets are listed in the Build section. Adjust final slot by enemy Angela."
+      "answer": "Recommended item path: Relentless Blade, Boots of Dexterity, Eternity Blade, Rapacious Bite, Shadow Ripper, Starbreaker. Spells and Arcana are listed on this page."
     },
     {
       "id": "faq-counter",
       "question": "How to counter Wukong?",
-      "answer": "Use Daji, Marco Polo. Ban rate 0.26% reflects draft priority against Wukong."
+      "answer": "Strong picks into Wukong: Agudo, Gao, Heino. Wukong is strong into Dun, Lian Po, Xiang Yu."
     }
   ],
   "metaAnalysis": [
     "Wukong win rate 49.74% (Camp HOK, 2026-06-04).",
-    "Pick rate 1.29% for Wukong in current ranked meta.",
-    "Ban rate 0.26% — moderate bans.",
-    "Counters: Daji, Marco Polo. Countered by: Mi Yue, Xiang Yu."
-  ],
-  "tencentId": 167,
-  "avatarFallback": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/167/167.jpg",
-  "dataSource": "Camp HOK + Tencent official",
-  "dataUpdated": "2026-06-04"
+    "Pick rate 1.29% in global ranked.",
+    "Ban rate 0.26%.",
+    "Counters: Dun, Lian Po, Xiang Yu. Countered by: Agudo, Gao, Heino."
+  ]
 }

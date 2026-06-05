@@ -1,0 +1,147 @@
+{
+  "id": "sima-yi",
+  "slug": "sima-yi",
+  "name": "Sima Yi",
+  "role": "Assassin",
+  "roles": "Assassin, Mage",
+  "lane": "Jungling",
+  "difficulty": "Medium",
+  "tier": "B",
+  "winRate": 46.23,
+  "pickRate": 0.24,
+  "banRate": 0.02,
+  "rank": 110,
+  "avatar": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/sU3BsR6P.png",
+  "avatarFallback": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/137/137.jpg",
+  "tencentId": 137,
+  "dataSource": "Camp HOK + HoKStats.gg (intl)",
+  "dataUpdated": "2026-06-05",
+  "skills": [
+    {
+      "slot": "passive",
+      "name": "Quiet Whispers",
+      "description": "Gains vision of casters within a range of 2000.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/137/13700.png",
+      "cooldown": null
+    },
+    {
+      "slot": "skill1",
+      "name": "Shadow Stings",
+      "description": "Controls an untargetable spirit, dealing damage upon contact with enemies. The main body gains crowd control immunity. When the duration ends, using another skill or a Basic Attack will cause the main body to teleport to the spirit's location.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/137/13710.png",
+      "cooldown": null
+    },
+    {
+      "slot": "skill2",
+      "name": "Barren Lands",
+      "description": "Damages and silences enemies within a certain range. After a short delay, if Sima Yi is still within the skill's area, he recovers Energy. Passive: A portion of the magical damage taken is converted into Health.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/137/13720.png",
+      "cooldown": null
+    },
+    {
+      "slot": "ultimate",
+      "name": "Death Descends",
+      "description": "After a short delay, flies to the target location, dealing damage to enemies at the destination and lower damage to enemies in his path.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/137/13730.png",
+      "cooldown": null
+    }
+  ],
+  "build": [
+    {
+      "slot": 1,
+      "itemId": "1521",
+      "name": "Guerrilla Machete",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1521.jpg",
+      "description": "Monster kills boost MATK"
+    },
+    {
+      "slot": 2,
+      "itemId": "1222",
+      "name": "Blood Clan's Grimoire",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1222.jpg",
+      "description": "MATK +60, Magical Lifesteal +12%"
+    },
+    {
+      "slot": 3,
+      "itemId": "1425",
+      "name": "Boots of Dexterity",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1425.jpg",
+      "description": "Boosts ASPD"
+    },
+    {
+      "slot": 4,
+      "itemId": "1240",
+      "name": "Insatiable Tome",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1240.jpg",
+      "description": "Magical Lifesteal"
+    },
+    {
+      "slot": 5,
+      "itemId": "1244",
+      "name": "Breakthrough Robe",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1244.jpg",
+      "description": "Converts Health into M. Pierce"
+    },
+    {
+      "slot": 6,
+      "itemId": "1531",
+      "name": "Runeblade",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1531.jpg",
+      "description": "Monster kills boost MATK"
+    }
+  ],
+  "arcana": [
+    "Fate"
+  ],
+  "spells": [
+    "Smite"
+  ],
+  "counters": [
+    "Lu Bu",
+    "Wuyan",
+    "Menki"
+  ],
+  "counteredBy": [
+    "Alessio",
+    "Arli",
+    "Lady Zhen"
+  ],
+  "tips": [
+    "Sima Yi (Assassin): Tier B on international ranked — 46.23% WR.",
+    "Primary lane: Jungling.",
+    "Build core: Guerrilla Machete, Blood Clan's Grimoire, Boots of Dexterity."
+  ],
+  "patchHistory": [
+    {
+      "version": "Live meta",
+      "change": "Camp HOK — WR 46.23%, pick 0.24%, ban 0.02%, popularity tier B."
+    },
+    {
+      "version": "Matchups",
+      "change": "Counters Lu Bu, Wuyan, Menki · Weak into Alessio, Arli, Lady Zhen."
+    }
+  ],
+  "faqs": [
+    {
+      "id": "faq-good-season",
+      "question": "Is Sima Yi good in current season?",
+      "answer": "Sima Yi is Tier B Assassin with 46.23% win rate, 0.24% pick rate, and 0.02% ban rate on the international server (Camp HOK)."
+    },
+    {
+      "id": "faq-best-build",
+      "question": "What is the best Sima Yi build?",
+      "answer": "Recommended item path: Guerrilla Machete, Blood Clan's Grimoire, Boots of Dexterity, Insatiable Tome, Breakthrough Robe, Runeblade. Spells and Arcana are listed on this page."
+    },
+    {
+      "id": "faq-counter",
+      "question": "How to counter Sima Yi?",
+      "answer": "Strong picks into Sima Yi: Alessio, Arli, Lady Zhen. Sima Yi is strong into Lu Bu, Wuyan, Menki."
+    }
+  ],
+  "metaAnalysis": [
+    "Sima Yi win rate 46.23% (Camp HOK, 2026-06-04).",
+    "Pick rate 0.24% in global ranked.",
+    "Ban rate 0.02%.",
+    "Counters: Lu Bu, Wuyan, Menki. Countered by: Alessio, Arli, Lady Zhen."
+  ]
+}

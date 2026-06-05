@@ -1,0 +1,145 @@
+{
+  "id": "liu-bei",
+  "slug": "liu-bei",
+  "name": "Liu Bei",
+  "role": "Warrior",
+  "roles": "Fighter",
+  "lane": "Jungling",
+  "difficulty": "Medium",
+  "tier": "B",
+  "winRate": 54.52,
+  "pickRate": 0.42,
+  "banRate": 0.04,
+  "rank": 2,
+  "avatar": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/argPlTxR.png",
+  "avatarFallback": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/170/170.jpg",
+  "tencentId": 170,
+  "dataSource": "Camp HOK + HoKStats.gg (intl)",
+  "dataUpdated": "2026-06-05",
+  "skills": [
+    {
+      "slot": "passive",
+      "name": "Reinforced Shells",
+      "description": "When Basic Attacks hit a hero, it increases his Physical Pierce.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/170/17000.png",
+      "cooldown": null
+    },
+    {
+      "slot": "skill1",
+      "name": "Dual Shot",
+      "description": "Increases Movement Speed and enhances the next Basic Attack to damage twice.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/170/17010.png",
+      "cooldown": null
+    },
+    {
+      "slot": "skill2",
+      "name": "Leading the Charge",
+      "description": "Dashes forward, damaging and knocking back enemies in the way.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/170/17020.png",
+      "cooldown": null
+    },
+    {
+      "slot": "ultimate",
+      "name": "Hearts and Minds",
+      "description": "Removes crowd control, increases Physical Attack, and gains crowd control immunity and a shield.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/170/17030.png",
+      "cooldown": null
+    }
+  ],
+  "build": [
+    {
+      "slot": 1,
+      "itemId": "1511",
+      "name": "Hunting Knife",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1511.jpg",
+      "description": "Speeds up jungling"
+    },
+    {
+      "slot": 2,
+      "itemId": "1523",
+      "name": "Relentless Blade",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1523.jpg",
+      "description": "Monster kills boost PATK"
+    },
+    {
+      "slot": 3,
+      "itemId": "1425",
+      "name": "Boots of Dexterity",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1425.jpg",
+      "description": "Boosts ASPD"
+    },
+    {
+      "slot": 4,
+      "itemId": "1124",
+      "name": "Meteor",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1124.jpg",
+      "description": "PATK +35\nCDR +7.5%"
+    },
+    {
+      "slot": 5,
+      "itemId": "1137",
+      "name": "Axe of Torment",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1137.jpg",
+      "description": "Anti-squishy"
+    },
+    {
+      "slot": 6,
+      "itemId": "1114",
+      "name": "Vampiric Scythe",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1114.jpg",
+      "description": "Physical Lifesteal"
+    }
+  ],
+  "arcana": [
+    "Red"
+  ],
+  "spells": [
+    "Smite"
+  ],
+  "counters": [
+    "Lady Zhen",
+    "Nuwa",
+    "Xiao Qiao"
+  ],
+  "counteredBy": [
+    "Dyadia"
+  ],
+  "tips": [
+    "Liu Bei (Warrior): Tier B on international ranked — 54.52% WR.",
+    "Primary lane: Jungling.",
+    "Build core: Hunting Knife, Relentless Blade, Boots of Dexterity."
+  ],
+  "patchHistory": [
+    {
+      "version": "Live meta",
+      "change": "Camp HOK — WR 54.52%, pick 0.42%, ban 0.04%, popularity tier B."
+    },
+    {
+      "version": "Matchups",
+      "change": "Counters Lady Zhen, Nuwa, Xiao Qiao · Weak into Dyadia."
+    }
+  ],
+  "faqs": [
+    {
+      "id": "faq-good-season",
+      "question": "Is Liu Bei good in current season?",
+      "answer": "Liu Bei is Tier B Warrior with 54.52% win rate, 0.42% pick rate, and 0.04% ban rate on the international server (Camp HOK)."
+    },
+    {
+      "id": "faq-best-build",
+      "question": "What is the best Liu Bei build?",
+      "answer": "Recommended item path: Hunting Knife, Relentless Blade, Boots of Dexterity, Meteor, Axe of Torment, Vampiric Scythe. Spells and Arcana are listed on this page."
+    },
+    {
+      "id": "faq-counter",
+      "question": "How to counter Liu Bei?",
+      "answer": "Strong picks into Liu Bei: Dyadia. Liu Bei is strong into Lady Zhen, Nuwa, Xiao Qiao."
+    }
+  ],
+  "metaAnalysis": [
+    "Liu Bei win rate 54.52% (Camp HOK, 2026-06-04).",
+    "Pick rate 0.42% in global ranked.",
+    "Ban rate 0.04%.",
+    "Counters: Lady Zhen, Nuwa, Xiao Qiao. Countered by: Dyadia."
+  ]
+}

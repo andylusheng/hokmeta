@@ -3,100 +3,143 @@
   "slug": "luban-no-7",
   "name": "Luban No.7",
   "role": "Marksman",
-  "difficulty": "Easy",
+  "roles": "Marksman",
+  "lane": "Farm Lane",
+  "difficulty": "Medium",
   "tier": "S",
   "winRate": 52.01,
   "pickRate": 1.79,
   "banRate": 0.18,
-  "rank": 3,
+  "rank": 21,
   "avatar": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/0VBMiUN5.png",
+  "avatarFallback": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/112/112.jpg",
+  "tencentId": 112,
+  "dataSource": "Camp HOK + HoKStats.gg (intl)",
+  "dataUpdated": "2026-06-05",
+  "skills": [
+    {
+      "slot": "passive",
+      "name": "Suppressive Fire",
+      "description": "Every 5 Basic Attacks or the first Basic Attack after using a skill gains a piercing effect and deals continuous damage.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/112/11200.png",
+      "cooldown": null
+    },
+    {
+      "slot": "skill1",
+      "name": "Blowfish Grenade",
+      "description": "Throws a bomb at the target area, dealing damage and slowing all enemies hit.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/112/11210.png",
+      "cooldown": null
+    },
+    {
+      "slot": "skill2",
+      "name": "Shark Cannon",
+      "description": "Launches a rocket in the target direction, knocking back enemies in close range and dealing damage. Deals damage to enemies in range upon exploding on enemy heroes.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/112/11220.png",
+      "cooldown": null
+    },
+    {
+      "slot": "ultimate",
+      "name": "Air Support",
+      "description": "Bombards the target location, slowing and dealing damage to enemies while gaining vision of the area.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/112/11230.png",
+      "cooldown": null
+    }
+  ],
   "build": [
     {
-      "name": "Hunter",
-      "slot": 1
+      "slot": 1,
+      "itemId": "1135",
+      "name": "Sparkforged Dagger",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1135.jpg",
+      "description": "Chain lightning BA"
     },
     {
-      "name": "Swift",
-      "slot": 2
+      "slot": 2,
+      "itemId": "1425",
+      "name": "Boots of Dexterity",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1425.jpg",
+      "description": "Boosts ASPD"
     },
     {
-      "name": "Wind",
-      "slot": 3
+      "slot": 3,
+      "itemId": "1133",
+      "name": "Eternity Blade",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1133.jpg",
+      "description": "High crit damage"
     },
     {
-      "name": "Blade",
-      "slot": 4
+      "slot": 4,
+      "itemId": "1154",
+      "name": "Cloud Piercer",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1154.jpg",
+      "description": "Crit Rate +12%, ASPD +15%"
     },
     {
-      "name": "Immortal",
-      "slot": 5
+      "slot": 5,
+      "itemId": "1126",
+      "name": "Doomsday",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1126.jpg",
+      "description": "Boosts BA damage"
     },
     {
-      "name": "Rose Gold",
-      "slot": 6
+      "slot": 6,
+      "itemId": "1337",
+      "name": "Sage's Sanctuary",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1337.jpg",
+      "description": "Resurrect on the spot"
     }
   ],
   "arcana": [
-    "Crit",
-    "Penetration",
-    "Attack Speed"
+    "Tier"
   ],
   "spells": [
-    "Flash",
-    "Heal"
+    "Flash"
   ],
   "counters": [
-    "Huang Zhong",
-    "Wang Zhaojun"
+    "Ying",
+    "Ukyo Tachibana",
+    "Lam"
   ],
   "counteredBy": [
-    "Gao Changgong",
-    "Li Bai"
+    "Lian Po"
   ],
   "tips": [
-    "Luban No.7: prioritize A tier Marksman power spikes from patch history.",
-    "Watch pick rate — pick data unavailable.",
-    "Lane into Loong with listed build order."
+    "Luban No.7 (Marksman): Tier S on international ranked — 52.01% WR.",
+    "Primary lane: Farm Lane.",
+    "Build core: Sparkforged Dagger, Boots of Dexterity, Eternity Blade."
   ],
   "patchHistory": [
     {
       "version": "Live meta",
-      "change": "Camp HOK ranked stats — WR 52.01%, pick 1.79%, ban 0.18%, tier band A."
+      "change": "Camp HOK — WR 52.01%, pick 1.79%, ban 0.18%, popularity tier S."
     },
     {
       "version": "Matchups",
-      "change": "Counters Huang Zhong, Wang Zhaojun · Weak into Gao Changgong, Li Bai (Tencent hero data)."
-    },
-    {
-      "version": "S37",
-      "change": "Data unavailable"
+      "change": "Counters Ying, Ukyo Tachibana, Lam · Weak into Lian Po."
     }
   ],
   "faqs": [
     {
       "id": "faq-good-season",
       "question": "Is Luban No.7 good in current season?",
-      "answer": "Luban No.7 shows 52.01% win rate, 1.79% pick rate, 0.18% ban rate (Camp HOK). Tier S Marksman."
+      "answer": "Luban No.7 is Tier S Marksman with 52.01% win rate, 1.79% pick rate, and 0.18% ban rate on the international server (Camp HOK)."
     },
     {
       "id": "faq-best-build",
       "question": "What is the best Luban No.7 build?",
-      "answer": "Core item path for Luban No.7: Hunter, Swift, Wind, Blade, Immortal, Rose Gold. Spells and arcana sets are listed in the Build section. Adjust final slot by enemy Loong."
+      "answer": "Recommended item path: Sparkforged Dagger, Boots of Dexterity, Eternity Blade, Cloud Piercer, Doomsday, Sage's Sanctuary. Spells and Arcana are listed on this page."
     },
     {
       "id": "faq-counter",
       "question": "How to counter Luban No.7?",
-      "answer": "Use Huang Zhong, Wang Zhaojun. Ban rate 0.18% reflects draft priority against Luban No.7."
+      "answer": "Strong picks into Luban No.7: Lian Po. Luban No.7 is strong into Ying, Ukyo Tachibana, Lam."
     }
   ],
   "metaAnalysis": [
     "Luban No.7 win rate 52.01% (Camp HOK, 2026-06-04).",
-    "Pick rate 1.79% for Luban No.7 in current ranked meta.",
-    "Ban rate 0.18% — moderate bans.",
-    "Counters: Huang Zhong, Wang Zhaojun. Countered by: Gao Changgong, Li Bai."
-  ],
-  "tencentId": 112,
-  "avatarFallback": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/112/112.jpg",
-  "dataSource": "Camp HOK + Tencent official",
-  "dataUpdated": "2026-06-04"
+    "Pick rate 1.79% in global ranked.",
+    "Ban rate 0.18%.",
+    "Counters: Ying, Ukyo Tachibana, Lam. Countered by: Lian Po."
+  ]
 }

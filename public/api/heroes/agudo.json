@@ -1,0 +1,146 @@
+{
+  "id": "agudo",
+  "slug": "agudo",
+  "name": "Agudo",
+  "role": "Marksman",
+  "roles": "Marksman",
+  "lane": "Jungling",
+  "difficulty": "Medium",
+  "tier": "B",
+  "winRate": 51.91,
+  "pickRate": 0.44,
+  "banRate": 0.04,
+  "rank": 24,
+  "avatar": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/TYN9rh81.png",
+  "avatarFallback": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/533/533.jpg",
+  "tencentId": 533,
+  "dataSource": "Camp HOK + HoKStats.gg (intl)",
+  "dataUpdated": "2026-06-05",
+  "skills": [
+    {
+      "slot": "passive",
+      "name": "Mountain Encounter",
+      "description": "Replaces Recovery with Release. Upon releasing monsters, they grant her Gold, EXP, and their respective blessing. Her Basic Attacks drop Seed Mines around enemy targets.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/533/53300.png",
+      "cooldown": null
+    },
+    {
+      "slot": "skill1",
+      "name": "Wild Growth",
+      "description": "Grants Movement Speed and Health recovery to allied units in the target area. Additionally, she gains Attack Speed and summons multiple monsters at the center.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/533/53310.png",
+      "cooldown": null
+    },
+    {
+      "slot": "skill2",
+      "name": "Tumble, Furball!",
+      "description": "Rolls forward, dealing damage to nearby enemies. Gains immunity against 1 hard crowd control, and damages and launches enemies hit.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/533/53320.png",
+      "cooldown": null
+    },
+    {
+      "slot": "ultimate",
+      "name": "Seed Mines",
+      "description": "Agudo rolls forward and enhances her next Basic Attack to drops 3 Seed Mines and deal Physical Damage.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/533/53330.png",
+      "cooldown": null
+    }
+  ],
+  "build": [
+    {
+      "slot": 1,
+      "itemId": "1511",
+      "name": "Hunting Knife",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1511.jpg",
+      "description": "Speeds up jungling"
+    },
+    {
+      "slot": 2,
+      "itemId": "1523",
+      "name": "Relentless Blade",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1523.jpg",
+      "description": "Monster kills boost PATK"
+    },
+    {
+      "slot": 3,
+      "itemId": "1425",
+      "name": "Boots of Dexterity",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1425.jpg",
+      "description": "Boosts ASPD"
+    },
+    {
+      "slot": 4,
+      "itemId": "1136",
+      "name": "Shadow Ripper",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1136.jpg",
+      "description": "Crits boost ASPD"
+    },
+    {
+      "slot": 5,
+      "itemId": "1133",
+      "name": "Eternity Blade",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1133.jpg",
+      "description": "High crit damage"
+    },
+    {
+      "slot": 6,
+      "itemId": "1533",
+      "name": "Rapacious Bite",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1533.jpg",
+      "description": "Monster kills boost PATK"
+    }
+  ],
+  "arcana": [
+    "Fate"
+  ],
+  "spells": [
+    "Haste",
+    "Smite"
+  ],
+  "counters": [
+    "Kongming",
+    "Daji"
+  ],
+  "counteredBy": [
+    "Ata",
+    "Han Xin"
+  ],
+  "tips": [
+    "Agudo (Marksman): Tier B on international ranked — 51.91% WR.",
+    "Primary lane: Jungling.",
+    "Build core: Hunting Knife, Relentless Blade, Boots of Dexterity."
+  ],
+  "patchHistory": [
+    {
+      "version": "Live meta",
+      "change": "Camp HOK — WR 51.91%, pick 0.44%, ban 0.04%, popularity tier B."
+    },
+    {
+      "version": "Matchups",
+      "change": "Counters Kongming, Daji · Weak into Ata, Han Xin."
+    }
+  ],
+  "faqs": [
+    {
+      "id": "faq-good-season",
+      "question": "Is Agudo good in current season?",
+      "answer": "Agudo is Tier B Marksman with 51.91% win rate, 0.44% pick rate, and 0.04% ban rate on the international server (Camp HOK)."
+    },
+    {
+      "id": "faq-best-build",
+      "question": "What is the best Agudo build?",
+      "answer": "Recommended item path: Hunting Knife, Relentless Blade, Boots of Dexterity, Shadow Ripper, Eternity Blade, Rapacious Bite. Spells and Arcana are listed on this page."
+    },
+    {
+      "id": "faq-counter",
+      "question": "How to counter Agudo?",
+      "answer": "Strong picks into Agudo: Ata, Han Xin. Agudo is strong into Kongming, Daji."
+    }
+  ],
+  "metaAnalysis": [
+    "Agudo win rate 51.91% (Camp HOK, 2026-06-04).",
+    "Pick rate 0.44% in global ranked.",
+    "Ban rate 0.04%.",
+    "Counters: Kongming, Daji. Countered by: Ata, Han Xin."
+  ]
+}

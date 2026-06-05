@@ -1,0 +1,147 @@
+{
+  "id": "wuyan",
+  "slug": "wuyan",
+  "name": "Wuyan",
+  "role": "Tank",
+  "roles": "Fighter, Tank",
+  "lane": "Clash Lane",
+  "difficulty": "Easy",
+  "tier": "B",
+  "winRate": 50.81,
+  "pickRate": 0.41,
+  "banRate": 0.03,
+  "rank": 56,
+  "avatar": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/D1f9UN1O.png",
+  "avatarFallback": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/117/117.jpg",
+  "tencentId": 117,
+  "dataSource": "Camp HOK + HoKStats.gg (intl)",
+  "dataUpdated": "2026-06-05",
+  "skills": [
+    {
+      "slot": "passive",
+      "name": "Petrifying Strike",
+      "description": "Skills and Basic Attacks have a chance to petrify enemy heroes.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/117/11700.png",
+      "cooldown": null
+    },
+    {
+      "slot": "skill1",
+      "name": "Storm and Stress",
+      "description": "Dashes to the target location and enhances the next Basic Attack to inflict extra damage and slow.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/117/11710.png",
+      "cooldown": null
+    },
+    {
+      "slot": "skill2",
+      "name": "Shock and Awe",
+      "description": "Deals damage to enemies in the specified area.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/117/11720.png",
+      "cooldown": null
+    },
+    {
+      "slot": "ultimate",
+      "name": "Hurricane Hammer",
+      "description": "Swings the hammer for a period of time, continuously dealing damage to nearby enemies in range. Gains increased Movement Speed and a shield while the skill is used. Passive: Grants shield periodically.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/117/11730.png",
+      "cooldown": null
+    }
+  ],
+  "build": [
+    {
+      "slot": 1,
+      "itemId": "1522",
+      "name": "Patrol Axe",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1522.jpg",
+      "description": "Monster kills boost Health"
+    },
+    {
+      "slot": 2,
+      "itemId": "1411",
+      "name": "Lightfoot Shoes",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1411.jpg",
+      "description": "Movement Speed"
+    },
+    {
+      "slot": 3,
+      "itemId": "1331",
+      "name": "Blazing Cape",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1331.jpg",
+      "description": "Burns nearby enemies"
+    },
+    {
+      "slot": 4,
+      "itemId": "1345",
+      "name": "Nettle Gauntlet",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1345.jpg",
+      "description": "Offense & defense"
+    },
+    {
+      "slot": 5,
+      "itemId": "1422",
+      "name": "Boots of Resistance",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
+      "description": "Shortens CC"
+    },
+    {
+      "slot": 6,
+      "itemId": "13310",
+      "name": "Frostscar's Embrace",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/13310.jpg",
+      "description": "Enhanced BAs slow"
+    }
+  ],
+  "arcana": [
+    "Mutation"
+  ],
+  "spells": [
+    "Flash"
+  ],
+  "counters": [
+    "Kongming",
+    "Lady Zhen",
+    "Liang"
+  ],
+  "counteredBy": [
+    "Lam",
+    "Ming",
+    "Pei"
+  ],
+  "tips": [
+    "Wuyan (Tank): Tier B on international ranked — 50.81% WR.",
+    "Primary lane: Clash Lane.",
+    "Build core: Patrol Axe, Lightfoot Shoes, Blazing Cape."
+  ],
+  "patchHistory": [
+    {
+      "version": "Live meta",
+      "change": "Camp HOK — WR 50.81%, pick 0.41%, ban 0.03%, popularity tier B."
+    },
+    {
+      "version": "Matchups",
+      "change": "Counters Kongming, Lady Zhen, Liang · Weak into Lam, Ming, Pei."
+    }
+  ],
+  "faqs": [
+    {
+      "id": "faq-good-season",
+      "question": "Is Wuyan good in current season?",
+      "answer": "Wuyan is Tier B Tank with 50.81% win rate, 0.41% pick rate, and 0.03% ban rate on the international server (Camp HOK)."
+    },
+    {
+      "id": "faq-best-build",
+      "question": "What is the best Wuyan build?",
+      "answer": "Recommended item path: Patrol Axe, Lightfoot Shoes, Blazing Cape, Nettle Gauntlet, Boots of Resistance, Frostscar's Embrace. Spells and Arcana are listed on this page."
+    },
+    {
+      "id": "faq-counter",
+      "question": "How to counter Wuyan?",
+      "answer": "Strong picks into Wuyan: Lam, Ming, Pei. Wuyan is strong into Kongming, Lady Zhen, Liang."
+    }
+  ],
+  "metaAnalysis": [
+    "Wuyan win rate 50.81% (Camp HOK, 2026-06-04).",
+    "Pick rate 0.41% in global ranked.",
+    "Ban rate 0.03%.",
+    "Counters: Kongming, Lady Zhen, Liang. Countered by: Lam, Ming, Pei."
+  ]
+}

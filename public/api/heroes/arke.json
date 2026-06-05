@@ -1,0 +1,147 @@
+{
+  "id": "arke",
+  "slug": "arke",
+  "name": "Arke",
+  "role": "Assassin",
+  "roles": "Assassin",
+  "lane": "Jungling",
+  "difficulty": "Medium",
+  "tier": "A",
+  "winRate": 52.37,
+  "pickRate": 0.59,
+  "banRate": 0.8,
+  "rank": 13,
+  "avatar": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/IUMPYUy4.png",
+  "avatarFallback": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/116/116.jpg",
+  "tencentId": 116,
+  "dataSource": "Camp HOK + HoKStats.gg (intl)",
+  "dataUpdated": "2026-06-05",
+  "skills": [
+    {
+      "slot": "passive",
+      "name": "Kiss of Death",
+      "description": "Attacks launched from the front of the target will not crit, but backstabs are guaranteed to crit.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/116/11600.png",
+      "cooldown": null
+    },
+    {
+      "slot": "skill1",
+      "name": "Arclight",
+      "description": "Arke attacks twice in a row, dealing physical damage.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/116/11610.png",
+      "cooldown": null
+    },
+    {
+      "slot": "skill2",
+      "name": "Untouchable",
+      "description": "Arke dashes forward and attacks, marking an enemy while dealing physical damage and gaining Attack Speed. Attacking marked targets slows them and reduces this skill's cooldown. She takes less damage from marked targets.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/116/11620.png",
+      "cooldown": null
+    },
+    {
+      "slot": "ultimate",
+      "name": "Phantom Dance",
+      "description": "Enters stealth, gaining a Movement Speed boost and Health recovery. Enhances attack after exiting stealth, granting extra Movement Speed boost when dealing damage, and refreshes all skill cooldowns with defeats and assists.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/116/11630.png",
+      "cooldown": null
+    }
+  ],
+  "build": [
+    {
+      "slot": 1,
+      "itemId": "1523",
+      "name": "Relentless Blade",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1523.jpg",
+      "description": "Monster kills boost PATK"
+    },
+    {
+      "slot": 2,
+      "itemId": "1423",
+      "name": "Boots of Tranquility",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1423.jpg",
+      "description": "Reduces Skill CD"
+    },
+    {
+      "slot": 3,
+      "itemId": "1137",
+      "name": "Axe of Torment",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1137.jpg",
+      "description": "Anti-squishy"
+    },
+    {
+      "slot": 4,
+      "itemId": "1533",
+      "name": "Rapacious Bite",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1533.jpg",
+      "description": "Monster kills boost PATK"
+    },
+    {
+      "slot": 5,
+      "itemId": "1426",
+      "name": "Boots of Deftness",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1426.jpg",
+      "description": "Extra Movement Speed"
+    },
+    {
+      "slot": 6,
+      "itemId": "1133",
+      "name": "Eternity Blade",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1133.jpg",
+      "description": "High crit damage"
+    }
+  ],
+  "arcana": [
+    "Dominator"
+  ],
+  "spells": [
+    "Smite"
+  ],
+  "counters": [
+    "Data unavailable",
+    "Data unavailable",
+    "Data unavailable"
+  ],
+  "counteredBy": [
+    "Data unavailable",
+    "Data unavailable",
+    "Data unavailable"
+  ],
+  "tips": [
+    "Arke (Assassin): Tier A on international ranked — 52.37% WR.",
+    "Primary lane: Jungling.",
+    "Build core: Relentless Blade, Boots of Tranquility, Axe of Torment."
+  ],
+  "patchHistory": [
+    {
+      "version": "Live meta",
+      "change": "Camp HOK — WR 52.37%, pick 0.59%, ban 0.8%, popularity tier A."
+    },
+    {
+      "version": "Matchups",
+      "change": "Counters Data unavailable, Data unavailable, Data unavailable · Weak into Data unavailable, Data unavailable, Data unavailable."
+    }
+  ],
+  "faqs": [
+    {
+      "id": "faq-good-season",
+      "question": "Is Arke good in current season?",
+      "answer": "Arke is Tier A Assassin with 52.37% win rate, 0.59% pick rate, and 0.8% ban rate on the international server (Camp HOK)."
+    },
+    {
+      "id": "faq-best-build",
+      "question": "What is the best Arke build?",
+      "answer": "Recommended item path: Relentless Blade, Boots of Tranquility, Axe of Torment, Rapacious Bite, Boots of Deftness, Eternity Blade. Spells and Arcana are listed on this page."
+    },
+    {
+      "id": "faq-counter",
+      "question": "How to counter Arke?",
+      "answer": "Strong picks into Arke: Data unavailable, Data unavailable, Data unavailable. Arke is strong into Data unavailable, Data unavailable, Data unavailable."
+    }
+  ],
+  "metaAnalysis": [
+    "Arke win rate 52.37% (Camp HOK, 2026-06-04).",
+    "Pick rate 0.59% in global ranked.",
+    "Ban rate 0.8%.",
+    "Counters: Data unavailable, Data unavailable, Data unavailable. Countered by: Data unavailable, Data unavailable, Data unavailable."
+  ]
+}

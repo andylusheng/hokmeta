@@ -3,100 +3,145 @@
   "slug": "lady-sun",
   "name": "Lady Sun",
   "role": "Marksman",
-  "difficulty": "Hard",
+  "roles": "Marksman",
+  "lane": "Farm Lane",
+  "difficulty": "Medium",
   "tier": "S",
   "winRate": 48.31,
   "pickRate": 2.11,
   "banRate": 0.09,
-  "rank": 24,
+  "rank": 100,
   "avatar": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/BmY46Zgb.png",
+  "avatarFallback": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/111/111.jpg",
+  "tencentId": 111,
+  "dataSource": "Camp HOK + HoKStats.gg (intl)",
+  "dataUpdated": "2026-06-05",
+  "skills": [
+    {
+      "slot": "passive",
+      "name": "Energy Burst",
+      "description": "Basic Attacks reduce the cooldown of Skill 1.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/111/11100.png",
+      "cooldown": null
+    },
+    {
+      "slot": "skill1",
+      "name": "Rolling Raid",
+      "description": "Rolls in the target direction, granting extra range and a piercing effect to the next Basic Attack. Gains increased Movement Speed if there are enemy heroes nearby after rolling.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/111/11110.png",
+      "cooldown": null
+    },
+    {
+      "slot": "skill2",
+      "name": "Frag Grenade",
+      "description": "Throws a grenade at the target location, damaging, marking, and sundering hit enemies. Her Basic Attack deals extra damage to marked targets.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/111/11120.png",
+      "cooldown": null
+    },
+    {
+      "slot": "ultimate",
+      "name": "Ultimate Shell",
+      "description": "Fires a shell in the target direction, dealing AoE damage when enemies are hit or when exploding at max range.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/111/11130.png",
+      "cooldown": null
+    }
+  ],
   "build": [
     {
-      "name": "Hunter",
-      "slot": 1
+      "slot": 1,
+      "itemId": "1425",
+      "name": "Boots of Dexterity",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1425.jpg",
+      "description": "Boosts ASPD"
     },
     {
-      "name": "Swift",
-      "slot": 2
+      "slot": 2,
+      "itemId": "1133",
+      "name": "Eternity Blade",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1133.jpg",
+      "description": "High crit damage"
     },
     {
-      "name": "Wind",
-      "slot": 3
+      "slot": 3,
+      "itemId": "1134",
+      "name": "Master Sword",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1134.jpg",
+      "description": "Enhances BA"
     },
     {
-      "name": "Blade",
-      "slot": 4
+      "slot": 4,
+      "itemId": "1136",
+      "name": "Shadow Ripper",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1136.jpg",
+      "description": "Crits boost ASPD"
     },
     {
-      "name": "Immortal",
-      "slot": 5
+      "slot": 5,
+      "itemId": "1137",
+      "name": "Axe of Torment",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1137.jpg",
+      "description": "Anti-squishy"
     },
     {
-      "name": "Rose Gold",
-      "slot": 6
+      "slot": 6,
+      "itemId": "1155",
+      "name": "Daybreaker's Virtue",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1155.jpg",
+      "description": "Great for marksmen"
     }
   ],
   "arcana": [
-    "Crit",
-    "Penetration",
-    "Attack Speed"
+    "Dominator"
   ],
   "spells": [
-    "Flash",
-    "Heal"
+    "Flash"
   ],
   "counters": [
-    "Dian Wei",
-    "Donghuang"
+    "Diaochan",
+    "Nakoruru",
+    "Ying"
   ],
   "counteredBy": [
-    "Gao Changgong",
-    "Mulan"
+    "Data unavailable",
+    "Data unavailable",
+    "Data unavailable"
   ],
   "tips": [
-    "Lady Sun: prioritize S+ tier Marksman power spikes from patch history.",
-    "Watch pick rate — pick data unavailable.",
-    "Lane into Loong with listed build order."
+    "Lady Sun (Marksman): Tier S on international ranked — 48.31% WR.",
+    "Primary lane: Farm Lane.",
+    "Build core: Boots of Dexterity, Eternity Blade, Master Sword."
   ],
   "patchHistory": [
     {
       "version": "Live meta",
-      "change": "Camp HOK ranked stats — WR 48.31%, pick 2.11%, ban 0.09%, tier band A."
+      "change": "Camp HOK — WR 48.31%, pick 2.11%, ban 0.09%, popularity tier S."
     },
     {
       "version": "Matchups",
-      "change": "Counters Dian Wei, Donghuang · Weak into Gao Changgong, Mulan (Tencent hero data)."
-    },
-    {
-      "version": "S37",
-      "change": "Data unavailable"
+      "change": "Counters Diaochan, Nakoruru, Ying · Weak into Data unavailable, Data unavailable, Data unavailable."
     }
   ],
   "faqs": [
     {
       "id": "faq-good-season",
       "question": "Is Lady Sun good in current season?",
-      "answer": "Lady Sun shows 48.31% win rate, 2.11% pick rate, 0.09% ban rate (Camp HOK). Tier S Marksman."
+      "answer": "Lady Sun is Tier S Marksman with 48.31% win rate, 2.11% pick rate, and 0.09% ban rate on the international server (Camp HOK)."
     },
     {
       "id": "faq-best-build",
       "question": "What is the best Lady Sun build?",
-      "answer": "Core item path for Lady Sun: Hunter, Swift, Wind, Blade, Immortal, Rose Gold. Spells and arcana sets are listed in the Build section. Adjust final slot by enemy Loong."
+      "answer": "Recommended item path: Boots of Dexterity, Eternity Blade, Master Sword, Shadow Ripper, Axe of Torment, Daybreaker's Virtue. Spells and Arcana are listed on this page."
     },
     {
       "id": "faq-counter",
       "question": "How to counter Lady Sun?",
-      "answer": "Use Dian Wei, Donghuang. Ban rate 0.09% reflects draft priority against Lady Sun."
+      "answer": "Strong picks into Lady Sun: Data unavailable, Data unavailable, Data unavailable. Lady Sun is strong into Diaochan, Nakoruru, Ying."
     }
   ],
   "metaAnalysis": [
     "Lady Sun win rate 48.31% (Camp HOK, 2026-06-04).",
-    "Pick rate 2.11% for Lady Sun in current ranked meta.",
-    "Ban rate 0.09% — moderate bans.",
-    "Counters: Dian Wei, Donghuang. Countered by: Gao Changgong, Mulan."
-  ],
-  "tencentId": 111,
-  "avatarFallback": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/111/111.jpg",
-  "dataSource": "Camp HOK + Tencent official",
-  "dataUpdated": "2026-06-04"
+    "Pick rate 2.11% in global ranked.",
+    "Ban rate 0.09%.",
+    "Counters: Diaochan, Nakoruru, Ying. Countered by: Data unavailable, Data unavailable, Data unavailable."
+  ]
 }

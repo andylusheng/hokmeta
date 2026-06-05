@@ -10,7 +10,7 @@ import { learnArticles } from '@/lib/learn';
 export const metadata = buildMetadata({
   title: defaultTitle('Honor of Kings Meta Hub'),
   description:
-    'Top 30 HOK meta heroes: tier list, builds, counters, trends, and guides for ranked play.',
+    'Honor of Kings global meta — full hero roster, tier list, builds, skills, counters, and guides.',
   path: '/',
 });
 
@@ -48,7 +48,7 @@ export default function HomePage() {
           Honor of Kings Meta &amp; Tier List
         </h1>
         <p className="mx-auto max-w-2xl text-gray-400 sm:mx-0">
-          Data-driven guides for {heroes.length} top meta heroes — tier list,
+          Data-driven guides for {heroes.length} international heroes — tier list,
           builds, counters, patch notes, and ranked meta tools.
         </p>
         <div className="mt-6 flex flex-wrap justify-center gap-3 sm:justify-start">

@@ -2,48 +2,99 @@
   "id": "dharma",
   "slug": "dharma",
   "name": "Dharma",
-  "role": "Warrior",
-  "difficulty": "Medium",
+  "role": "Tank",
+  "roles": "Fighter, Tank",
+  "lane": "Clash Lane",
+  "difficulty": "Easy",
   "tier": "B",
   "winRate": 52.16,
   "pickRate": 0.21,
   "banRate": 0.02,
-  "rank": 2,
+  "rank": 19,
   "avatar": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/9u997w0x.png",
+  "avatarFallback": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/134/134.jpg",
+  "tencentId": 134,
+  "dataSource": "Camp HOK + HoKStats.gg (intl)",
+  "dataUpdated": "2026-06-05",
+  "skills": [
+    {
+      "slot": "passive",
+      "name": "Heart Meridian Mantra",
+      "description": "When using skills, he gains Physical and Magical Defense,as well as enhanced basic atacks that inflict extra damage and slow.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/134/13400.png",
+      "cooldown": null
+    },
+    {
+      "slot": "skill1",
+      "name": "Formlessness Mantra",
+      "description": "Dashes forward, dealing damage to enemies and crowd controling them.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/134/13410.png",
+      "cooldown": null
+    },
+    {
+      "slot": "skill2",
+      "name": "Enlightenment Mantra",
+      "description": "Damages enemies in front of him and recovers health",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/134/13420.png",
+      "cooldown": null
+    },
+    {
+      "slot": "ultimate",
+      "name": "Truth Mantra",
+      "description": "Damages nearby enemies and knocks them back.If an enemy is knocked back into a wall , they take extra damage and are stunned.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/134/13430.png",
+      "cooldown": null
+    }
+  ],
   "build": [
     {
-      "name": "Gilded",
-      "slot": 1
+      "slot": 1,
+      "itemId": "1523",
+      "name": "Relentless Blade",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1523.jpg",
+      "description": "Monster kills boost PATK"
     },
     {
-      "name": "Mantle",
-      "slot": 2
+      "slot": 2,
+      "itemId": "1423",
+      "name": "Boots of Tranquility",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1423.jpg",
+      "description": "Reduces Skill CD"
     },
     {
-      "name": "Frost Cape",
-      "slot": 3
+      "slot": 3,
+      "itemId": "1137",
+      "name": "Axe of Torment",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1137.jpg",
+      "description": "Anti-squishy"
     },
     {
-      "name": "Antique",
-      "slot": 4
+      "slot": 4,
+      "itemId": "13310",
+      "name": "Frostscar's Embrace",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/13310.jpg",
+      "description": "Enhanced BAs slow"
     },
     {
-      "name": "Dominance",
-      "slot": 5
+      "slot": 5,
+      "itemId": "1533",
+      "name": "Rapacious Bite",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1533.jpg",
+      "description": "Monster kills boost PATK"
     },
     {
-      "name": "Helm",
-      "slot": 6
+      "slot": 6,
+      "itemId": "1422",
+      "name": "Boots of Resistance",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
+      "description": "Shortens CC"
     }
   ],
   "arcana": [
-    "Attack",
-    "Penetration",
-    "HP"
+    "Mutation"
   ],
   "spells": [
-    "Flash",
-    "Execute"
+    "Flash"
   ],
   "counters": [
     "Wang Zhaojun",
@@ -54,49 +105,41 @@
     "Diaochan"
   ],
   "tips": [
-    "Dharma: prioritize A tier Warrior power spikes from patch history.",
-    "Watch pick rate — pick data unavailable.",
-    "Lane into Lady Sun with listed build order."
+    "Dharma (Tank): Tier B on international ranked — 52.16% WR.",
+    "Primary lane: Clash Lane.",
+    "Build core: Relentless Blade, Boots of Tranquility, Axe of Torment."
   ],
   "patchHistory": [
     {
       "version": "Live meta",
-      "change": "Camp HOK ranked stats — WR 52.16%, pick 0.21%, ban 0.02%, tier band C."
+      "change": "Camp HOK — WR 52.16%, pick 0.21%, ban 0.02%, popularity tier B."
     },
     {
       "version": "Matchups",
-      "change": "Counters Wang Zhaojun, Han Xin · Weak into Xiang Yu, Diaochan (Tencent hero data)."
-    },
-    {
-      "version": "S37",
-      "change": "Data unavailable"
+      "change": "Counters Wang Zhaojun, Han Xin · Weak into Xiang Yu, Diaochan."
     }
   ],
   "faqs": [
     {
       "id": "faq-good-season",
       "question": "Is Dharma good in current season?",
-      "answer": "Dharma shows 52.16% win rate, 0.21% pick rate, 0.02% ban rate (Camp HOK). Tier B Warrior."
+      "answer": "Dharma is Tier B Tank with 52.16% win rate, 0.21% pick rate, and 0.02% ban rate on the international server (Camp HOK)."
     },
     {
       "id": "faq-best-build",
       "question": "What is the best Dharma build?",
-      "answer": "Core item path for Dharma: Gilded, Mantle, Frost Cape, Antique, Dominance, Helm. Spells and arcana sets are listed in the Build section. Adjust final slot by enemy Lady Sun."
+      "answer": "Recommended item path: Relentless Blade, Boots of Tranquility, Axe of Torment, Frostscar's Embrace, Rapacious Bite, Boots of Resistance. Spells and Arcana are listed on this page."
     },
     {
       "id": "faq-counter",
       "question": "How to counter Dharma?",
-      "answer": "Use Wang Zhaojun, Han Xin. Ban rate 0.02% reflects draft priority against Dharma."
+      "answer": "Strong picks into Dharma: Xiang Yu, Diaochan. Dharma is strong into Wang Zhaojun, Han Xin."
     }
   ],
   "metaAnalysis": [
     "Dharma win rate 52.16% (Camp HOK, 2026-06-04).",
-    "Pick rate 0.21% for Dharma in current ranked meta.",
-    "Ban rate 0.02% — moderate bans.",
+    "Pick rate 0.21% in global ranked.",
+    "Ban rate 0.02%.",
     "Counters: Wang Zhaojun, Han Xin. Countered by: Xiang Yu, Diaochan."
-  ],
-  "tencentId": 134,
-  "avatarFallback": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/134/134.jpg",
-  "dataSource": "Camp HOK + Tencent official",
-  "dataUpdated": "2026-06-04"
+  ]
 }

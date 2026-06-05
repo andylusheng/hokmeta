@@ -1,0 +1,147 @@
+{
+  "id": "yixing",
+  "slug": "yixing",
+  "name": "Yixing",
+  "role": "Mage",
+  "roles": "Mage",
+  "lane": "Mid Lane",
+  "difficulty": "Medium",
+  "tier": "A",
+  "winRate": 51.76,
+  "pickRate": 0.71,
+  "banRate": 0.04,
+  "rank": 31,
+  "avatar": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/RLA5jvBk.png",
+  "avatarFallback": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/197/197.jpg",
+  "tencentId": 197,
+  "dataSource": "Camp HOK + HoKStats.gg (intl)",
+  "dataUpdated": "2026-06-05",
+  "skills": [
+    {
+      "slot": "passive",
+      "name": "Maintaining Initiative",
+      "description": "Basic Attacks deal magical damage. For every 4 skill hits on the same enemy, generates a Weiqi stone that deals magical damage and adds to the total number of Weiqi stones. Gains brief immunity to all damage and increased Movement Speed upon taking fatal damage.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/197/19700.png",
+      "cooldown": null
+    },
+    {
+      "slot": "skill1",
+      "name": "Sliding Stones",
+      "description": "Places a Weiqi stone at the target location, gaining vision and damaging enemies. Weiqi stones will be pulled into Skill 2's Weiqi formation, damaging and slowing enemies in their path.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/197/19710.png",
+      "cooldown": null
+    },
+    {
+      "slot": "skill2",
+      "name": "Taking Liberties",
+      "description": "Deals damage to the target area and creates a Weiqi formation. The formation pulls enemies toward its center, damaging them in the process.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/197/19720.png",
+      "cooldown": null
+    },
+    {
+      "slot": "ultimate",
+      "name": "The World is My Board",
+      "description": "Draws a Weiqi board that launches enemies and places marks on them while exposing their location. Enemies caught within the Weiqi board are bound and will be unable to leave. When the Weiqi board is fully formed, his Movement Speed is increased.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/197/19730.png",
+      "cooldown": null
+    }
+  ],
+  "build": [
+    {
+      "slot": 1,
+      "itemId": "1424",
+      "name": "Boots of the Arcane",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1424.jpg",
+      "description": "Magical Pierce"
+    },
+    {
+      "slot": 2,
+      "itemId": "1221",
+      "name": "Grand Staff",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1221.jpg",
+      "description": "Magical Attack"
+    },
+    {
+      "slot": 3,
+      "itemId": "1234",
+      "name": "Frozen Breath",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1234.jpg",
+      "description": "Slows on hit"
+    },
+    {
+      "slot": 4,
+      "itemId": "1235",
+      "name": "Mask of Agony",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1235.jpg",
+      "description": "Boosts skill damage"
+    },
+    {
+      "slot": 5,
+      "itemId": "1243",
+      "name": "Nebulon Wood",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1243.jpg",
+      "description": "MATK +60, HP +450"
+    },
+    {
+      "slot": 6,
+      "itemId": "1727",
+      "name": "Twilight Stream",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1727.jpg",
+      "description": "Boosts Magical Pierce"
+    }
+  ],
+  "arcana": [
+    "Nightmare"
+  ],
+  "spells": [
+    "Flash"
+  ],
+  "counters": [
+    "Augran",
+    "Cirrus",
+    "Lam"
+  ],
+  "counteredBy": [
+    "Allain",
+    "Dharma",
+    "Dian Wei"
+  ],
+  "tips": [
+    "Yixing (Mage): Tier A on international ranked — 51.76% WR.",
+    "Primary lane: Mid Lane.",
+    "Build core: Boots of the Arcane, Grand Staff, Frozen Breath."
+  ],
+  "patchHistory": [
+    {
+      "version": "Live meta",
+      "change": "Camp HOK — WR 51.76%, pick 0.71%, ban 0.04%, popularity tier A."
+    },
+    {
+      "version": "Matchups",
+      "change": "Counters Augran, Cirrus, Lam · Weak into Allain, Dharma, Dian Wei."
+    }
+  ],
+  "faqs": [
+    {
+      "id": "faq-good-season",
+      "question": "Is Yixing good in current season?",
+      "answer": "Yixing is Tier A Mage with 51.76% win rate, 0.71% pick rate, and 0.04% ban rate on the international server (Camp HOK)."
+    },
+    {
+      "id": "faq-best-build",
+      "question": "What is the best Yixing build?",
+      "answer": "Recommended item path: Boots of the Arcane, Grand Staff, Frozen Breath, Mask of Agony, Nebulon Wood, Twilight Stream. Spells and Arcana are listed on this page."
+    },
+    {
+      "id": "faq-counter",
+      "question": "How to counter Yixing?",
+      "answer": "Strong picks into Yixing: Allain, Dharma, Dian Wei. Yixing is strong into Augran, Cirrus, Lam."
+    }
+  ],
+  "metaAnalysis": [
+    "Yixing win rate 51.76% (Camp HOK, 2026-06-04).",
+    "Pick rate 0.71% in global ranked.",
+    "Ban rate 0.04%.",
+    "Counters: Augran, Cirrus, Lam. Countered by: Allain, Dharma, Dian Wei."
+  ]
+}

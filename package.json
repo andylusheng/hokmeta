@@ -10,6 +10,10 @@
     "start": "next start",
     "lint": "next lint",
     "sync-meta": "node scripts/sync-meta.js",
+    "sync-global": "node scripts/sync-global.js",
+    "fix-skill-icons": "node scripts/fix-skill-icons.js",
+    "fix-all-icons": "node scripts/fix-all-icons-fast.js",
+    "repair-heroes": "node scripts/repair-heroes.js",
     "postbuild": "node scripts/copy-api.js"
   },
   "dependencies": {

@@ -1,0 +1,147 @@
+{
+  "id": "liang",
+  "slug": "liang",
+  "name": "Liang",
+  "role": "Mage",
+  "roles": "Mage",
+  "lane": "Mid Lane",
+  "difficulty": "Medium",
+  "tier": "S+",
+  "winRate": 51.46,
+  "pickRate": 0.76,
+  "banRate": 5.05,
+  "rank": 39,
+  "avatar": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/cNugkXGO.png",
+  "avatarFallback": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/156/156.jpg",
+  "tencentId": 156,
+  "dataSource": "Camp HOK + HoKStats.gg (intl)",
+  "dataUpdated": "2026-06-05",
+  "skills": [
+    {
+      "slot": "passive",
+      "name": "Power Word - Trance",
+      "description": "Every second hit on the same target within a short time will deal an extra strike of damage.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/156/15600.png",
+      "cooldown": null
+    },
+    {
+      "slot": "skill1",
+      "name": "Power Word - Barrier",
+      "description": "Summons 4 barriers that shatter when touched by an enemy, inflicting damage, stun, and slow. Damage and slowing effects are reduced for enemies that touch multiple barriers.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/156/15610.png",
+      "cooldown": null
+    },
+    {
+      "slot": "skill2",
+      "name": "Power Word - Fate",
+      "description": "Summons a magic circle that deals damage to enemies within range while granting vision of the area. Liang gains Movement Speed while inside his magic circle.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/156/15620.png",
+      "cooldown": null
+    },
+    {
+      "slot": "ultimate",
+      "name": "Power Word - Control",
+      "description": "Suppresses an enemy hero, dealing damage over time. When the suppression is complete, deals damage and stun enemies in range.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/156/15630.png",
+      "cooldown": null
+    }
+  ],
+  "build": [
+    {
+      "slot": 1,
+      "itemId": "1701",
+      "name": "Knowledge Gem",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1701.jpg",
+      "description": "Extra Gold & EXP"
+    },
+    {
+      "slot": 2,
+      "itemId": "1411",
+      "name": "Lightfoot Shoes",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1411.jpg",
+      "description": "Movement Speed"
+    },
+    {
+      "slot": 3,
+      "itemId": "1426",
+      "name": "Boots of Deftness",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1426.jpg",
+      "description": "Extra Movement Speed"
+    },
+    {
+      "slot": 4,
+      "itemId": "1714",
+      "name": "Guardian",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1714.jpg",
+      "description": "Survivability aura"
+    },
+    {
+      "slot": 5,
+      "itemId": "1724",
+      "name": "Guardian - Redemption",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1724.jpg",
+      "description": "Group shield"
+    },
+    {
+      "slot": 6,
+      "itemId": "1226",
+      "name": "Holy Grail",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1226.jpg",
+      "description": "Rapid Health & Mana Regen"
+    }
+  ],
+  "arcana": [
+    "Nightmare"
+  ],
+  "spells": [
+    "Flash"
+  ],
+  "counters": [
+    "Han Xin",
+    "Lam",
+    "Mulan"
+  ],
+  "counteredBy": [
+    "Li Xin",
+    "Mayene",
+    "Mulan"
+  ],
+  "tips": [
+    "Liang (Mage): Tier S+ on international ranked — 51.46% WR.",
+    "Primary lane: Mid Lane.",
+    "Build core: Knowledge Gem, Lightfoot Shoes, Boots of Deftness."
+  ],
+  "patchHistory": [
+    {
+      "version": "Live meta",
+      "change": "Camp HOK — WR 51.46%, pick 0.76%, ban 5.05%, popularity tier S+."
+    },
+    {
+      "version": "Matchups",
+      "change": "Counters Han Xin, Lam, Mulan · Weak into Li Xin, Mayene, Mulan."
+    }
+  ],
+  "faqs": [
+    {
+      "id": "faq-good-season",
+      "question": "Is Liang good in current season?",
+      "answer": "Liang is Tier S+ Mage with 51.46% win rate, 0.76% pick rate, and 5.05% ban rate on the international server (Camp HOK)."
+    },
+    {
+      "id": "faq-best-build",
+      "question": "What is the best Liang build?",
+      "answer": "Recommended item path: Knowledge Gem, Lightfoot Shoes, Boots of Deftness, Guardian, Guardian - Redemption, Holy Grail. Spells and Arcana are listed on this page."
+    },
+    {
+      "id": "faq-counter",
+      "question": "How to counter Liang?",
+      "answer": "Strong picks into Liang: Li Xin, Mayene, Mulan. Liang is strong into Han Xin, Lam, Mulan."
+    }
+  ],
+  "metaAnalysis": [
+    "Liang win rate 51.46% (Camp HOK, 2026-06-04).",
+    "Pick rate 0.76% in global ranked.",
+    "Ban rate 5.05%.",
+    "Counters: Han Xin, Lam, Mulan. Countered by: Li Xin, Mayene, Mulan."
+  ]
+}

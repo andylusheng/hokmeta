@@ -1,0 +1,145 @@
+{
+  "id": "xiao-qiao",
+  "slug": "xiao-qiao",
+  "name": "Xiao Qiao",
+  "role": "Mage",
+  "roles": "Mage",
+  "lane": "Mid Lane",
+  "difficulty": "Medium",
+  "tier": "S",
+  "winRate": 48.6,
+  "pickRate": 1.85,
+  "banRate": 0.16,
+  "rank": 95,
+  "avatar": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/paTVVlNq.png",
+  "avatarFallback": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/106/106.jpg",
+  "tencentId": 106,
+  "dataSource": "Camp HOK + HoKStats.gg (intl)",
+  "dataUpdated": "2026-06-05",
+  "skills": [
+    {
+      "slot": "passive",
+      "name": "Encouraging Thoughts",
+      "description": "Hitting enemies with skills enhances herself, increasing her Movement Speed.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/106/10600.png",
+      "cooldown": null
+    },
+    {
+      "slot": "skill1",
+      "name": "Blossoming Fan",
+      "description": "Throws fan in the target direction, which returns to her upon reaching max range, damaging enemies in its path both ways.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/106/10610.png",
+      "cooldown": null
+    },
+    {
+      "slot": "skill2",
+      "name": "Honeysweet Breeze",
+      "description": "Deals damage to enemies in the target area and launches them.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/106/10620.png",
+      "cooldown": null
+    },
+    {
+      "slot": "ultimate",
+      "name": "Meteor Storm",
+      "description": "Summons meteors, dealing damage to nearby enemies in range.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/106/10630.png",
+      "cooldown": null
+    }
+  ],
+  "build": [
+    {
+      "slot": 1,
+      "itemId": "1411",
+      "name": "Lightfoot Shoes",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1411.jpg",
+      "description": "Movement Speed"
+    },
+    {
+      "slot": 2,
+      "itemId": "1224",
+      "name": "Stone of Sorcery",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1224.jpg",
+      "description": "MATK +60\nMSPD +7.5%"
+    },
+    {
+      "slot": 3,
+      "itemId": "1424",
+      "name": "Boots of the Arcane",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1424.jpg",
+      "description": "Magical Pierce"
+    },
+    {
+      "slot": 4,
+      "itemId": "12211",
+      "name": "Venomous Staff",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/12211.jpg",
+      "description": "Lowers Health regen"
+    },
+    {
+      "slot": 5,
+      "itemId": "1221",
+      "name": "Grand Staff",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1221.jpg",
+      "description": "Magical Attack"
+    },
+    {
+      "slot": 6,
+      "itemId": "1231",
+      "name": "Void Staff",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1231.jpg",
+      "description": "Anti-tank"
+    }
+  ],
+  "arcana": [
+    "Nightmare"
+  ],
+  "spells": [
+    "Flash"
+  ],
+  "counters": [
+    "Ukyo Tachibana",
+    "Han Xin"
+  ],
+  "counteredBy": [
+    "Liu Bei",
+    "Menki"
+  ],
+  "tips": [
+    "Xiao Qiao (Mage): Tier S on international ranked — 48.6% WR.",
+    "Primary lane: Mid Lane.",
+    "Build core: Lightfoot Shoes, Stone of Sorcery, Boots of the Arcane."
+  ],
+  "patchHistory": [
+    {
+      "version": "Live meta",
+      "change": "Camp HOK — WR 48.6%, pick 1.85%, ban 0.16%, popularity tier S."
+    },
+    {
+      "version": "Matchups",
+      "change": "Counters Ukyo Tachibana, Han Xin · Weak into Liu Bei, Menki."
+    }
+  ],
+  "faqs": [
+    {
+      "id": "faq-good-season",
+      "question": "Is Xiao Qiao good in current season?",
+      "answer": "Xiao Qiao is Tier S Mage with 48.6% win rate, 1.85% pick rate, and 0.16% ban rate on the international server (Camp HOK)."
+    },
+    {
+      "id": "faq-best-build",
+      "question": "What is the best Xiao Qiao build?",
+      "answer": "Recommended item path: Lightfoot Shoes, Stone of Sorcery, Boots of the Arcane, Venomous Staff, Grand Staff, Void Staff. Spells and Arcana are listed on this page."
+    },
+    {
+      "id": "faq-counter",
+      "question": "How to counter Xiao Qiao?",
+      "answer": "Strong picks into Xiao Qiao: Liu Bei, Menki. Xiao Qiao is strong into Ukyo Tachibana, Han Xin."
+    }
+  ],
+  "metaAnalysis": [
+    "Xiao Qiao win rate 48.6% (Camp HOK, 2026-06-04).",
+    "Pick rate 1.85% in global ranked.",
+    "Ban rate 0.16%.",
+    "Counters: Ukyo Tachibana, Han Xin. Countered by: Liu Bei, Menki."
+  ]
+}

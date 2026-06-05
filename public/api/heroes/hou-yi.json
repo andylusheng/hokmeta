@@ -3,100 +3,145 @@
   "slug": "hou-yi",
   "name": "Hou Yi",
   "role": "Marksman",
+  "roles": "Marksman",
+  "lane": "Farm Lane",
   "difficulty": "Medium",
   "tier": "S+",
   "winRate": 49.28,
   "pickRate": 2.85,
   "banRate": 0.2,
-  "rank": 16,
+  "rank": 85,
   "avatar": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/S5isJokI.png",
+  "avatarFallback": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/169/169.jpg",
+  "tencentId": 169,
+  "dataSource": "Camp HOK + HoKStats.gg (intl)",
+  "dataUpdated": "2026-06-05",
+  "skills": [
+    {
+      "slot": "passive",
+      "name": "Chastising Shot",
+      "description": "Basic Attack hits grant Attack Speed and 1 stack of enhancement.At 3 stacks, enhanced Basic Attacks shoot 3 arrows, dealing more totaldamage than a regular Basic Attack.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/169/16900.png",
+      "cooldown": null
+    },
+    {
+      "slot": "skill1",
+      "name": "Arrow Volley",
+      "description": "Enhances Basic Attacks for 5s to deal heavy damage. At the same time, HouYi shoots arrows to hit two other enemies in front of him, dealing 50%damage.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/169/16910.png",
+      "cooldown": null
+    },
+    {
+      "slot": "skill2",
+      "name": "Afterglow",
+      "description": "Inflicts damage and slow on enemies in the target area while also gaining vision of the area.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/169/16920.png",
+      "cooldown": null
+    },
+    {
+      "slot": "ultimate",
+      "name": "Burning Sun Arrow",
+      "description": "Fires an arrow in the target direction. Deals AoE damage upon hitting a hero inflicting stun and slow.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/169/16930.png",
+      "cooldown": null
+    }
+  ],
   "build": [
     {
-      "name": "Hunter",
-      "slot": 1
+      "slot": 1,
+      "itemId": "1425",
+      "name": "Boots of Dexterity",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1425.jpg",
+      "description": "Boosts ASPD"
     },
     {
-      "name": "Swift",
-      "slot": 2
+      "slot": 2,
+      "itemId": "1123",
+      "name": "Twinblades of Destruction",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1123.jpg",
+      "description": "ASPD +15%, MSPD +7.5%"
     },
     {
-      "name": "Wind",
-      "slot": 3
+      "slot": 3,
+      "itemId": "1114",
+      "name": "Vampiric Scythe",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1114.jpg",
+      "description": "Physical Lifesteal"
     },
     {
-      "name": "Blade",
-      "slot": 4
+      "slot": 4,
+      "itemId": "1136",
+      "name": "Shadow Ripper",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1136.jpg",
+      "description": "Crits boost ASPD"
     },
     {
-      "name": "Immortal",
-      "slot": 5
+      "slot": 5,
+      "itemId": "1133",
+      "name": "Eternity Blade",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1133.jpg",
+      "description": "High crit damage"
     },
     {
-      "name": "Rose Gold",
-      "slot": 6
+      "slot": 6,
+      "itemId": "1126",
+      "name": "Doomsday",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1126.jpg",
+      "description": "Boosts BA damage"
     }
   ],
   "arcana": [
-    "Crit",
-    "Penetration",
-    "Attack Speed"
+    "Dominator"
   ],
   "spells": [
-    "Flash",
-    "Heal"
+    "Haste",
+    "Flash"
   ],
   "counters": [
-    "Shouyue",
-    "Liang"
+    "Cirrus",
+    "Mulan",
+    "Xuance"
   ],
   "counteredBy": [
-    "Daji",
-    "Li Bai"
+    "Agudo",
+    "Master Luban"
   ],
   "tips": [
-    "Hou Yi: prioritize S tier Marksman power spikes from patch history.",
-    "Watch pick rate — pick data unavailable.",
-    "Lane into Loong with listed build order."
+    "Hou Yi (Marksman): Tier S+ on international ranked — 49.28% WR.",
+    "Primary lane: Farm Lane.",
+    "Build core: Boots of Dexterity, Twinblades of Destruction, Vampiric Scythe."
   ],
   "patchHistory": [
     {
       "version": "Live meta",
-      "change": "Camp HOK ranked stats — WR 49.28%, pick 2.85%, ban 0.2%, tier band S."
+      "change": "Camp HOK — WR 49.28%, pick 2.85%, ban 0.2%, popularity tier S+."
     },
     {
       "version": "Matchups",
-      "change": "Counters Shouyue, Liang · Weak into Daji, Li Bai (Tencent hero data)."
-    },
-    {
-      "version": "S37",
-      "change": "Data unavailable"
+      "change": "Counters Cirrus, Mulan, Xuance · Weak into Agudo, Master Luban."
     }
   ],
   "faqs": [
     {
       "id": "faq-good-season",
       "question": "Is Hou Yi good in current season?",
-      "answer": "Hou Yi shows 49.28% win rate, 2.85% pick rate, 0.2% ban rate (Camp HOK). Tier S+ Marksman."
+      "answer": "Hou Yi is Tier S+ Marksman with 49.28% win rate, 2.85% pick rate, and 0.2% ban rate on the international server (Camp HOK)."
     },
     {
       "id": "faq-best-build",
       "question": "What is the best Hou Yi build?",
-      "answer": "Core item path for Hou Yi: Hunter, Swift, Wind, Blade, Immortal, Rose Gold. Spells and arcana sets are listed in the Build section. Adjust final slot by enemy Loong."
+      "answer": "Recommended item path: Boots of Dexterity, Twinblades of Destruction, Vampiric Scythe, Shadow Ripper, Eternity Blade, Doomsday. Spells and Arcana are listed on this page."
     },
     {
       "id": "faq-counter",
       "question": "How to counter Hou Yi?",
-      "answer": "Use Shouyue, Liang. Ban rate 0.2% reflects draft priority against Hou Yi."
+      "answer": "Strong picks into Hou Yi: Agudo, Master Luban. Hou Yi is strong into Cirrus, Mulan, Xuance."
     }
   ],
   "metaAnalysis": [
     "Hou Yi win rate 49.28% (Camp HOK, 2026-06-04).",
-    "Pick rate 2.85% for Hou Yi in current ranked meta.",
-    "Ban rate 0.2% — moderate bans.",
-    "Counters: Shouyue, Liang. Countered by: Daji, Li Bai."
-  ],
-  "tencentId": 169,
-  "avatarFallback": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/169/169.jpg",
-  "dataSource": "Camp HOK + Tencent official",
-  "dataUpdated": "2026-06-04"
+    "Pick rate 2.85% in global ranked.",
+    "Ban rate 0.2%.",
+    "Counters: Cirrus, Mulan, Xuance. Countered by: Agudo, Master Luban."
+  ]
 }

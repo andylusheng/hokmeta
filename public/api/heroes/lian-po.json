@@ -1,0 +1,147 @@
+{
+  "id": "lian-po",
+  "slug": "lian-po",
+  "name": "Lian Po",
+  "role": "Tank",
+  "roles": "Tank",
+  "lane": "Clash Lane",
+  "difficulty": "Easy",
+  "tier": "A",
+  "winRate": 51.14,
+  "pickRate": 0.91,
+  "banRate": 0.1,
+  "rank": 50,
+  "avatar": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/csLOp1dL.png",
+  "avatarFallback": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/105/105.jpg",
+  "tencentId": 105,
+  "dataSource": "Camp HOK + HoKStats.gg (intl)",
+  "dataUpdated": "2026-06-05",
+  "skills": [
+    {
+      "slot": "passive",
+      "name": "Warrior's Soul",
+      "description": "Gains immunity while using skills. Gains Battle Spirit upon entering combat, using Basic Attacks or skills. Battle Spirit increases damage reduction. Attack Speed increases at max Battle Spirit. When out of combat, Battle Spirit will diminish while restoring Health.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/105/10500.png",
+      "cooldown": null
+    },
+    {
+      "slot": "skill1",
+      "name": "Burst Ram",
+      "description": "Charges in the target direction, dealing damage and launching enemies in the path. Passive: Every 2 Basic Attacks, enhances the next Basic Attack to deal extra damage.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/105/10510.png",
+      "cooldown": null
+    },
+    {
+      "slot": "skill2",
+      "name": "Magma Slam",
+      "description": "Gains a shield.Slows nearby enemies a certain range.After a brief delay, deals damage to enemies in range.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/105/10520.png",
+      "cooldown": null
+    },
+    {
+      "slot": "ultimate",
+      "name": "Tremor Smash",
+      "description": "Leaps to the target location and hammers the ground 3 times. The first 2blows deal damage and slow enemies, while the 3rd blow deals damage and launches enemies.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/105/10530.png",
+      "cooldown": null
+    }
+  ],
+  "build": [
+    {
+      "slot": 1,
+      "itemId": "1411",
+      "name": "Lightfoot Shoes",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1411.jpg",
+      "description": "Movement Speed"
+    },
+    {
+      "slot": 2,
+      "itemId": "1331",
+      "name": "Blazing Cape",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1331.jpg",
+      "description": "Burns nearby enemies"
+    },
+    {
+      "slot": 3,
+      "itemId": "1323",
+      "name": "Clandestine Cape",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1323.jpg",
+      "description": "MDEF +150, HP +450"
+    },
+    {
+      "slot": 4,
+      "itemId": "1421",
+      "name": "Boots of Fortitude",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1421.jpg",
+      "description": "Reduces physical damage"
+    },
+    {
+      "slot": 5,
+      "itemId": "1335",
+      "name": "Succubus Cloak",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1335.jpg",
+      "description": "Negates magical damage"
+    },
+    {
+      "slot": 6,
+      "itemId": "1332",
+      "name": "Overlord's Platemail",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1332.jpg",
+      "description": "Extra Health"
+    }
+  ],
+  "arcana": [
+    "Fate"
+  ],
+  "spells": [
+    "Flash"
+  ],
+  "counters": [
+    "Data unavailable",
+    "Data unavailable",
+    "Data unavailable"
+  ],
+  "counteredBy": [
+    "Jing",
+    "Li Bai",
+    "Ukyo Tachibana"
+  ],
+  "tips": [
+    "Lian Po (Tank): Tier A on international ranked — 51.14% WR.",
+    "Primary lane: Clash Lane.",
+    "Build core: Lightfoot Shoes, Blazing Cape, Clandestine Cape."
+  ],
+  "patchHistory": [
+    {
+      "version": "Live meta",
+      "change": "Camp HOK — WR 51.14%, pick 0.91%, ban 0.1%, popularity tier A."
+    },
+    {
+      "version": "Matchups",
+      "change": "Counters Data unavailable, Data unavailable, Data unavailable · Weak into Jing, Li Bai, Ukyo Tachibana."
+    }
+  ],
+  "faqs": [
+    {
+      "id": "faq-good-season",
+      "question": "Is Lian Po good in current season?",
+      "answer": "Lian Po is Tier A Tank with 51.14% win rate, 0.91% pick rate, and 0.1% ban rate on the international server (Camp HOK)."
+    },
+    {
+      "id": "faq-best-build",
+      "question": "What is the best Lian Po build?",
+      "answer": "Recommended item path: Lightfoot Shoes, Blazing Cape, Clandestine Cape, Boots of Fortitude, Succubus Cloak, Overlord's Platemail. Spells and Arcana are listed on this page."
+    },
+    {
+      "id": "faq-counter",
+      "question": "How to counter Lian Po?",
+      "answer": "Strong picks into Lian Po: Jing, Li Bai, Ukyo Tachibana. Lian Po is strong into Data unavailable, Data unavailable, Data unavailable."
+    }
+  ],
+  "metaAnalysis": [
+    "Lian Po win rate 51.14% (Camp HOK, 2026-06-04).",
+    "Pick rate 0.91% in global ranked.",
+    "Ban rate 0.1%.",
+    "Counters: Data unavailable, Data unavailable, Data unavailable. Countered by: Jing, Li Bai, Ukyo Tachibana."
+  ]
+}

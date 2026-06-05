@@ -1,0 +1,146 @@
+{
+  "id": "consort-yu",
+  "slug": "consort-yu",
+  "name": "Consort Yu",
+  "role": "Marksman",
+  "roles": "Marksman",
+  "lane": "Farm Lane",
+  "difficulty": "Medium",
+  "tier": "S",
+  "winRate": 51.88,
+  "pickRate": 1.53,
+  "banRate": 0.2,
+  "rank": 26,
+  "avatar": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/Ku5RzFmQ.png",
+  "avatarFallback": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/174/174.jpg",
+  "tencentId": 174,
+  "dataSource": "Camp HOK + HoKStats.gg (intl)",
+  "dataUpdated": "2026-06-05",
+  "skills": [
+    {
+      "slot": "passive",
+      "name": "Blessing of the Dryads",
+      "description": "Basic Attacks have a chance to grant an extra Basic Attack that dealsdamage and slows the enemy.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/174/17400.png",
+      "cooldown": null
+    },
+    {
+      "slot": "skill1",
+      "name": "Oak Bolt",
+      "description": "Fires an arrow in the target direction, dealing damage to enemies hit",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/174/17410.png",
+      "cooldown": null
+    },
+    {
+      "slot": "skill2",
+      "name": "Protecting Winds",
+      "description": "Removes crowd control effects while gaining increased Movement Speedand invulnerability to physical damage for a period of time.The next Basic Attack will trigger Blessing of the Dryads.Passive: Gains increased Attack Speed.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/174/17420.png",
+      "cooldown": null
+    },
+    {
+      "slot": "ultimate",
+      "name": "Vaulting Shot",
+      "description": "Jumps to the target, stunning and slowing them, then flips back to the start point and shoots 2 bolts at them. Gains immunity while using this skill and Attack Speed upon landing.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/174/17430.png",
+      "cooldown": null
+    }
+  ],
+  "build": [
+    {
+      "slot": 1,
+      "itemId": "1425",
+      "name": "Boots of Dexterity",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1425.jpg",
+      "description": "Boosts ASPD"
+    },
+    {
+      "slot": 2,
+      "itemId": "1133",
+      "name": "Eternity Blade",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1133.jpg",
+      "description": "High crit damage"
+    },
+    {
+      "slot": 3,
+      "itemId": "1123",
+      "name": "Twinblades of Destruction",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1123.jpg",
+      "description": "ASPD +15%, MSPD +7.5%"
+    },
+    {
+      "slot": 4,
+      "itemId": "1136",
+      "name": "Shadow Ripper",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1136.jpg",
+      "description": "Crits boost ASPD"
+    },
+    {
+      "slot": 5,
+      "itemId": "1158",
+      "name": "Bloodsoul",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1158.jpg",
+      "description": "PATK +35, Physical Lifesteal +12%"
+    },
+    {
+      "slot": 6,
+      "itemId": "11210",
+      "name": "Mortal Punisher",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/11210.jpg",
+      "description": "Lowers Health regen"
+    }
+  ],
+  "arcana": [
+    "Red"
+  ],
+  "spells": [
+    "Haste",
+    "Flash"
+  ],
+  "counters": [
+    "Marco Polo",
+    "Han Xin"
+  ],
+  "counteredBy": [
+    "Luna",
+    "Diaochan"
+  ],
+  "tips": [
+    "Consort Yu (Marksman): Tier S on international ranked — 51.88% WR.",
+    "Primary lane: Farm Lane.",
+    "Build core: Boots of Dexterity, Eternity Blade, Twinblades of Destruction."
+  ],
+  "patchHistory": [
+    {
+      "version": "Live meta",
+      "change": "Camp HOK — WR 51.88%, pick 1.53%, ban 0.2%, popularity tier S."
+    },
+    {
+      "version": "Matchups",
+      "change": "Counters Marco Polo, Han Xin · Weak into Luna, Diaochan."
+    }
+  ],
+  "faqs": [
+    {
+      "id": "faq-good-season",
+      "question": "Is Consort Yu good in current season?",
+      "answer": "Consort Yu is Tier S Marksman with 51.88% win rate, 1.53% pick rate, and 0.2% ban rate on the international server (Camp HOK)."
+    },
+    {
+      "id": "faq-best-build",
+      "question": "What is the best Consort Yu build?",
+      "answer": "Recommended item path: Boots of Dexterity, Eternity Blade, Twinblades of Destruction, Shadow Ripper, Bloodsoul, Mortal Punisher. Spells and Arcana are listed on this page."
+    },
+    {
+      "id": "faq-counter",
+      "question": "How to counter Consort Yu?",
+      "answer": "Strong picks into Consort Yu: Luna, Diaochan. Consort Yu is strong into Marco Polo, Han Xin."
+    }
+  ],
+  "metaAnalysis": [
+    "Consort Yu win rate 51.88% (Camp HOK, 2026-06-04).",
+    "Pick rate 1.53% in global ranked.",
+    "Ban rate 0.2%.",
+    "Counters: Marco Polo, Han Xin. Countered by: Luna, Diaochan."
+  ]
+}

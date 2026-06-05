@@ -1,0 +1,147 @@
+{
+  "id": "pei",
+  "slug": "pei",
+  "name": "Pei",
+  "role": "Assassin",
+  "roles": "Assassin",
+  "lane": "Jungling",
+  "difficulty": "Medium",
+  "tier": "B",
+  "winRate": 52.68,
+  "pickRate": 0.29,
+  "banRate": 0.11,
+  "rank": 10,
+  "avatar": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/XlRczGYM.png",
+  "avatarFallback": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/502/502.jpg",
+  "tencentId": 502,
+  "dataSource": "Camp HOK + HoKStats.gg (intl)",
+  "dataUpdated": "2026-06-05",
+  "skills": [
+    {
+      "slot": "passive",
+      "name": "Blast",
+      "description": "In human form, Basic Attacks have increased range and deal extra magical damage while recovering Energy. Consecutive hits on the same target will stack damage.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/502/50200.png",
+      "cooldown": null
+    },
+    {
+      "slot": "skill1",
+      "name": "Striker Stance",
+      "description": "Fires Inner Energy in the target direction, dealing damage to enemies in its path and slowing them. Recovers Energy upon hit.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/502/50210.png",
+      "cooldown": null
+    },
+    {
+      "slot": "skill2",
+      "name": "Guarding Stance",
+      "description": "Grants shield points and increases Attack SpeedDeals damage to enemies in range, and continuously deals damage for aperiod of time.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/502/50220.png",
+      "cooldown": null
+    },
+    {
+      "slot": "ultimate",
+      "name": "Tiger Form",
+      "description": "Switches to tiger form, gaining Movement Speed and enhancing the next 2 Basic Attacks. The 1st Basic Attack lets him dash toward a locked-on target, damaging and slowing them. The 2nd Basic Attack deals magical damage.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/502/50230.png",
+      "cooldown": null
+    }
+  ],
+  "build": [
+    {
+      "slot": 1,
+      "itemId": "1523",
+      "name": "Relentless Blade",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1523.jpg",
+      "description": "Monster kills boost PATK"
+    },
+    {
+      "slot": 2,
+      "itemId": "1425",
+      "name": "Boots of Dexterity",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1425.jpg",
+      "description": "Boosts ASPD"
+    },
+    {
+      "slot": 3,
+      "itemId": "1124",
+      "name": "Meteor",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1124.jpg",
+      "description": "PATK +35\nCDR +7.5%"
+    },
+    {
+      "slot": 4,
+      "itemId": "1137",
+      "name": "Axe of Torment",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1137.jpg",
+      "description": "Anti-squishy"
+    },
+    {
+      "slot": 5,
+      "itemId": "1533",
+      "name": "Rapacious Bite",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1533.jpg",
+      "description": "Monster kills boost PATK"
+    },
+    {
+      "slot": 6,
+      "itemId": "1421",
+      "name": "Boots of Fortitude",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1421.jpg",
+      "description": "Reduces physical damage"
+    }
+  ],
+  "arcana": [
+    "Conflict"
+  ],
+  "spells": [
+    "Smite"
+  ],
+  "counters": [
+    "Arthur",
+    "Lu Bu",
+    "Wuyan"
+  ],
+  "counteredBy": [
+    "Gan & Mo",
+    "Meng Ya",
+    "Milady"
+  ],
+  "tips": [
+    "Pei (Assassin): Tier B on international ranked — 52.68% WR.",
+    "Primary lane: Jungling.",
+    "Build core: Relentless Blade, Boots of Dexterity, Meteor."
+  ],
+  "patchHistory": [
+    {
+      "version": "Live meta",
+      "change": "Camp HOK — WR 52.68%, pick 0.29%, ban 0.11%, popularity tier B."
+    },
+    {
+      "version": "Matchups",
+      "change": "Counters Arthur, Lu Bu, Wuyan · Weak into Gan & Mo, Meng Ya, Milady."
+    }
+  ],
+  "faqs": [
+    {
+      "id": "faq-good-season",
+      "question": "Is Pei good in current season?",
+      "answer": "Pei is Tier B Assassin with 52.68% win rate, 0.29% pick rate, and 0.11% ban rate on the international server (Camp HOK)."
+    },
+    {
+      "id": "faq-best-build",
+      "question": "What is the best Pei build?",
+      "answer": "Recommended item path: Relentless Blade, Boots of Dexterity, Meteor, Axe of Torment, Rapacious Bite, Boots of Fortitude. Spells and Arcana are listed on this page."
+    },
+    {
+      "id": "faq-counter",
+      "question": "How to counter Pei?",
+      "answer": "Strong picks into Pei: Gan & Mo, Meng Ya, Milady. Pei is strong into Arthur, Lu Bu, Wuyan."
+    }
+  ],
+  "metaAnalysis": [
+    "Pei win rate 52.68% (Camp HOK, 2026-06-04).",
+    "Pick rate 0.29% in global ranked.",
+    "Ban rate 0.11%.",
+    "Counters: Arthur, Lu Bu, Wuyan. Countered by: Gan & Mo, Meng Ya, Milady."
+  ]
+}

@@ -1,0 +1,147 @@
+{
+  "id": "yao",
+  "slug": "yao",
+  "name": "Yao",
+  "role": "Assassin",
+  "roles": "Fighter, Assassin",
+  "lane": "Jungling",
+  "difficulty": "Medium",
+  "tier": "B",
+  "winRate": 51.44,
+  "pickRate": 0.54,
+  "banRate": 0.04,
+  "rank": 40,
+  "avatar": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/xw0HrvxD.png",
+  "avatarFallback": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/522/522.jpg",
+  "tencentId": 522,
+  "dataSource": "Camp HOK + HoKStats.gg (intl)",
+  "dataUpdated": "2026-06-05",
+  "skills": [
+    {
+      "slot": "passive",
+      "name": "Gift of the Stars",
+      "description": "Recovers Health when landing skill hits. Using any 3 skills enhances his next skill, and using the enhanced skill will enhance his next Basic Attack.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/522/52200.png",
+      "cooldown": null
+    },
+    {
+      "slot": "skill1",
+      "name": "Starlight Slice",
+      "description": "Deals damage to nearby enemies.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/522/52210.png",
+      "cooldown": null
+    },
+    {
+      "slot": "skill2",
+      "name": "Starburn (Yao)",
+      "description": "Moves quickly, dealing damage and slowing enemies in his path.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/522/52220.png",
+      "cooldown": null
+    },
+    {
+      "slot": "ultimate",
+      "name": "Return to Dust",
+      "description": "Returns to his location 2s ago, removes Star Reduction, and deals damage to enemies in his path. Passive: Some of his damage taken is converted into Star Reduction after a short delay.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/522/52230.png",
+      "cooldown": null
+    }
+  ],
+  "build": [
+    {
+      "slot": 1,
+      "itemId": "1523",
+      "name": "Relentless Blade",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1523.jpg",
+      "description": "Monster kills boost PATK"
+    },
+    {
+      "slot": 2,
+      "itemId": "1423",
+      "name": "Boots of Tranquility",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1423.jpg",
+      "description": "Reduces Skill CD"
+    },
+    {
+      "slot": 3,
+      "itemId": "1124",
+      "name": "Meteor",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1124.jpg",
+      "description": "PATK +35\nCDR +7.5%"
+    },
+    {
+      "slot": 4,
+      "itemId": "1137",
+      "name": "Axe of Torment",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1137.jpg",
+      "description": "Anti-squishy"
+    },
+    {
+      "slot": 5,
+      "itemId": "1422",
+      "name": "Boots of Resistance",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
+      "description": "Shortens CC"
+    },
+    {
+      "slot": 6,
+      "itemId": "1533",
+      "name": "Rapacious Bite",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1533.jpg",
+      "description": "Monster kills boost PATK"
+    }
+  ],
+  "arcana": [
+    "Mutation"
+  ],
+  "spells": [
+    "Smite"
+  ],
+  "counters": [
+    "Angela",
+    "Mi Yue",
+    "Ziya"
+  ],
+  "counteredBy": [
+    "Data unavailable",
+    "Data unavailable",
+    "Data unavailable"
+  ],
+  "tips": [
+    "Yao (Assassin): Tier B on international ranked — 51.44% WR.",
+    "Primary lane: Jungling.",
+    "Build core: Relentless Blade, Boots of Tranquility, Meteor."
+  ],
+  "patchHistory": [
+    {
+      "version": "Live meta",
+      "change": "Camp HOK — WR 51.44%, pick 0.54%, ban 0.04%, popularity tier B."
+    },
+    {
+      "version": "Matchups",
+      "change": "Counters Angela, Mi Yue, Ziya · Weak into Data unavailable, Data unavailable, Data unavailable."
+    }
+  ],
+  "faqs": [
+    {
+      "id": "faq-good-season",
+      "question": "Is Yao good in current season?",
+      "answer": "Yao is Tier B Assassin with 51.44% win rate, 0.54% pick rate, and 0.04% ban rate on the international server (Camp HOK)."
+    },
+    {
+      "id": "faq-best-build",
+      "question": "What is the best Yao build?",
+      "answer": "Recommended item path: Relentless Blade, Boots of Tranquility, Meteor, Axe of Torment, Boots of Resistance, Rapacious Bite. Spells and Arcana are listed on this page."
+    },
+    {
+      "id": "faq-counter",
+      "question": "How to counter Yao?",
+      "answer": "Strong picks into Yao: Data unavailable, Data unavailable, Data unavailable. Yao is strong into Angela, Mi Yue, Ziya."
+    }
+  ],
+  "metaAnalysis": [
+    "Yao win rate 51.44% (Camp HOK, 2026-06-04).",
+    "Pick rate 0.54% in global ranked.",
+    "Ban rate 0.04%.",
+    "Counters: Angela, Mi Yue, Ziya. Countered by: Data unavailable, Data unavailable, Data unavailable."
+  ]
+}

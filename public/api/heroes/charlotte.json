@@ -3,47 +3,98 @@
   "slug": "charlotte",
   "name": "Charlotte",
   "role": "Warrior",
-  "difficulty": "Hard",
+  "roles": "Fighter",
+  "lane": "Clash Lane",
+  "difficulty": "Medium",
   "tier": "A",
   "winRate": 50.51,
   "pickRate": 0.82,
   "banRate": 0.07,
-  "rank": 10,
+  "rank": 65,
   "avatar": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/iIwO0Kwk.png",
+  "avatarFallback": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/536/536.jpg",
+  "tencentId": 536,
+  "dataSource": "Camp HOK + HoKStats.gg (intl)",
+  "dataUpdated": "2026-06-05",
+  "skills": [
+    {
+      "slot": "passive",
+      "name": "SPLASH GRADATION",
+      "description": "After any skill hits an enemy, her next different skill used will be enhanced to a follow-up skill. Additionally, gains 1 stack of mark, for up to 5 stacks. Consuming 3 stacks will enhance her next Basic Attack.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/536/53600.png",
+      "cooldown": null
+    },
+    {
+      "slot": "skill1",
+      "name": "TRI-SLASH (Initial)",
+      "description": "'''Initial Skill:''' After a short delay, releases TRI-SLASH in the target direction, dealing damage to enemies and increasing her Movement Speed.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/536/53610.png",
+      "cooldown": null
+    },
+    {
+      "slot": "skill2",
+      "name": "SPLASH FOUNT (Initial)",
+      "description": "'''Initial Skill:''' Dashes in the target direction, while striking several times. Recovers Health each time damage is dealt.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/536/53620.png",
+      "cooldown": null
+    },
+    {
+      "slot": "ultimate",
+      "name": "POWER GRADATION (Initial)",
+      "description": "'''Initial Skill:''' Carves a seven-pointed star around her, dealing damage and slowing nearby enemies. Gains crowd control immunity and damage reduction while the skill is active.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/536/53630.png",
+      "cooldown": null
+    }
+  ],
   "build": [
     {
-      "name": "Gilded",
-      "slot": 1
+      "slot": 1,
+      "itemId": "1111",
+      "name": "Iron Sword",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1111.jpg",
+      "description": "PATK +20"
     },
     {
-      "name": "Mantle",
-      "slot": 2
+      "slot": 2,
+      "itemId": "1423",
+      "name": "Boots of Tranquility",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1423.jpg",
+      "description": "Reduces Skill CD"
     },
     {
-      "name": "Frost Cape",
-      "slot": 3
+      "slot": 3,
+      "itemId": "1124",
+      "name": "Meteor",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1124.jpg",
+      "description": "PATK +35\nCDR +7.5%"
     },
     {
-      "name": "Antique",
-      "slot": 4
+      "slot": 4,
+      "itemId": "1137",
+      "name": "Axe of Torment",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1137.jpg",
+      "description": "Anti-squishy"
     },
     {
-      "name": "Dominance",
-      "slot": 5
+      "slot": 5,
+      "itemId": "1345",
+      "name": "Nettle Gauntlet",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1345.jpg",
+      "description": "Offense & defense"
     },
     {
-      "name": "Helm",
-      "slot": 6
+      "slot": 6,
+      "itemId": "13310",
+      "name": "Frostscar's Embrace",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/13310.jpg",
+      "description": "Enhanced BAs slow"
     }
   ],
   "arcana": [
-    "Attack",
-    "Penetration",
-    "HP"
+    "Mutation"
   ],
   "spells": [
-    "Flash",
-    "Execute"
+    "Flash"
   ],
   "counters": [
     "Fuzi",
@@ -54,49 +105,41 @@
     "Kaizer"
   ],
   "tips": [
-    "Charlotte: prioritize S tier Warrior power spikes from patch history.",
-    "Watch pick rate — pick data unavailable.",
-    "Lane into Angela with listed build order."
+    "Charlotte (Warrior): Tier A on international ranked — 50.51% WR.",
+    "Primary lane: Clash Lane.",
+    "Build core: Iron Sword, Boots of Tranquility, Meteor."
   ],
   "patchHistory": [
     {
       "version": "Live meta",
-      "change": "Camp HOK ranked stats — WR 50.51%, pick 0.82%, ban 0.07%, tier band B."
+      "change": "Camp HOK — WR 50.51%, pick 0.82%, ban 0.07%, popularity tier A."
     },
     {
       "version": "Matchups",
-      "change": "Counters Fuzi, Hou Yi · Weak into Arli, Kaizer (Tencent hero data)."
-    },
-    {
-      "version": "S37",
-      "change": "Data unavailable"
+      "change": "Counters Fuzi, Hou Yi · Weak into Arli, Kaizer."
     }
   ],
   "faqs": [
     {
       "id": "faq-good-season",
       "question": "Is Charlotte good in current season?",
-      "answer": "Charlotte shows 50.51% win rate, 0.82% pick rate, 0.07% ban rate (Camp HOK). Tier A Warrior."
+      "answer": "Charlotte is Tier A Warrior with 50.51% win rate, 0.82% pick rate, and 0.07% ban rate on the international server (Camp HOK)."
     },
     {
       "id": "faq-best-build",
       "question": "What is the best Charlotte build?",
-      "answer": "Core item path for Charlotte: Gilded, Mantle, Frost Cape, Antique, Dominance, Helm. Spells and arcana sets are listed in the Build section. Adjust final slot by enemy Angela."
+      "answer": "Recommended item path: Iron Sword, Boots of Tranquility, Meteor, Axe of Torment, Nettle Gauntlet, Frostscar's Embrace. Spells and Arcana are listed on this page."
     },
     {
       "id": "faq-counter",
       "question": "How to counter Charlotte?",
-      "answer": "Use Fuzi, Hou Yi. Ban rate 0.07% reflects draft priority against Charlotte."
+      "answer": "Strong picks into Charlotte: Arli, Kaizer. Charlotte is strong into Fuzi, Hou Yi."
     }
   ],
   "metaAnalysis": [
     "Charlotte win rate 50.51% (Camp HOK, 2026-06-04).",
-    "Pick rate 0.82% for Charlotte in current ranked meta.",
-    "Ban rate 0.07% — moderate bans.",
+    "Pick rate 0.82% in global ranked.",
+    "Ban rate 0.07%.",
     "Counters: Fuzi, Hou Yi. Countered by: Arli, Kaizer."
-  ],
-  "tencentId": 536,
-  "avatarFallback": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/536/536.jpg",
-  "dataSource": "Camp HOK + Tencent official",
-  "dataUpdated": "2026-06-04"
+  ]
 }

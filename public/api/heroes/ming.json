@@ -1,0 +1,147 @@
+{
+  "id": "ming",
+  "slug": "ming",
+  "name": "Ming",
+  "role": "Support",
+  "roles": "Support",
+  "lane": "Roaming",
+  "difficulty": "Easy",
+  "tier": "B",
+  "winRate": 49.93,
+  "pickRate": 0.47,
+  "banRate": 0.03,
+  "rank": 77,
+  "avatar": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/ubeT1R84.png",
+  "avatarFallback": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/501/501.jpg",
+  "tencentId": 501,
+  "dataSource": "Camp HOK + HoKStats.gg (intl)",
+  "dataUpdated": "2026-06-05",
+  "skills": [
+    {
+      "slot": "passive",
+      "name": "Good Omens",
+      "description": "Every 5s, Ming's next Basic Attack deals more magical damage and heals himself and the linked teammate. The healing is reduced if the enemy is nota hero.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/501/50100.png",
+      "cooldown": null
+    },
+    {
+      "slot": "skill1",
+      "name": "Time - Carefree",
+      "description": "Forms a link with the target. When linked to an ally, increases the Physical and Magical Attack Movement Speed, and Attack Speed of both parties. When linked to an enemy unit, reduces their Physical and Magical Attack while dealing damage over time.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/501/50110.png",
+      "cooldown": null
+    },
+    {
+      "slot": "skill2",
+      "name": "Mastery - Glide",
+      "description": "Switches the effect of the link. When linked to an ally, increases the Physical and Magical Defense of both parties. When linked to an enemy unit, reduces their Physical and Magical Defense. The effect can beswitched repeatedly.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/501/50120.png",
+      "cooldown": null
+    },
+    {
+      "slot": "ultimate",
+      "name": "Peace - Longevity",
+      "description": "While linked, can spend own Health to restore an equal amount of Health toallies or deal an equal amount of damage to enemies. Recovers Health continuously while out of combat.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/501/50130.png",
+      "cooldown": null
+    }
+  ],
+  "build": [
+    {
+      "slot": 1,
+      "itemId": "1701",
+      "name": "Knowledge Gem",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1701.jpg",
+      "description": "Extra Gold & EXP"
+    },
+    {
+      "slot": 2,
+      "itemId": "1422",
+      "name": "Boots of Resistance",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
+      "description": "Shortens CC"
+    },
+    {
+      "slot": 3,
+      "itemId": "1711",
+      "name": "Crimson Shadow",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1711.jpg",
+      "description": "DPS aura"
+    },
+    {
+      "slot": 4,
+      "itemId": "1721",
+      "name": "Crimson Shadow - Redemption",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1721.jpg",
+      "description": "Group shield"
+    },
+    {
+      "slot": 5,
+      "itemId": "1353",
+      "name": "Dawnlight",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1353.jpg",
+      "description": "Shields on dealing damage"
+    },
+    {
+      "slot": 6,
+      "itemId": "1226",
+      "name": "Holy Grail",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1226.jpg",
+      "description": "Rapid Health & Mana Regen"
+    }
+  ],
+  "arcana": [
+    "Fate"
+  ],
+  "spells": [
+    "Heal"
+  ],
+  "counters": [
+    "Cirrus",
+    "Menki",
+    "Wuyan"
+  ],
+  "counteredBy": [
+    "Data unavailable",
+    "Data unavailable",
+    "Data unavailable"
+  ],
+  "tips": [
+    "Ming (Support): Tier B on international ranked — 49.93% WR.",
+    "Primary lane: Roaming.",
+    "Build core: Knowledge Gem, Boots of Resistance, Crimson Shadow."
+  ],
+  "patchHistory": [
+    {
+      "version": "Live meta",
+      "change": "Camp HOK — WR 49.93%, pick 0.47%, ban 0.03%, popularity tier B."
+    },
+    {
+      "version": "Matchups",
+      "change": "Counters Cirrus, Menki, Wuyan · Weak into Data unavailable, Data unavailable, Data unavailable."
+    }
+  ],
+  "faqs": [
+    {
+      "id": "faq-good-season",
+      "question": "Is Ming good in current season?",
+      "answer": "Ming is Tier B Support with 49.93% win rate, 0.47% pick rate, and 0.03% ban rate on the international server (Camp HOK)."
+    },
+    {
+      "id": "faq-best-build",
+      "question": "What is the best Ming build?",
+      "answer": "Recommended item path: Knowledge Gem, Boots of Resistance, Crimson Shadow, Crimson Shadow - Redemption, Dawnlight, Holy Grail. Spells and Arcana are listed on this page."
+    },
+    {
+      "id": "faq-counter",
+      "question": "How to counter Ming?",
+      "answer": "Strong picks into Ming: Data unavailable, Data unavailable, Data unavailable. Ming is strong into Cirrus, Menki, Wuyan."
+    }
+  ],
+  "metaAnalysis": [
+    "Ming win rate 49.93% (Camp HOK, 2026-06-04).",
+    "Pick rate 0.47% in global ranked.",
+    "Ban rate 0.03%.",
+    "Counters: Cirrus, Menki, Wuyan. Countered by: Data unavailable, Data unavailable, Data unavailable."
+  ]
+}

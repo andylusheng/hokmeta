@@ -12,6 +12,29 @@ export type HeroTier = 'S+' | 'S' | 'A' | 'B' | 'C';
 export interface HeroBuildItem {
   name: string;
   slot: number;
+  itemId?: string | null;
+  icon?: string | null;
+  description?: string | null;
+}
+
+export type HeroSkillSlot = 'passive' | 'skill1' | 'skill2' | 'ultimate';
+
+export interface HeroSkill {
+  slot: HeroSkillSlot;
+  name: string;
+  description: string;
+  icon: string;
+  cooldown?: string | null;
+}
+
+export interface GameItem {
+  id: string;
+  slug: string;
+  name: string;
+  description: string;
+  icon: string;
+  gold: number | null;
+  type: string | null;
 }
 
 export interface PatchEntry {
@@ -39,8 +62,11 @@ export interface Hero {
   avatar: string;
   avatarFallback?: string;
   tencentId?: number;
+  roles?: string;
+  lane?: string | null;
   dataSource?: string;
   dataUpdated?: string;
+  skills: HeroSkill[];
   build: HeroBuildItem[];
   arcana: string[];
   spells: string[];

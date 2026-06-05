@@ -1,0 +1,145 @@
+{
+  "id": "mayene",
+  "slug": "mayene",
+  "name": "Mayene",
+  "role": "Warrior",
+  "roles": "Fighter",
+  "lane": "Clash Lane",
+  "difficulty": "Medium",
+  "tier": "A",
+  "winRate": 47.51,
+  "pickRate": 0.67,
+  "banRate": 0.11,
+  "rank": 107,
+  "avatar": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/FsGXCnH1.png",
+  "avatarFallback": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/564/564.jpg",
+  "tencentId": 564,
+  "dataSource": "Camp HOK + HoKStats.gg (intl)",
+  "dataUpdated": "2026-06-05",
+  "skills": [
+    {
+      "slot": "passive",
+      "name": "Slack Off a Lil Bit",
+      "description": "Recovery replaced by Slack Off, which restores Strength and Health. She will also slack off while at rest.She will not slack off when she attacks, is attacked, moves, or is in the Serious State.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/564/56400.png",
+      "cooldown": null
+    },
+    {
+      "slot": "skill1",
+      "name": "Whatever (I)",
+      "description": "Costs 1 Punch Strength. Runs forward, pulling in enemies in a cone-shaped area and damaging them.F ollow up with Skill 2 or another use of this skill for various effects.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/564/56410.png",
+      "cooldown": null
+    },
+    {
+      "slot": "skill2",
+      "name": "Whatever (II)",
+      "description": "Costs 1 Kick Strength. Jumps to dodge crowd controls and damage, and recover Health. Can follow up with Skill 2 or another use of this skill for different effects.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/564/56420.png",
+      "cooldown": null
+    },
+    {
+      "slot": "ultimate",
+      "name": "Get Serious",
+      "description": "Damages nearby enemies. Recovers 1 Punch Strength and Kick Strength Bar, and increases max Strength for each by 1. Gains Movement Speed and is less affected by slow.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/564/56430.png",
+      "cooldown": null
+    }
+  ],
+  "build": [
+    {
+      "slot": 1,
+      "itemId": "1124",
+      "name": "Meteor",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1124.jpg",
+      "description": "PATK +35\nCDR +7.5%"
+    },
+    {
+      "slot": 2,
+      "itemId": "1421",
+      "name": "Boots of Fortitude",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1421.jpg",
+      "description": "Reduces physical damage"
+    },
+    {
+      "slot": 3,
+      "itemId": "1137",
+      "name": "Axe of Torment",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1137.jpg",
+      "description": "Anti-squishy"
+    },
+    {
+      "slot": 4,
+      "itemId": "1345",
+      "name": "Nettle Gauntlet",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1345.jpg",
+      "description": "Offense & defense"
+    },
+    {
+      "slot": 5,
+      "itemId": "11311",
+      "name": "Pure Sky",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/11311.jpg",
+      "description": "Temp. damage reduction"
+    },
+    {
+      "slot": 6,
+      "itemId": "1131",
+      "name": "Starbreaker",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1131.jpg",
+      "description": "Anti-tank"
+    }
+  ],
+  "arcana": [
+    "Mutation"
+  ],
+  "spells": [
+    "Flash"
+  ],
+  "counters": [
+    "Nuwa",
+    "Mi Yue",
+    "Liang"
+  ],
+  "counteredBy": [
+    "Yaria"
+  ],
+  "tips": [
+    "Mayene (Warrior): Tier A on international ranked — 47.51% WR.",
+    "Primary lane: Clash Lane.",
+    "Build core: Meteor, Boots of Fortitude, Axe of Torment."
+  ],
+  "patchHistory": [
+    {
+      "version": "Live meta",
+      "change": "Camp HOK — WR 47.51%, pick 0.67%, ban 0.11%, popularity tier A."
+    },
+    {
+      "version": "Matchups",
+      "change": "Counters Nuwa, Mi Yue, Liang · Weak into Yaria."
+    }
+  ],
+  "faqs": [
+    {
+      "id": "faq-good-season",
+      "question": "Is Mayene good in current season?",
+      "answer": "Mayene is Tier A Warrior with 47.51% win rate, 0.67% pick rate, and 0.11% ban rate on the international server (Camp HOK)."
+    },
+    {
+      "id": "faq-best-build",
+      "question": "What is the best Mayene build?",
+      "answer": "Recommended item path: Meteor, Boots of Fortitude, Axe of Torment, Nettle Gauntlet, Pure Sky, Starbreaker. Spells and Arcana are listed on this page."
+    },
+    {
+      "id": "faq-counter",
+      "question": "How to counter Mayene?",
+      "answer": "Strong picks into Mayene: Yaria. Mayene is strong into Nuwa, Mi Yue, Liang."
+    }
+  ],
+  "metaAnalysis": [
+    "Mayene win rate 47.51% (Camp HOK, 2026-06-04).",
+    "Pick rate 0.67% in global ranked.",
+    "Ban rate 0.11%.",
+    "Counters: Nuwa, Mi Yue, Liang. Countered by: Yaria."
+  ]
+}

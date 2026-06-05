@@ -3,47 +3,98 @@
   "slug": "dolia",
   "name": "Dolia",
   "role": "Support",
-  "difficulty": "Medium",
+  "roles": "Support",
+  "lane": "Roaming",
+  "difficulty": "Easy",
   "tier": "S",
   "winRate": 46.06,
   "pickRate": 1.83,
   "banRate": 0.52,
-  "rank": 29,
+  "rank": 111,
   "avatar": "https://camp.honorofkings.com/camp/admin/hero/head_128-128/tfvb3IJf.png",
+  "avatarFallback": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/159/159.jpg",
+  "tencentId": 159,
+  "dataSource": "Camp HOK + HoKStats.gg (intl)",
+  "dataUpdated": "2026-06-05",
+  "skills": [
+    {
+      "slot": "passive",
+      "name": "Mermaid's Gift",
+      "description": "Dolia takes on mermaid form when in water (rivers are also considered water), reducing the slows taken by 50% and returning life and mana every second. The mermaid form's Basic Attacks will shoot water arrows for ranged damage. Dolia's [Recovery] is replaced with [Mermaid's Gift], which allows her to create a pact with a selected teammate, and prioritizes her pacted teammate when using [Celestial Melody].",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/159/15900.png",
+      "cooldown": null
+    },
+    {
+      "slot": "skill1",
+      "name": "Ode",
+      "description": "Dolia chants 4 sound waves that spread outward, the first 3 dealing spell damage and 10% slow. The 4th deals more spell damage and 50% slow for 1 second. The sound waves also echo when they hit an enemy, dealing spell damage to those they touch and, if released in water, sending waves of water knocking back nearby enemies (knockback of enemies around you has a stun effect). Non-heroic units provoke a much smaller echo, dealing only 50% of the damage.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/159/15910.png",
+      "cooldown": null
+    },
+    {
+      "slot": "skill2",
+      "name": "Wavemaker",
+      "description": "Lam enters “Submerged” state, greatly increasing his Movement Speed for 3 seconds. When the duration ends, Lam leaps out of the water, immediately restoring 50% of this skill’s cooldown. While in Submerged state, casting the skill again will cause Lam to surface early, dealing 300 (+120% Bonus Physical Attack) Physical Damage to nearby enemies and slowing their Movement Speed by 50% for 1.5 seconds. Passive: While in river terrain, the Submerged state has no time limit. If an enemy hero with below 30% Health appears within 1500 range, Lam gains 450 Movement Speed.",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/159/15920.png",
+      "cooldown": null
+    },
+    {
+      "slot": "ultimate",
+      "name": "Celestial Melody",
+      "description": "After Dolia briefly chants, refresh the skill with the longest current cooldown of a friendly within range, taking more cooldown from yourself. If a teammate's skill is not used after being refreshed, [Celestial Melody]'s cooldown recovery speed can be accelerated by 20/30/40%. Teammates do not consume Mana or Energy when using the skill for 5 seconds after the skill is refreshed, and the beatdown benefit caused by the skill is split equally with Dolia. Refreshing skills for contracted teammates is prioritized, followed by non-contracted teammates, or refreshing your own skills if there are no teammates nearby. Failure to refresh a skill returns most of the cooldown of [Celestial Melody].",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/159/15930.png",
+      "cooldown": null
+    }
+  ],
   "build": [
     {
-      "name": "Swift",
-      "slot": 1
+      "slot": 1,
+      "itemId": "1701",
+      "name": "Knowledge Gem",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1701.jpg",
+      "description": "Extra Gold & EXP"
     },
     {
-      "name": "Echo",
-      "slot": 2
+      "slot": 2,
+      "itemId": "1424",
+      "name": "Boots of the Arcane",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1424.jpg",
+      "description": "Magical Pierce"
     },
     {
-      "name": "Frosted",
-      "slot": 3
+      "slot": 3,
+      "itemId": "1747",
+      "name": "Crimson Shadow - Starspring",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1747.jpg",
+      "description": "Restores teammate Health & Mana"
     },
     {
-      "name": "Dominance",
-      "slot": 4
+      "slot": 4,
+      "itemId": "1353",
+      "name": "Dawnlight",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1353.jpg",
+      "description": "Shields on dealing damage"
     },
     {
-      "name": "Brilliant",
-      "slot": 5
+      "slot": 5,
+      "itemId": "1422",
+      "name": "Boots of Resistance",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
+      "description": "Shortens CC"
     },
     {
-      "name": "Sanctuary",
-      "slot": 6
+      "slot": 6,
+      "itemId": "1333",
+      "name": "Ominous Premonition",
+      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1333.jpg",
+      "description": "Slows attackers"
     }
   ],
   "arcana": [
-    "HP",
-    "CDR",
-    "Defense"
+    "Fate"
   ],
   "spells": [
-    "Heal",
-    "Flicker"
+    "Flash"
   ],
   "counters": [
     "Dun",
@@ -54,49 +105,41 @@
     "Guiguzi"
   ],
   "tips": [
-    "Dolia: prioritize S tier Support power spikes from patch history.",
-    "Watch pick rate — pick data unavailable.",
-    "Lane into Diaochan with listed build order."
+    "Dolia (Support): Tier S on international ranked — 46.06% WR.",
+    "Primary lane: Roaming.",
+    "Build core: Knowledge Gem, Boots of the Arcane, Crimson Shadow - Starspring."
   ],
   "patchHistory": [
     {
       "version": "Live meta",
-      "change": "Camp HOK ranked stats — WR 46.06%, pick 1.83%, ban 0.52%, tier band A."
+      "change": "Camp HOK — WR 46.06%, pick 1.83%, ban 0.52%, popularity tier S."
     },
     {
       "version": "Matchups",
-      "change": "Counters Dun, Yaria · Weak into Sima Yi, Guiguzi (Tencent hero data)."
-    },
-    {
-      "version": "S37",
-      "change": "Data unavailable"
+      "change": "Counters Dun, Yaria · Weak into Sima Yi, Guiguzi."
     }
   ],
   "faqs": [
     {
       "id": "faq-good-season",
       "question": "Is Dolia good in current season?",
-      "answer": "Dolia shows 46.06% win rate, 1.83% pick rate, 0.52% ban rate (Camp HOK). Tier S Support."
+      "answer": "Dolia is Tier S Support with 46.06% win rate, 1.83% pick rate, and 0.52% ban rate on the international server (Camp HOK)."
     },
     {
       "id": "faq-best-build",
       "question": "What is the best Dolia build?",
-      "answer": "Core item path for Dolia: Swift, Echo, Frosted, Dominance, Brilliant, Sanctuary. Spells and arcana sets are listed in the Build section. Adjust final slot by enemy Diaochan."
+      "answer": "Recommended item path: Knowledge Gem, Boots of the Arcane, Crimson Shadow - Starspring, Dawnlight, Boots of Resistance, Ominous Premonition. Spells and Arcana are listed on this page."
     },
     {
       "id": "faq-counter",
       "question": "How to counter Dolia?",
-      "answer": "Use Dun, Yaria. Ban rate 0.52% reflects draft priority against Dolia."
+      "answer": "Strong picks into Dolia: Sima Yi, Guiguzi. Dolia is strong into Dun, Yaria."
     }
   ],
   "metaAnalysis": [
     "Dolia win rate 46.06% (Camp HOK, 2026-06-04).",
-    "Pick rate 1.83% for Dolia in current ranked meta.",
-    "Ban rate 0.52% — moderate bans.",
+    "Pick rate 1.83% in global ranked.",
+    "Ban rate 0.52%.",
     "Counters: Dun, Yaria. Countered by: Sima Yi, Guiguzi."
-  ],
-  "tencentId": 159,
-  "avatarFallback": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/159/159.jpg",
-  "dataSource": "Camp HOK + Tencent official",
-  "dataUpdated": "2026-06-04"
+  ]
 }

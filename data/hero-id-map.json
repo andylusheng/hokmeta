@@ -1,32 +1,450 @@
 {
-  "lam": { "campName": "Lam", "tencentId": 515 },
-  "augran": { "campName": "Augran", "tencentId": 524 },
-  "angela": { "campName": "Angela", "tencentId": 142 },
-  "musashi": { "campName": "Musashi", "tencentId": 130 },
-  "luna": { "campName": "Luna", "tencentId": 146 },
-  "yaria": { "campName": "Yaria", "tencentId": 312 },
-  "biron": { "campName": "Biron", "tencentId": 105 },
-  "dolia": { "campName": "Dolia", "tencentId": 159 },
-  "loong": { "campName": "Loong", "tencentId": 519, "matchEnglish": true },
-  "arli": { "campName": "Arli", "tencentId": 508 },
-  "fang": { "campName": "Fang", "tencentId": 195 },
-  "milady": { "campName": "Milady", "tencentId": 511 },
-  "wukong": { "campName": "Wukong", "tencentId": 167 },
-  "diaochan": { "campName": "Diaochan", "tencentId": 141 },
-  "hou-yi": { "campName": "Hou Yi", "tencentId": 169 },
-  "luban-no-7": { "campName": "Luban No.7", "tencentId": 112 },
-  "arthur": { "campName": "Arthur", "tencentId": 166 },
-  "mozi": { "campName": "Mozi", "tencentId": 108 },
-  "lady-sun": { "campName": "Lady Sun", "tencentId": 111 },
-  "li-xin": { "campName": "Li Xin", "tencentId": 507 },
-  "marco-polo": { "campName": "Marco Polo", "tencentId": 132 },
-  "charlotte": { "campName": "Charlotte", "tencentId": 536 },
-  "dharma": { "campName": "Dharma", "tencentId": 134 },
-  "donghuang": { "campName": "Donghuang", "tencentId": 187 },
-  "da-qiao": { "campName": "Da Qiao", "tencentId": 191 },
-  "cai-yan": { "campName": "Cai Yan", "tencentId": 184 },
-  "jing": { "campName": "Jing", "tencentId": 528 },
-  "shouyue": { "campName": "Shouyue", "tencentId": 196 },
-  "kaizer": { "campName": "Kaizer", "tencentId": 503 },
-  "alessio": { "campName": "Alessio", "tencentId": 514 }
+  "arthur": {
+    "campName": "Arthur",
+    "tencentId": 166
+  },
+  "luban-no-7": {
+    "campName": "Luban No.7",
+    "tencentId": 112
+  },
+  "lian-po": {
+    "campName": "Lian Po",
+    "tencentId": 105
+  },
+  "xiao-qiao": {
+    "campName": "Xiao Qiao",
+    "tencentId": 106
+  },
+  "yao": {
+    "campName": "Yao",
+    "tencentId": 522
+  },
+  "gao-changgong": {
+    "campName": "Gao Changgong",
+    "tencentId": 153
+  },
+  "sun-bin": {
+    "campName": "Sun Bin",
+    "tencentId": 118
+  },
+  "zilong": {
+    "campName": "Zilong",
+    "tencentId": 107
+  },
+  "yango": {
+    "campName": "Yango",
+    "tencentId": 125
+  },
+  "mozi": {
+    "campName": "Mozi",
+    "tencentId": 108
+  },
+  "zhou-yu": {
+    "campName": "Zhou Yu",
+    "tencentId": 124
+  },
+  "lady-sun": {
+    "campName": "Lady Sun",
+    "tencentId": 111
+  },
+  "liu-shan": {
+    "campName": "Liu Shan",
+    "tencentId": 114
+  },
+  "daji": {
+    "campName": "Daji",
+    "tencentId": 109
+  },
+  "zhuangzi": {
+    "campName": "Zhuangzi",
+    "tencentId": 113
+  },
+  "gao": {
+    "campName": "Gao",
+    "tencentId": 115
+  },
+  "flowborn-tank": {
+    "campName": "Flowborn (Tank)",
+    "tencentId": 581
+  },
+  "garuda": {
+    "campName": "Garuda",
+    "tencentId": 110
+  },
+  "arke": {
+    "campName": "Arke",
+    "tencentId": 116
+  },
+  "wuyan": {
+    "campName": "Wuyan",
+    "tencentId": 117
+  },
+  "dr-bian": {
+    "campName": "Dr Bian",
+    "tencentId": 119
+  },
+  "bai-qi": {
+    "campName": "Bai Qi",
+    "tencentId": 120
+  },
+  "han-xin": {
+    "campName": "Han Xin",
+    "tencentId": 150
+  },
+  "mi-yue": {
+    "campName": "Mi Yue",
+    "tencentId": 121
+  },
+  "hou-yi": {
+    "campName": "Hou Yi",
+    "tencentId": 169
+  },
+  "lu-bu": {
+    "campName": "Lu Bu",
+    "tencentId": 123
+  },
+  "dun": {
+    "campName": "Dun",
+    "tencentId": 126
+  },
+  "lady-zhen": {
+    "campName": "Lady Zhen",
+    "tencentId": 127
+  },
+  "gan-mo": {
+    "campName": "Gan & Mo",
+    "tencentId": 182
+  },
+  "fatih": {
+    "campName": "Fatih",
+    "tencentId": 128
+  },
+  "dian-wei": {
+    "campName": "Dian Wei",
+    "tencentId": 129
+  },
+  "musashi": {
+    "campName": "Musashi",
+    "tencentId": 130
+  },
+  "li-bai": {
+    "campName": "Li Bai",
+    "tencentId": 131
+  },
+  "liu-bei": {
+    "campName": "Liu Bei",
+    "tencentId": 170
+  },
+  "marco-polo": {
+    "campName": "Marco Polo",
+    "tencentId": 132
+  },
+  "umbrosa": {
+    "campName": "Umbrosa",
+    "tencentId": 558
+  },
+  "di-renjie": {
+    "campName": "Di Renjie",
+    "tencentId": 133
+  },
+  "dharma": {
+    "campName": "Dharma",
+    "tencentId": 134
+  },
+  "ziya": {
+    "campName": "Ziya",
+    "tencentId": 148
+  },
+  "xiang-yu": {
+    "campName": "Xiang Yu",
+    "tencentId": 135
+  },
+  "augran": {
+    "campName": "Augran",
+    "tencentId": 517
+  },
+  "consort-yu": {
+    "campName": "Consort Yu",
+    "tencentId": 174
+  },
+  "sima-yi": {
+    "campName": "Sima Yi",
+    "tencentId": 137
+  },
+  "fuzi": {
+    "campName": "Fuzi",
+    "tencentId": 139
+  },
+  "nakoruru": {
+    "campName": "Nakoruru",
+    "tencentId": 162
+  },
+  "mai-shiranui": {
+    "campName": "Mai Shiranui",
+    "tencentId": 157
+  },
+  "guan-yu": {
+    "campName": "Guan Yu",
+    "tencentId": 140
+  },
+  "luna": {
+    "campName": "Luna",
+    "tencentId": 146
+  },
+  "flowborn-marksman": {
+    "campName": "Flowborn (Marksman)",
+    "tencentId": 584
+  },
+  "diaochan": {
+    "campName": "Diaochan",
+    "tencentId": 141
+  },
+  "angela": {
+    "campName": "Angela",
+    "tencentId": 142
+  },
+  "mulan": {
+    "campName": "Mulan",
+    "tencentId": 154
+  },
+  "liu-bang": {
+    "campName": "Liu Bang",
+    "tencentId": 149
+  },
+  "agudo": {
+    "campName": "Agudo",
+    "tencentId": 533
+  },
+  "wang-zhaojun": {
+    "campName": "Wang Zhaojun",
+    "tencentId": 152
+  },
+  "erin": {
+    "campName": "Erin",
+    "tencentId": 155
+  },
+  "yang-jian": {
+    "campName": "Yang Jian",
+    "tencentId": 178
+  },
+  "fang": {
+    "campName": "Fang",
+    "tencentId": 173
+  },
+  "liang": {
+    "campName": "Liang",
+    "tencentId": 156
+  },
+  "allain": {
+    "campName": "Allain",
+    "tencentId": 514
+  },
+  "ukyo-tachibana": {
+    "campName": "Ukyo Tachibana",
+    "tencentId": 163
+  },
+  "nezha": {
+    "campName": "Nezha",
+    "tencentId": 180
+  },
+  "wukong": {
+    "campName": "Wukong",
+    "tencentId": 167
+  },
+  "lapulapu": {
+    "campName": "Lapulapu",
+    "tencentId": 168
+  },
+  "zhang-fei": {
+    "campName": "Zhang Fei",
+    "tencentId": 171
+  },
+  "kui": {
+    "campName": "Kui",
+    "tencentId": 175
+  },
+  "yuhuan": {
+    "campName": "Yuhuan",
+    "tencentId": 176
+  },
+  "chano": {
+    "campName": "Chano",
+    "tencentId": 177
+  },
+  "biron": {
+    "campName": "Biron",
+    "tencentId": 503
+  },
+  "nuwa": {
+    "campName": "Nuwa",
+    "tencentId": 179
+  },
+  "athena": {
+    "campName": "Athena",
+    "tencentId": 183
+  },
+  "kaizer": {
+    "campName": "Kaizer",
+    "tencentId": 193
+  },
+  "cai-yan": {
+    "campName": "Cai Yan",
+    "tencentId": 184
+  },
+  "menki": {
+    "campName": "Menki",
+    "tencentId": 198
+  },
+  "donghuang": {
+    "campName": "Donghuang",
+    "tencentId": 187
+  },
+  "guiguzi": {
+    "campName": "Guiguzi",
+    "tencentId": 189
+  },
+  "xuance": {
+    "campName": "Xuance",
+    "tencentId": 195
+  },
+  "kongming": {
+    "campName": "Kongming",
+    "tencentId": 190
+  },
+  "da-qiao": {
+    "campName": "Da Qiao",
+    "tencentId": 191
+  },
+  "huang-zhong": {
+    "campName": "Huang Zhong",
+    "tencentId": 192
+  },
+  "shouyue": {
+    "campName": "Shouyue",
+    "tencentId": 196
+  },
+  "yixing": {
+    "campName": "Yixing",
+    "tencentId": 197
+  },
+  "arli": {
+    "campName": "Arli",
+    "tencentId": 199
+  },
+  "sakeer": {
+    "campName": "Sakeer",
+    "tencentId": 534
+  },
+  "ming": {
+    "campName": "Ming",
+    "tencentId": 501
+  },
+  "pei": {
+    "campName": "Pei",
+    "tencentId": 502
+  },
+  "milady": {
+    "campName": "Milady",
+    "tencentId": 504
+  },
+  "yaria": {
+    "campName": "Yaria",
+    "tencentId": 505
+  },
+  "cirrus": {
+    "campName": "Cirrus",
+    "tencentId": 506
+  },
+  "li-xin": {
+    "campName": "Li Xin",
+    "tencentId": 507
+  },
+  "garo": {
+    "campName": "Garo",
+    "tencentId": 508
+  },
+  "sun-ce": {
+    "campName": "Sun Ce",
+    "tencentId": 510
+  },
+  "shangguan": {
+    "campName": "Shangguan",
+    "tencentId": 513
+  },
+  "butterfly": {
+    "campName": "Butterfly",
+    "tencentId": 646
+  },
+  "haya": {
+    "campName": "Haya",
+    "tencentId": 521
+  },
+  "shi": {
+    "campName": "Shi",
+    "tencentId": 523
+  },
+  "meng-ya": {
+    "campName": "Meng Ya",
+    "tencentId": 524
+  },
+  "lam": {
+    "campName": "Lam",
+    "tencentId": 528
+  },
+  "jing": {
+    "campName": "Jing",
+    "tencentId": 531
+  },
+  "charlotte": {
+    "campName": "Charlotte",
+    "tencentId": 536
+  },
+  "ying": {
+    "campName": "Ying",
+    "tencentId": 538
+  },
+  "feyd": {
+    "campName": "Feyd",
+    "tencentId": 542
+  },
+  "alessio": {
+    "campName": "Alessio",
+    "tencentId": 545
+  },
+  "ata": {
+    "campName": "Ata",
+    "tencentId": 556
+  },
+  "chicha": {
+    "campName": "Chicha",
+    "tencentId": 172
+  },
+  "mayene": {
+    "campName": "Mayene",
+    "tencentId": 564
+  },
+  "dolia": {
+    "campName": "Dolia",
+    "tencentId": 159
+  },
+  "heino": {
+    "campName": "Heino",
+    "tencentId": 563
+  },
+  "luara": {
+    "campName": "Luara",
+    "tencentId": 547
+  },
+  "aoyin": {
+    "campName": "Ao'yin",
+    "tencentId": 519
+  },
+  "dyadia": {
+    "campName": "Dyadia",
+    "tencentId": 577
+  },
+  "flowborn-mage": {
+    "campName": "Flowborn (Mage)",
+    "tencentId": 582
+  }
 }

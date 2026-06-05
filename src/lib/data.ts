@@ -1,11 +1,17 @@
 import heroesData from '../../data/heroes.json';
+import itemsData from '../../data/items.json';
 import keywordsData from '../../data/keywords.json';
 import siteConfig from '../../config/site.json';
-import type { Hero, HeroRole, HeroTier, KeywordsMap } from '@/types/hero';
+import type { GameItem, Hero, HeroRole, HeroTier, KeywordsMap } from '@/types/hero';
 
 export const site = siteConfig;
 export const heroes = heroesData as Hero[];
+export const items = itemsData as GameItem[];
 export const keywords = keywordsData as KeywordsMap;
+
+export function getItemById(id: string): GameItem | undefined {
+  return items.find((i) => i.id === id);
+}
 
 export function getHeroBySlug(slug: string): Hero | undefined {
   return heroes.find((h) => h.slug === slug);
