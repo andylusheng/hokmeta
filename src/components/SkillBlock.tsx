@@ -1,12 +1,13 @@
 'use client';
 
 import type { Hero } from '@/types/hero';
+import { createT, type Locale } from '@/lib/i18n';
 
-const SLOT_LABEL: Record<string, string> = {
-  passive: 'Passive',
-  skill1: 'Skill 1',
-  skill2: 'Skill 2',
-  ultimate: 'Ultimate',
+const SLOT_KEYS: Record<string, string> = {
+  passive: 'skills.passive',
+  skill1: 'skills.skill1',
+  skill2: 'skills.skill2',
+  ultimate: 'skills.ultimate',
 };
 
 const SLOT_SHORT: Record<string, string> = {
@@ -16,9 +17,17 @@ const SLOT_SHORT: Record<string, string> = {
   ultimate: 'U',
 };
 
-export function SkillBlock({ hero }: { hero: Hero }) {
+export function SkillBlock({
+  hero,
+  locale = 'en',
+}: {
+  hero: Hero;
+  locale?: Locale;
+}) {
+  const t = createT(locale);
+
   if (!hero.skills?.length) {
-    return <p className="text-sm text-gray-400">Skill data unavailable.</p>;
+    return <p className="text-sm text-gray-400">{t('skills.unavailable')}</p>;
   }
 
   const icons = hero.skills.map((s) => s.icon);
@@ -61,7 +70,7 @@ export function SkillBlock({ hero }: { hero: Hero }) {
           </div>
           <div className="min-w-0">
             <p className="text-xs font-bold uppercase tracking-wide text-hok-gold">
-              {SLOT_LABEL[skill.slot] ?? skill.slot}
+              {SLOT_KEYS[skill.slot] ? t(SLOT_KEYS[skill.slot]) : skill.slot}
             </p>
             <p className="text-sm font-semibold text-white">{skill.name}</p>
             <p className="mt-1 text-xs leading-relaxed text-gray-400">

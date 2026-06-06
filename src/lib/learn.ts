@@ -408,6 +408,10 @@ export const learnArticles: LearnArticle[] = [
   },
 ];
 
+export function getLearnArticles() {
+  return learnArticles;
+}
+
 export function getLearnArticle(slug: string) {
   return learnArticles.find((a) => a.slug === slug);
 }

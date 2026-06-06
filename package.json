@@ -20,6 +20,7 @@
     "gsc-priority-urls": "node scripts/gsc-priority-urls.js",
     "enrich-guides": "node scripts/enrich-hero-guides.js",
     "patch-musashi": "node scripts/patch-musashi-guide.js",
+    "qa-zh-locale": "node scripts/qa-zh-locale.js",
     "postbuild": "node scripts/copy-api.js"
   },
   "dependencies": {

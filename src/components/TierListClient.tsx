@@ -3,6 +3,7 @@
 import type { Hero, HeroRole, HeroTier } from '@/types/hero';
 import { ROLES_AZ } from '@/types/hero';
 import { TierCard } from '@/components/TierCard';
+import { createT, type Locale } from '@/lib/i18n';
 
 const DISPLAY_TIERS: HeroTier[] = ['S+', 'S', 'A', 'B'];
 
@@ -14,11 +15,22 @@ const TIER_LABEL: Record<HeroTier, string> = {
   C: 'C',
 };
 
+function roleLabel(role: string, locale: Locale): string {
+  const t = createT(locale);
+  const key = `roles.${role}`;
+  const translated = t(key);
+  return translated === key ? role : translated;
+}
+
 export function TierListClient({
   grouped,
+  locale = 'en',
 }: {
   grouped: Record<HeroRole, Record<HeroTier, Hero[]>>;
+  locale?: Locale;
 }) {
+  const t = createT(locale);
+
   return (
     <div>
       <nav
@@ -38,7 +50,7 @@ export function TierListClient({
               href={`#role-${role.toLowerCase()}`}
               className="rounded border border-hok-border bg-hok-card px-3 py-1.5 text-sm text-gray-300 transition hover:border-hok-gold/50 hover:text-white"
             >
-              {role}
+              {roleLabel(role, locale)}
               <span className="ml-1 text-xs text-gray-500">({count})</span>
             </a>
           );
@@ -53,10 +65,10 @@ export function TierListClient({
 
           return (
             <section key={role} id={`role-${role.toLowerCase()}`}>
-              <h2 className="mb-1 text-2xl font-bold text-hok-gold">{role}</h2>
-              <p className="mb-4 text-sm text-gray-500">
-                Primary role · S+ through B · sorted by win rate within each tier
-              </p>
+              <h2 className="mb-1 text-2xl font-bold text-hok-gold">
+                {roleLabel(role, locale)}
+              </h2>
+              <p className="mb-4 text-sm text-gray-500">{t('tierList.roleHint')}</p>
               <div className="space-y-6">
                 {DISPLAY_TIERS.map((tier) => {
                   const list = roleTiers[tier];
@@ -64,11 +76,11 @@ export function TierListClient({
                   return (
                     <div key={tier}>
                       <h3 className="mb-2 text-lg font-semibold text-white">
-                        Tier {TIER_LABEL[tier]}
+                        {t('hero.tier')} {TIER_LABEL[tier]}
                       </h3>
                       <div className="grid grid-cols-2 gap-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
                         {list.map((hero) => (
-                          <TierCard key={hero.slug} hero={hero} />
+                          <TierCard key={hero.slug} hero={hero} locale={locale} />
                         ))}
                       </div>
                     </div>

@@ -1,21 +1,17 @@
-import { Suspense } from 'react';
 import { buildMetadata } from '@/lib/seo';
-import { SearchResults } from './SearchResults';
+import { createT } from '@/lib/i18n';
+import { SearchPageView } from '@/views/SearchPageView';
+
+const t = createT('en');
 
 export const metadata = buildMetadata({
-  title: 'Search Results',
-  description: 'Hero search results',
+  title: t('search.title'),
+  description: t('search.label'),
   path: '/search',
   noindex: true,
+  locale: 'en',
 });
 
 export default function SearchPage() {
-  return (
-    <div className="container-page">
-      <h1 className="mb-4 text-2xl font-bold text-white">Search Results</h1>
-      <Suspense fallback={<p className="text-gray-400">Loading…</p>}>
-        <SearchResults />
-      </Suspense>
-    </div>
-  );
+  return <SearchPageView locale="en" />;
 }

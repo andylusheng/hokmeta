@@ -1,8 +1,16 @@
 import type { Hero } from '@/types/hero';
 import { getHeroPlaybook } from '@/lib/hero-playbook';
+import { createT, type Locale } from '@/lib/i18n';
 
-export function ArcanaTable({ hero }: { hero: Hero }) {
-  const { arcanaRows } = getHeroPlaybook(hero);
+export function ArcanaTable({
+  hero,
+  locale = 'en',
+}: {
+  hero: Hero;
+  locale?: Locale;
+}) {
+  const t = createT(locale);
+  const { arcanaRows } = getHeroPlaybook(hero, locale);
   if (!arcanaRows.length) return null;
 
   return (
@@ -12,13 +20,13 @@ export function ArcanaTable({ hero }: { hero: Hero }) {
         <thead>
           <tr className="border-b border-hok-border bg-hok-dark/60 text-xs uppercase tracking-wide text-gray-500">
             <th scope="col" className="px-3 py-2 font-semibold">
-              Slot
+              {t('arcana.colSlot')}
             </th>
             <th scope="col" className="px-3 py-2 font-semibold">
-              Choice
+              {t('arcana.colChoice')}
             </th>
             <th scope="col" className="px-3 py-2 font-semibold">
-              Effect
+              {t('arcana.colEffect')}
             </th>
           </tr>
         </thead>

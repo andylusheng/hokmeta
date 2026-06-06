@@ -2,6 +2,7 @@ import type { HeroBuildItem } from '@/types/hero';
 import { getItemById } from '@/lib/data';
 import { getHeroPlaybook } from '@/lib/hero-playbook';
 import type { Hero } from '@/types/hero';
+import { createT, type Locale } from '@/lib/i18n';
 
 function formatGold(gold: number | null | undefined): string {
   if (gold == null) return '—';
@@ -11,11 +12,14 @@ function formatGold(gold: number | null | undefined): string {
 export function BuildTable({
   hero,
   items,
+  locale = 'en',
 }: {
   hero: Hero;
   items: HeroBuildItem[];
+  locale?: Locale;
 }) {
-  const notes = getHeroPlaybook(hero).itemNotes;
+  const t = createT(locale);
+  const notes = getHeroPlaybook(hero, locale).itemNotes;
   const noteBySlot = new Map(notes.map((n) => [n.slot, n.why]));
 
   const rows = items.filter((b) => b.name && b.name !== 'Data unavailable');
@@ -28,19 +32,19 @@ export function BuildTable({
         <thead>
           <tr className="border-b border-hok-border bg-hok-dark/60 text-xs uppercase tracking-wide text-gray-500">
             <th scope="col" className="px-3 py-2 font-semibold">
-              #
+              {t('build.colOrder')}
             </th>
             <th scope="col" className="px-3 py-2 font-semibold">
-              Item
+              {t('build.colItem')}
             </th>
             <th scope="col" className="px-3 py-2 font-semibold">
-              Gold
+              {t('build.colGold')}
             </th>
             <th scope="col" className="px-3 py-2 font-semibold">
-              Stats
+              {t('build.colStats')}
             </th>
             <th scope="col" className="px-3 py-2 font-semibold">
-              Why
+              {t('build.colWhy')}
             </th>
           </tr>
         </thead>

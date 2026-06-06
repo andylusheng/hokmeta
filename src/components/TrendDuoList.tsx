@@ -1,8 +1,15 @@
 import Link from 'next/link';
 import type { TrendDuo } from '@/lib/trends';
 import { HeroAvatar } from '@/components/HeroAvatar';
+import { localePath, type Locale } from '@/lib/i18n';
 
-export function TrendDuoList({ duos }: { duos: TrendDuo[] }) {
+export function TrendDuoList({
+  duos,
+  locale = 'en',
+}: {
+  duos: TrendDuo[];
+  locale?: Locale;
+}) {
   return (
     <ul className="space-y-3">
       {duos.map((duo) => (
@@ -20,7 +27,7 @@ export function TrendDuoList({ duos }: { duos: TrendDuo[] }) {
                   </span>
                 )}
                 <Link
-                  href={`/hero/${hero.slug}/`}
+                  href={localePath(locale, `/hero/${hero.slug}`)}
                   className="flex items-center gap-2 rounded border border-hok-border px-2 py-1 hover:border-hok-gold/40"
                 >
                   <HeroAvatar hero={hero} size={32} />

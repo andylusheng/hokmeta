@@ -1,10 +1,13 @@
 import type { Metadata } from 'next';
 import { site } from '@/lib/data';
+import { localePath, ogLocale, type Locale } from '@/lib/i18n';
 
 export interface SeoInput {
   title: string;
   description: string;
+  /** Logical path without locale prefix (e.g. `/hero/musashi`). */
   path: string;
+  locale?: Locale;
   ogImage?: string;
   noindex?: boolean;
   type?: 'website' | 'article';
@@ -29,7 +32,15 @@ export function absoluteUrl(path: string): string {
 }
 
 export function buildMetadata(input: SeoInput): Metadata {
-  const url = canonicalUrl(input.path);
+  const locale = input.locale ?? 'en';
+  const logicalPath = input.path.startsWith('/zh-TW')
+    ? input.path.replace(/^\/zh-TW/, '') || '/'
+    : input.path;
+  const canonicalPath =
+    locale === 'zh-TW' ? localePath('zh-TW', logicalPath) : logicalPath;
+  const url = canonicalUrl(canonicalPath);
+  const enUrl = canonicalUrl(logicalPath);
+  const zhUrl = canonicalUrl(localePath('zh-TW', logicalPath));
   const og = input.ogImage ?? site.ogImage;
   const fullOg = og.startsWith('http') ? og : `${getSiteBase()}${og}`;
 
@@ -48,7 +59,14 @@ export function buildMetadata(input: SeoInput): Metadata {
     title: input.title,
     description: input.description,
     keywords: input.keywords,
-    alternates: { canonical: url },
+    alternates: {
+      canonical: url,
+      languages: {
+        en: enUrl,
+        'zh-Hant': zhUrl,
+        'x-default': enUrl,
+      },
+    },
     ...(verification ? { verification } : {}),
     robots: input.noindex
       ? { index: false, follow: false }
@@ -58,7 +76,8 @@ export function buildMetadata(input: SeoInput): Metadata {
       description: input.description,
       url,
       siteName: site.name,
-      locale: site.locale,
+      locale: ogLocale(locale),
+      alternateLocale: locale === 'zh-TW' ? ['en_US'] : ['zh_TW'],
       type: input.type ?? 'website',
       images: [{ url: fullOg, width: 1200, height: 630, alt: input.title }],
     },

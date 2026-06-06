@@ -6,7 +6,14 @@ import type {
   HeroSkillOrder,
 } from '@/types/hero';
 import { formatRate } from '@/lib/data';
-import { META_SEASON_LABEL } from '@/lib/meta-season';
+import { createT, getMetaSeasonLabel, type Locale } from '@/lib/i18n';
+import { getZhPlaybookOverride } from '@/lib/hero-content-zh';
+import { resolveLocalizedGuide } from '@/lib/hero-guide-locale';
+import {
+  translateDifficulty,
+  translateLane,
+  translateRole,
+} from '@/lib/locale-labels';
 
 export interface HeroPlaybook {
   hook: string;
@@ -95,22 +102,34 @@ const OVERRIDES: Record<string, Partial<HeroPlaybook>> = {
   musashi: MUSASHI_PLAYBOOK,
 };
 
-function passiveHook(hero: Hero): string {
+function passiveHook(hero: Hero, locale: Locale): string {
+  const t = createT(locale);
   const passive = hero.skills?.find((s) => s.slot === 'passive');
   if (!passive?.description) {
-    return `${hero.name} is a ${hero.lane ?? hero.role} ${hero.role} with a ${hero.difficulty.toLowerCase()} skill floor on Honor of Kings Global.`;
+    return t('playbook.passiveHookNoDesc', {
+      name: hero.name,
+      lane: translateLane(hero.lane, locale) || translateRole(hero.role, locale),
+      role: translateRole(hero.role, locale),
+      difficulty: translateDifficulty(hero.difficulty, locale),
+    });
   }
   const first = passive.description.split(/[.!?]/)[0]?.trim();
   if (first && first.length > 20 && first.length < 160) {
-    return `${hero.name}: ${first}.`;
+    return t('playbook.passiveHookWithDesc', { name: hero.name, desc: first });
   }
-  return `${hero.name} — ${hero.role} (${hero.lane ?? 'flex'}) built around ${passive.name}.`;
+  return t('playbook.passiveHookNamed', {
+    name: hero.name,
+    role: translateRole(hero.role, locale),
+    lane: translateLane(hero.lane, locale) || t('playbook.flex'),
+    passive: passive.name,
+  });
 }
 
-function defaultSkillOrder(hero: Hero): HeroSkillOrder {
-  const s1 = hero.skills?.find((s) => s.slot === 'skill1')?.name ?? 'Skill 1';
-  const s2 = hero.skills?.find((s) => s.slot === 'skill2')?.name ?? 'Skill 2';
-  const ult = hero.skills?.find((s) => s.slot === 'ultimate')?.name ?? 'Ultimate';
+function defaultSkillOrder(hero: Hero, locale: Locale): HeroSkillOrder {
+  const t = createT(locale);
+  const s1 = hero.skills?.find((s) => s.slot === 'skill1')?.name ?? t('skills.skill1');
+  const s2 = hero.skills?.find((s) => s.slot === 'skill2')?.name ?? t('skills.skill2');
+  const ult = hero.skills?.find((s) => s.slot === 'ultimate')?.name ?? t('skills.ultimate');
 
   const assassin = hero.role === 'Assassin';
   const mage = hero.role === 'Mage' || hero.role === 'Support';
@@ -118,110 +137,143 @@ function defaultSkillOrder(hero: Hero): HeroSkillOrder {
 
   if (assassin || hero.lane === 'Jungling') {
     return {
-      priority: `Skill 2 → Skill 1 → ${ult} (max Skill 2 first)`,
-      reason: `${s2} usually provides mobility or stick—max first for ganks. ${s1} second for damage. ${ult} on every level available.`,
+      priority: t('playbook.skillOrder.junglePriority', { s1, s2, ult }),
+      reason: t('playbook.skillOrder.jungleReason', { s1, s2, ult }),
     };
   }
   if (mage) {
     return {
-      priority: `Skill 2 → Skill 1 → ${ult} (max Skill 2 first)`,
-      reason: `Wave clear and poke from ${s2} first. ${s1} for trade patterns. ${ult} whenever unlocked for fight swing.`,
+      priority: t('playbook.skillOrder.magePriority', { s1, s2, ult }),
+      reason: t('playbook.skillOrder.mageReason', { s1, s2, ult }),
     };
   }
   if (marksman) {
     return {
-      priority: `Skill 1 → Skill 2 → ${ult} (max Skill 1 first)`,
-      reason: `${s1} is your lane trade tool—max for farm lane pressure. ${s2} second for peel or burst. ${ult} on cooldown.`,
+      priority: t('playbook.skillOrder.adcPriority', { s1, s2, ult }),
+      reason: t('playbook.skillOrder.adcReason', { s1, s2, ult }),
     };
   }
   return {
-    priority: `Skill 1 → Skill 2 → ${ult}`,
-    reason: `Max your primary trade skill first, then ${s2} for utility, and ${ult} on every level.`,
+    priority: t('playbook.skillOrder.defaultPriority', { s1, s2, ult }),
+    reason: t('playbook.skillOrder.defaultReason', { s1, s2, ult }),
   };
 }
 
-function defaultCombos(hero: Hero): HeroCombo[] {
+function defaultCombos(hero: Hero, locale: Locale): HeroCombo[] {
+  const t = createT(locale);
   const g = hero.guide;
   const skills = (hero.skills || [])
     .filter((s) => s.slot !== 'passive')
     .map((s) => s.name);
 
-  if (g?.combos?.length) return g.combos;
+  if (g?.combos?.length && locale === 'en') return g.combos;
 
   const main =
     g?.combo ||
     (skills.length >= 2
-      ? `${skills.join(' → ')} → reposition with basic attacks`
-      : 'Trade with safest skill, confirm cooldowns, then commit ultimate.');
+      ? `${skills.join(' → ')} → ${t('playbook.repositionAa')}`
+      : t('playbook.safeTrade'));
 
   const combos: HeroCombo[] = [
     {
       id: 'standard',
-      name: 'Standard trade',
+      name: t('playbook.comboStandard'),
       steps: main.replace(/^Standard trade:\s*/i, ''),
-      when: `${hero.lane ?? hero.role} skirmish or objective setup`,
+      when: t('playbook.comboStandardWhen', {
+        lane: translateLane(hero.lane, locale) || translateRole(hero.role, locale),
+      }),
     },
   ];
 
   if (hero.role === 'Assassin' || hero.lane === 'Jungling') {
     combos.push({
       id: 'all-in',
-      name: 'All-in',
-      steps: `${skills[skills.length - 1] ?? 'Ultimate'} after full rotation when enemy escape is down`,
-      when: 'River gank or backline dive with team CC',
+      name: t('playbook.comboAllIn'),
+      steps: t('playbook.comboAllInSteps', {
+        ult: skills[skills.length - 1] ?? t('skills.ultimate'),
+      }),
+      when: t('playbook.comboAllInWhen'),
     });
   }
 
   return combos;
 }
 
-function defaultItemNotes(hero: Hero): HeroItemNote[] {
-  if (hero.guide?.itemNotes?.length) return hero.guide.itemNotes;
+function defaultItemNotes(hero: Hero, locale: Locale): HeroItemNote[] {
+  if (hero.guide?.itemNotes?.length && locale === 'en') return hero.guide.itemNotes;
+  const t = createT(locale);
   return (hero.build || [])
     .filter((b) => b.name && b.name !== 'Data unavailable')
     .map((b) => ({
       slot: b.slot,
-      why: b.description && b.description !== 'Data unavailable'
-        ? b.description
-        : `Core item #${b.slot} in the recommended ${hero.lane ?? hero.role} path.`,
+      why:
+        b.description && b.description !== 'Data unavailable'
+          ? b.description
+          : t('playbook.itemCore', {
+              slot: b.slot,
+              lane: translateLane(hero.lane, locale) || translateRole(hero.role, locale),
+            }),
     }));
 }
 
-function defaultArcanaRows(hero: Hero): HeroArcanaRow[] {
-  if (hero.guide?.arcanaRows?.length) return hero.guide.arcanaRows;
+function defaultArcanaRows(hero: Hero, locale: Locale): HeroArcanaRow[] {
+  if (hero.guide?.arcanaRows?.length && locale === 'en') return hero.guide.arcanaRows;
+  const t = createT(locale);
   const arcana = (hero.arcana || []).filter(Boolean);
   const spells = (hero.spells || []).filter(Boolean);
   const rows: HeroArcanaRow[] = arcana.map((rune, i) => ({
-    slot: i === 0 ? 'Primary' : `Rune ${i + 1}`,
+    slot: i === 0 ? t('playbook.arcanaPrimary') : t('playbook.arcanaRune', { n: i + 1 }),
     rune,
-    effect: `Recommended for ${hero.role} ${hero.lane ?? ''}`.trim(),
+    effect: t('playbook.arcanaEffect', {
+      role: translateRole(hero.role, locale),
+      lane: translateLane(hero.lane, locale),
+    }),
   }));
   if (spells.length) {
     rows.push({
-      slot: 'Spell',
+      slot: t('playbook.arcanaSpell'),
       rune: spells.join(' / '),
-      effect: hero.guide?.arcanaSpells?.split('.')[0] || 'See matchup section for swaps.',
+      effect:
+        hero.guide?.arcanaSpells?.split('.')[0] || t('playbook.arcanaSpellHint'),
     });
   }
   return rows;
 }
 
-export function getHeroPlaybook(hero: Hero): HeroPlaybook {
-  const override = OVERRIDES[hero.slug] ?? {};
+function resolveOverride(hero: Hero, locale: Locale): Partial<HeroPlaybook> {
+  if (locale === 'zh-TW') {
+    return getZhPlaybookOverride(hero.slug) ?? OVERRIDES[hero.slug] ?? {};
+  }
+  return OVERRIDES[hero.slug] ?? {};
+}
+
+export function getHeroPlaybook(hero: Hero, locale: Locale = 'en'): HeroPlaybook {
+  const override = resolveOverride(hero, locale);
   const g = hero.guide;
   const matchups = g?.matchups;
+  const t = createT(locale);
 
-  const hook = override.hook ?? g?.hook ?? passiveHook(hero);
-  const skillOrder = override.skillOrder ?? g?.skillOrder ?? defaultSkillOrder(hero);
-  const combos = override.combos ?? defaultCombos(hero);
-  const itemNotes = override.itemNotes ?? defaultItemNotes(hero);
-  const arcanaRows = override.arcanaRows ?? defaultArcanaRows(hero);
+  const hook = override.hook ?? (locale === 'en' ? g?.hook : undefined) ?? passiveHook(hero, locale);
+  const skillOrder =
+    override.skillOrder ??
+    (locale === 'en' ? g?.skillOrder : undefined) ??
+    defaultSkillOrder(hero, locale);
+  const combos =
+    override.combos ??
+    (locale === 'en' && g?.combos?.length ? g.combos : defaultCombos(hero, locale));
+  const itemNotes = override.itemNotes ?? defaultItemNotes(hero, locale);
+  const arcanaRows = override.arcanaRows ?? defaultArcanaRows(hero, locale);
 
   const buildNames = (hero.build || [])
     .filter((b) => b.name !== 'Data unavailable')
     .map((b) => b.name)
     .slice(0, 3)
-    .join(', ');
+    .join(locale === 'zh-TW' ? '、' : ', ');
+
+  const countersInto = (hero.counters || [])
+    .filter((c) => c !== 'Data unavailable')
+    .slice(0, 2)
+    .join(locale === 'zh-TW' ? '、' : ', ');
 
   return {
     hook,
@@ -229,32 +281,40 @@ export function getHeroPlaybook(hero: Hero): HeroPlaybook {
     combos,
     itemNotes,
     arcanaRows,
-    tldr: {
-      build: g?.bestBuild?.split('.')[0] || `Core: ${buildNames || 'see build table'}`,
-      combo: combos[0]?.steps.slice(0, 120) || g?.combo || 'Weave skills with basic attacks.',
+    tldr: override.tldr ?? {
+      build:
+        locale === 'en'
+          ? g?.bestBuild?.split('.')[0] || `Core: ${buildNames || 'see build table'}`
+          : t('playbook.tldrBuild', { items: buildNames || t('playbook.seeBuildTable') }),
+      combo:
+        combos[0]?.steps.slice(0, 120) ||
+        (locale === 'en' ? g?.combo : undefined) ||
+        t('playbook.tldrCombo'),
       counters:
-        matchups?.summary ||
-        `Strong into ${(hero.counters || []).filter((c) => c !== 'Data unavailable').slice(0, 2).join(', ') || 'favorable drafts'}`,
+        matchups?.summary && locale === 'en'
+          ? matchups.summary
+          : countersInto
+            ? t('playbook.tldrCounters', { names: countersInto })
+            : t('playbook.tldrCountersDefault'),
     },
   };
 }
 
-const FAQ_PRIORITY = [
-  'faq-best-build',
-  'faq-counter',
-  'faq-strong-into',
-  'faq-high-rank',
-  'faq-arcana',
-  'faq-good-season',
-  'faq-lane',
-  'faq-vs-peer',
-  'faq-ban',
-];
+export function getLocalizedGuide(hero: Hero, locale: Locale = 'en') {
+  return resolveLocalizedGuide(hero, locale);
+}
 
+/** @deprecated Use getLocalizedFaqs from hero-faq.ts */
 export function getFeaturedFaqs(hero: Hero, limit = 5) {
   const byId = new Map(hero.faqs.map((f) => [f.id, f]));
   const picked = [];
-  for (const id of FAQ_PRIORITY) {
+  for (const id of [
+    'faq-best-build',
+    'faq-counter',
+    'faq-strong-into',
+    'faq-high-rank',
+    'faq-arcana',
+  ]) {
     const f = byId.get(id);
     if (f) picked.push(f);
     if (picked.length >= limit) break;
@@ -262,6 +322,13 @@ export function getFeaturedFaqs(hero: Hero, limit = 5) {
   return picked.length ? picked : hero.faqs.slice(0, limit);
 }
 
-export function formatHeroSubtitle(hero: Hero): string {
-  return `${hero.lane ?? hero.role} · Tier ${hero.tier} · ${formatRate(hero.winRate)} WR · ${META_SEASON_LABEL}`;
+export function formatHeroSubtitle(hero: Hero, locale: Locale = 'en'): string {
+  const t = createT(locale);
+  const lane = translateLane(hero.lane, locale) || translateRole(hero.role, locale);
+  return t('hero.subtitle', {
+    lane,
+    tier: hero.tier,
+    wr: formatRate(hero.winRate),
+    season: getMetaSeasonLabel(locale),
+  });
 }

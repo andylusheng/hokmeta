@@ -1,0 +1,367 @@
+{
+  "nav": {
+    "heroes": "Heroes",
+    "tierList": "Tier List",
+    "trends": "Trends",
+    "bestHeroes": "Best Heroes",
+    "tools": "Tools",
+    "learn": "Learn",
+    "guides": "Guides",
+    "about": "About",
+    "privacy": "Privacy",
+    "api": "API"
+  },
+  "lang": {
+    "en": "English",
+    "zhTW": "繁體中文",
+    "switch": "Language"
+  },
+  "common": {
+    "home": "Home",
+    "heroes": "Heroes",
+    "allHeroes": "All Heroes",
+    "tierList": "Tier List",
+    "viewAll": "View all",
+    "skipToContent": "Skip to content",
+    "globalServer": "Global server",
+    "contentEnglishNotice": "Skill descriptions and some guide text remain in English (international server data). UI and data interpretation are localized.",
+    "contentPartialNotice": "Skill descriptions and item names stay in English. UI, FAQs, and meta notes are in Traditional Chinese.",
+    "skillsEnglishNotice": "Skill and item names match the Honor of Kings Global client (English). Stats and builds are from Camp HOK international data.",
+    "learnBodyNotice": "Article body uses live Camp HOK international stats (English hero names)."
+  },
+  "home": {
+    "title": "Honor of Kings Meta & Tier List",
+    "subtitle": "Data-driven guides for {count} international heroes — tier list, builds, counters, and ranked meta tools.",
+    "browseHeroes": "Browse Heroes",
+    "heroTrends": "Hero Trends",
+    "highestWr": "Highest Win Rate",
+    "mostBanned": "Most Banned",
+    "allTrends": "All trends →",
+    "featured": "Featured Meta Heroes",
+    "learningHub": "Learning Hub",
+    "allGuides": "View all guides →"
+  },
+  "heroes": {
+    "title": "All Meta Heroes",
+    "subtitle": "{count} heroes grouped by role · sorted by win rate"
+  },
+  "tierList": {
+    "title": "HOK Tier List",
+    "subtitle": "Grouped by primary role (Assassin → Warrior), then S+ / S / A / B within each role. Stats from Camp HOK.",
+    "roleHint": "Primary role · S+ through B · sorted by win rate within each tier"
+  },
+  "lanes": {
+    "jungling": "Jungling",
+    "mid": "Mid Lane",
+    "farm": "Farm Lane",
+    "clash": "Clash Lane",
+    "roam": "Roaming"
+  },
+  "difficulty": {
+    "easy": "Easy",
+    "medium": "Medium",
+    "hard": "Hard"
+  },
+  "metaBanner": {
+    "label": "Live meta data",
+    "from": "Win / pick / ban from",
+    "updated": "Updated"
+  },
+  "stats": {
+    "wr": "WR",
+    "pick": "Pick",
+    "ban": "Ban",
+    "winRate": "Win Rate",
+    "pickRate": "Pick Rate",
+    "banRate": "Ban Rate"
+  },
+  "hero": {
+    "buildTitle": "Best Build for {name}",
+    "buildIntro": "End-game item order with gold costs and slot notes. Purchase path may differ in-match.",
+    "arcanaTitle": "Best Arcana & Spells",
+    "skillOrderTitle": "Skill Order",
+    "combosTitle": "Combos",
+    "abilitiesTitle": "Abilities",
+    "countersTitle": "Counters & Matchups",
+    "playstyleTitle": "Playstyle & Ranked Tips",
+    "faqTitle": "FAQ",
+    "counterPicker": "Counter picker tool",
+    "summaryBuild": "Build core",
+    "summaryCombo": "Combo",
+    "summaryDraft": "Draft",
+    "wr": "WR",
+    "tier": "Tier",
+    "metaTitle": "{name} Build {season} — Items, Combos & Counters",
+    "metaDesc": "{name} {lane} guide — best build, skill order, combos, counters, and arcana for Honor of Kings Global ({date}).",
+    "subtitle": "{lane} · Tier {tier} · {wr} WR · {season}"
+  },
+  "build": {
+    "colOrder": "#",
+    "colItem": "Item",
+    "colGold": "Gold",
+    "colStats": "Stats",
+    "colWhy": "Why",
+    "presetsHint": "{count} presets — switch by draft, lane, or CN meta. Default matches {lane} when available.",
+    "presetJungle": "Jungle clear & gank tempo",
+    "presetClash": "Side lane bruiser / split",
+    "presetFarm": "Farm lane scaling",
+    "presetMid": "Mid pressure & roam",
+    "presetRoam": "Roaming peel & vision",
+    "presetCn": "CN server community preset",
+    "presetDefault": "Default ranked path"
+  },
+  "arcana": {
+    "colSlot": "Slot",
+    "colChoice": "Choice",
+    "colEffect": "Effect"
+  },
+  "combo": {
+    "when": "When"
+  },
+  "counters": {
+    "strongInto": "{name} is strong into",
+    "strongHint": "Pick {name} when the enemy drafts these heroes.",
+    "weakInto": "{name} struggles into",
+    "weakHint": "Avoid {name} or ban these when they appear on the enemy team.",
+    "unavailable": "Data unavailable"
+  },
+  "guide": {
+    "laning": "Laning Phase",
+    "teamfightHeading": "Teamfight Role",
+    "highRank": "High Rank (Diamond+)",
+    "comparisons": "vs Similar Heroes",
+    "teamfight": {
+      "tank": "Engage on the enemy carry when your team can follow. Body-block skillshots for your marksman.",
+      "warrior": "Flank or dive the backline after tanks commit. Do not start without vision on the enemy jungler.",
+      "assassin": "Wait for team CC, then burst the carry with your full combo. Exit with flash or resets if focused.",
+      "mage": "Poke at max range before objectives. Save hard CC for enemy dive or peel windows.",
+      "marksman": "Stay behind the frontline; hit the closest safe target. Join only after enemy dive cooldowns are spent.",
+      "support": "Peel your carry first, then look for picks. Ward Tyrant ~30s before spawn.",
+      "default": "Stay with your team, play around objectives, and commit when you have numbers."
+    }
+  },
+  "skills": {
+    "passive": "Passive",
+    "skill1": "Skill 1",
+    "skill2": "Skill 2",
+    "ultimate": "Ultimate",
+    "unavailable": "Skill data unavailable."
+  },
+  "attribution": {
+    "title": "Meta data & editorial",
+    "sources": "Sources",
+    "synced": "Last synced",
+    "buildNote": "Builds list end-game items; in-match purchase order may differ. Win/pick/ban and builds are re-synced after each Camp HOK data pull.",
+    "editedBy": "Edited by",
+    "disclaimer": "Not affiliated with Tencent or Level Infinite."
+  },
+  "toc": {
+    "summary": "Summary",
+    "build": "Build",
+    "arcana": "Arcana",
+    "skillOrder": "Skill Order",
+    "combos": "Combos",
+    "abilities": "Abilities",
+    "counters": "Counters",
+    "playstyle": "Playstyle",
+    "faq": "FAQ",
+    "onPage": "On this page"
+  },
+  "roles": {
+    "Tank": "Tank",
+    "Warrior": "Warrior",
+    "Assassin": "Assassin",
+    "Mage": "Mage",
+    "Marksman": "Marksman",
+    "Support": "Support"
+  },
+  "season": {
+    "label": "S12 (June 2026)"
+  },
+  "trends": {
+    "title": "Hero Trends",
+    "subtitle": "Meta leaderboards from Camp HOK international ranked — updated each sync.",
+    "syncNote": "Last sync: {date}. Duo and comp boards use lane-based top picks from Camp data — not official pair win rates or KPL replays. Cross-check on",
+    "tierListLink": "Tier List",
+    "andHeroPages": "and hero pages.",
+    "patchStrongest": "Patch Strongest",
+    "patchStrongestHint": "Tier S+ / S heroes with highest win rate this sync",
+    "soloQueue": "Solo Queue Kings",
+    "soloQueueHint": "Meta score with 51%+ win rate — strong picks without a premade",
+    "highestWr": "Highest Win Rate",
+    "mostPicked": "Most Picked",
+    "mostBanned": "Most Banned",
+    "proPressure": "Pro Draft Pressure",
+    "proPressureHint": "Ban + pick weight on global Camp (no live KPL API)",
+    "bestDuos": "Best Duos",
+    "bestDuosHint": "One pair per lane strategy — roam/bot, mid/jungle, side gank, engage/pick",
+    "metaComps": "Meta Comps",
+    "metaCompsHint": "Five-hero templates: balanced, fast push, protect carry, ban core",
+    "recentChanges": "Recent Meta Changes"
+  },
+  "playbook": {
+    "flex": "flex",
+    "repositionAa": "reposition with basic attacks",
+    "safeTrade": "Trade with safest skill, confirm cooldowns, then commit ultimate.",
+    "comboStandard": "Standard trade",
+    "comboStandardWhen": "{lane} skirmish or objective setup",
+    "comboAllIn": "All-in",
+    "comboAllInSteps": "{ult} after full rotation when enemy escape is down",
+    "comboAllInWhen": "River gank or backline dive with team CC",
+    "itemCore": "Core item #{slot} in the recommended {lane} path.",
+    "arcanaPrimary": "Primary",
+    "arcanaRune": "Rune {n}",
+    "arcanaSpell": "Spell",
+    "arcanaEffect": "Recommended for {role} {lane}",
+    "arcanaSpellHint": "See matchup section for swaps.",
+    "seeBuildTable": "see build table",
+    "tldrBuild": "Core: {items}",
+    "tldrCombo": "Weave skills with basic attacks.",
+    "tldrCounters": "Strong into {names}",
+    "tldrCountersDefault": "Strong into favorable drafts",
+    "passiveHookNoDesc": "{name} is a {lane} {role} with {difficulty} difficulty on Honor of Kings Global.",
+    "passiveHookWithDesc": "{name}: {desc}.",
+    "passiveHookNamed": "{name} — {role} ({lane}) built around {passive}.",
+    "skillOrder": {
+      "junglePriority": "Skill 2 → Skill 1 → {ult} (max Skill 2 first)",
+      "jungleReason": "{s2} usually provides mobility or stick—max first for ganks. {s1} second for damage. {ult} on every level available.",
+      "magePriority": "Skill 2 → Skill 1 → {ult} (max Skill 2 first)",
+      "mageReason": "Wave clear and poke from {s2} first. {s1} for trade patterns. {ult} whenever unlocked for fight swing.",
+      "adcPriority": "Skill 1 → Skill 2 → {ult} (max Skill 1 first)",
+      "adcReason": "{s1} is your lane trade tool—max for farm lane pressure. {s2} second for peel or burst. {ult} on cooldown.",
+      "defaultPriority": "Skill 1 → Skill 2 → {ult}",
+      "defaultReason": "Max your primary trade skill first, then {s2} for utility, and {ult} on every level."
+    }
+  },
+  "faq": {
+    "seeBuild": "see build section",
+    "flexCc": "flex picks with CC",
+    "diveComp": "assassins and dive comps",
+    "tierNoteStrong": "Strong meta pick for ranked.",
+    "tierNoteSolid": "Solid situational pick.",
+    "tierNoteNiche": "Niche — draft carefully.",
+    "struggleDive": "dive and burst",
+    "strugglePeel": "peel and group",
+    "struggleRange": "out-range or out-sustain",
+    "laning": {
+      "jungling": "Clear to level four, then gank the lane with the least escape. Secure Tyrant when your bot or mid has crash wave.",
+      "mid": "Control first wave without taking free poke. Roam after pushing wave 2–4 to side lanes with your jungler.",
+      "farm": "Last-hit safely until first core item. Ping jungler for river vision; never face-check brush without minion cover.",
+      "clash": "Trade on your power spike levels (2/4). Call jungler for dive only when enemy flash is down.",
+      "roam": "Help marksman crash wave, then rotate mid for picks. Return before Tyrant if your carry has no escape."
+    },
+    "laningDefault": "Play {name} in the {lane} role: farm to first core, then fight on your ultimate timer.",
+    "highRankStaple": "{name} is a Tier {tier} staple in high-elo (Diamond+) on the international server — worth mastering for climb.",
+    "highRankViable": "{name} is a viable Tier A pick in high rank with {wr} win rate — strong in one-trick hands or as a counter-pick.",
+    "highRankNiche": "{name} sits at Tier {tier} globally ({wr} WR). In high rank, pick only into favorable matchups or when you have a dedicated pocket pick.",
+    "highRankBan": "Ban rate {ban} — expect {name} to be removed in tryhard lobbies; have a backup in the same role.",
+    "highRankPick": "Pick rate {pick} — frequently seen in ranked; learn the matchup even if you do not main {name}.",
+    "highRankLowPick": "Low pick rate {pick} — niche in high rank; surprise value if you perfect the kit.",
+    "highRankAboveAvg": "Camp data shows above-average win rate — prioritize when not hard-countered in draft.",
+    "highRankBelowAvg": "Below 49% global WR — high-rank players often avoid unless compensating for team comp.",
+    "peerWrWin": "{name} has +{diff}% WR vs {peer} in Camp data.",
+    "peerWrLose": "{peer} wins {diff}% more often globally.",
+    "peerCompare": "{name} vs {peer} ({peerRole}, Tier {peerTier}): {peer} is {peerPick} pick / {peerWr} WR. {wrNote} Choose {name} when you need {lane} identity; choose {peer} for {peerLane} comfort.",
+    "q": {
+      "goodSeason": "Is {name} good in the current meta?",
+      "bestBuild": "What is the best {name} build?",
+      "counter": "How to counter {name}?",
+      "strongInto": "Who does {name} counter?",
+      "highRank": "Is {name} good in high rank / Diamond+?",
+      "lane": "What lane should {name} play?",
+      "arcana": "Best arcana and spells for {name}?",
+      "vsPeer": "{name} or {peer} — which is better?",
+      "ban": "Should I ban {name}?"
+    },
+    "a": {
+      "goodSeason": "{name} is Tier {tier} {role} with {wr} win rate, {pick} pick rate, and {ban} ban rate on Honor of Kings Global (Camp HOK, {date}). {tierNote}",
+      "bestBuild": "Core item path: {build}. Run {arcana} arcana with {spells}. Switch to alternate build presets on this page for jungle, clash, or late-game setups.",
+      "counter": "Pick {weak} into {name}. Deny {lane} resources early and force fights before {name} completes core items. {name} struggles when the enemy can {struggle} them.",
+      "strongInto": "{name} is strong into {into} according to HoKStats matchup data and role matchups on the global server. Draft {name} when the enemy relies on these heroes in the {lane} lane.",
+      "lane": "{name} is tagged {lane} in Camp export ({roles}). {tip}",
+      "arcana": "Recommended: {arcana} arcana. Battle spell: {spells}. Adjust Purify/Execute based on enemy dive and jungle need.",
+      "banYes": "Yes in tryhard queues — {ban} ban rate. Deny if enemy first-picks {role}.",
+      "banOptional": "Optional ban when enemy spams {role}; {pick} pick rate but only {ban} ban rate.",
+      "banLow": "Low priority ban ({ban}). Focus bans on higher-tier {role} picks unless targeting a one-trick."
+    }
+  },
+  "bestHeroes": {
+    "title": "Best Heroes by Role",
+    "subtitle": "Quick ranked picks per role — sorted by tier, pick rate, and ban pressure (not raw win rate alone). For full S+ / S / A / B bands use the",
+    "tierListLink": "Tier List",
+    "midLink": "; for every hero use",
+    "allHeroesLink": "All Heroes",
+    "disclaimer": "International Camp data — heroes may rank lower if global win rate is weak. CN meta favorites can differ from these numbers.",
+    "bestRole": "Best {role}",
+    "viewAllRole": "View all {role} →",
+    "roleTitle": "Best {role} Heroes",
+    "roleSubtitle": "{count} {role} heroes · meta score (tier + pick + ban) ·",
+    "tierBands": "Tier bands",
+    "onTierList": "on Tier List"
+  },
+  "tools": {
+    "title": "HOK Meta Tools",
+    "subtitle": "Data-driven tools — no AI APIs, all results from local JSON.",
+    "buildGenTitle": "Build Generator",
+    "buildGenDesc": "View item build paths for every meta hero from heroes.json.",
+    "counterTitle": "Counter Picker",
+    "counterDesc": "Find counter picks against any hero in the meta roster.",
+    "counterPageTitle": "Counter Picker",
+    "buildPageTitle": "Build Generator",
+    "enemyHero": "Enemy hero",
+    "selectHero": "Select hero",
+    "countersFor": "Counters for {name}",
+    "banRate": "Ban rate",
+    "role": "Role",
+    "buildPath": "{name} build path",
+    "tierWr": "Tier {tier} · {wr} win rate · Data from heroes.json"
+  },
+  "learn": {
+    "title": "Learning Hub",
+    "subtitle": "Meta comps, rank strategies, and counter guides — backed by Camp HOK data.",
+    "byAuthor": "By {author} · Published {published} · Updated {updated}",
+    "dataNote": "Data note"
+  },
+  "about": {
+    "title": "About HOK Meta",
+    "p1": "Data-driven Honor of Kings global meta — tier lists, builds, counters, and guides.",
+    "p2": "We cover {count} Honor of Kings global server heroes with English skills, item builds (icons + descriptions), Arcana, counters, and Camp HOK win/pick/ban stats. Data is synced from official Camp metrics and HoKStats.gg international references — not invented.",
+    "editorial": "Editorial:",
+    "published": "Published:",
+    "updated": "Updated:"
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "lastUpdated": "Last updated: {date}",
+    "p1": "{name} ({domain}) publishes Honor of Kings meta guides and tools. This site is operated by {author}.",
+    "collectHeading": "Information we collect",
+    "collectBody": "We do not require account registration. Standard server and analytics logs may record IP address, browser type, and pages visited. Third-party ad partners (e.g. Google AdSense) may use cookies per their policies.",
+    "cookiesHeading": "Cookies",
+    "cookiesBody": "Cookies may be used for advertising, analytics, and site preferences. You can disable cookies in your browser settings.",
+    "contactHeading": "Contact",
+    "contactBody": "For privacy questions, contact the site operator via the domain {domain}."
+  },
+  "search": {
+    "title": "Search Results",
+    "placeholder": "Search heroes...",
+    "submit": "Go",
+    "label": "Search heroes",
+    "empty": "Enter a hero name in the header search.",
+    "noResults": "No heroes found.",
+    "browseAll": "Browse all heroes",
+    "resultCount": "{count} result(s) for \"{q}\"",
+    "loading": "Loading…",
+    "relatedTitle": "Related Searches"
+  },
+  "notFound": {
+    "title": "404",
+    "message": "This page could not be found.",
+    "home": "Home",
+    "allHeroes": "All Heroes"
+  },
+  "footer": {
+    "stats": "Stats: Camp HOK",
+    "synced": "Synced {date}",
+    "refresh": "Run npm run sync-meta to refresh."
+  }
+}

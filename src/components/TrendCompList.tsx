@@ -1,8 +1,15 @@
 import Link from 'next/link';
 import type { TrendComp } from '@/lib/trends';
 import { HeroAvatar } from '@/components/HeroAvatar';
+import { localePath, type Locale } from '@/lib/i18n';
 
-export function TrendCompList({ comps }: { comps: TrendComp[] }) {
+export function TrendCompList({
+  comps,
+  locale = 'en',
+}: {
+  comps: TrendComp[];
+  locale?: Locale;
+}) {
   return (
     <ul className="space-y-4">
       {comps.map((comp) => (
@@ -15,7 +22,7 @@ export function TrendCompList({ comps }: { comps: TrendComp[] }) {
             {comp.heroes.map((hero) => (
               <Link
                 key={hero.slug}
-                href={`/hero/${hero.slug}/`}
+                href={localePath(locale, `/hero/${hero.slug}`)}
                 className="flex items-center gap-1.5 rounded border border-hok-border px-2 py-1 hover:border-hok-gold/40"
                 title={`${hero.role} · Tier ${hero.tier}`}
               >

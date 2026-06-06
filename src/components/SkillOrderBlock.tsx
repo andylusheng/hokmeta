@@ -1,8 +1,15 @@
 import type { Hero } from '@/types/hero';
 import { getHeroPlaybook } from '@/lib/hero-playbook';
+import type { Locale } from '@/lib/i18n';
 
-export function SkillOrderBlock({ hero }: { hero: Hero }) {
-  const { skillOrder } = getHeroPlaybook(hero);
+export function SkillOrderBlock({
+  hero,
+  locale = 'en',
+}: {
+  hero: Hero;
+  locale?: Locale;
+}) {
+  const { skillOrder } = getHeroPlaybook(hero, locale);
 
   return (
     <div className="rounded-lg border border-hok-border bg-hok-card/40 p-4">

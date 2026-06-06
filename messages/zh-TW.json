@@ -1,0 +1,367 @@
+{
+  "nav": {
+    "heroes": "英雄",
+    "tierList": "梯度榜",
+    "trends": "趨勢",
+    "bestHeroes": "最強英雄",
+    "tools": "工具",
+    "learn": "攻略",
+    "guides": "攻略",
+    "about": "關於",
+    "privacy": "隱私",
+    "api": "API"
+  },
+  "lang": {
+    "en": "English",
+    "zhTW": "繁體中文",
+    "switch": "語言"
+  },
+  "common": {
+    "home": "首頁",
+    "heroes": "英雄",
+    "allHeroes": "全部英雄",
+    "tierList": "梯度榜",
+    "viewAll": "查看全部",
+    "skipToContent": "跳至內容",
+    "globalServer": "國際服",
+    "contentEnglishNotice": "技能描述與部分玩法正文為英文原文（國際服數據）。界面、FAQ 與 Meta 解讀已中文化。",
+    "contentPartialNotice": "技能與裝備名稱保留英文。界面、FAQ 與數據解讀為繁體中文。",
+    "skillsEnglishNotice": "技能與裝備名稱與王者榮耀國際服客戶端一致（英文）。勝率與出裝來自 Camp HOK 國際服數據。",
+    "learnBodyNotice": "攻略正文含 Camp HOK 國際服即時數據（英雄名為英文）。"
+  },
+  "home": {
+    "title": "王者榮耀國際服 Meta 與梯度榜",
+    "subtitle": "涵蓋 {count} 位國際服英雄——梯度榜、出裝、克制與排位 Meta 工具，數據驅動。",
+    "browseHeroes": "瀏覽英雄",
+    "heroTrends": "英雄趨勢",
+    "highestWr": "勝率最高",
+    "mostBanned": "禁用最多",
+    "allTrends": "全部趨勢 →",
+    "featured": "熱門 Meta 英雄",
+    "learningHub": "攻略中心",
+    "allGuides": "查看全部攻略 →"
+  },
+  "heroes": {
+    "title": "全部 Meta 英雄",
+    "subtitle": "共 {count} 位英雄，按職業分組 · 依勝率排序"
+  },
+  "tierList": {
+    "title": "王者榮耀梯度榜",
+    "subtitle": "按主職業分組（刺客→戰士），各職業內再分 S+ / S / A / B。數據來自 Camp HOK。",
+    "roleHint": "主職業 · S+ 至 B · 各梯度內依勝率排序"
+  },
+  "lanes": {
+    "jungling": "打野",
+    "mid": "中路",
+    "farm": "發育路",
+    "clash": "對抗路",
+    "roam": "遊走"
+  },
+  "difficulty": {
+    "easy": "簡單",
+    "medium": "中等",
+    "hard": "困難"
+  },
+  "metaBanner": {
+    "label": "即時 Meta 數據",
+    "from": "勝率 / 選取 / 禁用來自",
+    "updated": "更新於"
+  },
+  "stats": {
+    "wr": "勝率",
+    "pick": "選取",
+    "ban": "禁用",
+    "winRate": "勝率",
+    "pickRate": "選取率",
+    "banRate": "禁用率"
+  },
+  "hero": {
+    "buildTitle": "{name} 最佳出裝",
+    "buildIntro": "六神裝購買順序、金幣與出裝理由。實戰購買路線可能不同。",
+    "arcanaTitle": "銘文與召喚師技能",
+    "skillOrderTitle": "技能加點",
+    "combosTitle": "連招",
+    "abilitiesTitle": "技能詳解",
+    "countersTitle": "克制與對局",
+    "playstyleTitle": "玩法與排位技巧",
+    "faqTitle": "常見問題",
+    "counterPicker": "克制選人工具",
+    "summaryBuild": "核心出裝",
+    "summaryCombo": "連招",
+    "summaryDraft": "陣容",
+    "wr": "勝率",
+    "tier": "梯度",
+    "metaTitle": "{name} 出裝 {season} — 裝備、連招與克制",
+    "metaDesc": "{name} {lane} 攻略——最佳出裝、加點、連招、克制與銘文（王者榮耀國際服 {date}）。",
+    "subtitle": "{lane} · {tier} 梯度 · 勝率 {wr} · {season}"
+  },
+  "build": {
+    "colOrder": "#",
+    "colItem": "裝備",
+    "colGold": "金幣",
+    "colStats": "屬性",
+    "colWhy": "理由",
+    "presetsHint": "共 {count} 套方案——可依分路、陣容或國服 Meta 切換。預設優先匹配 {lane}。",
+    "presetJungle": "打野清野與抓人節奏",
+    "presetClash": "對抗路戰士 / 帶線",
+    "presetFarm": "發育路後期核心",
+    "presetMid": "中路壓制與遊走",
+    "presetRoam": "遊走保護與視野",
+    "presetCn": "國服社群方案",
+    "presetDefault": "排位預設路線"
+  },
+  "arcana": {
+    "colSlot": "欄位",
+    "colChoice": "選擇",
+    "colEffect": "效果"
+  },
+  "combo": {
+    "when": "適用場景"
+  },
+  "counters": {
+    "strongInto": "{name} 克制",
+    "strongHint": "敵方已選這些英雄時，可考慮選 {name}。",
+    "weakInto": "{name} 被克制",
+    "weakHint": "敵方已有這些英雄時，慎選 {name} 或考慮禁用。",
+    "unavailable": "暫無數據"
+  },
+  "guide": {
+    "laning": "對線期",
+    "teamfightHeading": "團戰定位",
+    "highRank": "高分段（鑽石+）",
+    "comparisons": "同職業對比",
+    "teamfight": {
+      "tank": "隊友能跟上時開團切後排，並為射手擋技能。",
+      "warrior": "前排交戰後側翼或切後排，無視野不先手。",
+      "assassin": "等隊友硬控再交全套秒後排，被集火用位移或閃現撤出。",
+      "mage": "搶目標前遠距離消耗，硬控留給敵方開團或保核時段。",
+      "marksman": "站前排後方輸出最近安全目標，等敵方開團技能交過再進場。",
+      "support": "先保射手，再找機會開人。暴君前約 30 秒做好視野。",
+      "default": "跟團行動，圍繞暴君/主宰，有人數優勢再開團。"
+    }
+  },
+  "skills": {
+    "passive": "被動",
+    "skill1": "一技能",
+    "skill2": "二技能",
+    "ultimate": "大招",
+    "unavailable": "技能數據暫不可用。"
+  },
+  "attribution": {
+    "title": "數據來源與編輯說明",
+    "sources": "來源",
+    "synced": "最近同步",
+    "buildNote": "出裝為六神成品；局內購買順序可能不同。勝率/選取率與出裝在每次 Camp HOK 同步後更新。",
+    "editedBy": "編輯",
+    "disclaimer": "與騰訊、Level Infinite 無關聯。"
+  },
+  "toc": {
+    "summary": "概覽",
+    "build": "出裝",
+    "arcana": "銘文",
+    "skillOrder": "加點",
+    "combos": "連招",
+    "abilities": "技能",
+    "counters": "克制",
+    "playstyle": "玩法",
+    "faq": "FAQ",
+    "onPage": "本頁目錄"
+  },
+  "roles": {
+    "Tank": "坦克",
+    "Warrior": "戰士",
+    "Assassin": "刺客",
+    "Mage": "法師",
+    "Marksman": "射手",
+    "Support": "輔助"
+  },
+  "season": {
+    "label": "S12（2026年6月）"
+  },
+  "trends": {
+    "title": "英雄趨勢",
+    "subtitle": "Camp HOK 國際服排位榜單——每次同步後更新。",
+    "syncNote": "最近同步：{date}。雙排與陣容榜依分路熱門英雄推導，非官方組合勝率或 KPL 實戰。請交叉參考",
+    "tierListLink": "梯度榜",
+    "andHeroPages": "與各英雄頁。",
+    "patchStrongest": "版本最強",
+    "patchStrongestHint": "S+ / S 梯度中勝率最高",
+    "soloQueue": "單排上分",
+    "soloQueueHint": "Meta 分 51%+ 勝率——無開黑也穩",
+    "highestWr": "勝率最高",
+    "mostPicked": "選取最多",
+    "mostBanned": "禁用最多",
+    "proPressure": "職業 Ban 壓力",
+    "proPressureHint": "Camp 全球 Ban+Pick 權重（無即時 KPL API）",
+    "bestDuos": "最佳雙排",
+    "bestDuosHint": "每種分路策略一組——遊走/射手、中野、邊路抓人、開團/收割",
+    "metaComps": "Meta 陣容",
+    "metaCompsHint": "五人模板：均衡、快推、保核、Ban 核心",
+    "recentChanges": "近期 Meta 變動"
+  },
+  "playbook": {
+    "flex": "多路",
+    "repositionAa": "普攻調整站位",
+    "safeTrade": "用最安全技能換血，確認冷卻後再交大招。",
+    "comboStandard": "常規換血",
+    "comboStandardWhen": "{lane} 小規模團戰或搶目標前",
+    "comboAllIn": "全力開",
+    "comboAllInSteps": "技能全交後接 {ult}，敵方逃生技能已交",
+    "comboAllInWhen": "河道抓人或隊友給控後切後排",
+    "itemCore": "推薦 {lane} 路線核心裝 #{slot}。",
+    "arcanaPrimary": "主系",
+    "arcanaRune": "銘文 {n}",
+    "arcanaSpell": "召喚師技能",
+    "arcanaEffect": "適合 {role} {lane}",
+    "arcanaSpellHint": "依對局在克制區塊調整。",
+    "seeBuildTable": "見出裝表",
+    "tldrBuild": "核心：{items}",
+    "tldrCombo": "技能間穿插普攻。",
+    "tldrCounters": "克制 {names}",
+    "tldrCountersDefault": "克制有利陣容",
+    "passiveHookNoDesc": "{name} 為 {lane} {role}，難度 {difficulty}（王者榮耀國際服）。",
+    "passiveHookWithDesc": "{name}：{desc}。",
+    "passiveHookNamed": "{name}——{role}（{lane}），圍繞 {passive} 構建玩法。",
+    "skillOrder": {
+      "junglePriority": "二技能 → 一技能 → {ult}（優先滿二技能）",
+      "jungleReason": "{s2} 通常提供位移或黏人——先滿方便抓人。{s1} 次之補傷害。{ult} 有就點。",
+      "magePriority": "二技能 → 一技能 → {ult}（優先滿二技能）",
+      "mageReason": "先滿 {s2} 清線與消耗。{s1} 負責換血節奏。{ult} 解鎖即點，團戰翻盤用。",
+      "adcPriority": "一技能 → 二技能 → {ult}（優先滿一技能）",
+      "adcReason": "{s1} 是對線核心——先滿壓制發育路。{s2} 次之保護或爆發。{ult} 跟冷卻。",
+      "defaultPriority": "一技能 → 二技能 → {ult}",
+      "defaultReason": "先滿主要換血技能，再 {s2} 補功能，{ult} 有就點。"
+    }
+  },
+  "faq": {
+    "seeBuild": "見出裝區",
+    "flexCc": "帶控的靈活選人",
+    "diveComp": "刺客與強開陣容",
+    "tierNoteStrong": "排位強勢 Meta 選人。",
+    "tierNoteSolid": "穩健的局勢選人。",
+    "tierNoteNiche": "冷門——需謹慎陣容搭配。",
+    "struggleDive": "強開秒殺",
+    "strugglePeel": "保護與抱團",
+    "struggleRange": "手長或持續消耗",
+    "laning": {
+      "jungling": "清到四級再抓最沒逃生的一路。中下路推線後搶暴君。",
+      "mid": "控首波線少吃免費消耗。二至四波推線後跟打野遊走邊路。",
+      "farm": "安全補刀到第一件核心。叫打野看河道；無兵線不探草。",
+      "clash": "在二、四級強勢期換血。敵方閃現交過再叫打野越塔。",
+      "roam": "幫射手推線後轉中路找機會。射手無逃生時暴君前要回線。"
+    },
+    "laningDefault": "在 {lane} 發育到第一件核心，再跟大招節奏打團。",
+    "highRankStaple": "{name} 為國際服高分局（鑽石+）Tier {tier} 常規選人——值得練熟上分。",
+    "highRankViable": "{name} 高分局 A 梯度可用，勝率 {wr}——適合單練或克制位。",
+    "highRankNiche": "{name} 全球 Tier {tier}（勝率 {wr}）——高分局僅建議順風對局或絕活。",
+    "highRankBan": "禁用率 {ban}——高分房常被 Ban，請準備同職業備選。",
+    "highRankPick": "選取率 {pick}——排位常見，即使不主玩也建議熟悉對局。",
+    "highRankLowPick": "選取率 {pick}——高分局冷門，練熟有奇襲價值。",
+    "highRankAboveAvg": "Camp 數據勝率偏高——未被硬克制時可優先考慮。",
+    "highRankBelowAvg": "全球勝率低於 49%——高分局常避開，除非補陣容缺口。",
+    "peerWrWin": "Camp 數據 {name} 對 {peer} 勝率約 +{diff}%。",
+    "peerWrLose": "{peer} 全球勝率約高 {diff}%。",
+    "peerCompare": "{name} vs {peer}（{peerRole}，{peerTier} 梯度）：{peer} 選取 {peerPick} / 勝率 {peerWr}。{wrNote} 要 {lane} 身份選 {name}；要 {peerLane} 熟練度選 {peer}。",
+    "q": {
+      "goodSeason": "當前版本 {name} 強嗎？",
+      "bestBuild": "{name} 最佳出裝是什麼？",
+      "counter": "如何克制 {name}？",
+      "strongInto": "{name} 克制誰？",
+      "highRank": "{name} 高分局（鑽石+）好用嗎？",
+      "lane": "{name} 該走哪條分路？",
+      "arcana": "{name} 最佳銘文與召喚師技能？",
+      "vsPeer": "{name} 還是 {peer} 更強？",
+      "ban": "該禁用 {name} 嗎？"
+    },
+    "a": {
+      "goodSeason": "{name} 為 {tier} 梯度 {role}，勝率 {wr}、選取 {pick}、禁用 {ban}（Camp HOK，{date}）。{tierNote}",
+      "bestBuild": "核心六神：{build}。銘文 {arcana}，技能 {spells}。本頁可切換打野、對抗或後期方案。",
+      "counter": "可選 {weak} 針對 {name}。前期壓制 {lane} 資源，逼其在核心裝成型前打架。敵方能 {struggle} 時 {name} 會很難受。",
+      "strongInto": "依 HoKStats 與國際服對位，{name} 好打 {into}。敵方 {lane} 依賴這些英雄時可考慮選 {name}。",
+      "lane": "Camp 標記為 {lane}（{roles}）。{tip}",
+      "arcana": "推薦 {arcana} 銘文，召喚師技能 {spells}。依敵方開團與打野需求調整淨化/斬殺。",
+      "banYes": "高分房建議 Ban——禁用率 {ban}。敵方先選 {role} 時可考慮。",
+      "banOptional": "敵方常選 {role} 時可選 Ban；選取 {pick}、禁用僅 {ban}。",
+      "banLow": "Ban 優先級低（{ban}）。除非針對絕活，否則優先 Ban 更高梯度 {role}。"
+    }
+  },
+  "bestHeroes": {
+    "title": "各職業最強英雄",
+    "subtitle": "依職業快速選人——按梯度、選取率與禁用壓力排序（非僅看勝率）。完整 S+ / S / A / B 分層見",
+    "tierListLink": "梯度榜",
+    "midLink": "；全部英雄見",
+    "allHeroesLink": "英雄列表",
+    "disclaimer": "數據來自 Camp HOK 國際服——全球勝率偏低者在此排名會較後。國服 Meta 熱門可能與此不同。",
+    "bestRole": "最強{role}",
+    "viewAllRole": "查看全部{role} →",
+    "roleTitle": "最強{role}英雄",
+    "roleSubtitle": "共 {count} 位{role} · Meta 分（梯度+選取+禁用）·",
+    "tierBands": "梯度分層",
+    "onTierList": "見梯度榜"
+  },
+  "tools": {
+    "title": "Meta 工具",
+    "subtitle": "數據驅動工具——結果均來自本地 heroes.json，無 AI 生成。",
+    "buildGenTitle": "出裝生成器",
+    "buildGenDesc": "查看每位英雄的 Camp / HoKStats 出裝路線。",
+    "counterTitle": "克制選人",
+    "counterDesc": "依本地克制數據查找針對性英雄。",
+    "counterPageTitle": "克制選人",
+    "buildPageTitle": "出裝生成器",
+    "enemyHero": "敵方英雄",
+    "selectHero": "選擇英雄",
+    "countersFor": "克制 {name}",
+    "banRate": "禁用率",
+    "role": "職業",
+    "buildPath": "{name} 出裝路線",
+    "tierWr": "{tier} 梯度 · 勝率 {wr} · 數據來自 heroes.json"
+  },
+  "learn": {
+    "title": "攻略中心",
+    "subtitle": "陣容、上分與克制思路——以 Camp HOK 國際服數據為準。",
+    "byAuthor": "作者 {author} · 發布 {published} · 更新 {updated}",
+    "dataNote": "數據說明"
+  },
+  "about": {
+    "title": "關於 HOK Meta",
+    "p1": "王者榮耀國際服數據驅動 Meta 站——梯度榜、出裝、克制與攻略。",
+    "p2": "涵蓋 {count} 位國際服英雄：技能、出裝（圖示+描述）、銘文、克制及 Camp HOK 勝/選/禁數據。同步自 Camp 官方指標與 HoKStats.gg 國際服參考，非憑空編造。",
+    "editorial": "編輯：",
+    "published": "發布：",
+    "updated": "更新："
+  },
+  "privacy": {
+    "title": "隱私政策",
+    "lastUpdated": "最後更新：{date}",
+    "p1": "{name}（{domain}）提供王者榮耀 Meta 攻略與工具。本站由 {author} 運營。",
+    "collectHeading": "我們收集的資訊",
+    "collectBody": "無需註冊帳號。伺服器與分析日誌可能記錄 IP、瀏覽器類型與訪問頁面。第三方廣告（如 Google AdSense）可能依其政策使用 Cookie。",
+    "cookiesHeading": "Cookie",
+    "cookiesBody": "Cookie 可能用於廣告、分析與偏好設定。可在瀏覽器中關閉。",
+    "contactHeading": "聯絡",
+    "contactBody": "隱私相關問題請透過網域 {domain} 聯絡站方。"
+  },
+  "search": {
+    "title": "搜尋結果",
+    "placeholder": "搜尋英雄…",
+    "submit": "搜尋",
+    "label": "搜尋英雄",
+    "empty": "請在頂欄輸入英雄名稱。",
+    "noResults": "找不到英雄。",
+    "browseAll": "瀏覽全部英雄",
+    "resultCount": "「{q}」共 {count} 筆結果",
+    "loading": "載入中…",
+    "relatedTitle": "相關搜尋"
+  },
+  "notFound": {
+    "title": "404",
+    "message": "找不到此頁面。",
+    "home": "首頁",
+    "allHeroes": "全部英雄"
+  },
+  "footer": {
+    "stats": "數據：Camp HOK",
+    "synced": "同步 {date}",
+    "refresh": "執行 npm run sync-meta 可更新。"
+  }
+}

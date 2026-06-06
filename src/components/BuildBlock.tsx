@@ -4,6 +4,7 @@ import { useEffect, useMemo, useState } from 'react';
 import type { Hero } from '@/types/hero';
 import { defaultBuildPresetIndex, getHeroBuildPresets } from '@/lib/data';
 import { BuildTable } from '@/components/BuildTable';
+import { createT, type Locale } from '@/lib/i18n';
 
 function presetBadge(label: string, lane?: string | null) {
   if (/国服/.test(label)) return 'CN 国服';
@@ -11,19 +12,26 @@ function presetBadge(label: string, lane?: string | null) {
   return null;
 }
 
-function presetHint(label: string, lane?: string | null): string | null {
+function presetHintKey(label: string, lane?: string | null): string | null {
   const l = label.toLowerCase();
-  if (/jungl|jungle/.test(l) || lane === 'Jungling') return 'Jungle clear & gank tempo';
-  if (/clash|top|lane 1/.test(l) || lane === 'Clash Lane') return 'Side lane bruiser / split';
-  if (/farm|bot|adc|marksman/.test(l) || lane === 'Farm Lane') return 'Farm lane scaling';
-  if (/mid/.test(l) || lane === 'Mid Lane') return 'Mid pressure & roam';
-  if (/roam|support/.test(l) || lane === 'Roaming') return 'Roaming peel & vision';
-  if (/国服/.test(label)) return 'CN server community preset';
-  if (/recommend|default/.test(l)) return 'Default ranked path';
+  if (/jungl|jungle/.test(l) || lane === 'Jungling') return 'build.presetJungle';
+  if (/clash|top|lane 1/.test(l) || lane === 'Clash Lane') return 'build.presetClash';
+  if (/farm|bot|adc|marksman/.test(l) || lane === 'Farm Lane') return 'build.presetFarm';
+  if (/mid/.test(l) || lane === 'Mid Lane') return 'build.presetMid';
+  if (/roam|support/.test(l) || lane === 'Roaming') return 'build.presetRoam';
+  if (/国服/.test(label)) return 'build.presetCn';
+  if (/recommend|default/.test(l)) return 'build.presetDefault';
   return null;
 }
 
-export function BuildBlock({ hero }: { hero: Hero }) {
+export function BuildBlock({
+  hero,
+  locale = 'en',
+}: {
+  hero: Hero;
+  locale?: Locale;
+}) {
+  const t = createT(locale);
   const presets = useMemo(() => getHeroBuildPresets(hero), [hero]);
   const defaultIdx = useMemo(() => defaultBuildPresetIndex(hero), [hero]);
   const [active, setActive] = useState(defaultIdx);
@@ -35,7 +43,7 @@ export function BuildBlock({ hero }: { hero: Hero }) {
   const current = presets[active] ?? presets[0];
 
   if (!current) {
-    return <p className="text-sm text-gray-400">Build data unavailable.</p>;
+    return <p className="text-sm text-gray-400">{t('counters.unavailable')}</p>;
   }
 
   return (
@@ -43,13 +51,15 @@ export function BuildBlock({ hero }: { hero: Hero }) {
       {presets.length > 1 && (
         <div>
           <p className="mb-2 text-xs text-gray-500">
-            {presets.length} presets — switch by draft, lane, or CN meta. Default
-            matches {hero.lane ?? 'recommended'} when available.
+            {t('build.presetsHint', {
+              count: presets.length,
+              lane: hero.lane ?? 'recommended',
+            })}
           </p>
           <div className="flex flex-wrap gap-2">
             {presets.map((preset, i) => {
               const badge = presetBadge(preset.label, preset.lane);
-              const hint = presetHint(preset.label, preset.lane);
+              const hintKey = presetHintKey(preset.label, preset.lane);
               return (
                 <button
                   key={preset.id}
@@ -67,9 +77,9 @@ export function BuildBlock({ hero }: { hero: Hero }) {
                       {badge}
                     </span>
                   )}
-                  {hint && (
+                  {hintKey && (
                     <span className="mt-0.5 block text-[10px] text-gray-500">
-                      {hint}
+                      {t(hintKey)}
                     </span>
                   )}
                 </button>
@@ -78,7 +88,7 @@ export function BuildBlock({ hero }: { hero: Hero }) {
           </div>
         </div>
       )}
-      <BuildTable hero={hero} items={current.items} />
+      <BuildTable hero={hero} items={current.items} locale={locale} />
     </div>
   );
 }

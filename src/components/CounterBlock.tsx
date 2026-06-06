@@ -1,13 +1,21 @@
-import Link from 'next/link';
 import type { Hero } from '@/types/hero';
 import { getHeroByName } from '@/lib/data';
-import { HeroAvatar } from '@/components/HeroAvatar';
+import { HeroLinkRow, HeroUnknownRow } from '@/components/HeroLinkRow';
+import { createT, type Locale } from '@/lib/i18n';
+import { translateRole } from '@/lib/locale-labels';
 
-function CounterHeroList({ names }: { names: string[] }) {
+function CounterHeroList({
+  names,
+  locale,
+}: {
+  names: string[];
+  locale: Locale;
+}) {
+  const t = createT(locale);
   const unique = Array.from(new Set(names)).filter((n) => n !== 'Data unavailable');
 
   if (!unique.length) {
-    return <p className="text-sm text-gray-400">Data unavailable</p>;
+    return <p className="text-sm text-gray-400">{t('counters.unavailable')}</p>;
   }
 
   return (
@@ -18,26 +26,23 @@ function CounterHeroList({ names }: { names: string[] }) {
           return (
             <li
               key={name}
-              className="rounded border border-hok-border bg-hok-dark/40 px-3 py-2 text-sm text-gray-300"
+              className="rounded border border-hok-border bg-hok-dark/40 px-3 py-2"
             >
-              {name}
+              <HeroUnknownRow name={name} avatarSize={40} />
             </li>
           );
         }
         return (
           <li key={name}>
-            <Link
-              href={`/hero/${target.slug}/`}
-              className="flex items-center gap-3 rounded border border-hok-border bg-hok-dark/40 px-3 py-2 transition hover:border-hok-gold/40"
-            >
-              <HeroAvatar hero={target} size={40} />
-              <div className="min-w-0">
-                <p className="text-sm font-medium text-white">{target.name}</p>
-                <p className="text-xs text-gray-500">
-                  {target.role} · Tier {target.tier}
-                </p>
-              </div>
-            </Link>
+            <div className="rounded border border-hok-border bg-hok-dark/40 px-3 py-2 transition hover:border-hok-gold/40">
+              <HeroLinkRow
+                hero={target}
+                locale={locale}
+                avatarSize={40}
+                nameClassName="truncate text-sm font-medium text-white group-hover:text-hok-gold"
+                subtitle={`${translateRole(target.role, locale)} · ${t('hero.tier')} ${target.tier}`}
+              />
+            </div>
           </li>
         );
       })}
@@ -45,26 +50,34 @@ function CounterHeroList({ names }: { names: string[] }) {
   );
 }
 
-export function CounterBlock({ hero }: { hero: Hero }) {
+export function CounterBlock({
+  hero,
+  locale = 'en',
+}: {
+  hero: Hero;
+  locale?: Locale;
+}) {
+  const t = createT(locale);
+
   return (
     <div className="grid gap-6 sm:grid-cols-2">
       <div className="rounded-lg border border-hok-border bg-hok-card/50 p-4">
         <h4 className="mb-1 text-sm font-semibold text-hok-gold">
-          {hero.name} is strong into
+          {t('counters.strongInto', { name: hero.name })}
         </h4>
         <p className="mb-3 text-xs text-gray-500">
-          Pick {hero.name} when the enemy drafts these heroes.
+          {t('counters.strongHint', { name: hero.name })}
         </p>
-        <CounterHeroList names={hero.counters} />
+        <CounterHeroList names={hero.counters} locale={locale} />
       </div>
       <div className="rounded-lg border border-hok-border bg-hok-card/50 p-4">
         <h4 className="mb-1 text-sm font-semibold text-red-400">
-          {hero.name} struggles into
+          {t('counters.weakInto', { name: hero.name })}
         </h4>
         <p className="mb-3 text-xs text-gray-500">
-          Avoid {hero.name} or ban these when they appear on the enemy team.
+          {t('counters.weakHint', { name: hero.name })}
         </p>
-        <CounterHeroList names={hero.counteredBy} />
+        <CounterHeroList names={hero.counteredBy} locale={locale} />
       </div>
     </div>
   );

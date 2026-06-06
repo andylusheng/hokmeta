@@ -1,6 +1,8 @@
 import patchesMeta from '../../data/patches.json';
+import { createT, type Locale } from '@/lib/i18n';
 
-export function MetaBanner() {
+export function MetaBanner({ locale = 'en' }: { locale?: Locale }) {
+  const t = createT(locale);
   const updated =
     'updated' in patchesMeta && patchesMeta.updated
       ? patchesMeta.updated
@@ -8,11 +10,11 @@ export function MetaBanner() {
 
   return (
     <div className="mb-6 rounded-lg border border-hok-gold/30 bg-hok-gold/10 px-4 py-2 text-sm text-gray-300">
-      <span className="font-medium text-hok-gold">Live meta data</span>
+      <span className="font-medium text-hok-gold">{t('metaBanner.label')}</span>
       {updated && (
         <>
           {' '}
-          · Win / pick / ban from{' '}
+          · {t('metaBanner.from')}{' '}
           <a
             href="https://camp.honorofkings.com/"
             className="text-hok-gold underline"
@@ -21,7 +23,7 @@ export function MetaBanner() {
           >
             Camp HOK
           </a>{' '}
-          · Updated {updated}
+          · {t('metaBanner.updated')} {updated}
         </>
       )}
     </div>

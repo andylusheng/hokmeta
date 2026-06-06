@@ -1,8 +1,16 @@
 import type { Hero } from '@/types/hero';
 import { getHeroPlaybook } from '@/lib/hero-playbook';
+import { createT, type Locale } from '@/lib/i18n';
 
-export function ComboListBlock({ hero }: { hero: Hero }) {
-  const { combos } = getHeroPlaybook(hero);
+export function ComboListBlock({
+  hero,
+  locale = 'en',
+}: {
+  hero: Hero;
+  locale?: Locale;
+}) {
+  const t = createT(locale);
+  const { combos } = getHeroPlaybook(hero, locale);
 
   return (
     <ol className="space-y-4">
@@ -16,7 +24,7 @@ export function ComboListBlock({ hero }: { hero: Hero }) {
           </p>
           <p className="mt-2 font-mono text-sm text-white">{combo.steps}</p>
           <p className="mt-2 text-xs text-gray-500">
-            <span className="font-semibold text-gray-400">When: </span>
+            <span className="font-semibold text-gray-400">{t('combo.when')}: </span>
             {combo.when}
           </p>
         </li>

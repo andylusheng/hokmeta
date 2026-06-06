@@ -2,9 +2,18 @@ import type { Hero } from '@/types/hero';
 import { formatRate } from '@/lib/data';
 import { getHeroPlaybook, formatHeroSubtitle } from '@/lib/hero-playbook';
 import { HeroAvatar } from '@/components/HeroAvatar';
+import { createT, type Locale } from '@/lib/i18n';
+import { translateDifficulty, translateLane, translateRole } from '@/lib/locale-labels';
 
-export function HeroSummary({ hero }: { hero: Hero }) {
-  const playbook = getHeroPlaybook(hero);
+export function HeroSummary({
+  hero,
+  locale = 'en',
+}: {
+  hero: Hero;
+  locale?: Locale;
+}) {
+  const t = createT(locale);
+  const playbook = getHeroPlaybook(hero, locale);
 
   return (
     <section
@@ -17,22 +26,22 @@ export function HeroSummary({ hero }: { hero: Hero }) {
           <h1 className="text-2xl font-bold text-white sm:text-3xl">
             {hero.name}
           </h1>
-          <p className="mt-1 text-sm text-hok-gold">{formatHeroSubtitle(hero)}</p>
+          <p className="mt-1 text-sm text-hok-gold">{formatHeroSubtitle(hero, locale)}</p>
           <p className="mt-3 text-sm leading-relaxed text-gray-300">
             {playbook.hook}
           </p>
           <div className="mt-3 flex flex-wrap gap-2">
             <span className="rounded-full border border-hok-border bg-hok-dark/60 px-2.5 py-0.5 text-xs text-gray-300">
-              Tier {hero.tier}
+              {t('hero.tier')} {hero.tier}
             </span>
             <span className="rounded-full border border-hok-border bg-hok-dark/60 px-2.5 py-0.5 text-xs text-gray-300">
-              {formatRate(hero.winRate)} WR
+              {formatRate(hero.winRate)} {t('hero.wr')}
             </span>
             <span className="rounded-full border border-hok-border bg-hok-dark/60 px-2.5 py-0.5 text-xs text-gray-300">
-              {hero.lane ?? hero.role}
+              {translateLane(hero.lane, locale) || translateRole(hero.role, locale)}
             </span>
             <span className="rounded-full border border-hok-border bg-hok-dark/60 px-2.5 py-0.5 text-xs text-gray-300">
-              {hero.difficulty}
+              {translateDifficulty(hero.difficulty, locale)}
             </span>
           </div>
         </div>
@@ -41,7 +50,7 @@ export function HeroSummary({ hero }: { hero: Hero }) {
       <div className="grid gap-3 border-t border-hok-border/60 pt-4 sm:grid-cols-3">
         <div className="rounded-lg bg-hok-dark/50 px-3 py-2">
           <p className="text-[10px] font-bold uppercase tracking-wider text-hok-gold">
-            Build core
+            {t('hero.summaryBuild')}
           </p>
           <p className="mt-1 text-xs leading-relaxed text-gray-300">
             {playbook.tldr.build}
@@ -49,7 +58,7 @@ export function HeroSummary({ hero }: { hero: Hero }) {
         </div>
         <div className="rounded-lg bg-hok-dark/50 px-3 py-2">
           <p className="text-[10px] font-bold uppercase tracking-wider text-hok-gold">
-            Combo
+            {t('hero.summaryCombo')}
           </p>
           <p className="mt-1 text-xs leading-relaxed text-gray-300">
             {playbook.tldr.combo}
@@ -57,7 +66,7 @@ export function HeroSummary({ hero }: { hero: Hero }) {
         </div>
         <div className="rounded-lg bg-hok-dark/50 px-3 py-2">
           <p className="text-[10px] font-bold uppercase tracking-wider text-hok-gold">
-            Draft
+            {t('hero.summaryDraft')}
           </p>
           <p className="mt-1 text-xs leading-relaxed text-gray-300">
             {playbook.tldr.counters}
