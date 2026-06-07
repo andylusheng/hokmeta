@@ -24,6 +24,7 @@ const nextConfig = {
     }
     return config;
   },
+  distDir: 'out',
 };
 
 export default nextConfig;
