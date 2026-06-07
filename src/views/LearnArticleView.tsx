@@ -1,4 +1,4 @@
-import { getLearnArticle, learnDataNote, learnDataSync } from '@/lib/learn';
+import { getLearnArticle, getLearnDataNote, learnDataSync } from '@/lib/learn';
 import { authorMeta } from '@/lib/seo';
 import { createT, localePath, type Locale } from '@/lib/i18n';
 import { Breadcrumb } from '@/components/Breadcrumb';
@@ -12,7 +12,7 @@ export function LearnArticleView({
   locale?: Locale;
 }) {
   const t = createT(locale);
-  const article = getLearnArticle(slug);
+  const article = getLearnArticle(slug, locale);
   if (!article) return null;
   const path = `/learn/${slug}`;
 
@@ -57,7 +57,7 @@ export function LearnArticleView({
         ))}
         <section className="rounded-lg border border-hok-border bg-hok-dark/40 p-4">
           <h2 className="mb-2 text-sm font-semibold text-hok-gold">{t('learn.dataNote')}</h2>
-          <p className="text-xs leading-relaxed text-gray-400">{learnDataNote}</p>
+          <p className="text-xs leading-relaxed text-gray-400">{getLearnDataNote(locale)}</p>
         </section>
       </div>
     </div>

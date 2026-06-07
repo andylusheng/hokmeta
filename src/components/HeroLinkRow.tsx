@@ -3,12 +3,15 @@ import type { ReactNode } from 'react';
 import type { Hero } from '@/types/hero';
 import { HeroAvatar } from '@/components/HeroAvatar';
 import { localePath, type Locale } from '@/lib/i18n';
+import { getHeroDisplayName, translateHeroName } from '@/lib/locale-names';
 
 export function HeroUnknownRow({
   name,
+  locale = 'en',
   avatarSize = 32,
 }: {
   name: string;
+  locale?: Locale;
   avatarSize?: number;
 }) {
   return (
@@ -20,7 +23,9 @@ export function HeroUnknownRow({
       >
         ?
       </div>
-      <span className="truncate text-sm text-gray-300">{name}</span>
+      <span className="truncate text-sm text-gray-300">
+        {translateHeroName(name, locale)}
+      </span>
     </div>
   );
 }
@@ -53,7 +58,9 @@ export function HeroLinkRow({
     >
       <HeroAvatar hero={hero} size={avatarSize} />
       <span className="min-w-0 flex-1">
-        <span className={`block ${nameClassName}`}>{hero.name}</span>
+        <span className={`block ${nameClassName}`}>
+          {getHeroDisplayName(hero, locale)}
+        </span>
         {subtitle != null && (
           <span className="block text-xs text-gray-500">{subtitle}</span>
         )}

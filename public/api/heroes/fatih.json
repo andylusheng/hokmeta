@@ -2,101 +2,583 @@
   "id": "fatih",
   "slug": "fatih",
   "name": "Fatih",
+  "nameZh": "法提赫",
   "role": "Warrior",
   "roles": "Fighter",
+  "rolesZh": "戰士",
   "lane": "Clash Lane",
+  "laneZh": "對抗路",
   "difficulty": "Medium",
   "tier": "B",
   "winRate": 51.97,
-  "pickRate": 0.44,
+  "pickRate": 0.43,
   "banRate": 0.05,
-  "rank": 22,
+  "rank": 23,
   "avatar": "https://camp.honorofkings.com/camp/admin/default/6IY77h7c.png",
   "avatarFallback": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/128/128.jpg",
+  "heroCover": "https://camp.honorofkings.com/camp/admin/default/Xo6dQM5Y.jpg",
   "tencentId": 128,
-  "dataSource": "Camp HOK + HoKStats.gg (intl)",
-  "dataUpdated": "2026-06-05",
+  "dataSource": "Camp HOK bilingual (primary)",
+  "dataUpdated": "2026-06-07",
   "skills": [
     {
       "slot": "passive",
-      "name": "Only the Strong (Fatih)",
-      "description": "Enhance Recovery Whenever he uses a skill, gains an enhanced Basic Attack that unleashes sword energy. Enhanced Basic Attacks have higher Attack Speed and restore Health. While using Sacred Tree Blessing, enhanced Basic Attacks unleash 1 additional blast of sword energy.",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/128/12800.png",
-      "cooldown": null
+      "name": "Only the Strong",
+      "description": "Whenever he uses a skill, gains an enhanced Basic Attack that unleashes sword energy. Enhanced Basic Attacks have higher Attack Speed and restore Health.\nWhile using Sacred Tree Blessing, enhanced Basic Attacks unleash 1 additional blast of sword energy.",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/12800.png",
+      "cooldown": "1s"
     },
     {
       "slot": "skill1",
       "name": "The King's Blade",
-      "description": "Damage Movement Crowd Control Dashes forward to deal damage. The 3rd skill use also launches the enemy.",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/128/12810.png",
-      "cooldown": null
+      "description": "Dashes forward to deal damage. The 3rd skill use also launches the enemy.",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/12810.png",
+      "cooldown": "10s"
     },
     {
       "slot": "skill2",
       "name": "The King's Return",
-      "description": "Damage Slow Unleashes sword energy, dealing damage to enemies and slowing them. Recovers Health if he hits a hero. While using Sacred Tree Blessing, he unleashes 1 additional blast of sword energy.",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/128/12820.png",
-      "cooldown": null
+      "description": "Unleashes sword energy, dealing damage to enemies and slowing them. Recovers Health if he hits a hero.\nWhile using Sacred Tree Blessing, he unleashes 1 additional blast of sword energy.",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/12820.png",
+      "cooldown": "10s"
     },
     {
       "slot": "ultimate",
       "name": "Sacred Tree Blessing",
-      "description": "Enhance Purify Recovery Removes all crowd control effects on himself, dealing physical damage to nearby enemies and gaining max Health. Boosts the effects of Skill 2 and enhanced Basic Attacks while this skill is active. Tap again to end the skill.",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/128/12830.png",
-      "cooldown": null
+      "description": "Cleanses himself of all crowd control effects, deals physical damage to nearby enemies, and gains max Health.\nWhile this skill is active, Skill 2 and enhanced Basic Attacks unleash sword energy. He also continuously gains enhanced Basic Attacks.\nTap again to end the skill.",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/12830.png",
+      "cooldown": "35s"
+    }
+  ],
+  "skillsZh": [
+    {
+      "slot": "passive",
+      "name": "爭霸",
+      "description": "法提赫施放技能後獲得強化普攻，增加攻速並揮出遠程劍氣造成傷害和回復。\n【聖樹祝福】期間，強化普攻額外揮出1道劍氣。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/12800.png",
+      "cooldown": "1s"
+    },
+    {
+      "slot": "skill1",
+      "name": "王者之刃",
+      "description": "法提赫向前位移並造成傷害，第三次施放會額外造成擊飛效果。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/12810.png",
+      "cooldown": "10s"
+    },
+    {
+      "slot": "skill2",
+      "name": "君臨城下",
+      "description": "法提赫斬出劍氣，對敵人造成傷害和減速，命中敵方會回復自身生命值。\n【聖樹祝福】期間，額外揮出1道劍氣。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/12820.png",
+      "cooldown": "10s"
+    },
+    {
+      "slot": "ultimate",
+      "name": "聖樹祝福",
+      "description": "法提赫使用祝福之力解除自身控制效果，並對周圍造成物理傷害，同時提高自身最大生命值。\n持續期間，【君臨城下】和強化普攻均可額外揮出劍氣，並持續獲得強化普攻次數。\n再次點擊可以提前關閉技能。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/12830.png",
+      "cooldown": "35s"
     }
   ],
   "build": [
     {
       "slot": 1,
-      "itemId": "1421",
-      "name": "Boots of Fortitude",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1421.jpg",
-      "description": "Reduces physical damage"
+      "itemId": "11311",
+      "name": "Pure Sky",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/11311.png",
+      "description": "PATK +80, PDEF +150, CDR +10%\nTemp. damage reduction"
     },
     {
       "slot": 2,
-      "itemId": "1137",
-      "name": "Axe of Torment",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1137.jpg",
-      "description": "Anti-squishy"
+      "itemId": "1138",
+      "name": "Overlord's Might",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1138.png",
+      "description": "PATK +150, CDR +5%\nHigh-damage attack"
     },
     {
       "slot": 3,
-      "itemId": "1133",
-      "name": "Eternity Blade",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1133.jpg",
-      "description": "High crit damage"
+      "itemId": "1338",
+      "name": "Cuirass of Savagery",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1338.png",
+      "description": "PATK +35, PDEF +210, HP +900\nOffense & defense"
     },
     {
       "slot": 4,
-      "itemId": "1134",
-      "name": "Master Sword",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1134.jpg",
-      "description": "Enhances BA"
+      "itemId": "1422",
+      "name": "Boots of Resistance",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1422.png",
+      "description": "MDEF +100, PDEF +50, MSPD +50\nShortens crowd control"
     },
     {
       "slot": 5,
-      "itemId": "1136",
-      "name": "Shadow Ripper",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1136.jpg",
-      "description": "Crits boost ASPD"
+      "itemId": "1134",
+      "name": "Master Sword",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1134.png",
+      "description": "PATK +55, Crit Rate +20%, HP +600\nEnhances BAs"
     },
     {
       "slot": 6,
-      "itemId": "1132",
-      "name": "Bloodweeper",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1132.jpg",
-      "description": "Physical Lifesteal"
+      "itemId": "1127",
+      "name": "Destiny",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+      "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
+    }
+  ],
+  "buildZh": [
+    {
+      "slot": 1,
+      "itemId": "11311",
+      "name": "純淨蒼穹",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/11311.png",
+      "description": "+80點攻擊+150點物防+10%冷卻時間縮減\n暫時增加免傷"
+    },
+    {
+      "slot": 2,
+      "itemId": "1138",
+      "name": "強者破軍",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1138.png",
+      "description": "+150點攻擊+5%減冷卻時間\n高額攻擊"
+    },
+    {
+      "slot": 3,
+      "itemId": "1338",
+      "name": "暴烈之甲",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1338.png",
+      "description": "+35點攻擊+210點物防+900點生命值\n能抗能打"
+    },
+    {
+      "slot": 4,
+      "itemId": "1422",
+      "name": "抵抗之靴",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1422.png",
+      "description": "+100點法防+50點物防+50點移速\n減少被控時間"
+    },
+    {
+      "slot": 5,
+      "itemId": "1134",
+      "name": "宗師之力",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1134.png",
+      "description": "+55點攻擊+20%暴擊+600點生命值……\n強化普攻"
+    },
+    {
+      "slot": 6,
+      "itemId": "1127",
+      "name": "名刀・司命",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+      "description": "+75點攻擊+15%攻速+500點生命值\n保命"
+    }
+  ],
+  "builds": [
+    {
+      "id": "camp-0",
+      "label": "Late Game",
+      "lane": "Jungle",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "11311",
+          "name": "Pure Sky",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/11311.png",
+          "description": "PATK +80, PDEF +150, CDR +10%\nTemp. damage reduction"
+        },
+        {
+          "slot": 2,
+          "itemId": "1138",
+          "name": "Overlord's Might",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1138.png",
+          "description": "PATK +150, CDR +5%\nHigh-damage attack"
+        },
+        {
+          "slot": 3,
+          "itemId": "1338",
+          "name": "Cuirass of Savagery",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1338.png",
+          "description": "PATK +35, PDEF +210, HP +900\nOffense & defense"
+        },
+        {
+          "slot": 4,
+          "itemId": "1422",
+          "name": "Boots of Resistance",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1422.png",
+          "description": "MDEF +100, PDEF +50, MSPD +50\nShortens crowd control"
+        },
+        {
+          "slot": 5,
+          "itemId": "1134",
+          "name": "Master Sword",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1134.png",
+          "description": "PATK +55, Crit Rate +20%, HP +600\nEnhances BAs"
+        },
+        {
+          "slot": 6,
+          "itemId": "1127",
+          "name": "Destiny",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
+        }
+      ]
+    },
+    {
+      "id": "camp-1",
+      "label": "Jungling 2",
+      "lane": "Jungle",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1335",
+          "name": "Succubus Cloak",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
+          "description": "MDEF +300, HP +1,100\nNegates magical damage"
+        },
+        {
+          "slot": 2,
+          "itemId": "1126",
+          "name": "Doomsday",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1126.png",
+          "description": "PATK +40, ASPD +20%, HP +500, Lifesteal +20%\nBoosts BA damage"
+        },
+        {
+          "slot": 3,
+          "itemId": "1337",
+          "name": "Sage's Sanctuary",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
+        },
+        {
+          "slot": 4,
+          "itemId": "1127",
+          "name": "Destiny",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
+        },
+        {
+          "slot": 5,
+          "itemId": "13310",
+          "name": "Frostscar's Embrace",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/13310.png",
+          "description": "PATK +60, PDEF +300, CDR +10%\nEnhanced BAs slow"
+        },
+        {
+          "slot": 6,
+          "itemId": "1328",
+          "name": "Blood Rage",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1328.png",
+          "description": "PATK +75, HP +900\nTrades HP for shield"
+        }
+      ]
+    },
+    {
+      "id": "camp-2",
+      "label": "1vs9",
+      "lane": "Jungle",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1533",
+          "name": "Rapacious Bite",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1533.png",
+          "description": "PATK +90, MSPD +5%, CDR +7.5%\nMonster kills boost ATK"
+        },
+        {
+          "slot": 2,
+          "itemId": "1422",
+          "name": "Boots of Resistance",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1422.png",
+          "description": "MDEF +100, PDEF +50, MSPD +50\nShortens crowd control"
+        },
+        {
+          "slot": 3,
+          "itemId": "1134",
+          "name": "Master Sword",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1134.png",
+          "description": "PATK +55, Crit Rate +20%, HP +600\nEnhances BAs"
+        },
+        {
+          "slot": 4,
+          "itemId": "1338",
+          "name": "Cuirass of Savagery",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1338.png",
+          "description": "PATK +35, PDEF +210, HP +900\nOffense & defense"
+        },
+        {
+          "slot": 5,
+          "itemId": "11311",
+          "name": "Pure Sky",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/11311.png",
+          "description": "PATK +80, PDEF +150, CDR +10%\nTemp. damage reduction"
+        },
+        {
+          "slot": 6,
+          "itemId": "1127",
+          "name": "Destiny",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
+        }
+      ]
+    },
+    {
+      "id": "camp-3",
+      "label": "XΣNO LIFESTEAL",
+      "lane": "Jungle",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "11210",
+          "name": "Mortal Punisher",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/11210.png",
+          "description": "PATK +100, Lifesteal +20%, ASPD +20%\nLowers Health regen"
+        },
+        {
+          "slot": 2,
+          "itemId": "1334",
+          "name": "Eye of the Phoenix",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1334.png",
+          "description": "MDEF +180, PDEF +90, HP +1,350\nBoosts HP Regen"
+        },
+        {
+          "slot": 3,
+          "itemId": "1126",
+          "name": "Doomsday",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1126.png",
+          "description": "PATK +40, ASPD +20%, HP +500, Lifesteal +20%\nBoosts BA damage"
+        },
+        {
+          "slot": 4,
+          "itemId": "1534",
+          "name": "Dragon's Rage",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1536.png",
+          "description": "HP +1,350, PDEF +180, MDEF +90\nBoosts BA damage"
+        },
+        {
+          "slot": 5,
+          "itemId": "1338",
+          "name": "Cuirass of Savagery",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1338.png",
+          "description": "PATK +35, PDEF +210, HP +900\nOffense & defense"
+        },
+        {
+          "slot": 6,
+          "itemId": "1337",
+          "name": "Sage's Sanctuary",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
+        }
+      ]
+    }
+  ],
+  "buildsZh": [
+    {
+      "id": "camp-0",
+      "label": "Late Game",
+      "lane": "Jungle",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "11311",
+          "name": "純淨蒼穹",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/11311.png",
+          "description": "+80點攻擊+150點物防+10%冷卻時間縮減\n暫時增加免傷"
+        },
+        {
+          "slot": 2,
+          "itemId": "1138",
+          "name": "強者破軍",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1138.png",
+          "description": "+150點攻擊+5%減冷卻時間\n高額攻擊"
+        },
+        {
+          "slot": 3,
+          "itemId": "1338",
+          "name": "暴烈之甲",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1338.png",
+          "description": "+35點攻擊+210點物防+900點生命值\n能抗能打"
+        },
+        {
+          "slot": 4,
+          "itemId": "1422",
+          "name": "抵抗之靴",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1422.png",
+          "description": "+100點法防+50點物防+50點移速\n減少被控時間"
+        },
+        {
+          "slot": 5,
+          "itemId": "1134",
+          "name": "宗師之力",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1134.png",
+          "description": "+55點攻擊+20%暴擊+600點生命值……\n強化普攻"
+        },
+        {
+          "slot": 6,
+          "itemId": "1127",
+          "name": "名刀・司命",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "+75點攻擊+15%攻速+500點生命值\n保命"
+        }
+      ]
+    },
+    {
+      "id": "camp-1",
+      "label": "Jungling 2",
+      "lane": "Jungle",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1335",
+          "name": "魔女斗篷",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
+          "description": "+300點法防+1100點生命值\n吸收法術傷害"
+        },
+        {
+          "slot": 2,
+          "itemId": "1126",
+          "name": "末世",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1126.png",
+          "description": "+40點攻擊+20%攻速+500點生命值+20%吸血\n普攻額外傷害"
+        },
+        {
+          "slot": 3,
+          "itemId": "1337",
+          "name": "賢者的庇護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+        },
+        {
+          "slot": 4,
+          "itemId": "1127",
+          "name": "名刀・司命",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "+75點攻擊+15%攻速+500點生命值\n保命"
+        },
+        {
+          "slot": 5,
+          "itemId": "13310",
+          "name": "冰痕之握",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/13310.png",
+          "description": "+60點攻擊+300點物防+10%減冷卻時間……\n強化普攻減速"
+        },
+        {
+          "slot": 6,
+          "itemId": "1328",
+          "name": "血魔之怒",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1328.png",
+          "description": "+75點攻擊+900點生命值 \n犧牲生命值換取護盾值"
+        }
+      ]
+    },
+    {
+      "id": "camp-2",
+      "label": "1vs9",
+      "lane": "Jungle",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1533",
+          "name": "貪婪之噬",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1533.png",
+          "description": "+90攻擊+5%移速+7.5%冷縮\n打野怪加攻擊"
+        },
+        {
+          "slot": 2,
+          "itemId": "1422",
+          "name": "抵抗之靴",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1422.png",
+          "description": "+100點法防+50點物防+50點移速\n減少被控時間"
+        },
+        {
+          "slot": 3,
+          "itemId": "1134",
+          "name": "宗師之力",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1134.png",
+          "description": "+55點攻擊+20%暴擊+600點生命值……\n強化普攻"
+        },
+        {
+          "slot": 4,
+          "itemId": "1338",
+          "name": "暴烈之甲",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1338.png",
+          "description": "+35點攻擊+210點物防+900點生命值\n能抗能打"
+        },
+        {
+          "slot": 5,
+          "itemId": "11311",
+          "name": "純淨蒼穹",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/11311.png",
+          "description": "+80點攻擊+150點物防+10%冷卻時間縮減\n暫時增加免傷"
+        },
+        {
+          "slot": 6,
+          "itemId": "1127",
+          "name": "名刀・司命",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "+75點攻擊+15%攻速+500點生命值\n保命"
+        }
+      ]
+    },
+    {
+      "id": "camp-3",
+      "label": "XΣNO LIFESTEAL",
+      "lane": "Jungle",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "11210",
+          "name": "制裁之刃",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/11210.png",
+          "description": "+100點攻擊+20%吸血+20%攻速\n減少敵人回血"
+        },
+        {
+          "slot": 2,
+          "itemId": "1334",
+          "name": "不死鳥之眼",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1334.png",
+          "description": "+180點法防+90點物防+1350點生命值……\n增加回血效果"
+        },
+        {
+          "slot": 3,
+          "itemId": "1126",
+          "name": "末世",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1126.png",
+          "description": "+40點攻擊+20%攻速+500點生命值+20%吸血\n普攻額外傷害"
+        },
+        {
+          "slot": 4,
+          "itemId": "1534",
+          "name": "怒龍劍盾",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1536.png",
+          "description": "+1350點生命值+180點物防+90點法防\n普攻額外傷害"
+        },
+        {
+          "slot": 5,
+          "itemId": "1338",
+          "name": "暴烈之甲",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1338.png",
+          "description": "+35點攻擊+210點物防+900點生命值\n能抗能打"
+        },
+        {
+          "slot": 6,
+          "itemId": "1337",
+          "name": "賢者的庇護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+        }
+      ]
     }
   ],
   "arcana": [
-    "Sustain-oriented (mutation",
-    "Conflict",
-    "Red moon"
+    "Lvl 5: Mutation",
+    "Lvl 5: Stealth",
+    "Lvl 5: Eagle Eye"
+  ],
+  "arcanaZh": [
+    "5級：異變",
+    "5級：隱匿",
+    "5級：鷹眼"
   ],
   "spells": [
-    "Flash"
+    "Smite"
+  ],
+  "spellsZh": [
+    "懲擊"
   ],
   "counters": [
     "Sakeer",
@@ -109,586 +591,129 @@
     "Lady Sun"
   ],
   "tips": [
-    "Fatih is a Medium Warrior (Clash Lane) on Honor of Kings Global. Camp HOK ranks them Tier B with 52.0% win rate and 0.4% pick rate as of 2026-06-05.",
-    "Best build path: Boots of Fortitude → Axe of Torment → Eternity Blade → Master Sword → Shadow Ripper → Bloodweeper.",
-    "Run Sustain-oriented (mutation, Conflict, Red moon for stats that match Fatih's Warrior kit. Take Flash — swap to Purify against heavy CC or Smite when jungling.",
-    "Standard trade: The King's Blade → The King's Return → Sacred Tree Blessing → weave basic attacks. Weave basic attacks between skill casts for passive value.",
-    "Laning: Trade on your power spike levels (2/4). Call jungler for dive only when enemy flash is down.",
-    "Teamfight: Flank or dive backline after tanks commit. Do not start fights without vision on enemy jungler.",
-    "Fatih excels into Sakeer, Angela, Guiguzi. Avoid blind picking into Hou Yi, Marco Polo, Lady Sun without team peel.",
-    "Fatih sits at Tier B globally (52.0% WR). In high rank, pick only into favorable matchups or when you have a dedicated pocket pick."
+    "Fatih (Warrior): Tier B — 51.97% WR (Camp HOK).",
+    "Lane: Clash Lane.",
+    "Build: Pure Sky, Overlord's Might, Cuirass of Savagery."
+  ],
+  "tipsZh": [
+    "法提赫（對抗路）：梯度 B，勝率 51.97%（Camp HOK）。",
+    "出裝：純淨蒼穹、強者破軍、暴烈之甲."
   ],
   "patchHistory": [
     {
-      "version": "Live meta",
-      "change": "Camp HOK — WR 52.0%, pick 0.4%, ban 0.1%, tier B."
+      "seasonId": "14",
+      "seasonName": "S14",
+      "versionName": "2026/03/11",
+      "publishedAt": "2026-03-11T03:17:26Z",
+      "isCurrent": false,
+      "tag": "Stat Buffs",
+      "change": "Increased recovery capabilities and adjusted skill damage.",
+      "detail": "",
+      "version": "S14"
     },
     {
-      "version": "Matchups",
-      "change": "Strong into Sakeer, Angela, Guiguzi · Weak into Hou Yi, Marco Polo, Lady Sun."
+      "seasonId": "13",
+      "seasonName": "S13",
+      "versionName": "2026/01/08",
+      "publishedAt": "2026-01-08T01:00:00Z",
+      "isCurrent": false,
+      "tag": "Stat Buffs",
+      "change": "Adjusted Skill Damage",
+      "detail": "",
+      "version": "S13"
     },
     {
-      "version": "High rank",
-      "change": "Fatih sits at Tier B globally (52.0% WR). In high rank, pick only into favorable matchups or when you have a dedicated pocket pick."
+      "seasonId": "11",
+      "seasonName": "S11",
+      "versionName": "20250814",
+      "publishedAt": "2025-08-14T01:00:00Z",
+      "isCurrent": false,
+      "tag": "Stat Nerfs",
+      "change": "Skill Effect Adjustments",
+      "detail": "",
+      "version": "S11"
+    }
+  ],
+  "patchHistoryZh": [
+    {
+      "seasonId": "14",
+      "seasonName": "S14",
+      "versionName": "2026/03/11",
+      "publishedAt": "2026-03-11T03:17:26Z",
+      "isCurrent": false,
+      "tag": "數值增強",
+      "change": "增強回復能力，調整技能傷害",
+      "detail": "",
+      "version": "S14"
+    },
+    {
+      "seasonId": "13",
+      "seasonName": "S13",
+      "versionName": "2026/01/08",
+      "publishedAt": "2026-01-08T01:00:00Z",
+      "isCurrent": false,
+      "tag": "數值增強",
+      "change": "調整技能傷害",
+      "detail": "",
+      "version": "S13"
+    },
+    {
+      "seasonId": "11",
+      "seasonName": "S11",
+      "versionName": "20250814",
+      "publishedAt": "2025-08-14T01:00:00Z",
+      "isCurrent": false,
+      "tag": "數值削弱",
+      "change": "技能效果調整",
+      "detail": "",
+      "version": "S11"
     }
   ],
   "faqs": [
     {
       "id": "faq-good-season",
-      "question": "Is Fatih good in the current meta?",
-      "answer": "Fatih is Tier B Warrior with 52.0% win rate, 0.4% pick rate, and 0.1% ban rate on Honor of Kings Global (Camp HOK, 2026-06-05). Niche — draft carefully."
+      "question": "Is Fatih good in current season?",
+      "answer": "Fatih is Tier B Warrior with 51.97% win rate, 0.43% pick rate, and 0.05% ban rate (Camp HOK international)."
     },
     {
       "id": "faq-best-build",
       "question": "What is the best Fatih build?",
-      "answer": "Core item path: Boots of Fortitude, Axe of Torment, Eternity Blade, Master Sword, Shadow Ripper, Bloodweeper. Run Sustain-oriented (mutation, Conflict, Red moon arcana with Flash. Switch to alternate build presets on this page for jungle, clash, or late-game setups."
+      "answer": "Recommended: Pure Sky, Overlord's Might, Cuirass of Savagery, Boots of Resistance, Master Sword, Destiny."
     },
     {
       "id": "faq-counter",
       "question": "How to counter Fatih?",
-      "answer": "Pick Hou Yi, Marco Polo, Lady Sun into Fatih. Deny Clash Lane resources early and force fights before Fatih completes core items. Fatih struggles when the enemy can out-range or out-sustain them."
+      "answer": "Pick Hou Yi, Marco Polo, Lady Sun. Strong into Sakeer, Angela, Guiguzi."
+    }
+  ],
+  "faqsZh": [
+    {
+      "id": "faq-good-season",
+      "question": "法提赫 這版本適合上分嗎？",
+      "answer": "法提赫 為 B 梯度，勝率 51.97%、選取 0.43%、禁用 0.05%（Camp HOK 國際服）。"
     },
     {
-      "id": "faq-strong-into",
-      "question": "Who does Fatih counter?",
-      "answer": "Fatih is strong into Sakeer, Angela, Guiguzi according to HoKStats matchup data and role matchups on the global server. Draft Fatih when the enemy relies on these heroes in the Clash Lane lane."
+      "id": "faq-best-build",
+      "question": "法提赫 出裝怎麼搭配？",
+      "answer": "推薦：純淨蒼穹、強者破軍、暴烈之甲、抵抗之靴、宗師之力、名刀・司命."
     },
     {
-      "id": "faq-high-rank",
-      "question": "Is Fatih good in high rank / Diamond+?",
-      "answer": "Fatih sits at Tier B globally (52.0% WR). In high rank, pick only into favorable matchups or when you have a dedicated pocket pick."
-    },
-    {
-      "id": "faq-lane",
-      "question": "What lane should Fatih play?",
-      "answer": "Fatih is tagged Clash Lane in Camp export (Fighter). Trade on your power spike levels (2/4). Call jungler for dive only when enemy flash is down."
-    },
-    {
-      "id": "faq-arcana",
-      "question": "Best arcana and spells for Fatih?",
-      "answer": "Recommended: Sustain-oriented (mutation, Conflict, Red moon arcana. Battle spell: Flash. Adjust Purify/Execute based on enemy dive and jungle need."
-    },
-    {
-      "id": "faq-vs-peer",
-      "question": "Fatih or Li Xin — which is better?",
-      "answer": "Fatih vs Li Xin (Warrior, Tier S+): Li Xin is 1.9% pick / 52.6% WR. Li Xin wins 0.6% more often globally. Choose Fatih when you need Clash Lane identity; choose Li Xin for Clash Lane comfort."
-    },
-    {
-      "id": "faq-ban",
-      "question": "Should I ban Fatih?",
-      "answer": "Low priority ban (0.1%). Focus bans on higher-tier Warrior picks unless targeting a one-trick."
+      "id": "faq-counter",
+      "question": "怎麼克制 法提赫？",
+      "answer": "可選 Hou Yi、Marco Polo、Lady Sun。法提赫 克制 Sakeer、Angela、Guiguzi。"
     }
   ],
   "metaAnalysis": [
-    "Fatih — 52.0% WR, 0.4% pick, 0.1% ban (Camp HOK 2026-06-05).",
-    "Tier B Warrior · Clash Lane · difficulty Medium.",
-    "Fatih sits at Tier B globally (52.0% WR). In high rank, pick only into favorable matchups or when you have a dedicated pocket pick.",
-    "Matchups: strong into Sakeer, Angela, Guiguzi; weak into Hou Yi, Marco Polo, Lady Sun.",
-    "Fatih vs Li Xin (Warrior, Tier S+): Li Xin is 1.9% pick / 52.6% WR. Li Xin wins 0.6% more often globally. Choose Fatih when you need Clash Lane identity; choose Li Xin for Clash Lane comfort.",
-    "Fatih vs Chicha (Warrior, Tier S): Chicha is 1.5% pick / 50.2% WR. Fatih has +1.8% WR vs Chicha in Camp data. Choose Fatih when you need Clash Lane identity; choose Chicha for Clash Lane comfort.",
-    "Draft tip: counter-pick or comfort pick when lane matchup is favorable."
+    "Fatih win rate 51.97% (Camp HOK, 2026-06-07).",
+    "Pick rate 0.43%.",
+    "Ban rate 0.05%.",
+    "Counters: Sakeer, Angela, Guiguzi. Weak into: Hou Yi, Marco Polo, Lady Sun."
   ],
-  "builds": [
-    {
-      "id": "recommended",
-      "label": "Recommended",
-      "position": null,
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1421",
-          "name": "Boots of Fortitude",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1421.jpg",
-          "description": "Reduces physical damage"
-        },
-        {
-          "slot": 2,
-          "itemId": "1137",
-          "name": "Axe of Torment",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1137.jpg",
-          "description": "Anti-squishy"
-        },
-        {
-          "slot": 3,
-          "itemId": "1133",
-          "name": "Eternity Blade",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1133.jpg",
-          "description": "High crit damage"
-        },
-        {
-          "slot": 4,
-          "itemId": "1134",
-          "name": "Master Sword",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1134.jpg",
-          "description": "Enhances BA"
-        },
-        {
-          "slot": 5,
-          "itemId": "1136",
-          "name": "Shadow Ripper",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1136.jpg",
-          "description": "Crits boost ASPD"
-        },
-        {
-          "slot": 6,
-          "itemId": "1132",
-          "name": "Bloodweeper",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1132.jpg",
-          "description": "Physical Lifesteal"
-        }
-      ]
-    },
-    {
-      "id": "principal",
-      "label": "Principal.",
-      "position": "Position 1",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1124",
-          "name": "Meteor",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1124.jpg",
-          "description": "PATK +35\nCDR +7.5%"
-        },
-        {
-          "slot": 2,
-          "itemId": "1425",
-          "name": "Boots of Dexterity",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1425.jpg",
-          "description": "Boosts ASPD"
-        },
-        {
-          "slot": 3,
-          "itemId": "1137",
-          "name": "Axe of Torment",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1137.jpg",
-          "description": "Anti-squishy"
-        },
-        {
-          "slot": 4,
-          "itemId": "1128",
-          "name": "Deepfrost Siege",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1128.jpg",
-          "description": "Slows on hit"
-        },
-        {
-          "slot": 5,
-          "itemId": "1126",
-          "name": "Doomsday",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1126.jpg",
-          "description": "Boosts BA damage"
-        },
-        {
-          "slot": 6,
-          "itemId": "1422",
-          "name": "Boots of Resistance",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
-          "description": "Shortens CC"
-        }
-      ]
-    },
-    {
-      "id": "国服套装",
-      "label": "国服套装",
-      "position": "Position 1",
-      "lane": "CN preset",
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1218",
-          "name": "Primordial Crystal",
-          "icon": "https://hokstats.gg/items/1218.png",
-          "description": "CDR +5%"
-        },
-        {
-          "slot": 2,
-          "itemId": "1121",
-          "name": "Storm Sword",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1121.jpg",
-          "description": "Physical Attack +75"
-        },
-        {
-          "slot": 3,
-          "itemId": "1328",
-          "name": "Blood Rage",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1328.jpg",
-          "description": "Grants temporary shield"
-        },
-        {
-          "slot": 4,
-          "itemId": "1423",
-          "name": "Boots of Tranquility",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1423.jpg",
-          "description": "Reduces Skill CD"
-        },
-        {
-          "slot": 5,
-          "itemId": "1137",
-          "name": "Axe of Torment",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1137.jpg",
-          "description": "Anti-squishy"
-        },
-        {
-          "slot": 6,
-          "itemId": "1345",
-          "name": "Nettle Gauntlet",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1345.jpg",
-          "description": "Offense & defense"
-        }
-      ]
-    },
-    {
-      "id": "jungling-2",
-      "label": "Jungling 2",
-      "position": "Position 3",
-      "lane": "Jungling",
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1523",
-          "name": "Relentless Blade",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1523.jpg",
-          "description": "Monster kills boost PATK"
-        },
-        {
-          "slot": 2,
-          "itemId": "1423",
-          "name": "Boots of Tranquility",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1423.jpg",
-          "description": "Reduces Skill CD"
-        },
-        {
-          "slot": 3,
-          "itemId": "1137",
-          "name": "Axe of Torment",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1137.jpg",
-          "description": "Anti-squishy"
-        },
-        {
-          "slot": 4,
-          "itemId": "1533",
-          "name": "Rapacious Bite",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1533.jpg",
-          "description": "Monster kills boost PATK"
-        },
-        {
-          "slot": 5,
-          "itemId": "11311",
-          "name": "Pure Sky",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/11311.jpg",
-          "description": "Temp. damage reduction"
-        },
-        {
-          "slot": 6,
-          "itemId": "1422",
-          "name": "Boots of Resistance",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
-          "description": "Shortens CC"
-        }
-      ]
-    },
-    {
-      "id": "top",
-      "label": "Top",
-      "position": "Position 1",
-      "lane": "Clash Lane",
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1124",
-          "name": "Meteor",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1124.jpg",
-          "description": "PATK +35\nCDR +7.5%"
-        },
-        {
-          "slot": 2,
-          "itemId": "1345",
-          "name": "Nettle Gauntlet",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1345.jpg",
-          "description": "Offense & defense"
-        },
-        {
-          "slot": 3,
-          "itemId": "1423",
-          "name": "Boots of Tranquility",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1423.jpg",
-          "description": "Reduces Skill CD"
-        },
-        {
-          "slot": 4,
-          "itemId": "1137",
-          "name": "Axe of Torment",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1137.jpg",
-          "description": "Anti-squishy"
-        },
-        {
-          "slot": 5,
-          "itemId": "13310",
-          "name": "Frostscar's Embrace",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/13310.jpg",
-          "description": "Enhanced BAs slow"
-        },
-        {
-          "slot": 6,
-          "itemId": "11311",
-          "name": "Pure Sky",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/11311.jpg",
-          "description": "Temp. damage reduction"
-        }
-      ]
-    },
-    {
-      "id": "clash-lane",
-      "label": "Clash Lane",
-      "position": "Position 1",
-      "lane": "Clash Lane",
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1421",
-          "name": "Boots of Fortitude",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1421.jpg",
-          "description": "Reduces physical damage"
-        },
-        {
-          "slot": 2,
-          "itemId": "1137",
-          "name": "Axe of Torment",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1137.jpg",
-          "description": "Anti-squishy"
-        },
-        {
-          "slot": 3,
-          "itemId": "1138",
-          "name": "Overlord's Might",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1138.jpg",
-          "description": "High-damage attack"
-        },
-        {
-          "slot": 4,
-          "itemId": "13310",
-          "name": "Frostscar's Embrace",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/13310.jpg",
-          "description": "Enhanced BAs slow"
-        },
-        {
-          "slot": 5,
-          "itemId": "1335",
-          "name": "Succubus Cloak",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1335.jpg",
-          "description": "Negates magical damage"
-        },
-        {
-          "slot": 6,
-          "itemId": "1126",
-          "name": "Doomsday",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1126.jpg",
-          "description": "Boosts BA damage"
-        }
-      ]
-    },
-    {
-      "id": "late-game",
-      "label": "Late Game",
-      "position": "Position 3",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1423",
-          "name": "Boots of Tranquility",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1423.jpg",
-          "description": "Reduces Skill CD"
-        },
-        {
-          "slot": 2,
-          "itemId": "1533",
-          "name": "Rapacious Bite",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1533.jpg",
-          "description": "Monster kills boost PATK"
-        },
-        {
-          "slot": 3,
-          "itemId": "1137",
-          "name": "Axe of Torment",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1137.jpg",
-          "description": "Anti-squishy"
-        },
-        {
-          "slot": 4,
-          "itemId": "11311",
-          "name": "Pure Sky",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/11311.jpg",
-          "description": "Temp. damage reduction"
-        },
-        {
-          "slot": 5,
-          "itemId": "1138",
-          "name": "Overlord's Might",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1138.jpg",
-          "description": "High-damage attack"
-        },
-        {
-          "slot": 6,
-          "itemId": "1338",
-          "name": "Cuirass of Savagery",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1338.jpg",
-          "description": "Offense & defense"
-        }
-      ]
-    },
-    {
-      "id": "1vs9",
-      "label": "1vs9",
-      "position": "Position 3",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1523",
-          "name": "Relentless Blade",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1523.jpg",
-          "description": "Monster kills boost PATK"
-        },
-        {
-          "slot": 2,
-          "itemId": "1423",
-          "name": "Boots of Tranquility",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1423.jpg",
-          "description": "Reduces Skill CD"
-        },
-        {
-          "slot": 3,
-          "itemId": "1124",
-          "name": "Meteor",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1124.jpg",
-          "description": "PATK +35\nCDR +7.5%"
-        },
-        {
-          "slot": 4,
-          "itemId": "1137",
-          "name": "Axe of Torment",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1137.jpg",
-          "description": "Anti-squishy"
-        },
-        {
-          "slot": 5,
-          "itemId": "1345",
-          "name": "Nettle Gauntlet",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1345.jpg",
-          "description": "Offense & defense"
-        },
-        {
-          "slot": 6,
-          "itemId": "1533",
-          "name": "Rapacious Bite",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1533.jpg",
-          "description": "Monster kills boost PATK"
-        }
-      ]
-    },
-    {
-      "id": "xno-lifesteal",
-      "label": "XΣNO LIFESTEAL",
-      "position": "Position 3",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1523",
-          "name": "Relentless Blade",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1523.jpg",
-          "description": "Monster kills boost PATK"
-        },
-        {
-          "slot": 2,
-          "itemId": "1425",
-          "name": "Boots of Dexterity",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1425.jpg",
-          "description": "Boosts ASPD"
-        },
-        {
-          "slot": 3,
-          "itemId": "1114",
-          "name": "Vampiric Scythe",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1114.jpg",
-          "description": "Physical Lifesteal"
-        },
-        {
-          "slot": 4,
-          "itemId": "1331",
-          "name": "Blazing Cape",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1331.jpg",
-          "description": "Burns nearby enemies"
-        },
-        {
-          "slot": 5,
-          "itemId": "1533",
-          "name": "Rapacious Bite",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1533.jpg",
-          "description": "Monster kills boost PATK"
-        },
-        {
-          "slot": 6,
-          "itemId": "11210",
-          "name": "Mortal Punisher",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/11210.jpg",
-          "description": "Lowers Health regen"
-        }
-      ]
-    },
-    {
-      "id": "arsenais",
-      "label": "Arsenais",
-      "position": "Position 1",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "13310",
-          "name": "Frostscar's Embrace",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/13310.jpg",
-          "description": "Enhanced BAs slow"
-        },
-        {
-          "slot": 2,
-          "itemId": "1423",
-          "name": "Boots of Tranquility",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1423.jpg",
-          "description": "Reduces Skill CD"
-        },
-        {
-          "slot": 3,
-          "itemId": "1137",
-          "name": "Axe of Torment",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1137.jpg",
-          "description": "Anti-squishy"
-        },
-        {
-          "slot": 4,
-          "itemId": "11311",
-          "name": "Pure Sky",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/11311.jpg",
-          "description": "Temp. damage reduction"
-        },
-        {
-          "slot": 5,
-          "itemId": "1331",
-          "name": "Blazing Cape",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1331.jpg",
-          "description": "Burns nearby enemies"
-        },
-        {
-          "slot": 6,
-          "itemId": "1126",
-          "name": "Doomsday",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1126.jpg",
-          "description": "Boosts BA damage"
-        }
-      ]
-    }
+  "metaAnalysisZh": [
+    "法提赫 勝率 51.97%（Camp HOK，2026-06-07）",
+    "選取率 0.43%",
+    "禁用率 0.05%",
+    "克制：Sakeer、Angela、Guiguzi；被克制：Hou Yi、Marco Polo、Lady Sun"
   ],
   "guide": {
     "overview": "Fatih is a Medium Warrior (Clash Lane) on Honor of Kings Global. Camp HOK ranks them Tier B with 52.0% win rate and 0.4% pick rate as of 2026-06-05.",

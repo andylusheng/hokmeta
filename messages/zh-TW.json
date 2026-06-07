@@ -1,12 +1,21 @@
 {
+  "brand": {
+    "slogan": "王者榮耀 Meta · 數據 · 出裝"
+  },
   "nav": {
     "heroes": "英雄",
+    "heroBuilds": "英雄出裝",
     "tierList": "梯度榜",
+    "items": "裝備",
+    "arcana": "銘文",
+    "patches": "版本",
     "trends": "趨勢",
     "bestHeroes": "最強英雄",
     "tools": "工具",
     "learn": "攻略",
-    "guides": "攻略",
+    "guides": "Meta 攻略",
+    "climbPicks": "版本推薦英雄",
+    "comps": "陣容推薦",
     "about": "關於",
     "privacy": "隱私",
     "api": "API"
@@ -27,11 +36,76 @@
     "contentEnglishNotice": "技能描述與部分玩法正文為英文原文（國際服數據）。界面、FAQ 與 Meta 解讀已中文化。",
     "contentPartialNotice": "技能與裝備名稱保留英文。界面、FAQ 與數據解讀為繁體中文。",
     "skillsEnglishNotice": "技能與裝備名稱與王者榮耀國際服客戶端一致（英文）。勝率與出裝來自 Camp HOK 國際服數據。",
+    "skillsFallbackNotice": "此英雄尚未同步 Camp 繁體技能文案，暫顯示英文客戶端原文；數據與出裝仍來自 Camp HOK。",
     "learnBodyNotice": "攻略正文含 Camp HOK 國際服即時數據（英雄名為英文）。"
   },
+  "items": {
+    "title": "裝備圖鑑",
+    "subtitle": "國際服 {count} 件裝備 · Camp HOK 數據",
+    "hint": "各英雄頁面可查看推薦出裝：",
+    "campSource": "屬性與說明來自 Camp HOK 裝備數據（雙語）。",
+    "passiveTitle": "被動效果",
+    "usedInBuilds": "出現在以下英雄出裝中",
+    "filter": {
+      "all": "全部",
+      "attack": "攻擊",
+      "magic": "法術",
+      "defense": "防禦",
+      "movement": "移動",
+      "jungle": "打野",
+      "support": "輔助"
+    }
+  },
+  "arcana": {
+    "title": "銘文",
+    "subtitle": "Meta 出裝中出現的 {count} 種銘文",
+    "name": "銘文",
+    "usedBy": "出現次數",
+    "hint": "各英雄專屬銘文配置：",
+    "campSource": "圖標與屬性來自 Camp HOK 銘文數據（雙語）。"
+  },
+  "patches": {
+    "title": "版本與平衡",
+    "subtitle": "Camp HOK adjustData 全英雄調整記錄，按賽季分組。",
+    "source": "數據來源",
+    "heroChanges": "近期英雄調整",
+    "viewHero": "查看英雄",
+    "currentSeason": "當前賽季：{season}",
+    "current": "當前",
+    "changeCount": "條調整",
+    "noData": "尚無版本數據——請執行 sync-camp 拉取 Camp adjustData。"
+  },
   "home": {
-    "title": "王者榮耀國際服 Meta 與梯度榜",
-    "subtitle": "涵蓋 {count} 位國際服英雄——梯度榜、出裝、克制與排位 Meta 工具，數據驅動。",
+    "title": "HOKMeta — 王者榮耀 Meta · 數據 · 出裝",
+    "subtitle": "HOKMeta 是獨立的王者榮耀國際服數據庫——{count} 位英雄、即時梯度榜、出裝、裝備與銘文，數據來自 Camp HOK。",
+    "dbTitle": "數據庫概覽",
+    "splashPatch": "版本 {season}",
+    "splashViewBuild": "查看出裝",
+    "splashTierList": "完整梯度榜",
+    "statHeroes": "英雄數量",
+    "statItems": "裝備圖鑑",
+    "statArcana": "銘文種類",
+    "statLanes": "分路梯度",
+    "hubTierList": "共 {count} 位英雄 · 5 分路 S–D 排名 · {season}",
+    "hubHeroes": "瀏覽 {count} 位英雄——出裝、克制、技能、銘文",
+    "hubItems": "{count} 件裝備——攻擊、法術、防禦、鞋類等",
+    "hubArcana": "Meta 出裝中的 {count} 種銘文",
+    "hubGuides": "英雄攻略——連招、克制與上分技巧",
+    "hubPatches": "每版本平衡調整追蹤",
+    "recentUpdates": "近期更新英雄",
+    "allPatches": "全部版本說明 →",
+    "tagBuff": "增強",
+    "tagNerf": "削弱",
+    "tagAdjust": "調整",
+    "exclusiveGlobal": "國際服獨家",
+    "exclusiveDesc": "僅在國際服上線的英雄。",
+    "browseAll": "瀏覽全部英雄",
+    "viewAllHeroes": "查看全部 {count} 位英雄 →",
+    "laneTierPreview": "分路梯度預覽",
+    "fullTierList": "完整梯度榜 →",
+    "climbPicksTitle": "版本上分首選",
+    "climbPicksDesc": "依分路 Meta 分數推薦——梯度、勝率與選禁壓力，數據來自 Camp HOK。",
+    "climbPicksViewAll": "全部推薦英雄 →",
     "browseHeroes": "瀏覽英雄",
     "heroTrends": "英雄趨勢",
     "highestWr": "勝率最高",
@@ -42,13 +116,14 @@
     "allGuides": "查看全部攻略 →"
   },
   "heroes": {
-    "title": "全部 Meta 英雄",
-    "subtitle": "共 {count} 位英雄，按職業分組 · 依勝率排序"
+    "title": "王者榮耀英雄",
+    "subtitle": "國際服 {count} 位英雄 · 出裝、技能、克制與銘文"
   },
   "tierList": {
     "title": "王者榮耀梯度榜",
-    "subtitle": "按主職業分組（刺客→戰士），各職業內再分 S+ / S / A / B。數據來自 Camp HOK。",
-    "roleHint": "主職業 · S+ 至 B · 各梯度內依勝率排序"
+    "subtitle": "對抗路、打野、中路、發育路、遊走五條分路 S / A / B / C / D 排名 · Camp HOK 即時數據。",
+    "roleHint": "各梯度內依 Meta 綜合分排序",
+    "jumpLanes": "跳至分路"
   },
   "lanes": {
     "jungling": "打野",
@@ -93,7 +168,29 @@
     "tier": "梯度",
     "metaTitle": "{name} 出裝 {season} — 裝備、連招與克制",
     "metaDesc": "{name} {lane} 攻略——最佳出裝、加點、連招、克制與銘文（王者榮耀國際服 {date}）。",
-    "subtitle": "{lane} · {tier} 梯度 · 勝率 {wr} · {season}"
+    "subtitle": "{lane} · {tier} 梯度 · 勝率 {wr} · {season}",
+    "climbBadge": "版本推薦",
+    "climbLaneRank": "{lane} 第 {rank} 名",
+    "climbIntro": "本版本推薦上分英雄：{name}",
+    "climbDataNote": "依據 Camp HOK 梯度與勝/選/禁率，實際效果仍視陣容與對位而定。",
+    "climbViewAll": "查看全部分路推薦"
+  },
+  "climb": {
+    "title": "版本推薦英雄 — 上分首選",
+    "subtitle": "每條分路 Meta 分數前 5 名（梯度 + 選禁壓力 + 勝率），Camp HOK 國際服數據。",
+    "dataDisclaimer": "推薦依 Camp HOK 即時數據計算，請搭配禁用與自身英雄池，非官方職業榜。",
+    "reasonTier": "當前梯度 {tier}",
+    "reasonWr": "勝率 {wr}，高於平均",
+    "reasonPick": "選取率 {pick}，排位熱門",
+    "reasonBan": "禁用率 {ban}，選人優先",
+    "reasonStable": "梯度 {tier}、勝率 {wr}，穩定分路選擇"
+  },
+  "comps": {
+    "title": "陣容推薦",
+    "subtitle": "精選雙排搭檔與速推模板，誠實標註數據來源——無虛構雙排勝率。",
+    "sourceNote": "{source} · 更新 {updated}",
+    "duosTitle": "精選搭檔",
+    "templatesTitle": "速推模板"
   },
   "build": {
     "colOrder": "#",
@@ -343,15 +440,42 @@
   },
   "search": {
     "title": "搜尋結果",
-    "placeholder": "搜尋英雄…",
+    "placeholder": "搜尋英雄、裝備、攻略…",
     "submit": "搜尋",
-    "label": "搜尋英雄",
+    "label": "搜尋",
+    "navigate": "移動",
+    "open": "開啟",
     "empty": "請在頂欄輸入英雄名稱。",
     "noResults": "找不到英雄。",
     "browseAll": "瀏覽全部英雄",
     "resultCount": "「{q}」共 {count} 筆結果",
     "loading": "載入中…",
     "relatedTitle": "相關搜尋"
+  },
+  "rationale": {
+    "title": "出裝思路",
+    "passiveRef": "被動：",
+    "arcanaHint": "銘文：",
+    "summaryDefault": "{name} 核心需求為 {priorities}，出裝與銘文應對應技能與被動收益。",
+    "arcanaDefault": "銘文優先 {priorities}，配合被動與技能成長曲線。",
+    "itemWhyMatch": "符合 {stat} 需求 — {passive}",
+    "itemWhyLabel": "{label} 支撐你的 {stat} 方向。",
+    "itemWhyFallback": "本套出裝第 {slot} 件核心裝。",
+    "arcanaWhyMatch": "{rune}：{stat} — {effect}",
+    "arcanaFallback": "銘文對齊 {priorities}。",
+    "stat": {
+      "aspd": "攻速",
+      "patk": "物攻",
+      "crit": "暴擊",
+      "lifesteal": "吸血",
+      "onhit": "普攻特效",
+      "cdr": "冷卻",
+      "matk": "法攻",
+      "pen": "穿透",
+      "tank": "生存",
+      "ms": "移速",
+      "core": "核心屬性"
+    }
   },
   "notFound": {
     "title": "404",

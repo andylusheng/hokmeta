@@ -2,99 +2,583 @@
   "id": "luban-no-7",
   "slug": "luban-no-7",
   "name": "Luban No.7",
+  "nameZh": "魯班七號",
   "role": "Marksman",
   "roles": "Marksman",
+  "rolesZh": "射手",
   "lane": "Farm Lane",
+  "laneZh": "發育路",
   "difficulty": "Medium",
-  "tier": "S",
-  "winRate": 52.01,
-  "pickRate": 1.79,
-  "banRate": 0.18,
-  "rank": 21,
+  "tier": "S+",
+  "winRate": 53.56,
+  "pickRate": 2.4,
+  "banRate": 0.31,
+  "rank": 6,
   "avatar": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/0VBMiUN5.png",
   "avatarFallback": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/112/112.jpg",
+  "heroCover": "https://camp.honorofkings.com/social/game/src/image_hero_cover_1275*718/0It9vmpQ.jpg",
   "tencentId": 112,
-  "dataSource": "Camp HOK + HoKStats.gg (intl)",
-  "dataUpdated": "2026-06-05",
+  "dataSource": "Camp HOK bilingual (primary)",
+  "dataUpdated": "2026-06-07",
   "skills": [
     {
       "slot": "passive",
       "name": "Suppressive Fire",
-      "description": "Every 5 Basic Attacks or the first Basic Attack after using a skill gains a piercing effect and deals continuous damage.",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/112/11200.png",
-      "cooldown": null
+      "description": "After using 4 Basic Attacks or a skill, the next Basic Attack becomes a scattershot, dealing continuous piercing damage.",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/11200.png",
+      "cooldown": "1s"
     },
     {
       "slot": "skill1",
       "name": "Blowfish Grenade",
-      "description": "Throws a bomb at the target area, dealing damage and slowing all enemies hit.",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/112/11210.png",
-      "cooldown": null
+      "description": "Throws a bomb at the target location, dealing area damage and slowing enemies.",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/11210.png",
+      "cooldown": "8s"
     },
     {
       "slot": "skill2",
       "name": "Shark Cannon",
-      "description": "Launches a rocket in the target direction, knocking back enemies in close range and dealing damage. Deals damage to enemies in range upon exploding on enemy heroes.",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/112/11220.png",
-      "cooldown": null
+      "description": "Launches a rocket in the target direction, knocking back enemies directly in front of him and dealing area damage.",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/11220.png",
+      "cooldown": "12s"
     },
     {
       "slot": "ultimate",
       "name": "Air Support",
-      "description": "Bombards the target location, slowing and dealing damage to enemies while gaining vision of the area.",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/112/11230.png",
-      "cooldown": null
+      "description": "Summons a blowfish airship to bombard the target location, dealing area damage and slowing enemies while gaining vision of the area.",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/11230.png",
+      "cooldown": "35s"
+    }
+  ],
+  "skillsZh": [
+    {
+      "slot": "passive",
+      "name": "火力壓制",
+      "description": "每第5次普攻和每次技能之後的普攻都會變成掃射，造成連續穿透傷害。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/11200.png",
+      "cooldown": "1s"
+    },
+    {
+      "slot": "skill1",
+      "name": "河豚手榴彈",
+      "description": "向指定區域投擲炸彈，對敵人造成範圍傷害和減速。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/11210.png",
+      "cooldown": "8s"
+    },
+    {
+      "slot": "skill2",
+      "name": "無敵鯊嘴砲",
+      "description": "朝指定方向發射爆炸火箭，對近距離敵人造成範圍傷害和擊退效果。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/11220.png",
+      "cooldown": "12s"
+    },
+    {
+      "slot": "ultimate",
+      "name": "空中支援",
+      "description": "召喚河豚飛艇轟炸指定區域，對敵人造成範圍傷害和減速，並獲得區域視野。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/11230.png",
+      "cooldown": "35s"
     }
   ],
   "build": [
     {
       "slot": 1,
-      "itemId": "1135",
-      "name": "Sparkforged Dagger",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1135.jpg",
-      "description": "Chain lightning BA"
+      "itemId": "1425",
+      "name": "Boots of Dexterity",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1425.png",
+      "description": "ASPD +20%, MSPD +50\nBAs restore HP"
     },
     {
       "slot": 2,
-      "itemId": "1425",
-      "name": "Boots of Dexterity",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1425.jpg",
-      "description": "Boosts ASPD"
+      "itemId": "1126",
+      "name": "Doomsday",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1126.png",
+      "description": "PATK +40, ASPD +20%, HP +500, Lifesteal +20%\nBoosts BA damage"
     },
     {
       "slot": 3,
       "itemId": "1133",
       "name": "Eternity Blade",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1133.jpg",
-      "description": "High crit damage"
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1133.png",
+      "description": "PATK +120, Crit Rate +20%\nHigh crit damage"
     },
     {
       "slot": 4,
-      "itemId": "1155",
-      "name": "Daybreaker's Virtue",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1155.jpg",
-      "description": "Great for marksmen"
+      "itemId": "1335",
+      "name": "Succubus Cloak",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
+      "description": "MDEF +300, HP +1,100\nNegates magical damage"
     },
     {
       "slot": 5,
-      "itemId": "1126",
-      "name": "Doomsday",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1126.jpg",
-      "description": "Boosts BA damage"
+      "itemId": "1155",
+      "name": "Daybreaker's Virtue",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1155.png",
+      "description": "PATK +75, ASPD +30%, Crit Rate +15%\nGreat for marksmen"
     },
     {
       "slot": 6,
       "itemId": "1337",
       "name": "Sage's Sanctuary",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1337.jpg",
-      "description": "Resurrect on the spot"
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+      "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
+    }
+  ],
+  "buildZh": [
+    {
+      "slot": 1,
+      "itemId": "1425",
+      "name": "急速戰靴",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1425.png",
+      "description": "+20%攻速+50點移速\n普攻回復生命值"
+    },
+    {
+      "slot": 2,
+      "itemId": "1126",
+      "name": "末世",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1126.png",
+      "description": "+40點攻擊+20%攻速+500點生命值+20%吸血\n普攻額外傷害"
+    },
+    {
+      "slot": 3,
+      "itemId": "1133",
+      "name": "無盡戰刃",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1133.png",
+      "description": "+120點攻擊+20%暴擊\n高額暴擊傷害"
+    },
+    {
+      "slot": 4,
+      "itemId": "1335",
+      "name": "魔女斗篷",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
+      "description": "+300點法防+1100點生命值\n吸收法術傷害"
+    },
+    {
+      "slot": 5,
+      "itemId": "1155",
+      "name": "仁者破曉",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1155.png",
+      "description": "+75點攻擊+30%攻速+15%暴擊\n射手神裝"
+    },
+    {
+      "slot": 6,
+      "itemId": "1337",
+      "name": "賢者的庇護",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+      "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+    }
+  ],
+  "builds": [
+    {
+      "id": "camp-0",
+      "label": "Farm Lane 1",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1425",
+          "name": "Boots of Dexterity",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1425.png",
+          "description": "ASPD +20%, MSPD +50\nBAs restore HP"
+        },
+        {
+          "slot": 2,
+          "itemId": "1126",
+          "name": "Doomsday",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1126.png",
+          "description": "PATK +40, ASPD +20%, HP +500, Lifesteal +20%\nBoosts BA damage"
+        },
+        {
+          "slot": 3,
+          "itemId": "1133",
+          "name": "Eternity Blade",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1133.png",
+          "description": "PATK +120, Crit Rate +20%\nHigh crit damage"
+        },
+        {
+          "slot": 4,
+          "itemId": "1335",
+          "name": "Succubus Cloak",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
+          "description": "MDEF +300, HP +1,100\nNegates magical damage"
+        },
+        {
+          "slot": 5,
+          "itemId": "1155",
+          "name": "Daybreaker's Virtue",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1155.png",
+          "description": "PATK +75, ASPD +30%, Crit Rate +15%\nGreat for marksmen"
+        },
+        {
+          "slot": 6,
+          "itemId": "1337",
+          "name": "Sage's Sanctuary",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
+        }
+      ]
+    },
+    {
+      "id": "camp-1",
+      "label": "Top",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1126",
+          "name": "Doomsday",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1126.png",
+          "description": "PATK +40, ASPD +20%, HP +500, Lifesteal +20%\nBoosts BA damage"
+        },
+        {
+          "slot": 2,
+          "itemId": "1155",
+          "name": "Daybreaker's Virtue",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1155.png",
+          "description": "PATK +75, ASPD +30%, Crit Rate +15%\nGreat for marksmen"
+        },
+        {
+          "slot": 3,
+          "itemId": "1138",
+          "name": "Overlord's Might",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1138.png",
+          "description": "PATK +150, CDR +5%\nHigh-damage attack"
+        },
+        {
+          "slot": 4,
+          "itemId": "1422",
+          "name": "Boots of Resistance",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1422.png",
+          "description": "MDEF +100, PDEF +50, MSPD +50\nShortens crowd control"
+        },
+        {
+          "slot": 5,
+          "itemId": "11311",
+          "name": "Pure Sky",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/11311.png",
+          "description": "PATK +80, PDEF +150, CDR +10%\nTemp. damage reduction"
+        },
+        {
+          "slot": 6,
+          "itemId": "1337",
+          "name": "Sage's Sanctuary",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
+        }
+      ]
+    },
+    {
+      "id": "camp-2",
+      "label": "تاداﺪﻋإ",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1425",
+          "name": "Boots of Dexterity",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1425.png",
+          "description": "ASPD +20%, MSPD +50\nBAs restore HP"
+        },
+        {
+          "slot": 2,
+          "itemId": "1136",
+          "name": "Shadow Ripper",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1136.png",
+          "description": "PATK +45, ASPD +35%, Crit Rate +20%, MSPD +7.5%\nCrits boosts ASPD"
+        },
+        {
+          "slot": 3,
+          "itemId": "1133",
+          "name": "Eternity Blade",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1133.png",
+          "description": "PATK +120, Crit Rate +20%\nHigh crit damage"
+        },
+        {
+          "slot": 4,
+          "itemId": "1131",
+          "name": "Starbreaker",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1131.png",
+          "description": "PATK +90, HP +700, MSPD +7.5%\nAnti-tank"
+        },
+        {
+          "slot": 5,
+          "itemId": "1126",
+          "name": "Doomsday",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1126.png",
+          "description": "PATK +40, ASPD +20%, HP +500, Lifesteal +20%\nBoosts BA damage"
+        },
+        {
+          "slot": 6,
+          "itemId": "1141",
+          "name": "Sunchaser",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1141.png",
+          "description": "PATK +40, ASPD +20%, Crit Rate +15%, MSPD +7.5%\nBoosts attack range"
+        }
+      ]
+    },
+    {
+      "id": "camp-3",
+      "label": "Farm Lane 1",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1425",
+          "name": "Boots of Dexterity",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1425.png",
+          "description": "ASPD +20%, MSPD +50\nBAs restore HP"
+        },
+        {
+          "slot": 2,
+          "itemId": "1126",
+          "name": "Doomsday",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1126.png",
+          "description": "PATK +40, ASPD +20%, HP +500, Lifesteal +20%\nBoosts BA damage"
+        },
+        {
+          "slot": 3,
+          "itemId": "1133",
+          "name": "Eternity Blade",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1133.png",
+          "description": "PATK +120, Crit Rate +20%\nHigh crit damage"
+        },
+        {
+          "slot": 4,
+          "itemId": "1335",
+          "name": "Succubus Cloak",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
+          "description": "MDEF +300, HP +1,100\nNegates magical damage"
+        },
+        {
+          "slot": 5,
+          "itemId": "1155",
+          "name": "Daybreaker's Virtue",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1155.png",
+          "description": "PATK +75, ASPD +30%, Crit Rate +15%\nGreat for marksmen"
+        },
+        {
+          "slot": 6,
+          "itemId": "1337",
+          "name": "Sage's Sanctuary",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
+        }
+      ]
+    }
+  ],
+  "buildsZh": [
+    {
+      "id": "camp-0",
+      "label": "Farm Lane 1",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1425",
+          "name": "急速戰靴",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1425.png",
+          "description": "+20%攻速+50點移速\n普攻回復生命值"
+        },
+        {
+          "slot": 2,
+          "itemId": "1126",
+          "name": "末世",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1126.png",
+          "description": "+40點攻擊+20%攻速+500點生命值+20%吸血\n普攻額外傷害"
+        },
+        {
+          "slot": 3,
+          "itemId": "1133",
+          "name": "無盡戰刃",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1133.png",
+          "description": "+120點攻擊+20%暴擊\n高額暴擊傷害"
+        },
+        {
+          "slot": 4,
+          "itemId": "1335",
+          "name": "魔女斗篷",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
+          "description": "+300點法防+1100點生命值\n吸收法術傷害"
+        },
+        {
+          "slot": 5,
+          "itemId": "1155",
+          "name": "仁者破曉",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1155.png",
+          "description": "+75點攻擊+30%攻速+15%暴擊\n射手神裝"
+        },
+        {
+          "slot": 6,
+          "itemId": "1337",
+          "name": "賢者的庇護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+        }
+      ]
+    },
+    {
+      "id": "camp-1",
+      "label": "Top",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1126",
+          "name": "末世",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1126.png",
+          "description": "+40點攻擊+20%攻速+500點生命值+20%吸血\n普攻額外傷害"
+        },
+        {
+          "slot": 2,
+          "itemId": "1155",
+          "name": "仁者破曉",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1155.png",
+          "description": "+75點攻擊+30%攻速+15%暴擊\n射手神裝"
+        },
+        {
+          "slot": 3,
+          "itemId": "1138",
+          "name": "強者破軍",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1138.png",
+          "description": "+150點攻擊+5%減冷卻時間\n高額攻擊"
+        },
+        {
+          "slot": 4,
+          "itemId": "1422",
+          "name": "抵抗之靴",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1422.png",
+          "description": "+100點法防+50點物防+50點移速\n減少被控時間"
+        },
+        {
+          "slot": 5,
+          "itemId": "11311",
+          "name": "純淨蒼穹",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/11311.png",
+          "description": "+80點攻擊+150點物防+10%冷卻時間縮減\n暫時增加免傷"
+        },
+        {
+          "slot": 6,
+          "itemId": "1337",
+          "name": "賢者的庇護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+        }
+      ]
+    },
+    {
+      "id": "camp-2",
+      "label": "تاداﺪﻋإ",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1425",
+          "name": "急速戰靴",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1425.png",
+          "description": "+20%攻速+50點移速\n普攻回復生命值"
+        },
+        {
+          "slot": 2,
+          "itemId": "1136",
+          "name": "影刃",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1136.png",
+          "description": "+45點攻擊 +35%攻速+20%暴擊+7.5%移速\n暴擊增加攻速"
+        },
+        {
+          "slot": 3,
+          "itemId": "1133",
+          "name": "無盡戰刃",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1133.png",
+          "description": "+120點攻擊+20%暴擊\n高額暴擊傷害"
+        },
+        {
+          "slot": 4,
+          "itemId": "1131",
+          "name": "碎星錘",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1131.png",
+          "description": "+90點攻擊+700點生命值+7.5%移速\n打坦克用"
+        },
+        {
+          "slot": 5,
+          "itemId": "1126",
+          "name": "末世",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1126.png",
+          "description": "+40點攻擊+20%攻速+500點生命值+20%吸血\n普攻額外傷害"
+        },
+        {
+          "slot": 6,
+          "itemId": "1141",
+          "name": "逐日之弓",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1141.png",
+          "description": "+40點攻擊+20%攻速+15%暴擊+7.5%移速\n攻擊距離變遠"
+        }
+      ]
+    },
+    {
+      "id": "camp-3",
+      "label": "Farm Lane 1",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1425",
+          "name": "急速戰靴",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1425.png",
+          "description": "+20%攻速+50點移速\n普攻回復生命值"
+        },
+        {
+          "slot": 2,
+          "itemId": "1126",
+          "name": "末世",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1126.png",
+          "description": "+40點攻擊+20%攻速+500點生命值+20%吸血\n普攻額外傷害"
+        },
+        {
+          "slot": 3,
+          "itemId": "1133",
+          "name": "無盡戰刃",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1133.png",
+          "description": "+120點攻擊+20%暴擊\n高額暴擊傷害"
+        },
+        {
+          "slot": 4,
+          "itemId": "1335",
+          "name": "魔女斗篷",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
+          "description": "+300點法防+1100點生命值\n吸收法術傷害"
+        },
+        {
+          "slot": 5,
+          "itemId": "1155",
+          "name": "仁者破曉",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1155.png",
+          "description": "+75點攻擊+30%攻速+15%暴擊\n射手神裝"
+        },
+        {
+          "slot": 6,
+          "itemId": "1337",
+          "name": "賢者的庇護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+        }
+      ]
     }
   ],
   "arcana": [
-    "Tier"
+    "Lvl 5: Calamity",
+    "Lvl 5: Reaver",
+    "Lvl 5: Stealth"
+  ],
+  "arcanaZh": [
+    "5級：禍源",
+    "5級：奪萃",
+    "5級：隱匿"
   ],
   "spells": [
     "Flash"
+  ],
+  "spellsZh": [
+    "閃現"
   ],
   "counters": [
     "Ying",
@@ -102,141 +586,176 @@
     "Lam"
   ],
   "counteredBy": [
-    "Lian Po",
-    "Kaizer",
-    "Dun"
+    "Lian Po"
   ],
   "tips": [
-    "Luban No.7 is a Medium Marksman (Farm Lane) on Honor of Kings Global. Camp HOK ranks them Tier S with 52.0% win rate and 1.8% pick rate as of 2026-06-05.",
-    "Best build path: Sparkforged Dagger → Boots of Dexterity → Eternity Blade → Daybreaker's Virtue → Doomsday → Sage's Sanctuary.",
-    "Run Tier for stats that match Luban No.7's Marksman kit. Take Flash — swap to Purify against heavy CC or Smite when jungling.",
-    "Standard trade: Blowfish Grenade → Shark Cannon → Air Support → weave basic attacks. Weave basic attacks between skill casts for passive value.",
-    "Laning: Last-hit safely until first core item. Ping jungler for river vision; never face-check brush without minion cover.",
-    "Teamfight: Position behind frontline; attack closest safe target. Join fight only after enemy dive cooldowns are used.",
-    "Luban No.7 excels into Ying, Ukyo Tachibana, Lam. Avoid blind picking into Lian Po, Kaizer, Dun without team peel.",
-    "Luban No.7 is a Tier S staple in high-elo (Diamond+) on the international server — worth mastering for climb. Pick rate 1.8% — frequently seen in ranked; learn the matchup even if you do not main Luban No.7. Camp data shows above-average win rate — prioritize when not hard-countered in draft."
+    "Luban No.7 (Marksman): Tier S+ — 53.56% WR (Camp HOK).",
+    "Lane: Farm Lane.",
+    "Build: Boots of Dexterity, Doomsday, Eternity Blade."
+  ],
+  "tipsZh": [
+    "魯班七號（發育路）：梯度 S+，勝率 53.56%（Camp HOK）。",
+    "出裝：急速戰靴、末世、無盡戰刃."
   ],
   "patchHistory": [
     {
-      "version": "Live meta",
-      "change": "Camp HOK — WR 52.0%, pick 1.8%, ban 0.2%, tier S."
+      "seasonId": "14",
+      "seasonName": "S14",
+      "versionName": "2026/05/28",
+      "publishedAt": "2026-05-28T01:00:00Z",
+      "isCurrent": true,
+      "tag": "Stat Buffs",
+      "change": "Reduced skill cooldown",
+      "detail": "",
+      "version": "S14"
     },
     {
-      "version": "Matchups",
-      "change": "Strong into Ying, Ukyo Tachibana, Lam · Weak into Lian Po, Kaizer, Dun."
+      "seasonId": "13",
+      "seasonName": "S13",
+      "versionName": "2025/12/16",
+      "publishedAt": "2025-12-16T01:00:00Z",
+      "isCurrent": false,
+      "tag": "Stat Changes",
+      "change": "Adjusted Skill Damage",
+      "detail": "",
+      "version": "S13"
     },
     {
-      "version": "High rank",
-      "change": "Luban No.7 is a Tier S staple in high-elo (Diamond+) on the international server — worth mastering for climb. Pick rate 1.8% — frequently seen in ranked; learn the matchup even if you do not main Luban No.7. Camp data shows above-average win rate — prioritize when not hard-countered in draft."
+      "seasonId": "6",
+      "seasonName": "S6",
+      "versionName": "20240905",
+      "publishedAt": "2024-09-05T03:48:42Z",
+      "isCurrent": false,
+      "tag": "Stat Nerfs",
+      "change": "Decreased passive damage.",
+      "detail": "Luban No.7 has been outperforming other marksmen for a long time, so it's time to tone him down a bit.",
+      "version": "S6"
+    },
+    {
+      "seasonId": "6",
+      "seasonName": "S6",
+      "versionName": "20240808",
+      "publishedAt": "2024-08-08T02:00:57Z",
+      "isCurrent": false,
+      "tag": "Stat Changes",
+      "change": "Adjusted Passive effect's damage against different targets.",
+      "detail": "Luban's Passive works the same regardless of the target's Health, so heroes cannot guard against it by increasing their Health. As such, we've reduced his effectiveness against high-Health targets. As compensation, we've increased his ability to threaten the enemy carry",
+      "version": "S6"
+    },
+    {
+      "seasonId": "4",
+      "seasonName": "S4",
+      "versionName": "20240306",
+      "publishedAt": "2024-03-06T02:00:50Z",
+      "isCurrent": false,
+      "tag": "Stat Nerfs",
+      "change": "Reduced the base damage of Luban No.7's passive skill, and increased the base cooldown of his Ultimate.",
+      "detail": "Reduced the base damage of Luban No.7's passive skill, and increased the base cooldown of his Ultimate.\nWith his unique damage capabilities, Luban No.7 has become a common choice for marksman players. He is easy to play and can rapidly tear through various types of enemy with ease. We have nerfed Luban No.7 in order to give rivals a fairer chance of getting close to him.",
+      "version": "S4"
+    }
+  ],
+  "patchHistoryZh": [
+    {
+      "seasonId": "14",
+      "seasonName": "S14",
+      "versionName": "2026/05/28",
+      "publishedAt": "2026-05-28T01:00:00Z",
+      "isCurrent": true,
+      "tag": "數值增強",
+      "change": "減少技能冷卻時間",
+      "detail": "",
+      "version": "S14"
+    },
+    {
+      "seasonId": "13",
+      "seasonName": "S13",
+      "versionName": "2025/12/16",
+      "publishedAt": "2025-12-16T01:00:00Z",
+      "isCurrent": false,
+      "tag": "數值調整",
+      "change": "調整技能傷害",
+      "detail": "",
+      "version": "S13"
+    },
+    {
+      "seasonId": "6",
+      "seasonName": "S6",
+      "versionName": "20240905",
+      "publishedAt": "2024-09-05T03:48:42Z",
+      "isCurrent": false,
+      "tag": "數值削弱",
+      "change": "降低被動傷害",
+      "detail": "「魯班七號的強度已經領先其他射手很久了，該是緩和這股氣焰的時候了。」",
+      "version": "S6"
+    },
+    {
+      "seasonId": "6",
+      "seasonName": "S6",
+      "versionName": "20240808",
+      "publishedAt": "2024-08-08T02:00:57Z",
+      "isCurrent": false,
+      "tag": "數值調整",
+      "change": "調整被動對不同目標的傷害",
+      "detail": "「被動對不同生命值的目標一視同仁，提高生命值在面對魯班七號時無法提高生存能力，因此我們適當削弱他對高生命值目標的傷害能力。作為補償，我們提升了他對全輸出C位目標的威脅。」",
+      "version": "S6"
+    },
+    {
+      "seasonId": "4",
+      "seasonName": "S4",
+      "versionName": "20240306",
+      "publishedAt": "2024-03-06T02:00:50Z",
+      "isCurrent": false,
+      "tag": "數值削弱",
+      "change": "降低魯班七號被動技能基礎傷害，提高大招基礎冷卻時間",
+      "detail": "降低魯班七號被動技能基礎傷害，提高大招基礎冷卻時間。\n魯班七號在目前版本中，憑著獨一無二的傷害製造能力，成為許多射手玩家的常備選項。他往往只需要簡單的操作，就可以在短時間內輕鬆撕碎面前所有類型的敵人。我們希望能適當削弱魯班七號，來讓魯班七號的對手有更多機會來接近他。",
+      "version": "S4"
     }
   ],
   "faqs": [
     {
       "id": "faq-good-season",
-      "question": "Is Luban No.7 good in the current meta?",
-      "answer": "Luban No.7 is Tier S Marksman with 52.0% win rate, 1.8% pick rate, and 0.2% ban rate on Honor of Kings Global (Camp HOK, 2026-06-05). Strong meta pick for ranked."
+      "question": "Is Luban No.7 good in current season?",
+      "answer": "Luban No.7 is Tier S+ Marksman with 53.56% win rate, 2.4% pick rate, and 0.31% ban rate (Camp HOK international)."
     },
     {
       "id": "faq-best-build",
       "question": "What is the best Luban No.7 build?",
-      "answer": "Core item path: Sparkforged Dagger, Boots of Dexterity, Eternity Blade, Daybreaker's Virtue, Doomsday, Sage's Sanctuary. Run Tier arcana with Flash. Switch to alternate build presets on this page for jungle, clash, or late-game setups."
+      "answer": "Recommended: Boots of Dexterity, Doomsday, Eternity Blade, Succubus Cloak, Daybreaker's Virtue, Sage's Sanctuary."
     },
     {
       "id": "faq-counter",
       "question": "How to counter Luban No.7?",
-      "answer": "Pick Lian Po, Kaizer, Dun into Luban No.7. Deny Farm Lane resources early and force fights before Luban No.7 completes core items. Luban No.7 struggles when the enemy can dive and burst them."
+      "answer": "Pick Lian Po. Strong into Ying, Ukyo Tachibana, Lam."
+    }
+  ],
+  "faqsZh": [
+    {
+      "id": "faq-good-season",
+      "question": "魯班七號 這版本適合上分嗎？",
+      "answer": "魯班七號 為 S+ 梯度，勝率 53.56%、選取 2.4%、禁用 0.31%（Camp HOK 國際服）。"
     },
     {
-      "id": "faq-strong-into",
-      "question": "Who does Luban No.7 counter?",
-      "answer": "Luban No.7 is strong into Ying, Ukyo Tachibana, Lam according to HoKStats matchup data and role matchups on the global server. Draft Luban No.7 when the enemy relies on these heroes in the Farm Lane lane."
+      "id": "faq-best-build",
+      "question": "魯班七號 出裝怎麼搭配？",
+      "answer": "推薦：急速戰靴、末世、無盡戰刃、魔女斗篷、仁者破曉、賢者的庇護."
     },
     {
-      "id": "faq-high-rank",
-      "question": "Is Luban No.7 good in high rank / Diamond+?",
-      "answer": "Luban No.7 is a Tier S staple in high-elo (Diamond+) on the international server — worth mastering for climb. Pick rate 1.8% — frequently seen in ranked; learn the matchup even if you do not main Luban No.7. Camp data shows above-average win rate — prioritize when not hard-countered in draft."
-    },
-    {
-      "id": "faq-lane",
-      "question": "What lane should Luban No.7 play?",
-      "answer": "Luban No.7 is tagged Farm Lane in Camp export (Marksman). Last-hit safely until first core item. Ping jungler for river vision; never face-check brush without minion cover."
-    },
-    {
-      "id": "faq-arcana",
-      "question": "Best arcana and spells for Luban No.7?",
-      "answer": "Recommended: Tier arcana. Battle spell: Flash. Adjust Purify/Execute based on enemy dive and jungle need."
-    },
-    {
-      "id": "faq-vs-peer",
-      "question": "Luban No.7 or Hou Yi — which is better?",
-      "answer": "Luban No.7 vs Hou Yi (Marksman, Tier S+): Hou Yi is 2.9% pick / 49.3% WR. Luban No.7 has +2.7% WR vs Hou Yi in Camp data. Choose Luban No.7 when you need Farm Lane identity; choose Hou Yi for Farm Lane comfort."
-    },
-    {
-      "id": "faq-ban",
-      "question": "Should I ban Luban No.7?",
-      "answer": "Optional ban when enemy spams Marksman; 1.8% pick rate but only 0.2% ban rate."
+      "id": "faq-counter",
+      "question": "怎麼克制 魯班七號？",
+      "answer": "可選 Lian Po。魯班七號 克制 Ying、Ukyo Tachibana、Lam。"
     }
   ],
   "metaAnalysis": [
-    "Luban No.7 — 52.0% WR, 1.8% pick, 0.2% ban (Camp HOK 2026-06-05).",
-    "Tier S Marksman · Farm Lane · difficulty Medium.",
-    "Luban No.7 is a Tier S staple in high-elo (Diamond+) on the international server — worth mastering for climb. Pick rate 1.8% — frequently seen in ranked; learn the matchup even if you do not main Luban No.7. Camp data shows above-average win rate — prioritize when not hard-countered in draft.",
-    "Matchups: strong into Ying, Ukyo Tachibana, Lam; weak into Lian Po, Kaizer, Dun.",
-    "Luban No.7 vs Hou Yi (Marksman, Tier S+): Hou Yi is 2.9% pick / 49.3% WR. Luban No.7 has +2.7% WR vs Hou Yi in Camp data. Choose Luban No.7 when you need Farm Lane identity; choose Hou Yi for Farm Lane comfort.",
-    "Luban No.7 vs Marco Polo (Marksman, Tier S+): Marco Polo is 2.1% pick / 50.1% WR. Luban No.7 has +1.9% WR vs Marco Polo in Camp data. Choose Luban No.7 when you need Farm Lane identity; choose Marco Polo for Farm Lane comfort.",
-    "Draft tip: first-pick or ban priority in ranked."
+    "Luban No.7 win rate 53.56% (Camp HOK, 2026-06-07).",
+    "Pick rate 2.4%.",
+    "Ban rate 0.31%.",
+    "Counters: Ying, Ukyo Tachibana, Lam. Weak into: Lian Po."
   ],
-  "builds": [
-    {
-      "id": "recommended",
-      "label": "Recommended",
-      "position": null,
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1135",
-          "name": "Sparkforged Dagger",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1135.jpg",
-          "description": "Chain lightning BA"
-        },
-        {
-          "slot": 2,
-          "itemId": "1425",
-          "name": "Boots of Dexterity",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1425.jpg",
-          "description": "Boosts ASPD"
-        },
-        {
-          "slot": 3,
-          "itemId": "1133",
-          "name": "Eternity Blade",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1133.jpg",
-          "description": "High crit damage"
-        },
-        {
-          "slot": 4,
-          "itemId": "1155",
-          "name": "Daybreaker's Virtue",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1155.jpg",
-          "description": "Great for marksmen"
-        },
-        {
-          "slot": 5,
-          "itemId": "1126",
-          "name": "Doomsday",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1126.jpg",
-          "description": "Boosts BA damage"
-        },
-        {
-          "slot": 6,
-          "itemId": "1337",
-          "name": "Sage's Sanctuary",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1337.jpg",
-          "description": "Resurrect on the spot"
-        }
-      ]
-    }
+  "metaAnalysisZh": [
+    "魯班七號 勝率 53.56%（Camp HOK，2026-06-07）",
+    "選取率 2.4%",
+    "禁用率 0.31%",
+    "克制：Ying、Ukyo Tachibana、Lam；被克制：Lian Po"
   ],
   "guide": {
     "overview": "Luban No.7 is a Medium Marksman (Farm Lane) on Honor of Kings Global. Camp HOK ranks them Tier S with 52.0% win rate and 1.8% pick rate as of 2026-06-05.",

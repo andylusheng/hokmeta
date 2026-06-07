@@ -2,99 +2,583 @@
   "id": "luara",
   "slug": "luara",
   "name": "Luara",
+  "nameZh": "盧雅那",
   "role": "Marksman",
   "roles": "Marksman",
+  "rolesZh": "射手",
   "lane": "Farm Lane",
+  "laneZh": "發育路",
   "difficulty": "Medium",
   "tier": "S",
-  "winRate": 53,
-  "pickRate": 1.6,
-  "banRate": 0.2,
-  "rank": 7,
+  "winRate": 52.66,
+  "pickRate": 1.55,
+  "banRate": 0.19,
+  "rank": 12,
   "avatar": "https://camp.honorofkings.com/camp/admin/hero/head_128-128/znRnu3kt.png",
   "avatarFallback": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/547/547.jpg",
+  "heroCover": "https://camp.honorofkings.com/camp/admin/hero/cover_1275-718/80ttdEKH.jpg",
   "tencentId": 547,
-  "dataSource": "Camp HOK + HoKStats.gg (intl)",
-  "dataUpdated": "2026-06-05",
+  "dataSource": "Camp HOK bilingual (primary)",
+  "dataUpdated": "2026-06-07",
   "skills": [
     {
       "slot": "passive",
       "name": "Serpent's Envoy",
       "description": "Basic Attacks unleash serpent blades to deal damage, reducing Skill 1's cooldown for every enemy hit.",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/547/54700.png",
-      "cooldown": null
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/54700.png",
+      "cooldown": "1s"
     },
     {
       "slot": "skill1",
       "name": "Deadly Fang",
       "description": "Activates a serpent blade and gains Movement Speed. She can quickly scale walls should she run into them during this period.",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/547/54711.png",
-      "cooldown": null
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/54710.png",
+      "cooldown": "13s"
     },
     {
       "slot": "skill2",
       "name": "Furtive Attack",
       "description": "Summons the Fire Serpent at the target location, which then moves toward her, damaging and slowing enemies in its path. If serpent blades are active, it deals additional damage to enemies. If not, the cooldown is reduced.",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/547/54723.png",
-      "cooldown": null
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/54720.png",
+      "cooldown": "10s"
     },
     {
       "slot": "ultimate",
       "name": "Blazing Glare",
       "description": "Releases the Fire Serpent in the target direction, dealing damage and blinding enemies in its path, and gains a serpent blade. During this time, both attacking and being attacked will accumulate Fury. At full Fury, deals area damage and launches enemies.",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/547/54735.png",
-      "cooldown": null
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/54730.png",
+      "cooldown": "50s"
+    }
+  ],
+  "skillsZh": [
+    {
+      "slot": "passive",
+      "name": "蛇焰使者",
+      "description": "盧雅那的普通攻擊會施放環刃切割敵人並造成傷害，每次切割命中敵人可減少1技能冷卻時間。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/54700.png",
+      "cooldown": "1s"
+    },
+    {
+      "slot": "skill1",
+      "name": "致命獠牙",
+      "description": "觸發一把環刃並獲得加速，期間遇到牆壁可以快速翻越1次。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/54710.png",
+      "cooldown": "13s"
+    },
+    {
+      "slot": "skill2",
+      "name": "蛇吻突襲",
+      "description": "在指定位置召喚火蛇，之後火蛇會向自己移動，對沿路敵人造成傷害和減速。有環刃時，額外對敵人造成傷害。若無環刃則縮減冷卻。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/54720.png",
+      "cooldown": "10s"
+    },
+    {
+      "slot": "ultimate",
+      "name": "焚火灼目",
+      "description": "朝指定方向施放火蛇，對沿路敵人造成傷害和目盲，並獲得一枚環刃。期間，攻擊和受到攻擊均會累積能量，能量滿後會造成範圍傷害和擊飛。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/54730.png",
+      "cooldown": "50s"
     }
   ],
   "build": [
     {
       "slot": 1,
-      "itemId": "1136",
-      "name": "Shadow Ripper",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1136.jpg",
-      "description": "Crits boost ASPD"
+      "itemId": "1135",
+      "name": "Sparkforged Dagger",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1135.png",
+      "description": "PATK +40, ASPD +35%, MSPD +7.5%\nChain lightning BA"
     },
     {
       "slot": 2,
-      "itemId": "1421",
-      "name": "Boots of Fortitude",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1421.jpg",
-      "description": "Reduces physical damage"
+      "itemId": "11210",
+      "name": "Mortal Punisher",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/11210.png",
+      "description": "PATK +100, Lifesteal +20%, ASPD +20%\nLowers Health regen"
     },
     {
       "slot": 3,
       "itemId": "1133",
       "name": "Eternity Blade",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1133.jpg",
-      "description": "High crit damage"
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1133.png",
+      "description": "PATK +120, Crit Rate +20%\nHigh crit damage"
     },
     {
       "slot": 4,
-      "itemId": "1132",
-      "name": "Bloodweeper",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1132.jpg",
-      "description": "Physical Lifesteal"
+      "itemId": "1155",
+      "name": "Daybreaker's Virtue",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1155.png",
+      "description": "PATK +75, ASPD +30%, Crit Rate +15%\nGreat for marksmen"
     },
     {
       "slot": 5,
-      "itemId": "1155",
-      "name": "Daybreaker's Virtue",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1155.jpg",
-      "description": "Great for marksmen"
+      "itemId": "1126",
+      "name": "Doomsday",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1126.png",
+      "description": "PATK +40, ASPD +20%, HP +500, Lifesteal +20%\nBoosts BA damage"
     },
     {
       "slot": 6,
-      "itemId": "1338",
-      "name": "Cuirass of Savagery",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1338.jpg",
-      "description": "Offense & defense"
+      "itemId": "1138",
+      "name": "Overlord's Might",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1138.png",
+      "description": "PATK +150, CDR +5%\nHigh-damage attack"
+    }
+  ],
+  "buildZh": [
+    {
+      "slot": 1,
+      "itemId": "1135",
+      "name": "閃電匕首",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1135.png",
+      "description": "+40點攻擊+35%攻速+7.5%移速\n普攻附帶閃電"
+    },
+    {
+      "slot": 2,
+      "itemId": "11210",
+      "name": "制裁之刃",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/11210.png",
+      "description": "+100點攻擊+20%吸血+20%攻速\n減少敵人回血"
+    },
+    {
+      "slot": 3,
+      "itemId": "1133",
+      "name": "無盡戰刃",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1133.png",
+      "description": "+120點攻擊+20%暴擊\n高額暴擊傷害"
+    },
+    {
+      "slot": 4,
+      "itemId": "1155",
+      "name": "仁者破曉",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1155.png",
+      "description": "+75點攻擊+30%攻速+15%暴擊\n射手神裝"
+    },
+    {
+      "slot": 5,
+      "itemId": "1126",
+      "name": "末世",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1126.png",
+      "description": "+40點攻擊+20%攻速+500點生命值+20%吸血\n普攻額外傷害"
+    },
+    {
+      "slot": 6,
+      "itemId": "1138",
+      "name": "強者破軍",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1138.png",
+      "description": "+150點攻擊+5%減冷卻時間\n高額攻擊"
+    }
+  ],
+  "builds": [
+    {
+      "id": "camp-0",
+      "label": "Preset",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1135",
+          "name": "Sparkforged Dagger",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1135.png",
+          "description": "PATK +40, ASPD +35%, MSPD +7.5%\nChain lightning BA"
+        },
+        {
+          "slot": 2,
+          "itemId": "11210",
+          "name": "Mortal Punisher",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/11210.png",
+          "description": "PATK +100, Lifesteal +20%, ASPD +20%\nLowers Health regen"
+        },
+        {
+          "slot": 3,
+          "itemId": "1133",
+          "name": "Eternity Blade",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1133.png",
+          "description": "PATK +120, Crit Rate +20%\nHigh crit damage"
+        },
+        {
+          "slot": 4,
+          "itemId": "1155",
+          "name": "Daybreaker's Virtue",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1155.png",
+          "description": "PATK +75, ASPD +30%, Crit Rate +15%\nGreat for marksmen"
+        },
+        {
+          "slot": 5,
+          "itemId": "1126",
+          "name": "Doomsday",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1126.png",
+          "description": "PATK +40, ASPD +20%, HP +500, Lifesteal +20%\nBoosts BA damage"
+        },
+        {
+          "slot": 6,
+          "itemId": "1138",
+          "name": "Overlord's Might",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1138.png",
+          "description": "PATK +150, CDR +5%\nHigh-damage attack"
+        }
+      ]
+    },
+    {
+      "id": "camp-1",
+      "label": "TOP SABAH",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1126",
+          "name": "Doomsday",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1126.png",
+          "description": "PATK +40, ASPD +20%, HP +500, Lifesteal +20%\nBoosts BA damage"
+        },
+        {
+          "slot": 2,
+          "itemId": "1133",
+          "name": "Eternity Blade",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1133.png",
+          "description": "PATK +120, Crit Rate +20%\nHigh crit damage"
+        },
+        {
+          "slot": 3,
+          "itemId": "1155",
+          "name": "Daybreaker's Virtue",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1155.png",
+          "description": "PATK +75, ASPD +30%, Crit Rate +15%\nGreat for marksmen"
+        },
+        {
+          "slot": 4,
+          "itemId": "1138",
+          "name": "Overlord's Might",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1138.png",
+          "description": "PATK +150, CDR +5%\nHigh-damage attack"
+        },
+        {
+          "slot": 5,
+          "itemId": "1337",
+          "name": "Sage's Sanctuary",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
+        },
+        {
+          "slot": 6,
+          "itemId": "1242",
+          "name": "Enigma - Moon Goddess",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1242.png",
+          "description": "MATK +160, CDR +7.5%, Magical Lifesteal +12%\nTemp. invincibility"
+        }
+      ]
+    },
+    {
+      "id": "camp-2",
+      "label": "Arsenais",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1126",
+          "name": "Doomsday",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1126.png",
+          "description": "PATK +40, ASPD +20%, HP +500, Lifesteal +20%\nBoosts BA damage"
+        },
+        {
+          "slot": 2,
+          "itemId": "1128",
+          "name": "Deepfrost Siege",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1128.png",
+          "description": "PATK +70, ASPD +25%, HP +750\nBAs slow"
+        },
+        {
+          "slot": 3,
+          "itemId": "1338",
+          "name": "Cuirass of Savagery",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1338.png",
+          "description": "PATK +35, PDEF +210, HP +900\nOffense & defense"
+        },
+        {
+          "slot": 4,
+          "itemId": "1138",
+          "name": "Overlord's Might",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1138.png",
+          "description": "PATK +150, CDR +5%\nHigh-damage attack"
+        },
+        {
+          "slot": 5,
+          "itemId": "1337",
+          "name": "Sage's Sanctuary",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
+        },
+        {
+          "slot": 6,
+          "itemId": "1127",
+          "name": "Destiny",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
+        }
+      ]
+    },
+    {
+      "id": "camp-3",
+      "label": "Mejores",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1133",
+          "name": "Eternity Blade",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1133.png",
+          "description": "PATK +120, Crit Rate +20%\nHigh crit damage"
+        },
+        {
+          "slot": 2,
+          "itemId": "1128",
+          "name": "Deepfrost Siege",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1128.png",
+          "description": "PATK +70, ASPD +25%, HP +750\nBAs slow"
+        },
+        {
+          "slot": 3,
+          "itemId": "1155",
+          "name": "Daybreaker's Virtue",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1155.png",
+          "description": "PATK +75, ASPD +30%, Crit Rate +15%\nGreat for marksmen"
+        },
+        {
+          "slot": 4,
+          "itemId": "1337",
+          "name": "Sage's Sanctuary",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
+        },
+        {
+          "slot": 5,
+          "itemId": "1127",
+          "name": "Destiny",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
+        },
+        {
+          "slot": 6,
+          "itemId": "11210",
+          "name": "Mortal Punisher",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/11210.png",
+          "description": "PATK +100, Lifesteal +20%, ASPD +20%\nLowers Health regen"
+        }
+      ]
+    }
+  ],
+  "buildsZh": [
+    {
+      "id": "camp-0",
+      "label": "Preset",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1135",
+          "name": "閃電匕首",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1135.png",
+          "description": "+40點攻擊+35%攻速+7.5%移速\n普攻附帶閃電"
+        },
+        {
+          "slot": 2,
+          "itemId": "11210",
+          "name": "制裁之刃",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/11210.png",
+          "description": "+100點攻擊+20%吸血+20%攻速\n減少敵人回血"
+        },
+        {
+          "slot": 3,
+          "itemId": "1133",
+          "name": "無盡戰刃",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1133.png",
+          "description": "+120點攻擊+20%暴擊\n高額暴擊傷害"
+        },
+        {
+          "slot": 4,
+          "itemId": "1155",
+          "name": "仁者破曉",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1155.png",
+          "description": "+75點攻擊+30%攻速+15%暴擊\n射手神裝"
+        },
+        {
+          "slot": 5,
+          "itemId": "1126",
+          "name": "末世",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1126.png",
+          "description": "+40點攻擊+20%攻速+500點生命值+20%吸血\n普攻額外傷害"
+        },
+        {
+          "slot": 6,
+          "itemId": "1138",
+          "name": "強者破軍",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1138.png",
+          "description": "+150點攻擊+5%減冷卻時間\n高額攻擊"
+        }
+      ]
+    },
+    {
+      "id": "camp-1",
+      "label": "TOP SABAH",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1126",
+          "name": "末世",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1126.png",
+          "description": "+40點攻擊+20%攻速+500點生命值+20%吸血\n普攻額外傷害"
+        },
+        {
+          "slot": 2,
+          "itemId": "1133",
+          "name": "無盡戰刃",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1133.png",
+          "description": "+120點攻擊+20%暴擊\n高額暴擊傷害"
+        },
+        {
+          "slot": 3,
+          "itemId": "1155",
+          "name": "仁者破曉",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1155.png",
+          "description": "+75點攻擊+30%攻速+15%暴擊\n射手神裝"
+        },
+        {
+          "slot": 4,
+          "itemId": "1138",
+          "name": "強者破軍",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1138.png",
+          "description": "+150點攻擊+5%減冷卻時間\n高額攻擊"
+        },
+        {
+          "slot": 5,
+          "itemId": "1337",
+          "name": "賢者的庇護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+        },
+        {
+          "slot": 6,
+          "itemId": "1242",
+          "name": "難知・月神",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1242.png",
+          "description": "+160點法攻 +7.5%減冷卻時間\n+12%法術吸血暫時無敵"
+        }
+      ]
+    },
+    {
+      "id": "camp-2",
+      "label": "Arsenais",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1126",
+          "name": "末世",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1126.png",
+          "description": "+40點攻擊+20%攻速+500點生命值+20%吸血\n普攻額外傷害"
+        },
+        {
+          "slot": 2,
+          "itemId": "1128",
+          "name": "寒霜襲侵",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1128.png",
+          "description": "+70點攻擊+25%攻速+750點生命值\n普攻減移速"
+        },
+        {
+          "slot": 3,
+          "itemId": "1338",
+          "name": "暴烈之甲",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1338.png",
+          "description": "+35點攻擊+210點物防+900點生命值\n能抗能打"
+        },
+        {
+          "slot": 4,
+          "itemId": "1138",
+          "name": "強者破軍",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1138.png",
+          "description": "+150點攻擊+5%減冷卻時間\n高額攻擊"
+        },
+        {
+          "slot": 5,
+          "itemId": "1337",
+          "name": "賢者的庇護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+        },
+        {
+          "slot": 6,
+          "itemId": "1127",
+          "name": "名刀・司命",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "+75點攻擊+15%攻速+500點生命值\n保命"
+        }
+      ]
+    },
+    {
+      "id": "camp-3",
+      "label": "Mejores",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1133",
+          "name": "無盡戰刃",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1133.png",
+          "description": "+120點攻擊+20%暴擊\n高額暴擊傷害"
+        },
+        {
+          "slot": 2,
+          "itemId": "1128",
+          "name": "寒霜襲侵",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1128.png",
+          "description": "+70點攻擊+25%攻速+750點生命值\n普攻減移速"
+        },
+        {
+          "slot": 3,
+          "itemId": "1155",
+          "name": "仁者破曉",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1155.png",
+          "description": "+75點攻擊+30%攻速+15%暴擊\n射手神裝"
+        },
+        {
+          "slot": 4,
+          "itemId": "1337",
+          "name": "賢者的庇護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+        },
+        {
+          "slot": 5,
+          "itemId": "1127",
+          "name": "名刀・司命",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "+75點攻擊+15%攻速+500點生命值\n保命"
+        },
+        {
+          "slot": 6,
+          "itemId": "11210",
+          "name": "制裁之刃",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/11210.png",
+          "description": "+100點攻擊+20%吸血+20%攻速\n減少敵人回血"
+        }
+      ]
     }
   ],
   "arcana": [
-    "Cataclysm"
+    "Lvl 5: Calamity",
+    "Lvl 5: Reaver",
+    "Lvl 5: Hunt"
+  ],
+  "arcanaZh": [
+    "5級：禍源",
+    "5級：奪萃",
+    "5級：狩獵"
   ],
   "spells": [
-    "Flash"
+    "Frenzy"
+  ],
+  "spellsZh": [
+    "狂暴"
   ],
   "counters": [
     "Diaochan",
@@ -106,536 +590,173 @@
     "Ata"
   ],
   "tips": [
-    "Luara is a Medium Marksman (Farm Lane) on Honor of Kings Global. Camp HOK ranks them Tier S with 53.0% win rate and 1.6% pick rate as of 2026-06-05.",
-    "Best build path: Shadow Ripper → Boots of Fortitude → Eternity Blade → Bloodweeper → Daybreaker's Virtue → Cuirass of Savagery.",
-    "Run Cataclysm for stats that match Luara's Marksman kit. Take Flash — swap to Purify against heavy CC or Smite when jungling.",
-    "Standard trade: Deadly Fang → Furtive Attack → Blazing Glare → weave basic attacks. Weave basic attacks between skill casts for passive value.",
-    "Laning: Last-hit safely until first core item. Ping jungler for river vision; never face-check brush without minion cover.",
-    "Teamfight: Position behind frontline; attack closest safe target. Join fight only after enemy dive cooldowns are used.",
-    "Luara excels into Diaochan, Mulan, Lam. Avoid blind picking into Lapulapu, Ata without team peel.",
-    "Luara is a Tier S staple in high-elo (Diamond+) on the international server — worth mastering for climb. Pick rate 1.6% — frequently seen in ranked; learn the matchup even if you do not main Luara. Camp data shows above-average win rate — prioritize when not hard-countered in draft."
+    "Luara (Marksman): Tier S — 52.66% WR (Camp HOK).",
+    "Lane: Farm Lane.",
+    "Build: Sparkforged Dagger, Mortal Punisher, Eternity Blade."
+  ],
+  "tipsZh": [
+    "盧雅那（發育路）：梯度 S，勝率 52.66%（Camp HOK）。",
+    "出裝：閃電匕首、制裁之刃、無盡戰刃."
   ],
   "patchHistory": [
     {
-      "version": "Live meta",
-      "change": "Camp HOK — WR 53.0%, pick 1.6%, ban 0.2%, tier S."
+      "seasonId": "14",
+      "seasonName": "S14",
+      "versionName": "2026/03/11",
+      "publishedAt": "2026-03-11T03:17:26Z",
+      "isCurrent": false,
+      "tag": "Stat Buffs",
+      "change": "Reduced Mana consumption and adjusted skill damage.",
+      "detail": "",
+      "version": "S14"
     },
     {
-      "version": "Matchups",
-      "change": "Strong into Diaochan, Mulan, Lam · Weak into Lapulapu, Ata."
+      "seasonId": "12",
+      "seasonName": "S12",
+      "versionName": "20251030",
+      "publishedAt": "2025-10-30T01:00:00Z",
+      "isCurrent": false,
+      "tag": "Stat Buffs",
+      "change": "Increased Skill Damage",
+      "detail": "",
+      "version": "S12"
     },
     {
-      "version": "High rank",
-      "change": "Luara is a Tier S staple in high-elo (Diamond+) on the international server — worth mastering for climb. Pick rate 1.6% — frequently seen in ranked; learn the matchup even if you do not main Luara. Camp data shows above-average win rate — prioritize when not hard-countered in draft."
+      "seasonId": "11",
+      "seasonName": "S11",
+      "versionName": "20250624",
+      "publishedAt": "2025-06-24T02:07:52Z",
+      "isCurrent": false,
+      "tag": "Stat Nerfs",
+      "change": "Skill Cooldown Increased",
+      "detail": "",
+      "version": "S11"
+    },
+    {
+      "seasonId": "10",
+      "seasonName": "S10",
+      "versionName": "20250501",
+      "publishedAt": "2025-05-01T02:00:00Z",
+      "isCurrent": false,
+      "tag": "Stat Changes",
+      "change": "Base stats changed",
+      "detail": "",
+      "version": "S10"
+    },
+    {
+      "seasonId": "8",
+      "seasonName": "S8",
+      "versionName": "20250109",
+      "publishedAt": "2025-01-09T02:33:14Z",
+      "isCurrent": false,
+      "tag": "Mechanics Upgrade",
+      "change": "Mechanics Upgrade",
+      "detail": "Luara's passive made her overly reliant on Critical Rate equipment. We wanted to give her a playstyle that utilizes attack effects, so we adjusted the Critical Rate and attack effect aspects of her skillset. Also, since Luara gained serpent blades whenever she performs kills or assists, her performance was very dependent on the match situation. We hope that these changes will give her more consistency. Finally, we have also improved her playability and the display of some mechanics.",
+      "version": "S8"
+    }
+  ],
+  "patchHistoryZh": [
+    {
+      "seasonId": "14",
+      "seasonName": "S14",
+      "versionName": "2026/03/11",
+      "publishedAt": "2026-03-11T03:17:26Z",
+      "isCurrent": false,
+      "tag": "數值增強",
+      "change": "減少法力消耗，調整技能傷害",
+      "detail": "",
+      "version": "S14"
+    },
+    {
+      "seasonId": "12",
+      "seasonName": "S12",
+      "versionName": "20251030",
+      "publishedAt": "2025-10-30T01:00:00Z",
+      "isCurrent": false,
+      "tag": "數值增強",
+      "change": "提升技能傷害",
+      "detail": "",
+      "version": "S12"
+    },
+    {
+      "seasonId": "11",
+      "seasonName": "S11",
+      "versionName": "20250624",
+      "publishedAt": "2025-06-24T02:07:52Z",
+      "isCurrent": false,
+      "tag": "數值削弱",
+      "change": "技能冷卻時間削弱",
+      "detail": "",
+      "version": "S11"
+    },
+    {
+      "seasonId": "10",
+      "seasonName": "S10",
+      "versionName": "20250501",
+      "publishedAt": "2025-05-01T02:00:00Z",
+      "isCurrent": false,
+      "tag": "數值調整",
+      "change": "基礎屬性調整",
+      "detail": "",
+      "version": "S10"
+    },
+    {
+      "seasonId": "8",
+      "seasonName": "S8",
+      "versionName": "20250109",
+      "publishedAt": "2025-01-09T02:33:14Z",
+      "isCurrent": false,
+      "tag": "機制升級",
+      "change": "機制升級",
+      "detail": "「盧雅那的被動機制使她對暴擊裝備過度依賴，我們希望未來她可以擁有一套攻擊特效流的玩法，因此調整了暴擊率和攻擊特效衰減比例。此外，盧雅那參與擊殺和助攻可以獲得環刃，這讓盧雅那在不同局勢的戰鬥中表現落差較大，我們希望她可以更加穩定。最後，本次升級還改善了她的機制顯示和操作手感。」",
+      "version": "S8"
     }
   ],
   "faqs": [
     {
       "id": "faq-good-season",
-      "question": "Is Luara good in the current meta?",
-      "answer": "Luara is Tier S Marksman with 53.0% win rate, 1.6% pick rate, and 0.2% ban rate on Honor of Kings Global (Camp HOK, 2026-06-05). Strong meta pick for ranked."
+      "question": "Is Luara good in current season?",
+      "answer": "Luara is Tier S Marksman with 52.66% win rate, 1.55% pick rate, and 0.19% ban rate (Camp HOK international)."
     },
     {
       "id": "faq-best-build",
       "question": "What is the best Luara build?",
-      "answer": "Core item path: Shadow Ripper, Boots of Fortitude, Eternity Blade, Bloodweeper, Daybreaker's Virtue, Cuirass of Savagery. Run Cataclysm arcana with Flash. Switch to alternate build presets on this page for jungle, clash, or late-game setups."
+      "answer": "Recommended: Sparkforged Dagger, Mortal Punisher, Eternity Blade, Daybreaker's Virtue, Doomsday, Overlord's Might."
     },
     {
       "id": "faq-counter",
       "question": "How to counter Luara?",
-      "answer": "Pick Lapulapu, Ata into Luara. Deny Farm Lane resources early and force fights before Luara completes core items. Luara struggles when the enemy can dive and burst them."
+      "answer": "Pick Lapulapu, Ata. Strong into Diaochan, Mulan, Lam."
+    }
+  ],
+  "faqsZh": [
+    {
+      "id": "faq-good-season",
+      "question": "盧雅那 這版本適合上分嗎？",
+      "answer": "盧雅那 為 S 梯度，勝率 52.66%、選取 1.55%、禁用 0.19%（Camp HOK 國際服）。"
     },
     {
-      "id": "faq-strong-into",
-      "question": "Who does Luara counter?",
-      "answer": "Luara is strong into Diaochan, Mulan, Lam according to HoKStats matchup data and role matchups on the global server. Draft Luara when the enemy relies on these heroes in the Farm Lane lane."
+      "id": "faq-best-build",
+      "question": "盧雅那 出裝怎麼搭配？",
+      "answer": "推薦：閃電匕首、制裁之刃、無盡戰刃、仁者破曉、末世、強者破軍."
     },
     {
-      "id": "faq-high-rank",
-      "question": "Is Luara good in high rank / Diamond+?",
-      "answer": "Luara is a Tier S staple in high-elo (Diamond+) on the international server — worth mastering for climb. Pick rate 1.6% — frequently seen in ranked; learn the matchup even if you do not main Luara. Camp data shows above-average win rate — prioritize when not hard-countered in draft."
-    },
-    {
-      "id": "faq-lane",
-      "question": "What lane should Luara play?",
-      "answer": "Luara is tagged Farm Lane in Camp export (Marksman). Last-hit safely until first core item. Ping jungler for river vision; never face-check brush without minion cover."
-    },
-    {
-      "id": "faq-arcana",
-      "question": "Best arcana and spells for Luara?",
-      "answer": "Recommended: Cataclysm arcana. Battle spell: Flash. Adjust Purify/Execute based on enemy dive and jungle need."
-    },
-    {
-      "id": "faq-vs-peer",
-      "question": "Luara or Hou Yi — which is better?",
-      "answer": "Luara vs Hou Yi (Marksman, Tier S+): Hou Yi is 2.9% pick / 49.3% WR. Luara has +3.7% WR vs Hou Yi in Camp data. Choose Luara when you need Farm Lane identity; choose Hou Yi for Farm Lane comfort."
-    },
-    {
-      "id": "faq-ban",
-      "question": "Should I ban Luara?",
-      "answer": "Optional ban when enemy spams Marksman; 1.6% pick rate but only 0.2% ban rate."
+      "id": "faq-counter",
+      "question": "怎麼克制 盧雅那？",
+      "answer": "可選 Lapulapu、Ata。盧雅那 克制 Diaochan、Mulan、Lam。"
     }
   ],
   "metaAnalysis": [
-    "Luara — 53.0% WR, 1.6% pick, 0.2% ban (Camp HOK 2026-06-05).",
-    "Tier S Marksman · Farm Lane · difficulty Medium.",
-    "Luara is a Tier S staple in high-elo (Diamond+) on the international server — worth mastering for climb. Pick rate 1.6% — frequently seen in ranked; learn the matchup even if you do not main Luara. Camp data shows above-average win rate — prioritize when not hard-countered in draft.",
-    "Matchups: strong into Diaochan, Mulan, Lam; weak into Lapulapu, Ata.",
-    "Luara vs Hou Yi (Marksman, Tier S+): Hou Yi is 2.9% pick / 49.3% WR. Luara has +3.7% WR vs Hou Yi in Camp data. Choose Luara when you need Farm Lane identity; choose Hou Yi for Farm Lane comfort.",
-    "Luara vs Marco Polo (Marksman, Tier S+): Marco Polo is 2.1% pick / 50.1% WR. Luara has +2.9% WR vs Marco Polo in Camp data. Choose Luara when you need Farm Lane identity; choose Marco Polo for Farm Lane comfort.",
-    "Draft tip: first-pick or ban priority in ranked."
+    "Luara win rate 52.66% (Camp HOK, 2026-06-07).",
+    "Pick rate 1.55%.",
+    "Ban rate 0.19%.",
+    "Counters: Diaochan, Mulan, Lam. Weak into: Lapulapu, Ata."
   ],
-  "builds": [
-    {
-      "id": "recommended",
-      "label": "Recommended",
-      "position": null,
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1136",
-          "name": "Shadow Ripper",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1136.jpg",
-          "description": "Crits boost ASPD"
-        },
-        {
-          "slot": 2,
-          "itemId": "1421",
-          "name": "Boots of Fortitude",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1421.jpg",
-          "description": "Reduces physical damage"
-        },
-        {
-          "slot": 3,
-          "itemId": "1133",
-          "name": "Eternity Blade",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1133.jpg",
-          "description": "High crit damage"
-        },
-        {
-          "slot": 4,
-          "itemId": "1132",
-          "name": "Bloodweeper",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1132.jpg",
-          "description": "Physical Lifesteal"
-        },
-        {
-          "slot": 5,
-          "itemId": "1155",
-          "name": "Daybreaker's Virtue",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1155.jpg",
-          "description": "Great for marksmen"
-        },
-        {
-          "slot": 6,
-          "itemId": "1338",
-          "name": "Cuirass of Savagery",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1338.jpg",
-          "description": "Offense & defense"
-        }
-      ]
-    },
-    {
-      "id": "top-sabah",
-      "label": "TOP SABAH",
-      "position": "Position 4",
-      "lane": "Clash Lane",
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1425",
-          "name": "Boots of Dexterity",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1425.jpg",
-          "description": "Boosts ASPD"
-        },
-        {
-          "slot": 2,
-          "itemId": "1136",
-          "name": "Shadow Ripper",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1136.jpg",
-          "description": "Crits boost ASPD"
-        },
-        {
-          "slot": 3,
-          "itemId": "1126",
-          "name": "Doomsday",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1126.jpg",
-          "description": "Boosts BA damage"
-        },
-        {
-          "slot": 4,
-          "itemId": "1133",
-          "name": "Eternity Blade",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1133.jpg",
-          "description": "High crit damage"
-        },
-        {
-          "slot": 5,
-          "itemId": "1155",
-          "name": "Daybreaker's Virtue",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1155.jpg",
-          "description": "Great for marksmen"
-        },
-        {
-          "slot": 6,
-          "itemId": "1138",
-          "name": "Overlord's Might",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1138.jpg",
-          "description": "High-damage attack"
-        }
-      ]
-    },
-    {
-      "id": "farm-lane-2",
-      "label": "Farm Lane 2",
-      "position": "Position 4",
-      "lane": "Farm Lane",
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1421",
-          "name": "Boots of Fortitude",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1421.jpg",
-          "description": "Reduces physical damage"
-        },
-        {
-          "slot": 2,
-          "itemId": "1159",
-          "name": "Tempest",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1159.jpg",
-          "description": "Stacks Attack Speed & Movement Speed"
-        },
-        {
-          "slot": 3,
-          "itemId": "1135",
-          "name": "Sparkforged Dagger",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1135.jpg",
-          "description": "Chain lightning BA"
-        },
-        {
-          "slot": 4,
-          "itemId": "1126",
-          "name": "Doomsday",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1126.jpg",
-          "description": "Boosts BA damage"
-        },
-        {
-          "slot": 5,
-          "itemId": "1128",
-          "name": "Deepfrost Siege",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1128.jpg",
-          "description": "Slows on hit"
-        },
-        {
-          "slot": 6,
-          "itemId": "1338",
-          "name": "Cuirass of Savagery",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1338.jpg",
-          "description": "Offense & defense"
-        }
-      ]
-    },
-    {
-      "id": "arsenais",
-      "label": "Arsenais",
-      "position": "Position 4",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1425",
-          "name": "Boots of Dexterity",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1425.jpg",
-          "description": "Boosts ASPD"
-        },
-        {
-          "slot": 2,
-          "itemId": "1135",
-          "name": "Sparkforged Dagger",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1135.jpg",
-          "description": "Chain lightning BA"
-        },
-        {
-          "slot": 3,
-          "itemId": "1126",
-          "name": "Doomsday",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1126.jpg",
-          "description": "Boosts BA damage"
-        },
-        {
-          "slot": 4,
-          "itemId": "1128",
-          "name": "Deepfrost Siege",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1128.jpg",
-          "description": "Slows on hit"
-        },
-        {
-          "slot": 5,
-          "itemId": "1338",
-          "name": "Cuirass of Savagery",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1338.jpg",
-          "description": "Offense & defense"
-        },
-        {
-          "slot": 6,
-          "itemId": "1138",
-          "name": "Overlord's Might",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1138.jpg",
-          "description": "High-damage attack"
-        }
-      ]
-    },
-    {
-      "id": "mejores",
-      "label": "Mejores",
-      "position": "Position 4",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1425",
-          "name": "Boots of Dexterity",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1425.jpg",
-          "description": "Boosts ASPD"
-        },
-        {
-          "slot": 2,
-          "itemId": "1136",
-          "name": "Shadow Ripper",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1136.jpg",
-          "description": "Crits boost ASPD"
-        },
-        {
-          "slot": 3,
-          "itemId": "1126",
-          "name": "Doomsday",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1126.jpg",
-          "description": "Boosts BA damage"
-        },
-        {
-          "slot": 4,
-          "itemId": "1133",
-          "name": "Eternity Blade",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1133.jpg",
-          "description": "High crit damage"
-        },
-        {
-          "slot": 5,
-          "itemId": "1128",
-          "name": "Deepfrost Siege",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1128.jpg",
-          "description": "Slows on hit"
-        },
-        {
-          "slot": 6,
-          "itemId": "1155",
-          "name": "Daybreaker's Virtue",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1155.jpg",
-          "description": "Great for marksmen"
-        }
-      ]
-    },
-    {
-      "id": "sustainability",
-      "label": "Sustainability",
-      "position": "Position 4",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1425",
-          "name": "Boots of Dexterity",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1425.jpg",
-          "description": "Boosts ASPD"
-        },
-        {
-          "slot": 2,
-          "itemId": "1114",
-          "name": "Vampiric Scythe",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1114.jpg",
-          "description": "Physical Lifesteal"
-        },
-        {
-          "slot": 3,
-          "itemId": "1136",
-          "name": "Shadow Ripper",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1136.jpg",
-          "description": "Crits boost ASPD"
-        },
-        {
-          "slot": 4,
-          "itemId": "1133",
-          "name": "Eternity Blade",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1133.jpg",
-          "description": "High crit damage"
-        },
-        {
-          "slot": 5,
-          "itemId": "1328",
-          "name": "Blood Rage",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1328.jpg",
-          "description": "Grants temporary shield"
-        },
-        {
-          "slot": 6,
-          "itemId": "1155",
-          "name": "Daybreaker's Virtue",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1155.jpg",
-          "description": "Great for marksmen"
-        }
-      ]
-    },
-    {
-      "id": "jogadorgg",
-      "label": "JOGADOR_GG",
-      "position": "Position 4",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1425",
-          "name": "Boots of Dexterity",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1425.jpg",
-          "description": "Boosts ASPD"
-        },
-        {
-          "slot": 2,
-          "itemId": "1126",
-          "name": "Doomsday",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1126.jpg",
-          "description": "Boosts BA damage"
-        },
-        {
-          "slot": 3,
-          "itemId": "1136",
-          "name": "Shadow Ripper",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1136.jpg",
-          "description": "Crits boost ASPD"
-        },
-        {
-          "slot": 4,
-          "itemId": "1134",
-          "name": "Master Sword",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1134.jpg",
-          "description": "Enhances BA"
-        },
-        {
-          "slot": 5,
-          "itemId": "1133",
-          "name": "Eternity Blade",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1133.jpg",
-          "description": "High crit damage"
-        },
-        {
-          "slot": 6,
-          "itemId": "1155",
-          "name": "Daybreaker's Virtue",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1155.jpg",
-          "description": "Great for marksmen"
-        }
-      ]
-    },
-    {
-      "id": "pedih",
-      "label": "Pedih",
-      "position": "Position 4",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1425",
-          "name": "Boots of Dexterity",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1425.jpg",
-          "description": "Boosts ASPD"
-        },
-        {
-          "slot": 2,
-          "itemId": "1136",
-          "name": "Shadow Ripper",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1136.jpg",
-          "description": "Crits boost ASPD"
-        },
-        {
-          "slot": 3,
-          "itemId": "1135",
-          "name": "Sparkforged Dagger",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1135.jpg",
-          "description": "Chain lightning BA"
-        },
-        {
-          "slot": 4,
-          "itemId": "1132",
-          "name": "Bloodweeper",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1132.jpg",
-          "description": "Physical Lifesteal"
-        },
-        {
-          "slot": 5,
-          "itemId": "1133",
-          "name": "Eternity Blade",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1133.jpg",
-          "description": "High crit damage"
-        },
-        {
-          "slot": 6,
-          "itemId": "1155",
-          "name": "Daybreaker's Virtue",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1155.jpg",
-          "description": "Great for marksmen"
-        }
-      ]
-    },
-    {
-      "id": "dao-imparable",
-      "label": "Daño imparable",
-      "position": "Position 4",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1425",
-          "name": "Boots of Dexterity",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1425.jpg",
-          "description": "Boosts ASPD"
-        },
-        {
-          "slot": 2,
-          "itemId": "11210",
-          "name": "Mortal Punisher",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/11210.jpg",
-          "description": "Lowers Health regen"
-        },
-        {
-          "slot": 3,
-          "itemId": "1136",
-          "name": "Shadow Ripper",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1136.jpg",
-          "description": "Crits boost ASPD"
-        },
-        {
-          "slot": 4,
-          "itemId": "1133",
-          "name": "Eternity Blade",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1133.jpg",
-          "description": "High crit damage"
-        },
-        {
-          "slot": 5,
-          "itemId": "1155",
-          "name": "Daybreaker's Virtue",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1155.jpg",
-          "description": "Great for marksmen"
-        },
-        {
-          "slot": 6,
-          "itemId": "1138",
-          "name": "Overlord's Might",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1138.jpg",
-          "description": "High-damage attack"
-        }
-      ]
-    }
+  "metaAnalysisZh": [
+    "盧雅那 勝率 52.66%（Camp HOK，2026-06-07）",
+    "選取率 1.55%",
+    "禁用率 0.19%",
+    "克制：Diaochan、Mulan、Lam；被克制：Lapulapu、Ata"
   ],
   "guide": {
     "overview": "Luara is a Medium Marksman (Farm Lane) on Honor of Kings Global. Camp HOK ranks them Tier S with 53.0% win rate and 1.6% pick rate as of 2026-06-05.",

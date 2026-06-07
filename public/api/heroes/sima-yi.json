@@ -2,48 +2,82 @@
   "id": "sima-yi",
   "slug": "sima-yi",
   "name": "Sima Yi",
+  "nameZh": "司馬懿",
   "role": "Assassin",
   "roles": "Assassin, Mage",
+  "rolesZh": "刺客, 法師",
   "lane": "Jungling",
+  "laneZh": "打野",
   "difficulty": "Medium",
   "tier": "B",
-  "winRate": 46.23,
-  "pickRate": 0.24,
+  "winRate": 46.22,
+  "pickRate": 0.25,
   "banRate": 0.02,
   "rank": 110,
   "avatar": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/sU3BsR6P.png",
   "avatarFallback": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/137/137.jpg",
+  "heroCover": "https://camp.honorofkings.com/social/game/src/image_hero_cover_1275*718/YP3ZnbPK.jpg",
   "tencentId": 137,
-  "dataSource": "Camp HOK + HoKStats.gg (intl)",
-  "dataUpdated": "2026-06-05",
+  "dataSource": "Camp HOK bilingual (primary)",
+  "dataUpdated": "2026-06-07",
   "skills": [
     {
       "slot": "passive",
       "name": "Quiet Whispers",
-      "description": "Gains vision of casters within a range of 2000.",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/137/13700.png",
-      "cooldown": null
+      "description": "Gains vision of casters within a range of 2000. Using this skill will enhance his Basic Attack and deal damage.",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/13700.png",
+      "cooldown": "1s"
     },
     {
       "slot": "skill1",
       "name": "Shadow Stings",
-      "description": "Controls an untargetable spirit, dealing damage upon contact with enemies. The main body gains crowd control immunity. When the duration ends, using another skill or a Basic Attack will cause the main body to teleport to the spirit's location.",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/137/13710.png",
-      "cooldown": null
+      "description": "Controls an untargetable spirit, dealing damage upon contact with enemies. The main body gains crowd control immunity.\nWhen the duration ends, using another skill or a Basic Attack will cause the main body to teleport to the spirit's location.",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/13710.png",
+      "cooldown": "9s"
     },
     {
       "slot": "skill2",
       "name": "Barren Lands",
-      "description": "Damages and silences enemies within a certain range. After a short delay, if Sima Yi is still within the skill's area, he recovers Energy. Passive: A portion of the magical damage taken is converted into Health.",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/137/13720.png",
-      "cooldown": null
+      "description": "Damages and silences enemies within a certain range.\nAfter a short delay, if Sima Yi is still within the skill's area, he recovers Energy.\nPassive: A portion of the magical damage taken is converted into Health.",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/13720.png",
+      "cooldown": "6s"
     },
     {
       "slot": "ultimate",
       "name": "Death Descends",
-      "description": "After a short delay, flies to the target location, dealing damage to enemies at the destination and lower damage to enemies in his path.",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/137/13730.png",
-      "cooldown": null
+      "description": "After a short delay, flies to the target location, dealing damage to enemies at the destination and reduced damage to enemies in his path.",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/13730.png",
+      "cooldown": "35s"
+    }
+  ],
+  "skillsZh": [
+    {
+      "slot": "passive",
+      "name": "靜默之語",
+      "description": "獲得2000範圍內技能施放者視野。施放技能可強化普攻，造成傷害",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/13700.png",
+      "cooldown": "1s"
+    },
+    {
+      "slot": "skill1",
+      "name": "幽影之咬",
+      "description": "控制無法鎖定為目標的靈體進行移動，接觸敵人時造成傷害。本體霸體。\n持續時間結束，使用其他技能或普攻，則本體會瞬移至靈體所在位置。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/13710.png",
+      "cooldown": "9s"
+    },
+    {
+      "slot": "skill2",
+      "name": "荒蕪之域",
+      "description": "對自身周圍一定範圍內的敵人造成傷害和沉默效果。\n短暫延遲後，若司馬懿還處於技能範圍內，會回復自身能量。\n被動：受到的法術傷害有一部分會轉化為生命值回復。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/13720.png",
+      "cooldown": "6s"
+    },
+    {
+      "slot": "ultimate",
+      "name": "死神降臨",
+      "description": "短暫延遲後飛至指定位置，對終點附近敵人造成傷害，對沿途敵人造成較低傷害。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/13730.png",
+      "cooldown": "35s"
     }
   ],
   "build": [
@@ -51,50 +85,500 @@
       "slot": 1,
       "itemId": "1531",
       "name": "Runeblade",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1531.jpg",
-      "description": "Monster kills boost MATK"
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1531.png",
+      "description": "MATK +130, CDR +10%, MSPD +5%\nMonster kills boost MATK"
     },
     {
       "slot": 2,
-      "itemId": "1423",
-      "name": "Boots of Tranquility",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1423.jpg",
-      "description": "Reduces Skill CD"
+      "itemId": "1424",
+      "name": "Boots of the Arcane",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1424.png",
+      "description": "MSPD +50, MP +400\nMagical Pierce"
     },
     {
       "slot": 3,
-      "itemId": "1240",
-      "name": "Insatiable Tome",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1240.jpg",
-      "description": "Magical Lifesteal"
+      "itemId": "1236",
+      "name": "Staves of Sorcery",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1236.png",
+      "description": "MATK +180, HP +600, MSPD +7.5%\nEnhances BAs"
     },
     {
       "slot": 4,
-      "itemId": "1236",
-      "name": "Staves of Sorcery",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1236.jpg",
-      "description": "Enhances BA"
+      "itemId": "1232",
+      "name": "Savant's Wrath",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1232.png",
+      "description": "MATK +210\nGreatly boosts MATK"
     },
     {
       "slot": 5,
-      "itemId": "1232",
-      "name": "Savant's Wrath",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1232.jpg",
-      "description": "Greatly boosts MATK"
+      "itemId": "1231",
+      "name": "Void Staff",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1231.png",
+      "description": "MATK +210, HP +500, CDR +5%\nAnti-tank"
     },
     {
       "slot": 6,
-      "itemId": "1244",
-      "name": "Breakthrough Robe",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1244.jpg",
-      "description": "Converts Health into M. Pierce"
+      "itemId": "1728",
+      "name": "Golden Blade",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1728.png",
+      "description": "MATK +150, ASPD +20%, MSPD +7.5%\nKeeps enhancing BA"
+    }
+  ],
+  "buildZh": [
+    {
+      "slot": 1,
+      "itemId": "1531",
+      "name": "符文大劍",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1531.png",
+      "description": "+130法攻+10%冷縮+5%移速\n打野怪加法強"
+    },
+    {
+      "slot": 2,
+      "itemId": "1424",
+      "name": "祕法之靴",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1424.png",
+      "description": "+50點移速+400點法力值\n法術穿透"
+    },
+    {
+      "slot": 3,
+      "itemId": "1236",
+      "name": "巫術法杖",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1236.png",
+      "description": "+180點法攻+600點生命值+7.5%移速……\n強化普攻"
+    },
+    {
+      "slot": 4,
+      "itemId": "1232",
+      "name": "博學者之怒",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1232.png",
+      "description": "+210點法術攻擊\n大幅提升法強"
+    },
+    {
+      "slot": 5,
+      "itemId": "1231",
+      "name": "虛無法杖",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1231.png",
+      "description": "+210點法攻+500點生命值+5%減冷卻時間\n打坦克用"
+    },
+    {
+      "slot": 6,
+      "itemId": "1728",
+      "name": "金色聖劍",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1728.png",
+      "description": "+150點法攻+20%攻速+7.5%移速\n持續強化普攻"
+    }
+  ],
+  "builds": [
+    {
+      "id": "camp-0",
+      "label": "懿懿",
+      "lane": "Jungle",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1531",
+          "name": "Runeblade",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1531.png",
+          "description": "MATK +130, CDR +10%, MSPD +5%\nMonster kills boost MATK"
+        },
+        {
+          "slot": 2,
+          "itemId": "1424",
+          "name": "Boots of the Arcane",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1424.png",
+          "description": "MSPD +50, MP +400\nMagical Pierce"
+        },
+        {
+          "slot": 3,
+          "itemId": "1236",
+          "name": "Staves of Sorcery",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1236.png",
+          "description": "MATK +180, HP +600, MSPD +7.5%\nEnhances BAs"
+        },
+        {
+          "slot": 4,
+          "itemId": "1232",
+          "name": "Savant's Wrath",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1232.png",
+          "description": "MATK +210\nGreatly boosts MATK"
+        },
+        {
+          "slot": 5,
+          "itemId": "1231",
+          "name": "Void Staff",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1231.png",
+          "description": "MATK +210, HP +500, CDR +5%\nAnti-tank"
+        },
+        {
+          "slot": 6,
+          "itemId": "1728",
+          "name": "Golden Blade",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1728.png",
+          "description": "MATK +150, ASPD +20%, MSPD +7.5%\nKeeps enhancing BA"
+        }
+      ]
+    },
+    {
+      "id": "camp-1",
+      "label": "红条欧美出装",
+      "lane": "Jungle",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1236",
+          "name": "Staves of Sorcery",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1236.png",
+          "description": "MATK +180, HP +600, MSPD +7.5%\nEnhances BAs"
+        },
+        {
+          "slot": 2,
+          "itemId": "1232",
+          "name": "Savant's Wrath",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1232.png",
+          "description": "MATK +210\nGreatly boosts MATK"
+        },
+        {
+          "slot": 3,
+          "itemId": "1531",
+          "name": "Runeblade",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1531.png",
+          "description": "MATK +130, CDR +10%, MSPD +5%\nMonster kills boost MATK"
+        },
+        {
+          "slot": 4,
+          "itemId": "1231",
+          "name": "Void Staff",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1231.png",
+          "description": "MATK +210, HP +500, CDR +5%\nAnti-tank"
+        },
+        {
+          "slot": 5,
+          "itemId": "1337",
+          "name": "Sage's Sanctuary",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
+        },
+        {
+          "slot": 6,
+          "itemId": "1127",
+          "name": "Destiny",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
+        }
+      ]
+    },
+    {
+      "id": "camp-2",
+      "label": "爆發+持续流",
+      "lane": "Jungle",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1424",
+          "name": "Boots of the Arcane",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1424.png",
+          "description": "MSPD +50, MP +400\nMagical Pierce"
+        },
+        {
+          "slot": 2,
+          "itemId": "1236",
+          "name": "Staves of Sorcery",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1236.png",
+          "description": "MATK +180, HP +600, MSPD +7.5%\nEnhances BAs"
+        },
+        {
+          "slot": 3,
+          "itemId": "1728",
+          "name": "Golden Blade",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1728.png",
+          "description": "MATK +150, ASPD +20%, MSPD +7.5%\nKeeps enhancing BA"
+        },
+        {
+          "slot": 4,
+          "itemId": "1231",
+          "name": "Void Staff",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1231.png",
+          "description": "MATK +210, HP +500, CDR +5%\nAnti-tank"
+        },
+        {
+          "slot": 5,
+          "itemId": "1531",
+          "name": "Runeblade",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1531.png",
+          "description": "MATK +130, CDR +10%, MSPD +5%\nMonster kills boost MATK"
+        },
+        {
+          "slot": 6,
+          "itemId": "1237",
+          "name": "Augur's Word",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1237.png",
+          "description": "MATK +140, MP +450, HP +900\nOffense & defense"
+        }
+      ]
+    },
+    {
+      "id": "camp-3",
+      "label": "AntiMagos",
+      "lane": "Jungle",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1244",
+          "name": "Breakthrough Robe",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1244.png",
+          "description": "MATK +120, HP +900\nConverts HP into Magical Pierce"
+        },
+        {
+          "slot": 2,
+          "itemId": "1231",
+          "name": "Void Staff",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1231.png",
+          "description": "MATK +210, HP +500, CDR +5%\nAnti-tank"
+        },
+        {
+          "slot": 3,
+          "itemId": "1232",
+          "name": "Savant's Wrath",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1232.png",
+          "description": "MATK +210\nGreatly boosts MATK"
+        },
+        {
+          "slot": 4,
+          "itemId": "1531",
+          "name": "Runeblade",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1531.png",
+          "description": "MATK +130, CDR +10%, MSPD +5%\nMonster kills boost MATK"
+        },
+        {
+          "slot": 5,
+          "itemId": "1337",
+          "name": "Sage's Sanctuary",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
+        },
+        {
+          "slot": 6,
+          "itemId": "1127",
+          "name": "Destiny",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
+        }
+      ]
+    }
+  ],
+  "buildsZh": [
+    {
+      "id": "camp-0",
+      "label": "懿懿",
+      "lane": "Jungle",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1531",
+          "name": "符文大劍",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1531.png",
+          "description": "+130法攻+10%冷縮+5%移速\n打野怪加法強"
+        },
+        {
+          "slot": 2,
+          "itemId": "1424",
+          "name": "祕法之靴",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1424.png",
+          "description": "+50點移速+400點法力值\n法術穿透"
+        },
+        {
+          "slot": 3,
+          "itemId": "1236",
+          "name": "巫術法杖",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1236.png",
+          "description": "+180點法攻+600點生命值+7.5%移速……\n強化普攻"
+        },
+        {
+          "slot": 4,
+          "itemId": "1232",
+          "name": "博學者之怒",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1232.png",
+          "description": "+210點法術攻擊\n大幅提升法強"
+        },
+        {
+          "slot": 5,
+          "itemId": "1231",
+          "name": "虛無法杖",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1231.png",
+          "description": "+210點法攻+500點生命值+5%減冷卻時間\n打坦克用"
+        },
+        {
+          "slot": 6,
+          "itemId": "1728",
+          "name": "金色聖劍",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1728.png",
+          "description": "+150點法攻+20%攻速+7.5%移速\n持續強化普攻"
+        }
+      ]
+    },
+    {
+      "id": "camp-1",
+      "label": "红条欧美出装",
+      "lane": "Jungle",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1236",
+          "name": "巫術法杖",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1236.png",
+          "description": "+180點法攻+600點生命值+7.5%移速……\n強化普攻"
+        },
+        {
+          "slot": 2,
+          "itemId": "1232",
+          "name": "博學者之怒",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1232.png",
+          "description": "+210點法術攻擊\n大幅提升法強"
+        },
+        {
+          "slot": 3,
+          "itemId": "1531",
+          "name": "符文大劍",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1531.png",
+          "description": "+130法攻+10%冷縮+5%移速\n打野怪加法強"
+        },
+        {
+          "slot": 4,
+          "itemId": "1231",
+          "name": "虛無法杖",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1231.png",
+          "description": "+210點法攻+500點生命值+5%減冷卻時間\n打坦克用"
+        },
+        {
+          "slot": 5,
+          "itemId": "1337",
+          "name": "賢者的庇護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+        },
+        {
+          "slot": 6,
+          "itemId": "1127",
+          "name": "名刀・司命",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "+75點攻擊+15%攻速+500點生命值\n保命"
+        }
+      ]
+    },
+    {
+      "id": "camp-2",
+      "label": "爆發+持续流",
+      "lane": "Jungle",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1424",
+          "name": "祕法之靴",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1424.png",
+          "description": "+50點移速+400點法力值\n法術穿透"
+        },
+        {
+          "slot": 2,
+          "itemId": "1236",
+          "name": "巫術法杖",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1236.png",
+          "description": "+180點法攻+600點生命值+7.5%移速……\n強化普攻"
+        },
+        {
+          "slot": 3,
+          "itemId": "1728",
+          "name": "金色聖劍",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1728.png",
+          "description": "+150點法攻+20%攻速+7.5%移速\n持續強化普攻"
+        },
+        {
+          "slot": 4,
+          "itemId": "1231",
+          "name": "虛無法杖",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1231.png",
+          "description": "+210點法攻+500點生命值+5%減冷卻時間\n打坦克用"
+        },
+        {
+          "slot": 5,
+          "itemId": "1531",
+          "name": "符文大劍",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1531.png",
+          "description": "+130法攻+10%冷縮+5%移速\n打野怪加法強"
+        },
+        {
+          "slot": 6,
+          "itemId": "1237",
+          "name": "時之預言",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1237.png",
+          "description": "+140點法攻+450法力值+900點生命值……\n攻防兼備"
+        }
+      ]
+    },
+    {
+      "id": "camp-3",
+      "label": "AntiMagos",
+      "lane": "Jungle",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1244",
+          "name": "破繭之衣",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1244.png",
+          "description": "+120點法攻+900點生命值\n生命值轉法穿"
+        },
+        {
+          "slot": 2,
+          "itemId": "1231",
+          "name": "虛無法杖",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1231.png",
+          "description": "+210點法攻+500點生命值+5%減冷卻時間\n打坦克用"
+        },
+        {
+          "slot": 3,
+          "itemId": "1232",
+          "name": "博學者之怒",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1232.png",
+          "description": "+210點法術攻擊\n大幅提升法強"
+        },
+        {
+          "slot": 4,
+          "itemId": "1531",
+          "name": "符文大劍",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1531.png",
+          "description": "+130法攻+10%冷縮+5%移速\n打野怪加法強"
+        },
+        {
+          "slot": 5,
+          "itemId": "1337",
+          "name": "賢者的庇護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+        },
+        {
+          "slot": 6,
+          "itemId": "1127",
+          "name": "名刀・司命",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "+75點攻擊+15%攻速+500點生命值\n保命"
+        }
+      ]
     }
   ],
   "arcana": [
-    "Fate"
+    "Lvl 5: Nightmare",
+    "Lvl 5: Fate",
+    "Lvl 5: Hunt"
+  ],
+  "arcanaZh": [
+    "5級：夢魘",
+    "5級：宿命",
+    "5級：狩獵"
   ],
   "spells": [
     "Smite"
+  ],
+  "spellsZh": [
+    "懲擊"
   ],
   "counters": [
     "Lu Bu",
@@ -107,436 +591,151 @@
     "Lady Zhen"
   ],
   "tips": [
-    "Sima Yi is a Medium Assassin (Jungling) on Honor of Kings Global. Camp HOK ranks them Tier B with 46.2% win rate and 0.2% pick rate as of 2026-06-05.",
-    "Best build path: Runeblade → Boots of Tranquility → Insatiable Tome → Staves of Sorcery → Savant's Wrath → Breakthrough Robe.",
-    "Run Fate for stats that match Sima Yi's Assassin kit. Take Smite — swap to Purify against heavy CC or Smite when jungling.",
-    "Standard trade: Shadow Stings → Barren Lands → Death Descends → weave basic attacks. Weave basic attacks between skill casts for passive value.",
-    "Laning: Clear to level four, then gank the lane with the least escape. Secure Tyrant when your bot or mid has crash wave.",
-    "Teamfight: Wait for CC from your team, then dive carry with full combo. Exit with reset or flash if focus fired.",
-    "Sima Yi excels into Lu Bu, Wuyan, Menki. Avoid blind picking into Alessio, Arli, Lady Zhen without team peel.",
-    "Sima Yi sits at Tier B globally (46.2% WR). In high rank, pick only into favorable matchups or when you have a dedicated pocket pick. Below 49% global WR — high-rank players often avoid unless compensating for team comp."
+    "Sima Yi (Assassin): Tier B — 46.22% WR (Camp HOK).",
+    "Lane: Jungling.",
+    "Build: Runeblade, Boots of the Arcane, Staves of Sorcery."
+  ],
+  "tipsZh": [
+    "司馬懿（打野）：梯度 B，勝率 46.22%（Camp HOK）。",
+    "出裝：符文大劍、祕法之靴、巫術法杖."
   ],
   "patchHistory": [
     {
-      "version": "Live meta",
-      "change": "Camp HOK — WR 46.2%, pick 0.2%, ban 0.0%, tier B."
+      "seasonId": "12",
+      "seasonName": "S12",
+      "versionName": "2025/11/27",
+      "publishedAt": "2025-11-27T01:00:00Z",
+      "isCurrent": false,
+      "tag": "Stat Changes",
+      "change": "Adjusted Skill Damage",
+      "detail": "",
+      "version": "S12"
     },
     {
-      "version": "Matchups",
-      "change": "Strong into Lu Bu, Wuyan, Menki · Weak into Alessio, Arli, Lady Zhen."
+      "seasonId": "10",
+      "seasonName": "S10",
+      "versionName": "20250612",
+      "publishedAt": "2025-06-12T02:00:00Z",
+      "isCurrent": false,
+      "tag": "Stat Nerfs",
+      "change": "Passive Effect Upgrade",
+      "detail": "",
+      "version": "S10"
     },
     {
-      "version": "High rank",
-      "change": "Sima Yi sits at Tier B globally (46.2% WR). In high rank, pick only into favorable matchups or when you have a dedicated pocket pick. Below 49% global WR — high-rank players often avoid unless compensating for team comp."
+      "seasonId": "10",
+      "seasonName": "S10",
+      "versionName": "20250529",
+      "publishedAt": "2025-05-29T01:48:14Z",
+      "isCurrent": false,
+      "tag": "Stat Nerfs",
+      "change": "Ultimate damage reduced",
+      "detail": "",
+      "version": "S10"
+    },
+    {
+      "seasonId": "9",
+      "seasonName": "S9",
+      "versionName": "20250320",
+      "publishedAt": "2025-03-20T01:53:54Z",
+      "isCurrent": false,
+      "tag": "Stat Changes",
+      "change": "Stat Changes",
+      "detail": "",
+      "version": "S9"
+    }
+  ],
+  "patchHistoryZh": [
+    {
+      "seasonId": "12",
+      "seasonName": "S12",
+      "versionName": "2025/11/27",
+      "publishedAt": "2025-11-27T01:00:00Z",
+      "isCurrent": false,
+      "tag": "數值調整",
+      "change": "調整技能傷害",
+      "detail": "",
+      "version": "S12"
+    },
+    {
+      "seasonId": "10",
+      "seasonName": "S10",
+      "versionName": "20250612",
+      "publishedAt": "2025-06-12T02:00:00Z",
+      "isCurrent": false,
+      "tag": "數值削弱",
+      "change": "綜合提升被動效果",
+      "detail": "",
+      "version": "S10"
+    },
+    {
+      "seasonId": "10",
+      "seasonName": "S10",
+      "versionName": "20250529",
+      "publishedAt": "2025-05-29T01:48:14Z",
+      "isCurrent": false,
+      "tag": "數值削弱",
+      "change": "降低3技能傷害",
+      "detail": "",
+      "version": "S10"
+    },
+    {
+      "seasonId": "9",
+      "seasonName": "S9",
+      "versionName": "20250320",
+      "publishedAt": "2025-03-20T01:53:54Z",
+      "isCurrent": false,
+      "tag": "數值調整",
+      "change": "數值調整",
+      "detail": "",
+      "version": "S9"
     }
   ],
   "faqs": [
     {
       "id": "faq-good-season",
-      "question": "Is Sima Yi good in the current meta?",
-      "answer": "Sima Yi is Tier B Assassin with 46.2% win rate, 0.2% pick rate, and 0.0% ban rate on Honor of Kings Global (Camp HOK, 2026-06-05). Niche — draft carefully."
+      "question": "Is Sima Yi good in current season?",
+      "answer": "Sima Yi is Tier B Assassin with 46.22% win rate, 0.25% pick rate, and 0.02% ban rate (Camp HOK international)."
     },
     {
       "id": "faq-best-build",
       "question": "What is the best Sima Yi build?",
-      "answer": "Core item path: Runeblade, Boots of Tranquility, Insatiable Tome, Staves of Sorcery, Savant's Wrath, Breakthrough Robe. Run Fate arcana with Smite. Switch to alternate build presets on this page for jungle, clash, or late-game setups."
+      "answer": "Recommended: Runeblade, Boots of the Arcane, Staves of Sorcery, Savant's Wrath, Void Staff, Golden Blade."
     },
     {
       "id": "faq-counter",
       "question": "How to counter Sima Yi?",
-      "answer": "Pick Alessio, Arli, Lady Zhen into Sima Yi. Deny Jungling resources early and force fights before Sima Yi completes core items. Sima Yi struggles when the enemy can peel and group them."
+      "answer": "Pick Alessio, Arli, Lady Zhen. Strong into Lu Bu, Wuyan, Menki."
+    }
+  ],
+  "faqsZh": [
+    {
+      "id": "faq-good-season",
+      "question": "司馬懿 這版本適合上分嗎？",
+      "answer": "司馬懿 為 B 梯度，勝率 46.22%、選取 0.25%、禁用 0.02%（Camp HOK 國際服）。"
     },
     {
-      "id": "faq-strong-into",
-      "question": "Who does Sima Yi counter?",
-      "answer": "Sima Yi is strong into Lu Bu, Wuyan, Menki according to HoKStats matchup data and role matchups on the global server. Draft Sima Yi when the enemy relies on these heroes in the Jungling lane."
+      "id": "faq-best-build",
+      "question": "司馬懿 出裝怎麼搭配？",
+      "answer": "推薦：符文大劍、祕法之靴、巫術法杖、博學者之怒、虛無法杖、金色聖劍."
     },
     {
-      "id": "faq-high-rank",
-      "question": "Is Sima Yi good in high rank / Diamond+?",
-      "answer": "Sima Yi sits at Tier B globally (46.2% WR). In high rank, pick only into favorable matchups or when you have a dedicated pocket pick. Below 49% global WR — high-rank players often avoid unless compensating for team comp."
-    },
-    {
-      "id": "faq-lane",
-      "question": "What lane should Sima Yi play?",
-      "answer": "Sima Yi is tagged Jungling in Camp export (Assassin, Mage). Clear to level four, then gank the lane with the least escape. Secure Tyrant when your bot or mid has crash wave."
-    },
-    {
-      "id": "faq-arcana",
-      "question": "Best arcana and spells for Sima Yi?",
-      "answer": "Recommended: Fate arcana. Battle spell: Smite. Adjust Purify/Execute based on enemy dive and jungle need."
-    },
-    {
-      "id": "faq-vs-peer",
-      "question": "Sima Yi or Wukong — which is better?",
-      "answer": "Sima Yi vs Wukong (Assassin, Tier S): Wukong is 1.3% pick / 49.7% WR. Wukong wins 3.5% more often globally. Choose Sima Yi when you need Jungling identity; choose Wukong for Jungling comfort."
-    },
-    {
-      "id": "faq-ban",
-      "question": "Should I ban Sima Yi?",
-      "answer": "Low priority ban (0.0%). Focus bans on higher-tier Assassin picks unless targeting a one-trick."
+      "id": "faq-counter",
+      "question": "怎麼克制 司馬懿？",
+      "answer": "可選 Alessio、Arli、Lady Zhen。司馬懿 克制 Lu Bu、Wuyan、Menki。"
     }
   ],
   "metaAnalysis": [
-    "Sima Yi — 46.2% WR, 0.2% pick, 0.0% ban (Camp HOK 2026-06-05).",
-    "Tier B Assassin · Jungling · difficulty Medium.",
-    "Sima Yi sits at Tier B globally (46.2% WR). In high rank, pick only into favorable matchups or when you have a dedicated pocket pick. Below 49% global WR — high-rank players often avoid unless compensating for team comp.",
-    "Matchups: strong into Lu Bu, Wuyan, Menki; weak into Alessio, Arli, Lady Zhen.",
-    "Sima Yi vs Wukong (Assassin, Tier S): Wukong is 1.3% pick / 49.7% WR. Wukong wins 3.5% more often globally. Choose Sima Yi when you need Jungling identity; choose Wukong for Jungling comfort.",
-    "Sima Yi vs Musashi (Assassin, Tier A): Musashi is 1.1% pick / 50.7% WR. Musashi wins 4.5% more often globally. Choose Sima Yi when you need Jungling identity; choose Musashi for Jungling comfort.",
-    "Draft tip: counter-pick or comfort pick when lane matchup is favorable."
+    "Sima Yi win rate 46.22% (Camp HOK, 2026-06-07).",
+    "Pick rate 0.25%.",
+    "Ban rate 0.02%.",
+    "Counters: Lu Bu, Wuyan, Menki. Weak into: Alessio, Arli, Lady Zhen."
   ],
-  "builds": [
-    {
-      "id": "recommended",
-      "label": "Recommended",
-      "position": null,
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1531",
-          "name": "Runeblade",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1531.jpg",
-          "description": "Monster kills boost MATK"
-        },
-        {
-          "slot": 2,
-          "itemId": "1423",
-          "name": "Boots of Tranquility",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1423.jpg",
-          "description": "Reduces Skill CD"
-        },
-        {
-          "slot": 3,
-          "itemId": "1240",
-          "name": "Insatiable Tome",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1240.jpg",
-          "description": "Magical Lifesteal"
-        },
-        {
-          "slot": 4,
-          "itemId": "1236",
-          "name": "Staves of Sorcery",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1236.jpg",
-          "description": "Enhances BA"
-        },
-        {
-          "slot": 5,
-          "itemId": "1232",
-          "name": "Savant's Wrath",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1232.jpg",
-          "description": "Greatly boosts MATK"
-        },
-        {
-          "slot": 6,
-          "itemId": "1244",
-          "name": "Breakthrough Robe",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1244.jpg",
-          "description": "Converts Health into M. Pierce"
-        }
-      ]
-    },
-    {
-      "id": "top",
-      "label": "Top",
-      "position": "Position 3",
-      "lane": "Clash Lane",
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1521",
-          "name": "Guerrilla Machete",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1521.jpg",
-          "description": "Monster kills boost MATK"
-        },
-        {
-          "slot": 2,
-          "itemId": "1425",
-          "name": "Boots of Dexterity",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1425.jpg",
-          "description": "Boosts ASPD"
-        },
-        {
-          "slot": 3,
-          "itemId": "1127",
-          "name": "Destiny",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1127.jpg",
-          "description": "Negates fatal damage"
-        },
-        {
-          "slot": 4,
-          "itemId": "1240",
-          "name": "Insatiable Tome",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1240.jpg",
-          "description": "Magical Lifesteal"
-        },
-        {
-          "slot": 5,
-          "itemId": "1244",
-          "name": "Breakthrough Robe",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1244.jpg",
-          "description": "Converts Health into M. Pierce"
-        },
-        {
-          "slot": 6,
-          "itemId": "1531",
-          "name": "Runeblade",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1531.jpg",
-          "description": "Monster kills boost MATK"
-        }
-      ]
-    },
-    {
-      "id": "懿懿",
-      "label": "懿懿",
-      "position": "Position 3",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1521",
-          "name": "Guerrilla Machete",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1521.jpg",
-          "description": "Monster kills boost MATK"
-        },
-        {
-          "slot": 2,
-          "itemId": "1222",
-          "name": "Blood Clan's Grimoire",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1222.jpg",
-          "description": "MATK +60, Magical Lifesteal +12%"
-        },
-        {
-          "slot": 3,
-          "itemId": "1425",
-          "name": "Boots of Dexterity",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1425.jpg",
-          "description": "Boosts ASPD"
-        },
-        {
-          "slot": 4,
-          "itemId": "1240",
-          "name": "Insatiable Tome",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1240.jpg",
-          "description": "Magical Lifesteal"
-        },
-        {
-          "slot": 5,
-          "itemId": "1244",
-          "name": "Breakthrough Robe",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1244.jpg",
-          "description": "Converts Health into M. Pierce"
-        },
-        {
-          "slot": 6,
-          "itemId": "1531",
-          "name": "Runeblade",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1531.jpg",
-          "description": "Monster kills boost MATK"
-        }
-      ]
-    },
-    {
-      "id": "红条欧美出装",
-      "label": "红条欧美出装",
-      "position": "Position 3",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1521",
-          "name": "Guerrilla Machete",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1521.jpg",
-          "description": "Monster kills boost MATK"
-        },
-        {
-          "slot": 2,
-          "itemId": "1222",
-          "name": "Blood Clan's Grimoire",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1222.jpg",
-          "description": "MATK +60, Magical Lifesteal +12%"
-        },
-        {
-          "slot": 3,
-          "itemId": "1424",
-          "name": "Boots of the Arcane",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1424.jpg",
-          "description": "Magical Pierce"
-        },
-        {
-          "slot": 4,
-          "itemId": "1240",
-          "name": "Insatiable Tome",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1240.jpg",
-          "description": "Magical Lifesteal"
-        },
-        {
-          "slot": 5,
-          "itemId": "1224",
-          "name": "Stone of Sorcery",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1224.jpg",
-          "description": "MATK +60\nMSPD +7.5%"
-        },
-        {
-          "slot": 6,
-          "itemId": "1236",
-          "name": "Staves of Sorcery",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1236.jpg",
-          "description": "Enhances BA"
-        }
-      ]
-    },
-    {
-      "id": "爆發持续流",
-      "label": "爆發+持续流",
-      "position": "Position 3",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1521",
-          "name": "Guerrilla Machete",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1521.jpg",
-          "description": "Monster kills boost MATK"
-        },
-        {
-          "slot": 2,
-          "itemId": "1222",
-          "name": "Blood Clan's Grimoire",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1222.jpg",
-          "description": "MATK +60, Magical Lifesteal +12%"
-        },
-        {
-          "slot": 3,
-          "itemId": "1240",
-          "name": "Insatiable Tome",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1240.jpg",
-          "description": "Magical Lifesteal"
-        },
-        {
-          "slot": 4,
-          "itemId": "1424",
-          "name": "Boots of the Arcane",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1424.jpg",
-          "description": "Magical Pierce"
-        },
-        {
-          "slot": 5,
-          "itemId": "1236",
-          "name": "Staves of Sorcery",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1236.jpg",
-          "description": "Enhances BA"
-        },
-        {
-          "slot": 6,
-          "itemId": "1728",
-          "name": "Golden Blade",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1728.jpg",
-          "description": "Keeps enhancing BA"
-        }
-      ]
-    },
-    {
-      "id": "antimagos",
-      "label": "AntiMagos",
-      "position": "Position 3",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1521",
-          "name": "Guerrilla Machete",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1521.jpg",
-          "description": "Monster kills boost MATK"
-        },
-        {
-          "slot": 2,
-          "itemId": "1222",
-          "name": "Blood Clan's Grimoire",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1222.jpg",
-          "description": "MATK +60, Magical Lifesteal +12%"
-        },
-        {
-          "slot": 3,
-          "itemId": "1424",
-          "name": "Boots of the Arcane",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1424.jpg",
-          "description": "Magical Pierce"
-        },
-        {
-          "slot": 4,
-          "itemId": "1240",
-          "name": "Insatiable Tome",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1240.jpg",
-          "description": "Magical Lifesteal"
-        },
-        {
-          "slot": 5,
-          "itemId": "1236",
-          "name": "Staves of Sorcery",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1236.jpg",
-          "description": "Enhances BA"
-        },
-        {
-          "slot": 6,
-          "itemId": "1244",
-          "name": "Breakthrough Robe",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1244.jpg",
-          "description": "Converts Health into M. Pierce"
-        }
-      ]
-    },
-    {
-      "id": "sima-yi-late",
-      "label": "SIMA YI LATE",
-      "position": "Position 3",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1531",
-          "name": "Runeblade",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1531.jpg",
-          "description": "Monster kills boost MATK"
-        },
-        {
-          "slot": 2,
-          "itemId": "1240",
-          "name": "Insatiable Tome",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1240.jpg",
-          "description": "Magical Lifesteal"
-        },
-        {
-          "slot": 3,
-          "itemId": "1236",
-          "name": "Staves of Sorcery",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1236.jpg",
-          "description": "Enhances BA"
-        },
-        {
-          "slot": 4,
-          "itemId": "1424",
-          "name": "Boots of the Arcane",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1424.jpg",
-          "description": "Magical Pierce"
-        },
-        {
-          "slot": 5,
-          "itemId": "1421",
-          "name": "Boots of Fortitude",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1421.jpg",
-          "description": "Reduces physical damage"
-        },
-        {
-          "slot": 6,
-          "itemId": "1244",
-          "name": "Breakthrough Robe",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1244.jpg",
-          "description": "Converts Health into M. Pierce"
-        }
-      ]
-    }
+  "metaAnalysisZh": [
+    "司馬懿 勝率 46.22%（Camp HOK，2026-06-07）",
+    "選取率 0.25%",
+    "禁用率 0.02%",
+    "克制：Lu Bu、Wuyan、Menki；被克制：Alessio、Arli、Lady Zhen"
   ],
   "guide": {
     "overview": "Sima Yi is a Medium Assassin (Jungling) on Honor of Kings Global. Camp HOK ranks them Tier B with 46.2% win rate and 0.2% pick rate as of 2026-06-05.",

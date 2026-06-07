@@ -1,0 +1,90 @@
+{
+  "updated": "2026-06-07",
+  "source": "Curated synergy notes + Camp HOK international pick/ban stats (not official duo win rates)",
+  "duos": [
+    {
+      "id": "marco-yaria",
+      "slugs": ["marco-polo", "yaria"],
+      "lane": "farm",
+      "tags": ["bot", "peel", "hyper-carry"],
+      "synergy": {
+        "en": "Marco Polo's sustained DPS pairs with Yaria's shields and CC — classic bot lane hyper-carry setup on global server.",
+        "zh-TW": "馬可波羅持續輸出搭配瑤的護盾與控制，國際服經典發育路保核組合。"
+      },
+      "dataNote": {
+        "en": "Roam + marksman. Pick rates from Camp HOK international ranked. No published duo win-rate — synergy is editorial.",
+        "zh-TW": "游走+射手。選取率來自 Camp HOK 國際服排位；無官方雙排勝率，搭檔說明為編輯整理。"
+      }
+    },
+    {
+      "id": "huang-yaria",
+      "slugs": ["huang-zhong", "yaria"],
+      "lane": "farm",
+      "tags": ["siege", "peel", "late-game"],
+      "synergy": {
+        "en": "Huang Zhong needs peel while channeling his ultimate — Yaria's link and shields keep him alive during siege.",
+        "zh-TW": "黃忠大招需要保護，瑤的鏈接與護盾讓他在壓塔時更難被切。"
+      },
+      "dataNote": {
+        "en": "Marksman + roam support (not double support). Individual WR/pick from Camp HOK.",
+        "zh-TW": "射手+游走輔助（非雙輔）。各英雄 Camp HOK 勝率/選取數據。"
+      }
+    },
+    {
+      "id": "sunbin-luban",
+      "slugs": ["sun-bin", "luban-no-7"],
+      "lane": "farm",
+      "tags": ["speed-up", "siege", "bot"],
+      "synergy": {
+        "en": "Sun Bin's team speed-up and CC setup helps Luban No.7 scale and siege turrets safely.",
+        "zh-TW": "孫臏團隊加速與控制幫魯班七號發育推塔，發育路常見節奏組合。"
+      },
+      "dataNote": {
+        "en": "Support roam + marksman — standard lane pairing. Camp HOK pick rates; editorial synergy note.",
+        "zh-TW": "游走輔助+射手，標準分路搭檔。Camp HOK 選取率；協同為編輯整理。"
+      }
+    },
+    {
+      "id": "wukong-mozi",
+      "slugs": ["wukong", "mozi"],
+      "lane": "jungle",
+      "tags": ["dive", "cc-chain", "mid-jungle"],
+      "synergy": {
+        "en": "Wukong jungle engage into Mozi's mid-lane CC — strong pick comp for river and side ganks.",
+        "zh-TW": "孫悟空打野開團配合墨子中路控制，河道與邊路抓人節奏強。"
+      },
+      "dataNote": {
+        "en": "Jungle + mid mage. Camp individual stats; draft-dependent, not duo win-rate data.",
+        "zh-TW": "打野+中路法師。Camp 個人數據；視陣容而定，非雙排勝率。"
+      }
+    }
+  ],
+  "templates": [
+    {
+      "id": "fast-push",
+      "title": { "en": "Fast Push (Split Siege)", "zh-TW": "速推分帶" },
+      "coreSlugs": ["huang-zhong", "yaria", "liu-bei"],
+      "description": {
+        "en": "Siege marksman + peel support + side-lane bruiser. Take outer turrets after first dragon, avoid blind 5v5 until two items.",
+        "zh-TW": "壓塔射手 + 保核輔助 + 邊路戰士。首條暴君後推外塔，兩件核心前避免盲目五打五。"
+      },
+      "dataNote": {
+        "en": "Template from global ranked macro — hero stats Camp HOK; win conditions are strategic, not simulated.",
+        "zh-TW": "模板依國際服排位節奏整理；英雄數據 Camp HOK，勝利條件為戰術說明非模擬勝率。"
+      }
+    },
+    {
+      "id": "bot-hyper",
+      "title": { "en": "Bot Hyper-Carry", "zh-TW": "發育路保核" },
+      "coreSlugs": ["marco-polo", "yaria", "mozi"],
+      "description": {
+        "en": "Protect marksman through mid game; mid mage provides wave clear and poke. Win via dragon + bot tier 2.",
+        "zh-TW": "中期保射手發育，中路法師清線消耗。靠暴君與下路二塔建立優勢。"
+      },
+      "dataNote": {
+        "en": "Core heroes' pick/WR from Camp HOK international. Template is editorial climb advice.",
+        "zh-TW": "核心英雄選取/勝率來自 Camp HOK 國際服；模板為編輯上分建議。"
+      }
+    }
+  ]
+}

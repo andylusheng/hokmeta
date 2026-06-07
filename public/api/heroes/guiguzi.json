@@ -2,100 +2,583 @@
   "id": "guiguzi",
   "slug": "guiguzi",
   "name": "Guiguzi",
+  "nameZh": "鬼谷子",
   "role": "Support",
   "roles": "Support",
+  "rolesZh": "輔助",
   "lane": "Roaming",
+  "laneZh": "遊走",
   "difficulty": "Easy",
   "tier": "B",
-  "winRate": 51.78,
+  "winRate": 52.07,
   "pickRate": 0.25,
   "banRate": 0.28,
-  "rank": 29,
+  "rank": 22,
   "avatar": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/AXjJlMvi.png",
   "avatarFallback": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/189/189.jpg",
+  "heroCover": "https://camp.honorofkings.com/social/game/src/image_hero_cover_1275*718/66wstR8i.jpg",
   "tencentId": 189,
-  "dataSource": "Camp HOK + HoKStats.gg (intl)",
-  "dataUpdated": "2026-06-05",
+  "dataSource": "Camp HOK bilingual (primary)",
+  "dataUpdated": "2026-06-07",
   "skills": [
     {
       "slot": "passive",
       "name": "The Laws of Nature",
-      "description": "Slips out of vision and enhances the next Basic Attack to inflict extra damage and slow.",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/189/18900.png",
-      "cooldown": null
+      "description": "After leaving the enemy's vision, the next Basic Attack deals extra damage and slows the enemy.",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/18900.png",
+      "cooldown": "1s"
     },
     {
       "slot": "skill1",
       "name": "Prophecy - Hidden Hand",
-      "description": "Gains a Movement Speed boost and a disguise, reducing the Physical andMagical Defense of enemies touched and dealing damage to them.",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/189/18910.png",
-      "cooldown": null
+      "description": "Gains a Movement Speed boost and camouflages himself, reducing the Physical and Magical Defense of enemies touched while dealing damage to them.",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/18910.png",
+      "cooldown": "10s"
     },
     {
       "slot": "skill2",
       "name": "The Animist",
-      "description": "Summons sprites, and after a brief delay, pulls nearby enemies, inflicting damage and stun. When an enemy hero is hit, gains a shield and grants ashield to all nearby allies.",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/189/18920.png",
-      "cooldown": null
+      "description": "Summons spriteflies, and after a brief delay, pulls in nearby enemies, dealing damage and stunning them. If he hits an enemy hero, he and nearby teammates gain a shield.",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/18920.png",
+      "cooldown": "10s"
     },
     {
       "slot": "ultimate",
       "name": "Prophecy - Out of Sight",
-      "description": "After 1s, he grants disguise and Move Speed to himself and near by teammates. Gains vision of the nearest enemy hero. Disguise breaks upon using Basic Attacks, skills, or actions that affect enemies.",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/189/18930.png",
-      "cooldown": null
+      "description": "After 1s, camouflages and grants Movement Speed to himself and nearby teammates.\nGains vision of the nearest enemy hero.\nThe disguise breaks upon using Basic Attacks, skills, or actions that affect enemies.",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/18930.png",
+      "cooldown": "35s"
+    }
+  ],
+  "skillsZh": [
+    {
+      "slot": "passive",
+      "name": "縱橫兵法",
+      "description": "脫離視野後強化下次普攻，造成額外傷害和減速。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/18900.png",
+      "cooldown": "1s"
+    },
+    {
+      "slot": "skill1",
+      "name": "先知・神隱",
+      "description": "進入偽裝狀態並加速，減少被觸碰的敵人雙抗並造成傷害。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/18910.png",
+      "cooldown": "10s"
+    },
+    {
+      "slot": "skill2",
+      "name": "萬物有靈",
+      "description": "召喚玄微子，短暫延遲後拉扯周圍敵人對其造成傷害和暈眩，命中英雄時自身與周圍友軍獲得護盾。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/18920.png",
+      "cooldown": "10s"
+    },
+    {
+      "slot": "ultimate",
+      "name": "先知・霧隱",
+      "description": "1秒後，自身和附近友方英雄進入偽裝狀態，增加移動速度。\n獲得最近敵方英雄視野。\n使用普攻，技能或對敵方造成影響時解除偽裝狀態。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/18930.png",
+      "cooldown": "35s"
     }
   ],
   "build": [
     {
       "slot": 1,
-      "itemId": "1422",
-      "name": "Boots of Resistance",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
-      "description": "Shortens CC"
+      "itemId": "1737",
+      "name": "Crimson Shadow - Radiance",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1749.png",
+      "description": "HP +1,200, MSPD +7.5%\nDPS aura"
     },
     {
       "slot": 2,
-      "itemId": "1336",
-      "name": "Glacial Buckler",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1336.jpg",
-      "description": "Group damage & slow"
+      "itemId": "1341",
+      "name": "Frigid Charge",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1341.png",
+      "description": "PDEF +150, HP +900, CDR +7.5%, Resistance +10%\nGreat crowd control"
     },
     {
       "slot": 3,
-      "itemId": "1347",
-      "name": "Longnight Guardian",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1347.jpg",
-      "description": "Resists burst damage"
+      "itemId": "1336",
+      "name": "Glacial Buckler",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1336.png",
+      "description": "CDR +20%, HP +600, PDEF +240\nGroup damage & slow"
     },
     {
       "slot": 4,
-      "itemId": "1333",
-      "name": "Ominous Premonition",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1333.jpg",
-      "description": "Slows attackers"
+      "itemId": "1347",
+      "name": "Longnight Guardian",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1347.png",
+      "description": "MDEF +210, HP +1,000, MSPD +7.5%\nReduces magical damage"
     },
     {
       "slot": 5,
-      "itemId": "1341",
-      "name": "Frigid Charge",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1341.jpg",
-      "description": "Group CC"
+      "itemId": "1337",
+      "name": "Sage's Sanctuary",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+      "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
     },
     {
       "slot": 6,
-      "itemId": null,
-      "name": "Data unavailable",
-      "icon": null,
-      "description": null
+      "itemId": "1227",
+      "name": "Ardent Dominion",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1227.png",
+      "description": "MATK +150, Magical Lifesteal +12%, MSPD +7.5%\nCleanse and shield at low HP"
+    }
+  ],
+  "buildZh": [
+    {
+      "slot": 1,
+      "itemId": "1737",
+      "name": "極影・形昭",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1749.png",
+      "description": "+1200點生命值+7.5%移速\n光環提升輸出"
+    },
+    {
+      "slot": 2,
+      "itemId": "1341",
+      "name": "冰霜衝擊",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1341.png",
+      "description": "+150點物防+900點生命值+7.5%冷卻時間+10%韌性\n群體控制"
+    },
+    {
+      "slot": 3,
+      "itemId": "1336",
+      "name": "極寒風暴",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1336.png",
+      "description": "+20%減冷卻時間+600點生命值+240點物防\n群體傷害減速"
+    },
+    {
+      "slot": 4,
+      "itemId": "1347",
+      "name": "永夜守護",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1347.png",
+      "description": "+210點法防+1000點生命值\n+7.5%移速減少法術傷害"
+    },
+    {
+      "slot": 5,
+      "itemId": "1337",
+      "name": "賢者的庇護",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+      "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+    },
+    {
+      "slot": 6,
+      "itemId": "1227",
+      "name": "熾熱支配",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1227.png",
+      "description": "+150點法攻+12%法術吸血+7.5%移速\n殘血解控加盾"
+    }
+  ],
+  "builds": [
+    {
+      "id": "camp-0",
+      "label": "Kwamguzi",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1737",
+          "name": "Crimson Shadow - Radiance",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1749.png",
+          "description": "HP +1,200, MSPD +7.5%\nDPS aura"
+        },
+        {
+          "slot": 2,
+          "itemId": "1341",
+          "name": "Frigid Charge",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1341.png",
+          "description": "PDEF +150, HP +900, CDR +7.5%, Resistance +10%\nGreat crowd control"
+        },
+        {
+          "slot": 3,
+          "itemId": "1336",
+          "name": "Glacial Buckler",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1336.png",
+          "description": "CDR +20%, HP +600, PDEF +240\nGroup damage & slow"
+        },
+        {
+          "slot": 4,
+          "itemId": "1347",
+          "name": "Longnight Guardian",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1347.png",
+          "description": "MDEF +210, HP +1,000, MSPD +7.5%\nReduces magical damage"
+        },
+        {
+          "slot": 5,
+          "itemId": "1337",
+          "name": "Sage's Sanctuary",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
+        },
+        {
+          "slot": 6,
+          "itemId": "1227",
+          "name": "Ardent Dominion",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1227.png",
+          "description": "MATK +150, Magical Lifesteal +12%, MSPD +7.5%\nCleanse and shield at low HP"
+        }
+      ]
+    },
+    {
+      "id": "camp-1",
+      "label": "Kwamguzi",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1737",
+          "name": "Crimson Shadow - Radiance",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1749.png",
+          "description": "HP +1,200, MSPD +7.5%\nDPS aura"
+        },
+        {
+          "slot": 2,
+          "itemId": "1341",
+          "name": "Frigid Charge",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1341.png",
+          "description": "PDEF +150, HP +900, CDR +7.5%, Resistance +10%\nGreat crowd control"
+        },
+        {
+          "slot": 3,
+          "itemId": "1336",
+          "name": "Glacial Buckler",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1336.png",
+          "description": "CDR +20%, HP +600, PDEF +240\nGroup damage & slow"
+        },
+        {
+          "slot": 4,
+          "itemId": "1347",
+          "name": "Longnight Guardian",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1347.png",
+          "description": "MDEF +210, HP +1,000, MSPD +7.5%\nReduces magical damage"
+        },
+        {
+          "slot": 5,
+          "itemId": "1337",
+          "name": "Sage's Sanctuary",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
+        },
+        {
+          "slot": 6,
+          "itemId": "1227",
+          "name": "Ardent Dominion",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1227.png",
+          "description": "MATK +150, Magical Lifesteal +12%, MSPD +7.5%\nCleanse and shield at low HP"
+        }
+      ]
+    },
+    {
+      "id": "camp-2",
+      "label": "Felon guiguzi",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1341",
+          "name": "Frigid Charge",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1341.png",
+          "description": "PDEF +150, HP +900, CDR +7.5%, Resistance +10%\nGreat crowd control"
+        },
+        {
+          "slot": 2,
+          "itemId": "1336",
+          "name": "Glacial Buckler",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1336.png",
+          "description": "CDR +20%, HP +600, PDEF +240\nGroup damage & slow"
+        },
+        {
+          "slot": 3,
+          "itemId": "1347",
+          "name": "Longnight Guardian",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1347.png",
+          "description": "MDEF +210, HP +1,000, MSPD +7.5%\nReduces magical damage"
+        },
+        {
+          "slot": 4,
+          "itemId": "1333",
+          "name": "Ominous Premonition",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1333.png",
+          "description": "PDEF +300, HP +1,200\nSlows attackers"
+        },
+        {
+          "slot": 5,
+          "itemId": "1337",
+          "name": "Sage's Sanctuary",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
+        },
+        {
+          "slot": 6,
+          "itemId": "1127",
+          "name": "Destiny",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
+        }
+      ]
+    },
+    {
+      "id": "camp-3",
+      "label": "Roaming 2",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1426",
+          "name": "Boots of Deftness",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1426.png",
+          "description": "HP +300, MSPD +70\nExtra MSPD"
+        },
+        {
+          "slot": 2,
+          "itemId": "1737",
+          "name": "Crimson Shadow - Radiance",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1749.png",
+          "description": "HP +1,200, MSPD +7.5%\nDPS aura"
+        },
+        {
+          "slot": 3,
+          "itemId": "1341",
+          "name": "Frigid Charge",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1341.png",
+          "description": "PDEF +150, HP +900, CDR +7.5%, Resistance +10%\nGreat crowd control"
+        },
+        {
+          "slot": 4,
+          "itemId": "1347",
+          "name": "Longnight Guardian",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1347.png",
+          "description": "MDEF +210, HP +1,000, MSPD +7.5%\nReduces magical damage"
+        },
+        {
+          "slot": 5,
+          "itemId": "12211",
+          "name": "Venomous Staff",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/12211.png",
+          "description": "MATK +240, CDR +7.5%, MSPD +7.5%\nLowers Health Regen"
+        },
+        {
+          "slot": 6,
+          "itemId": "1332",
+          "name": "Overlord's Platemail",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1332.png",
+          "description": "HP +1,800, PDEF +160, MDEF +80\nExtra HP"
+        }
+      ]
+    }
+  ],
+  "buildsZh": [
+    {
+      "id": "camp-0",
+      "label": "Kwamguzi",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1737",
+          "name": "極影・形昭",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1749.png",
+          "description": "+1200點生命值+7.5%移速\n光環提升輸出"
+        },
+        {
+          "slot": 2,
+          "itemId": "1341",
+          "name": "冰霜衝擊",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1341.png",
+          "description": "+150點物防+900點生命值+7.5%冷卻時間+10%韌性\n群體控制"
+        },
+        {
+          "slot": 3,
+          "itemId": "1336",
+          "name": "極寒風暴",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1336.png",
+          "description": "+20%減冷卻時間+600點生命值+240點物防\n群體傷害減速"
+        },
+        {
+          "slot": 4,
+          "itemId": "1347",
+          "name": "永夜守護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1347.png",
+          "description": "+210點法防+1000點生命值\n+7.5%移速減少法術傷害"
+        },
+        {
+          "slot": 5,
+          "itemId": "1337",
+          "name": "賢者的庇護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+        },
+        {
+          "slot": 6,
+          "itemId": "1227",
+          "name": "熾熱支配",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1227.png",
+          "description": "+150點法攻+12%法術吸血+7.5%移速\n殘血解控加盾"
+        }
+      ]
+    },
+    {
+      "id": "camp-1",
+      "label": "Kwamguzi",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1737",
+          "name": "極影・形昭",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1749.png",
+          "description": "+1200點生命值+7.5%移速\n光環提升輸出"
+        },
+        {
+          "slot": 2,
+          "itemId": "1341",
+          "name": "冰霜衝擊",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1341.png",
+          "description": "+150點物防+900點生命值+7.5%冷卻時間+10%韌性\n群體控制"
+        },
+        {
+          "slot": 3,
+          "itemId": "1336",
+          "name": "極寒風暴",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1336.png",
+          "description": "+20%減冷卻時間+600點生命值+240點物防\n群體傷害減速"
+        },
+        {
+          "slot": 4,
+          "itemId": "1347",
+          "name": "永夜守護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1347.png",
+          "description": "+210點法防+1000點生命值\n+7.5%移速減少法術傷害"
+        },
+        {
+          "slot": 5,
+          "itemId": "1337",
+          "name": "賢者的庇護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+        },
+        {
+          "slot": 6,
+          "itemId": "1227",
+          "name": "熾熱支配",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1227.png",
+          "description": "+150點法攻+12%法術吸血+7.5%移速\n殘血解控加盾"
+        }
+      ]
+    },
+    {
+      "id": "camp-2",
+      "label": "Felon guiguzi",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1341",
+          "name": "冰霜衝擊",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1341.png",
+          "description": "+150點物防+900點生命值+7.5%冷卻時間+10%韌性\n群體控制"
+        },
+        {
+          "slot": 2,
+          "itemId": "1336",
+          "name": "極寒風暴",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1336.png",
+          "description": "+20%減冷卻時間+600點生命值+240點物防\n群體傷害減速"
+        },
+        {
+          "slot": 3,
+          "itemId": "1347",
+          "name": "永夜守護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1347.png",
+          "description": "+210點法防+1000點生命值\n+7.5%移速減少法術傷害"
+        },
+        {
+          "slot": 4,
+          "itemId": "1333",
+          "name": "不祥徵兆",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1333.png",
+          "description": "+300點物防+1200點生命值\n受擊時將敵人減速"
+        },
+        {
+          "slot": 5,
+          "itemId": "1337",
+          "name": "賢者的庇護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+        },
+        {
+          "slot": 6,
+          "itemId": "1127",
+          "name": "名刀・司命",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "+75點攻擊+15%攻速+500點生命值\n保命"
+        }
+      ]
+    },
+    {
+      "id": "camp-3",
+      "label": "Roaming 2",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1426",
+          "name": "疾步之靴",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1426.png",
+          "description": "+300點生命值+70點移速\n額外增加移速"
+        },
+        {
+          "slot": 2,
+          "itemId": "1737",
+          "name": "極影・形昭",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1749.png",
+          "description": "+1200點生命值+7.5%移速\n光環提升輸出"
+        },
+        {
+          "slot": 3,
+          "itemId": "1341",
+          "name": "冰霜衝擊",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1341.png",
+          "description": "+150點物防+900點生命值+7.5%冷卻時間+10%韌性\n群體控制"
+        },
+        {
+          "slot": 4,
+          "itemId": "1347",
+          "name": "永夜守護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1347.png",
+          "description": "+210點法防+1000點生命值\n+7.5%移速減少法術傷害"
+        },
+        {
+          "slot": 5,
+          "itemId": "12211",
+          "name": "夢魘之牙",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/12211.png",
+          "description": "+240點法攻+7.5%減冷卻時間+7.5%移速\n減少敵人回血"
+        },
+        {
+          "slot": 6,
+          "itemId": "1332",
+          "name": "霸者重裝",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1332.png",
+          "description": "+1800點生命值+160點物防+80點法防\n提高額外生命值"
+        }
+      ]
     }
   ],
   "arcana": [
-    "Fate"
+    "Lvl 5: Fate",
+    "Lvl 5: Nightmare",
+    "Lvl 5: Harmony"
+  ],
+  "arcanaZh": [
+    "5級：宿命",
+    "5級：夢魘",
+    "5級：調和"
   ],
   "spells": [
-    "Smite",
     "Flash"
+  ],
+  "spellsZh": [
+    "閃現"
   ],
   "counters": [
     "Li Xin",
@@ -108,286 +591,107 @@
     "Musashi"
   ],
   "tips": [
-    "Guiguzi is a Easy Support (Roaming) on Honor of Kings Global. Camp HOK ranks them Tier B with 51.8% win rate and 0.3% pick rate as of 2026-06-05.",
-    "Best build path: Boots of Resistance → Glacial Buckler → Longnight Guardian → Ominous Premonition → Frigid Charge.",
-    "Run Fate for stats that match Guiguzi's Support kit. Take Smite & Flash — swap to Purify against heavy CC or Smite when jungling.",
-    "Standard trade: Prophecy - Hidden Hand → The Animist → Prophecy - Out of Sight → weave basic attacks. Weave basic attacks between skill casts for passive value.",
-    "Laning: Help marksman crash wave, then rotate mid for picks. Return before Tyrant if your carry has no escape.",
-    "Teamfight: Peel carry first, then look for pick on out-of-position enemies. Ward Tyrant 30s before spawn.",
-    "Guiguzi excels into Li Xin, Mozi, Zilong. Avoid blind picking into Fatih, Wukong, Musashi without team peel.",
-    "Guiguzi sits at Tier B globally (51.8% WR). In high rank, pick only into favorable matchups or when you have a dedicated pocket pick."
+    "Guiguzi (Support): Tier B — 52.07% WR (Camp HOK).",
+    "Lane: Roaming.",
+    "Build: Crimson Shadow - Radiance, Frigid Charge, Glacial Buckler."
+  ],
+  "tipsZh": [
+    "鬼谷子（遊走）：梯度 B，勝率 52.07%（Camp HOK）。",
+    "出裝：極影・形昭、冰霜衝擊、極寒風暴."
   ],
   "patchHistory": [
     {
-      "version": "Live meta",
-      "change": "Camp HOK — WR 51.8%, pick 0.3%, ban 0.3%, tier B."
+      "seasonId": "9",
+      "seasonName": "S9",
+      "versionName": "20250320",
+      "publishedAt": "2025-03-20T01:53:54Z",
+      "isCurrent": false,
+      "tag": "Stat Buffs",
+      "change": "Increased Skill 2 Shield Effect",
+      "detail": "",
+      "version": "S9"
     },
     {
-      "version": "Matchups",
-      "change": "Strong into Li Xin, Mozi, Zilong · Weak into Fatih, Wukong, Musashi."
+      "seasonId": "8",
+      "seasonName": "S8",
+      "versionName": "20250124",
+      "publishedAt": "2025-01-24T02:00:29Z",
+      "isCurrent": false,
+      "tag": "Stat Buffs",
+      "change": "Reduced cooldown and increased damage from his Passive.",
+      "detail": "There were many calls to buff Guiguzi during the 'I'm a designer at HoK!' event in HoK Camp. Guiguzi players want to show off how good he can be, but don't always succeed. Hence, we have reduced some of his skill cooldowns to give them more opportunities to try.",
+      "version": "S8"
+    }
+  ],
+  "patchHistoryZh": [
+    {
+      "seasonId": "9",
+      "seasonName": "S9",
+      "versionName": "20250320",
+      "publishedAt": "2025-03-20T01:53:54Z",
+      "isCurrent": false,
+      "tag": "數值增強",
+      "change": "提升2技能護盾效果",
+      "detail": "",
+      "version": "S9"
     },
     {
-      "version": "High rank",
-      "change": "Guiguzi sits at Tier B globally (51.8% WR). In high rank, pick only into favorable matchups or when you have a dedicated pocket pick."
+      "seasonId": "8",
+      "seasonName": "S8",
+      "versionName": "20250124",
+      "publishedAt": "2025-01-24T02:00:29Z",
+      "isCurrent": false,
+      "tag": "數值增強",
+      "change": "降低冷卻時間，增加被動傷害",
+      "detail": "「在HOK CAMP的活動『我在HOK當企劃活動中』有很多加強鬼谷子的聲音。每位使用鬼谷子的召喚師都期待他能大放異彩，但並不是每一次嘗試都能夠成功，因此我們降低了他的技能冷卻時間，讓他有更多的嘗試的機會。」",
+      "version": "S8"
     }
   ],
   "faqs": [
     {
       "id": "faq-good-season",
-      "question": "Is Guiguzi good in the current meta?",
-      "answer": "Guiguzi is Tier B Support with 51.8% win rate, 0.3% pick rate, and 0.3% ban rate on Honor of Kings Global (Camp HOK, 2026-06-05). Niche — draft carefully."
+      "question": "Is Guiguzi good in current season?",
+      "answer": "Guiguzi is Tier B Support with 52.07% win rate, 0.25% pick rate, and 0.28% ban rate (Camp HOK international)."
     },
     {
       "id": "faq-best-build",
       "question": "What is the best Guiguzi build?",
-      "answer": "Core item path: Boots of Resistance, Glacial Buckler, Longnight Guardian, Ominous Premonition, Frigid Charge. Run Fate arcana with Smite & Flash. Switch to alternate build presets on this page for jungle, clash, or late-game setups."
+      "answer": "Recommended: Crimson Shadow - Radiance, Frigid Charge, Glacial Buckler, Longnight Guardian, Sage's Sanctuary, Ardent Dominion."
     },
     {
       "id": "faq-counter",
       "question": "How to counter Guiguzi?",
-      "answer": "Pick Fatih, Wukong, Musashi into Guiguzi. Deny Roaming resources early and force fights before Guiguzi completes core items. Guiguzi struggles when the enemy can out-range or out-sustain them."
+      "answer": "Pick Fatih, Wukong, Musashi. Strong into Li Xin, Mozi, Zilong."
+    }
+  ],
+  "faqsZh": [
+    {
+      "id": "faq-good-season",
+      "question": "鬼谷子 這版本適合上分嗎？",
+      "answer": "鬼谷子 為 B 梯度，勝率 52.07%、選取 0.25%、禁用 0.28%（Camp HOK 國際服）。"
     },
     {
-      "id": "faq-strong-into",
-      "question": "Who does Guiguzi counter?",
-      "answer": "Guiguzi is strong into Li Xin, Mozi, Zilong according to HoKStats matchup data and role matchups on the global server. Draft Guiguzi when the enemy relies on these heroes in the Roaming lane."
+      "id": "faq-best-build",
+      "question": "鬼谷子 出裝怎麼搭配？",
+      "answer": "推薦：極影・形昭、冰霜衝擊、極寒風暴、永夜守護、賢者的庇護、熾熱支配."
     },
     {
-      "id": "faq-high-rank",
-      "question": "Is Guiguzi good in high rank / Diamond+?",
-      "answer": "Guiguzi sits at Tier B globally (51.8% WR). In high rank, pick only into favorable matchups or when you have a dedicated pocket pick."
-    },
-    {
-      "id": "faq-lane",
-      "question": "What lane should Guiguzi play?",
-      "answer": "Guiguzi is tagged Roaming in Camp export (Support). Help marksman crash wave, then rotate mid for picks. Return before Tyrant if your carry has no escape."
-    },
-    {
-      "id": "faq-arcana",
-      "question": "Best arcana and spells for Guiguzi?",
-      "answer": "Recommended: Fate arcana. Battle spell: Smite & Flash. Adjust Purify/Execute based on enemy dive and jungle need."
-    },
-    {
-      "id": "faq-vs-peer",
-      "question": "Guiguzi or Dolia — which is better?",
-      "answer": "Guiguzi vs Dolia (Support, Tier S): Dolia is 1.8% pick / 46.1% WR. Guiguzi has +5.7% WR vs Dolia in Camp data. Choose Guiguzi when you need Roaming identity; choose Dolia for Roaming comfort."
-    },
-    {
-      "id": "faq-ban",
-      "question": "Should I ban Guiguzi?",
-      "answer": "Low priority ban (0.3%). Focus bans on higher-tier Support picks unless targeting a one-trick."
+      "id": "faq-counter",
+      "question": "怎麼克制 鬼谷子？",
+      "answer": "可選 Fatih、Wukong、Musashi。鬼谷子 克制 Li Xin、Mozi、Zilong。"
     }
   ],
   "metaAnalysis": [
-    "Guiguzi — 51.8% WR, 0.3% pick, 0.3% ban (Camp HOK 2026-06-05).",
-    "Tier B Support · Roaming · difficulty Easy.",
-    "Guiguzi sits at Tier B globally (51.8% WR). In high rank, pick only into favorable matchups or when you have a dedicated pocket pick.",
-    "Matchups: strong into Li Xin, Mozi, Zilong; weak into Fatih, Wukong, Musashi.",
-    "Guiguzi vs Dolia (Support, Tier S): Dolia is 1.8% pick / 46.1% WR. Guiguzi has +5.7% WR vs Dolia in Camp data. Choose Guiguzi when you need Roaming identity; choose Dolia for Roaming comfort.",
-    "Guiguzi vs Cai Yan (Support, Tier S): Cai Yan is 1.3% pick / 50.3% WR. Guiguzi has +1.5% WR vs Cai Yan in Camp data. Choose Guiguzi when you need Roaming identity; choose Cai Yan for Roaming comfort.",
-    "Draft tip: counter-pick or comfort pick when lane matchup is favorable."
+    "Guiguzi win rate 52.07% (Camp HOK, 2026-06-07).",
+    "Pick rate 0.25%.",
+    "Ban rate 0.28%.",
+    "Counters: Li Xin, Mozi, Zilong. Weak into: Fatih, Wukong, Musashi."
   ],
-  "builds": [
-    {
-      "id": "recommended",
-      "label": "Recommended",
-      "position": null,
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1422",
-          "name": "Boots of Resistance",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
-          "description": "Shortens CC"
-        },
-        {
-          "slot": 2,
-          "itemId": "1336",
-          "name": "Glacial Buckler",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1336.jpg",
-          "description": "Group damage & slow"
-        },
-        {
-          "slot": 3,
-          "itemId": "1347",
-          "name": "Longnight Guardian",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1347.jpg",
-          "description": "Resists burst damage"
-        },
-        {
-          "slot": 4,
-          "itemId": "1333",
-          "name": "Ominous Premonition",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1333.jpg",
-          "description": "Slows attackers"
-        },
-        {
-          "slot": 5,
-          "itemId": "1341",
-          "name": "Frigid Charge",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1341.jpg",
-          "description": "Group CC"
-        },
-        {
-          "slot": 6,
-          "itemId": null,
-          "name": "Data unavailable",
-          "icon": null,
-          "description": null
-        }
-      ]
-    },
-    {
-      "id": "roaming-2",
-      "label": "Roaming 2",
-      "position": "Position 5",
-      "lane": "Roaming",
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1701",
-          "name": "Knowledge Gem",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1701.jpg",
-          "description": "Extra Gold & EXP"
-        },
-        {
-          "slot": 2,
-          "itemId": "1426",
-          "name": "Boots of Deftness",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1426.jpg",
-          "description": "Extra Movement Speed"
-        },
-        {
-          "slot": 3,
-          "itemId": "11110",
-          "name": "Plume of Enchantment",
-          "icon": "https://hokstats.gg/items/11110.png",
-          "description": "MSPD +5%"
-        },
-        {
-          "slot": 4,
-          "itemId": "1737",
-          "name": "Crimson Shadow - Radiance",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1737.jpg",
-          "description": "Area damage & vision"
-        },
-        {
-          "slot": 5,
-          "itemId": "1317",
-          "name": "Cuirass of Swiftness",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1317.jpg",
-          "description": "HP +450, CDR +7.5%"
-        },
-        {
-          "slot": 6,
-          "itemId": "1341",
-          "name": "Frigid Charge",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1341.jpg",
-          "description": "Group CC"
-        }
-      ]
-    },
-    {
-      "id": "kwamguzi",
-      "label": "Kwamguzi",
-      "position": "Position 5",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1701",
-          "name": "Knowledge Gem",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1701.jpg",
-          "description": "Extra Gold & EXP"
-        },
-        {
-          "slot": 2,
-          "itemId": "1426",
-          "name": "Boots of Deftness",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1426.jpg",
-          "description": "Extra Movement Speed"
-        },
-        {
-          "slot": 3,
-          "itemId": "1737",
-          "name": "Crimson Shadow - Radiance",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1737.jpg",
-          "description": "Area damage & vision"
-        },
-        {
-          "slot": 4,
-          "itemId": "11110",
-          "name": "Plume of Enchantment",
-          "icon": "https://hokstats.gg/items/11110.png",
-          "description": "MSPD +5%"
-        },
-        {
-          "slot": 5,
-          "itemId": "1321",
-          "name": "Belt of Might",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1321.jpg",
-          "description": "HP +900"
-        },
-        {
-          "slot": 6,
-          "itemId": "1341",
-          "name": "Frigid Charge",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1341.jpg",
-          "description": "Group CC"
-        }
-      ]
-    },
-    {
-      "id": "felon-guiguzi",
-      "label": "Felon guiguzi",
-      "position": "Position 5",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1701",
-          "name": "Knowledge Gem",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1701.jpg",
-          "description": "Extra Gold & EXP"
-        },
-        {
-          "slot": 2,
-          "itemId": "1426",
-          "name": "Boots of Deftness",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1426.jpg",
-          "description": "Extra Movement Speed"
-        },
-        {
-          "slot": 3,
-          "itemId": "1737",
-          "name": "Crimson Shadow - Radiance",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1737.jpg",
-          "description": "Area damage & vision"
-        },
-        {
-          "slot": 4,
-          "itemId": "1341",
-          "name": "Frigid Charge",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1341.jpg",
-          "description": "Group CC"
-        },
-        {
-          "slot": 5,
-          "itemId": "1336",
-          "name": "Glacial Buckler",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1336.jpg",
-          "description": "Group damage & slow"
-        },
-        {
-          "slot": 6,
-          "itemId": "1347",
-          "name": "Longnight Guardian",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1347.jpg",
-          "description": "Resists burst damage"
-        }
-      ]
-    }
+  "metaAnalysisZh": [
+    "鬼谷子 勝率 52.07%（Camp HOK，2026-06-07）",
+    "選取率 0.25%",
+    "禁用率 0.28%",
+    "克制：Li Xin、Mozi、Zilong；被克制：Fatih、Wukong、Musashi"
   ],
   "guide": {
     "overview": "Guiguzi is a Easy Support (Roaming) on Honor of Kings Global. Camp HOK ranks them Tier B with 51.8% win rate and 0.3% pick rate as of 2026-06-05.",

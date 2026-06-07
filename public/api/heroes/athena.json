@@ -2,99 +2,583 @@
   "id": "athena",
   "slug": "athena",
   "name": "Athena",
+  "nameZh": "雅典娜",
   "role": "Assassin",
   "roles": "Fighter, Assassin",
+  "rolesZh": "戰士, 刺客",
   "lane": "Jungling",
+  "laneZh": "打野",
   "difficulty": "Medium",
   "tier": "B",
-  "winRate": 54.4,
+  "winRate": 54.68,
   "pickRate": 0.08,
   "banRate": 0.01,
   "rank": 3,
   "avatar": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/BEh6QC3Q.png",
   "avatarFallback": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/183/183.jpg",
+  "heroCover": "https://camp.honorofkings.com/social/game/src/image_hero_cover_1275*718/jvD2dleo.jpg",
   "tencentId": 183,
-  "dataSource": "Camp HOK + HoKStats.gg (intl)",
-  "dataUpdated": "2026-06-05",
+  "dataSource": "Camp HOK bilingual (primary)",
+  "dataUpdated": "2026-06-07",
   "skills": [
     {
       "slot": "passive",
       "name": "Divine Awakening",
-      "description": "Able to move in true form after dying. Deals damage and launches enemies in range when resurrected.Deals extra damage to non-hero units.",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/183/18300.png",
-      "cooldown": null
+      "description": "Able to move in her Divine form after dying. When resurrected, flies toward the nearest allied tower, dealing damage and launching enemies within takeoff range.",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/18300.png",
+      "cooldown": "1s"
     },
     {
       "slot": "skill1",
       "name": "Holy Advance",
-      "description": "Dashes ahead with shield up, knocking back the enemy and dealing damagewhile gaining a shield that grants crowd control immunity.",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/183/18310.png",
-      "cooldown": null
+      "description": "Raises her shield and dashes, knocking back and dealing damage to enemies while gaining a shield that grants crowd control immunity.",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/18310.png",
+      "cooldown": "5s"
     },
     {
       "slot": "skill2",
       "name": "Unstoppable Spear",
-      "description": "Shifts in the target direction and enhances the next Basic Attack, chargingand dealing damage to the enemy. Hitting the same target 3 timessuccessively deals extra damage equal to lost Health.",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/183/18320.png",
-      "cooldown": null
+      "description": "Dashes in the target direction and enhances the next Basic Attack, in which she charges at the enemy and deals damage to them.",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/18320.png",
+      "cooldown": "6s"
     },
     {
       "slot": "ultimate",
       "name": "Immovable Aegis",
-      "description": "Raises a shield that grants crowd control immunity. Damage taken while theshield is up will be returned after a brief delay, dealing damage to enemieswithin range.",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/183/18330.png",
-      "cooldown": null
+      "description": "Raises a shield that grants crowd control immunity. Damage taken while the shield is up will be returned after a brief delay, dealing damage to enemies within range.",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/18330.png",
+      "cooldown": "25s"
+    }
+  ],
+  "skillsZh": [
+    {
+      "slot": "passive",
+      "name": "真神覺醒",
+      "description": "雅典娜死亡後，可以真神形態移動，復活時飛向距離最近的友方防禦塔，對起飛範圍內敵人造成傷害和擊飛",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/18300.png",
+      "cooldown": "1s"
+    },
+    {
+      "slot": "skill1",
+      "name": "神聖進軍",
+      "description": "雅典娜舉盾突進對敵人造成擊退和傷害並獲得護盾，護盾期間免控",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/18310.png",
+      "cooldown": "5s"
+    },
+    {
+      "slot": "skill2",
+      "name": "貫穿之槍",
+      "description": "雅典娜向指定方向位移並強化下次普攻，向敵人衝鋒並造成傷害",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/18320.png",
+      "cooldown": "6s"
+    },
+    {
+      "slot": "ultimate",
+      "name": "敬畏聖盾",
+      "description": "雅典娜舉盾獲得護盾，期間呈現霸體狀態。舉盾期間所受傷害會在短暫延遲後反擊，對範圍內敵人造成傷害。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/18330.png",
+      "cooldown": "25s"
     }
   ],
   "build": [
     {
       "slot": 1,
-      "itemId": "1532",
-      "name": "Giant's Grip",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1532.jpg",
-      "description": "Monster kills boost Health"
+      "itemId": "1534",
+      "name": "Dragon's Rage",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1536.png",
+      "description": "HP +1,350, PDEF +180, MDEF +90\nBoosts BA damage"
     },
     {
       "slot": 2,
-      "itemId": "1422",
-      "name": "Boots of Resistance",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
-      "description": "Shortens CC"
+      "itemId": "1138",
+      "name": "Overlord's Might",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1138.png",
+      "description": "PATK +150, CDR +5%\nHigh-damage attack"
     },
     {
       "slot": 3,
-      "itemId": "1331",
-      "name": "Blazing Cape",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1331.jpg",
-      "description": "Burns nearby enemies"
+      "itemId": "13310",
+      "name": "Frostscar's Embrace",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/13310.png",
+      "description": "PATK +60, PDEF +300, CDR +10%\nEnhanced BAs slow"
     },
     {
       "slot": 4,
-      "itemId": "1534",
-      "name": "Dragon's Rage",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1534.jpg",
-      "description": "Boosts BA damage"
+      "itemId": "1131",
+      "name": "Starbreaker",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1131.png",
+      "description": "PATK +90, HP +700, MSPD +7.5%\nAnti-tank"
     },
     {
       "slot": 5,
-      "itemId": "1328",
-      "name": "Blood Rage",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1328.jpg",
-      "description": "Grants temporary shield"
+      "itemId": "1337",
+      "name": "Sage's Sanctuary",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+      "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
     },
     {
       "slot": 6,
-      "itemId": "1332",
-      "name": "Overlord's Platemail",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1332.jpg",
-      "description": "Extra Health"
+      "itemId": "1127",
+      "name": "Destiny",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+      "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
+    }
+  ],
+  "buildZh": [
+    {
+      "slot": 1,
+      "itemId": "1534",
+      "name": "怒龍劍盾",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1536.png",
+      "description": "+1350點生命值+180點物防+90點法防\n普攻額外傷害"
+    },
+    {
+      "slot": 2,
+      "itemId": "1138",
+      "name": "強者破軍",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1138.png",
+      "description": "+150點攻擊+5%減冷卻時間\n高額攻擊"
+    },
+    {
+      "slot": 3,
+      "itemId": "13310",
+      "name": "冰痕之握",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/13310.png",
+      "description": "+60點攻擊+300點物防+10%減冷卻時間……\n強化普攻減速"
+    },
+    {
+      "slot": 4,
+      "itemId": "1131",
+      "name": "碎星錘",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1131.png",
+      "description": "+90點攻擊+700點生命值+7.5%移速\n打坦克用"
+    },
+    {
+      "slot": 5,
+      "itemId": "1337",
+      "name": "賢者的庇護",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+      "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+    },
+    {
+      "slot": 6,
+      "itemId": "1127",
+      "name": "名刀・司命",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+      "description": "+75點攻擊+15%攻速+500點生命值\n保命"
+    }
+  ],
+  "builds": [
+    {
+      "id": "camp-0",
+      "label": "Clash",
+      "lane": "Top",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1534",
+          "name": "Dragon's Rage",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1536.png",
+          "description": "HP +1,350, PDEF +180, MDEF +90\nBoosts BA damage"
+        },
+        {
+          "slot": 2,
+          "itemId": "1138",
+          "name": "Overlord's Might",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1138.png",
+          "description": "PATK +150, CDR +5%\nHigh-damage attack"
+        },
+        {
+          "slot": 3,
+          "itemId": "13310",
+          "name": "Frostscar's Embrace",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/13310.png",
+          "description": "PATK +60, PDEF +300, CDR +10%\nEnhanced BAs slow"
+        },
+        {
+          "slot": 4,
+          "itemId": "1131",
+          "name": "Starbreaker",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1131.png",
+          "description": "PATK +90, HP +700, MSPD +7.5%\nAnti-tank"
+        },
+        {
+          "slot": 5,
+          "itemId": "1337",
+          "name": "Sage's Sanctuary",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
+        },
+        {
+          "slot": 6,
+          "itemId": "1127",
+          "name": "Destiny",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
+        }
+      ]
+    },
+    {
+      "id": "camp-1",
+      "label": "21a2速刷",
+      "lane": "Jungle",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1425",
+          "name": "Boots of Dexterity",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1425.png",
+          "description": "ASPD +20%, MSPD +50\nBAs restore HP"
+        },
+        {
+          "slot": 2,
+          "itemId": "1533",
+          "name": "Rapacious Bite",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1533.png",
+          "description": "PATK +90, MSPD +5%, CDR +7.5%\nMonster kills boost ATK"
+        },
+        {
+          "slot": 3,
+          "itemId": "13310",
+          "name": "Frostscar's Embrace",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/13310.png",
+          "description": "PATK +60, PDEF +300, CDR +10%\nEnhanced BAs slow"
+        },
+        {
+          "slot": 4,
+          "itemId": "1137",
+          "name": "Axe of Torment",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1137.png",
+          "description": "PATK +80, CDR +10%, HP +500\nAnti-squishy"
+        },
+        {
+          "slot": 5,
+          "itemId": "1126",
+          "name": "Doomsday",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1126.png",
+          "description": "PATK +40, ASPD +20%, HP +500, Lifesteal +20%\nBoosts BA damage"
+        },
+        {
+          "slot": 6,
+          "itemId": "1328",
+          "name": "Blood Rage",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1328.png",
+          "description": "PATK +75, HP +900\nTrades HP for shield"
+        }
+      ]
+    },
+    {
+      "id": "camp-2",
+      "label": "GD",
+      "lane": "Jungle",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1422",
+          "name": "Boots of Resistance",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1422.png",
+          "description": "MDEF +100, PDEF +50, MSPD +50\nShortens crowd control"
+        },
+        {
+          "slot": 2,
+          "itemId": "1138",
+          "name": "Overlord's Might",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1138.png",
+          "description": "PATK +150, CDR +5%\nHigh-damage attack"
+        },
+        {
+          "slot": 3,
+          "itemId": "1328",
+          "name": "Blood Rage",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1328.png",
+          "description": "PATK +75, HP +900\nTrades HP for shield"
+        },
+        {
+          "slot": 4,
+          "itemId": "1337",
+          "name": "Sage's Sanctuary",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
+        },
+        {
+          "slot": 5,
+          "itemId": "1127",
+          "name": "Destiny",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
+        },
+        {
+          "slot": 6,
+          "itemId": "1350",
+          "name": "Ravage - Phantom",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1350.png",
+          "description": "PATK +75, HP +900\nTrades HP for shield"
+        }
+      ]
+    },
+    {
+      "id": "camp-3",
+      "label": "Jungling 1",
+      "lane": "Jungle",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1533",
+          "name": "Rapacious Bite",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1533.png",
+          "description": "PATK +90, MSPD +5%, CDR +7.5%\nMonster kills boost ATK"
+        },
+        {
+          "slot": 2,
+          "itemId": "1134",
+          "name": "Master Sword",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1134.png",
+          "description": "PATK +55, Crit Rate +20%, HP +600\nEnhances BAs"
+        },
+        {
+          "slot": 3,
+          "itemId": "1133",
+          "name": "Eternity Blade",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1133.png",
+          "description": "PATK +120, Crit Rate +20%\nHigh crit damage"
+        },
+        {
+          "slot": 4,
+          "itemId": "1136",
+          "name": "Shadow Ripper",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1136.png",
+          "description": "PATK +45, ASPD +35%, Crit Rate +20%, MSPD +7.5%\nCrits boosts ASPD"
+        },
+        {
+          "slot": 5,
+          "itemId": "1337",
+          "name": "Sage's Sanctuary",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
+        },
+        {
+          "slot": 6,
+          "itemId": "1157",
+          "name": "Immovable - Sky Dome",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1157.png",
+          "description": "PATK +80, PDEF +150, CDR +10%\nTemp. damage reduction"
+        }
+      ]
+    }
+  ],
+  "buildsZh": [
+    {
+      "id": "camp-0",
+      "label": "Clash",
+      "lane": "Top",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1534",
+          "name": "怒龍劍盾",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1536.png",
+          "description": "+1350點生命值+180點物防+90點法防\n普攻額外傷害"
+        },
+        {
+          "slot": 2,
+          "itemId": "1138",
+          "name": "強者破軍",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1138.png",
+          "description": "+150點攻擊+5%減冷卻時間\n高額攻擊"
+        },
+        {
+          "slot": 3,
+          "itemId": "13310",
+          "name": "冰痕之握",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/13310.png",
+          "description": "+60點攻擊+300點物防+10%減冷卻時間……\n強化普攻減速"
+        },
+        {
+          "slot": 4,
+          "itemId": "1131",
+          "name": "碎星錘",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1131.png",
+          "description": "+90點攻擊+700點生命值+7.5%移速\n打坦克用"
+        },
+        {
+          "slot": 5,
+          "itemId": "1337",
+          "name": "賢者的庇護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+        },
+        {
+          "slot": 6,
+          "itemId": "1127",
+          "name": "名刀・司命",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "+75點攻擊+15%攻速+500點生命值\n保命"
+        }
+      ]
+    },
+    {
+      "id": "camp-1",
+      "label": "21a2速刷",
+      "lane": "Jungle",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1425",
+          "name": "急速戰靴",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1425.png",
+          "description": "+20%攻速+50點移速\n普攻回復生命值"
+        },
+        {
+          "slot": 2,
+          "itemId": "1533",
+          "name": "貪婪之噬",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1533.png",
+          "description": "+90攻擊+5%移速+7.5%冷縮\n打野怪加攻擊"
+        },
+        {
+          "slot": 3,
+          "itemId": "13310",
+          "name": "冰痕之握",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/13310.png",
+          "description": "+60點攻擊+300點物防+10%減冷卻時間……\n強化普攻減速"
+        },
+        {
+          "slot": 4,
+          "itemId": "1137",
+          "name": "暗影戰斧",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1137.png",
+          "description": "+80點攻擊+10%減冷卻時間+500點生命值\n打血薄用"
+        },
+        {
+          "slot": 5,
+          "itemId": "1126",
+          "name": "末世",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1126.png",
+          "description": "+40點攻擊+20%攻速+500點生命值+20%吸血\n普攻額外傷害"
+        },
+        {
+          "slot": 6,
+          "itemId": "1328",
+          "name": "血魔之怒",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1328.png",
+          "description": "+75點攻擊+900點生命值 \n犧牲生命值換取護盾值"
+        }
+      ]
+    },
+    {
+      "id": "camp-2",
+      "label": "GD",
+      "lane": "Jungle",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1422",
+          "name": "抵抗之靴",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1422.png",
+          "description": "+100點法防+50點物防+50點移速\n減少被控時間"
+        },
+        {
+          "slot": 2,
+          "itemId": "1138",
+          "name": "強者破軍",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1138.png",
+          "description": "+150點攻擊+5%減冷卻時間\n高額攻擊"
+        },
+        {
+          "slot": 3,
+          "itemId": "1328",
+          "name": "血魔之怒",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1328.png",
+          "description": "+75點攻擊+900點生命值 \n犧牲生命值換取護盾值"
+        },
+        {
+          "slot": 4,
+          "itemId": "1337",
+          "name": "賢者的庇護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+        },
+        {
+          "slot": 5,
+          "itemId": "1127",
+          "name": "名刀・司命",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "+75點攻擊+15%攻速+500點生命值\n保命"
+        },
+        {
+          "slot": 6,
+          "itemId": "1350",
+          "name": "侵略・怒魂",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1350.png",
+          "description": "+75點攻擊+900點生命值\n犧牲生命值換取護盾值"
+        }
+      ]
+    },
+    {
+      "id": "camp-3",
+      "label": "Jungling 1",
+      "lane": "Jungle",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1533",
+          "name": "貪婪之噬",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1533.png",
+          "description": "+90攻擊+5%移速+7.5%冷縮\n打野怪加攻擊"
+        },
+        {
+          "slot": 2,
+          "itemId": "1134",
+          "name": "宗師之力",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1134.png",
+          "description": "+55點攻擊+20%暴擊+600點生命值……\n強化普攻"
+        },
+        {
+          "slot": 3,
+          "itemId": "1133",
+          "name": "無盡戰刃",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1133.png",
+          "description": "+120點攻擊+20%暴擊\n高額暴擊傷害"
+        },
+        {
+          "slot": 4,
+          "itemId": "1136",
+          "name": "影刃",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1136.png",
+          "description": "+45點攻擊 +35%攻速+20%暴擊+7.5%移速\n暴擊增加攻速"
+        },
+        {
+          "slot": 5,
+          "itemId": "1337",
+          "name": "賢者的庇護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+        },
+        {
+          "slot": 6,
+          "itemId": "1157",
+          "name": "不動・天穹",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1157.png",
+          "description": "+80點攻擊+150點物防+10%冷卻時間縮減\n暫時增加免傷"
+        }
+      ]
     }
   ],
   "arcana": [
-    "Red"
+    "Lvl 5: Mutation",
+    "Lvl 5: Inheritance",
+    "Lvl 5: Stealth"
+  ],
+  "arcanaZh": [
+    "5級：異變",
+    "5級：傳承",
+    "5級：隱匿"
   ],
   "spells": [
-    "Smite"
+    "Execute"
+  ],
+  "spellsZh": [
+    "終結"
   ],
   "counters": [
     "Dharma",
@@ -105,336 +589,107 @@
     "Guan Yu"
   ],
   "tips": [
-    "Athena is a Medium Assassin (Jungling) on Honor of Kings Global. Camp HOK ranks them Tier B with 54.4% win rate and 0.1% pick rate as of 2026-06-05.",
-    "Best build path: Giant's Grip → Boots of Resistance → Blazing Cape → Dragon's Rage → Blood Rage → Overlord's Platemail.",
-    "Run Red for stats that match Athena's Assassin kit. Take Smite — swap to Purify against heavy CC or Smite when jungling.",
-    "Standard trade: Holy Advance → Unstoppable Spear → Immovable Aegis → weave basic attacks. Weave basic attacks between skill casts for passive value.",
-    "Laning: Clear to level four, then gank the lane with the least escape. Secure Tyrant when your bot or mid has crash wave.",
-    "Teamfight: Wait for CC from your team, then dive carry with full combo. Exit with reset or flash if focus fired.",
-    "Athena excels into Dharma, Gao Changgong. Avoid blind picking into Sun Bin, Guan Yu without team peel.",
-    "Athena sits at Tier B globally (54.4% WR). In high rank, pick only into favorable matchups or when you have a dedicated pocket pick. Low pick rate 0.1% — niche in high rank; surprise value if you perfect the kit. Camp data shows above-average win rate — prioritize when not hard-countered in draft."
+    "Athena (Assassin): Tier B — 54.68% WR (Camp HOK).",
+    "Lane: Jungling.",
+    "Build: Dragon's Rage, Overlord's Might, Frostscar's Embrace."
+  ],
+  "tipsZh": [
+    "雅典娜（打野）：梯度 B，勝率 54.68%（Camp HOK）。",
+    "出裝：怒龍劍盾、強者破軍、冰痕之握."
   ],
   "patchHistory": [
     {
-      "version": "Live meta",
-      "change": "Camp HOK — WR 54.4%, pick 0.1%, ban 0.0%, tier B."
+      "seasonId": "13",
+      "seasonName": "S13",
+      "versionName": "2025/12/16",
+      "publishedAt": "2025-12-16T01:00:00Z",
+      "isCurrent": false,
+      "tag": "Mechanics Upgrade",
+      "change": "Divine Form Upgrade",
+      "detail": "",
+      "version": "S13"
     },
     {
-      "version": "Matchups",
-      "change": "Strong into Dharma, Gao Changgong · Weak into Sun Bin, Guan Yu."
+      "seasonId": "12",
+      "seasonName": "S12",
+      "versionName": "20250924",
+      "publishedAt": "2025-09-24T01:00:00Z",
+      "isCurrent": false,
+      "tag": "Stat Buffs",
+      "change": "Skill Effects Upgrade",
+      "detail": "",
+      "version": "S12"
+    }
+  ],
+  "patchHistoryZh": [
+    {
+      "seasonId": "13",
+      "seasonName": "S13",
+      "versionName": "2025/12/16",
+      "publishedAt": "2025-12-16T01:00:00Z",
+      "isCurrent": false,
+      "tag": "機制升級",
+      "change": "真身形態升級",
+      "detail": "",
+      "version": "S13"
     },
     {
-      "version": "High rank",
-      "change": "Athena sits at Tier B globally (54.4% WR). In high rank, pick only into favorable matchups or when you have a dedicated pocket pick. Low pick rate 0.1% — niche in high rank; surprise value if you perfect the kit. Camp data shows above-average win rate — prioritize when not hard-countered in draft."
+      "seasonId": "12",
+      "seasonName": "S12",
+      "versionName": "20250924",
+      "publishedAt": "2025-09-24T01:00:00Z",
+      "isCurrent": false,
+      "tag": "數值增強",
+      "change": "提升技能效果",
+      "detail": "",
+      "version": "S12"
     }
   ],
   "faqs": [
     {
       "id": "faq-good-season",
-      "question": "Is Athena good in the current meta?",
-      "answer": "Athena is Tier B Assassin with 54.4% win rate, 0.1% pick rate, and 0.0% ban rate on Honor of Kings Global (Camp HOK, 2026-06-05). Niche — draft carefully."
+      "question": "Is Athena good in current season?",
+      "answer": "Athena is Tier B Assassin with 54.68% win rate, 0.08% pick rate, and 0.01% ban rate (Camp HOK international)."
     },
     {
       "id": "faq-best-build",
       "question": "What is the best Athena build?",
-      "answer": "Core item path: Giant's Grip, Boots of Resistance, Blazing Cape, Dragon's Rage, Blood Rage, Overlord's Platemail. Run Red arcana with Smite. Switch to alternate build presets on this page for jungle, clash, or late-game setups."
+      "answer": "Recommended: Dragon's Rage, Overlord's Might, Frostscar's Embrace, Starbreaker, Sage's Sanctuary, Destiny."
     },
     {
       "id": "faq-counter",
       "question": "How to counter Athena?",
-      "answer": "Pick Sun Bin, Guan Yu into Athena. Deny Jungling resources early and force fights before Athena completes core items. Athena struggles when the enemy can peel and group them."
+      "answer": "Pick Sun Bin, Guan Yu. Strong into Dharma, Gao Changgong."
+    }
+  ],
+  "faqsZh": [
+    {
+      "id": "faq-good-season",
+      "question": "雅典娜 這版本適合上分嗎？",
+      "answer": "雅典娜 為 B 梯度，勝率 54.68%、選取 0.08%、禁用 0.01%（Camp HOK 國際服）。"
     },
     {
-      "id": "faq-strong-into",
-      "question": "Who does Athena counter?",
-      "answer": "Athena is strong into Dharma, Gao Changgong according to HoKStats matchup data and role matchups on the global server. Draft Athena when the enemy relies on these heroes in the Jungling lane."
+      "id": "faq-best-build",
+      "question": "雅典娜 出裝怎麼搭配？",
+      "answer": "推薦：怒龍劍盾、強者破軍、冰痕之握、碎星錘、賢者的庇護、名刀・司命."
     },
     {
-      "id": "faq-high-rank",
-      "question": "Is Athena good in high rank / Diamond+?",
-      "answer": "Athena sits at Tier B globally (54.4% WR). In high rank, pick only into favorable matchups or when you have a dedicated pocket pick. Low pick rate 0.1% — niche in high rank; surprise value if you perfect the kit. Camp data shows above-average win rate — prioritize when not hard-countered in draft."
-    },
-    {
-      "id": "faq-lane",
-      "question": "What lane should Athena play?",
-      "answer": "Athena is tagged Jungling in Camp export (Fighter, Assassin). Clear to level four, then gank the lane with the least escape. Secure Tyrant when your bot or mid has crash wave."
-    },
-    {
-      "id": "faq-arcana",
-      "question": "Best arcana and spells for Athena?",
-      "answer": "Recommended: Red arcana. Battle spell: Smite. Adjust Purify/Execute based on enemy dive and jungle need."
-    },
-    {
-      "id": "faq-vs-peer",
-      "question": "Athena or Wukong — which is better?",
-      "answer": "Athena vs Wukong (Assassin, Tier S): Wukong is 1.3% pick / 49.7% WR. Athena has +4.7% WR vs Wukong in Camp data. Choose Athena when you need Jungling identity; choose Wukong for Jungling comfort."
-    },
-    {
-      "id": "faq-ban",
-      "question": "Should I ban Athena?",
-      "answer": "Low priority ban (0.0%). Focus bans on higher-tier Assassin picks unless targeting a one-trick."
+      "id": "faq-counter",
+      "question": "怎麼克制 雅典娜？",
+      "answer": "可選 Sun Bin、Guan Yu。雅典娜 克制 Dharma、Gao Changgong。"
     }
   ],
   "metaAnalysis": [
-    "Athena — 54.4% WR, 0.1% pick, 0.0% ban (Camp HOK 2026-06-05).",
-    "Tier B Assassin · Jungling · difficulty Medium.",
-    "Athena sits at Tier B globally (54.4% WR). In high rank, pick only into favorable matchups or when you have a dedicated pocket pick. Low pick rate 0.1% — niche in high rank; surprise value if you perfect the kit. Camp data shows above-average win rate — prioritize when not hard-countered in draft.",
-    "Matchups: strong into Dharma, Gao Changgong; weak into Sun Bin, Guan Yu.",
-    "Athena vs Wukong (Assassin, Tier S): Wukong is 1.3% pick / 49.7% WR. Athena has +4.7% WR vs Wukong in Camp data. Choose Athena when you need Jungling identity; choose Wukong for Jungling comfort.",
-    "Athena vs Musashi (Assassin, Tier A): Musashi is 1.1% pick / 50.7% WR. Athena has +3.7% WR vs Musashi in Camp data. Choose Athena when you need Jungling identity; choose Musashi for Jungling comfort.",
-    "Draft tip: counter-pick or comfort pick when lane matchup is favorable."
+    "Athena win rate 54.68% (Camp HOK, 2026-06-07).",
+    "Pick rate 0.08%.",
+    "Ban rate 0.01%.",
+    "Counters: Dharma, Gao Changgong. Weak into: Sun Bin, Guan Yu."
   ],
-  "builds": [
-    {
-      "id": "recommended",
-      "label": "Recommended",
-      "position": null,
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1532",
-          "name": "Giant's Grip",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1532.jpg",
-          "description": "Monster kills boost Health"
-        },
-        {
-          "slot": 2,
-          "itemId": "1422",
-          "name": "Boots of Resistance",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
-          "description": "Shortens CC"
-        },
-        {
-          "slot": 3,
-          "itemId": "1331",
-          "name": "Blazing Cape",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1331.jpg",
-          "description": "Burns nearby enemies"
-        },
-        {
-          "slot": 4,
-          "itemId": "1534",
-          "name": "Dragon's Rage",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1534.jpg",
-          "description": "Boosts BA damage"
-        },
-        {
-          "slot": 5,
-          "itemId": "1328",
-          "name": "Blood Rage",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1328.jpg",
-          "description": "Grants temporary shield"
-        },
-        {
-          "slot": 6,
-          "itemId": "1332",
-          "name": "Overlord's Platemail",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1332.jpg",
-          "description": "Extra Health"
-        }
-      ]
-    },
-    {
-      "id": "clash",
-      "label": "Clash",
-      "position": "Position 1",
-      "lane": "Clash Lane",
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1137",
-          "name": "Axe of Torment",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1137.jpg",
-          "description": "Anti-squishy"
-        },
-        {
-          "slot": 2,
-          "itemId": "1425",
-          "name": "Boots of Dexterity",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1425.jpg",
-          "description": "Boosts ASPD"
-        },
-        {
-          "slot": 3,
-          "itemId": "1534",
-          "name": "Dragon's Rage",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1534.jpg",
-          "description": "Boosts BA damage"
-        },
-        {
-          "slot": 4,
-          "itemId": "1138",
-          "name": "Overlord's Might",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1138.jpg",
-          "description": "High-damage attack"
-        },
-        {
-          "slot": 5,
-          "itemId": "13310",
-          "name": "Frostscar's Embrace",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/13310.jpg",
-          "description": "Enhanced BAs slow"
-        },
-        {
-          "slot": 6,
-          "itemId": "1131",
-          "name": "Starbreaker",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1131.jpg",
-          "description": "Anti-tank"
-        }
-      ]
-    },
-    {
-      "id": "jungling-1",
-      "label": "Jungling 1",
-      "position": "Position 3",
-      "lane": "Jungling",
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1523",
-          "name": "Relentless Blade",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1523.jpg",
-          "description": "Monster kills boost PATK"
-        },
-        {
-          "slot": 2,
-          "itemId": "1425",
-          "name": "Boots of Dexterity",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1425.jpg",
-          "description": "Boosts ASPD"
-        },
-        {
-          "slot": 3,
-          "itemId": "1124",
-          "name": "Meteor",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1124.jpg",
-          "description": "PATK +35\nCDR +7.5%"
-        },
-        {
-          "slot": 4,
-          "itemId": "1137",
-          "name": "Axe of Torment",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1137.jpg",
-          "description": "Anti-squishy"
-        },
-        {
-          "slot": 5,
-          "itemId": "1533",
-          "name": "Rapacious Bite",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1533.jpg",
-          "description": "Monster kills boost PATK"
-        },
-        {
-          "slot": 6,
-          "itemId": "1134",
-          "name": "Master Sword",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1134.jpg",
-          "description": "Enhances BA"
-        }
-      ]
-    },
-    {
-      "id": "21a2速刷",
-      "label": "21a2速刷",
-      "position": "Position 3",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1523",
-          "name": "Relentless Blade",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1523.jpg",
-          "description": "Monster kills boost PATK"
-        },
-        {
-          "slot": 2,
-          "itemId": "1425",
-          "name": "Boots of Dexterity",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1425.jpg",
-          "description": "Boosts ASPD"
-        },
-        {
-          "slot": 3,
-          "itemId": "1124",
-          "name": "Meteor",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1124.jpg",
-          "description": "PATK +35\nCDR +7.5%"
-        },
-        {
-          "slot": 4,
-          "itemId": "1533",
-          "name": "Rapacious Bite",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1533.jpg",
-          "description": "Monster kills boost PATK"
-        },
-        {
-          "slot": 5,
-          "itemId": "13310",
-          "name": "Frostscar's Embrace",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/13310.jpg",
-          "description": "Enhanced BAs slow"
-        },
-        {
-          "slot": 6,
-          "itemId": "1114",
-          "name": "Vampiric Scythe",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1114.jpg",
-          "description": "Physical Lifesteal"
-        }
-      ]
-    },
-    {
-      "id": "gd",
-      "label": "GD",
-      "position": "Position 3",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1523",
-          "name": "Relentless Blade",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1523.jpg",
-          "description": "Monster kills boost PATK"
-        },
-        {
-          "slot": 2,
-          "itemId": "1425",
-          "name": "Boots of Dexterity",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1425.jpg",
-          "description": "Boosts ASPD"
-        },
-        {
-          "slot": 3,
-          "itemId": "1533",
-          "name": "Rapacious Bite",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1533.jpg",
-          "description": "Monster kills boost PATK"
-        },
-        {
-          "slot": 4,
-          "itemId": "1124",
-          "name": "Meteor",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1124.jpg",
-          "description": "PATK +35\nCDR +7.5%"
-        },
-        {
-          "slot": 5,
-          "itemId": "1137",
-          "name": "Axe of Torment",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1137.jpg",
-          "description": "Anti-squishy"
-        },
-        {
-          "slot": 6,
-          "itemId": "1534",
-          "name": "Dragon's Rage",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1534.jpg",
-          "description": "Boosts BA damage"
-        }
-      ]
-    }
+  "metaAnalysisZh": [
+    "雅典娜 勝率 54.68%（Camp HOK，2026-06-07）",
+    "選取率 0.08%",
+    "禁用率 0.01%",
+    "克制：Dharma、Gao Changgong；被克制：Sun Bin、Guan Yu"
   ],
   "guide": {
     "overview": "Athena is a Medium Assassin (Jungling) on Honor of Kings Global. Camp HOK ranks them Tier B with 54.4% win rate and 0.1% pick rate as of 2026-06-05.",

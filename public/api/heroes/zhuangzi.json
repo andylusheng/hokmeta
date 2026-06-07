@@ -2,100 +2,485 @@
   "id": "zhuangzi",
   "slug": "zhuangzi",
   "name": "Zhuangzi",
+  "nameZh": "莊周",
   "role": "Tank",
   "roles": "Support, Tank",
+  "rolesZh": "輔助, 坦克",
   "lane": "Roaming",
+  "laneZh": "遊走",
   "difficulty": "Easy",
   "tier": "A",
-  "winRate": 49.93,
+  "winRate": 50.17,
   "pickRate": 0.66,
-  "banRate": 1.05,
-  "rank": 76,
+  "banRate": 1.04,
+  "rank": 69,
   "avatar": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/UZC54GWu.png",
   "avatarFallback": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/113/113.jpg",
+  "heroCover": "https://camp.honorofkings.com/social/game/src/image_hero_cover_1275*718/EwgarWHr.jpg",
   "tencentId": 113,
-  "dataSource": "Camp HOK + HoKStats.gg (intl)",
-  "dataUpdated": "2026-06-05",
+  "dataSource": "Camp HOK bilingual (primary)",
+  "dataUpdated": "2026-06-07",
   "skills": [
     {
       "slot": "passive",
       "name": "Nature's Will",
       "description": "Periodically removes crowd control effects and increases Movement Speed and damage reduction.",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/113/11300.png",
-      "cooldown": null
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/11300.png",
+      "cooldown": "1s"
     },
     {
       "slot": "skill1",
       "name": "Kaleidoscope",
-      "description": "Triggers Nature's Will, releasing dream butterflies in a fan-shaped area, inflicting damage and slowing enemies in range.",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/113/11310.png",
-      "cooldown": null
+      "description": "Triggers Nature's Will, releasing dream butterflies in a cone-shaped area, inflicting damage and slowing enemies in range.",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/11310.png",
+      "cooldown": "8s"
     },
     {
       "slot": "skill2",
       "name": "Sleep Starts",
-      "description": "Deals damage to enemies in range and increases ally Movement Speed Grants a stack each time dealing damage, up to 5 stacks. Each stack increases skill damage. Passive: Periodically casts Sleep Starts.",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/113/11320.png",
-      "cooldown": null
+      "description": "Damages enemies within range and increases teammates' Movement Speed.\nGains a stack each time damage is dealt, up to 5 stacks. Each stack increases skill damage.\nPassive: Periodically uses Sleep Starts.",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/11320.png",
+      "cooldown": "5s"
     },
     {
       "slot": "ultimate",
       "name": "Butterfly Effect",
-      "description": "Removes crowd controls from allies within range and increases shield.",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/113/11330.png",
-      "cooldown": null
+      "description": "Removes crowd control effects from teammates within range and provides a shield.",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/11330.png",
+      "cooldown": "60s"
+    }
+  ],
+  "skillsZh": [
+    {
+      "slot": "passive",
+      "name": "自然意志",
+      "description": "每隔一段時間解除自身控制效果，提升移動速度和傷害減免。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/11300.png",
+      "cooldown": "1s"
+    },
+    {
+      "slot": "skill1",
+      "name": "化蝶",
+      "description": "觸發【自然意志】，向指定扇形區域發射幻化蝴蝶，對範圍內敵人造成傷害和減速效果。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/11310.png",
+      "cooldown": "8s"
+    },
+    {
+      "slot": "skill2",
+      "name": "蝴蝶效應",
+      "description": "對自身周圍一定範圍內敵人造成傷害，提升友方英雄移動速度。\n每次造成傷害可為自身疊層(最高五層)，每層提升技能傷害。\n被動：每隔一段時間自動施放【蝴蝶效應】。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/11320.png",
+      "cooldown": "5s"
+    },
+    {
+      "slot": "ultimate",
+      "name": "天人合一",
+      "description": "為自身周圍一定範圍內的友方英雄解除控制效果，並增加護盾值。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/11330.png",
+      "cooldown": "60s"
     }
   ],
   "build": [
     {
       "slot": 1,
-      "itemId": "1421",
-      "name": "Boots of Fortitude",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1421.jpg",
-      "description": "Reduces physical damage"
+      "itemId": "1721",
+      "name": "Crimson Shadow - Redemption",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1746.png",
+      "description": "HP +1,200, MSPD +7.5%\nDPS aura"
     },
     {
       "slot": 2,
-      "itemId": "1336",
-      "name": "Glacial Buckler",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1336.jpg",
-      "description": "Group damage & slow"
+      "itemId": "1353",
+      "name": "Dawnlight",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1353.png",
+      "description": "PDEF +210, HP +900, CDR +10%\nShields on dealing damage"
     },
     {
       "slot": 3,
-      "itemId": "1333",
-      "name": "Ominous Premonition",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1333.jpg",
-      "description": "Slows attackers"
+      "itemId": "1335",
+      "name": "Succubus Cloak",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
+      "description": "MDEF +300, HP +1,100\nNegates magical damage"
     },
     {
       "slot": 4,
-      "itemId": "1347",
-      "name": "Longnight Guardian",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1347.jpg",
-      "description": "Resists burst damage"
+      "itemId": "1331",
+      "name": "Blazing Cape",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1331.png",
+      "description": "PDEF +150, MDEF +150, HP +1,100\nArea burn & imperil"
     },
     {
       "slot": 5,
       "itemId": "1332",
       "name": "Overlord's Platemail",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1332.jpg",
-      "description": "Extra Health"
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1332.png",
+      "description": "HP +1,800, PDEF +160, MDEF +80\nExtra HP"
     },
     {
       "slot": 6,
-      "itemId": null,
-      "name": "Data unavailable",
-      "icon": null,
-      "description": null
+      "itemId": "1333",
+      "name": "Ominous Premonition",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1333.png",
+      "description": "PDEF +300, HP +1,200\nSlows attackers"
+    }
+  ],
+  "buildZh": [
+    {
+      "slot": 1,
+      "itemId": "1721",
+      "name": "極影・救贖",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1746.png",
+      "description": "+1200點生命值+7.5%移速\n光環提升輸出"
+    },
+    {
+      "slot": 2,
+      "itemId": "1353",
+      "name": "旭日初光",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1353.png",
+      "description": "+210點物防+900點生命值+10%減冷卻時間\n傷害敵人時獲得護盾值"
+    },
+    {
+      "slot": 3,
+      "itemId": "1335",
+      "name": "魔女斗篷",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
+      "description": "+300點法防+1100點生命值\n吸收法術傷害"
+    },
+    {
+      "slot": 4,
+      "itemId": "1331",
+      "name": "紅蓮斗篷",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1331.png",
+      "description": "+150點物防+150點法防+1100點生命值\n範圍灼燒重傷"
+    },
+    {
+      "slot": 5,
+      "itemId": "1332",
+      "name": "霸者重裝",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1332.png",
+      "description": "+1800點生命值+160點物防+80點法防\n提高額外生命值"
+    },
+    {
+      "slot": 6,
+      "itemId": "1333",
+      "name": "不祥徵兆",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1333.png",
+      "description": "+300點物防+1200點生命值\n受擊時將敵人減速"
+    }
+  ],
+  "builds": [
+    {
+      "id": "camp-0",
+      "label": "Principais",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1721",
+          "name": "Crimson Shadow - Redemption",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1746.png",
+          "description": "HP +1,200, MSPD +7.5%\nDPS aura"
+        },
+        {
+          "slot": 2,
+          "itemId": "1353",
+          "name": "Dawnlight",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1353.png",
+          "description": "PDEF +210, HP +900, CDR +10%\nShields on dealing damage"
+        },
+        {
+          "slot": 3,
+          "itemId": "1335",
+          "name": "Succubus Cloak",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
+          "description": "MDEF +300, HP +1,100\nNegates magical damage"
+        },
+        {
+          "slot": 4,
+          "itemId": "1331",
+          "name": "Blazing Cape",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1331.png",
+          "description": "PDEF +150, MDEF +150, HP +1,100\nArea burn & imperil"
+        },
+        {
+          "slot": 5,
+          "itemId": "1332",
+          "name": "Overlord's Platemail",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1332.png",
+          "description": "HP +1,800, PDEF +160, MDEF +80\nExtra HP"
+        },
+        {
+          "slot": 6,
+          "itemId": "1333",
+          "name": "Ominous Premonition",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1333.png",
+          "description": "PDEF +300, HP +1,200\nSlows attackers"
+        }
+      ]
+    },
+    {
+      "id": "camp-1",
+      "label": "WHALE",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1421",
+          "name": "Boots of Fortitude",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1421.png",
+          "description": "PDEF +100, MDEF +50, MSPD +50\nReduces physical damage"
+        },
+        {
+          "slot": 2,
+          "itemId": "1721",
+          "name": "Crimson Shadow - Redemption",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1746.png",
+          "description": "HP +1,200, MSPD +7.5%\nDPS aura"
+        },
+        {
+          "slot": 3,
+          "itemId": "1333",
+          "name": "Ominous Premonition",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1333.png",
+          "description": "PDEF +300, HP +1,200\nSlows attackers"
+        },
+        {
+          "slot": 4,
+          "itemId": "1335",
+          "name": "Succubus Cloak",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
+          "description": "MDEF +300, HP +1,100\nNegates magical damage"
+        },
+        {
+          "slot": 5,
+          "itemId": "1336",
+          "name": "Glacial Buckler",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1336.png",
+          "description": "CDR +20%, HP +600, PDEF +240\nGroup damage & slow"
+        },
+        {
+          "slot": 6,
+          "itemId": "1332",
+          "name": "Overlord's Platemail",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1332.png",
+          "description": "HP +1,800, PDEF +160, MDEF +80\nExtra HP"
+        }
+      ]
+    },
+    {
+      "id": "camp-2",
+      "label": "Zhuangzipot",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1353",
+          "name": "Dawnlight",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1353.png",
+          "description": "PDEF +210, HP +900, CDR +10%\nShields on dealing damage"
+        },
+        {
+          "slot": 2,
+          "itemId": "1335",
+          "name": "Succubus Cloak",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
+          "description": "MDEF +300, HP +1,100\nNegates magical damage"
+        },
+        {
+          "slot": 3,
+          "itemId": "1333",
+          "name": "Ominous Premonition",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1333.png",
+          "description": "PDEF +300, HP +1,200\nSlows attackers"
+        },
+        {
+          "slot": 4,
+          "itemId": "1332",
+          "name": "Overlord's Platemail",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1332.png",
+          "description": "HP +1,800, PDEF +160, MDEF +80\nExtra HP"
+        },
+        {
+          "slot": 5,
+          "itemId": "1337",
+          "name": "Sage's Sanctuary",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
+        },
+        {
+          "slot": 6,
+          "itemId": "1350",
+          "name": "Ravage - Phantom",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1350.png",
+          "description": "PATK +75, HP +900\nTrades HP for shield"
+        }
+      ]
+    }
+  ],
+  "buildsZh": [
+    {
+      "id": "camp-0",
+      "label": "Principais",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1721",
+          "name": "極影・救贖",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1746.png",
+          "description": "+1200點生命值+7.5%移速\n光環提升輸出"
+        },
+        {
+          "slot": 2,
+          "itemId": "1353",
+          "name": "旭日初光",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1353.png",
+          "description": "+210點物防+900點生命值+10%減冷卻時間\n傷害敵人時獲得護盾值"
+        },
+        {
+          "slot": 3,
+          "itemId": "1335",
+          "name": "魔女斗篷",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
+          "description": "+300點法防+1100點生命值\n吸收法術傷害"
+        },
+        {
+          "slot": 4,
+          "itemId": "1331",
+          "name": "紅蓮斗篷",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1331.png",
+          "description": "+150點物防+150點法防+1100點生命值\n範圍灼燒重傷"
+        },
+        {
+          "slot": 5,
+          "itemId": "1332",
+          "name": "霸者重裝",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1332.png",
+          "description": "+1800點生命值+160點物防+80點法防\n提高額外生命值"
+        },
+        {
+          "slot": 6,
+          "itemId": "1333",
+          "name": "不祥徵兆",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1333.png",
+          "description": "+300點物防+1200點生命值\n受擊時將敵人減速"
+        }
+      ]
+    },
+    {
+      "id": "camp-1",
+      "label": "WHALE",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1421",
+          "name": "影忍之足",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1421.png",
+          "description": "+100點物防+50點法防+50點移速\n減少物理傷害"
+        },
+        {
+          "slot": 2,
+          "itemId": "1721",
+          "name": "極影・救贖",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1746.png",
+          "description": "+1200點生命值+7.5%移速\n光環提升輸出"
+        },
+        {
+          "slot": 3,
+          "itemId": "1333",
+          "name": "不祥徵兆",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1333.png",
+          "description": "+300點物防+1200點生命值\n受擊時將敵人減速"
+        },
+        {
+          "slot": 4,
+          "itemId": "1335",
+          "name": "魔女斗篷",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
+          "description": "+300點法防+1100點生命值\n吸收法術傷害"
+        },
+        {
+          "slot": 5,
+          "itemId": "1336",
+          "name": "極寒風暴",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1336.png",
+          "description": "+20%減冷卻時間+600點生命值+240點物防\n群體傷害減速"
+        },
+        {
+          "slot": 6,
+          "itemId": "1332",
+          "name": "霸者重裝",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1332.png",
+          "description": "+1800點生命值+160點物防+80點法防\n提高額外生命值"
+        }
+      ]
+    },
+    {
+      "id": "camp-2",
+      "label": "Zhuangzipot",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1353",
+          "name": "旭日初光",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1353.png",
+          "description": "+210點物防+900點生命值+10%減冷卻時間\n傷害敵人時獲得護盾值"
+        },
+        {
+          "slot": 2,
+          "itemId": "1335",
+          "name": "魔女斗篷",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
+          "description": "+300點法防+1100點生命值\n吸收法術傷害"
+        },
+        {
+          "slot": 3,
+          "itemId": "1333",
+          "name": "不祥徵兆",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1333.png",
+          "description": "+300點物防+1200點生命值\n受擊時將敵人減速"
+        },
+        {
+          "slot": 4,
+          "itemId": "1332",
+          "name": "霸者重裝",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1332.png",
+          "description": "+1800點生命值+160點物防+80點法防\n提高額外生命值"
+        },
+        {
+          "slot": 5,
+          "itemId": "1337",
+          "name": "賢者的庇護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+        },
+        {
+          "slot": 6,
+          "itemId": "1350",
+          "name": "侵略・怒魂",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1350.png",
+          "description": "+75點攻擊+900點生命值\n犧牲生命值換取護盾值"
+        }
+      ]
     }
   ],
   "arcana": [
-    "Fate"
+    "Lvl 5: Fate",
+    "Lvl 5: Harmony",
+    "Lvl 5: Void"
+  ],
+  "arcanaZh": [
+    "5級：宿命",
+    "5級：調和",
+    "5級：虛空"
   ],
   "spells": [
-    "Smite",
     "Heal"
+  ],
+  "spellsZh": [
+    "治療術"
   ],
   "counters": [
     "Cirrus",
@@ -108,236 +493,107 @@
     "Musashi"
   ],
   "tips": [
-    "Zhuangzi is a Easy Tank (Roaming) on Honor of Kings Global. Camp HOK ranks them Tier A with 49.9% win rate and 0.7% pick rate as of 2026-06-05.",
-    "Best build path: Boots of Fortitude → Glacial Buckler → Ominous Premonition → Longnight Guardian → Overlord's Platemail.",
-    "Run Fate for stats that match Zhuangzi's Tank kit. Take Smite & Heal — swap to Purify against heavy CC or Smite when jungling.",
-    "Standard trade: Kaleidoscope → Sleep Starts → Butterfly Effect → weave basic attacks. Weave basic attacks between skill casts for passive value.",
-    "Laning: Help marksman crash wave, then rotate mid for picks. Return before Tyrant if your carry has no escape.",
-    "Teamfight: Engage on enemy carry when your team has follow-up. Body-block skillshots for your marksman.",
-    "Zhuangzi excels into Cirrus, Dian Wei, Menki. Avoid blind picking into Allain, Wukong, Musashi without team peel.",
-    "Zhuangzi is a viable Tier A pick in high rank with 49.9% win rate — strong in one-trick hands or as a counter-pick. Ban rate 1.1% — expect Zhuangzi to be removed in tryhard lobbies; have a backup in the same role."
+    "Zhuangzi (Tank): Tier A — 50.17% WR (Camp HOK).",
+    "Lane: Roaming.",
+    "Build: Crimson Shadow - Redemption, Dawnlight, Succubus Cloak."
+  ],
+  "tipsZh": [
+    "莊周（遊走）：梯度 A，勝率 50.17%（Camp HOK）。",
+    "出裝：極影・救贖、旭日初光、魔女斗篷."
   ],
   "patchHistory": [
     {
-      "version": "Live meta",
-      "change": "Camp HOK — WR 49.9%, pick 0.7%, ban 1.1%, tier A."
+      "seasonId": "10",
+      "seasonName": "S10",
+      "versionName": "20250515",
+      "publishedAt": "2025-05-15T02:03:23Z",
+      "isCurrent": false,
+      "tag": "Stat Buffs",
+      "change": "Enhanced Ultimate's shield",
+      "detail": "",
+      "version": "S10"
     },
     {
-      "version": "Matchups",
-      "change": "Strong into Cirrus, Dian Wei, Menki · Weak into Allain, Wukong, Musashi."
+      "seasonId": "6",
+      "seasonName": "S6",
+      "versionName": "20240725",
+      "publishedAt": "2024-07-25T02:20:21Z",
+      "isCurrent": false,
+      "tag": "Stat Buffs",
+      "change": "Reduced his Ultimate's cooldown and buffed his shield",
+      "detail": "The interval between each use of Zhuangzi's Ultimate is too long. Also, his shield is often overlooked by his teammates. By buffing the shield, we've made Zhuangzi useful even if he is unable to cleanse teammates of crowd controls.",
+      "version": "S6"
+    }
+  ],
+  "patchHistoryZh": [
+    {
+      "seasonId": "10",
+      "seasonName": "S10",
+      "versionName": "20250515",
+      "publishedAt": "2025-05-15T02:03:23Z",
+      "isCurrent": false,
+      "tag": "數值增強",
+      "change": "提升3技能護盾效果",
+      "detail": "",
+      "version": "S10"
     },
     {
-      "version": "High rank",
-      "change": "Zhuangzi is a viable Tier A pick in high rank with 49.9% win rate — strong in one-trick hands or as a counter-pick. Ban rate 1.1% — expect Zhuangzi to be removed in tryhard lobbies; have a backup in the same role."
+      "seasonId": "6",
+      "seasonName": "S6",
+      "versionName": "20240725",
+      "publishedAt": "2024-07-25T02:20:21Z",
+      "isCurrent": false,
+      "tag": "數值增強",
+      "change": "降低大招的冷卻時間，提高護盾效果",
+      "detail": "莊周大招的使用間隔實在是太久了，而護盾往往會被大家忽略，因此我們適當提高了效果，讓他即使沒有成功解除控制，還是能保持不錯的效果。",
+      "version": "S6"
     }
   ],
   "faqs": [
     {
       "id": "faq-good-season",
-      "question": "Is Zhuangzi good in the current meta?",
-      "answer": "Zhuangzi is Tier A Tank with 49.9% win rate, 0.7% pick rate, and 1.1% ban rate on Honor of Kings Global (Camp HOK, 2026-06-05). Solid situational pick."
+      "question": "Is Zhuangzi good in current season?",
+      "answer": "Zhuangzi is Tier A Tank with 50.17% win rate, 0.66% pick rate, and 1.04% ban rate (Camp HOK international)."
     },
     {
       "id": "faq-best-build",
       "question": "What is the best Zhuangzi build?",
-      "answer": "Core item path: Boots of Fortitude, Glacial Buckler, Ominous Premonition, Longnight Guardian, Overlord's Platemail. Run Fate arcana with Smite & Heal. Switch to alternate build presets on this page for jungle, clash, or late-game setups."
+      "answer": "Recommended: Crimson Shadow - Redemption, Dawnlight, Succubus Cloak, Blazing Cape, Overlord's Platemail, Ominous Premonition."
     },
     {
       "id": "faq-counter",
       "question": "How to counter Zhuangzi?",
-      "answer": "Pick Allain, Wukong, Musashi into Zhuangzi. Deny Roaming resources early and force fights before Zhuangzi completes core items. Zhuangzi struggles when the enemy can out-range or out-sustain them."
+      "answer": "Pick Allain, Wukong, Musashi. Strong into Cirrus, Dian Wei, Menki."
+    }
+  ],
+  "faqsZh": [
+    {
+      "id": "faq-good-season",
+      "question": "莊周 這版本適合上分嗎？",
+      "answer": "莊周 為 A 梯度，勝率 50.17%、選取 0.66%、禁用 1.04%（Camp HOK 國際服）。"
     },
     {
-      "id": "faq-strong-into",
-      "question": "Who does Zhuangzi counter?",
-      "answer": "Zhuangzi is strong into Cirrus, Dian Wei, Menki according to HoKStats matchup data and role matchups on the global server. Draft Zhuangzi when the enemy relies on these heroes in the Roaming lane."
+      "id": "faq-best-build",
+      "question": "莊周 出裝怎麼搭配？",
+      "answer": "推薦：極影・救贖、旭日初光、魔女斗篷、紅蓮斗篷、霸者重裝、不祥徵兆."
     },
     {
-      "id": "faq-high-rank",
-      "question": "Is Zhuangzi good in high rank / Diamond+?",
-      "answer": "Zhuangzi is a viable Tier A pick in high rank with 49.9% win rate — strong in one-trick hands or as a counter-pick. Ban rate 1.1% — expect Zhuangzi to be removed in tryhard lobbies; have a backup in the same role."
-    },
-    {
-      "id": "faq-lane",
-      "question": "What lane should Zhuangzi play?",
-      "answer": "Zhuangzi is tagged Roaming in Camp export (Support, Tank). Help marksman crash wave, then rotate mid for picks. Return before Tyrant if your carry has no escape."
-    },
-    {
-      "id": "faq-arcana",
-      "question": "Best arcana and spells for Zhuangzi?",
-      "answer": "Recommended: Fate arcana. Battle spell: Smite & Heal. Adjust Purify/Execute based on enemy dive and jungle need."
-    },
-    {
-      "id": "faq-vs-peer",
-      "question": "Zhuangzi or Kaizer — which is better?",
-      "answer": "Zhuangzi vs Kaizer (Tank, Tier S): Kaizer is 1.6% pick / 51.4% WR. Kaizer wins 1.5% more often globally. Choose Zhuangzi when you need Roaming identity; choose Kaizer for Clash Lane comfort."
-    },
-    {
-      "id": "faq-ban",
-      "question": "Should I ban Zhuangzi?",
-      "answer": "Yes in tryhard queues — 1.1% ban rate. Deny if enemy first-picks Tank."
+      "id": "faq-counter",
+      "question": "怎麼克制 莊周？",
+      "answer": "可選 Allain、Wukong、Musashi。莊周 克制 Cirrus、Dian Wei、Menki。"
     }
   ],
   "metaAnalysis": [
-    "Zhuangzi — 49.9% WR, 0.7% pick, 1.1% ban (Camp HOK 2026-06-05).",
-    "Tier A Tank · Roaming · difficulty Easy.",
-    "Zhuangzi is a viable Tier A pick in high rank with 49.9% win rate — strong in one-trick hands or as a counter-pick. Ban rate 1.1% — expect Zhuangzi to be removed in tryhard lobbies; have a backup in the same role.",
-    "Matchups: strong into Cirrus, Dian Wei, Menki; weak into Allain, Wukong, Musashi.",
-    "Zhuangzi vs Kaizer (Tank, Tier S): Kaizer is 1.6% pick / 51.4% WR. Kaizer wins 1.5% more often globally. Choose Zhuangzi when you need Roaming identity; choose Kaizer for Clash Lane comfort.",
-    "Zhuangzi vs Dun (Tank, Tier S): Dun is 1.5% pick / 52.3% WR. Dun wins 2.4% more often globally. Choose Zhuangzi when you need Roaming identity; choose Dun for Clash Lane comfort.",
-    "Draft tip: counter-pick or comfort pick when lane matchup is favorable."
+    "Zhuangzi win rate 50.17% (Camp HOK, 2026-06-07).",
+    "Pick rate 0.66%.",
+    "Ban rate 1.04%.",
+    "Counters: Cirrus, Dian Wei, Menki. Weak into: Allain, Wukong, Musashi."
   ],
-  "builds": [
-    {
-      "id": "recommended",
-      "label": "Recommended",
-      "position": null,
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1421",
-          "name": "Boots of Fortitude",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1421.jpg",
-          "description": "Reduces physical damage"
-        },
-        {
-          "slot": 2,
-          "itemId": "1336",
-          "name": "Glacial Buckler",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1336.jpg",
-          "description": "Group damage & slow"
-        },
-        {
-          "slot": 3,
-          "itemId": "1333",
-          "name": "Ominous Premonition",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1333.jpg",
-          "description": "Slows attackers"
-        },
-        {
-          "slot": 4,
-          "itemId": "1347",
-          "name": "Longnight Guardian",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1347.jpg",
-          "description": "Resists burst damage"
-        },
-        {
-          "slot": 5,
-          "itemId": "1332",
-          "name": "Overlord's Platemail",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1332.jpg",
-          "description": "Extra Health"
-        },
-        {
-          "slot": 6,
-          "itemId": null,
-          "name": "Data unavailable",
-          "icon": null,
-          "description": null
-        }
-      ]
-    },
-    {
-      "id": "whale",
-      "label": "WHALE",
-      "position": "Position 5",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1701",
-          "name": "Knowledge Gem",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1701.jpg",
-          "description": "Extra Gold & EXP"
-        },
-        {
-          "slot": 2,
-          "itemId": "1711",
-          "name": "Crimson Shadow",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1711.jpg",
-          "description": "DPS aura"
-        },
-        {
-          "slot": 3,
-          "itemId": "1421",
-          "name": "Boots of Fortitude",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1421.jpg",
-          "description": "Reduces physical damage"
-        },
-        {
-          "slot": 4,
-          "itemId": "1721",
-          "name": "Crimson Shadow - Redemption",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1721.jpg",
-          "description": "Group shield"
-        },
-        {
-          "slot": 5,
-          "itemId": "1333",
-          "name": "Ominous Premonition",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1333.jpg",
-          "description": "Slows attackers"
-        },
-        {
-          "slot": 6,
-          "itemId": "1335",
-          "name": "Succubus Cloak",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1335.jpg",
-          "description": "Negates magical damage"
-        }
-      ]
-    },
-    {
-      "id": "zhuangzipot",
-      "label": "Zhuangzipot",
-      "position": "Position 5",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1701",
-          "name": "Knowledge Gem",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1701.jpg",
-          "description": "Extra Gold & EXP"
-        },
-        {
-          "slot": 2,
-          "itemId": "1421",
-          "name": "Boots of Fortitude",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1421.jpg",
-          "description": "Reduces physical damage"
-        },
-        {
-          "slot": 3,
-          "itemId": "1711",
-          "name": "Crimson Shadow",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1711.jpg",
-          "description": "DPS aura"
-        },
-        {
-          "slot": 4,
-          "itemId": "1721",
-          "name": "Crimson Shadow - Redemption",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1721.jpg",
-          "description": "Group shield"
-        },
-        {
-          "slot": 5,
-          "itemId": "1353",
-          "name": "Dawnlight",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1353.jpg",
-          "description": "Shields on dealing damage"
-        },
-        {
-          "slot": 6,
-          "itemId": "1335",
-          "name": "Succubus Cloak",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1335.jpg",
-          "description": "Negates magical damage"
-        }
-      ]
-    }
+  "metaAnalysisZh": [
+    "莊周 勝率 50.17%（Camp HOK，2026-06-07）",
+    "選取率 0.66%",
+    "禁用率 1.04%",
+    "克制：Cirrus、Dian Wei、Menki；被克制：Allain、Wukong、Musashi"
   ],
   "guide": {
     "overview": "Zhuangzi is a Easy Tank (Roaming) on Honor of Kings Global. Camp HOK ranks them Tier A with 49.9% win rate and 0.7% pick rate as of 2026-06-05.",

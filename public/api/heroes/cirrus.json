@@ -2,48 +2,82 @@
   "id": "cirrus",
   "slug": "cirrus",
   "name": "Cirrus",
+  "nameZh": "雲中君",
   "role": "Assassin",
   "roles": "Assassin",
+  "rolesZh": "刺客",
   "lane": "Jungling",
+  "laneZh": "打野",
   "difficulty": "Medium",
   "tier": "B",
-  "winRate": 52.23,
+  "winRate": 51.79,
   "pickRate": 0.23,
   "banRate": 0.01,
-  "rank": 18,
+  "rank": 28,
   "avatar": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/bwygx1aS.png",
   "avatarFallback": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/506/506.jpg",
+  "heroCover": "https://camp.honorofkings.com/social/game/src/image_hero_cover_1275*718/qp7Y1yTP.jpg",
   "tencentId": 506,
-  "dataSource": "Camp HOK + HoKStats.gg (intl)",
-  "dataUpdated": "2026-06-05",
+  "dataSource": "Camp HOK bilingual (primary)",
+  "dataUpdated": "2026-06-07",
   "skills": [
     {
       "slot": "passive",
       "name": "Through the Clouds",
-      "description": "lgnores terrain after reaching level 4 and gains Movement Speed when usingBasic Attacks. Enemies hit by his Basic Attacks or skills take damage whenthey move.",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/506/50600.png",
-      "cooldown": null
+      "description": "Ignores terrain after reaching level 4 and gains Movement Speed when using Basic Attacks. Enemies hit by his Basic Attacks or skills take damage when they move.",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/50600.png",
+      "cooldown": "1s"
     },
     {
       "slot": "skill1",
       "name": "Cloud Descending",
-      "description": "Charges up, gaining Movement Speed. Then dashes forward, damaging andstunning enemies. Can jump back if he hits a hero.",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/506/50610.png",
-      "cooldown": null
+      "description": "Charges up, gaining Movement Speed. Then dashes forward, damaging and stunning enemies. Can jump back if he hits a hero.",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/50610.png",
+      "cooldown": "10s"
     },
     {
       "slot": "skill2",
       "name": "Razor Wind",
-      "description": "Throws wind blades that slow and deal damage to enemies 2 times. Then",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/506/50620.png",
-      "cooldown": null
+      "description": "Throws wind blades that slow and deal damage to enemies 2 times. Then gains Attack Speed and ranged Basic Attacks.",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/50620.png",
+      "cooldown": "10s"
     },
     {
       "slot": "ultimate",
       "name": "Soaring Whirlwind",
-      "description": "Carries an enemy into the air. Then strikes the ground, dealing area damage",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/506/50630.png",
-      "cooldown": null
+      "description": "Carries an enemy hero into the air, then strikes the ground, dealing area damage and launching the enemy he carried.",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/50621.png",
+      "cooldown": "45s"
+    }
+  ],
+  "skillsZh": [
+    {
+      "slot": "passive",
+      "name": "雲神・展翼",
+      "description": "雲中君4級後可永久無視地形飛行，普攻可以累積氣息，氣息可為雲中君提供移速加成，普攻和技能命中會疊加撕裂效果，造成位移傷害。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/50600.png",
+      "cooldown": "1s"
+    },
+    {
+      "slot": "skill1",
+      "name": "聊翱遊兮",
+      "description": "雲中君蓄力加速向前俯衝，結束時對目標造成暈眩和傷害，命中首位英雄後，自身可後跳一段距離。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/50610.png",
+      "cooldown": "10s"
+    },
+    {
+      "slot": "skill2",
+      "name": "颯風飛羽",
+      "description": "雲中君用翅膀揮擊風刃，造成2次傷害和減速，之後雲中君可以遠程普攻並攻速提升。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/50620.png",
+      "cooldown": "10s"
+    },
+    {
+      "slot": "ultimate",
+      "name": "猋遠舉兮雲中",
+      "description": "雲中君加速捲起一位敵人飛入高空，落下後造成範圍傷害，並對被捲起的敵人造成擊飛。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/50621.png",
+      "cooldown": "45s"
     }
   ],
   "build": [
@@ -51,50 +85,402 @@
       "slot": 1,
       "itemId": "1533",
       "name": "Rapacious Bite",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1533.jpg",
-      "description": "Monster kills boost PATK"
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1533.png",
+      "description": "PATK +90, MSPD +5%, CDR +7.5%\nMonster kills boost ATK"
     },
     {
       "slot": 2,
-      "itemId": "1425",
-      "name": "Boots of Dexterity",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1425.jpg",
-      "description": "Boosts ASPD"
+      "itemId": "1126",
+      "name": "Doomsday",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1126.png",
+      "description": "PATK +40, ASPD +20%, HP +500, Lifesteal +20%\nBoosts BA damage"
     },
     {
       "slot": 3,
-      "itemId": "1137",
-      "name": "Axe of Torment",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1137.jpg",
-      "description": "Anti-squishy"
+      "itemId": "1138",
+      "name": "Overlord's Might",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1138.png",
+      "description": "PATK +150, CDR +5%\nHigh-damage attack"
     },
     {
       "slot": 4,
-      "itemId": "1136",
-      "name": "Shadow Ripper",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1136.jpg",
-      "description": "Crits boost ASPD"
+      "itemId": "1337",
+      "name": "Sage's Sanctuary",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+      "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
     },
     {
       "slot": 5,
-      "itemId": "1133",
-      "name": "Eternity Blade",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1133.jpg",
-      "description": "High crit damage"
+      "itemId": "1127",
+      "name": "Destiny",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+      "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
     },
     {
       "slot": 6,
-      "itemId": null,
-      "name": "Data unavailable",
-      "icon": null,
-      "description": null
+      "itemId": "1134",
+      "name": "Master Sword",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1134.png",
+      "description": "PATK +55, Crit Rate +20%, HP +600\nEnhances BAs"
+    }
+  ],
+  "buildZh": [
+    {
+      "slot": 1,
+      "itemId": "1533",
+      "name": "貪婪之噬",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1533.png",
+      "description": "+90攻擊+5%移速+7.5%冷縮\n打野怪加攻擊"
+    },
+    {
+      "slot": 2,
+      "itemId": "1126",
+      "name": "末世",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1126.png",
+      "description": "+40點攻擊+20%攻速+500點生命值+20%吸血\n普攻額外傷害"
+    },
+    {
+      "slot": 3,
+      "itemId": "1138",
+      "name": "強者破軍",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1138.png",
+      "description": "+150點攻擊+5%減冷卻時間\n高額攻擊"
+    },
+    {
+      "slot": 4,
+      "itemId": "1337",
+      "name": "賢者的庇護",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+      "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+    },
+    {
+      "slot": 5,
+      "itemId": "1127",
+      "name": "名刀・司命",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+      "description": "+75點攻擊+15%攻速+500點生命值\n保命"
+    },
+    {
+      "slot": 6,
+      "itemId": "1134",
+      "name": "宗師之力",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1134.png",
+      "description": "+55點攻擊+20%暴擊+600點生命值……\n強化普攻"
+    }
+  ],
+  "builds": [
+    {
+      "id": "camp-0",
+      "label": "Cirrus",
+      "lane": "Jungle",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1533",
+          "name": "Rapacious Bite",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1533.png",
+          "description": "PATK +90, MSPD +5%, CDR +7.5%\nMonster kills boost ATK"
+        },
+        {
+          "slot": 2,
+          "itemId": "1126",
+          "name": "Doomsday",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1126.png",
+          "description": "PATK +40, ASPD +20%, HP +500, Lifesteal +20%\nBoosts BA damage"
+        },
+        {
+          "slot": 3,
+          "itemId": "1138",
+          "name": "Overlord's Might",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1138.png",
+          "description": "PATK +150, CDR +5%\nHigh-damage attack"
+        },
+        {
+          "slot": 4,
+          "itemId": "1337",
+          "name": "Sage's Sanctuary",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
+        },
+        {
+          "slot": 5,
+          "itemId": "1127",
+          "name": "Destiny",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
+        },
+        {
+          "slot": 6,
+          "itemId": "1134",
+          "name": "Master Sword",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1134.png",
+          "description": "PATK +55, Crit Rate +20%, HP +600\nEnhances BAs"
+        }
+      ]
+    },
+    {
+      "id": "camp-1",
+      "label": "nashr",
+      "lane": "Jungle",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1533",
+          "name": "Rapacious Bite",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1533.png",
+          "description": "PATK +90, MSPD +5%, CDR +7.5%\nMonster kills boost ATK"
+        },
+        {
+          "slot": 2,
+          "itemId": "1127",
+          "name": "Destiny",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
+        },
+        {
+          "slot": 3,
+          "itemId": "1138",
+          "name": "Overlord's Might",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1138.png",
+          "description": "PATK +150, CDR +5%\nHigh-damage attack"
+        },
+        {
+          "slot": 4,
+          "itemId": "1337",
+          "name": "Sage's Sanctuary",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
+        },
+        {
+          "slot": 5,
+          "itemId": "1341",
+          "name": "Frigid Charge",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1341.png",
+          "description": "PDEF +150, HP +900, CDR +7.5%, Resistance +10%\nGreat crowd control"
+        },
+        {
+          "slot": 6,
+          "itemId": "1328",
+          "name": "Blood Rage",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1328.png",
+          "description": "PATK +75, HP +900\nTrades HP for shield"
+        }
+      ]
+    },
+    {
+      "id": "camp-2",
+      "label": "LUNJAYY",
+      "lane": "Jungle",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "11210",
+          "name": "Mortal Punisher",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/11210.png",
+          "description": "PATK +100, Lifesteal +20%, ASPD +20%\nLowers Health regen"
+        },
+        {
+          "slot": 2,
+          "itemId": "1138",
+          "name": "Overlord's Might",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1138.png",
+          "description": "PATK +150, CDR +5%\nHigh-damage attack"
+        },
+        {
+          "slot": 3,
+          "itemId": "1134",
+          "name": "Master Sword",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1134.png",
+          "description": "PATK +55, Crit Rate +20%, HP +600\nEnhances BAs"
+        },
+        {
+          "slot": 4,
+          "itemId": "1127",
+          "name": "Destiny",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
+        },
+        {
+          "slot": 5,
+          "itemId": "1337",
+          "name": "Sage's Sanctuary",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
+        },
+        {
+          "slot": 6,
+          "itemId": "1157",
+          "name": "Immovable - Sky Dome",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1157.png",
+          "description": "PATK +80, PDEF +150, CDR +10%\nTemp. damage reduction"
+        }
+      ]
+    }
+  ],
+  "buildsZh": [
+    {
+      "id": "camp-0",
+      "label": "Cirrus",
+      "lane": "Jungle",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1533",
+          "name": "貪婪之噬",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1533.png",
+          "description": "+90攻擊+5%移速+7.5%冷縮\n打野怪加攻擊"
+        },
+        {
+          "slot": 2,
+          "itemId": "1126",
+          "name": "末世",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1126.png",
+          "description": "+40點攻擊+20%攻速+500點生命值+20%吸血\n普攻額外傷害"
+        },
+        {
+          "slot": 3,
+          "itemId": "1138",
+          "name": "強者破軍",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1138.png",
+          "description": "+150點攻擊+5%減冷卻時間\n高額攻擊"
+        },
+        {
+          "slot": 4,
+          "itemId": "1337",
+          "name": "賢者的庇護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+        },
+        {
+          "slot": 5,
+          "itemId": "1127",
+          "name": "名刀・司命",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "+75點攻擊+15%攻速+500點生命值\n保命"
+        },
+        {
+          "slot": 6,
+          "itemId": "1134",
+          "name": "宗師之力",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1134.png",
+          "description": "+55點攻擊+20%暴擊+600點生命值……\n強化普攻"
+        }
+      ]
+    },
+    {
+      "id": "camp-1",
+      "label": "nashr",
+      "lane": "Jungle",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1533",
+          "name": "貪婪之噬",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1533.png",
+          "description": "+90攻擊+5%移速+7.5%冷縮\n打野怪加攻擊"
+        },
+        {
+          "slot": 2,
+          "itemId": "1127",
+          "name": "名刀・司命",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "+75點攻擊+15%攻速+500點生命值\n保命"
+        },
+        {
+          "slot": 3,
+          "itemId": "1138",
+          "name": "強者破軍",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1138.png",
+          "description": "+150點攻擊+5%減冷卻時間\n高額攻擊"
+        },
+        {
+          "slot": 4,
+          "itemId": "1337",
+          "name": "賢者的庇護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+        },
+        {
+          "slot": 5,
+          "itemId": "1341",
+          "name": "冰霜衝擊",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1341.png",
+          "description": "+150點物防+900點生命值+7.5%冷卻時間+10%韌性\n群體控制"
+        },
+        {
+          "slot": 6,
+          "itemId": "1328",
+          "name": "血魔之怒",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1328.png",
+          "description": "+75點攻擊+900點生命值 \n犧牲生命值換取護盾值"
+        }
+      ]
+    },
+    {
+      "id": "camp-2",
+      "label": "LUNJAYY",
+      "lane": "Jungle",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "11210",
+          "name": "制裁之刃",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/11210.png",
+          "description": "+100點攻擊+20%吸血+20%攻速\n減少敵人回血"
+        },
+        {
+          "slot": 2,
+          "itemId": "1138",
+          "name": "強者破軍",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1138.png",
+          "description": "+150點攻擊+5%減冷卻時間\n高額攻擊"
+        },
+        {
+          "slot": 3,
+          "itemId": "1134",
+          "name": "宗師之力",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1134.png",
+          "description": "+55點攻擊+20%暴擊+600點生命值……\n強化普攻"
+        },
+        {
+          "slot": 4,
+          "itemId": "1127",
+          "name": "名刀・司命",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "+75點攻擊+15%攻速+500點生命值\n保命"
+        },
+        {
+          "slot": 5,
+          "itemId": "1337",
+          "name": "賢者的庇護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+        },
+        {
+          "slot": 6,
+          "itemId": "1157",
+          "name": "不動・天穹",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1157.png",
+          "description": "+80點攻擊+150點物防+10%冷卻時間縮減\n暫時增加免傷"
+        }
+      ]
     }
   ],
   "arcana": [
-    "Red"
+    "Lvl 5: Red Moon",
+    "Lvl 5: Mutation",
+    "Lvl 5: Inheritance"
+  ],
+  "arcanaZh": [
+    "5級：紅月",
+    "5級：異變",
+    "5級：傳承"
   ],
   "spells": [
     "Smite"
+  ],
+  "spellsZh": [
+    "懲擊"
   ],
   "counters": [
     "Hou Yi",
@@ -105,236 +491,129 @@
     "Mulan"
   ],
   "tips": [
-    "Cirrus is a Medium Assassin (Jungling) on Honor of Kings Global. Camp HOK ranks them Tier B with 52.2% win rate and 0.2% pick rate as of 2026-06-05.",
-    "Best build path: Rapacious Bite → Boots of Dexterity → Axe of Torment → Shadow Ripper → Eternity Blade.",
-    "Run Red for stats that match Cirrus's Assassin kit. Take Smite — swap to Purify against heavy CC or Smite when jungling.",
-    "Standard trade: Cloud Descending → Razor Wind → Soaring Whirlwind → weave basic attacks. Weave basic attacks between skill casts for passive value.",
-    "Laning: Clear to level four, then gank the lane with the least escape. Secure Tyrant when your bot or mid has crash wave.",
-    "Teamfight: Wait for CC from your team, then dive carry with full combo. Exit with reset or flash if focus fired.",
-    "Cirrus excels into Hou Yi, Xiao Qiao. Avoid blind picking into Di Renjie, Mulan without team peel.",
-    "Cirrus sits at Tier B globally (52.2% WR). In high rank, pick only into favorable matchups or when you have a dedicated pocket pick. Camp data shows above-average win rate — prioritize when not hard-countered in draft."
+    "Cirrus (Assassin): Tier B — 51.79% WR (Camp HOK).",
+    "Lane: Jungling.",
+    "Build: Rapacious Bite, Doomsday, Overlord's Might."
+  ],
+  "tipsZh": [
+    "雲中君（打野）：梯度 B，勝率 51.79%（Camp HOK）。",
+    "出裝：貪婪之噬、末世、強者破軍."
   ],
   "patchHistory": [
     {
-      "version": "Live meta",
-      "change": "Camp HOK — WR 52.2%, pick 0.2%, ban 0.0%, tier B."
+      "seasonId": "9",
+      "seasonName": "S9",
+      "versionName": "20250320",
+      "publishedAt": "2025-03-20T01:53:54Z",
+      "isCurrent": false,
+      "tag": "Stat Nerfs",
+      "change": "Stat Nerfs",
+      "detail": "",
+      "version": "S9"
     },
     {
-      "version": "Matchups",
-      "change": "Strong into Hou Yi, Xiao Qiao · Weak into Di Renjie, Mulan."
+      "seasonId": "8",
+      "seasonName": "S8",
+      "versionName": "20250213",
+      "publishedAt": "2025-02-13T03:25:14Z",
+      "isCurrent": false,
+      "tag": "Stat Buffs",
+      "change": "Reduced Skill Cooldowns",
+      "detail": "\"Damage over time is an important element of how Cirrus deals damage. He has to lead with repeated hits. We've reduced his skill cooldowns to increase his overall damage frequency.\"",
+      "version": "S8"
     },
     {
-      "version": "High rank",
-      "change": "Cirrus sits at Tier B globally (52.2% WR). In high rank, pick only into favorable matchups or when you have a dedicated pocket pick. Camp data shows above-average win rate — prioritize when not hard-countered in draft."
+      "seasonId": "4",
+      "seasonName": "S4",
+      "versionName": "20240220",
+      "publishedAt": "2024-02-20T02:27:09Z",
+      "isCurrent": false,
+      "tag": "Hero Rework",
+      "change": "We've reworked both passive and active skills, retaining Cirrus' original design and gameplay as much as possible while making his skill set more suitable for the current game environment.",
+      "detail": "We've reworked both passive and active skills, retaining Cirrus' original design and gameplay as much as possible while making his skill set more suitable for the current game environment.\nAs one of the first heroes to be released, the frequency with which Cirrus showed up in matches and his performance caught our attention.We want this hero, with his unique mechanics, to continue to provide more lineup choices and make things fun for Honor of Kings players.To this end, we have redesigned his skill set. The new Cirrus is easier to use than before, and has greater capacity for mastery, allowing more players to spread their wings and fly with this hero in Hero's Gorge.",
+      "version": "S4"
+    }
+  ],
+  "patchHistoryZh": [
+    {
+      "seasonId": "9",
+      "seasonName": "S9",
+      "versionName": "20250320",
+      "publishedAt": "2025-03-20T01:53:54Z",
+      "isCurrent": false,
+      "tag": "數值削弱",
+      "change": "數值削弱",
+      "detail": "",
+      "version": "S9"
+    },
+    {
+      "seasonId": "8",
+      "seasonName": "S8",
+      "versionName": "20250213",
+      "publishedAt": "2025-02-13T03:25:14Z",
+      "isCurrent": false,
+      "tag": "數值增強",
+      "change": "降低技能冷卻時間",
+      "detail": "「作為雲中君的重要輸出手段，持續傷害效果需要前置的連續命中，我們降低了他的技能冷卻時間，提升他整體的輸出頻率。」",
+      "version": "S8"
+    },
+    {
+      "seasonId": "4",
+      "seasonName": "S4",
+      "versionName": "20240220",
+      "publishedAt": "2024-02-20T02:27:09Z",
+      "isCurrent": false,
+      "tag": "英雄重制",
+      "change": "We've reworked both passive and active skills, retaining Cirrus' original design and gameplay as much as possible while making his skill set more suitable for the current game environment.",
+      "detail": "We've reworked both passive and active skills, retaining Cirrus' original design and gameplay as much as possible while making his skill set more suitable for the current game environment.\nAs one of the first heroes to be released, the frequency with which Cirrus showed up in matches and his performance caught our attention.We want this hero, with his unique mechanics, to continue to provide more lineup choices and make things fun for Honor of Kings players.To this end, we have redesigned his skill set. The new Cirrus is easier to use than before, and has greater capacity for mastery, allowing more players to spread their wings and fly with this hero in Hero's Gorge.",
+      "version": "S4"
     }
   ],
   "faqs": [
     {
       "id": "faq-good-season",
-      "question": "Is Cirrus good in the current meta?",
-      "answer": "Cirrus is Tier B Assassin with 52.2% win rate, 0.2% pick rate, and 0.0% ban rate on Honor of Kings Global (Camp HOK, 2026-06-05). Niche — draft carefully."
+      "question": "Is Cirrus good in current season?",
+      "answer": "Cirrus is Tier B Assassin with 51.79% win rate, 0.23% pick rate, and 0.01% ban rate (Camp HOK international)."
     },
     {
       "id": "faq-best-build",
       "question": "What is the best Cirrus build?",
-      "answer": "Core item path: Rapacious Bite, Boots of Dexterity, Axe of Torment, Shadow Ripper, Eternity Blade. Run Red arcana with Smite. Switch to alternate build presets on this page for jungle, clash, or late-game setups."
+      "answer": "Recommended: Rapacious Bite, Doomsday, Overlord's Might, Sage's Sanctuary, Destiny, Master Sword."
     },
     {
       "id": "faq-counter",
       "question": "How to counter Cirrus?",
-      "answer": "Pick Di Renjie, Mulan into Cirrus. Deny Jungling resources early and force fights before Cirrus completes core items. Cirrus struggles when the enemy can peel and group them."
+      "answer": "Pick Di Renjie, Mulan. Strong into Hou Yi, Xiao Qiao."
+    }
+  ],
+  "faqsZh": [
+    {
+      "id": "faq-good-season",
+      "question": "雲中君 這版本適合上分嗎？",
+      "answer": "雲中君 為 B 梯度，勝率 51.79%、選取 0.23%、禁用 0.01%（Camp HOK 國際服）。"
     },
     {
-      "id": "faq-strong-into",
-      "question": "Who does Cirrus counter?",
-      "answer": "Cirrus is strong into Hou Yi, Xiao Qiao according to HoKStats matchup data and role matchups on the global server. Draft Cirrus when the enemy relies on these heroes in the Jungling lane."
+      "id": "faq-best-build",
+      "question": "雲中君 出裝怎麼搭配？",
+      "answer": "推薦：貪婪之噬、末世、強者破軍、賢者的庇護、名刀・司命、宗師之力."
     },
     {
-      "id": "faq-high-rank",
-      "question": "Is Cirrus good in high rank / Diamond+?",
-      "answer": "Cirrus sits at Tier B globally (52.2% WR). In high rank, pick only into favorable matchups or when you have a dedicated pocket pick. Camp data shows above-average win rate — prioritize when not hard-countered in draft."
-    },
-    {
-      "id": "faq-lane",
-      "question": "What lane should Cirrus play?",
-      "answer": "Cirrus is tagged Jungling in Camp export (Assassin). Clear to level four, then gank the lane with the least escape. Secure Tyrant when your bot or mid has crash wave."
-    },
-    {
-      "id": "faq-arcana",
-      "question": "Best arcana and spells for Cirrus?",
-      "answer": "Recommended: Red arcana. Battle spell: Smite. Adjust Purify/Execute based on enemy dive and jungle need."
-    },
-    {
-      "id": "faq-vs-peer",
-      "question": "Cirrus or Wukong — which is better?",
-      "answer": "Cirrus vs Wukong (Assassin, Tier S): Wukong is 1.3% pick / 49.7% WR. Cirrus has +2.5% WR vs Wukong in Camp data. Choose Cirrus when you need Jungling identity; choose Wukong for Jungling comfort."
-    },
-    {
-      "id": "faq-ban",
-      "question": "Should I ban Cirrus?",
-      "answer": "Low priority ban (0.0%). Focus bans on higher-tier Assassin picks unless targeting a one-trick."
+      "id": "faq-counter",
+      "question": "怎麼克制 雲中君？",
+      "answer": "可選 Di Renjie、Mulan。雲中君 克制 Hou Yi、Xiao Qiao。"
     }
   ],
   "metaAnalysis": [
-    "Cirrus — 52.2% WR, 0.2% pick, 0.0% ban (Camp HOK 2026-06-05).",
-    "Tier B Assassin · Jungling · difficulty Medium.",
-    "Cirrus sits at Tier B globally (52.2% WR). In high rank, pick only into favorable matchups or when you have a dedicated pocket pick. Camp data shows above-average win rate — prioritize when not hard-countered in draft.",
-    "Matchups: strong into Hou Yi, Xiao Qiao; weak into Di Renjie, Mulan.",
-    "Cirrus vs Wukong (Assassin, Tier S): Wukong is 1.3% pick / 49.7% WR. Cirrus has +2.5% WR vs Wukong in Camp data. Choose Cirrus when you need Jungling identity; choose Wukong for Jungling comfort.",
-    "Cirrus vs Musashi (Assassin, Tier A): Musashi is 1.1% pick / 50.7% WR. Cirrus has +1.5% WR vs Musashi in Camp data. Choose Cirrus when you need Jungling identity; choose Musashi for Jungling comfort.",
-    "Draft tip: counter-pick or comfort pick when lane matchup is favorable."
+    "Cirrus win rate 51.79% (Camp HOK, 2026-06-07).",
+    "Pick rate 0.23%.",
+    "Ban rate 0.01%.",
+    "Counters: Hou Yi, Xiao Qiao. Weak into: Di Renjie, Mulan."
   ],
-  "builds": [
-    {
-      "id": "recommended",
-      "label": "Recommended",
-      "position": null,
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1533",
-          "name": "Rapacious Bite",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1533.jpg",
-          "description": "Monster kills boost PATK"
-        },
-        {
-          "slot": 2,
-          "itemId": "1425",
-          "name": "Boots of Dexterity",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1425.jpg",
-          "description": "Boosts ASPD"
-        },
-        {
-          "slot": 3,
-          "itemId": "1137",
-          "name": "Axe of Torment",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1137.jpg",
-          "description": "Anti-squishy"
-        },
-        {
-          "slot": 4,
-          "itemId": "1136",
-          "name": "Shadow Ripper",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1136.jpg",
-          "description": "Crits boost ASPD"
-        },
-        {
-          "slot": 5,
-          "itemId": "1133",
-          "name": "Eternity Blade",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1133.jpg",
-          "description": "High crit damage"
-        },
-        {
-          "slot": 6,
-          "itemId": null,
-          "name": "Data unavailable",
-          "icon": null,
-          "description": null
-        }
-      ]
-    },
-    {
-      "id": "nashr",
-      "label": "nashr",
-      "position": "Position 3",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1523",
-          "name": "Relentless Blade",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1523.jpg",
-          "description": "Monster kills boost PATK"
-        },
-        {
-          "slot": 2,
-          "itemId": "1425",
-          "name": "Boots of Dexterity",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1425.jpg",
-          "description": "Boosts ASPD"
-        },
-        {
-          "slot": 3,
-          "itemId": "1126",
-          "name": "Doomsday",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1126.jpg",
-          "description": "Boosts BA damage"
-        },
-        {
-          "slot": 4,
-          "itemId": "1131",
-          "name": "Starbreaker",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1131.jpg",
-          "description": "Anti-tank"
-        },
-        {
-          "slot": 5,
-          "itemId": "1533",
-          "name": "Rapacious Bite",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1533.jpg",
-          "description": "Monster kills boost PATK"
-        },
-        {
-          "slot": 6,
-          "itemId": "1127",
-          "name": "Destiny",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1127.jpg",
-          "description": "Negates fatal damage"
-        }
-      ]
-    },
-    {
-      "id": "lunjayy",
-      "label": "LUNJAYY",
-      "position": "Position 3",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1533",
-          "name": "Rapacious Bite",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1533.jpg",
-          "description": "Monster kills boost PATK"
-        },
-        {
-          "slot": 2,
-          "itemId": "1425",
-          "name": "Boots of Dexterity",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1425.jpg",
-          "description": "Boosts ASPD"
-        },
-        {
-          "slot": 3,
-          "itemId": "1137",
-          "name": "Axe of Torment",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1137.jpg",
-          "description": "Anti-squishy"
-        },
-        {
-          "slot": 4,
-          "itemId": "11210",
-          "name": "Mortal Punisher",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/11210.jpg",
-          "description": "Lowers Health regen"
-        },
-        {
-          "slot": 5,
-          "itemId": "1138",
-          "name": "Overlord's Might",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1138.jpg",
-          "description": "High-damage attack"
-        },
-        {
-          "slot": 6,
-          "itemId": "1134",
-          "name": "Master Sword",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1134.jpg",
-          "description": "Enhances BA"
-        }
-      ]
-    }
+  "metaAnalysisZh": [
+    "雲中君 勝率 51.79%（Camp HOK，2026-06-07）",
+    "選取率 0.23%",
+    "禁用率 0.01%",
+    "克制：Hou Yi、Xiao Qiao；被克制：Di Renjie、Mulan"
   ],
   "guide": {
     "overview": "Cirrus is a Medium Assassin (Jungling) on Honor of Kings Global. Camp HOK ranks them Tier B with 52.2% win rate and 0.2% pick rate as of 2026-06-05.",

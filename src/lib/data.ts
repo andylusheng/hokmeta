@@ -2,6 +2,8 @@ import heroesData from '../../data/heroes.json';
 import itemsData from '../../data/items.json';
 import keywordsData from '../../data/keywords.json';
 import siteConfig from '../../config/site.json';
+import { getLocalizedBuildPresets } from '@/lib/hero-locale-data';
+import type { Locale } from '@/lib/i18n';
 import type {
   GameItem,
   Hero,
@@ -20,22 +22,20 @@ export function getItemById(id: string): GameItem | undefined {
   return items.find((i) => i.id === id);
 }
 
+export function getItemSlugs(): string[] {
+  return items.map((i) => i.id);
+}
+
 export function getHeroBySlug(slug: string): Hero | undefined {
   return heroes.find((h) => h.slug === slug);
 }
 
-export function getHeroBuildPresets(hero: Hero): HeroBuildPreset[] {
-  if (hero.builds?.length) {
-    return hero.builds.filter((b) => b.items?.length);
-  }
-  if (hero.build?.length) {
-    return [{ id: 'default', label: 'Recommended', items: hero.build }];
-  }
-  return [];
+export function getHeroBuildPresets(hero: Hero, locale: Locale = 'en'): HeroBuildPreset[] {
+  return getLocalizedBuildPresets(hero, locale);
 }
 
-export function defaultBuildPresetIndex(hero: Hero): number {
-  const presets = getHeroBuildPresets(hero);
+export function defaultBuildPresetIndex(hero: Hero, locale: Locale = 'en'): number {
+  const presets = getHeroBuildPresets(hero, locale);
   if (!presets.length) return 0;
   if (hero.lane) {
     const laneIdx = presets.findIndex(

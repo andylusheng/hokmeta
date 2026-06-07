@@ -3,6 +3,9 @@
 @tailwind utilities;
 
 @layer base {
+  :root {
+    --font-display: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  }
   html {
     scroll-behavior: smooth;
   }
@@ -34,15 +37,75 @@
 
 @layer components {
   .container-page {
-    @apply mx-auto max-w-6xl px-4 sm:px-6 lg:px-8;
+    @apply mx-auto max-w-7xl px-4 sm:px-6 lg:px-8;
+  }
+  .container-wide {
+    @apply mx-auto max-w-[1400px] px-4 sm:px-6 lg:px-8;
   }
   .card {
-    @apply rounded-lg border border-hok-border bg-hok-card p-4 sm:p-6;
+    @apply rounded-xl border border-hok-border bg-hok-card p-4 transition sm:p-5;
+  }
+  .card-hover {
+    @apply card hover:border-hok-gold/40 hover:bg-hok-card-hover;
   }
   .btn-primary {
-    @apply inline-flex items-center justify-center rounded-md bg-hok-gold px-4 py-2 text-sm font-semibold text-hok-dark transition hover:bg-yellow-500;
+    @apply inline-flex items-center justify-center rounded-lg bg-hok-gold px-5 py-2.5 text-sm font-bold text-hok-dark shadow-lg shadow-hok-gold/20 transition hover:bg-yellow-400;
+  }
+  .btn-secondary {
+    @apply inline-flex items-center justify-center rounded-lg border border-hok-border bg-hok-card px-5 py-2.5 text-sm font-semibold text-white transition hover:border-hok-gold/50 hover:text-hok-gold;
   }
   .section-title {
-    @apply mb-4 text-xl font-bold text-white sm:text-2xl;
+    @apply mb-4 font-display text-xl font-bold text-white sm:text-2xl;
+  }
+  .tier-badge {
+    @apply inline-flex h-6 w-6 shrink-0 items-center justify-center rounded text-xs font-black;
+  }
+  .tier-badge-s {
+    @apply tier-badge bg-tier-s/20 text-tier-s ring-1 ring-tier-s/40;
+  }
+  .tier-badge-a {
+    @apply tier-badge bg-tier-a/20 text-tier-a ring-1 ring-tier-a/40;
+  }
+  .tier-badge-b {
+    @apply tier-badge bg-tier-b/20 text-tier-b ring-1 ring-tier-b/40;
+  }
+  .tier-badge-c {
+    @apply tier-badge bg-tier-c/20 text-tier-c ring-1 ring-tier-c/40;
+  }
+  .tier-badge-d {
+    @apply tier-badge bg-tier-d/20 text-gray-400 ring-1 ring-tier-d/40;
+  }
+  .hub-card {
+    @apply card-hover flex flex-col gap-2 p-5;
+  }
+  .hub-card-title {
+    @apply text-base font-bold text-white group-hover:text-hok-gold;
+  }
+  .hub-card-desc {
+    @apply text-sm leading-relaxed text-hok-muted;
+  }
+  .avatar-tile {
+    @apply relative flex flex-col items-center gap-1.5 rounded-xl border border-transparent p-2 transition hover:border-hok-gold/30 hover:bg-hok-card;
+  }
+  .avatar-tile-img {
+    @apply rounded-full ring-2 ring-hok-border transition group-hover:ring-hok-gold/50;
+  }
+  .stat-pill {
+    @apply flex flex-col items-center rounded-xl border border-hok-border bg-hok-card px-4 py-3 sm:px-6;
+  }
+  .stat-pill-value {
+    @apply text-2xl font-black text-hok-gold sm:text-3xl;
+  }
+  .stat-pill-label {
+    @apply mt-1 text-center text-xs text-hok-muted;
+  }
+  .patch-tag-buff {
+    @apply rounded px-1.5 py-0.5 text-[10px] font-bold uppercase tracking-wide text-emerald-400 ring-1 ring-emerald-500/30;
+  }
+  .patch-tag-nerf {
+    @apply rounded px-1.5 py-0.5 text-[10px] font-bold uppercase tracking-wide text-orange-400 ring-1 ring-orange-500/30;
+  }
+  .patch-tag-adjust {
+    @apply rounded px-1.5 py-0.5 text-[10px] font-bold uppercase tracking-wide text-sky-400 ring-1 ring-sky-500/30;
   }
 }

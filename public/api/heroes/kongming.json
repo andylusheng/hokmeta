@@ -2,100 +2,583 @@
   "id": "kongming",
   "slug": "kongming",
   "name": "Kongming",
+  "nameZh": "諸葛亮",
   "role": "Mage",
   "roles": "Mage",
+  "rolesZh": "法師",
   "lane": "Mid Lane",
+  "laneZh": "中路",
   "difficulty": "Medium",
   "tier": "S",
-  "winRate": 49.19,
-  "pickRate": 1.37,
+  "winRate": 49.42,
+  "pickRate": 1.42,
   "banRate": 0.22,
-  "rank": 87,
+  "rank": 83,
   "avatar": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/XDnXeq3x.png",
   "avatarFallback": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/190/190.jpg",
+  "heroCover": "https://camp.honorofkings.com/social/game/src/image_hero_cover_1275*718/lJyN1fBb.jpg",
   "tencentId": 190,
-  "dataSource": "Camp HOK + HoKStats.gg (intl)",
-  "dataUpdated": "2026-06-05",
+  "dataSource": "Camp HOK bilingual (primary)",
+  "dataUpdated": "2026-06-07",
   "skills": [
     {
       "slot": "passive",
       "name": "Time for Tactics",
       "description": "Active skill hits on enemies grant 1 stack. At the max of 5 stacks, he summons prisms to attack nearby enemies.",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/190/19000.png",
-      "cooldown": null
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/19000.png",
+      "cooldown": "1s"
     },
     {
       "slot": "skill1",
       "name": "Arcane Assault",
-      "description": "Fires 3 orbs in a fan-shaped area, dealing damage to enemies hit.",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/190/19010.png",
-      "cooldown": null
+      "description": "Fires 3 prisms in a cone-shaped area, dealing damage to enemies hit.",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/19010.png",
+      "cooldown": "2s"
     },
     {
       "slot": "skill2",
       "name": "Time Shift",
-      "description": "Shifts in the target direction, dealing damage to enemies near the start and end points.",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/190/19020.png",
-      "cooldown": null
+      "description": "Teleports in the target direction, dealing damage to enemies near the start and end points.",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/19020.png",
+      "cooldown": "2s"
     },
     {
       "slot": "ultimate",
       "name": "Winning Strategy",
-      "description": "Channels briefly and unleashes a spirit bomb at the target enemy, dealing lethal damage. lf the bomb defeats an enemy hero, the skill's cooldown is refreshed",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/190/19030.png",
-      "cooldown": null
+      "description": "Channels briefly and unleashes a Spirit Bomb at the target enemy, dealing grievous damage.\nIf the bomb defeats an enemy hero, the skill's cooldown is reduced by 80%.",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/19030.png",
+      "cooldown": "35s"
+    }
+  ],
+  "skillsZh": [
+    {
+      "slot": "passive",
+      "name": "策謀之刻",
+      "description": "主動技能命中敵人會疊加層數(最多5層)，滿層後召喚法球攻擊附近敵人。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/19000.png",
+      "cooldown": "1s"
+    },
+    {
+      "slot": "skill1",
+      "name": "東風破襲",
+      "description": "向指定扇形區域發射三顆法球，每個法球命中敵人造成傷害。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/19010.png",
+      "cooldown": "2s"
+    },
+    {
+      "slot": "skill2",
+      "name": "時空穿梭",
+      "description": "朝指定方向瞬移，對瞬移起點和終點附近的敵人造成傷害。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/19020.png",
+      "cooldown": "2s"
+    },
+    {
+      "slot": "ultimate",
+      "name": "元氣彈",
+      "description": "向敵人引導並發射元氣彈，造成斬殺傷害。\n若元氣彈擊敗敵方英雄，則返還該技能80%冷卻。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/19030.png",
+      "cooldown": "35s"
     }
   ],
   "build": [
     {
       "slot": 1,
-      "itemId": "1424",
-      "name": "Boots of the Arcane",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1424.jpg",
-      "description": "Magical Pierce"
+      "itemId": "1227",
+      "name": "Ardent Dominion",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1227.png",
+      "description": "MATK +150, Magical Lifesteal +12%, MSPD +7.5%\nCleanse and shield at low HP"
     },
     {
       "slot": 2,
-      "itemId": "1232",
-      "name": "Savant's Wrath",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1232.jpg",
-      "description": "Greatly boosts MATK"
+      "itemId": "1238",
+      "name": "Sage's Tome",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1238.png",
+      "description": "MATK +350, CDR +10%\nGreat for mages"
     },
     {
       "slot": 3,
-      "itemId": "1240",
-      "name": "Insatiable Tome",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1240.jpg",
-      "description": "Magical Lifesteal"
+      "itemId": "1232",
+      "name": "Savant's Wrath",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1232.png",
+      "description": "MATK +210\nGreatly boosts MATK"
     },
     {
       "slot": 4,
       "itemId": "1231",
       "name": "Void Staff",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1231.jpg",
-      "description": "Anti-tank"
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1231.png",
+      "description": "MATK +210, HP +500, CDR +5%\nAnti-tank"
     },
     {
       "slot": 5,
-      "itemId": "1242",
-      "name": "Enigma - Moon Goddess",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1242.jpg",
-      "description": "Temp. invincibility"
+      "itemId": "1233",
+      "name": "Scepter of Reverberation",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1233.png",
+      "description": "MATK +210, MSPD +7.5%\nSkill hits explode"
     },
     {
       "slot": 6,
-      "itemId": null,
-      "name": "Data unavailable",
-      "icon": null,
-      "description": null
+      "itemId": "1239",
+      "name": "Splendor",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1239.png",
+      "description": "MATK +160, CDR +7.5%, Magical Lifesteal +12%\nTemp. invincibility"
+    }
+  ],
+  "buildZh": [
+    {
+      "slot": 1,
+      "itemId": "1227",
+      "name": "熾熱支配",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1227.png",
+      "description": "+150點法攻+12%法術吸血+7.5%移速\n殘血解控加盾"
+    },
+    {
+      "slot": 2,
+      "itemId": "1238",
+      "name": "賢者天書",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1238.png",
+      "description": "+350點法攻+10%減冷卻時間\n法師神裝"
+    },
+    {
+      "slot": 3,
+      "itemId": "1232",
+      "name": "博學者之怒",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1232.png",
+      "description": "+210點法術攻擊\n大幅提升法強"
+    },
+    {
+      "slot": 4,
+      "itemId": "1231",
+      "name": "虛無法杖",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1231.png",
+      "description": "+210點法攻+500點生命值+5%減冷卻時間\n打坦克用"
+    },
+    {
+      "slot": 5,
+      "itemId": "1233",
+      "name": "迴響之杖",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1233.png",
+      "description": "+210點法攻+7.5%移速 \n技能命中爆炸"
+    },
+    {
+      "slot": 6,
+      "itemId": "1239",
+      "name": "輝月",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1239.png",
+      "description": "+160點法攻+7.5%減冷卻時間+12%法術吸血\n暫時無敵"
+    }
+  ],
+  "builds": [
+    {
+      "id": "camp-0",
+      "label": "EXPLOSION",
+      "lane": "Mid",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1227",
+          "name": "Ardent Dominion",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1227.png",
+          "description": "MATK +150, Magical Lifesteal +12%, MSPD +7.5%\nCleanse and shield at low HP"
+        },
+        {
+          "slot": 2,
+          "itemId": "1238",
+          "name": "Sage's Tome",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1238.png",
+          "description": "MATK +350, CDR +10%\nGreat for mages"
+        },
+        {
+          "slot": 3,
+          "itemId": "1232",
+          "name": "Savant's Wrath",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1232.png",
+          "description": "MATK +210\nGreatly boosts MATK"
+        },
+        {
+          "slot": 4,
+          "itemId": "1231",
+          "name": "Void Staff",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1231.png",
+          "description": "MATK +210, HP +500, CDR +5%\nAnti-tank"
+        },
+        {
+          "slot": 5,
+          "itemId": "1233",
+          "name": "Scepter of Reverberation",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1233.png",
+          "description": "MATK +210, MSPD +7.5%\nSkill hits explode"
+        },
+        {
+          "slot": 6,
+          "itemId": "1239",
+          "name": "Splendor",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1239.png",
+          "description": "MATK +160, CDR +7.5%, Magical Lifesteal +12%\nTemp. invincibility"
+        }
+      ]
+    },
+    {
+      "id": "camp-1",
+      "label": "Shyyy",
+      "lane": "Mid",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1424",
+          "name": "Boots of the Arcane",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1424.png",
+          "description": "MSPD +50, MP +400\nMagical Pierce"
+        },
+        {
+          "slot": 2,
+          "itemId": "1240",
+          "name": "Insatiable Tome",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1240.png",
+          "description": "MATK +160, Magical Lifesteal +24%, HP +750\nLifesteal increases CDR"
+        },
+        {
+          "slot": 3,
+          "itemId": "1227",
+          "name": "Ardent Dominion",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1227.png",
+          "description": "MATK +150, Magical Lifesteal +12%, MSPD +7.5%\nCleanse and shield at low HP"
+        },
+        {
+          "slot": 4,
+          "itemId": "1238",
+          "name": "Sage's Tome",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1238.png",
+          "description": "MATK +350, CDR +10%\nGreat for mages"
+        },
+        {
+          "slot": 5,
+          "itemId": "1232",
+          "name": "Savant's Wrath",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1232.png",
+          "description": "MATK +210\nGreatly boosts MATK"
+        },
+        {
+          "slot": 6,
+          "itemId": "1231",
+          "name": "Void Staff",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1231.png",
+          "description": "MATK +210, HP +500, CDR +5%\nAnti-tank"
+        }
+      ]
+    },
+    {
+      "id": "camp-2",
+      "label": "(ᵔᗜᵔ)",
+      "lane": "Mid",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1240",
+          "name": "Insatiable Tome",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1240.png",
+          "description": "MATK +160, Magical Lifesteal +24%, HP +750\nLifesteal increases CDR"
+        },
+        {
+          "slot": 2,
+          "itemId": "1424",
+          "name": "Boots of the Arcane",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1424.png",
+          "description": "MSPD +50, MP +400\nMagical Pierce"
+        },
+        {
+          "slot": 3,
+          "itemId": "1233",
+          "name": "Scepter of Reverberation",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1233.png",
+          "description": "MATK +210, MSPD +7.5%\nSkill hits explode"
+        },
+        {
+          "slot": 4,
+          "itemId": "1238",
+          "name": "Sage's Tome",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1238.png",
+          "description": "MATK +350, CDR +10%\nGreat for mages"
+        },
+        {
+          "slot": 5,
+          "itemId": "1232",
+          "name": "Savant's Wrath",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1232.png",
+          "description": "MATK +210\nGreatly boosts MATK"
+        },
+        {
+          "slot": 6,
+          "itemId": "1231",
+          "name": "Void Staff",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1231.png",
+          "description": "MATK +210, HP +500, CDR +5%\nAnti-tank"
+        }
+      ]
+    },
+    {
+      "id": "camp-3",
+      "label": "Preset",
+      "lane": "Jungle",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1423",
+          "name": "Boots of Tranquility",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1423.png",
+          "description": "CDR +15%, MSPD +50\nSpeeds up skill cooldown"
+        },
+        {
+          "slot": 2,
+          "itemId": "1240",
+          "name": "Insatiable Tome",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1240.png",
+          "description": "MATK +160, Magical Lifesteal +24%, HP +750\nLifesteal increases CDR"
+        },
+        {
+          "slot": 3,
+          "itemId": "1531",
+          "name": "Runeblade",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1531.png",
+          "description": "MATK +130, CDR +10%, MSPD +5%\nMonster kills boost MATK"
+        },
+        {
+          "slot": 4,
+          "itemId": "1232",
+          "name": "Savant's Wrath",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1232.png",
+          "description": "MATK +210\nGreatly boosts MATK"
+        },
+        {
+          "slot": 5,
+          "itemId": "1231",
+          "name": "Void Staff",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1231.png",
+          "description": "MATK +210, HP +500, CDR +5%\nAnti-tank"
+        },
+        {
+          "slot": 6,
+          "itemId": "1239",
+          "name": "Splendor",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1239.png",
+          "description": "MATK +160, CDR +7.5%, Magical Lifesteal +12%\nTemp. invincibility"
+        }
+      ]
+    }
+  ],
+  "buildsZh": [
+    {
+      "id": "camp-0",
+      "label": "EXPLOSION",
+      "lane": "Mid",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1227",
+          "name": "熾熱支配",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1227.png",
+          "description": "+150點法攻+12%法術吸血+7.5%移速\n殘血解控加盾"
+        },
+        {
+          "slot": 2,
+          "itemId": "1238",
+          "name": "賢者天書",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1238.png",
+          "description": "+350點法攻+10%減冷卻時間\n法師神裝"
+        },
+        {
+          "slot": 3,
+          "itemId": "1232",
+          "name": "博學者之怒",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1232.png",
+          "description": "+210點法術攻擊\n大幅提升法強"
+        },
+        {
+          "slot": 4,
+          "itemId": "1231",
+          "name": "虛無法杖",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1231.png",
+          "description": "+210點法攻+500點生命值+5%減冷卻時間\n打坦克用"
+        },
+        {
+          "slot": 5,
+          "itemId": "1233",
+          "name": "迴響之杖",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1233.png",
+          "description": "+210點法攻+7.5%移速 \n技能命中爆炸"
+        },
+        {
+          "slot": 6,
+          "itemId": "1239",
+          "name": "輝月",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1239.png",
+          "description": "+160點法攻+7.5%減冷卻時間+12%法術吸血\n暫時無敵"
+        }
+      ]
+    },
+    {
+      "id": "camp-1",
+      "label": "Shyyy",
+      "lane": "Mid",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1424",
+          "name": "祕法之靴",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1424.png",
+          "description": "+50點移速+400點法力值\n法術穿透"
+        },
+        {
+          "slot": 2,
+          "itemId": "1240",
+          "name": "噬神之書",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1240.png",
+          "description": "+160點法攻+24%法術吸血+750點生命值 吸血拉長冷卻時間"
+        },
+        {
+          "slot": 3,
+          "itemId": "1227",
+          "name": "熾熱支配",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1227.png",
+          "description": "+150點法攻+12%法術吸血+7.5%移速\n殘血解控加盾"
+        },
+        {
+          "slot": 4,
+          "itemId": "1238",
+          "name": "賢者天書",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1238.png",
+          "description": "+350點法攻+10%減冷卻時間\n法師神裝"
+        },
+        {
+          "slot": 5,
+          "itemId": "1232",
+          "name": "博學者之怒",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1232.png",
+          "description": "+210點法術攻擊\n大幅提升法強"
+        },
+        {
+          "slot": 6,
+          "itemId": "1231",
+          "name": "虛無法杖",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1231.png",
+          "description": "+210點法攻+500點生命值+5%減冷卻時間\n打坦克用"
+        }
+      ]
+    },
+    {
+      "id": "camp-2",
+      "label": "(ᵔᗜᵔ)",
+      "lane": "Mid",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1240",
+          "name": "噬神之書",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1240.png",
+          "description": "+160點法攻+24%法術吸血+750點生命值 吸血拉長冷卻時間"
+        },
+        {
+          "slot": 2,
+          "itemId": "1424",
+          "name": "祕法之靴",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1424.png",
+          "description": "+50點移速+400點法力值\n法術穿透"
+        },
+        {
+          "slot": 3,
+          "itemId": "1233",
+          "name": "迴響之杖",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1233.png",
+          "description": "+210點法攻+7.5%移速 \n技能命中爆炸"
+        },
+        {
+          "slot": 4,
+          "itemId": "1238",
+          "name": "賢者天書",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1238.png",
+          "description": "+350點法攻+10%減冷卻時間\n法師神裝"
+        },
+        {
+          "slot": 5,
+          "itemId": "1232",
+          "name": "博學者之怒",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1232.png",
+          "description": "+210點法術攻擊\n大幅提升法強"
+        },
+        {
+          "slot": 6,
+          "itemId": "1231",
+          "name": "虛無法杖",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1231.png",
+          "description": "+210點法攻+500點生命值+5%減冷卻時間\n打坦克用"
+        }
+      ]
+    },
+    {
+      "id": "camp-3",
+      "label": "Preset",
+      "lane": "Jungle",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1423",
+          "name": "冷靜之靴",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1423.png",
+          "description": "+15%減冷卻時間+50點移速\n加快技能冷卻"
+        },
+        {
+          "slot": 2,
+          "itemId": "1240",
+          "name": "噬神之書",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1240.png",
+          "description": "+160點法攻+24%法術吸血+750點生命值 吸血拉長冷卻時間"
+        },
+        {
+          "slot": 3,
+          "itemId": "1531",
+          "name": "符文大劍",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1531.png",
+          "description": "+130法攻+10%冷縮+5%移速\n打野怪加法強"
+        },
+        {
+          "slot": 4,
+          "itemId": "1232",
+          "name": "博學者之怒",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1232.png",
+          "description": "+210點法術攻擊\n大幅提升法強"
+        },
+        {
+          "slot": 5,
+          "itemId": "1231",
+          "name": "虛無法杖",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1231.png",
+          "description": "+210點法攻+500點生命值+5%減冷卻時間\n打坦克用"
+        },
+        {
+          "slot": 6,
+          "itemId": "1239",
+          "name": "輝月",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1239.png",
+          "description": "+160點法攻+7.5%減冷卻時間+12%法術吸血\n暫時無敵"
+        }
+      ]
     }
   ],
   "arcana": [
-    "Nightmare"
+    "Lvl 5: Nightmare",
+    "Lvl 5: Hunt",
+    "Lvl 5: Mind's Eye"
+  ],
+  "arcanaZh": [
+    "5級：夢魘",
+    "5級：狩獵",
+    "5級：心眼"
   ],
   "spells": [
-    "Smite",
-    "Flash"
+    "Teleport"
+  ],
+  "spellsZh": [
+    "傳送"
   ],
   "counters": [
     "Han Xin",
@@ -108,386 +591,151 @@
     "Wuyan"
   ],
   "tips": [
-    "Kongming is a Medium Mage (Mid Lane) on Honor of Kings Global. Camp HOK ranks them Tier S with 49.2% win rate and 1.4% pick rate as of 2026-06-05.",
-    "Best build path: Boots of the Arcane → Savant's Wrath → Insatiable Tome → Void Staff → Enigma - Moon Goddess.",
-    "Run Nightmare for stats that match Kongming's Mage kit. Take Smite & Flash — swap to Purify against heavy CC or Smite when jungling.",
-    "Standard trade: Arcane Assault → Time Shift → Winning Strategy → weave basic attacks. Weave basic attacks between skill casts for passive value.",
-    "Laning: Control first wave without taking free poke. Roam after pushing wave 2–4 to side lanes with your jungler.",
-    "Teamfight: Poke from max range before objective. Save hard CC for enemy dive or your carry peel window.",
-    "Kongming excels into Han Xin, Jing, Ukyo Tachibana. Avoid blind picking into Allain, Biron, Wuyan without team peel.",
-    "Kongming is a Tier S staple in high-elo (Diamond+) on the international server — worth mastering for climb. Pick rate 1.4% — frequently seen in ranked; learn the matchup even if you do not main Kongming."
+    "Kongming (Mage): Tier S — 49.42% WR (Camp HOK).",
+    "Lane: Mid Lane.",
+    "Build: Ardent Dominion, Sage's Tome, Savant's Wrath."
+  ],
+  "tipsZh": [
+    "諸葛亮（中路）：梯度 S，勝率 49.42%（Camp HOK）。",
+    "出裝：熾熱支配、賢者天書、博學者之怒."
   ],
   "patchHistory": [
     {
-      "version": "Live meta",
-      "change": "Camp HOK — WR 49.2%, pick 1.4%, ban 0.2%, tier S."
+      "seasonId": "11",
+      "seasonName": "S11",
+      "versionName": "20250828",
+      "publishedAt": "2025-08-28T01:00:00Z",
+      "isCurrent": false,
+      "tag": "Stat Buffs",
+      "change": "Reduced Skill Cooldown",
+      "detail": "",
+      "version": "S11"
     },
     {
-      "version": "Matchups",
-      "change": "Strong into Han Xin, Jing, Ukyo Tachibana · Weak into Allain, Biron, Wuyan."
+      "seasonId": "9",
+      "seasonName": "S9",
+      "versionName": "20250320",
+      "publishedAt": "2025-03-20T01:53:54Z",
+      "isCurrent": false,
+      "tag": "Stat Nerfs",
+      "change": "Stat Nerfs",
+      "detail": "",
+      "version": "S9"
     },
     {
-      "version": "High rank",
-      "change": "Kongming is a Tier S staple in high-elo (Diamond+) on the international server — worth mastering for climb. Pick rate 1.4% — frequently seen in ranked; learn the matchup even if you do not main Kongming."
+      "seasonId": "8",
+      "seasonName": "S8",
+      "versionName": "20250109",
+      "publishedAt": "2025-01-09T02:33:14Z",
+      "isCurrent": false,
+      "tag": "Stat Changes",
+      "change": "Balanced the effects of different presets.",
+      "detail": "Previously, we tried reducing Skill 2's cooldown time. Multiple dashes made Kongming hard to counter if his team was winning, but Skill 2 would lack damage output if his team was at a disadvantage. Hence, we've changed the number of stocks Skill 1 and Skill 2 can hold to make Kongming more consistent in various situations and lanes.",
+      "version": "S8"
+    },
+    {
+      "seasonId": "7",
+      "seasonName": "S7",
+      "versionName": "20241017",
+      "publishedAt": "2024-10-17T02:18:42Z",
+      "isCurrent": false,
+      "tag": "Stat Buffs",
+      "change": "Increased damage from Skill 1 and reduced Skill 2 charge time.",
+      "detail": "\"Increasing Kongming's damage while reducing his dash skill's charge time to make him more flexible.\"",
+      "version": "S7"
+    }
+  ],
+  "patchHistoryZh": [
+    {
+      "seasonId": "11",
+      "seasonName": "S11",
+      "versionName": "20250828",
+      "publishedAt": "2025-08-28T01:00:00Z",
+      "isCurrent": false,
+      "tag": "數值增強",
+      "change": "減少技能冷卻時間",
+      "detail": "",
+      "version": "S11"
+    },
+    {
+      "seasonId": "9",
+      "seasonName": "S9",
+      "versionName": "20250320",
+      "publishedAt": "2025-03-20T01:53:54Z",
+      "isCurrent": false,
+      "tag": "數值削弱",
+      "change": "數值削弱",
+      "detail": "",
+      "version": "S9"
+    },
+    {
+      "seasonId": "8",
+      "seasonName": "S8",
+      "versionName": "20250109",
+      "publishedAt": "2025-01-09T02:33:14Z",
+      "isCurrent": false,
+      "tag": "數值調整",
+      "change": "平衡不同場景和路線的強度",
+      "detail": "「上一次調整我們降低了2技能的冷卻時間，多次的位移使得諸葛亮在獲得優勢之後很難對抗，但如果逆風則很難依賴2技能造成傷害，因此我們調整了1技能和2技能的儲存數量，平衡不同場景和不同路線下的表現。」",
+      "version": "S8"
+    },
+    {
+      "seasonId": "7",
+      "seasonName": "S7",
+      "versionName": "20241017",
+      "publishedAt": "2024-10-17T02:18:42Z",
+      "isCurrent": false,
+      "tag": "數值增強",
+      "change": "提升1技能傷害，降低2技能儲存時間",
+      "detail": "「提升諸葛亮的傷害，同時降低位移技能的儲存時間，使其更加靈活。」",
+      "version": "S7"
     }
   ],
   "faqs": [
     {
       "id": "faq-good-season",
-      "question": "Is Kongming good in the current meta?",
-      "answer": "Kongming is Tier S Mage with 49.2% win rate, 1.4% pick rate, and 0.2% ban rate on Honor of Kings Global (Camp HOK, 2026-06-05). Strong meta pick for ranked."
+      "question": "Is Kongming good in current season?",
+      "answer": "Kongming is Tier S Mage with 49.42% win rate, 1.42% pick rate, and 0.22% ban rate (Camp HOK international)."
     },
     {
       "id": "faq-best-build",
       "question": "What is the best Kongming build?",
-      "answer": "Core item path: Boots of the Arcane, Savant's Wrath, Insatiable Tome, Void Staff, Enigma - Moon Goddess. Run Nightmare arcana with Smite & Flash. Switch to alternate build presets on this page for jungle, clash, or late-game setups."
+      "answer": "Recommended: Ardent Dominion, Sage's Tome, Savant's Wrath, Void Staff, Scepter of Reverberation, Splendor."
     },
     {
       "id": "faq-counter",
       "question": "How to counter Kongming?",
-      "answer": "Pick Allain, Biron, Wuyan into Kongming. Deny Mid Lane resources early and force fights before Kongming completes core items. Kongming struggles when the enemy can out-range or out-sustain them."
+      "answer": "Pick Allain, Biron, Wuyan. Strong into Han Xin, Jing, Ukyo Tachibana."
+    }
+  ],
+  "faqsZh": [
+    {
+      "id": "faq-good-season",
+      "question": "諸葛亮 這版本適合上分嗎？",
+      "answer": "諸葛亮 為 S 梯度，勝率 49.42%、選取 1.42%、禁用 0.22%（Camp HOK 國際服）。"
     },
     {
-      "id": "faq-strong-into",
-      "question": "Who does Kongming counter?",
-      "answer": "Kongming is strong into Han Xin, Jing, Ukyo Tachibana according to HoKStats matchup data and role matchups on the global server. Draft Kongming when the enemy relies on these heroes in the Mid Lane lane."
+      "id": "faq-best-build",
+      "question": "諸葛亮 出裝怎麼搭配？",
+      "answer": "推薦：熾熱支配、賢者天書、博學者之怒、虛無法杖、迴響之杖、輝月."
     },
     {
-      "id": "faq-high-rank",
-      "question": "Is Kongming good in high rank / Diamond+?",
-      "answer": "Kongming is a Tier S staple in high-elo (Diamond+) on the international server — worth mastering for climb. Pick rate 1.4% — frequently seen in ranked; learn the matchup even if you do not main Kongming."
-    },
-    {
-      "id": "faq-lane",
-      "question": "What lane should Kongming play?",
-      "answer": "Kongming is tagged Mid Lane in Camp export (Mage). Control first wave without taking free poke. Roam after pushing wave 2–4 to side lanes with your jungler."
-    },
-    {
-      "id": "faq-arcana",
-      "question": "Best arcana and spells for Kongming?",
-      "answer": "Recommended: Nightmare arcana. Battle spell: Smite & Flash. Adjust Purify/Execute based on enemy dive and jungle need."
-    },
-    {
-      "id": "faq-vs-peer",
-      "question": "Kongming or Daji — which is better?",
-      "answer": "Kongming vs Daji (Mage, Tier S+): Daji is 2.4% pick / 51.0% WR. Daji wins 1.8% more often globally. Choose Kongming when you need Mid Lane identity; choose Daji for Mid Lane comfort."
-    },
-    {
-      "id": "faq-ban",
-      "question": "Should I ban Kongming?",
-      "answer": "Optional ban when enemy spams Mage; 1.4% pick rate but only 0.2% ban rate."
+      "id": "faq-counter",
+      "question": "怎麼克制 諸葛亮？",
+      "answer": "可選 Allain、Biron、Wuyan。諸葛亮 克制 Han Xin、Jing、Ukyo Tachibana。"
     }
   ],
   "metaAnalysis": [
-    "Kongming — 49.2% WR, 1.4% pick, 0.2% ban (Camp HOK 2026-06-05).",
-    "Tier S Mage · Mid Lane · difficulty Medium.",
-    "Kongming is a Tier S staple in high-elo (Diamond+) on the international server — worth mastering for climb. Pick rate 1.4% — frequently seen in ranked; learn the matchup even if you do not main Kongming.",
-    "Matchups: strong into Han Xin, Jing, Ukyo Tachibana; weak into Allain, Biron, Wuyan.",
-    "Kongming vs Daji (Mage, Tier S+): Daji is 2.4% pick / 51.0% WR. Daji wins 1.8% more often globally. Choose Kongming when you need Mid Lane identity; choose Daji for Mid Lane comfort.",
-    "Kongming vs Angela (Mage, Tier S+): Angela is 2.3% pick / 51.8% WR. Angela wins 2.6% more often globally. Choose Kongming when you need Mid Lane identity; choose Angela for Mid Lane comfort.",
-    "Draft tip: first-pick or ban priority in ranked."
+    "Kongming win rate 49.42% (Camp HOK, 2026-06-07).",
+    "Pick rate 1.42%.",
+    "Ban rate 0.22%.",
+    "Counters: Han Xin, Jing, Ukyo Tachibana. Weak into: Allain, Biron, Wuyan."
   ],
-  "builds": [
-    {
-      "id": "recommended",
-      "label": "Recommended",
-      "position": null,
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1424",
-          "name": "Boots of the Arcane",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1424.jpg",
-          "description": "Magical Pierce"
-        },
-        {
-          "slot": 2,
-          "itemId": "1232",
-          "name": "Savant's Wrath",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1232.jpg",
-          "description": "Greatly boosts MATK"
-        },
-        {
-          "slot": 3,
-          "itemId": "1240",
-          "name": "Insatiable Tome",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1240.jpg",
-          "description": "Magical Lifesteal"
-        },
-        {
-          "slot": 4,
-          "itemId": "1231",
-          "name": "Void Staff",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1231.jpg",
-          "description": "Anti-tank"
-        },
-        {
-          "slot": 5,
-          "itemId": "1242",
-          "name": "Enigma - Moon Goddess",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1242.jpg",
-          "description": "Temp. invincibility"
-        },
-        {
-          "slot": 6,
-          "itemId": null,
-          "name": "Data unavailable",
-          "icon": null,
-          "description": null
-        }
-      ]
-    },
-    {
-      "id": "explosion",
-      "label": "EXPLOSION",
-      "position": "Position 2",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1424",
-          "name": "Boots of the Arcane",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1424.jpg",
-          "description": "Magical Pierce"
-        },
-        {
-          "slot": 2,
-          "itemId": "1240",
-          "name": "Insatiable Tome",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1240.jpg",
-          "description": "Magical Lifesteal"
-        },
-        {
-          "slot": 3,
-          "itemId": "1227",
-          "name": "Ardent Dominion",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1227.jpg",
-          "description": "Shield at low Health"
-        },
-        {
-          "slot": 4,
-          "itemId": "1238",
-          "name": "Sage's Tome",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1238.jpg",
-          "description": "Great for mages"
-        },
-        {
-          "slot": 5,
-          "itemId": "1232",
-          "name": "Savant's Wrath",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1232.jpg",
-          "description": "Greatly boosts MATK"
-        },
-        {
-          "slot": 6,
-          "itemId": "1231",
-          "name": "Void Staff",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1231.jpg",
-          "description": "Anti-tank"
-        }
-      ]
-    },
-    {
-      "id": "build",
-      "label": "(ᵔᗜᵔ)",
-      "position": "Position 2",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1240",
-          "name": "Insatiable Tome",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1240.jpg",
-          "description": "Magical Lifesteal"
-        },
-        {
-          "slot": 2,
-          "itemId": "1424",
-          "name": "Boots of the Arcane",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1424.jpg",
-          "description": "Magical Pierce"
-        },
-        {
-          "slot": 3,
-          "itemId": "1233",
-          "name": "Scepter of Reverberation",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1233.jpg",
-          "description": "Skill hits trigger explosions"
-        },
-        {
-          "slot": 4,
-          "itemId": "1238",
-          "name": "Sage's Tome",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1238.jpg",
-          "description": "Great for mages"
-        },
-        {
-          "slot": 5,
-          "itemId": "1232",
-          "name": "Savant's Wrath",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1232.jpg",
-          "description": "Greatly boosts MATK"
-        },
-        {
-          "slot": 6,
-          "itemId": "1231",
-          "name": "Void Staff",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1231.jpg",
-          "description": "Anti-tank"
-        }
-      ]
-    },
-    {
-      "id": "preset",
-      "label": "Preset",
-      "position": "Position 3",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1521",
-          "name": "Guerrilla Machete",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1521.jpg",
-          "description": "Monster kills boost MATK"
-        },
-        {
-          "slot": 2,
-          "itemId": "1423",
-          "name": "Boots of Tranquility",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1423.jpg",
-          "description": "Reduces Skill CD"
-        },
-        {
-          "slot": 3,
-          "itemId": "1222",
-          "name": "Blood Clan's Grimoire",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1222.jpg",
-          "description": "MATK +60, Magical Lifesteal +12%"
-        },
-        {
-          "slot": 4,
-          "itemId": "1240",
-          "name": "Insatiable Tome",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1240.jpg",
-          "description": "Magical Lifesteal"
-        },
-        {
-          "slot": 5,
-          "itemId": "1531",
-          "name": "Runeblade",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1531.jpg",
-          "description": "Monster kills boost MATK"
-        },
-        {
-          "slot": 6,
-          "itemId": "1232",
-          "name": "Savant's Wrath",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1232.jpg",
-          "description": "Greatly boosts MATK"
-        }
-      ]
-    },
-    {
-      "id": "zhn",
-      "label": "Zhàn",
-      "position": "Position 3",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1511",
-          "name": "Hunting Knife",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1511.jpg",
-          "description": "Speeds up jungling"
-        },
-        {
-          "slot": 2,
-          "itemId": "1423",
-          "name": "Boots of Tranquility",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1423.jpg",
-          "description": "Reduces Skill CD"
-        },
-        {
-          "slot": 3,
-          "itemId": "1521",
-          "name": "Guerrilla Machete",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1521.jpg",
-          "description": "Monster kills boost MATK"
-        },
-        {
-          "slot": 4,
-          "itemId": "1214",
-          "name": "Sage's Codex",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1214.jpg",
-          "description": "MATK +60, CDR +7.5%"
-        },
-        {
-          "slot": 5,
-          "itemId": "1240",
-          "name": "Insatiable Tome",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1240.jpg",
-          "description": "Magical Lifesteal"
-        },
-        {
-          "slot": 6,
-          "itemId": "1424",
-          "name": "Boots of the Arcane",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1424.jpg",
-          "description": "Magical Pierce"
-        }
-      ]
-    },
-    {
-      "id": "darkfield",
-      "label": "Darkfield",
-      "position": "Position 3",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1521",
-          "name": "Guerrilla Machete",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1521.jpg",
-          "description": "Monster kills boost MATK"
-        },
-        {
-          "slot": 2,
-          "itemId": "1424",
-          "name": "Boots of the Arcane",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1424.jpg",
-          "description": "Magical Pierce"
-        },
-        {
-          "slot": 3,
-          "itemId": "1222",
-          "name": "Blood Clan's Grimoire",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1222.jpg",
-          "description": "MATK +60, Magical Lifesteal +12%"
-        },
-        {
-          "slot": 4,
-          "itemId": "1531",
-          "name": "Runeblade",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1531.jpg",
-          "description": "Monster kills boost MATK"
-        },
-        {
-          "slot": 5,
-          "itemId": "1240",
-          "name": "Insatiable Tome",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1240.jpg",
-          "description": "Magical Lifesteal"
-        },
-        {
-          "slot": 6,
-          "itemId": "1233",
-          "name": "Scepter of Reverberation",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1233.jpg",
-          "description": "Skill hits trigger explosions"
-        }
-      ]
-    }
+  "metaAnalysisZh": [
+    "諸葛亮 勝率 49.42%（Camp HOK，2026-06-07）",
+    "選取率 1.42%",
+    "禁用率 0.22%",
+    "克制：Han Xin、Jing、Ukyo Tachibana；被克制：Allain、Biron、Wuyan"
   ],
   "guide": {
     "overview": "Kongming is a Medium Mage (Mid Lane) on Honor of Kings Global. Camp HOK ranks them Tier S with 49.2% win rate and 1.4% pick rate as of 2026-06-05.",

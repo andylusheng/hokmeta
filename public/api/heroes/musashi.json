@@ -2,48 +2,82 @@
   "id": "musashi",
   "slug": "musashi",
   "name": "Musashi",
+  "nameZh": "宮本武藏",
   "role": "Assassin",
   "roles": "Fighter, Assassin",
+  "rolesZh": "戰士, 刺客",
   "lane": "Jungling",
+  "laneZh": "打野",
   "difficulty": "Medium",
   "tier": "A",
-  "winRate": 50.72,
-  "pickRate": 1.05,
-  "banRate": 0.2,
-  "rank": 57,
+  "winRate": 51.16,
+  "pickRate": 1.1,
+  "banRate": 0.19,
+  "rank": 47,
   "avatar": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/jgvSlz3u.png",
   "avatarFallback": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/130/130.jpg",
+  "heroCover": "https://camp.honorofkings.com/social/game/src/image_hero_cover_1275*718/kkRXWWRM.jpg",
   "tencentId": 130,
-  "dataSource": "Camp HOK + HoKStats.gg (intl)",
-  "dataUpdated": "2026-06-05",
+  "dataSource": "Camp HOK bilingual (primary)",
+  "dataUpdated": "2026-06-07",
   "skills": [
     {
       "slot": "passive",
       "name": "Niten Ichiryuu",
-      "description": "Using skills generates Vigor, which is consumed by Basic Attacks to gain enhancement effects. Hitting an enemy reduces the cooldown of Skills 1 and Skills 2. Vigor can stack up to two times. 1 Vigor: Enhances Basic Attack damage. 2 Vigor: Dashes and slows enemies.",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/130/13000.png",
-      "cooldown": null
+      "description": "Using skills generates Vigor, which is consumed by Basic Attacks to gain enhancement effects. Hitting an enemy reduces the cooldown of Skills 1 and 2.\n1 Vigor: Enhances Basic Attack damage.\n2 Vigor: Dashes and slows enemies.",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/13000.png",
+      "cooldown": "1s"
     },
     {
       "slot": "skill1",
       "name": "Illuminating Slash",
-      "description": "Unleashes sword energy in the target direction, dealing damage to enemies in its path and knocking down projectiles. Becomes immune to crowd control when using the skill.",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/130/13010.png",
-      "cooldown": null
+      "description": "Unleashes sword energy in the target direction, dealing damage to enemies in its path and knocking down projectiles.\nGains crowd control immunity when using the skill.",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/13010.png",
+      "cooldown": "12s"
     },
     {
       "slot": "skill2",
       "name": "Extreme Speed",
       "description": "Dashes in the target direction, dealing damage and gaining a shield upon hitting an enemy.",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/130/13020.png",
-      "cooldown": null
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/13020.png",
+      "cooldown": "10s"
     },
     {
       "slot": "ultimate",
       "name": "Duel to the Death",
-      "description": "Dashes to the target, launching them and dealing damage to enemies within range, while delaying the target's recovery effects.",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/130/13030.png",
-      "cooldown": null
+      "description": "Dashes to the target, launching and damaging enemies within range. Also delays the target's recovery effects.",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/13030.png",
+      "cooldown": "50s"
+    }
+  ],
+  "skillsZh": [
+    {
+      "slot": "passive",
+      "name": "二天一流",
+      "description": "技能獲得能量，普攻會消耗能量獲得強化效果，命中後減少1、2技能冷卻時間。\n能量最多兩層：\n一層，強化攻擊；\n二層，額外的突進和減速效果。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/13000.png",
+      "cooldown": "1s"
+    },
+    {
+      "slot": "skill1",
+      "name": "空明斬",
+      "description": "朝指定方向斬出劍氣，對路徑上的敵人造成傷害並擊落飛行物。\n施放時處於霸體狀態。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/13010.png",
+      "cooldown": "12s"
+    },
+    {
+      "slot": "skill2",
+      "name": "神速",
+      "description": "朝指定方向突進，命中敵人時造成傷害並獲得護盾。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/13020.png",
+      "cooldown": "10s"
+    },
+    {
+      "slot": "ultimate",
+      "name": "一決生死",
+      "description": "朝目標突進，對目標範圍造成擊飛效果和傷害，並延遲目標的恢復效果。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/13030.png",
+      "cooldown": "50s"
     }
   ],
   "build": [
@@ -51,50 +85,500 @@
       "slot": 1,
       "itemId": "1533",
       "name": "Rapacious Bite",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1533.jpg",
-      "description": "Monster kills boost PATK"
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1533.png",
+      "description": "PATK +90, MSPD +5%, CDR +7.5%\nMonster kills boost ATK"
     },
     {
       "slot": 2,
       "itemId": "1422",
       "name": "Boots of Resistance",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
-      "description": "Shortens CC"
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1422.png",
+      "description": "MDEF +100, PDEF +50, MSPD +50\nShortens crowd control"
     },
     {
       "slot": 3,
       "itemId": "1137",
       "name": "Axe of Torment",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1137.jpg",
-      "description": "Anti-squishy"
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1137.png",
+      "description": "PATK +80, CDR +10%, HP +500\nAnti-squishy"
     },
     {
       "slot": 4,
       "itemId": "13310",
       "name": "Frostscar's Embrace",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/13310.jpg",
-      "description": "Enhanced BAs slow"
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/13310.png",
+      "description": "PATK +60, PDEF +300, CDR +10%\nEnhanced BAs slow"
     },
     {
       "slot": 5,
-      "itemId": "1335",
-      "name": "Succubus Cloak",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1335.jpg",
-      "description": "Negates magical damage"
+      "itemId": "1132",
+      "name": "Bloodweeper",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1132.png",
+      "description": "PATK +85, Lifesteal +25%, HP +500\nPhysical Lifesteal"
     },
     {
       "slot": 6,
-      "itemId": "1338",
-      "name": "Cuirass of Savagery",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1338.jpg",
-      "description": "Offense & defense"
+      "itemId": "1337",
+      "name": "Sage's Sanctuary",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+      "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
+    }
+  ],
+  "buildZh": [
+    {
+      "slot": 1,
+      "itemId": "1533",
+      "name": "貪婪之噬",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1533.png",
+      "description": "+90攻擊+5%移速+7.5%冷縮\n打野怪加攻擊"
+    },
+    {
+      "slot": 2,
+      "itemId": "1422",
+      "name": "抵抗之靴",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1422.png",
+      "description": "+100點法防+50點物防+50點移速\n減少被控時間"
+    },
+    {
+      "slot": 3,
+      "itemId": "1137",
+      "name": "暗影戰斧",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1137.png",
+      "description": "+80點攻擊+10%減冷卻時間+500點生命值\n打血薄用"
+    },
+    {
+      "slot": 4,
+      "itemId": "13310",
+      "name": "冰痕之握",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/13310.png",
+      "description": "+60點攻擊+300點物防+10%減冷卻時間……\n強化普攻減速"
+    },
+    {
+      "slot": 5,
+      "itemId": "1132",
+      "name": "泣血之刃",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1132.png",
+      "description": "+85點攻擊+25%吸血+500點生命值\n物理吸血"
+    },
+    {
+      "slot": 6,
+      "itemId": "1337",
+      "name": "賢者的庇護",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+      "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+    }
+  ],
+  "builds": [
+    {
+      "id": "camp-0",
+      "label": "Cina",
+      "lane": "Jungle",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1533",
+          "name": "Rapacious Bite",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1533.png",
+          "description": "PATK +90, MSPD +5%, CDR +7.5%\nMonster kills boost ATK"
+        },
+        {
+          "slot": 2,
+          "itemId": "1422",
+          "name": "Boots of Resistance",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1422.png",
+          "description": "MDEF +100, PDEF +50, MSPD +50\nShortens crowd control"
+        },
+        {
+          "slot": 3,
+          "itemId": "1137",
+          "name": "Axe of Torment",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1137.png",
+          "description": "PATK +80, CDR +10%, HP +500\nAnti-squishy"
+        },
+        {
+          "slot": 4,
+          "itemId": "13310",
+          "name": "Frostscar's Embrace",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/13310.png",
+          "description": "PATK +60, PDEF +300, CDR +10%\nEnhanced BAs slow"
+        },
+        {
+          "slot": 5,
+          "itemId": "1132",
+          "name": "Bloodweeper",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1132.png",
+          "description": "PATK +85, Lifesteal +25%, HP +500\nPhysical Lifesteal"
+        },
+        {
+          "slot": 6,
+          "itemId": "1337",
+          "name": "Sage's Sanctuary",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
+        }
+      ]
+    },
+    {
+      "id": "camp-1",
+      "label": "Jungling 4",
+      "lane": "Top",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1423",
+          "name": "Boots of Tranquility",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1423.png",
+          "description": "CDR +15%, MSPD +50\nSpeeds up skill cooldown"
+        },
+        {
+          "slot": 2,
+          "itemId": "1137",
+          "name": "Axe of Torment",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1137.png",
+          "description": "PATK +80, CDR +10%, HP +500\nAnti-squishy"
+        },
+        {
+          "slot": 3,
+          "itemId": "13310",
+          "name": "Frostscar's Embrace",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/13310.png",
+          "description": "PATK +60, PDEF +300, CDR +10%\nEnhanced BAs slow"
+        },
+        {
+          "slot": 4,
+          "itemId": "11311",
+          "name": "Pure Sky",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/11311.png",
+          "description": "PATK +80, PDEF +150, CDR +10%\nTemp. damage reduction"
+        },
+        {
+          "slot": 5,
+          "itemId": "1134",
+          "name": "Master Sword",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1134.png",
+          "description": "PATK +55, Crit Rate +20%, HP +600\nEnhances BAs"
+        },
+        {
+          "slot": 6,
+          "itemId": "1333",
+          "name": "Ominous Premonition",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1333.png",
+          "description": "PDEF +300, HP +1,200\nSlows attackers"
+        }
+      ]
+    },
+    {
+      "id": "camp-2",
+      "label": "Popular",
+      "lane": "Jungle",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1137",
+          "name": "Axe of Torment",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1137.png",
+          "description": "PATK +80, CDR +10%, HP +500\nAnti-squishy"
+        },
+        {
+          "slot": 2,
+          "itemId": "1533",
+          "name": "Rapacious Bite",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1533.png",
+          "description": "PATK +90, MSPD +5%, CDR +7.5%\nMonster kills boost ATK"
+        },
+        {
+          "slot": 3,
+          "itemId": "1331",
+          "name": "Blazing Cape",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1331.png",
+          "description": "PDEF +150, MDEF +150, HP +1,100\nArea burn & imperil"
+        },
+        {
+          "slot": 4,
+          "itemId": "1328",
+          "name": "Blood Rage",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1328.png",
+          "description": "PATK +75, HP +900\nTrades HP for shield"
+        },
+        {
+          "slot": 5,
+          "itemId": "1138",
+          "name": "Overlord's Might",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1138.png",
+          "description": "PATK +150, CDR +5%\nHigh-damage attack"
+        },
+        {
+          "slot": 6,
+          "itemId": "1127",
+          "name": "Destiny",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
+        }
+      ]
+    },
+    {
+      "id": "camp-3",
+      "label": "Top",
+      "lane": "Jungle",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1534",
+          "name": "Dragon's Rage",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1536.png",
+          "description": "HP +1,350, PDEF +180, MDEF +90\nBoosts BA damage"
+        },
+        {
+          "slot": 2,
+          "itemId": "13310",
+          "name": "Frostscar's Embrace",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/13310.png",
+          "description": "PATK +60, PDEF +300, CDR +10%\nEnhanced BAs slow"
+        },
+        {
+          "slot": 3,
+          "itemId": "1422",
+          "name": "Boots of Resistance",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1422.png",
+          "description": "MDEF +100, PDEF +50, MSPD +50\nShortens crowd control"
+        },
+        {
+          "slot": 4,
+          "itemId": "1335",
+          "name": "Succubus Cloak",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
+          "description": "MDEF +300, HP +1,100\nNegates magical damage"
+        },
+        {
+          "slot": 5,
+          "itemId": "1337",
+          "name": "Sage's Sanctuary",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
+        },
+        {
+          "slot": 6,
+          "itemId": "1127",
+          "name": "Destiny",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
+        }
+      ]
+    }
+  ],
+  "buildsZh": [
+    {
+      "id": "camp-0",
+      "label": "Cina",
+      "lane": "Jungle",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1533",
+          "name": "貪婪之噬",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1533.png",
+          "description": "+90攻擊+5%移速+7.5%冷縮\n打野怪加攻擊"
+        },
+        {
+          "slot": 2,
+          "itemId": "1422",
+          "name": "抵抗之靴",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1422.png",
+          "description": "+100點法防+50點物防+50點移速\n減少被控時間"
+        },
+        {
+          "slot": 3,
+          "itemId": "1137",
+          "name": "暗影戰斧",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1137.png",
+          "description": "+80點攻擊+10%減冷卻時間+500點生命值\n打血薄用"
+        },
+        {
+          "slot": 4,
+          "itemId": "13310",
+          "name": "冰痕之握",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/13310.png",
+          "description": "+60點攻擊+300點物防+10%減冷卻時間……\n強化普攻減速"
+        },
+        {
+          "slot": 5,
+          "itemId": "1132",
+          "name": "泣血之刃",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1132.png",
+          "description": "+85點攻擊+25%吸血+500點生命值\n物理吸血"
+        },
+        {
+          "slot": 6,
+          "itemId": "1337",
+          "name": "賢者的庇護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+        }
+      ]
+    },
+    {
+      "id": "camp-1",
+      "label": "Jungling 4",
+      "lane": "Top",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1423",
+          "name": "冷靜之靴",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1423.png",
+          "description": "+15%減冷卻時間+50點移速\n加快技能冷卻"
+        },
+        {
+          "slot": 2,
+          "itemId": "1137",
+          "name": "暗影戰斧",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1137.png",
+          "description": "+80點攻擊+10%減冷卻時間+500點生命值\n打血薄用"
+        },
+        {
+          "slot": 3,
+          "itemId": "13310",
+          "name": "冰痕之握",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/13310.png",
+          "description": "+60點攻擊+300點物防+10%減冷卻時間……\n強化普攻減速"
+        },
+        {
+          "slot": 4,
+          "itemId": "11311",
+          "name": "純淨蒼穹",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/11311.png",
+          "description": "+80點攻擊+150點物防+10%冷卻時間縮減\n暫時增加免傷"
+        },
+        {
+          "slot": 5,
+          "itemId": "1134",
+          "name": "宗師之力",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1134.png",
+          "description": "+55點攻擊+20%暴擊+600點生命值……\n強化普攻"
+        },
+        {
+          "slot": 6,
+          "itemId": "1333",
+          "name": "不祥徵兆",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1333.png",
+          "description": "+300點物防+1200點生命值\n受擊時將敵人減速"
+        }
+      ]
+    },
+    {
+      "id": "camp-2",
+      "label": "Popular",
+      "lane": "Jungle",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1137",
+          "name": "暗影戰斧",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1137.png",
+          "description": "+80點攻擊+10%減冷卻時間+500點生命值\n打血薄用"
+        },
+        {
+          "slot": 2,
+          "itemId": "1533",
+          "name": "貪婪之噬",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1533.png",
+          "description": "+90攻擊+5%移速+7.5%冷縮\n打野怪加攻擊"
+        },
+        {
+          "slot": 3,
+          "itemId": "1331",
+          "name": "紅蓮斗篷",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1331.png",
+          "description": "+150點物防+150點法防+1100點生命值\n範圍灼燒重傷"
+        },
+        {
+          "slot": 4,
+          "itemId": "1328",
+          "name": "血魔之怒",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1328.png",
+          "description": "+75點攻擊+900點生命值 \n犧牲生命值換取護盾值"
+        },
+        {
+          "slot": 5,
+          "itemId": "1138",
+          "name": "強者破軍",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1138.png",
+          "description": "+150點攻擊+5%減冷卻時間\n高額攻擊"
+        },
+        {
+          "slot": 6,
+          "itemId": "1127",
+          "name": "名刀・司命",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "+75點攻擊+15%攻速+500點生命值\n保命"
+        }
+      ]
+    },
+    {
+      "id": "camp-3",
+      "label": "Top",
+      "lane": "Jungle",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1534",
+          "name": "怒龍劍盾",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1536.png",
+          "description": "+1350點生命值+180點物防+90點法防\n普攻額外傷害"
+        },
+        {
+          "slot": 2,
+          "itemId": "13310",
+          "name": "冰痕之握",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/13310.png",
+          "description": "+60點攻擊+300點物防+10%減冷卻時間……\n強化普攻減速"
+        },
+        {
+          "slot": 3,
+          "itemId": "1422",
+          "name": "抵抗之靴",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1422.png",
+          "description": "+100點法防+50點物防+50點移速\n減少被控時間"
+        },
+        {
+          "slot": 4,
+          "itemId": "1335",
+          "name": "魔女斗篷",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
+          "description": "+300點法防+1100點生命值\n吸收法術傷害"
+        },
+        {
+          "slot": 5,
+          "itemId": "1337",
+          "name": "賢者的庇護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+        },
+        {
+          "slot": 6,
+          "itemId": "1127",
+          "name": "名刀・司命",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "+75點攻擊+15%攻速+500點生命值\n保命"
+        }
+      ]
     }
   ],
   "arcana": [
-    "Mutation"
+    "Lvl 5: Red Moon",
+    "Lvl 5: Mutation",
+    "Lvl 5: Reaver"
+  ],
+  "arcanaZh": [
+    "5級：紅月",
+    "5級：異變",
+    "5級：奪萃"
   ],
   "spells": [
     "Smite"
+  ],
+  "spellsZh": [
+    "懲擊"
   ],
   "counters": [
     "Diaochan",
@@ -106,586 +590,151 @@
     "Sun Bin"
   ],
   "tips": [
-    "Musashi is a Medium Assassin (Jungling) on Honor of Kings Global. Camp HOK ranks them Tier A with 50.7% win rate and 1.1% pick rate as of 2026-06-05.",
-    "Best build path: Rapacious Bite → Boots of Resistance → Axe of Torment → Frostscar's Embrace → Succubus Cloak → Cuirass of Savagery.",
-    "Mutation arcana for assassin burst on Vigor autos. Smite standard; Purify vs heavy CC.",
-    "Gank: Extreme Speed → AA (2× Vigor) → Illuminating Slash → Duel to the Death → chase.",
-    "Laning: Full clear to level four with Vigor management—never gank at half health. Secure Tyrant when bot/mid has crash wave; prioritize the lane without Flash.",
-    "Teamfight: Wait for hard CC, then Duel to the Death the carry. Use Illuminating Slash to block key projectiles before diving. Exit with Skill 2 if anti-heal does not secure the kill.",
-    "Musashi excels into Diaochan, Luna, Shangguan. Avoid blind picking into Dyadia, Sun Bin without team peel.",
-    "Musashi is a viable Tier A pick in high rank with 50.7% win rate — strong in one-trick hands or as a counter-pick. Pick rate 1.1% — frequently seen in ranked; learn the matchup even if you do not main Musashi."
+    "Musashi (Assassin): Tier A — 51.16% WR (Camp HOK).",
+    "Lane: Jungling.",
+    "Build: Rapacious Bite, Boots of Resistance, Axe of Torment."
+  ],
+  "tipsZh": [
+    "宮本武藏（打野）：梯度 A，勝率 51.16%（Camp HOK）。",
+    "出裝：貪婪之噬、抵抗之靴、暗影戰斧."
   ],
   "patchHistory": [
     {
-      "version": "Live meta",
-      "change": "Camp HOK — WR 50.7%, pick 1.1%, ban 0.2%, tier A."
+      "seasonId": "12",
+      "seasonName": "S12",
+      "versionName": "2025/11/27",
+      "publishedAt": "2025-11-27T01:00:00Z",
+      "isCurrent": false,
+      "tag": "Stat Buffs",
+      "change": "Increased Skill Damage",
+      "detail": "",
+      "version": "S12"
     },
     {
-      "version": "Matchups",
-      "change": "Strong into Diaochan, Luna, Shangguan · Weak into Dyadia, Sun Bin."
+      "seasonId": "10",
+      "seasonName": "S10",
+      "versionName": "20250501",
+      "publishedAt": "2025-05-01T02:00:00Z",
+      "isCurrent": false,
+      "tag": "Stat Buffs",
+      "change": "Improved shield",
+      "detail": "",
+      "version": "S10"
     },
     {
-      "version": "High rank",
-      "change": "Musashi is a viable Tier A pick in high rank with 50.7% win rate — strong in one-trick hands or as a counter-pick. Pick rate 1.1% — frequently seen in ranked; learn the matchup even if you do not main Musashi."
+      "seasonId": "7",
+      "seasonName": "S7",
+      "versionName": "20241128",
+      "publishedAt": "2024-11-28T01:46:48Z",
+      "isCurrent": false,
+      "tag": "Stat Changes",
+      "change": "Balanced Stats to Suit Different Equipment",
+      "detail": "\"We've made adjustments to Musashi's skill stat bonuses to balance the effectiveness of various equipment builds.\"",
+      "version": "S7"
+    },
+    {
+      "seasonId": "5",
+      "seasonName": "S5",
+      "versionName": "20240424",
+      "publishedAt": "2024-04-24T09:58:37Z",
+      "isCurrent": false,
+      "tag": "Stat Buffs",
+      "change": "Increased cooldown reduction from enemy hit with Skill 2",
+      "detail": "Increased cooldown reduction from enemy hit with Skill 2.\nGiven the fast pace of the current version, we've been working hard to ensure that more heroes can participate effectively in early game. By moderately enhancing Musashi's Skill 2, we hope to improve his mobility and damage tolerance in combat while not over-boosting his character at the same time.We hope this will lead to players using Musashi more often in matches.",
+      "version": "S5"
+    }
+  ],
+  "patchHistoryZh": [
+    {
+      "seasonId": "12",
+      "seasonName": "S12",
+      "versionName": "2025/11/27",
+      "publishedAt": "2025-11-27T01:00:00Z",
+      "isCurrent": false,
+      "tag": "數值增強",
+      "change": "提升技能傷害",
+      "detail": "",
+      "version": "S12"
+    },
+    {
+      "seasonId": "10",
+      "seasonName": "S10",
+      "versionName": "20250501",
+      "publishedAt": "2025-05-01T02:00:00Z",
+      "isCurrent": false,
+      "tag": "數值增強",
+      "change": "提升護盾效果",
+      "detail": "",
+      "version": "S10"
+    },
+    {
+      "seasonId": "7",
+      "seasonName": "S7",
+      "versionName": "20241128",
+      "publishedAt": "2024-11-28T01:46:48Z",
+      "isCurrent": false,
+      "tag": "數值調整",
+      "change": "平衡不同出裝的效果",
+      "detail": "「調整宮本武藏技能的屬性加成，平衡不同套裝下的強度。」",
+      "version": "S7"
+    },
+    {
+      "seasonId": "5",
+      "seasonName": "S5",
+      "versionName": "20240424",
+      "publishedAt": "2024-04-24T09:58:37Z",
+      "isCurrent": false,
+      "tag": "數值增強",
+      "change": "提升2技能命中敵人後返還的冷卻時間",
+      "detail": "「目前版本的節奏很快，我們也一直致力於讓更多的英雄可以在對戰早期就參與到戰鬥中，我們希望透過適度強化宮本武藏的2技能，略微提升他在戰鬥中的機動性和傷害承受能力。確保不會把他調整得太強，同時讓他能獲得更多出場機會。」",
+      "version": "S5"
     }
   ],
   "faqs": [
     {
       "id": "faq-good-season",
-      "question": "Is Musashi good in the current meta?",
-      "answer": "Musashi is Tier A Assassin with 50.7% win rate, 1.1% pick rate, and 0.2% ban rate on Honor of Kings Global (Camp HOK, 2026-06-05). Solid situational pick."
+      "question": "Is Musashi good in current season?",
+      "answer": "Musashi is Tier A Assassin with 51.16% win rate, 1.1% pick rate, and 0.19% ban rate (Camp HOK international)."
     },
     {
       "id": "faq-best-build",
       "question": "What is the best Musashi build?",
-      "answer": "Core item path: Rapacious Bite, Boots of Resistance, Axe of Torment, Frostscar's Embrace, Succubus Cloak, Cuirass of Savagery. Run Mutation arcana with Smite. Switch to alternate build presets on this page for jungle, clash, or late-game setups."
+      "answer": "Recommended: Rapacious Bite, Boots of Resistance, Axe of Torment, Frostscar's Embrace, Bloodweeper, Sage's Sanctuary."
     },
     {
       "id": "faq-counter",
       "question": "How to counter Musashi?",
-      "answer": "Pick Dyadia, Sun Bin into Musashi. Deny Jungling resources early and force fights before Musashi completes core items. Musashi struggles when the enemy can peel and group them."
+      "answer": "Pick Dyadia, Sun Bin. Strong into Diaochan, Luna, Shangguan."
+    }
+  ],
+  "faqsZh": [
+    {
+      "id": "faq-good-season",
+      "question": "宮本武藏 這版本適合上分嗎？",
+      "answer": "宮本武藏 為 A 梯度，勝率 51.16%、選取 1.1%、禁用 0.19%（Camp HOK 國際服）。"
     },
     {
-      "id": "faq-strong-into",
-      "question": "Who does Musashi counter?",
-      "answer": "Musashi is strong into Diaochan, Luna, Shangguan according to HoKStats matchup data and role matchups on the global server. Draft Musashi when the enemy relies on these heroes in the Jungling lane."
+      "id": "faq-best-build",
+      "question": "宮本武藏 出裝怎麼搭配？",
+      "answer": "推薦：貪婪之噬、抵抗之靴、暗影戰斧、冰痕之握、泣血之刃、賢者的庇護."
     },
     {
-      "id": "faq-high-rank",
-      "question": "Is Musashi good in high rank / Diamond+?",
-      "answer": "Musashi is a viable Tier A pick in high rank with 50.7% win rate — strong in one-trick hands or as a counter-pick. Pick rate 1.1% — frequently seen in ranked; learn the matchup even if you do not main Musashi."
-    },
-    {
-      "id": "faq-lane",
-      "question": "What lane should Musashi play?",
-      "answer": "Musashi is tagged Jungling in Camp export (Fighter, Assassin). Clear to level four, then gank the lane with the least escape. Secure Tyrant when your bot or mid has crash wave."
-    },
-    {
-      "id": "faq-arcana",
-      "question": "Best arcana and spells for Musashi?",
-      "answer": "Recommended: Mutation arcana. Battle spell: Smite. Adjust Purify/Execute based on enemy dive and jungle need."
-    },
-    {
-      "id": "faq-vs-peer",
-      "question": "Musashi or Wukong — which is better?",
-      "answer": "Musashi vs Wukong (Assassin, Tier S): Wukong is 1.3% pick / 49.7% WR. Musashi has +1.0% WR vs Wukong in Camp data. Choose Musashi when you need Jungling identity; choose Wukong for Jungling comfort."
-    },
-    {
-      "id": "faq-ban",
-      "question": "Should I ban Musashi?",
-      "answer": "Optional ban when enemy spams Assassin; 1.1% pick rate but only 0.2% ban rate."
+      "id": "faq-counter",
+      "question": "怎麼克制 宮本武藏？",
+      "answer": "可選 Dyadia、Sun Bin。宮本武藏 克制 Diaochan、Luna、Shangguan。"
     }
   ],
   "metaAnalysis": [
-    "Musashi — 50.7% WR, 1.1% pick, 0.2% ban (Camp HOK 2026-06-05).",
-    "Tier A Assassin · Jungling · difficulty Medium.",
-    "Musashi is a viable Tier A pick in high rank with 50.7% win rate — strong in one-trick hands or as a counter-pick. Pick rate 1.1% — frequently seen in ranked; learn the matchup even if you do not main Musashi.",
-    "Matchups: strong into Diaochan, Luna, Shangguan; weak into Dyadia, Sun Bin.",
-    "Musashi vs Wukong (Assassin, Tier S): Wukong is 1.3% pick / 49.7% WR. Musashi has +1.0% WR vs Wukong in Camp data. Choose Musashi when you need Jungling identity; choose Wukong for Jungling comfort.",
-    "Musashi vs Ying (Assassin, Tier A): Ying is 1.0% pick / 52.4% WR. Ying wins 1.6% more often globally. Choose Musashi when you need Jungling identity; choose Ying for Jungling comfort.",
-    "Draft tip: counter-pick or comfort pick when lane matchup is favorable."
+    "Musashi win rate 51.16% (Camp HOK, 2026-06-07).",
+    "Pick rate 1.1%.",
+    "Ban rate 0.19%.",
+    "Counters: Diaochan, Luna, Shangguan. Weak into: Dyadia, Sun Bin."
   ],
-  "builds": [
-    {
-      "id": "recommended",
-      "label": "Recommended",
-      "position": null,
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1533",
-          "name": "Rapacious Bite",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1533.jpg",
-          "description": "Monster kills boost PATK"
-        },
-        {
-          "slot": 2,
-          "itemId": "1422",
-          "name": "Boots of Resistance",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
-          "description": "Shortens CC"
-        },
-        {
-          "slot": 3,
-          "itemId": "1137",
-          "name": "Axe of Torment",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1137.jpg",
-          "description": "Anti-squishy"
-        },
-        {
-          "slot": 4,
-          "itemId": "13310",
-          "name": "Frostscar's Embrace",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/13310.jpg",
-          "description": "Enhanced BAs slow"
-        },
-        {
-          "slot": 5,
-          "itemId": "1335",
-          "name": "Succubus Cloak",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1335.jpg",
-          "description": "Negates magical damage"
-        },
-        {
-          "slot": 6,
-          "itemId": "1338",
-          "name": "Cuirass of Savagery",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1338.jpg",
-          "description": "Offense & defense"
-        }
-      ]
-    },
-    {
-      "id": "top",
-      "label": "Top",
-      "position": "Position 3",
-      "lane": "Clash Lane",
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1523",
-          "name": "Relentless Blade",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1523.jpg",
-          "description": "Monster kills boost PATK"
-        },
-        {
-          "slot": 2,
-          "itemId": "1423",
-          "name": "Boots of Tranquility",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1423.jpg",
-          "description": "Reduces Skill CD"
-        },
-        {
-          "slot": 3,
-          "itemId": "1137",
-          "name": "Axe of Torment",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1137.jpg",
-          "description": "Anti-squishy"
-        },
-        {
-          "slot": 4,
-          "itemId": "1533",
-          "name": "Rapacious Bite",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1533.jpg",
-          "description": "Monster kills boost PATK"
-        },
-        {
-          "slot": 5,
-          "itemId": "1534",
-          "name": "Dragon's Rage",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1534.jpg",
-          "description": "Boosts BA damage"
-        },
-        {
-          "slot": 6,
-          "itemId": "13310",
-          "name": "Frostscar's Embrace",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/13310.jpg",
-          "description": "Enhanced BAs slow"
-        }
-      ]
-    },
-    {
-      "id": "clash-lane",
-      "label": "CLASH LANE",
-      "position": "Position 1",
-      "lane": "Clash Lane",
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1423",
-          "name": "Boots of Tranquility",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1423.jpg",
-          "description": "Reduces Skill CD"
-        },
-        {
-          "slot": 2,
-          "itemId": "1218",
-          "name": "Primordial Crystal",
-          "icon": "https://hokstats.gg/items/1218.png",
-          "description": "CDR +5%"
-        },
-        {
-          "slot": 3,
-          "itemId": "1124",
-          "name": "Meteor",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1124.jpg",
-          "description": "PATK +35\nCDR +7.5%"
-        },
-        {
-          "slot": 4,
-          "itemId": "1137",
-          "name": "Axe of Torment",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1137.jpg",
-          "description": "Anti-squishy"
-        },
-        {
-          "slot": 5,
-          "itemId": "11311",
-          "name": "Pure Sky",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/11311.jpg",
-          "description": "Temp. damage reduction"
-        },
-        {
-          "slot": 6,
-          "itemId": "13310",
-          "name": "Frostscar's Embrace",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/13310.jpg",
-          "description": "Enhanced BAs slow"
-        }
-      ]
-    },
-    {
-      "id": "popular",
-      "label": "Popular",
-      "position": "Position 3",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1523",
-          "name": "Relentless Blade",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1523.jpg",
-          "description": "Monster kills boost PATK"
-        },
-        {
-          "slot": 2,
-          "itemId": "1423",
-          "name": "Boots of Tranquility",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1423.jpg",
-          "description": "Reduces Skill CD"
-        },
-        {
-          "slot": 3,
-          "itemId": "1137",
-          "name": "Axe of Torment",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1137.jpg",
-          "description": "Anti-squishy"
-        },
-        {
-          "slot": 4,
-          "itemId": "1533",
-          "name": "Rapacious Bite",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1533.jpg",
-          "description": "Monster kills boost PATK"
-        },
-        {
-          "slot": 5,
-          "itemId": "1331",
-          "name": "Blazing Cape",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1331.jpg",
-          "description": "Burns nearby enemies"
-        },
-        {
-          "slot": 6,
-          "itemId": "1328",
-          "name": "Blood Rage",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1328.jpg",
-          "description": "Grants temporary shield"
-        }
-      ]
-    },
-    {
-      "id": "preset",
-      "label": "Preset",
-      "position": "Position 3",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1533",
-          "name": "Rapacious Bite",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1533.jpg",
-          "description": "Monster kills boost PATK"
-        },
-        {
-          "slot": 2,
-          "itemId": "1422",
-          "name": "Boots of Resistance",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
-          "description": "Shortens CC"
-        },
-        {
-          "slot": 3,
-          "itemId": "1137",
-          "name": "Axe of Torment",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1137.jpg",
-          "description": "Anti-squishy"
-        },
-        {
-          "slot": 4,
-          "itemId": "13310",
-          "name": "Frostscar's Embrace",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/13310.jpg",
-          "description": "Enhanced BAs slow"
-        },
-        {
-          "slot": 5,
-          "itemId": "1338",
-          "name": "Cuirass of Savagery",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1338.jpg",
-          "description": "Offense & defense"
-        },
-        {
-          "slot": 6,
-          "itemId": "1335",
-          "name": "Succubus Cloak",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1335.jpg",
-          "description": "Negates magical damage"
-        }
-      ]
-    },
-    {
-      "id": "build",
-      "label": "تاداﺪﻋإ",
-      "position": "Position 1",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1423",
-          "name": "Boots of Tranquility",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1423.jpg",
-          "description": "Reduces Skill CD"
-        },
-        {
-          "slot": 2,
-          "itemId": "1137",
-          "name": "Axe of Torment",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1137.jpg",
-          "description": "Anti-squishy"
-        },
-        {
-          "slot": 3,
-          "itemId": "1134",
-          "name": "Master Sword",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1134.jpg",
-          "description": "Enhances BA"
-        },
-        {
-          "slot": 4,
-          "itemId": "11311",
-          "name": "Pure Sky",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/11311.jpg",
-          "description": "Temp. damage reduction"
-        },
-        {
-          "slot": 5,
-          "itemId": "1138",
-          "name": "Overlord's Might",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1138.jpg",
-          "description": "High-damage attack"
-        },
-        {
-          "slot": 6,
-          "itemId": "1534",
-          "name": "Dragon's Rage",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1534.jpg",
-          "description": "Boosts BA damage"
-        }
-      ]
-    },
-    {
-      "id": "meta",
-      "label": "Meta",
-      "position": "Position 3",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1523",
-          "name": "Relentless Blade",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1523.jpg",
-          "description": "Monster kills boost PATK"
-        },
-        {
-          "slot": 2,
-          "itemId": "1423",
-          "name": "Boots of Tranquility",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1423.jpg",
-          "description": "Reduces Skill CD"
-        },
-        {
-          "slot": 3,
-          "itemId": "1124",
-          "name": "Meteor",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1124.jpg",
-          "description": "PATK +35\nCDR +7.5%"
-        },
-        {
-          "slot": 4,
-          "itemId": "1137",
-          "name": "Axe of Torment",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1137.jpg",
-          "description": "Anti-squishy"
-        },
-        {
-          "slot": 5,
-          "itemId": "1533",
-          "name": "Rapacious Bite",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1533.jpg",
-          "description": "Monster kills boost PATK"
-        },
-        {
-          "slot": 6,
-          "itemId": "1345",
-          "name": "Nettle Gauntlet",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1345.jpg",
-          "description": "Offense & defense"
-        }
-      ]
-    },
-    {
-      "id": "rexvaan",
-      "label": "Rex•Vaan",
-      "position": "Position 3",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1523",
-          "name": "Relentless Blade",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1523.jpg",
-          "description": "Monster kills boost PATK"
-        },
-        {
-          "slot": 2,
-          "itemId": "1124",
-          "name": "Meteor",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1124.jpg",
-          "description": "PATK +35\nCDR +7.5%"
-        },
-        {
-          "slot": 3,
-          "itemId": "1422",
-          "name": "Boots of Resistance",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
-          "description": "Shortens CC"
-        },
-        {
-          "slot": 4,
-          "itemId": "1137",
-          "name": "Axe of Torment",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1137.jpg",
-          "description": "Anti-squishy"
-        },
-        {
-          "slot": 5,
-          "itemId": "1158",
-          "name": "Bloodsoul",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1158.jpg",
-          "description": "PATK +35, Physical Lifesteal +12%"
-        },
-        {
-          "slot": 6,
-          "itemId": "13310",
-          "name": "Frostscar's Embrace",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/13310.jpg",
-          "description": "Enhanced BAs slow"
-        }
-      ]
-    },
-    {
-      "id": "黄霸流",
-      "label": "黄霸流",
-      "position": "Position 3",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1523",
-          "name": "Relentless Blade",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1523.jpg",
-          "description": "Monster kills boost PATK"
-        },
-        {
-          "slot": 2,
-          "itemId": "1423",
-          "name": "Boots of Tranquility",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1423.jpg",
-          "description": "Reduces Skill CD"
-        },
-        {
-          "slot": 3,
-          "itemId": "1137",
-          "name": "Axe of Torment",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1137.jpg",
-          "description": "Anti-squishy"
-        },
-        {
-          "slot": 4,
-          "itemId": "1533",
-          "name": "Rapacious Bite",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1533.jpg",
-          "description": "Monster kills boost PATK"
-        },
-        {
-          "slot": 5,
-          "itemId": "1534",
-          "name": "Dragon's Rage",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1534.jpg",
-          "description": "Boosts BA damage"
-        },
-        {
-          "slot": 6,
-          "itemId": "1332",
-          "name": "Overlord's Platemail",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1332.jpg",
-          "description": "Extra Health"
-        }
-      ]
-    },
-    {
-      "id": "burst-damage",
-      "label": "BURST DAMAGE",
-      "position": "Position 3",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1523",
-          "name": "Relentless Blade",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1523.jpg",
-          "description": "Monster kills boost PATK"
-        },
-        {
-          "slot": 2,
-          "itemId": "1423",
-          "name": "Boots of Tranquility",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1423.jpg",
-          "description": "Reduces Skill CD"
-        },
-        {
-          "slot": 3,
-          "itemId": "1124",
-          "name": "Meteor",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1124.jpg",
-          "description": "PATK +35\nCDR +7.5%"
-        },
-        {
-          "slot": 4,
-          "itemId": "1137",
-          "name": "Axe of Torment",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1137.jpg",
-          "description": "Anti-squishy"
-        },
-        {
-          "slot": 5,
-          "itemId": "1533",
-          "name": "Rapacious Bite",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1533.jpg",
-          "description": "Monster kills boost PATK"
-        },
-        {
-          "slot": 6,
-          "itemId": "1134",
-          "name": "Master Sword",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1134.jpg",
-          "description": "Enhances BA"
-        }
-      ]
-    }
+  "metaAnalysisZh": [
+    "宮本武藏 勝率 51.16%（Camp HOK，2026-06-07）",
+    "選取率 1.1%",
+    "禁用率 0.19%",
+    "克制：Diaochan、Luna、Shangguan；被克制：Dyadia、Sun Bin"
   ],
   "guide": {
     "overview": "Musashi is a Medium Assassin (Jungling) on Honor of Kings Global. Camp HOK ranks them Tier A with 50.7% win rate and 1.1% pick rate as of 2026-06-05.",

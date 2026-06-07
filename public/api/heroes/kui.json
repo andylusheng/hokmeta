@@ -2,48 +2,82 @@
   "id": "kui",
   "slug": "kui",
   "name": "Kui",
+  "nameZh": "鍾馗",
   "role": "Support",
   "roles": "Support, Mage",
+  "rolesZh": "輔助, 法師",
   "lane": "Roaming",
+  "laneZh": "遊走",
   "difficulty": "Easy",
   "tier": "A",
-  "winRate": 49.75,
-  "pickRate": 0.98,
-  "banRate": 0.44,
-  "rank": 79,
+  "winRate": 49.98,
+  "pickRate": 0.99,
+  "banRate": 0.45,
+  "rank": 74,
   "avatar": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/wRGzV266.png",
   "avatarFallback": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/175/175.jpg",
+  "heroCover": "https://camp.honorofkings.com/social/game/src/image_hero_cover_1275*718/UZjQgjrw.jpg",
   "tencentId": 175,
-  "dataSource": "Camp HOK + HoKStats.gg (intl)",
-  "dataUpdated": "2026-06-05",
+  "dataSource": "Camp HOK bilingual (primary)",
+  "dataUpdated": "2026-06-07",
   "skills": [
     {
       "slot": "passive",
       "name": "Ethereal Outburst",
       "description": "Deals area damage upon taking heavy damage in a single hit or after dying.",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/175/17500.png",
-      "cooldown": null
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/17500.png",
+      "cooldown": "1s"
     },
     {
       "slot": "skill1",
       "name": "Mortals!",
-      "description": "Inflicts damage and slow on enemies in the target area.",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/175/17510.png",
-      "cooldown": null
+      "description": "Damages and slows nearby enemies. Marks enemies in the inner circle while dealing extra damage and slowing enemies.",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/17510.png",
+      "cooldown": "5s"
     },
     {
       "slot": "skill2",
       "name": "Join Me",
-      "description": "Throws his chain hook in the target direction, damaging the enemy and pulling them to him. Upon learning this skill, gains a passive effect that increases his Health on defeats and assists.",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/175/17520.png",
-      "cooldown": null
+      "description": "Throws a chain hook in the target direction that pulls the target back, dealing damage and marking them.\nPassive: Defeats and assists permanently boost Health.",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/17520.png",
+      "cooldown": "13s"
     },
     {
       "slot": "ultimate",
       "name": "Into the Void",
-      "description": "Deals damage multiple times and slows enemies within range. For heroes marked by Skill 2, the slow effect is upgraded to a stun.",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/175/17530.png",
-      "cooldown": null
+      "description": "Deals damage multiple times and slows enemies within range. Against marked heroes, the slow effect is upgraded to a stun.",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/17530.png",
+      "cooldown": "40s"
+    }
+  ],
+  "skillsZh": [
+    {
+      "slot": "passive",
+      "name": "制裁儀式",
+      "description": "單次承受巨大傷害或死亡時，對周圍造成範圍傷害。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/17500.png",
+      "cooldown": "1s"
+    },
+    {
+      "slot": "skill1",
+      "name": "虛空清道者",
+      "description": "鍾馗對周圍造成傷害與減速。對內圈敵人造成更高傷害與減速，並標記目標。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/17510.png",
+      "cooldown": "5s"
+    },
+    {
+      "slot": "skill2",
+      "name": "湮滅之鎖",
+      "description": "鍾馗朝指定方向發射鉤鎖，鉤回目標造成傷害並標記目標。\n被動：擊敗和助攻永久增加生命值。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/17520.png",
+      "cooldown": "13s"
+    },
+    {
+      "slot": "ultimate",
+      "name": "輪迴吞噬",
+      "description": "對範圍內敵人造成多段傷害和減速。對遭到標記的英雄，減速效果升級為暈眩。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/17530.png",
+      "cooldown": "40s"
     }
   ],
   "build": [
@@ -51,51 +85,206 @@
       "slot": 1,
       "itemId": "1423",
       "name": "Boots of Tranquility",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1423.jpg",
-      "description": "Reduces Skill CD"
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1423.png",
+      "description": "CDR +15%, MSPD +50\nSpeeds up skill cooldown"
     },
     {
       "slot": 2,
-      "itemId": "1336",
-      "name": "Glacial Buckler",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1336.jpg",
-      "description": "Group damage & slow"
+      "itemId": "1737",
+      "name": "Crimson Shadow - Radiance",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1749.png",
+      "description": "HP +1,200, MSPD +7.5%\nDPS aura"
     },
     {
       "slot": 3,
       "itemId": "1341",
       "name": "Frigid Charge",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1341.jpg",
-      "description": "Group CC"
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1341.png",
+      "description": "PDEF +150, HP +900, CDR +7.5%, Resistance +10%\nGreat crowd control"
     },
     {
       "slot": 4,
-      "itemId": "1335",
-      "name": "Succubus Cloak",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1335.jpg",
-      "description": "Negates magical damage"
+      "itemId": "1347",
+      "name": "Longnight Guardian",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1347.png",
+      "description": "MDEF +210, HP +1,000, MSPD +7.5%\nReduces magical damage"
     },
     {
       "slot": 5,
-      "itemId": "1347",
-      "name": "Longnight Guardian",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1347.jpg",
-      "description": "Resists burst damage"
+      "itemId": "1333",
+      "name": "Ominous Premonition",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1333.png",
+      "description": "PDEF +300, HP +1,200\nSlows attackers"
     },
     {
       "slot": 6,
-      "itemId": null,
-      "name": "Data unavailable",
-      "icon": null,
-      "description": null
+      "itemId": "1332",
+      "name": "Overlord's Platemail",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1332.png",
+      "description": "HP +1,800, PDEF +160, MDEF +80\nExtra HP"
+    }
+  ],
+  "buildZh": [
+    {
+      "slot": 1,
+      "itemId": "1423",
+      "name": "冷靜之靴",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1423.png",
+      "description": "+15%減冷卻時間+50點移速\n加快技能冷卻"
+    },
+    {
+      "slot": 2,
+      "itemId": "1737",
+      "name": "極影・形昭",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1749.png",
+      "description": "+1200點生命值+7.5%移速\n光環提升輸出"
+    },
+    {
+      "slot": 3,
+      "itemId": "1341",
+      "name": "冰霜衝擊",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1341.png",
+      "description": "+150點物防+900點生命值+7.5%冷卻時間+10%韌性\n群體控制"
+    },
+    {
+      "slot": 4,
+      "itemId": "1347",
+      "name": "永夜守護",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1347.png",
+      "description": "+210點法防+1000點生命值\n+7.5%移速減少法術傷害"
+    },
+    {
+      "slot": 5,
+      "itemId": "1333",
+      "name": "不祥徵兆",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1333.png",
+      "description": "+300點物防+1200點生命值\n受擊時將敵人減速"
+    },
+    {
+      "slot": 6,
+      "itemId": "1332",
+      "name": "霸者重裝",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1332.png",
+      "description": "+1800點生命值+160點物防+80點法防\n提高額外生命值"
+    }
+  ],
+  "builds": [
+    {
+      "id": "camp-0",
+      "label": "Scorpion Felon",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1423",
+          "name": "Boots of Tranquility",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1423.png",
+          "description": "CDR +15%, MSPD +50\nSpeeds up skill cooldown"
+        },
+        {
+          "slot": 2,
+          "itemId": "1737",
+          "name": "Crimson Shadow - Radiance",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1749.png",
+          "description": "HP +1,200, MSPD +7.5%\nDPS aura"
+        },
+        {
+          "slot": 3,
+          "itemId": "1341",
+          "name": "Frigid Charge",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1341.png",
+          "description": "PDEF +150, HP +900, CDR +7.5%, Resistance +10%\nGreat crowd control"
+        },
+        {
+          "slot": 4,
+          "itemId": "1347",
+          "name": "Longnight Guardian",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1347.png",
+          "description": "MDEF +210, HP +1,000, MSPD +7.5%\nReduces magical damage"
+        },
+        {
+          "slot": 5,
+          "itemId": "1333",
+          "name": "Ominous Premonition",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1333.png",
+          "description": "PDEF +300, HP +1,200\nSlows attackers"
+        },
+        {
+          "slot": 6,
+          "itemId": "1332",
+          "name": "Overlord's Platemail",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1332.png",
+          "description": "HP +1,800, PDEF +160, MDEF +80\nExtra HP"
+        }
+      ]
+    }
+  ],
+  "buildsZh": [
+    {
+      "id": "camp-0",
+      "label": "Scorpion Felon",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1423",
+          "name": "冷靜之靴",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1423.png",
+          "description": "+15%減冷卻時間+50點移速\n加快技能冷卻"
+        },
+        {
+          "slot": 2,
+          "itemId": "1737",
+          "name": "極影・形昭",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1749.png",
+          "description": "+1200點生命值+7.5%移速\n光環提升輸出"
+        },
+        {
+          "slot": 3,
+          "itemId": "1341",
+          "name": "冰霜衝擊",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1341.png",
+          "description": "+150點物防+900點生命值+7.5%冷卻時間+10%韌性\n群體控制"
+        },
+        {
+          "slot": 4,
+          "itemId": "1347",
+          "name": "永夜守護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1347.png",
+          "description": "+210點法防+1000點生命值\n+7.5%移速減少法術傷害"
+        },
+        {
+          "slot": 5,
+          "itemId": "1333",
+          "name": "不祥徵兆",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1333.png",
+          "description": "+300點物防+1200點生命值\n受擊時將敵人減速"
+        },
+        {
+          "slot": 6,
+          "itemId": "1332",
+          "name": "霸者重裝",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1332.png",
+          "description": "+1800點生命值+160點物防+80點法防\n提高額外生命值"
+        }
+      ]
     }
   ],
   "arcana": [
-    "Fate"
+    "Lvl 5: Fate",
+    "Lvl 5: Harmony",
+    "Lvl 5: Void"
+  ],
+  "arcanaZh": [
+    "5級：宿命",
+    "5級：調和",
+    "5級：虛空"
   ],
   "spells": [
-    "Smite",
-    "Flash"
+    "Sprint"
+  ],
+  "spellsZh": [
+    "疾跑"
   ],
   "counters": [
     "Cao Cao",
@@ -108,186 +297,85 @@
     "Ying"
   ],
   "tips": [
-    "Kui is a Easy Support (Roaming) on Honor of Kings Global. Camp HOK ranks them Tier A with 49.8% win rate and 1.0% pick rate as of 2026-06-05.",
-    "Best build path: Boots of Tranquility → Glacial Buckler → Frigid Charge → Succubus Cloak → Longnight Guardian.",
-    "Run Fate for stats that match Kui's Support kit. Take Smite & Flash — swap to Purify against heavy CC or Smite when jungling.",
-    "Standard trade: Mortals! → Join Me → Into the Void → weave basic attacks. Weave basic attacks between skill casts for passive value.",
-    "Laning: Help marksman crash wave, then rotate mid for picks. Return before Tyrant if your carry has no escape.",
-    "Teamfight: Peel carry first, then look for pick on out-of-position enemies. Ward Tyrant 30s before spawn.",
-    "Kui excels into Cao Cao, Kaizer, Xiang Yu. Avoid blind picking into Wukong, Musashi, Ying without team peel.",
-    "Kui is a viable Tier A pick in high rank with 49.8% win rate — strong in one-trick hands or as a counter-pick. Pick rate 1.0% — frequently seen in ranked; learn the matchup even if you do not main Kui."
+    "Kui (Support): Tier A — 49.98% WR (Camp HOK).",
+    "Lane: Roaming.",
+    "Build: Boots of Tranquility, Crimson Shadow - Radiance, Frigid Charge."
+  ],
+  "tipsZh": [
+    "鍾馗（遊走）：梯度 A，勝率 49.98%（Camp HOK）。",
+    "出裝：冷靜之靴、極影・形昭、冰霜衝擊."
   ],
   "patchHistory": [
     {
-      "version": "Live meta",
-      "change": "Camp HOK — WR 49.8%, pick 1.0%, ban 0.4%, tier A."
-    },
+      "seasonId": "11",
+      "seasonName": "S11",
+      "versionName": "20250717",
+      "publishedAt": "2025-07-17T01:00:00Z",
+      "isCurrent": false,
+      "tag": "Mechanics Upgrade",
+      "change": "Skill 1 Effects Upgrade",
+      "detail": "",
+      "version": "S11"
+    }
+  ],
+  "patchHistoryZh": [
     {
-      "version": "Matchups",
-      "change": "Strong into Cao Cao, Kaizer, Xiang Yu · Weak into Wukong, Musashi, Ying."
-    },
-    {
-      "version": "High rank",
-      "change": "Kui is a viable Tier A pick in high rank with 49.8% win rate — strong in one-trick hands or as a counter-pick. Pick rate 1.0% — frequently seen in ranked; learn the matchup even if you do not main Kui."
+      "seasonId": "11",
+      "seasonName": "S11",
+      "versionName": "20250717",
+      "publishedAt": "2025-07-17T01:00:00Z",
+      "isCurrent": false,
+      "tag": "機制升級",
+      "change": "提升1技能效果",
+      "detail": "",
+      "version": "S11"
     }
   ],
   "faqs": [
     {
       "id": "faq-good-season",
-      "question": "Is Kui good in the current meta?",
-      "answer": "Kui is Tier A Support with 49.8% win rate, 1.0% pick rate, and 0.4% ban rate on Honor of Kings Global (Camp HOK, 2026-06-05). Solid situational pick."
+      "question": "Is Kui good in current season?",
+      "answer": "Kui is Tier A Support with 49.98% win rate, 0.99% pick rate, and 0.45% ban rate (Camp HOK international)."
     },
     {
       "id": "faq-best-build",
       "question": "What is the best Kui build?",
-      "answer": "Core item path: Boots of Tranquility, Glacial Buckler, Frigid Charge, Succubus Cloak, Longnight Guardian. Run Fate arcana with Smite & Flash. Switch to alternate build presets on this page for jungle, clash, or late-game setups."
+      "answer": "Recommended: Boots of Tranquility, Crimson Shadow - Radiance, Frigid Charge, Longnight Guardian, Ominous Premonition, Overlord's Platemail."
     },
     {
       "id": "faq-counter",
       "question": "How to counter Kui?",
-      "answer": "Pick Wukong, Musashi, Ying into Kui. Deny Roaming resources early and force fights before Kui completes core items. Kui struggles when the enemy can out-range or out-sustain them."
+      "answer": "Pick Wukong, Musashi, Ying. Strong into Cao Cao, Kaizer, Xiang Yu."
+    }
+  ],
+  "faqsZh": [
+    {
+      "id": "faq-good-season",
+      "question": "鍾馗 這版本適合上分嗎？",
+      "answer": "鍾馗 為 A 梯度，勝率 49.98%、選取 0.99%、禁用 0.45%（Camp HOK 國際服）。"
     },
     {
-      "id": "faq-strong-into",
-      "question": "Who does Kui counter?",
-      "answer": "Kui is strong into Cao Cao, Kaizer, Xiang Yu according to HoKStats matchup data and role matchups on the global server. Draft Kui when the enemy relies on these heroes in the Roaming lane."
+      "id": "faq-best-build",
+      "question": "鍾馗 出裝怎麼搭配？",
+      "answer": "推薦：冷靜之靴、極影・形昭、冰霜衝擊、永夜守護、不祥徵兆、霸者重裝."
     },
     {
-      "id": "faq-high-rank",
-      "question": "Is Kui good in high rank / Diamond+?",
-      "answer": "Kui is a viable Tier A pick in high rank with 49.8% win rate — strong in one-trick hands or as a counter-pick. Pick rate 1.0% — frequently seen in ranked; learn the matchup even if you do not main Kui."
-    },
-    {
-      "id": "faq-lane",
-      "question": "What lane should Kui play?",
-      "answer": "Kui is tagged Roaming in Camp export (Support, Mage). Help marksman crash wave, then rotate mid for picks. Return before Tyrant if your carry has no escape."
-    },
-    {
-      "id": "faq-arcana",
-      "question": "Best arcana and spells for Kui?",
-      "answer": "Recommended: Fate arcana. Battle spell: Smite & Flash. Adjust Purify/Execute based on enemy dive and jungle need."
-    },
-    {
-      "id": "faq-vs-peer",
-      "question": "Kui or Dolia — which is better?",
-      "answer": "Kui vs Dolia (Support, Tier S): Dolia is 1.8% pick / 46.1% WR. Kui has +3.7% WR vs Dolia in Camp data. Choose Kui when you need Roaming identity; choose Dolia for Roaming comfort."
-    },
-    {
-      "id": "faq-ban",
-      "question": "Should I ban Kui?",
-      "answer": "Yes in tryhard queues — 0.4% ban rate. Deny if enemy first-picks Support."
+      "id": "faq-counter",
+      "question": "怎麼克制 鍾馗？",
+      "answer": "可選 Wukong、Musashi、Ying。鍾馗 克制 Cao Cao、Kaizer、Xiang Yu。"
     }
   ],
   "metaAnalysis": [
-    "Kui — 49.8% WR, 1.0% pick, 0.4% ban (Camp HOK 2026-06-05).",
-    "Tier A Support · Roaming · difficulty Easy.",
-    "Kui is a viable Tier A pick in high rank with 49.8% win rate — strong in one-trick hands or as a counter-pick. Pick rate 1.0% — frequently seen in ranked; learn the matchup even if you do not main Kui.",
-    "Matchups: strong into Cao Cao, Kaizer, Xiang Yu; weak into Wukong, Musashi, Ying.",
-    "Kui vs Dolia (Support, Tier S): Dolia is 1.8% pick / 46.1% WR. Kui has +3.7% WR vs Dolia in Camp data. Choose Kui when you need Roaming identity; choose Dolia for Roaming comfort.",
-    "Kui vs Cai Yan (Support, Tier S): Cai Yan is 1.3% pick / 50.3% WR. Cai Yan wins 0.6% more often globally. Choose Kui when you need Roaming identity; choose Cai Yan for Roaming comfort.",
-    "Draft tip: counter-pick or comfort pick when lane matchup is favorable."
+    "Kui win rate 49.98% (Camp HOK, 2026-06-07).",
+    "Pick rate 0.99%.",
+    "Ban rate 0.45%.",
+    "Counters: Cao Cao, Kaizer, Xiang Yu. Weak into: Wukong, Musashi, Ying."
   ],
-  "builds": [
-    {
-      "id": "recommended",
-      "label": "Recommended",
-      "position": null,
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1423",
-          "name": "Boots of Tranquility",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1423.jpg",
-          "description": "Reduces Skill CD"
-        },
-        {
-          "slot": 2,
-          "itemId": "1336",
-          "name": "Glacial Buckler",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1336.jpg",
-          "description": "Group damage & slow"
-        },
-        {
-          "slot": 3,
-          "itemId": "1341",
-          "name": "Frigid Charge",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1341.jpg",
-          "description": "Group CC"
-        },
-        {
-          "slot": 4,
-          "itemId": "1335",
-          "name": "Succubus Cloak",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1335.jpg",
-          "description": "Negates magical damage"
-        },
-        {
-          "slot": 5,
-          "itemId": "1347",
-          "name": "Longnight Guardian",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1347.jpg",
-          "description": "Resists burst damage"
-        },
-        {
-          "slot": 6,
-          "itemId": null,
-          "name": "Data unavailable",
-          "icon": null,
-          "description": null
-        }
-      ]
-    },
-    {
-      "id": "scorpion-felon",
-      "label": "Scorpion Felon",
-      "position": "Position 5",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1701",
-          "name": "Knowledge Gem",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1701.jpg",
-          "description": "Extra Gold & EXP"
-        },
-        {
-          "slot": 2,
-          "itemId": "1423",
-          "name": "Boots of Tranquility",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1423.jpg",
-          "description": "Reduces Skill CD"
-        },
-        {
-          "slot": 3,
-          "itemId": "1711",
-          "name": "Crimson Shadow",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1711.jpg",
-          "description": "DPS aura"
-        },
-        {
-          "slot": 4,
-          "itemId": "1737",
-          "name": "Crimson Shadow - Radiance",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1737.jpg",
-          "description": "Area damage & vision"
-        },
-        {
-          "slot": 5,
-          "itemId": "1341",
-          "name": "Frigid Charge",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1341.jpg",
-          "description": "Group CC"
-        },
-        {
-          "slot": 6,
-          "itemId": "1347",
-          "name": "Longnight Guardian",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1347.jpg",
-          "description": "Resists burst damage"
-        }
-      ]
-    }
+  "metaAnalysisZh": [
+    "鍾馗 勝率 49.98%（Camp HOK，2026-06-07）",
+    "選取率 0.99%",
+    "禁用率 0.45%",
+    "克制：Cao Cao、Kaizer、Xiang Yu；被克制：Wukong、Musashi、Ying"
   ],
   "guide": {
     "overview": "Kui is a Easy Support (Roaming) on Honor of Kings Global. Camp HOK ranks them Tier A with 49.8% win rate and 1.0% pick rate as of 2026-06-05.",

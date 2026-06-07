@@ -2,99 +2,583 @@
   "id": "lu-bu",
   "slug": "lu-bu",
   "name": "Lu Bu",
+  "nameZh": "呂布",
   "role": "Tank",
   "roles": "Fighter, Tank",
+  "rolesZh": "戰士, 坦克",
   "lane": "Clash Lane",
+  "laneZh": "對抗路",
   "difficulty": "Easy",
-  "tier": "A",
-  "winRate": 48.32,
+  "tier": "S",
+  "winRate": 48.51,
   "pickRate": 1.18,
-  "banRate": 0.15,
-  "rank": 99,
+  "banRate": 0.14,
+  "rank": 96,
   "avatar": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/dXLF2kE7.png",
   "avatarFallback": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/123/123.jpg",
+  "heroCover": "https://camp.honorofkings.com/social/game/src/image_hero_cover_1275*718/2zyIM7KN.jpg",
   "tencentId": 123,
-  "dataSource": "Camp HOK + HoKStats.gg (intl)",
-  "dataUpdated": "2026-06-05",
+  "dataSource": "Camp HOK bilingual (primary)",
+  "dataUpdated": "2026-06-07",
   "skills": [
     {
       "slot": "passive",
       "name": "Bloodthirsty Ancestry",
-      "description": "Becomes enhanced when Skill 1 or Ultimate hits an enemy hero. While enhanced, Basic Attacks, Skill 1, and Ultimate deal true damage and restore Health.",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/123/12300.png",
-      "cooldown": null
+      "description": "Enchants his weapon when it hits an enemy during Skill 1 or Ultimate. While enchanted, Basic Attacks and Skills deal additional true damage and recover his Health.",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/12300.png",
+      "cooldown": "1s"
     },
     {
       "slot": "skill1",
       "name": "Impaling Thrust",
-      "description": "Performs a sweep attack to the target area. Restores a certain amount of Health with each enemy hero hit. Failing to hit a hero will cause the enhancement to disappear.",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/123/12310.png",
-      "cooldown": null
+      "description": "Performs a sweep attack on the target area. Restores a certain amount of Health with each enemy hero hit. Failing to hit a hero will cause his enhancement to disappear.",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/12310.png",
+      "cooldown": "5s"
     },
     {
       "slot": "skill2",
       "name": "Souleater",
-      "description": "Slows enemies in the target area and grants a shield for each enemy hit (upto 3 stacks). The shield value is converted to Health over time.",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/123/12320.png",
-      "cooldown": null
+      "description": "Slows and damages enemies in the target area and gains a shield for each enemy hit (up to 3 stacks). The shield value is converted to Health over time.",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/12320.png",
+      "cooldown": "9s"
     },
     {
       "slot": "ultimate",
       "name": "Tremble, Mortals",
-      "description": "Leaps to the target location, launching and damaging enemies within range upon landing, then forming a killing field. While inside the killing field, he gains increased Physical and Magical Defense, while enemies suffer damage and slow.",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/123/12330.png",
-      "cooldown": null
+      "description": "Leaps to the target location, launching and damaging enemies within range upon landing, then forming a ring of slaughter.\nWhile inside the ring, he gains increased Physical and Magical Defense, while enemies suffer damage and slow.",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/12330.png",
+      "cooldown": "50s"
+    }
+  ],
+  "skillsZh": [
+    {
+      "slot": "passive",
+      "name": "饕餮血統",
+      "description": "呂布揮斬方天畫戟的技能命中敵方英雄後會為武器附魔，方天畫戟在附魔狀態下，普攻和技能都會造成等額的真實傷害並回復生命值。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/12300.png",
+      "cooldown": "1s"
+    },
+    {
+      "slot": "skill1",
+      "name": "方天畫斬",
+      "description": "向指定區域進行橫掃攻擊，命中每個敵方英雄會回復一定生命值，沒有命中英雄則使自身強化效果消失。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/12310.png",
+      "cooldown": "5s"
+    },
+    {
+      "slot": "skill2",
+      "name": "貪狼之握",
+      "description": "對指定範圍方向的敵人造成減速和傷害，每命中一位敵人獲得一層護盾值(最高三層)，護盾值會隨時間衰減並轉化為生命值回復。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/12320.png",
+      "cooldown": "9s"
+    },
+    {
+      "slot": "ultimate",
+      "name": "魔神降世",
+      "description": "向指定位置跳躍，落地後擊飛並傷害自身周圍一定範圍內的敵人，形成一個殺戮場域。\n殺戮場域中，呂布增加物理防禦和法術防禦，對敵人造成傷害和減速效果。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/12330.png",
+      "cooldown": "50s"
     }
   ],
   "build": [
     {
       "slot": 1,
-      "itemId": "1422",
-      "name": "Boots of Resistance",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
-      "description": "Shortens CC"
+      "itemId": "1138",
+      "name": "Overlord's Might",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1138.png",
+      "description": "PATK +150, CDR +5%\nHigh-damage attack"
     },
     {
       "slot": 2,
-      "itemId": "1335",
-      "name": "Succubus Cloak",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1335.jpg",
-      "description": "Negates magical damage"
+      "itemId": "1127",
+      "name": "Destiny",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+      "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
     },
     {
       "slot": 3,
-      "itemId": "1331",
-      "name": "Blazing Cape",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1331.jpg",
-      "description": "Burns nearby enemies"
+      "itemId": "1422",
+      "name": "Boots of Resistance",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1422.png",
+      "description": "MDEF +100, PDEF +50, MSPD +50\nShortens crowd control"
     },
     {
       "slot": 4,
-      "itemId": "1332",
-      "name": "Overlord's Platemail",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1332.jpg",
-      "description": "Extra Health"
+      "itemId": "11210",
+      "name": "Mortal Punisher",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/11210.png",
+      "description": "PATK +100, Lifesteal +20%, ASPD +20%\nLowers Health regen"
     },
     {
       "slot": 5,
-      "itemId": "1337",
-      "name": "Sage's Sanctuary",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1337.jpg",
-      "description": "Resurrect on the spot"
+      "itemId": "1125",
+      "name": "Demonsbane",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1125.png",
+      "description": "PATK +90, MDEF +150, HP +600\nBoosts Magical Defense"
     },
     {
       "slot": 6,
-      "itemId": null,
-      "name": "Data unavailable",
-      "icon": null,
-      "description": null
+      "itemId": "1157",
+      "name": "Immovable - Sky Dome",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1157.png",
+      "description": "PATK +80, PDEF +150, CDR +10%\nTemp. damage reduction"
+    }
+  ],
+  "buildZh": [
+    {
+      "slot": 1,
+      "itemId": "1138",
+      "name": "強者破軍",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1138.png",
+      "description": "+150點攻擊+5%減冷卻時間\n高額攻擊"
+    },
+    {
+      "slot": 2,
+      "itemId": "1127",
+      "name": "名刀・司命",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+      "description": "+75點攻擊+15%攻速+500點生命值\n保命"
+    },
+    {
+      "slot": 3,
+      "itemId": "1422",
+      "name": "抵抗之靴",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1422.png",
+      "description": "+100點法防+50點物防+50點移速\n減少被控時間"
+    },
+    {
+      "slot": 4,
+      "itemId": "11210",
+      "name": "制裁之刃",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/11210.png",
+      "description": "+100點攻擊+20%吸血+20%攻速\n減少敵人回血"
+    },
+    {
+      "slot": 5,
+      "itemId": "1125",
+      "name": "破魔刀",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1125.png",
+      "description": "+90點攻擊+150點法防+600點生命值\n增加法術防禦"
+    },
+    {
+      "slot": 6,
+      "itemId": "1157",
+      "name": "不動・天穹",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1157.png",
+      "description": "+80點攻擊+150點物防+10%冷卻時間縮減\n暫時增加免傷"
+    }
+  ],
+  "builds": [
+    {
+      "id": "camp-0",
+      "label": "DMG Late Game",
+      "lane": "Top",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1138",
+          "name": "Overlord's Might",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1138.png",
+          "description": "PATK +150, CDR +5%\nHigh-damage attack"
+        },
+        {
+          "slot": 2,
+          "itemId": "1127",
+          "name": "Destiny",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
+        },
+        {
+          "slot": 3,
+          "itemId": "1422",
+          "name": "Boots of Resistance",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1422.png",
+          "description": "MDEF +100, PDEF +50, MSPD +50\nShortens crowd control"
+        },
+        {
+          "slot": 4,
+          "itemId": "11210",
+          "name": "Mortal Punisher",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/11210.png",
+          "description": "PATK +100, Lifesteal +20%, ASPD +20%\nLowers Health regen"
+        },
+        {
+          "slot": 5,
+          "itemId": "1125",
+          "name": "Demonsbane",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1125.png",
+          "description": "PATK +90, MDEF +150, HP +600\nBoosts Magical Defense"
+        },
+        {
+          "slot": 6,
+          "itemId": "1157",
+          "name": "Immovable - Sky Dome",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1157.png",
+          "description": "PATK +80, PDEF +150, CDR +10%\nTemp. damage reduction"
+        }
+      ]
+    },
+    {
+      "id": "camp-1",
+      "label": "国服套装",
+      "lane": "Top",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1127",
+          "name": "Destiny",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
+        },
+        {
+          "slot": 2,
+          "itemId": "1328",
+          "name": "Blood Rage",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1328.png",
+          "description": "PATK +75, HP +900\nTrades HP for shield"
+        },
+        {
+          "slot": 3,
+          "itemId": "1138",
+          "name": "Overlord's Might",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1138.png",
+          "description": "PATK +150, CDR +5%\nHigh-damage attack"
+        },
+        {
+          "slot": 4,
+          "itemId": "1125",
+          "name": "Demonsbane",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1125.png",
+          "description": "PATK +90, MDEF +150, HP +600\nBoosts Magical Defense"
+        },
+        {
+          "slot": 5,
+          "itemId": "1337",
+          "name": "Sage's Sanctuary",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
+        },
+        {
+          "slot": 6,
+          "itemId": "1157",
+          "name": "Immovable - Sky Dome",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1157.png",
+          "description": "PATK +80, PDEF +150, CDR +10%\nTemp. damage reduction"
+        }
+      ]
+    },
+    {
+      "id": "camp-2",
+      "label": "Lubu Gang",
+      "lane": "Top",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1138",
+          "name": "Overlord's Might",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1138.png",
+          "description": "PATK +150, CDR +5%\nHigh-damage attack"
+        },
+        {
+          "slot": 2,
+          "itemId": "11311",
+          "name": "Pure Sky",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/11311.png",
+          "description": "PATK +80, PDEF +150, CDR +10%\nTemp. damage reduction"
+        },
+        {
+          "slot": 3,
+          "itemId": "1125",
+          "name": "Demonsbane",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1125.png",
+          "description": "PATK +90, MDEF +150, HP +600\nBoosts Magical Defense"
+        },
+        {
+          "slot": 4,
+          "itemId": "1127",
+          "name": "Destiny",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
+        },
+        {
+          "slot": 5,
+          "itemId": "1337",
+          "name": "Sage's Sanctuary",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
+        },
+        {
+          "slot": 6,
+          "itemId": "1157",
+          "name": "Immovable - Sky Dome",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1157.png",
+          "description": "PATK +80, PDEF +150, CDR +10%\nTemp. damage reduction"
+        }
+      ]
+    },
+    {
+      "id": "camp-3",
+      "label": "Lubu",
+      "lane": "Top",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1422",
+          "name": "Boots of Resistance",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1422.png",
+          "description": "MDEF +100, PDEF +50, MSPD +50\nShortens crowd control"
+        },
+        {
+          "slot": 2,
+          "itemId": "1138",
+          "name": "Overlord's Might",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1138.png",
+          "description": "PATK +150, CDR +5%\nHigh-damage attack"
+        },
+        {
+          "slot": 3,
+          "itemId": "11311",
+          "name": "Pure Sky",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/11311.png",
+          "description": "PATK +80, PDEF +150, CDR +10%\nTemp. damage reduction"
+        },
+        {
+          "slot": 4,
+          "itemId": "1127",
+          "name": "Destiny",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
+        },
+        {
+          "slot": 5,
+          "itemId": "1337",
+          "name": "Sage's Sanctuary",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
+        },
+        {
+          "slot": 6,
+          "itemId": "1157",
+          "name": "Immovable - Sky Dome",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1157.png",
+          "description": "PATK +80, PDEF +150, CDR +10%\nTemp. damage reduction"
+        }
+      ]
+    }
+  ],
+  "buildsZh": [
+    {
+      "id": "camp-0",
+      "label": "DMG Late Game",
+      "lane": "Top",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1138",
+          "name": "強者破軍",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1138.png",
+          "description": "+150點攻擊+5%減冷卻時間\n高額攻擊"
+        },
+        {
+          "slot": 2,
+          "itemId": "1127",
+          "name": "名刀・司命",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "+75點攻擊+15%攻速+500點生命值\n保命"
+        },
+        {
+          "slot": 3,
+          "itemId": "1422",
+          "name": "抵抗之靴",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1422.png",
+          "description": "+100點法防+50點物防+50點移速\n減少被控時間"
+        },
+        {
+          "slot": 4,
+          "itemId": "11210",
+          "name": "制裁之刃",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/11210.png",
+          "description": "+100點攻擊+20%吸血+20%攻速\n減少敵人回血"
+        },
+        {
+          "slot": 5,
+          "itemId": "1125",
+          "name": "破魔刀",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1125.png",
+          "description": "+90點攻擊+150點法防+600點生命值\n增加法術防禦"
+        },
+        {
+          "slot": 6,
+          "itemId": "1157",
+          "name": "不動・天穹",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1157.png",
+          "description": "+80點攻擊+150點物防+10%冷卻時間縮減\n暫時增加免傷"
+        }
+      ]
+    },
+    {
+      "id": "camp-1",
+      "label": "国服套装",
+      "lane": "Top",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1127",
+          "name": "名刀・司命",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "+75點攻擊+15%攻速+500點生命值\n保命"
+        },
+        {
+          "slot": 2,
+          "itemId": "1328",
+          "name": "血魔之怒",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1328.png",
+          "description": "+75點攻擊+900點生命值 \n犧牲生命值換取護盾值"
+        },
+        {
+          "slot": 3,
+          "itemId": "1138",
+          "name": "強者破軍",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1138.png",
+          "description": "+150點攻擊+5%減冷卻時間\n高額攻擊"
+        },
+        {
+          "slot": 4,
+          "itemId": "1125",
+          "name": "破魔刀",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1125.png",
+          "description": "+90點攻擊+150點法防+600點生命值\n增加法術防禦"
+        },
+        {
+          "slot": 5,
+          "itemId": "1337",
+          "name": "賢者的庇護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+        },
+        {
+          "slot": 6,
+          "itemId": "1157",
+          "name": "不動・天穹",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1157.png",
+          "description": "+80點攻擊+150點物防+10%冷卻時間縮減\n暫時增加免傷"
+        }
+      ]
+    },
+    {
+      "id": "camp-2",
+      "label": "Lubu Gang",
+      "lane": "Top",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1138",
+          "name": "強者破軍",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1138.png",
+          "description": "+150點攻擊+5%減冷卻時間\n高額攻擊"
+        },
+        {
+          "slot": 2,
+          "itemId": "11311",
+          "name": "純淨蒼穹",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/11311.png",
+          "description": "+80點攻擊+150點物防+10%冷卻時間縮減\n暫時增加免傷"
+        },
+        {
+          "slot": 3,
+          "itemId": "1125",
+          "name": "破魔刀",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1125.png",
+          "description": "+90點攻擊+150點法防+600點生命值\n增加法術防禦"
+        },
+        {
+          "slot": 4,
+          "itemId": "1127",
+          "name": "名刀・司命",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "+75點攻擊+15%攻速+500點生命值\n保命"
+        },
+        {
+          "slot": 5,
+          "itemId": "1337",
+          "name": "賢者的庇護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+        },
+        {
+          "slot": 6,
+          "itemId": "1157",
+          "name": "不動・天穹",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1157.png",
+          "description": "+80點攻擊+150點物防+10%冷卻時間縮減\n暫時增加免傷"
+        }
+      ]
+    },
+    {
+      "id": "camp-3",
+      "label": "Lubu",
+      "lane": "Top",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1422",
+          "name": "抵抗之靴",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1422.png",
+          "description": "+100點法防+50點物防+50點移速\n減少被控時間"
+        },
+        {
+          "slot": 2,
+          "itemId": "1138",
+          "name": "強者破軍",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1138.png",
+          "description": "+150點攻擊+5%減冷卻時間\n高額攻擊"
+        },
+        {
+          "slot": 3,
+          "itemId": "11311",
+          "name": "純淨蒼穹",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/11311.png",
+          "description": "+80點攻擊+150點物防+10%冷卻時間縮減\n暫時增加免傷"
+        },
+        {
+          "slot": 4,
+          "itemId": "1127",
+          "name": "名刀・司命",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "+75點攻擊+15%攻速+500點生命值\n保命"
+        },
+        {
+          "slot": 5,
+          "itemId": "1337",
+          "name": "賢者的庇護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+        },
+        {
+          "slot": 6,
+          "itemId": "1157",
+          "name": "不動・天穹",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1157.png",
+          "description": "+80點攻擊+150點物防+10%冷卻時間縮減\n暫時增加免傷"
+        }
+      ]
     }
   ],
   "arcana": [
-    "Fate"
+    "Lvl 5: Inheritance",
+    "Lvl 5: Fate",
+    "Lvl 5: Meditation"
+  ],
+  "arcanaZh": [
+    "5級：傳承",
+    "5級：宿命",
+    "5級：冥想"
   ],
   "spells": [
     "Flash"
+  ],
+  "spellsZh": [
+    "閃現"
   ],
   "counters": [
     "Heino",
@@ -107,486 +591,151 @@
     "Pei"
   ],
   "tips": [
-    "Lu Bu is a Easy Tank (Clash Lane) on Honor of Kings Global. Camp HOK ranks them Tier A with 48.3% win rate and 1.2% pick rate as of 2026-06-05.",
-    "Best build path: Boots of Resistance → Succubus Cloak → Blazing Cape → Overlord's Platemail → Sage's Sanctuary.",
-    "Run Fate for stats that match Lu Bu's Tank kit. Take Flash — swap to Purify against heavy CC or Smite when jungling.",
-    "Standard trade: Impaling Thrust → Souleater → Tremble, Mortals → weave basic attacks. Weave basic attacks between skill casts for passive value.",
-    "Laning: Trade on your power spike levels (2/4). Call jungler for dive only when enemy flash is down.",
-    "Teamfight: Engage on enemy carry when your team has follow-up. Body-block skillshots for your marksman.",
-    "Lu Bu excels into Heino, Daji, Luna. Avoid blind picking into Han Xin, Lam, Pei without team peel.",
-    "Lu Bu is a viable Tier A pick in high rank with 48.3% win rate — strong in one-trick hands or as a counter-pick. Pick rate 1.2% — frequently seen in ranked; learn the matchup even if you do not main Lu Bu. Below 49% global WR — high-rank players often avoid unless compensating for team comp."
+    "Lu Bu (Tank): Tier S — 48.51% WR (Camp HOK).",
+    "Lane: Clash Lane.",
+    "Build: Overlord's Might, Destiny, Boots of Resistance."
+  ],
+  "tipsZh": [
+    "呂布（對抗路）：梯度 S，勝率 48.51%（Camp HOK）。",
+    "出裝：強者破軍、名刀・司命、抵抗之靴."
   ],
   "patchHistory": [
     {
-      "version": "Live meta",
-      "change": "Camp HOK — WR 48.3%, pick 1.2%, ban 0.1%, tier A."
+      "seasonId": "14",
+      "seasonName": "S14",
+      "versionName": "2026/04/29",
+      "publishedAt": "2026-04-29T01:00:00Z",
+      "isCurrent": false,
+      "tag": "Stat Buffs",
+      "change": "Increased skill damage and recovery",
+      "detail": "",
+      "version": "S14"
     },
     {
-      "version": "Matchups",
-      "change": "Strong into Heino, Daji, Luna · Weak into Han Xin, Lam, Pei."
+      "seasonId": "8",
+      "seasonName": "S8",
+      "versionName": "20250109",
+      "publishedAt": "2025-01-09T02:33:14Z",
+      "isCurrent": false,
+      "tag": "Mechanics Upgrade",
+      "change": "Basic Attacks and skills deal true damage when enhanced and gain Physical Pierce when not enchanted.",
+      "detail": "True damage is the highlight of Lu Bu's playstyle, but it's not always possible to enchant his weapon. Therefore, we have added a new mechanic so Lu Bu can deal more damage when unenchanted.",
+      "version": "S8"
     },
     {
-      "version": "High rank",
-      "change": "Lu Bu is a viable Tier A pick in high rank with 48.3% win rate — strong in one-trick hands or as a counter-pick. Pick rate 1.2% — frequently seen in ranked; learn the matchup even if you do not main Lu Bu. Below 49% global WR — high-rank players often avoid unless compensating for team comp."
+      "seasonId": "6",
+      "seasonName": "S6",
+      "versionName": "20240822",
+      "publishedAt": "2024-08-22T07:13:54Z",
+      "isCurrent": false,
+      "tag": "Stat Buffs",
+      "change": "Skill 2 has newly added damage.",
+      "detail": "\"We've increased the damage of Lu Bu's Skill 2 to prevent opponents from escaping with low Health. His restoration and shield capabilities benefit much more from high-attack builds compared to survival-focused builds, so we've made adjustments accordingly.\"",
+      "version": "S6"
+    },
+    {
+      "seasonId": "5",
+      "seasonName": "S5",
+      "versionName": "20240509",
+      "publishedAt": "2024-05-09T02:31:07Z",
+      "isCurrent": false,
+      "tag": "Stat Buffs",
+      "change": "Increased recovery from his Ultimate under certain conditions, and increased recovery when his Skill 1 hits an enemy.",
+      "detail": "As a very powerful late-game hero, with the right equipment, Lu Bu has both very high damage potential and very high damage absorption potential. But in the early game, his power is a little low. Therefore, we've made some minor improvements to his recovery ability to make it easier for him to reach the mid to late game.",
+      "version": "S5"
+    }
+  ],
+  "patchHistoryZh": [
+    {
+      "seasonId": "14",
+      "seasonName": "S14",
+      "versionName": "2026/04/29",
+      "publishedAt": "2026-04-29T01:00:00Z",
+      "isCurrent": false,
+      "tag": "數值增強",
+      "change": "提升技能傷害和回復",
+      "detail": "",
+      "version": "S14"
+    },
+    {
+      "seasonId": "8",
+      "seasonName": "S8",
+      "versionName": "20250109",
+      "publishedAt": "2025-01-09T02:33:14Z",
+      "isCurrent": false,
+      "tag": "機制升級",
+      "change": "強化時普攻和技能造成真實傷害，未附魔時增加物理穿透",
+      "detail": "「大量真實傷害是呂布的重要精彩體驗，但不是每次都有機會讓武器附魔；因此我們加入了新的機制，讓呂布在未附魔狀態下的傷害有所提升。」",
+      "version": "S8"
+    },
+    {
+      "seasonId": "6",
+      "seasonName": "S6",
+      "versionName": "20240822",
+      "publishedAt": "2024-08-22T07:13:54Z",
+      "isCurrent": false,
+      "tag": "數值增強",
+      "change": "2技能新增傷害，降低後期冷卻",
+      "detail": "我們為呂布2技能增加了傷害，防止對手殘血逃跑；目前，呂布出高攻擊力套裝的恢復和護盾能力收益，會遠高於其出偏重生存能力的套裝，因此我們已加以調整。",
+      "version": "S6"
+    },
+    {
+      "seasonId": "5",
+      "seasonName": "S5",
+      "versionName": "20240509",
+      "publishedAt": "2024-05-09T02:31:07Z",
+      "isCurrent": false,
+      "tag": "數值增強",
+      "change": "增強大招在一定條件下的恢復效果，增強1技能命中敵人後的恢復效果",
+      "detail": "呂布作為一名後期強度很高的英雄，在獲得一定的裝備支持後，他可以同時兼具很高的傷害製造能力和很高傷害吸收能力。但是在遊戲前期，他的強度有些不足。因此我們對他的恢復能力進行了小幅強化，保證他可以更好的過渡到遊戲中後期。",
+      "version": "S5"
     }
   ],
   "faqs": [
     {
       "id": "faq-good-season",
-      "question": "Is Lu Bu good in the current meta?",
-      "answer": "Lu Bu is Tier A Tank with 48.3% win rate, 1.2% pick rate, and 0.1% ban rate on Honor of Kings Global (Camp HOK, 2026-06-05). Solid situational pick."
+      "question": "Is Lu Bu good in current season?",
+      "answer": "Lu Bu is Tier S Tank with 48.51% win rate, 1.18% pick rate, and 0.14% ban rate (Camp HOK international)."
     },
     {
       "id": "faq-best-build",
       "question": "What is the best Lu Bu build?",
-      "answer": "Core item path: Boots of Resistance, Succubus Cloak, Blazing Cape, Overlord's Platemail, Sage's Sanctuary. Run Fate arcana with Flash. Switch to alternate build presets on this page for jungle, clash, or late-game setups."
+      "answer": "Recommended: Overlord's Might, Destiny, Boots of Resistance, Mortal Punisher, Demonsbane, Immovable - Sky Dome."
     },
     {
       "id": "faq-counter",
       "question": "How to counter Lu Bu?",
-      "answer": "Pick Han Xin, Lam, Pei into Lu Bu. Deny Clash Lane resources early and force fights before Lu Bu completes core items. Lu Bu struggles when the enemy can out-range or out-sustain them."
+      "answer": "Pick Han Xin, Lam, Pei. Strong into Heino, Daji, Luna."
+    }
+  ],
+  "faqsZh": [
+    {
+      "id": "faq-good-season",
+      "question": "呂布 這版本適合上分嗎？",
+      "answer": "呂布 為 S 梯度，勝率 48.51%、選取 1.18%、禁用 0.14%（Camp HOK 國際服）。"
     },
     {
-      "id": "faq-strong-into",
-      "question": "Who does Lu Bu counter?",
-      "answer": "Lu Bu is strong into Heino, Daji, Luna according to HoKStats matchup data and role matchups on the global server. Draft Lu Bu when the enemy relies on these heroes in the Clash Lane lane."
+      "id": "faq-best-build",
+      "question": "呂布 出裝怎麼搭配？",
+      "answer": "推薦：強者破軍、名刀・司命、抵抗之靴、制裁之刃、破魔刀、不動・天穹."
     },
     {
-      "id": "faq-high-rank",
-      "question": "Is Lu Bu good in high rank / Diamond+?",
-      "answer": "Lu Bu is a viable Tier A pick in high rank with 48.3% win rate — strong in one-trick hands or as a counter-pick. Pick rate 1.2% — frequently seen in ranked; learn the matchup even if you do not main Lu Bu. Below 49% global WR — high-rank players often avoid unless compensating for team comp."
-    },
-    {
-      "id": "faq-lane",
-      "question": "What lane should Lu Bu play?",
-      "answer": "Lu Bu is tagged Clash Lane in Camp export (Fighter, Tank). Trade on your power spike levels (2/4). Call jungler for dive only when enemy flash is down."
-    },
-    {
-      "id": "faq-arcana",
-      "question": "Best arcana and spells for Lu Bu?",
-      "answer": "Recommended: Fate arcana. Battle spell: Flash. Adjust Purify/Execute based on enemy dive and jungle need."
-    },
-    {
-      "id": "faq-vs-peer",
-      "question": "Lu Bu or Kaizer — which is better?",
-      "answer": "Lu Bu vs Kaizer (Tank, Tier S): Kaizer is 1.6% pick / 51.4% WR. Kaizer wins 3.1% more often globally. Choose Lu Bu when you need Clash Lane identity; choose Kaizer for Clash Lane comfort."
-    },
-    {
-      "id": "faq-ban",
-      "question": "Should I ban Lu Bu?",
-      "answer": "Optional ban when enemy spams Tank; 1.2% pick rate but only 0.1% ban rate."
+      "id": "faq-counter",
+      "question": "怎麼克制 呂布？",
+      "answer": "可選 Han Xin、Lam、Pei。呂布 克制 Heino、Daji、Luna。"
     }
   ],
   "metaAnalysis": [
-    "Lu Bu — 48.3% WR, 1.2% pick, 0.1% ban (Camp HOK 2026-06-05).",
-    "Tier A Tank · Clash Lane · difficulty Easy.",
-    "Lu Bu is a viable Tier A pick in high rank with 48.3% win rate — strong in one-trick hands or as a counter-pick. Pick rate 1.2% — frequently seen in ranked; learn the matchup even if you do not main Lu Bu. Below 49% global WR — high-rank players often avoid unless compensating for team comp.",
-    "Matchups: strong into Heino, Daji, Luna; weak into Han Xin, Lam, Pei.",
-    "Lu Bu vs Kaizer (Tank, Tier S): Kaizer is 1.6% pick / 51.4% WR. Kaizer wins 3.1% more often globally. Choose Lu Bu when you need Clash Lane identity; choose Kaizer for Clash Lane comfort.",
-    "Lu Bu vs Dun (Tank, Tier S): Dun is 1.5% pick / 52.3% WR. Dun wins 4.0% more often globally. Choose Lu Bu when you need Clash Lane identity; choose Dun for Clash Lane comfort.",
-    "Draft tip: counter-pick or comfort pick when lane matchup is favorable."
+    "Lu Bu win rate 48.51% (Camp HOK, 2026-06-07).",
+    "Pick rate 1.18%.",
+    "Ban rate 0.14%.",
+    "Counters: Heino, Daji, Luna. Weak into: Han Xin, Lam, Pei."
   ],
-  "builds": [
-    {
-      "id": "recommended",
-      "label": "Recommended",
-      "position": null,
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1422",
-          "name": "Boots of Resistance",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
-          "description": "Shortens CC"
-        },
-        {
-          "slot": 2,
-          "itemId": "1335",
-          "name": "Succubus Cloak",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1335.jpg",
-          "description": "Negates magical damage"
-        },
-        {
-          "slot": 3,
-          "itemId": "1331",
-          "name": "Blazing Cape",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1331.jpg",
-          "description": "Burns nearby enemies"
-        },
-        {
-          "slot": 4,
-          "itemId": "1332",
-          "name": "Overlord's Platemail",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1332.jpg",
-          "description": "Extra Health"
-        },
-        {
-          "slot": 5,
-          "itemId": "1337",
-          "name": "Sage's Sanctuary",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1337.jpg",
-          "description": "Resurrect on the spot"
-        },
-        {
-          "slot": 6,
-          "itemId": null,
-          "name": "Data unavailable",
-          "icon": null,
-          "description": null
-        }
-      ]
-    },
-    {
-      "id": "国服套装",
-      "label": "国服套装",
-      "position": "Position 1",
-      "lane": "CN preset",
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1111",
-          "name": "Iron Sword",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1111.jpg",
-          "description": "PATK +20"
-        },
-        {
-          "slot": 2,
-          "itemId": "1345",
-          "name": "Nettle Gauntlet",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1345.jpg",
-          "description": "Offense & defense"
-        },
-        {
-          "slot": 3,
-          "itemId": "1423",
-          "name": "Boots of Tranquility",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1423.jpg",
-          "description": "Reduces Skill CD"
-        },
-        {
-          "slot": 4,
-          "itemId": "11311",
-          "name": "Pure Sky",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/11311.jpg",
-          "description": "Temp. damage reduction"
-        },
-        {
-          "slot": 5,
-          "itemId": "1422",
-          "name": "Boots of Resistance",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
-          "description": "Shortens CC"
-        },
-        {
-          "slot": 6,
-          "itemId": "1127",
-          "name": "Destiny",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1127.jpg",
-          "description": "Negates fatal damage"
-        }
-      ]
-    },
-    {
-      "id": "clash-lane-1",
-      "label": "Clash Lane 1",
-      "position": "Position 1",
-      "lane": "Clash Lane",
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1422",
-          "name": "Boots of Resistance",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
-          "description": "Shortens CC"
-        },
-        {
-          "slot": 2,
-          "itemId": "13310",
-          "name": "Frostscar's Embrace",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/13310.jpg",
-          "description": "Enhanced BAs slow"
-        },
-        {
-          "slot": 3,
-          "itemId": "1331",
-          "name": "Blazing Cape",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1331.jpg",
-          "description": "Burns nearby enemies"
-        },
-        {
-          "slot": 4,
-          "itemId": "1335",
-          "name": "Succubus Cloak",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1335.jpg",
-          "description": "Negates magical damage"
-        },
-        {
-          "slot": 5,
-          "itemId": "1332",
-          "name": "Overlord's Platemail",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1332.jpg",
-          "description": "Extra Health"
-        },
-        {
-          "slot": 6,
-          "itemId": "1337",
-          "name": "Sage's Sanctuary",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1337.jpg",
-          "description": "Resurrect on the spot"
-        }
-      ]
-    },
-    {
-      "id": "dmg-late-game",
-      "label": "DMG Late Game",
-      "position": "Position 1",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "11311",
-          "name": "Pure Sky",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/11311.jpg",
-          "description": "Temp. damage reduction"
-        },
-        {
-          "slot": 2,
-          "itemId": "1421",
-          "name": "Boots of Fortitude",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1421.jpg",
-          "description": "Reduces physical damage"
-        },
-        {
-          "slot": 3,
-          "itemId": "1138",
-          "name": "Overlord's Might",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1138.jpg",
-          "description": "High-damage attack"
-        },
-        {
-          "slot": 4,
-          "itemId": "1127",
-          "name": "Destiny",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1127.jpg",
-          "description": "Negates fatal damage"
-        },
-        {
-          "slot": 5,
-          "itemId": "1422",
-          "name": "Boots of Resistance",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
-          "description": "Shortens CC"
-        },
-        {
-          "slot": 6,
-          "itemId": "11210",
-          "name": "Mortal Punisher",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/11210.jpg",
-          "description": "Lowers Health regen"
-        }
-      ]
-    },
-    {
-      "id": "lubu-gang",
-      "label": "Lubu Gang",
-      "position": "Position 1",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1345",
-          "name": "Nettle Gauntlet",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1345.jpg",
-          "description": "Offense & defense"
-        },
-        {
-          "slot": 2,
-          "itemId": "1421",
-          "name": "Boots of Fortitude",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1421.jpg",
-          "description": "Reduces physical damage"
-        },
-        {
-          "slot": 3,
-          "itemId": "1121",
-          "name": "Storm Sword",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1121.jpg",
-          "description": "Physical Attack +75"
-        },
-        {
-          "slot": 4,
-          "itemId": "1138",
-          "name": "Overlord's Might",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1138.jpg",
-          "description": "High-damage attack"
-        },
-        {
-          "slot": 5,
-          "itemId": "11311",
-          "name": "Pure Sky",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/11311.jpg",
-          "description": "Temp. damage reduction"
-        },
-        {
-          "slot": 6,
-          "itemId": "1125",
-          "name": "Demonsbane",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1125.jpg",
-          "description": "Boosts MDEF"
-        }
-      ]
-    },
-    {
-      "id": "lubu",
-      "label": "Lubu",
-      "position": "Position 1",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1345",
-          "name": "Nettle Gauntlet",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1345.jpg",
-          "description": "Offense & defense"
-        },
-        {
-          "slot": 2,
-          "itemId": "1425",
-          "name": "Boots of Dexterity",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1425.jpg",
-          "description": "Boosts ASPD"
-        },
-        {
-          "slot": 3,
-          "itemId": "1534",
-          "name": "Dragon's Rage",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1534.jpg",
-          "description": "Boosts BA damage"
-        },
-        {
-          "slot": 4,
-          "itemId": "1338",
-          "name": "Cuirass of Savagery",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1338.jpg",
-          "description": "Offense & defense"
-        },
-        {
-          "slot": 5,
-          "itemId": "11210",
-          "name": "Mortal Punisher",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/11210.jpg",
-          "description": "Lowers Health regen"
-        },
-        {
-          "slot": 6,
-          "itemId": "1422",
-          "name": "Boots of Resistance",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
-          "description": "Shortens CC"
-        }
-      ]
-    },
-    {
-      "id": "semo-gaming",
-      "label": "SEMO GAMING",
-      "position": "Position 1",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1111",
-          "name": "Iron Sword",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1111.jpg",
-          "description": "PATK +20"
-        },
-        {
-          "slot": 2,
-          "itemId": "1345",
-          "name": "Nettle Gauntlet",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1345.jpg",
-          "description": "Offense & defense"
-        },
-        {
-          "slot": 3,
-          "itemId": "1421",
-          "name": "Boots of Fortitude",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1421.jpg",
-          "description": "Reduces physical damage"
-        },
-        {
-          "slot": 4,
-          "itemId": "11311",
-          "name": "Pure Sky",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/11311.jpg",
-          "description": "Temp. damage reduction"
-        },
-        {
-          "slot": 5,
-          "itemId": "1138",
-          "name": "Overlord's Might",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1138.jpg",
-          "description": "High-damage attack"
-        },
-        {
-          "slot": 6,
-          "itemId": "1331",
-          "name": "Blazing Cape",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1331.jpg",
-          "description": "Burns nearby enemies"
-        }
-      ]
-    },
-    {
-      "id": "3",
-      "label": "مسار الاشتباك 3",
-      "position": "Position 1",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1423",
-          "name": "Boots of Tranquility",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1423.jpg",
-          "description": "Reduces Skill CD"
-        },
-        {
-          "slot": 2,
-          "itemId": "1138",
-          "name": "Overlord's Might",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1138.jpg",
-          "description": "High-damage attack"
-        },
-        {
-          "slot": 3,
-          "itemId": "1127",
-          "name": "Destiny",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1127.jpg",
-          "description": "Negates fatal damage"
-        },
-        {
-          "slot": 4,
-          "itemId": "11311",
-          "name": "Pure Sky",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/11311.jpg",
-          "description": "Temp. damage reduction"
-        },
-        {
-          "slot": 5,
-          "itemId": "1422",
-          "name": "Boots of Resistance",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
-          "description": "Shortens CC"
-        },
-        {
-          "slot": 6,
-          "itemId": "1136",
-          "name": "Shadow Ripper",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1136.jpg",
-          "description": "Crits boost ASPD"
-        }
-      ]
-    }
+  "metaAnalysisZh": [
+    "呂布 勝率 48.51%（Camp HOK，2026-06-07）",
+    "選取率 1.18%",
+    "禁用率 0.14%",
+    "克制：Heino、Daji、Luna；被克制：Han Xin、Lam、Pei"
   ],
   "guide": {
     "overview": "Lu Bu is a Easy Tank (Clash Lane) on Honor of Kings Global. Camp HOK ranks them Tier A with 48.3% win rate and 1.2% pick rate as of 2026-06-05.",

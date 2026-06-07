@@ -2,99 +2,583 @@
   "id": "lian-po",
   "slug": "lian-po",
   "name": "Lian Po",
+  "nameZh": "廉頗",
   "role": "Tank",
   "roles": "Tank",
+  "rolesZh": "坦克",
   "lane": "Clash Lane",
+  "laneZh": "對抗路",
   "difficulty": "Easy",
   "tier": "A",
-  "winRate": 51.14,
-  "pickRate": 0.91,
+  "winRate": 50.77,
+  "pickRate": 0.88,
   "banRate": 0.1,
-  "rank": 50,
+  "rank": 58,
   "avatar": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/csLOp1dL.png",
   "avatarFallback": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/105/105.jpg",
+  "heroCover": "https://camp.honorofkings.com/social/game/src/image_hero_cover_1275*718/4lkgPhpG.jpg",
   "tencentId": 105,
-  "dataSource": "Camp HOK + HoKStats.gg (intl)",
-  "dataUpdated": "2026-06-05",
+  "dataSource": "Camp HOK bilingual (primary)",
+  "dataUpdated": "2026-06-07",
   "skills": [
     {
       "slot": "passive",
       "name": "Warrior's Soul",
-      "description": "Gains immunity while using skills. Gains Battle Spirit upon entering combat, using Basic Attacks or skills. Battle Spirit increases damage reduction. Attack Speed increases at max Battle Spirit. When out of combat, Battle Spirit will diminish while restoring Health.",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/105/10500.png",
-      "cooldown": null
+      "description": "Gains crowd control immunity when using skills.\nDuring combat, generates Battle Spirit, which increases damage reduction and Attack Speed. When out of combat, Battle Spirit is consumed to recover health.",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/30500.png",
+      "cooldown": "1s"
     },
     {
       "slot": "skill1",
       "name": "Burst Ram",
-      "description": "Charges in the target direction, dealing damage and launching enemies in the path. Passive: Every 2 Basic Attacks, enhances the next Basic Attack to deal extra damage.",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/105/10510.png",
-      "cooldown": null
+      "description": "Dashes in the target direction, dealing damage and launching enemies in his path. When upgraded, gains a passive effect that enhances every 3rd Basic Attack.",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/30510.png",
+      "cooldown": "10s"
     },
     {
       "slot": "skill2",
       "name": "Magma Slam",
-      "description": "Gains a shield.Slows nearby enemies a certain range.After a brief delay, deals damage to enemies in range.",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/105/10520.png",
-      "cooldown": null
+      "description": "Charges up at the original location, gaining a shield and slowing nearby enemies while pulling non-hero enemy units toward the center. After a brief delay, deals area damage. If there are enemy units within range, Skill 1's cooldown is reset.",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/30520.png",
+      "cooldown": "10s"
     },
     {
       "slot": "ultimate",
       "name": "Tremor Smash",
-      "description": "Leaps to the target location and hammers the ground 3 times. The first 2blows deal damage and slow enemies, while the 3rd blow deals damage and launches enemies.",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/105/10530.png",
-      "cooldown": null
+      "description": "Leaps to the target location and hammers the ground 3 times. The first 2 strikes deal damage and slow enemies, while the 3rd strike deals damage and launches them.",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/30530.png",
+      "cooldown": "50s"
+    }
+  ],
+  "skillsZh": [
+    {
+      "slot": "passive",
+      "name": "勇士之魂",
+      "description": "使用技能時會獲得霸體。\n戰鬥時獲得戰意，戰意可以提升減傷和攻擊速度，脫戰後會消耗戰意回復生命值。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/30500.png",
+      "cooldown": "1s"
+    },
+    {
+      "slot": "skill1",
+      "name": "爆裂衝撞",
+      "description": "朝指定方向衝鋒，對路徑上的敵人造成傷害與擊飛。升級後，獲得每兩次普攻可強化下一次普攻的被動效果。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/30510.png",
+      "cooldown": "10s"
+    },
+    {
+      "slot": "skill2",
+      "name": "熔岩重擊",
+      "description": "原地蓄力，獲得護盾的同時對自身周圍一定範圍內敵人造成減速效果，並將非英雄敵方單位拉向中心。\n短暫延遲後，造成範圍傷害，若範圍內存在敵方單位，則重置1技能冷卻。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/30520.png",
+      "cooldown": "10s"
+    },
+    {
+      "slot": "ultimate",
+      "name": "天崩地裂",
+      "description": "向指定位置跳躍並搥擊地面三次，前兩次搥擊造成傷害和減速，第三次搥擊造成傷害和擊飛。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/30530.png",
+      "cooldown": "50s"
     }
   ],
   "build": [
     {
       "slot": 1,
-      "itemId": "1421",
-      "name": "Boots of Fortitude",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1421.jpg",
-      "description": "Reduces physical damage"
+      "itemId": "1332",
+      "name": "Overlord's Platemail",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1332.png",
+      "description": "HP +1,800, PDEF +160, MDEF +80\nExtra HP"
     },
     {
       "slot": 2,
-      "itemId": "1137",
-      "name": "Axe of Torment",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1137.jpg",
-      "description": "Anti-squishy"
+      "itemId": "1422",
+      "name": "Boots of Resistance",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1422.png",
+      "description": "MDEF +100, PDEF +50, MSPD +50\nShortens crowd control"
     },
     {
       "slot": 3,
-      "itemId": "1341",
-      "name": "Frigid Charge",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1341.jpg",
-      "description": "Group CC"
+      "itemId": "1333",
+      "name": "Ominous Premonition",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1333.png",
+      "description": "PDEF +300, HP +1,200\nSlows attackers"
     },
     {
       "slot": 4,
-      "itemId": "1333",
-      "name": "Ominous Premonition",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1333.jpg",
-      "description": "Slows attackers"
+      "itemId": "1334",
+      "name": "Eye of the Phoenix",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1334.png",
+      "description": "MDEF +180, PDEF +90, HP +1,350\nBoosts HP Regen"
     },
     {
       "slot": 5,
-      "itemId": "1335",
-      "name": "Succubus Cloak",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1335.jpg",
-      "description": "Negates magical damage"
+      "itemId": "1328",
+      "name": "Blood Rage",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1328.png",
+      "description": "PATK +75, HP +900\nTrades HP for shield"
     },
     {
       "slot": 6,
+      "itemId": "1337",
+      "name": "Sage's Sanctuary",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+      "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
+    }
+  ],
+  "buildZh": [
+    {
+      "slot": 1,
       "itemId": "1332",
-      "name": "Overlord's Platemail",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1332.jpg",
-      "description": "Extra Health"
+      "name": "霸者重裝",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1332.png",
+      "description": "+1800點生命值+160點物防+80點法防\n提高額外生命值"
+    },
+    {
+      "slot": 2,
+      "itemId": "1422",
+      "name": "抵抗之靴",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1422.png",
+      "description": "+100點法防+50點物防+50點移速\n減少被控時間"
+    },
+    {
+      "slot": 3,
+      "itemId": "1333",
+      "name": "不祥徵兆",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1333.png",
+      "description": "+300點物防+1200點生命值\n受擊時將敵人減速"
+    },
+    {
+      "slot": 4,
+      "itemId": "1334",
+      "name": "不死鳥之眼",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1334.png",
+      "description": "+180點法防+90點物防+1350點生命值……\n增加回血效果"
+    },
+    {
+      "slot": 5,
+      "itemId": "1328",
+      "name": "血魔之怒",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1328.png",
+      "description": "+75點攻擊+900點生命值 \n犧牲生命值換取護盾值"
+    },
+    {
+      "slot": 6,
+      "itemId": "1337",
+      "name": "賢者的庇護",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+      "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+    }
+  ],
+  "builds": [
+    {
+      "id": "camp-0",
+      "label": "Fast Rotation",
+      "lane": "Top",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1332",
+          "name": "Overlord's Platemail",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1332.png",
+          "description": "HP +1,800, PDEF +160, MDEF +80\nExtra HP"
+        },
+        {
+          "slot": 2,
+          "itemId": "1422",
+          "name": "Boots of Resistance",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1422.png",
+          "description": "MDEF +100, PDEF +50, MSPD +50\nShortens crowd control"
+        },
+        {
+          "slot": 3,
+          "itemId": "1333",
+          "name": "Ominous Premonition",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1333.png",
+          "description": "PDEF +300, HP +1,200\nSlows attackers"
+        },
+        {
+          "slot": 4,
+          "itemId": "1334",
+          "name": "Eye of the Phoenix",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1334.png",
+          "description": "MDEF +180, PDEF +90, HP +1,350\nBoosts HP Regen"
+        },
+        {
+          "slot": 5,
+          "itemId": "1328",
+          "name": "Blood Rage",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1328.png",
+          "description": "PATK +75, HP +900\nTrades HP for shield"
+        },
+        {
+          "slot": 6,
+          "itemId": "1337",
+          "name": "Sage's Sanctuary",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
+        }
+      ]
+    },
+    {
+      "id": "camp-1",
+      "label": "Quiyo",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1724",
+          "name": "Guardian - Redemption",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1751.png",
+          "description": "HP +1,200, MSPD +7.5%\nSurvivability aura"
+        },
+        {
+          "slot": 2,
+          "itemId": "1341",
+          "name": "Frigid Charge",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1341.png",
+          "description": "PDEF +150, HP +900, CDR +7.5%, Resistance +10%\nGreat crowd control"
+        },
+        {
+          "slot": 3,
+          "itemId": "1333",
+          "name": "Ominous Premonition",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1333.png",
+          "description": "PDEF +300, HP +1,200\nSlows attackers"
+        },
+        {
+          "slot": 4,
+          "itemId": "1335",
+          "name": "Succubus Cloak",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
+          "description": "MDEF +300, HP +1,100\nNegates magical damage"
+        },
+        {
+          "slot": 5,
+          "itemId": "1331",
+          "name": "Blazing Cape",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1331.png",
+          "description": "PDEF +150, MDEF +150, HP +1,100\nArea burn & imperil"
+        },
+        {
+          "slot": 6,
+          "itemId": "1337",
+          "name": "Sage's Sanctuary",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
+        }
+      ]
+    },
+    {
+      "id": "camp-2",
+      "label": "Top1",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1341",
+          "name": "Frigid Charge",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1341.png",
+          "description": "PDEF +150, HP +900, CDR +7.5%, Resistance +10%\nGreat crowd control"
+        },
+        {
+          "slot": 2,
+          "itemId": "1353",
+          "name": "Dawnlight",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1353.png",
+          "description": "PDEF +210, HP +900, CDR +10%\nShields on dealing damage"
+        },
+        {
+          "slot": 3,
+          "itemId": "1333",
+          "name": "Ominous Premonition",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1333.png",
+          "description": "PDEF +300, HP +1,200\nSlows attackers"
+        },
+        {
+          "slot": 4,
+          "itemId": "1347",
+          "name": "Longnight Guardian",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1347.png",
+          "description": "MDEF +210, HP +1,000, MSPD +7.5%\nReduces magical damage"
+        },
+        {
+          "slot": 5,
+          "itemId": "1332",
+          "name": "Overlord's Platemail",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1332.png",
+          "description": "HP +1,800, PDEF +160, MDEF +80\nExtra HP"
+        },
+        {
+          "slot": 6,
+          "itemId": "1337",
+          "name": "Sage's Sanctuary",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
+        }
+      ]
+    },
+    {
+      "id": "camp-3",
+      "label": "Cn",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1331",
+          "name": "Blazing Cape",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1331.png",
+          "description": "PDEF +150, MDEF +150, HP +1,100\nArea burn & imperil"
+        },
+        {
+          "slot": 2,
+          "itemId": "1534",
+          "name": "Dragon's Rage",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1536.png",
+          "description": "HP +1,350, PDEF +180, MDEF +90\nBoosts BA damage"
+        },
+        {
+          "slot": 3,
+          "itemId": "1341",
+          "name": "Frigid Charge",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1341.png",
+          "description": "PDEF +150, HP +900, CDR +7.5%, Resistance +10%\nGreat crowd control"
+        },
+        {
+          "slot": 4,
+          "itemId": "1333",
+          "name": "Ominous Premonition",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1333.png",
+          "description": "PDEF +300, HP +1,200\nSlows attackers"
+        },
+        {
+          "slot": 5,
+          "itemId": "1337",
+          "name": "Sage's Sanctuary",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
+        },
+        {
+          "slot": 6,
+          "itemId": "1127",
+          "name": "Destiny",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
+        }
+      ]
+    }
+  ],
+  "buildsZh": [
+    {
+      "id": "camp-0",
+      "label": "Fast Rotation",
+      "lane": "Top",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1332",
+          "name": "霸者重裝",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1332.png",
+          "description": "+1800點生命值+160點物防+80點法防\n提高額外生命值"
+        },
+        {
+          "slot": 2,
+          "itemId": "1422",
+          "name": "抵抗之靴",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1422.png",
+          "description": "+100點法防+50點物防+50點移速\n減少被控時間"
+        },
+        {
+          "slot": 3,
+          "itemId": "1333",
+          "name": "不祥徵兆",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1333.png",
+          "description": "+300點物防+1200點生命值\n受擊時將敵人減速"
+        },
+        {
+          "slot": 4,
+          "itemId": "1334",
+          "name": "不死鳥之眼",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1334.png",
+          "description": "+180點法防+90點物防+1350點生命值……\n增加回血效果"
+        },
+        {
+          "slot": 5,
+          "itemId": "1328",
+          "name": "血魔之怒",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1328.png",
+          "description": "+75點攻擊+900點生命值 \n犧牲生命值換取護盾值"
+        },
+        {
+          "slot": 6,
+          "itemId": "1337",
+          "name": "賢者的庇護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+        }
+      ]
+    },
+    {
+      "id": "camp-1",
+      "label": "Quiyo",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1724",
+          "name": "近衛・救贖",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1751.png",
+          "description": "+1200點生命值+7.5%移速\n光環強化生存"
+        },
+        {
+          "slot": 2,
+          "itemId": "1341",
+          "name": "冰霜衝擊",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1341.png",
+          "description": "+150點物防+900點生命值+7.5%冷卻時間+10%韌性\n群體控制"
+        },
+        {
+          "slot": 3,
+          "itemId": "1333",
+          "name": "不祥徵兆",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1333.png",
+          "description": "+300點物防+1200點生命值\n受擊時將敵人減速"
+        },
+        {
+          "slot": 4,
+          "itemId": "1335",
+          "name": "魔女斗篷",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
+          "description": "+300點法防+1100點生命值\n吸收法術傷害"
+        },
+        {
+          "slot": 5,
+          "itemId": "1331",
+          "name": "紅蓮斗篷",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1331.png",
+          "description": "+150點物防+150點法防+1100點生命值\n範圍灼燒重傷"
+        },
+        {
+          "slot": 6,
+          "itemId": "1337",
+          "name": "賢者的庇護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+        }
+      ]
+    },
+    {
+      "id": "camp-2",
+      "label": "Top1",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1341",
+          "name": "冰霜衝擊",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1341.png",
+          "description": "+150點物防+900點生命值+7.5%冷卻時間+10%韌性\n群體控制"
+        },
+        {
+          "slot": 2,
+          "itemId": "1353",
+          "name": "旭日初光",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1353.png",
+          "description": "+210點物防+900點生命值+10%減冷卻時間\n傷害敵人時獲得護盾值"
+        },
+        {
+          "slot": 3,
+          "itemId": "1333",
+          "name": "不祥徵兆",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1333.png",
+          "description": "+300點物防+1200點生命值\n受擊時將敵人減速"
+        },
+        {
+          "slot": 4,
+          "itemId": "1347",
+          "name": "永夜守護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1347.png",
+          "description": "+210點法防+1000點生命值\n+7.5%移速減少法術傷害"
+        },
+        {
+          "slot": 5,
+          "itemId": "1332",
+          "name": "霸者重裝",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1332.png",
+          "description": "+1800點生命值+160點物防+80點法防\n提高額外生命值"
+        },
+        {
+          "slot": 6,
+          "itemId": "1337",
+          "name": "賢者的庇護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+        }
+      ]
+    },
+    {
+      "id": "camp-3",
+      "label": "Cn",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1331",
+          "name": "紅蓮斗篷",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1331.png",
+          "description": "+150點物防+150點法防+1100點生命值\n範圍灼燒重傷"
+        },
+        {
+          "slot": 2,
+          "itemId": "1534",
+          "name": "怒龍劍盾",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1536.png",
+          "description": "+1350點生命值+180點物防+90點法防\n普攻額外傷害"
+        },
+        {
+          "slot": 3,
+          "itemId": "1341",
+          "name": "冰霜衝擊",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1341.png",
+          "description": "+150點物防+900點生命值+7.5%冷卻時間+10%韌性\n群體控制"
+        },
+        {
+          "slot": 4,
+          "itemId": "1333",
+          "name": "不祥徵兆",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1333.png",
+          "description": "+300點物防+1200點生命值\n受擊時將敵人減速"
+        },
+        {
+          "slot": 5,
+          "itemId": "1337",
+          "name": "賢者的庇護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+        },
+        {
+          "slot": 6,
+          "itemId": "1127",
+          "name": "名刀・司命",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "+75點攻擊+15%攻速+500點生命值\n保命"
+        }
+      ]
     }
   ],
   "arcana": [
-    "Fate"
+    "Lvl 5: Fate",
+    "Lvl 5: Meditation",
+    "Lvl 5: Harmony"
+  ],
+  "arcanaZh": [
+    "5級：宿命",
+    "5級：冥想",
+    "5級：調和"
   ],
   "spells": [
-    "Flash"
+    "Teleport"
+  ],
+  "spellsZh": [
+    "傳送"
   ],
   "counters": [
     "Marco Polo"
@@ -105,536 +589,129 @@
     "Ukyo Tachibana"
   ],
   "tips": [
-    "Lian Po is a Easy Tank (Clash Lane) on Honor of Kings Global. Camp HOK ranks them Tier A with 51.1% win rate and 0.9% pick rate as of 2026-06-05.",
-    "Best build path: Boots of Fortitude → Axe of Torment → Frigid Charge → Ominous Premonition → Succubus Cloak → Overlord's Platemail.",
-    "Run Fate for stats that match Lian Po's Tank kit. Take Flash — swap to Purify against heavy CC or Smite when jungling.",
-    "Standard trade: Burst Ram → Magma Slam → Tremor Smash → weave basic attacks. Weave basic attacks between skill casts for passive value.",
-    "Laning: Trade on your power spike levels (2/4). Call jungler for dive only when enemy flash is down.",
-    "Teamfight: Engage on enemy carry when your team has follow-up. Body-block skillshots for your marksman.",
-    "Lian Po excels into Marco Polo. Avoid blind picking into Jing, Li Bai, Ukyo Tachibana without team peel.",
-    "Lian Po is a viable Tier A pick in high rank with 51.1% win rate — strong in one-trick hands or as a counter-pick. Pick rate 0.9% — frequently seen in ranked; learn the matchup even if you do not main Lian Po."
+    "Lian Po (Tank): Tier A — 50.77% WR (Camp HOK).",
+    "Lane: Clash Lane.",
+    "Build: Overlord's Platemail, Boots of Resistance, Ominous Premonition."
+  ],
+  "tipsZh": [
+    "廉頗（對抗路）：梯度 A，勝率 50.77%（Camp HOK）。",
+    "出裝：霸者重裝、抵抗之靴、不祥徵兆."
   ],
   "patchHistory": [
     {
-      "version": "Live meta",
-      "change": "Camp HOK — WR 51.1%, pick 0.9%, ban 0.1%, tier A."
+      "seasonId": "7",
+      "seasonName": "S7",
+      "versionName": "20241101",
+      "publishedAt": "2024-11-01T01:52:22Z",
+      "isCurrent": false,
+      "tag": "Stat Buffs",
+      "change": "Increased damage output of enhanced Basic Attack and Ultimate",
+      "detail": "\"While Lian Po already provides great crowd control, we also want him to pose a greater threat damage wise.\"",
+      "version": "S7"
     },
     {
-      "version": "Matchups",
-      "change": "Strong into Marco Polo · Weak into Jing, Li Bai, Ukyo Tachibana."
+      "seasonId": "5",
+      "seasonName": "S5",
+      "versionName": "20240424",
+      "publishedAt": "2024-04-24T09:58:37Z",
+      "isCurrent": false,
+      "tag": "Mechanics Upgrade",
+      "change": "New Health recovery mechanic; skill stat values and bonus multipliers have also been adjusted to make Lian Po more suitable for his role as a frontline hero",
+      "detail": "New Health recovery mechanic; skill stat values and bonus multipliers have also been adjusted to make Lian Po more suitable for his role as a frontline hero.\nAs one of the heroes available to new players, Lian Po has been with our players through thick and thin over many versions.He shines in games where he has farmed adequately. However, in certain uphill scenarios, there can be precious little room for Lian Po to perform to his full potential.With these changes, we expect that users who use Lian Po will now have more equipment to choose from, as well as a better game experience in the new version.",
+      "version": "S5"
     },
     {
-      "version": "High rank",
-      "change": "Lian Po is a viable Tier A pick in high rank with 51.1% win rate — strong in one-trick hands or as a counter-pick. Pick rate 0.9% — frequently seen in ranked; learn the matchup even if you do not main Lian Po."
+      "seasonId": "5",
+      "seasonName": "S5",
+      "versionName": "20240410",
+      "publishedAt": "2024-04-10T15:15:27Z",
+      "isCurrent": false,
+      "tag": "Stat Changes",
+      "change": "We're increasing the base Health of some tanks but decreasing their per-level Health growth multiplier so that their Health at max level stays the same.",
+      "detail": "We're increasing the base Health of some tanks but decreasing their per-level Health growth multiplier so that their Health at max level stays the same.\nWe hope that players will be able to tell the difference between the heroes in the early game and fully understand their individual characteristics. This should help them choose the best hero for their team's lineup. We want tanks to soak up damage in the early game without becoming hard to counter in the late game. To that end, we're increasing their base Health while decreasing their Health gain per level.",
+      "version": "S5"
+    }
+  ],
+  "patchHistoryZh": [
+    {
+      "seasonId": "7",
+      "seasonName": "S7",
+      "versionName": "20241101",
+      "publishedAt": "2024-11-01T01:52:22Z",
+      "isCurrent": false,
+      "tag": "數值增強",
+      "change": "提升強化普攻與大招的輸出",
+      "detail": "「廉頗在提供控制的同時造成更多的傷害威脅。」",
+      "version": "S7"
+    },
+    {
+      "seasonId": "5",
+      "seasonName": "S5",
+      "versionName": "20240424",
+      "publishedAt": "2024-04-24T09:58:37Z",
+      "isCurrent": false,
+      "tag": "機制升級",
+      "change": "新增生命恢復機制，調整技能數值和加成係數，使廉頗更符合其作為前排英雄的定位",
+      "detail": "「廉頗作為新手英雄之一，伴隨著眾多玩家走過了很多個版本。在發育良好的對戰中，廉頗的表現不錯，而在某些逆風的局勢下，廉頗很難有發揮的空間。我們希望廉頗的玩家能在這次調整後，在新版本中擁有更加多樣的裝備選擇和更加良好的對戰體驗。」",
+      "version": "S5"
+    },
+    {
+      "seasonId": "5",
+      "seasonName": "S5",
+      "versionName": "20240410",
+      "publishedAt": "2024-04-10T15:15:27Z",
+      "isCurrent": false,
+      "tag": "數值調整",
+      "change": "提升部分坦克類英雄的基礎生命，降低其隨英雄等級成長的係數，保持滿級後總生命不變",
+      "detail": "提升部分坦克類英雄的基礎生命，降低其隨英雄等級成長的係數，保持滿級後總生命不變\n我們希望在遊戲早期就能讓玩家區分各英雄間的差異和特點，從而根據陣容需求來選擇自己接下來要操控的英雄。我們希望坦克類英雄能在遊戲早期就承擔吸收傷害的職責，但是又不希望他們在遊戲後期變得難以處理，因此我們適當提升了部分坦克類英雄的基礎生命，並降低了他們每次升級後帶來的生命成長。",
+      "version": "S5"
     }
   ],
   "faqs": [
     {
       "id": "faq-good-season",
-      "question": "Is Lian Po good in the current meta?",
-      "answer": "Lian Po is Tier A Tank with 51.1% win rate, 0.9% pick rate, and 0.1% ban rate on Honor of Kings Global (Camp HOK, 2026-06-05). Solid situational pick."
+      "question": "Is Lian Po good in current season?",
+      "answer": "Lian Po is Tier A Tank with 50.77% win rate, 0.88% pick rate, and 0.1% ban rate (Camp HOK international)."
     },
     {
       "id": "faq-best-build",
       "question": "What is the best Lian Po build?",
-      "answer": "Core item path: Boots of Fortitude, Axe of Torment, Frigid Charge, Ominous Premonition, Succubus Cloak, Overlord's Platemail. Run Fate arcana with Flash. Switch to alternate build presets on this page for jungle, clash, or late-game setups."
+      "answer": "Recommended: Overlord's Platemail, Boots of Resistance, Ominous Premonition, Eye of the Phoenix, Blood Rage, Sage's Sanctuary."
     },
     {
       "id": "faq-counter",
       "question": "How to counter Lian Po?",
-      "answer": "Pick Jing, Li Bai, Ukyo Tachibana into Lian Po. Deny Clash Lane resources early and force fights before Lian Po completes core items. Lian Po struggles when the enemy can out-range or out-sustain them."
+      "answer": "Pick Jing, Li Bai, Ukyo Tachibana. Strong into Marco Polo."
+    }
+  ],
+  "faqsZh": [
+    {
+      "id": "faq-good-season",
+      "question": "廉頗 這版本適合上分嗎？",
+      "answer": "廉頗 為 A 梯度，勝率 50.77%、選取 0.88%、禁用 0.1%（Camp HOK 國際服）。"
     },
     {
-      "id": "faq-strong-into",
-      "question": "Who does Lian Po counter?",
-      "answer": "Lian Po is strong into Marco Polo according to HoKStats matchup data and role matchups on the global server. Draft Lian Po when the enemy relies on these heroes in the Clash Lane lane."
+      "id": "faq-best-build",
+      "question": "廉頗 出裝怎麼搭配？",
+      "answer": "推薦：霸者重裝、抵抗之靴、不祥徵兆、不死鳥之眼、血魔之怒、賢者的庇護."
     },
     {
-      "id": "faq-high-rank",
-      "question": "Is Lian Po good in high rank / Diamond+?",
-      "answer": "Lian Po is a viable Tier A pick in high rank with 51.1% win rate — strong in one-trick hands or as a counter-pick. Pick rate 0.9% — frequently seen in ranked; learn the matchup even if you do not main Lian Po."
-    },
-    {
-      "id": "faq-lane",
-      "question": "What lane should Lian Po play?",
-      "answer": "Lian Po is tagged Clash Lane in Camp export (Tank). Trade on your power spike levels (2/4). Call jungler for dive only when enemy flash is down."
-    },
-    {
-      "id": "faq-arcana",
-      "question": "Best arcana and spells for Lian Po?",
-      "answer": "Recommended: Fate arcana. Battle spell: Flash. Adjust Purify/Execute based on enemy dive and jungle need."
-    },
-    {
-      "id": "faq-vs-peer",
-      "question": "Lian Po or Kaizer — which is better?",
-      "answer": "Lian Po vs Kaizer (Tank, Tier S): Kaizer is 1.6% pick / 51.4% WR. Kaizer wins 0.2% more often globally. Choose Lian Po when you need Clash Lane identity; choose Kaizer for Clash Lane comfort."
-    },
-    {
-      "id": "faq-ban",
-      "question": "Should I ban Lian Po?",
-      "answer": "Low priority ban (0.1%). Focus bans on higher-tier Tank picks unless targeting a one-trick."
+      "id": "faq-counter",
+      "question": "怎麼克制 廉頗？",
+      "answer": "可選 Jing、Li Bai、Ukyo Tachibana。廉頗 克制 Marco Polo。"
     }
   ],
   "metaAnalysis": [
-    "Lian Po — 51.1% WR, 0.9% pick, 0.1% ban (Camp HOK 2026-06-05).",
-    "Tier A Tank · Clash Lane · difficulty Easy.",
-    "Lian Po is a viable Tier A pick in high rank with 51.1% win rate — strong in one-trick hands or as a counter-pick. Pick rate 0.9% — frequently seen in ranked; learn the matchup even if you do not main Lian Po.",
-    "Matchups: strong into Marco Polo; weak into Jing, Li Bai, Ukyo Tachibana.",
-    "Lian Po vs Kaizer (Tank, Tier S): Kaizer is 1.6% pick / 51.4% WR. Kaizer wins 0.2% more often globally. Choose Lian Po when you need Clash Lane identity; choose Kaizer for Clash Lane comfort.",
-    "Lian Po vs Dun (Tank, Tier S): Dun is 1.5% pick / 52.3% WR. Dun wins 1.1% more often globally. Choose Lian Po when you need Clash Lane identity; choose Dun for Clash Lane comfort.",
-    "Draft tip: counter-pick or comfort pick when lane matchup is favorable."
+    "Lian Po win rate 50.77% (Camp HOK, 2026-06-07).",
+    "Pick rate 0.88%.",
+    "Ban rate 0.1%.",
+    "Counters: Marco Polo. Weak into: Jing, Li Bai, Ukyo Tachibana."
   ],
-  "builds": [
-    {
-      "id": "recommended",
-      "label": "Recommended",
-      "position": null,
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1421",
-          "name": "Boots of Fortitude",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1421.jpg",
-          "description": "Reduces physical damage"
-        },
-        {
-          "slot": 2,
-          "itemId": "1137",
-          "name": "Axe of Torment",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1137.jpg",
-          "description": "Anti-squishy"
-        },
-        {
-          "slot": 3,
-          "itemId": "1341",
-          "name": "Frigid Charge",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1341.jpg",
-          "description": "Group CC"
-        },
-        {
-          "slot": 4,
-          "itemId": "1333",
-          "name": "Ominous Premonition",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1333.jpg",
-          "description": "Slows attackers"
-        },
-        {
-          "slot": 5,
-          "itemId": "1335",
-          "name": "Succubus Cloak",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1335.jpg",
-          "description": "Negates magical damage"
-        },
-        {
-          "slot": 6,
-          "itemId": "1332",
-          "name": "Overlord's Platemail",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1332.jpg",
-          "description": "Extra Health"
-        }
-      ]
-    },
-    {
-      "id": "roaming-1",
-      "label": "Roaming 1",
-      "position": "Position 5",
-      "lane": "Roaming",
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1701",
-          "name": "Knowledge Gem",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1701.jpg",
-          "description": "Extra Gold & EXP"
-        },
-        {
-          "slot": 2,
-          "itemId": "1421",
-          "name": "Boots of Fortitude",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1421.jpg",
-          "description": "Reduces physical damage"
-        },
-        {
-          "slot": 3,
-          "itemId": "1724",
-          "name": "Guardian - Redemption",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1724.jpg",
-          "description": "Group shield"
-        },
-        {
-          "slot": 4,
-          "itemId": "1325",
-          "name": "Protector's Cuirass",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1325.jpg",
-          "description": "PDEF +150, HP +450"
-        },
-        {
-          "slot": 5,
-          "itemId": "1323",
-          "name": "Clandestine Cape",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1323.jpg",
-          "description": "MDEF +150, HP +450"
-        },
-        {
-          "slot": 6,
-          "itemId": "1333",
-          "name": "Ominous Premonition",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1333.jpg",
-          "description": "Slows attackers"
-        }
-      ]
-    },
-    {
-      "id": "fast-rotation",
-      "label": "Fast Rotation",
-      "position": "Position 1",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1331",
-          "name": "Blazing Cape",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1331.jpg",
-          "description": "Burns nearby enemies"
-        },
-        {
-          "slot": 2,
-          "itemId": "1323",
-          "name": "Clandestine Cape",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1323.jpg",
-          "description": "MDEF +150, HP +450"
-        },
-        {
-          "slot": 3,
-          "itemId": "1421",
-          "name": "Boots of Fortitude",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1421.jpg",
-          "description": "Reduces physical damage"
-        },
-        {
-          "slot": 4,
-          "itemId": "1335",
-          "name": "Succubus Cloak",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1335.jpg",
-          "description": "Negates magical damage"
-        },
-        {
-          "slot": 5,
-          "itemId": "1332",
-          "name": "Overlord's Platemail",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1332.jpg",
-          "description": "Extra Health"
-        },
-        {
-          "slot": 6,
-          "itemId": "1422",
-          "name": "Boots of Resistance",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
-          "description": "Shortens CC"
-        }
-      ]
-    },
-    {
-      "id": "quiyo",
-      "label": "Quiyo",
-      "position": "Position 5",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1701",
-          "name": "Knowledge Gem",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1701.jpg",
-          "description": "Extra Gold & EXP"
-        },
-        {
-          "slot": 2,
-          "itemId": "1421",
-          "name": "Boots of Fortitude",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1421.jpg",
-          "description": "Reduces physical damage"
-        },
-        {
-          "slot": 3,
-          "itemId": "1724",
-          "name": "Guardian - Redemption",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1724.jpg",
-          "description": "Group shield"
-        },
-        {
-          "slot": 4,
-          "itemId": "1341",
-          "name": "Frigid Charge",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1341.jpg",
-          "description": "Group CC"
-        },
-        {
-          "slot": 5,
-          "itemId": "1333",
-          "name": "Ominous Premonition",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1333.jpg",
-          "description": "Slows attackers"
-        },
-        {
-          "slot": 6,
-          "itemId": "1335",
-          "name": "Succubus Cloak",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1335.jpg",
-          "description": "Negates magical damage"
-        }
-      ]
-    },
-    {
-      "id": "top1",
-      "label": "Top1",
-      "position": "Position 5",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1754",
-          "name": "Guardian - Radiance",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1754.jpg",
-          "description": "Area damage & vision"
-        },
-        {
-          "slot": 2,
-          "itemId": "1422",
-          "name": "Boots of Resistance",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
-          "description": "Shortens CC"
-        },
-        {
-          "slot": 3,
-          "itemId": "1341",
-          "name": "Frigid Charge",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1341.jpg",
-          "description": "Group CC"
-        },
-        {
-          "slot": 4,
-          "itemId": "1325",
-          "name": "Protector's Cuirass",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1325.jpg",
-          "description": "PDEF +150, HP +450"
-        },
-        {
-          "slot": 5,
-          "itemId": "1353",
-          "name": "Dawnlight",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1353.jpg",
-          "description": "Shields on dealing damage"
-        },
-        {
-          "slot": 6,
-          "itemId": "1333",
-          "name": "Ominous Premonition",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1333.jpg",
-          "description": "Slows attackers"
-        }
-      ]
-    },
-    {
-      "id": "cn",
-      "label": "Cn",
-      "position": "Position 5",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1701",
-          "name": "Knowledge Gem",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1701.jpg",
-          "description": "Extra Gold & EXP"
-        },
-        {
-          "slot": 2,
-          "itemId": "1423",
-          "name": "Boots of Tranquility",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1423.jpg",
-          "description": "Reduces Skill CD"
-        },
-        {
-          "slot": 3,
-          "itemId": "1754",
-          "name": "Guardian - Radiance",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1754.jpg",
-          "description": "Area damage & vision"
-        },
-        {
-          "slot": 4,
-          "itemId": "1331",
-          "name": "Blazing Cape",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1331.jpg",
-          "description": "Burns nearby enemies"
-        },
-        {
-          "slot": 5,
-          "itemId": "1534",
-          "name": "Dragon's Rage",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1534.jpg",
-          "description": "Boosts BA damage"
-        },
-        {
-          "slot": 6,
-          "itemId": "1341",
-          "name": "Frigid Charge",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1341.jpg",
-          "description": "Group CC"
-        }
-      ]
-    },
-    {
-      "id": "boom-po-felon",
-      "label": "Boom po felon",
-      "position": "Position 5",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1701",
-          "name": "Knowledge Gem",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1701.jpg",
-          "description": "Extra Gold & EXP"
-        },
-        {
-          "slot": 2,
-          "itemId": "1421",
-          "name": "Boots of Fortitude",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1421.jpg",
-          "description": "Reduces physical damage"
-        },
-        {
-          "slot": 3,
-          "itemId": "1724",
-          "name": "Guardian - Redemption",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1724.jpg",
-          "description": "Group shield"
-        },
-        {
-          "slot": 4,
-          "itemId": "1333",
-          "name": "Ominous Premonition",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1333.jpg",
-          "description": "Slows attackers"
-        },
-        {
-          "slot": 5,
-          "itemId": "1331",
-          "name": "Blazing Cape",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1331.jpg",
-          "description": "Burns nearby enemies"
-        },
-        {
-          "slot": 6,
-          "itemId": "1335",
-          "name": "Succubus Cloak",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1335.jpg",
-          "description": "Negates magical damage"
-        }
-      ]
-    },
-    {
-      "id": "xnxxboyy",
-      "label": "XNXXBOYY",
-      "position": "Position 5",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1724",
-          "name": "Guardian - Redemption",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1724.jpg",
-          "description": "Group shield"
-        },
-        {
-          "slot": 2,
-          "itemId": "1421",
-          "name": "Boots of Fortitude",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1421.jpg",
-          "description": "Reduces physical damage"
-        },
-        {
-          "slot": 3,
-          "itemId": "1331",
-          "name": "Blazing Cape",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1331.jpg",
-          "description": "Burns nearby enemies"
-        },
-        {
-          "slot": 4,
-          "itemId": "1333",
-          "name": "Ominous Premonition",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1333.jpg",
-          "description": "Slows attackers"
-        },
-        {
-          "slot": 5,
-          "itemId": "1335",
-          "name": "Succubus Cloak",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1335.jpg",
-          "description": "Negates magical damage"
-        },
-        {
-          "slot": 6,
-          "itemId": "1347",
-          "name": "Longnight Guardian",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1347.jpg",
-          "description": "Resists burst damage"
-        }
-      ]
-    },
-    {
-      "id": "shea",
-      "label": "Shea",
-      "position": "Position 5",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1701",
-          "name": "Knowledge Gem",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1701.jpg",
-          "description": "Extra Gold & EXP"
-        },
-        {
-          "slot": 2,
-          "itemId": "1421",
-          "name": "Boots of Fortitude",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1421.jpg",
-          "description": "Reduces physical damage"
-        },
-        {
-          "slot": 3,
-          "itemId": "1754",
-          "name": "Guardian - Radiance",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1754.jpg",
-          "description": "Area damage & vision"
-        },
-        {
-          "slot": 4,
-          "itemId": "1341",
-          "name": "Frigid Charge",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1341.jpg",
-          "description": "Group CC"
-        },
-        {
-          "slot": 5,
-          "itemId": "1333",
-          "name": "Ominous Premonition",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1333.jpg",
-          "description": "Slows attackers"
-        },
-        {
-          "slot": 6,
-          "itemId": "1347",
-          "name": "Longnight Guardian",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1347.jpg",
-          "description": "Resists burst damage"
-        }
-      ]
-    }
+  "metaAnalysisZh": [
+    "廉頗 勝率 50.77%（Camp HOK，2026-06-07）",
+    "選取率 0.88%",
+    "禁用率 0.1%",
+    "克制：Marco Polo；被克制：Jing、Li Bai、Ukyo Tachibana"
   ],
   "guide": {
     "overview": "Lian Po is a Easy Tank (Clash Lane) on Honor of Kings Global. Camp HOK ranks them Tier A with 51.1% win rate and 0.9% pick rate as of 2026-06-05.",

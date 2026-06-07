@@ -6,6 +6,7 @@ import {
 } from '@/lib/data';
 import { buildMetadata, defaultTitle } from '@/lib/seo';
 import { heroPageTitle, heroPageDescription } from '@/lib/meta-season';
+import { getHeroDisplayName } from '@/lib/locale-names';
 import { HeroPageView } from '@/views/HeroPageView';
 
 export function generateStaticParams() {
@@ -21,9 +22,9 @@ export function generateMetadata({
   if (!hero) return {};
   const kw = getKeywordsForHero(hero.slug);
   return buildMetadata({
-    title: defaultTitle(heroPageTitle(hero.name, 'zh-TW')),
+    title: defaultTitle(heroPageTitle(getHeroDisplayName(hero, 'zh-TW'), 'zh-TW')),
     description: heroPageDescription(
-      hero.name,
+      getHeroDisplayName(hero, 'zh-TW'),
       hero.lane ?? hero.role,
       hero.dataUpdated ?? 'meta',
       'zh-TW'

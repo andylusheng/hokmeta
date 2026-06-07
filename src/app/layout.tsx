@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import './globals.css';
 import { SiteHeader } from '@/components/SiteHeader';
+import { CommandPaletteHost } from '@/components/CommandPalette';
 import { SiteFooter } from '@/components/SiteFooter';
 import { buildMetadata } from '@/lib/seo';
 import { site } from '@/lib/data';
@@ -11,7 +12,7 @@ import { SkipToContent } from '@/components/SkipToContent';
 
 export const metadata: Metadata = {
   ...buildMetadata({
-    title: `${site.name} — Honor of Kings Meta, Builds & Tier List`,
+    title: `${site.name} — Honor of Kings Meta, Stats & Builds`,
     description: site.description,
     path: '/',
     keywords: [
@@ -51,7 +52,8 @@ export default function RootLayout({
         <JsonLd data={orgSchema} />
         <JsonLd data={webSiteSchema()} />
         <SiteHeader />
-        <main id="main-content" className="min-h-[70vh] py-6">
+        <CommandPaletteHost />
+        <main id="main-content" className="min-h-[70vh] py-6 sm:py-8">
           {children}
         </main>
         <SiteFooter />

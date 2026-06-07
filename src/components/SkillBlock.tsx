@@ -1,6 +1,7 @@
 'use client';
 
 import type { Hero } from '@/types/hero';
+import { getLocalizedSkills } from '@/lib/hero-locale-data';
 import { createT, type Locale } from '@/lib/i18n';
 
 const SLOT_KEYS: Record<string, string> = {
@@ -25,18 +26,19 @@ export function SkillBlock({
   locale?: Locale;
 }) {
   const t = createT(locale);
+  const skills = getLocalizedSkills(hero, locale);
 
-  if (!hero.skills?.length) {
+  if (!skills?.length) {
     return <p className="text-sm text-gray-400">{t('skills.unavailable')}</p>;
   }
 
-  const icons = hero.skills.map((s) => s.icon);
+  const icons = skills.map((s) => s.icon);
   const sharedIcon =
     icons.length > 1 && icons.every((url) => url === icons[0]);
 
   return (
     <div className="grid gap-3 sm:grid-cols-2">
-      {hero.skills.map((skill) => (
+      {skills.map((skill) => (
         <div
           key={skill.slot}
           className="flex gap-3 rounded border border-hok-border bg-hok-dark/40 p-3"

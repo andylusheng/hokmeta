@@ -2,99 +2,583 @@
   "id": "yango",
   "slug": "yango",
   "name": "Yango",
+  "nameZh": "元歌",
   "role": "Assassin",
   "roles": "Assassin",
+  "rolesZh": "刺客",
   "lane": "Clash Lane",
+  "laneZh": "對抗路",
   "difficulty": "Medium",
   "tier": "B",
-  "winRate": 49.53,
-  "pickRate": 0.45,
-  "banRate": 0.18,
-  "rank": 82,
+  "winRate": 49.04,
+  "pickRate": 0.46,
+  "banRate": 0.17,
+  "rank": 88,
   "avatar": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/en5o11rK.png",
   "avatarFallback": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/125/125.jpg",
+  "heroCover": "https://camp.honorofkings.com/social/game/src/image_hero_cover_1275*718/XAguji7l.jpg",
   "tencentId": 125,
-  "dataSource": "Camp HOK + HoKStats.gg (intl)",
-  "dataUpdated": "2026-06-05",
+  "dataSource": "Camp HOK bilingual (primary)",
+  "dataUpdated": "2026-06-07",
   "skills": [
     {
       "slot": "passive",
       "name": "Occult Arts - Manipulation",
-      "description": "PuppetRecovery Chance gaining Hero Shards and recover Health when attacking. Collect 50 Hero Shards (up until 150 stocks, can auto-stock every certain seconds) to summon the corresponding hero.",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/125/12500.png",
-      "cooldown": null
+      "description": "Gain Hero Shards and recover Health when attacking. Collect 50 Hero Shards to summon the corresponding hero.",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/12500.png",
+      "cooldown": "1s"
     },
     {
       "slot": "skill1",
       "name": "Occult Arts - Umbra",
-      "description": "PuppetCrowd ControlMovement Throws the puppet, dealing damage and launching enemies in the path, then begins controlling the puppet.",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/125/12510.png",
-      "cooldown": null
+      "description": "Throws the puppet, dealing damage and launching enemies in the path, then begins controlling the puppet.",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/12510.png",
+      "cooldown": "20s"
     },
     {
       "slot": "skill2",
       "name": "Occult Arts - Zhi Chu Luan",
-      "description": "Damage Reduction Tosses paper birds, which deal damage to enemies in their path.",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/125/12520.png",
-      "cooldown": null
+      "description": "Tosses paper birds, which deal damage to enemies in their path.",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/12520.png",
+      "cooldown": "11s"
     },
     {
       "slot": "ultimate",
-      "name": "Occult Arts - Shadow Crucifixion",
-      "description": "MovementSlow Releases several strings, dealing damage to targets hit. Repeated hits additionally inflict slow.",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/125/12530.png",
-      "cooldown": null
+      "name": "Occult Arts - Dispersal",
+      "description": "Vanishes, cleansing all crowd control effects, then reappears in the target location after a brief delay.",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/12540.png",
+      "cooldown": "25s"
+    }
+  ],
+  "skillsZh": [
+    {
+      "slot": "passive",
+      "name": "祕術・操控",
+      "description": "元歌和傀儡攻擊可獲得英雄碎片並回復生命值，後續可使用50個英雄碎片召喚出對應英雄。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/12500.png",
+      "cooldown": "1s"
+    },
+    {
+      "slot": "skill1",
+      "name": "祕術・影",
+      "description": "元歌擲出傀儡對路徑敵人造成傷害和擊飛，並開始操縱傀儡。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/12510.png",
+      "cooldown": "20s"
+    },
+    {
+      "slot": "skill2",
+      "name": "祕術・紙雛鸞",
+      "description": "元歌擲出暗器對路徑敵人造成傷害。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/12520.png",
+      "cooldown": "11s"
+    },
+    {
+      "slot": "ultimate",
+      "name": "祕術・散",
+      "description": "元歌立即消失並解控，短暫延遲後位移到另一個位置。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/12540.png",
+      "cooldown": "25s"
     }
   ],
   "build": [
     {
       "slot": 1,
-      "itemId": "1421",
-      "name": "Boots of Fortitude",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1421.jpg",
-      "description": "Reduces physical damage"
+      "itemId": "1137",
+      "name": "Axe of Torment",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1137.png",
+      "description": "PATK +80, CDR +10%, HP +500\nAnti-squishy"
     },
     {
       "slot": 2,
-      "itemId": "1137",
-      "name": "Axe of Torment",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1137.jpg",
-      "description": "Anti-squishy"
+      "itemId": "1138",
+      "name": "Overlord's Might",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1138.png",
+      "description": "PATK +150, CDR +5%\nHigh-damage attack"
     },
     {
       "slot": 3,
-      "itemId": "1128",
-      "name": "Deepfrost Siege",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1128.jpg",
-      "description": "Slows on hit"
+      "itemId": "1131",
+      "name": "Starbreaker",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1131.png",
+      "description": "PATK +90, HP +700, MSPD +7.5%\nAnti-tank"
     },
     {
       "slot": 4,
-      "itemId": "11311",
-      "name": "Pure Sky",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/11311.jpg",
-      "description": "Temp. damage reduction"
+      "itemId": "1128",
+      "name": "Deepfrost Siege",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1128.png",
+      "description": "PATK +70, ASPD +25%, HP +750\nBAs slow"
     },
     {
       "slot": 5,
-      "itemId": "1131",
-      "name": "Starbreaker",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1131.jpg",
-      "description": "Anti-tank"
+      "itemId": "13310",
+      "name": "Frostscar's Embrace",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/13310.png",
+      "description": "PATK +60, PDEF +300, CDR +10%\nEnhanced BAs slow"
     },
     {
       "slot": 6,
-      "itemId": null,
-      "name": "Data unavailable",
-      "icon": null,
-      "description": null
+      "itemId": "1127",
+      "name": "Destiny",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+      "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
+    }
+  ],
+  "buildZh": [
+    {
+      "slot": 1,
+      "itemId": "1137",
+      "name": "暗影戰斧",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1137.png",
+      "description": "+80點攻擊+10%減冷卻時間+500點生命值\n打血薄用"
+    },
+    {
+      "slot": 2,
+      "itemId": "1138",
+      "name": "強者破軍",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1138.png",
+      "description": "+150點攻擊+5%減冷卻時間\n高額攻擊"
+    },
+    {
+      "slot": 3,
+      "itemId": "1131",
+      "name": "碎星錘",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1131.png",
+      "description": "+90點攻擊+700點生命值+7.5%移速\n打坦克用"
+    },
+    {
+      "slot": 4,
+      "itemId": "1128",
+      "name": "寒霜襲侵",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1128.png",
+      "description": "+70點攻擊+25%攻速+750點生命值\n普攻減移速"
+    },
+    {
+      "slot": 5,
+      "itemId": "13310",
+      "name": "冰痕之握",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/13310.png",
+      "description": "+60點攻擊+300點物防+10%減冷卻時間……\n強化普攻減速"
+    },
+    {
+      "slot": 6,
+      "itemId": "1127",
+      "name": "名刀・司命",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+      "description": "+75點攻擊+15%攻速+500點生命值\n保命"
+    }
+  ],
+  "builds": [
+    {
+      "id": "camp-0",
+      "label": "顺秒流",
+      "lane": "Top",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1137",
+          "name": "Axe of Torment",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1137.png",
+          "description": "PATK +80, CDR +10%, HP +500\nAnti-squishy"
+        },
+        {
+          "slot": 2,
+          "itemId": "1138",
+          "name": "Overlord's Might",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1138.png",
+          "description": "PATK +150, CDR +5%\nHigh-damage attack"
+        },
+        {
+          "slot": 3,
+          "itemId": "1131",
+          "name": "Starbreaker",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1131.png",
+          "description": "PATK +90, HP +700, MSPD +7.5%\nAnti-tank"
+        },
+        {
+          "slot": 4,
+          "itemId": "1128",
+          "name": "Deepfrost Siege",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1128.png",
+          "description": "PATK +70, ASPD +25%, HP +750\nBAs slow"
+        },
+        {
+          "slot": 5,
+          "itemId": "13310",
+          "name": "Frostscar's Embrace",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/13310.png",
+          "description": "PATK +60, PDEF +300, CDR +10%\nEnhanced BAs slow"
+        },
+        {
+          "slot": 6,
+          "itemId": "1127",
+          "name": "Destiny",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
+        }
+      ]
+    },
+    {
+      "id": "camp-1",
+      "label": "Sustain Yuan Ge",
+      "lane": "Top",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1333",
+          "name": "Ominous Premonition",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1333.png",
+          "description": "PDEF +300, HP +1,200\nSlows attackers"
+        },
+        {
+          "slot": 2,
+          "itemId": "1335",
+          "name": "Succubus Cloak",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
+          "description": "MDEF +300, HP +1,100\nNegates magical damage"
+        },
+        {
+          "slot": 3,
+          "itemId": "1337",
+          "name": "Sage's Sanctuary",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
+        },
+        {
+          "slot": 4,
+          "itemId": "1127",
+          "name": "Destiny",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
+        },
+        {
+          "slot": 5,
+          "itemId": "1239",
+          "name": "Splendor",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1239.png",
+          "description": "MATK +160, CDR +7.5%, Magical Lifesteal +12%\nTemp. invincibility"
+        },
+        {
+          "slot": 6,
+          "itemId": "1227",
+          "name": "Ardent Dominion",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1227.png",
+          "description": "MATK +150, Magical Lifesteal +12%, MSPD +7.5%\nCleanse and shield at low HP"
+        }
+      ]
+    },
+    {
+      "id": "camp-2",
+      "label": "best",
+      "lane": "Top",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1128",
+          "name": "Deepfrost Siege",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1128.png",
+          "description": "PATK +70, ASPD +25%, HP +750\nBAs slow"
+        },
+        {
+          "slot": 2,
+          "itemId": "1138",
+          "name": "Overlord's Might",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1138.png",
+          "description": "PATK +150, CDR +5%\nHigh-damage attack"
+        },
+        {
+          "slot": 3,
+          "itemId": "1131",
+          "name": "Starbreaker",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1131.png",
+          "description": "PATK +90, HP +700, MSPD +7.5%\nAnti-tank"
+        },
+        {
+          "slot": 4,
+          "itemId": "13310",
+          "name": "Frostscar's Embrace",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/13310.png",
+          "description": "PATK +60, PDEF +300, CDR +10%\nEnhanced BAs slow"
+        },
+        {
+          "slot": 5,
+          "itemId": "1337",
+          "name": "Sage's Sanctuary",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
+        },
+        {
+          "slot": 6,
+          "itemId": "1127",
+          "name": "Destiny",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
+        }
+      ]
+    },
+    {
+      "id": "camp-3",
+      "label": "Klein Moretti",
+      "lane": "Top",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1128",
+          "name": "Deepfrost Siege",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1128.png",
+          "description": "PATK +70, ASPD +25%, HP +750\nBAs slow"
+        },
+        {
+          "slot": 2,
+          "itemId": "1138",
+          "name": "Overlord's Might",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1138.png",
+          "description": "PATK +150, CDR +5%\nHigh-damage attack"
+        },
+        {
+          "slot": 3,
+          "itemId": "1131",
+          "name": "Starbreaker",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1131.png",
+          "description": "PATK +90, HP +700, MSPD +7.5%\nAnti-tank"
+        },
+        {
+          "slot": 4,
+          "itemId": "1132",
+          "name": "Bloodweeper",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1132.png",
+          "description": "PATK +85, Lifesteal +25%, HP +500\nPhysical Lifesteal"
+        },
+        {
+          "slot": 5,
+          "itemId": "1337",
+          "name": "Sage's Sanctuary",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
+        },
+        {
+          "slot": 6,
+          "itemId": "1127",
+          "name": "Destiny",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
+        }
+      ]
+    }
+  ],
+  "buildsZh": [
+    {
+      "id": "camp-0",
+      "label": "顺秒流",
+      "lane": "Top",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1137",
+          "name": "暗影戰斧",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1137.png",
+          "description": "+80點攻擊+10%減冷卻時間+500點生命值\n打血薄用"
+        },
+        {
+          "slot": 2,
+          "itemId": "1138",
+          "name": "強者破軍",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1138.png",
+          "description": "+150點攻擊+5%減冷卻時間\n高額攻擊"
+        },
+        {
+          "slot": 3,
+          "itemId": "1131",
+          "name": "碎星錘",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1131.png",
+          "description": "+90點攻擊+700點生命值+7.5%移速\n打坦克用"
+        },
+        {
+          "slot": 4,
+          "itemId": "1128",
+          "name": "寒霜襲侵",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1128.png",
+          "description": "+70點攻擊+25%攻速+750點生命值\n普攻減移速"
+        },
+        {
+          "slot": 5,
+          "itemId": "13310",
+          "name": "冰痕之握",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/13310.png",
+          "description": "+60點攻擊+300點物防+10%減冷卻時間……\n強化普攻減速"
+        },
+        {
+          "slot": 6,
+          "itemId": "1127",
+          "name": "名刀・司命",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "+75點攻擊+15%攻速+500點生命值\n保命"
+        }
+      ]
+    },
+    {
+      "id": "camp-1",
+      "label": "Sustain Yuan Ge",
+      "lane": "Top",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1333",
+          "name": "不祥徵兆",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1333.png",
+          "description": "+300點物防+1200點生命值\n受擊時將敵人減速"
+        },
+        {
+          "slot": 2,
+          "itemId": "1335",
+          "name": "魔女斗篷",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
+          "description": "+300點法防+1100點生命值\n吸收法術傷害"
+        },
+        {
+          "slot": 3,
+          "itemId": "1337",
+          "name": "賢者的庇護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+        },
+        {
+          "slot": 4,
+          "itemId": "1127",
+          "name": "名刀・司命",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "+75點攻擊+15%攻速+500點生命值\n保命"
+        },
+        {
+          "slot": 5,
+          "itemId": "1239",
+          "name": "輝月",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1239.png",
+          "description": "+160點法攻+7.5%減冷卻時間+12%法術吸血\n暫時無敵"
+        },
+        {
+          "slot": 6,
+          "itemId": "1227",
+          "name": "熾熱支配",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1227.png",
+          "description": "+150點法攻+12%法術吸血+7.5%移速\n殘血解控加盾"
+        }
+      ]
+    },
+    {
+      "id": "camp-2",
+      "label": "best",
+      "lane": "Top",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1128",
+          "name": "寒霜襲侵",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1128.png",
+          "description": "+70點攻擊+25%攻速+750點生命值\n普攻減移速"
+        },
+        {
+          "slot": 2,
+          "itemId": "1138",
+          "name": "強者破軍",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1138.png",
+          "description": "+150點攻擊+5%減冷卻時間\n高額攻擊"
+        },
+        {
+          "slot": 3,
+          "itemId": "1131",
+          "name": "碎星錘",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1131.png",
+          "description": "+90點攻擊+700點生命值+7.5%移速\n打坦克用"
+        },
+        {
+          "slot": 4,
+          "itemId": "13310",
+          "name": "冰痕之握",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/13310.png",
+          "description": "+60點攻擊+300點物防+10%減冷卻時間……\n強化普攻減速"
+        },
+        {
+          "slot": 5,
+          "itemId": "1337",
+          "name": "賢者的庇護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+        },
+        {
+          "slot": 6,
+          "itemId": "1127",
+          "name": "名刀・司命",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "+75點攻擊+15%攻速+500點生命值\n保命"
+        }
+      ]
+    },
+    {
+      "id": "camp-3",
+      "label": "Klein Moretti",
+      "lane": "Top",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1128",
+          "name": "寒霜襲侵",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1128.png",
+          "description": "+70點攻擊+25%攻速+750點生命值\n普攻減移速"
+        },
+        {
+          "slot": 2,
+          "itemId": "1138",
+          "name": "強者破軍",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1138.png",
+          "description": "+150點攻擊+5%減冷卻時間\n高額攻擊"
+        },
+        {
+          "slot": 3,
+          "itemId": "1131",
+          "name": "碎星錘",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1131.png",
+          "description": "+90點攻擊+700點生命值+7.5%移速\n打坦克用"
+        },
+        {
+          "slot": 4,
+          "itemId": "1132",
+          "name": "泣血之刃",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1132.png",
+          "description": "+85點攻擊+25%吸血+500點生命值\n物理吸血"
+        },
+        {
+          "slot": 5,
+          "itemId": "1337",
+          "name": "賢者的庇護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+        },
+        {
+          "slot": 6,
+          "itemId": "1127",
+          "name": "名刀・司命",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "+75點攻擊+15%攻速+500點生命值\n保命"
+        }
+      ]
     }
   ],
   "arcana": [
-    "Mutation"
+    "Lvl 5: Mutation",
+    "Lvl 5: Stealth",
+    "Lvl 5: Eagle Eye"
+  ],
+  "arcanaZh": [
+    "5級：異變",
+    "5級：隱匿",
+    "5級：鷹眼"
   ],
   "spells": [
     "Flash"
+  ],
+  "spellsZh": [
+    "閃現"
   ],
   "counters": [
     "Lapulapu",
@@ -107,14 +591,13 @@
     "Angela"
   ],
   "tips": [
-    "Yango is a Medium Assassin (Clash Lane) on Honor of Kings Global. Camp HOK ranks them Tier B with 49.5% win rate and 0.5% pick rate as of 2026-06-05.",
-    "Best build path: Boots of Fortitude → Axe of Torment → Deepfrost Siege → Pure Sky → Starbreaker.",
-    "Run Mutation for stats that match Yango's Assassin kit. Take Flash — swap to Purify against heavy CC or Smite when jungling.",
-    "Standard trade: Occult Arts - Umbra → Occult Arts - Zhi Chu Luan → Occult Arts - Shadow Crucifixion → weave basic attacks. Weave basic attacks between skill casts for passive value.",
-    "Laning: Trade on your power spike levels (2/4). Call jungler for dive only when enemy flash is down.",
-    "Teamfight: Wait for CC from your team, then dive carry with full combo. Exit with reset or flash if focus fired.",
-    "Yango excels into Lapulapu, Ata, Sakeer. Avoid blind picking into Hou Yi, Daji, Angela without team peel.",
-    "Yango sits at Tier B globally (49.5% WR). In high rank, pick only into favorable matchups or when you have a dedicated pocket pick."
+    "Yango (Assassin): Tier B — 49.04% WR (Camp HOK).",
+    "Lane: Clash Lane.",
+    "Build: Axe of Torment, Overlord's Might, Starbreaker."
+  ],
+  "tipsZh": [
+    "元歌（對抗路）：梯度 B，勝率 49.04%（Camp HOK）。",
+    "出裝：暗影戰斧、強者破軍、碎星錘."
   ],
   "patchHistory": [
     {
@@ -130,513 +613,52 @@
       "change": "Yango sits at Tier B globally (49.5% WR). In high rank, pick only into favorable matchups or when you have a dedicated pocket pick."
     }
   ],
+  "patchHistoryZh": [],
   "faqs": [
     {
       "id": "faq-good-season",
-      "question": "Is Yango good in the current meta?",
-      "answer": "Yango is Tier B Assassin with 49.5% win rate, 0.5% pick rate, and 0.2% ban rate on Honor of Kings Global (Camp HOK, 2026-06-05). Niche — draft carefully."
+      "question": "Is Yango good in current season?",
+      "answer": "Yango is Tier B Assassin with 49.04% win rate, 0.46% pick rate, and 0.17% ban rate (Camp HOK international)."
     },
     {
       "id": "faq-best-build",
       "question": "What is the best Yango build?",
-      "answer": "Core item path: Boots of Fortitude, Axe of Torment, Deepfrost Siege, Pure Sky, Starbreaker. Run Mutation arcana with Flash. Switch to alternate build presets on this page for jungle, clash, or late-game setups."
+      "answer": "Recommended: Axe of Torment, Overlord's Might, Starbreaker, Deepfrost Siege, Frostscar's Embrace, Destiny."
     },
     {
       "id": "faq-counter",
       "question": "How to counter Yango?",
-      "answer": "Pick Hou Yi, Daji, Angela into Yango. Deny Clash Lane resources early and force fights before Yango completes core items. Yango struggles when the enemy can peel and group them."
+      "answer": "Pick Hou Yi, Daji, Angela. Strong into Lapulapu, Ata, Sakeer."
+    }
+  ],
+  "faqsZh": [
+    {
+      "id": "faq-good-season",
+      "question": "元歌 這版本適合上分嗎？",
+      "answer": "元歌 為 B 梯度，勝率 49.04%、選取 0.46%、禁用 0.17%（Camp HOK 國際服）。"
     },
     {
-      "id": "faq-strong-into",
-      "question": "Who does Yango counter?",
-      "answer": "Yango is strong into Lapulapu, Ata, Sakeer according to HoKStats matchup data and role matchups on the global server. Draft Yango when the enemy relies on these heroes in the Clash Lane lane."
+      "id": "faq-best-build",
+      "question": "元歌 出裝怎麼搭配？",
+      "answer": "推薦：暗影戰斧、強者破軍、碎星錘、寒霜襲侵、冰痕之握、名刀・司命."
     },
     {
-      "id": "faq-high-rank",
-      "question": "Is Yango good in high rank / Diamond+?",
-      "answer": "Yango sits at Tier B globally (49.5% WR). In high rank, pick only into favorable matchups or when you have a dedicated pocket pick."
-    },
-    {
-      "id": "faq-lane",
-      "question": "What lane should Yango play?",
-      "answer": "Yango is tagged Clash Lane in Camp export (Assassin). Trade on your power spike levels (2/4). Call jungler for dive only when enemy flash is down."
-    },
-    {
-      "id": "faq-arcana",
-      "question": "Best arcana and spells for Yango?",
-      "answer": "Recommended: Mutation arcana. Battle spell: Flash. Adjust Purify/Execute based on enemy dive and jungle need."
-    },
-    {
-      "id": "faq-vs-peer",
-      "question": "Yango or Wukong — which is better?",
-      "answer": "Yango vs Wukong (Assassin, Tier S): Wukong is 1.3% pick / 49.7% WR. Wukong wins 0.2% more often globally. Choose Yango when you need Clash Lane identity; choose Wukong for Jungling comfort."
-    },
-    {
-      "id": "faq-ban",
-      "question": "Should I ban Yango?",
-      "answer": "Low priority ban (0.2%). Focus bans on higher-tier Assassin picks unless targeting a one-trick."
+      "id": "faq-counter",
+      "question": "怎麼克制 元歌？",
+      "answer": "可選 Hou Yi、Daji、Angela。元歌 克制 Lapulapu、Ata、Sakeer。"
     }
   ],
   "metaAnalysis": [
-    "Yango — 49.5% WR, 0.5% pick, 0.2% ban (Camp HOK 2026-06-05).",
-    "Tier B Assassin · Clash Lane · difficulty Medium.",
-    "Yango sits at Tier B globally (49.5% WR). In high rank, pick only into favorable matchups or when you have a dedicated pocket pick.",
-    "Matchups: strong into Lapulapu, Ata, Sakeer; weak into Hou Yi, Daji, Angela.",
-    "Yango vs Wukong (Assassin, Tier S): Wukong is 1.3% pick / 49.7% WR. Wukong wins 0.2% more often globally. Choose Yango when you need Clash Lane identity; choose Wukong for Jungling comfort.",
-    "Yango vs Musashi (Assassin, Tier A): Musashi is 1.1% pick / 50.7% WR. Musashi wins 1.2% more often globally. Choose Yango when you need Clash Lane identity; choose Musashi for Jungling comfort.",
-    "Draft tip: counter-pick or comfort pick when lane matchup is favorable."
+    "Yango win rate 49.04% (Camp HOK, 2026-06-07).",
+    "Pick rate 0.46%.",
+    "Ban rate 0.17%.",
+    "Counters: Lapulapu, Ata, Sakeer. Weak into: Hou Yi, Daji, Angela."
   ],
-  "builds": [
-    {
-      "id": "recommended",
-      "label": "Recommended",
-      "position": null,
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1421",
-          "name": "Boots of Fortitude",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1421.jpg",
-          "description": "Reduces physical damage"
-        },
-        {
-          "slot": 2,
-          "itemId": "1137",
-          "name": "Axe of Torment",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1137.jpg",
-          "description": "Anti-squishy"
-        },
-        {
-          "slot": 3,
-          "itemId": "1128",
-          "name": "Deepfrost Siege",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1128.jpg",
-          "description": "Slows on hit"
-        },
-        {
-          "slot": 4,
-          "itemId": "11311",
-          "name": "Pure Sky",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/11311.jpg",
-          "description": "Temp. damage reduction"
-        },
-        {
-          "slot": 5,
-          "itemId": "1131",
-          "name": "Starbreaker",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1131.jpg",
-          "description": "Anti-tank"
-        },
-        {
-          "slot": 6,
-          "itemId": null,
-          "name": "Data unavailable",
-          "icon": null,
-          "description": null
-        }
-      ]
-    },
-    {
-      "id": "clash-lane-1",
-      "label": "Clash Lane 1",
-      "position": "Position 1",
-      "lane": "Clash Lane",
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1423",
-          "name": "Boots of Tranquility",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1423.jpg",
-          "description": "Reduces Skill CD"
-        },
-        {
-          "slot": 2,
-          "itemId": "1137",
-          "name": "Axe of Torment",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1137.jpg",
-          "description": "Anti-squishy"
-        },
-        {
-          "slot": 3,
-          "itemId": "1138",
-          "name": "Overlord's Might",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1138.jpg",
-          "description": "High-damage attack"
-        },
-        {
-          "slot": 4,
-          "itemId": "11311",
-          "name": "Pure Sky",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/11311.jpg",
-          "description": "Temp. damage reduction"
-        },
-        {
-          "slot": 5,
-          "itemId": "1127",
-          "name": "Destiny",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1127.jpg",
-          "description": "Negates fatal damage"
-        },
-        {
-          "slot": 6,
-          "itemId": "1125",
-          "name": "Demonsbane",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1125.jpg",
-          "description": "Boosts MDEF"
-        }
-      ]
-    },
-    {
-      "id": "clash-lane",
-      "label": "Clash lane",
-      "position": "Position 1",
-      "lane": "Clash Lane",
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1111",
-          "name": "Iron Sword",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1111.jpg",
-          "description": "PATK +20"
-        },
-        {
-          "slot": 2,
-          "itemId": "1122",
-          "name": "Sunglow Striker",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1122.jpg",
-          "description": "PATK +35, HP +450"
-        },
-        {
-          "slot": 3,
-          "itemId": "1421",
-          "name": "Boots of Fortitude",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1421.jpg",
-          "description": "Reduces physical damage"
-        },
-        {
-          "slot": 4,
-          "itemId": "1137",
-          "name": "Axe of Torment",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1137.jpg",
-          "description": "Anti-squishy"
-        },
-        {
-          "slot": 5,
-          "itemId": "1138",
-          "name": "Overlord's Might",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1138.jpg",
-          "description": "High-damage attack"
-        },
-        {
-          "slot": 6,
-          "itemId": "1128",
-          "name": "Deepfrost Siege",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1128.jpg",
-          "description": "Slows on hit"
-        }
-      ]
-    },
-    {
-      "id": "sustain-yuan-ge",
-      "label": "Sustain Yuan Ge",
-      "position": "Position 1",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1121",
-          "name": "Storm Sword",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1121.jpg",
-          "description": "Physical Attack +75"
-        },
-        {
-          "slot": 2,
-          "itemId": "1124",
-          "name": "Meteor",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1124.jpg",
-          "description": "PATK +35\nCDR +7.5%"
-        },
-        {
-          "slot": 3,
-          "itemId": "1423",
-          "name": "Boots of Tranquility",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1423.jpg",
-          "description": "Reduces Skill CD"
-        },
-        {
-          "slot": 4,
-          "itemId": "1138",
-          "name": "Overlord's Might",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1138.jpg",
-          "description": "High-damage attack"
-        },
-        {
-          "slot": 5,
-          "itemId": "1137",
-          "name": "Axe of Torment",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1137.jpg",
-          "description": "Anti-squishy"
-        },
-        {
-          "slot": 6,
-          "itemId": "1131",
-          "name": "Starbreaker",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1131.jpg",
-          "description": "Anti-tank"
-        }
-      ]
-    },
-    {
-      "id": "best",
-      "label": "best",
-      "position": "Position 1",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1122",
-          "name": "Sunglow Striker",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1122.jpg",
-          "description": "PATK +35, HP +450"
-        },
-        {
-          "slot": 2,
-          "itemId": "1421",
-          "name": "Boots of Fortitude",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1421.jpg",
-          "description": "Reduces physical damage"
-        },
-        {
-          "slot": 3,
-          "itemId": "1137",
-          "name": "Axe of Torment",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1137.jpg",
-          "description": "Anti-squishy"
-        },
-        {
-          "slot": 4,
-          "itemId": "1128",
-          "name": "Deepfrost Siege",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1128.jpg",
-          "description": "Slows on hit"
-        },
-        {
-          "slot": 5,
-          "itemId": "1138",
-          "name": "Overlord's Might",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1138.jpg",
-          "description": "High-damage attack"
-        },
-        {
-          "slot": 6,
-          "itemId": "1345",
-          "name": "Nettle Gauntlet",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1345.jpg",
-          "description": "Offense & defense"
-        }
-      ]
-    },
-    {
-      "id": "klein-moretti",
-      "label": "Klein Moretti",
-      "position": "Position 1",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1111",
-          "name": "Iron Sword",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1111.jpg",
-          "description": "PATK +20"
-        },
-        {
-          "slot": 2,
-          "itemId": "1122",
-          "name": "Sunglow Striker",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1122.jpg",
-          "description": "PATK +35, HP +450"
-        },
-        {
-          "slot": 3,
-          "itemId": "1421",
-          "name": "Boots of Fortitude",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1421.jpg",
-          "description": "Reduces physical damage"
-        },
-        {
-          "slot": 4,
-          "itemId": "1137",
-          "name": "Axe of Torment",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1137.jpg",
-          "description": "Anti-squishy"
-        },
-        {
-          "slot": 5,
-          "itemId": "1128",
-          "name": "Deepfrost Siege",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1128.jpg",
-          "description": "Slows on hit"
-        },
-        {
-          "slot": 6,
-          "itemId": "1138",
-          "name": "Overlord's Might",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1138.jpg",
-          "description": "High-damage attack"
-        }
-      ]
-    },
-    {
-      "id": "younggae",
-      "label": "YoungGae",
-      "position": "Position 1",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1422",
-          "name": "Boots of Resistance",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
-          "description": "Shortens CC"
-        },
-        {
-          "slot": 2,
-          "itemId": "1137",
-          "name": "Axe of Torment",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1137.jpg",
-          "description": "Anti-squishy"
-        },
-        {
-          "slot": 3,
-          "itemId": "1138",
-          "name": "Overlord's Might",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1138.jpg",
-          "description": "High-damage attack"
-        },
-        {
-          "slot": 4,
-          "itemId": "1131",
-          "name": "Starbreaker",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1131.jpg",
-          "description": "Anti-tank"
-        },
-        {
-          "slot": 5,
-          "itemId": "1534",
-          "name": "Dragon's Rage",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1534.jpg",
-          "description": "Boosts BA damage"
-        },
-        {
-          "slot": 6,
-          "itemId": "1335",
-          "name": "Succubus Cloak",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1335.jpg",
-          "description": "Negates magical damage"
-        }
-      ]
-    },
-    {
-      "id": "yaomainid",
-      "label": "yaomainID",
-      "position": "Position 1",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1111",
-          "name": "Iron Sword",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1111.jpg",
-          "description": "PATK +20"
-        },
-        {
-          "slot": 2,
-          "itemId": "1124",
-          "name": "Meteor",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1124.jpg",
-          "description": "PATK +35\nCDR +7.5%"
-        },
-        {
-          "slot": 3,
-          "itemId": "1137",
-          "name": "Axe of Torment",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1137.jpg",
-          "description": "Anti-squishy"
-        },
-        {
-          "slot": 4,
-          "itemId": "1421",
-          "name": "Boots of Fortitude",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1421.jpg",
-          "description": "Reduces physical damage"
-        },
-        {
-          "slot": 5,
-          "itemId": "1138",
-          "name": "Overlord's Might",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1138.jpg",
-          "description": "High-damage attack"
-        },
-        {
-          "slot": 6,
-          "itemId": "13310",
-          "name": "Frostscar's Embrace",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/13310.jpg",
-          "description": "Enhanced BAs slow"
-        }
-      ]
-    },
-    {
-      "id": "shin-build",
-      "label": "Shin Build",
-      "position": "Position 1",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1111",
-          "name": "Iron Sword",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1111.jpg",
-          "description": "PATK +20"
-        },
-        {
-          "slot": 2,
-          "itemId": "1124",
-          "name": "Meteor",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1124.jpg",
-          "description": "PATK +35\nCDR +7.5%"
-        },
-        {
-          "slot": 3,
-          "itemId": "1423",
-          "name": "Boots of Tranquility",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1423.jpg",
-          "description": "Reduces Skill CD"
-        },
-        {
-          "slot": 4,
-          "itemId": "1137",
-          "name": "Axe of Torment",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1137.jpg",
-          "description": "Anti-squishy"
-        },
-        {
-          "slot": 5,
-          "itemId": "1138",
-          "name": "Overlord's Might",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1138.jpg",
-          "description": "High-damage attack"
-        },
-        {
-          "slot": 6,
-          "itemId": "1134",
-          "name": "Master Sword",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1134.jpg",
-          "description": "Enhances BA"
-        }
-      ]
-    }
+  "metaAnalysisZh": [
+    "元歌 勝率 49.04%（Camp HOK，2026-06-07）",
+    "選取率 0.46%",
+    "禁用率 0.17%",
+    "克制：Lapulapu、Ata、Sakeer；被克制：Hou Yi、Daji、Angela"
   ],
   "guide": {
     "overview": "Yango is a Medium Assassin (Clash Lane) on Honor of Kings Global. Camp HOK ranks them Tier B with 49.5% win rate and 0.5% pick rate as of 2026-06-05.",

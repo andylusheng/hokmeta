@@ -2,99 +2,583 @@
   "id": "luna",
   "slug": "luna",
   "name": "Luna",
+  "nameZh": "露娜",
   "role": "Mage",
   "roles": "Fighter, Mage",
+  "rolesZh": "戰士, 法師",
   "lane": "Jungling",
+  "laneZh": "打野",
   "difficulty": "Medium",
-  "tier": "B",
-  "winRate": 48.88,
-  "pickRate": 0.54,
+  "tier": "A",
+  "winRate": 48.84,
+  "pickRate": 0.58,
   "banRate": 0.32,
-  "rank": 91,
+  "rank": 89,
   "avatar": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/hz3BqNue.png",
   "avatarFallback": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/146/146.jpg",
+  "heroCover": "https://camp.honorofkings.com/social/game/src/image_hero_cover_1275*718/qGCGOIn8.jpg",
   "tencentId": 146,
-  "dataSource": "Camp HOK + HoKStats.gg (intl)",
-  "dataUpdated": "2026-06-05",
+  "dataSource": "Camp HOK bilingual (primary)",
+  "dataUpdated": "2026-06-07",
   "skills": [
     {
       "slot": "passive",
       "name": "Moonlight Dance",
-      "description": "Every three Basic Attacks form a repeating cycle. On the first, she dashes toward the target, and on the third, she deals damage to nearby enemies and places a mark on them. Increasing Magical Attack also increases Attack Speed",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/146/14600.png",
-      "cooldown": null
+      "description": "Basic Attacks have two forms, melee and ranged. First Basic Attack in melee form will charge toward the target, and third Basic Attack deals extra damage. Enhanced Basic Attacks and skill damage mark enemies. Magical Attack boost will enhance her Attack Speed.",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/14600.png",
+      "cooldown": "1s"
     },
     {
       "slot": "skill1",
       "name": "Crescent Slice",
       "description": "Unleashes a shockwave in the target direction, dealing damage and marking enemies hit.",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/146/14610.png",
-      "cooldown": null
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/14610.png",
+      "cooldown": "5s"
     },
     {
       "slot": "skill2",
       "name": "Searing Stab",
-      "description": "Gains a shield and pulls nearby enemies, dealing damage while stunning slowing, and marking them.",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/146/14620.png",
-      "cooldown": null
+      "description": "Gains a shield and pulls nearby enemies, dealing damage while stunning, slowing, and marking them.",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/14620.png",
+      "cooldown": "8s"
     },
     {
       "slot": "ultimate",
       "name": "New Moon",
-      "description": "Dashes in the target direction, dealing damage to enemies in her path. Upon hitting marked enemies, her Ultimate's cooldown will be refreshed.",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/146/14630.png",
-      "cooldown": null
+      "description": "Dashes to the target location, dealing damage to enemies in her path.\nIf she hits a marked enemy, this skill's cooldown is reset.",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/14630.png",
+      "cooldown": "20s"
+    }
+  ],
+  "skillsZh": [
+    {
+      "slot": "passive",
+      "name": "月光之舞",
+      "description": "露娜的普攻擁有兩種形態，當目標超出近戰範圍時，會自動切換為遠程形態。\n首次普攻為近戰時，露娜會衝向目標，第三次普攻額外造成傷害。強化普攻和技能傷害會標記敵方。法術攻擊提升可強化自身攻速。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/14600.png",
+      "cooldown": "1s"
+    },
+    {
+      "slot": "skill1",
+      "name": "弦月斬",
+      "description": "朝指定方向發射衝擊波，對命中的敵人造成傷害並施加標記。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/14610.png",
+      "cooldown": "5s"
+    },
+    {
+      "slot": "skill2",
+      "name": "炙熱劍芒",
+      "description": "自身獲得護盾的同時拉扯附近敵人至自身位置，造成傷害、暈眩、減速效果並施加標記。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/14620.png",
+      "cooldown": "8s"
+    },
+    {
+      "slot": "ultimate",
+      "name": "新月突擊",
+      "description": "朝指定方向突進，對沿途敵人造成傷害。\n命中有露娜標記的敵人時重置大招的冷卻時間。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/14630.png",
+      "cooldown": "20s"
     }
   ],
   "build": [
     {
       "slot": 1,
-      "itemId": "1531",
-      "name": "Runeblade",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1531.jpg",
-      "description": "Monster kills boost MATK"
+      "itemId": "1240",
+      "name": "Insatiable Tome",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1240.png",
+      "description": "MATK +160, Magical Lifesteal +24%, HP +750\nLifesteal increases CDR"
     },
     {
       "slot": 2,
-      "itemId": "1422",
-      "name": "Boots of Resistance",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
-      "description": "Shortens CC"
+      "itemId": "1244",
+      "name": "Breakthrough Robe",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1244.png",
+      "description": "MATK +120, HP +900\nConverts HP into Magical Pierce"
     },
     {
       "slot": 3,
-      "itemId": "1237",
-      "name": "Augur's Word",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1237.jpg",
-      "description": "Offense & defense"
+      "itemId": "1231",
+      "name": "Void Staff",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1231.png",
+      "description": "MATK +210, HP +500, CDR +5%\nAnti-tank"
     },
     {
       "slot": 4,
-      "itemId": "1240",
-      "name": "Insatiable Tome",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1240.jpg",
-      "description": "Magical Lifesteal"
+      "itemId": "1337",
+      "name": "Sage's Sanctuary",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+      "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
     },
     {
       "slot": 5,
-      "itemId": "1333",
-      "name": "Ominous Premonition",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1333.jpg",
-      "description": "Slows attackers"
+      "itemId": "1239",
+      "name": "Splendor",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1239.png",
+      "description": "MATK +160, CDR +7.5%, Magical Lifesteal +12%\nTemp. invincibility"
     },
     {
       "slot": 6,
+      "itemId": "1127",
+      "name": "Destiny",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+      "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
+    }
+  ],
+  "buildZh": [
+    {
+      "slot": 1,
+      "itemId": "1240",
+      "name": "噬神之書",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1240.png",
+      "description": "+160點法攻+24%法術吸血+750點生命值 吸血拉長冷卻時間"
+    },
+    {
+      "slot": 2,
       "itemId": "1244",
-      "name": "Breakthrough Robe",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1244.jpg",
-      "description": "Converts Health into M. Pierce"
+      "name": "破繭之衣",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1244.png",
+      "description": "+120點法攻+900點生命值\n生命值轉法穿"
+    },
+    {
+      "slot": 3,
+      "itemId": "1231",
+      "name": "虛無法杖",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1231.png",
+      "description": "+210點法攻+500點生命值+5%減冷卻時間\n打坦克用"
+    },
+    {
+      "slot": 4,
+      "itemId": "1337",
+      "name": "賢者的庇護",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+      "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+    },
+    {
+      "slot": 5,
+      "itemId": "1239",
+      "name": "輝月",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1239.png",
+      "description": "+160點法攻+7.5%減冷卻時間+12%法術吸血\n暫時無敵"
+    },
+    {
+      "slot": 6,
+      "itemId": "1127",
+      "name": "名刀・司命",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+      "description": "+75點攻擊+15%攻速+500點生命值\n保命"
+    }
+  ],
+  "builds": [
+    {
+      "id": "camp-0",
+      "label": "Zixx Luna Sigma",
+      "lane": "Jungle",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1240",
+          "name": "Insatiable Tome",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1240.png",
+          "description": "MATK +160, Magical Lifesteal +24%, HP +750\nLifesteal increases CDR"
+        },
+        {
+          "slot": 2,
+          "itemId": "1244",
+          "name": "Breakthrough Robe",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1244.png",
+          "description": "MATK +120, HP +900\nConverts HP into Magical Pierce"
+        },
+        {
+          "slot": 3,
+          "itemId": "1231",
+          "name": "Void Staff",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1231.png",
+          "description": "MATK +210, HP +500, CDR +5%\nAnti-tank"
+        },
+        {
+          "slot": 4,
+          "itemId": "1337",
+          "name": "Sage's Sanctuary",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
+        },
+        {
+          "slot": 5,
+          "itemId": "1239",
+          "name": "Splendor",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1239.png",
+          "description": "MATK +160, CDR +7.5%, Magical Lifesteal +12%\nTemp. invincibility"
+        },
+        {
+          "slot": 6,
+          "itemId": "1127",
+          "name": "Destiny",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
+        }
+      ]
+    },
+    {
+      "id": "camp-1",
+      "label": "ﺔﻌﺋﺎﺷ",
+      "lane": "Jungle",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1240",
+          "name": "Insatiable Tome",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1240.png",
+          "description": "MATK +160, Magical Lifesteal +24%, HP +750\nLifesteal increases CDR"
+        },
+        {
+          "slot": 2,
+          "itemId": "1244",
+          "name": "Breakthrough Robe",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1244.png",
+          "description": "MATK +120, HP +900\nConverts HP into Magical Pierce"
+        },
+        {
+          "slot": 3,
+          "itemId": "1231",
+          "name": "Void Staff",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1231.png",
+          "description": "MATK +210, HP +500, CDR +5%\nAnti-tank"
+        },
+        {
+          "slot": 4,
+          "itemId": "1337",
+          "name": "Sage's Sanctuary",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
+        },
+        {
+          "slot": 5,
+          "itemId": "1127",
+          "name": "Destiny",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
+        },
+        {
+          "slot": 6,
+          "itemId": "1421",
+          "name": "Boots of Fortitude",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1421.png",
+          "description": "PDEF +100, MDEF +50, MSPD +50\nReduces physical damage"
+        }
+      ]
+    },
+    {
+      "id": "camp-2",
+      "label": "Royal's",
+      "lane": "Jungle",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1531",
+          "name": "Runeblade",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1531.png",
+          "description": "MATK +130, CDR +10%, MSPD +5%\nMonster kills boost MATK"
+        },
+        {
+          "slot": 2,
+          "itemId": "1231",
+          "name": "Void Staff",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1231.png",
+          "description": "MATK +210, HP +500, CDR +5%\nAnti-tank"
+        },
+        {
+          "slot": 3,
+          "itemId": "1232",
+          "name": "Savant's Wrath",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1232.png",
+          "description": "MATK +210\nGreatly boosts MATK"
+        },
+        {
+          "slot": 4,
+          "itemId": "1337",
+          "name": "Sage's Sanctuary",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
+        },
+        {
+          "slot": 5,
+          "itemId": "1127",
+          "name": "Destiny",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
+        },
+        {
+          "slot": 6,
+          "itemId": "1239",
+          "name": "Splendor",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1239.png",
+          "description": "MATK +160, CDR +7.5%, Magical Lifesteal +12%\nTemp. invincibility"
+        }
+      ]
+    },
+    {
+      "id": "camp-3",
+      "label": "UNO' LUNA",
+      "lane": "Jungle",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1531",
+          "name": "Runeblade",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1531.png",
+          "description": "MATK +130, CDR +10%, MSPD +5%\nMonster kills boost MATK"
+        },
+        {
+          "slot": 2,
+          "itemId": "1231",
+          "name": "Void Staff",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1231.png",
+          "description": "MATK +210, HP +500, CDR +5%\nAnti-tank"
+        },
+        {
+          "slot": 3,
+          "itemId": "1244",
+          "name": "Breakthrough Robe",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1244.png",
+          "description": "MATK +120, HP +900\nConverts HP into Magical Pierce"
+        },
+        {
+          "slot": 4,
+          "itemId": "1337",
+          "name": "Sage's Sanctuary",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
+        },
+        {
+          "slot": 5,
+          "itemId": "1239",
+          "name": "Splendor",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1239.png",
+          "description": "MATK +160, CDR +7.5%, Magical Lifesteal +12%\nTemp. invincibility"
+        },
+        {
+          "slot": 6,
+          "itemId": "1127",
+          "name": "Destiny",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
+        }
+      ]
+    }
+  ],
+  "buildsZh": [
+    {
+      "id": "camp-0",
+      "label": "Zixx Luna Sigma",
+      "lane": "Jungle",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1240",
+          "name": "噬神之書",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1240.png",
+          "description": "+160點法攻+24%法術吸血+750點生命值 吸血拉長冷卻時間"
+        },
+        {
+          "slot": 2,
+          "itemId": "1244",
+          "name": "破繭之衣",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1244.png",
+          "description": "+120點法攻+900點生命值\n生命值轉法穿"
+        },
+        {
+          "slot": 3,
+          "itemId": "1231",
+          "name": "虛無法杖",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1231.png",
+          "description": "+210點法攻+500點生命值+5%減冷卻時間\n打坦克用"
+        },
+        {
+          "slot": 4,
+          "itemId": "1337",
+          "name": "賢者的庇護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+        },
+        {
+          "slot": 5,
+          "itemId": "1239",
+          "name": "輝月",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1239.png",
+          "description": "+160點法攻+7.5%減冷卻時間+12%法術吸血\n暫時無敵"
+        },
+        {
+          "slot": 6,
+          "itemId": "1127",
+          "name": "名刀・司命",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "+75點攻擊+15%攻速+500點生命值\n保命"
+        }
+      ]
+    },
+    {
+      "id": "camp-1",
+      "label": "ﺔﻌﺋﺎﺷ",
+      "lane": "Jungle",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1240",
+          "name": "噬神之書",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1240.png",
+          "description": "+160點法攻+24%法術吸血+750點生命值 吸血拉長冷卻時間"
+        },
+        {
+          "slot": 2,
+          "itemId": "1244",
+          "name": "破繭之衣",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1244.png",
+          "description": "+120點法攻+900點生命值\n生命值轉法穿"
+        },
+        {
+          "slot": 3,
+          "itemId": "1231",
+          "name": "虛無法杖",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1231.png",
+          "description": "+210點法攻+500點生命值+5%減冷卻時間\n打坦克用"
+        },
+        {
+          "slot": 4,
+          "itemId": "1337",
+          "name": "賢者的庇護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+        },
+        {
+          "slot": 5,
+          "itemId": "1127",
+          "name": "名刀・司命",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "+75點攻擊+15%攻速+500點生命值\n保命"
+        },
+        {
+          "slot": 6,
+          "itemId": "1421",
+          "name": "影忍之足",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1421.png",
+          "description": "+100點物防+50點法防+50點移速\n減少物理傷害"
+        }
+      ]
+    },
+    {
+      "id": "camp-2",
+      "label": "Royal's",
+      "lane": "Jungle",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1531",
+          "name": "符文大劍",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1531.png",
+          "description": "+130法攻+10%冷縮+5%移速\n打野怪加法強"
+        },
+        {
+          "slot": 2,
+          "itemId": "1231",
+          "name": "虛無法杖",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1231.png",
+          "description": "+210點法攻+500點生命值+5%減冷卻時間\n打坦克用"
+        },
+        {
+          "slot": 3,
+          "itemId": "1232",
+          "name": "博學者之怒",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1232.png",
+          "description": "+210點法術攻擊\n大幅提升法強"
+        },
+        {
+          "slot": 4,
+          "itemId": "1337",
+          "name": "賢者的庇護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+        },
+        {
+          "slot": 5,
+          "itemId": "1127",
+          "name": "名刀・司命",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "+75點攻擊+15%攻速+500點生命值\n保命"
+        },
+        {
+          "slot": 6,
+          "itemId": "1239",
+          "name": "輝月",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1239.png",
+          "description": "+160點法攻+7.5%減冷卻時間+12%法術吸血\n暫時無敵"
+        }
+      ]
+    },
+    {
+      "id": "camp-3",
+      "label": "UNO' LUNA",
+      "lane": "Jungle",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1531",
+          "name": "符文大劍",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1531.png",
+          "description": "+130法攻+10%冷縮+5%移速\n打野怪加法強"
+        },
+        {
+          "slot": 2,
+          "itemId": "1231",
+          "name": "虛無法杖",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1231.png",
+          "description": "+210點法攻+500點生命值+5%減冷卻時間\n打坦克用"
+        },
+        {
+          "slot": 3,
+          "itemId": "1244",
+          "name": "破繭之衣",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1244.png",
+          "description": "+120點法攻+900點生命值\n生命值轉法穿"
+        },
+        {
+          "slot": 4,
+          "itemId": "1337",
+          "name": "賢者的庇護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+        },
+        {
+          "slot": 5,
+          "itemId": "1239",
+          "name": "輝月",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1239.png",
+          "description": "+160點法攻+7.5%減冷卻時間+12%法術吸血\n暫時無敵"
+        },
+        {
+          "slot": 6,
+          "itemId": "1127",
+          "name": "名刀・司命",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "+75點攻擊+15%攻速+500點生命值\n保命"
+        }
+      ]
     }
   ],
   "arcana": [
-    "Red"
+    "Lvl 5: Red Moon",
+    "Lvl 5: Hunt",
+    "Lvl 5: Mind's Eye"
+  ],
+  "arcanaZh": [
+    "5級：紅月",
+    "5級：狩獵",
+    "5級：心眼"
   ],
   "spells": [
     "Smite"
+  ],
+  "spellsZh": [
+    "懲擊"
   ],
   "counters": [
     "Yuhuan",
@@ -107,536 +591,129 @@
     "Fuzi"
   ],
   "tips": [
-    "Luna is a Medium Mage (Jungling) on Honor of Kings Global. Camp HOK ranks them Tier B with 48.9% win rate and 0.5% pick rate as of 2026-06-05.",
-    "Best build path: Runeblade → Boots of Resistance → Augur's Word → Insatiable Tome → Ominous Premonition → Breakthrough Robe.",
-    "Run Red for stats that match Luna's Mage kit. Take Smite — swap to Purify against heavy CC or Smite when jungling.",
-    "Standard trade: Crescent Slice → Searing Stab → New Moon → weave basic attacks. Weave basic attacks between skill casts for passive value.",
-    "Laning: Clear to level four, then gank the lane with the least escape. Secure Tyrant when your bot or mid has crash wave.",
-    "Teamfight: Poke from max range before objective. Save hard CC for enemy dive or your carry peel window.",
-    "Luna excels into Yuhuan, Lady Zhen, Heino. Avoid blind picking into Athena, Augran, Fuzi without team peel.",
-    "Luna sits at Tier B globally (48.9% WR). In high rank, pick only into favorable matchups or when you have a dedicated pocket pick. Below 49% global WR — high-rank players often avoid unless compensating for team comp."
+    "Luna (Mage): Tier A — 48.84% WR (Camp HOK).",
+    "Lane: Jungling.",
+    "Build: Insatiable Tome, Breakthrough Robe, Void Staff."
+  ],
+  "tipsZh": [
+    "露娜（打野）：梯度 A，勝率 48.84%（Camp HOK）。",
+    "出裝：噬神之書、破繭之衣、虛無法杖."
   ],
   "patchHistory": [
     {
-      "version": "Live meta",
-      "change": "Camp HOK — WR 48.9%, pick 0.5%, ban 0.3%, tier B."
+      "seasonId": "12",
+      "seasonName": "S12",
+      "versionName": "20251030",
+      "publishedAt": "2025-10-30T01:00:00Z",
+      "isCurrent": false,
+      "tag": "Stat Changes",
+      "change": "Adjusted Skill Damage",
+      "detail": "",
+      "version": "S12"
     },
     {
-      "version": "Matchups",
-      "change": "Strong into Yuhuan, Lady Zhen, Heino · Weak into Athena, Augran, Fuzi."
+      "seasonId": "8",
+      "seasonName": "S8",
+      "versionName": "20250109",
+      "publishedAt": "2025-01-09T02:33:14Z",
+      "isCurrent": false,
+      "tag": "Mechanics Upgrade",
+      "change": "Added ranged Basic Attack.",
+      "detail": "Luna is typically forced to leave the battlefield if her Ultimate fails. We have changed Luna's Basic Attack to allow her to contribute ranged damage while looking for a chance to return to battle.",
+      "version": "S8"
     },
     {
-      "version": "High rank",
-      "change": "Luna sits at Tier B globally (48.9% WR). In high rank, pick only into favorable matchups or when you have a dedicated pocket pick. Below 49% global WR — high-rank players often avoid unless compensating for team comp."
+      "seasonId": "3",
+      "seasonName": "S3",
+      "versionName": "20231108",
+      "publishedAt": "2023-11-08T12:02:09Z",
+      "isCurrent": false,
+      "tag": "Stat Buffs",
+      "change": "Increased magical damage dealt by Skill 1.",
+      "detail": "With her high level of difficulty and enormous potential, Luna can deal massive damage as long as she constantly refreshes her Ultimate. But when Lunais interrupted or the player makes a mistake, there's not much left for her to do other than spam Skill 1. Considering the occasional mistakes, we want Skill 1 to pose more of a threat. In this way, we can further increase Luna's overall strength and let her shine even brighter in the Gorge.",
+      "version": "S3"
+    }
+  ],
+  "patchHistoryZh": [
+    {
+      "seasonId": "12",
+      "seasonName": "S12",
+      "versionName": "20251030",
+      "publishedAt": "2025-10-30T01:00:00Z",
+      "isCurrent": false,
+      "tag": "數值調整",
+      "change": "調整技能傷害",
+      "detail": "",
+      "version": "S12"
+    },
+    {
+      "seasonId": "8",
+      "seasonName": "S8",
+      "versionName": "20250109",
+      "publishedAt": "2025-01-09T02:33:14Z",
+      "isCurrent": false,
+      "tag": "機制升級",
+      "change": "新增遠程普攻",
+      "detail": "「如果露娜大招失誤，那麼她往往只能離開戰場。我們調整了露娜的普攻方式，讓她可以透過遠程攻擊提供傷害，同時尋找再次入場的機會。」",
+      "version": "S8"
+    },
+    {
+      "seasonId": "3",
+      "seasonName": "S3",
+      "versionName": "20231108",
+      "publishedAt": "2023-11-08T12:02:09Z",
+      "isCurrent": false,
+      "tag": "數值增強",
+      "change": "Increased magical damage dealt by Skill 1.",
+      "detail": "With her high level of difficulty and enormous potential, Luna can deal massive damage as long as she constantly refreshes her Ultimate. But when Lunais interrupted or the player makes a mistake, there's not much left for her to do other than spam Skill 1. Considering the occasional mistakes, we want Skill 1 to pose more of a threat. In this way, we can further increase Luna's overall strength and let her shine even brighter in the Gorge.",
+      "version": "S3"
     }
   ],
   "faqs": [
     {
       "id": "faq-good-season",
-      "question": "Is Luna good in the current meta?",
-      "answer": "Luna is Tier B Mage with 48.9% win rate, 0.5% pick rate, and 0.3% ban rate on Honor of Kings Global (Camp HOK, 2026-06-05). Niche — draft carefully."
+      "question": "Is Luna good in current season?",
+      "answer": "Luna is Tier A Mage with 48.84% win rate, 0.58% pick rate, and 0.32% ban rate (Camp HOK international)."
     },
     {
       "id": "faq-best-build",
       "question": "What is the best Luna build?",
-      "answer": "Core item path: Runeblade, Boots of Resistance, Augur's Word, Insatiable Tome, Ominous Premonition, Breakthrough Robe. Run Red arcana with Smite. Switch to alternate build presets on this page for jungle, clash, or late-game setups."
+      "answer": "Recommended: Insatiable Tome, Breakthrough Robe, Void Staff, Sage's Sanctuary, Splendor, Destiny."
     },
     {
       "id": "faq-counter",
       "question": "How to counter Luna?",
-      "answer": "Pick Athena, Augran, Fuzi into Luna. Deny Jungling resources early and force fights before Luna completes core items. Luna struggles when the enemy can out-range or out-sustain them."
+      "answer": "Pick Athena, Augran, Fuzi. Strong into Yuhuan, Lady Zhen, Heino."
+    }
+  ],
+  "faqsZh": [
+    {
+      "id": "faq-good-season",
+      "question": "露娜 這版本適合上分嗎？",
+      "answer": "露娜 為 A 梯度，勝率 48.84%、選取 0.58%、禁用 0.32%（Camp HOK 國際服）。"
     },
     {
-      "id": "faq-strong-into",
-      "question": "Who does Luna counter?",
-      "answer": "Luna is strong into Yuhuan, Lady Zhen, Heino according to HoKStats matchup data and role matchups on the global server. Draft Luna when the enemy relies on these heroes in the Jungling lane."
+      "id": "faq-best-build",
+      "question": "露娜 出裝怎麼搭配？",
+      "answer": "推薦：噬神之書、破繭之衣、虛無法杖、賢者的庇護、輝月、名刀・司命."
     },
     {
-      "id": "faq-high-rank",
-      "question": "Is Luna good in high rank / Diamond+?",
-      "answer": "Luna sits at Tier B globally (48.9% WR). In high rank, pick only into favorable matchups or when you have a dedicated pocket pick. Below 49% global WR — high-rank players often avoid unless compensating for team comp."
-    },
-    {
-      "id": "faq-lane",
-      "question": "What lane should Luna play?",
-      "answer": "Luna is tagged Jungling in Camp export (Fighter, Mage). Clear to level four, then gank the lane with the least escape. Secure Tyrant when your bot or mid has crash wave."
-    },
-    {
-      "id": "faq-arcana",
-      "question": "Best arcana and spells for Luna?",
-      "answer": "Recommended: Red arcana. Battle spell: Smite. Adjust Purify/Execute based on enemy dive and jungle need."
-    },
-    {
-      "id": "faq-vs-peer",
-      "question": "Luna or Daji — which is better?",
-      "answer": "Luna vs Daji (Mage, Tier S+): Daji is 2.4% pick / 51.0% WR. Daji wins 2.1% more often globally. Choose Luna when you need Jungling identity; choose Daji for Mid Lane comfort."
-    },
-    {
-      "id": "faq-ban",
-      "question": "Should I ban Luna?",
-      "answer": "Yes in tryhard queues — 0.3% ban rate. Deny if enemy first-picks Mage."
+      "id": "faq-counter",
+      "question": "怎麼克制 露娜？",
+      "answer": "可選 Athena、Augran、Fuzi。露娜 克制 Yuhuan、Lady Zhen、Heino。"
     }
   ],
   "metaAnalysis": [
-    "Luna — 48.9% WR, 0.5% pick, 0.3% ban (Camp HOK 2026-06-05).",
-    "Tier B Mage · Jungling · difficulty Medium.",
-    "Luna sits at Tier B globally (48.9% WR). In high rank, pick only into favorable matchups or when you have a dedicated pocket pick. Below 49% global WR — high-rank players often avoid unless compensating for team comp.",
-    "Matchups: strong into Yuhuan, Lady Zhen, Heino; weak into Athena, Augran, Fuzi.",
-    "Luna vs Daji (Mage, Tier S+): Daji is 2.4% pick / 51.0% WR. Daji wins 2.1% more often globally. Choose Luna when you need Jungling identity; choose Daji for Mid Lane comfort.",
-    "Luna vs Angela (Mage, Tier S+): Angela is 2.3% pick / 51.8% WR. Angela wins 2.9% more often globally. Choose Luna when you need Jungling identity; choose Angela for Mid Lane comfort.",
-    "Draft tip: counter-pick or comfort pick when lane matchup is favorable."
+    "Luna win rate 48.84% (Camp HOK, 2026-06-07).",
+    "Pick rate 0.58%.",
+    "Ban rate 0.32%.",
+    "Counters: Yuhuan, Lady Zhen, Heino. Weak into: Athena, Augran, Fuzi."
   ],
-  "builds": [
-    {
-      "id": "recommended",
-      "label": "Recommended",
-      "position": null,
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1531",
-          "name": "Runeblade",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1531.jpg",
-          "description": "Monster kills boost MATK"
-        },
-        {
-          "slot": 2,
-          "itemId": "1422",
-          "name": "Boots of Resistance",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
-          "description": "Shortens CC"
-        },
-        {
-          "slot": 3,
-          "itemId": "1237",
-          "name": "Augur's Word",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1237.jpg",
-          "description": "Offense & defense"
-        },
-        {
-          "slot": 4,
-          "itemId": "1240",
-          "name": "Insatiable Tome",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1240.jpg",
-          "description": "Magical Lifesteal"
-        },
-        {
-          "slot": 5,
-          "itemId": "1333",
-          "name": "Ominous Premonition",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1333.jpg",
-          "description": "Slows attackers"
-        },
-        {
-          "slot": 6,
-          "itemId": "1244",
-          "name": "Breakthrough Robe",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1244.jpg",
-          "description": "Converts Health into M. Pierce"
-        }
-      ]
-    },
-    {
-      "id": "zixx-luna-sigma",
-      "label": "Zixx Luna Sigma",
-      "position": "Position 3",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1531",
-          "name": "Runeblade",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1531.jpg",
-          "description": "Monster kills boost MATK"
-        },
-        {
-          "slot": 2,
-          "itemId": "1422",
-          "name": "Boots of Resistance",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
-          "description": "Shortens CC"
-        },
-        {
-          "slot": 3,
-          "itemId": "1237",
-          "name": "Augur's Word",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1237.jpg",
-          "description": "Offense & defense"
-        },
-        {
-          "slot": 4,
-          "itemId": "1240",
-          "name": "Insatiable Tome",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1240.jpg",
-          "description": "Magical Lifesteal"
-        },
-        {
-          "slot": 5,
-          "itemId": "1244",
-          "name": "Breakthrough Robe",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1244.jpg",
-          "description": "Converts Health into M. Pierce"
-        },
-        {
-          "slot": 6,
-          "itemId": "1231",
-          "name": "Void Staff",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1231.jpg",
-          "description": "Anti-tank"
-        }
-      ]
-    },
-    {
-      "id": "build",
-      "label": "ﺔﻌﺋﺎﺷ",
-      "position": "Position 3",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1521",
-          "name": "Guerrilla Machete",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1521.jpg",
-          "description": "Monster kills boost MATK"
-        },
-        {
-          "slot": 2,
-          "itemId": "1425",
-          "name": "Boots of Dexterity",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1425.jpg",
-          "description": "Boosts ASPD"
-        },
-        {
-          "slot": 3,
-          "itemId": "1222",
-          "name": "Blood Clan's Grimoire",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1222.jpg",
-          "description": "MATK +60, Magical Lifesteal +12%"
-        },
-        {
-          "slot": 4,
-          "itemId": "1237",
-          "name": "Augur's Word",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1237.jpg",
-          "description": "Offense & defense"
-        },
-        {
-          "slot": 5,
-          "itemId": "1531",
-          "name": "Runeblade",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1531.jpg",
-          "description": "Monster kills boost MATK"
-        },
-        {
-          "slot": 6,
-          "itemId": "1240",
-          "name": "Insatiable Tome",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1240.jpg",
-          "description": "Magical Lifesteal"
-        }
-      ]
-    },
-    {
-      "id": "royals",
-      "label": "Royal's",
-      "position": "Position 3",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1521",
-          "name": "Guerrilla Machete",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1521.jpg",
-          "description": "Monster kills boost MATK"
-        },
-        {
-          "slot": 2,
-          "itemId": "1424",
-          "name": "Boots of the Arcane",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1424.jpg",
-          "description": "Magical Pierce"
-        },
-        {
-          "slot": 3,
-          "itemId": "1240",
-          "name": "Insatiable Tome",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1240.jpg",
-          "description": "Magical Lifesteal"
-        },
-        {
-          "slot": 4,
-          "itemId": "1237",
-          "name": "Augur's Word",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1237.jpg",
-          "description": "Offense & defense"
-        },
-        {
-          "slot": 5,
-          "itemId": "1422",
-          "name": "Boots of Resistance",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
-          "description": "Shortens CC"
-        },
-        {
-          "slot": 6,
-          "itemId": "1531",
-          "name": "Runeblade",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1531.jpg",
-          "description": "Monster kills boost MATK"
-        }
-      ]
-    },
-    {
-      "id": "uno-luna",
-      "label": "UNO' LUNA",
-      "position": "Position 3",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1521",
-          "name": "Guerrilla Machete",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1521.jpg",
-          "description": "Monster kills boost MATK"
-        },
-        {
-          "slot": 2,
-          "itemId": "1422",
-          "name": "Boots of Resistance",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
-          "description": "Shortens CC"
-        },
-        {
-          "slot": 3,
-          "itemId": "1222",
-          "name": "Blood Clan's Grimoire",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1222.jpg",
-          "description": "MATK +60, Magical Lifesteal +12%"
-        },
-        {
-          "slot": 4,
-          "itemId": "1240",
-          "name": "Insatiable Tome",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1240.jpg",
-          "description": "Magical Lifesteal"
-        },
-        {
-          "slot": 5,
-          "itemId": "1237",
-          "name": "Augur's Word",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1237.jpg",
-          "description": "Offense & defense"
-        },
-        {
-          "slot": 6,
-          "itemId": "1243",
-          "name": "Nebulon Wood",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1243.jpg",
-          "description": "MATK +60, HP +450"
-        }
-      ]
-    },
-    {
-      "id": "vs-regen-hero",
-      "label": "VS Regen Hero",
-      "position": "Position 3",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1521",
-          "name": "Guerrilla Machete",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1521.jpg",
-          "description": "Monster kills boost MATK"
-        },
-        {
-          "slot": 2,
-          "itemId": "1425",
-          "name": "Boots of Dexterity",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1425.jpg",
-          "description": "Boosts ASPD"
-        },
-        {
-          "slot": 3,
-          "itemId": "1222",
-          "name": "Blood Clan's Grimoire",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1222.jpg",
-          "description": "MATK +60, Magical Lifesteal +12%"
-        },
-        {
-          "slot": 4,
-          "itemId": "1237",
-          "name": "Augur's Word",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1237.jpg",
-          "description": "Offense & defense"
-        },
-        {
-          "slot": 5,
-          "itemId": "1422",
-          "name": "Boots of Resistance",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
-          "description": "Shortens CC"
-        },
-        {
-          "slot": 6,
-          "itemId": "1240",
-          "name": "Insatiable Tome",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1240.jpg",
-          "description": "Magical Lifesteal"
-        }
-      ]
-    },
-    {
-      "id": "anti-healtank",
-      "label": "Anti heal/tank",
-      "position": "Position 3",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1521",
-          "name": "Guerrilla Machete",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1521.jpg",
-          "description": "Monster kills boost MATK"
-        },
-        {
-          "slot": 2,
-          "itemId": "1222",
-          "name": "Blood Clan's Grimoire",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1222.jpg",
-          "description": "MATK +60, Magical Lifesteal +12%"
-        },
-        {
-          "slot": 3,
-          "itemId": "1422",
-          "name": "Boots of Resistance",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
-          "description": "Shortens CC"
-        },
-        {
-          "slot": 4,
-          "itemId": "1237",
-          "name": "Augur's Word",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1237.jpg",
-          "description": "Offense & defense"
-        },
-        {
-          "slot": 5,
-          "itemId": "1240",
-          "name": "Insatiable Tome",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1240.jpg",
-          "description": "Magical Lifesteal"
-        },
-        {
-          "slot": 6,
-          "itemId": "12211",
-          "name": "Venomous Staff",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/12211.jpg",
-          "description": "Lowers Health regen"
-        }
-      ]
-    },
-    {
-      "id": "sss-luna",
-      "label": "SSS-Luna",
-      "position": "Position 3",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1521",
-          "name": "Guerrilla Machete",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1521.jpg",
-          "description": "Monster kills boost MATK"
-        },
-        {
-          "slot": 2,
-          "itemId": "1422",
-          "name": "Boots of Resistance",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
-          "description": "Shortens CC"
-        },
-        {
-          "slot": 3,
-          "itemId": "1237",
-          "name": "Augur's Word",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1237.jpg",
-          "description": "Offense & defense"
-        },
-        {
-          "slot": 4,
-          "itemId": "1240",
-          "name": "Insatiable Tome",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1240.jpg",
-          "description": "Magical Lifesteal"
-        },
-        {
-          "slot": 5,
-          "itemId": "1531",
-          "name": "Runeblade",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1531.jpg",
-          "description": "Monster kills boost MATK"
-        },
-        {
-          "slot": 6,
-          "itemId": "1244",
-          "name": "Breakthrough Robe",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1244.jpg",
-          "description": "Converts Health into M. Pierce"
-        }
-      ]
-    },
-    {
-      "id": "tank",
-      "label": "Tank",
-      "position": "Position 3",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1532",
-          "name": "Giant's Grip",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1532.jpg",
-          "description": "Monster kills boost Health"
-        },
-        {
-          "slot": 2,
-          "itemId": "1422",
-          "name": "Boots of Resistance",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
-          "description": "Shortens CC"
-        },
-        {
-          "slot": 3,
-          "itemId": "1240",
-          "name": "Insatiable Tome",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1240.jpg",
-          "description": "Magical Lifesteal"
-        },
-        {
-          "slot": 4,
-          "itemId": "1244",
-          "name": "Breakthrough Robe",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1244.jpg",
-          "description": "Converts Health into M. Pierce"
-        },
-        {
-          "slot": 5,
-          "itemId": "1237",
-          "name": "Augur's Word",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1237.jpg",
-          "description": "Offense & defense"
-        },
-        {
-          "slot": 6,
-          "itemId": "1231",
-          "name": "Void Staff",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1231.jpg",
-          "description": "Anti-tank"
-        }
-      ]
-    }
+  "metaAnalysisZh": [
+    "露娜 勝率 48.84%（Camp HOK，2026-06-07）",
+    "選取率 0.58%",
+    "禁用率 0.32%",
+    "克制：Yuhuan、Lady Zhen、Heino；被克制：Athena、Augran、Fuzi"
   ],
   "guide": {
     "overview": "Luna is a Medium Mage (Jungling) on Honor of Kings Global. Camp HOK ranks them Tier B with 48.9% win rate and 0.5% pick rate as of 2026-06-05.",

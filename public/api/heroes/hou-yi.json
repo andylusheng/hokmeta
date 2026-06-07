@@ -2,100 +2,583 @@
   "id": "hou-yi",
   "slug": "hou-yi",
   "name": "Hou Yi",
+  "nameZh": "后羿",
   "role": "Marksman",
   "roles": "Marksman",
+  "rolesZh": "射手",
   "lane": "Farm Lane",
+  "laneZh": "發育路",
   "difficulty": "Medium",
   "tier": "S+",
-  "winRate": 49.28,
-  "pickRate": 2.85,
-  "banRate": 0.2,
-  "rank": 85,
+  "winRate": 48.71,
+  "pickRate": 2.77,
+  "banRate": 0.19,
+  "rank": 90,
   "avatar": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/S5isJokI.png",
   "avatarFallback": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/169/169.jpg",
+  "heroCover": "https://camp.honorofkings.com/social/game/src/image_hero_cover_1275*718/Dxizap1o.jpg",
   "tencentId": 169,
-  "dataSource": "Camp HOK + HoKStats.gg (intl)",
-  "dataUpdated": "2026-06-05",
+  "dataSource": "Camp HOK bilingual (primary)",
+  "dataUpdated": "2026-06-07",
   "skills": [
     {
       "slot": "passive",
       "name": "Chastising Shot",
-      "description": "Basic Attack hits grant Attack Speed and 1 stack of enhancement.At 3 stacks, enhanced Basic Attacks shoot 3 arrows, dealing more totaldamage than a regular Basic Attack.",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/169/16900.png",
-      "cooldown": null
+      "description": "Each Basic Attack hit increases Attack Speed. When the effect is fully stacked, he shoots several shots with each Basic Attack.",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/16900.png",
+      "cooldown": "1s"
     },
     {
       "slot": "skill1",
       "name": "Arrow Volley",
-      "description": "Enhances Basic Attacks for 5s to deal heavy damage. At the same time, HouYi shoots arrows to hit two other enemies in front of him, dealing 50%damage.",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/169/16910.png",
-      "cooldown": null
+      "description": "Increases Basic Attack damage and shoots extra arrows to hit multiple enemies.",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/16910.png",
+      "cooldown": "10s"
     },
     {
       "slot": "skill2",
       "name": "Afterglow",
-      "description": "Inflicts damage and slow on enemies in the target area while also gaining vision of the area.",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/169/16920.png",
-      "cooldown": null
+      "description": "Inflicts area damage and slow.",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/16920.png",
+      "cooldown": "7s"
     },
     {
       "slot": "ultimate",
       "name": "Burning Sun Arrow",
-      "description": "Fires an arrow in the target direction. Deals AoE damage upon hitting a hero inflicting stun and slow.",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/169/16930.png",
-      "cooldown": null
+      "description": "Shoots a long-range explosive arrow that stuns the target on hit, dealing area damage and inflicting slow.",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/16930.png",
+      "cooldown": "45s"
+    }
+  ],
+  "skillsZh": [
+    {
+      "slot": "passive",
+      "name": "懲戒射擊",
+      "description": "普攻每次命中都會增加攻擊速度，效果疊滿後會觸發連射。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/16900.png",
+      "cooldown": "1s"
+    },
+    {
+      "slot": "skill1",
+      "name": "多重箭矢",
+      "description": "增加普攻傷害並發射額外箭矢攻擊多位敵人。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/16910.png",
+      "cooldown": "10s"
+    },
+    {
+      "slot": "skill2",
+      "name": "落日餘暉",
+      "description": "造成範圍傷害和減速。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/16920.png",
+      "cooldown": "7s"
+    },
+    {
+      "slot": "ultimate",
+      "name": "灼日之矢",
+      "description": "超遠射程的爆炸箭，命中後造成對方暈眩、範圍傷害和減速。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/16930.png",
+      "cooldown": "45s"
     }
   ],
   "build": [
     {
       "slot": 1,
-      "itemId": "1136",
-      "name": "Shadow Ripper",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1136.jpg",
-      "description": "Crits boost ASPD"
+      "itemId": "1126",
+      "name": "Doomsday",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1126.png",
+      "description": "PATK +40, ASPD +20%, HP +500, Lifesteal +20%\nBoosts BA damage"
     },
     {
       "slot": 2,
-      "itemId": "1425",
-      "name": "Boots of Dexterity",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1425.jpg",
-      "description": "Boosts ASPD"
+      "itemId": "1155",
+      "name": "Daybreaker's Virtue",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1155.png",
+      "description": "PATK +75, ASPD +30%, Crit Rate +15%\nGreat for marksmen"
     },
     {
       "slot": 3,
-      "itemId": "1133",
-      "name": "Eternity Blade",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1133.jpg",
-      "description": "High crit damage"
+      "itemId": "1141",
+      "name": "Sunchaser",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1141.png",
+      "description": "PATK +40, ASPD +20%, Crit Rate +15%, MSPD +7.5%\nBoosts attack range"
     },
     {
       "slot": 4,
-      "itemId": "1132",
-      "name": "Bloodweeper",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1132.jpg",
-      "description": "Physical Lifesteal"
+      "itemId": "1337",
+      "name": "Sage's Sanctuary",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+      "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
     },
     {
       "slot": 5,
-      "itemId": "1141",
-      "name": "Sunchaser",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1141.jpg",
-      "description": "Boosts attack range"
+      "itemId": "1127",
+      "name": "Destiny",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+      "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
     },
     {
       "slot": 6,
+      "itemId": "1156",
+      "name": "Haste - Sunpool",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1156.png",
+      "description": "PATK +40, ASPD +20%, Crit Rate +15%, MSPD +7.5%\nBoosts attack range"
+    }
+  ],
+  "buildZh": [
+    {
+      "slot": 1,
+      "itemId": "1126",
+      "name": "末世",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1126.png",
+      "description": "+40點攻擊+20%攻速+500點生命值+20%吸血\n普攻額外傷害"
+    },
+    {
+      "slot": 2,
       "itemId": "1155",
-      "name": "Daybreaker's Virtue",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1155.jpg",
-      "description": "Great for marksmen"
+      "name": "仁者破曉",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1155.png",
+      "description": "+75點攻擊+30%攻速+15%暴擊\n射手神裝"
+    },
+    {
+      "slot": 3,
+      "itemId": "1141",
+      "name": "逐日之弓",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1141.png",
+      "description": "+40點攻擊+20%攻速+15%暴擊+7.5%移速\n攻擊距離變遠"
+    },
+    {
+      "slot": 4,
+      "itemId": "1337",
+      "name": "賢者的庇護",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+      "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+    },
+    {
+      "slot": 5,
+      "itemId": "1127",
+      "name": "名刀・司命",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+      "description": "+75點攻擊+15%攻速+500點生命值\n保命"
+    },
+    {
+      "slot": 6,
+      "itemId": "1156",
+      "name": "迅疾・日淵",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1156.png",
+      "description": "+40點攻擊+20%攻速+15%暴擊+7.5%移速\n攻擊距離變遠"
+    }
+  ],
+  "builds": [
+    {
+      "id": "camp-0",
+      "label": "Dps Alto",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1126",
+          "name": "Doomsday",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1126.png",
+          "description": "PATK +40, ASPD +20%, HP +500, Lifesteal +20%\nBoosts BA damage"
+        },
+        {
+          "slot": 2,
+          "itemId": "1155",
+          "name": "Daybreaker's Virtue",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1155.png",
+          "description": "PATK +75, ASPD +30%, Crit Rate +15%\nGreat for marksmen"
+        },
+        {
+          "slot": 3,
+          "itemId": "1141",
+          "name": "Sunchaser",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1141.png",
+          "description": "PATK +40, ASPD +20%, Crit Rate +15%, MSPD +7.5%\nBoosts attack range"
+        },
+        {
+          "slot": 4,
+          "itemId": "1337",
+          "name": "Sage's Sanctuary",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
+        },
+        {
+          "slot": 5,
+          "itemId": "1127",
+          "name": "Destiny",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
+        },
+        {
+          "slot": 6,
+          "itemId": "1156",
+          "name": "Haste - Sunpool",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1156.png",
+          "description": "PATK +40, ASPD +20%, Crit Rate +15%, MSPD +7.5%\nBoosts attack range"
+        }
+      ]
+    },
+    {
+      "id": "camp-1",
+      "label": "Burstlifesteal",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1155",
+          "name": "Daybreaker's Virtue",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1155.png",
+          "description": "PATK +75, ASPD +30%, Crit Rate +15%\nGreat for marksmen"
+        },
+        {
+          "slot": 2,
+          "itemId": "1132",
+          "name": "Bloodweeper",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1132.png",
+          "description": "PATK +85, Lifesteal +25%, HP +500\nPhysical Lifesteal"
+        },
+        {
+          "slot": 3,
+          "itemId": "1141",
+          "name": "Sunchaser",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1141.png",
+          "description": "PATK +40, ASPD +20%, Crit Rate +15%, MSPD +7.5%\nBoosts attack range"
+        },
+        {
+          "slot": 4,
+          "itemId": "1337",
+          "name": "Sage's Sanctuary",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
+        },
+        {
+          "slot": 5,
+          "itemId": "1156",
+          "name": "Haste - Sunpool",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1156.png",
+          "description": "PATK +40, ASPD +20%, Crit Rate +15%, MSPD +7.5%\nBoosts attack range"
+        },
+        {
+          "slot": 6,
+          "itemId": "1127",
+          "name": "Destiny",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
+        }
+      ]
+    },
+    {
+      "id": "camp-2",
+      "label": "YT Nganba Playz",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1126",
+          "name": "Doomsday",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1126.png",
+          "description": "PATK +40, ASPD +20%, HP +500, Lifesteal +20%\nBoosts BA damage"
+        },
+        {
+          "slot": 2,
+          "itemId": "1155",
+          "name": "Daybreaker's Virtue",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1155.png",
+          "description": "PATK +75, ASPD +30%, Crit Rate +15%\nGreat for marksmen"
+        },
+        {
+          "slot": 3,
+          "itemId": "1141",
+          "name": "Sunchaser",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1141.png",
+          "description": "PATK +40, ASPD +20%, Crit Rate +15%, MSPD +7.5%\nBoosts attack range"
+        },
+        {
+          "slot": 4,
+          "itemId": "1337",
+          "name": "Sage's Sanctuary",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
+        },
+        {
+          "slot": 5,
+          "itemId": "1127",
+          "name": "Destiny",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
+        },
+        {
+          "slot": 6,
+          "itemId": "1156",
+          "name": "Haste - Sunpool",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1156.png",
+          "description": "PATK +40, ASPD +20%, Crit Rate +15%, MSPD +7.5%\nBoosts attack range"
+        }
+      ]
+    },
+    {
+      "id": "camp-3",
+      "label": "Core Items",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1126",
+          "name": "Doomsday",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1126.png",
+          "description": "PATK +40, ASPD +20%, HP +500, Lifesteal +20%\nBoosts BA damage"
+        },
+        {
+          "slot": 2,
+          "itemId": "1155",
+          "name": "Daybreaker's Virtue",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1155.png",
+          "description": "PATK +75, ASPD +30%, Crit Rate +15%\nGreat for marksmen"
+        },
+        {
+          "slot": 3,
+          "itemId": "1141",
+          "name": "Sunchaser",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1141.png",
+          "description": "PATK +40, ASPD +20%, Crit Rate +15%, MSPD +7.5%\nBoosts attack range"
+        },
+        {
+          "slot": 4,
+          "itemId": "1337",
+          "name": "Sage's Sanctuary",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
+        },
+        {
+          "slot": 5,
+          "itemId": "1127",
+          "name": "Destiny",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
+        },
+        {
+          "slot": 6,
+          "itemId": "1156",
+          "name": "Haste - Sunpool",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1156.png",
+          "description": "PATK +40, ASPD +20%, Crit Rate +15%, MSPD +7.5%\nBoosts attack range"
+        }
+      ]
+    }
+  ],
+  "buildsZh": [
+    {
+      "id": "camp-0",
+      "label": "Dps Alto",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1126",
+          "name": "末世",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1126.png",
+          "description": "+40點攻擊+20%攻速+500點生命值+20%吸血\n普攻額外傷害"
+        },
+        {
+          "slot": 2,
+          "itemId": "1155",
+          "name": "仁者破曉",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1155.png",
+          "description": "+75點攻擊+30%攻速+15%暴擊\n射手神裝"
+        },
+        {
+          "slot": 3,
+          "itemId": "1141",
+          "name": "逐日之弓",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1141.png",
+          "description": "+40點攻擊+20%攻速+15%暴擊+7.5%移速\n攻擊距離變遠"
+        },
+        {
+          "slot": 4,
+          "itemId": "1337",
+          "name": "賢者的庇護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+        },
+        {
+          "slot": 5,
+          "itemId": "1127",
+          "name": "名刀・司命",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "+75點攻擊+15%攻速+500點生命值\n保命"
+        },
+        {
+          "slot": 6,
+          "itemId": "1156",
+          "name": "迅疾・日淵",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1156.png",
+          "description": "+40點攻擊+20%攻速+15%暴擊+7.5%移速\n攻擊距離變遠"
+        }
+      ]
+    },
+    {
+      "id": "camp-1",
+      "label": "Burstlifesteal",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1155",
+          "name": "仁者破曉",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1155.png",
+          "description": "+75點攻擊+30%攻速+15%暴擊\n射手神裝"
+        },
+        {
+          "slot": 2,
+          "itemId": "1132",
+          "name": "泣血之刃",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1132.png",
+          "description": "+85點攻擊+25%吸血+500點生命值\n物理吸血"
+        },
+        {
+          "slot": 3,
+          "itemId": "1141",
+          "name": "逐日之弓",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1141.png",
+          "description": "+40點攻擊+20%攻速+15%暴擊+7.5%移速\n攻擊距離變遠"
+        },
+        {
+          "slot": 4,
+          "itemId": "1337",
+          "name": "賢者的庇護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+        },
+        {
+          "slot": 5,
+          "itemId": "1156",
+          "name": "迅疾・日淵",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1156.png",
+          "description": "+40點攻擊+20%攻速+15%暴擊+7.5%移速\n攻擊距離變遠"
+        },
+        {
+          "slot": 6,
+          "itemId": "1127",
+          "name": "名刀・司命",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "+75點攻擊+15%攻速+500點生命值\n保命"
+        }
+      ]
+    },
+    {
+      "id": "camp-2",
+      "label": "YT Nganba Playz",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1126",
+          "name": "末世",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1126.png",
+          "description": "+40點攻擊+20%攻速+500點生命值+20%吸血\n普攻額外傷害"
+        },
+        {
+          "slot": 2,
+          "itemId": "1155",
+          "name": "仁者破曉",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1155.png",
+          "description": "+75點攻擊+30%攻速+15%暴擊\n射手神裝"
+        },
+        {
+          "slot": 3,
+          "itemId": "1141",
+          "name": "逐日之弓",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1141.png",
+          "description": "+40點攻擊+20%攻速+15%暴擊+7.5%移速\n攻擊距離變遠"
+        },
+        {
+          "slot": 4,
+          "itemId": "1337",
+          "name": "賢者的庇護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+        },
+        {
+          "slot": 5,
+          "itemId": "1127",
+          "name": "名刀・司命",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "+75點攻擊+15%攻速+500點生命值\n保命"
+        },
+        {
+          "slot": 6,
+          "itemId": "1156",
+          "name": "迅疾・日淵",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1156.png",
+          "description": "+40點攻擊+20%攻速+15%暴擊+7.5%移速\n攻擊距離變遠"
+        }
+      ]
+    },
+    {
+      "id": "camp-3",
+      "label": "Core Items",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1126",
+          "name": "末世",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1126.png",
+          "description": "+40點攻擊+20%攻速+500點生命值+20%吸血\n普攻額外傷害"
+        },
+        {
+          "slot": 2,
+          "itemId": "1155",
+          "name": "仁者破曉",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1155.png",
+          "description": "+75點攻擊+30%攻速+15%暴擊\n射手神裝"
+        },
+        {
+          "slot": 3,
+          "itemId": "1141",
+          "name": "逐日之弓",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1141.png",
+          "description": "+40點攻擊+20%攻速+15%暴擊+7.5%移速\n攻擊距離變遠"
+        },
+        {
+          "slot": 4,
+          "itemId": "1337",
+          "name": "賢者的庇護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+        },
+        {
+          "slot": 5,
+          "itemId": "1127",
+          "name": "名刀・司命",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "+75點攻擊+15%攻速+500點生命值\n保命"
+        },
+        {
+          "slot": 6,
+          "itemId": "1156",
+          "name": "迅疾・日淵",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1156.png",
+          "description": "+40點攻擊+20%攻速+15%暴擊+7.5%移速\n攻擊距離變遠"
+        }
+      ]
     }
   ],
   "arcana": [
-    "Dominator"
+    "Lvl 5: Red Moon",
+    "Lvl 5: Calamity",
+    "Lvl 5: Hunt"
+  ],
+  "arcanaZh": [
+    "5級：紅月",
+    "5級：禍源",
+    "5級：狩獵"
   ],
   "spells": [
-    "Haste",
     "Flash"
+  ],
+  "spellsZh": [
+    "閃現"
   ],
   "counters": [
     "Cirrus",
@@ -107,436 +590,173 @@
     "Master Luban"
   ],
   "tips": [
-    "Hou Yi is a Medium Marksman (Farm Lane) on Honor of Kings Global. Camp HOK ranks them Tier S+ with 49.3% win rate and 2.9% pick rate as of 2026-06-05.",
-    "Best build path: Shadow Ripper → Boots of Dexterity → Eternity Blade → Bloodweeper → Sunchaser → Daybreaker's Virtue.",
-    "Run Dominator for stats that match Hou Yi's Marksman kit. Take Haste & Flash — swap to Purify against heavy CC or Smite when jungling.",
-    "Standard trade: Arrow Volley → Afterglow → Burning Sun Arrow → weave basic attacks. Weave basic attacks between skill casts for passive value.",
-    "Laning: Last-hit safely until first core item. Ping jungler for river vision; never face-check brush without minion cover.",
-    "Teamfight: Position behind frontline; attack closest safe target. Join fight only after enemy dive cooldowns are used.",
-    "Hou Yi excels into Cirrus, Mulan, Xuance. Avoid blind picking into Agudo, Master Luban without team peel.",
-    "Hou Yi is a Tier S+ staple in high-elo (Diamond+) on the international server — worth mastering for climb. Pick rate 2.9% — frequently seen in ranked; learn the matchup even if you do not main Hou Yi."
+    "Hou Yi (Marksman): Tier S+ — 48.71% WR (Camp HOK).",
+    "Lane: Farm Lane.",
+    "Build: Doomsday, Daybreaker's Virtue, Sunchaser."
+  ],
+  "tipsZh": [
+    "后羿（發育路）：梯度 S+，勝率 48.71%（Camp HOK）。",
+    "出裝：末世、仁者破曉、逐日之弓."
   ],
   "patchHistory": [
     {
-      "version": "Live meta",
-      "change": "Camp HOK — WR 49.3%, pick 2.9%, ban 0.2%, tier S+."
+      "seasonId": "13",
+      "seasonName": "S13",
+      "versionName": "2026/02/05",
+      "publishedAt": "2026-02-05T01:00:00Z",
+      "isCurrent": false,
+      "tag": "Stat Buffs",
+      "change": "Increased skill damage",
+      "detail": "",
+      "version": "S13"
     },
     {
-      "version": "Matchups",
-      "change": "Strong into Cirrus, Mulan, Xuance · Weak into Agudo, Master Luban."
+      "seasonId": "13",
+      "seasonName": "S13",
+      "versionName": "2025/12/16",
+      "publishedAt": "2025-12-16T01:00:00Z",
+      "isCurrent": false,
+      "tag": "Stat Changes",
+      "change": "Adjusted Skill Damage",
+      "detail": "",
+      "version": "S13"
     },
     {
-      "version": "High rank",
-      "change": "Hou Yi is a Tier S+ staple in high-elo (Diamond+) on the international server — worth mastering for climb. Pick rate 2.9% — frequently seen in ranked; learn the matchup even if you do not main Hou Yi."
+      "seasonId": "11",
+      "seasonName": "S11",
+      "versionName": "20250801",
+      "publishedAt": "2025-08-01T01:00:00Z",
+      "isCurrent": false,
+      "tag": "Stat Nerfs",
+      "change": "Skill Damage Adjustments",
+      "detail": "",
+      "version": "S11"
+    },
+    {
+      "seasonId": "10",
+      "seasonName": "S10",
+      "versionName": "20250515",
+      "publishedAt": "2025-05-15T02:03:23Z",
+      "isCurrent": false,
+      "tag": "Stat Nerfs",
+      "change": "Passive Attack Speed reduced",
+      "detail": "",
+      "version": "S10"
+    },
+    {
+      "seasonId": "6",
+      "seasonName": "S6",
+      "versionName": "20240725",
+      "publishedAt": "2024-07-25T02:20:21Z",
+      "isCurrent": false,
+      "tag": "Stat Nerfs",
+      "change": "Increased Basic Attack interval slightly",
+      "detail": "Hou Yi's stable Basic Attack and ability to target multiple enemies at once make it hard for other marksmen to compete with him, so we've lowered the frequency of his Basic Attacks slightly to give his enemies time to catch their breath.",
+      "version": "S6"
+    }
+  ],
+  "patchHistoryZh": [
+    {
+      "seasonId": "13",
+      "seasonName": "S13",
+      "versionName": "2026/02/05",
+      "publishedAt": "2026-02-05T01:00:00Z",
+      "isCurrent": false,
+      "tag": "數值增強",
+      "change": "提升技能傷害",
+      "detail": "",
+      "version": "S13"
+    },
+    {
+      "seasonId": "13",
+      "seasonName": "S13",
+      "versionName": "2025/12/16",
+      "publishedAt": "2025-12-16T01:00:00Z",
+      "isCurrent": false,
+      "tag": "數值調整",
+      "change": "調整技能傷害",
+      "detail": "",
+      "version": "S13"
+    },
+    {
+      "seasonId": "11",
+      "seasonName": "S11",
+      "versionName": "20250801",
+      "publishedAt": "2025-08-01T01:00:00Z",
+      "isCurrent": false,
+      "tag": "數值削弱",
+      "change": "技能傷害調整",
+      "detail": "",
+      "version": "S11"
+    },
+    {
+      "seasonId": "10",
+      "seasonName": "S10",
+      "versionName": "20250515",
+      "publishedAt": "2025-05-15T02:03:23Z",
+      "isCurrent": false,
+      "tag": "數值削弱",
+      "change": "被動攻速降低",
+      "detail": "",
+      "version": "S10"
+    },
+    {
+      "seasonId": "6",
+      "seasonName": "S6",
+      "versionName": "20240725",
+      "publishedAt": "2024-07-25T02:20:21Z",
+      "isCurrent": false,
+      "tag": "數值削弱",
+      "change": "略微延長普攻的間隔",
+      "detail": "后羿穩定的普攻輸出能力和多目標輸出能力讓其他射手難以抗衡，因此我們稍微降低了他的攻擊頻率，好留給對手一些喘息空間。",
+      "version": "S6"
     }
   ],
   "faqs": [
     {
       "id": "faq-good-season",
-      "question": "Is Hou Yi good in the current meta?",
-      "answer": "Hou Yi is Tier S+ Marksman with 49.3% win rate, 2.9% pick rate, and 0.2% ban rate on Honor of Kings Global (Camp HOK, 2026-06-05). Strong meta pick for ranked."
+      "question": "Is Hou Yi good in current season?",
+      "answer": "Hou Yi is Tier S+ Marksman with 48.71% win rate, 2.77% pick rate, and 0.19% ban rate (Camp HOK international)."
     },
     {
       "id": "faq-best-build",
       "question": "What is the best Hou Yi build?",
-      "answer": "Core item path: Shadow Ripper, Boots of Dexterity, Eternity Blade, Bloodweeper, Sunchaser, Daybreaker's Virtue. Run Dominator arcana with Haste & Flash. Switch to alternate build presets on this page for jungle, clash, or late-game setups."
+      "answer": "Recommended: Doomsday, Daybreaker's Virtue, Sunchaser, Sage's Sanctuary, Destiny, Haste - Sunpool."
     },
     {
       "id": "faq-counter",
       "question": "How to counter Hou Yi?",
-      "answer": "Pick Agudo, Master Luban into Hou Yi. Deny Farm Lane resources early and force fights before Hou Yi completes core items. Hou Yi struggles when the enemy can dive and burst them."
+      "answer": "Pick Agudo, Master Luban. Strong into Cirrus, Mulan, Xuance."
+    }
+  ],
+  "faqsZh": [
+    {
+      "id": "faq-good-season",
+      "question": "后羿 這版本適合上分嗎？",
+      "answer": "后羿 為 S+ 梯度，勝率 48.71%、選取 2.77%、禁用 0.19%（Camp HOK 國際服）。"
     },
     {
-      "id": "faq-strong-into",
-      "question": "Who does Hou Yi counter?",
-      "answer": "Hou Yi is strong into Cirrus, Mulan, Xuance according to HoKStats matchup data and role matchups on the global server. Draft Hou Yi when the enemy relies on these heroes in the Farm Lane lane."
+      "id": "faq-best-build",
+      "question": "后羿 出裝怎麼搭配？",
+      "answer": "推薦：末世、仁者破曉、逐日之弓、賢者的庇護、名刀・司命、迅疾・日淵."
     },
     {
-      "id": "faq-high-rank",
-      "question": "Is Hou Yi good in high rank / Diamond+?",
-      "answer": "Hou Yi is a Tier S+ staple in high-elo (Diamond+) on the international server — worth mastering for climb. Pick rate 2.9% — frequently seen in ranked; learn the matchup even if you do not main Hou Yi."
-    },
-    {
-      "id": "faq-lane",
-      "question": "What lane should Hou Yi play?",
-      "answer": "Hou Yi is tagged Farm Lane in Camp export (Marksman). Last-hit safely until first core item. Ping jungler for river vision; never face-check brush without minion cover."
-    },
-    {
-      "id": "faq-arcana",
-      "question": "Best arcana and spells for Hou Yi?",
-      "answer": "Recommended: Dominator arcana. Battle spell: Haste & Flash. Adjust Purify/Execute based on enemy dive and jungle need."
-    },
-    {
-      "id": "faq-vs-peer",
-      "question": "Hou Yi or Marco Polo — which is better?",
-      "answer": "Hou Yi vs Marco Polo (Marksman, Tier S+): Marco Polo is 2.1% pick / 50.1% WR. Marco Polo wins 0.8% more often globally. Choose Hou Yi when you need Farm Lane identity; choose Marco Polo for Farm Lane comfort."
-    },
-    {
-      "id": "faq-ban",
-      "question": "Should I ban Hou Yi?",
-      "answer": "Optional ban when enemy spams Marksman; 2.9% pick rate but only 0.2% ban rate."
+      "id": "faq-counter",
+      "question": "怎麼克制 后羿？",
+      "answer": "可選 Agudo、Master Luban。后羿 克制 Cirrus、Mulan、Xuance。"
     }
   ],
   "metaAnalysis": [
-    "Hou Yi — 49.3% WR, 2.9% pick, 0.2% ban (Camp HOK 2026-06-05).",
-    "Tier S+ Marksman · Farm Lane · difficulty Medium.",
-    "Hou Yi is a Tier S+ staple in high-elo (Diamond+) on the international server — worth mastering for climb. Pick rate 2.9% — frequently seen in ranked; learn the matchup even if you do not main Hou Yi.",
-    "Matchups: strong into Cirrus, Mulan, Xuance; weak into Agudo, Master Luban.",
-    "Hou Yi vs Marco Polo (Marksman, Tier S+): Marco Polo is 2.1% pick / 50.1% WR. Marco Polo wins 0.8% more often globally. Choose Hou Yi when you need Farm Lane identity; choose Marco Polo for Farm Lane comfort.",
-    "Hou Yi vs Lady Sun (Marksman, Tier S): Lady Sun is 2.1% pick / 48.3% WR. Hou Yi has +1.0% WR vs Lady Sun in Camp data. Choose Hou Yi when you need Farm Lane identity; choose Lady Sun for Farm Lane comfort.",
-    "Draft tip: first-pick or ban priority in ranked."
+    "Hou Yi win rate 48.71% (Camp HOK, 2026-06-07).",
+    "Pick rate 2.77%.",
+    "Ban rate 0.19%.",
+    "Counters: Cirrus, Mulan, Xuance. Weak into: Agudo, Master Luban."
   ],
-  "builds": [
-    {
-      "id": "recommended",
-      "label": "Recommended",
-      "position": null,
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1136",
-          "name": "Shadow Ripper",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1136.jpg",
-          "description": "Crits boost ASPD"
-        },
-        {
-          "slot": 2,
-          "itemId": "1425",
-          "name": "Boots of Dexterity",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1425.jpg",
-          "description": "Boosts ASPD"
-        },
-        {
-          "slot": 3,
-          "itemId": "1133",
-          "name": "Eternity Blade",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1133.jpg",
-          "description": "High crit damage"
-        },
-        {
-          "slot": 4,
-          "itemId": "1132",
-          "name": "Bloodweeper",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1132.jpg",
-          "description": "Physical Lifesteal"
-        },
-        {
-          "slot": 5,
-          "itemId": "1141",
-          "name": "Sunchaser",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1141.jpg",
-          "description": "Boosts attack range"
-        },
-        {
-          "slot": 6,
-          "itemId": "1155",
-          "name": "Daybreaker's Virtue",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1155.jpg",
-          "description": "Great for marksmen"
-        }
-      ]
-    },
-    {
-      "id": "dps-alto",
-      "label": "Dps Alto",
-      "position": "Position 4",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1425",
-          "name": "Boots of Dexterity",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1425.jpg",
-          "description": "Boosts ASPD"
-        },
-        {
-          "slot": 2,
-          "itemId": "1123",
-          "name": "Twinblades of Destruction",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1123.jpg",
-          "description": "ASPD +15%, MSPD +7.5%"
-        },
-        {
-          "slot": 3,
-          "itemId": "1114",
-          "name": "Vampiric Scythe",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1114.jpg",
-          "description": "Physical Lifesteal"
-        },
-        {
-          "slot": 4,
-          "itemId": "1136",
-          "name": "Shadow Ripper",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1136.jpg",
-          "description": "Crits boost ASPD"
-        },
-        {
-          "slot": 5,
-          "itemId": "1133",
-          "name": "Eternity Blade",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1133.jpg",
-          "description": "High crit damage"
-        },
-        {
-          "slot": 6,
-          "itemId": "1126",
-          "name": "Doomsday",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1126.jpg",
-          "description": "Boosts BA damage"
-        }
-      ]
-    },
-    {
-      "id": "burstlifesteal",
-      "label": "Burstlifesteal",
-      "position": "Position 4",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1112",
-          "name": "Dagger",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1112.jpg",
-          "description": "Attack Speed"
-        },
-        {
-          "slot": 2,
-          "itemId": "1425",
-          "name": "Boots of Dexterity",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1425.jpg",
-          "description": "Boosts ASPD"
-        },
-        {
-          "slot": 3,
-          "itemId": "1136",
-          "name": "Shadow Ripper",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1136.jpg",
-          "description": "Crits boost ASPD"
-        },
-        {
-          "slot": 4,
-          "itemId": "1133",
-          "name": "Eternity Blade",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1133.jpg",
-          "description": "High crit damage"
-        },
-        {
-          "slot": 5,
-          "itemId": "1155",
-          "name": "Daybreaker's Virtue",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1155.jpg",
-          "description": "Great for marksmen"
-        },
-        {
-          "slot": 6,
-          "itemId": "1132",
-          "name": "Bloodweeper",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1132.jpg",
-          "description": "Physical Lifesteal"
-        }
-      ]
-    },
-    {
-      "id": "anti-healing",
-      "label": "Anti Healing",
-      "position": "Position 4",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1425",
-          "name": "Boots of Dexterity",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1425.jpg",
-          "description": "Boosts ASPD"
-        },
-        {
-          "slot": 2,
-          "itemId": "1159",
-          "name": "Tempest",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1159.jpg",
-          "description": "Stacks Attack Speed & Movement Speed"
-        },
-        {
-          "slot": 3,
-          "itemId": "1136",
-          "name": "Shadow Ripper",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1136.jpg",
-          "description": "Crits boost ASPD"
-        },
-        {
-          "slot": 4,
-          "itemId": "1133",
-          "name": "Eternity Blade",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1133.jpg",
-          "description": "High crit damage"
-        },
-        {
-          "slot": 5,
-          "itemId": "1114",
-          "name": "Vampiric Scythe",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1114.jpg",
-          "description": "Physical Lifesteal"
-        },
-        {
-          "slot": 6,
-          "itemId": "11210",
-          "name": "Mortal Punisher",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/11210.jpg",
-          "description": "Lowers Health regen"
-        }
-      ]
-    },
-    {
-      "id": "popular",
-      "label": "Popular",
-      "position": "Position 4",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1425",
-          "name": "Boots of Dexterity",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1425.jpg",
-          "description": "Boosts ASPD"
-        },
-        {
-          "slot": 2,
-          "itemId": "1135",
-          "name": "Sparkforged Dagger",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1135.jpg",
-          "description": "Chain lightning BA"
-        },
-        {
-          "slot": 3,
-          "itemId": "1132",
-          "name": "Bloodweeper",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1132.jpg",
-          "description": "Physical Lifesteal"
-        },
-        {
-          "slot": 4,
-          "itemId": "1136",
-          "name": "Shadow Ripper",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1136.jpg",
-          "description": "Crits boost ASPD"
-        },
-        {
-          "slot": 5,
-          "itemId": "1133",
-          "name": "Eternity Blade",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1133.jpg",
-          "description": "High crit damage"
-        },
-        {
-          "slot": 6,
-          "itemId": "11311",
-          "name": "Pure Sky",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/11311.jpg",
-          "description": "Temp. damage reduction"
-        }
-      ]
-    },
-    {
-      "id": "build",
-      "label": "BUILD",
-      "position": "Position 4",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1425",
-          "name": "Boots of Dexterity",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1425.jpg",
-          "description": "Boosts ASPD"
-        },
-        {
-          "slot": 2,
-          "itemId": "1135",
-          "name": "Sparkforged Dagger",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1135.jpg",
-          "description": "Chain lightning BA"
-        },
-        {
-          "slot": 3,
-          "itemId": "1136",
-          "name": "Shadow Ripper",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1136.jpg",
-          "description": "Crits boost ASPD"
-        },
-        {
-          "slot": 4,
-          "itemId": "1126",
-          "name": "Doomsday",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1126.jpg",
-          "description": "Boosts BA damage"
-        },
-        {
-          "slot": 5,
-          "itemId": "1155",
-          "name": "Daybreaker's Virtue",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1155.jpg",
-          "description": "Great for marksmen"
-        },
-        {
-          "slot": 6,
-          "itemId": "1133",
-          "name": "Eternity Blade",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1133.jpg",
-          "description": "High crit damage"
-        }
-      ]
-    },
-    {
-      "id": "preset",
-      "label": "Preset",
-      "position": "Position 4",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1425",
-          "name": "Boots of Dexterity",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1425.jpg",
-          "description": "Boosts ASPD"
-        },
-        {
-          "slot": 2,
-          "itemId": "1135",
-          "name": "Sparkforged Dagger",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1135.jpg",
-          "description": "Chain lightning BA"
-        },
-        {
-          "slot": 3,
-          "itemId": "1136",
-          "name": "Shadow Ripper",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1136.jpg",
-          "description": "Crits boost ASPD"
-        },
-        {
-          "slot": 4,
-          "itemId": "1133",
-          "name": "Eternity Blade",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1133.jpg",
-          "description": "High crit damage"
-        },
-        {
-          "slot": 5,
-          "itemId": "1132",
-          "name": "Bloodweeper",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1132.jpg",
-          "description": "Physical Lifesteal"
-        },
-        {
-          "slot": 6,
-          "itemId": "1155",
-          "name": "Daybreaker's Virtue",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1155.jpg",
-          "description": "Great for marksmen"
-        }
-      ]
-    }
+  "metaAnalysisZh": [
+    "后羿 勝率 48.71%（Camp HOK，2026-06-07）",
+    "選取率 2.77%",
+    "禁用率 0.19%",
+    "克制：Cirrus、Mulan、Xuance；被克制：Agudo、Master Luban"
   ],
   "guide": {
     "overview": "Hou Yi is a Medium Marksman (Farm Lane) on Honor of Kings Global. Camp HOK ranks them Tier S+ with 49.3% win rate and 2.9% pick rate as of 2026-06-05.",

@@ -12,7 +12,7 @@ export function generateMetadata({
 }: {
   params: { slug: string };
 }) {
-  const article = getLearnArticle(params.slug);
+  const article = getLearnArticle(params.slug, 'zh-TW');
   if (!article) return {};
   return buildMetadata({
     title: defaultTitle(article.title),
@@ -28,7 +28,7 @@ export default function ZhTWLearnArticlePage({
 }: {
   params: { slug: string };
 }) {
-  const article = getLearnArticle(params.slug);
+  const article = getLearnArticle(params.slug, 'zh-TW');
   if (!article) notFound();
   return <LearnArticleView slug={params.slug} locale="zh-TW" />;
 }

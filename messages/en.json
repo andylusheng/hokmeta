@@ -1,12 +1,21 @@
 {
+  "brand": {
+    "slogan": "Honor of Kings Meta, Stats & Builds"
+  },
   "nav": {
     "heroes": "Heroes",
+    "heroBuilds": "Hero Builds",
     "tierList": "Tier List",
+    "items": "Items",
+    "arcana": "Arcana",
+    "patches": "Patches",
     "trends": "Trends",
     "bestHeroes": "Best Heroes",
     "tools": "Tools",
     "learn": "Learn",
-    "guides": "Guides",
+    "guides": "Meta Guides",
+    "climbPicks": "Climb Picks",
+    "comps": "Team Comps",
     "about": "About",
     "privacy": "Privacy",
     "api": "API"
@@ -27,11 +36,76 @@
     "contentEnglishNotice": "Skill descriptions and some guide text remain in English (international server data). UI and data interpretation are localized.",
     "contentPartialNotice": "Skill descriptions and item names stay in English. UI, FAQs, and meta notes are in Traditional Chinese.",
     "skillsEnglishNotice": "Skill and item names match the Honor of Kings Global client (English). Stats and builds are from Camp HOK international data.",
+    "skillsFallbackNotice": "Camp zh-TW skill data is not yet available for this hero. Showing English client text; stats and builds remain from Camp HOK.",
     "learnBodyNotice": "Article body uses live Camp HOK international stats (English hero names)."
   },
+  "items": {
+    "title": "Honor of Kings Items",
+    "subtitle": "{count} items from international server builds · Camp HOK data",
+    "hint": "See recommended builds on each hero page:",
+    "campSource": "Stats and descriptions from Camp HOK equip payloads (bilingual).",
+    "passiveTitle": "Passive effects",
+    "usedInBuilds": "Used in hero builds",
+    "filter": {
+      "all": "All",
+      "attack": "Attack",
+      "magic": "Magic",
+      "defense": "Defense",
+      "movement": "Movement",
+      "jungle": "Jungle",
+      "support": "Support"
+    }
+  },
+  "arcana": {
+    "title": "Honor of Kings Arcana",
+    "subtitle": "{count} runes used across meta builds",
+    "name": "Arcana",
+    "usedBy": "Hero builds",
+    "hint": "Per-hero arcana sets:",
+    "campSource": "Icons and stat lines from Camp HOK rune payloads (bilingual)."
+  },
+  "patches": {
+    "title": "Patch Notes & Balance",
+    "subtitle": "All hero balance entries from Camp HOK adjustData, grouped by season.",
+    "source": "Data source",
+    "heroChanges": "Recent hero changes",
+    "viewHero": "View hero",
+    "currentSeason": "Current season: {season}",
+    "current": "current",
+    "changeCount": "changes",
+    "noData": "No patch data yet — run sync-camp to pull Camp adjustData."
+  },
   "home": {
-    "title": "Honor of Kings Meta & Tier List",
-    "subtitle": "Data-driven guides for {count} international heroes — tier list, builds, counters, and ranked meta tools.",
+    "title": "HOKMeta — Honor of Kings Meta, Stats & Builds",
+    "subtitle": "HOKMeta is an independent Honor of Kings stats and database for the global server — {count} heroes, live tier lists, builds, items, and arcana from Camp HOK.",
+    "dbTitle": "Database overview",
+    "splashPatch": "Patch {season}",
+    "splashViewBuild": "View build",
+    "splashTierList": "Full tier list",
+    "statHeroes": "Heroes tracked",
+    "statItems": "Items database",
+    "statArcana": "Arcana runes",
+    "statLanes": "Lane tier lists",
+    "hubTierList": "All {count} heroes ranked S–D across 5 lanes · {season}",
+    "hubHeroes": "Browse {count} heroes — builds, counters, skills, arcana",
+    "hubItems": "{count} items — attack, magic, defense, boots & more",
+    "hubArcana": "{count} arcana runes in meta builds",
+    "hubGuides": "Hero guides — combos, counters, and climb tips",
+    "hubPatches": "Balance changes tracked every patch",
+    "recentUpdates": "Recently updated heroes",
+    "allPatches": "View all patch notes →",
+    "tagBuff": "Buff",
+    "tagNerf": "Nerf",
+    "tagAdjust": "Adjust",
+    "exclusiveGlobal": "Exclusive on Global",
+    "exclusiveDesc": "Heroes you'll only find on the international server.",
+    "browseAll": "Browse all heroes",
+    "viewAllHeroes": "View all {count} heroes →",
+    "laneTierPreview": "Tier list by lane",
+    "fullTierList": "Full tier list →",
+    "climbPicksTitle": "Best climb picks this patch",
+    "climbPicksDesc": "Top heroes per lane by meta score — tier, win rate, and pick pressure from Camp HOK.",
+    "climbPicksViewAll": "All climb picks →",
     "browseHeroes": "Browse Heroes",
     "heroTrends": "Hero Trends",
     "highestWr": "Highest Win Rate",
@@ -42,13 +116,14 @@
     "allGuides": "View all guides →"
   },
   "heroes": {
-    "title": "All Meta Heroes",
-    "subtitle": "{count} heroes grouped by role · sorted by win rate"
+    "title": "Honor of Kings Heroes",
+    "subtitle": "{count} heroes on the international server · builds, skills, counters & arcana"
   },
   "tierList": {
-    "title": "HOK Tier List",
-    "subtitle": "Grouped by primary role (Assassin → Warrior), then S+ / S / A / B within each role. Stats from Camp HOK.",
-    "roleHint": "Primary role · S+ through B · sorted by win rate within each tier"
+    "title": "Honor of Kings Tier List",
+    "subtitle": "All heroes ranked S / A / B / C / D across Clash, Jungle, Mid, Farm, and Roam — Camp HOK live stats.",
+    "roleHint": "Sorted by meta score within each tier band",
+    "jumpLanes": "Jump to lane"
   },
   "lanes": {
     "jungling": "Jungling",
@@ -93,7 +168,29 @@
     "tier": "Tier",
     "metaTitle": "{name} Build {season} — Items, Combos & Counters",
     "metaDesc": "{name} {lane} guide — best build, skill order, combos, counters, and arcana for Honor of Kings Global ({date}).",
-    "subtitle": "{lane} · Tier {tier} · {wr} WR · {season}"
+    "subtitle": "{lane} · Tier {tier} · {wr} WR · {season}",
+    "climbBadge": "Climb pick",
+    "climbLaneRank": "#{rank} in {lane}",
+    "climbIntro": "{name} is a recommended climb pick this patch:",
+    "climbDataNote": "Based on Camp HOK tier, win/pick/ban rates — not a guarantee in every draft.",
+    "climbViewAll": "See all lane climb picks"
+  },
+  "climb": {
+    "title": "Climb Picks — Best Heroes This Patch",
+    "subtitle": "Top 5 heroes per lane ranked by meta score (tier + pick/ban pressure + win rate). Camp HOK international data.",
+    "dataDisclaimer": "Recommendations use Camp HOK live stats. Pair with bans and your role pool — not official pro tier lists.",
+    "reasonTier": "Tier {tier} in current meta",
+    "reasonWr": "{wr} win rate — above average",
+    "reasonPick": "{pick} pick rate — popular in ranked",
+    "reasonBan": "{ban} ban rate — draft priority",
+    "reasonStable": "Tier {tier} with {wr} WR — stable lane pick"
+  },
+  "comps": {
+    "title": "Team Comps & Duos",
+    "subtitle": "Curated duo synergies and fast-push templates for ranked. Honest data sourcing — no fake duo win rates.",
+    "sourceNote": "{source} · Updated {updated}",
+    "duosTitle": "Featured duos",
+    "templatesTitle": "Fast-push templates"
   },
   "build": {
     "colOrder": "#",
@@ -343,15 +440,42 @@
   },
   "search": {
     "title": "Search Results",
-    "placeholder": "Search heroes...",
+    "placeholder": "Search heroes, items, guides…",
     "submit": "Go",
-    "label": "Search heroes",
+    "label": "Search",
+    "navigate": "navigate",
+    "open": "open",
     "empty": "Enter a hero name in the header search.",
     "noResults": "No heroes found.",
     "browseAll": "Browse all heroes",
     "resultCount": "{count} result(s) for \"{q}\"",
     "loading": "Loading…",
     "relatedTitle": "Related Searches"
+  },
+  "rationale": {
+    "title": "Build philosophy",
+    "passiveRef": "Passive:",
+    "arcanaHint": "Arcana:",
+    "summaryDefault": "{name} benefits from {priorities} — match items and runes to kit scaling.",
+    "arcanaDefault": "Prioritize runes that boost {priorities} for this hero's passive and skill scaling.",
+    "itemWhyMatch": "Fits {stat} priority — {passive}",
+    "itemWhyLabel": "{label} supports your {stat} focus.",
+    "itemWhyFallback": "Core item for slot {slot} in this build path.",
+    "arcanaWhyMatch": "{rune}: {stat} — {effect}",
+    "arcanaFallback": "Runes aligned with {priorities} for this hero.",
+    "stat": {
+      "aspd": "Attack speed",
+      "patk": "Physical attack",
+      "crit": "Crit",
+      "lifesteal": "Lifesteal",
+      "onhit": "On-hit",
+      "cdr": "Cooldown reduction",
+      "matk": "Magic attack",
+      "pen": "Penetration",
+      "tank": "Survivability",
+      "ms": "Movement speed",
+      "core": "core stats"
+    }
   },
   "notFound": {
     "title": "404",

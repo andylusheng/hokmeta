@@ -2,100 +2,583 @@
   "id": "agudo",
   "slug": "agudo",
   "name": "Agudo",
+  "nameZh": "阿古朵",
   "role": "Marksman",
   "roles": "Marksman",
+  "rolesZh": "射手",
   "lane": "Jungling",
+  "laneZh": "打野",
   "difficulty": "Medium",
   "tier": "B",
-  "winRate": 51.91,
-  "pickRate": 0.44,
+  "winRate": 52.26,
+  "pickRate": 0.45,
   "banRate": 0.04,
-  "rank": 24,
+  "rank": 17,
   "avatar": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/TYN9rh81.png",
   "avatarFallback": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/533/533.jpg",
+  "heroCover": "https://camp.honorofkings.com/social/game/src/image_hero_cover_1275*718/ka9RlzTk.jpg",
   "tencentId": 533,
-  "dataSource": "Camp HOK + HoKStats.gg (intl)",
-  "dataUpdated": "2026-06-05",
+  "dataSource": "Camp HOK bilingual (primary)",
+  "dataUpdated": "2026-06-07",
   "skills": [
     {
       "slot": "passive",
       "name": "Mountain Encounter",
-      "description": "Replaces Recovery with Release. Upon releasing monsters, they grant her Gold, EXP, and their respective blessing. Her Basic Attacks drop Seed Mines around enemy targets.",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/533/53300.png",
-      "cooldown": null
+      "description": "Replaces Recovery with Release. Upon releasing monsters, they grant her Gold, EXP, and their respective blessing. Her Basic Attacks drop Seed Mines.",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/53300.png",
+      "cooldown": "1s"
     },
     {
       "slot": "skill1",
       "name": "Wild Growth",
-      "description": "Grants Movement Speed and Health recovery to allied units in the target area. Additionally, she gains Attack Speed and summons multiple monsters at the center.",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/533/53310.png",
-      "cooldown": null
+      "description": "Agudo grants Movement Speed and Health recovery to herself and summons in the target area, and summons multiple monsters at the center.",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/53310.png",
+      "cooldown": "15s"
     },
     {
       "slot": "skill2",
       "name": "Tumble, Furball!",
       "description": "Rolls forward, dealing damage to nearby enemies. Gains immunity against 1 hard crowd control, and damages and launches enemies hit.",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/533/53320.png",
-      "cooldown": null
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/53320.png",
+      "cooldown": "13s"
     },
     {
       "slot": "ultimate",
-      "name": "Seed Mines",
-      "description": "Agudo rolls forward and enhances her next Basic Attack to drops 3 Seed Mines and deal Physical Damage.",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/533/53330.png",
-      "cooldown": null
+      "name": "Gorge Mobilization",
+      "description": "Summons Furball to leap to the target location, inflicting damage and crowd control. Furball then fights independently.",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/53330.png",
+      "cooldown": "40s"
+    }
+  ],
+  "skillsZh": [
+    {
+      "slot": "passive",
+      "name": "山林奇緣",
+      "description": "阿古朵將恢復替換為放生，放生後野怪會贈與金幣、經驗和對應野怪的祝福。阿古朵的普攻會掉落雷種。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/53300.png",
+      "cooldown": "1s"
+    },
+    {
+      "slot": "skill1",
+      "name": "野蠻生長",
+      "description": "阿古朵使區域內自身和召喚物獲得加速和回復生命值，並在中心召喚多隻野怪。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/53310.png",
+      "cooldown": "15s"
+    },
+    {
+      "slot": "skill2",
+      "name": "翻滾吧！球球",
+      "description": "阿古朵翻滾前進，期間免疫一次硬控，對觸碰到的敵人造成傷害並擊飛。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/53320.png",
+      "cooldown": "13s"
+    },
+    {
+      "slot": "ultimate",
+      "name": "峽谷總動員",
+      "description": "阿古朵召喚球球衝鋒到指定地點，造成傷害和控制，並在之後獨自作戰。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/53330.png",
+      "cooldown": "40s"
     }
   ],
   "build": [
     {
       "slot": 1,
-      "itemId": "1133",
-      "name": "Eternity Blade",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1133.jpg",
-      "description": "High crit damage"
+      "itemId": "1533",
+      "name": "Rapacious Bite",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1533.png",
+      "description": "PATK +90, MSPD +5%, CDR +7.5%\nMonster kills boost ATK"
     },
     {
       "slot": 2,
-      "itemId": "1422",
-      "name": "Boots of Resistance",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
-      "description": "Shortens CC"
+      "itemId": "1126",
+      "name": "Doomsday",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1126.png",
+      "description": "PATK +40, ASPD +20%, HP +500, Lifesteal +20%\nBoosts BA damage"
     },
     {
       "slot": 3,
-      "itemId": "1136",
-      "name": "Shadow Ripper",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1136.jpg",
-      "description": "Crits boost ASPD"
+      "itemId": "1333",
+      "name": "Ominous Premonition",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1333.png",
+      "description": "PDEF +300, HP +1,200\nSlows attackers"
     },
     {
       "slot": 4,
-      "itemId": "1155",
-      "name": "Daybreaker's Virtue",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1155.jpg",
-      "description": "Great for marksmen"
+      "itemId": "1335",
+      "name": "Succubus Cloak",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
+      "description": "MDEF +300, HP +1,100\nNegates magical damage"
     },
     {
       "slot": 5,
-      "itemId": "1126",
-      "name": "Doomsday",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1126.jpg",
-      "description": "Boosts BA damage"
+      "itemId": "1337",
+      "name": "Sage's Sanctuary",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+      "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
     },
     {
       "slot": 6,
-      "itemId": "1131",
-      "name": "Starbreaker",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1131.jpg",
-      "description": "Anti-tank"
+      "itemId": "1127",
+      "name": "Destiny",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+      "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
+    }
+  ],
+  "buildZh": [
+    {
+      "slot": 1,
+      "itemId": "1533",
+      "name": "貪婪之噬",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1533.png",
+      "description": "+90攻擊+5%移速+7.5%冷縮\n打野怪加攻擊"
+    },
+    {
+      "slot": 2,
+      "itemId": "1126",
+      "name": "末世",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1126.png",
+      "description": "+40點攻擊+20%攻速+500點生命值+20%吸血\n普攻額外傷害"
+    },
+    {
+      "slot": 3,
+      "itemId": "1333",
+      "name": "不祥徵兆",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1333.png",
+      "description": "+300點物防+1200點生命值\n受擊時將敵人減速"
+    },
+    {
+      "slot": 4,
+      "itemId": "1335",
+      "name": "魔女斗篷",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
+      "description": "+300點法防+1100點生命值\n吸收法術傷害"
+    },
+    {
+      "slot": 5,
+      "itemId": "1337",
+      "name": "賢者的庇護",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+      "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+    },
+    {
+      "slot": 6,
+      "itemId": "1127",
+      "name": "名刀・司命",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+      "description": "+75點攻擊+15%攻速+500點生命值\n保命"
+    }
+  ],
+  "builds": [
+    {
+      "id": "camp-0",
+      "label": "PHZN✘Kwin",
+      "lane": "Jungle",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1533",
+          "name": "Rapacious Bite",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1533.png",
+          "description": "PATK +90, MSPD +5%, CDR +7.5%\nMonster kills boost ATK"
+        },
+        {
+          "slot": 2,
+          "itemId": "1126",
+          "name": "Doomsday",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1126.png",
+          "description": "PATK +40, ASPD +20%, HP +500, Lifesteal +20%\nBoosts BA damage"
+        },
+        {
+          "slot": 3,
+          "itemId": "1333",
+          "name": "Ominous Premonition",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1333.png",
+          "description": "PDEF +300, HP +1,200\nSlows attackers"
+        },
+        {
+          "slot": 4,
+          "itemId": "1335",
+          "name": "Succubus Cloak",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
+          "description": "MDEF +300, HP +1,100\nNegates magical damage"
+        },
+        {
+          "slot": 5,
+          "itemId": "1337",
+          "name": "Sage's Sanctuary",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
+        },
+        {
+          "slot": 6,
+          "itemId": "1127",
+          "name": "Destiny",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
+        }
+      ]
+    },
+    {
+      "id": "camp-1",
+      "label": "Top",
+      "lane": "Jungle",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1126",
+          "name": "Doomsday",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1126.png",
+          "description": "PATK +40, ASPD +20%, HP +500, Lifesteal +20%\nBoosts BA damage"
+        },
+        {
+          "slot": 2,
+          "itemId": "1533",
+          "name": "Rapacious Bite",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1533.png",
+          "description": "PATK +90, MSPD +5%, CDR +7.5%\nMonster kills boost ATK"
+        },
+        {
+          "slot": 3,
+          "itemId": "13310",
+          "name": "Frostscar's Embrace",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/13310.png",
+          "description": "PATK +60, PDEF +300, CDR +10%\nEnhanced BAs slow"
+        },
+        {
+          "slot": 4,
+          "itemId": "1335",
+          "name": "Succubus Cloak",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
+          "description": "MDEF +300, HP +1,100\nNegates magical damage"
+        },
+        {
+          "slot": 5,
+          "itemId": "1337",
+          "name": "Sage's Sanctuary",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
+        },
+        {
+          "slot": 6,
+          "itemId": "1127",
+          "name": "Destiny",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
+        }
+      ]
+    },
+    {
+      "id": "camp-2",
+      "label": "(˶˃ ᵕ ˂˶)",
+      "lane": "Jungle",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1533",
+          "name": "Rapacious Bite",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1533.png",
+          "description": "PATK +90, MSPD +5%, CDR +7.5%\nMonster kills boost ATK"
+        },
+        {
+          "slot": 2,
+          "itemId": "1126",
+          "name": "Doomsday",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1126.png",
+          "description": "PATK +40, ASPD +20%, HP +500, Lifesteal +20%\nBoosts BA damage"
+        },
+        {
+          "slot": 3,
+          "itemId": "1333",
+          "name": "Ominous Premonition",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1333.png",
+          "description": "PDEF +300, HP +1,200\nSlows attackers"
+        },
+        {
+          "slot": 4,
+          "itemId": "1155",
+          "name": "Daybreaker's Virtue",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1155.png",
+          "description": "PATK +75, ASPD +30%, Crit Rate +15%\nGreat for marksmen"
+        },
+        {
+          "slot": 5,
+          "itemId": "1337",
+          "name": "Sage's Sanctuary",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
+        },
+        {
+          "slot": 6,
+          "itemId": "1127",
+          "name": "Destiny",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
+        }
+      ]
+    },
+    {
+      "id": "camp-3",
+      "label": "Use buff porco",
+      "lane": "Jungle",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1126",
+          "name": "Doomsday",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1126.png",
+          "description": "PATK +40, ASPD +20%, HP +500, Lifesteal +20%\nBoosts BA damage"
+        },
+        {
+          "slot": 2,
+          "itemId": "1134",
+          "name": "Master Sword",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1134.png",
+          "description": "PATK +55, Crit Rate +20%, HP +600\nEnhances BAs"
+        },
+        {
+          "slot": 3,
+          "itemId": "1328",
+          "name": "Blood Rage",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1328.png",
+          "description": "PATK +75, HP +900\nTrades HP for shield"
+        },
+        {
+          "slot": 4,
+          "itemId": "1335",
+          "name": "Succubus Cloak",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
+          "description": "MDEF +300, HP +1,100\nNegates magical damage"
+        },
+        {
+          "slot": 5,
+          "itemId": "1337",
+          "name": "Sage's Sanctuary",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
+        },
+        {
+          "slot": 6,
+          "itemId": "1127",
+          "name": "Destiny",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
+        }
+      ]
+    }
+  ],
+  "buildsZh": [
+    {
+      "id": "camp-0",
+      "label": "PHZN✘Kwin",
+      "lane": "Jungle",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1533",
+          "name": "貪婪之噬",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1533.png",
+          "description": "+90攻擊+5%移速+7.5%冷縮\n打野怪加攻擊"
+        },
+        {
+          "slot": 2,
+          "itemId": "1126",
+          "name": "末世",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1126.png",
+          "description": "+40點攻擊+20%攻速+500點生命值+20%吸血\n普攻額外傷害"
+        },
+        {
+          "slot": 3,
+          "itemId": "1333",
+          "name": "不祥徵兆",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1333.png",
+          "description": "+300點物防+1200點生命值\n受擊時將敵人減速"
+        },
+        {
+          "slot": 4,
+          "itemId": "1335",
+          "name": "魔女斗篷",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
+          "description": "+300點法防+1100點生命值\n吸收法術傷害"
+        },
+        {
+          "slot": 5,
+          "itemId": "1337",
+          "name": "賢者的庇護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+        },
+        {
+          "slot": 6,
+          "itemId": "1127",
+          "name": "名刀・司命",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "+75點攻擊+15%攻速+500點生命值\n保命"
+        }
+      ]
+    },
+    {
+      "id": "camp-1",
+      "label": "Top",
+      "lane": "Jungle",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1126",
+          "name": "末世",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1126.png",
+          "description": "+40點攻擊+20%攻速+500點生命值+20%吸血\n普攻額外傷害"
+        },
+        {
+          "slot": 2,
+          "itemId": "1533",
+          "name": "貪婪之噬",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1533.png",
+          "description": "+90攻擊+5%移速+7.5%冷縮\n打野怪加攻擊"
+        },
+        {
+          "slot": 3,
+          "itemId": "13310",
+          "name": "冰痕之握",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/13310.png",
+          "description": "+60點攻擊+300點物防+10%減冷卻時間……\n強化普攻減速"
+        },
+        {
+          "slot": 4,
+          "itemId": "1335",
+          "name": "魔女斗篷",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
+          "description": "+300點法防+1100點生命值\n吸收法術傷害"
+        },
+        {
+          "slot": 5,
+          "itemId": "1337",
+          "name": "賢者的庇護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+        },
+        {
+          "slot": 6,
+          "itemId": "1127",
+          "name": "名刀・司命",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "+75點攻擊+15%攻速+500點生命值\n保命"
+        }
+      ]
+    },
+    {
+      "id": "camp-2",
+      "label": "(˶˃ ᵕ ˂˶)",
+      "lane": "Jungle",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1533",
+          "name": "貪婪之噬",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1533.png",
+          "description": "+90攻擊+5%移速+7.5%冷縮\n打野怪加攻擊"
+        },
+        {
+          "slot": 2,
+          "itemId": "1126",
+          "name": "末世",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1126.png",
+          "description": "+40點攻擊+20%攻速+500點生命值+20%吸血\n普攻額外傷害"
+        },
+        {
+          "slot": 3,
+          "itemId": "1333",
+          "name": "不祥徵兆",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1333.png",
+          "description": "+300點物防+1200點生命值\n受擊時將敵人減速"
+        },
+        {
+          "slot": 4,
+          "itemId": "1155",
+          "name": "仁者破曉",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1155.png",
+          "description": "+75點攻擊+30%攻速+15%暴擊\n射手神裝"
+        },
+        {
+          "slot": 5,
+          "itemId": "1337",
+          "name": "賢者的庇護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+        },
+        {
+          "slot": 6,
+          "itemId": "1127",
+          "name": "名刀・司命",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "+75點攻擊+15%攻速+500點生命值\n保命"
+        }
+      ]
+    },
+    {
+      "id": "camp-3",
+      "label": "Use buff porco",
+      "lane": "Jungle",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1126",
+          "name": "末世",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1126.png",
+          "description": "+40點攻擊+20%攻速+500點生命值+20%吸血\n普攻額外傷害"
+        },
+        {
+          "slot": 2,
+          "itemId": "1134",
+          "name": "宗師之力",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1134.png",
+          "description": "+55點攻擊+20%暴擊+600點生命值……\n強化普攻"
+        },
+        {
+          "slot": 3,
+          "itemId": "1328",
+          "name": "血魔之怒",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1328.png",
+          "description": "+75點攻擊+900點生命值 \n犧牲生命值換取護盾值"
+        },
+        {
+          "slot": 4,
+          "itemId": "1335",
+          "name": "魔女斗篷",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
+          "description": "+300點法防+1100點生命值\n吸收法術傷害"
+        },
+        {
+          "slot": 5,
+          "itemId": "1337",
+          "name": "賢者的庇護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+        },
+        {
+          "slot": 6,
+          "itemId": "1127",
+          "name": "名刀・司命",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "+75點攻擊+15%攻速+500點生命值\n保命"
+        }
+      ]
     }
   ],
   "arcana": [
-    "Fate"
+    "Lvl 5: Red Moon",
+    "Lvl 5: Hunt",
+    "Lvl 5: Beast Scar"
+  ],
+  "arcanaZh": [
+    "5級：紅月",
+    "5級：狩獵",
+    "5級：獸痕"
   ],
   "spells": [
-    "Haste",
     "Smite"
+  ],
+  "spellsZh": [
+    "懲擊"
   ],
   "counters": [
     "Kongming",
@@ -106,486 +589,195 @@
     "Han Xin"
   ],
   "tips": [
-    "Agudo is a Medium Marksman (Jungling) on Honor of Kings Global. Camp HOK ranks them Tier B with 51.9% win rate and 0.4% pick rate as of 2026-06-05.",
-    "Best build path: Eternity Blade → Boots of Resistance → Shadow Ripper → Daybreaker's Virtue → Doomsday → Starbreaker.",
-    "Run Fate for stats that match Agudo's Marksman kit. Take Haste & Smite — swap to Purify against heavy CC or Smite when jungling.",
-    "Standard trade: Wild Growth → Tumble, Furball! → Seed Mines → weave basic attacks. Weave basic attacks between skill casts for passive value.",
-    "Laning: Clear to level four, then gank the lane with the least escape. Secure Tyrant when your bot or mid has crash wave.",
-    "Teamfight: Position behind frontline; attack closest safe target. Join fight only after enemy dive cooldowns are used.",
-    "Agudo excels into Kongming, Daji. Avoid blind picking into Ata, Han Xin without team peel.",
-    "Agudo sits at Tier B globally (51.9% WR). In high rank, pick only into favorable matchups or when you have a dedicated pocket pick."
+    "Agudo (Marksman): Tier B — 52.26% WR (Camp HOK).",
+    "Lane: Jungling.",
+    "Build: Rapacious Bite, Doomsday, Ominous Premonition."
+  ],
+  "tipsZh": [
+    "阿古朵（打野）：梯度 B，勝率 52.26%（Camp HOK）。",
+    "出裝：貪婪之噬、末世、不祥徵兆."
   ],
   "patchHistory": [
     {
-      "version": "Live meta",
-      "change": "Camp HOK — WR 51.9%, pick 0.4%, ban 0.0%, tier B."
+      "seasonId": "13",
+      "seasonName": "S13",
+      "versionName": "2025/12/16",
+      "publishedAt": "2025-12-16T01:00:00Z",
+      "isCurrent": false,
+      "tag": "Stat Changes",
+      "change": "Adjusted Skill Damage",
+      "detail": "",
+      "version": "S13"
     },
     {
-      "version": "Matchups",
-      "change": "Strong into Kongming, Daji · Weak into Ata, Han Xin."
+      "seasonId": "12",
+      "seasonName": "S12",
+      "versionName": "20250924",
+      "publishedAt": "2025-09-24T01:00:00Z",
+      "isCurrent": false,
+      "tag": "Mechanics Upgrade",
+      "change": "Comprehensive Mechanics Upgrade",
+      "detail": "",
+      "version": "S12"
     },
     {
-      "version": "High rank",
-      "change": "Agudo sits at Tier B globally (51.9% WR). In high rank, pick only into favorable matchups or when you have a dedicated pocket pick."
+      "seasonId": "9",
+      "seasonName": "S9",
+      "versionName": "20250320",
+      "publishedAt": "2025-03-20T01:53:54Z",
+      "isCurrent": false,
+      "tag": "Mechanics Upgrade",
+      "change": "New Marksman Playstyle",
+      "detail": "",
+      "version": "S9"
+    },
+    {
+      "seasonId": "5",
+      "seasonName": "S5",
+      "versionName": "20240410",
+      "publishedAt": "2024-04-10T15:15:27Z",
+      "isCurrent": false,
+      "tag": "Stat Changes",
+      "change": "We're increasing the base Health of some tanks but decreasing their per-level Health growth multiplier so that their Health at max level stays the same.",
+      "detail": "We're increasing the base Health of some tanks but decreasing their per-level Health growth multiplier so that their Health at max level stays the same.\nWe hope that players will be able to tell the difference between the heroes in the early game and fully understand their individual characteristics. This should help them choose the best hero for their team's lineup. We want tanks to soak up damage in the early game without becoming hard to counter in the late game. To that end, we're increasing their base Health while decreasing their Health gain per level.",
+      "version": "S5"
+    },
+    {
+      "seasonId": "4",
+      "seasonName": "S4",
+      "versionName": "20240220",
+      "publishedAt": "2024-02-20T02:27:09Z",
+      "isCurrent": false,
+      "tag": "Stat Buffs",
+      "change": "We've increased the damage dealt by Agudo's Basic Attacks after using her Ultimate.",
+      "detail": "We've increased the damage dealt by Agudo's Basic Attacks after using her Ultimate.\nWhen Agudo uses her Ultimate and releases Furball to attack enemies, her squishy body becomes her weakness.Risks should always be accompanied by rewards, so we have appropriately increased the damage Agudo can deal after releasing Furball.",
+      "version": "S4"
+    },
+    {
+      "seasonId": "3",
+      "seasonName": "S3",
+      "versionName": "20231108",
+      "publishedAt": "2023-11-08T12:02:09Z",
+      "isCurrent": false,
+      "tag": "Stat Buffs",
+      "change": "Increased physical damage when using Skill 2. Increased physical damage when using the Ultimate.",
+      "detail": "As a jungler with a rather unique design, Agudo and her partner Furball perform well when supporting other heroes and tanking damage. But we realized that Furball's damage is lacking. Since Furball has to fight and carry Agudo around the map, we've fed it some extra snacks to bulk up and improve the duo's strength.",
+      "version": "S3"
+    }
+  ],
+  "patchHistoryZh": [
+    {
+      "seasonId": "13",
+      "seasonName": "S13",
+      "versionName": "2025/12/16",
+      "publishedAt": "2025-12-16T01:00:00Z",
+      "isCurrent": false,
+      "tag": "數值調整",
+      "change": "調整技能傷害",
+      "detail": "",
+      "version": "S13"
+    },
+    {
+      "seasonId": "12",
+      "seasonName": "S12",
+      "versionName": "20250924",
+      "publishedAt": "2025-09-24T01:00:00Z",
+      "isCurrent": false,
+      "tag": "機制升級",
+      "change": "全面機制升級",
+      "detail": "",
+      "version": "S12"
+    },
+    {
+      "seasonId": "9",
+      "seasonName": "S9",
+      "versionName": "20250320",
+      "publishedAt": "2025-03-20T01:53:54Z",
+      "isCurrent": false,
+      "tag": "機制升級",
+      "change": "新增射手打法",
+      "detail": "",
+      "version": "S9"
+    },
+    {
+      "seasonId": "5",
+      "seasonName": "S5",
+      "versionName": "20240410",
+      "publishedAt": "2024-04-10T15:15:27Z",
+      "isCurrent": false,
+      "tag": "數值調整",
+      "change": "提升部分坦克類英雄的基礎生命，降低其隨英雄等級成長的係數，保持滿級後總生命不變",
+      "detail": "提升部分坦克類英雄的基礎生命，降低其隨英雄等級成長的係數，保持滿級後總生命不變\n我們希望在遊戲早期就能讓玩家區分各英雄間的差異和特點，從而根據陣容需求來選擇自己接下來要操控的英雄。我們希望坦克類英雄能在遊戲早期就承擔吸收傷害的職責，但是又不希望他們在遊戲後期變得難以處理，因此我們適當提升了部分坦克類英雄的基礎生命，並降低了他們每次升級後帶來的生命成長。",
+      "version": "S5"
+    },
+    {
+      "seasonId": "4",
+      "seasonName": "S4",
+      "versionName": "20240220",
+      "publishedAt": "2024-02-20T02:27:09Z",
+      "isCurrent": false,
+      "tag": "數值增強",
+      "change": "We've increased the damage dealt by Agudo's Basic Attacks after using her Ultimate.",
+      "detail": "We've increased the damage dealt by Agudo's Basic Attacks after using her Ultimate.\nWhen Agudo uses her Ultimate and releases Furball to attack enemies, her squishy body becomes her weakness.Risks should always be accompanied by rewards, so we have appropriately increased the damage Agudo can deal after releasing Furball.",
+      "version": "S4"
+    },
+    {
+      "seasonId": "3",
+      "seasonName": "S3",
+      "versionName": "20231108",
+      "publishedAt": "2023-11-08T12:02:09Z",
+      "isCurrent": false,
+      "tag": "數值增強",
+      "change": "Increased physical damage when using Skill 2. Increased physical damage when using the Ultimate.",
+      "detail": "As a jungler with a rather unique design, Agudo and her partner Furball perform well when supporting other heroes and tanking damage. But we realized that Furball's damage is lacking. Since Furball has to fight and carry Agudo around the map, we've fed it some extra snacks to bulk up and improve the duo's strength.",
+      "version": "S3"
     }
   ],
   "faqs": [
     {
       "id": "faq-good-season",
-      "question": "Is Agudo good in the current meta?",
-      "answer": "Agudo is Tier B Marksman with 51.9% win rate, 0.4% pick rate, and 0.0% ban rate on Honor of Kings Global (Camp HOK, 2026-06-05). Niche — draft carefully."
+      "question": "Is Agudo good in current season?",
+      "answer": "Agudo is Tier B Marksman with 52.26% win rate, 0.45% pick rate, and 0.04% ban rate (Camp HOK international)."
     },
     {
       "id": "faq-best-build",
       "question": "What is the best Agudo build?",
-      "answer": "Core item path: Eternity Blade, Boots of Resistance, Shadow Ripper, Daybreaker's Virtue, Doomsday, Starbreaker. Run Fate arcana with Haste & Smite. Switch to alternate build presets on this page for jungle, clash, or late-game setups."
+      "answer": "Recommended: Rapacious Bite, Doomsday, Ominous Premonition, Succubus Cloak, Sage's Sanctuary, Destiny."
     },
     {
       "id": "faq-counter",
       "question": "How to counter Agudo?",
-      "answer": "Pick Ata, Han Xin into Agudo. Deny Jungling resources early and force fights before Agudo completes core items. Agudo struggles when the enemy can dive and burst them."
+      "answer": "Pick Ata, Han Xin. Strong into Kongming, Daji."
+    }
+  ],
+  "faqsZh": [
+    {
+      "id": "faq-good-season",
+      "question": "阿古朵 這版本適合上分嗎？",
+      "answer": "阿古朵 為 B 梯度，勝率 52.26%、選取 0.45%、禁用 0.04%（Camp HOK 國際服）。"
     },
     {
-      "id": "faq-strong-into",
-      "question": "Who does Agudo counter?",
-      "answer": "Agudo is strong into Kongming, Daji according to HoKStats matchup data and role matchups on the global server. Draft Agudo when the enemy relies on these heroes in the Jungling lane."
+      "id": "faq-best-build",
+      "question": "阿古朵 出裝怎麼搭配？",
+      "answer": "推薦：貪婪之噬、末世、不祥徵兆、魔女斗篷、賢者的庇護、名刀・司命."
     },
     {
-      "id": "faq-high-rank",
-      "question": "Is Agudo good in high rank / Diamond+?",
-      "answer": "Agudo sits at Tier B globally (51.9% WR). In high rank, pick only into favorable matchups or when you have a dedicated pocket pick."
-    },
-    {
-      "id": "faq-lane",
-      "question": "What lane should Agudo play?",
-      "answer": "Agudo is tagged Jungling in Camp export (Marksman). Clear to level four, then gank the lane with the least escape. Secure Tyrant when your bot or mid has crash wave."
-    },
-    {
-      "id": "faq-arcana",
-      "question": "Best arcana and spells for Agudo?",
-      "answer": "Recommended: Fate arcana. Battle spell: Haste & Smite. Adjust Purify/Execute based on enemy dive and jungle need."
-    },
-    {
-      "id": "faq-vs-peer",
-      "question": "Agudo or Hou Yi — which is better?",
-      "answer": "Agudo vs Hou Yi (Marksman, Tier S+): Hou Yi is 2.9% pick / 49.3% WR. Agudo has +2.6% WR vs Hou Yi in Camp data. Choose Agudo when you need Jungling identity; choose Hou Yi for Farm Lane comfort."
-    },
-    {
-      "id": "faq-ban",
-      "question": "Should I ban Agudo?",
-      "answer": "Low priority ban (0.0%). Focus bans on higher-tier Marksman picks unless targeting a one-trick."
+      "id": "faq-counter",
+      "question": "怎麼克制 阿古朵？",
+      "answer": "可選 Ata、Han Xin。阿古朵 克制 Kongming、Daji。"
     }
   ],
   "metaAnalysis": [
-    "Agudo — 51.9% WR, 0.4% pick, 0.0% ban (Camp HOK 2026-06-05).",
-    "Tier B Marksman · Jungling · difficulty Medium.",
-    "Agudo sits at Tier B globally (51.9% WR). In high rank, pick only into favorable matchups or when you have a dedicated pocket pick.",
-    "Matchups: strong into Kongming, Daji; weak into Ata, Han Xin.",
-    "Agudo vs Hou Yi (Marksman, Tier S+): Hou Yi is 2.9% pick / 49.3% WR. Agudo has +2.6% WR vs Hou Yi in Camp data. Choose Agudo when you need Jungling identity; choose Hou Yi for Farm Lane comfort.",
-    "Agudo vs Marco Polo (Marksman, Tier S+): Marco Polo is 2.1% pick / 50.1% WR. Agudo has +1.8% WR vs Marco Polo in Camp data. Choose Agudo when you need Jungling identity; choose Marco Polo for Farm Lane comfort.",
-    "Draft tip: counter-pick or comfort pick when lane matchup is favorable."
+    "Agudo win rate 52.26% (Camp HOK, 2026-06-07).",
+    "Pick rate 0.45%.",
+    "Ban rate 0.04%.",
+    "Counters: Kongming, Daji. Weak into: Ata, Han Xin."
   ],
-  "builds": [
-    {
-      "id": "recommended",
-      "label": "Recommended",
-      "position": null,
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1133",
-          "name": "Eternity Blade",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1133.jpg",
-          "description": "High crit damage"
-        },
-        {
-          "slot": 2,
-          "itemId": "1422",
-          "name": "Boots of Resistance",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
-          "description": "Shortens CC"
-        },
-        {
-          "slot": 3,
-          "itemId": "1136",
-          "name": "Shadow Ripper",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1136.jpg",
-          "description": "Crits boost ASPD"
-        },
-        {
-          "slot": 4,
-          "itemId": "1155",
-          "name": "Daybreaker's Virtue",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1155.jpg",
-          "description": "Great for marksmen"
-        },
-        {
-          "slot": 5,
-          "itemId": "1126",
-          "name": "Doomsday",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1126.jpg",
-          "description": "Boosts BA damage"
-        },
-        {
-          "slot": 6,
-          "itemId": "1131",
-          "name": "Starbreaker",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1131.jpg",
-          "description": "Anti-tank"
-        }
-      ]
-    },
-    {
-      "id": "国服套装",
-      "label": "国服套装",
-      "position": "Position 3",
-      "lane": "CN preset",
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1523",
-          "name": "Relentless Blade",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1523.jpg",
-          "description": "Monster kills boost PATK"
-        },
-        {
-          "slot": 2,
-          "itemId": "1135",
-          "name": "Sparkforged Dagger",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1135.jpg",
-          "description": "Chain lightning BA"
-        },
-        {
-          "slot": 3,
-          "itemId": "1422",
-          "name": "Boots of Resistance",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
-          "description": "Shortens CC"
-        },
-        {
-          "slot": 4,
-          "itemId": "1126",
-          "name": "Doomsday",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1126.jpg",
-          "description": "Boosts BA damage"
-        },
-        {
-          "slot": 5,
-          "itemId": "1332",
-          "name": "Overlord's Platemail",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1332.jpg",
-          "description": "Extra Health"
-        },
-        {
-          "slot": 6,
-          "itemId": "1533",
-          "name": "Rapacious Bite",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1533.jpg",
-          "description": "Monster kills boost PATK"
-        }
-      ]
-    },
-    {
-      "id": "top",
-      "label": "Top",
-      "position": "Position 3",
-      "lane": "Clash Lane",
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1523",
-          "name": "Relentless Blade",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1523.jpg",
-          "description": "Monster kills boost PATK"
-        },
-        {
-          "slot": 2,
-          "itemId": "1425",
-          "name": "Boots of Dexterity",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1425.jpg",
-          "description": "Boosts ASPD"
-        },
-        {
-          "slot": 3,
-          "itemId": "1128",
-          "name": "Deepfrost Siege",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1128.jpg",
-          "description": "Slows on hit"
-        },
-        {
-          "slot": 4,
-          "itemId": "1126",
-          "name": "Doomsday",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1126.jpg",
-          "description": "Boosts BA damage"
-        },
-        {
-          "slot": 5,
-          "itemId": "1533",
-          "name": "Rapacious Bite",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1533.jpg",
-          "description": "Monster kills boost PATK"
-        },
-        {
-          "slot": 6,
-          "itemId": "13310",
-          "name": "Frostscar's Embrace",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/13310.jpg",
-          "description": "Enhanced BAs slow"
-        }
-      ]
-    },
-    {
-      "id": "adc",
-      "label": "adc",
-      "position": "Position 4",
-      "lane": "Farm Lane",
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1425",
-          "name": "Boots of Dexterity",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1425.jpg",
-          "description": "Boosts ASPD"
-        },
-        {
-          "slot": 2,
-          "itemId": "1136",
-          "name": "Shadow Ripper",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1136.jpg",
-          "description": "Crits boost ASPD"
-        },
-        {
-          "slot": 3,
-          "itemId": "1133",
-          "name": "Eternity Blade",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1133.jpg",
-          "description": "High crit damage"
-        },
-        {
-          "slot": 4,
-          "itemId": "1126",
-          "name": "Doomsday",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1126.jpg",
-          "description": "Boosts BA damage"
-        },
-        {
-          "slot": 5,
-          "itemId": "1134",
-          "name": "Master Sword",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1134.jpg",
-          "description": "Enhances BA"
-        },
-        {
-          "slot": 6,
-          "itemId": "1141",
-          "name": "Sunchaser",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1141.jpg",
-          "description": "Boosts attack range"
-        }
-      ]
-    },
-    {
-      "id": "phznkwin",
-      "label": "PHZN✘Kwin",
-      "position": "Position 3",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1523",
-          "name": "Relentless Blade",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1523.jpg",
-          "description": "Monster kills boost PATK"
-        },
-        {
-          "slot": 2,
-          "itemId": "1135",
-          "name": "Sparkforged Dagger",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1135.jpg",
-          "description": "Chain lightning BA"
-        },
-        {
-          "slot": 3,
-          "itemId": "1425",
-          "name": "Boots of Dexterity",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1425.jpg",
-          "description": "Boosts ASPD"
-        },
-        {
-          "slot": 4,
-          "itemId": "1114",
-          "name": "Vampiric Scythe",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1114.jpg",
-          "description": "Physical Lifesteal"
-        },
-        {
-          "slot": 5,
-          "itemId": "1533",
-          "name": "Rapacious Bite",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1533.jpg",
-          "description": "Monster kills boost PATK"
-        },
-        {
-          "slot": 6,
-          "itemId": "1126",
-          "name": "Doomsday",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1126.jpg",
-          "description": "Boosts BA damage"
-        }
-      ]
-    },
-    {
-      "id": "use-buff-porco",
-      "label": "Use buff porco",
-      "position": "Position 3",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1511",
-          "name": "Hunting Knife",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1511.jpg",
-          "description": "Speeds up jungling"
-        },
-        {
-          "slot": 2,
-          "itemId": "1523",
-          "name": "Relentless Blade",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1523.jpg",
-          "description": "Monster kills boost PATK"
-        },
-        {
-          "slot": 3,
-          "itemId": "1425",
-          "name": "Boots of Dexterity",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1425.jpg",
-          "description": "Boosts ASPD"
-        },
-        {
-          "slot": 4,
-          "itemId": "1136",
-          "name": "Shadow Ripper",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1136.jpg",
-          "description": "Crits boost ASPD"
-        },
-        {
-          "slot": 5,
-          "itemId": "1133",
-          "name": "Eternity Blade",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1133.jpg",
-          "description": "High crit damage"
-        },
-        {
-          "slot": 6,
-          "itemId": "1533",
-          "name": "Rapacious Bite",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1533.jpg",
-          "description": "Monster kills boost PATK"
-        }
-      ]
-    },
-    {
-      "id": "tiktokduoduo",
-      "label": "TikTok.DuoDuo",
-      "position": "Position 3",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1523",
-          "name": "Relentless Blade",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1523.jpg",
-          "description": "Monster kills boost PATK"
-        },
-        {
-          "slot": 2,
-          "itemId": "1135",
-          "name": "Sparkforged Dagger",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1135.jpg",
-          "description": "Chain lightning BA"
-        },
-        {
-          "slot": 3,
-          "itemId": "1425",
-          "name": "Boots of Dexterity",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1425.jpg",
-          "description": "Boosts ASPD"
-        },
-        {
-          "slot": 4,
-          "itemId": "1422",
-          "name": "Boots of Resistance",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
-          "description": "Shortens CC"
-        },
-        {
-          "slot": 5,
-          "itemId": "1126",
-          "name": "Doomsday",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1126.jpg",
-          "description": "Boosts BA damage"
-        },
-        {
-          "slot": 6,
-          "itemId": "1335",
-          "name": "Succubus Cloak",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1335.jpg",
-          "description": "Negates magical damage"
-        }
-      ]
-    },
-    {
-      "id": "ttay-延斯",
-      "label": "TT:AY | 延斯",
-      "position": "Position 3",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1533",
-          "name": "Rapacious Bite",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1533.jpg",
-          "description": "Monster kills boost PATK"
-        },
-        {
-          "slot": 2,
-          "itemId": "1425",
-          "name": "Boots of Dexterity",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1425.jpg",
-          "description": "Boosts ASPD"
-        },
-        {
-          "slot": 3,
-          "itemId": "1135",
-          "name": "Sparkforged Dagger",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1135.jpg",
-          "description": "Chain lightning BA"
-        },
-        {
-          "slot": 4,
-          "itemId": "1333",
-          "name": "Ominous Premonition",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1333.jpg",
-          "description": "Slows attackers"
-        },
-        {
-          "slot": 5,
-          "itemId": "1335",
-          "name": "Succubus Cloak",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1335.jpg",
-          "description": "Negates magical damage"
-        },
-        {
-          "slot": 6,
-          "itemId": "1126",
-          "name": "Doomsday",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1126.jpg",
-          "description": "Boosts BA damage"
-        }
-      ]
-    }
+  "metaAnalysisZh": [
+    "阿古朵 勝率 52.26%（Camp HOK，2026-06-07）",
+    "選取率 0.45%",
+    "禁用率 0.04%",
+    "克制：Kongming、Daji；被克制：Ata、Han Xin"
   ],
   "guide": {
     "overview": "Agudo is a Medium Marksman (Jungling) on Honor of Kings Global. Camp HOK ranks them Tier B with 51.9% win rate and 0.4% pick rate as of 2026-06-05.",

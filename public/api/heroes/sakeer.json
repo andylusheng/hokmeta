@@ -2,391 +2,617 @@
   "id": "sakeer",
   "slug": "sakeer",
   "name": "Sakeer",
+  "nameZh": "桑啟",
   "role": "Support",
   "roles": "Support, Mage",
+  "rolesZh": "輔助, 法師",
   "lane": "Roaming",
+  "laneZh": "遊走",
   "difficulty": "Easy",
   "tier": "B",
-  "winRate": 53.27,
-  "pickRate": 0.52,
+  "winRate": 53.52,
+  "pickRate": 0.53,
   "banRate": 0.03,
-  "rank": 6,
+  "rank": 7,
   "avatar": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/ionwVFtV.png",
   "avatarFallback": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/534/534.jpg",
+  "heroCover": "https://camp.honorofkings.com/social/game/src/image_hero_cover_1275*718/Ibiy22bk.jpg",
   "tencentId": 534,
-  "dataSource": "Camp HOK + HoKStats.gg (intl)",
-  "dataUpdated": "2026-06-05",
+  "dataSource": "Camp HOK bilingual (primary)",
+  "dataUpdated": "2026-06-07",
   "skills": [
     {
       "slot": "passive",
       "name": "Firefly Protection",
-      "description": "Basic Attacks and skills summon fireflies that deal extra damage to enemies and grant vision of them. Periodically heals teammates. Can charge up his Basic Attack to heal himself.",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/534/53400.png",
-      "cooldown": null
+      "description": "Basic Attacks and skills summon fireflies that deal extra damage to enemies and grant vision of them. Periodically heals teammates, or can charge up his Basic Attack to heal himself instead.",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/53400.png",
+      "cooldown": "1s"
     },
     {
       "slot": "skill1",
       "name": "Mulberry Power",
       "description": "Launches and damages enemies in front while summoning fireflies to heal teammates or damage enemies.",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/534/53410.png",
-      "cooldown": null
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/53421.png",
+      "cooldown": "10s"
     },
     {
       "slot": "skill2",
       "name": "Ride the Wind",
       "description": "Flies to a brush while summoning fireflies that heal teammates or damage enemies.",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/534/53420.png",
-      "cooldown": null
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/53410.png",
+      "cooldown": "0s"
     },
     {
       "slot": "ultimate",
       "name": "Firefly Fields",
       "description": "Summons a brush and can fly into it by using this skill again. The brush summons fireflies over time that heal teammates or damage enemies.",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/534/53430.png",
-      "cooldown": null
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/53430.png",
+      "cooldown": "25s"
+    }
+  ],
+  "skillsZh": [
+    {
+      "slot": "passive",
+      "name": "螢火庇護",
+      "description": "桑啟普攻或施放技能時會召喚螢火蟲，對敵人造成額外傷害並獲得其視野。桑啟會定時治療友方英雄，蓄力可治療自身。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/53400.png",
+      "cooldown": "1s"
+    },
+    {
+      "slot": "skill1",
+      "name": "桑木為引",
+      "description": "桑啟擊飛前方敵人並造成傷害，召喚螢火蟲治療友軍，並對敵人造成傷害。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/53421.png",
+      "cooldown": "10s"
+    },
+    {
+      "slot": "skill2",
+      "name": "乘風啟程",
+      "description": "桑啟位移至草叢，同時召喚螢火蟲治療友軍，對敵人則造成傷害。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/53410.png",
+      "cooldown": "0s"
+    },
+    {
+      "slot": "ultimate",
+      "name": "螢火微光",
+      "description": "桑啟召喚草叢，再次施放技能會飛至草叢，草叢會持續召喚螢火蟲治療友軍，並對敵人造成傷害。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/53430.png",
+      "cooldown": "25s"
     }
   ],
   "build": [
     {
       "slot": 1,
-      "itemId": "1424",
-      "name": "Boots of the Arcane",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1424.jpg",
-      "description": "Magical Pierce"
+      "itemId": "1244",
+      "name": "Breakthrough Robe",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1244.png",
+      "description": "MATK +120, HP +900\nConverts HP into Magical Pierce"
     },
     {
       "slot": 2,
-      "itemId": "1332",
-      "name": "Overlord's Platemail",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1332.jpg",
-      "description": "Extra Health"
+      "itemId": "1234",
+      "name": "Frozen Breath",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1234.png",
+      "description": "MATK +180, CDR +7.5%, HP +500\nSkill hits slow"
     },
     {
       "slot": 3,
-      "itemId": "1244",
-      "name": "Breakthrough Robe",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1244.jpg",
-      "description": "Converts Health into M. Pierce"
+      "itemId": "1335",
+      "name": "Succubus Cloak",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
+      "description": "MDEF +300, HP +1,100\nNegates magical damage"
     },
     {
       "slot": 4,
-      "itemId": "1237",
-      "name": "Augur's Word",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1237.jpg",
-      "description": "Offense & defense"
+      "itemId": "1337",
+      "name": "Sage's Sanctuary",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+      "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
     },
     {
       "slot": 5,
-      "itemId": "1234",
-      "name": "Frozen Breath",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1234.jpg",
-      "description": "Slows on hit"
+      "itemId": "1347",
+      "name": "Longnight Guardian",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1347.png",
+      "description": "MDEF +210, HP +1,000, MSPD +7.5%\nReduces magical damage"
     },
     {
       "slot": 6,
-      "itemId": null,
-      "name": "Data unavailable",
-      "icon": null,
-      "description": null
+      "itemId": "1336",
+      "name": "Glacial Buckler",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1336.png",
+      "description": "CDR +20%, HP +600, PDEF +240\nGroup damage & slow"
+    }
+  ],
+  "buildZh": [
+    {
+      "slot": 1,
+      "itemId": "1244",
+      "name": "破繭之衣",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1244.png",
+      "description": "+120點法攻+900點生命值\n生命值轉法穿"
+    },
+    {
+      "slot": 2,
+      "itemId": "1234",
+      "name": "凝冰之息",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1234.png",
+      "description": "+180點法攻+7.5%減冷卻時間+500點生命值\n技能命中減速"
+    },
+    {
+      "slot": 3,
+      "itemId": "1335",
+      "name": "魔女斗篷",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
+      "description": "+300點法防+1100點生命值\n吸收法術傷害"
+    },
+    {
+      "slot": 4,
+      "itemId": "1337",
+      "name": "賢者的庇護",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+      "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+    },
+    {
+      "slot": 5,
+      "itemId": "1347",
+      "name": "永夜守護",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1347.png",
+      "description": "+210點法防+1000點生命值\n+7.5%移速減少法術傷害"
+    },
+    {
+      "slot": 6,
+      "itemId": "1336",
+      "name": "極寒風暴",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1336.png",
+      "description": "+20%減冷卻時間+600點生命值+240點物防\n群體傷害減速"
+    }
+  ],
+  "builds": [
+    {
+      "id": "camp-0",
+      "label": "with shield",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1244",
+          "name": "Breakthrough Robe",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1244.png",
+          "description": "MATK +120, HP +900\nConverts HP into Magical Pierce"
+        },
+        {
+          "slot": 2,
+          "itemId": "1234",
+          "name": "Frozen Breath",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1234.png",
+          "description": "MATK +180, CDR +7.5%, HP +500\nSkill hits slow"
+        },
+        {
+          "slot": 3,
+          "itemId": "1335",
+          "name": "Succubus Cloak",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
+          "description": "MDEF +300, HP +1,100\nNegates magical damage"
+        },
+        {
+          "slot": 4,
+          "itemId": "1337",
+          "name": "Sage's Sanctuary",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
+        },
+        {
+          "slot": 5,
+          "itemId": "1347",
+          "name": "Longnight Guardian",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1347.png",
+          "description": "MDEF +210, HP +1,000, MSPD +7.5%\nReduces magical damage"
+        },
+        {
+          "slot": 6,
+          "itemId": "1336",
+          "name": "Glacial Buckler",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1336.png",
+          "description": "CDR +20%, HP +600, PDEF +240\nGroup damage & slow"
+        }
+      ]
+    },
+    {
+      "id": "camp-1",
+      "label": "without shield",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1333",
+          "name": "Ominous Premonition",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1333.png",
+          "description": "PDEF +300, HP +1,200\nSlows attackers"
+        },
+        {
+          "slot": 2,
+          "itemId": "1244",
+          "name": "Breakthrough Robe",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1244.png",
+          "description": "MATK +120, HP +900\nConverts HP into Magical Pierce"
+        },
+        {
+          "slot": 3,
+          "itemId": "1234",
+          "name": "Frozen Breath",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1234.png",
+          "description": "MATK +180, CDR +7.5%, HP +500\nSkill hits slow"
+        },
+        {
+          "slot": 4,
+          "itemId": "1337",
+          "name": "Sage's Sanctuary",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
+        },
+        {
+          "slot": 5,
+          "itemId": "1347",
+          "name": "Longnight Guardian",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1347.png",
+          "description": "MDEF +210, HP +1,000, MSPD +7.5%\nReduces magical damage"
+        },
+        {
+          "slot": 6,
+          "itemId": "1353",
+          "name": "Dawnlight",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1353.png",
+          "description": "PDEF +210, HP +900, CDR +10%\nShields on dealing damage"
+        }
+      ]
+    },
+    {
+      "id": "camp-2",
+      "label": "Heals",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1333",
+          "name": "Ominous Premonition",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1333.png",
+          "description": "PDEF +300, HP +1,200\nSlows attackers"
+        },
+        {
+          "slot": 2,
+          "itemId": "1332",
+          "name": "Overlord's Platemail",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1332.png",
+          "description": "HP +1,800, PDEF +160, MDEF +80\nExtra HP"
+        },
+        {
+          "slot": 3,
+          "itemId": "1422",
+          "name": "Boots of Resistance",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1422.png",
+          "description": "MDEF +100, PDEF +50, MSPD +50\nShortens crowd control"
+        },
+        {
+          "slot": 4,
+          "itemId": "1347",
+          "name": "Longnight Guardian",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1347.png",
+          "description": "MDEF +210, HP +1,000, MSPD +7.5%\nReduces magical damage"
+        },
+        {
+          "slot": 5,
+          "itemId": "1337",
+          "name": "Sage's Sanctuary",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
+        },
+        {
+          "slot": 6,
+          "itemId": "1242",
+          "name": "Enigma - Moon Goddess",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1242.png",
+          "description": "MATK +160, CDR +7.5%, Magical Lifesteal +12%\nTemp. invincibility"
+        }
+      ]
+    }
+  ],
+  "buildsZh": [
+    {
+      "id": "camp-0",
+      "label": "with shield",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1244",
+          "name": "破繭之衣",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1244.png",
+          "description": "+120點法攻+900點生命值\n生命值轉法穿"
+        },
+        {
+          "slot": 2,
+          "itemId": "1234",
+          "name": "凝冰之息",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1234.png",
+          "description": "+180點法攻+7.5%減冷卻時間+500點生命值\n技能命中減速"
+        },
+        {
+          "slot": 3,
+          "itemId": "1335",
+          "name": "魔女斗篷",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
+          "description": "+300點法防+1100點生命值\n吸收法術傷害"
+        },
+        {
+          "slot": 4,
+          "itemId": "1337",
+          "name": "賢者的庇護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+        },
+        {
+          "slot": 5,
+          "itemId": "1347",
+          "name": "永夜守護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1347.png",
+          "description": "+210點法防+1000點生命值\n+7.5%移速減少法術傷害"
+        },
+        {
+          "slot": 6,
+          "itemId": "1336",
+          "name": "極寒風暴",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1336.png",
+          "description": "+20%減冷卻時間+600點生命值+240點物防\n群體傷害減速"
+        }
+      ]
+    },
+    {
+      "id": "camp-1",
+      "label": "without shield",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1333",
+          "name": "不祥徵兆",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1333.png",
+          "description": "+300點物防+1200點生命值\n受擊時將敵人減速"
+        },
+        {
+          "slot": 2,
+          "itemId": "1244",
+          "name": "破繭之衣",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1244.png",
+          "description": "+120點法攻+900點生命值\n生命值轉法穿"
+        },
+        {
+          "slot": 3,
+          "itemId": "1234",
+          "name": "凝冰之息",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1234.png",
+          "description": "+180點法攻+7.5%減冷卻時間+500點生命值\n技能命中減速"
+        },
+        {
+          "slot": 4,
+          "itemId": "1337",
+          "name": "賢者的庇護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+        },
+        {
+          "slot": 5,
+          "itemId": "1347",
+          "name": "永夜守護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1347.png",
+          "description": "+210點法防+1000點生命值\n+7.5%移速減少法術傷害"
+        },
+        {
+          "slot": 6,
+          "itemId": "1353",
+          "name": "旭日初光",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1353.png",
+          "description": "+210點物防+900點生命值+10%減冷卻時間\n傷害敵人時獲得護盾值"
+        }
+      ]
+    },
+    {
+      "id": "camp-2",
+      "label": "Heals",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1333",
+          "name": "不祥徵兆",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1333.png",
+          "description": "+300點物防+1200點生命值\n受擊時將敵人減速"
+        },
+        {
+          "slot": 2,
+          "itemId": "1332",
+          "name": "霸者重裝",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1332.png",
+          "description": "+1800點生命值+160點物防+80點法防\n提高額外生命值"
+        },
+        {
+          "slot": 3,
+          "itemId": "1422",
+          "name": "抵抗之靴",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1422.png",
+          "description": "+100點法防+50點物防+50點移速\n減少被控時間"
+        },
+        {
+          "slot": 4,
+          "itemId": "1347",
+          "name": "永夜守護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1347.png",
+          "description": "+210點法防+1000點生命值\n+7.5%移速減少法術傷害"
+        },
+        {
+          "slot": 5,
+          "itemId": "1337",
+          "name": "賢者的庇護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+        },
+        {
+          "slot": 6,
+          "itemId": "1242",
+          "name": "難知・月神",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1242.png",
+          "description": "+160點法攻 +7.5%減冷卻時間\n+12%法術吸血暫時無敵"
+        }
+      ]
     }
   ],
   "arcana": [
-    "Fate"
+    "Lvl 5: Fate",
+    "Lvl 5: Harmony",
+    "Lvl 5: Void"
+  ],
+  "arcanaZh": [
+    "5級：宿命",
+    "5級：調和",
+    "5級：虛空"
   ],
   "spells": [
-    "Smite",
     "Flash"
+  ],
+  "spellsZh": [
+    "閃現"
   ],
   "counters": [
     "Ying",
     "Luna"
   ],
   "counteredBy": [
-    "Haya",
-    "Zilong",
-    "Butterfly"
+    "Haya"
   ],
   "tips": [
-    "Sakeer is a Easy Support (Roaming) on Honor of Kings Global. Camp HOK ranks them Tier B with 53.3% win rate and 0.5% pick rate as of 2026-06-05.",
-    "Best build path: Boots of the Arcane → Overlord's Platemail → Breakthrough Robe → Augur's Word → Frozen Breath.",
-    "Run Fate for stats that match Sakeer's Support kit. Take Smite & Flash — swap to Purify against heavy CC or Smite when jungling.",
-    "Standard trade: Mulberry Power → Ride the Wind → Firefly Fields → weave basic attacks. Weave basic attacks between skill casts for passive value.",
-    "Laning: Help marksman crash wave, then rotate mid for picks. Return before Tyrant if your carry has no escape.",
-    "Teamfight: Peel carry first, then look for pick on out-of-position enemies. Ward Tyrant 30s before spawn.",
-    "Sakeer excels into Ying, Luna. Avoid blind picking into Haya, Zilong, Butterfly without team peel.",
-    "Sakeer sits at Tier B globally (53.3% WR). In high rank, pick only into favorable matchups or when you have a dedicated pocket pick. Camp data shows above-average win rate — prioritize when not hard-countered in draft."
+    "Sakeer (Support): Tier B — 53.52% WR (Camp HOK).",
+    "Lane: Roaming.",
+    "Build: Breakthrough Robe, Frozen Breath, Succubus Cloak."
+  ],
+  "tipsZh": [
+    "桑啟（遊走）：梯度 B，勝率 53.52%（Camp HOK）。",
+    "出裝：破繭之衣、凝冰之息、魔女斗篷."
   ],
   "patchHistory": [
     {
-      "version": "Live meta",
-      "change": "Camp HOK — WR 53.3%, pick 0.5%, ban 0.0%, tier B."
+      "seasonId": "12",
+      "seasonName": "S12",
+      "versionName": "20251030",
+      "publishedAt": "2025-10-30T01:00:00Z",
+      "isCurrent": false,
+      "tag": "Stat Changes",
+      "change": "Adjusted Skill Damage",
+      "detail": "",
+      "version": "S12"
     },
     {
-      "version": "Matchups",
-      "change": "Strong into Ying, Luna · Weak into Haya, Zilong, Butterfly."
+      "seasonId": "10",
+      "seasonName": "S10",
+      "versionName": "20250501",
+      "publishedAt": "2025-05-01T02:00:00Z",
+      "isCurrent": false,
+      "tag": "Stat Nerfs",
+      "change": "Skill 1 cooldown increased",
+      "detail": "",
+      "version": "S10"
     },
     {
-      "version": "High rank",
-      "change": "Sakeer sits at Tier B globally (53.3% WR). In high rank, pick only into favorable matchups or when you have a dedicated pocket pick. Camp data shows above-average win rate — prioritize when not hard-countered in draft."
+      "seasonId": "8",
+      "seasonName": "S8",
+      "versionName": "20250213",
+      "publishedAt": "2025-02-13T03:25:14Z",
+      "isCurrent": false,
+      "tag": "Stat Nerfs",
+      "change": "Reduced damage and recovery",
+      "detail": "\"Sakeer has performed exceptionally well since his release. We have moderately nerfed him to ensure a better experience for opponents.\"",
+      "version": "S8"
+    }
+  ],
+  "patchHistoryZh": [
+    {
+      "seasonId": "12",
+      "seasonName": "S12",
+      "versionName": "20251030",
+      "publishedAt": "2025-10-30T01:00:00Z",
+      "isCurrent": false,
+      "tag": "數值調整",
+      "change": "調整技能傷害",
+      "detail": "",
+      "version": "S12"
+    },
+    {
+      "seasonId": "10",
+      "seasonName": "S10",
+      "versionName": "20250501",
+      "publishedAt": "2025-05-01T02:00:00Z",
+      "isCurrent": false,
+      "tag": "數值削弱",
+      "change": "1技能冷卻時間削弱",
+      "detail": "",
+      "version": "S10"
+    },
+    {
+      "seasonId": "8",
+      "seasonName": "S8",
+      "versionName": "20250213",
+      "publishedAt": "2025-02-13T03:25:14Z",
+      "isCurrent": false,
+      "tag": "數值削弱",
+      "change": "降低傷害和回復",
+      "detail": "「桑啟上線後表現過於亮眼，我們將其適度削弱，以保證對手擁有良好的對抗體驗。」",
+      "version": "S8"
     }
   ],
   "faqs": [
     {
       "id": "faq-good-season",
-      "question": "Is Sakeer good in the current meta?",
-      "answer": "Sakeer is Tier B Support with 53.3% win rate, 0.5% pick rate, and 0.0% ban rate on Honor of Kings Global (Camp HOK, 2026-06-05). Niche — draft carefully."
+      "question": "Is Sakeer good in current season?",
+      "answer": "Sakeer is Tier B Support with 53.52% win rate, 0.53% pick rate, and 0.03% ban rate (Camp HOK international)."
     },
     {
       "id": "faq-best-build",
       "question": "What is the best Sakeer build?",
-      "answer": "Core item path: Boots of the Arcane, Overlord's Platemail, Breakthrough Robe, Augur's Word, Frozen Breath. Run Fate arcana with Smite & Flash. Switch to alternate build presets on this page for jungle, clash, or late-game setups."
+      "answer": "Recommended: Breakthrough Robe, Frozen Breath, Succubus Cloak, Sage's Sanctuary, Longnight Guardian, Glacial Buckler."
     },
     {
       "id": "faq-counter",
       "question": "How to counter Sakeer?",
-      "answer": "Pick Haya, Zilong, Butterfly into Sakeer. Deny Roaming resources early and force fights before Sakeer completes core items. Sakeer struggles when the enemy can out-range or out-sustain them."
+      "answer": "Pick Haya. Strong into Ying, Luna."
+    }
+  ],
+  "faqsZh": [
+    {
+      "id": "faq-good-season",
+      "question": "桑啟 這版本適合上分嗎？",
+      "answer": "桑啟 為 B 梯度，勝率 53.52%、選取 0.53%、禁用 0.03%（Camp HOK 國際服）。"
     },
     {
-      "id": "faq-strong-into",
-      "question": "Who does Sakeer counter?",
-      "answer": "Sakeer is strong into Ying, Luna according to HoKStats matchup data and role matchups on the global server. Draft Sakeer when the enemy relies on these heroes in the Roaming lane."
+      "id": "faq-best-build",
+      "question": "桑啟 出裝怎麼搭配？",
+      "answer": "推薦：破繭之衣、凝冰之息、魔女斗篷、賢者的庇護、永夜守護、極寒風暴."
     },
     {
-      "id": "faq-high-rank",
-      "question": "Is Sakeer good in high rank / Diamond+?",
-      "answer": "Sakeer sits at Tier B globally (53.3% WR). In high rank, pick only into favorable matchups or when you have a dedicated pocket pick. Camp data shows above-average win rate — prioritize when not hard-countered in draft."
-    },
-    {
-      "id": "faq-lane",
-      "question": "What lane should Sakeer play?",
-      "answer": "Sakeer is tagged Roaming in Camp export (Support, Mage). Help marksman crash wave, then rotate mid for picks. Return before Tyrant if your carry has no escape."
-    },
-    {
-      "id": "faq-arcana",
-      "question": "Best arcana and spells for Sakeer?",
-      "answer": "Recommended: Fate arcana. Battle spell: Smite & Flash. Adjust Purify/Execute based on enemy dive and jungle need."
-    },
-    {
-      "id": "faq-vs-peer",
-      "question": "Sakeer or Dolia — which is better?",
-      "answer": "Sakeer vs Dolia (Support, Tier S): Dolia is 1.8% pick / 46.1% WR. Sakeer has +7.2% WR vs Dolia in Camp data. Choose Sakeer when you need Roaming identity; choose Dolia for Roaming comfort."
-    },
-    {
-      "id": "faq-ban",
-      "question": "Should I ban Sakeer?",
-      "answer": "Low priority ban (0.0%). Focus bans on higher-tier Support picks unless targeting a one-trick."
+      "id": "faq-counter",
+      "question": "怎麼克制 桑啟？",
+      "answer": "可選 Haya。桑啟 克制 Ying、Luna。"
     }
   ],
   "metaAnalysis": [
-    "Sakeer — 53.3% WR, 0.5% pick, 0.0% ban (Camp HOK 2026-06-05).",
-    "Tier B Support · Roaming · difficulty Easy.",
-    "Sakeer sits at Tier B globally (53.3% WR). In high rank, pick only into favorable matchups or when you have a dedicated pocket pick. Camp data shows above-average win rate — prioritize when not hard-countered in draft.",
-    "Matchups: strong into Ying, Luna; weak into Haya, Zilong, Butterfly.",
-    "Sakeer vs Dolia (Support, Tier S): Dolia is 1.8% pick / 46.1% WR. Sakeer has +7.2% WR vs Dolia in Camp data. Choose Sakeer when you need Roaming identity; choose Dolia for Roaming comfort.",
-    "Sakeer vs Cai Yan (Support, Tier S): Cai Yan is 1.3% pick / 50.3% WR. Sakeer has +3.0% WR vs Cai Yan in Camp data. Choose Sakeer when you need Roaming identity; choose Cai Yan for Roaming comfort.",
-    "Draft tip: counter-pick or comfort pick when lane matchup is favorable."
+    "Sakeer win rate 53.52% (Camp HOK, 2026-06-07).",
+    "Pick rate 0.53%.",
+    "Ban rate 0.03%.",
+    "Counters: Ying, Luna. Weak into: Haya."
   ],
-  "builds": [
-    {
-      "id": "recommended",
-      "label": "Recommended",
-      "position": null,
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1424",
-          "name": "Boots of the Arcane",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1424.jpg",
-          "description": "Magical Pierce"
-        },
-        {
-          "slot": 2,
-          "itemId": "1332",
-          "name": "Overlord's Platemail",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1332.jpg",
-          "description": "Extra Health"
-        },
-        {
-          "slot": 3,
-          "itemId": "1244",
-          "name": "Breakthrough Robe",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1244.jpg",
-          "description": "Converts Health into M. Pierce"
-        },
-        {
-          "slot": 4,
-          "itemId": "1237",
-          "name": "Augur's Word",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1237.jpg",
-          "description": "Offense & defense"
-        },
-        {
-          "slot": 5,
-          "itemId": "1234",
-          "name": "Frozen Breath",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1234.jpg",
-          "description": "Slows on hit"
-        },
-        {
-          "slot": 6,
-          "itemId": null,
-          "name": "Data unavailable",
-          "icon": null,
-          "description": null
-        }
-      ]
-    },
-    {
-      "id": "with-shield",
-      "label": "with shield",
-      "position": "Position 5",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1721",
-          "name": "Crimson Shadow - Redemption",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1721.jpg",
-          "description": "Group shield"
-        },
-        {
-          "slot": 2,
-          "itemId": "1426",
-          "name": "Boots of Deftness",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1426.jpg",
-          "description": "Extra Movement Speed"
-        },
-        {
-          "slot": 3,
-          "itemId": "1353",
-          "name": "Dawnlight",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1353.jpg",
-          "description": "Shields on dealing damage"
-        },
-        {
-          "slot": 4,
-          "itemId": "1334",
-          "name": "Eye of the Phoenix",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1334.jpg",
-          "description": "Boosts Health regen"
-        },
-        {
-          "slot": 5,
-          "itemId": "1332",
-          "name": "Overlord's Platemail",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1332.jpg",
-          "description": "Extra Health"
-        },
-        {
-          "slot": 6,
-          "itemId": "1333",
-          "name": "Ominous Premonition",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1333.jpg",
-          "description": "Slows attackers"
-        }
-      ]
-    },
-    {
-      "id": "without-shield",
-      "label": "without shield",
-      "position": "Position 5",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1711",
-          "name": "Crimson Shadow",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1711.jpg",
-          "description": "DPS aura"
-        },
-        {
-          "slot": 2,
-          "itemId": "1426",
-          "name": "Boots of Deftness",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1426.jpg",
-          "description": "Extra Movement Speed"
-        },
-        {
-          "slot": 3,
-          "itemId": "1721",
-          "name": "Crimson Shadow - Redemption",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1721.jpg",
-          "description": "Group shield"
-        },
-        {
-          "slot": 4,
-          "itemId": "1332",
-          "name": "Overlord's Platemail",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1332.jpg",
-          "description": "Extra Health"
-        },
-        {
-          "slot": 5,
-          "itemId": "1334",
-          "name": "Eye of the Phoenix",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1334.jpg",
-          "description": "Boosts Health regen"
-        },
-        {
-          "slot": 6,
-          "itemId": "1333",
-          "name": "Ominous Premonition",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1333.jpg",
-          "description": "Slows attackers"
-        }
-      ]
-    },
-    {
-      "id": "heals",
-      "label": "Heals",
-      "position": "Position 5",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1701",
-          "name": "Knowledge Gem",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1701.jpg",
-          "description": "Extra Gold & EXP"
-        },
-        {
-          "slot": 2,
-          "itemId": "1424",
-          "name": "Boots of the Arcane",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1424.jpg",
-          "description": "Magical Pierce"
-        },
-        {
-          "slot": 3,
-          "itemId": "1714",
-          "name": "Guardian",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1714.jpg",
-          "description": "Survivability aura"
-        },
-        {
-          "slot": 4,
-          "itemId": "1724",
-          "name": "Guardian - Redemption",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1724.jpg",
-          "description": "Group shield"
-        },
-        {
-          "slot": 5,
-          "itemId": "12211",
-          "name": "Venomous Staff",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/12211.jpg",
-          "description": "Lowers Health regen"
-        },
-        {
-          "slot": 6,
-          "itemId": "1333",
-          "name": "Ominous Premonition",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1333.jpg",
-          "description": "Slows attackers"
-        }
-      ]
-    }
+  "metaAnalysisZh": [
+    "桑啟 勝率 53.52%（Camp HOK，2026-06-07）",
+    "選取率 0.53%",
+    "禁用率 0.03%",
+    "克制：Ying、Luna；被克制：Haya"
   ],
   "guide": {
     "overview": "Sakeer is a Easy Support (Roaming) on Honor of Kings Global. Camp HOK ranks them Tier B with 53.3% win rate and 0.5% pick rate as of 2026-06-05.",

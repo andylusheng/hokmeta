@@ -2,48 +2,82 @@
   "id": "guan-yu",
   "slug": "guan-yu",
   "name": "Guan Yu",
+  "nameZh": "關羽",
   "role": "Warrior",
   "roles": "Fighter",
+  "rolesZh": "戰士",
   "lane": "Clash Lane",
+  "laneZh": "對抗路",
   "difficulty": "Medium",
   "tier": "B",
-  "winRate": 48.31,
-  "pickRate": 0.36,
+  "winRate": 48.68,
+  "pickRate": 0.37,
   "banRate": 0.11,
-  "rank": 101,
+  "rank": 92,
   "avatar": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/V5e2k18Z.png",
   "avatarFallback": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/140/140.jpg",
+  "heroCover": "https://camp.honorofkings.com/social/game/src/image_hero_cover_1275*718/8qztsVwK.jpg",
   "tencentId": 140,
-  "dataSource": "Camp HOK + HoKStats.gg (intl)",
-  "dataUpdated": "2026-06-05",
+  "dataSource": "Camp HOK bilingual (primary)",
+  "dataUpdated": "2026-06-07",
   "skills": [
     {
       "slot": "passive",
       "name": "Rider of Triumph",
-      "description": "'''Normal Stance:''' Moving constantly accumulates a Movement Speed bonus, and reaching a certain distance activates the Charge Stance. '''Charge Stance:''' Enhances the next skill and Basic Attack.",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/140/14000.png",
-      "cooldown": null
+      "description": "Normal Stance: Moving constantly accumulates a Movement Speed bonus, and reaching a certain distance activates the Charge Stance.\nCharge Stance: Enhances the next skill and Basic Attack.",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/14000.png",
+      "cooldown": "1s"
     },
     {
       "slot": "skill1",
       "name": "Heroic Charge",
-      "description": "'''Normal Stance:''' Deals damage to enemies within range. '''Charge Stance:''' Charges forward, knocking back enemies in his path while dealing damage.",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/140/14010.png",
-      "cooldown": null
+      "description": "Normal Stance: Deals damage to enemies within range.\nCharge Stance: Charges forward, knocking back enemies in his path while dealing damage.",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/14010.png",
+      "cooldown": "7s"
     },
     {
       "slot": "skill2",
       "name": "Soaring Green Dragon",
-      "description": "'''Normal Stance:''' Removes crowd control effects and gains Movement Speed. '''Charge Stance:''' Removes crowd control effects and leaps forward, knocking back enemies within the landing area and dealing damage.",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/140/14020.png",
-      "cooldown": null
+      "description": "Normal Stance: Removes crowd control effects and gains Movement Speed.\nCharge Stance: Removes crowd control effects and leaps forward, knocking back enemies within the landing area and dealing damage.",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/14020.png",
+      "cooldown": "12s"
     },
     {
       "slot": "ultimate",
       "name": "Razor Cavalry",
-      "description": "'''Normal Stance:''' Enhances himself, reducing the movement distance required to enter Charge stance. '''Charge Stance:''' Summons heavy cavalry that dash forward, dealing damage and knocking back enemies in their path.",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/140/14030.png",
-      "cooldown": null
+      "description": "Normal Stance: Enhances himself, reducing the movement distance required to enter Charge stance.\nCharge Stance: Summons heavy cavalry that dash forward, dealing damage and knocking back enemies in their path.",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/14030.png",
+      "cooldown": "60s"
+    }
+  ],
+  "skillsZh": [
+    {
+      "slot": "passive",
+      "name": "一騎當千",
+      "description": "普通姿態：保持移動會持續累積移速加成，移動固定距離後進入衝鋒姿態。\n衝鋒狀態：下次技能和普攻獲得強化。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/14000.png",
+      "cooldown": "1s"
+    },
+    {
+      "slot": "skill1",
+      "name": "單刀赴會",
+      "description": "普通姿態：對自身周圍一定範圍內敵人造成傷害。\n衝鋒姿態：向面朝方向衝鋒，擊退沿途敵人並造成傷害。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/14010.png",
+      "cooldown": "7s"
+    },
+    {
+      "slot": "skill2",
+      "name": "青龍偃月",
+      "description": "普通姿態：解除所受到的控制，並獲得額外移速。\n衝鋒姿態：解除所受到的控制，向面朝方向進行跳躍，擊退落地範圍內的敵人並造成傷害。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/14020.png",
+      "cooldown": "12s"
+    },
+    {
+      "slot": "ultimate",
+      "name": "刀鋒鐵騎",
+      "description": "強化自身，期間減少進入衝鋒姿態所需要的移動距離。\n衝鋒姿態：召喚鐵騎與自身向面朝方向突進，對沿途敵人造成傷害和擊退效果。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/14030.png",
+      "cooldown": "60s"
     }
   ],
   "build": [
@@ -51,51 +85,500 @@
       "slot": 1,
       "itemId": "1421",
       "name": "Boots of Fortitude",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1421.jpg",
-      "description": "Reduces physical damage"
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1421.png",
+      "description": "PDEF +100, MDEF +50, MSPD +50\nReduces physical damage"
     },
     {
       "slot": 2,
       "itemId": "1137",
       "name": "Axe of Torment",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1137.jpg",
-      "description": "Anti-squishy"
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1137.png",
+      "description": "PATK +80, CDR +10%, HP +500\nAnti-squishy"
     },
     {
       "slot": 3,
-      "itemId": "1338",
-      "name": "Cuirass of Savagery",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1338.jpg",
-      "description": "Offense & defense"
+      "itemId": "1534",
+      "name": "Dragon's Rage",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1536.png",
+      "description": "HP +1,350, PDEF +180, MDEF +90\nBoosts BA damage"
     },
     {
       "slot": 4,
-      "itemId": "1341",
-      "name": "Frigid Charge",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1341.jpg",
-      "description": "Group CC"
+      "itemId": "1138",
+      "name": "Overlord's Might",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1138.png",
+      "description": "PATK +150, CDR +5%\nHigh-damage attack"
     },
     {
       "slot": 5,
-      "itemId": "1335",
-      "name": "Succubus Cloak",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1335.jpg",
-      "description": "Negates magical damage"
+      "itemId": "1336",
+      "name": "Glacial Buckler",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1336.png",
+      "description": "CDR +20%, HP +600, PDEF +240\nGroup damage & slow"
     },
     {
       "slot": 6,
-      "itemId": "1131",
-      "name": "Starbreaker",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1131.jpg",
-      "description": "Anti-tank"
+      "itemId": "1134",
+      "name": "Master Sword",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1134.png",
+      "description": "PATK +55, Crit Rate +20%, HP +600\nEnhances BAs"
+    }
+  ],
+  "buildZh": [
+    {
+      "slot": 1,
+      "itemId": "1421",
+      "name": "影忍之足",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1421.png",
+      "description": "+100點物防+50點法防+50點移速\n減少物理傷害"
+    },
+    {
+      "slot": 2,
+      "itemId": "1137",
+      "name": "暗影戰斧",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1137.png",
+      "description": "+80點攻擊+10%減冷卻時間+500點生命值\n打血薄用"
+    },
+    {
+      "slot": 3,
+      "itemId": "1534",
+      "name": "怒龍劍盾",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1536.png",
+      "description": "+1350點生命值+180點物防+90點法防\n普攻額外傷害"
+    },
+    {
+      "slot": 4,
+      "itemId": "1138",
+      "name": "強者破軍",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1138.png",
+      "description": "+150點攻擊+5%減冷卻時間\n高額攻擊"
+    },
+    {
+      "slot": 5,
+      "itemId": "1336",
+      "name": "極寒風暴",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1336.png",
+      "description": "+20%減冷卻時間+600點生命值+240點物防\n群體傷害減速"
+    },
+    {
+      "slot": 6,
+      "itemId": "1134",
+      "name": "宗師之力",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1134.png",
+      "description": "+55點攻擊+20%暴擊+600點生命值……\n強化普攻"
+    }
+  ],
+  "builds": [
+    {
+      "id": "camp-0",
+      "label": "Build",
+      "lane": "Top",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1421",
+          "name": "Boots of Fortitude",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1421.png",
+          "description": "PDEF +100, MDEF +50, MSPD +50\nReduces physical damage"
+        },
+        {
+          "slot": 2,
+          "itemId": "1137",
+          "name": "Axe of Torment",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1137.png",
+          "description": "PATK +80, CDR +10%, HP +500\nAnti-squishy"
+        },
+        {
+          "slot": 3,
+          "itemId": "1534",
+          "name": "Dragon's Rage",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1536.png",
+          "description": "HP +1,350, PDEF +180, MDEF +90\nBoosts BA damage"
+        },
+        {
+          "slot": 4,
+          "itemId": "1138",
+          "name": "Overlord's Might",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1138.png",
+          "description": "PATK +150, CDR +5%\nHigh-damage attack"
+        },
+        {
+          "slot": 5,
+          "itemId": "1336",
+          "name": "Glacial Buckler",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1336.png",
+          "description": "CDR +20%, HP +600, PDEF +240\nGroup damage & slow"
+        },
+        {
+          "slot": 6,
+          "itemId": "1134",
+          "name": "Master Sword",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1134.png",
+          "description": "PATK +55, Crit Rate +20%, HP +600\nEnhances BAs"
+        }
+      ]
+    },
+    {
+      "id": "camp-1",
+      "label": "META BUILD",
+      "lane": "Top",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1534",
+          "name": "Dragon's Rage",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1536.png",
+          "description": "HP +1,350, PDEF +180, MDEF +90\nBoosts BA damage"
+        },
+        {
+          "slot": 2,
+          "itemId": "1328",
+          "name": "Blood Rage",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1328.png",
+          "description": "PATK +75, HP +900\nTrades HP for shield"
+        },
+        {
+          "slot": 3,
+          "itemId": "1125",
+          "name": "Demonsbane",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1125.png",
+          "description": "PATK +90, MDEF +150, HP +600\nBoosts Magical Defense"
+        },
+        {
+          "slot": 4,
+          "itemId": "1127",
+          "name": "Destiny",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
+        },
+        {
+          "slot": 5,
+          "itemId": "1337",
+          "name": "Sage's Sanctuary",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
+        },
+        {
+          "slot": 6,
+          "itemId": "1351",
+          "name": "Amble - Winter",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1351.png",
+          "description": "PDEF +150, HP +900, CDR +7.5%, Resistance +10%\nGreat crowd control"
+        }
+      ]
+    },
+    {
+      "id": "camp-2",
+      "label": "Siap Tempur",
+      "lane": "Top",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1127",
+          "name": "Destiny",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
+        },
+        {
+          "slot": 2,
+          "itemId": "1534",
+          "name": "Dragon's Rage",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1536.png",
+          "description": "HP +1,350, PDEF +180, MDEF +90\nBoosts BA damage"
+        },
+        {
+          "slot": 3,
+          "itemId": "1341",
+          "name": "Frigid Charge",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1341.png",
+          "description": "PDEF +150, HP +900, CDR +7.5%, Resistance +10%\nGreat crowd control"
+        },
+        {
+          "slot": 4,
+          "itemId": "1347",
+          "name": "Longnight Guardian",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1347.png",
+          "description": "MDEF +210, HP +1,000, MSPD +7.5%\nReduces magical damage"
+        },
+        {
+          "slot": 5,
+          "itemId": "1351",
+          "name": "Amble - Winter",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1351.png",
+          "description": "PDEF +150, HP +900, CDR +7.5%, Resistance +10%\nGreat crowd control"
+        },
+        {
+          "slot": 6,
+          "itemId": "1422",
+          "name": "Boots of Resistance",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1422.png",
+          "description": "MDEF +100, PDEF +50, MSPD +50\nShortens crowd control"
+        }
+      ]
+    },
+    {
+      "id": "camp-3",
+      "label": "Roam Tempur",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1328",
+          "name": "Blood Rage",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1328.png",
+          "description": "PATK +75, HP +900\nTrades HP for shield"
+        },
+        {
+          "slot": 2,
+          "itemId": "1337",
+          "name": "Sage's Sanctuary",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
+        },
+        {
+          "slot": 3,
+          "itemId": "1341",
+          "name": "Frigid Charge",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1341.png",
+          "description": "PDEF +150, HP +900, CDR +7.5%, Resistance +10%\nGreat crowd control"
+        },
+        {
+          "slot": 4,
+          "itemId": "1347",
+          "name": "Longnight Guardian",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1347.png",
+          "description": "MDEF +210, HP +1,000, MSPD +7.5%\nReduces magical damage"
+        },
+        {
+          "slot": 5,
+          "itemId": "1351",
+          "name": "Amble - Winter",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1351.png",
+          "description": "PDEF +150, HP +900, CDR +7.5%, Resistance +10%\nGreat crowd control"
+        },
+        {
+          "slot": 6,
+          "itemId": "1422",
+          "name": "Boots of Resistance",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1422.png",
+          "description": "MDEF +100, PDEF +50, MSPD +50\nShortens crowd control"
+        }
+      ]
+    }
+  ],
+  "buildsZh": [
+    {
+      "id": "camp-0",
+      "label": "Build",
+      "lane": "Top",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1421",
+          "name": "影忍之足",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1421.png",
+          "description": "+100點物防+50點法防+50點移速\n減少物理傷害"
+        },
+        {
+          "slot": 2,
+          "itemId": "1137",
+          "name": "暗影戰斧",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1137.png",
+          "description": "+80點攻擊+10%減冷卻時間+500點生命值\n打血薄用"
+        },
+        {
+          "slot": 3,
+          "itemId": "1534",
+          "name": "怒龍劍盾",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1536.png",
+          "description": "+1350點生命值+180點物防+90點法防\n普攻額外傷害"
+        },
+        {
+          "slot": 4,
+          "itemId": "1138",
+          "name": "強者破軍",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1138.png",
+          "description": "+150點攻擊+5%減冷卻時間\n高額攻擊"
+        },
+        {
+          "slot": 5,
+          "itemId": "1336",
+          "name": "極寒風暴",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1336.png",
+          "description": "+20%減冷卻時間+600點生命值+240點物防\n群體傷害減速"
+        },
+        {
+          "slot": 6,
+          "itemId": "1134",
+          "name": "宗師之力",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1134.png",
+          "description": "+55點攻擊+20%暴擊+600點生命值……\n強化普攻"
+        }
+      ]
+    },
+    {
+      "id": "camp-1",
+      "label": "META BUILD",
+      "lane": "Top",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1534",
+          "name": "怒龍劍盾",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1536.png",
+          "description": "+1350點生命值+180點物防+90點法防\n普攻額外傷害"
+        },
+        {
+          "slot": 2,
+          "itemId": "1328",
+          "name": "血魔之怒",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1328.png",
+          "description": "+75點攻擊+900點生命值 \n犧牲生命值換取護盾值"
+        },
+        {
+          "slot": 3,
+          "itemId": "1125",
+          "name": "破魔刀",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1125.png",
+          "description": "+90點攻擊+150點法防+600點生命值\n增加法術防禦"
+        },
+        {
+          "slot": 4,
+          "itemId": "1127",
+          "name": "名刀・司命",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "+75點攻擊+15%攻速+500點生命值\n保命"
+        },
+        {
+          "slot": 5,
+          "itemId": "1337",
+          "name": "賢者的庇護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+        },
+        {
+          "slot": 6,
+          "itemId": "1351",
+          "name": "徐行・凜冬",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1351.png",
+          "description": "+150點物防+900點生命值+7.5%冷卻時間+10%韌性\n群體控制"
+        }
+      ]
+    },
+    {
+      "id": "camp-2",
+      "label": "Siap Tempur",
+      "lane": "Top",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1127",
+          "name": "名刀・司命",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "+75點攻擊+15%攻速+500點生命值\n保命"
+        },
+        {
+          "slot": 2,
+          "itemId": "1534",
+          "name": "怒龍劍盾",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1536.png",
+          "description": "+1350點生命值+180點物防+90點法防\n普攻額外傷害"
+        },
+        {
+          "slot": 3,
+          "itemId": "1341",
+          "name": "冰霜衝擊",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1341.png",
+          "description": "+150點物防+900點生命值+7.5%冷卻時間+10%韌性\n群體控制"
+        },
+        {
+          "slot": 4,
+          "itemId": "1347",
+          "name": "永夜守護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1347.png",
+          "description": "+210點法防+1000點生命值\n+7.5%移速減少法術傷害"
+        },
+        {
+          "slot": 5,
+          "itemId": "1351",
+          "name": "徐行・凜冬",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1351.png",
+          "description": "+150點物防+900點生命值+7.5%冷卻時間+10%韌性\n群體控制"
+        },
+        {
+          "slot": 6,
+          "itemId": "1422",
+          "name": "抵抗之靴",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1422.png",
+          "description": "+100點法防+50點物防+50點移速\n減少被控時間"
+        }
+      ]
+    },
+    {
+      "id": "camp-3",
+      "label": "Roam Tempur",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1328",
+          "name": "血魔之怒",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1328.png",
+          "description": "+75點攻擊+900點生命值 \n犧牲生命值換取護盾值"
+        },
+        {
+          "slot": 2,
+          "itemId": "1337",
+          "name": "賢者的庇護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+        },
+        {
+          "slot": 3,
+          "itemId": "1341",
+          "name": "冰霜衝擊",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1341.png",
+          "description": "+150點物防+900點生命值+7.5%冷卻時間+10%韌性\n群體控制"
+        },
+        {
+          "slot": 4,
+          "itemId": "1347",
+          "name": "永夜守護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1347.png",
+          "description": "+210點法防+1000點生命值\n+7.5%移速減少法術傷害"
+        },
+        {
+          "slot": 5,
+          "itemId": "1351",
+          "name": "徐行・凜冬",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1351.png",
+          "description": "+150點物防+900點生命值+7.5%冷卻時間+10%韌性\n群體控制"
+        },
+        {
+          "slot": 6,
+          "itemId": "1422",
+          "name": "抵抗之靴",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1422.png",
+          "description": "+100點法防+50點物防+50點移速\n減少被控時間"
+        }
+      ]
     }
   ],
   "arcana": [
-    "Fate"
+    "Lvl 5: Mutation",
+    "Lvl 5: Stealth",
+    "Lvl 5: Eagle Eye"
+  ],
+  "arcanaZh": [
+    "5級：異變",
+    "5級：隱匿",
+    "5級：鷹眼"
   ],
   "spells": [
-    "Flash",
     "Execute"
+  ],
+  "spellsZh": [
+    "終結"
   ],
   "counters": [
     "Daji",
@@ -108,586 +591,195 @@
     "Lady Sun"
   ],
   "tips": [
-    "Guan Yu is a Medium Warrior (Clash Lane) on Honor of Kings Global. Camp HOK ranks them Tier B with 48.3% win rate and 0.4% pick rate as of 2026-06-05.",
-    "Best build path: Boots of Fortitude → Axe of Torment → Cuirass of Savagery → Frigid Charge → Succubus Cloak → Starbreaker.",
-    "Run Fate for stats that match Guan Yu's Warrior kit. Take Flash & Execute — swap to Purify against heavy CC or Smite when jungling.",
-    "Standard trade: Heroic Charge → Soaring Green Dragon → Razor Cavalry → weave basic attacks. Weave basic attacks between skill casts for passive value.",
-    "Laning: Trade on your power spike levels (2/4). Call jungler for dive only when enemy flash is down.",
-    "Teamfight: Flank or dive backline after tanks commit. Do not start fights without vision on enemy jungler.",
-    "Guan Yu excels into Daji, Mi Yue, Yixing. Avoid blind picking into Hou Yi, Marco Polo, Lady Sun without team peel.",
-    "Guan Yu sits at Tier B globally (48.3% WR). In high rank, pick only into favorable matchups or when you have a dedicated pocket pick. Below 49% global WR — high-rank players often avoid unless compensating for team comp."
+    "Guan Yu (Warrior): Tier B — 48.68% WR (Camp HOK).",
+    "Lane: Clash Lane.",
+    "Build: Boots of Fortitude, Axe of Torment, Dragon's Rage."
+  ],
+  "tipsZh": [
+    "關羽（對抗路）：梯度 B，勝率 48.68%（Camp HOK）。",
+    "出裝：影忍之足、暗影戰斧、怒龍劍盾."
   ],
   "patchHistory": [
     {
-      "version": "Live meta",
-      "change": "Camp HOK — WR 48.3%, pick 0.4%, ban 0.1%, tier B."
+      "seasonId": "13",
+      "seasonName": "S13",
+      "versionName": "2026/01/22",
+      "publishedAt": "2026-01-22T01:00:00Z",
+      "isCurrent": false,
+      "tag": "Stat Buffs",
+      "change": "Adjusted Skill Damage",
+      "detail": "",
+      "version": "S13"
     },
     {
-      "version": "Matchups",
-      "change": "Strong into Daji, Mi Yue, Yixing · Weak into Hou Yi, Marco Polo, Lady Sun."
+      "seasonId": "12",
+      "seasonName": "S12",
+      "versionName": "20251017",
+      "publishedAt": "2025-10-17T01:00:00Z",
+      "isCurrent": false,
+      "tag": "Stat Buffs",
+      "change": "Increased Skill Damage",
+      "detail": "",
+      "version": "S12"
     },
     {
-      "version": "High rank",
-      "change": "Guan Yu sits at Tier B globally (48.3% WR). In high rank, pick only into favorable matchups or when you have a dedicated pocket pick. Below 49% global WR — high-rank players often avoid unless compensating for team comp."
+      "seasonId": "11",
+      "seasonName": "S11",
+      "versionName": "20250814",
+      "publishedAt": "2025-08-14T01:00:00Z",
+      "isCurrent": false,
+      "tag": "Mechanics Upgrade",
+      "change": "Energy Mechanic Improvements",
+      "detail": "",
+      "version": "S11"
+    },
+    {
+      "seasonId": "5",
+      "seasonName": "S5",
+      "versionName": "20240410",
+      "publishedAt": "2024-04-10T15:15:27Z",
+      "isCurrent": false,
+      "tag": "Stat Buffs",
+      "change": "Reduced Energy decay while charging.",
+      "detail": "Reduced Energy decay while charging.\nGuan Yu isn't performing well, in large part because his Energy decays too fast while charging. This becomes very punishing if Guan Yu gets crowd controlled, or if his player slips up.We've reduced the Energy decay speed to give his unique mechanics more of a chance to shine.",
+      "version": "S5"
+    },
+    {
+      "seasonId": "3",
+      "seasonName": "S3",
+      "versionName": "20231122",
+      "publishedAt": "2023-11-22T12:01:46Z",
+      "isCurrent": false,
+      "tag": "Stat Buffs",
+      "change": "Reduced the base cooldown of his Ultimate.",
+      "detail": "A number of new fighter heroes have made their debut in Hero's Gorge in the last few updates. As a result, Guan Yu now appears a little weak when compared to newer fighter heroes with their arsenals of flashy skills. We hope that enhancing Guan Yu's Ultimate will make him a more attractive option for our players.",
+      "version": "S3"
+    },
+    {
+      "seasonId": "3",
+      "seasonName": "S3",
+      "versionName": "20231011",
+      "publishedAt": "2023-10-11T12:03:22Z",
+      "isCurrent": false,
+      "tag": "Stat Buffs",
+      "change": "Buff",
+      "detail": "",
+      "version": "S3"
+    }
+  ],
+  "patchHistoryZh": [
+    {
+      "seasonId": "13",
+      "seasonName": "S13",
+      "versionName": "2026/01/22",
+      "publishedAt": "2026-01-22T01:00:00Z",
+      "isCurrent": false,
+      "tag": "數值增強",
+      "change": "調整技能傷害",
+      "detail": "",
+      "version": "S13"
+    },
+    {
+      "seasonId": "12",
+      "seasonName": "S12",
+      "versionName": "20251017",
+      "publishedAt": "2025-10-17T01:00:00Z",
+      "isCurrent": false,
+      "tag": "數值增強",
+      "change": "提升技能傷害",
+      "detail": "",
+      "version": "S12"
+    },
+    {
+      "seasonId": "11",
+      "seasonName": "S11",
+      "versionName": "20250814",
+      "publishedAt": "2025-08-14T01:00:00Z",
+      "isCurrent": false,
+      "tag": "機制升級",
+      "change": "能量機制升級",
+      "detail": "",
+      "version": "S11"
+    },
+    {
+      "seasonId": "5",
+      "seasonName": "S5",
+      "versionName": "20240410",
+      "publishedAt": "2024-04-10T15:15:27Z",
+      "isCurrent": false,
+      "tag": "數值增強",
+      "change": "降低關羽衝鋒能量衰減速度",
+      "detail": "降低關羽衝鋒能量衰減速度\n關羽目前版本表現不佳，某種程度上是因為他在受到控制，或其使用者操作失誤後，關羽衝鋒能力衰減速度過快造成的。我們降低了關羽衝鋒能量衰減速度，希望能讓這位機制獨特的英雄獲得更多表現機會。",
+      "version": "S5"
+    },
+    {
+      "seasonId": "3",
+      "seasonName": "S3",
+      "versionName": "20231122",
+      "publishedAt": "2023-11-22T12:01:46Z",
+      "isCurrent": false,
+      "tag": "數值增強",
+      "change": "Reduced the base cooldown of his Ultimate.",
+      "detail": "A number of new fighter heroes have made their debut in Hero's Gorge in the last few updates. As a result, Guan Yu now appears a little weak when compared to newer fighter heroes with their arsenals of flashy skills. We hope that enhancing Guan Yu's Ultimate will make him a more attractive option for our players.",
+      "version": "S3"
+    },
+    {
+      "seasonId": "3",
+      "seasonName": "S3",
+      "versionName": "20231011",
+      "publishedAt": "2023-10-11T12:03:22Z",
+      "isCurrent": false,
+      "tag": "數值增強",
+      "change": "Buff",
+      "detail": "",
+      "version": "S3"
     }
   ],
   "faqs": [
     {
       "id": "faq-good-season",
-      "question": "Is Guan Yu good in the current meta?",
-      "answer": "Guan Yu is Tier B Warrior with 48.3% win rate, 0.4% pick rate, and 0.1% ban rate on Honor of Kings Global (Camp HOK, 2026-06-05). Niche — draft carefully."
+      "question": "Is Guan Yu good in current season?",
+      "answer": "Guan Yu is Tier B Warrior with 48.68% win rate, 0.37% pick rate, and 0.11% ban rate (Camp HOK international)."
     },
     {
       "id": "faq-best-build",
       "question": "What is the best Guan Yu build?",
-      "answer": "Core item path: Boots of Fortitude, Axe of Torment, Cuirass of Savagery, Frigid Charge, Succubus Cloak, Starbreaker. Run Fate arcana with Flash & Execute. Switch to alternate build presets on this page for jungle, clash, or late-game setups."
+      "answer": "Recommended: Boots of Fortitude, Axe of Torment, Dragon's Rage, Overlord's Might, Glacial Buckler, Master Sword."
     },
     {
       "id": "faq-counter",
       "question": "How to counter Guan Yu?",
-      "answer": "Pick Hou Yi, Marco Polo, Lady Sun into Guan Yu. Deny Clash Lane resources early and force fights before Guan Yu completes core items. Guan Yu struggles when the enemy can out-range or out-sustain them."
+      "answer": "Pick Hou Yi, Marco Polo, Lady Sun. Strong into Daji, Mi Yue, Yixing."
+    }
+  ],
+  "faqsZh": [
+    {
+      "id": "faq-good-season",
+      "question": "關羽 這版本適合上分嗎？",
+      "answer": "關羽 為 B 梯度，勝率 48.68%、選取 0.37%、禁用 0.11%（Camp HOK 國際服）。"
     },
     {
-      "id": "faq-strong-into",
-      "question": "Who does Guan Yu counter?",
-      "answer": "Guan Yu is strong into Daji, Mi Yue, Yixing according to HoKStats matchup data and role matchups on the global server. Draft Guan Yu when the enemy relies on these heroes in the Clash Lane lane."
+      "id": "faq-best-build",
+      "question": "關羽 出裝怎麼搭配？",
+      "answer": "推薦：影忍之足、暗影戰斧、怒龍劍盾、強者破軍、極寒風暴、宗師之力."
     },
     {
-      "id": "faq-high-rank",
-      "question": "Is Guan Yu good in high rank / Diamond+?",
-      "answer": "Guan Yu sits at Tier B globally (48.3% WR). In high rank, pick only into favorable matchups or when you have a dedicated pocket pick. Below 49% global WR — high-rank players often avoid unless compensating for team comp."
-    },
-    {
-      "id": "faq-lane",
-      "question": "What lane should Guan Yu play?",
-      "answer": "Guan Yu is tagged Clash Lane in Camp export (Fighter). Trade on your power spike levels (2/4). Call jungler for dive only when enemy flash is down."
-    },
-    {
-      "id": "faq-arcana",
-      "question": "Best arcana and spells for Guan Yu?",
-      "answer": "Recommended: Fate arcana. Battle spell: Flash & Execute. Adjust Purify/Execute based on enemy dive and jungle need."
-    },
-    {
-      "id": "faq-vs-peer",
-      "question": "Guan Yu or Li Xin — which is better?",
-      "answer": "Guan Yu vs Li Xin (Warrior, Tier S+): Li Xin is 1.9% pick / 52.6% WR. Li Xin wins 4.3% more often globally. Choose Guan Yu when you need Clash Lane identity; choose Li Xin for Clash Lane comfort."
-    },
-    {
-      "id": "faq-ban",
-      "question": "Should I ban Guan Yu?",
-      "answer": "Low priority ban (0.1%). Focus bans on higher-tier Warrior picks unless targeting a one-trick."
+      "id": "faq-counter",
+      "question": "怎麼克制 關羽？",
+      "answer": "可選 Hou Yi、Marco Polo、Lady Sun。關羽 克制 Daji、Mi Yue、Yixing。"
     }
   ],
   "metaAnalysis": [
-    "Guan Yu — 48.3% WR, 0.4% pick, 0.1% ban (Camp HOK 2026-06-05).",
-    "Tier B Warrior · Clash Lane · difficulty Medium.",
-    "Guan Yu sits at Tier B globally (48.3% WR). In high rank, pick only into favorable matchups or when you have a dedicated pocket pick. Below 49% global WR — high-rank players often avoid unless compensating for team comp.",
-    "Matchups: strong into Daji, Mi Yue, Yixing; weak into Hou Yi, Marco Polo, Lady Sun.",
-    "Guan Yu vs Li Xin (Warrior, Tier S+): Li Xin is 1.9% pick / 52.6% WR. Li Xin wins 4.3% more often globally. Choose Guan Yu when you need Clash Lane identity; choose Li Xin for Clash Lane comfort.",
-    "Guan Yu vs Chicha (Warrior, Tier S): Chicha is 1.5% pick / 50.2% WR. Chicha wins 1.9% more often globally. Choose Guan Yu when you need Clash Lane identity; choose Chicha for Clash Lane comfort.",
-    "Draft tip: counter-pick or comfort pick when lane matchup is favorable."
+    "Guan Yu win rate 48.68% (Camp HOK, 2026-06-07).",
+    "Pick rate 0.37%.",
+    "Ban rate 0.11%.",
+    "Counters: Daji, Mi Yue, Yixing. Weak into: Hou Yi, Marco Polo, Lady Sun."
   ],
-  "builds": [
-    {
-      "id": "recommended",
-      "label": "Recommended",
-      "position": null,
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1421",
-          "name": "Boots of Fortitude",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1421.jpg",
-          "description": "Reduces physical damage"
-        },
-        {
-          "slot": 2,
-          "itemId": "1137",
-          "name": "Axe of Torment",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1137.jpg",
-          "description": "Anti-squishy"
-        },
-        {
-          "slot": 3,
-          "itemId": "1338",
-          "name": "Cuirass of Savagery",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1338.jpg",
-          "description": "Offense & defense"
-        },
-        {
-          "slot": 4,
-          "itemId": "1341",
-          "name": "Frigid Charge",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1341.jpg",
-          "description": "Group CC"
-        },
-        {
-          "slot": 5,
-          "itemId": "1335",
-          "name": "Succubus Cloak",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1335.jpg",
-          "description": "Negates magical damage"
-        },
-        {
-          "slot": 6,
-          "itemId": "1131",
-          "name": "Starbreaker",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1131.jpg",
-          "description": "Anti-tank"
-        }
-      ]
-    },
-    {
-      "id": "roam-tempur",
-      "label": "Roam Tempur",
-      "position": "Position 5",
-      "lane": "Roaming",
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1711",
-          "name": "Crimson Shadow",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1711.jpg",
-          "description": "DPS aura"
-        },
-        {
-          "slot": 2,
-          "itemId": "1426",
-          "name": "Boots of Deftness",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1426.jpg",
-          "description": "Extra Movement Speed"
-        },
-        {
-          "slot": 3,
-          "itemId": "1137",
-          "name": "Axe of Torment",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1137.jpg",
-          "description": "Anti-squishy"
-        },
-        {
-          "slot": 4,
-          "itemId": "1737",
-          "name": "Crimson Shadow - Radiance",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1737.jpg",
-          "description": "Area damage & vision"
-        },
-        {
-          "slot": 5,
-          "itemId": "1331",
-          "name": "Blazing Cape",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1331.jpg",
-          "description": "Burns nearby enemies"
-        },
-        {
-          "slot": 6,
-          "itemId": "1328",
-          "name": "Blood Rage",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1328.jpg",
-          "description": "Grants temporary shield"
-        }
-      ]
-    },
-    {
-      "id": "clash-lane-1",
-      "label": "Clash Lane 1",
-      "position": "Position 1",
-      "lane": "Clash Lane",
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1426",
-          "name": "Boots of Deftness",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1426.jpg",
-          "description": "Extra Movement Speed"
-        },
-        {
-          "slot": 2,
-          "itemId": "1124",
-          "name": "Meteor",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1124.jpg",
-          "description": "PATK +35\nCDR +7.5%"
-        },
-        {
-          "slot": 3,
-          "itemId": "1137",
-          "name": "Axe of Torment",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1137.jpg",
-          "description": "Anti-squishy"
-        },
-        {
-          "slot": 4,
-          "itemId": "1534",
-          "name": "Dragon's Rage",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1534.jpg",
-          "description": "Boosts BA damage"
-        },
-        {
-          "slot": 5,
-          "itemId": "1138",
-          "name": "Overlord's Might",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1138.jpg",
-          "description": "High-damage attack"
-        },
-        {
-          "slot": 6,
-          "itemId": "1331",
-          "name": "Blazing Cape",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1331.jpg",
-          "description": "Burns nearby enemies"
-        }
-      ]
-    },
-    {
-      "id": "roam-exe",
-      "label": "Roam exe",
-      "position": "Position 5",
-      "lane": "Roaming",
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1711",
-          "name": "Crimson Shadow",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1711.jpg",
-          "description": "DPS aura"
-        },
-        {
-          "slot": 2,
-          "itemId": "1422",
-          "name": "Boots of Resistance",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
-          "description": "Shortens CC"
-        },
-        {
-          "slot": 3,
-          "itemId": "1737",
-          "name": "Crimson Shadow - Radiance",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1737.jpg",
-          "description": "Area damage & vision"
-        },
-        {
-          "slot": 4,
-          "itemId": "1334",
-          "name": "Eye of the Phoenix",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1334.jpg",
-          "description": "Boosts Health regen"
-        },
-        {
-          "slot": 5,
-          "itemId": "1337",
-          "name": "Sage's Sanctuary",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1337.jpg",
-          "description": "Resurrect on the spot"
-        },
-        {
-          "slot": 6,
-          "itemId": "1338",
-          "name": "Cuirass of Savagery",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1338.jpg",
-          "description": "Offense & defense"
-        }
-      ]
-    },
-    {
-      "id": "build",
-      "label": "Build",
-      "position": "Position 1",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1421",
-          "name": "Boots of Fortitude",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1421.jpg",
-          "description": "Reduces physical damage"
-        },
-        {
-          "slot": 2,
-          "itemId": "1137",
-          "name": "Axe of Torment",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1137.jpg",
-          "description": "Anti-squishy"
-        },
-        {
-          "slot": 3,
-          "itemId": "1534",
-          "name": "Dragon's Rage",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1534.jpg",
-          "description": "Boosts BA damage"
-        },
-        {
-          "slot": 4,
-          "itemId": "1138",
-          "name": "Overlord's Might",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1138.jpg",
-          "description": "High-damage attack"
-        },
-        {
-          "slot": 5,
-          "itemId": "1336",
-          "name": "Glacial Buckler",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1336.jpg",
-          "description": "Group damage & slow"
-        },
-        {
-          "slot": 6,
-          "itemId": "1134",
-          "name": "Master Sword",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1134.jpg",
-          "description": "Enhances BA"
-        }
-      ]
-    },
-    {
-      "id": "meta-build",
-      "label": "META BUILD",
-      "position": "Position 1",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1111",
-          "name": "Iron Sword",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1111.jpg",
-          "description": "PATK +20"
-        },
-        {
-          "slot": 2,
-          "itemId": "1426",
-          "name": "Boots of Deftness",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1426.jpg",
-          "description": "Extra Movement Speed"
-        },
-        {
-          "slot": 3,
-          "itemId": "1137",
-          "name": "Axe of Torment",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1137.jpg",
-          "description": "Anti-squishy"
-        },
-        {
-          "slot": 4,
-          "itemId": "1534",
-          "name": "Dragon's Rage",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1534.jpg",
-          "description": "Boosts BA damage"
-        },
-        {
-          "slot": 5,
-          "itemId": "1328",
-          "name": "Blood Rage",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1328.jpg",
-          "description": "Grants temporary shield"
-        },
-        {
-          "slot": 6,
-          "itemId": "1125",
-          "name": "Demonsbane",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1125.jpg",
-          "description": "Boosts MDEF"
-        }
-      ]
-    },
-    {
-      "id": "siap-tempur",
-      "label": "Siap Tempur",
-      "position": "Position 1",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1426",
-          "name": "Boots of Deftness",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1426.jpg",
-          "description": "Extra Movement Speed"
-        },
-        {
-          "slot": 2,
-          "itemId": "1122",
-          "name": "Sunglow Striker",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1122.jpg",
-          "description": "PATK +35, HP +450"
-        },
-        {
-          "slot": 3,
-          "itemId": "1137",
-          "name": "Axe of Torment",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1137.jpg",
-          "description": "Anti-squishy"
-        },
-        {
-          "slot": 4,
-          "itemId": "1328",
-          "name": "Blood Rage",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1328.jpg",
-          "description": "Grants temporary shield"
-        },
-        {
-          "slot": 5,
-          "itemId": "1127",
-          "name": "Destiny",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1127.jpg",
-          "description": "Negates fatal damage"
-        },
-        {
-          "slot": 6,
-          "itemId": "1534",
-          "name": "Dragon's Rage",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1534.jpg",
-          "description": "Boosts BA damage"
-        }
-      ]
-    },
-    {
-      "id": "zhn",
-      "label": "Zhàn",
-      "position": "Position 1",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1426",
-          "name": "Boots of Deftness",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1426.jpg",
-          "description": "Extra Movement Speed"
-        },
-        {
-          "slot": 2,
-          "itemId": "1137",
-          "name": "Axe of Torment",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1137.jpg",
-          "description": "Anti-squishy"
-        },
-        {
-          "slot": 3,
-          "itemId": "1534",
-          "name": "Dragon's Rage",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1534.jpg",
-          "description": "Boosts BA damage"
-        },
-        {
-          "slot": 4,
-          "itemId": "1338",
-          "name": "Cuirass of Savagery",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1338.jpg",
-          "description": "Offense & defense"
-        },
-        {
-          "slot": 5,
-          "itemId": "1422",
-          "name": "Boots of Resistance",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
-          "description": "Shortens CC"
-        },
-        {
-          "slot": 6,
-          "itemId": "1337",
-          "name": "Sage's Sanctuary",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1337.jpg",
-          "description": "Resurrect on the spot"
-        }
-      ]
-    },
-    {
-      "id": "full-tank",
-      "label": "full tank",
-      "position": "Position 1",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1421",
-          "name": "Boots of Fortitude",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1421.jpg",
-          "description": "Reduces physical damage"
-        },
-        {
-          "slot": 2,
-          "itemId": "1331",
-          "name": "Blazing Cape",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1331.jpg",
-          "description": "Burns nearby enemies"
-        },
-        {
-          "slot": 3,
-          "itemId": "1341",
-          "name": "Frigid Charge",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1341.jpg",
-          "description": "Group CC"
-        },
-        {
-          "slot": 4,
-          "itemId": "1338",
-          "name": "Cuirass of Savagery",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1338.jpg",
-          "description": "Offense & defense"
-        },
-        {
-          "slot": 5,
-          "itemId": "1347",
-          "name": "Longnight Guardian",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1347.jpg",
-          "description": "Resists burst damage"
-        },
-        {
-          "slot": 6,
-          "itemId": "1335",
-          "name": "Succubus Cloak",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1335.jpg",
-          "description": "Negates magical damage"
-        }
-      ]
-    },
-    {
-      "id": "tankdamage",
-      "label": "tank/damage",
-      "position": "Position 1",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1422",
-          "name": "Boots of Resistance",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
-          "description": "Shortens CC"
-        },
-        {
-          "slot": 2,
-          "itemId": "1534",
-          "name": "Dragon's Rage",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1534.jpg",
-          "description": "Boosts BA damage"
-        },
-        {
-          "slot": 3,
-          "itemId": "1347",
-          "name": "Longnight Guardian",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1347.jpg",
-          "description": "Resists burst damage"
-        },
-        {
-          "slot": 4,
-          "itemId": "1333",
-          "name": "Ominous Premonition",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1333.jpg",
-          "description": "Slows attackers"
-        },
-        {
-          "slot": 5,
-          "itemId": "1341",
-          "name": "Frigid Charge",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1341.jpg",
-          "description": "Group CC"
-        },
-        {
-          "slot": 6,
-          "itemId": "1137",
-          "name": "Axe of Torment",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1137.jpg",
-          "description": "Anti-squishy"
-        }
-      ]
-    }
+  "metaAnalysisZh": [
+    "關羽 勝率 48.68%（Camp HOK，2026-06-07）",
+    "選取率 0.37%",
+    "禁用率 0.11%",
+    "克制：Daji、Mi Yue、Yixing；被克制：Hou Yi、Marco Polo、Lady Sun"
   ],
   "guide": {
     "overview": "Guan Yu is a Medium Warrior (Clash Lane) on Honor of Kings Global. Camp HOK ranks them Tier B with 48.3% win rate and 0.4% pick rate as of 2026-06-05.",

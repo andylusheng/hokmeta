@@ -2,99 +2,583 @@
   "id": "heino",
   "slug": "heino",
   "name": "Heino",
+  "nameZh": "海諾",
   "role": "Mage",
   "roles": "Mage, Fighter",
+  "rolesZh": "法師, 戰士",
   "lane": "Mid Lane",
+  "laneZh": "中路",
   "difficulty": "Medium",
-  "tier": "S",
-  "winRate": 48.03,
-  "pickRate": 1.16,
+  "tier": "A",
+  "winRate": 47.92,
+  "pickRate": 1.02,
   "banRate": 0.24,
   "rank": 104,
   "avatar": "https://camp.honorofkings.com/camp/admin/hero/head_128-128/YO6iwLAg.jpg",
   "avatarFallback": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/563/563.jpg",
+  "heroCover": "https://camp.honorofkings.com/camp/admin/hero/cover_1275-718/AvDdtfVo.jpg",
   "tencentId": 563,
-  "dataSource": "Camp HOK + HoKStats.gg (intl)",
-  "dataUpdated": "2026-06-05",
+  "dataSource": "Camp HOK bilingual (primary)",
+  "dataUpdated": "2026-06-07",
   "skills": [
     {
       "slot": "passive",
       "name": "Fate's Guidance",
-      "description": "Heino's Basic Attacks differ depending on whether he's in melee or ranged mode. Basic Attacks deal physical and magical damage, and melee Basic Attacks and skills place marks on hit enemies.",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/563/56300.png",
-      "cooldown": null
+      "description": "Basic Attack damage differs depending on whether he is in melee or ranged mode. Skills and melee Basic Attacks place marks on enemies.",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/56305.png",
+      "cooldown": "1s"
     },
     {
       "slot": "skill1",
       "name": "Scepter of Fate",
-      "description": "Reduces cooldown by 0.2s for each marked enemy hit, up to 1s. ;Ranged: Throws scepter to deal magical damage and again to marked targets forward. ;Melee: Throws scepter to damage and slow enemies. Recovers Health on hitting marked enemies.",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/563/56310.png",
-      "cooldown": null
+      "description": "Attacks in the target direction. If the target has a mark, skill cooldown is reduced.\nRanged: Deals damage and an extra attack to marked targets.\nMelee: Deals damage and inflicts slow. Recovers Health upon hitting marked targets.",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/56312.png",
+      "cooldown": "5s"
     },
     {
       "slot": "skill2",
       "name": "Leap of Fate",
-      "description": "Dashes forward. lf there are enemy heroes near the end of the dash, goesinto melee mode, recovers Health, and increases Max Health, Physical Defense and Magical Defense. Otherwise, goes into ranged mode and gains Movement Speed.",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/563/56320.png",
-      "cooldown": null
+      "description": "Dashes forward and switches attack mode.\nEnters melee mode if enemy heroes are nearby, increasing Physical and Magical Defense and restoring Health; otherwise, enters ranged mode, leaving a memory and gaining Movement Speed.",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/56320.png",
+      "cooldown": "6s"
     },
     {
       "slot": "ultimate",
       "name": "Fate Rewind",
-      "description": "Heino gains damage reduction and crowd control immunity, recovers Health, but cannot move. After 1.5s, he deals magical damage and travels back in time. The allied tower within range travels 5s back in time. He recovers more Health the less he has left.",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/563/56330.png",
-      "cooldown": null
+      "description": "Gains damage reduction and crowd control immunity, recovers Health based on his current Health, and cannot move. Deals magical damage and travels back to where he was.\nIf there is an allied tower within range, it returns to its state from 1.5s ago.",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/56330.png",
+      "cooldown": "80s"
+    }
+  ],
+  "skillsZh": [
+    {
+      "slot": "passive",
+      "name": "命運洞察",
+      "description": "遠程和近戰狀態下擁有不同的普攻傷害，技能和近戰普攻命中敵人會對其疊加印記。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/56305.png",
+      "cooldown": "1s"
+    },
+    {
+      "slot": "skill1",
+      "name": "命刃・追芒",
+      "description": "朝指定方向進行攻擊，目標身上有印記時可減少技能冷卻。\n遠程：造成傷害，並對前方有印記的目標進行額外攻擊。\n近戰：造成傷害和減速，命中有印記的目標可回復自身生命值。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/56312.png",
+      "cooldown": "5s"
+    },
+    {
+      "slot": "skill2",
+      "name": "命途行遊",
+      "description": "朝指定方向突進，且可切換攻擊狀態。\n若附近有敵方英雄，則進入近戰狀態，提升物理防禦和法術防禦，並回復生命值；否則進入遠程狀態，留下紀錄點，增加移速。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/56320.png",
+      "cooldown": "6s"
+    },
+    {
+      "slot": "ultimate",
+      "name": "命運回溯",
+      "description": "展開領域，期間處於霸體且不可移動，獲得減傷並回復生命值，血量越低，回復越高。隨後造成法術傷害，自身回溯至紀錄點。\n若領域內有己方防禦塔，則將其回溯至1.5秒前狀態。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/56330.png",
+      "cooldown": "80s"
     }
   ],
   "build": [
     {
       "slot": 1,
-      "itemId": "1423",
-      "name": "Boots of Tranquility",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1423.jpg",
-      "description": "Reduces Skill CD"
+      "itemId": "1240",
+      "name": "Insatiable Tome",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1240.png",
+      "description": "MATK +160, Magical Lifesteal +24%, HP +750\nLifesteal increases CDR"
     },
     {
       "slot": 2,
-      "itemId": "1226",
-      "name": "Holy Grail",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1226.jpg",
-      "description": "Rapid Health & Mana Regen"
+      "itemId": "1727",
+      "name": "Twilight Stream",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1727.png",
+      "description": "MATK +160, CDR +10%, Max HP +500\nBoosts Magical Pierce"
     },
     {
       "slot": 3,
-      "itemId": "1335",
-      "name": "Succubus Cloak",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1335.jpg",
-      "description": "Negates magical damage"
+      "itemId": "1422",
+      "name": "Boots of Resistance",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1422.png",
+      "description": "MDEF +100, PDEF +50, MSPD +50\nShortens crowd control"
     },
     {
       "slot": 4,
       "itemId": "1232",
       "name": "Savant's Wrath",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1232.jpg",
-      "description": "Greatly boosts MATK"
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1232.png",
+      "description": "MATK +210\nGreatly boosts MATK"
     },
     {
       "slot": 5,
-      "itemId": "1331",
-      "name": "Blazing Cape",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1331.jpg",
-      "description": "Burns nearby enemies"
+      "itemId": "1337",
+      "name": "Sage's Sanctuary",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+      "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
     },
     {
       "slot": 6,
-      "itemId": "1334",
-      "name": "Eye of the Phoenix",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1334.jpg",
-      "description": "Boosts Health regen"
+      "itemId": "1127",
+      "name": "Destiny",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+      "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
+    }
+  ],
+  "buildZh": [
+    {
+      "slot": 1,
+      "itemId": "1240",
+      "name": "噬神之書",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1240.png",
+      "description": "+160點法攻+24%法術吸血+750點生命值 吸血拉長冷卻時間"
+    },
+    {
+      "slot": 2,
+      "itemId": "1727",
+      "name": "日暮之流",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1727.png",
+      "description": "+160點法攻+10%減冷卻時間+500點最大生命值\n提升法術穿透"
+    },
+    {
+      "slot": 3,
+      "itemId": "1422",
+      "name": "抵抗之靴",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1422.png",
+      "description": "+100點法防+50點物防+50點移速\n減少被控時間"
+    },
+    {
+      "slot": 4,
+      "itemId": "1232",
+      "name": "博學者之怒",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1232.png",
+      "description": "+210點法術攻擊\n大幅提升法強"
+    },
+    {
+      "slot": 5,
+      "itemId": "1337",
+      "name": "賢者的庇護",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+      "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+    },
+    {
+      "slot": 6,
+      "itemId": "1127",
+      "name": "名刀・司命",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+      "description": "+75點攻擊+15%攻速+500點生命值\n保命"
+    }
+  ],
+  "builds": [
+    {
+      "id": "camp-0",
+      "label": "dame",
+      "lane": "Mid",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1240",
+          "name": "Insatiable Tome",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1240.png",
+          "description": "MATK +160, Magical Lifesteal +24%, HP +750\nLifesteal increases CDR"
+        },
+        {
+          "slot": 2,
+          "itemId": "1727",
+          "name": "Twilight Stream",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1727.png",
+          "description": "MATK +160, CDR +10%, Max HP +500\nBoosts Magical Pierce"
+        },
+        {
+          "slot": 3,
+          "itemId": "1422",
+          "name": "Boots of Resistance",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1422.png",
+          "description": "MDEF +100, PDEF +50, MSPD +50\nShortens crowd control"
+        },
+        {
+          "slot": 4,
+          "itemId": "1232",
+          "name": "Savant's Wrath",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1232.png",
+          "description": "MATK +210\nGreatly boosts MATK"
+        },
+        {
+          "slot": 5,
+          "itemId": "1337",
+          "name": "Sage's Sanctuary",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
+        },
+        {
+          "slot": 6,
+          "itemId": "1127",
+          "name": "Destiny",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
+        }
+      ]
+    },
+    {
+      "id": "camp-1",
+      "label": "Principais",
+      "lane": "Mid",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1232",
+          "name": "Savant's Wrath",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1232.png",
+          "description": "MATK +210\nGreatly boosts MATK"
+        },
+        {
+          "slot": 2,
+          "itemId": "1227",
+          "name": "Ardent Dominion",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1227.png",
+          "description": "MATK +150, Magical Lifesteal +12%, MSPD +7.5%\nCleanse and shield at low HP"
+        },
+        {
+          "slot": 3,
+          "itemId": "1242",
+          "name": "Enigma - Moon Goddess",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1242.png",
+          "description": "MATK +160, CDR +7.5%, Magical Lifesteal +12%\nTemp. invincibility"
+        },
+        {
+          "slot": 4,
+          "itemId": "1240",
+          "name": "Insatiable Tome",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1240.png",
+          "description": "MATK +160, Magical Lifesteal +24%, HP +750\nLifesteal increases CDR"
+        },
+        {
+          "slot": 5,
+          "itemId": "12211",
+          "name": "Venomous Staff",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/12211.png",
+          "description": "MATK +240, CDR +7.5%, MSPD +7.5%\nLowers Health Regen"
+        },
+        {
+          "slot": 6,
+          "itemId": "1337",
+          "name": "Sage's Sanctuary",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
+        }
+      ]
+    },
+    {
+      "id": "camp-2",
+      "label": "Damage",
+      "lane": "Mid",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1244",
+          "name": "Breakthrough Robe",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1244.png",
+          "description": "MATK +120, HP +900\nConverts HP into Magical Pierce"
+        },
+        {
+          "slot": 2,
+          "itemId": "1232",
+          "name": "Savant's Wrath",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1232.png",
+          "description": "MATK +210\nGreatly boosts MATK"
+        },
+        {
+          "slot": 3,
+          "itemId": "12211",
+          "name": "Venomous Staff",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/12211.png",
+          "description": "MATK +240, CDR +7.5%, MSPD +7.5%\nLowers Health Regen"
+        },
+        {
+          "slot": 4,
+          "itemId": "1227",
+          "name": "Ardent Dominion",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1227.png",
+          "description": "MATK +150, Magical Lifesteal +12%, MSPD +7.5%\nCleanse and shield at low HP"
+        },
+        {
+          "slot": 5,
+          "itemId": "1239",
+          "name": "Splendor",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1239.png",
+          "description": "MATK +160, CDR +7.5%, Magical Lifesteal +12%\nTemp. invincibility"
+        },
+        {
+          "slot": 6,
+          "itemId": "1337",
+          "name": "Sage's Sanctuary",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
+        }
+      ]
+    },
+    {
+      "id": "camp-3",
+      "label": "Huan.",
+      "lane": "Top",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1334",
+          "name": "Eye of the Phoenix",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1334.png",
+          "description": "MDEF +180, PDEF +90, HP +1,350\nBoosts HP Regen"
+        },
+        {
+          "slot": 2,
+          "itemId": "1332",
+          "name": "Overlord's Platemail",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1332.png",
+          "description": "HP +1,800, PDEF +160, MDEF +80\nExtra HP"
+        },
+        {
+          "slot": 3,
+          "itemId": "1337",
+          "name": "Sage's Sanctuary",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
+        },
+        {
+          "slot": 4,
+          "itemId": "13310",
+          "name": "Frostscar's Embrace",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/13310.png",
+          "description": "PATK +60, PDEF +300, CDR +10%\nEnhanced BAs slow"
+        },
+        {
+          "slot": 5,
+          "itemId": "1335",
+          "name": "Succubus Cloak",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
+          "description": "MDEF +300, HP +1,100\nNegates magical damage"
+        },
+        {
+          "slot": 6,
+          "itemId": "1239",
+          "name": "Splendor",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1239.png",
+          "description": "MATK +160, CDR +7.5%, Magical Lifesteal +12%\nTemp. invincibility"
+        }
+      ]
+    }
+  ],
+  "buildsZh": [
+    {
+      "id": "camp-0",
+      "label": "dame",
+      "lane": "Mid",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1240",
+          "name": "噬神之書",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1240.png",
+          "description": "+160點法攻+24%法術吸血+750點生命值 吸血拉長冷卻時間"
+        },
+        {
+          "slot": 2,
+          "itemId": "1727",
+          "name": "日暮之流",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1727.png",
+          "description": "+160點法攻+10%減冷卻時間+500點最大生命值\n提升法術穿透"
+        },
+        {
+          "slot": 3,
+          "itemId": "1422",
+          "name": "抵抗之靴",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1422.png",
+          "description": "+100點法防+50點物防+50點移速\n減少被控時間"
+        },
+        {
+          "slot": 4,
+          "itemId": "1232",
+          "name": "博學者之怒",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1232.png",
+          "description": "+210點法術攻擊\n大幅提升法強"
+        },
+        {
+          "slot": 5,
+          "itemId": "1337",
+          "name": "賢者的庇護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+        },
+        {
+          "slot": 6,
+          "itemId": "1127",
+          "name": "名刀・司命",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "+75點攻擊+15%攻速+500點生命值\n保命"
+        }
+      ]
+    },
+    {
+      "id": "camp-1",
+      "label": "Principais",
+      "lane": "Mid",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1232",
+          "name": "博學者之怒",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1232.png",
+          "description": "+210點法術攻擊\n大幅提升法強"
+        },
+        {
+          "slot": 2,
+          "itemId": "1227",
+          "name": "熾熱支配",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1227.png",
+          "description": "+150點法攻+12%法術吸血+7.5%移速\n殘血解控加盾"
+        },
+        {
+          "slot": 3,
+          "itemId": "1242",
+          "name": "難知・月神",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1242.png",
+          "description": "+160點法攻 +7.5%減冷卻時間\n+12%法術吸血暫時無敵"
+        },
+        {
+          "slot": 4,
+          "itemId": "1240",
+          "name": "噬神之書",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1240.png",
+          "description": "+160點法攻+24%法術吸血+750點生命值 吸血拉長冷卻時間"
+        },
+        {
+          "slot": 5,
+          "itemId": "12211",
+          "name": "夢魘之牙",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/12211.png",
+          "description": "+240點法攻+7.5%減冷卻時間+7.5%移速\n減少敵人回血"
+        },
+        {
+          "slot": 6,
+          "itemId": "1337",
+          "name": "賢者的庇護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+        }
+      ]
+    },
+    {
+      "id": "camp-2",
+      "label": "Damage",
+      "lane": "Mid",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1244",
+          "name": "破繭之衣",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1244.png",
+          "description": "+120點法攻+900點生命值\n生命值轉法穿"
+        },
+        {
+          "slot": 2,
+          "itemId": "1232",
+          "name": "博學者之怒",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1232.png",
+          "description": "+210點法術攻擊\n大幅提升法強"
+        },
+        {
+          "slot": 3,
+          "itemId": "12211",
+          "name": "夢魘之牙",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/12211.png",
+          "description": "+240點法攻+7.5%減冷卻時間+7.5%移速\n減少敵人回血"
+        },
+        {
+          "slot": 4,
+          "itemId": "1227",
+          "name": "熾熱支配",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1227.png",
+          "description": "+150點法攻+12%法術吸血+7.5%移速\n殘血解控加盾"
+        },
+        {
+          "slot": 5,
+          "itemId": "1239",
+          "name": "輝月",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1239.png",
+          "description": "+160點法攻+7.5%減冷卻時間+12%法術吸血\n暫時無敵"
+        },
+        {
+          "slot": 6,
+          "itemId": "1337",
+          "name": "賢者的庇護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+        }
+      ]
+    },
+    {
+      "id": "camp-3",
+      "label": "Huan.",
+      "lane": "Top",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1334",
+          "name": "不死鳥之眼",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1334.png",
+          "description": "+180點法防+90點物防+1350點生命值……\n增加回血效果"
+        },
+        {
+          "slot": 2,
+          "itemId": "1332",
+          "name": "霸者重裝",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1332.png",
+          "description": "+1800點生命值+160點物防+80點法防\n提高額外生命值"
+        },
+        {
+          "slot": 3,
+          "itemId": "1337",
+          "name": "賢者的庇護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+        },
+        {
+          "slot": 4,
+          "itemId": "13310",
+          "name": "冰痕之握",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/13310.png",
+          "description": "+60點攻擊+300點物防+10%減冷卻時間……\n強化普攻減速"
+        },
+        {
+          "slot": 5,
+          "itemId": "1335",
+          "name": "魔女斗篷",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
+          "description": "+300點法防+1100點生命值\n吸收法術傷害"
+        },
+        {
+          "slot": 6,
+          "itemId": "1239",
+          "name": "輝月",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1239.png",
+          "description": "+160點法攻+7.5%減冷卻時間+12%法術吸血\n暫時無敵"
+        }
+      ]
     }
   ],
   "arcana": [
-    "Fate"
+    "Lvl 5: Nightmare",
+    "Lvl 5: Avarice",
+    "Lvl 5: Hunt"
+  ],
+  "arcanaZh": [
+    "5級：夢魘",
+    "5級：貪婪",
+    "5級：狩獵"
   ],
   "spells": [
-    "Flash"
+    "Frenzy"
+  ],
+  "spellsZh": [
+    "狂暴"
   ],
   "counters": [
     "Diaochan",
@@ -107,536 +591,107 @@
     "Lu Bu"
   ],
   "tips": [
-    "Heino is a Medium Mage (Mid Lane) on Honor of Kings Global. Camp HOK ranks them Tier S with 48.0% win rate and 1.2% pick rate as of 2026-06-05.",
-    "Best build path: Boots of Tranquility → Holy Grail → Succubus Cloak → Savant's Wrath → Blazing Cape → Eye of the Phoenix.",
-    "Run Fate for stats that match Heino's Mage kit. Take Flash — swap to Purify against heavy CC or Smite when jungling.",
-    "Standard trade: Scepter of Fate → Leap of Fate → Fate Rewind → weave basic attacks. Weave basic attacks between skill casts for passive value.",
-    "Laning: Control first wave without taking free poke. Roam after pushing wave 2–4 to side lanes with your jungler.",
-    "Teamfight: Poke from max range before objective. Save hard CC for enemy dive or your carry peel window.",
-    "Heino excels into Diaochan, Mulan, Wukong. Avoid blind picking into Butterfly, Dharma, Lu Bu without team peel.",
-    "Heino is a Tier S staple in high-elo (Diamond+) on the international server — worth mastering for climb. Pick rate 1.2% — frequently seen in ranked; learn the matchup even if you do not main Heino. Below 49% global WR — high-rank players often avoid unless compensating for team comp."
+    "Heino (Mage): Tier A — 47.92% WR (Camp HOK).",
+    "Lane: Mid Lane.",
+    "Build: Insatiable Tome, Twilight Stream, Boots of Resistance."
+  ],
+  "tipsZh": [
+    "海諾（中路）：梯度 A，勝率 47.92%（Camp HOK）。",
+    "出裝：噬神之書、日暮之流、抵抗之靴."
   ],
   "patchHistory": [
     {
-      "version": "Live meta",
-      "change": "Camp HOK — WR 48.0%, pick 1.2%, ban 0.2%, tier S."
+      "seasonId": "13",
+      "seasonName": "S13",
+      "versionName": "2026/01/22",
+      "publishedAt": "2026-01-22T01:00:00Z",
+      "isCurrent": false,
+      "tag": "Stat Buffs",
+      "change": "Adjusted Skill Damage",
+      "detail": "",
+      "version": "S13"
     },
     {
-      "version": "Matchups",
-      "change": "Strong into Diaochan, Mulan, Wukong · Weak into Butterfly, Dharma, Lu Bu."
+      "seasonId": "6",
+      "seasonName": "S6",
+      "versionName": "20240822",
+      "publishedAt": "2024-08-22T07:13:54Z",
+      "isCurrent": false,
+      "tag": "Stat Nerfs",
+      "change": "Reduced the continuous poke of Skill 1 and reduced the damage reduction when Ultimate is used.",
+      "detail": "\"Currently, Heino offers a poor counterplay experience for opponents. His Ultimate's high damage reduction and restoration allow him to continuously poke enemies while being difficult to counter. We've reduced his damage output and the room for error in his Ultimate, giving opponents more opportunities to counter him.\"",
+      "version": "S6"
+    }
+  ],
+  "patchHistoryZh": [
+    {
+      "seasonId": "13",
+      "seasonName": "S13",
+      "versionName": "2026/01/22",
+      "publishedAt": "2026-01-22T01:00:00Z",
+      "isCurrent": false,
+      "tag": "數值增強",
+      "change": "調整技能傷害",
+      "detail": "",
+      "version": "S13"
     },
     {
-      "version": "High rank",
-      "change": "Heino is a Tier S staple in high-elo (Diamond+) on the international server — worth mastering for climb. Pick rate 1.2% — frequently seen in ranked; learn the matchup even if you do not main Heino. Below 49% global WR — high-rank players often avoid unless compensating for team comp."
+      "seasonId": "6",
+      "seasonName": "S6",
+      "versionName": "20240822",
+      "publishedAt": "2024-08-22T07:13:54Z",
+      "isCurrent": false,
+      "tag": "數值削弱",
+      "change": "降低1技能持續消耗能力，降低大招施放期間的免傷效果",
+      "detail": "目前海諾給對手的對抗體驗較差，大招高額的免傷和回復能力使其可以在敵方面前持續消耗且不容易受到反制，我們降低了他的輸出能力和大招容錯率，給對手更多的反制空間",
+      "version": "S6"
     }
   ],
   "faqs": [
     {
       "id": "faq-good-season",
-      "question": "Is Heino good in the current meta?",
-      "answer": "Heino is Tier S Mage with 48.0% win rate, 1.2% pick rate, and 0.2% ban rate on Honor of Kings Global (Camp HOK, 2026-06-05). Strong meta pick for ranked."
+      "question": "Is Heino good in current season?",
+      "answer": "Heino is Tier A Mage with 47.92% win rate, 1.02% pick rate, and 0.24% ban rate (Camp HOK international)."
     },
     {
       "id": "faq-best-build",
       "question": "What is the best Heino build?",
-      "answer": "Core item path: Boots of Tranquility, Holy Grail, Succubus Cloak, Savant's Wrath, Blazing Cape, Eye of the Phoenix. Run Fate arcana with Flash. Switch to alternate build presets on this page for jungle, clash, or late-game setups."
+      "answer": "Recommended: Insatiable Tome, Twilight Stream, Boots of Resistance, Savant's Wrath, Sage's Sanctuary, Destiny."
     },
     {
       "id": "faq-counter",
       "question": "How to counter Heino?",
-      "answer": "Pick Butterfly, Dharma, Lu Bu into Heino. Deny Mid Lane resources early and force fights before Heino completes core items. Heino struggles when the enemy can out-range or out-sustain them."
+      "answer": "Pick Butterfly, Dharma, Lu Bu. Strong into Diaochan, Mulan, Wukong."
+    }
+  ],
+  "faqsZh": [
+    {
+      "id": "faq-good-season",
+      "question": "海諾 這版本適合上分嗎？",
+      "answer": "海諾 為 A 梯度，勝率 47.92%、選取 1.02%、禁用 0.24%（Camp HOK 國際服）。"
     },
     {
-      "id": "faq-strong-into",
-      "question": "Who does Heino counter?",
-      "answer": "Heino is strong into Diaochan, Mulan, Wukong according to HoKStats matchup data and role matchups on the global server. Draft Heino when the enemy relies on these heroes in the Mid Lane lane."
+      "id": "faq-best-build",
+      "question": "海諾 出裝怎麼搭配？",
+      "answer": "推薦：噬神之書、日暮之流、抵抗之靴、博學者之怒、賢者的庇護、名刀・司命."
     },
     {
-      "id": "faq-high-rank",
-      "question": "Is Heino good in high rank / Diamond+?",
-      "answer": "Heino is a Tier S staple in high-elo (Diamond+) on the international server — worth mastering for climb. Pick rate 1.2% — frequently seen in ranked; learn the matchup even if you do not main Heino. Below 49% global WR — high-rank players often avoid unless compensating for team comp."
-    },
-    {
-      "id": "faq-lane",
-      "question": "What lane should Heino play?",
-      "answer": "Heino is tagged Mid Lane in Camp export (Mage, Fighter). Control first wave without taking free poke. Roam after pushing wave 2–4 to side lanes with your jungler."
-    },
-    {
-      "id": "faq-arcana",
-      "question": "Best arcana and spells for Heino?",
-      "answer": "Recommended: Fate arcana. Battle spell: Flash. Adjust Purify/Execute based on enemy dive and jungle need."
-    },
-    {
-      "id": "faq-vs-peer",
-      "question": "Heino or Daji — which is better?",
-      "answer": "Heino vs Daji (Mage, Tier S+): Daji is 2.4% pick / 51.0% WR. Daji wins 3.0% more often globally. Choose Heino when you need Mid Lane identity; choose Daji for Mid Lane comfort."
-    },
-    {
-      "id": "faq-ban",
-      "question": "Should I ban Heino?",
-      "answer": "Optional ban when enemy spams Mage; 1.2% pick rate but only 0.2% ban rate."
+      "id": "faq-counter",
+      "question": "怎麼克制 海諾？",
+      "answer": "可選 Butterfly、Dharma、Lu Bu。海諾 克制 Diaochan、Mulan、Wukong。"
     }
   ],
   "metaAnalysis": [
-    "Heino — 48.0% WR, 1.2% pick, 0.2% ban (Camp HOK 2026-06-05).",
-    "Tier S Mage · Mid Lane · difficulty Medium.",
-    "Heino is a Tier S staple in high-elo (Diamond+) on the international server — worth mastering for climb. Pick rate 1.2% — frequently seen in ranked; learn the matchup even if you do not main Heino. Below 49% global WR — high-rank players often avoid unless compensating for team comp.",
-    "Matchups: strong into Diaochan, Mulan, Wukong; weak into Butterfly, Dharma, Lu Bu.",
-    "Heino vs Daji (Mage, Tier S+): Daji is 2.4% pick / 51.0% WR. Daji wins 3.0% more often globally. Choose Heino when you need Mid Lane identity; choose Daji for Mid Lane comfort.",
-    "Heino vs Angela (Mage, Tier S+): Angela is 2.3% pick / 51.8% WR. Angela wins 3.8% more often globally. Choose Heino when you need Mid Lane identity; choose Angela for Mid Lane comfort.",
-    "Draft tip: first-pick or ban priority in ranked."
+    "Heino win rate 47.92% (Camp HOK, 2026-06-07).",
+    "Pick rate 1.02%.",
+    "Ban rate 0.24%.",
+    "Counters: Diaochan, Mulan, Wukong. Weak into: Butterfly, Dharma, Lu Bu."
   ],
-  "builds": [
-    {
-      "id": "recommended",
-      "label": "Recommended",
-      "position": null,
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1423",
-          "name": "Boots of Tranquility",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1423.jpg",
-          "description": "Reduces Skill CD"
-        },
-        {
-          "slot": 2,
-          "itemId": "1226",
-          "name": "Holy Grail",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1226.jpg",
-          "description": "Rapid Health & Mana Regen"
-        },
-        {
-          "slot": 3,
-          "itemId": "1335",
-          "name": "Succubus Cloak",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1335.jpg",
-          "description": "Negates magical damage"
-        },
-        {
-          "slot": 4,
-          "itemId": "1232",
-          "name": "Savant's Wrath",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1232.jpg",
-          "description": "Greatly boosts MATK"
-        },
-        {
-          "slot": 5,
-          "itemId": "1331",
-          "name": "Blazing Cape",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1331.jpg",
-          "description": "Burns nearby enemies"
-        },
-        {
-          "slot": 6,
-          "itemId": "1334",
-          "name": "Eye of the Phoenix",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1334.jpg",
-          "description": "Boosts Health regen"
-        }
-      ]
-    },
-    {
-      "id": "mid",
-      "label": "mid",
-      "position": "Position 2",
-      "lane": "Mid Lane",
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1423",
-          "name": "Boots of Tranquility",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1423.jpg",
-          "description": "Reduces Skill CD"
-        },
-        {
-          "slot": 2,
-          "itemId": "1226",
-          "name": "Holy Grail",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1226.jpg",
-          "description": "Rapid Health & Mana Regen"
-        },
-        {
-          "slot": 3,
-          "itemId": "1237",
-          "name": "Augur's Word",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1237.jpg",
-          "description": "Offense & defense"
-        },
-        {
-          "slot": 4,
-          "itemId": "1238",
-          "name": "Sage's Tome",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1238.jpg",
-          "description": "Great for mages"
-        },
-        {
-          "slot": 5,
-          "itemId": "1231",
-          "name": "Void Staff",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1231.jpg",
-          "description": "Anti-tank"
-        },
-        {
-          "slot": 6,
-          "itemId": "1240",
-          "name": "Insatiable Tome",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1240.jpg",
-          "description": "Magical Lifesteal"
-        }
-      ]
-    },
-    {
-      "id": "dame",
-      "label": "dame",
-      "position": "Position 2",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1423",
-          "name": "Boots of Tranquility",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1423.jpg",
-          "description": "Reduces Skill CD"
-        },
-        {
-          "slot": 2,
-          "itemId": "1226",
-          "name": "Holy Grail",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1226.jpg",
-          "description": "Rapid Health & Mana Regen"
-        },
-        {
-          "slot": 3,
-          "itemId": "1222",
-          "name": "Blood Clan's Grimoire",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1222.jpg",
-          "description": "MATK +60, Magical Lifesteal +12%"
-        },
-        {
-          "slot": 4,
-          "itemId": "1243",
-          "name": "Nebulon Wood",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1243.jpg",
-          "description": "MATK +60, HP +450"
-        },
-        {
-          "slot": 5,
-          "itemId": "1240",
-          "name": "Insatiable Tome",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1240.jpg",
-          "description": "Magical Lifesteal"
-        },
-        {
-          "slot": 6,
-          "itemId": "1727",
-          "name": "Twilight Stream",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1727.jpg",
-          "description": "Boosts Magical Pierce"
-        }
-      ]
-    },
-    {
-      "id": "principais",
-      "label": "Principais",
-      "position": "Position 2",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1423",
-          "name": "Boots of Tranquility",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1423.jpg",
-          "description": "Reduces Skill CD"
-        },
-        {
-          "slot": 2,
-          "itemId": "1226",
-          "name": "Holy Grail",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1226.jpg",
-          "description": "Rapid Health & Mana Regen"
-        },
-        {
-          "slot": 3,
-          "itemId": "1235",
-          "name": "Mask of Agony",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1235.jpg",
-          "description": "Boosts skill damage"
-        },
-        {
-          "slot": 4,
-          "itemId": "1218",
-          "name": "Primordial Crystal",
-          "icon": "https://hokstats.gg/items/1218.png",
-          "description": "CDR +5%"
-        },
-        {
-          "slot": 5,
-          "itemId": "1424",
-          "name": "Boots of the Arcane",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1424.jpg",
-          "description": "Magical Pierce"
-        },
-        {
-          "slot": 6,
-          "itemId": "1727",
-          "name": "Twilight Stream",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1727.jpg",
-          "description": "Boosts Magical Pierce"
-        }
-      ]
-    },
-    {
-      "id": "damage",
-      "label": "Damage",
-      "position": "Position 2",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1423",
-          "name": "Boots of Tranquility",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1423.jpg",
-          "description": "Reduces Skill CD"
-        },
-        {
-          "slot": 2,
-          "itemId": "1226",
-          "name": "Holy Grail",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1226.jpg",
-          "description": "Rapid Health & Mana Regen"
-        },
-        {
-          "slot": 3,
-          "itemId": "1321",
-          "name": "Belt of Might",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1321.jpg",
-          "description": "HP +900"
-        },
-        {
-          "slot": 4,
-          "itemId": "1237",
-          "name": "Augur's Word",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1237.jpg",
-          "description": "Offense & defense"
-        },
-        {
-          "slot": 5,
-          "itemId": "1243",
-          "name": "Nebulon Wood",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1243.jpg",
-          "description": "MATK +60, HP +450"
-        },
-        {
-          "slot": 6,
-          "itemId": "1238",
-          "name": "Sage's Tome",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1238.jpg",
-          "description": "Great for mages"
-        }
-      ]
-    },
-    {
-      "id": "huan",
-      "label": "Huan.",
-      "position": "Position 1",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1423",
-          "name": "Boots of Tranquility",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1423.jpg",
-          "description": "Reduces Skill CD"
-        },
-        {
-          "slot": 2,
-          "itemId": "1226",
-          "name": "Holy Grail",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1226.jpg",
-          "description": "Rapid Health & Mana Regen"
-        },
-        {
-          "slot": 3,
-          "itemId": "1331",
-          "name": "Blazing Cape",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1331.jpg",
-          "description": "Burns nearby enemies"
-        },
-        {
-          "slot": 4,
-          "itemId": "1347",
-          "name": "Longnight Guardian",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1347.jpg",
-          "description": "Resists burst damage"
-        },
-        {
-          "slot": 5,
-          "itemId": "1422",
-          "name": "Boots of Resistance",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
-          "description": "Shortens CC"
-        },
-        {
-          "slot": 6,
-          "itemId": "1334",
-          "name": "Eye of the Phoenix",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1334.jpg",
-          "description": "Boosts Health regen"
-        }
-      ]
-    },
-    {
-      "id": "kurenghoki",
-      "label": "KURENGHOKI",
-      "position": "Position 1",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1211",
-          "name": "Spell Tome",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1211.jpg",
-          "description": "MATK +35"
-        },
-        {
-          "slot": 2,
-          "itemId": "1423",
-          "name": "Boots of Tranquility",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1423.jpg",
-          "description": "Reduces Skill CD"
-        },
-        {
-          "slot": 3,
-          "itemId": "1226",
-          "name": "Holy Grail",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1226.jpg",
-          "description": "Rapid Health & Mana Regen"
-        },
-        {
-          "slot": 4,
-          "itemId": "1727",
-          "name": "Twilight Stream",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1727.jpg",
-          "description": "Boosts Magical Pierce"
-        },
-        {
-          "slot": 5,
-          "itemId": "1240",
-          "name": "Insatiable Tome",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1240.jpg",
-          "description": "Magical Lifesteal"
-        },
-        {
-          "slot": 6,
-          "itemId": "1422",
-          "name": "Boots of Resistance",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
-          "description": "Shortens CC"
-        }
-      ]
-    },
-    {
-      "id": "cdr",
-      "label": "CDR",
-      "position": "Position 2",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1423",
-          "name": "Boots of Tranquility",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1423.jpg",
-          "description": "Reduces Skill CD"
-        },
-        {
-          "slot": 2,
-          "itemId": "1226",
-          "name": "Holy Grail",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1226.jpg",
-          "description": "Rapid Health & Mana Regen"
-        },
-        {
-          "slot": 3,
-          "itemId": "12211",
-          "name": "Venomous Staff",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/12211.jpg",
-          "description": "Lowers Health regen"
-        },
-        {
-          "slot": 4,
-          "itemId": "1240",
-          "name": "Insatiable Tome",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1240.jpg",
-          "description": "Magical Lifesteal"
-        },
-        {
-          "slot": 5,
-          "itemId": "1237",
-          "name": "Augur's Word",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1237.jpg",
-          "description": "Offense & defense"
-        },
-        {
-          "slot": 6,
-          "itemId": "1244",
-          "name": "Breakthrough Robe",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1244.jpg",
-          "description": "Converts Health into M. Pierce"
-        }
-      ]
-    },
-    {
-      "id": "yue",
-      "label": "Yue",
-      "position": "Position 2",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1423",
-          "name": "Boots of Tranquility",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1423.jpg",
-          "description": "Reduces Skill CD"
-        },
-        {
-          "slot": 2,
-          "itemId": "1226",
-          "name": "Holy Grail",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1226.jpg",
-          "description": "Rapid Health & Mana Regen"
-        },
-        {
-          "slot": 3,
-          "itemId": "1727",
-          "name": "Twilight Stream",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1727.jpg",
-          "description": "Boosts Magical Pierce"
-        },
-        {
-          "slot": 4,
-          "itemId": "1233",
-          "name": "Scepter of Reverberation",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1233.jpg",
-          "description": "Skill hits trigger explosions"
-        },
-        {
-          "slot": 5,
-          "itemId": "1237",
-          "name": "Augur's Word",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1237.jpg",
-          "description": "Offense & defense"
-        },
-        {
-          "slot": 6,
-          "itemId": "1231",
-          "name": "Void Staff",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1231.jpg",
-          "description": "Anti-tank"
-        }
-      ]
-    }
+  "metaAnalysisZh": [
+    "海諾 勝率 47.92%（Camp HOK，2026-06-07）",
+    "選取率 1.02%",
+    "禁用率 0.24%",
+    "克制：Diaochan、Mulan、Wukong；被克制：Butterfly、Dharma、Lu Bu"
   ],
   "guide": {
     "overview": "Heino is a Medium Mage (Mid Lane) on Honor of Kings Global. Camp HOK ranks them Tier S with 48.0% win rate and 1.2% pick rate as of 2026-06-05.",

@@ -2,100 +2,569 @@
   "id": "kaizer",
   "slug": "kaizer",
   "name": "Kaizer",
+  "nameZh": "鎧",
   "role": "Tank",
   "roles": "Fighter, Tank",
+  "rolesZh": "戰士, 坦克",
   "lane": "Clash Lane",
+  "laneZh": "對抗路",
   "difficulty": "Easy",
   "tier": "S",
-  "winRate": 51.38,
-  "pickRate": 1.63,
-  "banRate": 0.17,
-  "rank": 41,
+  "winRate": 51.18,
+  "pickRate": 1.59,
+  "banRate": 0.16,
+  "rank": 45,
   "avatar": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/xUdtJiLO.png",
   "avatarFallback": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/193/193.jpg",
+  "heroCover": "https://camp.honorofkings.com/social/game/src/image_hero_cover_1275*718/pSFK8RBs.jpg",
   "tencentId": 193,
-  "dataSource": "Camp HOK + HoKStats.gg (intl)",
-  "dataUpdated": "2026-06-05",
+  "dataSource": "Camp HOK bilingual (primary)",
+  "dataUpdated": "2026-06-07",
   "skills": [
     {
       "slot": "passive",
       "name": "Demon Soul",
-      "description": "Basic Attacks and Skill 2 deal extra damage to single targets",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/193/19300.png",
-      "cooldown": null
+      "description": "Basic Attacks and Skill 2 deal extra damage to single targets.",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/19300.png",
+      "cooldown": "1s"
     },
     {
       "slot": "skill1",
       "name": "Vortex Brand",
-      "description": "Throws a ricocheting blade in the target direction, damaging and slowing enemies hit. The blade returns on hit, restoring Health and granting Move and Attack Speed.",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/193/19310.png",
-      "cooldown": null
+      "description": "Throws a ricocheting blade in the target direction, damaging and slowing enemies hit.\nThe blade returns on hit, recovering Health and granting Movement Speed and Attack Speed.",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/19310.png",
+      "cooldown": "9s"
     },
     {
       "slot": "skill2",
       "name": "Blade Tempest",
-      "description": "Slashes twice, dealing damage. The second slash launches enemies and increases the damage of the next Basic Attack. Gains increased Health recovery, Mana recovery, and Movement Speed when out of combat.",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/193/19320.png",
-      "cooldown": null
+      "description": "Slashes twice, dealing damage. The second slash launches enemies and increases the damage of the next Basic Attack.\nGains increased Health and Mana recovery, and Movement Speed when out of combat.",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/19320.png",
+      "cooldown": "6s"
     },
     {
       "slot": "ultimate",
       "name": "Invincible Warrior",
-      "description": "Becomes enhanced, gaining Movement Speed, max Health, Physical AttackBlock, and damaging nearby enemies over time.",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/193/19330.png",
-      "cooldown": null
+      "description": "Becomes enhanced, gaining max Health, Physical Attack, and Movement Speed, while blocking incoming damage and dealing damage over time to nearby enemies.",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/19330.png",
+      "cooldown": "60s"
+    }
+  ],
+  "skillsZh": [
+    {
+      "slot": "passive",
+      "name": "修羅之魂",
+      "description": "普攻和2技能攻擊單一目標時造成額外傷害。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/19300.png",
+      "cooldown": "1s"
+    },
+    {
+      "slot": "skill1",
+      "name": "迴旋之刃",
+      "description": "朝指定方向投擲可彈射的刀刃，造成傷害和減速效果。\n成功命中敵人後刀刃返回，回復自身生命值並增加攻擊速度和移動速度。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/19310.png",
+      "cooldown": "9s"
+    },
+    {
+      "slot": "skill2",
+      "name": "極刃風暴",
+      "description": "揮砍兩次，造成傷害，第二次額外造成擊飛效果，並強化下次普攻傷害。\n脫離戰鬥後，提升生命值和法力值回復，增加移動速度。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/19320.png",
+      "cooldown": "6s"
+    },
+    {
+      "slot": "ultimate",
+      "name": "不滅魔軀",
+      "description": "自身進入強化狀態，強化期間，增加最大生命值、攻擊力和移動速度，抵擋每次所承受的傷害，對自身周圍一定範圍造成持續傷害。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/19330.png",
+      "cooldown": "60s"
     }
   ],
   "build": [
     {
       "slot": 1,
-      "itemId": "1331",
-      "name": "Blazing Cape",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1331.jpg",
-      "description": "Burns nearby enemies"
+      "itemId": "1134",
+      "name": "Master Sword",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1134.png",
+      "description": "PATK +55, Crit Rate +20%, HP +600\nEnhances BAs"
     },
     {
       "slot": 2,
-      "itemId": "1422",
-      "name": "Boots of Resistance",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
-      "description": "Shortens CC"
+      "itemId": "11311",
+      "name": "Pure Sky",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/11311.png",
+      "description": "PATK +80, PDEF +150, CDR +10%\nTemp. damage reduction"
     },
     {
       "slot": 3,
-      "itemId": "1333",
-      "name": "Ominous Premonition",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1333.jpg",
-      "description": "Slows attackers"
+      "itemId": "1337",
+      "name": "Sage's Sanctuary",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+      "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
     },
     {
       "slot": 4,
-      "itemId": "1328",
-      "name": "Blood Rage",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1328.jpg",
-      "description": "Grants temporary shield"
+      "itemId": "1157",
+      "name": "Immovable - Sky Dome",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1157.png",
+      "description": "PATK +80, PDEF +150, CDR +10%\nTemp. damage reduction"
     },
     {
       "slot": 5,
-      "itemId": "1337",
-      "name": "Sage's Sanctuary",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1337.jpg",
-      "description": "Resurrect on the spot"
+      "itemId": "1127",
+      "name": "Destiny",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+      "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
     },
     {
       "slot": 6,
-      "itemId": "1347",
-      "name": "Longnight Guardian",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1347.jpg",
-      "description": "Resists burst damage"
+      "itemId": "1227",
+      "name": "Ardent Dominion",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1227.png",
+      "description": "MATK +150, Magical Lifesteal +12%, MSPD +7.5%\nCleanse and shield at low HP"
+    }
+  ],
+  "buildZh": [
+    {
+      "slot": 1,
+      "itemId": "1134",
+      "name": "宗師之力",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1134.png",
+      "description": "+55點攻擊+20%暴擊+600點生命值……\n強化普攻"
+    },
+    {
+      "slot": 2,
+      "itemId": "11311",
+      "name": "純淨蒼穹",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/11311.png",
+      "description": "+80點攻擊+150點物防+10%冷卻時間縮減\n暫時增加免傷"
+    },
+    {
+      "slot": 3,
+      "itemId": "1337",
+      "name": "賢者的庇護",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+      "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+    },
+    {
+      "slot": 4,
+      "itemId": "1157",
+      "name": "不動・天穹",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1157.png",
+      "description": "+80點攻擊+150點物防+10%冷卻時間縮減\n暫時增加免傷"
+    },
+    {
+      "slot": 5,
+      "itemId": "1127",
+      "name": "名刀・司命",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+      "description": "+75點攻擊+15%攻速+500點生命值\n保命"
+    },
+    {
+      "slot": 6,
+      "itemId": "1227",
+      "name": "熾熱支配",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1227.png",
+      "description": "+150點法攻+12%法術吸血+7.5%移速\n殘血解控加盾"
+    }
+  ],
+  "builds": [
+    {
+      "id": "camp-0",
+      "label": "Dmg",
+      "lane": "Top",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1134",
+          "name": "Master Sword",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1134.png",
+          "description": "PATK +55, Crit Rate +20%, HP +600\nEnhances BAs"
+        },
+        {
+          "slot": 2,
+          "itemId": "11311",
+          "name": "Pure Sky",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/11311.png",
+          "description": "PATK +80, PDEF +150, CDR +10%\nTemp. damage reduction"
+        },
+        {
+          "slot": 3,
+          "itemId": "1337",
+          "name": "Sage's Sanctuary",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
+        },
+        {
+          "slot": 4,
+          "itemId": "1157",
+          "name": "Immovable - Sky Dome",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1157.png",
+          "description": "PATK +80, PDEF +150, CDR +10%\nTemp. damage reduction"
+        },
+        {
+          "slot": 5,
+          "itemId": "1127",
+          "name": "Destiny",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
+        },
+        {
+          "slot": 6,
+          "itemId": "1227",
+          "name": "Ardent Dominion",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1227.png",
+          "description": "MATK +150, Magical Lifesteal +12%, MSPD +7.5%\nCleanse and shield at low HP"
+        }
+      ]
+    },
+    {
+      "id": "camp-1",
+      "label": "Jungling 1",
+      "lane": "Jungle",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1423",
+          "name": "Boots of Tranquility",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1423.png",
+          "description": "CDR +15%, MSPD +50\nSpeeds up skill cooldown"
+        },
+        {
+          "slot": 2,
+          "itemId": "1134",
+          "name": "Master Sword",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1134.png",
+          "description": "PATK +55, Crit Rate +20%, HP +600\nEnhances BAs"
+        },
+        {
+          "slot": 3,
+          "itemId": "1133",
+          "name": "Eternity Blade",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1133.png",
+          "description": "PATK +120, Crit Rate +20%\nHigh crit damage"
+        },
+        {
+          "slot": 4,
+          "itemId": "1534",
+          "name": "Dragon's Rage",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1536.png",
+          "description": "HP +1,350, PDEF +180, MDEF +90\nBoosts BA damage"
+        },
+        {
+          "slot": 5,
+          "itemId": "1328",
+          "name": "Blood Rage",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1328.png",
+          "description": "PATK +75, HP +900\nTrades HP for shield"
+        }
+      ]
+    },
+    {
+      "id": "camp-2",
+      "label": "Semi Tank Kai's",
+      "lane": "Jungle",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1134",
+          "name": "Master Sword",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1134.png",
+          "description": "PATK +55, Crit Rate +20%, HP +600\nEnhances BAs"
+        },
+        {
+          "slot": 2,
+          "itemId": "1133",
+          "name": "Eternity Blade",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1133.png",
+          "description": "PATK +120, Crit Rate +20%\nHigh crit damage"
+        },
+        {
+          "slot": 3,
+          "itemId": "11311",
+          "name": "Pure Sky",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/11311.png",
+          "description": "PATK +80, PDEF +150, CDR +10%\nTemp. damage reduction"
+        },
+        {
+          "slot": 4,
+          "itemId": "1337",
+          "name": "Sage's Sanctuary",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
+        },
+        {
+          "slot": 5,
+          "itemId": "1157",
+          "name": "Immovable - Sky Dome",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1157.png",
+          "description": "PATK +80, PDEF +150, CDR +10%\nTemp. damage reduction"
+        },
+        {
+          "slot": 6,
+          "itemId": "1127",
+          "name": "Destiny",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
+        }
+      ]
+    },
+    {
+      "id": "camp-3",
+      "label": "CEBOLINHA",
+      "lane": "Jungle",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1533",
+          "name": "Rapacious Bite",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1533.png",
+          "description": "PATK +90, MSPD +5%, CDR +7.5%\nMonster kills boost ATK"
+        },
+        {
+          "slot": 2,
+          "itemId": "1422",
+          "name": "Boots of Resistance",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1422.png",
+          "description": "MDEF +100, PDEF +50, MSPD +50\nShortens crowd control"
+        },
+        {
+          "slot": 3,
+          "itemId": "1331",
+          "name": "Blazing Cape",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1331.png",
+          "description": "PDEF +150, MDEF +150, HP +1,100\nArea burn & imperil"
+        },
+        {
+          "slot": 4,
+          "itemId": "1334",
+          "name": "Eye of the Phoenix",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1334.png",
+          "description": "MDEF +180, PDEF +90, HP +1,350\nBoosts HP Regen"
+        },
+        {
+          "slot": 5,
+          "itemId": "1132",
+          "name": "Bloodweeper",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1132.png",
+          "description": "PATK +85, Lifesteal +25%, HP +500\nPhysical Lifesteal"
+        },
+        {
+          "slot": 6,
+          "itemId": "1133",
+          "name": "Eternity Blade",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1133.png",
+          "description": "PATK +120, Crit Rate +20%\nHigh crit damage"
+        }
+      ]
+    }
+  ],
+  "buildsZh": [
+    {
+      "id": "camp-0",
+      "label": "Dmg",
+      "lane": "Top",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1134",
+          "name": "宗師之力",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1134.png",
+          "description": "+55點攻擊+20%暴擊+600點生命值……\n強化普攻"
+        },
+        {
+          "slot": 2,
+          "itemId": "11311",
+          "name": "純淨蒼穹",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/11311.png",
+          "description": "+80點攻擊+150點物防+10%冷卻時間縮減\n暫時增加免傷"
+        },
+        {
+          "slot": 3,
+          "itemId": "1337",
+          "name": "賢者的庇護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+        },
+        {
+          "slot": 4,
+          "itemId": "1157",
+          "name": "不動・天穹",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1157.png",
+          "description": "+80點攻擊+150點物防+10%冷卻時間縮減\n暫時增加免傷"
+        },
+        {
+          "slot": 5,
+          "itemId": "1127",
+          "name": "名刀・司命",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "+75點攻擊+15%攻速+500點生命值\n保命"
+        },
+        {
+          "slot": 6,
+          "itemId": "1227",
+          "name": "熾熱支配",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1227.png",
+          "description": "+150點法攻+12%法術吸血+7.5%移速\n殘血解控加盾"
+        }
+      ]
+    },
+    {
+      "id": "camp-1",
+      "label": "Jungling 1",
+      "lane": "Jungle",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1423",
+          "name": "冷靜之靴",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1423.png",
+          "description": "+15%減冷卻時間+50點移速\n加快技能冷卻"
+        },
+        {
+          "slot": 2,
+          "itemId": "1134",
+          "name": "宗師之力",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1134.png",
+          "description": "+55點攻擊+20%暴擊+600點生命值……\n強化普攻"
+        },
+        {
+          "slot": 3,
+          "itemId": "1133",
+          "name": "無盡戰刃",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1133.png",
+          "description": "+120點攻擊+20%暴擊\n高額暴擊傷害"
+        },
+        {
+          "slot": 4,
+          "itemId": "1534",
+          "name": "怒龍劍盾",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1536.png",
+          "description": "+1350點生命值+180點物防+90點法防\n普攻額外傷害"
+        },
+        {
+          "slot": 5,
+          "itemId": "1328",
+          "name": "血魔之怒",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1328.png",
+          "description": "+75點攻擊+900點生命值 \n犧牲生命值換取護盾值"
+        }
+      ]
+    },
+    {
+      "id": "camp-2",
+      "label": "Semi Tank Kai's",
+      "lane": "Jungle",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1134",
+          "name": "宗師之力",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1134.png",
+          "description": "+55點攻擊+20%暴擊+600點生命值……\n強化普攻"
+        },
+        {
+          "slot": 2,
+          "itemId": "1133",
+          "name": "無盡戰刃",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1133.png",
+          "description": "+120點攻擊+20%暴擊\n高額暴擊傷害"
+        },
+        {
+          "slot": 3,
+          "itemId": "11311",
+          "name": "純淨蒼穹",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/11311.png",
+          "description": "+80點攻擊+150點物防+10%冷卻時間縮減\n暫時增加免傷"
+        },
+        {
+          "slot": 4,
+          "itemId": "1337",
+          "name": "賢者的庇護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+        },
+        {
+          "slot": 5,
+          "itemId": "1157",
+          "name": "不動・天穹",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1157.png",
+          "description": "+80點攻擊+150點物防+10%冷卻時間縮減\n暫時增加免傷"
+        },
+        {
+          "slot": 6,
+          "itemId": "1127",
+          "name": "名刀・司命",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "+75點攻擊+15%攻速+500點生命值\n保命"
+        }
+      ]
+    },
+    {
+      "id": "camp-3",
+      "label": "CEBOLINHA",
+      "lane": "Jungle",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1533",
+          "name": "貪婪之噬",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1533.png",
+          "description": "+90攻擊+5%移速+7.5%冷縮\n打野怪加攻擊"
+        },
+        {
+          "slot": 2,
+          "itemId": "1422",
+          "name": "抵抗之靴",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1422.png",
+          "description": "+100點法防+50點物防+50點移速\n減少被控時間"
+        },
+        {
+          "slot": 3,
+          "itemId": "1331",
+          "name": "紅蓮斗篷",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1331.png",
+          "description": "+150點物防+150點法防+1100點生命值\n範圍灼燒重傷"
+        },
+        {
+          "slot": 4,
+          "itemId": "1334",
+          "name": "不死鳥之眼",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1334.png",
+          "description": "+180點法防+90點物防+1350點生命值……\n增加回血效果"
+        },
+        {
+          "slot": 5,
+          "itemId": "1132",
+          "name": "泣血之刃",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1132.png",
+          "description": "+85點攻擊+25%吸血+500點生命值\n物理吸血"
+        },
+        {
+          "slot": 6,
+          "itemId": "1133",
+          "name": "無盡戰刃",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1133.png",
+          "description": "+120點攻擊+20%暴擊\n高額暴擊傷害"
+        }
+      ]
     }
   ],
   "arcana": [
-    "Cataclysm"
+    "Lvl 5: Red Moon",
+    "Lvl 5: Calamity",
+    "Lvl 5: Stealth"
+  ],
+  "arcanaZh": [
+    "5級：紅月",
+    "5級：禍源",
+    "5級：隱匿"
   ],
   "spells": [
-    "Flash",
-    "Smite"
+    "Execute"
+  ],
+  "spellsZh": [
+    "終結"
   ],
   "counters": [
     "Da Qiao",
@@ -108,586 +577,195 @@
     "Sun Bin"
   ],
   "tips": [
-    "Kaizer is a Easy Tank (Clash Lane) on Honor of Kings Global. Camp HOK ranks them Tier S with 51.4% win rate and 1.6% pick rate as of 2026-06-05.",
-    "Best build path: Blazing Cape → Boots of Resistance → Ominous Premonition → Blood Rage → Sage's Sanctuary → Longnight Guardian.",
-    "Run Cataclysm for stats that match Kaizer's Tank kit. Take Flash & Smite — swap to Purify against heavy CC or Smite when jungling.",
-    "Standard trade: Vortex Brand → Blade Tempest → Invincible Warrior → weave basic attacks. Weave basic attacks between skill casts for passive value.",
-    "Laning: Trade on your power spike levels (2/4). Call jungler for dive only when enemy flash is down.",
-    "Teamfight: Engage on enemy carry when your team has follow-up. Body-block skillshots for your marksman.",
-    "Kaizer excels into Da Qiao, Diaochan, Daji. Avoid blind picking into Donghuang, Kui, Sun Bin without team peel.",
-    "Kaizer is a Tier S staple in high-elo (Diamond+) on the international server — worth mastering for climb. Pick rate 1.6% — frequently seen in ranked; learn the matchup even if you do not main Kaizer."
+    "Kaizer (Tank): Tier S — 51.18% WR (Camp HOK).",
+    "Lane: Clash Lane.",
+    "Build: Master Sword, Pure Sky, Sage's Sanctuary."
+  ],
+  "tipsZh": [
+    "鎧（對抗路）：梯度 S，勝率 51.18%（Camp HOK）。",
+    "出裝：宗師之力、純淨蒼穹、賢者的庇護."
   ],
   "patchHistory": [
     {
-      "version": "Live meta",
-      "change": "Camp HOK — WR 51.4%, pick 1.6%, ban 0.2%, tier S."
+      "seasonId": "14",
+      "seasonName": "S14",
+      "versionName": "2026/03/11",
+      "publishedAt": "2026-03-11T03:17:26Z",
+      "isCurrent": false,
+      "tag": "Stat Buffs",
+      "change": "Increased skill recovery and skill effect",
+      "detail": "",
+      "version": "S14"
     },
     {
-      "version": "Matchups",
-      "change": "Strong into Da Qiao, Diaochan, Daji · Weak into Donghuang, Kui, Sun Bin."
+      "seasonId": "12",
+      "seasonName": "S12",
+      "versionName": "20250924",
+      "publishedAt": "2025-09-24T01:00:00Z",
+      "isCurrent": false,
+      "tag": "Stat Buffs",
+      "change": "Increased Skill Damage",
+      "detail": "",
+      "version": "S12"
     },
     {
-      "version": "High rank",
-      "change": "Kaizer is a Tier S staple in high-elo (Diamond+) on the international server — worth mastering for climb. Pick rate 1.6% — frequently seen in ranked; learn the matchup even if you do not main Kaizer."
+      "seasonId": "8",
+      "seasonName": "S8",
+      "versionName": "20250109",
+      "publishedAt": "2025-01-09T02:33:14Z",
+      "isCurrent": false,
+      "tag": "Stat Buffs",
+      "change": "Increased damage of attack preset.",
+      "detail": "Kaizer's damage absorption makes him a great frontline tank. We've increased his damage output so he can also work well with an attack preset.",
+      "version": "S8"
+    },
+    {
+      "seasonId": "6",
+      "seasonName": "S6",
+      "versionName": "20240822",
+      "publishedAt": "2024-08-22T07:13:54Z",
+      "isCurrent": false,
+      "tag": "Stat Changes",
+      "change": "Balanced the strength of different builds.",
+      "detail": "\"Currently, Kaizer's overall strength is too high, especially when he purchases a lot of defensive equipment, making it difficult for opponents to counter him. Therefore, we've slightly reduced his strength when using defensive builds while maintaining his power with offensive builds.\"",
+      "version": "S6"
+    },
+    {
+      "seasonId": "4",
+      "seasonName": "S4",
+      "versionName": "20240124",
+      "publishedAt": "2024-01-24T07:50:01Z",
+      "isCurrent": false,
+      "tag": "Stat Buffs",
+      "change": "Enhanced the damage bonus ratio for Skills 1 and 2, and adjusted the damage and stat bonus ratios for his Ultimate.",
+      "detail": "As one of the first heroes in Honor of Kings, Kaizer may seem a little weak in comparison to the heroes that have joined since. We hope improving Kaizer's skill damage and stat bonuses will allow him, with the right equipment, to become a true fighter who balances damage output and sustain.",
+      "version": "S4"
+    },
+    {
+      "seasonId": "3",
+      "seasonName": "S3",
+      "versionName": "20231011",
+      "publishedAt": "2023-10-11T12:03:22Z",
+      "isCurrent": false,
+      "tag": "Stat Buffs",
+      "change": "Mana cost reduction",
+      "detail": "",
+      "version": "S3"
+    }
+  ],
+  "patchHistoryZh": [
+    {
+      "seasonId": "14",
+      "seasonName": "S14",
+      "versionName": "2026/03/11",
+      "publishedAt": "2026-03-11T03:17:26Z",
+      "isCurrent": false,
+      "tag": "數值增強",
+      "change": "提升技能回復和技能效果",
+      "detail": "",
+      "version": "S14"
+    },
+    {
+      "seasonId": "12",
+      "seasonName": "S12",
+      "versionName": "20250924",
+      "publishedAt": "2025-09-24T01:00:00Z",
+      "isCurrent": false,
+      "tag": "數值增強",
+      "change": "提升技能傷害",
+      "detail": "",
+      "version": "S12"
+    },
+    {
+      "seasonId": "8",
+      "seasonName": "S8",
+      "versionName": "20250109",
+      "publishedAt": "2025-01-09T02:33:14Z",
+      "isCurrent": false,
+      "tag": "數值增強",
+      "change": "提升攻擊裝的傷害",
+      "detail": "「鎧吸收傷害的能力讓他能夠承擔起前排的職責，本次我們提高了他的攻擊力加成，讓他在選擇攻擊套裝時也能有不錯的表現。」",
+      "version": "S8"
+    },
+    {
+      "seasonId": "6",
+      "seasonName": "S6",
+      "versionName": "20240822",
+      "publishedAt": "2024-08-22T07:13:54Z",
+      "isCurrent": false,
+      "tag": "數值調整",
+      "change": "平衡不同出裝下的強度",
+      "detail": "目前鎧的整體強度偏高，尤其在購買較多防禦裝備時，對手難以與其抗衡，因此我們適度降低了鎧出防禦套裝的強度，同時確保他在攻擊出裝下的強度。",
+      "version": "S6"
+    },
+    {
+      "seasonId": "4",
+      "seasonName": "S4",
+      "versionName": "20240124",
+      "publishedAt": "2024-01-24T07:50:01Z",
+      "isCurrent": false,
+      "tag": "數值增強",
+      "change": "Enhanced the damage bonus ratio for Skills 1 and 2, and adjusted the damage and stat bonus ratios for his Ultimate.",
+      "detail": "As one of the first heroes in Honor of Kings, Kaizer may seem a little weak in comparison to the heroes that have joined since. We hope improving Kaizer's skill damage and stat bonuses will allow him, with the right equipment, to become a true fighter who balances damage output and sustain.",
+      "version": "S4"
+    },
+    {
+      "seasonId": "3",
+      "seasonName": "S3",
+      "versionName": "20231011",
+      "publishedAt": "2023-10-11T12:03:22Z",
+      "isCurrent": false,
+      "tag": "數值增強",
+      "change": "Mana cost reduction",
+      "detail": "",
+      "version": "S3"
     }
   ],
   "faqs": [
     {
       "id": "faq-good-season",
-      "question": "Is Kaizer good in the current meta?",
-      "answer": "Kaizer is Tier S Tank with 51.4% win rate, 1.6% pick rate, and 0.2% ban rate on Honor of Kings Global (Camp HOK, 2026-06-05). Strong meta pick for ranked."
+      "question": "Is Kaizer good in current season?",
+      "answer": "Kaizer is Tier S Tank with 51.18% win rate, 1.59% pick rate, and 0.16% ban rate (Camp HOK international)."
     },
     {
       "id": "faq-best-build",
       "question": "What is the best Kaizer build?",
-      "answer": "Core item path: Blazing Cape, Boots of Resistance, Ominous Premonition, Blood Rage, Sage's Sanctuary, Longnight Guardian. Run Cataclysm arcana with Flash & Smite. Switch to alternate build presets on this page for jungle, clash, or late-game setups."
+      "answer": "Recommended: Master Sword, Pure Sky, Sage's Sanctuary, Immovable - Sky Dome, Destiny, Ardent Dominion."
     },
     {
       "id": "faq-counter",
       "question": "How to counter Kaizer?",
-      "answer": "Pick Donghuang, Kui, Sun Bin into Kaizer. Deny Clash Lane resources early and force fights before Kaizer completes core items. Kaizer struggles when the enemy can out-range or out-sustain them."
+      "answer": "Pick Donghuang, Kui, Sun Bin. Strong into Da Qiao, Diaochan, Daji."
+    }
+  ],
+  "faqsZh": [
+    {
+      "id": "faq-good-season",
+      "question": "鎧 這版本適合上分嗎？",
+      "answer": "鎧 為 S 梯度，勝率 51.18%、選取 1.59%、禁用 0.16%（Camp HOK 國際服）。"
     },
     {
-      "id": "faq-strong-into",
-      "question": "Who does Kaizer counter?",
-      "answer": "Kaizer is strong into Da Qiao, Diaochan, Daji according to HoKStats matchup data and role matchups on the global server. Draft Kaizer when the enemy relies on these heroes in the Clash Lane lane."
+      "id": "faq-best-build",
+      "question": "鎧 出裝怎麼搭配？",
+      "answer": "推薦：宗師之力、純淨蒼穹、賢者的庇護、不動・天穹、名刀・司命、熾熱支配."
     },
     {
-      "id": "faq-high-rank",
-      "question": "Is Kaizer good in high rank / Diamond+?",
-      "answer": "Kaizer is a Tier S staple in high-elo (Diamond+) on the international server — worth mastering for climb. Pick rate 1.6% — frequently seen in ranked; learn the matchup even if you do not main Kaizer."
-    },
-    {
-      "id": "faq-lane",
-      "question": "What lane should Kaizer play?",
-      "answer": "Kaizer is tagged Clash Lane in Camp export (Fighter, Tank). Trade on your power spike levels (2/4). Call jungler for dive only when enemy flash is down."
-    },
-    {
-      "id": "faq-arcana",
-      "question": "Best arcana and spells for Kaizer?",
-      "answer": "Recommended: Cataclysm arcana. Battle spell: Flash & Smite. Adjust Purify/Execute based on enemy dive and jungle need."
-    },
-    {
-      "id": "faq-vs-peer",
-      "question": "Kaizer or Dun — which is better?",
-      "answer": "Kaizer vs Dun (Tank, Tier S): Dun is 1.5% pick / 52.3% WR. Dun wins 0.9% more often globally. Choose Kaizer when you need Clash Lane identity; choose Dun for Clash Lane comfort."
-    },
-    {
-      "id": "faq-ban",
-      "question": "Should I ban Kaizer?",
-      "answer": "Optional ban when enemy spams Tank; 1.6% pick rate but only 0.2% ban rate."
+      "id": "faq-counter",
+      "question": "怎麼克制 鎧？",
+      "answer": "可選 Donghuang、Kui、Sun Bin。鎧 克制 Da Qiao、Diaochan、Daji。"
     }
   ],
   "metaAnalysis": [
-    "Kaizer — 51.4% WR, 1.6% pick, 0.2% ban (Camp HOK 2026-06-05).",
-    "Tier S Tank · Clash Lane · difficulty Easy.",
-    "Kaizer is a Tier S staple in high-elo (Diamond+) on the international server — worth mastering for climb. Pick rate 1.6% — frequently seen in ranked; learn the matchup even if you do not main Kaizer.",
-    "Matchups: strong into Da Qiao, Diaochan, Daji; weak into Donghuang, Kui, Sun Bin.",
-    "Kaizer vs Dun (Tank, Tier S): Dun is 1.5% pick / 52.3% WR. Dun wins 0.9% more often globally. Choose Kaizer when you need Clash Lane identity; choose Dun for Clash Lane comfort.",
-    "Kaizer vs Arthur (Tank, Tier S): Arthur is 1.5% pick / 50.5% WR. Kaizer has +0.8% WR vs Arthur in Camp data. Choose Kaizer when you need Clash Lane identity; choose Arthur for Clash Lane comfort.",
-    "Draft tip: first-pick or ban priority in ranked."
+    "Kaizer win rate 51.18% (Camp HOK, 2026-06-07).",
+    "Pick rate 1.59%.",
+    "Ban rate 0.16%.",
+    "Counters: Da Qiao, Diaochan, Daji. Weak into: Donghuang, Kui, Sun Bin."
   ],
-  "builds": [
-    {
-      "id": "recommended",
-      "label": "Recommended",
-      "position": null,
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1331",
-          "name": "Blazing Cape",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1331.jpg",
-          "description": "Burns nearby enemies"
-        },
-        {
-          "slot": 2,
-          "itemId": "1422",
-          "name": "Boots of Resistance",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
-          "description": "Shortens CC"
-        },
-        {
-          "slot": 3,
-          "itemId": "1333",
-          "name": "Ominous Premonition",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1333.jpg",
-          "description": "Slows attackers"
-        },
-        {
-          "slot": 4,
-          "itemId": "1328",
-          "name": "Blood Rage",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1328.jpg",
-          "description": "Grants temporary shield"
-        },
-        {
-          "slot": 5,
-          "itemId": "1337",
-          "name": "Sage's Sanctuary",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1337.jpg",
-          "description": "Resurrect on the spot"
-        },
-        {
-          "slot": 6,
-          "itemId": "1347",
-          "name": "Longnight Guardian",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1347.jpg",
-          "description": "Resists burst damage"
-        }
-      ]
-    },
-    {
-      "id": "jungling-1",
-      "label": "Jungling 1",
-      "position": "Position 3",
-      "lane": "Jungling",
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1532",
-          "name": "Giant's Grip",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1532.jpg",
-          "description": "Monster kills boost Health"
-        },
-        {
-          "slot": 2,
-          "itemId": "1423",
-          "name": "Boots of Tranquility",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1423.jpg",
-          "description": "Reduces Skill CD"
-        },
-        {
-          "slot": 3,
-          "itemId": "1134",
-          "name": "Master Sword",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1134.jpg",
-          "description": "Enhances BA"
-        },
-        {
-          "slot": 4,
-          "itemId": "1133",
-          "name": "Eternity Blade",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1133.jpg",
-          "description": "High crit damage"
-        },
-        {
-          "slot": 5,
-          "itemId": "1534",
-          "name": "Dragon's Rage",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1534.jpg",
-          "description": "Boosts BA damage"
-        },
-        {
-          "slot": 6,
-          "itemId": "1328",
-          "name": "Blood Rage",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1328.jpg",
-          "description": "Grants temporary shield"
-        }
-      ]
-    },
-    {
-      "id": "jungle-lane",
-      "label": "Jungle lane",
-      "position": "Position 3",
-      "lane": "Jungling",
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1523",
-          "name": "Relentless Blade",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1523.jpg",
-          "description": "Monster kills boost PATK"
-        },
-        {
-          "slot": 2,
-          "itemId": "1422",
-          "name": "Boots of Resistance",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
-          "description": "Shortens CC"
-        },
-        {
-          "slot": 3,
-          "itemId": "1137",
-          "name": "Axe of Torment",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1137.jpg",
-          "description": "Anti-squishy"
-        },
-        {
-          "slot": 4,
-          "itemId": "1533",
-          "name": "Rapacious Bite",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1533.jpg",
-          "description": "Monster kills boost PATK"
-        },
-        {
-          "slot": 5,
-          "itemId": "1345",
-          "name": "Nettle Gauntlet",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1345.jpg",
-          "description": "Offense & defense"
-        },
-        {
-          "slot": 6,
-          "itemId": "1338",
-          "name": "Cuirass of Savagery",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1338.jpg",
-          "description": "Offense & defense"
-        }
-      ]
-    },
-    {
-      "id": "jungling-hybrid",
-      "label": "Jungling hybrid",
-      "position": "Position 3",
-      "lane": "Jungling",
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1533",
-          "name": "Rapacious Bite",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1533.jpg",
-          "description": "Monster kills boost PATK"
-        },
-        {
-          "slot": 2,
-          "itemId": "1422",
-          "name": "Boots of Resistance",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
-          "description": "Shortens CC"
-        },
-        {
-          "slot": 3,
-          "itemId": "1137",
-          "name": "Axe of Torment",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1137.jpg",
-          "description": "Anti-squishy"
-        },
-        {
-          "slot": 4,
-          "itemId": "1333",
-          "name": "Ominous Premonition",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1333.jpg",
-          "description": "Slows attackers"
-        },
-        {
-          "slot": 5,
-          "itemId": "1327",
-          "name": "Spikemail",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1327.jpg",
-          "description": "Reflects damage"
-        },
-        {
-          "slot": 6,
-          "itemId": "1335",
-          "name": "Succubus Cloak",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1335.jpg",
-          "description": "Negates magical damage"
-        }
-      ]
-    },
-    {
-      "id": "dmg",
-      "label": "Dmg",
-      "position": "Position 1",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1422",
-          "name": "Boots of Resistance",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
-          "description": "Shortens CC"
-        },
-        {
-          "slot": 2,
-          "itemId": "1124",
-          "name": "Meteor",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1124.jpg",
-          "description": "PATK +35\nCDR +7.5%"
-        },
-        {
-          "slot": 3,
-          "itemId": "1137",
-          "name": "Axe of Torment",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1137.jpg",
-          "description": "Anti-squishy"
-        },
-        {
-          "slot": 4,
-          "itemId": "1327",
-          "name": "Spikemail",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1327.jpg",
-          "description": "Reflects damage"
-        },
-        {
-          "slot": 5,
-          "itemId": "1134",
-          "name": "Master Sword",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1134.jpg",
-          "description": "Enhances BA"
-        },
-        {
-          "slot": 6,
-          "itemId": "11311",
-          "name": "Pure Sky",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/11311.jpg",
-          "description": "Temp. damage reduction"
-        }
-      ]
-    },
-    {
-      "id": "semi-tank-kais",
-      "label": "Semi Tank Kai's",
-      "position": "Position 3",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1522",
-          "name": "Patrol Axe",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1522.jpg",
-          "description": "Monster kills boost Health"
-        },
-        {
-          "slot": 2,
-          "itemId": "1422",
-          "name": "Boots of Resistance",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
-          "description": "Shortens CC"
-        },
-        {
-          "slot": 3,
-          "itemId": "1124",
-          "name": "Meteor",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1124.jpg",
-          "description": "PATK +35\nCDR +7.5%"
-        },
-        {
-          "slot": 4,
-          "itemId": "1137",
-          "name": "Axe of Torment",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1137.jpg",
-          "description": "Anti-squishy"
-        },
-        {
-          "slot": 5,
-          "itemId": "1532",
-          "name": "Giant's Grip",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1532.jpg",
-          "description": "Monster kills boost Health"
-        },
-        {
-          "slot": 6,
-          "itemId": "1134",
-          "name": "Master Sword",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1134.jpg",
-          "description": "Enhances BA"
-        }
-      ]
-    },
-    {
-      "id": "cebolinha",
-      "label": "CEBOLINHA",
-      "position": "Position 3",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1533",
-          "name": "Rapacious Bite",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1533.jpg",
-          "description": "Monster kills boost PATK"
-        },
-        {
-          "slot": 2,
-          "itemId": "1422",
-          "name": "Boots of Resistance",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
-          "description": "Shortens CC"
-        },
-        {
-          "slot": 3,
-          "itemId": "1331",
-          "name": "Blazing Cape",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1331.jpg",
-          "description": "Burns nearby enemies"
-        },
-        {
-          "slot": 4,
-          "itemId": "1334",
-          "name": "Eye of the Phoenix",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1334.jpg",
-          "description": "Boosts Health regen"
-        },
-        {
-          "slot": 5,
-          "itemId": "1132",
-          "name": "Bloodweeper",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1132.jpg",
-          "description": "Physical Lifesteal"
-        },
-        {
-          "slot": 6,
-          "itemId": "1133",
-          "name": "Eternity Blade",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1133.jpg",
-          "description": "High crit damage"
-        }
-      ]
-    },
-    {
-      "id": "刺客流",
-      "label": "刺客流",
-      "position": "Position 3",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1533",
-          "name": "Rapacious Bite",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1533.jpg",
-          "description": "Monster kills boost PATK"
-        },
-        {
-          "slot": 2,
-          "itemId": "1422",
-          "name": "Boots of Resistance",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
-          "description": "Shortens CC"
-        },
-        {
-          "slot": 3,
-          "itemId": "1345",
-          "name": "Nettle Gauntlet",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1345.jpg",
-          "description": "Offense & defense"
-        },
-        {
-          "slot": 4,
-          "itemId": "1137",
-          "name": "Axe of Torment",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1137.jpg",
-          "description": "Anti-squishy"
-        },
-        {
-          "slot": 5,
-          "itemId": "1327",
-          "name": "Spikemail",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1327.jpg",
-          "description": "Reflects damage"
-        },
-        {
-          "slot": 6,
-          "itemId": "1159",
-          "name": "Tempest",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1159.jpg",
-          "description": "Stacks Attack Speed & Movement Speed"
-        }
-      ]
-    },
-    {
-      "id": "黄霸天",
-      "label": "黄霸天",
-      "position": "Position 3",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1523",
-          "name": "Relentless Blade",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1523.jpg",
-          "description": "Monster kills boost PATK"
-        },
-        {
-          "slot": 2,
-          "itemId": "1422",
-          "name": "Boots of Resistance",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
-          "description": "Shortens CC"
-        },
-        {
-          "slot": 3,
-          "itemId": "1312",
-          "name": "Cloth Jerkin",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1312.jpg",
-          "description": "PDEF +100"
-        },
-        {
-          "slot": 4,
-          "itemId": "1533",
-          "name": "Rapacious Bite",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1533.jpg",
-          "description": "Monster kills boost PATK"
-        },
-        {
-          "slot": 5,
-          "itemId": "1534",
-          "name": "Dragon's Rage",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1534.jpg",
-          "description": "Boosts BA damage"
-        },
-        {
-          "slot": 6,
-          "itemId": "1137",
-          "name": "Axe of Torment",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1137.jpg",
-          "description": "Anti-squishy"
-        }
-      ]
-    },
-    {
-      "id": "build",
-      "label": "BUILD",
-      "position": "Position 1",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1421",
-          "name": "Boots of Fortitude",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1421.jpg",
-          "description": "Reduces physical damage"
-        },
-        {
-          "slot": 2,
-          "itemId": "1136",
-          "name": "Shadow Ripper",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1136.jpg",
-          "description": "Crits boost ASPD"
-        },
-        {
-          "slot": 3,
-          "itemId": "1133",
-          "name": "Eternity Blade",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1133.jpg",
-          "description": "High crit damage"
-        },
-        {
-          "slot": 4,
-          "itemId": "1331",
-          "name": "Blazing Cape",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1331.jpg",
-          "description": "Burns nearby enemies"
-        },
-        {
-          "slot": 5,
-          "itemId": "1332",
-          "name": "Overlord's Platemail",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1332.jpg",
-          "description": "Extra Health"
-        },
-        {
-          "slot": 6,
-          "itemId": "1328",
-          "name": "Blood Rage",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1328.jpg",
-          "description": "Grants temporary shield"
-        }
-      ]
-    }
+  "metaAnalysisZh": [
+    "鎧 勝率 51.18%（Camp HOK，2026-06-07）",
+    "選取率 1.59%",
+    "禁用率 0.16%",
+    "克制：Da Qiao、Diaochan、Daji；被克制：Donghuang、Kui、Sun Bin"
   ],
   "guide": {
     "overview": "Kaizer is a Easy Tank (Clash Lane) on Honor of Kings Global. Camp HOK ranks them Tier S with 51.4% win rate and 1.6% pick rate as of 2026-06-05.",

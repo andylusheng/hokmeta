@@ -2,99 +2,583 @@
   "id": "ming",
   "slug": "ming",
   "name": "Ming",
+  "nameZh": "明世隱",
   "role": "Support",
   "roles": "Support",
+  "rolesZh": "輔助",
   "lane": "Roaming",
+  "laneZh": "遊走",
   "difficulty": "Easy",
   "tier": "B",
-  "winRate": 49.93,
+  "winRate": 50.24,
   "pickRate": 0.47,
   "banRate": 0.03,
-  "rank": 77,
+  "rank": 67,
   "avatar": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/ubeT1R84.png",
   "avatarFallback": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/501/501.jpg",
+  "heroCover": "https://camp.honorofkings.com/social/game/src/image_hero_cover_1275*718/M3OTSHPF.jpg",
   "tencentId": 501,
-  "dataSource": "Camp HOK + HoKStats.gg (intl)",
-  "dataUpdated": "2026-06-05",
+  "dataSource": "Camp HOK bilingual (primary)",
+  "dataUpdated": "2026-06-07",
   "skills": [
     {
       "slot": "passive",
       "name": "Good Omens",
-      "description": "Every 5s, Ming's next Basic Attack deals more magical damage and heals himself and the linked teammate. The healing is reduced if the enemy is nota hero.",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/501/50100.png",
-      "cooldown": null
+      "description": "Every 5s, Ming's next Basic Attack deals magical damage and heals himself and the linked teammate. The healing is reduced if the enemy is not a hero.",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/50100.png",
+      "cooldown": "1s"
     },
     {
       "slot": "skill1",
       "name": "Time - Carefree",
-      "description": "Forms a link with the target. When linked to an ally, increases the Physical and Magical Attack Movement Speed, and Attack Speed of both parties. When linked to an enemy unit, reduces their Physical and Magical Attack while dealing damage over time.",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/501/50110.png",
-      "cooldown": null
+      "description": "Throws his instrument and links it to a teammate, increasing their main attack stat and Attack Speed.\nEnemies who touch the link take damage over time.\nPassive: Increases Ming's Physical Attack, Magical Attack, and Movement Speed.",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/50110.png",
+      "cooldown": "3s"
     },
     {
       "slot": "skill2",
       "name": "Mastery - Glide",
-      "description": "Switches the effect of the link. When linked to an ally, increases the Physical and Magical Defense of both parties. When linked to an enemy unit, reduces their Physical and Magical Defense. The effect can beswitched repeatedly.",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/501/50120.png",
-      "cooldown": null
+      "description": "Throws his instrument and links it to an enemy, reducing their Physical and Magical Defense.\nEnemies who touch the link take damage over time.\nPassive: Gains Physical and Magical Defense.",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/50111.png",
+      "cooldown": "3s"
     },
     {
       "slot": "ultimate",
       "name": "Peace - Longevity",
-      "description": "While linked, can spend own Health to restore an equal amount of Health toallies or deal an equal amount of damage to enemies. Recovers Health continuously while out of combat.",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/501/50130.png",
-      "cooldown": null
+      "description": "Ming channels for a short time before sacrificing Health to deal true damage to the linked enemy or heal the linked teammate. If linked to both, he does not lose Health.",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/50130.png",
+      "cooldown": "40s"
+    }
+  ],
+  "skillsZh": [
+    {
+      "slot": "passive",
+      "name": "大吉大利",
+      "description": "每過5秒，下次普攻造成較高法術傷害，並從敵人身上激發血球治療法器連接隊友和明世隱。若命中的敵人非英雄，則治療量較低。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/50100.png",
+      "cooldown": "1s"
+    },
+    {
+      "slot": "skill1",
+      "name": "臨卦・無憂",
+      "description": "明世隱投擲法器連結隊友，增加其主攻屬性和攻速。\n觸碰鍊子的敵人持續受到傷害。\n被動：自身提升物理攻擊、法術攻擊和移速。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/50110.png",
+      "cooldown": "3s"
+    },
+    {
+      "slot": "skill2",
+      "name": "師卦・飛翼",
+      "description": "明世隱投擲法器連結敵人，減少其物理防禦和法術防禦。\n觸碰鍊子的敵人持續受到傷害。\n被動：自身提升物理防禦和法術防禦。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/50111.png",
+      "cooldown": "3s"
+    },
+    {
+      "slot": "ultimate",
+      "name": "泰卦・長生",
+      "description": "明世隱短暫吟唱後，對法器連接的敵人造成真實傷害，對隊友造成回復效果。\n如果法器連接了一個目標，明世隱消耗自身生命值對法器連接的敵人造成等量傷害，或對法器連接的隊友回復等量生命值。\n如果法器連接了兩個目標，明世隱從敵人身上抽取生命注入隊友。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/50130.png",
+      "cooldown": "40s"
     }
   ],
   "build": [
     {
       "slot": 1,
-      "itemId": "1423",
-      "name": "Boots of Tranquility",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1423.jpg",
-      "description": "Reduces Skill CD"
+      "itemId": "1724",
+      "name": "Guardian - Redemption",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1751.png",
+      "description": "HP +1,200, MSPD +7.5%\nSurvivability aura"
     },
     {
       "slot": 2,
-      "itemId": "1244",
-      "name": "Breakthrough Robe",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1244.jpg",
-      "description": "Converts Health into M. Pierce"
+      "itemId": "1333",
+      "name": "Ominous Premonition",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1333.png",
+      "description": "PDEF +300, HP +1,200\nSlows attackers"
     },
     {
       "slot": 3,
-      "itemId": "1232",
-      "name": "Savant's Wrath",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1232.jpg",
-      "description": "Greatly boosts MATK"
+      "itemId": "1422",
+      "name": "Boots of Resistance",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1422.png",
+      "description": "MDEF +100, PDEF +50, MSPD +50\nShortens crowd control"
     },
     {
       "slot": 4,
-      "itemId": "1237",
-      "name": "Augur's Word",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1237.jpg",
-      "description": "Offense & defense"
+      "itemId": "1335",
+      "name": "Succubus Cloak",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
+      "description": "MDEF +300, HP +1,100\nNegates magical damage"
     },
     {
       "slot": 5,
-      "itemId": "1335",
-      "name": "Succubus Cloak",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1335.jpg",
-      "description": "Negates magical damage"
+      "itemId": "1232",
+      "name": "Savant's Wrath",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1232.png",
+      "description": "MATK +210\nGreatly boosts MATK"
     },
     {
       "slot": 6,
-      "itemId": null,
-      "name": "Data unavailable",
-      "icon": null,
-      "description": null
+      "itemId": "1238",
+      "name": "Sage's Tome",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1238.png",
+      "description": "MATK +350, CDR +10%\nGreat for mages"
+    }
+  ],
+  "buildZh": [
+    {
+      "slot": 1,
+      "itemId": "1724",
+      "name": "近衛・救贖",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1751.png",
+      "description": "+1200點生命值+7.5%移速\n光環強化生存"
+    },
+    {
+      "slot": 2,
+      "itemId": "1333",
+      "name": "不祥徵兆",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1333.png",
+      "description": "+300點物防+1200點生命值\n受擊時將敵人減速"
+    },
+    {
+      "slot": 3,
+      "itemId": "1422",
+      "name": "抵抗之靴",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1422.png",
+      "description": "+100點法防+50點物防+50點移速\n減少被控時間"
+    },
+    {
+      "slot": 4,
+      "itemId": "1335",
+      "name": "魔女斗篷",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
+      "description": "+300點法防+1100點生命值\n吸收法術傷害"
+    },
+    {
+      "slot": 5,
+      "itemId": "1232",
+      "name": "博學者之怒",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1232.png",
+      "description": "+210點法術攻擊\n大幅提升法強"
+    },
+    {
+      "slot": 6,
+      "itemId": "1238",
+      "name": "賢者天書",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1238.png",
+      "description": "+350點法攻+10%減冷卻時間\n法師神裝"
+    }
+  ],
+  "builds": [
+    {
+      "id": "camp-0",
+      "label": "小明星",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1724",
+          "name": "Guardian - Redemption",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1751.png",
+          "description": "HP +1,200, MSPD +7.5%\nSurvivability aura"
+        },
+        {
+          "slot": 2,
+          "itemId": "1333",
+          "name": "Ominous Premonition",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1333.png",
+          "description": "PDEF +300, HP +1,200\nSlows attackers"
+        },
+        {
+          "slot": 3,
+          "itemId": "1422",
+          "name": "Boots of Resistance",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1422.png",
+          "description": "MDEF +100, PDEF +50, MSPD +50\nShortens crowd control"
+        },
+        {
+          "slot": 4,
+          "itemId": "1335",
+          "name": "Succubus Cloak",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
+          "description": "MDEF +300, HP +1,100\nNegates magical damage"
+        },
+        {
+          "slot": 5,
+          "itemId": "1232",
+          "name": "Savant's Wrath",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1232.png",
+          "description": "MATK +210\nGreatly boosts MATK"
+        },
+        {
+          "slot": 6,
+          "itemId": "1238",
+          "name": "Sage's Tome",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1238.png",
+          "description": "MATK +350, CDR +10%\nGreat for mages"
+        }
+      ]
+    },
+    {
+      "id": "camp-1",
+      "label": "Roaming 1",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1724",
+          "name": "Guardian - Redemption",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1751.png",
+          "description": "HP +1,200, MSPD +7.5%\nSurvivability aura"
+        },
+        {
+          "slot": 2,
+          "itemId": "1353",
+          "name": "Dawnlight",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1353.png",
+          "description": "PDEF +210, HP +900, CDR +10%\nShields on dealing damage"
+        },
+        {
+          "slot": 3,
+          "itemId": "1237",
+          "name": "Augur's Word",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1237.png",
+          "description": "MATK +140, MP +450, HP +900\nOffense & defense"
+        },
+        {
+          "slot": 4,
+          "itemId": "1333",
+          "name": "Ominous Premonition",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1333.png",
+          "description": "PDEF +300, HP +1,200\nSlows attackers"
+        },
+        {
+          "slot": 5,
+          "itemId": "1335",
+          "name": "Succubus Cloak",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
+          "description": "MDEF +300, HP +1,100\nNegates magical damage"
+        },
+        {
+          "slot": 6,
+          "itemId": "1337",
+          "name": "Sage's Sanctuary",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
+        }
+      ]
+    },
+    {
+      "id": "camp-2",
+      "label": "小明",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1341",
+          "name": "Frigid Charge",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1341.png",
+          "description": "PDEF +150, HP +900, CDR +7.5%, Resistance +10%\nGreat crowd control"
+        },
+        {
+          "slot": 2,
+          "itemId": "1333",
+          "name": "Ominous Premonition",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1333.png",
+          "description": "PDEF +300, HP +1,200\nSlows attackers"
+        },
+        {
+          "slot": 3,
+          "itemId": "1337",
+          "name": "Sage's Sanctuary",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
+        },
+        {
+          "slot": 4,
+          "itemId": "1332",
+          "name": "Overlord's Platemail",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1332.png",
+          "description": "HP +1,800, PDEF +160, MDEF +80\nExtra HP"
+        },
+        {
+          "slot": 5,
+          "itemId": "1237",
+          "name": "Augur's Word",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1237.png",
+          "description": "MATK +140, MP +450, HP +900\nOffense & defense"
+        },
+        {
+          "slot": 6,
+          "itemId": "1335",
+          "name": "Succubus Cloak",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
+          "description": "MDEF +300, HP +1,100\nNegates magical damage"
+        }
+      ]
+    },
+    {
+      "id": "camp-3",
+      "label": "The Ming",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1232",
+          "name": "Savant's Wrath",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1232.png",
+          "description": "MATK +210\nGreatly boosts MATK"
+        },
+        {
+          "slot": 2,
+          "itemId": "1335",
+          "name": "Succubus Cloak",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
+          "description": "MDEF +300, HP +1,100\nNegates magical damage"
+        },
+        {
+          "slot": 3,
+          "itemId": "1227",
+          "name": "Ardent Dominion",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1227.png",
+          "description": "MATK +150, Magical Lifesteal +12%, MSPD +7.5%\nCleanse and shield at low HP"
+        },
+        {
+          "slot": 4,
+          "itemId": "12211",
+          "name": "Venomous Staff",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/12211.png",
+          "description": "MATK +240, CDR +7.5%, MSPD +7.5%\nLowers Health Regen"
+        },
+        {
+          "slot": 5,
+          "itemId": "1234",
+          "name": "Frozen Breath",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1234.png",
+          "description": "MATK +180, CDR +7.5%, HP +500\nSkill hits slow"
+        },
+        {
+          "slot": 6,
+          "itemId": "1337",
+          "name": "Sage's Sanctuary",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
+        }
+      ]
+    }
+  ],
+  "buildsZh": [
+    {
+      "id": "camp-0",
+      "label": "小明星",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1724",
+          "name": "近衛・救贖",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1751.png",
+          "description": "+1200點生命值+7.5%移速\n光環強化生存"
+        },
+        {
+          "slot": 2,
+          "itemId": "1333",
+          "name": "不祥徵兆",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1333.png",
+          "description": "+300點物防+1200點生命值\n受擊時將敵人減速"
+        },
+        {
+          "slot": 3,
+          "itemId": "1422",
+          "name": "抵抗之靴",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1422.png",
+          "description": "+100點法防+50點物防+50點移速\n減少被控時間"
+        },
+        {
+          "slot": 4,
+          "itemId": "1335",
+          "name": "魔女斗篷",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
+          "description": "+300點法防+1100點生命值\n吸收法術傷害"
+        },
+        {
+          "slot": 5,
+          "itemId": "1232",
+          "name": "博學者之怒",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1232.png",
+          "description": "+210點法術攻擊\n大幅提升法強"
+        },
+        {
+          "slot": 6,
+          "itemId": "1238",
+          "name": "賢者天書",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1238.png",
+          "description": "+350點法攻+10%減冷卻時間\n法師神裝"
+        }
+      ]
+    },
+    {
+      "id": "camp-1",
+      "label": "Roaming 1",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1724",
+          "name": "近衛・救贖",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1751.png",
+          "description": "+1200點生命值+7.5%移速\n光環強化生存"
+        },
+        {
+          "slot": 2,
+          "itemId": "1353",
+          "name": "旭日初光",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1353.png",
+          "description": "+210點物防+900點生命值+10%減冷卻時間\n傷害敵人時獲得護盾值"
+        },
+        {
+          "slot": 3,
+          "itemId": "1237",
+          "name": "時之預言",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1237.png",
+          "description": "+140點法攻+450法力值+900點生命值……\n攻防兼備"
+        },
+        {
+          "slot": 4,
+          "itemId": "1333",
+          "name": "不祥徵兆",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1333.png",
+          "description": "+300點物防+1200點生命值\n受擊時將敵人減速"
+        },
+        {
+          "slot": 5,
+          "itemId": "1335",
+          "name": "魔女斗篷",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
+          "description": "+300點法防+1100點生命值\n吸收法術傷害"
+        },
+        {
+          "slot": 6,
+          "itemId": "1337",
+          "name": "賢者的庇護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+        }
+      ]
+    },
+    {
+      "id": "camp-2",
+      "label": "小明",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1341",
+          "name": "冰霜衝擊",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1341.png",
+          "description": "+150點物防+900點生命值+7.5%冷卻時間+10%韌性\n群體控制"
+        },
+        {
+          "slot": 2,
+          "itemId": "1333",
+          "name": "不祥徵兆",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1333.png",
+          "description": "+300點物防+1200點生命值\n受擊時將敵人減速"
+        },
+        {
+          "slot": 3,
+          "itemId": "1337",
+          "name": "賢者的庇護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+        },
+        {
+          "slot": 4,
+          "itemId": "1332",
+          "name": "霸者重裝",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1332.png",
+          "description": "+1800點生命值+160點物防+80點法防\n提高額外生命值"
+        },
+        {
+          "slot": 5,
+          "itemId": "1237",
+          "name": "時之預言",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1237.png",
+          "description": "+140點法攻+450法力值+900點生命值……\n攻防兼備"
+        },
+        {
+          "slot": 6,
+          "itemId": "1335",
+          "name": "魔女斗篷",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
+          "description": "+300點法防+1100點生命值\n吸收法術傷害"
+        }
+      ]
+    },
+    {
+      "id": "camp-3",
+      "label": "The Ming",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1232",
+          "name": "博學者之怒",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1232.png",
+          "description": "+210點法術攻擊\n大幅提升法強"
+        },
+        {
+          "slot": 2,
+          "itemId": "1335",
+          "name": "魔女斗篷",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
+          "description": "+300點法防+1100點生命值\n吸收法術傷害"
+        },
+        {
+          "slot": 3,
+          "itemId": "1227",
+          "name": "熾熱支配",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1227.png",
+          "description": "+150點法攻+12%法術吸血+7.5%移速\n殘血解控加盾"
+        },
+        {
+          "slot": 4,
+          "itemId": "12211",
+          "name": "夢魘之牙",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/12211.png",
+          "description": "+240點法攻+7.5%減冷卻時間+7.5%移速\n減少敵人回血"
+        },
+        {
+          "slot": 5,
+          "itemId": "1234",
+          "name": "凝冰之息",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1234.png",
+          "description": "+180點法攻+7.5%減冷卻時間+500點生命值\n技能命中減速"
+        },
+        {
+          "slot": 6,
+          "itemId": "1337",
+          "name": "賢者的庇護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+        }
+      ]
     }
   ],
   "arcana": [
-    "Fate"
+    "Lvl 5: Fate",
+    "Lvl 5: Longevity",
+    "Lvl 5: Void"
+  ],
+  "arcanaZh": [
+    "5級：宿命",
+    "5級：長生",
+    "5級：虛空"
   ],
   "spells": [
     "Heal"
+  ],
+  "spellsZh": [
+    "治療術"
   ],
   "counters": [
     "Cirrus",
@@ -107,386 +591,129 @@
     "Ying"
   ],
   "tips": [
-    "Ming is a Easy Support (Roaming) on Honor of Kings Global. Camp HOK ranks them Tier B with 49.9% win rate and 0.5% pick rate as of 2026-06-05.",
-    "Best build path: Boots of Tranquility → Breakthrough Robe → Savant's Wrath → Augur's Word → Succubus Cloak.",
-    "Run Fate for stats that match Ming's Support kit. Take Heal — swap to Purify against heavy CC or Smite when jungling.",
-    "Standard trade: Time - Carefree → Mastery - Glide → Peace - Longevity → weave basic attacks. Weave basic attacks between skill casts for passive value.",
-    "Laning: Help marksman crash wave, then rotate mid for picks. Return before Tyrant if your carry has no escape.",
-    "Teamfight: Peel carry first, then look for pick on out-of-position enemies. Ward Tyrant 30s before spawn.",
-    "Ming excels into Cirrus, Menki, Wuyan. Avoid blind picking into Wukong, Musashi, Ying without team peel.",
-    "Ming sits at Tier B globally (49.9% WR). In high rank, pick only into favorable matchups or when you have a dedicated pocket pick."
+    "Ming (Support): Tier B — 50.24% WR (Camp HOK).",
+    "Lane: Roaming.",
+    "Build: Guardian - Redemption, Ominous Premonition, Boots of Resistance."
+  ],
+  "tipsZh": [
+    "明世隱（遊走）：梯度 B，勝率 50.24%（Camp HOK）。",
+    "出裝：近衛・救贖、不祥徵兆、抵抗之靴."
   ],
   "patchHistory": [
     {
-      "version": "Live meta",
-      "change": "Camp HOK — WR 49.9%, pick 0.5%, ban 0.0%, tier B."
+      "seasonId": "9",
+      "seasonName": "S9",
+      "versionName": "20250320",
+      "publishedAt": "2025-03-20T01:53:54Z",
+      "isCurrent": false,
+      "tag": "Stat Nerfs",
+      "change": "Stat Nerfs",
+      "detail": "",
+      "version": "S9"
     },
     {
-      "version": "Matchups",
-      "change": "Strong into Cirrus, Menki, Wuyan · Weak into Wukong, Musashi, Ying."
+      "seasonId": "8",
+      "seasonName": "S8",
+      "versionName": "20250213",
+      "publishedAt": "2025-02-13T03:25:14Z",
+      "isCurrent": false,
+      "tag": "Stat Buffs",
+      "change": "Passive Effect Buffed",
+      "detail": "\"Ming will often find himself standing in front of teammates drawing fire as he buffs them. As such, we've slightly increased the recovery he gets from his Passive to give him a bit more room to breathe in battle.\"",
+      "version": "S8"
     },
     {
-      "version": "High rank",
-      "change": "Ming sits at Tier B globally (49.9% WR). In high rank, pick only into favorable matchups or when you have a dedicated pocket pick."
+      "seasonId": "6",
+      "seasonName": "S6",
+      "versionName": "20240822",
+      "publishedAt": "2024-08-22T07:13:54Z",
+      "isCurrent": false,
+      "tag": "Stat Nerfs",
+      "change": "Reduced the early game bonus to teammates.",
+      "detail": "\"In the early game, Ming can boost his team's effectiveness when linking with allies, creating a whole that is greater than its parts and further magnifying any advantage gained. In order to alleviate this, we've slightly reduced the early game bonus he provides to allies.\"",
+      "version": "S6"
+    }
+  ],
+  "patchHistoryZh": [
+    {
+      "seasonId": "9",
+      "seasonName": "S9",
+      "versionName": "20250320",
+      "publishedAt": "2025-03-20T01:53:54Z",
+      "isCurrent": false,
+      "tag": "數值削弱",
+      "change": "數值削弱",
+      "detail": "",
+      "version": "S9"
+    },
+    {
+      "seasonId": "8",
+      "seasonName": "S8",
+      "versionName": "20250213",
+      "publishedAt": "2025-02-13T03:25:14Z",
+      "isCurrent": false,
+      "tag": "數值增強",
+      "change": "增強被動效果",
+      "detail": "「明世隱在增強隊友的同時，往往還要在隊友身前吸引火力；我們略微提高了他被動的自身回復效果，讓他在戰鬥中更加從容。」",
+      "version": "S8"
+    },
+    {
+      "seasonId": "6",
+      "seasonName": "S6",
+      "versionName": "20240822",
+      "publishedAt": "2024-08-22T07:13:54Z",
+      "isCurrent": false,
+      "tag": "數值削弱",
+      "change": "降低前期對隊友的屬性加成",
+      "detail": "明世隱在前期連結隊友時能夠發揮1+1>2的效果，並進一步放大取得的優勢，因此我們適度削弱了前期對隊友的屬性加成效果。",
+      "version": "S6"
     }
   ],
   "faqs": [
     {
       "id": "faq-good-season",
-      "question": "Is Ming good in the current meta?",
-      "answer": "Ming is Tier B Support with 49.9% win rate, 0.5% pick rate, and 0.0% ban rate on Honor of Kings Global (Camp HOK, 2026-06-05). Niche — draft carefully."
+      "question": "Is Ming good in current season?",
+      "answer": "Ming is Tier B Support with 50.24% win rate, 0.47% pick rate, and 0.03% ban rate (Camp HOK international)."
     },
     {
       "id": "faq-best-build",
       "question": "What is the best Ming build?",
-      "answer": "Core item path: Boots of Tranquility, Breakthrough Robe, Savant's Wrath, Augur's Word, Succubus Cloak. Run Fate arcana with Heal. Switch to alternate build presets on this page for jungle, clash, or late-game setups."
+      "answer": "Recommended: Guardian - Redemption, Ominous Premonition, Boots of Resistance, Succubus Cloak, Savant's Wrath, Sage's Tome."
     },
     {
       "id": "faq-counter",
       "question": "How to counter Ming?",
-      "answer": "Pick Wukong, Musashi, Ying into Ming. Deny Roaming resources early and force fights before Ming completes core items. Ming struggles when the enemy can out-range or out-sustain them."
+      "answer": "Pick Wukong, Musashi, Ying. Strong into Cirrus, Menki, Wuyan."
+    }
+  ],
+  "faqsZh": [
+    {
+      "id": "faq-good-season",
+      "question": "明世隱 這版本適合上分嗎？",
+      "answer": "明世隱 為 B 梯度，勝率 50.24%、選取 0.47%、禁用 0.03%（Camp HOK 國際服）。"
     },
     {
-      "id": "faq-strong-into",
-      "question": "Who does Ming counter?",
-      "answer": "Ming is strong into Cirrus, Menki, Wuyan according to HoKStats matchup data and role matchups on the global server. Draft Ming when the enemy relies on these heroes in the Roaming lane."
+      "id": "faq-best-build",
+      "question": "明世隱 出裝怎麼搭配？",
+      "answer": "推薦：近衛・救贖、不祥徵兆、抵抗之靴、魔女斗篷、博學者之怒、賢者天書."
     },
     {
-      "id": "faq-high-rank",
-      "question": "Is Ming good in high rank / Diamond+?",
-      "answer": "Ming sits at Tier B globally (49.9% WR). In high rank, pick only into favorable matchups or when you have a dedicated pocket pick."
-    },
-    {
-      "id": "faq-lane",
-      "question": "What lane should Ming play?",
-      "answer": "Ming is tagged Roaming in Camp export (Support). Help marksman crash wave, then rotate mid for picks. Return before Tyrant if your carry has no escape."
-    },
-    {
-      "id": "faq-arcana",
-      "question": "Best arcana and spells for Ming?",
-      "answer": "Recommended: Fate arcana. Battle spell: Heal. Adjust Purify/Execute based on enemy dive and jungle need."
-    },
-    {
-      "id": "faq-vs-peer",
-      "question": "Ming or Dolia — which is better?",
-      "answer": "Ming vs Dolia (Support, Tier S): Dolia is 1.8% pick / 46.1% WR. Ming has +3.9% WR vs Dolia in Camp data. Choose Ming when you need Roaming identity; choose Dolia for Roaming comfort."
-    },
-    {
-      "id": "faq-ban",
-      "question": "Should I ban Ming?",
-      "answer": "Low priority ban (0.0%). Focus bans on higher-tier Support picks unless targeting a one-trick."
+      "id": "faq-counter",
+      "question": "怎麼克制 明世隱？",
+      "answer": "可選 Wukong、Musashi、Ying。明世隱 克制 Cirrus、Menki、Wuyan。"
     }
   ],
   "metaAnalysis": [
-    "Ming — 49.9% WR, 0.5% pick, 0.0% ban (Camp HOK 2026-06-05).",
-    "Tier B Support · Roaming · difficulty Easy.",
-    "Ming sits at Tier B globally (49.9% WR). In high rank, pick only into favorable matchups or when you have a dedicated pocket pick.",
-    "Matchups: strong into Cirrus, Menki, Wuyan; weak into Wukong, Musashi, Ying.",
-    "Ming vs Dolia (Support, Tier S): Dolia is 1.8% pick / 46.1% WR. Ming has +3.9% WR vs Dolia in Camp data. Choose Ming when you need Roaming identity; choose Dolia for Roaming comfort.",
-    "Ming vs Cai Yan (Support, Tier S): Cai Yan is 1.3% pick / 50.3% WR. Cai Yan wins 0.4% more often globally. Choose Ming when you need Roaming identity; choose Cai Yan for Roaming comfort.",
-    "Draft tip: counter-pick or comfort pick when lane matchup is favorable."
+    "Ming win rate 50.24% (Camp HOK, 2026-06-07).",
+    "Pick rate 0.47%.",
+    "Ban rate 0.03%.",
+    "Counters: Cirrus, Menki, Wuyan. Weak into: Wukong, Musashi, Ying."
   ],
-  "builds": [
-    {
-      "id": "recommended",
-      "label": "Recommended",
-      "position": null,
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1423",
-          "name": "Boots of Tranquility",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1423.jpg",
-          "description": "Reduces Skill CD"
-        },
-        {
-          "slot": 2,
-          "itemId": "1244",
-          "name": "Breakthrough Robe",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1244.jpg",
-          "description": "Converts Health into M. Pierce"
-        },
-        {
-          "slot": 3,
-          "itemId": "1232",
-          "name": "Savant's Wrath",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1232.jpg",
-          "description": "Greatly boosts MATK"
-        },
-        {
-          "slot": 4,
-          "itemId": "1237",
-          "name": "Augur's Word",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1237.jpg",
-          "description": "Offense & defense"
-        },
-        {
-          "slot": 5,
-          "itemId": "1335",
-          "name": "Succubus Cloak",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1335.jpg",
-          "description": "Negates magical damage"
-        },
-        {
-          "slot": 6,
-          "itemId": null,
-          "name": "Data unavailable",
-          "icon": null,
-          "description": null
-        }
-      ]
-    },
-    {
-      "id": "roaming-1",
-      "label": "Roaming 1",
-      "position": "Position 5",
-      "lane": "Roaming",
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1701",
-          "name": "Knowledge Gem",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1701.jpg",
-          "description": "Extra Gold & EXP"
-        },
-        {
-          "slot": 2,
-          "itemId": "1422",
-          "name": "Boots of Resistance",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
-          "description": "Shortens CC"
-        },
-        {
-          "slot": 3,
-          "itemId": "1714",
-          "name": "Guardian",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1714.jpg",
-          "description": "Survivability aura"
-        },
-        {
-          "slot": 4,
-          "itemId": "1724",
-          "name": "Guardian - Redemption",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1724.jpg",
-          "description": "Group shield"
-        },
-        {
-          "slot": 5,
-          "itemId": "1353",
-          "name": "Dawnlight",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1353.jpg",
-          "description": "Shields on dealing damage"
-        },
-        {
-          "slot": 6,
-          "itemId": "1237",
-          "name": "Augur's Word",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1237.jpg",
-          "description": "Offense & defense"
-        }
-      ]
-    },
-    {
-      "id": "小明",
-      "label": "小明",
-      "position": "Position 5",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1701",
-          "name": "Knowledge Gem",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1701.jpg",
-          "description": "Extra Gold & EXP"
-        },
-        {
-          "slot": 2,
-          "itemId": "1422",
-          "name": "Boots of Resistance",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
-          "description": "Shortens CC"
-        },
-        {
-          "slot": 3,
-          "itemId": "1714",
-          "name": "Guardian",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1714.jpg",
-          "description": "Survivability aura"
-        },
-        {
-          "slot": 4,
-          "itemId": "1724",
-          "name": "Guardian - Redemption",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1724.jpg",
-          "description": "Group shield"
-        },
-        {
-          "slot": 5,
-          "itemId": "1353",
-          "name": "Dawnlight",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1353.jpg",
-          "description": "Shields on dealing damage"
-        },
-        {
-          "slot": 6,
-          "itemId": "1341",
-          "name": "Frigid Charge",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1341.jpg",
-          "description": "Group CC"
-        }
-      ]
-    },
-    {
-      "id": "the-ming",
-      "label": "The Ming",
-      "position": "Position 5",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1701",
-          "name": "Knowledge Gem",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1701.jpg",
-          "description": "Extra Gold & EXP"
-        },
-        {
-          "slot": 2,
-          "itemId": "1422",
-          "name": "Boots of Resistance",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
-          "description": "Shortens CC"
-        },
-        {
-          "slot": 3,
-          "itemId": "1711",
-          "name": "Crimson Shadow",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1711.jpg",
-          "description": "DPS aura"
-        },
-        {
-          "slot": 4,
-          "itemId": "1721",
-          "name": "Crimson Shadow - Redemption",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1721.jpg",
-          "description": "Group shield"
-        },
-        {
-          "slot": 5,
-          "itemId": "1353",
-          "name": "Dawnlight",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1353.jpg",
-          "description": "Shields on dealing damage"
-        },
-        {
-          "slot": 6,
-          "itemId": "1226",
-          "name": "Holy Grail",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1226.jpg",
-          "description": "Rapid Health & Mana Regen"
-        }
-      ]
-    },
-    {
-      "id": "barbaridade",
-      "label": "Barbaridade",
-      "position": "Position 5",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1701",
-          "name": "Knowledge Gem",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1701.jpg",
-          "description": "Extra Gold & EXP"
-        },
-        {
-          "slot": 2,
-          "itemId": "1422",
-          "name": "Boots of Resistance",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
-          "description": "Shortens CC"
-        },
-        {
-          "slot": 3,
-          "itemId": "1711",
-          "name": "Crimson Shadow",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1711.jpg",
-          "description": "DPS aura"
-        },
-        {
-          "slot": 4,
-          "itemId": "1737",
-          "name": "Crimson Shadow - Radiance",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1737.jpg",
-          "description": "Area damage & vision"
-        },
-        {
-          "slot": 5,
-          "itemId": "1353",
-          "name": "Dawnlight",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1353.jpg",
-          "description": "Shields on dealing damage"
-        },
-        {
-          "slot": 6,
-          "itemId": "1237",
-          "name": "Augur's Word",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1237.jpg",
-          "description": "Offense & defense"
-        }
-      ]
-    },
-    {
-      "id": "小明",
-      "label": "小明",
-      "position": "Position 5",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1701",
-          "name": "Knowledge Gem",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1701.jpg",
-          "description": "Extra Gold & EXP"
-        },
-        {
-          "slot": 2,
-          "itemId": "1423",
-          "name": "Boots of Tranquility",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1423.jpg",
-          "description": "Reduces Skill CD"
-        },
-        {
-          "slot": 3,
-          "itemId": "1711",
-          "name": "Crimson Shadow",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1711.jpg",
-          "description": "DPS aura"
-        },
-        {
-          "slot": 4,
-          "itemId": "1721",
-          "name": "Crimson Shadow - Redemption",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1721.jpg",
-          "description": "Group shield"
-        },
-        {
-          "slot": 5,
-          "itemId": "1238",
-          "name": "Sage's Tome",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1238.jpg",
-          "description": "Great for mages"
-        },
-        {
-          "slot": 6,
-          "itemId": "1237",
-          "name": "Augur's Word",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1237.jpg",
-          "description": "Offense & defense"
-        }
-      ]
-    }
+  "metaAnalysisZh": [
+    "明世隱 勝率 50.24%（Camp HOK，2026-06-07）",
+    "選取率 0.47%",
+    "禁用率 0.03%",
+    "克制：Cirrus、Menki、Wuyan；被克制：Wukong、Musashi、Ying"
   ],
   "guide": {
     "overview": "Ming is a Easy Support (Roaming) on Honor of Kings Global. Camp HOK ranks them Tier B with 49.9% win rate and 0.5% pick rate as of 2026-06-05.",

@@ -2,99 +2,583 @@
   "id": "zhang-fei",
   "slug": "zhang-fei",
   "name": "Zhang Fei",
+  "nameZh": "張飛",
   "role": "Tank",
   "roles": "Support, Tank",
+  "rolesZh": "輔助, 坦克",
   "lane": "Roaming",
+  "laneZh": "遊走",
   "difficulty": "Easy",
   "tier": "S",
-  "winRate": 50.09,
-  "pickRate": 1.23,
-  "banRate": 0.41,
-  "rank": 73,
+  "winRate": 50,
+  "pickRate": 1.11,
+  "banRate": 0.36,
+  "rank": 72,
   "avatar": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/w0QS7N1L.png",
   "avatarFallback": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/171/171.jpg",
+  "heroCover": "https://camp.honorofkings.com/social/game/src/image_hero_cover_1275*718/3f86vWkD.jpg",
   "tencentId": 171,
-  "dataSource": "Camp HOK + HoKStats.gg (intl)",
-  "dataUpdated": "2026-06-05",
+  "dataSource": "Camp HOK bilingual (primary)",
+  "dataUpdated": "2026-06-07",
   "skills": [
     {
       "slot": "passive",
       "name": "Dark Potential",
-      "description": "Human Form: Hits from Basic Attacks and skills grant madness. Ferali Form: Casting the skill reduces the Movement Speed of enemies in range.",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/171/17100.png",
-      "cooldown": null
+      "description": "Human Form: Basic Attack and skill hits grant Madness.\nFerali Form: Using the skill reduces the Movement Speed of enemies within range.",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/17100.png",
+      "cooldown": "1s"
     },
     {
       "slot": "skill1",
       "name": "Forbidden Domain",
-      "description": "Deals damage to enemies in range. Knocks back enemy heroes.",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/171/17110.png",
-      "cooldown": null
+      "description": "Deals damage to enemies within range.\nKnocks back enemy heroes.",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/17110.png",
+      "cooldown": "6s"
     },
     {
       "slot": "skill2",
       "name": "Leaping Savior",
-      "description": "Jumps to the target location, granting a shield to nearby teammates. Gains extra Madness for every teammate he shields.",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/171/17120.png",
-      "cooldown": null
+      "description": "Leaps to the target location, granting shields to nearby teammates.\nGains Madness for each shield granted.",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/17120.png",
+      "cooldown": "10s"
     },
     {
       "slot": "ultimate",
       "name": "Unbridled Outburst",
-      "description": "Roars and transforms, gaining brief Invincibility, then a shield. The roar forms a gust of wind that damages, knocks back, and stuns enemies. While inside the wind, Zhang Fei gains increased Movement Speed",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/171/17130.png",
-      "cooldown": null
+      "description": "Roars and transforms. After a short period of invincibility and immunity to crowd control, gains a shield.\nThe roar creates a wind that damages, knocks back, and stuns enemies.\nGains Movement Speed while in the wind zone.",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/17130.png",
+      "cooldown": "40s"
+    }
+  ],
+  "skillsZh": [
+    {
+      "slot": "passive",
+      "name": "黑暗潛能",
+      "description": "人類形態：普攻和技能命中可獲得狂意值。\n魔種形態：施放技能會降低自身周圍一定範圍內的敵人的移動速度。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/17100.png",
+      "cooldown": "1s"
+    },
+    {
+      "slot": "skill1",
+      "name": "畫地為牢",
+      "description": "對自身周圍一定範圍內敵人造成傷害。\n對敵方英雄附加擊退效果。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/17110.png",
+      "cooldown": "6s"
+    },
+    {
+      "slot": "skill2",
+      "name": "守護機關",
+      "description": "向指定位置跳躍，為附近友方英雄增加護盾值。\n每為一名友方英雄提供護盾值，張飛會獲得額外狂意值。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/17120.png",
+      "cooldown": "10s"
+    },
+    {
+      "slot": "ultimate",
+      "name": "狂獸血性",
+      "description": "怒吼變身，短暫無敵，霸體後獲得護盾。\n怒吼形成狂風，對敵人造成傷害、擊退和暈眩效果。\n張飛在狂風中會增加移動速度。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/17130.png",
+      "cooldown": "40s"
     }
   ],
   "build": [
     {
       "slot": 1,
-      "itemId": "1422",
-      "name": "Boots of Resistance",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
-      "description": "Shortens CC"
+      "itemId": "1341",
+      "name": "Frigid Charge",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1341.png",
+      "description": "PDEF +150, HP +900, CDR +7.5%, Resistance +10%\nGreat crowd control"
     },
     {
       "slot": 2,
-      "itemId": "1331",
-      "name": "Blazing Cape",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1331.jpg",
-      "description": "Burns nearby enemies"
+      "itemId": "1332",
+      "name": "Overlord's Platemail",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1332.png",
+      "description": "HP +1,800, PDEF +160, MDEF +80\nExtra HP"
     },
     {
       "slot": 3,
-      "itemId": "1333",
-      "name": "Ominous Premonition",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1333.jpg",
-      "description": "Slows attackers"
+      "itemId": "1336",
+      "name": "Glacial Buckler",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1336.png",
+      "description": "CDR +20%, HP +600, PDEF +240\nGroup damage & slow"
     },
     {
       "slot": 4,
-      "itemId": "1334",
-      "name": "Eye of the Phoenix",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1334.jpg",
-      "description": "Boosts Health regen"
+      "itemId": "1337",
+      "name": "Sage's Sanctuary",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+      "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
     },
     {
       "slot": 5,
-      "itemId": "1332",
-      "name": "Overlord's Platemail",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1332.jpg",
-      "description": "Extra Health"
+      "itemId": "1347",
+      "name": "Longnight Guardian",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1347.png",
+      "description": "MDEF +210, HP +1,000, MSPD +7.5%\nReduces magical damage"
     },
     {
       "slot": 6,
-      "itemId": null,
-      "name": "Data unavailable",
-      "icon": null,
-      "description": null
+      "itemId": "1331",
+      "name": "Blazing Cape",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1331.png",
+      "description": "PDEF +150, MDEF +150, HP +1,100\nArea burn & imperil"
+    }
+  ],
+  "buildZh": [
+    {
+      "slot": 1,
+      "itemId": "1341",
+      "name": "冰霜衝擊",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1341.png",
+      "description": "+150點物防+900點生命值+7.5%冷卻時間+10%韌性\n群體控制"
+    },
+    {
+      "slot": 2,
+      "itemId": "1332",
+      "name": "霸者重裝",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1332.png",
+      "description": "+1800點生命值+160點物防+80點法防\n提高額外生命值"
+    },
+    {
+      "slot": 3,
+      "itemId": "1336",
+      "name": "極寒風暴",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1336.png",
+      "description": "+20%減冷卻時間+600點生命值+240點物防\n群體傷害減速"
+    },
+    {
+      "slot": 4,
+      "itemId": "1337",
+      "name": "賢者的庇護",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+      "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+    },
+    {
+      "slot": 5,
+      "itemId": "1347",
+      "name": "永夜守護",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1347.png",
+      "description": "+210點法防+1000點生命值\n+7.5%移速減少法術傷害"
+    },
+    {
+      "slot": 6,
+      "itemId": "1331",
+      "name": "紅蓮斗篷",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1331.png",
+      "description": "+150點物防+150點法防+1100點生命值\n範圍灼燒重傷"
+    }
+  ],
+  "builds": [
+    {
+      "id": "camp-0",
+      "label": "Zhàn红鬼",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1341",
+          "name": "Frigid Charge",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1341.png",
+          "description": "PDEF +150, HP +900, CDR +7.5%, Resistance +10%\nGreat crowd control"
+        },
+        {
+          "slot": 2,
+          "itemId": "1332",
+          "name": "Overlord's Platemail",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1332.png",
+          "description": "HP +1,800, PDEF +160, MDEF +80\nExtra HP"
+        },
+        {
+          "slot": 3,
+          "itemId": "1336",
+          "name": "Glacial Buckler",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1336.png",
+          "description": "CDR +20%, HP +600, PDEF +240\nGroup damage & slow"
+        },
+        {
+          "slot": 4,
+          "itemId": "1337",
+          "name": "Sage's Sanctuary",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
+        },
+        {
+          "slot": 5,
+          "itemId": "1347",
+          "name": "Longnight Guardian",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1347.png",
+          "description": "MDEF +210, HP +1,000, MSPD +7.5%\nReduces magical damage"
+        },
+        {
+          "slot": 6,
+          "itemId": "1331",
+          "name": "Blazing Cape",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1331.png",
+          "description": "PDEF +150, MDEF +150, HP +1,100\nArea burn & imperil"
+        }
+      ]
+    },
+    {
+      "id": "camp-1",
+      "label": "التجول 2",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1353",
+          "name": "Dawnlight",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1353.png",
+          "description": "PDEF +210, HP +900, CDR +10%\nShields on dealing damage"
+        },
+        {
+          "slot": 2,
+          "itemId": "1333",
+          "name": "Ominous Premonition",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1333.png",
+          "description": "PDEF +300, HP +1,200\nSlows attackers"
+        },
+        {
+          "slot": 3,
+          "itemId": "1347",
+          "name": "Longnight Guardian",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1347.png",
+          "description": "MDEF +210, HP +1,000, MSPD +7.5%\nReduces magical damage"
+        },
+        {
+          "slot": 4,
+          "itemId": "1332",
+          "name": "Overlord's Platemail",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1332.png",
+          "description": "HP +1,800, PDEF +160, MDEF +80\nExtra HP"
+        },
+        {
+          "slot": 5,
+          "itemId": "1337",
+          "name": "Sage's Sanctuary",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
+        },
+        {
+          "slot": 6,
+          "itemId": "1350",
+          "name": "Ravage - Phantom",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1350.png",
+          "description": "PATK +75, HP +900\nTrades HP for shield"
+        }
+      ]
+    },
+    {
+      "id": "camp-2",
+      "label": "PT Znab",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1331",
+          "name": "Blazing Cape",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1331.png",
+          "description": "PDEF +150, MDEF +150, HP +1,100\nArea burn & imperil"
+        },
+        {
+          "slot": 2,
+          "itemId": "1725",
+          "name": "Guardian - Starspring",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1752.png",
+          "description": "HP +1,200, MSPD +7.5%\nSurvivability aura"
+        },
+        {
+          "slot": 3,
+          "itemId": "1327",
+          "name": "Spikemail",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1327.png",
+          "description": "PATK +45, PDEF +300, HP +700\nReflects damage"
+        },
+        {
+          "slot": 4,
+          "itemId": "1335",
+          "name": "Succubus Cloak",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
+          "description": "MDEF +300, HP +1,100\nNegates magical damage"
+        },
+        {
+          "slot": 5,
+          "itemId": "1337",
+          "name": "Sage's Sanctuary",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
+        },
+        {
+          "slot": 6,
+          "itemId": "1127",
+          "name": "Destiny",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
+        }
+      ]
+    },
+    {
+      "id": "camp-3",
+      "label": "Anti-Healer",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1331",
+          "name": "Blazing Cape",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1331.png",
+          "description": "PDEF +150, MDEF +150, HP +1,100\nArea burn & imperil"
+        },
+        {
+          "slot": 2,
+          "itemId": "1334",
+          "name": "Eye of the Phoenix",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1334.png",
+          "description": "MDEF +180, PDEF +90, HP +1,350\nBoosts HP Regen"
+        },
+        {
+          "slot": 3,
+          "itemId": "1337",
+          "name": "Sage's Sanctuary",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
+        },
+        {
+          "slot": 4,
+          "itemId": "1353",
+          "name": "Dawnlight",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1353.png",
+          "description": "PDEF +210, HP +900, CDR +10%\nShields on dealing damage"
+        },
+        {
+          "slot": 5,
+          "itemId": "1333",
+          "name": "Ominous Premonition",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1333.png",
+          "description": "PDEF +300, HP +1,200\nSlows attackers"
+        },
+        {
+          "slot": 6,
+          "itemId": "1335",
+          "name": "Succubus Cloak",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
+          "description": "MDEF +300, HP +1,100\nNegates magical damage"
+        }
+      ]
+    }
+  ],
+  "buildsZh": [
+    {
+      "id": "camp-0",
+      "label": "Zhàn红鬼",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1341",
+          "name": "冰霜衝擊",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1341.png",
+          "description": "+150點物防+900點生命值+7.5%冷卻時間+10%韌性\n群體控制"
+        },
+        {
+          "slot": 2,
+          "itemId": "1332",
+          "name": "霸者重裝",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1332.png",
+          "description": "+1800點生命值+160點物防+80點法防\n提高額外生命值"
+        },
+        {
+          "slot": 3,
+          "itemId": "1336",
+          "name": "極寒風暴",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1336.png",
+          "description": "+20%減冷卻時間+600點生命值+240點物防\n群體傷害減速"
+        },
+        {
+          "slot": 4,
+          "itemId": "1337",
+          "name": "賢者的庇護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+        },
+        {
+          "slot": 5,
+          "itemId": "1347",
+          "name": "永夜守護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1347.png",
+          "description": "+210點法防+1000點生命值\n+7.5%移速減少法術傷害"
+        },
+        {
+          "slot": 6,
+          "itemId": "1331",
+          "name": "紅蓮斗篷",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1331.png",
+          "description": "+150點物防+150點法防+1100點生命值\n範圍灼燒重傷"
+        }
+      ]
+    },
+    {
+      "id": "camp-1",
+      "label": "التجول 2",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1353",
+          "name": "旭日初光",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1353.png",
+          "description": "+210點物防+900點生命值+10%減冷卻時間\n傷害敵人時獲得護盾值"
+        },
+        {
+          "slot": 2,
+          "itemId": "1333",
+          "name": "不祥徵兆",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1333.png",
+          "description": "+300點物防+1200點生命值\n受擊時將敵人減速"
+        },
+        {
+          "slot": 3,
+          "itemId": "1347",
+          "name": "永夜守護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1347.png",
+          "description": "+210點法防+1000點生命值\n+7.5%移速減少法術傷害"
+        },
+        {
+          "slot": 4,
+          "itemId": "1332",
+          "name": "霸者重裝",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1332.png",
+          "description": "+1800點生命值+160點物防+80點法防\n提高額外生命值"
+        },
+        {
+          "slot": 5,
+          "itemId": "1337",
+          "name": "賢者的庇護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+        },
+        {
+          "slot": 6,
+          "itemId": "1350",
+          "name": "侵略・怒魂",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1350.png",
+          "description": "+75點攻擊+900點生命值\n犧牲生命值換取護盾值"
+        }
+      ]
+    },
+    {
+      "id": "camp-2",
+      "label": "PT Znab",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1331",
+          "name": "紅蓮斗篷",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1331.png",
+          "description": "+150點物防+150點法防+1100點生命值\n範圍灼燒重傷"
+        },
+        {
+          "slot": 2,
+          "itemId": "1725",
+          "name": "近衛・星泉",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1752.png",
+          "description": "+1200點生命值+7.5%移速\n光環強化生存"
+        },
+        {
+          "slot": 3,
+          "itemId": "1327",
+          "name": "反傷刺甲",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1327.png",
+          "description": "+45點攻擊+300點物防\n+700點生命值反彈傷害"
+        },
+        {
+          "slot": 4,
+          "itemId": "1335",
+          "name": "魔女斗篷",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
+          "description": "+300點法防+1100點生命值\n吸收法術傷害"
+        },
+        {
+          "slot": 5,
+          "itemId": "1337",
+          "name": "賢者的庇護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+        },
+        {
+          "slot": 6,
+          "itemId": "1127",
+          "name": "名刀・司命",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "+75點攻擊+15%攻速+500點生命值\n保命"
+        }
+      ]
+    },
+    {
+      "id": "camp-3",
+      "label": "Anti-Healer",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1331",
+          "name": "紅蓮斗篷",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1331.png",
+          "description": "+150點物防+150點法防+1100點生命值\n範圍灼燒重傷"
+        },
+        {
+          "slot": 2,
+          "itemId": "1334",
+          "name": "不死鳥之眼",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1334.png",
+          "description": "+180點法防+90點物防+1350點生命值……\n增加回血效果"
+        },
+        {
+          "slot": 3,
+          "itemId": "1337",
+          "name": "賢者的庇護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+        },
+        {
+          "slot": 4,
+          "itemId": "1353",
+          "name": "旭日初光",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1353.png",
+          "description": "+210點物防+900點生命值+10%減冷卻時間\n傷害敵人時獲得護盾值"
+        },
+        {
+          "slot": 5,
+          "itemId": "1333",
+          "name": "不祥徵兆",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1333.png",
+          "description": "+300點物防+1200點生命值\n受擊時將敵人減速"
+        },
+        {
+          "slot": 6,
+          "itemId": "1335",
+          "name": "魔女斗篷",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
+          "description": "+300點法防+1100點生命值\n吸收法術傷害"
+        }
+      ]
     }
   ],
   "arcana": [
-    "Fate"
+    "Lvl 5: Fate",
+    "Lvl 5: Harmony",
+    "Lvl 5: Void"
+  ],
+  "arcanaZh": [
+    "5級：宿命",
+    "5級：調和",
+    "5級：虛空"
   ],
   "spells": [
     "Heal"
+  ],
+  "spellsZh": [
+    "治療術"
   ],
   "counters": [
     "Arli",
@@ -107,436 +591,129 @@
     "Musashi"
   ],
   "tips": [
-    "Zhang Fei is a Easy Tank (Roaming) on Honor of Kings Global. Camp HOK ranks them Tier S with 50.1% win rate and 1.2% pick rate as of 2026-06-05.",
-    "Best build path: Boots of Resistance → Blazing Cape → Ominous Premonition → Eye of the Phoenix → Overlord's Platemail.",
-    "Run Fate for stats that match Zhang Fei's Tank kit. Take Heal — swap to Purify against heavy CC or Smite when jungling.",
-    "Standard trade: Forbidden Domain → Leaping Savior → Unbridled Outburst → weave basic attacks. Weave basic attacks between skill casts for passive value.",
-    "Laning: Help marksman crash wave, then rotate mid for picks. Return before Tyrant if your carry has no escape.",
-    "Teamfight: Engage on enemy carry when your team has follow-up. Body-block skillshots for your marksman.",
-    "Zhang Fei excels into Arli, Consort Yu, Marco Polo. Avoid blind picking into Diaochan, Wukong, Musashi without team peel.",
-    "Zhang Fei is a Tier S staple in high-elo (Diamond+) on the international server — worth mastering for climb. Pick rate 1.2% — frequently seen in ranked; learn the matchup even if you do not main Zhang Fei."
+    "Zhang Fei (Tank): Tier S — 50% WR (Camp HOK).",
+    "Lane: Roaming.",
+    "Build: Frigid Charge, Overlord's Platemail, Glacial Buckler."
+  ],
+  "tipsZh": [
+    "張飛（遊走）：梯度 S，勝率 50%（Camp HOK）。",
+    "出裝：冰霜衝擊、霸者重裝、極寒風暴."
   ],
   "patchHistory": [
     {
-      "version": "Live meta",
-      "change": "Camp HOK — WR 50.1%, pick 1.2%, ban 0.4%, tier S."
+      "seasonId": "14",
+      "seasonName": "S14",
+      "versionName": "2026/04/29",
+      "publishedAt": "2026-04-29T01:00:00Z",
+      "isCurrent": false,
+      "tag": "Stat Buffs",
+      "change": "Increased skill damage",
+      "detail": "",
+      "version": "S14"
     },
     {
-      "version": "Matchups",
-      "change": "Strong into Arli, Consort Yu, Marco Polo · Weak into Diaochan, Wukong, Musashi."
+      "seasonId": "12",
+      "seasonName": "S12",
+      "versionName": "20251017",
+      "publishedAt": "2025-10-17T01:00:00Z",
+      "isCurrent": false,
+      "tag": "Stat Buffs",
+      "change": "Upgraded Skill Effects",
+      "detail": "",
+      "version": "S12"
     },
     {
-      "version": "High rank",
-      "change": "Zhang Fei is a Tier S staple in high-elo (Diamond+) on the international server — worth mastering for climb. Pick rate 1.2% — frequently seen in ranked; learn the matchup even if you do not main Zhang Fei."
+      "seasonId": "6",
+      "seasonName": "S6",
+      "versionName": "20240725",
+      "publishedAt": "2024-07-25T02:20:21Z",
+      "isCurrent": false,
+      "tag": "Mechanics Upgrade",
+      "change": "Added a launch effect to his Skill 1 and Skill 2 while he is transformed by his Ultimate.",
+      "detail": "We wanted to make his skills better match his massive body",
+      "version": "S6"
+    }
+  ],
+  "patchHistoryZh": [
+    {
+      "seasonId": "14",
+      "seasonName": "S14",
+      "versionName": "2026/04/29",
+      "publishedAt": "2026-04-29T01:00:00Z",
+      "isCurrent": false,
+      "tag": "數值增強",
+      "change": "提升技能傷害",
+      "detail": "",
+      "version": "S14"
+    },
+    {
+      "seasonId": "12",
+      "seasonName": "S12",
+      "versionName": "20251017",
+      "publishedAt": "2025-10-17T01:00:00Z",
+      "isCurrent": false,
+      "tag": "數值增強",
+      "change": "提升技能效果",
+      "detail": "",
+      "version": "S12"
+    },
+    {
+      "seasonId": "6",
+      "seasonName": "S6",
+      "versionName": "20240725",
+      "publishedAt": "2024-07-25T02:20:21Z",
+      "isCurrent": false,
+      "tag": "機制升級",
+      "change": "變身後的一技能二技能新增擊飛效果",
+      "detail": "讓變身後的技能更配合他龐大的身軀",
+      "version": "S6"
     }
   ],
   "faqs": [
     {
       "id": "faq-good-season",
-      "question": "Is Zhang Fei good in the current meta?",
-      "answer": "Zhang Fei is Tier S Tank with 50.1% win rate, 1.2% pick rate, and 0.4% ban rate on Honor of Kings Global (Camp HOK, 2026-06-05). Strong meta pick for ranked."
+      "question": "Is Zhang Fei good in current season?",
+      "answer": "Zhang Fei is Tier S Tank with 50% win rate, 1.11% pick rate, and 0.36% ban rate (Camp HOK international)."
     },
     {
       "id": "faq-best-build",
       "question": "What is the best Zhang Fei build?",
-      "answer": "Core item path: Boots of Resistance, Blazing Cape, Ominous Premonition, Eye of the Phoenix, Overlord's Platemail. Run Fate arcana with Heal. Switch to alternate build presets on this page for jungle, clash, or late-game setups."
+      "answer": "Recommended: Frigid Charge, Overlord's Platemail, Glacial Buckler, Sage's Sanctuary, Longnight Guardian, Blazing Cape."
     },
     {
       "id": "faq-counter",
       "question": "How to counter Zhang Fei?",
-      "answer": "Pick Diaochan, Wukong, Musashi into Zhang Fei. Deny Roaming resources early and force fights before Zhang Fei completes core items. Zhang Fei struggles when the enemy can out-range or out-sustain them."
+      "answer": "Pick Diaochan, Wukong, Musashi. Strong into Arli, Consort Yu, Marco Polo."
+    }
+  ],
+  "faqsZh": [
+    {
+      "id": "faq-good-season",
+      "question": "張飛 這版本適合上分嗎？",
+      "answer": "張飛 為 S 梯度，勝率 50%、選取 1.11%、禁用 0.36%（Camp HOK 國際服）。"
     },
     {
-      "id": "faq-strong-into",
-      "question": "Who does Zhang Fei counter?",
-      "answer": "Zhang Fei is strong into Arli, Consort Yu, Marco Polo according to HoKStats matchup data and role matchups on the global server. Draft Zhang Fei when the enemy relies on these heroes in the Roaming lane."
+      "id": "faq-best-build",
+      "question": "張飛 出裝怎麼搭配？",
+      "answer": "推薦：冰霜衝擊、霸者重裝、極寒風暴、賢者的庇護、永夜守護、紅蓮斗篷."
     },
     {
-      "id": "faq-high-rank",
-      "question": "Is Zhang Fei good in high rank / Diamond+?",
-      "answer": "Zhang Fei is a Tier S staple in high-elo (Diamond+) on the international server — worth mastering for climb. Pick rate 1.2% — frequently seen in ranked; learn the matchup even if you do not main Zhang Fei."
-    },
-    {
-      "id": "faq-lane",
-      "question": "What lane should Zhang Fei play?",
-      "answer": "Zhang Fei is tagged Roaming in Camp export (Support, Tank). Help marksman crash wave, then rotate mid for picks. Return before Tyrant if your carry has no escape."
-    },
-    {
-      "id": "faq-arcana",
-      "question": "Best arcana and spells for Zhang Fei?",
-      "answer": "Recommended: Fate arcana. Battle spell: Heal. Adjust Purify/Execute based on enemy dive and jungle need."
-    },
-    {
-      "id": "faq-vs-peer",
-      "question": "Zhang Fei or Kaizer — which is better?",
-      "answer": "Zhang Fei vs Kaizer (Tank, Tier S): Kaizer is 1.6% pick / 51.4% WR. Kaizer wins 1.3% more often globally. Choose Zhang Fei when you need Roaming identity; choose Kaizer for Clash Lane comfort."
-    },
-    {
-      "id": "faq-ban",
-      "question": "Should I ban Zhang Fei?",
-      "answer": "Yes in tryhard queues — 0.4% ban rate. Deny if enemy first-picks Tank."
+      "id": "faq-counter",
+      "question": "怎麼克制 張飛？",
+      "answer": "可選 Diaochan、Wukong、Musashi。張飛 克制 Arli、Consort Yu、Marco Polo。"
     }
   ],
   "metaAnalysis": [
-    "Zhang Fei — 50.1% WR, 1.2% pick, 0.4% ban (Camp HOK 2026-06-05).",
-    "Tier S Tank · Roaming · difficulty Easy.",
-    "Zhang Fei is a Tier S staple in high-elo (Diamond+) on the international server — worth mastering for climb. Pick rate 1.2% — frequently seen in ranked; learn the matchup even if you do not main Zhang Fei.",
-    "Matchups: strong into Arli, Consort Yu, Marco Polo; weak into Diaochan, Wukong, Musashi.",
-    "Zhang Fei vs Kaizer (Tank, Tier S): Kaizer is 1.6% pick / 51.4% WR. Kaizer wins 1.3% more often globally. Choose Zhang Fei when you need Roaming identity; choose Kaizer for Clash Lane comfort.",
-    "Zhang Fei vs Dun (Tank, Tier S): Dun is 1.5% pick / 52.3% WR. Dun wins 2.2% more often globally. Choose Zhang Fei when you need Roaming identity; choose Dun for Clash Lane comfort.",
-    "Draft tip: first-pick or ban priority in ranked."
+    "Zhang Fei win rate 50% (Camp HOK, 2026-06-07).",
+    "Pick rate 1.11%.",
+    "Ban rate 0.36%.",
+    "Counters: Arli, Consort Yu, Marco Polo. Weak into: Diaochan, Wukong, Musashi."
   ],
-  "builds": [
-    {
-      "id": "recommended",
-      "label": "Recommended",
-      "position": null,
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1422",
-          "name": "Boots of Resistance",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
-          "description": "Shortens CC"
-        },
-        {
-          "slot": 2,
-          "itemId": "1331",
-          "name": "Blazing Cape",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1331.jpg",
-          "description": "Burns nearby enemies"
-        },
-        {
-          "slot": 3,
-          "itemId": "1333",
-          "name": "Ominous Premonition",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1333.jpg",
-          "description": "Slows attackers"
-        },
-        {
-          "slot": 4,
-          "itemId": "1334",
-          "name": "Eye of the Phoenix",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1334.jpg",
-          "description": "Boosts Health regen"
-        },
-        {
-          "slot": 5,
-          "itemId": "1332",
-          "name": "Overlord's Platemail",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1332.jpg",
-          "description": "Extra Health"
-        },
-        {
-          "slot": 6,
-          "itemId": null,
-          "name": "Data unavailable",
-          "icon": null,
-          "description": null
-        }
-      ]
-    },
-    {
-      "id": "zhn红鬼",
-      "label": "Zhàn红鬼",
-      "position": "Position 5",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1701",
-          "name": "Knowledge Gem",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1701.jpg",
-          "description": "Extra Gold & EXP"
-        },
-        {
-          "slot": 2,
-          "itemId": "1422",
-          "name": "Boots of Resistance",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
-          "description": "Shortens CC"
-        },
-        {
-          "slot": 3,
-          "itemId": "1714",
-          "name": "Guardian",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1714.jpg",
-          "description": "Survivability aura"
-        },
-        {
-          "slot": 4,
-          "itemId": "1754",
-          "name": "Guardian - Radiance",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1754.jpg",
-          "description": "Area damage & vision"
-        },
-        {
-          "slot": 5,
-          "itemId": "1333",
-          "name": "Ominous Premonition",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1333.jpg",
-          "description": "Slows attackers"
-        },
-        {
-          "slot": 6,
-          "itemId": "1335",
-          "name": "Succubus Cloak",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1335.jpg",
-          "description": "Negates magical damage"
-        }
-      ]
-    },
-    {
-      "id": "2",
-      "label": "التجول 2",
-      "position": "Position 5",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1701",
-          "name": "Knowledge Gem",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1701.jpg",
-          "description": "Extra Gold & EXP"
-        },
-        {
-          "slot": 2,
-          "itemId": "1422",
-          "name": "Boots of Resistance",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
-          "description": "Shortens CC"
-        },
-        {
-          "slot": 3,
-          "itemId": "1714",
-          "name": "Guardian",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1714.jpg",
-          "description": "Survivability aura"
-        },
-        {
-          "slot": 4,
-          "itemId": "1724",
-          "name": "Guardian - Redemption",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1724.jpg",
-          "description": "Group shield"
-        },
-        {
-          "slot": 5,
-          "itemId": "1353",
-          "name": "Dawnlight",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1353.jpg",
-          "description": "Shields on dealing damage"
-        },
-        {
-          "slot": 6,
-          "itemId": "1325",
-          "name": "Protector's Cuirass",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1325.jpg",
-          "description": "PDEF +150, HP +450"
-        }
-      ]
-    },
-    {
-      "id": "pt-znab",
-      "label": "PT Znab",
-      "position": "Position 5",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1714",
-          "name": "Guardian",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1714.jpg",
-          "description": "Survivability aura"
-        },
-        {
-          "slot": 2,
-          "itemId": "1422",
-          "name": "Boots of Resistance",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
-          "description": "Shortens CC"
-        },
-        {
-          "slot": 3,
-          "itemId": "1331",
-          "name": "Blazing Cape",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1331.jpg",
-          "description": "Burns nearby enemies"
-        },
-        {
-          "slot": 4,
-          "itemId": "1725",
-          "name": "Guardian - Starspring",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1725.jpg",
-          "description": "Restores teammate Health & Mana"
-        },
-        {
-          "slot": 5,
-          "itemId": "1327",
-          "name": "Spikemail",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1327.jpg",
-          "description": "Reflects damage"
-        },
-        {
-          "slot": 6,
-          "itemId": "1335",
-          "name": "Succubus Cloak",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1335.jpg",
-          "description": "Negates magical damage"
-        }
-      ]
-    },
-    {
-      "id": "anti-healer",
-      "label": "Anti-Healer",
-      "position": "Position 5",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1701",
-          "name": "Knowledge Gem",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1701.jpg",
-          "description": "Extra Gold & EXP"
-        },
-        {
-          "slot": 2,
-          "itemId": "1714",
-          "name": "Guardian",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1714.jpg",
-          "description": "Survivability aura"
-        },
-        {
-          "slot": 3,
-          "itemId": "1724",
-          "name": "Guardian - Redemption",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1724.jpg",
-          "description": "Group shield"
-        },
-        {
-          "slot": 4,
-          "itemId": "1423",
-          "name": "Boots of Tranquility",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1423.jpg",
-          "description": "Reduces Skill CD"
-        },
-        {
-          "slot": 5,
-          "itemId": "1341",
-          "name": "Frigid Charge",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1341.jpg",
-          "description": "Group CC"
-        },
-        {
-          "slot": 6,
-          "itemId": "1331",
-          "name": "Blazing Cape",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1331.jpg",
-          "description": "Burns nearby enemies"
-        }
-      ]
-    },
-    {
-      "id": "giant-beast",
-      "label": "Giant beast",
-      "position": "Position 5",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1724",
-          "name": "Guardian - Redemption",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1724.jpg",
-          "description": "Group shield"
-        },
-        {
-          "slot": 2,
-          "itemId": "1422",
-          "name": "Boots of Resistance",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
-          "description": "Shortens CC"
-        },
-        {
-          "slot": 3,
-          "itemId": "1331",
-          "name": "Blazing Cape",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1331.jpg",
-          "description": "Burns nearby enemies"
-        },
-        {
-          "slot": 4,
-          "itemId": "1353",
-          "name": "Dawnlight",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1353.jpg",
-          "description": "Shields on dealing damage"
-        },
-        {
-          "slot": 5,
-          "itemId": "1341",
-          "name": "Frigid Charge",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1341.jpg",
-          "description": "Group CC"
-        },
-        {
-          "slot": 6,
-          "itemId": "1337",
-          "name": "Sage's Sanctuary",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1337.jpg",
-          "description": "Resurrect on the spot"
-        }
-      ]
-    },
-    {
-      "id": "popular",
-      "label": "Popular",
-      "position": "Position 5",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1701",
-          "name": "Knowledge Gem",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1701.jpg",
-          "description": "Extra Gold & EXP"
-        },
-        {
-          "slot": 2,
-          "itemId": "1721",
-          "name": "Crimson Shadow - Redemption",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1721.jpg",
-          "description": "Group shield"
-        },
-        {
-          "slot": 3,
-          "itemId": "1423",
-          "name": "Boots of Tranquility",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1423.jpg",
-          "description": "Reduces Skill CD"
-        },
-        {
-          "slot": 4,
-          "itemId": "1331",
-          "name": "Blazing Cape",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1331.jpg",
-          "description": "Burns nearby enemies"
-        },
-        {
-          "slot": 5,
-          "itemId": "1335",
-          "name": "Succubus Cloak",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1335.jpg",
-          "description": "Negates magical damage"
-        },
-        {
-          "slot": 6,
-          "itemId": "1333",
-          "name": "Ominous Premonition",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1333.jpg",
-          "description": "Slows attackers"
-        }
-      ]
-    }
+  "metaAnalysisZh": [
+    "張飛 勝率 50%（Camp HOK，2026-06-07）",
+    "選取率 1.11%",
+    "禁用率 0.36%",
+    "克制：Arli、Consort Yu、Marco Polo；被克制：Diaochan、Wukong、Musashi"
   ],
   "guide": {
     "overview": "Zhang Fei is a Easy Tank (Roaming) on Honor of Kings Global. Camp HOK ranks them Tier S with 50.1% win rate and 1.2% pick rate as of 2026-06-05.",

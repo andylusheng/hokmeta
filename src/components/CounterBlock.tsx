@@ -3,6 +3,7 @@ import { getHeroByName } from '@/lib/data';
 import { HeroLinkRow, HeroUnknownRow } from '@/components/HeroLinkRow';
 import { createT, type Locale } from '@/lib/i18n';
 import { translateRole } from '@/lib/locale-labels';
+import { getHeroDisplayName } from '@/lib/locale-names';
 
 function CounterHeroList({
   names,
@@ -28,7 +29,7 @@ function CounterHeroList({
               key={name}
               className="rounded border border-hok-border bg-hok-dark/40 px-3 py-2"
             >
-              <HeroUnknownRow name={name} avatarSize={40} />
+              <HeroUnknownRow name={name} locale={locale} avatarSize={40} />
             </li>
           );
         }
@@ -58,24 +59,25 @@ export function CounterBlock({
   locale?: Locale;
 }) {
   const t = createT(locale);
+  const displayName = getHeroDisplayName(hero, locale);
 
   return (
     <div className="grid gap-6 sm:grid-cols-2">
       <div className="rounded-lg border border-hok-border bg-hok-card/50 p-4">
         <h4 className="mb-1 text-sm font-semibold text-hok-gold">
-          {t('counters.strongInto', { name: hero.name })}
+          {t('counters.strongInto', { name: displayName })}
         </h4>
         <p className="mb-3 text-xs text-gray-500">
-          {t('counters.strongHint', { name: hero.name })}
+          {t('counters.strongHint', { name: displayName })}
         </p>
         <CounterHeroList names={hero.counters} locale={locale} />
       </div>
       <div className="rounded-lg border border-hok-border bg-hok-card/50 p-4">
         <h4 className="mb-1 text-sm font-semibold text-red-400">
-          {t('counters.weakInto', { name: hero.name })}
+          {t('counters.weakInto', { name: displayName })}
         </h4>
         <p className="mb-3 text-xs text-gray-500">
-          {t('counters.weakHint', { name: hero.name })}
+          {t('counters.weakHint', { name: displayName })}
         </p>
         <CounterHeroList names={hero.counteredBy} locale={locale} />
       </div>

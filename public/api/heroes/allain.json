@@ -2,99 +2,583 @@
   "id": "allain",
   "slug": "allain",
   "name": "Allain",
+  "nameZh": "亞連",
   "role": "Warrior",
   "roles": "Fighter",
+  "rolesZh": "戰士",
   "lane": "Clash Lane",
+  "laneZh": "對抗路",
   "difficulty": "Medium",
   "tier": "A",
-  "winRate": 51.02,
-  "pickRate": 1.09,
-  "banRate": 0.1,
-  "rank": 54,
+  "winRate": 50.28,
+  "pickRate": 0.97,
+  "banRate": 0.08,
+  "rank": 65,
   "avatar": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/Ek9OHopQ.png",
   "avatarFallback": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/514/514.jpg",
+  "heroCover": "https://camp.honorofkings.com/social/game/src/image_hero_cover_1275*718/rYHzpEtU.jpg",
   "tencentId": 514,
-  "dataSource": "Camp HOK + HoKStats.gg (intl)",
-  "dataUpdated": "2026-06-05",
+  "dataSource": "Camp HOK bilingual (primary)",
+  "dataUpdated": "2026-06-07",
   "skills": [
     {
       "slot": "passive",
       "name": "Howling Blade",
-      "description": "Basic Attacks and skills grant Fury, which increases his Physical and Magical Pierce and grants damage reduction. At max Fury, he recovers Health, and the lower his Health, the more he recovers.",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/514/51400.png",
-      "cooldown": null
+      "description": "Basic Attacks and skills grant Fury, which increases his Physical Pierce and Magical Pierce and grants damage reduction. At max Fury, he recovers Health, and the lower his Health, the more he recovers.",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/51400.png",
+      "cooldown": "1s"
     },
     {
       "slot": "skill1",
       "name": "Meteor Kill",
-      "description": "Based on how many stacks of mark he has, Allain deals damage multiple times in the target direction and launches enemies. He gains marks by hitting enemies with Basic Attacks and Ultimate.",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/514/51410.png",
-      "cooldown": null
+      "description": "Based on how many stacks of mark he has, deals multi-phase damage in the target direction and launches enemies. He gains marks by hitting enemies with Basic Attacks and his Ultimate.",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/51410.png",
+      "cooldown": "5s"
     },
     {
       "slot": "skill2",
       "name": "Moonlight Flash",
       "description": "Dashes in the target direction, damaging and slowing enemies. He gains Movement Speed and his next 3 Basic Attacks gain increased Attack Speed.",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/514/51420.png",
-      "cooldown": null
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/51420.png",
+      "cooldown": "2s"
     },
     {
       "slot": "ultimate",
       "name": "Death at Sunset",
-      "description": "Allain leaps toward the targeted enemy hero and becomes untargetable. After a short delay, he lands and deals area damage. For every enemy hero hit, he gains marks and Fury.",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/514/51430.png",
-      "cooldown": null
+      "description": "Leaps toward the targeted enemy hero and becomes untargetable. After a short delay, he lands and deals area damage. For every enemy hero hit, he gains marks and Fury. He also gains a shield based on the number of enemies hit.",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/51430.png",
+      "cooldown": "45s"
+    }
+  ],
+  "skillsZh": [
+    {
+      "slot": "passive",
+      "name": "劍嘯",
+      "description": "亞連可以使用快速雙劍普攻，任意技能普攻命中敵人後，疊加怒氣並提升物理、法術穿透和免傷，疊加一定層數後回復自身生命值，血量愈少，回復愈多。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/51400.png",
+      "cooldown": "1s"
+    },
+    {
+      "slot": "skill1",
+      "name": "流星斬",
+      "description": "亞連基於印記層數，朝指定方向造成多段傷害並擊飛目標(印記層數可透過普攻和3技能命中獲得)。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/51410.png",
+      "cooldown": "5s"
+    },
+    {
+      "slot": "skill2",
+      "name": "逐月閃",
+      "description": "亞連朝指定方向位移，造成傷害並減速敵人。並使得亞連獲得移速，下3次普攻獲得額外攻速。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/51420.png",
+      "cooldown": "2s"
+    },
+    {
+      "slot": "ultimate",
+      "name": "落日斬",
+      "description": "亞連跳向目標英雄單位，期間無法鎖定為目標，短暫延遲後下落造成範圍傷害。每命中一個敵方英雄，亞連都會獲得印記層數和怒氣，根據命中敵人的人數獲得護盾。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/51430.png",
+      "cooldown": "45s"
     }
   ],
   "build": [
     {
       "slot": 1,
-      "itemId": "1331",
-      "name": "Blazing Cape",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1331.jpg",
-      "description": "Burns nearby enemies"
+      "itemId": "1138",
+      "name": "Overlord's Might",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1138.png",
+      "description": "PATK +150, CDR +5%\nHigh-damage attack"
     },
     {
       "slot": 2,
-      "itemId": "1421",
-      "name": "Boots of Fortitude",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1421.jpg",
-      "description": "Reduces physical damage"
+      "itemId": "1127",
+      "name": "Destiny",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+      "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
     },
     {
       "slot": 3,
-      "itemId": "1126",
-      "name": "Doomsday",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1126.jpg",
-      "description": "Boosts BA damage"
+      "itemId": "1328",
+      "name": "Blood Rage",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1328.png",
+      "description": "PATK +75, HP +900\nTrades HP for shield"
     },
     {
       "slot": 4,
-      "itemId": "1135",
-      "name": "Sparkforged Dagger",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1135.jpg",
-      "description": "Chain lightning BA"
+      "itemId": "1337",
+      "name": "Sage's Sanctuary",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+      "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
     },
     {
       "slot": 5,
-      "itemId": "1328",
-      "name": "Blood Rage",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1328.jpg",
-      "description": "Grants temporary shield"
+      "itemId": "1133",
+      "name": "Eternity Blade",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1133.png",
+      "description": "PATK +120, Crit Rate +20%\nHigh crit damage"
     },
     {
       "slot": 6,
-      "itemId": "1338",
-      "name": "Cuirass of Savagery",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1338.jpg",
-      "description": "Offense & defense"
+      "itemId": "1350",
+      "name": "Ravage - Phantom",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1350.png",
+      "description": "PATK +75, HP +900\nTrades HP for shield"
+    }
+  ],
+  "buildZh": [
+    {
+      "slot": 1,
+      "itemId": "1138",
+      "name": "強者破軍",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1138.png",
+      "description": "+150點攻擊+5%減冷卻時間\n高額攻擊"
+    },
+    {
+      "slot": 2,
+      "itemId": "1127",
+      "name": "名刀・司命",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+      "description": "+75點攻擊+15%攻速+500點生命值\n保命"
+    },
+    {
+      "slot": 3,
+      "itemId": "1328",
+      "name": "血魔之怒",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1328.png",
+      "description": "+75點攻擊+900點生命值 \n犧牲生命值換取護盾值"
+    },
+    {
+      "slot": 4,
+      "itemId": "1337",
+      "name": "賢者的庇護",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+      "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+    },
+    {
+      "slot": 5,
+      "itemId": "1133",
+      "name": "無盡戰刃",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1133.png",
+      "description": "+120點攻擊+20%暴擊\n高額暴擊傷害"
+    },
+    {
+      "slot": 6,
+      "itemId": "1350",
+      "name": "侵略・怒魂",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1350.png",
+      "description": "+75點攻擊+900點生命值\n犧牲生命值換取護盾值"
+    }
+  ],
+  "builds": [
+    {
+      "id": "camp-0",
+      "label": "Allain Damage",
+      "lane": "Top",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1138",
+          "name": "Overlord's Might",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1138.png",
+          "description": "PATK +150, CDR +5%\nHigh-damage attack"
+        },
+        {
+          "slot": 2,
+          "itemId": "1127",
+          "name": "Destiny",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
+        },
+        {
+          "slot": 3,
+          "itemId": "1328",
+          "name": "Blood Rage",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1328.png",
+          "description": "PATK +75, HP +900\nTrades HP for shield"
+        },
+        {
+          "slot": 4,
+          "itemId": "1337",
+          "name": "Sage's Sanctuary",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
+        },
+        {
+          "slot": 5,
+          "itemId": "1133",
+          "name": "Eternity Blade",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1133.png",
+          "description": "PATK +120, Crit Rate +20%\nHigh crit damage"
+        },
+        {
+          "slot": 6,
+          "itemId": "1350",
+          "name": "Ravage - Phantom",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1350.png",
+          "description": "PATK +75, HP +900\nTrades HP for shield"
+        }
+      ]
+    },
+    {
+      "id": "camp-1",
+      "label": "TURNEY",
+      "lane": "Top",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1338",
+          "name": "Cuirass of Savagery",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1338.png",
+          "description": "PATK +35, PDEF +210, HP +900\nOffense & defense"
+        },
+        {
+          "slot": 2,
+          "itemId": "1337",
+          "name": "Sage's Sanctuary",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
+        },
+        {
+          "slot": 3,
+          "itemId": "1127",
+          "name": "Destiny",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
+        },
+        {
+          "slot": 4,
+          "itemId": "1350",
+          "name": "Ravage - Phantom",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1350.png",
+          "description": "PATK +75, HP +900\nTrades HP for shield"
+        },
+        {
+          "slot": 5,
+          "itemId": "1336",
+          "name": "Glacial Buckler",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1336.png",
+          "description": "CDR +20%, HP +600, PDEF +240\nGroup damage & slow"
+        },
+        {
+          "slot": 6,
+          "itemId": "11311",
+          "name": "Pure Sky",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/11311.png",
+          "description": "PATK +80, PDEF +150, CDR +10%\nTemp. damage reduction"
+        }
+      ]
+    },
+    {
+      "id": "camp-2",
+      "label": "胖連2.0",
+      "lane": "Top",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1328",
+          "name": "Blood Rage",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1328.png",
+          "description": "PATK +75, HP +900\nTrades HP for shield"
+        },
+        {
+          "slot": 2,
+          "itemId": "1534",
+          "name": "Dragon's Rage",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1536.png",
+          "description": "HP +1,350, PDEF +180, MDEF +90\nBoosts BA damage"
+        },
+        {
+          "slot": 3,
+          "itemId": "1135",
+          "name": "Sparkforged Dagger",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1135.png",
+          "description": "PATK +40, ASPD +35%, MSPD +7.5%\nChain lightning BA"
+        },
+        {
+          "slot": 4,
+          "itemId": "1334",
+          "name": "Eye of the Phoenix",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1334.png",
+          "description": "MDEF +180, PDEF +90, HP +1,350\nBoosts HP Regen"
+        },
+        {
+          "slot": 5,
+          "itemId": "1337",
+          "name": "Sage's Sanctuary",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
+        },
+        {
+          "slot": 6,
+          "itemId": "1127",
+          "name": "Destiny",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
+        }
+      ]
+    },
+    {
+      "id": "camp-3",
+      "label": "打不过出肉",
+      "lane": "Top",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1328",
+          "name": "Blood Rage",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1328.png",
+          "description": "PATK +75, HP +900\nTrades HP for shield"
+        },
+        {
+          "slot": 2,
+          "itemId": "1332",
+          "name": "Overlord's Platemail",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1332.png",
+          "description": "HP +1,800, PDEF +160, MDEF +80\nExtra HP"
+        },
+        {
+          "slot": 3,
+          "itemId": "1341",
+          "name": "Frigid Charge",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1341.png",
+          "description": "PDEF +150, HP +900, CDR +7.5%, Resistance +10%\nGreat crowd control"
+        },
+        {
+          "slot": 4,
+          "itemId": "1534",
+          "name": "Dragon's Rage",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1536.png",
+          "description": "HP +1,350, PDEF +180, MDEF +90\nBoosts BA damage"
+        },
+        {
+          "slot": 5,
+          "itemId": "1422",
+          "name": "Boots of Resistance",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1422.png",
+          "description": "MDEF +100, PDEF +50, MSPD +50\nShortens crowd control"
+        },
+        {
+          "slot": 6,
+          "itemId": "1127",
+          "name": "Destiny",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
+        }
+      ]
+    }
+  ],
+  "buildsZh": [
+    {
+      "id": "camp-0",
+      "label": "Allain Damage",
+      "lane": "Top",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1138",
+          "name": "強者破軍",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1138.png",
+          "description": "+150點攻擊+5%減冷卻時間\n高額攻擊"
+        },
+        {
+          "slot": 2,
+          "itemId": "1127",
+          "name": "名刀・司命",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "+75點攻擊+15%攻速+500點生命值\n保命"
+        },
+        {
+          "slot": 3,
+          "itemId": "1328",
+          "name": "血魔之怒",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1328.png",
+          "description": "+75點攻擊+900點生命值 \n犧牲生命值換取護盾值"
+        },
+        {
+          "slot": 4,
+          "itemId": "1337",
+          "name": "賢者的庇護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+        },
+        {
+          "slot": 5,
+          "itemId": "1133",
+          "name": "無盡戰刃",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1133.png",
+          "description": "+120點攻擊+20%暴擊\n高額暴擊傷害"
+        },
+        {
+          "slot": 6,
+          "itemId": "1350",
+          "name": "侵略・怒魂",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1350.png",
+          "description": "+75點攻擊+900點生命值\n犧牲生命值換取護盾值"
+        }
+      ]
+    },
+    {
+      "id": "camp-1",
+      "label": "TURNEY",
+      "lane": "Top",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1338",
+          "name": "暴烈之甲",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1338.png",
+          "description": "+35點攻擊+210點物防+900點生命值\n能抗能打"
+        },
+        {
+          "slot": 2,
+          "itemId": "1337",
+          "name": "賢者的庇護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+        },
+        {
+          "slot": 3,
+          "itemId": "1127",
+          "name": "名刀・司命",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "+75點攻擊+15%攻速+500點生命值\n保命"
+        },
+        {
+          "slot": 4,
+          "itemId": "1350",
+          "name": "侵略・怒魂",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1350.png",
+          "description": "+75點攻擊+900點生命值\n犧牲生命值換取護盾值"
+        },
+        {
+          "slot": 5,
+          "itemId": "1336",
+          "name": "極寒風暴",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1336.png",
+          "description": "+20%減冷卻時間+600點生命值+240點物防\n群體傷害減速"
+        },
+        {
+          "slot": 6,
+          "itemId": "11311",
+          "name": "純淨蒼穹",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/11311.png",
+          "description": "+80點攻擊+150點物防+10%冷卻時間縮減\n暫時增加免傷"
+        }
+      ]
+    },
+    {
+      "id": "camp-2",
+      "label": "胖連2.0",
+      "lane": "Top",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1328",
+          "name": "血魔之怒",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1328.png",
+          "description": "+75點攻擊+900點生命值 \n犧牲生命值換取護盾值"
+        },
+        {
+          "slot": 2,
+          "itemId": "1534",
+          "name": "怒龍劍盾",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1536.png",
+          "description": "+1350點生命值+180點物防+90點法防\n普攻額外傷害"
+        },
+        {
+          "slot": 3,
+          "itemId": "1135",
+          "name": "閃電匕首",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1135.png",
+          "description": "+40點攻擊+35%攻速+7.5%移速\n普攻附帶閃電"
+        },
+        {
+          "slot": 4,
+          "itemId": "1334",
+          "name": "不死鳥之眼",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1334.png",
+          "description": "+180點法防+90點物防+1350點生命值……\n增加回血效果"
+        },
+        {
+          "slot": 5,
+          "itemId": "1337",
+          "name": "賢者的庇護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+        },
+        {
+          "slot": 6,
+          "itemId": "1127",
+          "name": "名刀・司命",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "+75點攻擊+15%攻速+500點生命值\n保命"
+        }
+      ]
+    },
+    {
+      "id": "camp-3",
+      "label": "打不过出肉",
+      "lane": "Top",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1328",
+          "name": "血魔之怒",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1328.png",
+          "description": "+75點攻擊+900點生命值 \n犧牲生命值換取護盾值"
+        },
+        {
+          "slot": 2,
+          "itemId": "1332",
+          "name": "霸者重裝",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1332.png",
+          "description": "+1800點生命值+160點物防+80點法防\n提高額外生命值"
+        },
+        {
+          "slot": 3,
+          "itemId": "1341",
+          "name": "冰霜衝擊",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1341.png",
+          "description": "+150點物防+900點生命值+7.5%冷卻時間+10%韌性\n群體控制"
+        },
+        {
+          "slot": 4,
+          "itemId": "1534",
+          "name": "怒龍劍盾",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1536.png",
+          "description": "+1350點生命值+180點物防+90點法防\n普攻額外傷害"
+        },
+        {
+          "slot": 5,
+          "itemId": "1422",
+          "name": "抵抗之靴",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1422.png",
+          "description": "+100點法防+50點物防+50點移速\n減少被控時間"
+        },
+        {
+          "slot": 6,
+          "itemId": "1127",
+          "name": "名刀・司命",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "+75點攻擊+15%攻速+500點生命值\n保命"
+        }
+      ]
     }
   ],
   "arcana": [
-    "Red"
+    "Lvl 5: Fate",
+    "Lvl 5: Stealth",
+    "Lvl 5: Void"
+  ],
+  "arcanaZh": [
+    "5級：宿命",
+    "5級：隱匿",
+    "5級：虛空"
   ],
   "spells": [
-    "Flash"
+    "Execute"
+  ],
+  "spellsZh": [
+    "終結"
   ],
   "counters": [
     "Lu Bu",
@@ -105,586 +589,151 @@
     "Marco Polo"
   ],
   "tips": [
-    "Allain is a Medium Warrior (Clash Lane) on Honor of Kings Global. Camp HOK ranks them Tier A with 51.0% win rate and 1.1% pick rate as of 2026-06-05.",
-    "Best build path: Blazing Cape → Boots of Fortitude → Doomsday → Sparkforged Dagger → Blood Rage → Cuirass of Savagery.",
-    "Run Red for stats that match Allain's Warrior kit. Take Flash — swap to Purify against heavy CC or Smite when jungling.",
-    "Standard trade: Meteor Kill → Moonlight Flash → Death at Sunset → weave basic attacks. Weave basic attacks between skill casts for passive value.",
-    "Laning: Trade on your power spike levels (2/4). Call jungler for dive only when enemy flash is down.",
-    "Teamfight: Flank or dive backline after tanks commit. Do not start fights without vision on enemy jungler.",
-    "Allain excels into Lu Bu, Zhuangzi. Avoid blind picking into Sima Yi, Marco Polo without team peel.",
-    "Allain is a viable Tier A pick in high rank with 51.0% win rate — strong in one-trick hands or as a counter-pick. Pick rate 1.1% — frequently seen in ranked; learn the matchup even if you do not main Allain."
+    "Allain (Warrior): Tier A — 50.28% WR (Camp HOK).",
+    "Lane: Clash Lane.",
+    "Build: Overlord's Might, Destiny, Blood Rage."
+  ],
+  "tipsZh": [
+    "亞連（對抗路）：梯度 A，勝率 50.28%（Camp HOK）。",
+    "出裝：強者破軍、名刀・司命、血魔之怒."
   ],
   "patchHistory": [
     {
-      "version": "Live meta",
-      "change": "Camp HOK — WR 51.0%, pick 1.1%, ban 0.1%, tier A."
+      "seasonId": "14",
+      "seasonName": "S14",
+      "versionName": "2026/04/29",
+      "publishedAt": "2026-04-29T01:00:00Z",
+      "isCurrent": false,
+      "tag": "Stat Buffs",
+      "change": "Increased skill damage",
+      "detail": "",
+      "version": "S14"
     },
     {
-      "version": "Matchups",
-      "change": "Strong into Lu Bu, Zhuangzi · Weak into Sima Yi, Marco Polo."
+      "seasonId": "14",
+      "seasonName": "S14",
+      "versionName": "2026/03/11",
+      "publishedAt": "2026-03-11T03:17:26Z",
+      "isCurrent": false,
+      "tag": "Stat Buffs",
+      "change": "Increased skill damage",
+      "detail": "",
+      "version": "S14"
     },
     {
-      "version": "High rank",
-      "change": "Allain is a viable Tier A pick in high rank with 51.0% win rate — strong in one-trick hands or as a counter-pick. Pick rate 1.1% — frequently seen in ranked; learn the matchup even if you do not main Allain."
+      "seasonId": "13",
+      "seasonName": "S13",
+      "versionName": "2026/01/08",
+      "publishedAt": "2026-01-08T01:00:00Z",
+      "isCurrent": false,
+      "tag": "Stat Buffs",
+      "change": "Adjusted Skill Damage",
+      "detail": "",
+      "version": "S13"
+    },
+    {
+      "seasonId": "6",
+      "seasonName": "S6",
+      "versionName": "20240905",
+      "publishedAt": "2024-09-05T03:48:42Z",
+      "isCurrent": false,
+      "tag": "Stat Nerfs",
+      "change": "Increased Basic Attack interval and reduced Ultimate's shield effect.",
+      "detail": "Allain's continuous Basic Attack and counterattack capabilities with his Ultimate have made him a strong contender in both the Clash Lane and team fights. We are slightly nerfing him to allow other heroes to better compete against him.",
+      "version": "S6"
+    }
+  ],
+  "patchHistoryZh": [
+    {
+      "seasonId": "14",
+      "seasonName": "S14",
+      "versionName": "2026/04/29",
+      "publishedAt": "2026-04-29T01:00:00Z",
+      "isCurrent": false,
+      "tag": "數值增強",
+      "change": "提升技能傷害",
+      "detail": "",
+      "version": "S14"
+    },
+    {
+      "seasonId": "14",
+      "seasonName": "S14",
+      "versionName": "2026/03/11",
+      "publishedAt": "2026-03-11T03:17:26Z",
+      "isCurrent": false,
+      "tag": "數值增強",
+      "change": "提升技能傷害",
+      "detail": "",
+      "version": "S14"
+    },
+    {
+      "seasonId": "13",
+      "seasonName": "S13",
+      "versionName": "2026/01/08",
+      "publishedAt": "2026-01-08T01:00:00Z",
+      "isCurrent": false,
+      "tag": "數值增強",
+      "change": "調整技能傷害",
+      "detail": "",
+      "version": "S13"
+    },
+    {
+      "seasonId": "6",
+      "seasonName": "S6",
+      "versionName": "20240905",
+      "publishedAt": "2024-09-05T03:48:42Z",
+      "isCurrent": false,
+      "tag": "數值削弱",
+      "change": "增加普攻間隔，並降低大招的護盾效果",
+      "detail": "「亞連持續普攻和透過大招的殘血反打能力，讓他經常能在對抗路和團戰中取得不錯的表現，我們略微削弱他，使其他英雄能夠與他抗衡。」",
+      "version": "S6"
     }
   ],
   "faqs": [
     {
       "id": "faq-good-season",
-      "question": "Is Allain good in the current meta?",
-      "answer": "Allain is Tier A Warrior with 51.0% win rate, 1.1% pick rate, and 0.1% ban rate on Honor of Kings Global (Camp HOK, 2026-06-05). Solid situational pick."
+      "question": "Is Allain good in current season?",
+      "answer": "Allain is Tier A Warrior with 50.28% win rate, 0.97% pick rate, and 0.08% ban rate (Camp HOK international)."
     },
     {
       "id": "faq-best-build",
       "question": "What is the best Allain build?",
-      "answer": "Core item path: Blazing Cape, Boots of Fortitude, Doomsday, Sparkforged Dagger, Blood Rage, Cuirass of Savagery. Run Red arcana with Flash. Switch to alternate build presets on this page for jungle, clash, or late-game setups."
+      "answer": "Recommended: Overlord's Might, Destiny, Blood Rage, Sage's Sanctuary, Eternity Blade, Ravage - Phantom."
     },
     {
       "id": "faq-counter",
       "question": "How to counter Allain?",
-      "answer": "Pick Sima Yi, Marco Polo into Allain. Deny Clash Lane resources early and force fights before Allain completes core items. Allain struggles when the enemy can out-range or out-sustain them."
+      "answer": "Pick Sima Yi, Marco Polo. Strong into Lu Bu, Zhuangzi."
+    }
+  ],
+  "faqsZh": [
+    {
+      "id": "faq-good-season",
+      "question": "亞連 這版本適合上分嗎？",
+      "answer": "亞連 為 A 梯度，勝率 50.28%、選取 0.97%、禁用 0.08%（Camp HOK 國際服）。"
     },
     {
-      "id": "faq-strong-into",
-      "question": "Who does Allain counter?",
-      "answer": "Allain is strong into Lu Bu, Zhuangzi according to HoKStats matchup data and role matchups on the global server. Draft Allain when the enemy relies on these heroes in the Clash Lane lane."
+      "id": "faq-best-build",
+      "question": "亞連 出裝怎麼搭配？",
+      "answer": "推薦：強者破軍、名刀・司命、血魔之怒、賢者的庇護、無盡戰刃、侵略・怒魂."
     },
     {
-      "id": "faq-high-rank",
-      "question": "Is Allain good in high rank / Diamond+?",
-      "answer": "Allain is a viable Tier A pick in high rank with 51.0% win rate — strong in one-trick hands or as a counter-pick. Pick rate 1.1% — frequently seen in ranked; learn the matchup even if you do not main Allain."
-    },
-    {
-      "id": "faq-lane",
-      "question": "What lane should Allain play?",
-      "answer": "Allain is tagged Clash Lane in Camp export (Fighter). Trade on your power spike levels (2/4). Call jungler for dive only when enemy flash is down."
-    },
-    {
-      "id": "faq-arcana",
-      "question": "Best arcana and spells for Allain?",
-      "answer": "Recommended: Red arcana. Battle spell: Flash. Adjust Purify/Execute based on enemy dive and jungle need."
-    },
-    {
-      "id": "faq-vs-peer",
-      "question": "Allain or Li Xin — which is better?",
-      "answer": "Allain vs Li Xin (Warrior, Tier S+): Li Xin is 1.9% pick / 52.6% WR. Li Xin wins 1.6% more often globally. Choose Allain when you need Clash Lane identity; choose Li Xin for Clash Lane comfort."
-    },
-    {
-      "id": "faq-ban",
-      "question": "Should I ban Allain?",
-      "answer": "Optional ban when enemy spams Warrior; 1.1% pick rate but only 0.1% ban rate."
+      "id": "faq-counter",
+      "question": "怎麼克制 亞連？",
+      "answer": "可選 Sima Yi、Marco Polo。亞連 克制 Lu Bu、Zhuangzi。"
     }
   ],
   "metaAnalysis": [
-    "Allain — 51.0% WR, 1.1% pick, 0.1% ban (Camp HOK 2026-06-05).",
-    "Tier A Warrior · Clash Lane · difficulty Medium.",
-    "Allain is a viable Tier A pick in high rank with 51.0% win rate — strong in one-trick hands or as a counter-pick. Pick rate 1.1% — frequently seen in ranked; learn the matchup even if you do not main Allain.",
-    "Matchups: strong into Lu Bu, Zhuangzi; weak into Sima Yi, Marco Polo.",
-    "Allain vs Li Xin (Warrior, Tier S+): Li Xin is 1.9% pick / 52.6% WR. Li Xin wins 1.6% more often globally. Choose Allain when you need Clash Lane identity; choose Li Xin for Clash Lane comfort.",
-    "Allain vs Chicha (Warrior, Tier S): Chicha is 1.5% pick / 50.2% WR. Allain has +0.9% WR vs Chicha in Camp data. Choose Allain when you need Clash Lane identity; choose Chicha for Clash Lane comfort.",
-    "Draft tip: counter-pick or comfort pick when lane matchup is favorable."
+    "Allain win rate 50.28% (Camp HOK, 2026-06-07).",
+    "Pick rate 0.97%.",
+    "Ban rate 0.08%.",
+    "Counters: Lu Bu, Zhuangzi. Weak into: Sima Yi, Marco Polo."
   ],
-  "builds": [
-    {
-      "id": "recommended",
-      "label": "Recommended",
-      "position": null,
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1331",
-          "name": "Blazing Cape",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1331.jpg",
-          "description": "Burns nearby enemies"
-        },
-        {
-          "slot": 2,
-          "itemId": "1421",
-          "name": "Boots of Fortitude",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1421.jpg",
-          "description": "Reduces physical damage"
-        },
-        {
-          "slot": 3,
-          "itemId": "1126",
-          "name": "Doomsday",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1126.jpg",
-          "description": "Boosts BA damage"
-        },
-        {
-          "slot": 4,
-          "itemId": "1135",
-          "name": "Sparkforged Dagger",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1135.jpg",
-          "description": "Chain lightning BA"
-        },
-        {
-          "slot": 5,
-          "itemId": "1328",
-          "name": "Blood Rage",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1328.jpg",
-          "description": "Grants temporary shield"
-        },
-        {
-          "slot": 6,
-          "itemId": "1338",
-          "name": "Cuirass of Savagery",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1338.jpg",
-          "description": "Offense & defense"
-        }
-      ]
-    },
-    {
-      "id": "国服套装",
-      "label": "国服套装",
-      "position": "Position 1",
-      "lane": "CN preset",
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1421",
-          "name": "Boots of Fortitude",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1421.jpg",
-          "description": "Reduces physical damage"
-        },
-        {
-          "slot": 2,
-          "itemId": "1534",
-          "name": "Dragon's Rage",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1534.jpg",
-          "description": "Boosts BA damage"
-        },
-        {
-          "slot": 3,
-          "itemId": "1332",
-          "name": "Overlord's Platemail",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1332.jpg",
-          "description": "Extra Health"
-        },
-        {
-          "slot": 4,
-          "itemId": "1331",
-          "name": "Blazing Cape",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1331.jpg",
-          "description": "Burns nearby enemies"
-        },
-        {
-          "slot": 5,
-          "itemId": "1328",
-          "name": "Blood Rage",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1328.jpg",
-          "description": "Grants temporary shield"
-        },
-        {
-          "slot": 6,
-          "itemId": "1335",
-          "name": "Succubus Cloak",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1335.jpg",
-          "description": "Negates magical damage"
-        }
-      ]
-    },
-    {
-      "id": "clash-lane-2",
-      "label": "Clash Lane 2",
-      "position": "Position 1",
-      "lane": "Clash Lane",
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1422",
-          "name": "Boots of Resistance",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
-          "description": "Shortens CC"
-        },
-        {
-          "slot": 2,
-          "itemId": "1135",
-          "name": "Sparkforged Dagger",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1135.jpg",
-          "description": "Chain lightning BA"
-        },
-        {
-          "slot": 3,
-          "itemId": "1331",
-          "name": "Blazing Cape",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1331.jpg",
-          "description": "Burns nearby enemies"
-        },
-        {
-          "slot": 4,
-          "itemId": "1328",
-          "name": "Blood Rage",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1328.jpg",
-          "description": "Grants temporary shield"
-        },
-        {
-          "slot": 5,
-          "itemId": "1333",
-          "name": "Ominous Premonition",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1333.jpg",
-          "description": "Slows attackers"
-        },
-        {
-          "slot": 6,
-          "itemId": "1335",
-          "name": "Succubus Cloak",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1335.jpg",
-          "description": "Negates magical damage"
-        }
-      ]
-    },
-    {
-      "id": "胖連20",
-      "label": "胖連2.0",
-      "position": "Position 1",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1421",
-          "name": "Boots of Fortitude",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1421.jpg",
-          "description": "Reduces physical damage"
-        },
-        {
-          "slot": 2,
-          "itemId": "1121",
-          "name": "Storm Sword",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1121.jpg",
-          "description": "Physical Attack +75"
-        },
-        {
-          "slot": 3,
-          "itemId": "1331",
-          "name": "Blazing Cape",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1331.jpg",
-          "description": "Burns nearby enemies"
-        },
-        {
-          "slot": 4,
-          "itemId": "1328",
-          "name": "Blood Rage",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1328.jpg",
-          "description": "Grants temporary shield"
-        },
-        {
-          "slot": 5,
-          "itemId": "1534",
-          "name": "Dragon's Rage",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1534.jpg",
-          "description": "Boosts BA damage"
-        },
-        {
-          "slot": 6,
-          "itemId": "1135",
-          "name": "Sparkforged Dagger",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1135.jpg",
-          "description": "Chain lightning BA"
-        }
-      ]
-    },
-    {
-      "id": "打不过出肉",
-      "label": "打不过出肉",
-      "position": "Position 1",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1111",
-          "name": "Iron Sword",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1111.jpg",
-          "description": "PATK +20"
-        },
-        {
-          "slot": 2,
-          "itemId": "1421",
-          "name": "Boots of Fortitude",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1421.jpg",
-          "description": "Reduces physical damage"
-        },
-        {
-          "slot": 3,
-          "itemId": "1331",
-          "name": "Blazing Cape",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1331.jpg",
-          "description": "Burns nearby enemies"
-        },
-        {
-          "slot": 4,
-          "itemId": "1328",
-          "name": "Blood Rage",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1328.jpg",
-          "description": "Grants temporary shield"
-        },
-        {
-          "slot": 5,
-          "itemId": "1332",
-          "name": "Overlord's Platemail",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1332.jpg",
-          "description": "Extra Health"
-        },
-        {
-          "slot": 6,
-          "itemId": "1341",
-          "name": "Frigid Charge",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1341.jpg",
-          "description": "Group CC"
-        }
-      ]
-    },
-    {
-      "id": "wanglin",
-      "label": "wanglin",
-      "position": "Position 3",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1421",
-          "name": "Boots of Fortitude",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1421.jpg",
-          "description": "Reduces physical damage"
-        },
-        {
-          "slot": 2,
-          "itemId": "1331",
-          "name": "Blazing Cape",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1331.jpg",
-          "description": "Burns nearby enemies"
-        },
-        {
-          "slot": 3,
-          "itemId": "1135",
-          "name": "Sparkforged Dagger",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1135.jpg",
-          "description": "Chain lightning BA"
-        },
-        {
-          "slot": 4,
-          "itemId": "1328",
-          "name": "Blood Rage",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1328.jpg",
-          "description": "Grants temporary shield"
-        },
-        {
-          "slot": 5,
-          "itemId": "1332",
-          "name": "Overlord's Platemail",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1332.jpg",
-          "description": "Extra Health"
-        },
-        {
-          "slot": 6,
-          "itemId": "1338",
-          "name": "Cuirass of Savagery",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1338.jpg",
-          "description": "Offense & defense"
-        }
-      ]
-    },
-    {
-      "id": "tktkmeyyychan",
-      "label": "TkTk:Meyyychan",
-      "position": "Position 1",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1159",
-          "name": "Tempest",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1159.jpg",
-          "description": "Stacks Attack Speed & Movement Speed"
-        },
-        {
-          "slot": 2,
-          "itemId": "1421",
-          "name": "Boots of Fortitude",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1421.jpg",
-          "description": "Reduces physical damage"
-        },
-        {
-          "slot": 3,
-          "itemId": "1135",
-          "name": "Sparkforged Dagger",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1135.jpg",
-          "description": "Chain lightning BA"
-        },
-        {
-          "slot": 4,
-          "itemId": "1331",
-          "name": "Blazing Cape",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1331.jpg",
-          "description": "Burns nearby enemies"
-        },
-        {
-          "slot": 5,
-          "itemId": "1328",
-          "name": "Blood Rage",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1328.jpg",
-          "description": "Grants temporary shield"
-        },
-        {
-          "slot": 6,
-          "itemId": "1341",
-          "name": "Frigid Charge",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1341.jpg",
-          "description": "Group CC"
-        }
-      ]
-    },
-    {
-      "id": "critical",
-      "label": "Critical",
-      "position": "Position 1",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1421",
-          "name": "Boots of Fortitude",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1421.jpg",
-          "description": "Reduces physical damage"
-        },
-        {
-          "slot": 2,
-          "itemId": "1114",
-          "name": "Vampiric Scythe",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1114.jpg",
-          "description": "Physical Lifesteal"
-        },
-        {
-          "slot": 3,
-          "itemId": "1331",
-          "name": "Blazing Cape",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1331.jpg",
-          "description": "Burns nearby enemies"
-        },
-        {
-          "slot": 4,
-          "itemId": "1126",
-          "name": "Doomsday",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1126.jpg",
-          "description": "Boosts BA damage"
-        },
-        {
-          "slot": 5,
-          "itemId": "1422",
-          "name": "Boots of Resistance",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
-          "description": "Shortens CC"
-        },
-        {
-          "slot": 6,
-          "itemId": "1136",
-          "name": "Shadow Ripper",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1136.jpg",
-          "description": "Crits boost ASPD"
-        }
-      ]
-    },
-    {
-      "id": "sustain",
-      "label": "Sustain",
-      "position": "Position 1",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1421",
-          "name": "Boots of Fortitude",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1421.jpg",
-          "description": "Reduces physical damage"
-        },
-        {
-          "slot": 2,
-          "itemId": "1114",
-          "name": "Vampiric Scythe",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1114.jpg",
-          "description": "Physical Lifesteal"
-        },
-        {
-          "slot": 3,
-          "itemId": "1331",
-          "name": "Blazing Cape",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1331.jpg",
-          "description": "Burns nearby enemies"
-        },
-        {
-          "slot": 4,
-          "itemId": "1135",
-          "name": "Sparkforged Dagger",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1135.jpg",
-          "description": "Chain lightning BA"
-        },
-        {
-          "slot": 5,
-          "itemId": "1422",
-          "name": "Boots of Resistance",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
-          "description": "Shortens CC"
-        },
-        {
-          "slot": 6,
-          "itemId": "1328",
-          "name": "Blood Rage",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1328.jpg",
-          "description": "Grants temporary shield"
-        }
-      ]
-    },
-    {
-      "id": "半肉输出",
-      "label": "半肉输出",
-      "position": "Position 1",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1111",
-          "name": "Iron Sword",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1111.jpg",
-          "description": "PATK +20"
-        },
-        {
-          "slot": 2,
-          "itemId": "1421",
-          "name": "Boots of Fortitude",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1421.jpg",
-          "description": "Reduces physical damage"
-        },
-        {
-          "slot": 3,
-          "itemId": "1135",
-          "name": "Sparkforged Dagger",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1135.jpg",
-          "description": "Chain lightning BA"
-        },
-        {
-          "slot": 4,
-          "itemId": "1331",
-          "name": "Blazing Cape",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1331.jpg",
-          "description": "Burns nearby enemies"
-        },
-        {
-          "slot": 5,
-          "itemId": "1422",
-          "name": "Boots of Resistance",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
-          "description": "Shortens CC"
-        },
-        {
-          "slot": 6,
-          "itemId": "1126",
-          "name": "Doomsday",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1126.jpg",
-          "description": "Boosts BA damage"
-        }
-      ]
-    }
+  "metaAnalysisZh": [
+    "亞連 勝率 50.28%（Camp HOK，2026-06-07）",
+    "選取率 0.97%",
+    "禁用率 0.08%",
+    "克制：Lu Bu、Zhuangzi；被克制：Sima Yi、Marco Polo"
   ],
   "guide": {
     "overview": "Allain is a Medium Warrior (Clash Lane) on Honor of Kings Global. Camp HOK ranks them Tier A with 51.0% win rate and 1.1% pick rate as of 2026-06-05.",

@@ -2,99 +2,583 @@
   "id": "dolia",
   "slug": "dolia",
   "name": "Dolia",
+  "nameZh": "朵莉亞",
   "role": "Support",
   "roles": "Support",
+  "rolesZh": "輔助",
   "lane": "Roaming",
+  "laneZh": "遊走",
   "difficulty": "Easy",
   "tier": "S",
-  "winRate": 46.06,
+  "winRate": 46.04,
   "pickRate": 1.83,
-  "banRate": 0.52,
+  "banRate": 0.51,
   "rank": 111,
   "avatar": "https://camp.honorofkings.com/camp/admin/hero/head_128-128/tfvb3IJf.png",
   "avatarFallback": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/159/159.jpg",
+  "heroCover": "https://camp.honorofkings.com/camp/admin/hero/cover_1275-718/LSR5DicR.jpg",
   "tencentId": 159,
-  "dataSource": "Camp HOK + HoKStats.gg (intl)",
-  "dataUpdated": "2026-06-05",
+  "dataSource": "Camp HOK bilingual (primary)",
+  "dataUpdated": "2026-06-07",
   "skills": [
     {
       "slot": "passive",
       "name": "Mermaid's Gift",
-      "description": "Dolia takes on mermaid form when in water (rivers are also considered water), reducing the slows taken by 50% and returning life and mana every second. The mermaid form's Basic Attacks will shoot water arrows for ranged damage. Dolia's [Recovery] is replaced with [Mermaid's Gift], which allows her to create a pact with a selected teammate, and prioritizes her pacted teammate when using [Celestial Melody].",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/159/15900.png",
-      "cooldown": null
+      "description": "Transforms into a mermaid while in water, reducing slow effects, recovering Health and Mana over time, and dealing area damage with Basic Attacks. \nHer Recovery skill changes to let her form a covenant with a teammate. Her Ultimate prioritizes resetting this teammate's skill cooldowns.",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/15900.png",
+      "cooldown": "1s"
     },
     {
       "slot": "skill1",
       "name": "Ode",
-      "description": "Dolia chants 4 sound waves that spread outward, the first 3 dealing spell damage and 10% slow. The 4th deals more spell damage and 50% slow for 1 second. The sound waves also echo when they hit an enemy, dealing spell damage to those they touch and, if released in water, sending waves of water knocking back nearby enemies (knockback of enemies around you has a stun effect). Non-heroic units provoke a much smaller echo, dealing only 50% of the damage.",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/159/15910.png",
-      "cooldown": null
+      "description": "Unleashes soundwaves that deal damage and inflict slow. When in water, the last soundwave knocks back enemies.",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/15910.png",
+      "cooldown": "12s"
     },
     {
       "slot": "skill2",
       "name": "Wavemaker",
-      "description": "Lam enters “Submerged” state, greatly increasing his Movement Speed for 3 seconds. When the duration ends, Lam leaps out of the water, immediately restoring 50% of this skill’s cooldown. While in Submerged state, casting the skill again will cause Lam to surface early, dealing 300 (+120% Bonus Physical Attack) Physical Damage to nearby enemies and slowing their Movement Speed by 50% for 1.5 seconds. Passive: While in river terrain, the Submerged state has no time limit. If an enemy hero with below 30% Health appears within 1500 range, Lam gains 450 Movement Speed.",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/159/15920.png",
-      "cooldown": null
+      "description": "Creates a pool in the target direction, restoring Health and Mana to herself and teammates within. The pool disappears after she leaves it.",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/15920.png",
+      "cooldown": "13s"
     },
     {
       "slot": "ultimate",
       "name": "Celestial Melody",
-      "description": "After Dolia briefly chants, refresh the skill with the longest current cooldown of a friendly within range, taking more cooldown from yourself. If a teammate's skill is not used after being refreshed, [Celestial Melody]'s cooldown recovery speed can be accelerated by 20/30/40%. Teammates do not consume Mana or Energy when using the skill for 5 seconds after the skill is refreshed, and the beatdown benefit caused by the skill is split equally with Dolia. Refreshing skills for contracted teammates is prioritized, followed by non-contracted teammates, or refreshing your own skills if there are no teammates nearby. Failure to refresh a skill returns most of the cooldown of [Celestial Melody].",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/159/15930.png",
+      "description": "Resets the longest current skill cooldown of a teammate within range, transferring the cooldown to herself. Prioritizes covenant teammates.",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/15930.png",
+      "cooldown": null
+    }
+  ],
+  "skillsZh": [
+    {
+      "slot": "passive",
+      "name": "人魚之賜",
+      "description": "在水域(河道也視為水域)會變成人魚，減輕自己受到的減速效果，並持續回復生命值和法力值，同時普攻會變成範圍傷害。\n【恢復】技能會變成特殊技能，可與選定隊友建立契約，使用大招時會優先重置契約隊友的技能冷卻時間。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/15900.png",
+      "cooldown": "1s"
+    },
+    {
+      "slot": "skill1",
+      "name": "歡歌",
+      "description": "發出向外擴散的聲波，造成傷害和減速。在水域施放時，最後一道聲波還會擊退敵人。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/15910.png",
+      "cooldown": "12s"
+    },
+    {
+      "slot": "skill2",
+      "name": "逐浪",
+      "description": "朝指定方向製造一片水域，為水域內的隊友和自己回復生命值和法力值，朵莉亞離開水域後，水域就會消失。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/15920.png",
+      "cooldown": "13s"
+    },
+    {
+      "slot": "ultimate",
+      "name": "天籟",
+      "description": "重置範圍內一名隊友目前冷卻時間最長的技能，由自己承擔技能冷卻。優先對已締結契約的隊友生效。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/15930.png",
       "cooldown": null
     }
   ],
   "build": [
     {
       "slot": 1,
-      "itemId": "1424",
-      "name": "Boots of the Arcane",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1424.jpg",
-      "description": "Magical Pierce"
+      "itemId": "1422",
+      "name": "Boots of Resistance",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1422.png",
+      "description": "MDEF +100, PDEF +50, MSPD +50\nShortens crowd control"
     },
     {
       "slot": 2,
       "itemId": "1353",
       "name": "Dawnlight",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1353.jpg",
-      "description": "Shields on dealing damage"
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1353.png",
+      "description": "PDEF +210, HP +900, CDR +10%\nShields on dealing damage"
     },
     {
       "slot": 3,
-      "itemId": "12211",
-      "name": "Venomous Staff",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/12211.jpg",
-      "description": "Lowers Health regen"
+      "itemId": "1721",
+      "name": "Crimson Shadow - Redemption",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1746.png",
+      "description": "HP +1,200, MSPD +7.5%\nDPS aura"
     },
     {
       "slot": 4,
-      "itemId": "1337",
-      "name": "Sage's Sanctuary",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1337.jpg",
-      "description": "Resurrect on the spot"
+      "itemId": "1341",
+      "name": "Frigid Charge",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1341.png",
+      "description": "PDEF +150, HP +900, CDR +7.5%, Resistance +10%\nGreat crowd control"
     },
     {
       "slot": 5,
-      "itemId": "1335",
-      "name": "Succubus Cloak",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1335.jpg",
-      "description": "Negates magical damage"
+      "itemId": "1334",
+      "name": "Eye of the Phoenix",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1334.png",
+      "description": "MDEF +180, PDEF +90, HP +1,350\nBoosts HP Regen"
     },
     {
       "slot": 6,
-      "itemId": null,
-      "name": "Data unavailable",
-      "icon": null,
-      "description": null
+      "itemId": "1333",
+      "name": "Ominous Premonition",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1333.png",
+      "description": "PDEF +300, HP +1,200\nSlows attackers"
+    }
+  ],
+  "buildZh": [
+    {
+      "slot": 1,
+      "itemId": "1422",
+      "name": "抵抗之靴",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1422.png",
+      "description": "+100點法防+50點物防+50點移速\n減少被控時間"
+    },
+    {
+      "slot": 2,
+      "itemId": "1353",
+      "name": "旭日初光",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1353.png",
+      "description": "+210點物防+900點生命值+10%減冷卻時間\n傷害敵人時獲得護盾值"
+    },
+    {
+      "slot": 3,
+      "itemId": "1721",
+      "name": "極影・救贖",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1746.png",
+      "description": "+1200點生命值+7.5%移速\n光環提升輸出"
+    },
+    {
+      "slot": 4,
+      "itemId": "1341",
+      "name": "冰霜衝擊",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1341.png",
+      "description": "+150點物防+900點生命值+7.5%冷卻時間+10%韌性\n群體控制"
+    },
+    {
+      "slot": 5,
+      "itemId": "1334",
+      "name": "不死鳥之眼",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1334.png",
+      "description": "+180點法防+90點物防+1350點生命值……\n增加回血效果"
+    },
+    {
+      "slot": 6,
+      "itemId": "1333",
+      "name": "不祥徵兆",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1333.png",
+      "description": "+300點物防+1200點生命值\n受擊時將敵人減速"
+    }
+  ],
+  "builds": [
+    {
+      "id": "camp-0",
+      "label": "Dolly",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1422",
+          "name": "Boots of Resistance",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1422.png",
+          "description": "MDEF +100, PDEF +50, MSPD +50\nShortens crowd control"
+        },
+        {
+          "slot": 2,
+          "itemId": "1353",
+          "name": "Dawnlight",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1353.png",
+          "description": "PDEF +210, HP +900, CDR +10%\nShields on dealing damage"
+        },
+        {
+          "slot": 3,
+          "itemId": "1721",
+          "name": "Crimson Shadow - Redemption",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1746.png",
+          "description": "HP +1,200, MSPD +7.5%\nDPS aura"
+        },
+        {
+          "slot": 4,
+          "itemId": "1341",
+          "name": "Frigid Charge",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1341.png",
+          "description": "PDEF +150, HP +900, CDR +7.5%, Resistance +10%\nGreat crowd control"
+        },
+        {
+          "slot": 5,
+          "itemId": "1334",
+          "name": "Eye of the Phoenix",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1334.png",
+          "description": "MDEF +180, PDEF +90, HP +1,350\nBoosts HP Regen"
+        },
+        {
+          "slot": 6,
+          "itemId": "1333",
+          "name": "Ominous Premonition",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1333.png",
+          "description": "PDEF +300, HP +1,200\nSlows attackers"
+        }
+      ]
+    },
+    {
+      "id": "camp-1",
+      "label": "Doly :3 ❀˚₊‧",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1422",
+          "name": "Boots of Resistance",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1422.png",
+          "description": "MDEF +100, PDEF +50, MSPD +50\nShortens crowd control"
+        },
+        {
+          "slot": 2,
+          "itemId": "1721",
+          "name": "Crimson Shadow - Redemption",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1746.png",
+          "description": "HP +1,200, MSPD +7.5%\nDPS aura"
+        },
+        {
+          "slot": 3,
+          "itemId": "1226",
+          "name": "Holy Grail",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1226.png",
+          "description": "MATK +150, CDR +15%, HP +500\nRapid MP Regen"
+        },
+        {
+          "slot": 4,
+          "itemId": "1353",
+          "name": "Dawnlight",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1353.png",
+          "description": "PDEF +210, HP +900, CDR +10%\nShields on dealing damage"
+        },
+        {
+          "slot": 5,
+          "itemId": "1335",
+          "name": "Succubus Cloak",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
+          "description": "MDEF +300, HP +1,100\nNegates magical damage"
+        },
+        {
+          "slot": 6,
+          "itemId": "1333",
+          "name": "Ominous Premonition",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1333.png",
+          "description": "PDEF +300, HP +1,200\nSlows attackers"
+        }
+      ]
+    },
+    {
+      "id": "camp-2",
+      "label": "Dolianang",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1335",
+          "name": "Succubus Cloak",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
+          "description": "MDEF +300, HP +1,100\nNegates magical damage"
+        },
+        {
+          "slot": 2,
+          "itemId": "12211",
+          "name": "Venomous Staff",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/12211.png",
+          "description": "MATK +240, CDR +7.5%, MSPD +7.5%\nLowers Health Regen"
+        },
+        {
+          "slot": 3,
+          "itemId": "1234",
+          "name": "Frozen Breath",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1234.png",
+          "description": "MATK +180, CDR +7.5%, HP +500\nSkill hits slow"
+        },
+        {
+          "slot": 4,
+          "itemId": "1341",
+          "name": "Frigid Charge",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1341.png",
+          "description": "PDEF +150, HP +900, CDR +7.5%, Resistance +10%\nGreat crowd control"
+        },
+        {
+          "slot": 5,
+          "itemId": "1351",
+          "name": "Amble - Winter",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1351.png",
+          "description": "PDEF +150, HP +900, CDR +7.5%, Resistance +10%\nGreat crowd control"
+        },
+        {
+          "slot": 6,
+          "itemId": "1337",
+          "name": "Sage's Sanctuary",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
+        }
+      ]
+    },
+    {
+      "id": "camp-3",
+      "label": "Mermaid hero",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1337",
+          "name": "Sage's Sanctuary",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
+        },
+        {
+          "slot": 2,
+          "itemId": "1327",
+          "name": "Spikemail",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1327.png",
+          "description": "PATK +45, PDEF +300, HP +700\nReflects damage"
+        },
+        {
+          "slot": 3,
+          "itemId": "1347",
+          "name": "Longnight Guardian",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1347.png",
+          "description": "MDEF +210, HP +1,000, MSPD +7.5%\nReduces magical damage"
+        },
+        {
+          "slot": 4,
+          "itemId": "1331",
+          "name": "Blazing Cape",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1331.png",
+          "description": "PDEF +150, MDEF +150, HP +1,100\nArea burn & imperil"
+        },
+        {
+          "slot": 5,
+          "itemId": "1332",
+          "name": "Overlord's Platemail",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1332.png",
+          "description": "HP +1,800, PDEF +160, MDEF +80\nExtra HP"
+        },
+        {
+          "slot": 6,
+          "itemId": "13310",
+          "name": "Frostscar's Embrace",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/13310.png",
+          "description": "PATK +60, PDEF +300, CDR +10%\nEnhanced BAs slow"
+        }
+      ]
+    }
+  ],
+  "buildsZh": [
+    {
+      "id": "camp-0",
+      "label": "Dolly",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1422",
+          "name": "抵抗之靴",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1422.png",
+          "description": "+100點法防+50點物防+50點移速\n減少被控時間"
+        },
+        {
+          "slot": 2,
+          "itemId": "1353",
+          "name": "旭日初光",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1353.png",
+          "description": "+210點物防+900點生命值+10%減冷卻時間\n傷害敵人時獲得護盾值"
+        },
+        {
+          "slot": 3,
+          "itemId": "1721",
+          "name": "極影・救贖",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1746.png",
+          "description": "+1200點生命值+7.5%移速\n光環提升輸出"
+        },
+        {
+          "slot": 4,
+          "itemId": "1341",
+          "name": "冰霜衝擊",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1341.png",
+          "description": "+150點物防+900點生命值+7.5%冷卻時間+10%韌性\n群體控制"
+        },
+        {
+          "slot": 5,
+          "itemId": "1334",
+          "name": "不死鳥之眼",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1334.png",
+          "description": "+180點法防+90點物防+1350點生命值……\n增加回血效果"
+        },
+        {
+          "slot": 6,
+          "itemId": "1333",
+          "name": "不祥徵兆",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1333.png",
+          "description": "+300點物防+1200點生命值\n受擊時將敵人減速"
+        }
+      ]
+    },
+    {
+      "id": "camp-1",
+      "label": "Doly :3 ❀˚₊‧",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1422",
+          "name": "抵抗之靴",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1422.png",
+          "description": "+100點法防+50點物防+50點移速\n減少被控時間"
+        },
+        {
+          "slot": 2,
+          "itemId": "1721",
+          "name": "極影・救贖",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1746.png",
+          "description": "+1200點生命值+7.5%移速\n光環提升輸出"
+        },
+        {
+          "slot": 3,
+          "itemId": "1226",
+          "name": "聖杯",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1226.png",
+          "description": "+150點法攻+15%減冷卻時間+500點生命值\n快速回復法力"
+        },
+        {
+          "slot": 4,
+          "itemId": "1353",
+          "name": "旭日初光",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1353.png",
+          "description": "+210點物防+900點生命值+10%減冷卻時間\n傷害敵人時獲得護盾值"
+        },
+        {
+          "slot": 5,
+          "itemId": "1335",
+          "name": "魔女斗篷",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
+          "description": "+300點法防+1100點生命值\n吸收法術傷害"
+        },
+        {
+          "slot": 6,
+          "itemId": "1333",
+          "name": "不祥徵兆",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1333.png",
+          "description": "+300點物防+1200點生命值\n受擊時將敵人減速"
+        }
+      ]
+    },
+    {
+      "id": "camp-2",
+      "label": "Dolianang",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1335",
+          "name": "魔女斗篷",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
+          "description": "+300點法防+1100點生命值\n吸收法術傷害"
+        },
+        {
+          "slot": 2,
+          "itemId": "12211",
+          "name": "夢魘之牙",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/12211.png",
+          "description": "+240點法攻+7.5%減冷卻時間+7.5%移速\n減少敵人回血"
+        },
+        {
+          "slot": 3,
+          "itemId": "1234",
+          "name": "凝冰之息",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1234.png",
+          "description": "+180點法攻+7.5%減冷卻時間+500點生命值\n技能命中減速"
+        },
+        {
+          "slot": 4,
+          "itemId": "1341",
+          "name": "冰霜衝擊",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1341.png",
+          "description": "+150點物防+900點生命值+7.5%冷卻時間+10%韌性\n群體控制"
+        },
+        {
+          "slot": 5,
+          "itemId": "1351",
+          "name": "徐行・凜冬",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1351.png",
+          "description": "+150點物防+900點生命值+7.5%冷卻時間+10%韌性\n群體控制"
+        },
+        {
+          "slot": 6,
+          "itemId": "1337",
+          "name": "賢者的庇護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+        }
+      ]
+    },
+    {
+      "id": "camp-3",
+      "label": "Mermaid hero",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1337",
+          "name": "賢者的庇護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+        },
+        {
+          "slot": 2,
+          "itemId": "1327",
+          "name": "反傷刺甲",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1327.png",
+          "description": "+45點攻擊+300點物防\n+700點生命值反彈傷害"
+        },
+        {
+          "slot": 3,
+          "itemId": "1347",
+          "name": "永夜守護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1347.png",
+          "description": "+210點法防+1000點生命值\n+7.5%移速減少法術傷害"
+        },
+        {
+          "slot": 4,
+          "itemId": "1331",
+          "name": "紅蓮斗篷",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1331.png",
+          "description": "+150點物防+150點法防+1100點生命值\n範圍灼燒重傷"
+        },
+        {
+          "slot": 5,
+          "itemId": "1332",
+          "name": "霸者重裝",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1332.png",
+          "description": "+1800點生命值+160點物防+80點法防\n提高額外生命值"
+        },
+        {
+          "slot": 6,
+          "itemId": "13310",
+          "name": "冰痕之握",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/13310.png",
+          "description": "+60點攻擊+300點物防+10%減冷卻時間……\n強化普攻減速"
+        }
+      ]
     }
   ],
   "arcana": [
-    "Fate"
+    "Lvl 5: Fate",
+    "Lvl 5: Harmony",
+    "Lvl 5: Void"
+  ],
+  "arcanaZh": [
+    "5級：宿命",
+    "5級：調和",
+    "5級：虛空"
   ],
   "spells": [
-    "Flash"
+    "Heal"
+  ],
+  "spellsZh": [
+    "治療術"
   ],
   "counters": [
     "Dun",
@@ -105,586 +589,173 @@
     "Guiguzi"
   ],
   "tips": [
-    "Dolia is a Easy Support (Roaming) on Honor of Kings Global. Camp HOK ranks them Tier S with 46.1% win rate and 1.8% pick rate as of 2026-06-05.",
-    "Best build path: Boots of the Arcane → Dawnlight → Venomous Staff → Sage's Sanctuary → Succubus Cloak.",
-    "Run Fate for stats that match Dolia's Support kit. Take Flash — swap to Purify against heavy CC or Smite when jungling.",
-    "Standard trade: Ode → Wavemaker → Celestial Melody → weave basic attacks. Weave basic attacks between skill casts for passive value.",
-    "Laning: Help marksman crash wave, then rotate mid for picks. Return before Tyrant if your carry has no escape.",
-    "Teamfight: Peel carry first, then look for pick on out-of-position enemies. Ward Tyrant 30s before spawn.",
-    "Dolia excels into Dun, Yaria. Avoid blind picking into Sima Yi, Guiguzi without team peel.",
-    "Dolia is a Tier S staple in high-elo (Diamond+) on the international server — worth mastering for climb. Ban rate 0.5% — expect Dolia to be removed in tryhard lobbies; have a backup in the same role. Below 49% global WR — high-rank players often avoid unless compensating for team comp."
+    "Dolia (Support): Tier S — 46.04% WR (Camp HOK).",
+    "Lane: Roaming.",
+    "Build: Boots of Resistance, Dawnlight, Crimson Shadow - Redemption."
+  ],
+  "tipsZh": [
+    "朵莉亞（遊走）：梯度 S，勝率 46.04%（Camp HOK）。",
+    "出裝：抵抗之靴、旭日初光、極影・救贖."
   ],
   "patchHistory": [
     {
-      "version": "Live meta",
-      "change": "Camp HOK — WR 46.1%, pick 1.8%, ban 0.5%, tier S."
+      "seasonId": "13",
+      "seasonName": "S13",
+      "versionName": "2026/01/08",
+      "publishedAt": "2026-01-08T01:00:00Z",
+      "isCurrent": false,
+      "tag": "Stat Buffs",
+      "change": "Increased Skill Damage",
+      "detail": "",
+      "version": "S13"
     },
     {
-      "version": "Matchups",
-      "change": "Strong into Dun, Yaria · Weak into Sima Yi, Guiguzi."
+      "seasonId": "11",
+      "seasonName": "S11",
+      "versionName": "20250828",
+      "publishedAt": "2025-08-28T01:00:00Z",
+      "isCurrent": false,
+      "tag": "Stat Buffs",
+      "change": "Increased Skill Damage",
+      "detail": "",
+      "version": "S11"
     },
     {
-      "version": "High rank",
-      "change": "Dolia is a Tier S staple in high-elo (Diamond+) on the international server — worth mastering for climb. Ban rate 0.5% — expect Dolia to be removed in tryhard lobbies; have a backup in the same role. Below 49% global WR — high-rank players often avoid unless compensating for team comp."
+      "seasonId": "10",
+      "seasonName": "S10",
+      "versionName": "20250612",
+      "publishedAt": "2025-06-12T02:00:00Z",
+      "isCurrent": false,
+      "tag": "Stat Buffs",
+      "change": "Skill Effects Upgrade",
+      "detail": "",
+      "version": "S10"
+    },
+    {
+      "seasonId": "7",
+      "seasonName": "S7",
+      "versionName": "20240925",
+      "publishedAt": "2024-09-25T03:24:02Z",
+      "isCurrent": false,
+      "tag": "Mechanics Changes",
+      "change": "Removed Skill 1's knockback effect on distant enemies.",
+      "detail": "\"Dolia's Skill 1 already damages and slows enemies in a wide area. By removing the knockback effect for distant targets, we aim to reduce her ability to poke and interrupt enemies.\"",
+      "version": "S7"
+    },
+    {
+      "seasonId": "5",
+      "seasonName": "S5",
+      "versionName": "20240410",
+      "publishedAt": "2024-04-10T15:15:27Z",
+      "isCurrent": false,
+      "tag": "Mechanics Changes",
+      "change": "Raised the base damage and bonus multiplier of her Skill 1 and Skill 2.",
+      "detail": "Raised the base damage and bonus multiplier of her Skill 1 and Skill 2.\nDolia is currently underperforming, so we're boosting the stats of some of her skills and giving her an extra benefit for refreshing her teammates' skills.Hopefully this will make her more powerful and help her progress faster.",
+      "version": "S5"
+    }
+  ],
+  "patchHistoryZh": [
+    {
+      "seasonId": "13",
+      "seasonName": "S13",
+      "versionName": "2026/01/08",
+      "publishedAt": "2026-01-08T01:00:00Z",
+      "isCurrent": false,
+      "tag": "數值增強",
+      "change": "提升技能傷害",
+      "detail": "",
+      "version": "S13"
+    },
+    {
+      "seasonId": "11",
+      "seasonName": "S11",
+      "versionName": "20250828",
+      "publishedAt": "2025-08-28T01:00:00Z",
+      "isCurrent": false,
+      "tag": "數值增強",
+      "change": "增加技能傷害",
+      "detail": "",
+      "version": "S11"
+    },
+    {
+      "seasonId": "10",
+      "seasonName": "S10",
+      "versionName": "20250612",
+      "publishedAt": "2025-06-12T02:00:00Z",
+      "isCurrent": false,
+      "tag": "數值增強",
+      "change": "提升技能效果",
+      "detail": "",
+      "version": "S10"
+    },
+    {
+      "seasonId": "7",
+      "seasonName": "S7",
+      "versionName": "20240925",
+      "publishedAt": "2024-09-25T03:24:02Z",
+      "isCurrent": false,
+      "tag": "機制調整",
+      "change": "移除1技能對遠處敵人的擊退效果",
+      "detail": "「朵莉亞的1技能可以造成大範圍的傷害和減速效果，我們適當回收遠端的控制效果，以降低她的消耗和打斷能力。」",
+      "version": "S7"
+    },
+    {
+      "seasonId": "5",
+      "seasonName": "S5",
+      "versionName": "20240410",
+      "publishedAt": "2024-04-10T15:15:27Z",
+      "isCurrent": false,
+      "tag": "機制調整",
+      "change": "提高1技能和2技能的基礎傷害和加成係數",
+      "detail": "提高1技能和2技能的基礎傷害和加成係數\n朵莉亞在目前版本的表現稍嫌普通，我們希望透過提升她部分技能的數值，並強化她重置友方英雄技能後的收益。藉此讓她獲得更高的戰鬥力和成長速度。",
+      "version": "S5"
     }
   ],
   "faqs": [
     {
       "id": "faq-good-season",
-      "question": "Is Dolia good in the current meta?",
-      "answer": "Dolia is Tier S Support with 46.1% win rate, 1.8% pick rate, and 0.5% ban rate on Honor of Kings Global (Camp HOK, 2026-06-05). Strong meta pick for ranked."
+      "question": "Is Dolia good in current season?",
+      "answer": "Dolia is Tier S Support with 46.04% win rate, 1.83% pick rate, and 0.51% ban rate (Camp HOK international)."
     },
     {
       "id": "faq-best-build",
       "question": "What is the best Dolia build?",
-      "answer": "Core item path: Boots of the Arcane, Dawnlight, Venomous Staff, Sage's Sanctuary, Succubus Cloak. Run Fate arcana with Flash. Switch to alternate build presets on this page for jungle, clash, or late-game setups."
+      "answer": "Recommended: Boots of Resistance, Dawnlight, Crimson Shadow - Redemption, Frigid Charge, Eye of the Phoenix, Ominous Premonition."
     },
     {
       "id": "faq-counter",
       "question": "How to counter Dolia?",
-      "answer": "Pick Sima Yi, Guiguzi into Dolia. Deny Roaming resources early and force fights before Dolia completes core items. Dolia struggles when the enemy can out-range or out-sustain them."
+      "answer": "Pick Sima Yi, Guiguzi. Strong into Dun, Yaria."
+    }
+  ],
+  "faqsZh": [
+    {
+      "id": "faq-good-season",
+      "question": "朵莉亞 這版本適合上分嗎？",
+      "answer": "朵莉亞 為 S 梯度，勝率 46.04%、選取 1.83%、禁用 0.51%（Camp HOK 國際服）。"
     },
     {
-      "id": "faq-strong-into",
-      "question": "Who does Dolia counter?",
-      "answer": "Dolia is strong into Dun, Yaria according to HoKStats matchup data and role matchups on the global server. Draft Dolia when the enemy relies on these heroes in the Roaming lane."
+      "id": "faq-best-build",
+      "question": "朵莉亞 出裝怎麼搭配？",
+      "answer": "推薦：抵抗之靴、旭日初光、極影・救贖、冰霜衝擊、不死鳥之眼、不祥徵兆."
     },
     {
-      "id": "faq-high-rank",
-      "question": "Is Dolia good in high rank / Diamond+?",
-      "answer": "Dolia is a Tier S staple in high-elo (Diamond+) on the international server — worth mastering for climb. Ban rate 0.5% — expect Dolia to be removed in tryhard lobbies; have a backup in the same role. Below 49% global WR — high-rank players often avoid unless compensating for team comp."
-    },
-    {
-      "id": "faq-lane",
-      "question": "What lane should Dolia play?",
-      "answer": "Dolia is tagged Roaming in Camp export (Support). Help marksman crash wave, then rotate mid for picks. Return before Tyrant if your carry has no escape."
-    },
-    {
-      "id": "faq-arcana",
-      "question": "Best arcana and spells for Dolia?",
-      "answer": "Recommended: Fate arcana. Battle spell: Flash. Adjust Purify/Execute based on enemy dive and jungle need."
-    },
-    {
-      "id": "faq-vs-peer",
-      "question": "Dolia or Cai Yan — which is better?",
-      "answer": "Dolia vs Cai Yan (Support, Tier S): Cai Yan is 1.3% pick / 50.3% WR. Cai Yan wins 4.3% more often globally. Choose Dolia when you need Roaming identity; choose Cai Yan for Roaming comfort."
-    },
-    {
-      "id": "faq-ban",
-      "question": "Should I ban Dolia?",
-      "answer": "Yes in tryhard queues — 0.5% ban rate. Deny if enemy first-picks Support."
+      "id": "faq-counter",
+      "question": "怎麼克制 朵莉亞？",
+      "answer": "可選 Sima Yi、Guiguzi。朵莉亞 克制 Dun、Yaria。"
     }
   ],
   "metaAnalysis": [
-    "Dolia — 46.1% WR, 1.8% pick, 0.5% ban (Camp HOK 2026-06-05).",
-    "Tier S Support · Roaming · difficulty Easy.",
-    "Dolia is a Tier S staple in high-elo (Diamond+) on the international server — worth mastering for climb. Ban rate 0.5% — expect Dolia to be removed in tryhard lobbies; have a backup in the same role. Below 49% global WR — high-rank players often avoid unless compensating for team comp.",
-    "Matchups: strong into Dun, Yaria; weak into Sima Yi, Guiguzi.",
-    "Dolia vs Cai Yan (Support, Tier S): Cai Yan is 1.3% pick / 50.3% WR. Cai Yan wins 4.3% more often globally. Choose Dolia when you need Roaming identity; choose Cai Yan for Roaming comfort.",
-    "Dolia vs Yaria (Support, Tier S): Yaria is 1.1% pick / 48.0% WR. Yaria wins 2.0% more often globally. Choose Dolia when you need Roaming identity; choose Yaria for Roaming comfort.",
-    "Draft tip: first-pick or ban priority in ranked."
+    "Dolia win rate 46.04% (Camp HOK, 2026-06-07).",
+    "Pick rate 1.83%.",
+    "Ban rate 0.51%.",
+    "Counters: Dun, Yaria. Weak into: Sima Yi, Guiguzi."
   ],
-  "builds": [
-    {
-      "id": "recommended",
-      "label": "Recommended",
-      "position": null,
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1424",
-          "name": "Boots of the Arcane",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1424.jpg",
-          "description": "Magical Pierce"
-        },
-        {
-          "slot": 2,
-          "itemId": "1353",
-          "name": "Dawnlight",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1353.jpg",
-          "description": "Shields on dealing damage"
-        },
-        {
-          "slot": 3,
-          "itemId": "12211",
-          "name": "Venomous Staff",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/12211.jpg",
-          "description": "Lowers Health regen"
-        },
-        {
-          "slot": 4,
-          "itemId": "1337",
-          "name": "Sage's Sanctuary",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1337.jpg",
-          "description": "Resurrect on the spot"
-        },
-        {
-          "slot": 5,
-          "itemId": "1335",
-          "name": "Succubus Cloak",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1335.jpg",
-          "description": "Negates magical damage"
-        },
-        {
-          "slot": 6,
-          "itemId": null,
-          "name": "Data unavailable",
-          "icon": null,
-          "description": null
-        }
-      ]
-    },
-    {
-      "id": "top",
-      "label": "Top",
-      "position": "Position 5",
-      "lane": "Clash Lane",
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1701",
-          "name": "Knowledge Gem",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1701.jpg",
-          "description": "Extra Gold & EXP"
-        },
-        {
-          "slot": 2,
-          "itemId": "1422",
-          "name": "Boots of Resistance",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
-          "description": "Shortens CC"
-        },
-        {
-          "slot": 3,
-          "itemId": "1711",
-          "name": "Crimson Shadow",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1711.jpg",
-          "description": "DPS aura"
-        },
-        {
-          "slot": 4,
-          "itemId": "1721",
-          "name": "Crimson Shadow - Redemption",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1721.jpg",
-          "description": "Group shield"
-        },
-        {
-          "slot": 5,
-          "itemId": "1353",
-          "name": "Dawnlight",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1353.jpg",
-          "description": "Shields on dealing damage"
-        },
-        {
-          "slot": 6,
-          "itemId": "1335",
-          "name": "Succubus Cloak",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1335.jpg",
-          "description": "Negates magical damage"
-        }
-      ]
-    },
-    {
-      "id": "dolly",
-      "label": "Dolly",
-      "position": "Position 5",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1701",
-          "name": "Knowledge Gem",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1701.jpg",
-          "description": "Extra Gold & EXP"
-        },
-        {
-          "slot": 2,
-          "itemId": "1424",
-          "name": "Boots of the Arcane",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1424.jpg",
-          "description": "Magical Pierce"
-        },
-        {
-          "slot": 3,
-          "itemId": "1747",
-          "name": "Crimson Shadow - Starspring",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1747.jpg",
-          "description": "Restores teammate Health & Mana"
-        },
-        {
-          "slot": 4,
-          "itemId": "1422",
-          "name": "Boots of Resistance",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
-          "description": "Shortens CC"
-        },
-        {
-          "slot": 5,
-          "itemId": "1324",
-          "name": "Frosthold Targe",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1324.jpg",
-          "description": "PDEF +150, CDR +7.5%"
-        },
-        {
-          "slot": 6,
-          "itemId": "1353",
-          "name": "Dawnlight",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1353.jpg",
-          "description": "Shields on dealing damage"
-        }
-      ]
-    },
-    {
-      "id": "doly-3",
-      "label": "Doly :3 ❀˚₊‧",
-      "position": "Position 5",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1701",
-          "name": "Knowledge Gem",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1701.jpg",
-          "description": "Extra Gold & EXP"
-        },
-        {
-          "slot": 2,
-          "itemId": "1422",
-          "name": "Boots of Resistance",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
-          "description": "Shortens CC"
-        },
-        {
-          "slot": 3,
-          "itemId": "1721",
-          "name": "Crimson Shadow - Redemption",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1721.jpg",
-          "description": "Group shield"
-        },
-        {
-          "slot": 4,
-          "itemId": "1226",
-          "name": "Holy Grail",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1226.jpg",
-          "description": "Rapid Health & Mana Regen"
-        },
-        {
-          "slot": 5,
-          "itemId": "1353",
-          "name": "Dawnlight",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1353.jpg",
-          "description": "Shields on dealing damage"
-        },
-        {
-          "slot": 6,
-          "itemId": "1335",
-          "name": "Succubus Cloak",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1335.jpg",
-          "description": "Negates magical damage"
-        }
-      ]
-    },
-    {
-      "id": "dolianang",
-      "label": "Dolianang",
-      "position": "Position 5",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1701",
-          "name": "Knowledge Gem",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1701.jpg",
-          "description": "Extra Gold & EXP"
-        },
-        {
-          "slot": 2,
-          "itemId": "1424",
-          "name": "Boots of the Arcane",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1424.jpg",
-          "description": "Magical Pierce"
-        },
-        {
-          "slot": 3,
-          "itemId": "1747",
-          "name": "Crimson Shadow - Starspring",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1747.jpg",
-          "description": "Restores teammate Health & Mana"
-        },
-        {
-          "slot": 4,
-          "itemId": "1353",
-          "name": "Dawnlight",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1353.jpg",
-          "description": "Shields on dealing damage"
-        },
-        {
-          "slot": 5,
-          "itemId": "1422",
-          "name": "Boots of Resistance",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
-          "description": "Shortens CC"
-        },
-        {
-          "slot": 6,
-          "itemId": "1333",
-          "name": "Ominous Premonition",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1333.jpg",
-          "description": "Slows attackers"
-        }
-      ]
-    },
-    {
-      "id": "mermaid-hero",
-      "label": "Mermaid hero",
-      "position": "Position 5",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1724",
-          "name": "Guardian - Redemption",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1724.jpg",
-          "description": "Group shield"
-        },
-        {
-          "slot": 2,
-          "itemId": "1424",
-          "name": "Boots of the Arcane",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1424.jpg",
-          "description": "Magical Pierce"
-        },
-        {
-          "slot": 3,
-          "itemId": "1336",
-          "name": "Glacial Buckler",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1336.jpg",
-          "description": "Group damage & slow"
-        },
-        {
-          "slot": 4,
-          "itemId": "1335",
-          "name": "Succubus Cloak",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1335.jpg",
-          "description": "Negates magical damage"
-        },
-        {
-          "slot": 5,
-          "itemId": "1353",
-          "name": "Dawnlight",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1353.jpg",
-          "description": "Shields on dealing damage"
-        },
-        {
-          "slot": 6,
-          "itemId": "12211",
-          "name": "Venomous Staff",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/12211.jpg",
-          "description": "Lowers Health regen"
-        }
-      ]
-    },
-    {
-      "id": "build",
-      "label": "▗▬̸̎͞/̄͆̅ ̎ ̎̿͞",
-      "position": "Position 5",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1701",
-          "name": "Knowledge Gem",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1701.jpg",
-          "description": "Extra Gold & EXP"
-        },
-        {
-          "slot": 2,
-          "itemId": "1422",
-          "name": "Boots of Resistance",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
-          "description": "Shortens CC"
-        },
-        {
-          "slot": 3,
-          "itemId": "1711",
-          "name": "Crimson Shadow",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1711.jpg",
-          "description": "DPS aura"
-        },
-        {
-          "slot": 4,
-          "itemId": "1721",
-          "name": "Crimson Shadow - Redemption",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1721.jpg",
-          "description": "Group shield"
-        },
-        {
-          "slot": 5,
-          "itemId": "1226",
-          "name": "Holy Grail",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1226.jpg",
-          "description": "Rapid Health & Mana Regen"
-        },
-        {
-          "slot": 6,
-          "itemId": "1333",
-          "name": "Ominous Premonition",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1333.jpg",
-          "description": "Slows attackers"
-        }
-      ]
-    },
-    {
-      "id": "preset",
-      "label": "Preset",
-      "position": "Position 5",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1426",
-          "name": "Boots of Deftness",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1426.jpg",
-          "description": "Extra Movement Speed"
-        },
-        {
-          "slot": 2,
-          "itemId": "1747",
-          "name": "Crimson Shadow - Starspring",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1747.jpg",
-          "description": "Restores teammate Health & Mana"
-        },
-        {
-          "slot": 3,
-          "itemId": "1336",
-          "name": "Glacial Buckler",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1336.jpg",
-          "description": "Group damage & slow"
-        },
-        {
-          "slot": 4,
-          "itemId": "1347",
-          "name": "Longnight Guardian",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1347.jpg",
-          "description": "Resists burst damage"
-        },
-        {
-          "slot": 5,
-          "itemId": "1333",
-          "name": "Ominous Premonition",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1333.jpg",
-          "description": "Slows attackers"
-        },
-        {
-          "slot": 6,
-          "itemId": "1332",
-          "name": "Overlord's Platemail",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1332.jpg",
-          "description": "Extra Health"
-        }
-      ]
-    },
-    {
-      "id": "tank",
-      "label": "Tank",
-      "position": "Position 5",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1701",
-          "name": "Knowledge Gem",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1701.jpg",
-          "description": "Extra Gold & EXP"
-        },
-        {
-          "slot": 2,
-          "itemId": "1424",
-          "name": "Boots of the Arcane",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1424.jpg",
-          "description": "Magical Pierce"
-        },
-        {
-          "slot": 3,
-          "itemId": "1725",
-          "name": "Guardian - Starspring",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1725.jpg",
-          "description": "Restores teammate Health & Mana"
-        },
-        {
-          "slot": 4,
-          "itemId": "1234",
-          "name": "Frozen Breath",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1234.jpg",
-          "description": "Slows on hit"
-        },
-        {
-          "slot": 5,
-          "itemId": "1333",
-          "name": "Ominous Premonition",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1333.jpg",
-          "description": "Slows attackers"
-        },
-        {
-          "slot": 6,
-          "itemId": "1332",
-          "name": "Overlord's Platemail",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1332.jpg",
-          "description": "Extra Health"
-        }
-      ]
-    },
-    {
-      "id": "survivor",
-      "label": "Survivor",
-      "position": "Position 5",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1747",
-          "name": "Crimson Shadow - Starspring",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1747.jpg",
-          "description": "Restores teammate Health & Mana"
-        },
-        {
-          "slot": 2,
-          "itemId": "1422",
-          "name": "Boots of Resistance",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
-          "description": "Shortens CC"
-        },
-        {
-          "slot": 3,
-          "itemId": "1235",
-          "name": "Mask of Agony",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1235.jpg",
-          "description": "Boosts skill damage"
-        },
-        {
-          "slot": 4,
-          "itemId": "1234",
-          "name": "Frozen Breath",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1234.jpg",
-          "description": "Slows on hit"
-        },
-        {
-          "slot": 5,
-          "itemId": "1237",
-          "name": "Augur's Word",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1237.jpg",
-          "description": "Offense & defense"
-        },
-        {
-          "slot": 6,
-          "itemId": "1353",
-          "name": "Dawnlight",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1353.jpg",
-          "description": "Shields on dealing damage"
-        }
-      ]
-    }
+  "metaAnalysisZh": [
+    "朵莉亞 勝率 46.04%（Camp HOK，2026-06-07）",
+    "選取率 1.83%",
+    "禁用率 0.51%",
+    "克制：Dun、Yaria；被克制：Sima Yi、Guiguzi"
   ],
   "guide": {
     "overview": "Dolia is a Easy Support (Roaming) on Honor of Kings Global. Camp HOK ranks them Tier S with 46.1% win rate and 1.8% pick rate as of 2026-06-05.",

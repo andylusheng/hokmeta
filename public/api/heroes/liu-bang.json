@@ -2,100 +2,387 @@
   "id": "liu-bang",
   "slug": "liu-bang",
   "name": "Liu Bang",
+  "nameZh": "劉邦",
   "role": "Tank",
   "roles": "Tank, Mage",
+  "rolesZh": "坦克, 法師",
   "lane": "Clash Lane",
+  "laneZh": "對抗路",
   "difficulty": "Easy",
   "tier": "B",
-  "winRate": 50.2,
-  "pickRate": 0.24,
+  "winRate": 49.33,
+  "pickRate": 0.26,
   "banRate": 0.01,
-  "rank": 70,
+  "rank": 84,
   "avatar": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/bVHGeH45.png",
   "avatarFallback": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/149/149.jpg",
+  "heroCover": "https://camp.honorofkings.com/social/game/src/image_hero_cover_1275*718/OohwhuZB.jpg",
   "tencentId": 149,
-  "dataSource": "Camp HOK + HoKStats.gg (intl)",
-  "dataUpdated": "2026-06-05",
+  "dataSource": "Camp HOK bilingual (primary)",
+  "dataUpdated": "2026-06-07",
   "skills": [
     {
       "slot": "passive",
       "name": "Royal Ambition",
       "description": "Gains 1 mark every second, for up to 4 marks. Basic Attacks expend all marks, dealing additional magical damage per mark. At maximum marks, the next Basic Attack is enhanced into a ranged attack.",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/149/14900.png",
-      "cooldown": null
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/14900.png",
+      "cooldown": "1s"
     },
     {
       "slot": "skill1",
       "name": "Dominator's Shield",
-      "description": "Grants himself a shield. If the shield is still intact when it expires, it will deal damage to nearby enemies.",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/149/14910.png",
-      "cooldown": null
+      "description": "Grants himself a shield. If the shield is still not depleted when it expires, it will deal damage to nearby enemies.",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/14910.png",
+      "cooldown": "10s"
     },
     {
       "slot": "skill2",
       "name": "Staggering Charge",
       "description": "Charges up and dashes forward, damaging and stunning enemies in his path.",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/149/14920.png",
-      "cooldown": null
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/14920.png",
+      "cooldown": "9s"
     },
     {
       "slot": "ultimate",
       "name": "Battlefield Command",
       "description": "Provides a shield to a teammate. After a short delay, teleports to the teammate and gains Movement Speed.",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/149/14930.png",
-      "cooldown": null
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/14930.png",
+      "cooldown": "60s"
+    }
+  ],
+  "skillsZh": [
+    {
+      "slot": "passive",
+      "name": "君主野望",
+      "description": "劉邦每秒疊加1層印記，普攻時消耗所有印記並附帶法術傷害；疊滿4層時，強化下次普攻為遠程攻擊。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/14900.png",
+      "cooldown": "1s"
+    },
+    {
+      "slot": "skill1",
+      "name": "霸業之盾",
+      "description": "獲得護盾，結束時若仍有護盾，則對周圍造成傷害。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/14910.png",
+      "cooldown": "10s"
+    },
+    {
+      "slot": "skill2",
+      "name": "雙重威嚇",
+      "description": "蓄力向前衝鋒，對路徑上的敵人造成傷害和暈眩。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/14920.png",
+      "cooldown": "9s"
+    },
+    {
+      "slot": "ultimate",
+      "name": "統御戰場",
+      "description": "劉邦為隊友提供護盾，短暫延遲後，傳送到隊友身邊獲得加速。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/14930.png",
+      "cooldown": "60s"
     }
   ],
   "build": [
     {
       "slot": 1,
-      "itemId": "1422",
-      "name": "Boots of Resistance",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
-      "description": "Shortens CC"
+      "itemId": "1336",
+      "name": "Glacial Buckler",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1336.png",
+      "description": "CDR +20%, HP +600, PDEF +240\nGroup damage & slow"
     },
     {
       "slot": 2,
-      "itemId": "1327",
-      "name": "Spikemail",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1327.jpg",
-      "description": "Reflects damage"
+      "itemId": "1331",
+      "name": "Blazing Cape",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1331.png",
+      "description": "PDEF +150, MDEF +150, HP +1,100\nArea burn & imperil"
     },
     {
       "slot": 3,
-      "itemId": "1331",
-      "name": "Blazing Cape",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1331.jpg",
-      "description": "Burns nearby enemies"
+      "itemId": "1244",
+      "name": "Breakthrough Robe",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1244.png",
+      "description": "MATK +120, HP +900\nConverts HP into Magical Pierce"
     },
     {
       "slot": 4,
-      "itemId": "1334",
-      "name": "Eye of the Phoenix",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1334.jpg",
-      "description": "Boosts Health regen"
+      "itemId": "1335",
+      "name": "Succubus Cloak",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
+      "description": "MDEF +300, HP +1,100\nNegates magical damage"
     },
     {
       "slot": 5,
-      "itemId": "1347",
-      "name": "Longnight Guardian",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1347.jpg",
-      "description": "Resists burst damage"
+      "itemId": "1332",
+      "name": "Overlord's Platemail",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1332.png",
+      "description": "HP +1,800, PDEF +160, MDEF +80\nExtra HP"
     },
     {
       "slot": 6,
-      "itemId": "1341",
-      "name": "Frigid Charge",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1341.jpg",
-      "description": "Group CC"
+      "itemId": "1337",
+      "name": "Sage's Sanctuary",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+      "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
+    }
+  ],
+  "buildZh": [
+    {
+      "slot": 1,
+      "itemId": "1336",
+      "name": "極寒風暴",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1336.png",
+      "description": "+20%減冷卻時間+600點生命值+240點物防\n群體傷害減速"
+    },
+    {
+      "slot": 2,
+      "itemId": "1331",
+      "name": "紅蓮斗篷",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1331.png",
+      "description": "+150點物防+150點法防+1100點生命值\n範圍灼燒重傷"
+    },
+    {
+      "slot": 3,
+      "itemId": "1244",
+      "name": "破繭之衣",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1244.png",
+      "description": "+120點法攻+900點生命值\n生命值轉法穿"
+    },
+    {
+      "slot": 4,
+      "itemId": "1335",
+      "name": "魔女斗篷",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
+      "description": "+300點法防+1100點生命值\n吸收法術傷害"
+    },
+    {
+      "slot": 5,
+      "itemId": "1332",
+      "name": "霸者重裝",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1332.png",
+      "description": "+1800點生命值+160點物防+80點法防\n提高額外生命值"
+    },
+    {
+      "slot": 6,
+      "itemId": "1337",
+      "name": "賢者的庇護",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+      "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+    }
+  ],
+  "builds": [
+    {
+      "id": "camp-0",
+      "label": "边路冷却法坦",
+      "lane": "Top",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1336",
+          "name": "Glacial Buckler",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1336.png",
+          "description": "CDR +20%, HP +600, PDEF +240\nGroup damage & slow"
+        },
+        {
+          "slot": 2,
+          "itemId": "1331",
+          "name": "Blazing Cape",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1331.png",
+          "description": "PDEF +150, MDEF +150, HP +1,100\nArea burn & imperil"
+        },
+        {
+          "slot": 3,
+          "itemId": "1244",
+          "name": "Breakthrough Robe",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1244.png",
+          "description": "MATK +120, HP +900\nConverts HP into Magical Pierce"
+        },
+        {
+          "slot": 4,
+          "itemId": "1335",
+          "name": "Succubus Cloak",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
+          "description": "MDEF +300, HP +1,100\nNegates magical damage"
+        },
+        {
+          "slot": 5,
+          "itemId": "1332",
+          "name": "Overlord's Platemail",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1332.png",
+          "description": "HP +1,800, PDEF +160, MDEF +80\nExtra HP"
+        },
+        {
+          "slot": 6,
+          "itemId": "1337",
+          "name": "Sage's Sanctuary",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
+        }
+      ]
+    },
+    {
+      "id": "camp-1",
+      "label": "AGs.RAiZoデス",
+      "lane": "Top",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1331",
+          "name": "Blazing Cape",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1331.png",
+          "description": "PDEF +150, MDEF +150, HP +1,100\nArea burn & imperil"
+        },
+        {
+          "slot": 2,
+          "itemId": "1237",
+          "name": "Augur's Word",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1237.png",
+          "description": "MATK +140, MP +450, HP +900\nOffense & defense"
+        },
+        {
+          "slot": 3,
+          "itemId": "1240",
+          "name": "Insatiable Tome",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1240.png",
+          "description": "MATK +160, Magical Lifesteal +24%, HP +750\nLifesteal increases CDR"
+        },
+        {
+          "slot": 4,
+          "itemId": "1236",
+          "name": "Staves of Sorcery",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1236.png",
+          "description": "MATK +180, HP +600, MSPD +7.5%\nEnhances BAs"
+        },
+        {
+          "slot": 5,
+          "itemId": "12211",
+          "name": "Venomous Staff",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/12211.png",
+          "description": "MATK +240, CDR +7.5%, MSPD +7.5%\nLowers Health Regen"
+        },
+        {
+          "slot": 6,
+          "itemId": "1337",
+          "name": "Sage's Sanctuary",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
+        }
+      ]
+    }
+  ],
+  "buildsZh": [
+    {
+      "id": "camp-0",
+      "label": "边路冷却法坦",
+      "lane": "Top",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1336",
+          "name": "極寒風暴",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1336.png",
+          "description": "+20%減冷卻時間+600點生命值+240點物防\n群體傷害減速"
+        },
+        {
+          "slot": 2,
+          "itemId": "1331",
+          "name": "紅蓮斗篷",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1331.png",
+          "description": "+150點物防+150點法防+1100點生命值\n範圍灼燒重傷"
+        },
+        {
+          "slot": 3,
+          "itemId": "1244",
+          "name": "破繭之衣",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1244.png",
+          "description": "+120點法攻+900點生命值\n生命值轉法穿"
+        },
+        {
+          "slot": 4,
+          "itemId": "1335",
+          "name": "魔女斗篷",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
+          "description": "+300點法防+1100點生命值\n吸收法術傷害"
+        },
+        {
+          "slot": 5,
+          "itemId": "1332",
+          "name": "霸者重裝",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1332.png",
+          "description": "+1800點生命值+160點物防+80點法防\n提高額外生命值"
+        },
+        {
+          "slot": 6,
+          "itemId": "1337",
+          "name": "賢者的庇護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+        }
+      ]
+    },
+    {
+      "id": "camp-1",
+      "label": "AGs.RAiZoデス",
+      "lane": "Top",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1331",
+          "name": "紅蓮斗篷",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1331.png",
+          "description": "+150點物防+150點法防+1100點生命值\n範圍灼燒重傷"
+        },
+        {
+          "slot": 2,
+          "itemId": "1237",
+          "name": "時之預言",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1237.png",
+          "description": "+140點法攻+450法力值+900點生命值……\n攻防兼備"
+        },
+        {
+          "slot": 3,
+          "itemId": "1240",
+          "name": "噬神之書",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1240.png",
+          "description": "+160點法攻+24%法術吸血+750點生命值 吸血拉長冷卻時間"
+        },
+        {
+          "slot": 4,
+          "itemId": "1236",
+          "name": "巫術法杖",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1236.png",
+          "description": "+180點法攻+600點生命值+7.5%移速……\n強化普攻"
+        },
+        {
+          "slot": 5,
+          "itemId": "12211",
+          "name": "夢魘之牙",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/12211.png",
+          "description": "+240點法攻+7.5%減冷卻時間+7.5%移速\n減少敵人回血"
+        },
+        {
+          "slot": 6,
+          "itemId": "1337",
+          "name": "賢者的庇護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+        }
+      ]
     }
   ],
   "arcana": [
-    "Fate"
+    "Lvl 5: Nightmare",
+    "Lvl 5: Harmony",
+    "Lvl 5: Mind's Eye"
+  ],
+  "arcanaZh": [
+    "5級：夢魘",
+    "5級：調和",
+    "5級：心眼"
   ],
   "spells": [
-    "Smite",
     "Execute"
+  ],
+  "spellsZh": [
+    "終結"
   ],
   "counters": [
     "Marco Polo",
@@ -108,236 +395,85 @@
     "Ying"
   ],
   "tips": [
-    "Liu Bang is a Easy Tank (Clash Lane) on Honor of Kings Global. Camp HOK ranks them Tier B with 50.2% win rate and 0.2% pick rate as of 2026-06-05.",
-    "Best build path: Boots of Resistance → Spikemail → Blazing Cape → Eye of the Phoenix → Longnight Guardian → Frigid Charge.",
-    "Run Fate for stats that match Liu Bang's Tank kit. Take Smite & Execute — swap to Purify against heavy CC or Smite when jungling.",
-    "Standard trade: Dominator's Shield → Staggering Charge → Battlefield Command → weave basic attacks. Weave basic attacks between skill casts for passive value.",
-    "Laning: Trade on your power spike levels (2/4). Call jungler for dive only when enemy flash is down.",
-    "Teamfight: Engage on enemy carry when your team has follow-up. Body-block skillshots for your marksman.",
-    "Liu Bang excels into Marco Polo, Meng Ya, Shouyue. Avoid blind picking into Wukong, Musashi, Ying without team peel.",
-    "Liu Bang sits at Tier B globally (50.2% WR). In high rank, pick only into favorable matchups or when you have a dedicated pocket pick."
+    "Liu Bang (Tank): Tier B — 49.33% WR (Camp HOK).",
+    "Lane: Clash Lane.",
+    "Build: Glacial Buckler, Blazing Cape, Breakthrough Robe."
+  ],
+  "tipsZh": [
+    "劉邦（對抗路）：梯度 B，勝率 49.33%（Camp HOK）。",
+    "出裝：極寒風暴、紅蓮斗篷、破繭之衣."
   ],
   "patchHistory": [
     {
-      "version": "Live meta",
-      "change": "Camp HOK — WR 50.2%, pick 0.2%, ban 0.0%, tier B."
-    },
+      "seasonId": "13",
+      "seasonName": "S13",
+      "versionName": "2026/02/05",
+      "publishedAt": "2026-02-05T01:00:00Z",
+      "isCurrent": false,
+      "tag": "Stat Buffs",
+      "change": "Increased skill damage",
+      "detail": "",
+      "version": "S13"
+    }
+  ],
+  "patchHistoryZh": [
     {
-      "version": "Matchups",
-      "change": "Strong into Marco Polo, Meng Ya, Shouyue · Weak into Wukong, Musashi, Ying."
-    },
-    {
-      "version": "High rank",
-      "change": "Liu Bang sits at Tier B globally (50.2% WR). In high rank, pick only into favorable matchups or when you have a dedicated pocket pick."
+      "seasonId": "13",
+      "seasonName": "S13",
+      "versionName": "2026/02/05",
+      "publishedAt": "2026-02-05T01:00:00Z",
+      "isCurrent": false,
+      "tag": "數值增強",
+      "change": "提升技能傷害",
+      "detail": "",
+      "version": "S13"
     }
   ],
   "faqs": [
     {
       "id": "faq-good-season",
-      "question": "Is Liu Bang good in the current meta?",
-      "answer": "Liu Bang is Tier B Tank with 50.2% win rate, 0.2% pick rate, and 0.0% ban rate on Honor of Kings Global (Camp HOK, 2026-06-05). Niche — draft carefully."
+      "question": "Is Liu Bang good in current season?",
+      "answer": "Liu Bang is Tier B Tank with 49.33% win rate, 0.26% pick rate, and 0.01% ban rate (Camp HOK international)."
     },
     {
       "id": "faq-best-build",
       "question": "What is the best Liu Bang build?",
-      "answer": "Core item path: Boots of Resistance, Spikemail, Blazing Cape, Eye of the Phoenix, Longnight Guardian, Frigid Charge. Run Fate arcana with Smite & Execute. Switch to alternate build presets on this page for jungle, clash, or late-game setups."
+      "answer": "Recommended: Glacial Buckler, Blazing Cape, Breakthrough Robe, Succubus Cloak, Overlord's Platemail, Sage's Sanctuary."
     },
     {
       "id": "faq-counter",
       "question": "How to counter Liu Bang?",
-      "answer": "Pick Wukong, Musashi, Ying into Liu Bang. Deny Clash Lane resources early and force fights before Liu Bang completes core items. Liu Bang struggles when the enemy can out-range or out-sustain them."
+      "answer": "Pick Wukong, Musashi, Ying. Strong into Marco Polo, Meng Ya, Shouyue."
+    }
+  ],
+  "faqsZh": [
+    {
+      "id": "faq-good-season",
+      "question": "劉邦 這版本適合上分嗎？",
+      "answer": "劉邦 為 B 梯度，勝率 49.33%、選取 0.26%、禁用 0.01%（Camp HOK 國際服）。"
     },
     {
-      "id": "faq-strong-into",
-      "question": "Who does Liu Bang counter?",
-      "answer": "Liu Bang is strong into Marco Polo, Meng Ya, Shouyue according to HoKStats matchup data and role matchups on the global server. Draft Liu Bang when the enemy relies on these heroes in the Clash Lane lane."
+      "id": "faq-best-build",
+      "question": "劉邦 出裝怎麼搭配？",
+      "answer": "推薦：極寒風暴、紅蓮斗篷、破繭之衣、魔女斗篷、霸者重裝、賢者的庇護."
     },
     {
-      "id": "faq-high-rank",
-      "question": "Is Liu Bang good in high rank / Diamond+?",
-      "answer": "Liu Bang sits at Tier B globally (50.2% WR). In high rank, pick only into favorable matchups or when you have a dedicated pocket pick."
-    },
-    {
-      "id": "faq-lane",
-      "question": "What lane should Liu Bang play?",
-      "answer": "Liu Bang is tagged Clash Lane in Camp export (Tank, Mage). Trade on your power spike levels (2/4). Call jungler for dive only when enemy flash is down."
-    },
-    {
-      "id": "faq-arcana",
-      "question": "Best arcana and spells for Liu Bang?",
-      "answer": "Recommended: Fate arcana. Battle spell: Smite & Execute. Adjust Purify/Execute based on enemy dive and jungle need."
-    },
-    {
-      "id": "faq-vs-peer",
-      "question": "Liu Bang or Kaizer — which is better?",
-      "answer": "Liu Bang vs Kaizer (Tank, Tier S): Kaizer is 1.6% pick / 51.4% WR. Kaizer wins 1.2% more often globally. Choose Liu Bang when you need Clash Lane identity; choose Kaizer for Clash Lane comfort."
-    },
-    {
-      "id": "faq-ban",
-      "question": "Should I ban Liu Bang?",
-      "answer": "Low priority ban (0.0%). Focus bans on higher-tier Tank picks unless targeting a one-trick."
+      "id": "faq-counter",
+      "question": "怎麼克制 劉邦？",
+      "answer": "可選 Wukong、Musashi、Ying。劉邦 克制 Marco Polo、Meng Ya、Shouyue。"
     }
   ],
   "metaAnalysis": [
-    "Liu Bang — 50.2% WR, 0.2% pick, 0.0% ban (Camp HOK 2026-06-05).",
-    "Tier B Tank · Clash Lane · difficulty Easy.",
-    "Liu Bang sits at Tier B globally (50.2% WR). In high rank, pick only into favorable matchups or when you have a dedicated pocket pick.",
-    "Matchups: strong into Marco Polo, Meng Ya, Shouyue; weak into Wukong, Musashi, Ying.",
-    "Liu Bang vs Kaizer (Tank, Tier S): Kaizer is 1.6% pick / 51.4% WR. Kaizer wins 1.2% more often globally. Choose Liu Bang when you need Clash Lane identity; choose Kaizer for Clash Lane comfort.",
-    "Liu Bang vs Dun (Tank, Tier S): Dun is 1.5% pick / 52.3% WR. Dun wins 2.1% more often globally. Choose Liu Bang when you need Clash Lane identity; choose Dun for Clash Lane comfort.",
-    "Draft tip: counter-pick or comfort pick when lane matchup is favorable."
+    "Liu Bang win rate 49.33% (Camp HOK, 2026-06-07).",
+    "Pick rate 0.26%.",
+    "Ban rate 0.01%.",
+    "Counters: Marco Polo, Meng Ya, Shouyue. Weak into: Wukong, Musashi, Ying."
   ],
-  "builds": [
-    {
-      "id": "recommended",
-      "label": "Recommended",
-      "position": null,
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1422",
-          "name": "Boots of Resistance",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
-          "description": "Shortens CC"
-        },
-        {
-          "slot": 2,
-          "itemId": "1327",
-          "name": "Spikemail",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1327.jpg",
-          "description": "Reflects damage"
-        },
-        {
-          "slot": 3,
-          "itemId": "1331",
-          "name": "Blazing Cape",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1331.jpg",
-          "description": "Burns nearby enemies"
-        },
-        {
-          "slot": 4,
-          "itemId": "1334",
-          "name": "Eye of the Phoenix",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1334.jpg",
-          "description": "Boosts Health regen"
-        },
-        {
-          "slot": 5,
-          "itemId": "1347",
-          "name": "Longnight Guardian",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1347.jpg",
-          "description": "Resists burst damage"
-        },
-        {
-          "slot": 6,
-          "itemId": "1341",
-          "name": "Frigid Charge",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1341.jpg",
-          "description": "Group CC"
-        }
-      ]
-    },
-    {
-      "id": "边路冷却法坦",
-      "label": "边路冷却法坦",
-      "position": "Position 1",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1312",
-          "name": "Cloth Jerkin",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1312.jpg",
-          "description": "PDEF +100"
-        },
-        {
-          "slot": 2,
-          "itemId": "1423",
-          "name": "Boots of Tranquility",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1423.jpg",
-          "description": "Reduces Skill CD"
-        },
-        {
-          "slot": 3,
-          "itemId": "1324",
-          "name": "Frosthold Targe",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1324.jpg",
-          "description": "PDEF +150, CDR +7.5%"
-        },
-        {
-          "slot": 4,
-          "itemId": "1336",
-          "name": "Glacial Buckler",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1336.jpg",
-          "description": "Group damage & slow"
-        },
-        {
-          "slot": 5,
-          "itemId": "1325",
-          "name": "Protector's Cuirass",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1325.jpg",
-          "description": "PDEF +150, HP +450"
-        },
-        {
-          "slot": 6,
-          "itemId": "1331",
-          "name": "Blazing Cape",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1331.jpg",
-          "description": "Burns nearby enemies"
-        }
-      ]
-    },
-    {
-      "id": "agsraizo",
-      "label": "AGs.RAiZoデス",
-      "position": "Position 1",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1423",
-          "name": "Boots of Tranquility",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1423.jpg",
-          "description": "Reduces Skill CD"
-        },
-        {
-          "slot": 2,
-          "itemId": "1244",
-          "name": "Breakthrough Robe",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1244.jpg",
-          "description": "Converts Health into M. Pierce"
-        },
-        {
-          "slot": 3,
-          "itemId": "1331",
-          "name": "Blazing Cape",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1331.jpg",
-          "description": "Burns nearby enemies"
-        },
-        {
-          "slot": 4,
-          "itemId": "1237",
-          "name": "Augur's Word",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1237.jpg",
-          "description": "Offense & defense"
-        },
-        {
-          "slot": 5,
-          "itemId": "1240",
-          "name": "Insatiable Tome",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1240.jpg",
-          "description": "Magical Lifesteal"
-        },
-        {
-          "slot": 6,
-          "itemId": "1236",
-          "name": "Staves of Sorcery",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1236.jpg",
-          "description": "Enhances BA"
-        }
-      ]
-    }
+  "metaAnalysisZh": [
+    "劉邦 勝率 49.33%（Camp HOK，2026-06-07）",
+    "選取率 0.26%",
+    "禁用率 0.01%",
+    "克制：Marco Polo、Meng Ya、Shouyue；被克制：Wukong、Musashi、Ying"
   ],
   "guide": {
     "overview": "Liu Bang is a Easy Tank (Clash Lane) on Honor of Kings Global. Camp HOK ranks them Tier B with 50.2% win rate and 0.2% pick rate as of 2026-06-05.",

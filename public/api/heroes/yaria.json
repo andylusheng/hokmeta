@@ -2,100 +2,583 @@
   "id": "yaria",
   "slug": "yaria",
   "name": "Yaria",
+  "nameZh": "瑤",
   "role": "Support",
   "roles": "Support",
+  "rolesZh": "輔助",
   "lane": "Roaming",
+  "laneZh": "遊走",
   "difficulty": "Easy",
   "tier": "S",
-  "winRate": 48.02,
+  "winRate": 48.48,
   "pickRate": 1.15,
-  "banRate": 1.25,
-  "rank": 105,
+  "banRate": 1.21,
+  "rank": 98,
   "avatar": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/uHnzeJbu.png",
   "avatarFallback": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/505/505.jpg",
+  "heroCover": "https://camp.honorofkings.com/social/game/src/image_hero_cover_1275*718/eJ08G8d4.jpg",
   "tencentId": 505,
-  "dataSource": "Camp HOK + HoKStats.gg (intl)",
-  "dataUpdated": "2026-06-05",
+  "dataSource": "Camp HOK bilingual (primary)",
+  "dataUpdated": "2026-06-07",
   "skills": [
     {
       "slot": "passive",
       "name": "Deer Spirit",
       "description": "When inflicted with crowd control effects (excluding suppression), gains immunity to all effects.",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/505/50500.png",
-      "cooldown": null
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/50500.png",
+      "cooldown": "1s"
     },
     {
       "slot": "skill1",
       "name": "Wandering Beam",
-      "description": "Releases a spirit in the target direction, which tracks nearby enemies after reaching its max range.The spirit launches and deals damage to enemies hit. In deer spirit form, using this skill will restore her to Human Form.",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/505/50510.png",
-      "cooldown": null
+      "description": "Releases a soul in the target direction, which tracks nearby enemies after reaching its max range.\nThe soul launches and deals damage to enemies hit.\nIn deer spirit form, using this skill will restore her to Human Form.",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/50510.png",
+      "cooldown": "10s"
     },
     {
       "slot": "skill2",
       "name": "Accelerating Blitz",
-      "description": "Deals continuous damage to nearby enemies. Attached: Increases casting range.",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/505/50520.png",
-      "cooldown": null
+      "description": "Deals continuous damage to nearby enemies.\nAttached: Increased range.",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/50520.png",
+      "cooldown": "12s"
     },
     {
       "slot": "ultimate",
       "name": "Verdant Protector",
-      "description": "Attaches herself to a teammate, providing a true damage shield and enhancing your skill effects. Attached: When the shield is exhausted, the attachment will end and enter cooldown. Actively detaching reduces the cooldown of this skill.",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/505/50530.png",
-      "cooldown": null
+      "description": "Attaches herself to a teammate, providing a true damage shield and enhancing her own skill effects.\nAttached: When the shield is exhausted, the attachment ends and the skill goes on cooldown. Actively detaching reduces the cooldown.",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/50530.png",
+      "cooldown": "15s"
+    }
+  ],
+  "skillsZh": [
+    {
+      "slot": "passive",
+      "name": "山鬼・白鹿",
+      "description": "受到除壓制外的控制後免疫所有效果。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/50500.png",
+      "cooldown": "1s"
+    },
+    {
+      "slot": "skill1",
+      "name": "若有人兮",
+      "description": "朝指定方向發射能量波，達到最遠距離後追蹤附近敵人。\n對命中敵人造成傷害和擊飛效果。\n鹿形態下使用則變回人形態。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/50510.png",
+      "cooldown": "10s"
+    },
+    {
+      "slot": "skill2",
+      "name": "風颯木蕭",
+      "description": "持續對周圍敵人造成傷害。\n附身狀態：提升施放技能範圍。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/50520.png",
+      "cooldown": "12s"
+    },
+    {
+      "slot": "ultimate",
+      "name": "獨立兮山之上",
+      "description": "附身到友軍英雄上，提供真實護盾並強化自身技能效果。\n附身狀態：打破護盾會結束附身並進入冷卻，主動結束會減少該技能冷卻。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/50530.png",
+      "cooldown": "15s"
     }
   ],
   "build": [
     {
       "slot": 1,
-      "itemId": "1711",
-      "name": "Crimson Shadow",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1711.jpg",
-      "description": "DPS aura"
+      "itemId": "1737",
+      "name": "Crimson Shadow - Radiance",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1749.png",
+      "description": "HP +1,200, MSPD +7.5%\nDPS aura"
     },
     {
       "slot": 2,
-      "itemId": "1423",
-      "name": "Boots of Tranquility",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1423.jpg",
-      "description": "Reduces Skill CD"
+      "itemId": "1332",
+      "name": "Overlord's Platemail",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1332.png",
+      "description": "HP +1,800, PDEF +160, MDEF +80\nExtra HP"
     },
     {
       "slot": 3,
-      "itemId": "1234",
-      "name": "Frozen Breath",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1234.jpg",
-      "description": "Slows on hit"
+      "itemId": "1347",
+      "name": "Longnight Guardian",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1347.png",
+      "description": "MDEF +210, HP +1,000, MSPD +7.5%\nReduces magical damage"
     },
     {
       "slot": 4,
-      "itemId": "1333",
-      "name": "Ominous Premonition",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1333.jpg",
-      "description": "Slows attackers"
+      "itemId": "1331",
+      "name": "Blazing Cape",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1331.png",
+      "description": "PDEF +150, MDEF +150, HP +1,100\nArea burn & imperil"
     },
     {
       "slot": 5,
-      "itemId": "1335",
-      "name": "Succubus Cloak",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1335.jpg",
-      "description": "Negates magical damage"
+      "itemId": "1337",
+      "name": "Sage's Sanctuary",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+      "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
     },
     {
       "slot": 6,
+      "itemId": "1353",
+      "name": "Dawnlight",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1353.png",
+      "description": "PDEF +210, HP +900, CDR +10%\nShields on dealing damage"
+    }
+  ],
+  "buildZh": [
+    {
+      "slot": 1,
+      "itemId": "1737",
+      "name": "極影・形昭",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1749.png",
+      "description": "+1200點生命值+7.5%移速\n光環提升輸出"
+    },
+    {
+      "slot": 2,
       "itemId": "1332",
-      "name": "Overlord's Platemail",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1332.jpg",
-      "description": "Extra Health"
+      "name": "霸者重裝",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1332.png",
+      "description": "+1800點生命值+160點物防+80點法防\n提高額外生命值"
+    },
+    {
+      "slot": 3,
+      "itemId": "1347",
+      "name": "永夜守護",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1347.png",
+      "description": "+210點法防+1000點生命值\n+7.5%移速減少法術傷害"
+    },
+    {
+      "slot": 4,
+      "itemId": "1331",
+      "name": "紅蓮斗篷",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1331.png",
+      "description": "+150點物防+150點法防+1100點生命值\n範圍灼燒重傷"
+    },
+    {
+      "slot": 5,
+      "itemId": "1337",
+      "name": "賢者的庇護",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+      "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+    },
+    {
+      "slot": 6,
+      "itemId": "1353",
+      "name": "旭日初光",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1353.png",
+      "description": "+210點物防+900點生命值+10%減冷卻時間\n傷害敵人時獲得護盾值"
+    }
+  ],
+  "builds": [
+    {
+      "id": "camp-0",
+      "label": "Roaming",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1737",
+          "name": "Crimson Shadow - Radiance",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1749.png",
+          "description": "HP +1,200, MSPD +7.5%\nDPS aura"
+        },
+        {
+          "slot": 2,
+          "itemId": "1332",
+          "name": "Overlord's Platemail",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1332.png",
+          "description": "HP +1,800, PDEF +160, MDEF +80\nExtra HP"
+        },
+        {
+          "slot": 3,
+          "itemId": "1347",
+          "name": "Longnight Guardian",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1347.png",
+          "description": "MDEF +210, HP +1,000, MSPD +7.5%\nReduces magical damage"
+        },
+        {
+          "slot": 4,
+          "itemId": "1331",
+          "name": "Blazing Cape",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1331.png",
+          "description": "PDEF +150, MDEF +150, HP +1,100\nArea burn & imperil"
+        },
+        {
+          "slot": 5,
+          "itemId": "1337",
+          "name": "Sage's Sanctuary",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
+        },
+        {
+          "slot": 6,
+          "itemId": "1353",
+          "name": "Dawnlight",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1353.png",
+          "description": "PDEF +210, HP +900, CDR +10%\nShields on dealing damage"
+        }
+      ]
+    },
+    {
+      "id": "camp-1",
+      "label": "Yariachi",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1724",
+          "name": "Guardian - Redemption",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1751.png",
+          "description": "HP +1,200, MSPD +7.5%\nSurvivability aura"
+        },
+        {
+          "slot": 2,
+          "itemId": "1353",
+          "name": "Dawnlight",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1353.png",
+          "description": "PDEF +210, HP +900, CDR +10%\nShields on dealing damage"
+        },
+        {
+          "slot": 3,
+          "itemId": "1234",
+          "name": "Frozen Breath",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1234.png",
+          "description": "MATK +180, CDR +7.5%, HP +500\nSkill hits slow"
+        },
+        {
+          "slot": 4,
+          "itemId": "12211",
+          "name": "Venomous Staff",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/12211.png",
+          "description": "MATK +240, CDR +7.5%, MSPD +7.5%\nLowers Health Regen"
+        },
+        {
+          "slot": 5,
+          "itemId": "1244",
+          "name": "Breakthrough Robe",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1244.png",
+          "description": "MATK +120, HP +900\nConverts HP into Magical Pierce"
+        },
+        {
+          "slot": 6,
+          "itemId": "1337",
+          "name": "Sage's Sanctuary",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
+        }
+      ]
+    },
+    {
+      "id": "camp-2",
+      "label": "Roaming 1",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "12211",
+          "name": "Venomous Staff",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/12211.png",
+          "description": "MATK +240, CDR +7.5%, MSPD +7.5%\nLowers Health Regen"
+        },
+        {
+          "slot": 2,
+          "itemId": "1341",
+          "name": "Frigid Charge",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1341.png",
+          "description": "PDEF +150, HP +900, CDR +7.5%, Resistance +10%\nGreat crowd control"
+        },
+        {
+          "slot": 3,
+          "itemId": "1747",
+          "name": "Crimson Shadow - Starspring",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1747.png",
+          "description": "HP +1,200, MSPD +7.5%\nDPS aura"
+        },
+        {
+          "slot": 4,
+          "itemId": "1337",
+          "name": "Sage's Sanctuary",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
+        },
+        {
+          "slot": 5,
+          "itemId": "1239",
+          "name": "Splendor",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1239.png",
+          "description": "MATK +160, CDR +7.5%, Magical Lifesteal +12%\nTemp. invincibility"
+        },
+        {
+          "slot": 6,
+          "itemId": "1127",
+          "name": "Destiny",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
+        }
+      ]
+    },
+    {
+      "id": "camp-3",
+      "label": "Roaming 1",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1423",
+          "name": "Boots of Tranquility",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1423.png",
+          "description": "CDR +15%, MSPD +50\nSpeeds up skill cooldown"
+        },
+        {
+          "slot": 2,
+          "itemId": "1725",
+          "name": "Guardian - Starspring",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1752.png",
+          "description": "HP +1,200, MSPD +7.5%\nSurvivability aura"
+        },
+        {
+          "slot": 3,
+          "itemId": "12211",
+          "name": "Venomous Staff",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/12211.png",
+          "description": "MATK +240, CDR +7.5%, MSPD +7.5%\nLowers Health Regen"
+        },
+        {
+          "slot": 4,
+          "itemId": "1353",
+          "name": "Dawnlight",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1353.png",
+          "description": "PDEF +210, HP +900, CDR +10%\nShields on dealing damage"
+        },
+        {
+          "slot": 5,
+          "itemId": "1335",
+          "name": "Succubus Cloak",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
+          "description": "MDEF +300, HP +1,100\nNegates magical damage"
+        },
+        {
+          "slot": 6,
+          "itemId": "1332",
+          "name": "Overlord's Platemail",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1332.png",
+          "description": "HP +1,800, PDEF +160, MDEF +80\nExtra HP"
+        }
+      ]
+    }
+  ],
+  "buildsZh": [
+    {
+      "id": "camp-0",
+      "label": "Roaming",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1737",
+          "name": "極影・形昭",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1749.png",
+          "description": "+1200點生命值+7.5%移速\n光環提升輸出"
+        },
+        {
+          "slot": 2,
+          "itemId": "1332",
+          "name": "霸者重裝",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1332.png",
+          "description": "+1800點生命值+160點物防+80點法防\n提高額外生命值"
+        },
+        {
+          "slot": 3,
+          "itemId": "1347",
+          "name": "永夜守護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1347.png",
+          "description": "+210點法防+1000點生命值\n+7.5%移速減少法術傷害"
+        },
+        {
+          "slot": 4,
+          "itemId": "1331",
+          "name": "紅蓮斗篷",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1331.png",
+          "description": "+150點物防+150點法防+1100點生命值\n範圍灼燒重傷"
+        },
+        {
+          "slot": 5,
+          "itemId": "1337",
+          "name": "賢者的庇護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+        },
+        {
+          "slot": 6,
+          "itemId": "1353",
+          "name": "旭日初光",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1353.png",
+          "description": "+210點物防+900點生命值+10%減冷卻時間\n傷害敵人時獲得護盾值"
+        }
+      ]
+    },
+    {
+      "id": "camp-1",
+      "label": "Yariachi",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1724",
+          "name": "近衛・救贖",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1751.png",
+          "description": "+1200點生命值+7.5%移速\n光環強化生存"
+        },
+        {
+          "slot": 2,
+          "itemId": "1353",
+          "name": "旭日初光",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1353.png",
+          "description": "+210點物防+900點生命值+10%減冷卻時間\n傷害敵人時獲得護盾值"
+        },
+        {
+          "slot": 3,
+          "itemId": "1234",
+          "name": "凝冰之息",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1234.png",
+          "description": "+180點法攻+7.5%減冷卻時間+500點生命值\n技能命中減速"
+        },
+        {
+          "slot": 4,
+          "itemId": "12211",
+          "name": "夢魘之牙",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/12211.png",
+          "description": "+240點法攻+7.5%減冷卻時間+7.5%移速\n減少敵人回血"
+        },
+        {
+          "slot": 5,
+          "itemId": "1244",
+          "name": "破繭之衣",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1244.png",
+          "description": "+120點法攻+900點生命值\n生命值轉法穿"
+        },
+        {
+          "slot": 6,
+          "itemId": "1337",
+          "name": "賢者的庇護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+        }
+      ]
+    },
+    {
+      "id": "camp-2",
+      "label": "Roaming 1",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "12211",
+          "name": "夢魘之牙",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/12211.png",
+          "description": "+240點法攻+7.5%減冷卻時間+7.5%移速\n減少敵人回血"
+        },
+        {
+          "slot": 2,
+          "itemId": "1341",
+          "name": "冰霜衝擊",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1341.png",
+          "description": "+150點物防+900點生命值+7.5%冷卻時間+10%韌性\n群體控制"
+        },
+        {
+          "slot": 3,
+          "itemId": "1747",
+          "name": "極影・星泉",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1747.png",
+          "description": "+1200點生命值+7.5%移速\n光環提升輸出"
+        },
+        {
+          "slot": 4,
+          "itemId": "1337",
+          "name": "賢者的庇護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+        },
+        {
+          "slot": 5,
+          "itemId": "1239",
+          "name": "輝月",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1239.png",
+          "description": "+160點法攻+7.5%減冷卻時間+12%法術吸血\n暫時無敵"
+        },
+        {
+          "slot": 6,
+          "itemId": "1127",
+          "name": "名刀・司命",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "+75點攻擊+15%攻速+500點生命值\n保命"
+        }
+      ]
+    },
+    {
+      "id": "camp-3",
+      "label": "Roaming 1",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1423",
+          "name": "冷靜之靴",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1423.png",
+          "description": "+15%減冷卻時間+50點移速\n加快技能冷卻"
+        },
+        {
+          "slot": 2,
+          "itemId": "1725",
+          "name": "近衛・星泉",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1752.png",
+          "description": "+1200點生命值+7.5%移速\n光環強化生存"
+        },
+        {
+          "slot": 3,
+          "itemId": "12211",
+          "name": "夢魘之牙",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/12211.png",
+          "description": "+240點法攻+7.5%減冷卻時間+7.5%移速\n減少敵人回血"
+        },
+        {
+          "slot": 4,
+          "itemId": "1353",
+          "name": "旭日初光",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1353.png",
+          "description": "+210點物防+900點生命值+10%減冷卻時間\n傷害敵人時獲得護盾值"
+        },
+        {
+          "slot": 5,
+          "itemId": "1335",
+          "name": "魔女斗篷",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
+          "description": "+300點法防+1100點生命值\n吸收法術傷害"
+        },
+        {
+          "slot": 6,
+          "itemId": "1332",
+          "name": "霸者重裝",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1332.png",
+          "description": "+1800點生命值+160點物防+80點法防\n提高額外生命值"
+        }
+      ]
     }
   ],
   "arcana": [
-    "Fate"
+    "Lvl 5: Fate",
+    "Lvl 5: Harmony",
+    "Lvl 5: Void"
+  ],
+  "arcanaZh": [
+    "5級：宿命",
+    "5級：調和",
+    "5級：虛空"
   ],
   "spells": [
-    "Flash",
-    "Execute"
+    "Stun"
+  ],
+  "spellsZh": [
+    "暈眩"
   ],
   "counters": [
     "Dian Wei",
@@ -108,386 +591,96 @@
     "Musashi"
   ],
   "tips": [
-    "Yaria is a Easy Support (Roaming) on Honor of Kings Global. Camp HOK ranks them Tier S with 48.0% win rate and 1.1% pick rate as of 2026-06-05.",
-    "Best build path: Crimson Shadow → Boots of Tranquility → Frozen Breath → Ominous Premonition → Succubus Cloak → Overlord's Platemail.",
-    "Run Fate for stats that match Yaria's Support kit. Take Flash & Execute — swap to Purify against heavy CC or Smite when jungling.",
-    "Standard trade: Wandering Beam → Accelerating Blitz → Verdant Protector → weave basic attacks. Weave basic attacks between skill casts for passive value.",
-    "Laning: Help marksman crash wave, then rotate mid for picks. Return before Tyrant if your carry has no escape.",
-    "Teamfight: Peel carry first, then look for pick on out-of-position enemies. Ward Tyrant 30s before spawn.",
-    "Yaria excels into Dian Wei, Dun, Mayene. Avoid blind picking into Dolia, Wukong, Musashi without team peel.",
-    "Yaria is a Tier S staple in high-elo (Diamond+) on the international server — worth mastering for climb. Ban rate 1.3% — expect Yaria to be removed in tryhard lobbies; have a backup in the same role. Below 49% global WR — high-rank players often avoid unless compensating for team comp."
+    "Yaria (Support): Tier S — 48.48% WR (Camp HOK).",
+    "Lane: Roaming.",
+    "Build: Crimson Shadow - Radiance, Overlord's Platemail, Longnight Guardian."
+  ],
+  "tipsZh": [
+    "瑤（遊走）：梯度 S，勝率 48.48%（Camp HOK）。",
+    "出裝：極影・形昭、霸者重裝、永夜守護."
   ],
   "patchHistory": [
     {
-      "version": "Live meta",
-      "change": "Camp HOK — WR 48.0%, pick 1.1%, ban 1.3%, tier S."
+      "seasonId": "7",
+      "seasonName": "S7",
+      "versionName": "20241212",
+      "publishedAt": "2024-12-12T01:44:36Z",
+      "isCurrent": false,
+      "tag": "Stat Buffs",
+      "change": "Passive's CD reduces with level, adjusted shield multiplier",
+      "detail": "In the mid to late game, most heroes' skills get shorter cooldowns and higher DPS. The cooldown of Yaria's passive feels quite long in comparison, so we've reduced its cooldown per hero level. The effect of Yaria's shield will now also vary based on the target.",
+      "version": "S7"
+    }
+  ],
+  "patchHistoryZh": [
+    {
+      "seasonId": "7",
+      "seasonName": "S7",
+      "versionName": "20241212",
+      "publishedAt": "2024-12-12T01:44:36Z",
+      "isCurrent": false,
+      "tag": "數值增強",
+      "change": "被動冷卻隨等級成長而降低，調整護盾係數",
+      "detail": "「相較於中後期對手技能冷卻的縮減和傷害的提高，瑤的被動技能觸發間隔顯得有點太長，因此我們調整了隨等級成長的冷卻時間；同時瑤的護盾也會隨著保護的目標而發生改變。」",
+      "version": "S7"
     },
     {
-      "version": "Matchups",
-      "change": "Strong into Dian Wei, Dun, Mayene · Weak into Dolia, Wukong, Musashi."
-    },
-    {
-      "version": "High rank",
-      "change": "Yaria is a Tier S staple in high-elo (Diamond+) on the international server — worth mastering for climb. Ban rate 1.3% — expect Yaria to be removed in tryhard lobbies; have a backup in the same role. Below 49% global WR — high-rank players often avoid unless compensating for team comp."
+      "seasonId": "3",
+      "seasonName": "S3",
+      "versionName": "20231122",
+      "publishedAt": "2023-11-22T12:01:46Z",
+      "isCurrent": false,
+      "tag": "數值削弱",
+      "change": "Reduced the shield granted by her Ultimate.",
+      "detail": "At the beginning of the new season, we made certain adjustments to support equipment that have, in most cases, enhanced the strength of support-type heroes. With the introduction of certain support equipment in the update, Yaria's Ultimate shield has become even harder to wear down. Very often, together with the teammate she is attached to, Yaria has been able to create a whole that is far greater than the sum of its parts. We hope that with this slight adjustment to her Ultimate's stats, we will see fewer lopsided fights as a result of this issue.",
+      "version": "S3"
     }
   ],
   "faqs": [
     {
       "id": "faq-good-season",
-      "question": "Is Yaria good in the current meta?",
-      "answer": "Yaria is Tier S Support with 48.0% win rate, 1.1% pick rate, and 1.3% ban rate on Honor of Kings Global (Camp HOK, 2026-06-05). Strong meta pick for ranked."
+      "question": "Is Yaria good in current season?",
+      "answer": "Yaria is Tier S Support with 48.48% win rate, 1.15% pick rate, and 1.21% ban rate (Camp HOK international)."
     },
     {
       "id": "faq-best-build",
       "question": "What is the best Yaria build?",
-      "answer": "Core item path: Crimson Shadow, Boots of Tranquility, Frozen Breath, Ominous Premonition, Succubus Cloak, Overlord's Platemail. Run Fate arcana with Flash & Execute. Switch to alternate build presets on this page for jungle, clash, or late-game setups."
+      "answer": "Recommended: Crimson Shadow - Radiance, Overlord's Platemail, Longnight Guardian, Blazing Cape, Sage's Sanctuary, Dawnlight."
     },
     {
       "id": "faq-counter",
       "question": "How to counter Yaria?",
-      "answer": "Pick Dolia, Wukong, Musashi into Yaria. Deny Roaming resources early and force fights before Yaria completes core items. Yaria struggles when the enemy can out-range or out-sustain them."
+      "answer": "Pick Dolia, Wukong, Musashi. Strong into Dian Wei, Dun, Mayene."
+    }
+  ],
+  "faqsZh": [
+    {
+      "id": "faq-good-season",
+      "question": "瑤 這版本適合上分嗎？",
+      "answer": "瑤 為 S 梯度，勝率 48.48%、選取 1.15%、禁用 1.21%（Camp HOK 國際服）。"
     },
     {
-      "id": "faq-strong-into",
-      "question": "Who does Yaria counter?",
-      "answer": "Yaria is strong into Dian Wei, Dun, Mayene according to HoKStats matchup data and role matchups on the global server. Draft Yaria when the enemy relies on these heroes in the Roaming lane."
+      "id": "faq-best-build",
+      "question": "瑤 出裝怎麼搭配？",
+      "answer": "推薦：極影・形昭、霸者重裝、永夜守護、紅蓮斗篷、賢者的庇護、旭日初光."
     },
     {
-      "id": "faq-high-rank",
-      "question": "Is Yaria good in high rank / Diamond+?",
-      "answer": "Yaria is a Tier S staple in high-elo (Diamond+) on the international server — worth mastering for climb. Ban rate 1.3% — expect Yaria to be removed in tryhard lobbies; have a backup in the same role. Below 49% global WR — high-rank players often avoid unless compensating for team comp."
-    },
-    {
-      "id": "faq-lane",
-      "question": "What lane should Yaria play?",
-      "answer": "Yaria is tagged Roaming in Camp export (Support). Help marksman crash wave, then rotate mid for picks. Return before Tyrant if your carry has no escape."
-    },
-    {
-      "id": "faq-arcana",
-      "question": "Best arcana and spells for Yaria?",
-      "answer": "Recommended: Fate arcana. Battle spell: Flash & Execute. Adjust Purify/Execute based on enemy dive and jungle need."
-    },
-    {
-      "id": "faq-vs-peer",
-      "question": "Yaria or Dolia — which is better?",
-      "answer": "Yaria vs Dolia (Support, Tier S): Dolia is 1.8% pick / 46.1% WR. Yaria has +2.0% WR vs Dolia in Camp data. Choose Yaria when you need Roaming identity; choose Dolia for Roaming comfort."
-    },
-    {
-      "id": "faq-ban",
-      "question": "Should I ban Yaria?",
-      "answer": "Yes in tryhard queues — 1.3% ban rate. Deny if enemy first-picks Support."
+      "id": "faq-counter",
+      "question": "怎麼克制 瑤？",
+      "answer": "可選 Dolia、Wukong、Musashi。瑤 克制 Dian Wei、Dun、Mayene。"
     }
   ],
   "metaAnalysis": [
-    "Yaria — 48.0% WR, 1.1% pick, 1.3% ban (Camp HOK 2026-06-05).",
-    "Tier S Support · Roaming · difficulty Easy.",
-    "Yaria is a Tier S staple in high-elo (Diamond+) on the international server — worth mastering for climb. Ban rate 1.3% — expect Yaria to be removed in tryhard lobbies; have a backup in the same role. Below 49% global WR — high-rank players often avoid unless compensating for team comp.",
-    "Matchups: strong into Dian Wei, Dun, Mayene; weak into Dolia, Wukong, Musashi.",
-    "Yaria vs Dolia (Support, Tier S): Dolia is 1.8% pick / 46.1% WR. Yaria has +2.0% WR vs Dolia in Camp data. Choose Yaria when you need Roaming identity; choose Dolia for Roaming comfort.",
-    "Yaria vs Cai Yan (Support, Tier S): Cai Yan is 1.3% pick / 50.3% WR. Cai Yan wins 2.3% more often globally. Choose Yaria when you need Roaming identity; choose Cai Yan for Roaming comfort.",
-    "Draft tip: first-pick or ban priority in ranked."
+    "Yaria win rate 48.48% (Camp HOK, 2026-06-07).",
+    "Pick rate 1.15%.",
+    "Ban rate 1.21%.",
+    "Counters: Dian Wei, Dun, Mayene. Weak into: Dolia, Wukong, Musashi."
   ],
-  "builds": [
-    {
-      "id": "recommended",
-      "label": "Recommended",
-      "position": null,
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1711",
-          "name": "Crimson Shadow",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1711.jpg",
-          "description": "DPS aura"
-        },
-        {
-          "slot": 2,
-          "itemId": "1423",
-          "name": "Boots of Tranquility",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1423.jpg",
-          "description": "Reduces Skill CD"
-        },
-        {
-          "slot": 3,
-          "itemId": "1234",
-          "name": "Frozen Breath",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1234.jpg",
-          "description": "Slows on hit"
-        },
-        {
-          "slot": 4,
-          "itemId": "1333",
-          "name": "Ominous Premonition",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1333.jpg",
-          "description": "Slows attackers"
-        },
-        {
-          "slot": 5,
-          "itemId": "1335",
-          "name": "Succubus Cloak",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1335.jpg",
-          "description": "Negates magical damage"
-        },
-        {
-          "slot": 6,
-          "itemId": "1332",
-          "name": "Overlord's Platemail",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1332.jpg",
-          "description": "Extra Health"
-        }
-      ]
-    },
-    {
-      "id": "roaming",
-      "label": "Roaming",
-      "position": "Position 5",
-      "lane": "Roaming",
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1701",
-          "name": "Knowledge Gem",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1701.jpg",
-          "description": "Extra Gold & EXP"
-        },
-        {
-          "slot": 2,
-          "itemId": "1423",
-          "name": "Boots of Tranquility",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1423.jpg",
-          "description": "Reduces Skill CD"
-        },
-        {
-          "slot": 3,
-          "itemId": "1737",
-          "name": "Crimson Shadow - Radiance",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1737.jpg",
-          "description": "Area damage & vision"
-        },
-        {
-          "slot": 4,
-          "itemId": "1332",
-          "name": "Overlord's Platemail",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1332.jpg",
-          "description": "Extra Health"
-        },
-        {
-          "slot": 5,
-          "itemId": "1347",
-          "name": "Longnight Guardian",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1347.jpg",
-          "description": "Resists burst damage"
-        },
-        {
-          "slot": 6,
-          "itemId": "1331",
-          "name": "Blazing Cape",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1331.jpg",
-          "description": "Burns nearby enemies"
-        }
-      ]
-    },
-    {
-      "id": "roaming-1",
-      "label": "Roaming 1",
-      "position": "Position 5",
-      "lane": "Roaming",
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1721",
-          "name": "Crimson Shadow - Redemption",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1721.jpg",
-          "description": "Group shield"
-        },
-        {
-          "slot": 2,
-          "itemId": "1426",
-          "name": "Boots of Deftness",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1426.jpg",
-          "description": "Extra Movement Speed"
-        },
-        {
-          "slot": 3,
-          "itemId": "1353",
-          "name": "Dawnlight",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1353.jpg",
-          "description": "Shields on dealing damage"
-        },
-        {
-          "slot": 4,
-          "itemId": "1234",
-          "name": "Frozen Breath",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1234.jpg",
-          "description": "Slows on hit"
-        },
-        {
-          "slot": 5,
-          "itemId": "12211",
-          "name": "Venomous Staff",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/12211.jpg",
-          "description": "Lowers Health regen"
-        },
-        {
-          "slot": 6,
-          "itemId": "1341",
-          "name": "Frigid Charge",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1341.jpg",
-          "description": "Group CC"
-        }
-      ]
-    },
-    {
-      "id": "roaming-1",
-      "label": "Roaming 1",
-      "position": "Position 5",
-      "lane": "Roaming",
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1701",
-          "name": "Knowledge Gem",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1701.jpg",
-          "description": "Extra Gold & EXP"
-        },
-        {
-          "slot": 2,
-          "itemId": "1423",
-          "name": "Boots of Tranquility",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1423.jpg",
-          "description": "Reduces Skill CD"
-        },
-        {
-          "slot": 3,
-          "itemId": "1725",
-          "name": "Guardian - Starspring",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1725.jpg",
-          "description": "Restores teammate Health & Mana"
-        },
-        {
-          "slot": 4,
-          "itemId": "12211",
-          "name": "Venomous Staff",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/12211.jpg",
-          "description": "Lowers Health regen"
-        },
-        {
-          "slot": 5,
-          "itemId": "1353",
-          "name": "Dawnlight",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1353.jpg",
-          "description": "Shields on dealing damage"
-        },
-        {
-          "slot": 6,
-          "itemId": "1335",
-          "name": "Succubus Cloak",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1335.jpg",
-          "description": "Negates magical damage"
-        }
-      ]
-    },
-    {
-      "id": "yariachi",
-      "label": "Yariachi",
-      "position": "Position 5",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1701",
-          "name": "Knowledge Gem",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1701.jpg",
-          "description": "Extra Gold & EXP"
-        },
-        {
-          "slot": 2,
-          "itemId": "1424",
-          "name": "Boots of the Arcane",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1424.jpg",
-          "description": "Magical Pierce"
-        },
-        {
-          "slot": 3,
-          "itemId": "1714",
-          "name": "Guardian",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1714.jpg",
-          "description": "Survivability aura"
-        },
-        {
-          "slot": 4,
-          "itemId": "1724",
-          "name": "Guardian - Redemption",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1724.jpg",
-          "description": "Group shield"
-        },
-        {
-          "slot": 5,
-          "itemId": "1353",
-          "name": "Dawnlight",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1353.jpg",
-          "description": "Shields on dealing damage"
-        },
-        {
-          "slot": 6,
-          "itemId": "1234",
-          "name": "Frozen Breath",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1234.jpg",
-          "description": "Slows on hit"
-        }
-      ]
-    },
-    {
-      "id": "辉夜yaria",
-      "label": "辉夜yaria",
-      "position": "Position 5",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1701",
-          "name": "Knowledge Gem",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1701.jpg",
-          "description": "Extra Gold & EXP"
-        },
-        {
-          "slot": 2,
-          "itemId": "1424",
-          "name": "Boots of the Arcane",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1424.jpg",
-          "description": "Magical Pierce"
-        },
-        {
-          "slot": 3,
-          "itemId": "1711",
-          "name": "Crimson Shadow",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1711.jpg",
-          "description": "DPS aura"
-        },
-        {
-          "slot": 4,
-          "itemId": "1721",
-          "name": "Crimson Shadow - Redemption",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1721.jpg",
-          "description": "Group shield"
-        },
-        {
-          "slot": 5,
-          "itemId": "1353",
-          "name": "Dawnlight",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1353.jpg",
-          "description": "Shields on dealing damage"
-        },
-        {
-          "slot": 6,
-          "itemId": "1234",
-          "name": "Frozen Breath",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1234.jpg",
-          "description": "Slows on hit"
-        }
-      ]
-    }
+  "metaAnalysisZh": [
+    "瑤 勝率 48.48%（Camp HOK，2026-06-07）",
+    "選取率 1.15%",
+    "禁用率 1.21%",
+    "克制：Dian Wei、Dun、Mayene；被克制：Dolia、Wukong、Musashi"
   ],
   "guide": {
     "overview": "Yaria is a Easy Support (Roaming) on Honor of Kings Global. Camp HOK ranks them Tier S with 48.0% win rate and 1.1% pick rate as of 2026-06-05.",

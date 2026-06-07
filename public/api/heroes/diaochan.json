@@ -2,99 +2,583 @@
   "id": "diaochan",
   "slug": "diaochan",
   "name": "Diaochan",
+  "nameZh": "貂蟬",
   "role": "Mage",
   "roles": "Mage",
+  "rolesZh": "法師",
   "lane": "Mid Lane",
+  "laneZh": "中路",
   "difficulty": "Medium",
   "tier": "A",
-  "winRate": 48.22,
+  "winRate": 48.36,
   "pickRate": 0.84,
   "banRate": 0.1,
-  "rank": 102,
+  "rank": 100,
   "avatar": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/qFBebEbk.png",
   "avatarFallback": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/141/141.jpg",
+  "heroCover": "https://camp.honorofkings.com/social/game/src/image_hero_cover_1275*718/0d0Nx5pH.jpg",
   "tencentId": 141,
-  "dataSource": "Camp HOK + HoKStats.gg (intl)",
-  "dataUpdated": "2026-06-05",
+  "dataSource": "Camp HOK bilingual (primary)",
+  "dataUpdated": "2026-06-07",
   "skills": [
     {
       "slot": "passive",
       "name": "Explosion of Fragrance",
-      "description": "Applies stacks to the opponent. At max stacks, inflicts AoE damage and slow while restoring Health.",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/141/14100.png",
-      "cooldown": null
+      "description": "Applies stacks to the opponent. At max stacks, deals area damage and slows enemies, while recovering Health.",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/14100.png",
+      "cooldown": "1s"
     },
     {
       "slot": "skill1",
       "name": "Returning Lotus",
-      "description": "Sends out a lotus in a direction that returns to her when it reaches its max distance, damaging enemies in its path.",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/141/14110.png",
-      "cooldown": null
+      "description": "Sends out a lotus in the target direction that returns to her when it reaches its max distance, damaging enemies in its path.",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/14110.png",
+      "cooldown": "5s"
     },
     {
       "slot": "skill2",
       "name": "Petals in the Wind",
-      "description": "Dashes in the target direction, during which she is untargetable. Launches orbs to attack nearby enemies, dealing damage and reducing the cooldown of Skill 2.",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/141/14120.png",
-      "cooldown": null
+      "description": "Dashes in the target direction, becoming untargetable during the dash. Releases petals to attack nearby enemies, dealing damage and reducing the cooldown of Skill 2.",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/14120.png",
+      "cooldown": "10s"
     },
     {
       "slot": "ultimate",
       "name": "Flowery Potential",
-      "description": "Diaochan conjures up a magic circle around her, which lasts for a period oftime. While she is within the circle, the cooldowns of Skill 1 and Skill 2 aresped up. The circle deals damage to enemies within it when it is generatedand when it expires.",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/141/14130.png",
-      "cooldown": null
+      "description": "Conjures up a magic circle around her, which lasts for a period of time. While she is within the circle, the cooldowns of Skill 1 and Skill 2 are sped up. The circle deals damage to enemies within it when it is conjured and when it expires.",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/14130.png",
+      "cooldown": "40s"
+    }
+  ],
+  "skillsZh": [
+    {
+      "slot": "passive",
+      "name": "語・花印",
+      "description": "為對手疊層，滿層後造成範圍傷害和減速，並回復自身生命值。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/14100.png",
+      "cooldown": "1s"
+    },
+    {
+      "slot": "skill1",
+      "name": "落・紅雨",
+      "description": "朝指定方向發射花球，達到最遠距離後返回貂蟬所在位置，對沿途敵人造成傷害。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/14110.png",
+      "cooldown": "5s"
+    },
+    {
+      "slot": "skill2",
+      "name": "緣・心結",
+      "description": "朝指定方向突進，期間無法鎖定為目標，發射花球攻擊附近敵人，造成傷害並減少2技能冷卻。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/14120.png",
+      "cooldown": "10s"
+    },
+    {
+      "slot": "ultimate",
+      "name": "綻・風華",
+      "description": "在原地生成法陣一段時間，貂蟬位於法陣範圍內可加快1技能和2技能冷卻。法陣生成和結束時，對範圍內敵人造成傷害。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/14130.png",
+      "cooldown": "40s"
     }
   ],
   "build": [
     {
       "slot": 1,
-      "itemId": "1240",
-      "name": "Insatiable Tome",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1240.jpg",
-      "description": "Magical Lifesteal"
+      "itemId": "1423",
+      "name": "Boots of Tranquility",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1423.png",
+      "description": "CDR +15%, MSPD +50\nSpeeds up skill cooldown"
     },
     {
       "slot": 2,
-      "itemId": "1423",
-      "name": "Boots of Tranquility",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1423.jpg",
-      "description": "Reduces Skill CD"
+      "itemId": "1240",
+      "name": "Insatiable Tome",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1240.png",
+      "description": "MATK +160, Magical Lifesteal +24%, HP +750\nLifesteal increases CDR"
     },
     {
       "slot": 3,
-      "itemId": "1226",
-      "name": "Holy Grail",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1226.jpg",
-      "description": "Rapid Health & Mana Regen"
+      "itemId": "1232",
+      "name": "Savant's Wrath",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1232.png",
+      "description": "MATK +210\nGreatly boosts MATK"
     },
     {
       "slot": 4,
-      "itemId": "1237",
-      "name": "Augur's Word",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1237.jpg",
-      "description": "Offense & defense"
+      "itemId": "1331",
+      "name": "Blazing Cape",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1331.png",
+      "description": "PDEF +150, MDEF +150, HP +1,100\nArea burn & imperil"
     },
     {
       "slot": 5,
       "itemId": "1244",
       "name": "Breakthrough Robe",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1244.jpg",
-      "description": "Converts Health into M. Pierce"
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1244.png",
+      "description": "MATK +120, HP +900\nConverts HP into Magical Pierce"
     },
     {
       "slot": 6,
+      "itemId": "1337",
+      "name": "Sage's Sanctuary",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+      "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
+    }
+  ],
+  "buildZh": [
+    {
+      "slot": 1,
+      "itemId": "1423",
+      "name": "冷靜之靴",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1423.png",
+      "description": "+15%減冷卻時間+50點移速\n加快技能冷卻"
+    },
+    {
+      "slot": 2,
+      "itemId": "1240",
+      "name": "噬神之書",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1240.png",
+      "description": "+160點法攻+24%法術吸血+750點生命值 吸血拉長冷卻時間"
+    },
+    {
+      "slot": 3,
       "itemId": "1232",
-      "name": "Savant's Wrath",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1232.jpg",
-      "description": "Greatly boosts MATK"
+      "name": "博學者之怒",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1232.png",
+      "description": "+210點法術攻擊\n大幅提升法強"
+    },
+    {
+      "slot": 4,
+      "itemId": "1331",
+      "name": "紅蓮斗篷",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1331.png",
+      "description": "+150點物防+150點法防+1100點生命值\n範圍灼燒重傷"
+    },
+    {
+      "slot": 5,
+      "itemId": "1244",
+      "name": "破繭之衣",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1244.png",
+      "description": "+120點法攻+900點生命值\n生命值轉法穿"
+    },
+    {
+      "slot": 6,
+      "itemId": "1337",
+      "name": "賢者的庇護",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+      "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+    }
+  ],
+  "builds": [
+    {
+      "id": "camp-0",
+      "label": "MID IMPLACÁVEL",
+      "lane": "Mid",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1423",
+          "name": "Boots of Tranquility",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1423.png",
+          "description": "CDR +15%, MSPD +50\nSpeeds up skill cooldown"
+        },
+        {
+          "slot": 2,
+          "itemId": "1240",
+          "name": "Insatiable Tome",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1240.png",
+          "description": "MATK +160, Magical Lifesteal +24%, HP +750\nLifesteal increases CDR"
+        },
+        {
+          "slot": 3,
+          "itemId": "1232",
+          "name": "Savant's Wrath",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1232.png",
+          "description": "MATK +210\nGreatly boosts MATK"
+        },
+        {
+          "slot": 4,
+          "itemId": "1331",
+          "name": "Blazing Cape",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1331.png",
+          "description": "PDEF +150, MDEF +150, HP +1,100\nArea burn & imperil"
+        },
+        {
+          "slot": 5,
+          "itemId": "1244",
+          "name": "Breakthrough Robe",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1244.png",
+          "description": "MATK +120, HP +900\nConverts HP into Magical Pierce"
+        },
+        {
+          "slot": 6,
+          "itemId": "1337",
+          "name": "Sage's Sanctuary",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
+        }
+      ]
+    },
+    {
+      "id": "camp-1",
+      "label": "Clash",
+      "lane": "Top",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1727",
+          "name": "Twilight Stream",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1727.png",
+          "description": "MATK +160, CDR +10%, Max HP +500\nBoosts Magical Pierce"
+        },
+        {
+          "slot": 2,
+          "itemId": "1422",
+          "name": "Boots of Resistance",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1422.png",
+          "description": "MDEF +100, PDEF +50, MSPD +50\nShortens crowd control"
+        },
+        {
+          "slot": 3,
+          "itemId": "1239",
+          "name": "Splendor",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1239.png",
+          "description": "MATK +160, CDR +7.5%, Magical Lifesteal +12%\nTemp. invincibility"
+        },
+        {
+          "slot": 4,
+          "itemId": "1237",
+          "name": "Augur's Word",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1237.png",
+          "description": "MATK +140, MP +450, HP +900\nOffense & defense"
+        },
+        {
+          "slot": 5,
+          "itemId": "1232",
+          "name": "Savant's Wrath",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1232.png",
+          "description": "MATK +210\nGreatly boosts MATK"
+        },
+        {
+          "slot": 6,
+          "itemId": "1242",
+          "name": "Enigma - Moon Goddess",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1242.png",
+          "description": "MATK +160, CDR +7.5%, Magical Lifesteal +12%\nTemp. invincibility"
+        }
+      ]
+    },
+    {
+      "id": "camp-2",
+      "label": "Preset",
+      "lane": "Top",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1347",
+          "name": "Longnight Guardian",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1347.png",
+          "description": "MDEF +210, HP +1,000, MSPD +7.5%\nReduces magical damage"
+        },
+        {
+          "slot": 2,
+          "itemId": "1334",
+          "name": "Eye of the Phoenix",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1334.png",
+          "description": "MDEF +180, PDEF +90, HP +1,350\nBoosts HP Regen"
+        },
+        {
+          "slot": 3,
+          "itemId": "1337",
+          "name": "Sage's Sanctuary",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
+        },
+        {
+          "slot": 4,
+          "itemId": "12211",
+          "name": "Venomous Staff",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/12211.png",
+          "description": "MATK +240, CDR +7.5%, MSPD +7.5%\nLowers Health Regen"
+        },
+        {
+          "slot": 5,
+          "itemId": "1239",
+          "name": "Splendor",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1239.png",
+          "description": "MATK +160, CDR +7.5%, Magical Lifesteal +12%\nTemp. invincibility"
+        },
+        {
+          "slot": 6,
+          "itemId": "1127",
+          "name": "Destiny",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
+        }
+      ]
+    },
+    {
+      "id": "camp-3",
+      "label": "Popular",
+      "lane": "Top",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "12211",
+          "name": "Venomous Staff",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/12211.png",
+          "description": "MATK +240, CDR +7.5%, MSPD +7.5%\nLowers Health Regen"
+        },
+        {
+          "slot": 2,
+          "itemId": "1333",
+          "name": "Ominous Premonition",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1333.png",
+          "description": "PDEF +300, HP +1,200\nSlows attackers"
+        },
+        {
+          "slot": 3,
+          "itemId": "1240",
+          "name": "Insatiable Tome",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1240.png",
+          "description": "MATK +160, Magical Lifesteal +24%, HP +750\nLifesteal increases CDR"
+        },
+        {
+          "slot": 4,
+          "itemId": "1334",
+          "name": "Eye of the Phoenix",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1334.png",
+          "description": "MDEF +180, PDEF +90, HP +1,350\nBoosts HP Regen"
+        },
+        {
+          "slot": 5,
+          "itemId": "1227",
+          "name": "Ardent Dominion",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1227.png",
+          "description": "MATK +150, Magical Lifesteal +12%, MSPD +7.5%\nCleanse and shield at low HP"
+        },
+        {
+          "slot": 6,
+          "itemId": "1337",
+          "name": "Sage's Sanctuary",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
+        }
+      ]
+    }
+  ],
+  "buildsZh": [
+    {
+      "id": "camp-0",
+      "label": "MID IMPLACÁVEL",
+      "lane": "Mid",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1423",
+          "name": "冷靜之靴",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1423.png",
+          "description": "+15%減冷卻時間+50點移速\n加快技能冷卻"
+        },
+        {
+          "slot": 2,
+          "itemId": "1240",
+          "name": "噬神之書",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1240.png",
+          "description": "+160點法攻+24%法術吸血+750點生命值 吸血拉長冷卻時間"
+        },
+        {
+          "slot": 3,
+          "itemId": "1232",
+          "name": "博學者之怒",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1232.png",
+          "description": "+210點法術攻擊\n大幅提升法強"
+        },
+        {
+          "slot": 4,
+          "itemId": "1331",
+          "name": "紅蓮斗篷",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1331.png",
+          "description": "+150點物防+150點法防+1100點生命值\n範圍灼燒重傷"
+        },
+        {
+          "slot": 5,
+          "itemId": "1244",
+          "name": "破繭之衣",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1244.png",
+          "description": "+120點法攻+900點生命值\n生命值轉法穿"
+        },
+        {
+          "slot": 6,
+          "itemId": "1337",
+          "name": "賢者的庇護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+        }
+      ]
+    },
+    {
+      "id": "camp-1",
+      "label": "Clash",
+      "lane": "Top",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1727",
+          "name": "日暮之流",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1727.png",
+          "description": "+160點法攻+10%減冷卻時間+500點最大生命值\n提升法術穿透"
+        },
+        {
+          "slot": 2,
+          "itemId": "1422",
+          "name": "抵抗之靴",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1422.png",
+          "description": "+100點法防+50點物防+50點移速\n減少被控時間"
+        },
+        {
+          "slot": 3,
+          "itemId": "1239",
+          "name": "輝月",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1239.png",
+          "description": "+160點法攻+7.5%減冷卻時間+12%法術吸血\n暫時無敵"
+        },
+        {
+          "slot": 4,
+          "itemId": "1237",
+          "name": "時之預言",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1237.png",
+          "description": "+140點法攻+450法力值+900點生命值……\n攻防兼備"
+        },
+        {
+          "slot": 5,
+          "itemId": "1232",
+          "name": "博學者之怒",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1232.png",
+          "description": "+210點法術攻擊\n大幅提升法強"
+        },
+        {
+          "slot": 6,
+          "itemId": "1242",
+          "name": "難知・月神",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1242.png",
+          "description": "+160點法攻 +7.5%減冷卻時間\n+12%法術吸血暫時無敵"
+        }
+      ]
+    },
+    {
+      "id": "camp-2",
+      "label": "Preset",
+      "lane": "Top",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1347",
+          "name": "永夜守護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1347.png",
+          "description": "+210點法防+1000點生命值\n+7.5%移速減少法術傷害"
+        },
+        {
+          "slot": 2,
+          "itemId": "1334",
+          "name": "不死鳥之眼",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1334.png",
+          "description": "+180點法防+90點物防+1350點生命值……\n增加回血效果"
+        },
+        {
+          "slot": 3,
+          "itemId": "1337",
+          "name": "賢者的庇護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+        },
+        {
+          "slot": 4,
+          "itemId": "12211",
+          "name": "夢魘之牙",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/12211.png",
+          "description": "+240點法攻+7.5%減冷卻時間+7.5%移速\n減少敵人回血"
+        },
+        {
+          "slot": 5,
+          "itemId": "1239",
+          "name": "輝月",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1239.png",
+          "description": "+160點法攻+7.5%減冷卻時間+12%法術吸血\n暫時無敵"
+        },
+        {
+          "slot": 6,
+          "itemId": "1127",
+          "name": "名刀・司命",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "+75點攻擊+15%攻速+500點生命值\n保命"
+        }
+      ]
+    },
+    {
+      "id": "camp-3",
+      "label": "Popular",
+      "lane": "Top",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "12211",
+          "name": "夢魘之牙",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/12211.png",
+          "description": "+240點法攻+7.5%減冷卻時間+7.5%移速\n減少敵人回血"
+        },
+        {
+          "slot": 2,
+          "itemId": "1333",
+          "name": "不祥徵兆",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1333.png",
+          "description": "+300點物防+1200點生命值\n受擊時將敵人減速"
+        },
+        {
+          "slot": 3,
+          "itemId": "1240",
+          "name": "噬神之書",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1240.png",
+          "description": "+160點法攻+24%法術吸血+750點生命值 吸血拉長冷卻時間"
+        },
+        {
+          "slot": 4,
+          "itemId": "1334",
+          "name": "不死鳥之眼",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1334.png",
+          "description": "+180點法防+90點物防+1350點生命值……\n增加回血效果"
+        },
+        {
+          "slot": 5,
+          "itemId": "1227",
+          "name": "熾熱支配",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1227.png",
+          "description": "+150點法攻+12%法術吸血+7.5%移速\n殘血解控加盾"
+        },
+        {
+          "slot": 6,
+          "itemId": "1337",
+          "name": "賢者的庇護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+        }
+      ]
     }
   ],
   "arcana": [
-    "Saint"
+    "Lvl 5: Saint",
+    "Lvl 5: Reincarnation",
+    "Lvl 5: Avarice"
+  ],
+  "arcanaZh": [
+    "5級：聖人",
+    "5級：輪迴",
+    "5級：貪婪"
   ],
   "spells": [
-    "Flash"
+    "Teleport"
+  ],
+  "spellsZh": [
+    "傳送"
   ],
   "counters": [
     "Luna",
@@ -105,586 +589,217 @@
     "Mulan"
   ],
   "tips": [
-    "Diaochan is a Medium Mage (Mid Lane) on Honor of Kings Global. Camp HOK ranks them Tier A with 48.2% win rate and 0.8% pick rate as of 2026-06-05.",
-    "Best build path: Insatiable Tome → Boots of Tranquility → Holy Grail → Augur's Word → Breakthrough Robe → Savant's Wrath.",
-    "Run Saint for stats that match Diaochan's Mage kit. Take Flash — swap to Purify against heavy CC or Smite when jungling.",
-    "Standard trade: Returning Lotus → Petals in the Wind → Flowery Potential → weave basic attacks. Weave basic attacks between skill casts for passive value.",
-    "Laning: Control first wave without taking free poke. Roam after pushing wave 2–4 to side lanes with your jungler.",
-    "Teamfight: Poke from max range before objective. Save hard CC for enemy dive or your carry peel window.",
-    "Diaochan excels into Luna, Zhang Fei. Avoid blind picking into Liang, Mulan without team peel.",
-    "Diaochan is a viable Tier A pick in high rank with 48.2% win rate — strong in one-trick hands or as a counter-pick. Pick rate 0.8% — frequently seen in ranked; learn the matchup even if you do not main Diaochan. Below 49% global WR — high-rank players often avoid unless compensating for team comp."
+    "Diaochan (Mage): Tier A — 48.36% WR (Camp HOK).",
+    "Lane: Mid Lane.",
+    "Build: Boots of Tranquility, Insatiable Tome, Savant's Wrath."
+  ],
+  "tipsZh": [
+    "貂蟬（中路）：梯度 A，勝率 48.36%（Camp HOK）。",
+    "出裝：冷靜之靴、噬神之書、博學者之怒."
   ],
   "patchHistory": [
     {
-      "version": "Live meta",
-      "change": "Camp HOK — WR 48.2%, pick 0.8%, ban 0.1%, tier A."
+      "seasonId": "13",
+      "seasonName": "S13",
+      "versionName": "2026/02/05",
+      "publishedAt": "2026-02-05T01:00:00Z",
+      "isCurrent": false,
+      "tag": "Stat Buffs",
+      "change": "Increased skill damage and recovery",
+      "detail": "",
+      "version": "S13"
     },
     {
-      "version": "Matchups",
-      "change": "Strong into Luna, Zhang Fei · Weak into Liang, Mulan."
+      "seasonId": "12",
+      "seasonName": "S12",
+      "versionName": "20250924",
+      "publishedAt": "2025-09-24T01:00:00Z",
+      "isCurrent": false,
+      "tag": "Stat Buffs",
+      "change": "Increased Skill Damage",
+      "detail": "",
+      "version": "S12"
     },
     {
-      "version": "High rank",
-      "change": "Diaochan is a viable Tier A pick in high rank with 48.2% win rate — strong in one-trick hands or as a counter-pick. Pick rate 0.8% — frequently seen in ranked; learn the matchup even if you do not main Diaochan. Below 49% global WR — high-rank players often avoid unless compensating for team comp."
+      "seasonId": "10",
+      "seasonName": "S10",
+      "versionName": "20250612",
+      "publishedAt": "2025-06-12T02:00:00Z",
+      "isCurrent": false,
+      "tag": "Stat Nerfs",
+      "change": "Cooldown Mechanic Adjustments",
+      "detail": "",
+      "version": "S10"
+    },
+    {
+      "seasonId": "9",
+      "seasonName": "S9",
+      "versionName": "20250320",
+      "publishedAt": "2025-03-20T01:53:54Z",
+      "isCurrent": false,
+      "tag": "Stat Nerfs",
+      "change": "Stat Nerfs",
+      "detail": "",
+      "version": "S9"
+    },
+    {
+      "seasonId": "7",
+      "seasonName": "S7",
+      "versionName": "20241128",
+      "publishedAt": "2024-11-28T01:46:48Z",
+      "isCurrent": false,
+      "tag": "Stat Buffs",
+      "change": "Enhanced Base Stats",
+      "detail": "\"Diaochan is one of only a few mages who have to get up close and personal with her enemies. This leaves her more vulnerable to attacks, so we've enhanced her base stats in order to help her shine.\"",
+      "version": "S7"
+    },
+    {
+      "seasonId": "7",
+      "seasonName": "S7",
+      "versionName": "20240925",
+      "publishedAt": "2024-09-25T03:24:02Z",
+      "isCurrent": false,
+      "tag": "Mechanics Changes",
+      "change": "Made cooldown reduction for Skill 2 smoother.",
+      "detail": "\"Diaochan's Skill 2 provides a significant cooldown reduction when hitting enemies, but it can be very frustrating when a miss disrupts follow-up combos.  In order to alleviate this, we've made the cooldown reduction mechanism more continuous.\"",
+      "version": "S7"
+    },
+    {
+      "seasonId": "5",
+      "seasonName": "S5",
+      "versionName": "20240410",
+      "publishedAt": "2024-04-10T15:15:27Z",
+      "isCurrent": false,
+      "tag": "Stat Nerfs",
+      "change": "Reduced Health per level.",
+      "detail": "Reduced Health per level.\nDiaochan is getting a lot of opportunities to farm, so she's reaching peak power very quickly.With the right equipment, she's very hard to counter.As such, we're reducing her base Health to give her a smaller margin of error.",
+      "version": "S5"
+    }
+  ],
+  "patchHistoryZh": [
+    {
+      "seasonId": "13",
+      "seasonName": "S13",
+      "versionName": "2026/02/05",
+      "publishedAt": "2026-02-05T01:00:00Z",
+      "isCurrent": false,
+      "tag": "數值增強",
+      "change": "提升技能傷害和回復",
+      "detail": "",
+      "version": "S13"
+    },
+    {
+      "seasonId": "12",
+      "seasonName": "S12",
+      "versionName": "20250924",
+      "publishedAt": "2025-09-24T01:00:00Z",
+      "isCurrent": false,
+      "tag": "數值增強",
+      "change": "提升技能傷害",
+      "detail": "",
+      "version": "S12"
+    },
+    {
+      "seasonId": "10",
+      "seasonName": "S10",
+      "versionName": "20250612",
+      "publishedAt": "2025-06-12T02:00:00Z",
+      "isCurrent": false,
+      "tag": "數值削弱",
+      "change": "冷卻時間機制調整",
+      "detail": "",
+      "version": "S10"
+    },
+    {
+      "seasonId": "9",
+      "seasonName": "S9",
+      "versionName": "20250320",
+      "publishedAt": "2025-03-20T01:53:54Z",
+      "isCurrent": false,
+      "tag": "數值削弱",
+      "change": "數值削弱",
+      "detail": "",
+      "version": "S9"
+    },
+    {
+      "seasonId": "7",
+      "seasonName": "S7",
+      "versionName": "20241128",
+      "publishedAt": "2024-11-28T01:46:48Z",
+      "isCurrent": false,
+      "tag": "數值增強",
+      "change": "提升基礎屬性",
+      "detail": "「作為法師，貂蟬是為數不多需要在人群中起舞的，因此也面臨著更多危險；我們適當提高她的基礎屬性，讓她有更多展示精華表現的可能性。」",
+      "version": "S7"
+    },
+    {
+      "seasonId": "7",
+      "seasonName": "S7",
+      "versionName": "20240925",
+      "publishedAt": "2024-09-25T03:24:02Z",
+      "isCurrent": false,
+      "tag": "機制調整",
+      "change": "2技能冷卻返還機制更連貫",
+      "detail": "貂蟬的2技能命中敵人時，會有很高的冷卻返還收益，但失手時也會帶給玩家很強的挫敗感，影響後續的技能銜接。我們嘗試將2技能冷卻返還機制由離散變得更連續，提升貂蟬玩家的使用體驗。",
+      "version": "S7"
+    },
+    {
+      "seasonId": "5",
+      "seasonName": "S5",
+      "versionName": "20240410",
+      "publishedAt": "2024-04-10T15:15:27Z",
+      "isCurrent": false,
+      "tag": "數值削弱",
+      "change": "適當降低貂蟬隨等級成長的生命值",
+      "detail": "适当降低貂蝉随等级成长的生命值。\n貂蝉在当前版本的节奏中可以获得更好的发育空间，从而更快地来到她的强势期。当貂蝉获得了一定的装备支持后，她将变得难以被反制。我们适度降低了她的基础生命，希望借此可以降低她的容错性",
+      "version": "S5"
     }
   ],
   "faqs": [
     {
       "id": "faq-good-season",
-      "question": "Is Diaochan good in the current meta?",
-      "answer": "Diaochan is Tier A Mage with 48.2% win rate, 0.8% pick rate, and 0.1% ban rate on Honor of Kings Global (Camp HOK, 2026-06-05). Solid situational pick."
+      "question": "Is Diaochan good in current season?",
+      "answer": "Diaochan is Tier A Mage with 48.36% win rate, 0.84% pick rate, and 0.1% ban rate (Camp HOK international)."
     },
     {
       "id": "faq-best-build",
       "question": "What is the best Diaochan build?",
-      "answer": "Core item path: Insatiable Tome, Boots of Tranquility, Holy Grail, Augur's Word, Breakthrough Robe, Savant's Wrath. Run Saint arcana with Flash. Switch to alternate build presets on this page for jungle, clash, or late-game setups."
+      "answer": "Recommended: Boots of Tranquility, Insatiable Tome, Savant's Wrath, Blazing Cape, Breakthrough Robe, Sage's Sanctuary."
     },
     {
       "id": "faq-counter",
       "question": "How to counter Diaochan?",
-      "answer": "Pick Liang, Mulan into Diaochan. Deny Mid Lane resources early and force fights before Diaochan completes core items. Diaochan struggles when the enemy can out-range or out-sustain them."
+      "answer": "Pick Liang, Mulan. Strong into Luna, Zhang Fei."
+    }
+  ],
+  "faqsZh": [
+    {
+      "id": "faq-good-season",
+      "question": "貂蟬 這版本適合上分嗎？",
+      "answer": "貂蟬 為 A 梯度，勝率 48.36%、選取 0.84%、禁用 0.1%（Camp HOK 國際服）。"
     },
     {
-      "id": "faq-strong-into",
-      "question": "Who does Diaochan counter?",
-      "answer": "Diaochan is strong into Luna, Zhang Fei according to HoKStats matchup data and role matchups on the global server. Draft Diaochan when the enemy relies on these heroes in the Mid Lane lane."
+      "id": "faq-best-build",
+      "question": "貂蟬 出裝怎麼搭配？",
+      "answer": "推薦：冷靜之靴、噬神之書、博學者之怒、紅蓮斗篷、破繭之衣、賢者的庇護."
     },
     {
-      "id": "faq-high-rank",
-      "question": "Is Diaochan good in high rank / Diamond+?",
-      "answer": "Diaochan is a viable Tier A pick in high rank with 48.2% win rate — strong in one-trick hands or as a counter-pick. Pick rate 0.8% — frequently seen in ranked; learn the matchup even if you do not main Diaochan. Below 49% global WR — high-rank players often avoid unless compensating for team comp."
-    },
-    {
-      "id": "faq-lane",
-      "question": "What lane should Diaochan play?",
-      "answer": "Diaochan is tagged Mid Lane in Camp export (Mage). Control first wave without taking free poke. Roam after pushing wave 2–4 to side lanes with your jungler."
-    },
-    {
-      "id": "faq-arcana",
-      "question": "Best arcana and spells for Diaochan?",
-      "answer": "Recommended: Saint arcana. Battle spell: Flash. Adjust Purify/Execute based on enemy dive and jungle need."
-    },
-    {
-      "id": "faq-vs-peer",
-      "question": "Diaochan or Daji — which is better?",
-      "answer": "Diaochan vs Daji (Mage, Tier S+): Daji is 2.4% pick / 51.0% WR. Daji wins 2.8% more often globally. Choose Diaochan when you need Mid Lane identity; choose Daji for Mid Lane comfort."
-    },
-    {
-      "id": "faq-ban",
-      "question": "Should I ban Diaochan?",
-      "answer": "Low priority ban (0.1%). Focus bans on higher-tier Mage picks unless targeting a one-trick."
+      "id": "faq-counter",
+      "question": "怎麼克制 貂蟬？",
+      "answer": "可選 Liang、Mulan。貂蟬 克制 Luna、Zhang Fei。"
     }
   ],
   "metaAnalysis": [
-    "Diaochan — 48.2% WR, 0.8% pick, 0.1% ban (Camp HOK 2026-06-05).",
-    "Tier A Mage · Mid Lane · difficulty Medium.",
-    "Diaochan is a viable Tier A pick in high rank with 48.2% win rate — strong in one-trick hands or as a counter-pick. Pick rate 0.8% — frequently seen in ranked; learn the matchup even if you do not main Diaochan. Below 49% global WR — high-rank players often avoid unless compensating for team comp.",
-    "Matchups: strong into Luna, Zhang Fei; weak into Liang, Mulan.",
-    "Diaochan vs Daji (Mage, Tier S+): Daji is 2.4% pick / 51.0% WR. Daji wins 2.8% more often globally. Choose Diaochan when you need Mid Lane identity; choose Daji for Mid Lane comfort.",
-    "Diaochan vs Angela (Mage, Tier S+): Angela is 2.3% pick / 51.8% WR. Angela wins 3.6% more often globally. Choose Diaochan when you need Mid Lane identity; choose Angela for Mid Lane comfort.",
-    "Draft tip: counter-pick or comfort pick when lane matchup is favorable."
+    "Diaochan win rate 48.36% (Camp HOK, 2026-06-07).",
+    "Pick rate 0.84%.",
+    "Ban rate 0.1%.",
+    "Counters: Luna, Zhang Fei. Weak into: Liang, Mulan."
   ],
-  "builds": [
-    {
-      "id": "recommended",
-      "label": "Recommended",
-      "position": null,
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1240",
-          "name": "Insatiable Tome",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1240.jpg",
-          "description": "Magical Lifesteal"
-        },
-        {
-          "slot": 2,
-          "itemId": "1423",
-          "name": "Boots of Tranquility",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1423.jpg",
-          "description": "Reduces Skill CD"
-        },
-        {
-          "slot": 3,
-          "itemId": "1226",
-          "name": "Holy Grail",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1226.jpg",
-          "description": "Rapid Health & Mana Regen"
-        },
-        {
-          "slot": 4,
-          "itemId": "1237",
-          "name": "Augur's Word",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1237.jpg",
-          "description": "Offense & defense"
-        },
-        {
-          "slot": 5,
-          "itemId": "1244",
-          "name": "Breakthrough Robe",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1244.jpg",
-          "description": "Converts Health into M. Pierce"
-        },
-        {
-          "slot": 6,
-          "itemId": "1232",
-          "name": "Savant's Wrath",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1232.jpg",
-          "description": "Greatly boosts MATK"
-        }
-      ]
-    },
-    {
-      "id": "国服套装",
-      "label": "国服套装",
-      "position": "Position 1",
-      "lane": "CN preset",
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1423",
-          "name": "Boots of Tranquility",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1423.jpg",
-          "description": "Reduces Skill CD"
-        },
-        {
-          "slot": 2,
-          "itemId": "1214",
-          "name": "Sage's Codex",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1214.jpg",
-          "description": "MATK +60, CDR +7.5%"
-        },
-        {
-          "slot": 3,
-          "itemId": "1226",
-          "name": "Holy Grail",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1226.jpg",
-          "description": "Rapid Health & Mana Regen"
-        },
-        {
-          "slot": 4,
-          "itemId": "1727",
-          "name": "Twilight Stream",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1727.jpg",
-          "description": "Boosts Magical Pierce"
-        },
-        {
-          "slot": 5,
-          "itemId": "1222",
-          "name": "Blood Clan's Grimoire",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1222.jpg",
-          "description": "MATK +60, Magical Lifesteal +12%"
-        },
-        {
-          "slot": 6,
-          "itemId": "1240",
-          "name": "Insatiable Tome",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1240.jpg",
-          "description": "Magical Lifesteal"
-        }
-      ]
-    },
-    {
-      "id": "mid-implacvel",
-      "label": "MID IMPLACÁVEL",
-      "position": "Position 2",
-      "lane": "Mid Lane",
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1423",
-          "name": "Boots of Tranquility",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1423.jpg",
-          "description": "Reduces Skill CD"
-        },
-        {
-          "slot": 2,
-          "itemId": "1240",
-          "name": "Insatiable Tome",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1240.jpg",
-          "description": "Magical Lifesteal"
-        },
-        {
-          "slot": 3,
-          "itemId": "1232",
-          "name": "Savant's Wrath",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1232.jpg",
-          "description": "Greatly boosts MATK"
-        },
-        {
-          "slot": 4,
-          "itemId": "1331",
-          "name": "Blazing Cape",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1331.jpg",
-          "description": "Burns nearby enemies"
-        },
-        {
-          "slot": 5,
-          "itemId": "1244",
-          "name": "Breakthrough Robe",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1244.jpg",
-          "description": "Converts Health into M. Pierce"
-        },
-        {
-          "slot": 6,
-          "itemId": "1337",
-          "name": "Sage's Sanctuary",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1337.jpg",
-          "description": "Resurrect on the spot"
-        }
-      ]
-    },
-    {
-      "id": "clash",
-      "label": "Clash",
-      "position": "Position 1",
-      "lane": "Clash Lane",
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1423",
-          "name": "Boots of Tranquility",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1423.jpg",
-          "description": "Reduces Skill CD"
-        },
-        {
-          "slot": 2,
-          "itemId": "1226",
-          "name": "Holy Grail",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1226.jpg",
-          "description": "Rapid Health & Mana Regen"
-        },
-        {
-          "slot": 3,
-          "itemId": "1727",
-          "name": "Twilight Stream",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1727.jpg",
-          "description": "Boosts Magical Pierce"
-        },
-        {
-          "slot": 4,
-          "itemId": "1422",
-          "name": "Boots of Resistance",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
-          "description": "Shortens CC"
-        },
-        {
-          "slot": 5,
-          "itemId": "1239",
-          "name": "Splendor",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1239.jpg",
-          "description": "Temp. invincibility"
-        },
-        {
-          "slot": 6,
-          "itemId": "1237",
-          "name": "Augur's Word",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1237.jpg",
-          "description": "Offense & defense"
-        }
-      ]
-    },
-    {
-      "id": "mid-lane-3",
-      "label": "Mid Lane 3",
-      "position": "Position 2",
-      "lane": "Mid Lane",
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1423",
-          "name": "Boots of Tranquility",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1423.jpg",
-          "description": "Reduces Skill CD"
-        },
-        {
-          "slot": 2,
-          "itemId": "1240",
-          "name": "Insatiable Tome",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1240.jpg",
-          "description": "Magical Lifesteal"
-        },
-        {
-          "slot": 3,
-          "itemId": "1244",
-          "name": "Breakthrough Robe",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1244.jpg",
-          "description": "Converts Health into M. Pierce"
-        },
-        {
-          "slot": 4,
-          "itemId": "1338",
-          "name": "Cuirass of Savagery",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1338.jpg",
-          "description": "Offense & defense"
-        },
-        {
-          "slot": 5,
-          "itemId": "1238",
-          "name": "Sage's Tome",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1238.jpg",
-          "description": "Great for mages"
-        },
-        {
-          "slot": 6,
-          "itemId": "1317",
-          "name": "Cuirass of Swiftness",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1317.jpg",
-          "description": "HP +450, CDR +7.5%"
-        }
-      ]
-    },
-    {
-      "id": "preset",
-      "label": "Preset",
-      "position": "Position 1",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1423",
-          "name": "Boots of Tranquility",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1423.jpg",
-          "description": "Reduces Skill CD"
-        },
-        {
-          "slot": 2,
-          "itemId": "1226",
-          "name": "Holy Grail",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1226.jpg",
-          "description": "Rapid Health & Mana Regen"
-        },
-        {
-          "slot": 3,
-          "itemId": "1240",
-          "name": "Insatiable Tome",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1240.jpg",
-          "description": "Magical Lifesteal"
-        },
-        {
-          "slot": 4,
-          "itemId": "1323",
-          "name": "Clandestine Cape",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1323.jpg",
-          "description": "MDEF +150, HP +450"
-        },
-        {
-          "slot": 5,
-          "itemId": "1244",
-          "name": "Breakthrough Robe",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1244.jpg",
-          "description": "Converts Health into M. Pierce"
-        },
-        {
-          "slot": 6,
-          "itemId": "1422",
-          "name": "Boots of Resistance",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
-          "description": "Shortens CC"
-        }
-      ]
-    },
-    {
-      "id": "popular",
-      "label": "Popular",
-      "position": "Position 1",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1423",
-          "name": "Boots of Tranquility",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1423.jpg",
-          "description": "Reduces Skill CD"
-        },
-        {
-          "slot": 2,
-          "itemId": "12211",
-          "name": "Venomous Staff",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/12211.jpg",
-          "description": "Lowers Health regen"
-        },
-        {
-          "slot": 3,
-          "itemId": "1333",
-          "name": "Ominous Premonition",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1333.jpg",
-          "description": "Slows attackers"
-        },
-        {
-          "slot": 4,
-          "itemId": "1240",
-          "name": "Insatiable Tome",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1240.jpg",
-          "description": "Magical Lifesteal"
-        },
-        {
-          "slot": 5,
-          "itemId": "1334",
-          "name": "Eye of the Phoenix",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1334.jpg",
-          "description": "Boosts Health regen"
-        },
-        {
-          "slot": 6,
-          "itemId": "1227",
-          "name": "Ardent Dominion",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1227.jpg",
-          "description": "Shield at low Health"
-        }
-      ]
-    },
-    {
-      "id": "爆伤减速流",
-      "label": "爆伤减速流",
-      "position": "Position 2",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1211",
-          "name": "Spell Tome",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1211.jpg",
-          "description": "MATK +35"
-        },
-        {
-          "slot": 2,
-          "itemId": "1423",
-          "name": "Boots of Tranquility",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1423.jpg",
-          "description": "Reduces Skill CD"
-        },
-        {
-          "slot": 3,
-          "itemId": "1218",
-          "name": "Primordial Crystal",
-          "icon": "https://hokstats.gg/items/1218.png",
-          "description": "CDR +5%"
-        },
-        {
-          "slot": 4,
-          "itemId": "1214",
-          "name": "Sage's Codex",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1214.jpg",
-          "description": "MATK +60, CDR +7.5%"
-        },
-        {
-          "slot": 5,
-          "itemId": "1727",
-          "name": "Twilight Stream",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1727.jpg",
-          "description": "Boosts Magical Pierce"
-        },
-        {
-          "slot": 6,
-          "itemId": "1240",
-          "name": "Insatiable Tome",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1240.jpg",
-          "description": "Magical Lifesteal"
-        }
-      ]
-    },
-    {
-      "id": "爆坦纯法流",
-      "label": "爆坦纯法流",
-      "position": "Position 2",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1423",
-          "name": "Boots of Tranquility",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1423.jpg",
-          "description": "Reduces Skill CD"
-        },
-        {
-          "slot": 2,
-          "itemId": "1226",
-          "name": "Holy Grail",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1226.jpg",
-          "description": "Rapid Health & Mana Regen"
-        },
-        {
-          "slot": 3,
-          "itemId": "1217",
-          "name": "Mystic Page",
-          "icon": "https://hokstats.gg/items/1217.png",
-          "description": "Magical Lifesteal +8%"
-        },
-        {
-          "slot": 4,
-          "itemId": "1240",
-          "name": "Insatiable Tome",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1240.jpg",
-          "description": "Magical Lifesteal"
-        },
-        {
-          "slot": 5,
-          "itemId": "1422",
-          "name": "Boots of Resistance",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
-          "description": "Shortens CC"
-        },
-        {
-          "slot": 6,
-          "itemId": "1237",
-          "name": "Augur's Word",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1237.jpg",
-          "description": "Offense & defense"
-        }
-      ]
-    },
-    {
-      "id": "diaochann",
-      "label": "Diaochann",
-      "position": "Position 2",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1424",
-          "name": "Boots of the Arcane",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1424.jpg",
-          "description": "Magical Pierce"
-        },
-        {
-          "slot": 2,
-          "itemId": "1226",
-          "name": "Holy Grail",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1226.jpg",
-          "description": "Rapid Health & Mana Regen"
-        },
-        {
-          "slot": 3,
-          "itemId": "1240",
-          "name": "Insatiable Tome",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1240.jpg",
-          "description": "Magical Lifesteal"
-        },
-        {
-          "slot": 4,
-          "itemId": "1244",
-          "name": "Breakthrough Robe",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1244.jpg",
-          "description": "Converts Health into M. Pierce"
-        },
-        {
-          "slot": 5,
-          "itemId": "1237",
-          "name": "Augur's Word",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1237.jpg",
-          "description": "Offense & defense"
-        },
-        {
-          "slot": 6,
-          "itemId": "1232",
-          "name": "Savant's Wrath",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1232.jpg",
-          "description": "Greatly boosts MATK"
-        }
-      ]
-    }
+  "metaAnalysisZh": [
+    "貂蟬 勝率 48.36%（Camp HOK，2026-06-07）",
+    "選取率 0.84%",
+    "禁用率 0.1%",
+    "克制：Luna、Zhang Fei；被克制：Liang、Mulan"
   ],
   "guide": {
     "overview": "Diaochan is a Medium Mage (Mid Lane) on Honor of Kings Global. Camp HOK ranks them Tier A with 48.2% win rate and 0.8% pick rate as of 2026-06-05.",

@@ -2,99 +2,583 @@
   "id": "ata",
   "slug": "ata",
   "name": "Ata",
+  "nameZh": "阿塔",
   "role": "Tank",
   "roles": "Tank",
+  "rolesZh": "坦克",
   "lane": "Clash Lane",
+  "laneZh": "對抗路",
   "difficulty": "Easy",
   "tier": "B",
-  "winRate": 54.08,
-  "pickRate": 0.68,
+  "winRate": 53.31,
+  "pickRate": 0.66,
   "banRate": 0.06,
-  "rank": 4,
+  "rank": 8,
   "avatar": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/eafz1moy.png",
-  "avatarFallback": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/eafz1moy.png",
+  "avatarFallback": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/556/556.jpg",
+  "heroCover": "https://camp.honorofkings.com/social/game/src/image_hero_cover_1275*718/1mmj5K3o.jpg",
   "tencentId": 556,
-  "dataSource": "Camp HOK + HoKStats.gg (intl)",
-  "dataUpdated": "2026-06-05",
+  "dataSource": "Camp HOK bilingual (primary)",
+  "dataUpdated": "2026-06-07",
   "skills": [
     {
       "slot": "passive",
       "name": "Child of the Sea",
-      "description": "Loss of life is temporarily stored in a gray shield form, during which 40%/15% of the equivalent gray shield of damage dealt to heroes/non-heroes is converted into blood, scaling up based on extra life. Basic attacks come with additional physical damage.",
-      "icon": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/eafz1moy.png",
-      "cooldown": null
+      "description": "His lost Health is preserved in a temporary Health buffer. Dealing damage converts buffered Health into actual Health.\nAfter a while, the buffered Health will begin to gradually diminish.\nHis Basic Attacks deal extra damage.",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/55600.png",
+      "cooldown": "1s"
     },
     {
       "slot": "skill1",
       "name": "Wavewalking",
-      "description": "Endeavor to jump up and deal physical damage to smashed enemies when you land. Afterwards, bounce up again, dealing the same damage as well as a 0.5 second knockback effect when you land. Immunity to control during the jump. When attacking multiple enemies at once, damage decays by 20% for each additional enemy, down to 60%. Increases damage to minions by an additional 30%.",
-      "icon": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/eafz1moy.png",
-      "cooldown": null
+      "description": "Leaps into the air and slams down twice, dealing damage with each slam.\nThe second slam launches enemies.\nGains crowd control immunity while using the skill.",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/55610.png",
+      "cooldown": "8s"
     },
     {
       "slot": "skill2",
       "name": "Sea Anchor",
-      "description": "Throw the anchor straight out to hit enemies in front of you, dealing physical damage and 60% slow for 1.5 seconds. If the anchor is embedded in a wall, Ata will use the force to dash himself and the enemy to that spot. When it hits the wall, it deals Physical damage and stuns for 0.5 seconds. [Passive]: after using [Anchor], the next basic attack within 3 seconds will pull the enemy back with the anchor.",
-      "icon": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/eafz1moy.png",
-      "cooldown": null
+      "description": "Hurls an anchor in the target direction, dealing damage and slowing enemies.\nIf the anchor hits terrain, he will be dragged to the contact point, dealing damage and knocking back enemies.\nHis next Basic Attack will be enhanced with a pulling effect.",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/55620.png",
+      "cooldown": "10s"
     },
     {
       "slot": "ultimate",
       "name": "Ghost Ship",
-      "description": "Ata builds temporary terrain along the outer border of a fan-shaped targetarea, dealing damage to enemies within it.Gains crowd control immunity while using the skill.He can use the skill again to make the temporary terrain disappear early.",
-      "icon": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/eafz1moy.png",
-      "cooldown": null
+      "description": "Builds temporary terrain along the outer edge of a cone-shaped area, dealing damage to enemies within it.\nGains crowd control immunity while using the skill.\nHe can use the skill again to make the temporary terrain disappear early.",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/55630.png",
+      "cooldown": "36s"
+    }
+  ],
+  "skillsZh": [
+    {
+      "slot": "passive",
+      "name": "海之子",
+      "description": "阿塔損失的生命會以殘存血量保留一段時間，期間阿塔造成的所有傷害都會轉化殘存血量為自身生命值。\n一段時間後，殘存血量會逐漸扣除。\n阿塔普攻造成額外傷害。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/55600.png",
+      "cooldown": "1s"
+    },
+    {
+      "slot": "skill1",
+      "name": "踏浪行",
+      "description": "跳起後砸向地面兩次，每次都會對敵人造成傷害。\n第二次額外造成擊飛效果。\n技能施放期間霸體。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/55610.png",
+      "cooldown": "8s"
+    },
+    {
+      "slot": "skill2",
+      "name": "定海錨",
+      "description": "甩出船錨，對敵人造成傷害和減速效果。\n若是船錨接觸到地形，阿塔會移動至接觸位置，對敵人造成傷害和擊退效果。\n下次普攻強化，具有拉扯效果。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/55620.png",
+      "cooldown": "10s"
+    },
+    {
+      "slot": "ultimate",
+      "name": "海靈船",
+      "description": "阿塔沿指定扇形區域邊緣建造臨時地形一段時間，對區域內敵人造成傷害。\n施放技能過程中免疫控制效果。\n再次施放技能可提前讓臨時地形消失。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/55630.png",
+      "cooldown": "36s"
     }
   ],
   "build": [
     {
       "slot": 1,
-      "itemId": "1423",
-      "name": "Boots of Tranquility",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1423.jpg",
-      "description": "Reduces Skill CD"
+      "itemId": "1331",
+      "name": "Blazing Cape",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1331.png",
+      "description": "PDEF +150, MDEF +150, HP +1,100\nArea burn & imperil"
     },
     {
       "slot": 2,
-      "itemId": "1534",
-      "name": "Dragon's Rage",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1534.jpg",
-      "description": "Boosts BA damage"
+      "itemId": "1334",
+      "name": "Eye of the Phoenix",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1334.png",
+      "description": "MDEF +180, PDEF +90, HP +1,350\nBoosts HP Regen"
     },
     {
       "slot": 3,
-      "itemId": "1331",
-      "name": "Blazing Cape",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1331.jpg",
-      "description": "Burns nearby enemies"
+      "itemId": "1333",
+      "name": "Ominous Premonition",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1333.png",
+      "description": "PDEF +300, HP +1,200\nSlows attackers"
     },
     {
       "slot": 4,
-      "itemId": "1334",
-      "name": "Eye of the Phoenix",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1334.jpg",
-      "description": "Boosts Health regen"
+      "itemId": "1335",
+      "name": "Succubus Cloak",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
+      "description": "MDEF +300, HP +1,100\nNegates magical damage"
     },
     {
       "slot": 5,
-      "itemId": "1332",
-      "name": "Overlord's Platemail",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1332.jpg",
-      "description": "Extra Health"
+      "itemId": "1353",
+      "name": "Dawnlight",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1353.png",
+      "description": "PDEF +210, HP +900, CDR +10%\nShields on dealing damage"
     },
     {
       "slot": 6,
+      "itemId": "1327",
+      "name": "Spikemail",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1327.png",
+      "description": "PATK +45, PDEF +300, HP +700\nReflects damage"
+    }
+  ],
+  "buildZh": [
+    {
+      "slot": 1,
+      "itemId": "1331",
+      "name": "紅蓮斗篷",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1331.png",
+      "description": "+150點物防+150點法防+1100點生命值\n範圍灼燒重傷"
+    },
+    {
+      "slot": 2,
+      "itemId": "1334",
+      "name": "不死鳥之眼",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1334.png",
+      "description": "+180點法防+90點物防+1350點生命值……\n增加回血效果"
+    },
+    {
+      "slot": 3,
       "itemId": "1333",
-      "name": "Ominous Premonition",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1333.jpg",
-      "description": "Slows attackers"
+      "name": "不祥徵兆",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1333.png",
+      "description": "+300點物防+1200點生命值\n受擊時將敵人減速"
+    },
+    {
+      "slot": 4,
+      "itemId": "1335",
+      "name": "魔女斗篷",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
+      "description": "+300點法防+1100點生命值\n吸收法術傷害"
+    },
+    {
+      "slot": 5,
+      "itemId": "1353",
+      "name": "旭日初光",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1353.png",
+      "description": "+210點物防+900點生命值+10%減冷卻時間\n傷害敵人時獲得護盾值"
+    },
+    {
+      "slot": 6,
+      "itemId": "1327",
+      "name": "反傷刺甲",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1327.png",
+      "description": "+45點攻擊+300點物防\n+700點生命值反彈傷害"
+    }
+  ],
+  "builds": [
+    {
+      "id": "camp-0",
+      "label": "Clash Lane 1",
+      "lane": "Top",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1331",
+          "name": "Blazing Cape",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1331.png",
+          "description": "PDEF +150, MDEF +150, HP +1,100\nArea burn & imperil"
+        },
+        {
+          "slot": 2,
+          "itemId": "1334",
+          "name": "Eye of the Phoenix",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1334.png",
+          "description": "MDEF +180, PDEF +90, HP +1,350\nBoosts HP Regen"
+        },
+        {
+          "slot": 3,
+          "itemId": "1333",
+          "name": "Ominous Premonition",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1333.png",
+          "description": "PDEF +300, HP +1,200\nSlows attackers"
+        },
+        {
+          "slot": 4,
+          "itemId": "1335",
+          "name": "Succubus Cloak",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
+          "description": "MDEF +300, HP +1,100\nNegates magical damage"
+        },
+        {
+          "slot": 5,
+          "itemId": "1353",
+          "name": "Dawnlight",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1353.png",
+          "description": "PDEF +210, HP +900, CDR +10%\nShields on dealing damage"
+        },
+        {
+          "slot": 6,
+          "itemId": "1327",
+          "name": "Spikemail",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1327.png",
+          "description": "PATK +45, PDEF +300, HP +700\nReflects damage"
+        }
+      ]
+    },
+    {
+      "id": "camp-1",
+      "label": "Kekebalan Tubuh",
+      "lane": "Top",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1334",
+          "name": "Eye of the Phoenix",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1334.png",
+          "description": "MDEF +180, PDEF +90, HP +1,350\nBoosts HP Regen"
+        },
+        {
+          "slot": 2,
+          "itemId": "1332",
+          "name": "Overlord's Platemail",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1332.png",
+          "description": "HP +1,800, PDEF +160, MDEF +80\nExtra HP"
+        },
+        {
+          "slot": 3,
+          "itemId": "1422",
+          "name": "Boots of Resistance",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1422.png",
+          "description": "MDEF +100, PDEF +50, MSPD +50\nShortens crowd control"
+        },
+        {
+          "slot": 4,
+          "itemId": "1333",
+          "name": "Ominous Premonition",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1333.png",
+          "description": "PDEF +300, HP +1,200\nSlows attackers"
+        },
+        {
+          "slot": 5,
+          "itemId": "1337",
+          "name": "Sage's Sanctuary",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
+        },
+        {
+          "slot": 6,
+          "itemId": "1347",
+          "name": "Longnight Guardian",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1347.png",
+          "description": "MDEF +210, HP +1,000, MSPD +7.5%\nReduces magical damage"
+        }
+      ]
+    },
+    {
+      "id": "camp-2",
+      "label": "纯肉",
+      "lane": "Top",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1331",
+          "name": "Blazing Cape",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1331.png",
+          "description": "PDEF +150, MDEF +150, HP +1,100\nArea burn & imperil"
+        },
+        {
+          "slot": 2,
+          "itemId": "1422",
+          "name": "Boots of Resistance",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1422.png",
+          "description": "MDEF +100, PDEF +50, MSPD +50\nShortens crowd control"
+        },
+        {
+          "slot": 3,
+          "itemId": "1334",
+          "name": "Eye of the Phoenix",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1334.png",
+          "description": "MDEF +180, PDEF +90, HP +1,350\nBoosts HP Regen"
+        },
+        {
+          "slot": 4,
+          "itemId": "1327",
+          "name": "Spikemail",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1327.png",
+          "description": "PATK +45, PDEF +300, HP +700\nReflects damage"
+        },
+        {
+          "slot": 5,
+          "itemId": "1333",
+          "name": "Ominous Premonition",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1333.png",
+          "description": "PDEF +300, HP +1,200\nSlows attackers"
+        },
+        {
+          "slot": 6,
+          "itemId": "1350",
+          "name": "Ravage - Phantom",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1350.png",
+          "description": "PATK +75, HP +900\nTrades HP for shield"
+        }
+      ]
+    },
+    {
+      "id": "camp-3",
+      "label": "Preset",
+      "lane": "Top",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1331",
+          "name": "Blazing Cape",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1331.png",
+          "description": "PDEF +150, MDEF +150, HP +1,100\nArea burn & imperil"
+        },
+        {
+          "slot": 2,
+          "itemId": "1422",
+          "name": "Boots of Resistance",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1422.png",
+          "description": "MDEF +100, PDEF +50, MSPD +50\nShortens crowd control"
+        },
+        {
+          "slot": 3,
+          "itemId": "1534",
+          "name": "Dragon's Rage",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1536.png",
+          "description": "HP +1,350, PDEF +180, MDEF +90\nBoosts BA damage"
+        },
+        {
+          "slot": 4,
+          "itemId": "1334",
+          "name": "Eye of the Phoenix",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1334.png",
+          "description": "MDEF +180, PDEF +90, HP +1,350\nBoosts HP Regen"
+        },
+        {
+          "slot": 5,
+          "itemId": "1332",
+          "name": "Overlord's Platemail",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1332.png",
+          "description": "HP +1,800, PDEF +160, MDEF +80\nExtra HP"
+        },
+        {
+          "slot": 6,
+          "itemId": "1337",
+          "name": "Sage's Sanctuary",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
+        }
+      ]
+    }
+  ],
+  "buildsZh": [
+    {
+      "id": "camp-0",
+      "label": "Clash Lane 1",
+      "lane": "Top",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1331",
+          "name": "紅蓮斗篷",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1331.png",
+          "description": "+150點物防+150點法防+1100點生命值\n範圍灼燒重傷"
+        },
+        {
+          "slot": 2,
+          "itemId": "1334",
+          "name": "不死鳥之眼",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1334.png",
+          "description": "+180點法防+90點物防+1350點生命值……\n增加回血效果"
+        },
+        {
+          "slot": 3,
+          "itemId": "1333",
+          "name": "不祥徵兆",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1333.png",
+          "description": "+300點物防+1200點生命值\n受擊時將敵人減速"
+        },
+        {
+          "slot": 4,
+          "itemId": "1335",
+          "name": "魔女斗篷",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
+          "description": "+300點法防+1100點生命值\n吸收法術傷害"
+        },
+        {
+          "slot": 5,
+          "itemId": "1353",
+          "name": "旭日初光",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1353.png",
+          "description": "+210點物防+900點生命值+10%減冷卻時間\n傷害敵人時獲得護盾值"
+        },
+        {
+          "slot": 6,
+          "itemId": "1327",
+          "name": "反傷刺甲",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1327.png",
+          "description": "+45點攻擊+300點物防\n+700點生命值反彈傷害"
+        }
+      ]
+    },
+    {
+      "id": "camp-1",
+      "label": "Kekebalan Tubuh",
+      "lane": "Top",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1334",
+          "name": "不死鳥之眼",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1334.png",
+          "description": "+180點法防+90點物防+1350點生命值……\n增加回血效果"
+        },
+        {
+          "slot": 2,
+          "itemId": "1332",
+          "name": "霸者重裝",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1332.png",
+          "description": "+1800點生命值+160點物防+80點法防\n提高額外生命值"
+        },
+        {
+          "slot": 3,
+          "itemId": "1422",
+          "name": "抵抗之靴",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1422.png",
+          "description": "+100點法防+50點物防+50點移速\n減少被控時間"
+        },
+        {
+          "slot": 4,
+          "itemId": "1333",
+          "name": "不祥徵兆",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1333.png",
+          "description": "+300點物防+1200點生命值\n受擊時將敵人減速"
+        },
+        {
+          "slot": 5,
+          "itemId": "1337",
+          "name": "賢者的庇護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+        },
+        {
+          "slot": 6,
+          "itemId": "1347",
+          "name": "永夜守護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1347.png",
+          "description": "+210點法防+1000點生命值\n+7.5%移速減少法術傷害"
+        }
+      ]
+    },
+    {
+      "id": "camp-2",
+      "label": "纯肉",
+      "lane": "Top",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1331",
+          "name": "紅蓮斗篷",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1331.png",
+          "description": "+150點物防+150點法防+1100點生命值\n範圍灼燒重傷"
+        },
+        {
+          "slot": 2,
+          "itemId": "1422",
+          "name": "抵抗之靴",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1422.png",
+          "description": "+100點法防+50點物防+50點移速\n減少被控時間"
+        },
+        {
+          "slot": 3,
+          "itemId": "1334",
+          "name": "不死鳥之眼",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1334.png",
+          "description": "+180點法防+90點物防+1350點生命值……\n增加回血效果"
+        },
+        {
+          "slot": 4,
+          "itemId": "1327",
+          "name": "反傷刺甲",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1327.png",
+          "description": "+45點攻擊+300點物防\n+700點生命值反彈傷害"
+        },
+        {
+          "slot": 5,
+          "itemId": "1333",
+          "name": "不祥徵兆",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1333.png",
+          "description": "+300點物防+1200點生命值\n受擊時將敵人減速"
+        },
+        {
+          "slot": 6,
+          "itemId": "1350",
+          "name": "侵略・怒魂",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1350.png",
+          "description": "+75點攻擊+900點生命值\n犧牲生命值換取護盾值"
+        }
+      ]
+    },
+    {
+      "id": "camp-3",
+      "label": "Preset",
+      "lane": "Top",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1331",
+          "name": "紅蓮斗篷",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1331.png",
+          "description": "+150點物防+150點法防+1100點生命值\n範圍灼燒重傷"
+        },
+        {
+          "slot": 2,
+          "itemId": "1422",
+          "name": "抵抗之靴",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1422.png",
+          "description": "+100點法防+50點物防+50點移速\n減少被控時間"
+        },
+        {
+          "slot": 3,
+          "itemId": "1534",
+          "name": "怒龍劍盾",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1536.png",
+          "description": "+1350點生命值+180點物防+90點法防\n普攻額外傷害"
+        },
+        {
+          "slot": 4,
+          "itemId": "1334",
+          "name": "不死鳥之眼",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1334.png",
+          "description": "+180點法防+90點物防+1350點生命值……\n增加回血效果"
+        },
+        {
+          "slot": 5,
+          "itemId": "1332",
+          "name": "霸者重裝",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1332.png",
+          "description": "+1800點生命值+160點物防+80點法防\n提高額外生命值"
+        },
+        {
+          "slot": 6,
+          "itemId": "1337",
+          "name": "賢者的庇護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+        }
+      ]
     }
   ],
   "arcana": [
-    "Fate"
+    "Lvl 5: Fate",
+    "Lvl 5: Harmony",
+    "Lvl 5: Void"
+  ],
+  "arcanaZh": [
+    "5級：宿命",
+    "5級：調和",
+    "5級：虛空"
   ],
   "spells": [
-    "Execute"
+    "Flash"
+  ],
+  "spellsZh": [
+    "閃現"
   ],
   "counters": [
     "Agudo",
@@ -107,486 +591,173 @@
     "Musashi"
   ],
   "tips": [
-    "Ata is a Easy Tank (Clash Lane) on Honor of Kings Global. Camp HOK ranks them Tier B with 54.1% win rate and 0.7% pick rate as of 2026-06-05.",
-    "Best build path: Boots of Tranquility → Dragon's Rage → Blazing Cape → Eye of the Phoenix → Overlord's Platemail → Ominous Premonition.",
-    "Run Fate for stats that match Ata's Tank kit. Take Execute — swap to Purify against heavy CC or Smite when jungling.",
-    "Standard trade: Wavewalking → Sea Anchor → Ghost Ship → weave basic attacks. Weave basic attacks between skill casts for passive value.",
-    "Laning: Trade on your power spike levels (2/4). Call jungler for dive only when enemy flash is down.",
-    "Teamfight: Engage on enemy carry when your team has follow-up. Body-block skillshots for your marksman.",
-    "Ata excels into Agudo, Meng Ya, Luara. Avoid blind picking into Jing, Wukong, Musashi without team peel.",
-    "Ata sits at Tier B globally (54.1% WR). In high rank, pick only into favorable matchups or when you have a dedicated pocket pick. Camp data shows above-average win rate — prioritize when not hard-countered in draft."
+    "Ata (Tank): Tier B — 53.31% WR (Camp HOK).",
+    "Lane: Clash Lane.",
+    "Build: Blazing Cape, Eye of the Phoenix, Ominous Premonition."
+  ],
+  "tipsZh": [
+    "阿塔（對抗路）：梯度 B，勝率 53.31%（Camp HOK）。",
+    "出裝：紅蓮斗篷、不死鳥之眼、不祥徵兆."
   ],
   "patchHistory": [
     {
-      "version": "Live meta",
-      "change": "Camp HOK — WR 54.1%, pick 0.7%, ban 0.1%, tier B."
+      "seasonId": "13",
+      "seasonName": "S13",
+      "versionName": "2026/01/08",
+      "publishedAt": "2026-01-08T01:00:00Z",
+      "isCurrent": false,
+      "tag": "Stat Buffs",
+      "change": "Upgraded Skill Effects",
+      "detail": "",
+      "version": "S13"
     },
     {
-      "version": "Matchups",
-      "change": "Strong into Agudo, Meng Ya, Luara · Weak into Jing, Wukong, Musashi."
+      "seasonId": "11",
+      "seasonName": "S11",
+      "versionName": "20250801",
+      "publishedAt": "2025-08-01T01:00:00Z",
+      "isCurrent": false,
+      "tag": "Stat Buffs",
+      "change": "Increased Skill 1's Damage",
+      "detail": "",
+      "version": "S11"
     },
     {
-      "version": "High rank",
-      "change": "Ata sits at Tier B globally (54.1% WR). In high rank, pick only into favorable matchups or when you have a dedicated pocket pick. Camp data shows above-average win rate — prioritize when not hard-countered in draft."
+      "seasonId": "9",
+      "seasonName": "S9",
+      "versionName": "20250320",
+      "publishedAt": "2025-03-20T01:53:54Z",
+      "isCurrent": false,
+      "tag": "Stat Buffs",
+      "change": "Increased Skill 1 Damage",
+      "detail": "",
+      "version": "S9"
+    },
+    {
+      "seasonId": "5",
+      "seasonName": "S5",
+      "versionName": "20240410",
+      "publishedAt": "2024-04-10T15:15:27Z",
+      "isCurrent": false,
+      "tag": "Stat Changes",
+      "change": "We're increasing the base Health of some tanks but decreasing their per-level Health growth multiplier so that their Health at max level stays the same.",
+      "detail": "We're increasing the base Health of some tanks but decreasing their per-level Health growth multiplier so that their Health at max level stays the same.\nWe hope that players will be able to tell the difference between the heroes in the early game and fully understand their individual characteristics. This should help them choose the best hero for their team's lineup. We want tanks to soak up damage in the early game without becoming hard to counter in the late game. To that end, we're increasing their base Health while decreasing their Health gain per level.",
+      "version": "S5"
+    },
+    {
+      "seasonId": "3",
+      "seasonName": "S3",
+      "versionName": "20231108",
+      "publishedAt": "2023-11-08T12:02:09Z",
+      "isCurrent": false,
+      "tag": "Stat Buffs",
+      "change": "Increased recovery from his passive when dealing damage to heroes.",
+      "detail": "Although we nerfed the imperil equipment passive in the last season, equipment with that effect has also become suitable for more heroes. By moderately increasing Ata's recovery, we hope to offset the impact of more heroes using this equipment.",
+      "version": "S3"
+    }
+  ],
+  "patchHistoryZh": [
+    {
+      "seasonId": "13",
+      "seasonName": "S13",
+      "versionName": "2026/01/08",
+      "publishedAt": "2026-01-08T01:00:00Z",
+      "isCurrent": false,
+      "tag": "數值增強",
+      "change": "提升技能傷害",
+      "detail": "",
+      "version": "S13"
+    },
+    {
+      "seasonId": "11",
+      "seasonName": "S11",
+      "versionName": "20250801",
+      "publishedAt": "2025-08-01T01:00:00Z",
+      "isCurrent": false,
+      "tag": "數值增強",
+      "change": "提升1技能傷害",
+      "detail": "",
+      "version": "S11"
+    },
+    {
+      "seasonId": "9",
+      "seasonName": "S9",
+      "versionName": "20250320",
+      "publishedAt": "2025-03-20T01:53:54Z",
+      "isCurrent": false,
+      "tag": "數值增強",
+      "change": "提升1技能傷害",
+      "detail": "",
+      "version": "S9"
+    },
+    {
+      "seasonId": "5",
+      "seasonName": "S5",
+      "versionName": "20240410",
+      "publishedAt": "2024-04-10T15:15:27Z",
+      "isCurrent": false,
+      "tag": "數值調整",
+      "change": "提升部分坦克類英雄的基礎生命，降低其隨英雄等級成長的係數，保持滿級後總生命不變",
+      "detail": "提升部分坦克類英雄的基礎生命，降低其隨英雄等級成長的係數，保持滿級後總生命不變\n我們希望在遊戲早期就能讓玩家區分各英雄間的差異和特點，從而根據陣容需求來選擇自己接下來要操控的英雄。我們希望坦克類英雄能在遊戲早期就承擔吸收傷害的職責，但是又不希望他們在遊戲後期變得難以處理，因此我們適當提升了部分坦克類英雄的基礎生命，並降低了他們每次升級後帶來的生命成長。",
+      "version": "S5"
+    },
+    {
+      "seasonId": "3",
+      "seasonName": "S3",
+      "versionName": "20231108",
+      "publishedAt": "2023-11-08T12:02:09Z",
+      "isCurrent": false,
+      "tag": "數值增強",
+      "change": "Increased recovery from his passive when dealing damage to heroes.",
+      "detail": "Although we nerfed the imperil equipment passive in the last season, equipment with that effect has also become suitable for more heroes. By moderately increasing Ata's recovery, we hope to offset the impact of more heroes using this equipment.",
+      "version": "S3"
     }
   ],
   "faqs": [
     {
       "id": "faq-good-season",
-      "question": "Is Ata good in the current meta?",
-      "answer": "Ata is Tier B Tank with 54.1% win rate, 0.7% pick rate, and 0.1% ban rate on Honor of Kings Global (Camp HOK, 2026-06-05). Niche — draft carefully."
+      "question": "Is Ata good in current season?",
+      "answer": "Ata is Tier B Tank with 53.31% win rate, 0.66% pick rate, and 0.06% ban rate (Camp HOK international)."
     },
     {
       "id": "faq-best-build",
       "question": "What is the best Ata build?",
-      "answer": "Core item path: Boots of Tranquility, Dragon's Rage, Blazing Cape, Eye of the Phoenix, Overlord's Platemail, Ominous Premonition. Run Fate arcana with Execute. Switch to alternate build presets on this page for jungle, clash, or late-game setups."
+      "answer": "Recommended: Blazing Cape, Eye of the Phoenix, Ominous Premonition, Succubus Cloak, Dawnlight, Spikemail."
     },
     {
       "id": "faq-counter",
       "question": "How to counter Ata?",
-      "answer": "Pick Jing, Wukong, Musashi into Ata. Deny Clash Lane resources early and force fights before Ata completes core items. Ata struggles when the enemy can out-range or out-sustain them."
+      "answer": "Pick Jing, Wukong, Musashi. Strong into Agudo, Meng Ya, Luara."
+    }
+  ],
+  "faqsZh": [
+    {
+      "id": "faq-good-season",
+      "question": "阿塔 這版本適合上分嗎？",
+      "answer": "阿塔 為 B 梯度，勝率 53.31%、選取 0.66%、禁用 0.06%（Camp HOK 國際服）。"
     },
     {
-      "id": "faq-strong-into",
-      "question": "Who does Ata counter?",
-      "answer": "Ata is strong into Agudo, Meng Ya, Luara according to HoKStats matchup data and role matchups on the global server. Draft Ata when the enemy relies on these heroes in the Clash Lane lane."
+      "id": "faq-best-build",
+      "question": "阿塔 出裝怎麼搭配？",
+      "answer": "推薦：紅蓮斗篷、不死鳥之眼、不祥徵兆、魔女斗篷、旭日初光、反傷刺甲."
     },
     {
-      "id": "faq-high-rank",
-      "question": "Is Ata good in high rank / Diamond+?",
-      "answer": "Ata sits at Tier B globally (54.1% WR). In high rank, pick only into favorable matchups or when you have a dedicated pocket pick. Camp data shows above-average win rate — prioritize when not hard-countered in draft."
-    },
-    {
-      "id": "faq-lane",
-      "question": "What lane should Ata play?",
-      "answer": "Ata is tagged Clash Lane in Camp export (Tank). Trade on your power spike levels (2/4). Call jungler for dive only when enemy flash is down."
-    },
-    {
-      "id": "faq-arcana",
-      "question": "Best arcana and spells for Ata?",
-      "answer": "Recommended: Fate arcana. Battle spell: Execute. Adjust Purify/Execute based on enemy dive and jungle need."
-    },
-    {
-      "id": "faq-vs-peer",
-      "question": "Ata or Kaizer — which is better?",
-      "answer": "Ata vs Kaizer (Tank, Tier S): Kaizer is 1.6% pick / 51.4% WR. Ata has +2.7% WR vs Kaizer in Camp data. Choose Ata when you need Clash Lane identity; choose Kaizer for Clash Lane comfort."
-    },
-    {
-      "id": "faq-ban",
-      "question": "Should I ban Ata?",
-      "answer": "Low priority ban (0.1%). Focus bans on higher-tier Tank picks unless targeting a one-trick."
+      "id": "faq-counter",
+      "question": "怎麼克制 阿塔？",
+      "answer": "可選 Jing、Wukong、Musashi。阿塔 克制 Agudo、Meng Ya、Luara。"
     }
   ],
   "metaAnalysis": [
-    "Ata — 54.1% WR, 0.7% pick, 0.1% ban (Camp HOK 2026-06-05).",
-    "Tier B Tank · Clash Lane · difficulty Easy.",
-    "Ata sits at Tier B globally (54.1% WR). In high rank, pick only into favorable matchups or when you have a dedicated pocket pick. Camp data shows above-average win rate — prioritize when not hard-countered in draft.",
-    "Matchups: strong into Agudo, Meng Ya, Luara; weak into Jing, Wukong, Musashi.",
-    "Ata vs Kaizer (Tank, Tier S): Kaizer is 1.6% pick / 51.4% WR. Ata has +2.7% WR vs Kaizer in Camp data. Choose Ata when you need Clash Lane identity; choose Kaizer for Clash Lane comfort.",
-    "Ata vs Dun (Tank, Tier S): Dun is 1.5% pick / 52.3% WR. Ata has +1.8% WR vs Dun in Camp data. Choose Ata when you need Clash Lane identity; choose Dun for Clash Lane comfort.",
-    "Draft tip: counter-pick or comfort pick when lane matchup is favorable."
+    "Ata win rate 53.31% (Camp HOK, 2026-06-07).",
+    "Pick rate 0.66%.",
+    "Ban rate 0.06%.",
+    "Counters: Agudo, Meng Ya, Luara. Weak into: Jing, Wukong, Musashi."
   ],
-  "builds": [
-    {
-      "id": "recommended",
-      "label": "Recommended",
-      "position": null,
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1423",
-          "name": "Boots of Tranquility",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1423.jpg",
-          "description": "Reduces Skill CD"
-        },
-        {
-          "slot": 2,
-          "itemId": "1534",
-          "name": "Dragon's Rage",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1534.jpg",
-          "description": "Boosts BA damage"
-        },
-        {
-          "slot": 3,
-          "itemId": "1331",
-          "name": "Blazing Cape",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1331.jpg",
-          "description": "Burns nearby enemies"
-        },
-        {
-          "slot": 4,
-          "itemId": "1334",
-          "name": "Eye of the Phoenix",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1334.jpg",
-          "description": "Boosts Health regen"
-        },
-        {
-          "slot": 5,
-          "itemId": "1332",
-          "name": "Overlord's Platemail",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1332.jpg",
-          "description": "Extra Health"
-        },
-        {
-          "slot": 6,
-          "itemId": "1333",
-          "name": "Ominous Premonition",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1333.jpg",
-          "description": "Slows attackers"
-        }
-      ]
-    },
-    {
-      "id": "clash-lane-1",
-      "label": "Clash Lane 1",
-      "position": "Position 1",
-      "lane": "Clash Lane",
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1422",
-          "name": "Boots of Resistance",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
-          "description": "Shortens CC"
-        },
-        {
-          "slot": 2,
-          "itemId": "1534",
-          "name": "Dragon's Rage",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1534.jpg",
-          "description": "Boosts BA damage"
-        },
-        {
-          "slot": 3,
-          "itemId": "1331",
-          "name": "Blazing Cape",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1331.jpg",
-          "description": "Burns nearby enemies"
-        },
-        {
-          "slot": 4,
-          "itemId": "1334",
-          "name": "Eye of the Phoenix",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1334.jpg",
-          "description": "Boosts Health regen"
-        },
-        {
-          "slot": 5,
-          "itemId": "1333",
-          "name": "Ominous Premonition",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1333.jpg",
-          "description": "Slows attackers"
-        },
-        {
-          "slot": 6,
-          "itemId": "1335",
-          "name": "Succubus Cloak",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1335.jpg",
-          "description": "Negates magical damage"
-        }
-      ]
-    },
-    {
-      "id": "clash-lane-1",
-      "label": "Clash Lane 1",
-      "position": "Position 1",
-      "lane": "Clash Lane",
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1422",
-          "name": "Boots of Resistance",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
-          "description": "Shortens CC"
-        },
-        {
-          "slot": 2,
-          "itemId": "1534",
-          "name": "Dragon's Rage",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1534.jpg",
-          "description": "Boosts BA damage"
-        },
-        {
-          "slot": 3,
-          "itemId": "1331",
-          "name": "Blazing Cape",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1331.jpg",
-          "description": "Burns nearby enemies"
-        },
-        {
-          "slot": 4,
-          "itemId": "1334",
-          "name": "Eye of the Phoenix",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1334.jpg",
-          "description": "Boosts Health regen"
-        },
-        {
-          "slot": 5,
-          "itemId": "1332",
-          "name": "Overlord's Platemail",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1332.jpg",
-          "description": "Extra Health"
-        },
-        {
-          "slot": 6,
-          "itemId": "1333",
-          "name": "Ominous Premonition",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1333.jpg",
-          "description": "Slows attackers"
-        }
-      ]
-    },
-    {
-      "id": "kekebalan-tubuh",
-      "label": "Kekebalan Tubuh",
-      "position": "Position 1",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1331",
-          "name": "Blazing Cape",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1331.jpg",
-          "description": "Burns nearby enemies"
-        },
-        {
-          "slot": 2,
-          "itemId": "1323",
-          "name": "Clandestine Cape",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1323.jpg",
-          "description": "MDEF +150, HP +450"
-        },
-        {
-          "slot": 3,
-          "itemId": "1421",
-          "name": "Boots of Fortitude",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1421.jpg",
-          "description": "Reduces physical damage"
-        },
-        {
-          "slot": 4,
-          "itemId": "1334",
-          "name": "Eye of the Phoenix",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1334.jpg",
-          "description": "Boosts Health regen"
-        },
-        {
-          "slot": 5,
-          "itemId": "1332",
-          "name": "Overlord's Platemail",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1332.jpg",
-          "description": "Extra Health"
-        },
-        {
-          "slot": 6,
-          "itemId": "1422",
-          "name": "Boots of Resistance",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
-          "description": "Shortens CC"
-        }
-      ]
-    },
-    {
-      "id": "纯肉",
-      "label": "纯肉",
-      "position": "Position 1",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1421",
-          "name": "Boots of Fortitude",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1421.jpg",
-          "description": "Reduces physical damage"
-        },
-        {
-          "slot": 2,
-          "itemId": "1534",
-          "name": "Dragon's Rage",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1534.jpg",
-          "description": "Boosts BA damage"
-        },
-        {
-          "slot": 3,
-          "itemId": "1331",
-          "name": "Blazing Cape",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1331.jpg",
-          "description": "Burns nearby enemies"
-        },
-        {
-          "slot": 4,
-          "itemId": "1422",
-          "name": "Boots of Resistance",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
-          "description": "Shortens CC"
-        },
-        {
-          "slot": 5,
-          "itemId": "1334",
-          "name": "Eye of the Phoenix",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1334.jpg",
-          "description": "Boosts Health regen"
-        },
-        {
-          "slot": 6,
-          "itemId": "1327",
-          "name": "Spikemail",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1327.jpg",
-          "description": "Reflects damage"
-        }
-      ]
-    },
-    {
-      "id": "preset",
-      "label": "Preset",
-      "position": "Position 1",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1421",
-          "name": "Boots of Fortitude",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1421.jpg",
-          "description": "Reduces physical damage"
-        },
-        {
-          "slot": 2,
-          "itemId": "1331",
-          "name": "Blazing Cape",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1331.jpg",
-          "description": "Burns nearby enemies"
-        },
-        {
-          "slot": 3,
-          "itemId": "1422",
-          "name": "Boots of Resistance",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
-          "description": "Shortens CC"
-        },
-        {
-          "slot": 4,
-          "itemId": "1534",
-          "name": "Dragon's Rage",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1534.jpg",
-          "description": "Boosts BA damage"
-        },
-        {
-          "slot": 5,
-          "itemId": "1334",
-          "name": "Eye of the Phoenix",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1334.jpg",
-          "description": "Boosts Health regen"
-        },
-        {
-          "slot": 6,
-          "itemId": "1332",
-          "name": "Overlord's Platemail",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1332.jpg",
-          "description": "Extra Health"
-        }
-      ]
-    },
-    {
-      "id": "差-点帅死自己",
-      "label": "差-点帅死自己",
-      "position": "Position 1",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1422",
-          "name": "Boots of Resistance",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
-          "description": "Shortens CC"
-        },
-        {
-          "slot": 2,
-          "itemId": "1331",
-          "name": "Blazing Cape",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1331.jpg",
-          "description": "Burns nearby enemies"
-        },
-        {
-          "slot": 3,
-          "itemId": "1336",
-          "name": "Glacial Buckler",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1336.jpg",
-          "description": "Group damage & slow"
-        },
-        {
-          "slot": 4,
-          "itemId": "1334",
-          "name": "Eye of the Phoenix",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1334.jpg",
-          "description": "Boosts Health regen"
-        },
-        {
-          "slot": 5,
-          "itemId": "1333",
-          "name": "Ominous Premonition",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1333.jpg",
-          "description": "Slows attackers"
-        },
-        {
-          "slot": 6,
-          "itemId": "1335",
-          "name": "Succubus Cloak",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1335.jpg",
-          "description": "Negates magical damage"
-        }
-      ]
-    },
-    {
-      "id": "war-buy-time",
-      "label": "War & Buy-Time",
-      "position": "Position 1",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1421",
-          "name": "Boots of Fortitude",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1421.jpg",
-          "description": "Reduces physical damage"
-        },
-        {
-          "slot": 2,
-          "itemId": "1331",
-          "name": "Blazing Cape",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1331.jpg",
-          "description": "Burns nearby enemies"
-        },
-        {
-          "slot": 3,
-          "itemId": "1422",
-          "name": "Boots of Resistance",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
-          "description": "Shortens CC"
-        },
-        {
-          "slot": 4,
-          "itemId": "1534",
-          "name": "Dragon's Rage",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1534.jpg",
-          "description": "Boosts BA damage"
-        },
-        {
-          "slot": 5,
-          "itemId": "13310",
-          "name": "Frostscar's Embrace",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/13310.jpg",
-          "description": "Enhanced BAs slow"
-        },
-        {
-          "slot": 6,
-          "itemId": "1334",
-          "name": "Eye of the Phoenix",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1334.jpg",
-          "description": "Boosts Health regen"
-        }
-      ]
-    }
+  "metaAnalysisZh": [
+    "阿塔 勝率 53.31%（Camp HOK，2026-06-07）",
+    "選取率 0.66%",
+    "禁用率 0.06%",
+    "克制：Agudo、Meng Ya、Luara；被克制：Jing、Wukong、Musashi"
   ],
   "guide": {
     "overview": "Ata is a Easy Tank (Clash Lane) on Honor of Kings Global. Camp HOK ranks them Tier B with 54.1% win rate and 0.7% pick rate as of 2026-06-05.",

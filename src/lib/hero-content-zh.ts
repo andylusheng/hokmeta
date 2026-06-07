@@ -6,8 +6,16 @@ import type {
 } from '@/types/hero';
 import type { HeroPlaybook } from '@/lib/hero-playbook';
 
+import {
+  PREMIUM_ZH_SLUGS_LIST,
+  S_PLUS_GUIDES_ZH,
+  type LocalizedGuide,
+} from '@/lib/hero-guides-zh';
+
+export type { LocalizedGuide };
+
 /** Heroes with full Traditional Chinese playbook + guide body. */
-export const PREMIUM_ZH_SLUGS = new Set(['musashi']);
+export const PREMIUM_ZH_SLUGS = new Set(PREMIUM_ZH_SLUGS_LIST);
 
 export function hasPremiumZhContent(slug: string): boolean {
   return PREMIUM_ZH_SLUGS.has(slug);
@@ -68,13 +76,6 @@ const MUSASHI_PLAYBOOK_ZH: Partial<HeroPlaybook> = {
   },
 };
 
-export interface LocalizedGuide {
-  laning?: string;
-  teamfight?: string;
-  highRank?: string;
-  comparisons?: string[];
-}
-
 const MUSASHI_GUIDE_ZH: LocalizedGuide = {
   laning:
     '四級前穩定刷野、管理好氣勢層數，半血不強開。暴君前確保中下路有推線；優先抓沒閃現的一路。',
@@ -94,6 +95,7 @@ const PLAYBOOK_ZH: Record<string, Partial<HeroPlaybook>> = {
 
 const GUIDE_ZH: Record<string, LocalizedGuide> = {
   musashi: MUSASHI_GUIDE_ZH,
+  ...S_PLUS_GUIDES_ZH,
 };
 
 export function getZhPlaybookOverride(slug: string): Partial<HeroPlaybook> | undefined {

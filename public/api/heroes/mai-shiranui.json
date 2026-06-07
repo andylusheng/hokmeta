@@ -2,99 +2,583 @@
   "id": "mai-shiranui",
   "slug": "mai-shiranui",
   "name": "Mai Shiranui",
+  "nameZh": "不知火舞",
   "role": "Assassin",
   "roles": "Assassin, Mage",
+  "rolesZh": "刺客, 法師",
   "lane": "Mid Lane",
+  "laneZh": "中路",
   "difficulty": "Medium",
   "tier": "A",
-  "winRate": 48.74,
-  "pickRate": 0.76,
+  "winRate": 48.56,
+  "pickRate": 0.77,
   "banRate": 0.16,
-  "rank": 93,
+  "rank": 94,
   "avatar": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/4jaM0F19.png",
   "avatarFallback": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/157/157.jpg",
+  "heroCover": "https://camp.honorofkings.com/social/game/src/image_hero_cover_1275*718/Gidwez34.jpg",
   "tencentId": 157,
-  "dataSource": "Camp HOK + HoKStats.gg (intl)",
-  "dataUpdated": "2026-06-05",
+  "dataSource": "Camp HOK bilingual (primary)",
+  "dataUpdated": "2026-06-07",
   "skills": [
     {
       "slot": "passive",
       "name": "HISSATSU SHINOBI-BACHI",
-      "description": "Periodically gains an enhanced Basic Attack that lets her dash while dealing damage and knocking back enemies in her path. After using an enhanced Basic Attack or any skill, she can roll and gain Movement Speed.",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/157/15700.png",
-      "cooldown": null
+      "description": "Periodically gains an enhanced Basic Attack that lets her dash while dealing damage and knocking back enemies in her path.\nAfter using an enhanced Basic Attack or any skill, she can roll and gain Movement Speed.",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/15700.png",
+      "cooldown": "1s"
     },
     {
       "slot": "skill1",
       "name": "HISHOU RYUUENJIN",
       "description": "Dashes forward to deal damage and launch enemies in the target area. Recovers Energy upon hit.",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/157/15710.png",
-      "cooldown": null
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/15710.png",
+      "cooldown": "10s"
     },
     {
       "slot": "skill2",
       "name": "KACHOUSEN",
       "description": "Throws her fan to damage and slow a target enemy while reducing their Magical Defense. Hits recover Energy. After it hits, the fan also deals magical damage to the closest unit behind the target.",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/157/15720.png",
-      "cooldown": null
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/15720.png",
+      "cooldown": "3s"
     },
     {
       "slot": "ultimate",
       "name": "CHOU HISSATSU SHINOBI-BACHI",
       "description": "Dashes forward to deal damage and knock back enemies while reducing their Physical Attack. Recovers Energy upon hitting a target.",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/157/15730.png",
-      "cooldown": null
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/15730.png",
+      "cooldown": "25s"
+    }
+  ],
+  "skillsZh": [
+    {
+      "slot": "passive",
+      "name": "必殺忍蜂",
+      "description": "定期強化普攻，造成傷害並具有突進和擊退效果。\n使用強化普攻或技能後可進行翻滾並增加移動速度。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/15700.png",
+      "cooldown": "1s"
+    },
+    {
+      "slot": "skill1",
+      "name": "飛翔龍炎陣",
+      "description": "向前衝鋒造成傷害並擊飛目標區域敵人，命中目標會回復能量。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/15710.png",
+      "cooldown": "10s"
+    },
+    {
+      "slot": "skill2",
+      "name": "花蝶扇",
+      "description": "發射扇子造成傷害和減速，同時減少目標法術防禦。命中目標會回復能量。命中後還會對目標身後最近的一個單位，造成法術傷害。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/15720.png",
+      "cooldown": "3s"
+    },
+    {
+      "slot": "ultimate",
+      "name": "超必殺忍蜂",
+      "description": "向前衝刺造成傷害並擊退，減少目標物理攻擊，命中目標會回復能量。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/15730.png",
+      "cooldown": "25s"
     }
   ],
   "build": [
     {
       "slot": 1,
-      "itemId": "1233",
-      "name": "Scepter of Reverberation",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1233.jpg",
-      "description": "Skill hits trigger explosions"
+      "itemId": "1231",
+      "name": "Void Staff",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1231.png",
+      "description": "MATK +210, HP +500, CDR +5%\nAnti-tank"
     },
     {
       "slot": 2,
-      "itemId": "1422",
-      "name": "Boots of Resistance",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
-      "description": "Shortens CC"
+      "itemId": "1233",
+      "name": "Scepter of Reverberation",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1233.png",
+      "description": "MATK +210, MSPD +7.5%\nSkill hits explode"
     },
     {
       "slot": 3,
-      "itemId": "1232",
-      "name": "Savant's Wrath",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1232.jpg",
-      "description": "Greatly boosts MATK"
+      "itemId": "1238",
+      "name": "Sage's Tome",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1238.png",
+      "description": "MATK +350, CDR +10%\nGreat for mages"
     },
     {
       "slot": 4,
-      "itemId": "1240",
-      "name": "Insatiable Tome",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1240.jpg",
-      "description": "Magical Lifesteal"
+      "itemId": "1227",
+      "name": "Ardent Dominion",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1227.png",
+      "description": "MATK +150, Magical Lifesteal +12%, MSPD +7.5%\nCleanse and shield at low HP"
     },
     {
       "slot": 5,
-      "itemId": "1231",
-      "name": "Void Staff",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1231.jpg",
-      "description": "Anti-tank"
+      "itemId": "1236",
+      "name": "Staves of Sorcery",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1236.png",
+      "description": "MATK +180, HP +600, MSPD +7.5%\nEnhances BAs"
     },
     {
       "slot": 6,
-      "itemId": "1239",
-      "name": "Splendor",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1239.jpg",
-      "description": "Temp. invincibility"
+      "itemId": "12211",
+      "name": "Venomous Staff",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/12211.png",
+      "description": "MATK +240, CDR +7.5%, MSPD +7.5%\nLowers Health Regen"
+    }
+  ],
+  "buildZh": [
+    {
+      "slot": 1,
+      "itemId": "1231",
+      "name": "虛無法杖",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1231.png",
+      "description": "+210點法攻+500點生命值+5%減冷卻時間\n打坦克用"
+    },
+    {
+      "slot": 2,
+      "itemId": "1233",
+      "name": "迴響之杖",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1233.png",
+      "description": "+210點法攻+7.5%移速 \n技能命中爆炸"
+    },
+    {
+      "slot": 3,
+      "itemId": "1238",
+      "name": "賢者天書",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1238.png",
+      "description": "+350點法攻+10%減冷卻時間\n法師神裝"
+    },
+    {
+      "slot": 4,
+      "itemId": "1227",
+      "name": "熾熱支配",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1227.png",
+      "description": "+150點法攻+12%法術吸血+7.5%移速\n殘血解控加盾"
+    },
+    {
+      "slot": 5,
+      "itemId": "1236",
+      "name": "巫術法杖",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1236.png",
+      "description": "+180點法攻+600點生命值+7.5%移速……\n強化普攻"
+    },
+    {
+      "slot": 6,
+      "itemId": "12211",
+      "name": "夢魘之牙",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/12211.png",
+      "description": "+240點法攻+7.5%減冷卻時間+7.5%移速\n減少敵人回血"
+    }
+  ],
+  "builds": [
+    {
+      "id": "camp-0",
+      "label": "Boom Pamaypay",
+      "lane": "Mid",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1231",
+          "name": "Void Staff",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1231.png",
+          "description": "MATK +210, HP +500, CDR +5%\nAnti-tank"
+        },
+        {
+          "slot": 2,
+          "itemId": "1233",
+          "name": "Scepter of Reverberation",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1233.png",
+          "description": "MATK +210, MSPD +7.5%\nSkill hits explode"
+        },
+        {
+          "slot": 3,
+          "itemId": "1238",
+          "name": "Sage's Tome",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1238.png",
+          "description": "MATK +350, CDR +10%\nGreat for mages"
+        },
+        {
+          "slot": 4,
+          "itemId": "1227",
+          "name": "Ardent Dominion",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1227.png",
+          "description": "MATK +150, Magical Lifesteal +12%, MSPD +7.5%\nCleanse and shield at low HP"
+        },
+        {
+          "slot": 5,
+          "itemId": "1236",
+          "name": "Staves of Sorcery",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1236.png",
+          "description": "MATK +180, HP +600, MSPD +7.5%\nEnhances BAs"
+        },
+        {
+          "slot": 6,
+          "itemId": "12211",
+          "name": "Venomous Staff",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/12211.png",
+          "description": "MATK +240, CDR +7.5%, MSPD +7.5%\nLowers Health Regen"
+        }
+      ]
+    },
+    {
+      "id": "camp-1",
+      "label": "Maiii",
+      "lane": "Mid",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1422",
+          "name": "Boots of Resistance",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1422.png",
+          "description": "MDEF +100, PDEF +50, MSPD +50\nShortens crowd control"
+        },
+        {
+          "slot": 2,
+          "itemId": "1231",
+          "name": "Void Staff",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1231.png",
+          "description": "MATK +210, HP +500, CDR +5%\nAnti-tank"
+        },
+        {
+          "slot": 3,
+          "itemId": "1240",
+          "name": "Insatiable Tome",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1240.png",
+          "description": "MATK +160, Magical Lifesteal +24%, HP +750\nLifesteal increases CDR"
+        },
+        {
+          "slot": 4,
+          "itemId": "1236",
+          "name": "Staves of Sorcery",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1236.png",
+          "description": "MATK +180, HP +600, MSPD +7.5%\nEnhances BAs"
+        },
+        {
+          "slot": 5,
+          "itemId": "1337",
+          "name": "Sage's Sanctuary",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
+        },
+        {
+          "slot": 6,
+          "itemId": "1127",
+          "name": "Destiny",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
+        }
+      ]
+    },
+    {
+      "id": "camp-2",
+      "label": "Popular",
+      "lane": "Mid",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1235",
+          "name": "Mask of Agony",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1235.png",
+          "description": "MATK +100, CDR +7.5%, HP +900\nBoosts skill damage"
+        },
+        {
+          "slot": 2,
+          "itemId": "1232",
+          "name": "Savant's Wrath",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1232.png",
+          "description": "MATK +210\nGreatly boosts MATK"
+        },
+        {
+          "slot": 3,
+          "itemId": "1227",
+          "name": "Ardent Dominion",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1227.png",
+          "description": "MATK +150, Magical Lifesteal +12%, MSPD +7.5%\nCleanse and shield at low HP"
+        },
+        {
+          "slot": 4,
+          "itemId": "1335",
+          "name": "Succubus Cloak",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
+          "description": "MDEF +300, HP +1,100\nNegates magical damage"
+        },
+        {
+          "slot": 5,
+          "itemId": "1337",
+          "name": "Sage's Sanctuary",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
+        },
+        {
+          "slot": 6,
+          "itemId": "1240",
+          "name": "Insatiable Tome",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1240.png",
+          "description": "MATK +160, Magical Lifesteal +24%, HP +750\nLifesteal increases CDR"
+        }
+      ]
+    },
+    {
+      "id": "camp-3",
+      "label": "Burst/poke",
+      "lane": "Mid",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1232",
+          "name": "Savant's Wrath",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1232.png",
+          "description": "MATK +210\nGreatly boosts MATK"
+        },
+        {
+          "slot": 2,
+          "itemId": "1233",
+          "name": "Scepter of Reverberation",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1233.png",
+          "description": "MATK +210, MSPD +7.5%\nSkill hits explode"
+        },
+        {
+          "slot": 3,
+          "itemId": "1231",
+          "name": "Void Staff",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1231.png",
+          "description": "MATK +210, HP +500, CDR +5%\nAnti-tank"
+        },
+        {
+          "slot": 4,
+          "itemId": "1238",
+          "name": "Sage's Tome",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1238.png",
+          "description": "MATK +350, CDR +10%\nGreat for mages"
+        },
+        {
+          "slot": 5,
+          "itemId": "1337",
+          "name": "Sage's Sanctuary",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
+        },
+        {
+          "slot": 6,
+          "itemId": "1242",
+          "name": "Enigma - Moon Goddess",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1242.png",
+          "description": "MATK +160, CDR +7.5%, Magical Lifesteal +12%\nTemp. invincibility"
+        }
+      ]
+    }
+  ],
+  "buildsZh": [
+    {
+      "id": "camp-0",
+      "label": "Boom Pamaypay",
+      "lane": "Mid",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1231",
+          "name": "虛無法杖",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1231.png",
+          "description": "+210點法攻+500點生命值+5%減冷卻時間\n打坦克用"
+        },
+        {
+          "slot": 2,
+          "itemId": "1233",
+          "name": "迴響之杖",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1233.png",
+          "description": "+210點法攻+7.5%移速 \n技能命中爆炸"
+        },
+        {
+          "slot": 3,
+          "itemId": "1238",
+          "name": "賢者天書",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1238.png",
+          "description": "+350點法攻+10%減冷卻時間\n法師神裝"
+        },
+        {
+          "slot": 4,
+          "itemId": "1227",
+          "name": "熾熱支配",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1227.png",
+          "description": "+150點法攻+12%法術吸血+7.5%移速\n殘血解控加盾"
+        },
+        {
+          "slot": 5,
+          "itemId": "1236",
+          "name": "巫術法杖",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1236.png",
+          "description": "+180點法攻+600點生命值+7.5%移速……\n強化普攻"
+        },
+        {
+          "slot": 6,
+          "itemId": "12211",
+          "name": "夢魘之牙",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/12211.png",
+          "description": "+240點法攻+7.5%減冷卻時間+7.5%移速\n減少敵人回血"
+        }
+      ]
+    },
+    {
+      "id": "camp-1",
+      "label": "Maiii",
+      "lane": "Mid",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1422",
+          "name": "抵抗之靴",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1422.png",
+          "description": "+100點法防+50點物防+50點移速\n減少被控時間"
+        },
+        {
+          "slot": 2,
+          "itemId": "1231",
+          "name": "虛無法杖",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1231.png",
+          "description": "+210點法攻+500點生命值+5%減冷卻時間\n打坦克用"
+        },
+        {
+          "slot": 3,
+          "itemId": "1240",
+          "name": "噬神之書",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1240.png",
+          "description": "+160點法攻+24%法術吸血+750點生命值 吸血拉長冷卻時間"
+        },
+        {
+          "slot": 4,
+          "itemId": "1236",
+          "name": "巫術法杖",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1236.png",
+          "description": "+180點法攻+600點生命值+7.5%移速……\n強化普攻"
+        },
+        {
+          "slot": 5,
+          "itemId": "1337",
+          "name": "賢者的庇護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+        },
+        {
+          "slot": 6,
+          "itemId": "1127",
+          "name": "名刀・司命",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "+75點攻擊+15%攻速+500點生命值\n保命"
+        }
+      ]
+    },
+    {
+      "id": "camp-2",
+      "label": "Popular",
+      "lane": "Mid",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1235",
+          "name": "痛苦面具",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1235.png",
+          "description": "+100點法攻+7.5%減冷卻時間+900點生命值 \n技能額外傷害"
+        },
+        {
+          "slot": 2,
+          "itemId": "1232",
+          "name": "博學者之怒",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1232.png",
+          "description": "+210點法術攻擊\n大幅提升法強"
+        },
+        {
+          "slot": 3,
+          "itemId": "1227",
+          "name": "熾熱支配",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1227.png",
+          "description": "+150點法攻+12%法術吸血+7.5%移速\n殘血解控加盾"
+        },
+        {
+          "slot": 4,
+          "itemId": "1335",
+          "name": "魔女斗篷",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
+          "description": "+300點法防+1100點生命值\n吸收法術傷害"
+        },
+        {
+          "slot": 5,
+          "itemId": "1337",
+          "name": "賢者的庇護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+        },
+        {
+          "slot": 6,
+          "itemId": "1240",
+          "name": "噬神之書",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1240.png",
+          "description": "+160點法攻+24%法術吸血+750點生命值 吸血拉長冷卻時間"
+        }
+      ]
+    },
+    {
+      "id": "camp-3",
+      "label": "Burst/poke",
+      "lane": "Mid",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1232",
+          "name": "博學者之怒",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1232.png",
+          "description": "+210點法術攻擊\n大幅提升法強"
+        },
+        {
+          "slot": 2,
+          "itemId": "1233",
+          "name": "迴響之杖",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1233.png",
+          "description": "+210點法攻+7.5%移速 \n技能命中爆炸"
+        },
+        {
+          "slot": 3,
+          "itemId": "1231",
+          "name": "虛無法杖",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1231.png",
+          "description": "+210點法攻+500點生命值+5%減冷卻時間\n打坦克用"
+        },
+        {
+          "slot": 4,
+          "itemId": "1238",
+          "name": "賢者天書",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1238.png",
+          "description": "+350點法攻+10%減冷卻時間\n法師神裝"
+        },
+        {
+          "slot": 5,
+          "itemId": "1337",
+          "name": "賢者的庇護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+        },
+        {
+          "slot": 6,
+          "itemId": "1242",
+          "name": "難知・月神",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1242.png",
+          "description": "+160點法攻 +7.5%減冷卻時間\n+12%法術吸血暫時無敵"
+        }
+      ]
     }
   ],
   "arcana": [
-    "Nightmare"
+    "Lvl 5: Nightmare",
+    "Lvl 5: Saint",
+    "Lvl 5: Reincarnation"
+  ],
+  "arcanaZh": [
+    "5級：夢魘",
+    "5級：聖人",
+    "5級：輪迴"
   ],
   "spells": [
     "Flash"
+  ],
+  "spellsZh": [
+    "閃現"
   ],
   "counters": [
     "Chano",
@@ -107,536 +591,129 @@
     "Di Renjie"
   ],
   "tips": [
-    "Mai Shiranui is a Medium Assassin (Mid Lane) on Honor of Kings Global. Camp HOK ranks them Tier A with 48.7% win rate and 0.8% pick rate as of 2026-06-05.",
-    "Best build path: Scepter of Reverberation → Boots of Resistance → Savant's Wrath → Insatiable Tome → Void Staff → Splendor.",
-    "Run Nightmare for stats that match Mai Shiranui's Assassin kit. Take Flash — swap to Purify against heavy CC or Smite when jungling.",
-    "Standard trade: HISHOU RYUUENJIN → KACHOUSEN → CHOU HISSATSU SHINOBI-BACHI → weave basic attacks. Weave basic attacks between skill casts for passive value.",
-    "Laning: Control first wave without taking free poke. Roam after pushing wave 2–4 to side lanes with your jungler.",
-    "Teamfight: Wait for CC from your team, then dive carry with full combo. Exit with reset or flash if focus fired.",
-    "Mai Shiranui excels into Chano, Lapulapu, Ata. Avoid blind picking into Alessio, Charlotte, Di Renjie without team peel.",
-    "Mai Shiranui is a viable Tier A pick in high rank with 48.7% win rate — strong in one-trick hands or as a counter-pick. Below 49% global WR — high-rank players often avoid unless compensating for team comp."
+    "Mai Shiranui (Assassin): Tier A — 48.56% WR (Camp HOK).",
+    "Lane: Mid Lane.",
+    "Build: Void Staff, Scepter of Reverberation, Sage's Tome."
+  ],
+  "tipsZh": [
+    "不知火舞（中路）：梯度 A，勝率 48.56%（Camp HOK）。",
+    "出裝：虛無法杖、迴響之杖、賢者天書."
   ],
   "patchHistory": [
     {
-      "version": "Live meta",
-      "change": "Camp HOK — WR 48.7%, pick 0.8%, ban 0.2%, tier A."
+      "seasonId": "8",
+      "seasonName": "S8",
+      "versionName": "20250124",
+      "publishedAt": "2025-01-24T02:00:29Z",
+      "isCurrent": false,
+      "tag": "Stat Buffs",
+      "change": "Reduced Skill 2's cooldown and slightly decreased its damage.",
+      "detail": "This allows Mai Shiranui to use her Skill 2 more frequently, while balancing its damage to prevent instant kills.",
+      "version": "S8"
     },
     {
-      "version": "Matchups",
-      "change": "Strong into Chano, Lapulapu, Ata · Weak into Alessio, Charlotte, Di Renjie."
+      "seasonId": "7",
+      "seasonName": "S7",
+      "versionName": "20240925",
+      "publishedAt": "2024-09-25T03:24:02Z",
+      "isCurrent": false,
+      "tag": "Stat Buffs",
+      "change": "Reduced Energy Cost for Skill 2 and the Ultimate.",
+      "detail": "\"Currently, even when Mai Shiranui has full Energy, missing with a skill can prevent her from completing her full skill combos. We slightly reduced Energy Cost to alleviate this issue.\"",
+      "version": "S7"
     },
     {
-      "version": "High rank",
-      "change": "Mai Shiranui is a viable Tier A pick in high rank with 48.7% win rate — strong in one-trick hands or as a counter-pick. Below 49% global WR — high-rank players often avoid unless compensating for team comp."
+      "seasonId": "5",
+      "seasonName": "S5",
+      "versionName": "20240509",
+      "publishedAt": "2024-05-09T02:31:07Z",
+      "isCurrent": false,
+      "tag": "Mechanics Upgrade",
+      "change": "Improved her skill cast indicator to make the area of effect of some of her skills clearer. Skill 2 can now hit up to 2 enemies.",
+      "detail": "Mai Shiranui is a hero with very complex controls, making her a very difficult hero to master.In the current version, Mai Shiranui's skill mechanics make it very difficult to escape her as she charges forward in the Mid Lane minion wave.We hope that the changes in the new version can help Mai Shiranui to better integrate into the current game environment and demonstrate her advantages.We hope this will give more players the chance to try this hero.",
+      "version": "S5"
+    }
+  ],
+  "patchHistoryZh": [
+    {
+      "seasonId": "8",
+      "seasonName": "S8",
+      "versionName": "20250124",
+      "publishedAt": "2025-01-24T02:00:29Z",
+      "isCurrent": false,
+      "tag": "數值增強",
+      "change": "降低2技能的冷卻時間，略微削弱傷害",
+      "detail": "「讓不知火舞有更多嘗試2技能的機會，同時削弱了傷害降低對手被秒殺的體驗。」",
+      "version": "S8"
+    },
+    {
+      "seasonId": "7",
+      "seasonName": "S7",
+      "versionName": "20240925",
+      "publishedAt": "2024-09-25T03:24:02Z",
+      "isCurrent": false,
+      "tag": "數值增強",
+      "change": "降低2技能和3技能的能量消耗",
+      "detail": "目前不知火舞即使在能量全滿時，也會因為技能未命中而無法施放完整連招，我們稍微調降能量消耗來緩解這種情況。",
+      "version": "S7"
+    },
+    {
+      "seasonId": "5",
+      "seasonName": "S5",
+      "versionName": "20240509",
+      "publishedAt": "2024-05-09T02:31:07Z",
+      "isCurrent": false,
+      "tag": "機制升級",
+      "change": "優化技能施放指示器，使部分技能的生效範圍更加清晰。2技能現在可以最多命中2名敵人",
+      "detail": "不知火舞是一名操作上限很高的英雄，而相應的，她的練習成本同樣很高。而在當前的版本中，不知火舞原有的技能機制使得她很難在中路兵線的不斷推進中脫身。我們希望新版本中的調整可以讓不知火舞更好地融入到當前的遊戲環境中並發揮自身的優勢。讓更多的玩家可以有機會嘗試這名英雄。",
+      "version": "S5"
     }
   ],
   "faqs": [
     {
       "id": "faq-good-season",
-      "question": "Is Mai Shiranui good in the current meta?",
-      "answer": "Mai Shiranui is Tier A Assassin with 48.7% win rate, 0.8% pick rate, and 0.2% ban rate on Honor of Kings Global (Camp HOK, 2026-06-05). Solid situational pick."
+      "question": "Is Mai Shiranui good in current season?",
+      "answer": "Mai Shiranui is Tier A Assassin with 48.56% win rate, 0.77% pick rate, and 0.16% ban rate (Camp HOK international)."
     },
     {
       "id": "faq-best-build",
       "question": "What is the best Mai Shiranui build?",
-      "answer": "Core item path: Scepter of Reverberation, Boots of Resistance, Savant's Wrath, Insatiable Tome, Void Staff, Splendor. Run Nightmare arcana with Flash. Switch to alternate build presets on this page for jungle, clash, or late-game setups."
+      "answer": "Recommended: Void Staff, Scepter of Reverberation, Sage's Tome, Ardent Dominion, Staves of Sorcery, Venomous Staff."
     },
     {
       "id": "faq-counter",
       "question": "How to counter Mai Shiranui?",
-      "answer": "Pick Alessio, Charlotte, Di Renjie into Mai Shiranui. Deny Mid Lane resources early and force fights before Mai Shiranui completes core items. Mai Shiranui struggles when the enemy can peel and group them."
+      "answer": "Pick Alessio, Charlotte, Di Renjie. Strong into Chano, Lapulapu, Ata."
+    }
+  ],
+  "faqsZh": [
+    {
+      "id": "faq-good-season",
+      "question": "不知火舞 這版本適合上分嗎？",
+      "answer": "不知火舞 為 A 梯度，勝率 48.56%、選取 0.77%、禁用 0.16%（Camp HOK 國際服）。"
     },
     {
-      "id": "faq-strong-into",
-      "question": "Who does Mai Shiranui counter?",
-      "answer": "Mai Shiranui is strong into Chano, Lapulapu, Ata according to HoKStats matchup data and role matchups on the global server. Draft Mai Shiranui when the enemy relies on these heroes in the Mid Lane lane."
+      "id": "faq-best-build",
+      "question": "不知火舞 出裝怎麼搭配？",
+      "answer": "推薦：虛無法杖、迴響之杖、賢者天書、熾熱支配、巫術法杖、夢魘之牙."
     },
     {
-      "id": "faq-high-rank",
-      "question": "Is Mai Shiranui good in high rank / Diamond+?",
-      "answer": "Mai Shiranui is a viable Tier A pick in high rank with 48.7% win rate — strong in one-trick hands or as a counter-pick. Below 49% global WR — high-rank players often avoid unless compensating for team comp."
-    },
-    {
-      "id": "faq-lane",
-      "question": "What lane should Mai Shiranui play?",
-      "answer": "Mai Shiranui is tagged Mid Lane in Camp export (Assassin, Mage). Control first wave without taking free poke. Roam after pushing wave 2–4 to side lanes with your jungler."
-    },
-    {
-      "id": "faq-arcana",
-      "question": "Best arcana and spells for Mai Shiranui?",
-      "answer": "Recommended: Nightmare arcana. Battle spell: Flash. Adjust Purify/Execute based on enemy dive and jungle need."
-    },
-    {
-      "id": "faq-vs-peer",
-      "question": "Mai Shiranui or Wukong — which is better?",
-      "answer": "Mai Shiranui vs Wukong (Assassin, Tier S): Wukong is 1.3% pick / 49.7% WR. Wukong wins 1.0% more often globally. Choose Mai Shiranui when you need Mid Lane identity; choose Wukong for Jungling comfort."
-    },
-    {
-      "id": "faq-ban",
-      "question": "Should I ban Mai Shiranui?",
-      "answer": "Low priority ban (0.2%). Focus bans on higher-tier Assassin picks unless targeting a one-trick."
+      "id": "faq-counter",
+      "question": "怎麼克制 不知火舞？",
+      "answer": "可選 Alessio、Charlotte、Di Renjie。不知火舞 克制 Chano、Lapulapu、Ata。"
     }
   ],
   "metaAnalysis": [
-    "Mai Shiranui — 48.7% WR, 0.8% pick, 0.2% ban (Camp HOK 2026-06-05).",
-    "Tier A Assassin · Mid Lane · difficulty Medium.",
-    "Mai Shiranui is a viable Tier A pick in high rank with 48.7% win rate — strong in one-trick hands or as a counter-pick. Below 49% global WR — high-rank players often avoid unless compensating for team comp.",
-    "Matchups: strong into Chano, Lapulapu, Ata; weak into Alessio, Charlotte, Di Renjie.",
-    "Mai Shiranui vs Wukong (Assassin, Tier S): Wukong is 1.3% pick / 49.7% WR. Wukong wins 1.0% more often globally. Choose Mai Shiranui when you need Mid Lane identity; choose Wukong for Jungling comfort.",
-    "Mai Shiranui vs Musashi (Assassin, Tier A): Musashi is 1.1% pick / 50.7% WR. Musashi wins 2.0% more often globally. Choose Mai Shiranui when you need Mid Lane identity; choose Musashi for Jungling comfort.",
-    "Draft tip: counter-pick or comfort pick when lane matchup is favorable."
+    "Mai Shiranui win rate 48.56% (Camp HOK, 2026-06-07).",
+    "Pick rate 0.77%.",
+    "Ban rate 0.16%.",
+    "Counters: Chano, Lapulapu, Ata. Weak into: Alessio, Charlotte, Di Renjie."
   ],
-  "builds": [
-    {
-      "id": "recommended",
-      "label": "Recommended",
-      "position": null,
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1233",
-          "name": "Scepter of Reverberation",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1233.jpg",
-          "description": "Skill hits trigger explosions"
-        },
-        {
-          "slot": 2,
-          "itemId": "1422",
-          "name": "Boots of Resistance",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
-          "description": "Shortens CC"
-        },
-        {
-          "slot": 3,
-          "itemId": "1232",
-          "name": "Savant's Wrath",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1232.jpg",
-          "description": "Greatly boosts MATK"
-        },
-        {
-          "slot": 4,
-          "itemId": "1240",
-          "name": "Insatiable Tome",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1240.jpg",
-          "description": "Magical Lifesteal"
-        },
-        {
-          "slot": 5,
-          "itemId": "1231",
-          "name": "Void Staff",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1231.jpg",
-          "description": "Anti-tank"
-        },
-        {
-          "slot": 6,
-          "itemId": "1239",
-          "name": "Splendor",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1239.jpg",
-          "description": "Temp. invincibility"
-        }
-      ]
-    },
-    {
-      "id": "principal",
-      "label": "Principal.",
-      "position": "Position 2",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1224",
-          "name": "Stone of Sorcery",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1224.jpg",
-          "description": "MATK +60\nMSPD +7.5%"
-        },
-        {
-          "slot": 2,
-          "itemId": "1233",
-          "name": "Scepter of Reverberation",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1233.jpg",
-          "description": "Skill hits trigger explosions"
-        },
-        {
-          "slot": 3,
-          "itemId": "1422",
-          "name": "Boots of Resistance",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
-          "description": "Shortens CC"
-        },
-        {
-          "slot": 4,
-          "itemId": "1232",
-          "name": "Savant's Wrath",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1232.jpg",
-          "description": "Greatly boosts MATK"
-        },
-        {
-          "slot": 5,
-          "itemId": "1222",
-          "name": "Blood Clan's Grimoire",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1222.jpg",
-          "description": "MATK +60, Magical Lifesteal +12%"
-        },
-        {
-          "slot": 6,
-          "itemId": "1240",
-          "name": "Insatiable Tome",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1240.jpg",
-          "description": "Magical Lifesteal"
-        }
-      ]
-    },
-    {
-      "id": "boom-pamaypay",
-      "label": "Boom Pamaypay",
-      "position": "Position 2",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1240",
-          "name": "Insatiable Tome",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1240.jpg",
-          "description": "Magical Lifesteal"
-        },
-        {
-          "slot": 2,
-          "itemId": "1232",
-          "name": "Savant's Wrath",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1232.jpg",
-          "description": "Greatly boosts MATK"
-        },
-        {
-          "slot": 3,
-          "itemId": "1422",
-          "name": "Boots of Resistance",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
-          "description": "Shortens CC"
-        },
-        {
-          "slot": 4,
-          "itemId": "1231",
-          "name": "Void Staff",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1231.jpg",
-          "description": "Anti-tank"
-        },
-        {
-          "slot": 5,
-          "itemId": "1233",
-          "name": "Scepter of Reverberation",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1233.jpg",
-          "description": "Skill hits trigger explosions"
-        },
-        {
-          "slot": 6,
-          "itemId": "1238",
-          "name": "Sage's Tome",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1238.jpg",
-          "description": "Great for mages"
-        }
-      ]
-    },
-    {
-      "id": "maiii",
-      "label": "Maiii",
-      "position": "Position 2",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1224",
-          "name": "Stone of Sorcery",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1224.jpg",
-          "description": "MATK +60\nMSPD +7.5%"
-        },
-        {
-          "slot": 2,
-          "itemId": "1233",
-          "name": "Scepter of Reverberation",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1233.jpg",
-          "description": "Skill hits trigger explosions"
-        },
-        {
-          "slot": 3,
-          "itemId": "1232",
-          "name": "Savant's Wrath",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1232.jpg",
-          "description": "Greatly boosts MATK"
-        },
-        {
-          "slot": 4,
-          "itemId": "1422",
-          "name": "Boots of Resistance",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
-          "description": "Shortens CC"
-        },
-        {
-          "slot": 5,
-          "itemId": "1222",
-          "name": "Blood Clan's Grimoire",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1222.jpg",
-          "description": "MATK +60, Magical Lifesteal +12%"
-        },
-        {
-          "slot": 6,
-          "itemId": "1231",
-          "name": "Void Staff",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1231.jpg",
-          "description": "Anti-tank"
-        }
-      ]
-    },
-    {
-      "id": "popular",
-      "label": "Popular",
-      "position": "Position 2",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1233",
-          "name": "Scepter of Reverberation",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1233.jpg",
-          "description": "Skill hits trigger explosions"
-        },
-        {
-          "slot": 2,
-          "itemId": "1424",
-          "name": "Boots of the Arcane",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1424.jpg",
-          "description": "Magical Pierce"
-        },
-        {
-          "slot": 3,
-          "itemId": "1238",
-          "name": "Sage's Tome",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1238.jpg",
-          "description": "Great for mages"
-        },
-        {
-          "slot": 4,
-          "itemId": "1231",
-          "name": "Void Staff",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1231.jpg",
-          "description": "Anti-tank"
-        },
-        {
-          "slot": 5,
-          "itemId": "1235",
-          "name": "Mask of Agony",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1235.jpg",
-          "description": "Boosts skill damage"
-        },
-        {
-          "slot": 6,
-          "itemId": "1232",
-          "name": "Savant's Wrath",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1232.jpg",
-          "description": "Greatly boosts MATK"
-        }
-      ]
-    },
-    {
-      "id": "burstpoke",
-      "label": "Burst/poke",
-      "position": "Position 2",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1224",
-          "name": "Stone of Sorcery",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1224.jpg",
-          "description": "MATK +60\nMSPD +7.5%"
-        },
-        {
-          "slot": 2,
-          "itemId": "1222",
-          "name": "Blood Clan's Grimoire",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1222.jpg",
-          "description": "MATK +60, Magical Lifesteal +12%"
-        },
-        {
-          "slot": 3,
-          "itemId": "1240",
-          "name": "Insatiable Tome",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1240.jpg",
-          "description": "Magical Lifesteal"
-        },
-        {
-          "slot": 4,
-          "itemId": "1421",
-          "name": "Boots of Fortitude",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1421.jpg",
-          "description": "Reduces physical damage"
-        },
-        {
-          "slot": 5,
-          "itemId": "1232",
-          "name": "Savant's Wrath",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1232.jpg",
-          "description": "Greatly boosts MATK"
-        },
-        {
-          "slot": 6,
-          "itemId": "1233",
-          "name": "Scepter of Reverberation",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1233.jpg",
-          "description": "Skill hits trigger explosions"
-        }
-      ]
-    },
-    {
-      "id": "popular",
-      "label": "Popular",
-      "position": "Position 2",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1240",
-          "name": "Insatiable Tome",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1240.jpg",
-          "description": "Magical Lifesteal"
-        },
-        {
-          "slot": 2,
-          "itemId": "1422",
-          "name": "Boots of Resistance",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
-          "description": "Shortens CC"
-        },
-        {
-          "slot": 3,
-          "itemId": "12211",
-          "name": "Venomous Staff",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/12211.jpg",
-          "description": "Lowers Health regen"
-        },
-        {
-          "slot": 4,
-          "itemId": "1232",
-          "name": "Savant's Wrath",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1232.jpg",
-          "description": "Greatly boosts MATK"
-        },
-        {
-          "slot": 5,
-          "itemId": "1231",
-          "name": "Void Staff",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1231.jpg",
-          "description": "Anti-tank"
-        },
-        {
-          "slot": 6,
-          "itemId": "1238",
-          "name": "Sage's Tome",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1238.jpg",
-          "description": "Great for mages"
-        }
-      ]
-    },
-    {
-      "id": "meta-build",
-      "label": "Meta Build",
-      "position": "Position 2",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1240",
-          "name": "Insatiable Tome",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1240.jpg",
-          "description": "Magical Lifesteal"
-        },
-        {
-          "slot": 2,
-          "itemId": "1422",
-          "name": "Boots of Resistance",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
-          "description": "Shortens CC"
-        },
-        {
-          "slot": 3,
-          "itemId": "1232",
-          "name": "Savant's Wrath",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1232.jpg",
-          "description": "Greatly boosts MATK"
-        },
-        {
-          "slot": 4,
-          "itemId": "1238",
-          "name": "Sage's Tome",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1238.jpg",
-          "description": "Great for mages"
-        },
-        {
-          "slot": 5,
-          "itemId": "1231",
-          "name": "Void Staff",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1231.jpg",
-          "description": "Anti-tank"
-        },
-        {
-          "slot": 6,
-          "itemId": "1236",
-          "name": "Staves of Sorcery",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1236.jpg",
-          "description": "Enhances BA"
-        }
-      ]
-    },
-    {
-      "id": "waifu",
-      "label": "Waifu",
-      "position": "Position 2",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1224",
-          "name": "Stone of Sorcery",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1224.jpg",
-          "description": "MATK +60\nMSPD +7.5%"
-        },
-        {
-          "slot": 2,
-          "itemId": "1422",
-          "name": "Boots of Resistance",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
-          "description": "Shortens CC"
-        },
-        {
-          "slot": 3,
-          "itemId": "1233",
-          "name": "Scepter of Reverberation",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1233.jpg",
-          "description": "Skill hits trigger explosions"
-        },
-        {
-          "slot": 4,
-          "itemId": "1235",
-          "name": "Mask of Agony",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1235.jpg",
-          "description": "Boosts skill damage"
-        },
-        {
-          "slot": 5,
-          "itemId": "1232",
-          "name": "Savant's Wrath",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1232.jpg",
-          "description": "Greatly boosts MATK"
-        },
-        {
-          "slot": 6,
-          "itemId": "1238",
-          "name": "Sage's Tome",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1238.jpg",
-          "description": "Great for mages"
-        }
-      ]
-    }
+  "metaAnalysisZh": [
+    "不知火舞 勝率 48.56%（Camp HOK，2026-06-07）",
+    "選取率 0.77%",
+    "禁用率 0.16%",
+    "克制：Chano、Lapulapu、Ata；被克制：Alessio、Charlotte、Di Renjie"
   ],
   "guide": {
     "overview": "Mai Shiranui is a Medium Assassin (Mid Lane) on Honor of Kings Global. Camp HOK ranks them Tier A with 48.7% win rate and 0.8% pick rate as of 2026-06-05.",

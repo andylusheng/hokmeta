@@ -2,48 +2,82 @@
   "id": "cai-yan",
   "slug": "cai-yan",
   "name": "Cai Yan",
+  "nameZh": "蔡文姬",
   "role": "Support",
   "roles": "Support",
+  "rolesZh": "輔助",
   "lane": "Roaming",
+  "laneZh": "遊走",
   "difficulty": "Easy",
   "tier": "S",
-  "winRate": 50.31,
-  "pickRate": 1.27,
-  "banRate": 1.89,
-  "rank": 68,
+  "winRate": 50.43,
+  "pickRate": 1.28,
+  "banRate": 1.86,
+  "rank": 63,
   "avatar": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/kQXkW7ab.png",
   "avatarFallback": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/184/184.jpg",
+  "heroCover": "https://camp.honorofkings.com/social/game/src/image_hero_cover_1275*718/GEc2EMAB.jpg",
   "tencentId": 184,
-  "dataSource": "Camp HOK + HoKStats.gg (intl)",
-  "dataUpdated": "2026-06-05",
+  "dataSource": "Camp HOK bilingual (primary)",
+  "dataUpdated": "2026-06-07",
   "skills": [
     {
       "slot": "passive",
       "name": "Can't Touch This",
-      "description": "Periodic Passive Effect: Restores Health and gains a Movement Speedbonus when taking damage.",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/184/18400.png",
-      "cooldown": null
+      "description": "Periodic Passive Effect: Recovers Health and gains Movement Speed when taking damage.",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/18400.png",
+      "cooldown": "1s"
     },
     {
       "slot": "skill1",
       "name": "Healing Hymn",
-      "description": "Continuously restores Health to nearby allies in range while gaining",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/184/18410.png",
-      "cooldown": null
+      "description": "Gains Movement Speed and continuously heals teammates within a certain range.",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/18410.png",
+      "cooldown": "15s"
     },
     {
       "slot": "skill2",
       "name": "Earworm",
-      "description": "Fires a sound wave in the target direction, stunning and dealing damage to enemies hit. Sound waves bounce between nearby enemies.",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/184/18420.png",
-      "cooldown": null
+      "description": "Fires a sound wave in the target direction, stunning and damaging enemies hit.\nSound waves bounce between nearby enemies.",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/18420.png",
+      "cooldown": "10s"
     },
     {
       "slot": "ultimate",
       "name": "Tune of Tranquility",
-      "description": "Continuously heals the nearby ally with the lowest Health within rangewhile granting them increased Physical and Magical Defense.",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/184/18430.png",
-      "cooldown": null
+      "description": "Continuously heals the teammate with the lowest Health within range, while granting them Physical and Magical Defense.",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/18430.png",
+      "cooldown": "60s"
+    }
+  ],
+  "skillsZh": [
+    {
+      "slot": "passive",
+      "name": "長歌行",
+      "description": "每隔一段時間獲得被動效果：受到傷害時回復生命並獲得加速效果。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/18400.png",
+      "cooldown": "1s"
+    },
+    {
+      "slot": "skill1",
+      "name": "思無邪",
+      "description": "蔡文姬獲得加速，並持續治療自身周圍一定範圍內友方英雄。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/18410.png",
+      "cooldown": "15s"
+    },
+    {
+      "slot": "skill2",
+      "name": "胡笳樂",
+      "description": "朝指定方向發射音波，對命中敵人造成傷害和暈眩。\n音波會在附近敵人之間彈射。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/18420.png",
+      "cooldown": "10s"
+    },
+    {
+      "slot": "ultimate",
+      "name": "忘憂曲",
+      "description": "持續治療自身周圍一定範圍內生命最低的友方英雄，受到治療的英雄會提升雙抗。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/18430.png",
+      "cooldown": "60s"
     }
   ],
   "build": [
@@ -90,101 +124,7 @@
       "description": null
     }
   ],
-  "arcana": [
-    "Fate"
-  ],
-  "spells": [
-    "Smite",
-    "Heal"
-  ],
-  "counters": [
-    "Diaochan",
-    "Arke"
-  ],
-  "counteredBy": [
-    "Gao Changgong",
-    "Mulan"
-  ],
-  "tips": [
-    "Cai Yan is a Easy Support (Roaming) on Honor of Kings Global. Camp HOK ranks them Tier S with 50.3% win rate and 1.3% pick rate as of 2026-06-05.",
-    "Best build path: Boots of Tranquility → Holy Grail → Augur's Word → Venomous Staff → Splendor.",
-    "Run Fate for stats that match Cai Yan's Support kit. Take Smite & Heal — swap to Purify against heavy CC or Smite when jungling.",
-    "Standard trade: Healing Hymn → Earworm → Tune of Tranquility → weave basic attacks. Weave basic attacks between skill casts for passive value.",
-    "Laning: Help marksman crash wave, then rotate mid for picks. Return before Tyrant if your carry has no escape.",
-    "Teamfight: Peel carry first, then look for pick on out-of-position enemies. Ward Tyrant 30s before spawn.",
-    "Cai Yan excels into Diaochan, Arke. Avoid blind picking into Gao Changgong, Mulan without team peel.",
-    "Cai Yan is a Tier S staple in high-elo (Diamond+) on the international server — worth mastering for climb. Ban rate 1.9% — expect Cai Yan to be removed in tryhard lobbies; have a backup in the same role."
-  ],
-  "patchHistory": [
-    {
-      "version": "Live meta",
-      "change": "Camp HOK — WR 50.3%, pick 1.3%, ban 1.9%, tier S."
-    },
-    {
-      "version": "Matchups",
-      "change": "Strong into Diaochan, Arke · Weak into Gao Changgong, Mulan."
-    },
-    {
-      "version": "High rank",
-      "change": "Cai Yan is a Tier S staple in high-elo (Diamond+) on the international server — worth mastering for climb. Ban rate 1.9% — expect Cai Yan to be removed in tryhard lobbies; have a backup in the same role."
-    }
-  ],
-  "faqs": [
-    {
-      "id": "faq-good-season",
-      "question": "Is Cai Yan good in the current meta?",
-      "answer": "Cai Yan is Tier S Support with 50.3% win rate, 1.3% pick rate, and 1.9% ban rate on Honor of Kings Global (Camp HOK, 2026-06-05). Strong meta pick for ranked."
-    },
-    {
-      "id": "faq-best-build",
-      "question": "What is the best Cai Yan build?",
-      "answer": "Core item path: Boots of Tranquility, Holy Grail, Augur's Word, Venomous Staff, Splendor. Run Fate arcana with Smite & Heal. Switch to alternate build presets on this page for jungle, clash, or late-game setups."
-    },
-    {
-      "id": "faq-counter",
-      "question": "How to counter Cai Yan?",
-      "answer": "Pick Gao Changgong, Mulan into Cai Yan. Deny Roaming resources early and force fights before Cai Yan completes core items. Cai Yan struggles when the enemy can out-range or out-sustain them."
-    },
-    {
-      "id": "faq-strong-into",
-      "question": "Who does Cai Yan counter?",
-      "answer": "Cai Yan is strong into Diaochan, Arke according to HoKStats matchup data and role matchups on the global server. Draft Cai Yan when the enemy relies on these heroes in the Roaming lane."
-    },
-    {
-      "id": "faq-high-rank",
-      "question": "Is Cai Yan good in high rank / Diamond+?",
-      "answer": "Cai Yan is a Tier S staple in high-elo (Diamond+) on the international server — worth mastering for climb. Ban rate 1.9% — expect Cai Yan to be removed in tryhard lobbies; have a backup in the same role."
-    },
-    {
-      "id": "faq-lane",
-      "question": "What lane should Cai Yan play?",
-      "answer": "Cai Yan is tagged Roaming in Camp export (Support). Help marksman crash wave, then rotate mid for picks. Return before Tyrant if your carry has no escape."
-    },
-    {
-      "id": "faq-arcana",
-      "question": "Best arcana and spells for Cai Yan?",
-      "answer": "Recommended: Fate arcana. Battle spell: Smite & Heal. Adjust Purify/Execute based on enemy dive and jungle need."
-    },
-    {
-      "id": "faq-vs-peer",
-      "question": "Cai Yan or Dolia — which is better?",
-      "answer": "Cai Yan vs Dolia (Support, Tier S): Dolia is 1.8% pick / 46.1% WR. Cai Yan has +4.3% WR vs Dolia in Camp data. Choose Cai Yan when you need Roaming identity; choose Dolia for Roaming comfort."
-    },
-    {
-      "id": "faq-ban",
-      "question": "Should I ban Cai Yan?",
-      "answer": "Yes in tryhard queues — 1.9% ban rate. Deny if enemy first-picks Support."
-    }
-  ],
-  "metaAnalysis": [
-    "Cai Yan — 50.3% WR, 1.3% pick, 1.9% ban (Camp HOK 2026-06-05).",
-    "Tier S Support · Roaming · difficulty Easy.",
-    "Cai Yan is a Tier S staple in high-elo (Diamond+) on the international server — worth mastering for climb. Ban rate 1.9% — expect Cai Yan to be removed in tryhard lobbies; have a backup in the same role.",
-    "Matchups: strong into Diaochan, Arke; weak into Gao Changgong, Mulan.",
-    "Cai Yan vs Dolia (Support, Tier S): Dolia is 1.8% pick / 46.1% WR. Cai Yan has +4.3% WR vs Dolia in Camp data. Choose Cai Yan when you need Roaming identity; choose Dolia for Roaming comfort.",
-    "Cai Yan vs Yaria (Support, Tier S): Yaria is 1.1% pick / 48.0% WR. Cai Yan has +2.3% WR vs Yaria in Camp data. Choose Cai Yan when you need Roaming identity; choose Yaria for Roaming comfort.",
-    "Draft tip: first-pick or ban priority in ranked."
-  ],
+  "buildZh": [],
   "builds": [
     {
       "id": "recommended",
@@ -236,6 +176,126 @@
         }
       ]
     }
+  ],
+  "arcana": [
+    "Fate"
+  ],
+  "arcanaZh": [],
+  "spells": [
+    "Smite",
+    "Heal"
+  ],
+  "spellsZh": [],
+  "counters": [
+    "Diaochan",
+    "Arke"
+  ],
+  "counteredBy": [
+    "Gao Changgong",
+    "Mulan"
+  ],
+  "tips": [
+    "Cai Yan (Support): Tier S — 50.43% WR (Camp HOK).",
+    "Lane: Roaming.",
+    "Build: Boots of Tranquility, Holy Grail, Augur's Word."
+  ],
+  "tipsZh": [
+    "蔡文姬（遊走）：梯度 S，勝率 50.43%（Camp HOK）。",
+    "出裝：見出裝區."
+  ],
+  "patchHistory": [
+    {
+      "seasonId": "5",
+      "seasonName": "S5",
+      "versionName": "20240523",
+      "publishedAt": "2024-05-23T12:11:56Z",
+      "isCurrent": false,
+      "tag": "Stat Buffs",
+      "change": "Increased the recovery from Cai Yan's Skill 1 and Ultimate, and increased the defense provided by the Ultimate during late-game.",
+      "detail": "Cai Yan provides great sustain and protection for her teammates as long as she can afford equipment, but she becomes less useful when her team is falling behind. To alleviate this, we increased her recovery effects and the defense provided by her Ultimate, so that she can be effective even before she has a lot of equipment.",
+      "version": "S5"
+    },
+    {
+      "seasonId": "3",
+      "seasonName": "S3",
+      "versionName": "20231011",
+      "publishedAt": "2023-10-11T12:03:22Z",
+      "isCurrent": false,
+      "tag": "Stat Nerfs",
+      "change": "Skills (Nerf)",
+      "detail": "",
+      "version": "S3"
+    }
+  ],
+  "patchHistoryZh": [
+    {
+      "seasonId": "5",
+      "seasonName": "S5",
+      "versionName": "20240523",
+      "publishedAt": "2024-05-23T12:11:56Z",
+      "isCurrent": false,
+      "tag": "數值增強",
+      "change": "提升蔡文姬1技能和大招的恢復效果，進一步提升大招在後期所提供的防禦屬性",
+      "detail": "蔡文姬在獲取裝備優勢後可以為團隊提供不錯的持續作戰能力和保護能力，但是在某些處境不那麼樂觀的對局就很難發揮她應有的作用。我們提升了蔡文姬的恢復效果和大招提供的防禦屬性，確保她可以在尚未獲得大量裝備情況下也能發揮應有的作用。",
+      "version": "S5"
+    },
+    {
+      "seasonId": "3",
+      "seasonName": "S3",
+      "versionName": "20231011",
+      "publishedAt": "2023-10-11T12:03:22Z",
+      "isCurrent": false,
+      "tag": "數值削弱",
+      "change": "Skills (Nerf)",
+      "detail": "",
+      "version": "S3"
+    }
+  ],
+  "faqs": [
+    {
+      "id": "faq-good-season",
+      "question": "Is Cai Yan good in current season?",
+      "answer": "Cai Yan is Tier S Support with 50.43% win rate, 1.28% pick rate, and 1.86% ban rate (Camp HOK international)."
+    },
+    {
+      "id": "faq-best-build",
+      "question": "What is the best Cai Yan build?",
+      "answer": "Recommended: Boots of Tranquility, Holy Grail, Augur's Word, Venomous Staff, Splendor, Data unavailable."
+    },
+    {
+      "id": "faq-counter",
+      "question": "How to counter Cai Yan?",
+      "answer": "Pick Gao Changgong, Mulan. Strong into Diaochan, Arke."
+    }
+  ],
+  "faqsZh": [
+    {
+      "id": "faq-good-season",
+      "question": "蔡文姬 這版本適合上分嗎？",
+      "answer": "蔡文姬 為 S 梯度，勝率 50.43%、選取 1.28%、禁用 1.86%（Camp HOK 國際服）。"
+    },
+    {
+      "id": "faq-best-build",
+      "question": "蔡文姬 出裝怎麼搭配？",
+      "answer": "推薦：見本頁出裝區."
+    },
+    {
+      "id": "faq-counter",
+      "question": "怎麼克制 蔡文姬？",
+      "answer": "可選 Gao Changgong、Mulan。蔡文姬 克制 Diaochan、Arke。"
+    }
+  ],
+  "metaAnalysis": [
+    "Cai Yan win rate 50.43% (Camp HOK, 2026-06-07).",
+    "Pick rate 1.28%.",
+    "Ban rate 1.86%.",
+    "Counters: Diaochan, Arke. Weak into: Gao Changgong, Mulan."
+  ],
+  "metaAnalysisZh": [
+    "蔡文姬 勝率 50.43%（Camp HOK，2026-06-07）",
+    "選取率 1.28%",
+    "禁用率 1.86%",
+    "克制：Diaochan、Arke；被克制：Gao Changgong、Mulan"
   ],
   "guide": {
     "overview": "Cai Yan is a Easy Support (Roaming) on Honor of Kings Global. Camp HOK ranks them Tier S with 50.3% win rate and 1.3% pick rate as of 2026-06-05.",

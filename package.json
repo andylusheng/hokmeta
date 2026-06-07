@@ -12,6 +12,9 @@
     "lint": "next lint",
     "sync-meta": "node scripts/sync-meta.js",
     "sync-global": "node scripts/sync-global.js",
+    "sync-camp": "node scripts/sync-camp.js",
+    "sync-camp:quick": "node scripts/sync-camp.js --limit=5 --skip-items --skip-counters",
+    "enrich-covers": "node scripts/camp/enrich-covers.js",
     "fix-skill-icons": "node scripts/fix-skill-icons.js",
     "fix-all-icons": "node scripts/fix-all-icons-fast.js",
     "repair-heroes": "node scripts/repair-heroes.js",
@@ -35,6 +38,7 @@
     "autoprefixer": "^10.4.20",
     "eslint": "^8.57.1",
     "eslint-config-next": "14.2.28",
+    "playwright": "^1.60.0",
     "postcss": "^8.4.49",
     "tailwindcss": "^3.4.15",
     "typescript": "^5.6.3"

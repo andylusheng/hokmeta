@@ -8,11 +8,13 @@ export function HeroAvatar({
   hero,
   size = 48,
   priority = false,
+  className = 'rounded-full bg-hok-border object-cover',
 }: {
   hero: Pick<Hero, 'name' | 'avatar' | 'slug' | 'avatarFallback'>;
   size?: number;
   /** Set on above-the-fold LCP images (hero page header). */
   priority?: boolean;
+  className?: string;
 }) {
   const alt = `${hero.name} HOK Build & Guide`;
   const [fallbackSlug, setFallbackSlug] = useState<string | null>(null);
@@ -29,7 +31,7 @@ export function HeroAvatar({
       width={size}
       height={size}
       sizes={`${size}px`}
-      className="rounded-full bg-hok-border object-cover"
+      className={className}
       unoptimized
       priority={priority}
       loading={priority ? 'eager' : 'lazy'}

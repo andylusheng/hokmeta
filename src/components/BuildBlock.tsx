@@ -32,8 +32,8 @@ export function BuildBlock({
   locale?: Locale;
 }) {
   const t = createT(locale);
-  const presets = useMemo(() => getHeroBuildPresets(hero), [hero]);
-  const defaultIdx = useMemo(() => defaultBuildPresetIndex(hero), [hero]);
+  const presets = useMemo(() => getHeroBuildPresets(hero, locale), [hero, locale]);
+  const defaultIdx = useMemo(() => defaultBuildPresetIndex(hero, locale), [hero, locale]);
   const [active, setActive] = useState(defaultIdx);
 
   useEffect(() => {

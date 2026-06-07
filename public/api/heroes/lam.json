@@ -2,48 +2,82 @@
   "id": "lam",
   "slug": "lam",
   "name": "Lam",
+  "nameZh": "瀾",
   "role": "Assassin",
   "roles": "Assassin, Fighter",
+  "rolesZh": "刺客, 戰士",
   "lane": "Jungling",
+  "laneZh": "打野",
   "difficulty": "Medium",
-  "tier": "A",
-  "winRate": 48.8,
-  "pickRate": 1.01,
-  "banRate": 0.48,
-  "rank": 92,
+  "tier": "S",
+  "winRate": 48.61,
+  "pickRate": 1.03,
+  "banRate": 0.47,
+  "rank": 93,
   "avatar": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/02i6M2YK.png",
   "avatarFallback": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/528/528.jpg",
+  "heroCover": "https://camp.honorofkings.com/social/game/src/image_hero_cover_1275*718/uHAwdCLU.jpg",
   "tencentId": 528,
-  "dataSource": "Camp HOK + HoKStats.gg (intl)",
-  "dataUpdated": "2026-06-05",
+  "dataSource": "Camp HOK bilingual (primary)",
+  "dataUpdated": "2026-06-07",
   "skills": [
     {
       "slot": "passive",
       "name": "Hunter",
-      "description": "Basic Attacks and skills deal extra true damage to targets with low Health",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/528/52800.png",
-      "cooldown": null
+      "description": "Basic Attacks and skills deal extra true damage to targets with low Health.",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/52800.png",
+      "cooldown": "1s"
     },
     {
       "slot": "skill1",
       "name": "Wavebreaker",
-      "description": "Lam enters “Submerged” state, greatly increasing his Movement Speed for 3 seconds. When the duration ends, Lam leaps out of the water, immediately restoring 50% of this skill’s cooldown. While in Submerged state, casting the skill again will cause Lam to surface early, dealing 300 (+120% Bonus Physical Attack) Physical Damage to nearby enemies and slowing their Movement Speed by 50% for 1.5 seconds. Passive: While in river terrain, the Submerged state has no time limit. If an enemy hero with below 30% Health appears within 1500 range, Lam gains 450 Movement Speed.",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/528/52810.png",
-      "cooldown": null
+      "description": "Becomes submerged and gains Movement Speed. Use this skill again to dash and deal damage.\nCan remain submerged indefinitely in the river. Gains extra Movement Speed when an enemy hero with low Health is nearby.",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/52810.png",
+      "cooldown": "10s"
     },
     {
       "slot": "skill2",
       "name": "Space Split",
-      "description": "Damages nearby enemies while gaining a mark. Basic Attacks spend marks to gain a dash and Health recovery effect. While submerged, Skill 2 has an extra dash effect.",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/528/52820.png",
-      "cooldown": null
+      "description": "Damages nearby enemies while gaining marks and recovering Health.\nBasic Attacks consume marks to gain a dash and Health recovery effect.\nSubmerged: Skill 2 has an extra dash effect.",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/52820.png",
+      "cooldown": "6s"
     },
     {
       "slot": "ultimate",
       "name": "Death From Below",
-      "description": "Throws a dagger in the target direction, then dashes to the dagger after a short delay, dragging enemies in his path to the dagger and dealing damage to them. Submerged: Cancels the cast animation and skill delay.",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/528/52830.png",
-      "cooldown": null
+      "description": "Throws a dagger in the target direction, then dashes to the dagger after a short delay, dragging enemies in his path to the dagger and dealing damage to them.\nSubmerged: Cancels the cast point animation and skill delay.",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/52830.png",
+      "cooldown": "40s"
+    }
+  ],
+  "skillsZh": [
+    {
+      "slot": "passive",
+      "name": "狩獵",
+      "description": "普攻和技能對生命值較低的目標造成額外真實傷害。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/52800.png",
+      "cooldown": "1s"
+    },
+    {
+      "slot": "skill1",
+      "name": "破浪",
+      "description": "進入下潛狀態，再次使用會突進並造成傷害。\n下潛狀態位於河道時，則沒有時間限制。增加移動速度，附近敵方英雄生命過低會額外增加移動速度。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/52810.png",
+      "cooldown": "10s"
+    },
+    {
+      "slot": "skill2",
+      "name": "斷空",
+      "description": "對附近敵人造成傷害，自身獲得印記並回復生命值。\n普攻消耗印記，額外具有突進和回復生命值的效果。\n下潛狀態2技能額外具有突進效果。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/52820.png",
+      "cooldown": "6s"
+    },
+    {
+      "slot": "ultimate",
+      "name": "處決",
+      "description": "朝指定方向投擲匕首，短暫延遲後突進至匕首位置。將沿途敵人拉至終點並造成傷害。\n下潛狀態：取消出招動作和技能延遲。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/52830.png",
+      "cooldown": "40s"
     }
   ],
   "build": [
@@ -51,50 +85,500 @@
       "slot": 1,
       "itemId": "1533",
       "name": "Rapacious Bite",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1533.jpg",
-      "description": "Monster kills boost PATK"
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1533.png",
+      "description": "PATK +90, MSPD +5%, CDR +7.5%\nMonster kills boost ATK"
     },
     {
       "slot": 2,
       "itemId": "1422",
       "name": "Boots of Resistance",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
-      "description": "Shortens CC"
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1422.png",
+      "description": "MDEF +100, PDEF +50, MSPD +50\nShortens crowd control"
     },
     {
       "slot": 3,
-      "itemId": "1137",
-      "name": "Axe of Torment",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1137.jpg",
-      "description": "Anti-squishy"
+      "itemId": "11311",
+      "name": "Pure Sky",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/11311.png",
+      "description": "PATK +80, PDEF +150, CDR +10%\nTemp. damage reduction"
     },
     {
       "slot": 4,
-      "itemId": "1157",
-      "name": "Immovable - Sky Dome",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1157.jpg",
-      "description": "Temp. damage reduction"
+      "itemId": "1327",
+      "name": "Spikemail",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1327.png",
+      "description": "PATK +45, PDEF +300, HP +700\nReflects damage"
     },
     {
       "slot": 5,
-      "itemId": "1338",
-      "name": "Cuirass of Savagery",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1338.jpg",
-      "description": "Offense & defense"
+      "itemId": "1138",
+      "name": "Overlord's Might",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1138.png",
+      "description": "PATK +150, CDR +5%\nHigh-damage attack"
     },
     {
       "slot": 6,
-      "itemId": null,
-      "name": "Data unavailable",
-      "icon": null,
-      "description": null
+      "itemId": "1127",
+      "name": "Destiny",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+      "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
+    }
+  ],
+  "buildZh": [
+    {
+      "slot": 1,
+      "itemId": "1533",
+      "name": "貪婪之噬",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1533.png",
+      "description": "+90攻擊+5%移速+7.5%冷縮\n打野怪加攻擊"
+    },
+    {
+      "slot": 2,
+      "itemId": "1422",
+      "name": "抵抗之靴",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1422.png",
+      "description": "+100點法防+50點物防+50點移速\n減少被控時間"
+    },
+    {
+      "slot": 3,
+      "itemId": "11311",
+      "name": "純淨蒼穹",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/11311.png",
+      "description": "+80點攻擊+150點物防+10%冷卻時間縮減\n暫時增加免傷"
+    },
+    {
+      "slot": 4,
+      "itemId": "1327",
+      "name": "反傷刺甲",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1327.png",
+      "description": "+45點攻擊+300點物防\n+700點生命值反彈傷害"
+    },
+    {
+      "slot": 5,
+      "itemId": "1138",
+      "name": "強者破軍",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1138.png",
+      "description": "+150點攻擊+5%減冷卻時間\n高額攻擊"
+    },
+    {
+      "slot": 6,
+      "itemId": "1127",
+      "name": "名刀・司命",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+      "description": "+75點攻擊+15%攻速+500點生命值\n保命"
+    }
+  ],
+  "builds": [
+    {
+      "id": "camp-0",
+      "label": "国服套装",
+      "lane": "Jungle",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1533",
+          "name": "Rapacious Bite",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1533.png",
+          "description": "PATK +90, MSPD +5%, CDR +7.5%\nMonster kills boost ATK"
+        },
+        {
+          "slot": 2,
+          "itemId": "1422",
+          "name": "Boots of Resistance",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1422.png",
+          "description": "MDEF +100, PDEF +50, MSPD +50\nShortens crowd control"
+        },
+        {
+          "slot": 3,
+          "itemId": "11311",
+          "name": "Pure Sky",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/11311.png",
+          "description": "PATK +80, PDEF +150, CDR +10%\nTemp. damage reduction"
+        },
+        {
+          "slot": 4,
+          "itemId": "1327",
+          "name": "Spikemail",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1327.png",
+          "description": "PATK +45, PDEF +300, HP +700\nReflects damage"
+        },
+        {
+          "slot": 5,
+          "itemId": "1138",
+          "name": "Overlord's Might",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1138.png",
+          "description": "PATK +150, CDR +5%\nHigh-damage attack"
+        },
+        {
+          "slot": 6,
+          "itemId": "1127",
+          "name": "Destiny",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
+        }
+      ]
+    },
+    {
+      "id": "camp-1",
+      "label": "Original",
+      "lane": "Jungle",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1331",
+          "name": "Blazing Cape",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1331.png",
+          "description": "PDEF +150, MDEF +150, HP +1,100\nArea burn & imperil"
+        },
+        {
+          "slot": 2,
+          "itemId": "1336",
+          "name": "Glacial Buckler",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1336.png",
+          "description": "CDR +20%, HP +600, PDEF +240\nGroup damage & slow"
+        },
+        {
+          "slot": 3,
+          "itemId": "1338",
+          "name": "Cuirass of Savagery",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1338.png",
+          "description": "PATK +35, PDEF +210, HP +900\nOffense & defense"
+        },
+        {
+          "slot": 4,
+          "itemId": "1131",
+          "name": "Starbreaker",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1131.png",
+          "description": "PATK +90, HP +700, MSPD +7.5%\nAnti-tank"
+        },
+        {
+          "slot": 5,
+          "itemId": "1337",
+          "name": "Sage's Sanctuary",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
+        },
+        {
+          "slot": 6,
+          "itemId": "1127",
+          "name": "Destiny",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
+        }
+      ]
+    },
+    {
+      "id": "camp-2",
+      "label": "Jungling 1",
+      "lane": "Jungle",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1335",
+          "name": "Succubus Cloak",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
+          "description": "MDEF +300, HP +1,100\nNegates magical damage"
+        },
+        {
+          "slot": 2,
+          "itemId": "13310",
+          "name": "Frostscar's Embrace",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/13310.png",
+          "description": "PATK +60, PDEF +300, CDR +10%\nEnhanced BAs slow"
+        },
+        {
+          "slot": 3,
+          "itemId": "1534",
+          "name": "Dragon's Rage",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1536.png",
+          "description": "HP +1,350, PDEF +180, MDEF +90\nBoosts BA damage"
+        },
+        {
+          "slot": 4,
+          "itemId": "1127",
+          "name": "Destiny",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
+        },
+        {
+          "slot": 5,
+          "itemId": "1125",
+          "name": "Demonsbane",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1125.png",
+          "description": "PATK +90, MDEF +150, HP +600\nBoosts Magical Defense"
+        },
+        {
+          "slot": 6,
+          "itemId": "1337",
+          "name": "Sage's Sanctuary",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
+        }
+      ]
+    },
+    {
+      "id": "camp-3",
+      "label": "Bulk Sharky",
+      "lane": "Jungle",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1532",
+          "name": "Giant's Grip",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1532.png",
+          "description": "HP +1,200, MSPD +5%, CDR +5%\nMonster kills boost HP"
+        },
+        {
+          "slot": 2,
+          "itemId": "1137",
+          "name": "Axe of Torment",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1137.png",
+          "description": "PATK +80, CDR +10%, HP +500\nAnti-squishy"
+        },
+        {
+          "slot": 3,
+          "itemId": "1327",
+          "name": "Spikemail",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1327.png",
+          "description": "PATK +45, PDEF +300, HP +700\nReflects damage"
+        },
+        {
+          "slot": 4,
+          "itemId": "1334",
+          "name": "Eye of the Phoenix",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1334.png",
+          "description": "MDEF +180, PDEF +90, HP +1,350\nBoosts HP Regen"
+        },
+        {
+          "slot": 5,
+          "itemId": "1331",
+          "name": "Blazing Cape",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1331.png",
+          "description": "PDEF +150, MDEF +150, HP +1,100\nArea burn & imperil"
+        },
+        {
+          "slot": 6,
+          "itemId": "1333",
+          "name": "Ominous Premonition",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1333.png",
+          "description": "PDEF +300, HP +1,200\nSlows attackers"
+        }
+      ]
+    }
+  ],
+  "buildsZh": [
+    {
+      "id": "camp-0",
+      "label": "国服套装",
+      "lane": "Jungle",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1533",
+          "name": "貪婪之噬",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1533.png",
+          "description": "+90攻擊+5%移速+7.5%冷縮\n打野怪加攻擊"
+        },
+        {
+          "slot": 2,
+          "itemId": "1422",
+          "name": "抵抗之靴",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1422.png",
+          "description": "+100點法防+50點物防+50點移速\n減少被控時間"
+        },
+        {
+          "slot": 3,
+          "itemId": "11311",
+          "name": "純淨蒼穹",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/11311.png",
+          "description": "+80點攻擊+150點物防+10%冷卻時間縮減\n暫時增加免傷"
+        },
+        {
+          "slot": 4,
+          "itemId": "1327",
+          "name": "反傷刺甲",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1327.png",
+          "description": "+45點攻擊+300點物防\n+700點生命值反彈傷害"
+        },
+        {
+          "slot": 5,
+          "itemId": "1138",
+          "name": "強者破軍",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1138.png",
+          "description": "+150點攻擊+5%減冷卻時間\n高額攻擊"
+        },
+        {
+          "slot": 6,
+          "itemId": "1127",
+          "name": "名刀・司命",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "+75點攻擊+15%攻速+500點生命值\n保命"
+        }
+      ]
+    },
+    {
+      "id": "camp-1",
+      "label": "Original",
+      "lane": "Jungle",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1331",
+          "name": "紅蓮斗篷",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1331.png",
+          "description": "+150點物防+150點法防+1100點生命值\n範圍灼燒重傷"
+        },
+        {
+          "slot": 2,
+          "itemId": "1336",
+          "name": "極寒風暴",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1336.png",
+          "description": "+20%減冷卻時間+600點生命值+240點物防\n群體傷害減速"
+        },
+        {
+          "slot": 3,
+          "itemId": "1338",
+          "name": "暴烈之甲",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1338.png",
+          "description": "+35點攻擊+210點物防+900點生命值\n能抗能打"
+        },
+        {
+          "slot": 4,
+          "itemId": "1131",
+          "name": "碎星錘",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1131.png",
+          "description": "+90點攻擊+700點生命值+7.5%移速\n打坦克用"
+        },
+        {
+          "slot": 5,
+          "itemId": "1337",
+          "name": "賢者的庇護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+        },
+        {
+          "slot": 6,
+          "itemId": "1127",
+          "name": "名刀・司命",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "+75點攻擊+15%攻速+500點生命值\n保命"
+        }
+      ]
+    },
+    {
+      "id": "camp-2",
+      "label": "Jungling 1",
+      "lane": "Jungle",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1335",
+          "name": "魔女斗篷",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
+          "description": "+300點法防+1100點生命值\n吸收法術傷害"
+        },
+        {
+          "slot": 2,
+          "itemId": "13310",
+          "name": "冰痕之握",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/13310.png",
+          "description": "+60點攻擊+300點物防+10%減冷卻時間……\n強化普攻減速"
+        },
+        {
+          "slot": 3,
+          "itemId": "1534",
+          "name": "怒龍劍盾",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1536.png",
+          "description": "+1350點生命值+180點物防+90點法防\n普攻額外傷害"
+        },
+        {
+          "slot": 4,
+          "itemId": "1127",
+          "name": "名刀・司命",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "+75點攻擊+15%攻速+500點生命值\n保命"
+        },
+        {
+          "slot": 5,
+          "itemId": "1125",
+          "name": "破魔刀",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1125.png",
+          "description": "+90點攻擊+150點法防+600點生命值\n增加法術防禦"
+        },
+        {
+          "slot": 6,
+          "itemId": "1337",
+          "name": "賢者的庇護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+        }
+      ]
+    },
+    {
+      "id": "camp-3",
+      "label": "Bulk Sharky",
+      "lane": "Jungle",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1532",
+          "name": "巨人之握",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1532.png",
+          "description": "+1200點生命值+5%移速+5%冷縮\n打野怪加生命"
+        },
+        {
+          "slot": 2,
+          "itemId": "1137",
+          "name": "暗影戰斧",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1137.png",
+          "description": "+80點攻擊+10%減冷卻時間+500點生命值\n打血薄用"
+        },
+        {
+          "slot": 3,
+          "itemId": "1327",
+          "name": "反傷刺甲",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1327.png",
+          "description": "+45點攻擊+300點物防\n+700點生命值反彈傷害"
+        },
+        {
+          "slot": 4,
+          "itemId": "1334",
+          "name": "不死鳥之眼",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1334.png",
+          "description": "+180點法防+90點物防+1350點生命值……\n增加回血效果"
+        },
+        {
+          "slot": 5,
+          "itemId": "1331",
+          "name": "紅蓮斗篷",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1331.png",
+          "description": "+150點物防+150點法防+1100點生命值\n範圍灼燒重傷"
+        },
+        {
+          "slot": 6,
+          "itemId": "1333",
+          "name": "不祥徵兆",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1333.png",
+          "description": "+300點物防+1200點生命值\n受擊時將敵人減速"
+        }
+      ]
     }
   ],
   "arcana": [
-    "Mutation"
+    "Lvl 5: Mutation",
+    "Lvl 5: Stealth",
+    "Lvl 5: Eagle Eye"
+  ],
+  "arcanaZh": [
+    "5級：異變",
+    "5級：隱匿",
+    "5級：鷹眼"
   ],
   "spells": [
     "Smite"
+  ],
+  "spellsZh": [
+    "懲擊"
   ],
   "counters": [
     "Lu Bu",
@@ -107,586 +591,129 @@
     "Luara"
   ],
   "tips": [
-    "Lam is a Medium Assassin (Jungling) on Honor of Kings Global. Camp HOK ranks them Tier A with 48.8% win rate and 1.0% pick rate as of 2026-06-05.",
-    "Best build path: Rapacious Bite → Boots of Resistance → Axe of Torment → Immovable - Sky Dome → Cuirass of Savagery.",
-    "Run Mutation for stats that match Lam's Assassin kit. Take Smite — swap to Purify against heavy CC or Smite when jungling.",
-    "Standard trade: Wavebreaker → Space Split → Death From Below → weave basic attacks. Weave basic attacks between skill casts for passive value.",
-    "Laning: Clear to level four, then gank the lane with the least escape. Secure Tyrant when your bot or mid has crash wave.",
-    "Teamfight: Wait for CC from your team, then dive carry with full combo. Exit with reset or flash if focus fired.",
-    "Lam excels into Lu Bu, Wuyan, Xiang Yu. Avoid blind picking into Erin, Liang, Luara without team peel.",
-    "Lam is a viable Tier A pick in high rank with 48.8% win rate — strong in one-trick hands or as a counter-pick. Pick rate 1.0% — frequently seen in ranked; learn the matchup even if you do not main Lam. Below 49% global WR — high-rank players often avoid unless compensating for team comp."
+    "Lam (Assassin): Tier S — 48.61% WR (Camp HOK).",
+    "Lane: Jungling.",
+    "Build: Rapacious Bite, Boots of Resistance, Pure Sky."
+  ],
+  "tipsZh": [
+    "瀾（打野）：梯度 S，勝率 48.61%（Camp HOK）。",
+    "出裝：貪婪之噬、抵抗之靴、純淨蒼穹."
   ],
   "patchHistory": [
     {
-      "version": "Live meta",
-      "change": "Camp HOK — WR 48.8%, pick 1.0%, ban 0.5%, tier A."
+      "seasonId": "7",
+      "seasonName": "S7",
+      "versionName": "20241101",
+      "publishedAt": "2024-11-01T01:52:22Z",
+      "isCurrent": false,
+      "tag": "Mechanics Changes",
+      "change": "Balanced early and late game strength, and made it harder to repeatedly use enhanced Basic Attacks",
+      "detail": "\"The mechanism that let Lam's enhanced Basic Attack reduce Skill 2's cooldown by a fixed amount allowed Lam to spam his Skill 2 and enhanced Basic Attack in the late game. This made it difficult for opponents to counter him, a situation that we hope to improve with these adjustments. At the same time, we have moderately increased the base effects of his skills to enhance the experience for newer players.\"",
+      "version": "S7"
     },
     {
-      "version": "Matchups",
-      "change": "Strong into Lu Bu, Wuyan, Xiang Yu · Weak into Erin, Liang, Luara."
+      "seasonId": "4",
+      "seasonName": "S4",
+      "versionName": "20240220",
+      "publishedAt": "2024-02-20T02:27:09Z",
+      "isCurrent": false,
+      "tag": "Stat Nerfs",
+      "change": "We've slightly reduced the Health recovery from Basic Attacks enhanced by Skill 2.",
+      "detail": "We've slightly reduced the Health recovery from Basic Attacks enhanced by Skill 2.\nPrevious adjustments to Lam's skill stat bonuses made his gameplay more diverse, which was in line with our design expectations.We hope that the slight stat reductions this time round will give more opportunities to other heroes.",
+      "version": "S4"
     },
     {
-      "version": "High rank",
-      "change": "Lam is a viable Tier A pick in high rank with 48.8% win rate — strong in one-trick hands or as a counter-pick. Pick rate 1.0% — frequently seen in ranked; learn the matchup even if you do not main Lam. Below 49% global WR — high-rank players often avoid unless compensating for team comp."
+      "seasonId": "3",
+      "seasonName": "S3",
+      "versionName": "20231220",
+      "publishedAt": "2023-12-20T08:17:28Z",
+      "isCurrent": false,
+      "tag": "Stat Buffs",
+      "change": "Increased Skill 1's base damage, reduced Skill 2's cooldown; adjusted the base damage, recovery, and equipment bonus multiplier for Skill 2 and the enhanced Basic Attacks; adjusted the base damage and equipment bonus multiplier for the Ultimate.",
+      "detail": "Lam is a little weak during early game in this version, which makes him less fun to play when your team is at a disadvantage. We boosted the base damage and recovery effects of his skills and hope this will enhance his early-to-mid game performance. We also adjusted the equipment bonus multiplier of some skills so he's not too powerful during late game.",
+      "version": "S3"
+    }
+  ],
+  "patchHistoryZh": [
+    {
+      "seasonId": "7",
+      "seasonName": "S7",
+      "versionName": "20241101",
+      "publishedAt": "2024-11-01T01:52:22Z",
+      "isCurrent": false,
+      "tag": "機制調整",
+      "change": "平衡前後期強度，避免連續使用強化普攻",
+      "detail": "「降低固定冷卻時間的機制，讓瀾在後期可能有連續使用2技能和強化普攻的情況，會讓對手很難與他對抗，我們希望改善這一現象；同時適當提升技能的基礎效果，提升新上手玩家的體驗。」",
+      "version": "S7"
+    },
+    {
+      "seasonId": "4",
+      "seasonName": "S4",
+      "versionName": "20240220",
+      "publishedAt": "2024-02-20T02:27:09Z",
+      "isCurrent": false,
+      "tag": "數值削弱",
+      "change": "We've slightly reduced the Health recovery from Basic Attacks enhanced by Skill 2.",
+      "detail": "We've slightly reduced the Health recovery from Basic Attacks enhanced by Skill 2.\nPrevious adjustments to Lam's skill stat bonuses made his gameplay more diverse, which was in line with our design expectations.We hope that the slight stat reductions this time round will give more opportunities to other heroes.",
+      "version": "S4"
+    },
+    {
+      "seasonId": "3",
+      "seasonName": "S3",
+      "versionName": "20231220",
+      "publishedAt": "2023-12-20T08:17:28Z",
+      "isCurrent": false,
+      "tag": "數值增強",
+      "change": "Increased Skill 1's base damage, reduced Skill 2's cooldown; adjusted the base damage, recovery, and equipment bonus multiplier for Skill 2 and the enhanced Basic Attacks; adjusted the base damage and equipment bonus multiplier for the Ultimate.",
+      "detail": "Lam is a little weak during early game in this version, which makes him less fun to play when your team is at a disadvantage. We boosted the base damage and recovery effects of his skills and hope this will enhance his early-to-mid game performance. We also adjusted the equipment bonus multiplier of some skills so he's not too powerful during late game.",
+      "version": "S3"
     }
   ],
   "faqs": [
     {
       "id": "faq-good-season",
-      "question": "Is Lam good in the current meta?",
-      "answer": "Lam is Tier A Assassin with 48.8% win rate, 1.0% pick rate, and 0.5% ban rate on Honor of Kings Global (Camp HOK, 2026-06-05). Solid situational pick."
+      "question": "Is Lam good in current season?",
+      "answer": "Lam is Tier S Assassin with 48.61% win rate, 1.03% pick rate, and 0.47% ban rate (Camp HOK international)."
     },
     {
       "id": "faq-best-build",
       "question": "What is the best Lam build?",
-      "answer": "Core item path: Rapacious Bite, Boots of Resistance, Axe of Torment, Immovable - Sky Dome, Cuirass of Savagery. Run Mutation arcana with Smite. Switch to alternate build presets on this page for jungle, clash, or late-game setups."
+      "answer": "Recommended: Rapacious Bite, Boots of Resistance, Pure Sky, Spikemail, Overlord's Might, Destiny."
     },
     {
       "id": "faq-counter",
       "question": "How to counter Lam?",
-      "answer": "Pick Erin, Liang, Luara into Lam. Deny Jungling resources early and force fights before Lam completes core items. Lam struggles when the enemy can peel and group them."
+      "answer": "Pick Erin, Liang, Luara. Strong into Lu Bu, Wuyan, Xiang Yu."
+    }
+  ],
+  "faqsZh": [
+    {
+      "id": "faq-good-season",
+      "question": "瀾 這版本適合上分嗎？",
+      "answer": "瀾 為 S 梯度，勝率 48.61%、選取 1.03%、禁用 0.47%（Camp HOK 國際服）。"
     },
     {
-      "id": "faq-strong-into",
-      "question": "Who does Lam counter?",
-      "answer": "Lam is strong into Lu Bu, Wuyan, Xiang Yu according to HoKStats matchup data and role matchups on the global server. Draft Lam when the enemy relies on these heroes in the Jungling lane."
+      "id": "faq-best-build",
+      "question": "瀾 出裝怎麼搭配？",
+      "answer": "推薦：貪婪之噬、抵抗之靴、純淨蒼穹、反傷刺甲、強者破軍、名刀・司命."
     },
     {
-      "id": "faq-high-rank",
-      "question": "Is Lam good in high rank / Diamond+?",
-      "answer": "Lam is a viable Tier A pick in high rank with 48.8% win rate — strong in one-trick hands or as a counter-pick. Pick rate 1.0% — frequently seen in ranked; learn the matchup even if you do not main Lam. Below 49% global WR — high-rank players often avoid unless compensating for team comp."
-    },
-    {
-      "id": "faq-lane",
-      "question": "What lane should Lam play?",
-      "answer": "Lam is tagged Jungling in Camp export (Assassin, Fighter). Clear to level four, then gank the lane with the least escape. Secure Tyrant when your bot or mid has crash wave."
-    },
-    {
-      "id": "faq-arcana",
-      "question": "Best arcana and spells for Lam?",
-      "answer": "Recommended: Mutation arcana. Battle spell: Smite. Adjust Purify/Execute based on enemy dive and jungle need."
-    },
-    {
-      "id": "faq-vs-peer",
-      "question": "Lam or Wukong — which is better?",
-      "answer": "Lam vs Wukong (Assassin, Tier S): Wukong is 1.3% pick / 49.7% WR. Wukong wins 0.9% more often globally. Choose Lam when you need Jungling identity; choose Wukong for Jungling comfort."
-    },
-    {
-      "id": "faq-ban",
-      "question": "Should I ban Lam?",
-      "answer": "Yes in tryhard queues — 0.5% ban rate. Deny if enemy first-picks Assassin."
+      "id": "faq-counter",
+      "question": "怎麼克制 瀾？",
+      "answer": "可選 Erin、Liang、Luara。瀾 克制 Lu Bu、Wuyan、Xiang Yu。"
     }
   ],
   "metaAnalysis": [
-    "Lam — 48.8% WR, 1.0% pick, 0.5% ban (Camp HOK 2026-06-05).",
-    "Tier A Assassin · Jungling · difficulty Medium.",
-    "Lam is a viable Tier A pick in high rank with 48.8% win rate — strong in one-trick hands or as a counter-pick. Pick rate 1.0% — frequently seen in ranked; learn the matchup even if you do not main Lam. Below 49% global WR — high-rank players often avoid unless compensating for team comp.",
-    "Matchups: strong into Lu Bu, Wuyan, Xiang Yu; weak into Erin, Liang, Luara.",
-    "Lam vs Wukong (Assassin, Tier S): Wukong is 1.3% pick / 49.7% WR. Wukong wins 0.9% more often globally. Choose Lam when you need Jungling identity; choose Wukong for Jungling comfort.",
-    "Lam vs Musashi (Assassin, Tier A): Musashi is 1.1% pick / 50.7% WR. Musashi wins 1.9% more often globally. Choose Lam when you need Jungling identity; choose Musashi for Jungling comfort.",
-    "Draft tip: counter-pick or comfort pick when lane matchup is favorable."
+    "Lam win rate 48.61% (Camp HOK, 2026-06-07).",
+    "Pick rate 1.03%.",
+    "Ban rate 0.47%.",
+    "Counters: Lu Bu, Wuyan, Xiang Yu. Weak into: Erin, Liang, Luara."
   ],
-  "builds": [
-    {
-      "id": "recommended",
-      "label": "Recommended",
-      "position": null,
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1533",
-          "name": "Rapacious Bite",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1533.jpg",
-          "description": "Monster kills boost PATK"
-        },
-        {
-          "slot": 2,
-          "itemId": "1422",
-          "name": "Boots of Resistance",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
-          "description": "Shortens CC"
-        },
-        {
-          "slot": 3,
-          "itemId": "1137",
-          "name": "Axe of Torment",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1137.jpg",
-          "description": "Anti-squishy"
-        },
-        {
-          "slot": 4,
-          "itemId": "1157",
-          "name": "Immovable - Sky Dome",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1157.jpg",
-          "description": "Temp. damage reduction"
-        },
-        {
-          "slot": 5,
-          "itemId": "1338",
-          "name": "Cuirass of Savagery",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1338.jpg",
-          "description": "Offense & defense"
-        },
-        {
-          "slot": 6,
-          "itemId": null,
-          "name": "Data unavailable",
-          "icon": null,
-          "description": null
-        }
-      ]
-    },
-    {
-      "id": "国服套装",
-      "label": "国服套装",
-      "position": "Position 3",
-      "lane": "CN preset",
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1523",
-          "name": "Relentless Blade",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1523.jpg",
-          "description": "Monster kills boost PATK"
-        },
-        {
-          "slot": 2,
-          "itemId": "1423",
-          "name": "Boots of Tranquility",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1423.jpg",
-          "description": "Reduces Skill CD"
-        },
-        {
-          "slot": 3,
-          "itemId": "1137",
-          "name": "Axe of Torment",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1137.jpg",
-          "description": "Anti-squishy"
-        },
-        {
-          "slot": 4,
-          "itemId": "1533",
-          "name": "Rapacious Bite",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1533.jpg",
-          "description": "Monster kills boost PATK"
-        },
-        {
-          "slot": 5,
-          "itemId": "1422",
-          "name": "Boots of Resistance",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
-          "description": "Shortens CC"
-        },
-        {
-          "slot": 6,
-          "itemId": "1345",
-          "name": "Nettle Gauntlet",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1345.jpg",
-          "description": "Offense & defense"
-        }
-      ]
-    },
-    {
-      "id": "jungling-1",
-      "label": "Jungling 1",
-      "position": "Position 3",
-      "lane": "Jungling",
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1523",
-          "name": "Relentless Blade",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1523.jpg",
-          "description": "Monster kills boost PATK"
-        },
-        {
-          "slot": 2,
-          "itemId": "1423",
-          "name": "Boots of Tranquility",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1423.jpg",
-          "description": "Reduces Skill CD"
-        },
-        {
-          "slot": 3,
-          "itemId": "1137",
-          "name": "Axe of Torment",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1137.jpg",
-          "description": "Anti-squishy"
-        },
-        {
-          "slot": 4,
-          "itemId": "1533",
-          "name": "Rapacious Bite",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1533.jpg",
-          "description": "Monster kills boost PATK"
-        },
-        {
-          "slot": 5,
-          "itemId": "11311",
-          "name": "Pure Sky",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/11311.jpg",
-          "description": "Temp. damage reduction"
-        },
-        {
-          "slot": 6,
-          "itemId": "1333",
-          "name": "Ominous Premonition",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1333.jpg",
-          "description": "Slows attackers"
-        }
-      ]
-    },
-    {
-      "id": "jungling-1",
-      "label": "Jungling 1",
-      "position": "Position 3",
-      "lane": "Jungling",
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1523",
-          "name": "Relentless Blade",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1523.jpg",
-          "description": "Monster kills boost PATK"
-        },
-        {
-          "slot": 2,
-          "itemId": "1422",
-          "name": "Boots of Resistance",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
-          "description": "Shortens CC"
-        },
-        {
-          "slot": 3,
-          "itemId": "1124",
-          "name": "Meteor",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1124.jpg",
-          "description": "PATK +35\nCDR +7.5%"
-        },
-        {
-          "slot": 4,
-          "itemId": "1137",
-          "name": "Axe of Torment",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1137.jpg",
-          "description": "Anti-squishy"
-        },
-        {
-          "slot": 5,
-          "itemId": "1327",
-          "name": "Spikemail",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1327.jpg",
-          "description": "Reflects damage"
-        },
-        {
-          "slot": 6,
-          "itemId": "1138",
-          "name": "Overlord's Might",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1138.jpg",
-          "description": "High-damage attack"
-        }
-      ]
-    },
-    {
-      "id": "jungling-2",
-      "label": "Jungling 2",
-      "position": "Position 3",
-      "lane": "Jungling",
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1523",
-          "name": "Relentless Blade",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1523.jpg",
-          "description": "Monster kills boost PATK"
-        },
-        {
-          "slot": 2,
-          "itemId": "1422",
-          "name": "Boots of Resistance",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
-          "description": "Shortens CC"
-        },
-        {
-          "slot": 3,
-          "itemId": "1124",
-          "name": "Meteor",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1124.jpg",
-          "description": "PATK +35\nCDR +7.5%"
-        },
-        {
-          "slot": 4,
-          "itemId": "1137",
-          "name": "Axe of Torment",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1137.jpg",
-          "description": "Anti-squishy"
-        },
-        {
-          "slot": 5,
-          "itemId": "1533",
-          "name": "Rapacious Bite",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1533.jpg",
-          "description": "Monster kills boost PATK"
-        },
-        {
-          "slot": 6,
-          "itemId": "1338",
-          "name": "Cuirass of Savagery",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1338.jpg",
-          "description": "Offense & defense"
-        }
-      ]
-    },
-    {
-      "id": "original",
-      "label": "Original",
-      "position": "Position 3",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1523",
-          "name": "Relentless Blade",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1523.jpg",
-          "description": "Monster kills boost PATK"
-        },
-        {
-          "slot": 2,
-          "itemId": "1423",
-          "name": "Boots of Tranquility",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1423.jpg",
-          "description": "Reduces Skill CD"
-        },
-        {
-          "slot": 3,
-          "itemId": "1137",
-          "name": "Axe of Torment",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1137.jpg",
-          "description": "Anti-squishy"
-        },
-        {
-          "slot": 4,
-          "itemId": "1533",
-          "name": "Rapacious Bite",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1533.jpg",
-          "description": "Monster kills boost PATK"
-        },
-        {
-          "slot": 5,
-          "itemId": "11311",
-          "name": "Pure Sky",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/11311.jpg",
-          "description": "Temp. damage reduction"
-        },
-        {
-          "slot": 6,
-          "itemId": "1327",
-          "name": "Spikemail",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1327.jpg",
-          "description": "Reflects damage"
-        }
-      ]
-    },
-    {
-      "id": "bulk-sharky",
-      "label": "Bulk Sharky",
-      "position": "Position 3",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1532",
-          "name": "Giant's Grip",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1532.jpg",
-          "description": "Monster kills boost Health"
-        },
-        {
-          "slot": 2,
-          "itemId": "1137",
-          "name": "Axe of Torment",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1137.jpg",
-          "description": "Anti-squishy"
-        },
-        {
-          "slot": 3,
-          "itemId": "1327",
-          "name": "Spikemail",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1327.jpg",
-          "description": "Reflects damage"
-        },
-        {
-          "slot": 4,
-          "itemId": "1334",
-          "name": "Eye of the Phoenix",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1334.jpg",
-          "description": "Boosts Health regen"
-        },
-        {
-          "slot": 5,
-          "itemId": "1331",
-          "name": "Blazing Cape",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1331.jpg",
-          "description": "Burns nearby enemies"
-        },
-        {
-          "slot": 6,
-          "itemId": "1333",
-          "name": "Ominous Premonition",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1333.jpg",
-          "description": "Slows attackers"
-        }
-      ]
-    },
-    {
-      "id": "damage",
-      "label": "damage",
-      "position": "Position 3",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1523",
-          "name": "Relentless Blade",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1523.jpg",
-          "description": "Monster kills boost PATK"
-        },
-        {
-          "slot": 2,
-          "itemId": "1423",
-          "name": "Boots of Tranquility",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1423.jpg",
-          "description": "Reduces Skill CD"
-        },
-        {
-          "slot": 3,
-          "itemId": "1137",
-          "name": "Axe of Torment",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1137.jpg",
-          "description": "Anti-squishy"
-        },
-        {
-          "slot": 4,
-          "itemId": "1345",
-          "name": "Nettle Gauntlet",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1345.jpg",
-          "description": "Offense & defense"
-        },
-        {
-          "slot": 5,
-          "itemId": "1533",
-          "name": "Rapacious Bite",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1533.jpg",
-          "description": "Monster kills boost PATK"
-        },
-        {
-          "slot": 6,
-          "itemId": "1338",
-          "name": "Cuirass of Savagery",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1338.jpg",
-          "description": "Offense & defense"
-        }
-      ]
-    },
-    {
-      "id": "h2o",
-      "label": "h2o",
-      "position": "Position 3",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1523",
-          "name": "Relentless Blade",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1523.jpg",
-          "description": "Monster kills boost PATK"
-        },
-        {
-          "slot": 2,
-          "itemId": "1423",
-          "name": "Boots of Tranquility",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1423.jpg",
-          "description": "Reduces Skill CD"
-        },
-        {
-          "slot": 3,
-          "itemId": "1533",
-          "name": "Rapacious Bite",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1533.jpg",
-          "description": "Monster kills boost PATK"
-        },
-        {
-          "slot": 4,
-          "itemId": "1534",
-          "name": "Dragon's Rage",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1534.jpg",
-          "description": "Boosts BA damage"
-        },
-        {
-          "slot": 5,
-          "itemId": "1137",
-          "name": "Axe of Torment",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1137.jpg",
-          "description": "Anti-squishy"
-        },
-        {
-          "slot": 6,
-          "itemId": "11311",
-          "name": "Pure Sky",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/11311.jpg",
-          "description": "Temp. damage reduction"
-        }
-      ]
-    },
-    {
-      "id": "tank-ahf06",
-      "label": "Tank ahf06",
-      "position": "Position 3",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1522",
-          "name": "Patrol Axe",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1522.jpg",
-          "description": "Monster kills boost Health"
-        },
-        {
-          "slot": 2,
-          "itemId": "1423",
-          "name": "Boots of Tranquility",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1423.jpg",
-          "description": "Reduces Skill CD"
-        },
-        {
-          "slot": 3,
-          "itemId": "1534",
-          "name": "Dragon's Rage",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1534.jpg",
-          "description": "Boosts BA damage"
-        },
-        {
-          "slot": 4,
-          "itemId": "1328",
-          "name": "Blood Rage",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1328.jpg",
-          "description": "Grants temporary shield"
-        },
-        {
-          "slot": 5,
-          "itemId": "1532",
-          "name": "Giant's Grip",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1532.jpg",
-          "description": "Monster kills boost Health"
-        },
-        {
-          "slot": 6,
-          "itemId": "1331",
-          "name": "Blazing Cape",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1331.jpg",
-          "description": "Burns nearby enemies"
-        }
-      ]
-    }
+  "metaAnalysisZh": [
+    "瀾 勝率 48.61%（Camp HOK，2026-06-07）",
+    "選取率 1.03%",
+    "禁用率 0.47%",
+    "克制：Lu Bu、Wuyan、Xiang Yu；被克制：Erin、Liang、Luara"
   ],
   "guide": {
     "overview": "Lam is a Medium Assassin (Jungling) on Honor of Kings Global. Camp HOK ranks them Tier A with 48.8% win rate and 1.0% pick rate as of 2026-06-05.",

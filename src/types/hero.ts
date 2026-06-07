@@ -39,15 +39,72 @@ export interface GameItem {
   id: string;
   slug: string;
   name: string;
+  /** Camp zh-TW equip name when synced */
+  nameZh?: string | null;
   description: string;
+  descriptionZh?: string | null;
+  descLabel?: string | null;
+  descLabelZh?: string | null;
   icon: string;
   gold: number | null;
   type: string | null;
+  level?: number | null;
+  /** Camp passive skill text (bilingual) */
+  passiveSkills?: string[];
+  passiveSkillsZh?: string[];
 }
 
 export interface PatchEntry {
   version: string;
   change: string;
+  seasonName?: string;
+  seasonId?: string;
+  versionName?: string | null;
+  publishedAt?: string | null;
+  isCurrent?: boolean;
+  tag?: string | null;
+  detail?: string | null;
+}
+
+export interface ArcanaRune {
+  id: string;
+  name: string;
+  nameZh?: string | null;
+  icon: string;
+  description: string;
+  descriptionZh?: string | null;
+  level?: number | null;
+  color?: number | null;
+  usedByCount?: number;
+}
+
+export interface SeasonPatchChange {
+  heroSlug: string;
+  heroName: string;
+  heroNameZh?: string | null;
+  tag?: string | null;
+  change: string;
+  changeZh?: string | null;
+  detail?: string | null;
+  detailZh?: string | null;
+  versionName?: string | null;
+  publishedAt?: string | null;
+}
+
+export interface SeasonPatchGroup {
+  seasonName: string;
+  seasonId?: string;
+  changes: SeasonPatchChange[];
+}
+
+export interface PatchesMeta {
+  season: string;
+  currentSeason: string;
+  source: string;
+  updated: string;
+  heroCount: number;
+  notes?: string;
+  seasons: SeasonPatchGroup[];
 }
 
 export interface HeroFaq {
@@ -116,22 +173,38 @@ export interface Hero {
   rank: number | null;
   avatar: string;
   avatarFallback?: string;
+  /** Camp wide splash / cover art */
+  heroCover?: string | null;
   tencentId?: number;
   roles?: string;
   lane?: string | null;
   dataSource?: string;
   dataUpdated?: string;
   skills: HeroSkill[];
+  /** Camp zh-TW skills (Traditional Chinese) */
+  skillsZh?: HeroSkill[];
   build: HeroBuildItem[];
+  buildZh?: HeroBuildItem[];
   builds?: HeroBuildPreset[];
+  buildsZh?: HeroBuildPreset[];
   arcana: string[];
+  arcanaZh?: string[];
   spells: string[];
+  spellsZh?: string[];
+  /** Camp zh-TW display name */
+  nameZh?: string | null;
+  laneZh?: string | null;
+  rolesZh?: string | null;
   counters: string[];
   counteredBy: string[];
   tips: string[];
   patchHistory: PatchEntry[];
+  patchHistoryZh?: PatchEntry[];
   faqs: HeroFaq[];
+  faqsZh?: HeroFaq[];
   metaAnalysis: string[];
+  metaAnalysisZh?: string[];
+  tipsZh?: string[];
   guide?: HeroGuide;
 }
 

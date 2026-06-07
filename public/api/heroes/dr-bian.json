@@ -2,100 +2,583 @@
   "id": "dr-bian",
   "slug": "dr-bian",
   "name": "Dr Bian",
+  "nameZh": "扁鵲",
   "role": "Mage",
   "roles": "Mage",
+  "rolesZh": "法師",
   "lane": "Mid Lane",
+  "laneZh": "中路",
   "difficulty": "Medium",
   "tier": "B",
-  "winRate": 50.11,
-  "pickRate": 0.64,
+  "winRate": 49.93,
+  "pickRate": 0.66,
   "banRate": 0.11,
-  "rank": 72,
+  "rank": 76,
   "avatar": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/YmpeG9H2.png",
   "avatarFallback": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/119/119.jpg",
+  "heroCover": "https://camp.honorofkings.com/social/game/src/image_hero_cover_1275*718/l2V9q8tk.jpg",
   "tencentId": 119,
-  "dataSource": "Camp HOK + HoKStats.gg (intl)",
-  "dataUpdated": "2026-06-05",
+  "dataSource": "Camp HOK bilingual (primary)",
+  "dataUpdated": "2026-06-07",
   "skills": [
     {
       "slot": "passive",
       "name": "Malicious Practice",
-      "description": "Damage from skills and Basic Attacks places up to 5 marks on enemies each stack dealing damage over time.Chemist's Skill 2 and Ultimate grant up to 5 marks to himself and histeammates, continually restoring Health with each stack.",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/119/11900.png",
-      "cooldown": null
+      "description": "Skill and Basic Attack hits place up to 5 marks on enemies, each stack dealing damage over time.\nHis Skill 2 and Ultimate place up to 5 marks on himself and his teammates, each stack continually restoring Health over time.",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/11900.png",
+      "cooldown": "1s"
     },
     {
       "slot": "skill1",
       "name": "Deadly Panacea",
-      "description": "Throws a vial of deadly poison at the target location, dealing damage overtime and slowing enemies within range.Deadly Panacea: Can store up to three vials.",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/119/11910.png",
-      "cooldown": null
+      "description": "Throws a vial of deadly poison at the target location, dealing damage over time and slowing enemies within range.\nCan store up to 3 vials of poison.",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/11910.png",
+      "cooldown": "2s"
     },
     {
       "slot": "skill2",
       "name": "Fatal Diagnosis",
-      "description": "Launches a concoction in the target direction that deals damage to enemiesin its path and marks them.Restores Chemist and his allies' Health and marks them.",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/119/11920.png",
-      "cooldown": null
+      "description": "Throws a concoction in the target direction, dealing damage and marking enemies in its path.\nHeals himself and teammates in its path, while also applying marks.",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/11920.png",
+      "cooldown": "5s"
     },
     {
       "slot": "ultimate",
       "name": "Master of Life",
-      "description": "Damages enemies within range and heals teammatesEvery mark detonated will increase damage and healing.He recovers extra Health.",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/119/11930.png",
-      "cooldown": null
+      "description": "Damages enemies within range and heals teammates.\nEvery mark detonated will increase damage and healing.\nHe recovers extra Health.",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/11930.png",
+      "cooldown": "15s"
+    }
+  ],
+  "skillsZh": [
+    {
+      "slot": "passive",
+      "name": "無德醫療",
+      "description": "普攻和技能每次造成傷害會對敵人疊層(最高5層)，每層會造成持續傷害。\n2技能和大招會同時為自身和隊友疊層(最高5層)，每層會持續回復生命值。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/11900.png",
+      "cooldown": "1s"
+    },
+    {
+      "slot": "skill1",
+      "name": "致命靈藥",
+      "description": "向指定位置投擲藥瓶，對範圍內敵人造成持續傷害和減速效果。\n【致命靈藥】最多可儲存三次。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/11910.png",
+      "cooldown": "2s"
+    },
+    {
+      "slot": "skill2",
+      "name": "善惡診斷",
+      "description": "朝指定方向施放藥劑，對沿途敵人造成傷害並疊加印記。\n為沿途友方英雄及自身回復生命值並疊加印記。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/11920.png",
+      "cooldown": "5s"
+    },
+    {
+      "slot": "ultimate",
+      "name": "生命主宰",
+      "description": "對自身周圍一定範圍內的敵人造成傷害，友方英雄進行治療。\n引爆的每層印記會使傷害和治療效果提升。\n扁鵲自身回復更多的生命值。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/11930.png",
+      "cooldown": "15s"
     }
   ],
   "build": [
     {
       "slot": 1,
-      "itemId": "1233",
-      "name": "Scepter of Reverberation",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1233.jpg",
-      "description": "Skill hits trigger explosions"
+      "itemId": "1332",
+      "name": "Overlord's Platemail",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1332.png",
+      "description": "HP +1,800, PDEF +160, MDEF +80\nExtra HP"
     },
     {
       "slot": 2,
-      "itemId": "1424",
-      "name": "Boots of the Arcane",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1424.jpg",
-      "description": "Magical Pierce"
+      "itemId": "1244",
+      "name": "Breakthrough Robe",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1244.png",
+      "description": "MATK +120, HP +900\nConverts HP into Magical Pierce"
     },
     {
       "slot": 3,
-      "itemId": "1232",
-      "name": "Savant's Wrath",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1232.jpg",
-      "description": "Greatly boosts MATK"
+      "itemId": "1423",
+      "name": "Boots of Tranquility",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1423.png",
+      "description": "CDR +15%, MSPD +50\nSpeeds up skill cooldown"
     },
     {
       "slot": 4,
-      "itemId": "1240",
-      "name": "Insatiable Tome",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1240.jpg",
-      "description": "Magical Lifesteal"
+      "itemId": "1238",
+      "name": "Sage's Tome",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1238.png",
+      "description": "MATK +350, CDR +10%\nGreat for mages"
     },
     {
       "slot": 5,
-      "itemId": "1231",
-      "name": "Void Staff",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1231.jpg",
-      "description": "Anti-tank"
+      "itemId": "1335",
+      "name": "Succubus Cloak",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
+      "description": "MDEF +300, HP +1,100\nNegates magical damage"
     },
     {
       "slot": 6,
-      "itemId": null,
-      "name": "Data unavailable",
-      "icon": null,
-      "description": null
+      "itemId": "1231",
+      "name": "Void Staff",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1231.png",
+      "description": "MATK +210, HP +500, CDR +5%\nAnti-tank"
+    }
+  ],
+  "buildZh": [
+    {
+      "slot": 1,
+      "itemId": "1332",
+      "name": "霸者重裝",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1332.png",
+      "description": "+1800點生命值+160點物防+80點法防\n提高額外生命值"
+    },
+    {
+      "slot": 2,
+      "itemId": "1244",
+      "name": "破繭之衣",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1244.png",
+      "description": "+120點法攻+900點生命值\n生命值轉法穿"
+    },
+    {
+      "slot": 3,
+      "itemId": "1423",
+      "name": "冷靜之靴",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1423.png",
+      "description": "+15%減冷卻時間+50點移速\n加快技能冷卻"
+    },
+    {
+      "slot": 4,
+      "itemId": "1238",
+      "name": "賢者天書",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1238.png",
+      "description": "+350點法攻+10%減冷卻時間\n法師神裝"
+    },
+    {
+      "slot": 5,
+      "itemId": "1335",
+      "name": "魔女斗篷",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
+      "description": "+300點法防+1100點生命值\n吸收法術傷害"
+    },
+    {
+      "slot": 6,
+      "itemId": "1231",
+      "name": "虛無法杖",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1231.png",
+      "description": "+210點法攻+500點生命值+5%減冷卻時間\n打坦克用"
+    }
+  ],
+  "builds": [
+    {
+      "id": "camp-0",
+      "label": "Principais",
+      "lane": "Mid",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1332",
+          "name": "Overlord's Platemail",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1332.png",
+          "description": "HP +1,800, PDEF +160, MDEF +80\nExtra HP"
+        },
+        {
+          "slot": 2,
+          "itemId": "1244",
+          "name": "Breakthrough Robe",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1244.png",
+          "description": "MATK +120, HP +900\nConverts HP into Magical Pierce"
+        },
+        {
+          "slot": 3,
+          "itemId": "1423",
+          "name": "Boots of Tranquility",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1423.png",
+          "description": "CDR +15%, MSPD +50\nSpeeds up skill cooldown"
+        },
+        {
+          "slot": 4,
+          "itemId": "1238",
+          "name": "Sage's Tome",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1238.png",
+          "description": "MATK +350, CDR +10%\nGreat for mages"
+        },
+        {
+          "slot": 5,
+          "itemId": "1335",
+          "name": "Succubus Cloak",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
+          "description": "MDEF +300, HP +1,100\nNegates magical damage"
+        },
+        {
+          "slot": 6,
+          "itemId": "1231",
+          "name": "Void Staff",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1231.png",
+          "description": "MATK +210, HP +500, CDR +5%\nAnti-tank"
+        }
+      ]
+    },
+    {
+      "id": "camp-1",
+      "label": "@carl.dev",
+      "lane": "Mid",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1235",
+          "name": "Mask of Agony",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1235.png",
+          "description": "MATK +100, CDR +7.5%, HP +900\nBoosts skill damage"
+        },
+        {
+          "slot": 2,
+          "itemId": "1231",
+          "name": "Void Staff",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1231.png",
+          "description": "MATK +210, HP +500, CDR +5%\nAnti-tank"
+        },
+        {
+          "slot": 3,
+          "itemId": "1234",
+          "name": "Frozen Breath",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1234.png",
+          "description": "MATK +180, CDR +7.5%, HP +500\nSkill hits slow"
+        },
+        {
+          "slot": 4,
+          "itemId": "1727",
+          "name": "Twilight Stream",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1727.png",
+          "description": "MATK +160, CDR +10%, Max HP +500\nBoosts Magical Pierce"
+        },
+        {
+          "slot": 5,
+          "itemId": "1337",
+          "name": "Sage's Sanctuary",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
+        },
+        {
+          "slot": 6,
+          "itemId": "1127",
+          "name": "Destiny",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
+        }
+      ]
+    },
+    {
+      "id": "camp-2",
+      "label": "ANTI PLENGER",
+      "lane": "Mid",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1227",
+          "name": "Ardent Dominion",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1227.png",
+          "description": "MATK +150, Magical Lifesteal +12%, MSPD +7.5%\nCleanse and shield at low HP"
+        },
+        {
+          "slot": 2,
+          "itemId": "1237",
+          "name": "Augur's Word",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1237.png",
+          "description": "MATK +140, MP +450, HP +900\nOffense & defense"
+        },
+        {
+          "slot": 3,
+          "itemId": "1244",
+          "name": "Breakthrough Robe",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1244.png",
+          "description": "MATK +120, HP +900\nConverts HP into Magical Pierce"
+        },
+        {
+          "slot": 4,
+          "itemId": "1233",
+          "name": "Scepter of Reverberation",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1233.png",
+          "description": "MATK +210, MSPD +7.5%\nSkill hits explode"
+        },
+        {
+          "slot": 5,
+          "itemId": "1238",
+          "name": "Sage's Tome",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1238.png",
+          "description": "MATK +350, CDR +10%\nGreat for mages"
+        },
+        {
+          "slot": 6,
+          "itemId": "1242",
+          "name": "Enigma - Moon Goddess",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1242.png",
+          "description": "MATK +160, CDR +7.5%, Magical Lifesteal +12%\nTemp. invincibility"
+        }
+      ]
+    },
+    {
+      "id": "camp-3",
+      "label": "Mid Lane 2",
+      "lane": "Mid",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1226",
+          "name": "Holy Grail",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1226.png",
+          "description": "MATK +150, CDR +15%, HP +500\nRapid MP Regen"
+        },
+        {
+          "slot": 2,
+          "itemId": "1233",
+          "name": "Scepter of Reverberation",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1233.png",
+          "description": "MATK +210, MSPD +7.5%\nSkill hits explode"
+        },
+        {
+          "slot": 3,
+          "itemId": "1238",
+          "name": "Sage's Tome",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1238.png",
+          "description": "MATK +350, CDR +10%\nGreat for mages"
+        },
+        {
+          "slot": 4,
+          "itemId": "1235",
+          "name": "Mask of Agony",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1235.png",
+          "description": "MATK +100, CDR +7.5%, HP +900\nBoosts skill damage"
+        },
+        {
+          "slot": 5,
+          "itemId": "1236",
+          "name": "Staves of Sorcery",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1236.png",
+          "description": "MATK +180, HP +600, MSPD +7.5%\nEnhances BAs"
+        },
+        {
+          "slot": 6,
+          "itemId": "1239",
+          "name": "Splendor",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1239.png",
+          "description": "MATK +160, CDR +7.5%, Magical Lifesteal +12%\nTemp. invincibility"
+        }
+      ]
+    }
+  ],
+  "buildsZh": [
+    {
+      "id": "camp-0",
+      "label": "Principais",
+      "lane": "Mid",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1332",
+          "name": "霸者重裝",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1332.png",
+          "description": "+1800點生命值+160點物防+80點法防\n提高額外生命值"
+        },
+        {
+          "slot": 2,
+          "itemId": "1244",
+          "name": "破繭之衣",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1244.png",
+          "description": "+120點法攻+900點生命值\n生命值轉法穿"
+        },
+        {
+          "slot": 3,
+          "itemId": "1423",
+          "name": "冷靜之靴",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1423.png",
+          "description": "+15%減冷卻時間+50點移速\n加快技能冷卻"
+        },
+        {
+          "slot": 4,
+          "itemId": "1238",
+          "name": "賢者天書",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1238.png",
+          "description": "+350點法攻+10%減冷卻時間\n法師神裝"
+        },
+        {
+          "slot": 5,
+          "itemId": "1335",
+          "name": "魔女斗篷",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
+          "description": "+300點法防+1100點生命值\n吸收法術傷害"
+        },
+        {
+          "slot": 6,
+          "itemId": "1231",
+          "name": "虛無法杖",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1231.png",
+          "description": "+210點法攻+500點生命值+5%減冷卻時間\n打坦克用"
+        }
+      ]
+    },
+    {
+      "id": "camp-1",
+      "label": "@carl.dev",
+      "lane": "Mid",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1235",
+          "name": "痛苦面具",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1235.png",
+          "description": "+100點法攻+7.5%減冷卻時間+900點生命值 \n技能額外傷害"
+        },
+        {
+          "slot": 2,
+          "itemId": "1231",
+          "name": "虛無法杖",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1231.png",
+          "description": "+210點法攻+500點生命值+5%減冷卻時間\n打坦克用"
+        },
+        {
+          "slot": 3,
+          "itemId": "1234",
+          "name": "凝冰之息",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1234.png",
+          "description": "+180點法攻+7.5%減冷卻時間+500點生命值\n技能命中減速"
+        },
+        {
+          "slot": 4,
+          "itemId": "1727",
+          "name": "日暮之流",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1727.png",
+          "description": "+160點法攻+10%減冷卻時間+500點最大生命值\n提升法術穿透"
+        },
+        {
+          "slot": 5,
+          "itemId": "1337",
+          "name": "賢者的庇護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+        },
+        {
+          "slot": 6,
+          "itemId": "1127",
+          "name": "名刀・司命",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "+75點攻擊+15%攻速+500點生命值\n保命"
+        }
+      ]
+    },
+    {
+      "id": "camp-2",
+      "label": "ANTI PLENGER",
+      "lane": "Mid",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1227",
+          "name": "熾熱支配",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1227.png",
+          "description": "+150點法攻+12%法術吸血+7.5%移速\n殘血解控加盾"
+        },
+        {
+          "slot": 2,
+          "itemId": "1237",
+          "name": "時之預言",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1237.png",
+          "description": "+140點法攻+450法力值+900點生命值……\n攻防兼備"
+        },
+        {
+          "slot": 3,
+          "itemId": "1244",
+          "name": "破繭之衣",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1244.png",
+          "description": "+120點法攻+900點生命值\n生命值轉法穿"
+        },
+        {
+          "slot": 4,
+          "itemId": "1233",
+          "name": "迴響之杖",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1233.png",
+          "description": "+210點法攻+7.5%移速 \n技能命中爆炸"
+        },
+        {
+          "slot": 5,
+          "itemId": "1238",
+          "name": "賢者天書",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1238.png",
+          "description": "+350點法攻+10%減冷卻時間\n法師神裝"
+        },
+        {
+          "slot": 6,
+          "itemId": "1242",
+          "name": "難知・月神",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1242.png",
+          "description": "+160點法攻 +7.5%減冷卻時間\n+12%法術吸血暫時無敵"
+        }
+      ]
+    },
+    {
+      "id": "camp-3",
+      "label": "Mid Lane 2",
+      "lane": "Mid",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1226",
+          "name": "聖杯",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1226.png",
+          "description": "+150點法攻+15%減冷卻時間+500點生命值\n快速回復法力"
+        },
+        {
+          "slot": 2,
+          "itemId": "1233",
+          "name": "迴響之杖",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1233.png",
+          "description": "+210點法攻+7.5%移速 \n技能命中爆炸"
+        },
+        {
+          "slot": 3,
+          "itemId": "1238",
+          "name": "賢者天書",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1238.png",
+          "description": "+350點法攻+10%減冷卻時間\n法師神裝"
+        },
+        {
+          "slot": 4,
+          "itemId": "1235",
+          "name": "痛苦面具",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1235.png",
+          "description": "+100點法攻+7.5%減冷卻時間+900點生命值 \n技能額外傷害"
+        },
+        {
+          "slot": 5,
+          "itemId": "1236",
+          "name": "巫術法杖",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1236.png",
+          "description": "+180點法攻+600點生命值+7.5%移速……\n強化普攻"
+        },
+        {
+          "slot": 6,
+          "itemId": "1239",
+          "name": "輝月",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1239.png",
+          "description": "+160點法攻+7.5%減冷卻時間+12%法術吸血\n暫時無敵"
+        }
+      ]
     }
   ],
   "arcana": [
-    "Saint"
+    "Lvl 5: Nightmare",
+    "Lvl 5: Avarice",
+    "Lvl 5: Hunt"
+  ],
+  "arcanaZh": [
+    "5級：夢魘",
+    "5級：貪婪",
+    "5級：狩獵"
   ],
   "spells": [
-    "Heal",
-    "Flash"
+    "Heal"
+  ],
+  "spellsZh": [
+    "治療術"
   ],
   "counters": [
     "Mai Shiranui",
@@ -105,386 +588,151 @@
     "Yang Jian"
   ],
   "tips": [
-    "Dr Bian is a Medium Mage (Mid Lane) on Honor of Kings Global. Camp HOK ranks them Tier B with 50.1% win rate and 0.6% pick rate as of 2026-06-05.",
-    "Best build path: Scepter of Reverberation → Boots of the Arcane → Savant's Wrath → Insatiable Tome → Void Staff.",
-    "Run Saint for stats that match Dr Bian's Mage kit. Take Heal & Flash — swap to Purify against heavy CC or Smite when jungling.",
-    "Standard trade: Deadly Panacea → Fatal Diagnosis → Master of Life → weave basic attacks. Weave basic attacks between skill casts for passive value.",
-    "Laning: Control first wave without taking free poke. Roam after pushing wave 2–4 to side lanes with your jungler.",
-    "Teamfight: Poke from max range before objective. Save hard CC for enemy dive or your carry peel window.",
-    "Dr Bian excels into Mai Shiranui, Diaochan. Avoid blind picking into Yang Jian without team peel.",
-    "Dr Bian sits at Tier B globally (50.1% WR). In high rank, pick only into favorable matchups or when you have a dedicated pocket pick."
+    "Dr Bian (Mage): Tier B — 49.93% WR (Camp HOK).",
+    "Lane: Mid Lane.",
+    "Build: Overlord's Platemail, Breakthrough Robe, Boots of Tranquility."
+  ],
+  "tipsZh": [
+    "扁鵲（中路）：梯度 B，勝率 49.93%（Camp HOK）。",
+    "出裝：霸者重裝、破繭之衣、冷靜之靴."
   ],
   "patchHistory": [
     {
-      "version": "Live meta",
-      "change": "Camp HOK — WR 50.1%, pick 0.6%, ban 0.1%, tier B."
+      "seasonId": "14",
+      "seasonName": "S14",
+      "versionName": "2026/03/26",
+      "publishedAt": "2026-03-26T01:00:00Z",
+      "isCurrent": false,
+      "tag": "Stat Buffs",
+      "change": "Reduced skill consumption",
+      "detail": "",
+      "version": "S14"
     },
     {
-      "version": "Matchups",
-      "change": "Strong into Mai Shiranui, Diaochan · Weak into Yang Jian."
+      "seasonId": "10",
+      "seasonName": "S10",
+      "versionName": "20250529",
+      "publishedAt": "2025-05-29T01:48:14Z",
+      "isCurrent": false,
+      "tag": "Stat Buffs",
+      "change": "Increased Skill 2 damage and recovery",
+      "detail": "",
+      "version": "S10"
     },
     {
-      "version": "High rank",
-      "change": "Dr Bian sits at Tier B globally (50.1% WR). In high rank, pick only into favorable matchups or when you have a dedicated pocket pick."
+      "seasonId": "5",
+      "seasonName": "S5",
+      "versionName": "20240523",
+      "publishedAt": "2024-05-23T12:11:56Z",
+      "isCurrent": false,
+      "tag": "Stat Buffs",
+      "change": "Reduced Dr Bian's early-game damage, and increased his healing and late-game damage",
+      "detail": "n the current version, Dr Bian is extremely powerful during the early game. However, his lack of dash and crowd control skills makes him less powerful during in the late game. We hope to change that, so we will increase his late-game damage and healing, and reduce his early-game damage accordingly.",
+      "version": "S5"
+    },
+    {
+      "seasonId": "3",
+      "seasonName": "S3",
+      "versionName": "20231025",
+      "publishedAt": "2023-10-25T12:02:46Z",
+      "isCurrent": false,
+      "tag": "Stat Changes",
+      "change": "Reduced the Health recovery effects of Bian Que's Skill 2. Reduced the basic Health recovery effect of his Ultimate but increased the rate of increase for effects per skill level.",
+      "detail": "At the beginning of the new season, we reduced the effect of the Imperil equipment passive. The goal was to make life a little easier for heroes with healing capabilities. However, this also meant that when Dr Bian was well equipped or matched with other healers, his team would have an outsized advantage. As we hope to see players continue to use healers and the corresponding lineups, we have made certain adjustments to Dr Bian's skill stats to moderate his capabilities in the early-to-mid game. At the same time, Dr Bian will become more powerful than before when he reaches the higher levels.",
+      "version": "S3"
+    }
+  ],
+  "patchHistoryZh": [
+    {
+      "seasonId": "14",
+      "seasonName": "S14",
+      "versionName": "2026/03/26",
+      "publishedAt": "2026-03-26T01:00:00Z",
+      "isCurrent": false,
+      "tag": "數值增強",
+      "change": "減少技能消耗",
+      "detail": "",
+      "version": "S14"
+    },
+    {
+      "seasonId": "10",
+      "seasonName": "S10",
+      "versionName": "20250529",
+      "publishedAt": "2025-05-29T01:48:14Z",
+      "isCurrent": false,
+      "tag": "數值增強",
+      "change": "提升2技能傷害回復效果",
+      "detail": "",
+      "version": "S10"
+    },
+    {
+      "seasonId": "5",
+      "seasonName": "S5",
+      "versionName": "20240523",
+      "publishedAt": "2024-05-23T12:11:56Z",
+      "isCurrent": false,
+      "tag": "數值增強",
+      "change": "降低扁鵲前期傷害製造能力，提升他的治療能力以及後期的傷害製造能力",
+      "detail": "扁鵲在當前版本的遊戲前期擁有極強的作戰能力，但是由於他缺少位移和控制能力，導致他後期的戰鬥強度會有所下降。我們希望改變扁鵲在遊戲中期開始越打越弱的處境，在強化他後期傷害和治療能力的同時適度降低他前期的戰鬥能力。",
+      "version": "S5"
+    },
+    {
+      "seasonId": "3",
+      "seasonName": "S3",
+      "versionName": "20231025",
+      "publishedAt": "2023-10-25T12:02:46Z",
+      "isCurrent": false,
+      "tag": "數值調整",
+      "change": "Reduced the Health recovery effects of Bian Que's Skill 2. Reduced the basic Health recovery effect of his Ultimate but increased the rate of increase for effects per skill level.",
+      "detail": "At the beginning of the new season, we reduced the effect of the Imperil equipment passive. The goal was to make life a little easier for heroes with healing capabilities. However, this also meant that when Dr Bian was well equipped or matched with other healers, his team would have an outsized advantage. As we hope to see players continue to use healers and the corresponding lineups, we have made certain adjustments to Dr Bian's skill stats to moderate his capabilities in the early-to-mid game. At the same time, Dr Bian will become more powerful than before when he reaches the higher levels.",
+      "version": "S3"
     }
   ],
   "faqs": [
     {
       "id": "faq-good-season",
-      "question": "Is Dr Bian good in the current meta?",
-      "answer": "Dr Bian is Tier B Mage with 50.1% win rate, 0.6% pick rate, and 0.1% ban rate on Honor of Kings Global (Camp HOK, 2026-06-05). Niche — draft carefully."
+      "question": "Is Dr Bian good in current season?",
+      "answer": "Dr Bian is Tier B Mage with 49.93% win rate, 0.66% pick rate, and 0.11% ban rate (Camp HOK international)."
     },
     {
       "id": "faq-best-build",
       "question": "What is the best Dr Bian build?",
-      "answer": "Core item path: Scepter of Reverberation, Boots of the Arcane, Savant's Wrath, Insatiable Tome, Void Staff. Run Saint arcana with Heal & Flash. Switch to alternate build presets on this page for jungle, clash, or late-game setups."
+      "answer": "Recommended: Overlord's Platemail, Breakthrough Robe, Boots of Tranquility, Sage's Tome, Succubus Cloak, Void Staff."
     },
     {
       "id": "faq-counter",
       "question": "How to counter Dr Bian?",
-      "answer": "Pick Yang Jian into Dr Bian. Deny Mid Lane resources early and force fights before Dr Bian completes core items. Dr Bian struggles when the enemy can out-range or out-sustain them."
+      "answer": "Pick Yang Jian. Strong into Mai Shiranui, Diaochan."
+    }
+  ],
+  "faqsZh": [
+    {
+      "id": "faq-good-season",
+      "question": "扁鵲 這版本適合上分嗎？",
+      "answer": "扁鵲 為 B 梯度，勝率 49.93%、選取 0.66%、禁用 0.11%（Camp HOK 國際服）。"
     },
     {
-      "id": "faq-strong-into",
-      "question": "Who does Dr Bian counter?",
-      "answer": "Dr Bian is strong into Mai Shiranui, Diaochan according to HoKStats matchup data and role matchups on the global server. Draft Dr Bian when the enemy relies on these heroes in the Mid Lane lane."
+      "id": "faq-best-build",
+      "question": "扁鵲 出裝怎麼搭配？",
+      "answer": "推薦：霸者重裝、破繭之衣、冷靜之靴、賢者天書、魔女斗篷、虛無法杖."
     },
     {
-      "id": "faq-high-rank",
-      "question": "Is Dr Bian good in high rank / Diamond+?",
-      "answer": "Dr Bian sits at Tier B globally (50.1% WR). In high rank, pick only into favorable matchups or when you have a dedicated pocket pick."
-    },
-    {
-      "id": "faq-lane",
-      "question": "What lane should Dr Bian play?",
-      "answer": "Dr Bian is tagged Mid Lane in Camp export (Mage). Control first wave without taking free poke. Roam after pushing wave 2–4 to side lanes with your jungler."
-    },
-    {
-      "id": "faq-arcana",
-      "question": "Best arcana and spells for Dr Bian?",
-      "answer": "Recommended: Saint arcana. Battle spell: Heal & Flash. Adjust Purify/Execute based on enemy dive and jungle need."
-    },
-    {
-      "id": "faq-vs-peer",
-      "question": "Dr Bian or Daji — which is better?",
-      "answer": "Dr Bian vs Daji (Mage, Tier S+): Daji is 2.4% pick / 51.0% WR. Daji wins 0.9% more often globally. Choose Dr Bian when you need Mid Lane identity; choose Daji for Mid Lane comfort."
-    },
-    {
-      "id": "faq-ban",
-      "question": "Should I ban Dr Bian?",
-      "answer": "Low priority ban (0.1%). Focus bans on higher-tier Mage picks unless targeting a one-trick."
+      "id": "faq-counter",
+      "question": "怎麼克制 扁鵲？",
+      "answer": "可選 Yang Jian。扁鵲 克制 Mai Shiranui、Diaochan。"
     }
   ],
   "metaAnalysis": [
-    "Dr Bian — 50.1% WR, 0.6% pick, 0.1% ban (Camp HOK 2026-06-05).",
-    "Tier B Mage · Mid Lane · difficulty Medium.",
-    "Dr Bian sits at Tier B globally (50.1% WR). In high rank, pick only into favorable matchups or when you have a dedicated pocket pick.",
-    "Matchups: strong into Mai Shiranui, Diaochan; weak into Yang Jian.",
-    "Dr Bian vs Daji (Mage, Tier S+): Daji is 2.4% pick / 51.0% WR. Daji wins 0.9% more often globally. Choose Dr Bian when you need Mid Lane identity; choose Daji for Mid Lane comfort.",
-    "Dr Bian vs Angela (Mage, Tier S+): Angela is 2.3% pick / 51.8% WR. Angela wins 1.7% more often globally. Choose Dr Bian when you need Mid Lane identity; choose Angela for Mid Lane comfort.",
-    "Draft tip: counter-pick or comfort pick when lane matchup is favorable."
+    "Dr Bian win rate 49.93% (Camp HOK, 2026-06-07).",
+    "Pick rate 0.66%.",
+    "Ban rate 0.11%.",
+    "Counters: Mai Shiranui, Diaochan. Weak into: Yang Jian."
   ],
-  "builds": [
-    {
-      "id": "recommended",
-      "label": "Recommended",
-      "position": null,
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1233",
-          "name": "Scepter of Reverberation",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1233.jpg",
-          "description": "Skill hits trigger explosions"
-        },
-        {
-          "slot": 2,
-          "itemId": "1424",
-          "name": "Boots of the Arcane",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1424.jpg",
-          "description": "Magical Pierce"
-        },
-        {
-          "slot": 3,
-          "itemId": "1232",
-          "name": "Savant's Wrath",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1232.jpg",
-          "description": "Greatly boosts MATK"
-        },
-        {
-          "slot": 4,
-          "itemId": "1240",
-          "name": "Insatiable Tome",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1240.jpg",
-          "description": "Magical Lifesteal"
-        },
-        {
-          "slot": 5,
-          "itemId": "1231",
-          "name": "Void Staff",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1231.jpg",
-          "description": "Anti-tank"
-        },
-        {
-          "slot": 6,
-          "itemId": null,
-          "name": "Data unavailable",
-          "icon": null,
-          "description": null
-        }
-      ]
-    },
-    {
-      "id": "mid-lane-2",
-      "label": "Mid Lane 2",
-      "position": "Position 2",
-      "lane": "Mid Lane",
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1424",
-          "name": "Boots of the Arcane",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1424.jpg",
-          "description": "Magical Pierce"
-        },
-        {
-          "slot": 2,
-          "itemId": "1234",
-          "name": "Frozen Breath",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1234.jpg",
-          "description": "Slows on hit"
-        },
-        {
-          "slot": 3,
-          "itemId": "12211",
-          "name": "Venomous Staff",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/12211.jpg",
-          "description": "Lowers Health regen"
-        },
-        {
-          "slot": 4,
-          "itemId": "1226",
-          "name": "Holy Grail",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1226.jpg",
-          "description": "Rapid Health & Mana Regen"
-        },
-        {
-          "slot": 5,
-          "itemId": "1233",
-          "name": "Scepter of Reverberation",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1233.jpg",
-          "description": "Skill hits trigger explosions"
-        },
-        {
-          "slot": 6,
-          "itemId": "1238",
-          "name": "Sage's Tome",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1238.jpg",
-          "description": "Great for mages"
-        }
-      ]
-    },
-    {
-      "id": "carldev",
-      "label": "@carl.dev",
-      "position": "Position 2",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1424",
-          "name": "Boots of the Arcane",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1424.jpg",
-          "description": "Magical Pierce"
-        },
-        {
-          "slot": 2,
-          "itemId": "1226",
-          "name": "Holy Grail",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1226.jpg",
-          "description": "Rapid Health & Mana Regen"
-        },
-        {
-          "slot": 3,
-          "itemId": "1334",
-          "name": "Eye of the Phoenix",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1334.jpg",
-          "description": "Boosts Health regen"
-        },
-        {
-          "slot": 4,
-          "itemId": "12211",
-          "name": "Venomous Staff",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/12211.jpg",
-          "description": "Lowers Health regen"
-        },
-        {
-          "slot": 5,
-          "itemId": "1235",
-          "name": "Mask of Agony",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1235.jpg",
-          "description": "Boosts skill damage"
-        },
-        {
-          "slot": 6,
-          "itemId": "1231",
-          "name": "Void Staff",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1231.jpg",
-          "description": "Anti-tank"
-        }
-      ]
-    },
-    {
-      "id": "anti-plenger",
-      "label": "ANTI PLENGER",
-      "position": "Position 2",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1211",
-          "name": "Spell Tome",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1211.jpg",
-          "description": "MATK +35"
-        },
-        {
-          "slot": 2,
-          "itemId": "1424",
-          "name": "Boots of the Arcane",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1424.jpg",
-          "description": "Magical Pierce"
-        },
-        {
-          "slot": 3,
-          "itemId": "1226",
-          "name": "Holy Grail",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1226.jpg",
-          "description": "Rapid Health & Mana Regen"
-        },
-        {
-          "slot": 4,
-          "itemId": "12211",
-          "name": "Venomous Staff",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/12211.jpg",
-          "description": "Lowers Health regen"
-        },
-        {
-          "slot": 5,
-          "itemId": "1232",
-          "name": "Savant's Wrath",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1232.jpg",
-          "description": "Greatly boosts MATK"
-        },
-        {
-          "slot": 6,
-          "itemId": "1337",
-          "name": "Sage's Sanctuary",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1337.jpg",
-          "description": "Resurrect on the spot"
-        }
-      ]
-    },
-    {
-      "id": "dps",
-      "label": "dps",
-      "position": "Position 2",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1211",
-          "name": "Spell Tome",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1211.jpg",
-          "description": "MATK +35"
-        },
-        {
-          "slot": 2,
-          "itemId": "1311",
-          "name": "Resilient Agate",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1311.jpg",
-          "description": "Health"
-        },
-        {
-          "slot": 3,
-          "itemId": "1422",
-          "name": "Boots of Resistance",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
-          "description": "Shortens CC"
-        },
-        {
-          "slot": 4,
-          "itemId": "1226",
-          "name": "Holy Grail",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1226.jpg",
-          "description": "Rapid Health & Mana Regen"
-        },
-        {
-          "slot": 5,
-          "itemId": "1235",
-          "name": "Mask of Agony",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1235.jpg",
-          "description": "Boosts skill damage"
-        },
-        {
-          "slot": 6,
-          "itemId": "1237",
-          "name": "Augur's Word",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1237.jpg",
-          "description": "Offense & defense"
-        }
-      ]
-    },
-    {
-      "id": "辉夜bian",
-      "label": "辉夜Bian",
-      "position": "Position 2",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1424",
-          "name": "Boots of the Arcane",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1424.jpg",
-          "description": "Magical Pierce"
-        },
-        {
-          "slot": 2,
-          "itemId": "1226",
-          "name": "Holy Grail",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1226.jpg",
-          "description": "Rapid Health & Mana Regen"
-        },
-        {
-          "slot": 3,
-          "itemId": "1240",
-          "name": "Insatiable Tome",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1240.jpg",
-          "description": "Magical Lifesteal"
-        },
-        {
-          "slot": 4,
-          "itemId": "1237",
-          "name": "Augur's Word",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1237.jpg",
-          "description": "Offense & defense"
-        },
-        {
-          "slot": 5,
-          "itemId": "1234",
-          "name": "Frozen Breath",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1234.jpg",
-          "description": "Slows on hit"
-        },
-        {
-          "slot": 6,
-          "itemId": "1244",
-          "name": "Breakthrough Robe",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1244.jpg",
-          "description": "Converts Health into M. Pierce"
-        }
-      ]
-    }
+  "metaAnalysisZh": [
+    "扁鵲 勝率 49.93%（Camp HOK，2026-06-07）",
+    "選取率 0.66%",
+    "禁用率 0.11%",
+    "克制：Mai Shiranui、Diaochan；被克制：Yang Jian"
   ],
   "guide": {
     "overview": "Dr Bian is a Medium Mage (Mid Lane) on Honor of Kings Global. Camp HOK ranks them Tier B with 50.1% win rate and 0.6% pick rate as of 2026-06-05.",

@@ -2,99 +2,583 @@
   "id": "li-bai",
   "slug": "li-bai",
   "name": "Li Bai",
+  "nameZh": "李白",
   "role": "Assassin",
   "roles": "Assassin",
+  "rolesZh": "刺客",
   "lane": "Jungling",
+  "laneZh": "打野",
   "difficulty": "Medium",
   "tier": "A",
-  "winRate": 51.96,
-  "pickRate": 0.7,
+  "winRate": 52.27,
+  "pickRate": 0.68,
   "banRate": 0.17,
-  "rank": 23,
+  "rank": 16,
   "avatar": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/k3w1wjDA.png",
   "avatarFallback": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/131/131.jpg",
+  "heroCover": "https://camp.honorofkings.com/social/game/src/image_hero_cover_1275*718/9fQGYlvc.jpg",
   "tencentId": 131,
-  "dataSource": "Camp HOK + HoKStats.gg (intl)",
-  "dataUpdated": "2026-06-05",
+  "dataSource": "Camp HOK bilingual (primary)",
+  "dataUpdated": "2026-06-07",
   "skills": [
     {
       "slot": "passive",
       "name": "Way of the Sword",
       "description": "Basic Attack hits grant stacks. At 4 stacks, increases Physical Attack and unlocks the Ultimate.",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/131/13100.png",
-      "cooldown": null
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/13100.png",
+      "cooldown": "1s"
     },
     {
       "slot": "skill1",
       "name": "Stupor Slash",
-      "description": "Dashes and leaves an after image at the start point while stunning and damaging enemies in his path.Can dash again before cooldown starts, and a third time to return to the after image.",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/131/13110.png",
-      "cooldown": null
+      "description": "Dashes and leaves an afterimage at the start point while stunning and damaging enemies in his path.\nCan dash again before cooldown starts, and a third time to return to the afterimage.",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/13110.png",
+      "cooldown": "6s"
     },
     {
       "slot": "skill2",
       "name": "Stroke of Genius",
-      "description": "Removes crowd control effects from self and becomes untargetable. Damages enemies in range, leaving behind a sword formation. Enemies that touch the edge of the formation are damaged, slowed, andsundered.",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/131/13120.png",
-      "cooldown": null
+      "description": "Removes all debuffs from self and becomes untargetable.\nDamages enemies in range, leaving behind a sword formation.\nEnemies that touch the edge of the formation are damaged, slowed, and sundered.",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/13120.png",
+      "cooldown": "12s"
     },
     {
       "slot": "ultimate",
       "name": "Flickering Flurry",
-      "description": "Transforms into a phantom, continuously slashing at the specified area. Li Bai is untargetable while the skill is active, and all debuffs are removed Deals AoE damage, but damage is diminished upon hitting multiple enemy heroes.",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/131/13130.png",
-      "cooldown": null
+      "description": "Transforms into a phantom, continuously slashing at the specified area.\nRemoves all debuffs and becomes untargetable while the skill is active.\nDeals area damage, but damage is diminished upon hitting multiple enemy heroes.",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/13130.png",
+      "cooldown": "12s"
+    }
+  ],
+  "skillsZh": [
+    {
+      "slot": "passive",
+      "name": "俠客行",
+      "description": "每次普攻命中敵人使自己疊層(最高四層)，滿層後提升物理攻擊並解鎖3技能。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/13100.png",
+      "cooldown": "1s"
+    },
+    {
+      "slot": "skill1",
+      "name": "將進酒",
+      "description": "向前突進，在起點位置留下殘影，對沿途敵人造成傷害和暈眩效果。\n技能冷卻前可再次突進1次，第3次則回到殘影位置。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/13110.png",
+      "cooldown": "6s"
+    },
+    {
+      "slot": "skill2",
+      "name": "神來之筆",
+      "description": "解除自身受到的負面效果，並進入無法鎖定為目標狀態。\n對範圍內敵人造成傷害並留下劍陣。\n後續接觸到劍陣邊緣的敵人會受到傷害、減速和破甲效果。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/13120.png",
+      "cooldown": "12s"
+    },
+    {
+      "slot": "ultimate",
+      "name": "青蓮劍歌",
+      "description": "化身幻影，連續對指定範圍進行斬擊。\n期間無法鎖定為目標，並解除剩餘負面效果。\n對敵人造成範圍傷害，命中多個敵方英雄傷害遞減。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/13130.png",
+      "cooldown": "12s"
     }
   ],
   "build": [
     {
       "slot": 1,
-      "itemId": "1533",
-      "name": "Rapacious Bite",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1533.jpg",
-      "description": "Monster kills boost PATK"
+      "itemId": "1137",
+      "name": "Axe of Torment",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1137.png",
+      "description": "PATK +80, CDR +10%, HP +500\nAnti-squishy"
     },
     {
       "slot": 2,
-      "itemId": "1425",
-      "name": "Boots of Dexterity",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1425.jpg",
-      "description": "Boosts ASPD"
+      "itemId": "1132",
+      "name": "Bloodweeper",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1132.png",
+      "description": "PATK +85, Lifesteal +25%, HP +500\nPhysical Lifesteal"
     },
     {
       "slot": 3,
-      "itemId": "1137",
-      "name": "Axe of Torment",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1137.jpg",
-      "description": "Anti-squishy"
+      "itemId": "1159",
+      "name": "Tempest",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1159.png",
+      "description": "PATK +50, ASPD +30%, Max HP +600\nBoosts BA damage"
     },
     {
       "slot": 4,
-      "itemId": "1132",
-      "name": "Bloodweeper",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1132.jpg",
-      "description": "Physical Lifesteal"
+      "itemId": "1138",
+      "name": "Overlord's Might",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1138.png",
+      "description": "PATK +150, CDR +5%\nHigh-damage attack"
     },
     {
       "slot": 5,
-      "itemId": "1134",
-      "name": "Master Sword",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1134.jpg",
-      "description": "Enhances BA"
+      "itemId": "1337",
+      "name": "Sage's Sanctuary",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+      "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
     },
     {
       "slot": 6,
-      "itemId": "1136",
-      "name": "Shadow Ripper",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1136.jpg",
-      "description": "Crits boost ASPD"
+      "itemId": "1127",
+      "name": "Destiny",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+      "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
+    }
+  ],
+  "buildZh": [
+    {
+      "slot": 1,
+      "itemId": "1137",
+      "name": "暗影戰斧",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1137.png",
+      "description": "+80點攻擊+10%減冷卻時間+500點生命值\n打血薄用"
+    },
+    {
+      "slot": 2,
+      "itemId": "1132",
+      "name": "泣血之刃",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1132.png",
+      "description": "+85點攻擊+25%吸血+500點生命值\n物理吸血"
+    },
+    {
+      "slot": 3,
+      "itemId": "1159",
+      "name": "逐風",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1159.png",
+      "description": "+50點攻擊+30%攻速+600點最大生命值\n普攻傷害提升"
+    },
+    {
+      "slot": 4,
+      "itemId": "1138",
+      "name": "強者破軍",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1138.png",
+      "description": "+150點攻擊+5%減冷卻時間\n高額攻擊"
+    },
+    {
+      "slot": 5,
+      "itemId": "1337",
+      "name": "賢者的庇護",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+      "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+    },
+    {
+      "slot": 6,
+      "itemId": "1127",
+      "name": "名刀・司命",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+      "description": "+75點攻擊+15%攻速+500點生命值\n保命"
+    }
+  ],
+  "builds": [
+    {
+      "id": "camp-0",
+      "label": "Jungling 2",
+      "lane": "Jungle",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1137",
+          "name": "Axe of Torment",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1137.png",
+          "description": "PATK +80, CDR +10%, HP +500\nAnti-squishy"
+        },
+        {
+          "slot": 2,
+          "itemId": "1132",
+          "name": "Bloodweeper",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1132.png",
+          "description": "PATK +85, Lifesteal +25%, HP +500\nPhysical Lifesteal"
+        },
+        {
+          "slot": 3,
+          "itemId": "1159",
+          "name": "Tempest",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1159.png",
+          "description": "PATK +50, ASPD +30%, Max HP +600\nBoosts BA damage"
+        },
+        {
+          "slot": 4,
+          "itemId": "1138",
+          "name": "Overlord's Might",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1138.png",
+          "description": "PATK +150, CDR +5%\nHigh-damage attack"
+        },
+        {
+          "slot": 5,
+          "itemId": "1337",
+          "name": "Sage's Sanctuary",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
+        },
+        {
+          "slot": 6,
+          "itemId": "1127",
+          "name": "Destiny",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
+        }
+      ]
+    },
+    {
+      "id": "camp-1",
+      "label": "Jungling 1",
+      "lane": "Jungle",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1533",
+          "name": "Rapacious Bite",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1533.png",
+          "description": "PATK +90, MSPD +5%, CDR +7.5%\nMonster kills boost ATK"
+        },
+        {
+          "slot": 2,
+          "itemId": "1134",
+          "name": "Master Sword",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1134.png",
+          "description": "PATK +55, Crit Rate +20%, HP +600\nEnhances BAs"
+        },
+        {
+          "slot": 3,
+          "itemId": "1138",
+          "name": "Overlord's Might",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1138.png",
+          "description": "PATK +150, CDR +5%\nHigh-damage attack"
+        },
+        {
+          "slot": 4,
+          "itemId": "11210",
+          "name": "Mortal Punisher",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/11210.png",
+          "description": "PATK +100, Lifesteal +20%, ASPD +20%\nLowers Health regen"
+        },
+        {
+          "slot": 5,
+          "itemId": "1127",
+          "name": "Destiny",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
+        },
+        {
+          "slot": 6,
+          "itemId": "1337",
+          "name": "Sage's Sanctuary",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
+        }
+      ]
+    },
+    {
+      "id": "camp-2",
+      "label": "Zhàn红鬼",
+      "lane": "Jungle",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1132",
+          "name": "Bloodweeper",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1132.png",
+          "description": "PATK +85, Lifesteal +25%, HP +500\nPhysical Lifesteal"
+        },
+        {
+          "slot": 2,
+          "itemId": "1422",
+          "name": "Boots of Resistance",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1422.png",
+          "description": "MDEF +100, PDEF +50, MSPD +50\nShortens crowd control"
+        },
+        {
+          "slot": 3,
+          "itemId": "1138",
+          "name": "Overlord's Might",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1138.png",
+          "description": "PATK +150, CDR +5%\nHigh-damage attack"
+        },
+        {
+          "slot": 4,
+          "itemId": "1337",
+          "name": "Sage's Sanctuary",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
+        },
+        {
+          "slot": 5,
+          "itemId": "1239",
+          "name": "Splendor",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1239.png",
+          "description": "MATK +160, CDR +7.5%, Magical Lifesteal +12%\nTemp. invincibility"
+        },
+        {
+          "slot": 6,
+          "itemId": "1127",
+          "name": "Destiny",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
+        }
+      ]
+    },
+    {
+      "id": "camp-3",
+      "label": "Top",
+      "lane": "Jungle",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1132",
+          "name": "Bloodweeper",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1132.png",
+          "description": "PATK +85, Lifesteal +25%, HP +500\nPhysical Lifesteal"
+        },
+        {
+          "slot": 2,
+          "itemId": "1134",
+          "name": "Master Sword",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1134.png",
+          "description": "PATK +55, Crit Rate +20%, HP +600\nEnhances BAs"
+        },
+        {
+          "slot": 3,
+          "itemId": "1138",
+          "name": "Overlord's Might",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1138.png",
+          "description": "PATK +150, CDR +5%\nHigh-damage attack"
+        },
+        {
+          "slot": 4,
+          "itemId": "1337",
+          "name": "Sage's Sanctuary",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
+        },
+        {
+          "slot": 5,
+          "itemId": "1239",
+          "name": "Splendor",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1239.png",
+          "description": "MATK +160, CDR +7.5%, Magical Lifesteal +12%\nTemp. invincibility"
+        },
+        {
+          "slot": 6,
+          "itemId": "1127",
+          "name": "Destiny",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
+        }
+      ]
+    }
+  ],
+  "buildsZh": [
+    {
+      "id": "camp-0",
+      "label": "Jungling 2",
+      "lane": "Jungle",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1137",
+          "name": "暗影戰斧",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1137.png",
+          "description": "+80點攻擊+10%減冷卻時間+500點生命值\n打血薄用"
+        },
+        {
+          "slot": 2,
+          "itemId": "1132",
+          "name": "泣血之刃",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1132.png",
+          "description": "+85點攻擊+25%吸血+500點生命值\n物理吸血"
+        },
+        {
+          "slot": 3,
+          "itemId": "1159",
+          "name": "逐風",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1159.png",
+          "description": "+50點攻擊+30%攻速+600點最大生命值\n普攻傷害提升"
+        },
+        {
+          "slot": 4,
+          "itemId": "1138",
+          "name": "強者破軍",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1138.png",
+          "description": "+150點攻擊+5%減冷卻時間\n高額攻擊"
+        },
+        {
+          "slot": 5,
+          "itemId": "1337",
+          "name": "賢者的庇護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+        },
+        {
+          "slot": 6,
+          "itemId": "1127",
+          "name": "名刀・司命",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "+75點攻擊+15%攻速+500點生命值\n保命"
+        }
+      ]
+    },
+    {
+      "id": "camp-1",
+      "label": "Jungling 1",
+      "lane": "Jungle",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1533",
+          "name": "貪婪之噬",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1533.png",
+          "description": "+90攻擊+5%移速+7.5%冷縮\n打野怪加攻擊"
+        },
+        {
+          "slot": 2,
+          "itemId": "1134",
+          "name": "宗師之力",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1134.png",
+          "description": "+55點攻擊+20%暴擊+600點生命值……\n強化普攻"
+        },
+        {
+          "slot": 3,
+          "itemId": "1138",
+          "name": "強者破軍",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1138.png",
+          "description": "+150點攻擊+5%減冷卻時間\n高額攻擊"
+        },
+        {
+          "slot": 4,
+          "itemId": "11210",
+          "name": "制裁之刃",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/11210.png",
+          "description": "+100點攻擊+20%吸血+20%攻速\n減少敵人回血"
+        },
+        {
+          "slot": 5,
+          "itemId": "1127",
+          "name": "名刀・司命",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "+75點攻擊+15%攻速+500點生命值\n保命"
+        },
+        {
+          "slot": 6,
+          "itemId": "1337",
+          "name": "賢者的庇護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+        }
+      ]
+    },
+    {
+      "id": "camp-2",
+      "label": "Zhàn红鬼",
+      "lane": "Jungle",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1132",
+          "name": "泣血之刃",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1132.png",
+          "description": "+85點攻擊+25%吸血+500點生命值\n物理吸血"
+        },
+        {
+          "slot": 2,
+          "itemId": "1422",
+          "name": "抵抗之靴",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1422.png",
+          "description": "+100點法防+50點物防+50點移速\n減少被控時間"
+        },
+        {
+          "slot": 3,
+          "itemId": "1138",
+          "name": "強者破軍",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1138.png",
+          "description": "+150點攻擊+5%減冷卻時間\n高額攻擊"
+        },
+        {
+          "slot": 4,
+          "itemId": "1337",
+          "name": "賢者的庇護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+        },
+        {
+          "slot": 5,
+          "itemId": "1239",
+          "name": "輝月",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1239.png",
+          "description": "+160點法攻+7.5%減冷卻時間+12%法術吸血\n暫時無敵"
+        },
+        {
+          "slot": 6,
+          "itemId": "1127",
+          "name": "名刀・司命",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "+75點攻擊+15%攻速+500點生命值\n保命"
+        }
+      ]
+    },
+    {
+      "id": "camp-3",
+      "label": "Top",
+      "lane": "Jungle",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1132",
+          "name": "泣血之刃",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1132.png",
+          "description": "+85點攻擊+25%吸血+500點生命值\n物理吸血"
+        },
+        {
+          "slot": 2,
+          "itemId": "1134",
+          "name": "宗師之力",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1134.png",
+          "description": "+55點攻擊+20%暴擊+600點生命值……\n強化普攻"
+        },
+        {
+          "slot": 3,
+          "itemId": "1138",
+          "name": "強者破軍",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1138.png",
+          "description": "+150點攻擊+5%減冷卻時間\n高額攻擊"
+        },
+        {
+          "slot": 4,
+          "itemId": "1337",
+          "name": "賢者的庇護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+        },
+        {
+          "slot": 5,
+          "itemId": "1239",
+          "name": "輝月",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1239.png",
+          "description": "+160點法攻+7.5%減冷卻時間+12%法術吸血\n暫時無敵"
+        },
+        {
+          "slot": 6,
+          "itemId": "1127",
+          "name": "名刀・司命",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "+75點攻擊+15%攻速+500點生命值\n保命"
+        }
+      ]
     }
   ],
   "arcana": [
-    "Mutation"
+    "Lvl 5: Mutation",
+    "Lvl 5: Hunt",
+    "Lvl 5: Reaver"
+  ],
+  "arcanaZh": [
+    "5級：異變",
+    "5級：狩獵",
+    "5級：奪萃"
   ],
   "spells": [
     "Smite"
+  ],
+  "spellsZh": [
+    "懲擊"
   ],
   "counters": [
     "Dun",
@@ -107,336 +591,173 @@
     "Shi"
   ],
   "tips": [
-    "Li Bai is a Medium Assassin (Jungling) on Honor of Kings Global. Camp HOK ranks them Tier A with 52.0% win rate and 0.7% pick rate as of 2026-06-05.",
-    "Best build path: Rapacious Bite → Boots of Dexterity → Axe of Torment → Bloodweeper → Master Sword → Shadow Ripper.",
-    "Run Mutation for stats that match Li Bai's Assassin kit. Take Smite — swap to Purify against heavy CC or Smite when jungling.",
-    "Standard trade: Stupor Slash → Stroke of Genius → Flickering Flurry → weave basic attacks. Weave basic attacks between skill casts for passive value.",
-    "Laning: Clear to level four, then gank the lane with the least escape. Secure Tyrant when your bot or mid has crash wave.",
-    "Teamfight: Wait for CC from your team, then dive carry with full combo. Exit with reset or flash if focus fired.",
-    "Li Bai excels into Dun, Lian Po, Liu Shan. Avoid blind picking into Garo, Mozi, Shi without team peel.",
-    "Li Bai is a viable Tier A pick in high rank with 52.0% win rate — strong in one-trick hands or as a counter-pick."
+    "Li Bai (Assassin): Tier A — 52.27% WR (Camp HOK).",
+    "Lane: Jungling.",
+    "Build: Axe of Torment, Bloodweeper, Tempest."
+  ],
+  "tipsZh": [
+    "李白（打野）：梯度 A，勝率 52.27%（Camp HOK）。",
+    "出裝：暗影戰斧、泣血之刃、逐風."
   ],
   "patchHistory": [
     {
-      "version": "Live meta",
-      "change": "Camp HOK — WR 52.0%, pick 0.7%, ban 0.2%, tier A."
+      "seasonId": "12",
+      "seasonName": "S12",
+      "versionName": "20251030",
+      "publishedAt": "2025-10-30T01:00:00Z",
+      "isCurrent": false,
+      "tag": "Stat Buffs",
+      "change": "Increased Skill Damage",
+      "detail": "",
+      "version": "S12"
     },
     {
-      "version": "Matchups",
-      "change": "Strong into Dun, Lian Po, Liu Shan · Weak into Garo, Mozi, Shi."
+      "seasonId": "8",
+      "seasonName": "S8",
+      "versionName": "20250124",
+      "publishedAt": "2025-01-24T02:00:29Z",
+      "isCurrent": false,
+      "tag": "Stat Buffs",
+      "change": "Increased base stats and Ultimate damage.",
+      "detail": "Li Bai has an agile combat style. We have increased his stats to improve his survivability if he makes a mistake.",
+      "version": "S8"
     },
     {
-      "version": "High rank",
-      "change": "Li Bai is a viable Tier A pick in high rank with 52.0% win rate — strong in one-trick hands or as a counter-pick."
+      "seasonId": "6",
+      "seasonName": "S6",
+      "versionName": "20240808",
+      "publishedAt": "2024-08-08T02:00:57Z",
+      "isCurrent": false,
+      "tag": "Stat Buffs",
+      "change": "Skill 1 damage increased.",
+      "detail": "Increasing Skill 1's damage allows Li Bai to deal good damage before he gets his Ultimate",
+      "version": "S6"
+    },
+    {
+      "seasonId": "5",
+      "seasonName": "S5",
+      "versionName": "20240410",
+      "publishedAt": "2024-04-10T15:15:27Z",
+      "isCurrent": false,
+      "tag": "Stat Nerfs",
+      "change": "Reduced the Physical Attack gained from his Passive, adjusted Skill 1 cooldown.",
+      "detail": "Reduced the Physical Attack gained from his Passive, adjusted Skill 1 cooldown.\nEver since we adjusted the refresh mechanic for Li Bai's Passive, his power and win rate have gone up significantly. Now he farms faster and is able to participate in battles right from the early game.We've reduced the power of his Passive and adjusted his Skill 1's cooldown to keep him in his intended role as a late game hero.",
+      "version": "S5"
+    },
+    {
+      "seasonId": "4",
+      "seasonName": "S4",
+      "versionName": "20240124",
+      "publishedAt": "2024-01-24T07:50:01Z",
+      "isCurrent": false,
+      "tag": "Mechanics Changes",
+      "change": "Made it easier to extend the duration of his Passive Skill's enhancement effect, and adjusted the damage bonus of his Skill 2.",
+      "detail": "As a hero with a great deal of potential, Li Bai requires a lot of time and Gold to buy equipment and become the best that he can be. However, we hope players will find him to be a high-risk, high-reward hero. With these adjustments, Li Bai will be able to participate more frequently in battles in the early game.",
+      "version": "S4"
+    }
+  ],
+  "patchHistoryZh": [
+    {
+      "seasonId": "12",
+      "seasonName": "S12",
+      "versionName": "20251030",
+      "publishedAt": "2025-10-30T01:00:00Z",
+      "isCurrent": false,
+      "tag": "數值增強",
+      "change": "提升技能傷害",
+      "detail": "",
+      "version": "S12"
+    },
+    {
+      "seasonId": "8",
+      "seasonName": "S8",
+      "versionName": "20250124",
+      "publishedAt": "2025-01-24T02:00:29Z",
+      "isCurrent": false,
+      "tag": "數值增強",
+      "change": "提升基礎屬性和大招傷害",
+      "detail": "「李白有著非常靈活的作戰風格，我們提高了他的屬性以保證他偶爾失誤時的生存能力。」",
+      "version": "S8"
+    },
+    {
+      "seasonId": "6",
+      "seasonName": "S6",
+      "versionName": "20240808",
+      "publishedAt": "2024-08-08T02:00:57Z",
+      "isCurrent": false,
+      "tag": "數值增強",
+      "change": "增加1技能的傷害",
+      "detail": "「提升1技能的傷害，讓李白即使沒有大招，也能有不俗的傷害。」",
+      "version": "S6"
+    },
+    {
+      "seasonId": "5",
+      "seasonName": "S5",
+      "versionName": "20240410",
+      "publishedAt": "2024-04-10T15:15:27Z",
+      "isCurrent": false,
+      "tag": "數值削弱",
+      "change": "降低被動提供的物理攻擊，調整1技能的冷卻時間",
+      "detail": "降低被動提供的物理攻擊，調整1技能的冷卻時間\n自從我們調整了李白被動的重置機制後，李白在目前版本的強度和勝率有顯著提升。現在他在遊戲早期就能參戰，使其發育速度更快。我們適當降低了他被動技能的強度，並調整了他1技能的冷卻時間，希望讓李白更符合一名後期英雄的定位。",
+      "version": "S5"
+    },
+    {
+      "seasonId": "4",
+      "seasonName": "S4",
+      "versionName": "20240124",
+      "publishedAt": "2024-01-24T07:50:01Z",
+      "isCurrent": false,
+      "tag": "機制調整",
+      "change": "Made it easier to extend the duration of his Passive Skill's enhancement effect, and adjusted the damage bonus of his Skill 2.",
+      "detail": "As a hero with a great deal of potential, Li Bai requires a lot of time and Gold to buy equipment and become the best that he can be. However, we hope players will find him to be a high-risk, high-reward hero. With these adjustments, Li Bai will be able to participate more frequently in battles in the early game.",
+      "version": "S4"
     }
   ],
   "faqs": [
     {
       "id": "faq-good-season",
-      "question": "Is Li Bai good in the current meta?",
-      "answer": "Li Bai is Tier A Assassin with 52.0% win rate, 0.7% pick rate, and 0.2% ban rate on Honor of Kings Global (Camp HOK, 2026-06-05). Solid situational pick."
+      "question": "Is Li Bai good in current season?",
+      "answer": "Li Bai is Tier A Assassin with 52.27% win rate, 0.68% pick rate, and 0.17% ban rate (Camp HOK international)."
     },
     {
       "id": "faq-best-build",
       "question": "What is the best Li Bai build?",
-      "answer": "Core item path: Rapacious Bite, Boots of Dexterity, Axe of Torment, Bloodweeper, Master Sword, Shadow Ripper. Run Mutation arcana with Smite. Switch to alternate build presets on this page for jungle, clash, or late-game setups."
+      "answer": "Recommended: Axe of Torment, Bloodweeper, Tempest, Overlord's Might, Sage's Sanctuary, Destiny."
     },
     {
       "id": "faq-counter",
       "question": "How to counter Li Bai?",
-      "answer": "Pick Garo, Mozi, Shi into Li Bai. Deny Jungling resources early and force fights before Li Bai completes core items. Li Bai struggles when the enemy can peel and group them."
+      "answer": "Pick Garo, Mozi, Shi. Strong into Dun, Lian Po, Liu Shan."
+    }
+  ],
+  "faqsZh": [
+    {
+      "id": "faq-good-season",
+      "question": "李白 這版本適合上分嗎？",
+      "answer": "李白 為 A 梯度，勝率 52.27%、選取 0.68%、禁用 0.17%（Camp HOK 國際服）。"
     },
     {
-      "id": "faq-strong-into",
-      "question": "Who does Li Bai counter?",
-      "answer": "Li Bai is strong into Dun, Lian Po, Liu Shan according to HoKStats matchup data and role matchups on the global server. Draft Li Bai when the enemy relies on these heroes in the Jungling lane."
+      "id": "faq-best-build",
+      "question": "李白 出裝怎麼搭配？",
+      "answer": "推薦：暗影戰斧、泣血之刃、逐風、強者破軍、賢者的庇護、名刀・司命."
     },
     {
-      "id": "faq-high-rank",
-      "question": "Is Li Bai good in high rank / Diamond+?",
-      "answer": "Li Bai is a viable Tier A pick in high rank with 52.0% win rate — strong in one-trick hands or as a counter-pick."
-    },
-    {
-      "id": "faq-lane",
-      "question": "What lane should Li Bai play?",
-      "answer": "Li Bai is tagged Jungling in Camp export (Assassin). Clear to level four, then gank the lane with the least escape. Secure Tyrant when your bot or mid has crash wave."
-    },
-    {
-      "id": "faq-arcana",
-      "question": "Best arcana and spells for Li Bai?",
-      "answer": "Recommended: Mutation arcana. Battle spell: Smite. Adjust Purify/Execute based on enemy dive and jungle need."
-    },
-    {
-      "id": "faq-vs-peer",
-      "question": "Li Bai or Wukong — which is better?",
-      "answer": "Li Bai vs Wukong (Assassin, Tier S): Wukong is 1.3% pick / 49.7% WR. Li Bai has +2.2% WR vs Wukong in Camp data. Choose Li Bai when you need Jungling identity; choose Wukong for Jungling comfort."
-    },
-    {
-      "id": "faq-ban",
-      "question": "Should I ban Li Bai?",
-      "answer": "Low priority ban (0.2%). Focus bans on higher-tier Assassin picks unless targeting a one-trick."
+      "id": "faq-counter",
+      "question": "怎麼克制 李白？",
+      "answer": "可選 Garo、Mozi、Shi。李白 克制 Dun、Lian Po、Liu Shan。"
     }
   ],
   "metaAnalysis": [
-    "Li Bai — 52.0% WR, 0.7% pick, 0.2% ban (Camp HOK 2026-06-05).",
-    "Tier A Assassin · Jungling · difficulty Medium.",
-    "Li Bai is a viable Tier A pick in high rank with 52.0% win rate — strong in one-trick hands or as a counter-pick.",
-    "Matchups: strong into Dun, Lian Po, Liu Shan; weak into Garo, Mozi, Shi.",
-    "Li Bai vs Wukong (Assassin, Tier S): Wukong is 1.3% pick / 49.7% WR. Li Bai has +2.2% WR vs Wukong in Camp data. Choose Li Bai when you need Jungling identity; choose Wukong for Jungling comfort.",
-    "Li Bai vs Musashi (Assassin, Tier A): Musashi is 1.1% pick / 50.7% WR. Li Bai has +1.2% WR vs Musashi in Camp data. Choose Li Bai when you need Jungling identity; choose Musashi for Jungling comfort.",
-    "Draft tip: counter-pick or comfort pick when lane matchup is favorable."
+    "Li Bai win rate 52.27% (Camp HOK, 2026-06-07).",
+    "Pick rate 0.68%.",
+    "Ban rate 0.17%.",
+    "Counters: Dun, Lian Po, Liu Shan. Weak into: Garo, Mozi, Shi."
   ],
-  "builds": [
-    {
-      "id": "recommended",
-      "label": "Recommended",
-      "position": null,
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1533",
-          "name": "Rapacious Bite",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1533.jpg",
-          "description": "Monster kills boost PATK"
-        },
-        {
-          "slot": 2,
-          "itemId": "1425",
-          "name": "Boots of Dexterity",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1425.jpg",
-          "description": "Boosts ASPD"
-        },
-        {
-          "slot": 3,
-          "itemId": "1137",
-          "name": "Axe of Torment",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1137.jpg",
-          "description": "Anti-squishy"
-        },
-        {
-          "slot": 4,
-          "itemId": "1132",
-          "name": "Bloodweeper",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1132.jpg",
-          "description": "Physical Lifesteal"
-        },
-        {
-          "slot": 5,
-          "itemId": "1134",
-          "name": "Master Sword",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1134.jpg",
-          "description": "Enhances BA"
-        },
-        {
-          "slot": 6,
-          "itemId": "1136",
-          "name": "Shadow Ripper",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1136.jpg",
-          "description": "Crits boost ASPD"
-        }
-      ]
-    },
-    {
-      "id": "jungling-2",
-      "label": "Jungling 2",
-      "position": "Position 3",
-      "lane": "Jungling",
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1523",
-          "name": "Relentless Blade",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1523.jpg",
-          "description": "Monster kills boost PATK"
-        },
-        {
-          "slot": 2,
-          "itemId": "1425",
-          "name": "Boots of Dexterity",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1425.jpg",
-          "description": "Boosts ASPD"
-        },
-        {
-          "slot": 3,
-          "itemId": "1533",
-          "name": "Rapacious Bite",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1533.jpg",
-          "description": "Monster kills boost PATK"
-        },
-        {
-          "slot": 4,
-          "itemId": "1137",
-          "name": "Axe of Torment",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1137.jpg",
-          "description": "Anti-squishy"
-        },
-        {
-          "slot": 5,
-          "itemId": "1132",
-          "name": "Bloodweeper",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1132.jpg",
-          "description": "Physical Lifesteal"
-        },
-        {
-          "slot": 6,
-          "itemId": "1159",
-          "name": "Tempest",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1159.jpg",
-          "description": "Stacks Attack Speed & Movement Speed"
-        }
-      ]
-    },
-    {
-      "id": "jungling-1",
-      "label": "Jungling 1",
-      "position": "Position 3",
-      "lane": "Jungling",
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1523",
-          "name": "Relentless Blade",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1523.jpg",
-          "description": "Monster kills boost PATK"
-        },
-        {
-          "slot": 2,
-          "itemId": "1124",
-          "name": "Meteor",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1124.jpg",
-          "description": "PATK +35\nCDR +7.5%"
-        },
-        {
-          "slot": 3,
-          "itemId": "1425",
-          "name": "Boots of Dexterity",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1425.jpg",
-          "description": "Boosts ASPD"
-        },
-        {
-          "slot": 4,
-          "itemId": "1137",
-          "name": "Axe of Torment",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1137.jpg",
-          "description": "Anti-squishy"
-        },
-        {
-          "slot": 5,
-          "itemId": "1132",
-          "name": "Bloodweeper",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1132.jpg",
-          "description": "Physical Lifesteal"
-        },
-        {
-          "slot": 6,
-          "itemId": "1533",
-          "name": "Rapacious Bite",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1533.jpg",
-          "description": "Monster kills boost PATK"
-        }
-      ]
-    },
-    {
-      "id": "zhn红鬼",
-      "label": "Zhàn红鬼",
-      "position": "Position 3",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1523",
-          "name": "Relentless Blade",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1523.jpg",
-          "description": "Monster kills boost PATK"
-        },
-        {
-          "slot": 2,
-          "itemId": "1425",
-          "name": "Boots of Dexterity",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1425.jpg",
-          "description": "Boosts ASPD"
-        },
-        {
-          "slot": 3,
-          "itemId": "1124",
-          "name": "Meteor",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1124.jpg",
-          "description": "PATK +35\nCDR +7.5%"
-        },
-        {
-          "slot": 4,
-          "itemId": "1137",
-          "name": "Axe of Torment",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1137.jpg",
-          "description": "Anti-squishy"
-        },
-        {
-          "slot": 5,
-          "itemId": "1158",
-          "name": "Bloodsoul",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1158.jpg",
-          "description": "PATK +35, Physical Lifesteal +12%"
-        },
-        {
-          "slot": 6,
-          "itemId": "1533",
-          "name": "Rapacious Bite",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1533.jpg",
-          "description": "Monster kills boost PATK"
-        }
-      ]
-    },
-    {
-      "id": "popular",
-      "label": "Popular",
-      "position": "Position 3",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1523",
-          "name": "Relentless Blade",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1523.jpg",
-          "description": "Monster kills boost PATK"
-        },
-        {
-          "slot": 2,
-          "itemId": "1425",
-          "name": "Boots of Dexterity",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1425.jpg",
-          "description": "Boosts ASPD"
-        },
-        {
-          "slot": 3,
-          "itemId": "1137",
-          "name": "Axe of Torment",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1137.jpg",
-          "description": "Anti-squishy"
-        },
-        {
-          "slot": 4,
-          "itemId": "1132",
-          "name": "Bloodweeper",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1132.jpg",
-          "description": "Physical Lifesteal"
-        },
-        {
-          "slot": 5,
-          "itemId": "1533",
-          "name": "Rapacious Bite",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1533.jpg",
-          "description": "Monster kills boost PATK"
-        },
-        {
-          "slot": 6,
-          "itemId": "1138",
-          "name": "Overlord's Might",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1138.jpg",
-          "description": "High-damage attack"
-        }
-      ]
-    }
+  "metaAnalysisZh": [
+    "李白 勝率 52.27%（Camp HOK，2026-06-07）",
+    "選取率 0.68%",
+    "禁用率 0.17%",
+    "克制：Dun、Lian Po、Liu Shan；被克制：Garo、Mozi、Shi"
   ],
   "guide": {
     "overview": "Li Bai is a Medium Assassin (Jungling) on Honor of Kings Global. Camp HOK ranks them Tier A with 52.0% win rate and 0.7% pick rate as of 2026-06-05.",

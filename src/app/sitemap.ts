@@ -47,8 +47,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const staticPaths = [
     { path: '/', priority: 1 },
-    { path: '/heroes', priority: 0.8 },
+    { path: '/heroes', priority: 0.85 },
     { path: '/tier-list', priority: 0.95 },
+    { path: '/items', priority: 0.78 },
+    { path: '/arcana', priority: 0.72 },
+    { path: '/patches', priority: 0.7 },
     { path: '/hero-trends', priority: 0.8 },
     { path: '/best-heroes', priority: 0.8 },
     { path: '/tools', priority: 0.8 },

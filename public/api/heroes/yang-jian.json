@@ -2,99 +2,583 @@
   "id": "yang-jian",
   "slug": "yang-jian",
   "name": "Yang Jian",
+  "nameZh": "楊戩",
   "role": "Warrior",
   "roles": "Fighter",
+  "rolesZh": "戰士",
   "lane": "Clash Lane",
+  "laneZh": "對抗路",
   "difficulty": "Medium",
   "tier": "B",
-  "winRate": 50.65,
-  "pickRate": 0.41,
-  "banRate": 0.02,
-  "rank": 61,
+  "winRate": 50.9,
+  "pickRate": 0.42,
+  "banRate": 0.03,
+  "rank": 54,
   "avatar": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/LntokS4z.png",
   "avatarFallback": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/178/178.jpg",
+  "heroCover": "https://camp.honorofkings.com/social/game/src/image_hero_cover_1275*718/SkOO83Vx.jpg",
   "tencentId": 178,
-  "dataSource": "Camp HOK + HoKStats.gg (intl)",
-  "dataUpdated": "2026-06-05",
+  "dataSource": "Camp HOK bilingual (primary)",
+  "dataUpdated": "2026-06-07",
   "skills": [
     {
       "slot": "passive",
       "name": "Mind Games",
-      "description": "Yang Jian's Resistance increases for each nearby enemy hero.",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/178/17800.png",
-      "cooldown": null
+      "description": "Yang Jian's Basic Attack and skills can stack Resistance. After attaining max stacks, he gains crowd control immunity. If Yang Jian enters battle with a hero, he will enter the Heaven-Earth Form.",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/17800.png",
+      "cooldown": "1s"
     },
     {
       "slot": "skill1",
       "name": "Unleash the Hound",
-      "description": "Yang Jian commands a Heaven Hound to dash in the target direction, marking and dealing damage to the first enemy hit. Upon using again, Yang Jian dashes to the marked enemy and deals damage to them.",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/178/17810.png",
-      "cooldown": null
+      "description": "Commands Heaven Hound to pounce in the target direction, marking the first enemy hit and damaging them. Upon using the skill again, he charges to the target and deals damage.",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/17810.png",
+      "cooldown": "8s"
     },
     {
       "slot": "skill2",
       "name": "Vain Disillusionment",
-      "description": "Yang Jian deals damage to enemies in front of him and stuns them while reducing their Movement Speed. if an enemy is hit, his Basic Attack is enhanced to deal extra damage.",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/178/17820.png",
-      "cooldown": null
+      "description": "Deals damage to enemies in front, stunning and slowing them. If he hits an enemy, he gains an enhanced Basic Attack that deals extra damage.",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/17820.png",
+      "cooldown": "10s"
     },
     {
       "slot": "ultimate",
       "name": "Sight of Origin",
-      "description": "Yang Jian unleashes a beam of light in the target direction, dealing damage and recovering Health.",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/178/17830.png",
-      "cooldown": null
+      "description": "Unleashes beams of light that deal damage and restore his Health.",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/17830.png",
+      "cooldown": "35s"
+    }
+  ],
+  "skillsZh": [
+    {
+      "slot": "passive",
+      "name": "神智侵蝕",
+      "description": "楊戩的普攻和技能可以疊加韌性，疊加到上限後獲得霸體，若與英雄進入戰鬥則變為法天象地狀態。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/17800.png",
+      "cooldown": "1s"
+    },
+    {
+      "slot": "skill1",
+      "name": "逆轉乾坤",
+      "description": "楊戩命令嘯天犬衝鋒，對命中的敵人造成傷害並標記，再次施放楊戩將衝向目標造成傷害。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/17810.png",
+      "cooldown": "8s"
+    },
+    {
+      "slot": "skill2",
+      "name": "虛妄破滅",
+      "description": "楊戩暈眩前方敵人，造成傷害和減速，命中後強化普攻，額外造成傷害。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/17820.png",
+      "cooldown": "10s"
+    },
+    {
+      "slot": "ultimate",
+      "name": "根源之目",
+      "description": "楊戩施放雷射，造成傷害並回復生命值。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/17830.png",
+      "cooldown": "35s"
     }
   ],
   "build": [
     {
       "slot": 1,
-      "itemId": "1422",
-      "name": "Boots of Resistance",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
-      "description": "Shortens CC"
+      "itemId": "1423",
+      "name": "Boots of Tranquility",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1423.png",
+      "description": "CDR +15%, MSPD +50\nSpeeds up skill cooldown"
     },
     {
       "slot": 2,
-      "itemId": "1137",
-      "name": "Axe of Torment",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1137.jpg",
-      "description": "Anti-squishy"
+      "itemId": "1534",
+      "name": "Dragon's Rage",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1536.png",
+      "description": "HP +1,350, PDEF +180, MDEF +90\nBoosts BA damage"
     },
     {
       "slot": 3,
-      "itemId": "13310",
-      "name": "Frostscar's Embrace",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/13310.jpg",
-      "description": "Enhanced BAs slow"
+      "itemId": "1533",
+      "name": "Rapacious Bite",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1533.png",
+      "description": "PATK +90, MSPD +5%, CDR +7.5%\nMonster kills boost ATK"
     },
     {
       "slot": 4,
       "itemId": "1334",
       "name": "Eye of the Phoenix",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1334.jpg",
-      "description": "Boosts Health regen"
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1334.png",
+      "description": "MDEF +180, PDEF +90, HP +1,350\nBoosts HP Regen"
     },
     {
       "slot": 5,
-      "itemId": "1157",
-      "name": "Immovable - Sky Dome",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1157.jpg",
-      "description": "Temp. damage reduction"
+      "itemId": "1328",
+      "name": "Blood Rage",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1328.png",
+      "description": "PATK +75, HP +900\nTrades HP for shield"
     },
     {
       "slot": 6,
-      "itemId": "1338",
-      "name": "Cuirass of Savagery",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1338.jpg",
-      "description": "Offense & defense"
+      "itemId": "1332",
+      "name": "Overlord's Platemail",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1332.png",
+      "description": "HP +1,800, PDEF +160, MDEF +80\nExtra HP"
+    }
+  ],
+  "buildZh": [
+    {
+      "slot": 1,
+      "itemId": "1423",
+      "name": "冷靜之靴",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1423.png",
+      "description": "+15%減冷卻時間+50點移速\n加快技能冷卻"
+    },
+    {
+      "slot": 2,
+      "itemId": "1534",
+      "name": "怒龍劍盾",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1536.png",
+      "description": "+1350點生命值+180點物防+90點法防\n普攻額外傷害"
+    },
+    {
+      "slot": 3,
+      "itemId": "1533",
+      "name": "貪婪之噬",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1533.png",
+      "description": "+90攻擊+5%移速+7.5%冷縮\n打野怪加攻擊"
+    },
+    {
+      "slot": 4,
+      "itemId": "1334",
+      "name": "不死鳥之眼",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1334.png",
+      "description": "+180點法防+90點物防+1350點生命值……\n增加回血效果"
+    },
+    {
+      "slot": 5,
+      "itemId": "1328",
+      "name": "血魔之怒",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1328.png",
+      "description": "+75點攻擊+900點生命值 \n犧牲生命值換取護盾值"
+    },
+    {
+      "slot": 6,
+      "itemId": "1332",
+      "name": "霸者重裝",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1332.png",
+      "description": "+1800點生命值+160點物防+80點法防\n提高額外生命值"
+    }
+  ],
+  "builds": [
+    {
+      "id": "camp-0",
+      "label": "Sustain ahf06",
+      "lane": "Jungle",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1423",
+          "name": "Boots of Tranquility",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1423.png",
+          "description": "CDR +15%, MSPD +50\nSpeeds up skill cooldown"
+        },
+        {
+          "slot": 2,
+          "itemId": "1534",
+          "name": "Dragon's Rage",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1536.png",
+          "description": "HP +1,350, PDEF +180, MDEF +90\nBoosts BA damage"
+        },
+        {
+          "slot": 3,
+          "itemId": "1533",
+          "name": "Rapacious Bite",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1533.png",
+          "description": "PATK +90, MSPD +5%, CDR +7.5%\nMonster kills boost ATK"
+        },
+        {
+          "slot": 4,
+          "itemId": "1334",
+          "name": "Eye of the Phoenix",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1334.png",
+          "description": "MDEF +180, PDEF +90, HP +1,350\nBoosts HP Regen"
+        },
+        {
+          "slot": 5,
+          "itemId": "1328",
+          "name": "Blood Rage",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1328.png",
+          "description": "PATK +75, HP +900\nTrades HP for shield"
+        },
+        {
+          "slot": 6,
+          "itemId": "1332",
+          "name": "Overlord's Platemail",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1332.png",
+          "description": "HP +1,800, PDEF +160, MDEF +80\nExtra HP"
+        }
+      ]
+    },
+    {
+      "id": "camp-1",
+      "label": "Preset",
+      "lane": "Jungle",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1533",
+          "name": "Rapacious Bite",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1533.png",
+          "description": "PATK +90, MSPD +5%, CDR +7.5%\nMonster kills boost ATK"
+        },
+        {
+          "slot": 2,
+          "itemId": "1338",
+          "name": "Cuirass of Savagery",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1338.png",
+          "description": "PATK +35, PDEF +210, HP +900\nOffense & defense"
+        },
+        {
+          "slot": 3,
+          "itemId": "1134",
+          "name": "Master Sword",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1134.png",
+          "description": "PATK +55, Crit Rate +20%, HP +600\nEnhances BAs"
+        },
+        {
+          "slot": 4,
+          "itemId": "1334",
+          "name": "Eye of the Phoenix",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1334.png",
+          "description": "MDEF +180, PDEF +90, HP +1,350\nBoosts HP Regen"
+        },
+        {
+          "slot": 5,
+          "itemId": "1337",
+          "name": "Sage's Sanctuary",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
+        },
+        {
+          "slot": 6,
+          "itemId": "1157",
+          "name": "Immovable - Sky Dome",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1157.png",
+          "description": "PATK +80, PDEF +150, CDR +10%\nTemp. damage reduction"
+        }
+      ]
+    },
+    {
+      "id": "camp-2",
+      "label": "Daño/defensa",
+      "lane": "Jungle",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1422",
+          "name": "Boots of Resistance",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1422.png",
+          "description": "MDEF +100, PDEF +50, MSPD +50\nShortens crowd control"
+        },
+        {
+          "slot": 2,
+          "itemId": "1137",
+          "name": "Axe of Torment",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1137.png",
+          "description": "PATK +80, CDR +10%, HP +500\nAnti-squishy"
+        },
+        {
+          "slot": 3,
+          "itemId": "1534",
+          "name": "Dragon's Rage",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1536.png",
+          "description": "HP +1,350, PDEF +180, MDEF +90\nBoosts BA damage"
+        },
+        {
+          "slot": 4,
+          "itemId": "1533",
+          "name": "Rapacious Bite",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1533.png",
+          "description": "PATK +90, MSPD +5%, CDR +7.5%\nMonster kills boost ATK"
+        },
+        {
+          "slot": 5,
+          "itemId": "1334",
+          "name": "Eye of the Phoenix",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1334.png",
+          "description": "MDEF +180, PDEF +90, HP +1,350\nBoosts HP Regen"
+        },
+        {
+          "slot": 6,
+          "itemId": "1327",
+          "name": "Spikemail",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1327.png",
+          "description": "PATK +45, PDEF +300, HP +700\nReflects damage"
+        }
+      ]
+    },
+    {
+      "id": "camp-3",
+      "label": "Preset",
+      "lane": "Top",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1338",
+          "name": "Cuirass of Savagery",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1338.png",
+          "description": "PATK +35, PDEF +210, HP +900\nOffense & defense"
+        },
+        {
+          "slot": 2,
+          "itemId": "1138",
+          "name": "Overlord's Might",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1138.png",
+          "description": "PATK +150, CDR +5%\nHigh-damage attack"
+        },
+        {
+          "slot": 3,
+          "itemId": "1335",
+          "name": "Succubus Cloak",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
+          "description": "MDEF +300, HP +1,100\nNegates magical damage"
+        },
+        {
+          "slot": 4,
+          "itemId": "11311",
+          "name": "Pure Sky",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/11311.png",
+          "description": "PATK +80, PDEF +150, CDR +10%\nTemp. damage reduction"
+        },
+        {
+          "slot": 5,
+          "itemId": "1337",
+          "name": "Sage's Sanctuary",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
+        },
+        {
+          "slot": 6,
+          "itemId": "1127",
+          "name": "Destiny",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
+        }
+      ]
+    }
+  ],
+  "buildsZh": [
+    {
+      "id": "camp-0",
+      "label": "Sustain ahf06",
+      "lane": "Jungle",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1423",
+          "name": "冷靜之靴",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1423.png",
+          "description": "+15%減冷卻時間+50點移速\n加快技能冷卻"
+        },
+        {
+          "slot": 2,
+          "itemId": "1534",
+          "name": "怒龍劍盾",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1536.png",
+          "description": "+1350點生命值+180點物防+90點法防\n普攻額外傷害"
+        },
+        {
+          "slot": 3,
+          "itemId": "1533",
+          "name": "貪婪之噬",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1533.png",
+          "description": "+90攻擊+5%移速+7.5%冷縮\n打野怪加攻擊"
+        },
+        {
+          "slot": 4,
+          "itemId": "1334",
+          "name": "不死鳥之眼",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1334.png",
+          "description": "+180點法防+90點物防+1350點生命值……\n增加回血效果"
+        },
+        {
+          "slot": 5,
+          "itemId": "1328",
+          "name": "血魔之怒",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1328.png",
+          "description": "+75點攻擊+900點生命值 \n犧牲生命值換取護盾值"
+        },
+        {
+          "slot": 6,
+          "itemId": "1332",
+          "name": "霸者重裝",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1332.png",
+          "description": "+1800點生命值+160點物防+80點法防\n提高額外生命值"
+        }
+      ]
+    },
+    {
+      "id": "camp-1",
+      "label": "Preset",
+      "lane": "Jungle",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1533",
+          "name": "貪婪之噬",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1533.png",
+          "description": "+90攻擊+5%移速+7.5%冷縮\n打野怪加攻擊"
+        },
+        {
+          "slot": 2,
+          "itemId": "1338",
+          "name": "暴烈之甲",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1338.png",
+          "description": "+35點攻擊+210點物防+900點生命值\n能抗能打"
+        },
+        {
+          "slot": 3,
+          "itemId": "1134",
+          "name": "宗師之力",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1134.png",
+          "description": "+55點攻擊+20%暴擊+600點生命值……\n強化普攻"
+        },
+        {
+          "slot": 4,
+          "itemId": "1334",
+          "name": "不死鳥之眼",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1334.png",
+          "description": "+180點法防+90點物防+1350點生命值……\n增加回血效果"
+        },
+        {
+          "slot": 5,
+          "itemId": "1337",
+          "name": "賢者的庇護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+        },
+        {
+          "slot": 6,
+          "itemId": "1157",
+          "name": "不動・天穹",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1157.png",
+          "description": "+80點攻擊+150點物防+10%冷卻時間縮減\n暫時增加免傷"
+        }
+      ]
+    },
+    {
+      "id": "camp-2",
+      "label": "Daño/defensa",
+      "lane": "Jungle",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1422",
+          "name": "抵抗之靴",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1422.png",
+          "description": "+100點法防+50點物防+50點移速\n減少被控時間"
+        },
+        {
+          "slot": 2,
+          "itemId": "1137",
+          "name": "暗影戰斧",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1137.png",
+          "description": "+80點攻擊+10%減冷卻時間+500點生命值\n打血薄用"
+        },
+        {
+          "slot": 3,
+          "itemId": "1534",
+          "name": "怒龍劍盾",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1536.png",
+          "description": "+1350點生命值+180點物防+90點法防\n普攻額外傷害"
+        },
+        {
+          "slot": 4,
+          "itemId": "1533",
+          "name": "貪婪之噬",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1533.png",
+          "description": "+90攻擊+5%移速+7.5%冷縮\n打野怪加攻擊"
+        },
+        {
+          "slot": 5,
+          "itemId": "1334",
+          "name": "不死鳥之眼",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1334.png",
+          "description": "+180點法防+90點物防+1350點生命值……\n增加回血效果"
+        },
+        {
+          "slot": 6,
+          "itemId": "1327",
+          "name": "反傷刺甲",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1327.png",
+          "description": "+45點攻擊+300點物防\n+700點生命值反彈傷害"
+        }
+      ]
+    },
+    {
+      "id": "camp-3",
+      "label": "Preset",
+      "lane": "Top",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1338",
+          "name": "暴烈之甲",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1338.png",
+          "description": "+35點攻擊+210點物防+900點生命值\n能抗能打"
+        },
+        {
+          "slot": 2,
+          "itemId": "1138",
+          "name": "強者破軍",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1138.png",
+          "description": "+150點攻擊+5%減冷卻時間\n高額攻擊"
+        },
+        {
+          "slot": 3,
+          "itemId": "1335",
+          "name": "魔女斗篷",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
+          "description": "+300點法防+1100點生命值\n吸收法術傷害"
+        },
+        {
+          "slot": 4,
+          "itemId": "11311",
+          "name": "純淨蒼穹",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/11311.png",
+          "description": "+80點攻擊+150點物防+10%冷卻時間縮減\n暫時增加免傷"
+        },
+        {
+          "slot": 5,
+          "itemId": "1337",
+          "name": "賢者的庇護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+        },
+        {
+          "slot": 6,
+          "itemId": "1127",
+          "name": "名刀・司命",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "+75點攻擊+15%攻速+500點生命值\n保命"
+        }
+      ]
     }
   ],
   "arcana": [
-    "Mutation"
+    "Lvl 5: Red Moon",
+    "Lvl 5: Mutation",
+    "Lvl 5: Hunt"
+  ],
+  "arcanaZh": [
+    "5級：紅月",
+    "5級：異變",
+    "5級：狩獵"
   ],
   "spells": [
-    "Flash"
+    "Smite"
+  ],
+  "spellsZh": [
+    "懲擊"
   ],
   "counters": [
     "Diaochan",
@@ -107,336 +591,151 @@
     "Lady Sun"
   ],
   "tips": [
-    "Yang Jian is a Medium Warrior (Clash Lane) on Honor of Kings Global. Camp HOK ranks them Tier B with 50.6% win rate and 0.4% pick rate as of 2026-06-05.",
-    "Best build path: Boots of Resistance → Axe of Torment → Frostscar's Embrace → Eye of the Phoenix → Immovable - Sky Dome → Cuirass of Savagery.",
-    "Run Mutation for stats that match Yang Jian's Warrior kit. Take Flash — swap to Purify against heavy CC or Smite when jungling.",
-    "Standard trade: Unleash the Hound → Vain Disillusionment → Sight of Origin → weave basic attacks. Weave basic attacks between skill casts for passive value.",
-    "Laning: Trade on your power spike levels (2/4). Call jungler for dive only when enemy flash is down.",
-    "Teamfight: Flank or dive backline after tanks commit. Do not start fights without vision on enemy jungler.",
-    "Yang Jian excels into Diaochan, Luna, Dr Bian. Avoid blind picking into Hou Yi, Marco Polo, Lady Sun without team peel.",
-    "Yang Jian sits at Tier B globally (50.6% WR). In high rank, pick only into favorable matchups or when you have a dedicated pocket pick."
+    "Yang Jian (Warrior): Tier B — 50.9% WR (Camp HOK).",
+    "Lane: Clash Lane.",
+    "Build: Boots of Tranquility, Dragon's Rage, Rapacious Bite."
+  ],
+  "tipsZh": [
+    "楊戩（對抗路）：梯度 B，勝率 50.9%（Camp HOK）。",
+    "出裝：冷靜之靴、怒龍劍盾、貪婪之噬."
   ],
   "patchHistory": [
     {
-      "version": "Live meta",
-      "change": "Camp HOK — WR 50.6%, pick 0.4%, ban 0.0%, tier B."
+      "seasonId": "13",
+      "seasonName": "S13",
+      "versionName": "2026/01/08",
+      "publishedAt": "2026-01-08T01:00:00Z",
+      "isCurrent": false,
+      "tag": "Stat Changes",
+      "change": "Adjusted Skill Effect and Cooldown",
+      "detail": "",
+      "version": "S13"
     },
     {
-      "version": "Matchups",
-      "change": "Strong into Diaochan, Luna, Dr Bian · Weak into Hou Yi, Marco Polo, Lady Sun."
+      "seasonId": "12",
+      "seasonName": "S12",
+      "versionName": "20250924",
+      "publishedAt": "2025-09-24T01:00:00Z",
+      "isCurrent": false,
+      "tag": "Mechanics Upgrade",
+      "change": "We've added a brand-new ability, the Heaven-Earth Form, enhancing Yang Jian's unique Resistance mechanic and visual appearance. We've also significantly optimized the hit mechanic for Heaven Hound, and added a new Heavenly Eye attack in the normal state, granting both recovery and true damage.",
+      "detail": "We've added a brand-new ability, the Heaven-Earth Form, enhancing Yang Jian's unique Resistance mechanic and visual appearance. We've also significantly optimized the hit mechanic for Heaven Hound, and added a new Heavenly Eye attack in the normal state, granting both recovery and true damage.",
+      "version": "S12"
     },
     {
-      "version": "High rank",
-      "change": "Yang Jian sits at Tier B globally (50.6% WR). In high rank, pick only into favorable matchups or when you have a dedicated pocket pick."
+      "seasonId": "6",
+      "seasonName": "S6",
+      "versionName": "20240905",
+      "publishedAt": "2024-09-05T03:48:42Z",
+      "isCurrent": false,
+      "tag": "Stat Buffs",
+      "change": "Reduced cooldown for Skill 1 and Ultimate, and increased Ultimate's healing.",
+      "detail": "Yang Jian often needs to dash into the enemy crowd. We've increased his Ultimate's recovery amount and frequency to help him sustain longer in combat.",
+      "version": "S6"
+    },
+    {
+      "seasonId": "4",
+      "seasonName": "S4",
+      "versionName": "20240220",
+      "publishedAt": "2024-02-20T02:27:09Z",
+      "isCurrent": false,
+      "tag": "Stat Buffs",
+      "change": "We've increased the base Health recovery provided by Yang Jian's Ultimate, and changed its equipment bonus type.",
+      "detail": "We've increased the base Health recovery provided by Yang Jian's Ultimate, and changed its equipment bonus type.\nYang Jian is the perfect definition of what it means to be comprehensive. By adjusting his Ultimate's recovery effect and bonus, we have tried to make Yang Jian more consistent with his position as a fighter on the battlefield.",
+      "version": "S4"
+    }
+  ],
+  "patchHistoryZh": [
+    {
+      "seasonId": "13",
+      "seasonName": "S13",
+      "versionName": "2026/01/08",
+      "publishedAt": "2026-01-08T01:00:00Z",
+      "isCurrent": false,
+      "tag": "數值調整",
+      "change": "調整技能效果和冷卻時間",
+      "detail": "",
+      "version": "S13"
+    },
+    {
+      "seasonId": "12",
+      "seasonName": "S12",
+      "versionName": "20250924",
+      "publishedAt": "2025-09-24T01:00:00Z",
+      "isCurrent": false,
+      "tag": "機制升級",
+      "change": "楊戩新增法天象地的全新能力，強化楊戩獨有的韌性機制與視覺感受。嘯天犬的命中機制也進行了大幅調整，楊戩更新增普通狀態下的天眼攻擊，使他能獲得回復並造成真傷。",
+      "detail": "楊戩新增法天象地的全新能力，強化楊戩獨有的韌性機制與視覺感受。嘯天犬的命中機制也進行了大幅調整，楊戩更新增普通狀態下的天眼攻擊，使他能獲得回復並造成真傷。",
+      "version": "S12"
+    },
+    {
+      "seasonId": "6",
+      "seasonName": "S6",
+      "versionName": "20240905",
+      "publishedAt": "2024-09-05T03:48:42Z",
+      "isCurrent": false,
+      "tag": "數值增強",
+      "change": "降低1技能和3技能冷卻，增加3技能回血",
+      "detail": "「楊戩的技能需要經常突進到敵群之中，我們提升他的大招回復量和頻率以便持續作戰。」",
+      "version": "S6"
+    },
+    {
+      "seasonId": "4",
+      "seasonName": "S4",
+      "versionName": "20240220",
+      "publishedAt": "2024-02-20T02:27:09Z",
+      "isCurrent": false,
+      "tag": "數值增強",
+      "change": "We've increased the base Health recovery provided by Yang Jian's Ultimate, and changed its equipment bonus type.",
+      "detail": "We've increased the base Health recovery provided by Yang Jian's Ultimate, and changed its equipment bonus type.\nYang Jian is the perfect definition of what it means to be comprehensive. By adjusting his Ultimate's recovery effect and bonus, we have tried to make Yang Jian more consistent with his position as a fighter on the battlefield.",
+      "version": "S4"
     }
   ],
   "faqs": [
     {
       "id": "faq-good-season",
-      "question": "Is Yang Jian good in the current meta?",
-      "answer": "Yang Jian is Tier B Warrior with 50.6% win rate, 0.4% pick rate, and 0.0% ban rate on Honor of Kings Global (Camp HOK, 2026-06-05). Niche — draft carefully."
+      "question": "Is Yang Jian good in current season?",
+      "answer": "Yang Jian is Tier B Warrior with 50.9% win rate, 0.42% pick rate, and 0.03% ban rate (Camp HOK international)."
     },
     {
       "id": "faq-best-build",
       "question": "What is the best Yang Jian build?",
-      "answer": "Core item path: Boots of Resistance, Axe of Torment, Frostscar's Embrace, Eye of the Phoenix, Immovable - Sky Dome, Cuirass of Savagery. Run Mutation arcana with Flash. Switch to alternate build presets on this page for jungle, clash, or late-game setups."
+      "answer": "Recommended: Boots of Tranquility, Dragon's Rage, Rapacious Bite, Eye of the Phoenix, Blood Rage, Overlord's Platemail."
     },
     {
       "id": "faq-counter",
       "question": "How to counter Yang Jian?",
-      "answer": "Pick Hou Yi, Marco Polo, Lady Sun into Yang Jian. Deny Clash Lane resources early and force fights before Yang Jian completes core items. Yang Jian struggles when the enemy can out-range or out-sustain them."
+      "answer": "Pick Hou Yi, Marco Polo, Lady Sun. Strong into Diaochan, Luna, Dr Bian."
+    }
+  ],
+  "faqsZh": [
+    {
+      "id": "faq-good-season",
+      "question": "楊戩 這版本適合上分嗎？",
+      "answer": "楊戩 為 B 梯度，勝率 50.9%、選取 0.42%、禁用 0.03%（Camp HOK 國際服）。"
     },
     {
-      "id": "faq-strong-into",
-      "question": "Who does Yang Jian counter?",
-      "answer": "Yang Jian is strong into Diaochan, Luna, Dr Bian according to HoKStats matchup data and role matchups on the global server. Draft Yang Jian when the enemy relies on these heroes in the Clash Lane lane."
+      "id": "faq-best-build",
+      "question": "楊戩 出裝怎麼搭配？",
+      "answer": "推薦：冷靜之靴、怒龍劍盾、貪婪之噬、不死鳥之眼、血魔之怒、霸者重裝."
     },
     {
-      "id": "faq-high-rank",
-      "question": "Is Yang Jian good in high rank / Diamond+?",
-      "answer": "Yang Jian sits at Tier B globally (50.6% WR). In high rank, pick only into favorable matchups or when you have a dedicated pocket pick."
-    },
-    {
-      "id": "faq-lane",
-      "question": "What lane should Yang Jian play?",
-      "answer": "Yang Jian is tagged Clash Lane in Camp export (Fighter). Trade on your power spike levels (2/4). Call jungler for dive only when enemy flash is down."
-    },
-    {
-      "id": "faq-arcana",
-      "question": "Best arcana and spells for Yang Jian?",
-      "answer": "Recommended: Mutation arcana. Battle spell: Flash. Adjust Purify/Execute based on enemy dive and jungle need."
-    },
-    {
-      "id": "faq-vs-peer",
-      "question": "Yang Jian or Li Xin — which is better?",
-      "answer": "Yang Jian vs Li Xin (Warrior, Tier S+): Li Xin is 1.9% pick / 52.6% WR. Li Xin wins 1.9% more often globally. Choose Yang Jian when you need Clash Lane identity; choose Li Xin for Clash Lane comfort."
-    },
-    {
-      "id": "faq-ban",
-      "question": "Should I ban Yang Jian?",
-      "answer": "Low priority ban (0.0%). Focus bans on higher-tier Warrior picks unless targeting a one-trick."
+      "id": "faq-counter",
+      "question": "怎麼克制 楊戩？",
+      "answer": "可選 Hou Yi、Marco Polo、Lady Sun。楊戩 克制 Diaochan、Luna、Dr Bian。"
     }
   ],
   "metaAnalysis": [
-    "Yang Jian — 50.6% WR, 0.4% pick, 0.0% ban (Camp HOK 2026-06-05).",
-    "Tier B Warrior · Clash Lane · difficulty Medium.",
-    "Yang Jian sits at Tier B globally (50.6% WR). In high rank, pick only into favorable matchups or when you have a dedicated pocket pick.",
-    "Matchups: strong into Diaochan, Luna, Dr Bian; weak into Hou Yi, Marco Polo, Lady Sun.",
-    "Yang Jian vs Li Xin (Warrior, Tier S+): Li Xin is 1.9% pick / 52.6% WR. Li Xin wins 1.9% more often globally. Choose Yang Jian when you need Clash Lane identity; choose Li Xin for Clash Lane comfort.",
-    "Yang Jian vs Chicha (Warrior, Tier S): Chicha is 1.5% pick / 50.2% WR. Yang Jian has +0.5% WR vs Chicha in Camp data. Choose Yang Jian when you need Clash Lane identity; choose Chicha for Clash Lane comfort.",
-    "Draft tip: counter-pick or comfort pick when lane matchup is favorable."
+    "Yang Jian win rate 50.9% (Camp HOK, 2026-06-07).",
+    "Pick rate 0.42%.",
+    "Ban rate 0.03%.",
+    "Counters: Diaochan, Luna, Dr Bian. Weak into: Hou Yi, Marco Polo, Lady Sun."
   ],
-  "builds": [
-    {
-      "id": "recommended",
-      "label": "Recommended",
-      "position": null,
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1422",
-          "name": "Boots of Resistance",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
-          "description": "Shortens CC"
-        },
-        {
-          "slot": 2,
-          "itemId": "1137",
-          "name": "Axe of Torment",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1137.jpg",
-          "description": "Anti-squishy"
-        },
-        {
-          "slot": 3,
-          "itemId": "13310",
-          "name": "Frostscar's Embrace",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/13310.jpg",
-          "description": "Enhanced BAs slow"
-        },
-        {
-          "slot": 4,
-          "itemId": "1334",
-          "name": "Eye of the Phoenix",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1334.jpg",
-          "description": "Boosts Health regen"
-        },
-        {
-          "slot": 5,
-          "itemId": "1157",
-          "name": "Immovable - Sky Dome",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1157.jpg",
-          "description": "Temp. damage reduction"
-        },
-        {
-          "slot": 6,
-          "itemId": "1338",
-          "name": "Cuirass of Savagery",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1338.jpg",
-          "description": "Offense & defense"
-        }
-      ]
-    },
-    {
-      "id": "sustain-ahf06",
-      "label": "Sustain ahf06",
-      "position": "Position 3",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1523",
-          "name": "Relentless Blade",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1523.jpg",
-          "description": "Monster kills boost PATK"
-        },
-        {
-          "slot": 2,
-          "itemId": "1423",
-          "name": "Boots of Tranquility",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1423.jpg",
-          "description": "Reduces Skill CD"
-        },
-        {
-          "slot": 3,
-          "itemId": "1534",
-          "name": "Dragon's Rage",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1534.jpg",
-          "description": "Boosts BA damage"
-        },
-        {
-          "slot": 4,
-          "itemId": "1533",
-          "name": "Rapacious Bite",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1533.jpg",
-          "description": "Monster kills boost PATK"
-        },
-        {
-          "slot": 5,
-          "itemId": "1334",
-          "name": "Eye of the Phoenix",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1334.jpg",
-          "description": "Boosts Health regen"
-        },
-        {
-          "slot": 6,
-          "itemId": "1328",
-          "name": "Blood Rage",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1328.jpg",
-          "description": "Grants temporary shield"
-        }
-      ]
-    },
-    {
-      "id": "preset",
-      "label": "Preset",
-      "position": "Position 3",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1523",
-          "name": "Relentless Blade",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1523.jpg",
-          "description": "Monster kills boost PATK"
-        },
-        {
-          "slot": 2,
-          "itemId": "1421",
-          "name": "Boots of Fortitude",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1421.jpg",
-          "description": "Reduces physical damage"
-        },
-        {
-          "slot": 3,
-          "itemId": "1137",
-          "name": "Axe of Torment",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1137.jpg",
-          "description": "Anti-squishy"
-        },
-        {
-          "slot": 4,
-          "itemId": "1533",
-          "name": "Rapacious Bite",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1533.jpg",
-          "description": "Monster kills boost PATK"
-        },
-        {
-          "slot": 5,
-          "itemId": "1345",
-          "name": "Nettle Gauntlet",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1345.jpg",
-          "description": "Offense & defense"
-        },
-        {
-          "slot": 6,
-          "itemId": "1338",
-          "name": "Cuirass of Savagery",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1338.jpg",
-          "description": "Offense & defense"
-        }
-      ]
-    },
-    {
-      "id": "daodefensa",
-      "label": "Daño/defensa",
-      "position": "Position 3",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1523",
-          "name": "Relentless Blade",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1523.jpg",
-          "description": "Monster kills boost PATK"
-        },
-        {
-          "slot": 2,
-          "itemId": "1422",
-          "name": "Boots of Resistance",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
-          "description": "Shortens CC"
-        },
-        {
-          "slot": 3,
-          "itemId": "1137",
-          "name": "Axe of Torment",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1137.jpg",
-          "description": "Anti-squishy"
-        },
-        {
-          "slot": 4,
-          "itemId": "1534",
-          "name": "Dragon's Rage",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1534.jpg",
-          "description": "Boosts BA damage"
-        },
-        {
-          "slot": 5,
-          "itemId": "1533",
-          "name": "Rapacious Bite",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1533.jpg",
-          "description": "Monster kills boost PATK"
-        },
-        {
-          "slot": 6,
-          "itemId": "1334",
-          "name": "Eye of the Phoenix",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1334.jpg",
-          "description": "Boosts Health regen"
-        }
-      ]
-    },
-    {
-      "id": "preset",
-      "label": "Preset",
-      "position": "Position 1",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1124",
-          "name": "Meteor",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1124.jpg",
-          "description": "PATK +35\nCDR +7.5%"
-        },
-        {
-          "slot": 2,
-          "itemId": "1421",
-          "name": "Boots of Fortitude",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1421.jpg",
-          "description": "Reduces physical damage"
-        },
-        {
-          "slot": 3,
-          "itemId": "1137",
-          "name": "Axe of Torment",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1137.jpg",
-          "description": "Anti-squishy"
-        },
-        {
-          "slot": 4,
-          "itemId": "1345",
-          "name": "Nettle Gauntlet",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1345.jpg",
-          "description": "Offense & defense"
-        },
-        {
-          "slot": 5,
-          "itemId": "1338",
-          "name": "Cuirass of Savagery",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1338.jpg",
-          "description": "Offense & defense"
-        },
-        {
-          "slot": 6,
-          "itemId": "1138",
-          "name": "Overlord's Might",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1138.jpg",
-          "description": "High-damage attack"
-        }
-      ]
-    }
+  "metaAnalysisZh": [
+    "楊戩 勝率 50.9%（Camp HOK，2026-06-07）",
+    "選取率 0.42%",
+    "禁用率 0.03%",
+    "克制：Diaochan、Luna、Dr Bian；被克制：Hou Yi、Marco Polo、Lady Sun"
   ],
   "guide": {
     "overview": "Yang Jian is a Medium Warrior (Clash Lane) on Honor of Kings Global. Camp HOK ranks them Tier B with 50.6% win rate and 0.4% pick rate as of 2026-06-05.",

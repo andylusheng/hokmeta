@@ -14,12 +14,12 @@ export function SiteFooter() {
     'updated' in patchesMeta && patchesMeta.updated ? patchesMeta.updated : null;
 
   const footerLinks = [
-    { href: localePath(locale, '/heroes'), label: t('nav.heroes') },
     { href: localePath(locale, '/tier-list'), label: t('nav.tierList') },
-    { href: localePath(locale, '/hero-trends'), label: t('nav.trends') },
-    { href: localePath(locale, '/best-heroes'), label: t('nav.bestHeroes') },
+    { href: localePath(locale, '/heroes'), label: t('nav.heroBuilds') },
+    { href: localePath(locale, '/items'), label: t('nav.items') },
+    { href: localePath(locale, '/arcana'), label: t('nav.arcana') },
     { href: localePath(locale, '/learn'), label: t('nav.guides') },
-    { href: localePath(locale, '/tools'), label: t('nav.tools') },
+    { href: localePath(locale, '/patches'), label: t('nav.patches') },
     { href: localePath(locale, '/about'), label: t('nav.about') },
     { href: localePath(locale, '/privacy'), label: t('nav.privacy') },
   ];

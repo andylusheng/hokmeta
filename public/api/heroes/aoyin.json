@@ -2,100 +2,583 @@
   "id": "aoyin",
   "slug": "aoyin",
   "name": "Ao'yin",
+  "nameZh": "敖隱",
   "role": "Marksman",
   "roles": "Marksman",
+  "rolesZh": "射手",
   "lane": "Farm Lane",
+  "laneZh": "發育路",
   "difficulty": "Medium",
   "tier": "S+",
-  "winRate": 48.42,
-  "pickRate": 1.57,
-  "banRate": 5.06,
-  "rank": 98,
+  "winRate": 48.56,
+  "pickRate": 1.47,
+  "banRate": 5.33,
+  "rank": 95,
   "avatar": "https://camp.honorofkings.com/camp/admin/hero/head_128-128/OzH2TSZN.jpg",
   "avatarFallback": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/519/519.jpg",
+  "heroCover": "https://camp.honorofkings.com/camp/admin/hero/cover_1275-718/6KK7yYWf.jpg",
   "tencentId": 519,
-  "dataSource": "Camp HOK + HoKStats.gg (intl)",
-  "dataUpdated": "2026-06-05",
+  "dataSource": "Camp HOK bilingual (primary)",
+  "dataUpdated": "2026-06-07",
   "skills": [
     {
       "slot": "passive",
       "name": "Hidden Dragon",
-      "description": "The Dragon Souls from his last 2 skill uses grant effects to his Basic Attacks, which deal physical damage to up to two enemies. He gains 1 mark upon using skills, for up to 3 marks. Basic Attacks expend all marks for various effects, striking once per mark.",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/519/51900.png",
-      "cooldown": null
+      "description": "The Dragon Souls from his last 2 skill uses grant effects to his Basic Attacks, which deal physical damage to up to two enemies.\nHe gains 1 mark upon using skills, for up to 3 marks. Basic Attacks consume all marks for various effects, striking once per mark.",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/51900.png",
+      "cooldown": "1s"
     },
     {
       "slot": "skill1",
       "name": "Flaming Palm",
-      "description": "Deals physical damage and true damage. Attaches a Fire Dragon Soul to his sword. Basic Attacks deal more damage when this Soul is attached. Enhanced Basic Attacks will deal both physical damage and true damage.",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/519/51910.png",
-      "cooldown": null
+      "description": "Deals physical damage and true damage. Attaches a Fire Dragon Soul to his sword.\nBasic Attacks deal extra damage when this Soul is attached. Enhanced Basic Attacks will deal both physical damage and true damage.",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/51910.png",
+      "cooldown": "12s"
     },
     {
       "slot": "skill2",
       "name": "Downpour",
-      "description": "Deals physical damage and recovers Health upon hit. Attaches a Water Dragon Soul to his sword. Basic Attacks restore Health and Mana when this Soul is attached. Enhanced Basic Attacks will deal physical damage and restore Health, but restore less for hits on non-hero units.",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/519/51920.png",
-      "cooldown": null
+      "description": "Deals physical damage and recovers Health upon hit. Attaches a Water Dragon Soul to his sword.\nBasic Attacks restore Health and Mana when this Soul is attached. Enhanced Basic Attacks will deal physical damage and restore Health, but restore less for hits on non-hero units.",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/51920.png",
+      "cooldown": "12s"
     },
     {
       "slot": "ultimate",
-      "name": "Riding the Wind",
-      "description": "Gains Movement Speed that diminishes over time, deals physical damage, and knocks back enemies. Attaches a Wind Dragon Soul to his sword. Gains Movement Speed while this Soul is attached, 50% extra if on both swords. Enhanced Basic Attacks will deal physical damage and knock back enemies.",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/519/51930.png",
-      "cooldown": null
+      "name": "Infinite Vastness",
+      "description": "Soars into the sky for up to 4.5s, then dives forward to damage and slow enemies. Landing deals equal damage and applies Dread.\nGains Attack Speed and Attack Range. Basic Attacks hit 2 more enemies.\nCan switch Dragon Souls mid-flight.",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/51930.png",
+      "cooldown": "80s"
+    }
+  ],
+  "skillsZh": [
+    {
+      "slot": "passive",
+      "name": "隱介藏形",
+      "description": "敖隱最後2次技能的元素龍魂會附於主副劍指上，普攻會用主劍指造成物理傷害，若附近有其他敵人，則用副劍指攻擊目標，造成物理傷害。\n敖隱使用技能會疊加1層龍魂印記，最多3層，敖隱的下次普攻會消耗所有印記，驅使龍魂衝擊目標，每消耗1層印記則多攻擊1次。強化普攻會根據主劍指的龍魂屬性附帶不同效果。\n受到多條龍魂攻擊時，後續的龍魂只會造成50%傷害。切換元素時，優先保留相同元素龍魂。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/51900.png",
+      "cooldown": "1s"
+    },
+    {
+      "slot": "skill1",
+      "name": "薄日掌火",
+      "description": "敖隱揮出劍氣，對範圍內敵人造成物理傷害和真實傷害，並額外疊加1層龍魂印記。\n使用【薄日掌火】後會將1層火龍魂附於劍指上，普攻附帶額外物理傷害，若雙劍指均附著火龍魂，則再額外增加物理傷害。若火龍魂附於主劍指上，強化普攻造成物理傷害和真實傷害。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/51910.png",
+      "cooldown": "12s"
+    },
+    {
+      "slot": "skill2",
+      "name": "擎天司雨",
+      "description": "敖隱揮出劍氣，對範圍內敵人造成物理傷害，命中後回復生命值。\n使用【擎天司雨】後會將1層水龍魂附於劍指上，普攻額外回復生命值和法力值，若雙劍指均附著水龍魂，則再額外增加回復。若水龍魂附於主劍指上，強化普攻造成物理傷害，命中後回復生命值。\n命中回復效果對非英雄單位有衰減。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/51920.png",
+      "cooldown": "12s"
+    },
+    {
+      "slot": "ultimate",
+      "name": "窮乎玄間",
+      "description": "敖隱顯露白龍真身衝上雲霄，期間無法攻擊、無視地形且無法鎖定為目標，最多持續4.5秒(可提前結束)，隨後向前俯衝(過程中無法鎖定為目標)，對路徑上的敵人造成物理傷害和減速，並在落點處對敵人再次造成同等傷害和懼龍效果，持續1秒。\n隨後敖隱顯露真龍雪劍，提升攻速和射程，持續10秒。期間敖隱使用真龍雪劍攻擊，此時雙劍指會攻擊附近至多2名額外目標。\n受到懼龍效果的目標會不由自主地遠離敖隱。敖隱飛行期間可以任意調整劍指的元素龍魂。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/51930.png",
+      "cooldown": "80s"
     }
   ],
   "build": [
     {
       "slot": 1,
-      "itemId": "1133",
-      "name": "Eternity Blade",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1133.jpg",
-      "description": "High crit damage"
+      "itemId": "1138",
+      "name": "Overlord's Might",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1138.png",
+      "description": "PATK +150, CDR +5%\nHigh-damage attack"
     },
     {
       "slot": 2,
-      "itemId": "1425",
-      "name": "Boots of Dexterity",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1425.jpg",
-      "description": "Boosts ASPD"
+      "itemId": "1337",
+      "name": "Sage's Sanctuary",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+      "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
     },
     {
       "slot": 3,
-      "itemId": "1136",
-      "name": "Shadow Ripper",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1136.jpg",
-      "description": "Crits boost ASPD"
+      "itemId": "1127",
+      "name": "Destiny",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+      "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
     },
     {
       "slot": 4,
-      "itemId": "1155",
-      "name": "Daybreaker's Virtue",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1155.jpg",
-      "description": "Great for marksmen"
+      "itemId": "1134",
+      "name": "Master Sword",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1134.png",
+      "description": "PATK +55, Crit Rate +20%, HP +600\nEnhances BAs"
     },
     {
       "slot": 5,
-      "itemId": "1126",
-      "name": "Doomsday",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1126.jpg",
-      "description": "Boosts BA damage"
+      "itemId": "1328",
+      "name": "Blood Rage",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1328.png",
+      "description": "PATK +75, HP +900\nTrades HP for shield"
     },
     {
       "slot": 6,
+      "itemId": "13310",
+      "name": "Frostscar's Embrace",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/13310.png",
+      "description": "PATK +60, PDEF +300, CDR +10%\nEnhanced BAs slow"
+    }
+  ],
+  "buildZh": [
+    {
+      "slot": 1,
       "itemId": "1138",
-      "name": "Overlord's Might",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1138.jpg",
-      "description": "High-damage attack"
+      "name": "強者破軍",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1138.png",
+      "description": "+150點攻擊+5%減冷卻時間\n高額攻擊"
+    },
+    {
+      "slot": 2,
+      "itemId": "1337",
+      "name": "賢者的庇護",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+      "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+    },
+    {
+      "slot": 3,
+      "itemId": "1127",
+      "name": "名刀・司命",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+      "description": "+75點攻擊+15%攻速+500點生命值\n保命"
+    },
+    {
+      "slot": 4,
+      "itemId": "1134",
+      "name": "宗師之力",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1134.png",
+      "description": "+55點攻擊+20%暴擊+600點生命值……\n強化普攻"
+    },
+    {
+      "slot": 5,
+      "itemId": "1328",
+      "name": "血魔之怒",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1328.png",
+      "description": "+75點攻擊+900點生命值 \n犧牲生命值換取護盾值"
+    },
+    {
+      "slot": 6,
+      "itemId": "13310",
+      "name": "冰痕之握",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/13310.png",
+      "description": "+60點攻擊+300點物防+10%減冷卻時間……\n強化普攻減速"
+    }
+  ],
+  "builds": [
+    {
+      "id": "camp-0",
+      "label": "AtkSpd/Crit/SG",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1138",
+          "name": "Overlord's Might",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1138.png",
+          "description": "PATK +150, CDR +5%\nHigh-damage attack"
+        },
+        {
+          "slot": 2,
+          "itemId": "1337",
+          "name": "Sage's Sanctuary",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
+        },
+        {
+          "slot": 3,
+          "itemId": "1127",
+          "name": "Destiny",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
+        },
+        {
+          "slot": 4,
+          "itemId": "1134",
+          "name": "Master Sword",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1134.png",
+          "description": "PATK +55, Crit Rate +20%, HP +600\nEnhances BAs"
+        },
+        {
+          "slot": 5,
+          "itemId": "1328",
+          "name": "Blood Rage",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1328.png",
+          "description": "PATK +75, HP +900\nTrades HP for shield"
+        },
+        {
+          "slot": 6,
+          "itemId": "13310",
+          "name": "Frostscar's Embrace",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/13310.png",
+          "description": "PATK +60, PDEF +300, CDR +10%\nEnhanced BAs slow"
+        }
+      ]
+    },
+    {
+      "id": "camp-1",
+      "label": "暴击流教隐",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1133",
+          "name": "Eternity Blade",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1133.png",
+          "description": "PATK +120, Crit Rate +20%\nHigh crit damage"
+        },
+        {
+          "slot": 2,
+          "itemId": "1136",
+          "name": "Shadow Ripper",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1136.png",
+          "description": "PATK +45, ASPD +35%, Crit Rate +20%, MSPD +7.5%\nCrits boosts ASPD"
+        },
+        {
+          "slot": 3,
+          "itemId": "1422",
+          "name": "Boots of Resistance",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1422.png",
+          "description": "MDEF +100, PDEF +50, MSPD +50\nShortens crowd control"
+        },
+        {
+          "slot": 4,
+          "itemId": "1155",
+          "name": "Daybreaker's Virtue",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1155.png",
+          "description": "PATK +75, ASPD +30%, Crit Rate +15%\nGreat for marksmen"
+        },
+        {
+          "slot": 5,
+          "itemId": "1126",
+          "name": "Doomsday",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1126.png",
+          "description": "PATK +40, ASPD +20%, HP +500, Lifesteal +20%\nBoosts BA damage"
+        },
+        {
+          "slot": 6,
+          "itemId": "1141",
+          "name": "Sunchaser",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1141.png",
+          "description": "PATK +40, ASPD +20%, Crit Rate +15%, MSPD +7.5%\nBoosts attack range"
+        }
+      ]
+    },
+    {
+      "id": "camp-2",
+      "label": "Critical",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1133",
+          "name": "Eternity Blade",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1133.png",
+          "description": "PATK +120, Crit Rate +20%\nHigh crit damage"
+        },
+        {
+          "slot": 2,
+          "itemId": "11210",
+          "name": "Mortal Punisher",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/11210.png",
+          "description": "PATK +100, Lifesteal +20%, ASPD +20%\nLowers Health regen"
+        },
+        {
+          "slot": 3,
+          "itemId": "1155",
+          "name": "Daybreaker's Virtue",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1155.png",
+          "description": "PATK +75, ASPD +30%, Crit Rate +15%\nGreat for marksmen"
+        },
+        {
+          "slot": 4,
+          "itemId": "1156",
+          "name": "Haste - Sunpool",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1156.png",
+          "description": "PATK +40, ASPD +20%, Crit Rate +15%, MSPD +7.5%\nBoosts attack range"
+        },
+        {
+          "slot": 5,
+          "itemId": "1127",
+          "name": "Destiny",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
+        },
+        {
+          "slot": 6,
+          "itemId": "1337",
+          "name": "Sage's Sanctuary",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
+        }
+      ]
+    },
+    {
+      "id": "camp-3",
+      "label": "冰脉穿透龙",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1423",
+          "name": "Boots of Tranquility",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1423.png",
+          "description": "CDR +15%, MSPD +50\nSpeeds up skill cooldown"
+        },
+        {
+          "slot": 2,
+          "itemId": "1137",
+          "name": "Axe of Torment",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1137.png",
+          "description": "PATK +80, CDR +10%, HP +500\nAnti-squishy"
+        },
+        {
+          "slot": 3,
+          "itemId": "1422",
+          "name": "Boots of Resistance",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1422.png",
+          "description": "MDEF +100, PDEF +50, MSPD +50\nShortens crowd control"
+        },
+        {
+          "slot": 4,
+          "itemId": "1138",
+          "name": "Overlord's Might",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1138.png",
+          "description": "PATK +150, CDR +5%\nHigh-damage attack"
+        },
+        {
+          "slot": 5,
+          "itemId": "1131",
+          "name": "Starbreaker",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1131.png",
+          "description": "PATK +90, HP +700, MSPD +7.5%\nAnti-tank"
+        },
+        {
+          "slot": 6,
+          "itemId": "1126",
+          "name": "Doomsday",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1126.png",
+          "description": "PATK +40, ASPD +20%, HP +500, Lifesteal +20%\nBoosts BA damage"
+        }
+      ]
+    }
+  ],
+  "buildsZh": [
+    {
+      "id": "camp-0",
+      "label": "AtkSpd/Crit/SG",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1138",
+          "name": "強者破軍",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1138.png",
+          "description": "+150點攻擊+5%減冷卻時間\n高額攻擊"
+        },
+        {
+          "slot": 2,
+          "itemId": "1337",
+          "name": "賢者的庇護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+        },
+        {
+          "slot": 3,
+          "itemId": "1127",
+          "name": "名刀・司命",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "+75點攻擊+15%攻速+500點生命值\n保命"
+        },
+        {
+          "slot": 4,
+          "itemId": "1134",
+          "name": "宗師之力",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1134.png",
+          "description": "+55點攻擊+20%暴擊+600點生命值……\n強化普攻"
+        },
+        {
+          "slot": 5,
+          "itemId": "1328",
+          "name": "血魔之怒",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1328.png",
+          "description": "+75點攻擊+900點生命值 \n犧牲生命值換取護盾值"
+        },
+        {
+          "slot": 6,
+          "itemId": "13310",
+          "name": "冰痕之握",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/13310.png",
+          "description": "+60點攻擊+300點物防+10%減冷卻時間……\n強化普攻減速"
+        }
+      ]
+    },
+    {
+      "id": "camp-1",
+      "label": "暴击流教隐",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1133",
+          "name": "無盡戰刃",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1133.png",
+          "description": "+120點攻擊+20%暴擊\n高額暴擊傷害"
+        },
+        {
+          "slot": 2,
+          "itemId": "1136",
+          "name": "影刃",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1136.png",
+          "description": "+45點攻擊 +35%攻速+20%暴擊+7.5%移速\n暴擊增加攻速"
+        },
+        {
+          "slot": 3,
+          "itemId": "1422",
+          "name": "抵抗之靴",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1422.png",
+          "description": "+100點法防+50點物防+50點移速\n減少被控時間"
+        },
+        {
+          "slot": 4,
+          "itemId": "1155",
+          "name": "仁者破曉",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1155.png",
+          "description": "+75點攻擊+30%攻速+15%暴擊\n射手神裝"
+        },
+        {
+          "slot": 5,
+          "itemId": "1126",
+          "name": "末世",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1126.png",
+          "description": "+40點攻擊+20%攻速+500點生命值+20%吸血\n普攻額外傷害"
+        },
+        {
+          "slot": 6,
+          "itemId": "1141",
+          "name": "逐日之弓",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1141.png",
+          "description": "+40點攻擊+20%攻速+15%暴擊+7.5%移速\n攻擊距離變遠"
+        }
+      ]
+    },
+    {
+      "id": "camp-2",
+      "label": "Critical",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1133",
+          "name": "無盡戰刃",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1133.png",
+          "description": "+120點攻擊+20%暴擊\n高額暴擊傷害"
+        },
+        {
+          "slot": 2,
+          "itemId": "11210",
+          "name": "制裁之刃",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/11210.png",
+          "description": "+100點攻擊+20%吸血+20%攻速\n減少敵人回血"
+        },
+        {
+          "slot": 3,
+          "itemId": "1155",
+          "name": "仁者破曉",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1155.png",
+          "description": "+75點攻擊+30%攻速+15%暴擊\n射手神裝"
+        },
+        {
+          "slot": 4,
+          "itemId": "1156",
+          "name": "迅疾・日淵",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1156.png",
+          "description": "+40點攻擊+20%攻速+15%暴擊+7.5%移速\n攻擊距離變遠"
+        },
+        {
+          "slot": 5,
+          "itemId": "1127",
+          "name": "名刀・司命",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "+75點攻擊+15%攻速+500點生命值\n保命"
+        },
+        {
+          "slot": 6,
+          "itemId": "1337",
+          "name": "賢者的庇護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+        }
+      ]
+    },
+    {
+      "id": "camp-3",
+      "label": "冰脉穿透龙",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1423",
+          "name": "冷靜之靴",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1423.png",
+          "description": "+15%減冷卻時間+50點移速\n加快技能冷卻"
+        },
+        {
+          "slot": 2,
+          "itemId": "1137",
+          "name": "暗影戰斧",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1137.png",
+          "description": "+80點攻擊+10%減冷卻時間+500點生命值\n打血薄用"
+        },
+        {
+          "slot": 3,
+          "itemId": "1422",
+          "name": "抵抗之靴",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1422.png",
+          "description": "+100點法防+50點物防+50點移速\n減少被控時間"
+        },
+        {
+          "slot": 4,
+          "itemId": "1138",
+          "name": "強者破軍",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1138.png",
+          "description": "+150點攻擊+5%減冷卻時間\n高額攻擊"
+        },
+        {
+          "slot": 5,
+          "itemId": "1131",
+          "name": "碎星錘",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1131.png",
+          "description": "+90點攻擊+700點生命值+7.5%移速\n打坦克用"
+        },
+        {
+          "slot": 6,
+          "itemId": "1126",
+          "name": "末世",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1126.png",
+          "description": "+40點攻擊+20%攻速+500點生命值+20%吸血\n普攻額外傷害"
+        }
+      ]
     }
   ],
   "arcana": [
-    "Penetration"
+    "Lvl 5: Mutation",
+    "Lvl 5: Stealth",
+    "Lvl 5: Eagle Eye"
+  ],
+  "arcanaZh": [
+    "5級：異變",
+    "5級：隱匿",
+    "5級：鷹眼"
   ],
   "spells": [
-    "Flash",
-    "Execute"
+    "Flash"
+  ],
+  "spellsZh": [
+    "閃現"
   ],
   "counters": [
     "Liu Bei",
@@ -108,536 +591,107 @@
     "Arthur"
   ],
   "tips": [
-    "Ao'yin is a Medium Marksman (Farm Lane) on Honor of Kings Global. Camp HOK ranks them Tier S+ with 48.4% win rate and 1.6% pick rate as of 2026-06-05.",
-    "Best build path: Eternity Blade → Boots of Dexterity → Shadow Ripper → Daybreaker's Virtue → Doomsday → Overlord's Might.",
-    "Run Penetration for stats that match Ao'yin's Marksman kit. Take Flash & Execute — swap to Purify against heavy CC or Smite when jungling.",
-    "Standard trade: Flaming Palm → Downpour → Riding the Wind → weave basic attacks. Weave basic attacks between skill casts for passive value.",
-    "Laning: Last-hit safely until first core item. Ping jungler for river vision; never face-check brush without minion cover.",
-    "Teamfight: Position behind frontline; attack closest safe target. Join fight only after enemy dive cooldowns are used.",
-    "Ao'yin excels into Liu Bei, Athena, Zilong. Avoid blind picking into Kaizer, Dun, Arthur without team peel.",
-    "Ao'yin is a Tier S+ staple in high-elo (Diamond+) on the international server — worth mastering for climb. Ban rate 5.1% — expect Ao'yin to be removed in tryhard lobbies; have a backup in the same role. Below 49% global WR — high-rank players often avoid unless compensating for team comp."
+    "Ao'yin (Marksman): Tier S+ — 48.56% WR (Camp HOK).",
+    "Lane: Farm Lane.",
+    "Build: Overlord's Might, Sage's Sanctuary, Destiny."
+  ],
+  "tipsZh": [
+    "敖隱（發育路）：梯度 S+，勝率 48.56%（Camp HOK）。",
+    "出裝：強者破軍、賢者的庇護、名刀・司命."
   ],
   "patchHistory": [
     {
-      "version": "Live meta",
-      "change": "Camp HOK — WR 48.4%, pick 1.6%, ban 5.1%, tier S+."
+      "seasonId": "13",
+      "seasonName": "S13",
+      "versionName": "2026/01/08",
+      "publishedAt": "2026-01-08T01:00:00Z",
+      "isCurrent": false,
+      "tag": "Stat Buffs",
+      "change": "Increased Skill Damage",
+      "detail": "",
+      "version": "S13"
     },
     {
-      "version": "Matchups",
-      "change": "Strong into Liu Bei, Athena, Zilong · Weak into Kaizer, Dun, Arthur."
+      "seasonId": "13",
+      "seasonName": "S13",
+      "versionName": "2025/12/16",
+      "publishedAt": "2025-12-16T01:00:00Z",
+      "isCurrent": false,
+      "tag": "Stat Changes",
+      "change": "Adjusted Skill Damage",
+      "detail": "",
+      "version": "S13"
+    }
+  ],
+  "patchHistoryZh": [
+    {
+      "seasonId": "13",
+      "seasonName": "S13",
+      "versionName": "2026/01/08",
+      "publishedAt": "2026-01-08T01:00:00Z",
+      "isCurrent": false,
+      "tag": "數值增強",
+      "change": "提升技能傷害",
+      "detail": "",
+      "version": "S13"
     },
     {
-      "version": "High rank",
-      "change": "Ao'yin is a Tier S+ staple in high-elo (Diamond+) on the international server — worth mastering for climb. Ban rate 5.1% — expect Ao'yin to be removed in tryhard lobbies; have a backup in the same role. Below 49% global WR — high-rank players often avoid unless compensating for team comp."
+      "seasonId": "13",
+      "seasonName": "S13",
+      "versionName": "2025/12/16",
+      "publishedAt": "2025-12-16T01:00:00Z",
+      "isCurrent": false,
+      "tag": "數值調整",
+      "change": "調整技能傷害",
+      "detail": "",
+      "version": "S13"
     }
   ],
   "faqs": [
     {
       "id": "faq-good-season",
-      "question": "Is Ao'yin good in the current meta?",
-      "answer": "Ao'yin is Tier S+ Marksman with 48.4% win rate, 1.6% pick rate, and 5.1% ban rate on Honor of Kings Global (Camp HOK, 2026-06-05). Strong meta pick for ranked."
+      "question": "Is Ao'yin good in current season?",
+      "answer": "Ao'yin is Tier S+ Marksman with 48.56% win rate, 1.47% pick rate, and 5.33% ban rate (Camp HOK international)."
     },
     {
       "id": "faq-best-build",
       "question": "What is the best Ao'yin build?",
-      "answer": "Core item path: Eternity Blade, Boots of Dexterity, Shadow Ripper, Daybreaker's Virtue, Doomsday, Overlord's Might. Run Penetration arcana with Flash & Execute. Switch to alternate build presets on this page for jungle, clash, or late-game setups."
+      "answer": "Recommended: Overlord's Might, Sage's Sanctuary, Destiny, Master Sword, Blood Rage, Frostscar's Embrace."
     },
     {
       "id": "faq-counter",
       "question": "How to counter Ao'yin?",
-      "answer": "Pick Kaizer, Dun, Arthur into Ao'yin. Deny Farm Lane resources early and force fights before Ao'yin completes core items. Ao'yin struggles when the enemy can dive and burst them."
+      "answer": "Pick Kaizer, Dun, Arthur. Strong into Liu Bei, Athena, Zilong."
+    }
+  ],
+  "faqsZh": [
+    {
+      "id": "faq-good-season",
+      "question": "敖隱 這版本適合上分嗎？",
+      "answer": "敖隱 為 S+ 梯度，勝率 48.56%、選取 1.47%、禁用 5.33%（Camp HOK 國際服）。"
     },
     {
-      "id": "faq-strong-into",
-      "question": "Who does Ao'yin counter?",
-      "answer": "Ao'yin is strong into Liu Bei, Athena, Zilong according to HoKStats matchup data and role matchups on the global server. Draft Ao'yin when the enemy relies on these heroes in the Farm Lane lane."
+      "id": "faq-best-build",
+      "question": "敖隱 出裝怎麼搭配？",
+      "answer": "推薦：強者破軍、賢者的庇護、名刀・司命、宗師之力、血魔之怒、冰痕之握."
     },
     {
-      "id": "faq-high-rank",
-      "question": "Is Ao'yin good in high rank / Diamond+?",
-      "answer": "Ao'yin is a Tier S+ staple in high-elo (Diamond+) on the international server — worth mastering for climb. Ban rate 5.1% — expect Ao'yin to be removed in tryhard lobbies; have a backup in the same role. Below 49% global WR — high-rank players often avoid unless compensating for team comp."
-    },
-    {
-      "id": "faq-lane",
-      "question": "What lane should Ao'yin play?",
-      "answer": "Ao'yin is tagged Farm Lane in Camp export (Marksman). Last-hit safely until first core item. Ping jungler for river vision; never face-check brush without minion cover."
-    },
-    {
-      "id": "faq-arcana",
-      "question": "Best arcana and spells for Ao'yin?",
-      "answer": "Recommended: Penetration arcana. Battle spell: Flash & Execute. Adjust Purify/Execute based on enemy dive and jungle need."
-    },
-    {
-      "id": "faq-vs-peer",
-      "question": "Ao'yin or Hou Yi — which is better?",
-      "answer": "Ao'yin vs Hou Yi (Marksman, Tier S+): Hou Yi is 2.9% pick / 49.3% WR. Hou Yi wins 0.9% more often globally. Choose Ao'yin when you need Farm Lane identity; choose Hou Yi for Farm Lane comfort."
-    },
-    {
-      "id": "faq-ban",
-      "question": "Should I ban Ao'yin?",
-      "answer": "Yes in tryhard queues — 5.1% ban rate. Deny if enemy first-picks Marksman."
+      "id": "faq-counter",
+      "question": "怎麼克制 敖隱？",
+      "answer": "可選 Kaizer、Dun、Arthur。敖隱 克制 Liu Bei、Athena、Zilong。"
     }
   ],
   "metaAnalysis": [
-    "Ao'yin — 48.4% WR, 1.6% pick, 5.1% ban (Camp HOK 2026-06-05).",
-    "Tier S+ Marksman · Farm Lane · difficulty Medium.",
-    "Ao'yin is a Tier S+ staple in high-elo (Diamond+) on the international server — worth mastering for climb. Ban rate 5.1% — expect Ao'yin to be removed in tryhard lobbies; have a backup in the same role. Below 49% global WR — high-rank players often avoid unless compensating for team comp.",
-    "Matchups: strong into Liu Bei, Athena, Zilong; weak into Kaizer, Dun, Arthur.",
-    "Ao'yin vs Hou Yi (Marksman, Tier S+): Hou Yi is 2.9% pick / 49.3% WR. Hou Yi wins 0.9% more often globally. Choose Ao'yin when you need Farm Lane identity; choose Hou Yi for Farm Lane comfort.",
-    "Ao'yin vs Marco Polo (Marksman, Tier S+): Marco Polo is 2.1% pick / 50.1% WR. Marco Polo wins 1.6% more often globally. Choose Ao'yin when you need Farm Lane identity; choose Marco Polo for Farm Lane comfort.",
-    "Draft tip: first-pick or ban priority in ranked."
+    "Ao'yin win rate 48.56% (Camp HOK, 2026-06-07).",
+    "Pick rate 1.47%.",
+    "Ban rate 5.33%.",
+    "Counters: Liu Bei, Athena, Zilong. Weak into: Kaizer, Dun, Arthur."
   ],
-  "builds": [
-    {
-      "id": "atkspdcritsg",
-      "label": "AtkSpd/Crit/SG",
-      "position": "Position 4",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1133",
-          "name": "Eternity Blade",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1133.jpg",
-          "description": "High crit damage"
-        },
-        {
-          "slot": 2,
-          "itemId": "1425",
-          "name": "Boots of Dexterity",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1425.jpg",
-          "description": "Boosts ASPD"
-        },
-        {
-          "slot": 3,
-          "itemId": "1136",
-          "name": "Shadow Ripper",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1136.jpg",
-          "description": "Crits boost ASPD"
-        },
-        {
-          "slot": 4,
-          "itemId": "1155",
-          "name": "Daybreaker's Virtue",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1155.jpg",
-          "description": "Great for marksmen"
-        },
-        {
-          "slot": 5,
-          "itemId": "1126",
-          "name": "Doomsday",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1126.jpg",
-          "description": "Boosts BA damage"
-        },
-        {
-          "slot": 6,
-          "itemId": "1138",
-          "name": "Overlord's Might",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1138.jpg",
-          "description": "High-damage attack"
-        }
-      ]
-    },
-    {
-      "id": "暴击流教隐",
-      "label": "暴击流教隐",
-      "position": "Position 4",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1121",
-          "name": "Storm Sword",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1121.jpg",
-          "description": "Physical Attack +75"
-        },
-        {
-          "slot": 2,
-          "itemId": "1425",
-          "name": "Boots of Dexterity",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1425.jpg",
-          "description": "Boosts ASPD"
-        },
-        {
-          "slot": 3,
-          "itemId": "1133",
-          "name": "Eternity Blade",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1133.jpg",
-          "description": "High crit damage"
-        },
-        {
-          "slot": 4,
-          "itemId": "1136",
-          "name": "Shadow Ripper",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1136.jpg",
-          "description": "Crits boost ASPD"
-        },
-        {
-          "slot": 5,
-          "itemId": "1422",
-          "name": "Boots of Resistance",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
-          "description": "Shortens CC"
-        },
-        {
-          "slot": 6,
-          "itemId": "1155",
-          "name": "Daybreaker's Virtue",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1155.jpg",
-          "description": "Great for marksmen"
-        }
-      ]
-    },
-    {
-      "id": "critical",
-      "label": "Critical",
-      "position": "Position 4",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1112",
-          "name": "Dagger",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1112.jpg",
-          "description": "Attack Speed"
-        },
-        {
-          "slot": 2,
-          "itemId": "1425",
-          "name": "Boots of Dexterity",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1425.jpg",
-          "description": "Boosts ASPD"
-        },
-        {
-          "slot": 3,
-          "itemId": "1136",
-          "name": "Shadow Ripper",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1136.jpg",
-          "description": "Crits boost ASPD"
-        },
-        {
-          "slot": 4,
-          "itemId": "1133",
-          "name": "Eternity Blade",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1133.jpg",
-          "description": "High crit damage"
-        },
-        {
-          "slot": 5,
-          "itemId": "11210",
-          "name": "Mortal Punisher",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/11210.jpg",
-          "description": "Lowers Health regen"
-        },
-        {
-          "slot": 6,
-          "itemId": "1155",
-          "name": "Daybreaker's Virtue",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1155.jpg",
-          "description": "Great for marksmen"
-        }
-      ]
-    },
-    {
-      "id": "冰脉穿透龙",
-      "label": "冰脉穿透龙",
-      "position": "Position 4",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "13310",
-          "name": "Frostscar's Embrace",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/13310.jpg",
-          "description": "Enhanced BAs slow"
-        },
-        {
-          "slot": 2,
-          "itemId": "1423",
-          "name": "Boots of Tranquility",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1423.jpg",
-          "description": "Reduces Skill CD"
-        },
-        {
-          "slot": 3,
-          "itemId": "1137",
-          "name": "Axe of Torment",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1137.jpg",
-          "description": "Anti-squishy"
-        },
-        {
-          "slot": 4,
-          "itemId": "1422",
-          "name": "Boots of Resistance",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
-          "description": "Shortens CC"
-        },
-        {
-          "slot": 5,
-          "itemId": "1138",
-          "name": "Overlord's Might",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1138.jpg",
-          "description": "High-damage attack"
-        },
-        {
-          "slot": 6,
-          "itemId": "1131",
-          "name": "Starbreaker",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1131.jpg",
-          "description": "Anti-tank"
-        }
-      ]
-    },
-    {
-      "id": "damage",
-      "label": "Damage",
-      "position": "Position 4",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1124",
-          "name": "Meteor",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1124.jpg",
-          "description": "PATK +35\nCDR +7.5%"
-        },
-        {
-          "slot": 2,
-          "itemId": "1423",
-          "name": "Boots of Tranquility",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1423.jpg",
-          "description": "Reduces Skill CD"
-        },
-        {
-          "slot": 3,
-          "itemId": "1137",
-          "name": "Axe of Torment",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1137.jpg",
-          "description": "Anti-squishy"
-        },
-        {
-          "slot": 4,
-          "itemId": "1133",
-          "name": "Eternity Blade",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1133.jpg",
-          "description": "High crit damage"
-        },
-        {
-          "slot": 5,
-          "itemId": "1134",
-          "name": "Master Sword",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1134.jpg",
-          "description": "Enhances BA"
-        },
-        {
-          "slot": 6,
-          "itemId": "1111",
-          "name": "Iron Sword",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1111.jpg",
-          "description": "PATK +20"
-        }
-      ]
-    },
-    {
-      "id": "dmpoke",
-      "label": "DMPoke",
-      "position": "Position 4",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1423",
-          "name": "Boots of Tranquility",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1423.jpg",
-          "description": "Reduces Skill CD"
-        },
-        {
-          "slot": 2,
-          "itemId": "1124",
-          "name": "Meteor",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1124.jpg",
-          "description": "PATK +35\nCDR +7.5%"
-        },
-        {
-          "slot": 3,
-          "itemId": "1133",
-          "name": "Eternity Blade",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1133.jpg",
-          "description": "High crit damage"
-        },
-        {
-          "slot": 4,
-          "itemId": "1137",
-          "name": "Axe of Torment",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1137.jpg",
-          "description": "Anti-squishy"
-        },
-        {
-          "slot": 5,
-          "itemId": "1134",
-          "name": "Master Sword",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1134.jpg",
-          "description": "Enhances BA"
-        },
-        {
-          "slot": 6,
-          "itemId": "1155",
-          "name": "Daybreaker's Virtue",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1155.jpg",
-          "description": "Great for marksmen"
-        }
-      ]
-    },
-    {
-      "id": "damage",
-      "label": "Damage",
-      "position": "Position 4",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1121",
-          "name": "Storm Sword",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1121.jpg",
-          "description": "Physical Attack +75"
-        },
-        {
-          "slot": 2,
-          "itemId": "1111",
-          "name": "Iron Sword",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1111.jpg",
-          "description": "PATK +20"
-        },
-        {
-          "slot": 3,
-          "itemId": "1133",
-          "name": "Eternity Blade",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1133.jpg",
-          "description": "High crit damage"
-        },
-        {
-          "slot": 4,
-          "itemId": "1425",
-          "name": "Boots of Dexterity",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1425.jpg",
-          "description": "Boosts ASPD"
-        },
-        {
-          "slot": 5,
-          "itemId": "1116",
-          "name": "Thunderclap Brand",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1116.jpg",
-          "description": "PATK +35, Crit Rate +12%"
-        },
-        {
-          "slot": 6,
-          "itemId": "1136",
-          "name": "Shadow Ripper",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1136.jpg",
-          "description": "Crits boost ASPD"
-        }
-      ]
-    },
-    {
-      "id": "rocklee",
-      "label": "RockLee",
-      "position": "Position 4",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1425",
-          "name": "Boots of Dexterity",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1425.jpg",
-          "description": "Boosts ASPD"
-        },
-        {
-          "slot": 2,
-          "itemId": "1133",
-          "name": "Eternity Blade",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1133.jpg",
-          "description": "High crit damage"
-        },
-        {
-          "slot": 3,
-          "itemId": "1155",
-          "name": "Daybreaker's Virtue",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1155.jpg",
-          "description": "Great for marksmen"
-        },
-        {
-          "slot": 4,
-          "itemId": "1137",
-          "name": "Axe of Torment",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1137.jpg",
-          "description": "Anti-squishy"
-        },
-        {
-          "slot": 5,
-          "itemId": "1136",
-          "name": "Shadow Ripper",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1136.jpg",
-          "description": "Crits boost ASPD"
-        },
-        {
-          "slot": 6,
-          "itemId": "1138",
-          "name": "Overlord's Might",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1138.jpg",
-          "description": "High-damage attack"
-        }
-      ]
-    },
-    {
-      "id": "on-hit",
-      "label": "on hit",
-      "position": "Position 4",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1133",
-          "name": "Eternity Blade",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1133.jpg",
-          "description": "High crit damage"
-        },
-        {
-          "slot": 2,
-          "itemId": "1423",
-          "name": "Boots of Tranquility",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1423.jpg",
-          "description": "Reduces Skill CD"
-        },
-        {
-          "slot": 3,
-          "itemId": "1155",
-          "name": "Daybreaker's Virtue",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1155.jpg",
-          "description": "Great for marksmen"
-        },
-        {
-          "slot": 4,
-          "itemId": "1136",
-          "name": "Shadow Ripper",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1136.jpg",
-          "description": "Crits boost ASPD"
-        },
-        {
-          "slot": 5,
-          "itemId": "1126",
-          "name": "Doomsday",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1126.jpg",
-          "description": "Boosts BA damage"
-        },
-        {
-          "slot": 6,
-          "itemId": "1138",
-          "name": "Overlord's Might",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1138.jpg",
-          "description": "High-damage attack"
-        }
-      ]
-    }
+  "metaAnalysisZh": [
+    "敖隱 勝率 48.56%（Camp HOK，2026-06-07）",
+    "選取率 1.47%",
+    "禁用率 5.33%",
+    "克制：Liu Bei、Athena、Zilong；被克制：Kaizer、Dun、Arthur"
   ],
   "guide": {
     "overview": "Ao'yin is a Medium Marksman (Farm Lane) on Honor of Kings Global. Camp HOK ranks them Tier S+ with 48.4% win rate and 1.6% pick rate as of 2026-06-05.",

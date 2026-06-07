@@ -1,12 +1,31 @@
-import {
-  heroes,
-  getHeroesByRole,
-  formatRate,
-  getMostPickedHeroes,
-  getMostBannedHeroes,
-  getRecentMetaChanges,
-} from '@/lib/data';
 import type { Hero, HeroRole } from '@/types/hero';
+import type { Locale } from '@/lib/i18n';
+import {
+  assassins,
+  byLane,
+  clashWarriors,
+  counterLineEn,
+  DATA_SYNC,
+  farmMarksmen,
+  GLOBAL_VS_CN_EN,
+  heroes,
+  jungleAssassins,
+  marksmen,
+  mostBanned,
+  mostPicked,
+  namesEn,
+  recentPatches,
+  roamSupports,
+  sortByPickRate,
+  sortByWinRate,
+  statHeroEn,
+  statListEn,
+  supports,
+  tanks,
+  topByRole,
+  topWR,
+} from '@/lib/learn-stats';
+import { learnArticlesZh, learnDataNoteZh } from '@/lib/learn-zh';
 
 export interface LearnArticle {
   slug: string;
@@ -16,80 +35,8 @@ export interface LearnArticle {
   sections: { heading: string; body: string }[];
 }
 
-const DATA_SYNC = heroes[0]?.dataUpdated ?? 'latest Camp HOK pull';
-
-const GLOBAL_VS_CN =
-  `Stats from Camp HOK international ranked (synced ${DATA_SYNC}), cross-checked against HoKStats.gg builds and counters. ` +
-  '国服 (王者荣耀) runs on a faster patch cycle with a larger hero pool and different ban culture — use CN guides for mechanics and combos, but draft off global win/pick/ban numbers on this site.';
-
-function sortByWinRate(list: Hero[]) {
-  return [...list]
-    .filter((h) => h.winRate !== null)
-    .sort((a, b) => (b.winRate ?? 0) - (a.winRate ?? 0));
-}
-
-function sortByPickRate(list: Hero[]) {
-  return [...list]
-    .filter((h) => h.pickRate !== null)
-    .sort((a, b) => (b.pickRate ?? 0) - (a.pickRate ?? 0));
-}
-
-function byLane(lane: string, role?: HeroRole) {
-  let list = heroes.filter(
-    (h) => (h.lane ?? '').toLowerCase() === lane.toLowerCase()
-  );
-  if (role) list = list.filter((h) => h.role === role);
-  return list;
-}
-
-function topByRole(role: HeroRole, n = 5, sort: 'wr' | 'pick' = 'wr') {
-  const list = getHeroesByRole(role).filter((h) => h.winRate !== null);
-  return (sort === 'pick' ? sortByPickRate(list) : sortByWinRate(list)).slice(
-    0,
-    n
-  );
-}
-
-function statHero(h: Hero): string {
-  return `${h.name} — ${formatRate(h.winRate)} WR, ${formatRate(h.pickRate)} pick, Tier ${h.tier}`;
-}
-
-function statList(list: Hero[]): string {
-  return list.map(statHero).join('; ');
-}
-
-function names(list: { name: string }[]) {
-  return list.map((h) => h.name).join(', ');
-}
-
-function counterLine(h: Hero): string {
-  const into = h.counteredBy.filter((c) => c !== 'Data unavailable');
-  return into.length
-    ? `${h.name} → answered by ${into.slice(0, 3).join(', ')}`
-    : `${h.name} → see /hero/${h.slug}/ for matchup notes`;
-}
-
-const topWR = sortByWinRate(heroes).slice(0, 10);
-const mostPicked = getMostPickedHeroes(8);
-const mostBanned = getMostBannedHeroes(6);
-const jungleAssassins = sortByPickRate(byLane('Jungling', 'Assassin')).slice(
-  0,
-  5
-);
-const roamSupports = sortByPickRate(byLane('Roaming', 'Support')).slice(0, 4);
-const clashWarriors = sortByWinRate(byLane('Clash Lane', 'Warrior')).slice(0, 4);
-const farmMarksmen = sortByPickRate(byLane('Farm Lane', 'Marksman')).slice(
-  0,
-  5
-);
-const marksmen = topByRole('Marksman', 5);
-const supports = topByRole('Support', 4, 'pick');
-const tanks = topByRole('Tank', 4);
-const assassins = topByRole('Assassin', 5, 'pick');
-const recentPatches = getRecentMetaChanges(12);
-
 export const learnDataSync = DATA_SYNC;
-export const learnDataNote = GLOBAL_VS_CN;
+export const learnDataNote = GLOBAL_VS_CN_EN;
 
 export const learnArticles: LearnArticle[] = [
   {
@@ -101,19 +48,19 @@ export const learnArticles: LearnArticle[] = [
     sections: [
       {
         heading: 'Data snapshot (international server)',
-        body: GLOBAL_VS_CN,
+        body: GLOBAL_VS_CN_EN,
       },
       {
         heading: 'Highest win-rate anchors right now',
-        body: `Current top WR heroes in our Camp export: ${statList(topWR.slice(0, 6))}. In 5-stack, pick one win condition from this list and build peel around it — five unrelated comfort picks bleed LP even when individual WR looks fine.`,
+        body: `Current top WR heroes in our Camp export: ${statListEn(topWR.slice(0, 6))}. In 5-stack, pick one win condition from this list and build peel around it — five unrelated comfort picks bleed LP even when individual WR looks fine.`,
       },
       {
         heading: 'Role template that wins on global',
-        body: `Tank front (${statList(tanks.slice(0, 2))}) starts fights. Roam support (${statList(supports.slice(0, 2))}) enables picks and peel. Farm marksman (${statList(marksmen.slice(0, 2))}) scales. Jungling assassin (${statList(jungleAssassins.slice(0, 2))}) sets tempo. Mid mage fills burst or zone. CN pro drafts often double roam or swap mage for extra fighter — viable globally only if your stack commits to vision and Tyrant timers.`,
+        body: `Tank front (${statListEn(tanks.slice(0, 2))}) starts fights. Roam support (${statListEn(supports.slice(0, 2))}) enables picks and peel. Farm marksman (${statListEn(marksmen.slice(0, 2))}) scales. Jungling assassin (${statListEn(jungleAssassins.slice(0, 2))}) sets tempo. Mid mage fills burst or zone. CN pro drafts often double roam or swap mage for extra fighter — viable globally only if your stack commits to vision and Tyrant timers.`,
       },
       {
         heading: 'Draft rule from the numbers',
-        body: `Most-picked heroes this sync: ${statList(mostPicked.slice(0, 5))}. If two tanks with low waveclear are already locked, swap one for a mage or marksman. Camp data shows drafts without a scaling damage source past 12 minutes bleed win rate even with early leads.`,
+        body: `Most-picked heroes this sync: ${statListEn(mostPicked.slice(0, 5))}. If two tanks with low waveclear are already locked, swap one for a mage or marksman. Camp data shows drafts without a scaling damage source past 12 minutes bleed win rate even with early leads.`,
       },
     ],
   },
@@ -133,7 +80,7 @@ export const learnArticles: LearnArticle[] = [
       },
       {
         heading: 'Heroes that fit (Jungling + Roaming data)',
-        body: `Tempo junglers by intl pick rate: ${statList(jungleAssassins)}. Roam supports with reliable CC: ${statList(roamSupports)}. Clash lane bruisers for early trades: ${statList(clashWarriors)}. Skip full piggyback marksman drafts unless you already have a gold lead at 8 minutes.`,
+        body: `Tempo junglers by intl pick rate: ${statListEn(jungleAssassins)}. Roam supports with reliable CC: ${statListEn(roamSupports)}. Clash lane bruisers for early trades: ${statListEn(clashWarriors)}. Skip full piggyback marksman drafts unless you already have a gold lead at 8 minutes.`,
       },
       {
         heading: 'Shot-calling checklist',
@@ -145,7 +92,7 @@ export const learnArticles: LearnArticle[] = [
       },
       {
         heading: 'Global vs 国服 note',
-        body: GLOBAL_VS_CN,
+        body: GLOBAL_VS_CN_EN,
       },
     ],
   },
@@ -164,7 +111,7 @@ export const learnArticles: LearnArticle[] = [
       },
       {
         heading: 'Best carries (Farm Lane, international data)',
-        body: `Top farm marksmen by pick + WR: ${statList(farmMarksmen)}. Pair with peel supports like ${names(supports)} and a jungler who contests vision instead of chasing kills. On CN, marksmen like Hou Yi or Da Ji variants dominate piggyback clips — on global, trust the Farm Lane pick rates above before copying a CN VOD.`,
+        body: `Top farm marksmen by pick + WR: ${statListEn(farmMarksmen)}. Pair with peel supports like ${namesEn(supports)} and a jungler who contests vision instead of chasing kills. On CN, marksmen like Hou Yi or Da Ji variants dominate piggyback clips — on global, trust the Farm Lane pick rates above before copying a CN VOD.`,
       },
       {
         heading: 'How to form fast',
@@ -177,7 +124,7 @@ export const learnArticles: LearnArticle[] = [
       },
       {
         heading: 'When to abandon piggyback',
-        body: `If enemy drafts assassin dive (${names(assassins.slice(0, 3))}) or your carry is two core items behind at 14 minutes, pivot to split push with a side-lane fighter. Check each marksman build page on hokmeta for arcana and spell choices synced from HoKStats.`,
+        body: `If enemy drafts assassin dive (${namesEn(assassins.slice(0, 3))}) or your carry is two core items behind at 14 minutes, pivot to split push with a side-lane fighter. Check each marksman build page on hokmeta for arcana and spell choices synced from HoKStats.`,
       },
     ],
   },
@@ -190,13 +137,13 @@ export const learnArticles: LearnArticle[] = [
     sections: [
       {
         heading: 'Top Jungling picks (lane-filtered)',
-        body: `Assassins actually tagged Jungling in Camp export: ${statList(jungleAssassins)}. Warrior junglers: ${statList(sortByPickRate(byLane('Jungling', 'Warrior')).slice(0, 4))}. Pick tempo (Ying, Zilong, Han Xin) when lanes have push; pick scaling (Liu Bei, Augran) when enemy jungler is early-pressure.`,
+        body: `Assassins actually tagged Jungling in Camp export: ${statListEn(jungleAssassins)}. Warrior junglers: ${statListEn(sortByPickRate(byLane('Jungling', 'Warrior')).slice(0, 4))}. Pick tempo (Ying, Zilong, Han Xin) when lanes have push; pick scaling (Liu Bei, Augran) when enemy jungler is early-pressure.`,
       },
       {
         heading: 'Ban priority',
         body:
           mostBanned.length > 0
-            ? `Highest ban pressure in our dataset: ${statList(mostBanned)}. CN junglers like Jing or Lan are permabanned in 国服 clips — global ban rates differ; trust the table above for intl draft.`
+            ? `Highest ban pressure in our dataset: ${statListEn(mostBanned)}. CN junglers like Jing or Lan are permabanned in 国服 clips — global ban rates differ; trust the table above for intl draft.`
             : 'See individual hero pages for live ban rates after each sync.',
       },
       {
@@ -220,12 +167,12 @@ export const learnArticles: LearnArticle[] = [
             .filter((h) => h.tier === 'S+' || h.tier === 'S')
             .sort((a, b) => (b.winRate ?? 0) - (a.winRate ?? 0))
             .slice(0, 12)
-            .map((h) => statHero(h))
+            .map((h) => statHeroEn(h))
             .join('. ') || 'Data unavailable',
       },
       {
         heading: 'Pick logic',
-        body: `Solo queue rewards heroes who secure objectives alone: split push (Li Xin, Lu Bu), pick threat (${names(assassins.slice(0, 3))}), or self-peel marksmen (${names(marksmen.slice(0, 3))}). One-trick a 52%+ WR hero in your main lane before expanding pool. ${GLOBAL_VS_CN}`,
+        body: `Solo queue rewards heroes who secure objectives alone: split push (Li Xin, Lu Bu), pick threat (${namesEn(assassins.slice(0, 3))}), or self-peel marksmen (${namesEn(marksmen.slice(0, 3))}). One-trick a 52%+ WR hero in your main lane before expanding pool. ${GLOBAL_VS_CN_EN}`,
       },
     ],
   },
@@ -243,7 +190,7 @@ export const learnArticles: LearnArticle[] = [
             .filter((h) => h.difficulty === 'Easy')
             .sort((a, b) => (b.winRate ?? 0) - (a.winRate ?? 0))
             .slice(0, 10)
-            .map((h) => `${h.name} — ${h.role}, ${h.lane ?? 'flex'}, ${formatRate(h.winRate)} WR, Tier ${h.tier}`)
+            .map((h) => `${h.name} — ${h.role}, ${h.lane ?? 'flex'}, ${h.winRate != null ? `${h.winRate.toFixed(1)}%` : '—'} WR, Tier ${h.tier}`)
             .join(' · ') || 'Data unavailable',
       },
       {
@@ -262,7 +209,7 @@ export const learnArticles: LearnArticle[] = [
     sections: [
       {
         heading: 'Draft with data, not memory',
-        body: `Queue with Tier S+ / S heroes in your main role: ${names(heroes.filter((h) => h.tier === 'S+' || h.tier === 'S').slice(0, 10))}. One-trick a hero above 52% WR before expanding. Re-check after each \`npm run sync-global\` — CN patch VODs lag weeks behind international balance.`,
+        body: `Queue with Tier S+ / S heroes in your main role: ${namesEn(heroes.filter((h) => h.tier === 'S+' || h.tier === 'S').slice(0, 10))}. One-trick a hero above 52% WR before expanding. Re-check after each \`npm run sync-global\` — CN patch VODs lag weeks behind international balance.`,
       },
       {
         heading: 'Five habits',
@@ -284,11 +231,11 @@ export const learnArticles: LearnArticle[] = [
     sections: [
       {
         heading: 'Threat list (high pick junglers)',
-        body: `Meta assassins by pick rate: ${statList(assassins)}.`,
+        body: `Meta assassins by pick rate: ${statListEn(assassins)}.`,
       },
       {
         heading: 'Counter picks from our data',
-        body: assassins.slice(0, 5).map(counterLine).join('. '),
+        body: assassins.slice(0, 5).map(counterLineEn).join('. '),
       },
       {
         heading: 'Item and spell tips',
@@ -306,11 +253,11 @@ export const learnArticles: LearnArticle[] = [
     sections: [
       {
         heading: 'Anti-tank carries (Marksman + Mage WR)',
-        body: `${statList(topByRole('Marksman', 5))}. Mages with sustained poke: ${statList(topByRole('Mage', 4))}.`,
+        body: `${statListEn(topByRole('Marksman', 5))}. Mages with sustained poke: ${statListEn(topByRole('Mage', 4))}.`,
       },
       {
         heading: 'Tank weaknesses on record',
-        body: tanks.slice(0, 5).map(counterLine).join('. '),
+        body: tanks.slice(0, 5).map(counterLineEn).join('. '),
       },
       {
         heading: 'Macro answer',
@@ -328,7 +275,7 @@ export const learnArticles: LearnArticle[] = [
     sections: [
       {
         heading: 'Hero pool (Camp Jungling tag)',
-        body: `${statList(jungleAssassins)}; ${statList(sortByPickRate(byLane('Jungling', 'Warrior')).slice(0, 3))}.`,
+        body: `${statListEn(jungleAssassins)}; ${statListEn(sortByPickRate(byLane('Jungling', 'Warrior')).slice(0, 3))}.`,
       },
       {
         heading: 'First clear rule',
@@ -351,7 +298,7 @@ export const learnArticles: LearnArticle[] = [
     sections: [
       {
         heading: 'Support meta (Roaming lane tag)',
-        body: statList(roamSupports),
+        body: statListEn(roamSupports),
       },
       {
         heading: 'Roam windows',
@@ -379,7 +326,7 @@ export const learnArticles: LearnArticle[] = [
       },
       {
         heading: 'Not a 国服 tier list',
-        body: GLOBAL_VS_CN,
+        body: GLOBAL_VS_CN_EN,
       },
     ],
   },
@@ -408,12 +355,16 @@ export const learnArticles: LearnArticle[] = [
   },
 ];
 
-export function getLearnArticles() {
-  return learnArticles;
+export function getLearnDataNote(locale: Locale = 'en'): string {
+  return locale === 'zh-TW' ? learnDataNoteZh : learnDataNote;
 }
 
-export function getLearnArticle(slug: string) {
-  return learnArticles.find((a) => a.slug === slug);
+export function getLearnArticles(locale: Locale = 'en') {
+  return locale === 'zh-TW' ? learnArticlesZh : learnArticles;
+}
+
+export function getLearnArticle(slug: string, locale: Locale = 'en') {
+  return getLearnArticles(locale).find((a) => a.slug === slug);
 }
 
 export function getLearnSlugs() {

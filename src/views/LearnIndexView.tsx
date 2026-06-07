@@ -1,4 +1,4 @@
-import { getLearnArticles as learnArticles } from '@/lib/learn';
+import { getLearnArticles } from '@/lib/learn';
 import { absoluteUrl } from '@/lib/seo';
 import { createT, localePath, type Locale } from '@/lib/i18n';
 import { LearnCard } from '@/components/LearnCard';
@@ -7,7 +7,7 @@ import { JsonLd, breadcrumbSchema, itemListSchema } from '@/lib/schema';
 
 export function LearnIndexView({ locale = 'en' }: { locale?: Locale }) {
   const t = createT(locale);
-  const articles = learnArticles();
+  const articles = getLearnArticles(locale);
 
   return (
     <div className="container-page">

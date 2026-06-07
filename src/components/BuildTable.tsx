@@ -3,6 +3,7 @@ import { getItemById } from '@/lib/data';
 import { getHeroPlaybook } from '@/lib/hero-playbook';
 import type { Hero } from '@/types/hero';
 import { createT, type Locale } from '@/lib/i18n';
+import { translateItemName } from '@/lib/locale-names';
 
 function formatGold(gold: number | null | undefined): string {
   if (gold == null) return '—';
@@ -75,7 +76,9 @@ export function BuildTable({
                         loading="lazy"
                       />
                     )}
-                    <span className="font-medium text-white">{item.name}</span>
+                    <span className="font-medium text-white">
+                      {translateItemName(item.name, locale, item.itemId)}
+                    </span>
                   </div>
                 </td>
                 <td className="px-3 py-2.5 text-gray-400">{formatGold(gold)}</td>

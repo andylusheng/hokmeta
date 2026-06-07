@@ -2,99 +2,583 @@
   "id": "di-renjie",
   "slug": "di-renjie",
   "name": "Di Renjie",
+  "nameZh": "狄仁傑",
   "role": "Marksman",
   "roles": "Marksman",
+  "rolesZh": "射手",
   "lane": "Farm Lane",
+  "laneZh": "發育路",
   "difficulty": "Medium",
   "tier": "A",
-  "winRate": 51.7,
-  "pickRate": 0.79,
+  "winRate": 51.25,
+  "pickRate": 0.77,
   "banRate": 0.02,
-  "rank": 32,
+  "rank": 41,
   "avatar": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/XTSDAJkR.png",
   "avatarFallback": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/133/133.jpg",
+  "heroCover": "https://camp.honorofkings.com/social/game/src/image_hero_cover_1275*718/CMTE7Qgq.jpg",
   "tencentId": 133,
-  "dataSource": "Camp HOK + HoKStats.gg (intl)",
-  "dataUpdated": "2026-06-05",
+  "dataSource": "Camp HOK bilingual (primary)",
+  "dataUpdated": "2026-06-07",
   "skills": [
     {
       "slot": "passive",
       "name": "Swift Justice",
-      "description": "Basic atacks add stacks,with each stack granting extra atack speed and movement speed.",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/133/13300.png",
-      "cooldown": null
+      "description": "Each Basic Attack stacks Swift Justice (up to 5 stacks), with each stack increasing his Attack Speed and Movement Speed.",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/13300.png",
+      "cooldown": "1s"
     },
     {
       "slot": "skill1",
       "name": "Respect the Law",
-      "description": "Flings tokens at a target area in a fan shape,dealing damage.Pasive&gt; After 2 basic atacks,the next gains a random enhancement",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/133/13310.png",
-      "cooldown": null
+      "description": "Throws tokens in a cone-shaped area, dealing physical damage and magical damage.\nPassive: After every two Basic Attacks, the next Basic Attack gains a random enhanced effect.",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/13310.png",
+      "cooldown": "8s"
     },
     {
       "slot": "skill2",
       "name": "Legal Immunity",
-      "description": "Throws tokens to damage nearby enemies.Remove debuffs from yourself and grants brief invincibility",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/133/13320.png",
-      "cooldown": null
+      "description": "Throws tokens to damage nearby enemies. Removes debuffs from himself and gains brief invincibility.",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/13320.png",
+      "cooldown": "15s"
     },
     {
       "slot": "ultimate",
       "name": "Imperial Order",
-      "description": "Flings a token in the target direction , inflicting damage and stun on the first enemy hero hit and reducing their physical and magical defense",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/133/13330.png",
-      "cooldown": null
+      "description": "Throws a token in the target direction, damaging, stunning, and reducing the Physical and Magical Defense of the first enemy hero hit.",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/13330.png",
+      "cooldown": "24s"
+    }
+  ],
+  "skillsZh": [
+    {
+      "slot": "passive",
+      "name": "迅捷",
+      "description": "每次普攻為自己疊層(最多5層)，每層獲得額外攻速和移動速度提升。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/13300.png",
+      "cooldown": "1s"
+    },
+    {
+      "slot": "skill1",
+      "name": "六令追凶",
+      "description": "向指定扇形區域發射令牌，對敵人造成物理傷害和法術傷害。\n被動：每兩次普攻後，下次普攻獲得隨機強化效果。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/13310.png",
+      "cooldown": "8s"
+    },
+    {
+      "slot": "skill2",
+      "name": "公理庇佑",
+      "description": "向周圍擲出令牌，對敵人造成傷害，同時解除自身負面效果並短暫無敵。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/13320.png",
+      "cooldown": "15s"
+    },
+    {
+      "slot": "ultimate",
+      "name": "王朝密令",
+      "description": "朝指定方向發射令牌，對命中的第一個敵方英雄造成傷害和暈眩效果，並降低其物理防禦和法術防禦。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/13330.png",
+      "cooldown": "24s"
     }
   ],
   "build": [
     {
       "slot": 1,
-      "itemId": "1126",
-      "name": "Doomsday",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1126.jpg",
-      "description": "Boosts BA damage"
+      "itemId": "1425",
+      "name": "Boots of Dexterity",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1425.png",
+      "description": "ASPD +20%, MSPD +50\nBAs restore HP"
     },
     {
       "slot": 2,
-      "itemId": "1425",
-      "name": "Boots of Dexterity",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1425.jpg",
-      "description": "Boosts ASPD"
+      "itemId": "1135",
+      "name": "Sparkforged Dagger",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1135.png",
+      "description": "PATK +40, ASPD +35%, MSPD +7.5%\nChain lightning BA"
     },
     {
       "slot": 3,
-      "itemId": "1133",
-      "name": "Eternity Blade",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1133.jpg",
-      "description": "High crit damage"
+      "itemId": "1126",
+      "name": "Doomsday",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1126.png",
+      "description": "PATK +40, ASPD +20%, HP +500, Lifesteal +20%\nBoosts BA damage"
     },
     {
       "slot": 4,
-      "itemId": "1155",
-      "name": "Daybreaker's Virtue",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1155.jpg",
-      "description": "Great for marksmen"
+      "itemId": "1128",
+      "name": "Deepfrost Siege",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1128.png",
+      "description": "PATK +70, ASPD +25%, HP +750\nBAs slow"
     },
     {
       "slot": 5,
-      "itemId": "1333",
-      "name": "Ominous Premonition",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1333.jpg",
-      "description": "Slows attackers"
+      "itemId": "1328",
+      "name": "Blood Rage",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1328.png",
+      "description": "PATK +75, HP +900\nTrades HP for shield"
     },
     {
       "slot": 6,
-      "itemId": "1347",
-      "name": "Longnight Guardian",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1347.jpg",
-      "description": "Resists burst damage"
+      "itemId": "1127",
+      "name": "Destiny",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+      "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
+    }
+  ],
+  "buildZh": [
+    {
+      "slot": 1,
+      "itemId": "1425",
+      "name": "急速戰靴",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1425.png",
+      "description": "+20%攻速+50點移速\n普攻回復生命值"
+    },
+    {
+      "slot": 2,
+      "itemId": "1135",
+      "name": "閃電匕首",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1135.png",
+      "description": "+40點攻擊+35%攻速+7.5%移速\n普攻附帶閃電"
+    },
+    {
+      "slot": 3,
+      "itemId": "1126",
+      "name": "末世",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1126.png",
+      "description": "+40點攻擊+20%攻速+500點生命值+20%吸血\n普攻額外傷害"
+    },
+    {
+      "slot": 4,
+      "itemId": "1128",
+      "name": "寒霜襲侵",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1128.png",
+      "description": "+70點攻擊+25%攻速+750點生命值\n普攻減移速"
+    },
+    {
+      "slot": 5,
+      "itemId": "1328",
+      "name": "血魔之怒",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1328.png",
+      "description": "+75點攻擊+900點生命值 \n犧牲生命值換取護盾值"
+    },
+    {
+      "slot": 6,
+      "itemId": "1127",
+      "name": "名刀・司命",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+      "description": "+75點攻擊+15%攻速+500點生命值\n保命"
+    }
+  ],
+  "builds": [
+    {
+      "id": "camp-0",
+      "label": "zoom",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1425",
+          "name": "Boots of Dexterity",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1425.png",
+          "description": "ASPD +20%, MSPD +50\nBAs restore HP"
+        },
+        {
+          "slot": 2,
+          "itemId": "1135",
+          "name": "Sparkforged Dagger",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1135.png",
+          "description": "PATK +40, ASPD +35%, MSPD +7.5%\nChain lightning BA"
+        },
+        {
+          "slot": 3,
+          "itemId": "1126",
+          "name": "Doomsday",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1126.png",
+          "description": "PATK +40, ASPD +20%, HP +500, Lifesteal +20%\nBoosts BA damage"
+        },
+        {
+          "slot": 4,
+          "itemId": "1128",
+          "name": "Deepfrost Siege",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1128.png",
+          "description": "PATK +70, ASPD +25%, HP +750\nBAs slow"
+        },
+        {
+          "slot": 5,
+          "itemId": "1328",
+          "name": "Blood Rage",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1328.png",
+          "description": "PATK +75, HP +900\nTrades HP for shield"
+        },
+        {
+          "slot": 6,
+          "itemId": "1127",
+          "name": "Destiny",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
+        }
+      ]
+    },
+    {
+      "id": "camp-1",
+      "label": "Mixed comp",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1425",
+          "name": "Boots of Dexterity",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1425.png",
+          "description": "ASPD +20%, MSPD +50\nBAs restore HP"
+        },
+        {
+          "slot": 2,
+          "itemId": "1135",
+          "name": "Sparkforged Dagger",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1135.png",
+          "description": "PATK +40, ASPD +35%, MSPD +7.5%\nChain lightning BA"
+        },
+        {
+          "slot": 3,
+          "itemId": "1136",
+          "name": "Shadow Ripper",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1136.png",
+          "description": "PATK +45, ASPD +35%, Crit Rate +20%, MSPD +7.5%\nCrits boosts ASPD"
+        },
+        {
+          "slot": 4,
+          "itemId": "1126",
+          "name": "Doomsday",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1126.png",
+          "description": "PATK +40, ASPD +20%, HP +500, Lifesteal +20%\nBoosts BA damage"
+        },
+        {
+          "slot": 5,
+          "itemId": "1133",
+          "name": "Eternity Blade",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1133.png",
+          "description": "PATK +120, Crit Rate +20%\nHigh crit damage"
+        },
+        {
+          "slot": 6,
+          "itemId": "1155",
+          "name": "Daybreaker's Virtue",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1155.png",
+          "description": "PATK +75, ASPD +30%, Crit Rate +15%\nGreat for marksmen"
+        }
+      ]
+    },
+    {
+      "id": "camp-2",
+      "label": "Farm Lane 1",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1421",
+          "name": "Boots of Fortitude",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1421.png",
+          "description": "PDEF +100, MDEF +50, MSPD +50\nReduces physical damage"
+        },
+        {
+          "slot": 2,
+          "itemId": "1135",
+          "name": "Sparkforged Dagger",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1135.png",
+          "description": "PATK +40, ASPD +35%, MSPD +7.5%\nChain lightning BA"
+        },
+        {
+          "slot": 3,
+          "itemId": "1126",
+          "name": "Doomsday",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1126.png",
+          "description": "PATK +40, ASPD +20%, HP +500, Lifesteal +20%\nBoosts BA damage"
+        },
+        {
+          "slot": 4,
+          "itemId": "1338",
+          "name": "Cuirass of Savagery",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1338.png",
+          "description": "PATK +35, PDEF +210, HP +900\nOffense & defense"
+        },
+        {
+          "slot": 5,
+          "itemId": "1159",
+          "name": "Tempest",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1159.png",
+          "description": "PATK +50, ASPD +30%, Max HP +600\nBoosts BA damage"
+        },
+        {
+          "slot": 6,
+          "itemId": "1335",
+          "name": "Succubus Cloak",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
+          "description": "MDEF +300, HP +1,100\nNegates magical damage"
+        }
+      ]
+    },
+    {
+      "id": "camp-3",
+      "label": "Farm Lane 1",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1135",
+          "name": "Sparkforged Dagger",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1135.png",
+          "description": "PATK +40, ASPD +35%, MSPD +7.5%\nChain lightning BA"
+        },
+        {
+          "slot": 2,
+          "itemId": "1128",
+          "name": "Deepfrost Siege",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1128.png",
+          "description": "PATK +70, ASPD +25%, HP +750\nBAs slow"
+        },
+        {
+          "slot": 3,
+          "itemId": "1141",
+          "name": "Sunchaser",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1141.png",
+          "description": "PATK +40, ASPD +20%, Crit Rate +15%, MSPD +7.5%\nBoosts attack range"
+        },
+        {
+          "slot": 4,
+          "itemId": "1155",
+          "name": "Daybreaker's Virtue",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1155.png",
+          "description": "PATK +75, ASPD +30%, Crit Rate +15%\nGreat for marksmen"
+        },
+        {
+          "slot": 5,
+          "itemId": "1337",
+          "name": "Sage's Sanctuary",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
+        },
+        {
+          "slot": 6,
+          "itemId": "1127",
+          "name": "Destiny",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
+        }
+      ]
+    }
+  ],
+  "buildsZh": [
+    {
+      "id": "camp-0",
+      "label": "zoom",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1425",
+          "name": "急速戰靴",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1425.png",
+          "description": "+20%攻速+50點移速\n普攻回復生命值"
+        },
+        {
+          "slot": 2,
+          "itemId": "1135",
+          "name": "閃電匕首",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1135.png",
+          "description": "+40點攻擊+35%攻速+7.5%移速\n普攻附帶閃電"
+        },
+        {
+          "slot": 3,
+          "itemId": "1126",
+          "name": "末世",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1126.png",
+          "description": "+40點攻擊+20%攻速+500點生命值+20%吸血\n普攻額外傷害"
+        },
+        {
+          "slot": 4,
+          "itemId": "1128",
+          "name": "寒霜襲侵",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1128.png",
+          "description": "+70點攻擊+25%攻速+750點生命值\n普攻減移速"
+        },
+        {
+          "slot": 5,
+          "itemId": "1328",
+          "name": "血魔之怒",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1328.png",
+          "description": "+75點攻擊+900點生命值 \n犧牲生命值換取護盾值"
+        },
+        {
+          "slot": 6,
+          "itemId": "1127",
+          "name": "名刀・司命",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "+75點攻擊+15%攻速+500點生命值\n保命"
+        }
+      ]
+    },
+    {
+      "id": "camp-1",
+      "label": "Mixed comp",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1425",
+          "name": "急速戰靴",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1425.png",
+          "description": "+20%攻速+50點移速\n普攻回復生命值"
+        },
+        {
+          "slot": 2,
+          "itemId": "1135",
+          "name": "閃電匕首",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1135.png",
+          "description": "+40點攻擊+35%攻速+7.5%移速\n普攻附帶閃電"
+        },
+        {
+          "slot": 3,
+          "itemId": "1136",
+          "name": "影刃",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1136.png",
+          "description": "+45點攻擊 +35%攻速+20%暴擊+7.5%移速\n暴擊增加攻速"
+        },
+        {
+          "slot": 4,
+          "itemId": "1126",
+          "name": "末世",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1126.png",
+          "description": "+40點攻擊+20%攻速+500點生命值+20%吸血\n普攻額外傷害"
+        },
+        {
+          "slot": 5,
+          "itemId": "1133",
+          "name": "無盡戰刃",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1133.png",
+          "description": "+120點攻擊+20%暴擊\n高額暴擊傷害"
+        },
+        {
+          "slot": 6,
+          "itemId": "1155",
+          "name": "仁者破曉",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1155.png",
+          "description": "+75點攻擊+30%攻速+15%暴擊\n射手神裝"
+        }
+      ]
+    },
+    {
+      "id": "camp-2",
+      "label": "Farm Lane 1",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1421",
+          "name": "影忍之足",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1421.png",
+          "description": "+100點物防+50點法防+50點移速\n減少物理傷害"
+        },
+        {
+          "slot": 2,
+          "itemId": "1135",
+          "name": "閃電匕首",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1135.png",
+          "description": "+40點攻擊+35%攻速+7.5%移速\n普攻附帶閃電"
+        },
+        {
+          "slot": 3,
+          "itemId": "1126",
+          "name": "末世",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1126.png",
+          "description": "+40點攻擊+20%攻速+500點生命值+20%吸血\n普攻額外傷害"
+        },
+        {
+          "slot": 4,
+          "itemId": "1338",
+          "name": "暴烈之甲",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1338.png",
+          "description": "+35點攻擊+210點物防+900點生命值\n能抗能打"
+        },
+        {
+          "slot": 5,
+          "itemId": "1159",
+          "name": "逐風",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1159.png",
+          "description": "+50點攻擊+30%攻速+600點最大生命值\n普攻傷害提升"
+        },
+        {
+          "slot": 6,
+          "itemId": "1335",
+          "name": "魔女斗篷",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
+          "description": "+300點法防+1100點生命值\n吸收法術傷害"
+        }
+      ]
+    },
+    {
+      "id": "camp-3",
+      "label": "Farm Lane 1",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1135",
+          "name": "閃電匕首",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1135.png",
+          "description": "+40點攻擊+35%攻速+7.5%移速\n普攻附帶閃電"
+        },
+        {
+          "slot": 2,
+          "itemId": "1128",
+          "name": "寒霜襲侵",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1128.png",
+          "description": "+70點攻擊+25%攻速+750點生命值\n普攻減移速"
+        },
+        {
+          "slot": 3,
+          "itemId": "1141",
+          "name": "逐日之弓",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1141.png",
+          "description": "+40點攻擊+20%攻速+15%暴擊+7.5%移速\n攻擊距離變遠"
+        },
+        {
+          "slot": 4,
+          "itemId": "1155",
+          "name": "仁者破曉",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1155.png",
+          "description": "+75點攻擊+30%攻速+15%暴擊\n射手神裝"
+        },
+        {
+          "slot": 5,
+          "itemId": "1337",
+          "name": "賢者的庇護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+        },
+        {
+          "slot": 6,
+          "itemId": "1127",
+          "name": "名刀・司命",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "+75點攻擊+15%攻速+500點生命值\n保命"
+        }
+      ]
     }
   ],
   "arcana": [
-    "Red"
+    "Lvl 5: Conflict",
+    "Lvl 5: Red Moon",
+    "Lvl 5: Hunt"
+  ],
+  "arcanaZh": [
+    "5級：紛爭",
+    "5級：紅月",
+    "5級：狩獵"
   ],
   "spells": [
     "Flash"
+  ],
+  "spellsZh": [
+    "閃現"
   ],
   "counters": [
     "Mai Shiranui",
@@ -107,486 +591,195 @@
     "Arthur"
   ],
   "tips": [
-    "Di Renjie is a Medium Marksman (Farm Lane) on Honor of Kings Global. Camp HOK ranks them Tier A with 51.7% win rate and 0.8% pick rate as of 2026-06-05.",
-    "Best build path: Doomsday → Boots of Dexterity → Eternity Blade → Daybreaker's Virtue → Ominous Premonition → Longnight Guardian.",
-    "Run Red for stats that match Di Renjie's Marksman kit. Take Flash — swap to Purify against heavy CC or Smite when jungling.",
-    "Standard trade: Respect the Law → Legal Immunity → Imperial Order → weave basic attacks. Weave basic attacks between skill casts for passive value.",
-    "Laning: Last-hit safely until first core item. Ping jungler for river vision; never face-check brush without minion cover.",
-    "Teamfight: Position behind frontline; attack closest safe target. Join fight only after enemy dive cooldowns are used.",
-    "Di Renjie excels into Mai Shiranui, Ukyo Tachibana, Ying. Avoid blind picking into Kaizer, Dun, Arthur without team peel.",
-    "Di Renjie is a viable Tier A pick in high rank with 51.7% win rate — strong in one-trick hands or as a counter-pick."
+    "Di Renjie (Marksman): Tier A — 51.25% WR (Camp HOK).",
+    "Lane: Farm Lane.",
+    "Build: Boots of Dexterity, Sparkforged Dagger, Doomsday."
+  ],
+  "tipsZh": [
+    "狄仁傑（發育路）：梯度 A，勝率 51.25%（Camp HOK）。",
+    "出裝：急速戰靴、閃電匕首、末世."
   ],
   "patchHistory": [
     {
-      "version": "Live meta",
-      "change": "Camp HOK — WR 51.7%, pick 0.8%, ban 0.0%, tier A."
+      "seasonId": "13",
+      "seasonName": "S13",
+      "versionName": "2025/12/16",
+      "publishedAt": "2025-12-16T01:00:00Z",
+      "isCurrent": false,
+      "tag": "Stat Changes",
+      "change": "Adjusted Skill Damage",
+      "detail": "",
+      "version": "S13"
     },
     {
-      "version": "Matchups",
-      "change": "Strong into Mai Shiranui, Ukyo Tachibana, Ying · Weak into Kaizer, Dun, Arthur."
+      "seasonId": "10",
+      "seasonName": "S10",
+      "versionName": "20250501",
+      "publishedAt": "2025-05-01T02:00:00Z",
+      "isCurrent": false,
+      "tag": "Stat Nerfs",
+      "change": "Skill 1 damage reduced",
+      "detail": "",
+      "version": "S10"
     },
     {
-      "version": "High rank",
-      "change": "Di Renjie is a viable Tier A pick in high rank with 51.7% win rate — strong in one-trick hands or as a counter-pick."
+      "seasonId": "8",
+      "seasonName": "S8",
+      "versionName": "20250124",
+      "publishedAt": "2025-01-24T02:00:29Z",
+      "isCurrent": false,
+      "tag": "Stat Buffs",
+      "change": "Increased token damage.",
+      "detail": "Changed the stat-based calculation of the tokens' damage, so Di Renjie is no longer limited to attack effect equipment, but can try out other   builds.",
+      "version": "S8"
+    },
+    {
+      "seasonId": "7",
+      "seasonName": "S7",
+      "versionName": "20241107",
+      "publishedAt": "2024-11-07T02:00:00Z",
+      "isCurrent": false,
+      "tag": "Stat Buffs",
+      "change": "Increased base Movement Speed and the early game damage of Skill 1's tokens.",
+      "detail": "\"Magistrate Di has been lying low for a while, it's time for him to bring judgment to his opponents.\"",
+      "version": "S7"
+    },
+    {
+      "seasonId": "3",
+      "seasonName": "S3",
+      "versionName": "20231206",
+      "publishedAt": "2023-12-06T09:28:03Z",
+      "isCurrent": false,
+      "tag": "Stat Changes",
+      "change": "Reduced the base damage of Skills 1 and 2, but kept the same basic damage as before at max level.",
+      "detail": "Di Renjie deals high burst damage in melee range with Skills 1 and 2, and is able to poke enemies from afar with his Basic Attacks. These two characterisics made him very powerful at laning during early game, even before he's all geared up. Considering that he's a solid hero during mid to late game, we want Di Renjie to be less punishing during early game.",
+      "version": "S3"
+    },
+    {
+      "seasonId": "3",
+      "seasonName": "S3",
+      "versionName": "20231011",
+      "publishedAt": "2023-10-11T12:03:22Z",
+      "isCurrent": false,
+      "tag": "Stat Buffs",
+      "change": "Buff stacks expiry mechanic",
+      "detail": "",
+      "version": "S3"
+    }
+  ],
+  "patchHistoryZh": [
+    {
+      "seasonId": "13",
+      "seasonName": "S13",
+      "versionName": "2025/12/16",
+      "publishedAt": "2025-12-16T01:00:00Z",
+      "isCurrent": false,
+      "tag": "數值調整",
+      "change": "調整技能傷害",
+      "detail": "",
+      "version": "S13"
+    },
+    {
+      "seasonId": "10",
+      "seasonName": "S10",
+      "versionName": "20250501",
+      "publishedAt": "2025-05-01T02:00:00Z",
+      "isCurrent": false,
+      "tag": "數值削弱",
+      "change": "1技能傷害降低",
+      "detail": "",
+      "version": "S10"
+    },
+    {
+      "seasonId": "8",
+      "seasonName": "S8",
+      "versionName": "20250124",
+      "publishedAt": "2025-01-24T02:00:29Z",
+      "isCurrent": false,
+      "tag": "數值增強",
+      "change": "提升令牌傷害",
+      "detail": "「調整令牌的屬性加成結構，讓狄大人不再與攻擊特效套裝綁定，可以嘗試更多的出裝選擇。」",
+      "version": "S8"
+    },
+    {
+      "seasonId": "7",
+      "seasonName": "S7",
+      "versionName": "20241107",
+      "publishedAt": "2024-11-07T02:00:00Z",
+      "isCurrent": false,
+      "tag": "數值增強",
+      "change": "提升基礎移速和1技能令牌前期傷害",
+      "detail": "「狄大人已經蟄伏一段時間了，是時候去審判他的對手了。」",
+      "version": "S7"
+    },
+    {
+      "seasonId": "3",
+      "seasonName": "S3",
+      "versionName": "20231206",
+      "publishedAt": "2023-12-06T09:28:03Z",
+      "isCurrent": false,
+      "tag": "數值調整",
+      "change": "Reduced the base damage of Skills 1 and 2, but kept the same basic damage as before at max level.",
+      "detail": "Di Renjie deals high burst damage in melee range with Skills 1 and 2, and is able to poke enemies from afar with his Basic Attacks. These two characterisics made him very powerful at laning during early game, even before he's all geared up. Considering that he's a solid hero during mid to late game, we want Di Renjie to be less punishing during early game.",
+      "version": "S3"
+    },
+    {
+      "seasonId": "3",
+      "seasonName": "S3",
+      "versionName": "20231011",
+      "publishedAt": "2023-10-11T12:03:22Z",
+      "isCurrent": false,
+      "tag": "數值增強",
+      "change": "Buff stacks expiry mechanic",
+      "detail": "",
+      "version": "S3"
     }
   ],
   "faqs": [
     {
       "id": "faq-good-season",
-      "question": "Is Di Renjie good in the current meta?",
-      "answer": "Di Renjie is Tier A Marksman with 51.7% win rate, 0.8% pick rate, and 0.0% ban rate on Honor of Kings Global (Camp HOK, 2026-06-05). Solid situational pick."
+      "question": "Is Di Renjie good in current season?",
+      "answer": "Di Renjie is Tier A Marksman with 51.25% win rate, 0.77% pick rate, and 0.02% ban rate (Camp HOK international)."
     },
     {
       "id": "faq-best-build",
       "question": "What is the best Di Renjie build?",
-      "answer": "Core item path: Doomsday, Boots of Dexterity, Eternity Blade, Daybreaker's Virtue, Ominous Premonition, Longnight Guardian. Run Red arcana with Flash. Switch to alternate build presets on this page for jungle, clash, or late-game setups."
+      "answer": "Recommended: Boots of Dexterity, Sparkforged Dagger, Doomsday, Deepfrost Siege, Blood Rage, Destiny."
     },
     {
       "id": "faq-counter",
       "question": "How to counter Di Renjie?",
-      "answer": "Pick Kaizer, Dun, Arthur into Di Renjie. Deny Farm Lane resources early and force fights before Di Renjie completes core items. Di Renjie struggles when the enemy can dive and burst them."
+      "answer": "Pick Kaizer, Dun, Arthur. Strong into Mai Shiranui, Ukyo Tachibana, Ying."
+    }
+  ],
+  "faqsZh": [
+    {
+      "id": "faq-good-season",
+      "question": "狄仁傑 這版本適合上分嗎？",
+      "answer": "狄仁傑 為 A 梯度，勝率 51.25%、選取 0.77%、禁用 0.02%（Camp HOK 國際服）。"
     },
     {
-      "id": "faq-strong-into",
-      "question": "Who does Di Renjie counter?",
-      "answer": "Di Renjie is strong into Mai Shiranui, Ukyo Tachibana, Ying according to HoKStats matchup data and role matchups on the global server. Draft Di Renjie when the enemy relies on these heroes in the Farm Lane lane."
+      "id": "faq-best-build",
+      "question": "狄仁傑 出裝怎麼搭配？",
+      "answer": "推薦：急速戰靴、閃電匕首、末世、寒霜襲侵、血魔之怒、名刀・司命."
     },
     {
-      "id": "faq-high-rank",
-      "question": "Is Di Renjie good in high rank / Diamond+?",
-      "answer": "Di Renjie is a viable Tier A pick in high rank with 51.7% win rate — strong in one-trick hands or as a counter-pick."
-    },
-    {
-      "id": "faq-lane",
-      "question": "What lane should Di Renjie play?",
-      "answer": "Di Renjie is tagged Farm Lane in Camp export (Marksman). Last-hit safely until first core item. Ping jungler for river vision; never face-check brush without minion cover."
-    },
-    {
-      "id": "faq-arcana",
-      "question": "Best arcana and spells for Di Renjie?",
-      "answer": "Recommended: Red arcana. Battle spell: Flash. Adjust Purify/Execute based on enemy dive and jungle need."
-    },
-    {
-      "id": "faq-vs-peer",
-      "question": "Di Renjie or Hou Yi — which is better?",
-      "answer": "Di Renjie vs Hou Yi (Marksman, Tier S+): Hou Yi is 2.9% pick / 49.3% WR. Di Renjie has +2.4% WR vs Hou Yi in Camp data. Choose Di Renjie when you need Farm Lane identity; choose Hou Yi for Farm Lane comfort."
-    },
-    {
-      "id": "faq-ban",
-      "question": "Should I ban Di Renjie?",
-      "answer": "Low priority ban (0.0%). Focus bans on higher-tier Marksman picks unless targeting a one-trick."
+      "id": "faq-counter",
+      "question": "怎麼克制 狄仁傑？",
+      "answer": "可選 Kaizer、Dun、Arthur。狄仁傑 克制 Mai Shiranui、Ukyo Tachibana、Ying。"
     }
   ],
   "metaAnalysis": [
-    "Di Renjie — 51.7% WR, 0.8% pick, 0.0% ban (Camp HOK 2026-06-05).",
-    "Tier A Marksman · Farm Lane · difficulty Medium.",
-    "Di Renjie is a viable Tier A pick in high rank with 51.7% win rate — strong in one-trick hands or as a counter-pick.",
-    "Matchups: strong into Mai Shiranui, Ukyo Tachibana, Ying; weak into Kaizer, Dun, Arthur.",
-    "Di Renjie vs Hou Yi (Marksman, Tier S+): Hou Yi is 2.9% pick / 49.3% WR. Di Renjie has +2.4% WR vs Hou Yi in Camp data. Choose Di Renjie when you need Farm Lane identity; choose Hou Yi for Farm Lane comfort.",
-    "Di Renjie vs Marco Polo (Marksman, Tier S+): Marco Polo is 2.1% pick / 50.1% WR. Di Renjie has +1.6% WR vs Marco Polo in Camp data. Choose Di Renjie when you need Farm Lane identity; choose Marco Polo for Farm Lane comfort.",
-    "Draft tip: counter-pick or comfort pick when lane matchup is favorable."
+    "Di Renjie win rate 51.25% (Camp HOK, 2026-06-07).",
+    "Pick rate 0.77%.",
+    "Ban rate 0.02%.",
+    "Counters: Mai Shiranui, Ukyo Tachibana, Ying. Weak into: Kaizer, Dun, Arthur."
   ],
-  "builds": [
-    {
-      "id": "recommended",
-      "label": "Recommended",
-      "position": null,
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1126",
-          "name": "Doomsday",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1126.jpg",
-          "description": "Boosts BA damage"
-        },
-        {
-          "slot": 2,
-          "itemId": "1425",
-          "name": "Boots of Dexterity",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1425.jpg",
-          "description": "Boosts ASPD"
-        },
-        {
-          "slot": 3,
-          "itemId": "1133",
-          "name": "Eternity Blade",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1133.jpg",
-          "description": "High crit damage"
-        },
-        {
-          "slot": 4,
-          "itemId": "1155",
-          "name": "Daybreaker's Virtue",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1155.jpg",
-          "description": "Great for marksmen"
-        },
-        {
-          "slot": 5,
-          "itemId": "1333",
-          "name": "Ominous Premonition",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1333.jpg",
-          "description": "Slows attackers"
-        },
-        {
-          "slot": 6,
-          "itemId": "1347",
-          "name": "Longnight Guardian",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1347.jpg",
-          "description": "Resists burst damage"
-        }
-      ]
-    },
-    {
-      "id": "farm-lane-1",
-      "label": "Farm Lane 1",
-      "position": "Position 4",
-      "lane": "Farm Lane",
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1421",
-          "name": "Boots of Fortitude",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1421.jpg",
-          "description": "Reduces physical damage"
-        },
-        {
-          "slot": 2,
-          "itemId": "1135",
-          "name": "Sparkforged Dagger",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1135.jpg",
-          "description": "Chain lightning BA"
-        },
-        {
-          "slot": 3,
-          "itemId": "1126",
-          "name": "Doomsday",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1126.jpg",
-          "description": "Boosts BA damage"
-        },
-        {
-          "slot": 4,
-          "itemId": "1338",
-          "name": "Cuirass of Savagery",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1338.jpg",
-          "description": "Offense & defense"
-        },
-        {
-          "slot": 5,
-          "itemId": "1159",
-          "name": "Tempest",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1159.jpg",
-          "description": "Stacks Attack Speed & Movement Speed"
-        },
-        {
-          "slot": 6,
-          "itemId": "1335",
-          "name": "Succubus Cloak",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1335.jpg",
-          "description": "Negates magical damage"
-        }
-      ]
-    },
-    {
-      "id": "farm-lane-1",
-      "label": "Farm Lane 1",
-      "position": "Position 4",
-      "lane": "Farm Lane",
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1425",
-          "name": "Boots of Dexterity",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1425.jpg",
-          "description": "Boosts ASPD"
-        },
-        {
-          "slot": 2,
-          "itemId": "1126",
-          "name": "Doomsday",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1126.jpg",
-          "description": "Boosts BA damage"
-        },
-        {
-          "slot": 3,
-          "itemId": "1135",
-          "name": "Sparkforged Dagger",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1135.jpg",
-          "description": "Chain lightning BA"
-        },
-        {
-          "slot": 4,
-          "itemId": "1128",
-          "name": "Deepfrost Siege",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1128.jpg",
-          "description": "Slows on hit"
-        },
-        {
-          "slot": 5,
-          "itemId": "1154",
-          "name": "Cloud Piercer",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1154.jpg",
-          "description": "Crit Rate +12%, ASPD +15%"
-        },
-        {
-          "slot": 6,
-          "itemId": "1141",
-          "name": "Sunchaser",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1141.jpg",
-          "description": "Boosts attack range"
-        }
-      ]
-    },
-    {
-      "id": "zoom",
-      "label": "zoom",
-      "position": "Position 4",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1425",
-          "name": "Boots of Dexterity",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1425.jpg",
-          "description": "Boosts ASPD"
-        },
-        {
-          "slot": 2,
-          "itemId": "1135",
-          "name": "Sparkforged Dagger",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1135.jpg",
-          "description": "Chain lightning BA"
-        },
-        {
-          "slot": 3,
-          "itemId": "1126",
-          "name": "Doomsday",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1126.jpg",
-          "description": "Boosts BA damage"
-        },
-        {
-          "slot": 4,
-          "itemId": "1128",
-          "name": "Deepfrost Siege",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1128.jpg",
-          "description": "Slows on hit"
-        },
-        {
-          "slot": 5,
-          "itemId": "1328",
-          "name": "Blood Rage",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1328.jpg",
-          "description": "Grants temporary shield"
-        },
-        {
-          "slot": 6,
-          "itemId": "1127",
-          "name": "Destiny",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1127.jpg",
-          "description": "Negates fatal damage"
-        }
-      ]
-    },
-    {
-      "id": "mixed-comp",
-      "label": "Mixed comp",
-      "position": "Position 4",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1425",
-          "name": "Boots of Dexterity",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1425.jpg",
-          "description": "Boosts ASPD"
-        },
-        {
-          "slot": 2,
-          "itemId": "1135",
-          "name": "Sparkforged Dagger",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1135.jpg",
-          "description": "Chain lightning BA"
-        },
-        {
-          "slot": 3,
-          "itemId": "1136",
-          "name": "Shadow Ripper",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1136.jpg",
-          "description": "Crits boost ASPD"
-        },
-        {
-          "slot": 4,
-          "itemId": "1126",
-          "name": "Doomsday",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1126.jpg",
-          "description": "Boosts BA damage"
-        },
-        {
-          "slot": 5,
-          "itemId": "1133",
-          "name": "Eternity Blade",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1133.jpg",
-          "description": "High crit damage"
-        },
-        {
-          "slot": 6,
-          "itemId": "1155",
-          "name": "Daybreaker's Virtue",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1155.jpg",
-          "description": "Great for marksmen"
-        }
-      ]
-    },
-    {
-      "id": "ttr",
-      "label": "Ttr.",
-      "position": "Position 4",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1135",
-          "name": "Sparkforged Dagger",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1135.jpg",
-          "description": "Chain lightning BA"
-        },
-        {
-          "slot": 2,
-          "itemId": "1421",
-          "name": "Boots of Fortitude",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1421.jpg",
-          "description": "Reduces physical damage"
-        },
-        {
-          "slot": 3,
-          "itemId": "1126",
-          "name": "Doomsday",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1126.jpg",
-          "description": "Boosts BA damage"
-        },
-        {
-          "slot": 4,
-          "itemId": "1128",
-          "name": "Deepfrost Siege",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1128.jpg",
-          "description": "Slows on hit"
-        },
-        {
-          "slot": 5,
-          "itemId": "1155",
-          "name": "Daybreaker's Virtue",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1155.jpg",
-          "description": "Great for marksmen"
-        },
-        {
-          "slot": 6,
-          "itemId": "1328",
-          "name": "Blood Rage",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1328.jpg",
-          "description": "Grants temporary shield"
-        }
-      ]
-    },
-    {
-      "id": "on-hit",
-      "label": "On-hit",
-      "position": "Position 4",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1421",
-          "name": "Boots of Fortitude",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1421.jpg",
-          "description": "Reduces physical damage"
-        },
-        {
-          "slot": 2,
-          "itemId": "1135",
-          "name": "Sparkforged Dagger",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1135.jpg",
-          "description": "Chain lightning BA"
-        },
-        {
-          "slot": 3,
-          "itemId": "1126",
-          "name": "Doomsday",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1126.jpg",
-          "description": "Boosts BA damage"
-        },
-        {
-          "slot": 4,
-          "itemId": "1338",
-          "name": "Cuirass of Savagery",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1338.jpg",
-          "description": "Offense & defense"
-        },
-        {
-          "slot": 5,
-          "itemId": "1155",
-          "name": "Daybreaker's Virtue",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1155.jpg",
-          "description": "Great for marksmen"
-        },
-        {
-          "slot": 6,
-          "itemId": "1335",
-          "name": "Succubus Cloak",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1335.jpg",
-          "description": "Negates magical damage"
-        }
-      ]
-    },
-    {
-      "id": "di",
-      "label": "di",
-      "position": "Position 4",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1425",
-          "name": "Boots of Dexterity",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1425.jpg",
-          "description": "Boosts ASPD"
-        },
-        {
-          "slot": 2,
-          "itemId": "1135",
-          "name": "Sparkforged Dagger",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1135.jpg",
-          "description": "Chain lightning BA"
-        },
-        {
-          "slot": 3,
-          "itemId": "1126",
-          "name": "Doomsday",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1126.jpg",
-          "description": "Boosts BA damage"
-        },
-        {
-          "slot": 4,
-          "itemId": "1128",
-          "name": "Deepfrost Siege",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1128.jpg",
-          "description": "Slows on hit"
-        },
-        {
-          "slot": 5,
-          "itemId": "1155",
-          "name": "Daybreaker's Virtue",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1155.jpg",
-          "description": "Great for marksmen"
-        },
-        {
-          "slot": 6,
-          "itemId": "1338",
-          "name": "Cuirass of Savagery",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1338.jpg",
-          "description": "Offense & defense"
-        }
-      ]
-    }
+  "metaAnalysisZh": [
+    "狄仁傑 勝率 51.25%（Camp HOK，2026-06-07）",
+    "選取率 0.77%",
+    "禁用率 0.02%",
+    "克制：Mai Shiranui、Ukyo Tachibana、Ying；被克制：Kaizer、Dun、Arthur"
   ],
   "guide": {
     "overview": "Di Renjie is a Medium Marksman (Farm Lane) on Honor of Kings Global. Camp HOK ranks them Tier A with 51.7% win rate and 0.8% pick rate as of 2026-06-05.",

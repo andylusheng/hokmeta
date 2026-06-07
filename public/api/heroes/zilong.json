@@ -2,99 +2,583 @@
   "id": "zilong",
   "slug": "zilong",
   "name": "Zilong",
+  "nameZh": "趙雲",
   "role": "Assassin",
   "roles": "Fighter, Assassin",
+  "rolesZh": "戰士, 刺客",
   "lane": "Jungling",
+  "laneZh": "打野",
   "difficulty": "Medium",
   "tier": "B",
-  "winRate": 52.69,
-  "pickRate": 0.6,
+  "winRate": 52.62,
+  "pickRate": 0.61,
   "banRate": 0.02,
-  "rank": 9,
+  "rank": 13,
   "avatar": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/9xqbsAQC.png",
   "avatarFallback": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/107/107.jpg",
+  "heroCover": "https://camp.honorofkings.com/social/game/src/image_hero_cover_1275*718/RMlBINe2.jpg",
   "tencentId": 107,
-  "dataSource": "Camp HOK + HoKStats.gg (intl)",
-  "dataUpdated": "2026-06-05",
+  "dataSource": "Camp HOK bilingual (primary)",
+  "dataUpdated": "2026-06-07",
   "skills": [
     {
       "slot": "passive",
       "name": "Dragon's Roar",
-      "description": "The lower his Health, the greater his damage reduction and skills.",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/107/10700.png",
-      "cooldown": null
+      "description": "As his Health declines, he gains more damage reduction and his basic skills are enhanced.",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/10700.png",
+      "cooldown": "1s"
     },
     {
       "slot": "skill1",
       "name": "Thunderbreaker",
-      "description": "Zilong charges forward, dealing damage and enhancing his next Basic Attack. This skill's cooldown is reset whenever his Health reaches a certain level.",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/107/10710.png",
-      "cooldown": null
+      "description": "Charges forward, dealing damage and enhancing his next Basic Attack. This skill's cooldown is reset whenever his Health reaches a certain level.",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/15030.png",
+      "cooldown": "7s"
     },
     {
       "slot": "skill2",
       "name": "Stormpiercer",
       "description": "Jabs repeatedly in the target direction, dealing damage. Recovers Health on hit.",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/107/10720.png",
-      "cooldown": null
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/15020.png",
+      "cooldown": "6s"
     },
     {
       "slot": "ultimate",
       "name": "Skysplitter",
-      "description": "Leaps to the target area, damaging and launching enemies in the center.",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/107/10730.png",
-      "cooldown": null
+      "description": "Leaps to the target area to deal damage, launching enemies in the center.\n50% of the cooldown is returned if no heroes are hit.",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/15010.png",
+      "cooldown": "18s"
+    }
+  ],
+  "skillsZh": [
+    {
+      "slot": "passive",
+      "name": "龍鳴",
+      "description": "趙雲生命降低會迸發潛能，提升減傷比例並強化基礎技能。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/10700.png",
+      "cooldown": "1s"
+    },
+    {
+      "slot": "skill1",
+      "name": "驚雷之龍",
+      "description": "趙雲向前突刺，造成傷害並強化下一次普攻，趙雲的被動檔位發生變化時，可以重置【驚雷之龍】的冷卻時間。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/15030.png",
+      "cooldown": "7s"
+    },
+    {
+      "slot": "skill2",
+      "name": "破雲之龍",
+      "description": "趙雲朝指定方向連續刺擊，造成傷害，命中單位後回復生命值。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/15020.png",
+      "cooldown": "6s"
+    },
+    {
+      "slot": "ultimate",
+      "name": "天翔之龍",
+      "description": "趙雲躍向指定區域，造成傷害並擊飛中心的敵人。\n未命中英雄時，返還50%的冷卻時間。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/15010.png",
+      "cooldown": "18s"
     }
   ],
   "build": [
     {
       "slot": 1,
-      "itemId": "1533",
-      "name": "Rapacious Bite",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1533.jpg",
-      "description": "Monster kills boost PATK"
+      "itemId": "1422",
+      "name": "Boots of Resistance",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1422.png",
+      "description": "MDEF +100, PDEF +50, MSPD +50\nShortens crowd control"
     },
     {
       "slot": 2,
-      "itemId": "1422",
-      "name": "Boots of Resistance",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
-      "description": "Shortens CC"
+      "itemId": "1138",
+      "name": "Overlord's Might",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1138.png",
+      "description": "PATK +150, CDR +5%\nHigh-damage attack"
     },
     {
       "slot": 3,
-      "itemId": "1137",
-      "name": "Axe of Torment",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1137.jpg",
-      "description": "Anti-squishy"
+      "itemId": "1350",
+      "name": "Ravage - Phantom",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1350.png",
+      "description": "PATK +75, HP +900\nTrades HP for shield"
     },
     {
       "slot": 4,
-      "itemId": "1134",
-      "name": "Master Sword",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1134.jpg",
-      "description": "Enhances BA"
+      "itemId": "1337",
+      "name": "Sage's Sanctuary",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+      "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
     },
     {
       "slot": 5,
-      "itemId": "11311",
-      "name": "Pure Sky",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/11311.jpg",
-      "description": "Temp. damage reduction"
+      "itemId": "1127",
+      "name": "Destiny",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+      "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
     },
     {
       "slot": 6,
-      "itemId": "1133",
-      "name": "Eternity Blade",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1133.jpg",
-      "description": "High crit damage"
+      "itemId": "1335",
+      "name": "Succubus Cloak",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
+      "description": "MDEF +300, HP +1,100\nNegates magical damage"
+    }
+  ],
+  "buildZh": [
+    {
+      "slot": 1,
+      "itemId": "1422",
+      "name": "抵抗之靴",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1422.png",
+      "description": "+100點法防+50點物防+50點移速\n減少被控時間"
+    },
+    {
+      "slot": 2,
+      "itemId": "1138",
+      "name": "強者破軍",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1138.png",
+      "description": "+150點攻擊+5%減冷卻時間\n高額攻擊"
+    },
+    {
+      "slot": 3,
+      "itemId": "1350",
+      "name": "侵略・怒魂",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1350.png",
+      "description": "+75點攻擊+900點生命值\n犧牲生命值換取護盾值"
+    },
+    {
+      "slot": 4,
+      "itemId": "1337",
+      "name": "賢者的庇護",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+      "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+    },
+    {
+      "slot": 5,
+      "itemId": "1127",
+      "name": "名刀・司命",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+      "description": "+75點攻擊+15%攻速+500點生命值\n保命"
+    },
+    {
+      "slot": 6,
+      "itemId": "1335",
+      "name": "魔女斗篷",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
+      "description": "+300點法防+1100點生命值\n吸收法術傷害"
+    }
+  ],
+  "builds": [
+    {
+      "id": "camp-0",
+      "label": "Preset",
+      "lane": "Jungle",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1422",
+          "name": "Boots of Resistance",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1422.png",
+          "description": "MDEF +100, PDEF +50, MSPD +50\nShortens crowd control"
+        },
+        {
+          "slot": 2,
+          "itemId": "1138",
+          "name": "Overlord's Might",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1138.png",
+          "description": "PATK +150, CDR +5%\nHigh-damage attack"
+        },
+        {
+          "slot": 3,
+          "itemId": "1350",
+          "name": "Ravage - Phantom",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1350.png",
+          "description": "PATK +75, HP +900\nTrades HP for shield"
+        },
+        {
+          "slot": 4,
+          "itemId": "1337",
+          "name": "Sage's Sanctuary",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
+        },
+        {
+          "slot": 5,
+          "itemId": "1127",
+          "name": "Destiny",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
+        },
+        {
+          "slot": 6,
+          "itemId": "1335",
+          "name": "Succubus Cloak",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
+          "description": "MDEF +300, HP +1,100\nNegates magical damage"
+        }
+      ]
+    },
+    {
+      "id": "camp-1",
+      "label": "Jungling 1",
+      "lane": "Jungle",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1327",
+          "name": "Spikemail",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1327.png",
+          "description": "PATK +45, PDEF +300, HP +700\nReflects damage"
+        },
+        {
+          "slot": 2,
+          "itemId": "1134",
+          "name": "Master Sword",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1134.png",
+          "description": "PATK +55, Crit Rate +20%, HP +600\nEnhances BAs"
+        },
+        {
+          "slot": 3,
+          "itemId": "1138",
+          "name": "Overlord's Might",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1138.png",
+          "description": "PATK +150, CDR +5%\nHigh-damage attack"
+        },
+        {
+          "slot": 4,
+          "itemId": "1533",
+          "name": "Rapacious Bite",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1533.png",
+          "description": "PATK +90, MSPD +5%, CDR +7.5%\nMonster kills boost ATK"
+        },
+        {
+          "slot": 5,
+          "itemId": "1337",
+          "name": "Sage's Sanctuary",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
+        },
+        {
+          "slot": 6,
+          "itemId": "1127",
+          "name": "Destiny",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
+        }
+      ]
+    },
+    {
+      "id": "camp-2",
+      "label": "Jungling 1",
+      "lane": "Jungle",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "13310",
+          "name": "Frostscar's Embrace",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/13310.png",
+          "description": "PATK +60, PDEF +300, CDR +10%\nEnhanced BAs slow"
+        },
+        {
+          "slot": 2,
+          "itemId": "11311",
+          "name": "Pure Sky",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/11311.png",
+          "description": "PATK +80, PDEF +150, CDR +10%\nTemp. damage reduction"
+        },
+        {
+          "slot": 3,
+          "itemId": "1338",
+          "name": "Cuirass of Savagery",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1338.png",
+          "description": "PATK +35, PDEF +210, HP +900\nOffense & defense"
+        },
+        {
+          "slot": 4,
+          "itemId": "1337",
+          "name": "Sage's Sanctuary",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
+        },
+        {
+          "slot": 5,
+          "itemId": "1127",
+          "name": "Destiny",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
+        },
+        {
+          "slot": 6,
+          "itemId": "1157",
+          "name": "Immovable - Sky Dome",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1157.png",
+          "description": "PATK +80, PDEF +150, CDR +10%\nTemp. damage reduction"
+        }
+      ]
+    },
+    {
+      "id": "camp-3",
+      "label": "Popular",
+      "lane": "Jungle",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "13310",
+          "name": "Frostscar's Embrace",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/13310.png",
+          "description": "PATK +60, PDEF +300, CDR +10%\nEnhanced BAs slow"
+        },
+        {
+          "slot": 2,
+          "itemId": "1328",
+          "name": "Blood Rage",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1328.png",
+          "description": "PATK +75, HP +900\nTrades HP for shield"
+        },
+        {
+          "slot": 3,
+          "itemId": "1334",
+          "name": "Eye of the Phoenix",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1334.png",
+          "description": "MDEF +180, PDEF +90, HP +1,350\nBoosts HP Regen"
+        },
+        {
+          "slot": 4,
+          "itemId": "1337",
+          "name": "Sage's Sanctuary",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
+        },
+        {
+          "slot": 5,
+          "itemId": "1127",
+          "name": "Destiny",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
+        },
+        {
+          "slot": 6,
+          "itemId": "1157",
+          "name": "Immovable - Sky Dome",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1157.png",
+          "description": "PATK +80, PDEF +150, CDR +10%\nTemp. damage reduction"
+        }
+      ]
+    }
+  ],
+  "buildsZh": [
+    {
+      "id": "camp-0",
+      "label": "Preset",
+      "lane": "Jungle",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1422",
+          "name": "抵抗之靴",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1422.png",
+          "description": "+100點法防+50點物防+50點移速\n減少被控時間"
+        },
+        {
+          "slot": 2,
+          "itemId": "1138",
+          "name": "強者破軍",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1138.png",
+          "description": "+150點攻擊+5%減冷卻時間\n高額攻擊"
+        },
+        {
+          "slot": 3,
+          "itemId": "1350",
+          "name": "侵略・怒魂",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1350.png",
+          "description": "+75點攻擊+900點生命值\n犧牲生命值換取護盾值"
+        },
+        {
+          "slot": 4,
+          "itemId": "1337",
+          "name": "賢者的庇護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+        },
+        {
+          "slot": 5,
+          "itemId": "1127",
+          "name": "名刀・司命",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "+75點攻擊+15%攻速+500點生命值\n保命"
+        },
+        {
+          "slot": 6,
+          "itemId": "1335",
+          "name": "魔女斗篷",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
+          "description": "+300點法防+1100點生命值\n吸收法術傷害"
+        }
+      ]
+    },
+    {
+      "id": "camp-1",
+      "label": "Jungling 1",
+      "lane": "Jungle",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1327",
+          "name": "反傷刺甲",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1327.png",
+          "description": "+45點攻擊+300點物防\n+700點生命值反彈傷害"
+        },
+        {
+          "slot": 2,
+          "itemId": "1134",
+          "name": "宗師之力",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1134.png",
+          "description": "+55點攻擊+20%暴擊+600點生命值……\n強化普攻"
+        },
+        {
+          "slot": 3,
+          "itemId": "1138",
+          "name": "強者破軍",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1138.png",
+          "description": "+150點攻擊+5%減冷卻時間\n高額攻擊"
+        },
+        {
+          "slot": 4,
+          "itemId": "1533",
+          "name": "貪婪之噬",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1533.png",
+          "description": "+90攻擊+5%移速+7.5%冷縮\n打野怪加攻擊"
+        },
+        {
+          "slot": 5,
+          "itemId": "1337",
+          "name": "賢者的庇護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+        },
+        {
+          "slot": 6,
+          "itemId": "1127",
+          "name": "名刀・司命",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "+75點攻擊+15%攻速+500點生命值\n保命"
+        }
+      ]
+    },
+    {
+      "id": "camp-2",
+      "label": "Jungling 1",
+      "lane": "Jungle",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "13310",
+          "name": "冰痕之握",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/13310.png",
+          "description": "+60點攻擊+300點物防+10%減冷卻時間……\n強化普攻減速"
+        },
+        {
+          "slot": 2,
+          "itemId": "11311",
+          "name": "純淨蒼穹",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/11311.png",
+          "description": "+80點攻擊+150點物防+10%冷卻時間縮減\n暫時增加免傷"
+        },
+        {
+          "slot": 3,
+          "itemId": "1338",
+          "name": "暴烈之甲",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1338.png",
+          "description": "+35點攻擊+210點物防+900點生命值\n能抗能打"
+        },
+        {
+          "slot": 4,
+          "itemId": "1337",
+          "name": "賢者的庇護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+        },
+        {
+          "slot": 5,
+          "itemId": "1127",
+          "name": "名刀・司命",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "+75點攻擊+15%攻速+500點生命值\n保命"
+        },
+        {
+          "slot": 6,
+          "itemId": "1157",
+          "name": "不動・天穹",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1157.png",
+          "description": "+80點攻擊+150點物防+10%冷卻時間縮減\n暫時增加免傷"
+        }
+      ]
+    },
+    {
+      "id": "camp-3",
+      "label": "Popular",
+      "lane": "Jungle",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "13310",
+          "name": "冰痕之握",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/13310.png",
+          "description": "+60點攻擊+300點物防+10%減冷卻時間……\n強化普攻減速"
+        },
+        {
+          "slot": 2,
+          "itemId": "1328",
+          "name": "血魔之怒",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1328.png",
+          "description": "+75點攻擊+900點生命值 \n犧牲生命值換取護盾值"
+        },
+        {
+          "slot": 3,
+          "itemId": "1334",
+          "name": "不死鳥之眼",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1334.png",
+          "description": "+180點法防+90點物防+1350點生命值……\n增加回血效果"
+        },
+        {
+          "slot": 4,
+          "itemId": "1337",
+          "name": "賢者的庇護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+        },
+        {
+          "slot": 5,
+          "itemId": "1127",
+          "name": "名刀・司命",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "+75點攻擊+15%攻速+500點生命值\n保命"
+        },
+        {
+          "slot": 6,
+          "itemId": "1157",
+          "name": "不動・天穹",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1157.png",
+          "description": "+80點攻擊+150點物防+10%冷卻時間縮減\n暫時增加免傷"
+        }
+      ]
     }
   ],
   "arcana": [
-    "Mutation"
+    "Lvl 5: Mutation",
+    "Lvl 5: Stealth",
+    "Lvl 5: Eagle Eye"
+  ],
+  "arcanaZh": [
+    "5級：異變",
+    "5級：隱匿",
+    "5級：鷹眼"
   ],
   "spells": [
     "Smite"
+  ],
+  "spellsZh": [
+    "懲擊"
   ],
   "counters": [
     "Lapulapu",
@@ -107,286 +591,173 @@
     "Fang"
   ],
   "tips": [
-    "Zilong is a Medium Assassin (Jungling) on Honor of Kings Global. Camp HOK ranks them Tier B with 52.7% win rate and 0.6% pick rate as of 2026-06-05.",
-    "Best build path: Rapacious Bite → Boots of Resistance → Axe of Torment → Master Sword → Pure Sky → Eternity Blade.",
-    "Run Mutation for stats that match Zilong's Assassin kit. Take Smite — swap to Purify against heavy CC or Smite when jungling.",
-    "Standard trade: Thunderbreaker → Stormpiercer → Skysplitter → weave basic attacks. Weave basic attacks between skill casts for passive value.",
-    "Laning: Clear to level four, then gank the lane with the least escape. Secure Tyrant when your bot or mid has crash wave.",
-    "Teamfight: Wait for CC from your team, then dive carry with full combo. Exit with reset or flash if focus fired.",
-    "Zilong excels into Lapulapu, Ata, Sakeer. Avoid blind picking into Guiguzi, Ziya, Fang without team peel.",
-    "Zilong sits at Tier B globally (52.7% WR). In high rank, pick only into favorable matchups or when you have a dedicated pocket pick. Camp data shows above-average win rate — prioritize when not hard-countered in draft."
+    "Zilong (Assassin): Tier B — 52.62% WR (Camp HOK).",
+    "Lane: Jungling.",
+    "Build: Boots of Resistance, Overlord's Might, Ravage - Phantom."
+  ],
+  "tipsZh": [
+    "趙雲（打野）：梯度 B，勝率 52.62%（Camp HOK）。",
+    "出裝：抵抗之靴、強者破軍、侵略・怒魂."
   ],
   "patchHistory": [
     {
-      "version": "Live meta",
-      "change": "Camp HOK — WR 52.7%, pick 0.6%, ban 0.0%, tier B."
+      "seasonId": "14",
+      "seasonName": "S14",
+      "versionName": "2026/03/26",
+      "publishedAt": "2026-03-26T01:00:00Z",
+      "isCurrent": false,
+      "tag": "Stat Buffs",
+      "change": "Adjusted skill effect",
+      "detail": "",
+      "version": "S14"
     },
     {
-      "version": "Matchups",
-      "change": "Strong into Lapulapu, Ata, Sakeer · Weak into Guiguzi, Ziya, Fang."
+      "seasonId": "8",
+      "seasonName": "S8",
+      "versionName": "20250109",
+      "publishedAt": "2025-01-09T02:33:14Z",
+      "isCurrent": false,
+      "tag": "Stat Buffs",
+      "change": "Increased Skill 2 damage.",
+      "detail": "Skill 2 is Zilong's main damage skill, but its damage output is somewhat lacking if it doesn't trigger his passive. Hence, we've slightly increased Skill 2's damage.",
+      "version": "S8"
     },
     {
-      "version": "High rank",
-      "change": "Zilong sits at Tier B globally (52.7% WR). In high rank, pick only into favorable matchups or when you have a dedicated pocket pick. Camp data shows above-average win rate — prioritize when not hard-countered in draft."
+      "seasonId": "6",
+      "seasonName": "S6",
+      "versionName": "20240711",
+      "publishedAt": "2024-07-11T03:14:46Z",
+      "isCurrent": false,
+      "tag": "Mechanics Upgrade",
+      "change": "The cooldown is returned if no heroes are hit by his Ultimate.",
+      "detail": "When Zilong's Ultimate fails to hit the enemy, he struggles to put pressure on them, so we want to improve his cooldown mechanics to give him more opportunities to engage in team fights. We also improved his late-game cooldowns, giving the opponent time to counterattack after being hit by an Ultimate.",
+      "version": "S6"
+    },
+    {
+      "seasonId": "5",
+      "seasonName": "S5",
+      "versionName": "20240523",
+      "publishedAt": "2024-05-23T12:11:56Z",
+      "isCurrent": false,
+      "tag": "Stat Changes",
+      "change": "Increased Skill 2's recovery, and reduced its damage accordingly.",
+      "detail": "Zilong is a very good all-rounder. Players can use different equipment based on different situations and lineups to give their Zilong various strengths. We adjusted his Skill 2 somewhat to increase his recovery and reduce his ability to deal sustained damage.",
+      "version": "S5"
+    },
+    {
+      "seasonId": "4",
+      "seasonName": "S4",
+      "versionName": "20240220",
+      "publishedAt": "2024-02-20T02:27:09Z",
+      "isCurrent": false,
+      "tag": "Mechanics Upgrade",
+      "change": "We've retained Zilong's original design and gameplay while upgrading his passive and active skill mechanics. We've adjusted some of his bonus stats to adapt their strength to the current game environment.",
+      "detail": "We've retained Zilong's original design and gameplay while upgrading his passive and active skill mechanics. We've adjusted some of his bonus stats to adapt their strength to the current game environment.\nZilong is a characteristic versatile hero, with dash skills, damage reduction, and recovery capabilities. He can deal both burst damage and damage over time. However, as the game environment evolves and players improve, his easy-to-use skill mechanics are ceasing to be an advantage. We have thus added new mechanics to his skill set, while retaining his core gameplay. It is our hope that this will make Zilong a trusted choice for players in higher-level matches.",
+      "version": "S4"
+    }
+  ],
+  "patchHistoryZh": [
+    {
+      "seasonId": "14",
+      "seasonName": "S14",
+      "versionName": "2026/03/26",
+      "publishedAt": "2026-03-26T01:00:00Z",
+      "isCurrent": false,
+      "tag": "數值增強",
+      "change": "調整技能效果",
+      "detail": "",
+      "version": "S14"
+    },
+    {
+      "seasonId": "8",
+      "seasonName": "S8",
+      "versionName": "20250109",
+      "publishedAt": "2025-01-09T02:33:14Z",
+      "isCurrent": false,
+      "tag": "數值增強",
+      "change": "提升2技能的傷害",
+      "detail": "「2技能作為趙雲的主要輸出技能，在沒有觸發被動的額外效果時傷害略顯不足，因此我們適當提高了2技能的傷害。」",
+      "version": "S8"
+    },
+    {
+      "seasonId": "6",
+      "seasonName": "S6",
+      "versionName": "20240711",
+      "publishedAt": "2024-07-11T03:14:46Z",
+      "isCurrent": false,
+      "tag": "機制升級",
+      "change": "大招未命中英雄時歸還冷卻時間",
+      "detail": "趙雲的大招若未命中敵人時，他對敵人的威脅性就會降低很多，因此我們希望最佳化大招的冷卻機制，讓趙雲能夠有更多嘗試開戰的機會；與此同時提升了後期的冷卻，在大招命中後，能留給對手一定的反制空間。",
+      "version": "S6"
+    },
+    {
+      "seasonId": "5",
+      "seasonName": "S5",
+      "versionName": "20240523",
+      "publishedAt": "2024-05-23T12:11:56Z",
+      "isCurrent": false,
+      "tag": "數值調整",
+      "change": "提升趙雲2技能的恢復效果，並適度降低2技能造成的傷害",
+      "detail": "趙雲是一名非常全面的英雄。玩家可以根據局勢，陣容搭配不同的裝備，來使得自己操控的趙雲獲得各式各樣的能力。我們適度調整了趙雲的2技能，使得他在獲得更強恢復能力的同時，適度降低其製造持續傷害的能力。",
+      "version": "S5"
+    },
+    {
+      "seasonId": "4",
+      "seasonName": "S4",
+      "versionName": "20240220",
+      "publishedAt": "2024-02-20T02:27:09Z",
+      "isCurrent": false,
+      "tag": "機制升級",
+      "change": "We've retained Zilong's original design and gameplay while upgrading his passive and active skill mechanics. We've adjusted some of his bonus stats to adapt their strength to the current game environment.",
+      "detail": "We've retained Zilong's original design and gameplay while upgrading his passive and active skill mechanics. We've adjusted some of his bonus stats to adapt their strength to the current game environment.\nZilong is a characteristic versatile hero, with dash skills, damage reduction, and recovery capabilities. He can deal both burst damage and damage over time. However, as the game environment evolves and players improve, his easy-to-use skill mechanics are ceasing to be an advantage. We have thus added new mechanics to his skill set, while retaining his core gameplay. It is our hope that this will make Zilong a trusted choice for players in higher-level matches.",
+      "version": "S4"
     }
   ],
   "faqs": [
     {
       "id": "faq-good-season",
-      "question": "Is Zilong good in the current meta?",
-      "answer": "Zilong is Tier B Assassin with 52.7% win rate, 0.6% pick rate, and 0.0% ban rate on Honor of Kings Global (Camp HOK, 2026-06-05). Niche — draft carefully."
+      "question": "Is Zilong good in current season?",
+      "answer": "Zilong is Tier B Assassin with 52.62% win rate, 0.61% pick rate, and 0.02% ban rate (Camp HOK international)."
     },
     {
       "id": "faq-best-build",
       "question": "What is the best Zilong build?",
-      "answer": "Core item path: Rapacious Bite, Boots of Resistance, Axe of Torment, Master Sword, Pure Sky, Eternity Blade. Run Mutation arcana with Smite. Switch to alternate build presets on this page for jungle, clash, or late-game setups."
+      "answer": "Recommended: Boots of Resistance, Overlord's Might, Ravage - Phantom, Sage's Sanctuary, Destiny, Succubus Cloak."
     },
     {
       "id": "faq-counter",
       "question": "How to counter Zilong?",
-      "answer": "Pick Guiguzi, Ziya, Fang into Zilong. Deny Jungling resources early and force fights before Zilong completes core items. Zilong struggles when the enemy can peel and group them."
+      "answer": "Pick Guiguzi, Ziya, Fang. Strong into Lapulapu, Ata, Sakeer."
+    }
+  ],
+  "faqsZh": [
+    {
+      "id": "faq-good-season",
+      "question": "趙雲 這版本適合上分嗎？",
+      "answer": "趙雲 為 B 梯度，勝率 52.62%、選取 0.61%、禁用 0.02%（Camp HOK 國際服）。"
     },
     {
-      "id": "faq-strong-into",
-      "question": "Who does Zilong counter?",
-      "answer": "Zilong is strong into Lapulapu, Ata, Sakeer according to HoKStats matchup data and role matchups on the global server. Draft Zilong when the enemy relies on these heroes in the Jungling lane."
+      "id": "faq-best-build",
+      "question": "趙雲 出裝怎麼搭配？",
+      "answer": "推薦：抵抗之靴、強者破軍、侵略・怒魂、賢者的庇護、名刀・司命、魔女斗篷."
     },
     {
-      "id": "faq-high-rank",
-      "question": "Is Zilong good in high rank / Diamond+?",
-      "answer": "Zilong sits at Tier B globally (52.7% WR). In high rank, pick only into favorable matchups or when you have a dedicated pocket pick. Camp data shows above-average win rate — prioritize when not hard-countered in draft."
-    },
-    {
-      "id": "faq-lane",
-      "question": "What lane should Zilong play?",
-      "answer": "Zilong is tagged Jungling in Camp export (Fighter, Assassin). Clear to level four, then gank the lane with the least escape. Secure Tyrant when your bot or mid has crash wave."
-    },
-    {
-      "id": "faq-arcana",
-      "question": "Best arcana and spells for Zilong?",
-      "answer": "Recommended: Mutation arcana. Battle spell: Smite. Adjust Purify/Execute based on enemy dive and jungle need."
-    },
-    {
-      "id": "faq-vs-peer",
-      "question": "Zilong or Wukong — which is better?",
-      "answer": "Zilong vs Wukong (Assassin, Tier S): Wukong is 1.3% pick / 49.7% WR. Zilong has +2.9% WR vs Wukong in Camp data. Choose Zilong when you need Jungling identity; choose Wukong for Jungling comfort."
-    },
-    {
-      "id": "faq-ban",
-      "question": "Should I ban Zilong?",
-      "answer": "Low priority ban (0.0%). Focus bans on higher-tier Assassin picks unless targeting a one-trick."
+      "id": "faq-counter",
+      "question": "怎麼克制 趙雲？",
+      "answer": "可選 Guiguzi、Ziya、Fang。趙雲 克制 Lapulapu、Ata、Sakeer。"
     }
   ],
   "metaAnalysis": [
-    "Zilong — 52.7% WR, 0.6% pick, 0.0% ban (Camp HOK 2026-06-05).",
-    "Tier B Assassin · Jungling · difficulty Medium.",
-    "Zilong sits at Tier B globally (52.7% WR). In high rank, pick only into favorable matchups or when you have a dedicated pocket pick. Camp data shows above-average win rate — prioritize when not hard-countered in draft.",
-    "Matchups: strong into Lapulapu, Ata, Sakeer; weak into Guiguzi, Ziya, Fang.",
-    "Zilong vs Wukong (Assassin, Tier S): Wukong is 1.3% pick / 49.7% WR. Zilong has +2.9% WR vs Wukong in Camp data. Choose Zilong when you need Jungling identity; choose Wukong for Jungling comfort.",
-    "Zilong vs Musashi (Assassin, Tier A): Musashi is 1.1% pick / 50.7% WR. Zilong has +2.0% WR vs Musashi in Camp data. Choose Zilong when you need Jungling identity; choose Musashi for Jungling comfort.",
-    "Draft tip: counter-pick or comfort pick when lane matchup is favorable."
+    "Zilong win rate 52.62% (Camp HOK, 2026-06-07).",
+    "Pick rate 0.61%.",
+    "Ban rate 0.02%.",
+    "Counters: Lapulapu, Ata, Sakeer. Weak into: Guiguzi, Ziya, Fang."
   ],
-  "builds": [
-    {
-      "id": "recommended",
-      "label": "Recommended",
-      "position": null,
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1533",
-          "name": "Rapacious Bite",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1533.jpg",
-          "description": "Monster kills boost PATK"
-        },
-        {
-          "slot": 2,
-          "itemId": "1422",
-          "name": "Boots of Resistance",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
-          "description": "Shortens CC"
-        },
-        {
-          "slot": 3,
-          "itemId": "1137",
-          "name": "Axe of Torment",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1137.jpg",
-          "description": "Anti-squishy"
-        },
-        {
-          "slot": 4,
-          "itemId": "1134",
-          "name": "Master Sword",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1134.jpg",
-          "description": "Enhances BA"
-        },
-        {
-          "slot": 5,
-          "itemId": "11311",
-          "name": "Pure Sky",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/11311.jpg",
-          "description": "Temp. damage reduction"
-        },
-        {
-          "slot": 6,
-          "itemId": "1133",
-          "name": "Eternity Blade",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1133.jpg",
-          "description": "High crit damage"
-        }
-      ]
-    },
-    {
-      "id": "jungling-1",
-      "label": "Jungling 1",
-      "position": "Position 3",
-      "lane": "Jungling",
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1523",
-          "name": "Relentless Blade",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1523.jpg",
-          "description": "Monster kills boost PATK"
-        },
-        {
-          "slot": 2,
-          "itemId": "1422",
-          "name": "Boots of Resistance",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
-          "description": "Shortens CC"
-        },
-        {
-          "slot": 3,
-          "itemId": "1124",
-          "name": "Meteor",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1124.jpg",
-          "description": "PATK +35\nCDR +7.5%"
-        },
-        {
-          "slot": 4,
-          "itemId": "1137",
-          "name": "Axe of Torment",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1137.jpg",
-          "description": "Anti-squishy"
-        },
-        {
-          "slot": 5,
-          "itemId": "1345",
-          "name": "Nettle Gauntlet",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1345.jpg",
-          "description": "Offense & defense"
-        },
-        {
-          "slot": 6,
-          "itemId": "1327",
-          "name": "Spikemail",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1327.jpg",
-          "description": "Reflects damage"
-        }
-      ]
-    },
-    {
-      "id": "jungling-1",
-      "label": "Jungling 1",
-      "position": "Position 3",
-      "lane": "Jungling",
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1523",
-          "name": "Relentless Blade",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1523.jpg",
-          "description": "Monster kills boost PATK"
-        },
-        {
-          "slot": 2,
-          "itemId": "1422",
-          "name": "Boots of Resistance",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
-          "description": "Shortens CC"
-        },
-        {
-          "slot": 3,
-          "itemId": "1124",
-          "name": "Meteor",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1124.jpg",
-          "description": "PATK +35\nCDR +7.5%"
-        },
-        {
-          "slot": 4,
-          "itemId": "1137",
-          "name": "Axe of Torment",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1137.jpg",
-          "description": "Anti-squishy"
-        },
-        {
-          "slot": 5,
-          "itemId": "1533",
-          "name": "Rapacious Bite",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1533.jpg",
-          "description": "Monster kills boost PATK"
-        },
-        {
-          "slot": 6,
-          "itemId": "1345",
-          "name": "Nettle Gauntlet",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1345.jpg",
-          "description": "Offense & defense"
-        }
-      ]
-    },
-    {
-      "id": "preset",
-      "label": "Preset",
-      "position": "Position 3",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1523",
-          "name": "Relentless Blade",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1523.jpg",
-          "description": "Monster kills boost PATK"
-        },
-        {
-          "slot": 2,
-          "itemId": "1423",
-          "name": "Boots of Tranquility",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1423.jpg",
-          "description": "Reduces Skill CD"
-        },
-        {
-          "slot": 3,
-          "itemId": "1124",
-          "name": "Meteor",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1124.jpg",
-          "description": "PATK +35\nCDR +7.5%"
-        },
-        {
-          "slot": 4,
-          "itemId": "1137",
-          "name": "Axe of Torment",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1137.jpg",
-          "description": "Anti-squishy"
-        },
-        {
-          "slot": 5,
-          "itemId": "1534",
-          "name": "Dragon's Rage",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1534.jpg",
-          "description": "Boosts BA damage"
-        },
-        {
-          "slot": 6,
-          "itemId": "1533",
-          "name": "Rapacious Bite",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1533.jpg",
-          "description": "Monster kills boost PATK"
-        }
-      ]
-    }
+  "metaAnalysisZh": [
+    "趙雲 勝率 52.62%（Camp HOK，2026-06-07）",
+    "選取率 0.61%",
+    "禁用率 0.02%",
+    "克制：Lapulapu、Ata、Sakeer；被克制：Guiguzi、Ziya、Fang"
   ],
   "guide": {
     "overview": "Zilong is a Medium Assassin (Jungling) on Honor of Kings Global. Camp HOK ranks them Tier B with 52.7% win rate and 0.6% pick rate as of 2026-06-05.",

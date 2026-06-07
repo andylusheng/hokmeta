@@ -6,6 +6,12 @@ import type {
   HeroSkillOrder,
 } from '@/types/hero';
 import { formatRate } from '@/lib/data';
+import {
+  getLocalizedArcana,
+  getLocalizedBuild,
+  getLocalizedSkills,
+  getLocalizedSpells,
+} from '@/lib/hero-locale-data';
 import { createT, getMetaSeasonLabel, type Locale } from '@/lib/i18n';
 import { getZhPlaybookOverride } from '@/lib/hero-content-zh';
 import { resolveLocalizedGuide } from '@/lib/hero-guide-locale';
@@ -14,6 +20,13 @@ import {
   translateLane,
   translateRole,
 } from '@/lib/locale-labels';
+import {
+  formatHeroNameList,
+  formatItemNameList,
+  getHeroDisplayName,
+  translateArcanaName,
+} from '@/lib/locale-names';
+import { getArcanaRationale, getItemSlotWhy } from '@/lib/build-rationale';
 
 export interface HeroPlaybook {
   hook: string;
@@ -104,10 +117,11 @@ const OVERRIDES: Record<string, Partial<HeroPlaybook>> = {
 
 function passiveHook(hero: Hero, locale: Locale): string {
   const t = createT(locale);
-  const passive = hero.skills?.find((s) => s.slot === 'passive');
+  const name = getHeroDisplayName(hero, locale);
+  const passive = getLocalizedSkills(hero, locale).find((s) => s.slot === 'passive');
   if (!passive?.description) {
     return t('playbook.passiveHookNoDesc', {
-      name: hero.name,
+      name,
       lane: translateLane(hero.lane, locale) || translateRole(hero.role, locale),
       role: translateRole(hero.role, locale),
       difficulty: translateDifficulty(hero.difficulty, locale),
@@ -115,10 +129,10 @@ function passiveHook(hero: Hero, locale: Locale): string {
   }
   const first = passive.description.split(/[.!?]/)[0]?.trim();
   if (first && first.length > 20 && first.length < 160) {
-    return t('playbook.passiveHookWithDesc', { name: hero.name, desc: first });
+    return t('playbook.passiveHookWithDesc', { name, desc: first });
   }
   return t('playbook.passiveHookNamed', {
-    name: hero.name,
+    name,
     role: translateRole(hero.role, locale),
     lane: translateLane(hero.lane, locale) || t('playbook.flex'),
     passive: passive.name,
@@ -127,9 +141,10 @@ function passiveHook(hero: Hero, locale: Locale): string {
 
 function defaultSkillOrder(hero: Hero, locale: Locale): HeroSkillOrder {
   const t = createT(locale);
-  const s1 = hero.skills?.find((s) => s.slot === 'skill1')?.name ?? t('skills.skill1');
-  const s2 = hero.skills?.find((s) => s.slot === 'skill2')?.name ?? t('skills.skill2');
-  const ult = hero.skills?.find((s) => s.slot === 'ultimate')?.name ?? t('skills.ultimate');
+  const skills = getLocalizedSkills(hero, locale);
+  const s1 = skills.find((s) => s.slot === 'skill1')?.name ?? t('skills.skill1');
+  const s2 = skills.find((s) => s.slot === 'skill2')?.name ?? t('skills.skill2');
+  const ult = skills.find((s) => s.slot === 'ultimate')?.name ?? t('skills.ultimate');
 
   const assassin = hero.role === 'Assassin';
   const mage = hero.role === 'Mage' || hero.role === 'Support';
@@ -162,7 +177,7 @@ function defaultSkillOrder(hero: Hero, locale: Locale): HeroSkillOrder {
 function defaultCombos(hero: Hero, locale: Locale): HeroCombo[] {
   const t = createT(locale);
   const g = hero.guide;
-  const skills = (hero.skills || [])
+  const skills = getLocalizedSkills(hero, locale)
     .filter((s) => s.slot !== 'passive')
     .map((s) => s.name);
 
@@ -200,34 +215,26 @@ function defaultCombos(hero: Hero, locale: Locale): HeroCombo[] {
 }
 
 function defaultItemNotes(hero: Hero, locale: Locale): HeroItemNote[] {
-  if (hero.guide?.itemNotes?.length && locale === 'en') return hero.guide.itemNotes;
-  const t = createT(locale);
-  return (hero.build || [])
+  if (hero.guide?.itemNotes?.length && locale === 'en' && hero.slug === 'musashi') {
+    return hero.guide.itemNotes;
+  }
+  return getLocalizedBuild(hero, locale)
     .filter((b) => b.name && b.name !== 'Data unavailable')
     .map((b) => ({
       slot: b.slot,
-      why:
-        b.description && b.description !== 'Data unavailable'
-          ? b.description
-          : t('playbook.itemCore', {
-              slot: b.slot,
-              lane: translateLane(hero.lane, locale) || translateRole(hero.role, locale),
-            }),
+      why: getItemSlotWhy(hero, b, locale),
     }));
 }
 
 function defaultArcanaRows(hero: Hero, locale: Locale): HeroArcanaRow[] {
   if (hero.guide?.arcanaRows?.length && locale === 'en') return hero.guide.arcanaRows;
   const t = createT(locale);
-  const arcana = (hero.arcana || []).filter(Boolean);
-  const spells = (hero.spells || []).filter(Boolean);
+  const arcana = getLocalizedArcana(hero, locale).filter(Boolean);
+  const spells = getLocalizedSpells(hero, locale).filter(Boolean);
   const rows: HeroArcanaRow[] = arcana.map((rune, i) => ({
     slot: i === 0 ? t('playbook.arcanaPrimary') : t('playbook.arcanaRune', { n: i + 1 }),
-    rune,
-    effect: t('playbook.arcanaEffect', {
-      role: translateRole(hero.role, locale),
-      lane: translateLane(hero.lane, locale),
-    }),
+    rune: translateArcanaName(rune, locale),
+    effect: getArcanaRationale(hero, rune, locale),
   }));
   if (spells.length) {
     rows.push({
@@ -264,16 +271,18 @@ export function getHeroPlaybook(hero: Hero, locale: Locale = 'en'): HeroPlaybook
   const itemNotes = override.itemNotes ?? defaultItemNotes(hero, locale);
   const arcanaRows = override.arcanaRows ?? defaultArcanaRows(hero, locale);
 
-  const buildNames = (hero.build || [])
-    .filter((b) => b.name !== 'Data unavailable')
-    .map((b) => b.name)
-    .slice(0, 3)
-    .join(locale === 'zh-TW' ? '、' : ', ');
+  const buildNames = formatItemNameList(
+    getLocalizedBuild(hero, locale)
+      .filter((b) => b.name !== 'Data unavailable')
+      .map((b) => b.name)
+      .slice(0, 3),
+    locale
+  );
 
-  const countersInto = (hero.counters || [])
-    .filter((c) => c !== 'Data unavailable')
-    .slice(0, 2)
-    .join(locale === 'zh-TW' ? '、' : ', ');
+  const countersInto = formatHeroNameList(
+    (hero.counters || []).filter((c) => c !== 'Data unavailable').slice(0, 2),
+    locale
+  );
 
   return {
     hook,

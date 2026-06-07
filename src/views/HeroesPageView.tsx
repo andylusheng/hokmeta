@@ -1,62 +1,72 @@
-import { getHeroesGroupedByRole, heroes } from '@/lib/data';
+import { heroes, sortByMetaScore } from '@/lib/data';
 import { absoluteUrl } from '@/lib/seo';
 import { createT, localePath, type Locale } from '@/lib/i18n';
-import { HeroCard } from '@/components/HeroCard';
+import { HeroAvatarGrid } from '@/components/HeroAvatarGrid';
 import { Breadcrumb } from '@/components/Breadcrumb';
 import { JsonLd, breadcrumbSchema, itemListSchema } from '@/lib/schema';
-import { ROLES_AZ } from '@/types/hero';
-
-function roleLabel(role: string, locale: Locale): string {
-  const t = createT(locale);
-  const key = `roles.${role}`;
-  const translated = t(key);
-  return translated === key ? role : translated;
-}
+import { LANE_ORDER, LANE_LABEL, heroToLane, type GameLane } from '@/lib/lanes';
+import { translateLane } from '@/lib/locale-labels';
 
 export function HeroesPageView({ locale = 'en' }: { locale?: Locale }) {
   const t = createT(locale);
-  const grouped = getHeroesGroupedByRole();
+  const sorted = sortByMetaScore(heroes);
+
   const crumbs = breadcrumbSchema([
     { name: t('common.home'), path: localePath(locale, '/') },
-    { name: t('common.heroes'), path: localePath(locale, '/heroes') },
+    { name: t('nav.heroBuilds'), path: localePath(locale, '/heroes') },
   ]);
   const list = itemListSchema(
-    'All HOK Meta Heroes',
+    'All HOKMeta Heroes',
     heroes.map((h) => ({
       name: h.name,
       url: absoluteUrl(localePath(locale, `/hero/${h.slug}`)),
     }))
   );
 
+  const byLane = LANE_ORDER.reduce(
+    (acc, lane) => {
+      acc[lane] = sorted.filter((h) => heroToLane(h) === lane);
+      return acc;
+    },
+    {} as Record<GameLane, typeof heroes>
+  );
+
   return (
-    <div className="container-page">
+    <div className="container-wide">
       <JsonLd data={crumbs} />
       <JsonLd data={list} />
       <Breadcrumb
         items={[
           { label: t('common.home'), href: localePath(locale, '/') },
-          { label: t('common.allHeroes') },
+          { label: t('nav.heroBuilds') },
         ]}
       />
-      <h1 className="mb-2 text-3xl font-bold text-white">{t('heroes.title')}</h1>
+      <h1 className="mb-2 font-display text-3xl font-black text-white sm:text-4xl">
+        {t('heroes.title')}
+      </h1>
       <p className="mb-8 text-gray-400">
         {t('heroes.subtitle', { count: heroes.length })}
       </p>
 
+      <section className="mb-12">
+        <HeroAvatarGrid heroes={sorted} locale={locale} size={56} />
+      </section>
+
       <div className="space-y-10">
-        {ROLES_AZ.map((role) => {
-          const roleHeroes = grouped[role];
-          if (!roleHeroes.length) return null;
+        {LANE_ORDER.map((lane) => {
+          const laneHeroes = byLane[lane];
+          if (!laneHeroes.length) return null;
           return (
-            <section key={role} id={`heroes-${role.toLowerCase()}`}>
-              <h2 className="mb-4 text-2xl font-bold text-hok-gold">
-                {roleLabel(role, locale)}
+            <section key={lane} id={`lane-${lane}`}>
+              <h2 className="mb-4 text-xl font-bold text-hok-gold">
+                {translateLane(LANE_LABEL[lane], locale)}
               </h2>
-              <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-                {roleHeroes.map((hero) => (
-                  <HeroCard key={hero.slug} hero={hero} locale={locale} />
-                ))}
-              </div>
+              <HeroAvatarGrid
+                heroes={laneHeroes}
+                locale={locale}
+                size={52}
+                columns="grid-cols-4 sm:grid-cols-6 md:grid-cols-8 lg:grid-cols-10"
+              />
             </section>
           );
         })}

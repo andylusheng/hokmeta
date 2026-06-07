@@ -4,6 +4,7 @@ import { HeroAvatar } from '@/components/HeroAvatar';
 import { formatRate } from '@/lib/data';
 import { createT, localePath, type Locale } from '@/lib/i18n';
 import { translateRole } from '@/lib/locale-labels';
+import { getHeroDisplayName } from '@/lib/locale-names';
 
 export function HeroCard({
   hero,
@@ -22,7 +23,9 @@ export function HeroCard({
     >
       <HeroAvatar hero={hero} size={56} />
       <div className="min-w-0 flex-1">
-        <h3 className="truncate font-semibold text-white">{hero.name}</h3>
+        <h3 className="truncate font-semibold text-white">
+          {getHeroDisplayName(hero, locale)}
+        </h3>
         <p className="text-sm text-gray-400">
           {translateRole(hero.role, locale)} · {t('hero.tier')} {hero.tier}
           {hero.rank != null && (

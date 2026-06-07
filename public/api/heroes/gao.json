@@ -2,48 +2,82 @@
   "id": "gao",
   "slug": "gao",
   "name": "Gao",
+  "nameZh": "高漸離",
   "role": "Mage",
   "roles": "Mage",
+  "rolesZh": "法師",
   "lane": "Mid Lane",
+  "laneZh": "中路",
   "difficulty": "Medium",
   "tier": "B",
-  "winRate": 50.91,
-  "pickRate": 0.55,
-  "banRate": 0.11,
-  "rank": 55,
+  "winRate": 50.97,
+  "pickRate": 0.46,
+  "banRate": 0.06,
+  "rank": 53,
   "avatar": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/QWFCuWNn.png",
   "avatarFallback": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/115/115.jpg",
+  "heroCover": "https://camp.honorofkings.com/social/game/src/image_hero_cover_1275*718/Eb9l4wn1.jpg",
   "tencentId": 115,
-  "dataSource": "Camp HOK + HoKStats.gg (intl)",
-  "dataUpdated": "2026-06-05",
+  "dataSource": "Camp HOK bilingual (primary)",
+  "dataUpdated": "2026-06-07",
   "skills": [
     {
       "slot": "passive",
       "name": "Guitar Solo",
-      "description": "For every 3 Basic Attacks or skills Gao uses, his Basic Attack is enhanced,dealing damage on hit.",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/115/11500.png",
-      "cooldown": null
+      "description": "For every 3 Basic Attacks or skills Gao uses, his Basic Attack is enhanced, dealing damage on hit.",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/11500.png",
+      "cooldown": "1s"
     },
     {
       "slot": "skill1",
       "name": "Wild Chord",
       "description": "Launches musical notes that bounce between enemies, dealing damage.",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/115/11510.png",
-      "cooldown": null
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/11510.png",
+      "cooldown": "8s"
     },
     {
       "slot": "skill2",
       "name": "String Bender",
-      "description": "Damages and slows enemies within range. Hits on heroes restore Health, and he gains damage reduction during the dash.",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/115/11520.png",
-      "cooldown": null
+      "description": "Damages and slows enemies within range. Hits on heroes recover Health, and he gains damage reduction during the dash.",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/11520.png",
+      "cooldown": "10s"
     },
     {
       "slot": "ultimate",
       "name": "Rock Out!",
       "description": "Gains Movement Speed and damage reduction while dealing continuous damage to enemies within range.",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/115/11530.png",
-      "cooldown": null
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/11530.png",
+      "cooldown": "45s"
+    }
+  ],
+  "skillsZh": [
+    {
+      "slot": "passive",
+      "name": "哀歌",
+      "description": "高漸離每進行3次普攻或施放技能後獲得強化普攻，命中造成傷害。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/11500.png",
+      "cooldown": "1s"
+    },
+    {
+      "slot": "skill1",
+      "name": "狂歌",
+      "description": "高漸離發出可在敵人之間彈射的音符，對敵人造成傷害。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/11510.png",
+      "cooldown": "8s"
+    },
+    {
+      "slot": "skill2",
+      "name": "離歌",
+      "description": "高漸離對範圍內敵人造成傷害和減速，命中英雄回復自身生命值，位移期間獲得減傷。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/11520.png",
+      "cooldown": "10s"
+    },
+    {
+      "slot": "ultimate",
+      "name": "魔音貫耳",
+      "description": "高漸離獲得加速和減傷，對範圍內敵人持續造成傷害。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/11530.png",
+      "cooldown": "45s"
     }
   ],
   "build": [
@@ -90,102 +124,7 @@
       "description": "Temp. invincibility"
     }
   ],
-  "arcana": [
-    "Nightmare"
-  ],
-  "spells": [
-    "Flash"
-  ],
-  "counters": [
-    "Mai Shiranui",
-    "Wukong",
-    "Xuance"
-  ],
-  "counteredBy": [
-    "Li Xin",
-    "Kaizer",
-    "Dun"
-  ],
-  "tips": [
-    "Gao is a Medium Mage (Mid Lane) on Honor of Kings Global. Camp HOK ranks them Tier B with 50.9% win rate and 0.6% pick rate as of 2026-06-05.",
-    "Best build path: Insatiable Tome → Boots of Resistance → Savant's Wrath → Void Staff → Staves of Sorcery → Splendor.",
-    "Run Nightmare for stats that match Gao's Mage kit. Take Flash — swap to Purify against heavy CC or Smite when jungling.",
-    "Standard trade: Wild Chord → String Bender → Rock Out! → weave basic attacks. Weave basic attacks between skill casts for passive value.",
-    "Laning: Control first wave without taking free poke. Roam after pushing wave 2–4 to side lanes with your jungler.",
-    "Teamfight: Poke from max range before objective. Save hard CC for enemy dive or your carry peel window.",
-    "Gao excels into Mai Shiranui, Wukong, Xuance. Avoid blind picking into Li Xin, Kaizer, Dun without team peel.",
-    "Gao sits at Tier B globally (50.9% WR). In high rank, pick only into favorable matchups or when you have a dedicated pocket pick."
-  ],
-  "patchHistory": [
-    {
-      "version": "Live meta",
-      "change": "Camp HOK — WR 50.9%, pick 0.6%, ban 0.1%, tier B."
-    },
-    {
-      "version": "Matchups",
-      "change": "Strong into Mai Shiranui, Wukong, Xuance · Weak into Li Xin, Kaizer, Dun."
-    },
-    {
-      "version": "High rank",
-      "change": "Gao sits at Tier B globally (50.9% WR). In high rank, pick only into favorable matchups or when you have a dedicated pocket pick."
-    }
-  ],
-  "faqs": [
-    {
-      "id": "faq-good-season",
-      "question": "Is Gao good in the current meta?",
-      "answer": "Gao is Tier B Mage with 50.9% win rate, 0.6% pick rate, and 0.1% ban rate on Honor of Kings Global (Camp HOK, 2026-06-05). Niche — draft carefully."
-    },
-    {
-      "id": "faq-best-build",
-      "question": "What is the best Gao build?",
-      "answer": "Core item path: Insatiable Tome, Boots of Resistance, Savant's Wrath, Void Staff, Staves of Sorcery, Splendor. Run Nightmare arcana with Flash. Switch to alternate build presets on this page for jungle, clash, or late-game setups."
-    },
-    {
-      "id": "faq-counter",
-      "question": "How to counter Gao?",
-      "answer": "Pick Li Xin, Kaizer, Dun into Gao. Deny Mid Lane resources early and force fights before Gao completes core items. Gao struggles when the enemy can out-range or out-sustain them."
-    },
-    {
-      "id": "faq-strong-into",
-      "question": "Who does Gao counter?",
-      "answer": "Gao is strong into Mai Shiranui, Wukong, Xuance according to HoKStats matchup data and role matchups on the global server. Draft Gao when the enemy relies on these heroes in the Mid Lane lane."
-    },
-    {
-      "id": "faq-high-rank",
-      "question": "Is Gao good in high rank / Diamond+?",
-      "answer": "Gao sits at Tier B globally (50.9% WR). In high rank, pick only into favorable matchups or when you have a dedicated pocket pick."
-    },
-    {
-      "id": "faq-lane",
-      "question": "What lane should Gao play?",
-      "answer": "Gao is tagged Mid Lane in Camp export (Mage). Control first wave without taking free poke. Roam after pushing wave 2–4 to side lanes with your jungler."
-    },
-    {
-      "id": "faq-arcana",
-      "question": "Best arcana and spells for Gao?",
-      "answer": "Recommended: Nightmare arcana. Battle spell: Flash. Adjust Purify/Execute based on enemy dive and jungle need."
-    },
-    {
-      "id": "faq-vs-peer",
-      "question": "Gao or Daji — which is better?",
-      "answer": "Gao vs Daji (Mage, Tier S+): Daji is 2.4% pick / 51.0% WR. Daji wins 0.1% more often globally. Choose Gao when you need Mid Lane identity; choose Daji for Mid Lane comfort."
-    },
-    {
-      "id": "faq-ban",
-      "question": "Should I ban Gao?",
-      "answer": "Low priority ban (0.1%). Focus bans on higher-tier Mage picks unless targeting a one-trick."
-    }
-  ],
-  "metaAnalysis": [
-    "Gao — 50.9% WR, 0.6% pick, 0.1% ban (Camp HOK 2026-06-05).",
-    "Tier B Mage · Mid Lane · difficulty Medium.",
-    "Gao sits at Tier B globally (50.9% WR). In high rank, pick only into favorable matchups or when you have a dedicated pocket pick.",
-    "Matchups: strong into Mai Shiranui, Wukong, Xuance; weak into Li Xin, Kaizer, Dun.",
-    "Gao vs Daji (Mage, Tier S+): Daji is 2.4% pick / 51.0% WR. Daji wins 0.1% more often globally. Choose Gao when you need Mid Lane identity; choose Daji for Mid Lane comfort.",
-    "Gao vs Angela (Mage, Tier S+): Angela is 2.3% pick / 51.8% WR. Angela wins 0.9% more often globally. Choose Gao when you need Mid Lane identity; choose Angela for Mid Lane comfort.",
-    "Draft tip: counter-pick or comfort pick when lane matchup is favorable."
-  ],
+  "buildZh": [],
   "builds": [
     {
       "id": "recommended",
@@ -237,6 +176,215 @@
         }
       ]
     }
+  ],
+  "arcana": [
+    "Nightmare"
+  ],
+  "arcanaZh": [],
+  "spells": [
+    "Flash"
+  ],
+  "spellsZh": [],
+  "counters": [
+    "Mai Shiranui",
+    "Wukong",
+    "Xuance"
+  ],
+  "counteredBy": [
+    "Li Xin",
+    "Kaizer",
+    "Dun"
+  ],
+  "tips": [
+    "Gao (Mage): Tier B — 50.97% WR (Camp HOK).",
+    "Lane: Mid Lane.",
+    "Build: Insatiable Tome, Boots of Resistance, Savant's Wrath."
+  ],
+  "tipsZh": [
+    "高漸離（中路）：梯度 B，勝率 50.97%（Camp HOK）。",
+    "出裝：見出裝區."
+  ],
+  "patchHistory": [
+    {
+      "seasonId": "14",
+      "seasonName": "S14",
+      "versionName": "2026/05/14",
+      "publishedAt": "2026-05-14T01:00:00Z",
+      "isCurrent": false,
+      "tag": "Stat Buffs",
+      "change": "Increased skill damage",
+      "detail": "",
+      "version": "S14"
+    },
+    {
+      "seasonId": "13",
+      "seasonName": "S13",
+      "versionName": "2026/01/22",
+      "publishedAt": "2026-01-22T01:00:00Z",
+      "isCurrent": false,
+      "tag": "Stat Buffs",
+      "change": "Adjusted Skill Damage",
+      "detail": "",
+      "version": "S13"
+    },
+    {
+      "seasonId": "10",
+      "seasonName": "S10",
+      "versionName": "20250529",
+      "publishedAt": "2025-05-29T01:48:14Z",
+      "isCurrent": false,
+      "tag": "Stat Nerfs",
+      "change": "Skill 1 damage reduced",
+      "detail": "",
+      "version": "S10"
+    },
+    {
+      "seasonId": "8",
+      "seasonName": "S8",
+      "versionName": "20250213",
+      "publishedAt": "2025-02-13T03:25:14Z",
+      "isCurrent": false,
+      "tag": "Stat Buffs",
+      "change": "Increased Attack Range and Added Damage Reduction to Ultimate",
+      "detail": "\"Gao needs to get close to as many enemies as possible while using his Ultimate, so we've increased his damage reduction to improve his survivability. Additionally, we've increased his range so it's easier for him to find a way to enter combat.\"",
+      "version": "S8"
+    },
+    {
+      "seasonId": "4",
+      "seasonName": "S4",
+      "versionName": "20240124",
+      "publishedAt": "2024-01-24T07:50:01Z",
+      "isCurrent": false,
+      "tag": "Mechanics Changes",
+      "change": "Enhanced Gao's mobility through new skills, making it easier for him to get close to the enemy and deal damage to them, with appropriate adjustments to his base stats and damage.",
+      "detail": "Compared to the typical mage, Gao's close-range combat style is relatively high-risk, but it comes with extremely high rewards. In this update, we have added more ways for Gao to quickly get up close and personal with the enemy so players have more room to play and experiment.",
+      "version": "S4"
+    },
+    {
+      "seasonId": "3",
+      "seasonName": "S3",
+      "versionName": "20231122",
+      "publishedAt": "2023-11-22T12:01:46Z",
+      "isCurrent": false,
+      "tag": "Stat Buffs",
+      "change": "Reduced his Skill 2 base cooldown time, increased its recovery effect, and added a new effect: it will now also restore Health to him upon hitting non-hero units.",
+      "detail": "Guitarist is one of just a few mages in the game who are able to engage in melee combat. To these heroes, the ability to stay alive and in the fight is key. We hope to give our players more choices when it comes to mage heroes, and that by enhancing his Skill 2 recovery, he'll be able to take part in team fights more often without having to worry too much about taking some damage.",
+      "version": "S3"
+    }
+  ],
+  "patchHistoryZh": [
+    {
+      "seasonId": "14",
+      "seasonName": "S14",
+      "versionName": "2026/05/14",
+      "publishedAt": "2026-05-14T01:00:00Z",
+      "isCurrent": false,
+      "tag": "數值增強",
+      "change": "提升技能傷害",
+      "detail": "",
+      "version": "S14"
+    },
+    {
+      "seasonId": "13",
+      "seasonName": "S13",
+      "versionName": "2026/01/22",
+      "publishedAt": "2026-01-22T01:00:00Z",
+      "isCurrent": false,
+      "tag": "數值增強",
+      "change": "調整技能傷害",
+      "detail": "",
+      "version": "S13"
+    },
+    {
+      "seasonId": "10",
+      "seasonName": "S10",
+      "versionName": "20250529",
+      "publishedAt": "2025-05-29T01:48:14Z",
+      "isCurrent": false,
+      "tag": "數值削弱",
+      "change": "降低1技能傷害",
+      "detail": "",
+      "version": "S10"
+    },
+    {
+      "seasonId": "8",
+      "seasonName": "S8",
+      "versionName": "20250213",
+      "publishedAt": "2025-02-13T03:25:14Z",
+      "isCurrent": false,
+      "tag": "數值增強",
+      "change": "增加射程及3技能減傷",
+      "detail": "「高漸離放大招時，靠近越多敵人效果越好，因此我們提高了他的減傷效果，讓他存活的時間更長；同時提升射程以便他更容易獲得切入機會。」",
+      "version": "S8"
+    },
+    {
+      "seasonId": "4",
+      "seasonName": "S4",
+      "versionName": "20240124",
+      "publishedAt": "2024-01-24T07:50:01Z",
+      "isCurrent": false,
+      "tag": "機制調整",
+      "change": "Enhanced Gao's mobility through new skills, making it easier for him to get close to the enemy and deal damage to them, with appropriate adjustments to his base stats and damage.",
+      "detail": "Compared to the typical mage, Gao's close-range combat style is relatively high-risk, but it comes with extremely high rewards. In this update, we have added more ways for Gao to quickly get up close and personal with the enemy so players have more room to play and experiment.",
+      "version": "S4"
+    },
+    {
+      "seasonId": "3",
+      "seasonName": "S3",
+      "versionName": "20231122",
+      "publishedAt": "2023-11-22T12:01:46Z",
+      "isCurrent": false,
+      "tag": "數值增強",
+      "change": "Reduced his Skill 2 base cooldown time, increased its recovery effect, and added a new effect: it will now also restore Health to him upon hitting non-hero units.",
+      "detail": "Guitarist is one of just a few mages in the game who are able to engage in melee combat. To these heroes, the ability to stay alive and in the fight is key. We hope to give our players more choices when it comes to mage heroes, and that by enhancing his Skill 2 recovery, he'll be able to take part in team fights more often without having to worry too much about taking some damage.",
+      "version": "S3"
+    }
+  ],
+  "faqs": [
+    {
+      "id": "faq-good-season",
+      "question": "Is Gao good in current season?",
+      "answer": "Gao is Tier B Mage with 50.97% win rate, 0.46% pick rate, and 0.06% ban rate (Camp HOK international)."
+    },
+    {
+      "id": "faq-best-build",
+      "question": "What is the best Gao build?",
+      "answer": "Recommended: Insatiable Tome, Boots of Resistance, Savant's Wrath, Void Staff, Staves of Sorcery, Splendor."
+    },
+    {
+      "id": "faq-counter",
+      "question": "How to counter Gao?",
+      "answer": "Pick Li Xin, Kaizer, Dun. Strong into Mai Shiranui, Wukong, Xuance."
+    }
+  ],
+  "faqsZh": [
+    {
+      "id": "faq-good-season",
+      "question": "高漸離 這版本適合上分嗎？",
+      "answer": "高漸離 為 B 梯度，勝率 50.97%、選取 0.46%、禁用 0.06%（Camp HOK 國際服）。"
+    },
+    {
+      "id": "faq-best-build",
+      "question": "高漸離 出裝怎麼搭配？",
+      "answer": "推薦：見本頁出裝區."
+    },
+    {
+      "id": "faq-counter",
+      "question": "怎麼克制 高漸離？",
+      "answer": "可選 Li Xin、Kaizer、Dun。高漸離 克制 Mai Shiranui、Wukong、Xuance。"
+    }
+  ],
+  "metaAnalysis": [
+    "Gao win rate 50.97% (Camp HOK, 2026-06-07).",
+    "Pick rate 0.46%.",
+    "Ban rate 0.06%.",
+    "Counters: Mai Shiranui, Wukong, Xuance. Weak into: Li Xin, Kaizer, Dun."
+  ],
+  "metaAnalysisZh": [
+    "高漸離 勝率 50.97%（Camp HOK，2026-06-07）",
+    "選取率 0.46%",
+    "禁用率 0.06%",
+    "克制：Mai Shiranui、Wukong、Xuance；被克制：Li Xin、Kaizer、Dun"
   ],
   "guide": {
     "overview": "Gao is a Medium Mage (Mid Lane) on Honor of Kings Global. Camp HOK ranks them Tier B with 50.9% win rate and 0.6% pick rate as of 2026-06-05.",

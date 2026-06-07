@@ -1,7 +1,19 @@
 import type { Hero } from '@/types/hero';
 import { heroes, formatRate } from '@/lib/data';
+import {
+  getLocalizedArcana,
+  getLocalizedBuild,
+  getLocalizedSpells,
+  hasCampZhContent,
+} from '@/lib/hero-locale-data';
 import { createT, type Locale } from '@/lib/i18n';
 import { translateLane, translateRole } from '@/lib/locale-labels';
+import {
+  formatHeroNameList,
+  formatItemNameList,
+  getHeroDisplayName,
+  translateArcanaName,
+} from '@/lib/locale-names';
 
 const FAQ_PRIORITY = [
   'faq-best-build',
@@ -52,7 +64,7 @@ export function buildLaningTip(hero: Hero, locale: Locale): string {
     if (tip !== key) return tip;
   }
   return t('faq.laningDefault', {
-    name: hero.name,
+    name: getHeroDisplayName(hero, locale),
     lane: translateLane(lane, locale) || translateRole(hero.role, locale),
   });
 }
@@ -65,11 +77,11 @@ export function buildHighRankNote(hero: Hero, locale: Locale): string {
   const ban = formatRate(hero.banRate);
 
   if (hero.tier === 'S+' || hero.tier === 'S') {
-    parts.push(t('faq.highRankStaple', { name: hero.name, tier: hero.tier }));
+    parts.push(t('faq.highRankStaple', { name: getHeroDisplayName(hero, locale), tier: hero.tier }));
   } else if (hero.tier === 'A') {
-    parts.push(t('faq.highRankViable', { name: hero.name, wr }));
+    parts.push(t('faq.highRankViable', { name: getHeroDisplayName(hero, locale), wr }));
   } else {
-    parts.push(t('faq.highRankNiche', { name: hero.name, tier: hero.tier, wr }));
+    parts.push(t('faq.highRankNiche', { name: getHeroDisplayName(hero, locale), tier: hero.tier, wr }));
   }
 
   const banRate = hero.banRate ?? 0;
@@ -77,9 +89,9 @@ export function buildHighRankNote(hero: Hero, locale: Locale): string {
   const winRate = hero.winRate ?? 0;
 
   if (banRate >= 0.5) {
-    parts.push(t('faq.highRankBan', { name: hero.name, ban }));
+    parts.push(t('faq.highRankBan', { name: getHeroDisplayName(hero, locale), ban }));
   } else if (pickRate >= 0.8) {
-    parts.push(t('faq.highRankPick', { name: hero.name, pick }));
+    parts.push(t('faq.highRankPick', { name: getHeroDisplayName(hero, locale), pick }));
   } else if (pickRate < 0.2) {
     parts.push(t('faq.highRankLowPick', { pick }));
   }
@@ -106,6 +118,8 @@ function topPeer(hero: Hero): Hero | undefined {
 
 function peerComparison(hero: Hero, peer: Hero, locale: Locale): string {
   const t = createT(locale);
+  const name = getHeroDisplayName(hero, locale);
+  const peerName = getHeroDisplayName(peer, locale);
   const wrDiff =
     hero.winRate != null && peer.winRate != null
       ? hero.winRate - peer.winRate
@@ -114,12 +128,12 @@ function peerComparison(hero: Hero, peer: Hero, locale: Locale): string {
   if (wrDiff != null) {
     wrNote =
       wrDiff > 0
-        ? t('faq.peerWrWin', { name: hero.name, peer: peer.name, diff: wrDiff.toFixed(1) })
-        : t('faq.peerWrLose', { peer: peer.name, diff: Math.abs(wrDiff).toFixed(1) });
+        ? t('faq.peerWrWin', { name, peer: peerName, diff: wrDiff.toFixed(1) })
+        : t('faq.peerWrLose', { peer: peerName, diff: Math.abs(wrDiff).toFixed(1) });
   }
   return t('faq.peerCompare', {
-    name: hero.name,
-    peer: peer.name,
+    name,
+    peer: peerName,
     peerRole: translateRole(peer.role, locale),
     peerTier: peer.tier,
     peerPick: formatRate(peer.pickRate),
@@ -132,21 +146,30 @@ function peerComparison(hero: Hero, peer: Hero, locale: Locale): string {
 
 function buildZhTWFaqs(hero: Hero): HeroFaq[] {
   const t = createT('zh-TW');
-  const buildNames = (hero.build || [])
-    .filter((b) => b.name && b.name !== 'Data unavailable')
-    .map((b) => b.name)
-    .slice(0, 6)
-    .join('、');
-  const arcana = (hero.arcana || []).filter(Boolean).join('、') || t('faq.seeBuild');
-  const spells = (hero.spells || []).join(' / ') || 'Flash';
-  const into = (hero.counters || [])
-    .filter((c) => c !== 'Data unavailable')
-    .slice(0, 4)
-    .join('、') || t('faq.flexCc');
-  const weak = (hero.counteredBy || [])
-    .filter((c) => c !== 'Data unavailable')
-    .slice(0, 4)
-    .join('、') || t('faq.diveComp');
+  const displayName = getHeroDisplayName(hero, 'zh-TW');
+  const buildNames = formatItemNameList(
+    getLocalizedBuild(hero, 'zh-TW')
+      .filter((b) => b.name && b.name !== 'Data unavailable')
+      .map((b) => b.name)
+      .slice(0, 6),
+    'zh-TW'
+  );
+  const arcana =
+    getLocalizedArcana(hero, 'zh-TW')
+      .filter(Boolean)
+      .map((a) => translateArcanaName(a, 'zh-TW'))
+      .join('、') || t('faq.seeBuild');
+  const spells = getLocalizedSpells(hero, 'zh-TW').join(' / ') || 'Flash';
+  const into =
+    formatHeroNameList(
+      (hero.counters || []).filter((c) => c !== 'Data unavailable').slice(0, 4),
+      'zh-TW'
+    ) || t('faq.flexCc');
+  const weak =
+    formatHeroNameList(
+      (hero.counteredBy || []).filter((c) => c !== 'Data unavailable').slice(0, 4),
+      'zh-TW'
+    ) || t('faq.diveComp');
   const peer = topPeer(hero);
   const date = hero.dataUpdated ?? 'meta';
   const role = translateRole(hero.role, 'zh-TW');
@@ -155,9 +178,9 @@ function buildZhTWFaqs(hero: Hero): HeroFaq[] {
   const faqs: HeroFaq[] = [
     {
       id: 'faq-good-season',
-      question: t('faq.q.goodSeason', { name: hero.name }),
+      question: t('faq.q.goodSeason', { name: displayName }),
       answer: t('faq.a.goodSeason', {
-        name: hero.name,
+        name: displayName,
         tier: hero.tier,
         role,
         wr: formatRate(hero.winRate),
@@ -169,14 +192,14 @@ function buildZhTWFaqs(hero: Hero): HeroFaq[] {
     },
     {
       id: 'faq-best-build',
-      question: t('faq.q.bestBuild', { name: hero.name }),
-      answer: t('faq.a.bestBuild', { name: hero.name, build: buildNames, arcana, spells }),
+      question: t('faq.q.bestBuild', { name: displayName }),
+      answer: t('faq.a.bestBuild', { name: displayName, build: buildNames, arcana, spells }),
     },
     {
       id: 'faq-counter',
-      question: t('faq.q.counter', { name: hero.name }),
+      question: t('faq.q.counter', { name: displayName }),
       answer: t('faq.a.counter', {
-        name: hero.name,
+        name: displayName,
         weak,
         lane,
         struggle: counterStruggle(hero, 'zh-TW'),
@@ -184,19 +207,19 @@ function buildZhTWFaqs(hero: Hero): HeroFaq[] {
     },
     {
       id: 'faq-strong-into',
-      question: t('faq.q.strongInto', { name: hero.name }),
-      answer: t('faq.a.strongInto', { name: hero.name, into, lane }),
+      question: t('faq.q.strongInto', { name: displayName }),
+      answer: t('faq.a.strongInto', { name: displayName, into, lane }),
     },
     {
       id: 'faq-high-rank',
-      question: t('faq.q.highRank', { name: hero.name }),
+      question: t('faq.q.highRank', { name: displayName }),
       answer: buildHighRankNote(hero, 'zh-TW'),
     },
     {
       id: 'faq-lane',
-      question: t('faq.q.lane', { name: hero.name }),
+      question: t('faq.q.lane', { name: displayName }),
       answer: t('faq.a.lane', {
-        name: hero.name,
+        name: displayName,
         lane,
         roles: hero.roles || role,
         tip: buildLaningTip(hero, 'zh-TW'),
@@ -204,15 +227,16 @@ function buildZhTWFaqs(hero: Hero): HeroFaq[] {
     },
     {
       id: 'faq-arcana',
-      question: t('faq.q.arcana', { name: hero.name }),
-      answer: t('faq.a.arcana', { name: hero.name, arcana, spells }),
+      question: t('faq.q.arcana', { name: displayName }),
+      answer: t('faq.a.arcana', { name: displayName, arcana, spells }),
     },
   ];
 
   if (peer) {
+    const peerName = getHeroDisplayName(peer, 'zh-TW');
     faqs.push({
       id: 'faq-vs-peer',
-      question: t('faq.q.vsPeer', { name: hero.name, peer: peer.name }),
+      question: t('faq.q.vsPeer', { name: displayName, peer: peerName }),
       answer: peerComparison(hero, peer, 'zh-TW'),
     });
   }
@@ -221,10 +245,10 @@ function buildZhTWFaqs(hero: Hero): HeroFaq[] {
   const pickRate = hero.pickRate ?? 0;
   let banAnswer: string;
   if (banRate >= 0.3) {
-    banAnswer = t('faq.a.banYes', { name: hero.name, ban: formatRate(hero.banRate), role });
+    banAnswer = t('faq.a.banYes', { name: displayName, ban: formatRate(hero.banRate), role });
   } else if (pickRate >= 1) {
     banAnswer = t('faq.a.banOptional', {
-      name: hero.name,
+      name: displayName,
       role,
       pick: formatRate(hero.pickRate),
       ban: formatRate(hero.banRate),
@@ -235,7 +259,7 @@ function buildZhTWFaqs(hero: Hero): HeroFaq[] {
 
   faqs.push({
     id: 'faq-ban',
-    question: t('faq.q.ban', { name: hero.name }),
+    question: t('faq.q.ban', { name: displayName }),
     answer: banAnswer,
   });
 
@@ -259,6 +283,9 @@ export function getLocalizedFaqs(
   limit = 5
 ): HeroFaq[] {
   if (locale === 'zh-TW') {
+    if (hero.faqsZh?.length && hasCampZhContent(hero)) {
+      return pickFeatured(hero.faqsZh, limit);
+    }
     return pickFeatured(buildZhTWFaqs(hero), limit);
   }
   const byId = new Map(hero.faqs.map((f) => [f.id, f]));

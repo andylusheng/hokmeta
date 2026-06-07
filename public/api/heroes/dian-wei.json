@@ -2,48 +2,82 @@
   "id": "dian-wei",
   "slug": "dian-wei",
   "name": "Dian Wei",
+  "nameZh": "典韋",
   "role": "Warrior",
   "roles": "Fighter",
+  "rolesZh": "戰士",
   "lane": "Jungling",
+  "laneZh": "打野",
   "difficulty": "Medium",
-  "tier": "S",
-  "winRate": 51.8,
-  "pickRate": 1.13,
-  "banRate": 0.41,
-  "rank": 28,
+  "tier": "A",
+  "winRate": 50.82,
+  "pickRate": 1.04,
+  "banRate": 0.31,
+  "rank": 56,
   "avatar": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/y6IMFSlI.png",
   "avatarFallback": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/129/129.jpg",
+  "heroCover": "https://camp.honorofkings.com/social/game/src/image_hero_cover_1275*718/HWAUFh5S.jpg",
   "tencentId": 129,
-  "dataSource": "Camp HOK + HoKStats.gg (intl)",
-  "dataUpdated": "2026-06-05",
+  "dataSource": "Camp HOK bilingual (primary)",
+  "dataUpdated": "2026-06-07",
   "skills": [
     {
       "slot": "passive",
       "name": "Mounting Rage",
-      "description": "Gains stacks upon getting defeats and assits,for up to 20 stacks.Physical atack increases with each stack",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/129/12900.png",
-      "cooldown": null
+      "description": "All skills can cleanse crowd controls. Each successful cleanse boosts his Physical Attack and Attack Range, for up to 6 stacks.",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/12900.png",
+      "cooldown": "1s"
     },
     {
       "slot": "skill1",
       "name": "Holding on to Sanity",
-      "description": "Removes crowd controls,gains a movement speed bonus,and enhances the next basic atack to deal extra damage",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/129/12910.png",
-      "cooldown": null
+      "description": "Gains a Movement Speed bonus and enhances the next Basic Attack to deal extra damage.",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/12910.png",
+      "cooldown": "8s"
     },
     {
       "slot": "skill2",
       "name": "Outburst",
-      "description": "Damages and slows enemies in range . He becomes enhanced on hit.While enhanced,he gains atack speed and lifesteal.",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/129/12920.png",
-      "cooldown": null
+      "description": "Deals damage to enemies within range and slows them. His Attack Speed and Lifesteal are enhanced when striking an enemy. If he misses, he gains only half of the Attack Speed, Lifesteal, and extra Health recovery effects.",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/12920.png",
+      "cooldown": "7s"
     },
     {
       "slot": "ultimate",
       "name": "Leap of Fury",
-      "description": "Jumps to the target,damaging and slowing them while enhancing himself.While enhanced,deals extra true damage to enemies.",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/129/12930.png",
-      "cooldown": null
+      "description": "Leaps toward the target enemy, dealing damage and slowing them. Enhances himself, dealing extra damage to enemies while enhanced.",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/12930.png",
+      "cooldown": "30s"
+    }
+  ],
+  "skillsZh": [
+    {
+      "slot": "passive",
+      "name": "激怒",
+      "description": "典韋的所有技能均可解控，成功解控後提升自身的物理攻擊和攻擊距離，最多疊加6層。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/12900.png",
+      "cooldown": "1s"
+    },
+    {
+      "slot": "skill1",
+      "name": "紅眼",
+      "description": "獲得額外移速加成，強化下次普攻造成額外傷害。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/12910.png",
+      "cooldown": "8s"
+    },
+    {
+      "slot": "skill2",
+      "name": "瘋狂",
+      "description": "典韋對範圍內敵人造成傷害和減速。命中敵人後強化攻速和吸血。若未命中敵人，典韋只獲得一半的攻速、吸血效果和額外回復效果。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/12920.png",
+      "cooldown": "7s"
+    },
+    {
+      "slot": "ultimate",
+      "name": "嗜血",
+      "description": "跳向目標敵人，造成傷害和減速效果，並強化自身，強化期間對敵人造成額外傷害。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/12930.png",
+      "cooldown": "30s"
     }
   ],
   "build": [
@@ -51,50 +85,500 @@
       "slot": 1,
       "itemId": "1533",
       "name": "Rapacious Bite",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1533.jpg",
-      "description": "Monster kills boost PATK"
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1533.png",
+      "description": "PATK +90, MSPD +5%, CDR +7.5%\nMonster kills boost ATK"
     },
     {
       "slot": 2,
-      "itemId": "1422",
-      "name": "Boots of Resistance",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
-      "description": "Shortens CC"
+      "itemId": "1327",
+      "name": "Spikemail",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1327.png",
+      "description": "PATK +45, PDEF +300, HP +700\nReflects damage"
     },
     {
       "slot": 3,
-      "itemId": "1137",
-      "name": "Axe of Torment",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1137.jpg",
-      "description": "Anti-squishy"
+      "itemId": "1125",
+      "name": "Demonsbane",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1125.png",
+      "description": "PATK +90, MDEF +150, HP +600\nBoosts Magical Defense"
     },
     {
       "slot": 4,
-      "itemId": "1327",
-      "name": "Spikemail",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1327.jpg",
-      "description": "Reflects damage"
+      "itemId": "1328",
+      "name": "Blood Rage",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1328.png",
+      "description": "PATK +75, HP +900\nTrades HP for shield"
     },
     {
       "slot": 5,
-      "itemId": "1331",
-      "name": "Blazing Cape",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1331.jpg",
-      "description": "Burns nearby enemies"
+      "itemId": "1337",
+      "name": "Sage's Sanctuary",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+      "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
     },
     {
       "slot": 6,
-      "itemId": "1347",
-      "name": "Longnight Guardian",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1347.jpg",
-      "description": "Resists burst damage"
+      "itemId": "1127",
+      "name": "Destiny",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+      "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
+    }
+  ],
+  "buildZh": [
+    {
+      "slot": 1,
+      "itemId": "1533",
+      "name": "貪婪之噬",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1533.png",
+      "description": "+90攻擊+5%移速+7.5%冷縮\n打野怪加攻擊"
+    },
+    {
+      "slot": 2,
+      "itemId": "1327",
+      "name": "反傷刺甲",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1327.png",
+      "description": "+45點攻擊+300點物防\n+700點生命值反彈傷害"
+    },
+    {
+      "slot": 3,
+      "itemId": "1125",
+      "name": "破魔刀",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1125.png",
+      "description": "+90點攻擊+150點法防+600點生命值\n增加法術防禦"
+    },
+    {
+      "slot": 4,
+      "itemId": "1328",
+      "name": "血魔之怒",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1328.png",
+      "description": "+75點攻擊+900點生命值 \n犧牲生命值換取護盾值"
+    },
+    {
+      "slot": 5,
+      "itemId": "1337",
+      "name": "賢者的庇護",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+      "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+    },
+    {
+      "slot": 6,
+      "itemId": "1127",
+      "name": "名刀・司命",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+      "description": "+75點攻擊+15%攻速+500點生命值\n保命"
+    }
+  ],
+  "builds": [
+    {
+      "id": "camp-0",
+      "label": "Preset",
+      "lane": "Jungle",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1533",
+          "name": "Rapacious Bite",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1533.png",
+          "description": "PATK +90, MSPD +5%, CDR +7.5%\nMonster kills boost ATK"
+        },
+        {
+          "slot": 2,
+          "itemId": "1327",
+          "name": "Spikemail",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1327.png",
+          "description": "PATK +45, PDEF +300, HP +700\nReflects damage"
+        },
+        {
+          "slot": 3,
+          "itemId": "1125",
+          "name": "Demonsbane",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1125.png",
+          "description": "PATK +90, MDEF +150, HP +600\nBoosts Magical Defense"
+        },
+        {
+          "slot": 4,
+          "itemId": "1328",
+          "name": "Blood Rage",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1328.png",
+          "description": "PATK +75, HP +900\nTrades HP for shield"
+        },
+        {
+          "slot": 5,
+          "itemId": "1337",
+          "name": "Sage's Sanctuary",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
+        },
+        {
+          "slot": 6,
+          "itemId": "1127",
+          "name": "Destiny",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
+        }
+      ]
+    },
+    {
+      "id": "camp-1",
+      "label": "Jungling 1",
+      "lane": "Jungle",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1137",
+          "name": "Axe of Torment",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1137.png",
+          "description": "PATK +80, CDR +10%, HP +500\nAnti-squishy"
+        },
+        {
+          "slot": 2,
+          "itemId": "1327",
+          "name": "Spikemail",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1327.png",
+          "description": "PATK +45, PDEF +300, HP +700\nReflects damage"
+        },
+        {
+          "slot": 3,
+          "itemId": "1134",
+          "name": "Master Sword",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1134.png",
+          "description": "PATK +55, Crit Rate +20%, HP +600\nEnhances BAs"
+        },
+        {
+          "slot": 4,
+          "itemId": "1133",
+          "name": "Eternity Blade",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1133.png",
+          "description": "PATK +120, Crit Rate +20%\nHigh crit damage"
+        },
+        {
+          "slot": 5,
+          "itemId": "1533",
+          "name": "Rapacious Bite",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1533.png",
+          "description": "PATK +90, MSPD +5%, CDR +7.5%\nMonster kills boost ATK"
+        },
+        {
+          "slot": 6,
+          "itemId": "1337",
+          "name": "Sage's Sanctuary",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
+        }
+      ]
+    },
+    {
+      "id": "camp-2",
+      "label": "Jungling 1",
+      "lane": "Jungle",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1533",
+          "name": "Rapacious Bite",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1533.png",
+          "description": "PATK +90, MSPD +5%, CDR +7.5%\nMonster kills boost ATK"
+        },
+        {
+          "slot": 2,
+          "itemId": "1422",
+          "name": "Boots of Resistance",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1422.png",
+          "description": "MDEF +100, PDEF +50, MSPD +50\nShortens crowd control"
+        },
+        {
+          "slot": 3,
+          "itemId": "1137",
+          "name": "Axe of Torment",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1137.png",
+          "description": "PATK +80, CDR +10%, HP +500\nAnti-squishy"
+        },
+        {
+          "slot": 4,
+          "itemId": "1338",
+          "name": "Cuirass of Savagery",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1338.png",
+          "description": "PATK +35, PDEF +210, HP +900\nOffense & defense"
+        },
+        {
+          "slot": 5,
+          "itemId": "1134",
+          "name": "Master Sword",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1134.png",
+          "description": "PATK +55, Crit Rate +20%, HP +600\nEnhances BAs"
+        },
+        {
+          "slot": 6,
+          "itemId": "1331",
+          "name": "Blazing Cape",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1331.png",
+          "description": "PDEF +150, MDEF +150, HP +1,100\nArea burn & imperil"
+        }
+      ]
+    },
+    {
+      "id": "camp-3",
+      "label": "Scarlett666",
+      "lane": "Jungle",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1137",
+          "name": "Axe of Torment",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1137.png",
+          "description": "PATK +80, CDR +10%, HP +500\nAnti-squishy"
+        },
+        {
+          "slot": 2,
+          "itemId": "1533",
+          "name": "Rapacious Bite",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1533.png",
+          "description": "PATK +90, MSPD +5%, CDR +7.5%\nMonster kills boost ATK"
+        },
+        {
+          "slot": 3,
+          "itemId": "1331",
+          "name": "Blazing Cape",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1331.png",
+          "description": "PDEF +150, MDEF +150, HP +1,100\nArea burn & imperil"
+        },
+        {
+          "slot": 4,
+          "itemId": "1328",
+          "name": "Blood Rage",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1328.png",
+          "description": "PATK +75, HP +900\nTrades HP for shield"
+        },
+        {
+          "slot": 5,
+          "itemId": "1134",
+          "name": "Master Sword",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1134.png",
+          "description": "PATK +55, Crit Rate +20%, HP +600\nEnhances BAs"
+        },
+        {
+          "slot": 6,
+          "itemId": "1350",
+          "name": "Ravage - Phantom",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1350.png",
+          "description": "PATK +75, HP +900\nTrades HP for shield"
+        }
+      ]
+    }
+  ],
+  "buildsZh": [
+    {
+      "id": "camp-0",
+      "label": "Preset",
+      "lane": "Jungle",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1533",
+          "name": "貪婪之噬",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1533.png",
+          "description": "+90攻擊+5%移速+7.5%冷縮\n打野怪加攻擊"
+        },
+        {
+          "slot": 2,
+          "itemId": "1327",
+          "name": "反傷刺甲",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1327.png",
+          "description": "+45點攻擊+300點物防\n+700點生命值反彈傷害"
+        },
+        {
+          "slot": 3,
+          "itemId": "1125",
+          "name": "破魔刀",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1125.png",
+          "description": "+90點攻擊+150點法防+600點生命值\n增加法術防禦"
+        },
+        {
+          "slot": 4,
+          "itemId": "1328",
+          "name": "血魔之怒",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1328.png",
+          "description": "+75點攻擊+900點生命值 \n犧牲生命值換取護盾值"
+        },
+        {
+          "slot": 5,
+          "itemId": "1337",
+          "name": "賢者的庇護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+        },
+        {
+          "slot": 6,
+          "itemId": "1127",
+          "name": "名刀・司命",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "+75點攻擊+15%攻速+500點生命值\n保命"
+        }
+      ]
+    },
+    {
+      "id": "camp-1",
+      "label": "Jungling 1",
+      "lane": "Jungle",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1137",
+          "name": "暗影戰斧",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1137.png",
+          "description": "+80點攻擊+10%減冷卻時間+500點生命值\n打血薄用"
+        },
+        {
+          "slot": 2,
+          "itemId": "1327",
+          "name": "反傷刺甲",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1327.png",
+          "description": "+45點攻擊+300點物防\n+700點生命值反彈傷害"
+        },
+        {
+          "slot": 3,
+          "itemId": "1134",
+          "name": "宗師之力",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1134.png",
+          "description": "+55點攻擊+20%暴擊+600點生命值……\n強化普攻"
+        },
+        {
+          "slot": 4,
+          "itemId": "1133",
+          "name": "無盡戰刃",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1133.png",
+          "description": "+120點攻擊+20%暴擊\n高額暴擊傷害"
+        },
+        {
+          "slot": 5,
+          "itemId": "1533",
+          "name": "貪婪之噬",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1533.png",
+          "description": "+90攻擊+5%移速+7.5%冷縮\n打野怪加攻擊"
+        },
+        {
+          "slot": 6,
+          "itemId": "1337",
+          "name": "賢者的庇護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+        }
+      ]
+    },
+    {
+      "id": "camp-2",
+      "label": "Jungling 1",
+      "lane": "Jungle",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1533",
+          "name": "貪婪之噬",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1533.png",
+          "description": "+90攻擊+5%移速+7.5%冷縮\n打野怪加攻擊"
+        },
+        {
+          "slot": 2,
+          "itemId": "1422",
+          "name": "抵抗之靴",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1422.png",
+          "description": "+100點法防+50點物防+50點移速\n減少被控時間"
+        },
+        {
+          "slot": 3,
+          "itemId": "1137",
+          "name": "暗影戰斧",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1137.png",
+          "description": "+80點攻擊+10%減冷卻時間+500點生命值\n打血薄用"
+        },
+        {
+          "slot": 4,
+          "itemId": "1338",
+          "name": "暴烈之甲",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1338.png",
+          "description": "+35點攻擊+210點物防+900點生命值\n能抗能打"
+        },
+        {
+          "slot": 5,
+          "itemId": "1134",
+          "name": "宗師之力",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1134.png",
+          "description": "+55點攻擊+20%暴擊+600點生命值……\n強化普攻"
+        },
+        {
+          "slot": 6,
+          "itemId": "1331",
+          "name": "紅蓮斗篷",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1331.png",
+          "description": "+150點物防+150點法防+1100點生命值\n範圍灼燒重傷"
+        }
+      ]
+    },
+    {
+      "id": "camp-3",
+      "label": "Scarlett666",
+      "lane": "Jungle",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1137",
+          "name": "暗影戰斧",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1137.png",
+          "description": "+80點攻擊+10%減冷卻時間+500點生命值\n打血薄用"
+        },
+        {
+          "slot": 2,
+          "itemId": "1533",
+          "name": "貪婪之噬",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1533.png",
+          "description": "+90攻擊+5%移速+7.5%冷縮\n打野怪加攻擊"
+        },
+        {
+          "slot": 3,
+          "itemId": "1331",
+          "name": "紅蓮斗篷",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1331.png",
+          "description": "+150點物防+150點法防+1100點生命值\n範圍灼燒重傷"
+        },
+        {
+          "slot": 4,
+          "itemId": "1328",
+          "name": "血魔之怒",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1328.png",
+          "description": "+75點攻擊+900點生命值 \n犧牲生命值換取護盾值"
+        },
+        {
+          "slot": 5,
+          "itemId": "1134",
+          "name": "宗師之力",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1134.png",
+          "description": "+55點攻擊+20%暴擊+600點生命值……\n強化普攻"
+        },
+        {
+          "slot": 6,
+          "itemId": "1350",
+          "name": "侵略・怒魂",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1350.png",
+          "description": "+75點攻擊+900點生命值\n犧牲生命值換取護盾值"
+        }
+      ]
     }
   ],
   "arcana": [
-    "Cataclysm"
+    "Lvl 5: Calamity",
+    "Lvl 5: Stealth",
+    "Lvl 5: Eagle Eye"
+  ],
+  "arcanaZh": [
+    "5級：禍源",
+    "5級：隱匿",
+    "5級：鷹眼"
   ],
   "spells": [
     "Smite"
+  ],
+  "spellsZh": [
+    "懲擊"
   ],
   "counters": [
     "Marco Polo",
@@ -105,336 +589,239 @@
     "Diaochan"
   ],
   "tips": [
-    "Dian Wei is a Medium Warrior (Jungling) on Honor of Kings Global. Camp HOK ranks them Tier S with 51.8% win rate and 1.1% pick rate as of 2026-06-05.",
-    "Best build path: Rapacious Bite → Boots of Resistance → Axe of Torment → Spikemail → Blazing Cape → Longnight Guardian.",
-    "Run Cataclysm for stats that match Dian Wei's Warrior kit. Take Smite — swap to Purify against heavy CC or Smite when jungling.",
-    "Standard trade: Holding on to Sanity → Outburst → Leap of Fury → weave basic attacks. Weave basic attacks between skill casts for passive value.",
-    "Laning: Clear to level four, then gank the lane with the least escape. Secure Tyrant when your bot or mid has crash wave.",
-    "Teamfight: Flank or dive backline after tanks commit. Do not start fights without vision on enemy jungler.",
-    "Dian Wei excels into Marco Polo, Musashi. Avoid blind picking into Sun Bin, Diaochan without team peel.",
-    "Dian Wei is a Tier S staple in high-elo (Diamond+) on the international server — worth mastering for climb. Pick rate 1.1% — frequently seen in ranked; learn the matchup even if you do not main Dian Wei."
+    "Dian Wei (Warrior): Tier A — 50.82% WR (Camp HOK).",
+    "Lane: Jungling.",
+    "Build: Rapacious Bite, Spikemail, Demonsbane."
+  ],
+  "tipsZh": [
+    "典韋（打野）：梯度 A，勝率 50.82%（Camp HOK）。",
+    "出裝：貪婪之噬、反傷刺甲、破魔刀."
   ],
   "patchHistory": [
     {
-      "version": "Live meta",
-      "change": "Camp HOK — WR 51.8%, pick 1.1%, ban 0.4%, tier S."
+      "seasonId": "14",
+      "seasonName": "S14",
+      "versionName": "2026/05/14",
+      "publishedAt": "2026-05-14T01:00:00Z",
+      "isCurrent": false,
+      "tag": "Stat Buffs",
+      "change": "Increased skill damage",
+      "detail": "",
+      "version": "S14"
     },
     {
-      "version": "Matchups",
-      "change": "Strong into Marco Polo, Musashi · Weak into Sun Bin, Diaochan."
+      "seasonId": "11",
+      "seasonName": "S11",
+      "versionName": "20250624",
+      "publishedAt": "2025-06-24T02:07:52Z",
+      "isCurrent": false,
+      "tag": "Stat Nerfs",
+      "change": "Ultimate damage reduced",
+      "detail": "",
+      "version": "S11"
     },
     {
-      "version": "High rank",
-      "change": "Dian Wei is a Tier S staple in high-elo (Diamond+) on the international server — worth mastering for climb. Pick rate 1.1% — frequently seen in ranked; learn the matchup even if you do not main Dian Wei."
+      "seasonId": "9",
+      "seasonName": "S9",
+      "versionName": "20250410",
+      "publishedAt": "2025-04-10T01:49:40Z",
+      "isCurrent": false,
+      "tag": "Stat Changes",
+      "change": "Adjusted the early and late-game damage of enhanced Basic Attacks",
+      "detail": "",
+      "version": "S9"
+    },
+    {
+      "seasonId": "8",
+      "seasonName": "S8",
+      "versionName": "20250213",
+      "publishedAt": "2025-02-13T03:25:14Z",
+      "isCurrent": false,
+      "tag": "Stat Changes",
+      "change": "Crowd Control Effects Adjusted",
+      "detail": "\"Dian Wei's skills allow him to clear enemy crowd control effects. We've reduced his own crowd control effects to give the enemy a chance to escape from his attack range.\"",
+      "version": "S8"
+    },
+    {
+      "seasonId": "8",
+      "seasonName": "S8",
+      "versionName": "20250109",
+      "publishedAt": "2025-01-09T02:33:14Z",
+      "isCurrent": false,
+      "tag": "Mechanics Upgrade",
+      "change": "Standardized enhanced Basic Attack mechanic.",
+      "detail": "The enhanced Basic Attack's dash prevented Dian Wei from fully utilizing his Attack Range advantage and would even put him in danger in some situations. Hence, we have improved this mechanic so the dash effect remains the same without a target.",
+      "version": "S8"
+    },
+    {
+      "seasonId": "6",
+      "seasonName": "S6",
+      "versionName": "20240725",
+      "publishedAt": "2024-07-25T02:20:21Z",
+      "isCurrent": false,
+      "tag": "Mechanics Upgrade",
+      "change": "Added a dash to his Skill 1 and reduced the extra true damage from his Ultimate",
+      "detail": "Dian Wei's high Attack Speed and recovery allow him to fight for sustained periods of time. However, without a dash, it's difficult for him to chase and approach enemies who have movement skills. That's why we decided to add a dash to his enhanced Basic Attack while making a minor adjustment to the extra true damage dealt by his Ultimate.",
+      "version": "S6"
+    },
+    {
+      "seasonId": "4",
+      "seasonName": "S4",
+      "versionName": "20240306",
+      "publishedAt": "2024-03-06T02:00:50Z",
+      "isCurrent": false,
+      "tag": "Stat Buffs",
+      "change": "Increased Dian Wei's Skill 1 damage gain for each skill level.",
+      "detail": "Increased Dian Wei's Skill 1 damage gain for each skill level.\nDian Wei's current skill specialty grants him awesome sustained combat ability. In scenarios that require burst damage output, Dian Wei is reliant on multiple pieces of attack equipment to enhance his burst ability. This forces him to sacrifice investing in survivability gear. We've increased the damage of Dian Wei's Skill 1to improve his performance in melee.",
+      "version": "S4"
+    },
+    {
+      "seasonId": "3",
+      "seasonName": "S3",
+      "versionName": "20231011",
+      "publishedAt": "2023-10-11T12:03:22Z",
+      "isCurrent": false,
+      "tag": "Stat Buffs",
+      "change": "Mana cost reduction",
+      "detail": "",
+      "version": "S3"
+    }
+  ],
+  "patchHistoryZh": [
+    {
+      "seasonId": "14",
+      "seasonName": "S14",
+      "versionName": "2026/05/14",
+      "publishedAt": "2026-05-14T01:00:00Z",
+      "isCurrent": false,
+      "tag": "數值增強",
+      "change": "提升技能傷害",
+      "detail": "",
+      "version": "S14"
+    },
+    {
+      "seasonId": "11",
+      "seasonName": "S11",
+      "versionName": "20250624",
+      "publishedAt": "2025-06-24T02:07:52Z",
+      "isCurrent": false,
+      "tag": "數值削弱",
+      "change": "大招傷害降低",
+      "detail": "",
+      "version": "S11"
+    },
+    {
+      "seasonId": "9",
+      "seasonName": "S9",
+      "versionName": "20250410",
+      "publishedAt": "2025-04-10T01:49:40Z",
+      "isCurrent": false,
+      "tag": "數值調整",
+      "change": "調整強化普攻的前後期傷害",
+      "detail": "",
+      "version": "S9"
+    },
+    {
+      "seasonId": "8",
+      "seasonName": "S8",
+      "versionName": "20250213",
+      "publishedAt": "2025-02-13T03:25:14Z",
+      "isCurrent": false,
+      "tag": "數值調整",
+      "change": "調整控制效果",
+      "detail": "「典韋的技能可以解除敵方的控制效果，本次我們降低了他的控制效果，讓敵方有機會離開他的攻擊範圍。」",
+      "version": "S8"
+    },
+    {
+      "seasonId": "8",
+      "seasonName": "S8",
+      "versionName": "20250109",
+      "publishedAt": "2025-01-09T02:33:14Z",
+      "isCurrent": false,
+      "tag": "機制升級",
+      "change": "強化普攻機制統一",
+      "detail": "「強化普攻的突進會讓典韋無法充分利用攻擊距離的優勢，甚至在某些場景下會讓典韋意外衝入人群，我們改善了這一機制，同時讓突進效果在沒有目標時也能夠統一。」",
+      "version": "S8"
+    },
+    {
+      "seasonId": "6",
+      "seasonName": "S6",
+      "versionName": "20240725",
+      "publishedAt": "2024-07-25T02:20:21Z",
+      "isCurrent": false,
+      "tag": "機制升級",
+      "change": "一技能增加突進效果，下調大招附加的真實傷害",
+      "detail": "典韋可以透過高攻速和高回血持續戰鬥，缺少位移手段讓他很難接近和追擊有位移的對手，因此我們為他的強化普攻增加了突進效果，同時我們略微下調大招開啟後附加的真實傷害比例。",
+      "version": "S6"
+    },
+    {
+      "seasonId": "4",
+      "seasonName": "S4",
+      "versionName": "20240306",
+      "publishedAt": "2024-03-06T02:00:50Z",
+      "isCurrent": false,
+      "tag": "數值增強",
+      "change": "提高典韋1技能隨技能等級增長所帶來的傷害提升",
+      "detail": "提高典韋1技能隨技能等級增長所帶來的傷害提升。\n典韋現在的技能特性使他擁有很強的持續作戰能力。在某些需要爆發輸出的場景中，典韋依賴多件攻擊型裝備來強化爆發能力，這使得他承受傷害的能力有限。我們希望適度強化典韋1技能的傷害，藉此提升典韋這位近戰英雄的遊戲體驗感。",
+      "version": "S4"
+    },
+    {
+      "seasonId": "3",
+      "seasonName": "S3",
+      "versionName": "20231011",
+      "publishedAt": "2023-10-11T12:03:22Z",
+      "isCurrent": false,
+      "tag": "數值增強",
+      "change": "Mana cost reduction",
+      "detail": "",
+      "version": "S3"
     }
   ],
   "faqs": [
     {
       "id": "faq-good-season",
-      "question": "Is Dian Wei good in the current meta?",
-      "answer": "Dian Wei is Tier S Warrior with 51.8% win rate, 1.1% pick rate, and 0.4% ban rate on Honor of Kings Global (Camp HOK, 2026-06-05). Strong meta pick for ranked."
+      "question": "Is Dian Wei good in current season?",
+      "answer": "Dian Wei is Tier A Warrior with 50.82% win rate, 1.04% pick rate, and 0.31% ban rate (Camp HOK international)."
     },
     {
       "id": "faq-best-build",
       "question": "What is the best Dian Wei build?",
-      "answer": "Core item path: Rapacious Bite, Boots of Resistance, Axe of Torment, Spikemail, Blazing Cape, Longnight Guardian. Run Cataclysm arcana with Smite. Switch to alternate build presets on this page for jungle, clash, or late-game setups."
+      "answer": "Recommended: Rapacious Bite, Spikemail, Demonsbane, Blood Rage, Sage's Sanctuary, Destiny."
     },
     {
       "id": "faq-counter",
       "question": "How to counter Dian Wei?",
-      "answer": "Pick Sun Bin, Diaochan into Dian Wei. Deny Jungling resources early and force fights before Dian Wei completes core items. Dian Wei struggles when the enemy can out-range or out-sustain them."
+      "answer": "Pick Sun Bin, Diaochan. Strong into Marco Polo, Musashi."
+    }
+  ],
+  "faqsZh": [
+    {
+      "id": "faq-good-season",
+      "question": "典韋 這版本適合上分嗎？",
+      "answer": "典韋 為 A 梯度，勝率 50.82%、選取 1.04%、禁用 0.31%（Camp HOK 國際服）。"
     },
     {
-      "id": "faq-strong-into",
-      "question": "Who does Dian Wei counter?",
-      "answer": "Dian Wei is strong into Marco Polo, Musashi according to HoKStats matchup data and role matchups on the global server. Draft Dian Wei when the enemy relies on these heroes in the Jungling lane."
+      "id": "faq-best-build",
+      "question": "典韋 出裝怎麼搭配？",
+      "answer": "推薦：貪婪之噬、反傷刺甲、破魔刀、血魔之怒、賢者的庇護、名刀・司命."
     },
     {
-      "id": "faq-high-rank",
-      "question": "Is Dian Wei good in high rank / Diamond+?",
-      "answer": "Dian Wei is a Tier S staple in high-elo (Diamond+) on the international server — worth mastering for climb. Pick rate 1.1% — frequently seen in ranked; learn the matchup even if you do not main Dian Wei."
-    },
-    {
-      "id": "faq-lane",
-      "question": "What lane should Dian Wei play?",
-      "answer": "Dian Wei is tagged Jungling in Camp export (Fighter). Clear to level four, then gank the lane with the least escape. Secure Tyrant when your bot or mid has crash wave."
-    },
-    {
-      "id": "faq-arcana",
-      "question": "Best arcana and spells for Dian Wei?",
-      "answer": "Recommended: Cataclysm arcana. Battle spell: Smite. Adjust Purify/Execute based on enemy dive and jungle need."
-    },
-    {
-      "id": "faq-vs-peer",
-      "question": "Dian Wei or Li Xin — which is better?",
-      "answer": "Dian Wei vs Li Xin (Warrior, Tier S+): Li Xin is 1.9% pick / 52.6% WR. Li Xin wins 0.8% more often globally. Choose Dian Wei when you need Jungling identity; choose Li Xin for Clash Lane comfort."
-    },
-    {
-      "id": "faq-ban",
-      "question": "Should I ban Dian Wei?",
-      "answer": "Yes in tryhard queues — 0.4% ban rate. Deny if enemy first-picks Warrior."
+      "id": "faq-counter",
+      "question": "怎麼克制 典韋？",
+      "answer": "可選 Sun Bin、Diaochan。典韋 克制 Marco Polo、Musashi。"
     }
   ],
   "metaAnalysis": [
-    "Dian Wei — 51.8% WR, 1.1% pick, 0.4% ban (Camp HOK 2026-06-05).",
-    "Tier S Warrior · Jungling · difficulty Medium.",
-    "Dian Wei is a Tier S staple in high-elo (Diamond+) on the international server — worth mastering for climb. Pick rate 1.1% — frequently seen in ranked; learn the matchup even if you do not main Dian Wei.",
-    "Matchups: strong into Marco Polo, Musashi; weak into Sun Bin, Diaochan.",
-    "Dian Wei vs Li Xin (Warrior, Tier S+): Li Xin is 1.9% pick / 52.6% WR. Li Xin wins 0.8% more often globally. Choose Dian Wei when you need Jungling identity; choose Li Xin for Clash Lane comfort.",
-    "Dian Wei vs Chicha (Warrior, Tier S): Chicha is 1.5% pick / 50.2% WR. Dian Wei has +1.6% WR vs Chicha in Camp data. Choose Dian Wei when you need Jungling identity; choose Chicha for Clash Lane comfort.",
-    "Draft tip: first-pick or ban priority in ranked."
+    "Dian Wei win rate 50.82% (Camp HOK, 2026-06-07).",
+    "Pick rate 1.04%.",
+    "Ban rate 0.31%.",
+    "Counters: Marco Polo, Musashi. Weak into: Sun Bin, Diaochan."
   ],
-  "builds": [
-    {
-      "id": "recommended",
-      "label": "Recommended",
-      "position": null,
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1533",
-          "name": "Rapacious Bite",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1533.jpg",
-          "description": "Monster kills boost PATK"
-        },
-        {
-          "slot": 2,
-          "itemId": "1422",
-          "name": "Boots of Resistance",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
-          "description": "Shortens CC"
-        },
-        {
-          "slot": 3,
-          "itemId": "1137",
-          "name": "Axe of Torment",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1137.jpg",
-          "description": "Anti-squishy"
-        },
-        {
-          "slot": 4,
-          "itemId": "1327",
-          "name": "Spikemail",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1327.jpg",
-          "description": "Reflects damage"
-        },
-        {
-          "slot": 5,
-          "itemId": "1331",
-          "name": "Blazing Cape",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1331.jpg",
-          "description": "Burns nearby enemies"
-        },
-        {
-          "slot": 6,
-          "itemId": "1347",
-          "name": "Longnight Guardian",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1347.jpg",
-          "description": "Resists burst damage"
-        }
-      ]
-    },
-    {
-      "id": "jungling-1",
-      "label": "Jungling 1",
-      "position": "Position 3",
-      "lane": "Jungling",
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1523",
-          "name": "Relentless Blade",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1523.jpg",
-          "description": "Monster kills boost PATK"
-        },
-        {
-          "slot": 2,
-          "itemId": "1124",
-          "name": "Meteor",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1124.jpg",
-          "description": "PATK +35\nCDR +7.5%"
-        },
-        {
-          "slot": 3,
-          "itemId": "1422",
-          "name": "Boots of Resistance",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
-          "description": "Shortens CC"
-        },
-        {
-          "slot": 4,
-          "itemId": "1137",
-          "name": "Axe of Torment",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1137.jpg",
-          "description": "Anti-squishy"
-        },
-        {
-          "slot": 5,
-          "itemId": "1327",
-          "name": "Spikemail",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1327.jpg",
-          "description": "Reflects damage"
-        },
-        {
-          "slot": 6,
-          "itemId": "1134",
-          "name": "Master Sword",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1134.jpg",
-          "description": "Enhances BA"
-        }
-      ]
-    },
-    {
-      "id": "jungling-1",
-      "label": "Jungling 1",
-      "position": "Position 3",
-      "lane": "Jungling",
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1533",
-          "name": "Rapacious Bite",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1533.jpg",
-          "description": "Monster kills boost PATK"
-        },
-        {
-          "slot": 2,
-          "itemId": "1422",
-          "name": "Boots of Resistance",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
-          "description": "Shortens CC"
-        },
-        {
-          "slot": 3,
-          "itemId": "1137",
-          "name": "Axe of Torment",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1137.jpg",
-          "description": "Anti-squishy"
-        },
-        {
-          "slot": 4,
-          "itemId": "1338",
-          "name": "Cuirass of Savagery",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1338.jpg",
-          "description": "Offense & defense"
-        },
-        {
-          "slot": 5,
-          "itemId": "1134",
-          "name": "Master Sword",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1134.jpg",
-          "description": "Enhances BA"
-        },
-        {
-          "slot": 6,
-          "itemId": "1331",
-          "name": "Blazing Cape",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1331.jpg",
-          "description": "Burns nearby enemies"
-        }
-      ]
-    },
-    {
-      "id": "preset",
-      "label": "Preset",
-      "position": "Position 3",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1523",
-          "name": "Relentless Blade",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1523.jpg",
-          "description": "Monster kills boost PATK"
-        },
-        {
-          "slot": 2,
-          "itemId": "1423",
-          "name": "Boots of Tranquility",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1423.jpg",
-          "description": "Reduces Skill CD"
-        },
-        {
-          "slot": 3,
-          "itemId": "1137",
-          "name": "Axe of Torment",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1137.jpg",
-          "description": "Anti-squishy"
-        },
-        {
-          "slot": 4,
-          "itemId": "1533",
-          "name": "Rapacious Bite",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1533.jpg",
-          "description": "Monster kills boost PATK"
-        },
-        {
-          "slot": 5,
-          "itemId": "1327",
-          "name": "Spikemail",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1327.jpg",
-          "description": "Reflects damage"
-        },
-        {
-          "slot": 6,
-          "itemId": "1125",
-          "name": "Demonsbane",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1125.jpg",
-          "description": "Boosts MDEF"
-        }
-      ]
-    },
-    {
-      "id": "scarlett666",
-      "label": "Scarlett666",
-      "position": "Position 3",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1523",
-          "name": "Relentless Blade",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1523.jpg",
-          "description": "Monster kills boost PATK"
-        },
-        {
-          "slot": 2,
-          "itemId": "1423",
-          "name": "Boots of Tranquility",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1423.jpg",
-          "description": "Reduces Skill CD"
-        },
-        {
-          "slot": 3,
-          "itemId": "1137",
-          "name": "Axe of Torment",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1137.jpg",
-          "description": "Anti-squishy"
-        },
-        {
-          "slot": 4,
-          "itemId": "1533",
-          "name": "Rapacious Bite",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1533.jpg",
-          "description": "Monster kills boost PATK"
-        },
-        {
-          "slot": 5,
-          "itemId": "1331",
-          "name": "Blazing Cape",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1331.jpg",
-          "description": "Burns nearby enemies"
-        },
-        {
-          "slot": 6,
-          "itemId": "1328",
-          "name": "Blood Rage",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1328.jpg",
-          "description": "Grants temporary shield"
-        }
-      ]
-    }
+  "metaAnalysisZh": [
+    "典韋 勝率 50.82%（Camp HOK，2026-06-07）",
+    "選取率 1.04%",
+    "禁用率 0.31%",
+    "克制：Marco Polo、Musashi；被克制：Sun Bin、Diaochan"
   ],
   "guide": {
     "overview": "Dian Wei is a Medium Warrior (Jungling) on Honor of Kings Global. Camp HOK ranks them Tier S with 51.8% win rate and 1.1% pick rate as of 2026-06-05.",

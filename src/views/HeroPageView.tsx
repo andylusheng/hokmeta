@@ -5,7 +5,10 @@ import {
 } from '@/lib/data';
 import { getLocalizedFaqs } from '@/lib/hero-faq';
 import { createT, localePath, type Locale } from '@/lib/i18n';
+import { getHeroDisplayName } from '@/lib/locale-names';
 import { Breadcrumb } from '@/components/Breadcrumb';
+import { HeroCoverBanner } from '@/components/HeroCoverBanner';
+import { BuildStrip } from '@/components/BuildStrip';
 import { HeroSummary } from '@/components/HeroSummary';
 import { BuildBlock } from '@/components/BuildBlock';
 import { SkillBlock } from '@/components/SkillBlock';
@@ -19,6 +22,8 @@ import { PageTOC } from '@/components/PageTOC';
 import { RelatedSearchBox } from '@/components/RelatedSearchBox';
 import { DataAttribution } from '@/components/DataAttribution';
 import { ContentLocaleNotice } from '@/components/ContentLocaleNotice';
+import { HeroClimbRecommend } from '@/components/HeroClimbRecommend';
+import { BuildPhilosophyCard } from '@/components/BuildPhilosophyCard';
 import {
   JsonLd,
   breadcrumbSchema,
@@ -40,12 +45,12 @@ export function HeroPageView({
   const heroPath = `/hero/${hero.slug}`;
 
   return (
-    <div className="container-page">
+    <div className="container-wide">
       <JsonLd
         data={breadcrumbSchema([
           { name: t('common.home'), path: localePath(locale, '/') },
           { name: t('common.heroes'), path: localePath(locale, '/heroes') },
-          { name: hero.name, path: localePath(locale, heroPath) },
+          { name: getHeroDisplayName(hero, locale), path: localePath(locale, heroPath) },
         ])}
       />
       <JsonLd
@@ -60,21 +65,25 @@ export function HeroPageView({
         items={[
           { label: t('common.home'), href: localePath(locale, '/') },
           { label: t('common.allHeroes'), href: localePath(locale, '/heroes') },
-          { label: hero.name },
+          { label: getHeroDisplayName(hero, locale) },
         ]}
       />
 
-      <ContentLocaleNotice locale={locale} />
+      <ContentLocaleNotice locale={locale} hero={hero} />
 
       <div className="grid gap-8 lg:grid-cols-[1fr_220px]">
         <article>
-          <HeroSummary hero={hero} locale={locale} />
+          <HeroCoverBanner hero={hero} locale={locale} />
+          <HeroClimbRecommend hero={hero} locale={locale} />
+          <BuildStrip hero={hero} locale={locale} />
+          <HeroSummary hero={hero} locale={locale} compact />
 
           <section id="build" className="scroll-mt-20 mb-8">
             <h2 className="section-title">
-              {t('hero.buildTitle', { name: hero.name })}
+              {t('hero.buildTitle', { name: getHeroDisplayName(hero, locale) })}
             </h2>
             <p className="mb-4 text-sm text-gray-400">{t('hero.buildIntro')}</p>
+            <BuildPhilosophyCard hero={hero} locale={locale} />
             <BuildBlock hero={hero} locale={locale} />
           </section>
 
