@@ -110,6 +110,14 @@ export function HeroPageView({
           <section id="counters" className="scroll-mt-20 mb-8">
             <h2 className="section-title">{t('hero.countersTitle')}</h2>
             <CounterBlock hero={hero} locale={locale} />
+            <div className="mt-4">
+              <Link
+                href={localePath(locale, `/hero/${hero.slug}/counters`)}
+                className="text-sm text-hok-gold hover:underline"
+              >
+                Full counter analysis →
+              </Link>
+            </div>
           </section>
 
           <section id="guide" className="scroll-mt-20 mb-8">

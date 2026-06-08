@@ -79,11 +79,22 @@ export default function sitemap(): MetadataRoute.Sitemap {
         : hero.tier === 'A'
           ? 0.88
           : 0.85;
-    return localizedEntries(base, `/hero/${hero.slug}`, {
+    const routes = localizedEntries(base, `/hero/${hero.slug}`, {
       lastModified,
       changeFrequency: 'weekly',
       priority,
     });
+    // Add counter pages for S+ and S tier heroes
+    if (hero.tier === 'S+' || hero.tier === 'S') {
+      routes.push(
+        ...localizedEntries(base, `/hero/${hero.slug}/counters`, {
+          lastModified,
+          changeFrequency: 'weekly',
+          priority: priority * 0.92,
+        })
+      );
+    }
+    return routes;
   });
 
   const roleRoutes = ROLES.flatMap((role) =>
