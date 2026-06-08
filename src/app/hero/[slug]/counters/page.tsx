@@ -1,5 +1,6 @@
 import { notFound } from 'next/navigation';
 import { getHeroBySlug, getHeroSlugs } from '@/lib/data';
+import { getMetaSeasonLabel } from '@/lib/i18n';
 import { buildMetadata, defaultTitle } from '@/lib/seo';
 import { CounterPageView } from '@/views/CounterPageView';
 
@@ -10,9 +11,10 @@ export function generateStaticParams() {
 export function generateMetadata({ params }: { params: { slug: string } }) {
   const hero = getHeroBySlug(params.slug);
   if (!hero) return {};
+  const season = getMetaSeasonLabel('en');
   return buildMetadata({
-    title: defaultTitle(`How to Counter ${hero.name} – Best Counters in S14`),
-    description: `Best heroes to counter ${hero.name} in Arena of Valor Season 14. Win rates and counter strategies based on real match data.`,
+    title: defaultTitle(`How to Counter ${hero.name} – Best Counters ${season}`),
+    description: `Best heroes to counter ${hero.name} in Honor of Kings ${season}. Counter picks and matchup tips from Camp HOK international data.`,
     path: `/hero/${params.slug}/counters`,
     locale: 'en',
     ogImage: hero.avatar,

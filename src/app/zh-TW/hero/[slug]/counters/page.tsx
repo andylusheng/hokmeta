@@ -1,8 +1,8 @@
-// src/app/zh-TW/hero/[slug]/counters/page.tsx
 import { notFound } from 'next/navigation';
 import { getHeroBySlug, getHeroSlugs } from '@/lib/data';
-import { buildMetadata, defaultTitle } from '@/lib/seo';
+import { getMetaSeasonLabel } from '@/lib/i18n';
 import { getHeroDisplayName } from '@/lib/locale-names';
+import { buildMetadata, defaultTitle } from '@/lib/seo';
 import { CounterPageView } from '@/views/CounterPageView';
 
 export function generateStaticParams() {
@@ -13,9 +13,10 @@ export function generateMetadata({ params }: { params: { slug: string } }) {
   const hero = getHeroBySlug(params.slug);
   if (!hero) return {};
   const displayName = getHeroDisplayName(hero, 'zh-TW');
+  const season = getMetaSeasonLabel('zh-TW');
   return buildMetadata({
-    title: defaultTitle(`如何克制 ${displayName} – S14 最佳克制英雄`),
-    description: `在傳說對決 S14 賽季中，哪些英雄最克制 ${displayName}？基於真實對局數據的勝率分析和克制策略。`,
+    title: defaultTitle(`如何克制 ${displayName} – ${season} 最佳克制英雄`),
+    description: `Honor of Kings ${season} 克制 ${displayName} 的最佳英雄與對線思路，數據來自 Camp HOK 國際服。`,
     path: `/hero/${params.slug}/counters`,
     locale: 'zh-TW',
     ogImage: hero.avatar,
