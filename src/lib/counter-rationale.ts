@@ -12,8 +12,22 @@ import {
   locList,
 } from '@/lib/counter-rationale-overrides';
 
+// 只改这个函数！其他所有代码全部保留！
 export function getCounterList(hero: Hero): string[] {
-  return (hero.counteredBy || []).filter((c) => c !== 'Data unavailable');
+  // 导入英雄数据（只在这个函数里导入，不影响其他代码）
+  const heroes = require('../../public/api/heroes.json') as Hero[];
+  const currentHeroName = hero.name.trim().toLowerCase();
+
+  // 1. 保留原始数据
+  const original = (hero.counteredBy || []).filter(c => c && c !== 'Data unavailable');
+  
+  // 2. 反向查找所有克制当前英雄的角色
+  const reverse = heroes
+    .filter(h => (h.counters || []).some(n => n.toLowerCase() === currentHeroName))
+    .map(h => h.name);
+
+  // 3. 合并去重，最多5个
+  return [...new Set([...original, ...reverse])].slice(0, 5);
 }
 
 function resolveCounterHero(name: string): Hero | undefined {
