@@ -1,12 +1,17 @@
 import Link from 'next/link';
+import React from 'react';
 
-import { formatRate, getHeroByName } from '@/lib/data';
+import { formatRate, getHeroByName, heroes } from '@/lib/data';
 import {
+  getBestCounter,
+  getCounterDetails,
   getCounterFaqs,
   getCounterList,
   getCounterMistakes,
   getCounterWhyBullets,
-  getRelatedCounterHeroes,
+  getMetaTrend,
+  getPlaystyle,
+  getRelatedCounters,
 } from '@/lib/counter-rationale';
 import { createT, getMetaSeasonLabel, localePath, type Locale } from '@/lib/i18n';
 import { getHeroDisplayName } from '@/lib/locale-names';
@@ -15,7 +20,113 @@ import { Breadcrumb } from '@/components/Breadcrumb';
 import { JsonLd, breadcrumbSchema, faqPageSchema } from '@/lib/schema';
 import type { Hero } from '@/types/hero';
 
-function CounterCard({ name, locale }: { name: string; locale: Locale }) {
+/* ─── helpers ─── */
+
+function computeStars(tier: string, advantage?: number): number {
+  let base = 3;
+  if (tier === 'S+') base = 5;
+  else if (tier === 'S') base = 4;
+  else if (tier === 'A') base = 3;
+  else if (tier === 'B') base = 2;
+  else base = 1;
+  if (advantage !== undefined && advantage > 0) {
+    base = Math.min(5, base + Math.round(advantage));
+  }
+  return base;
+}
+
+/** Render 1–5 stars. */
+function StarRating({ count, size = 14 }: { count: number; size?: number }) {
+  return (
+    <span
+      className="inline-flex gap-0.5 text-hok-gold"
+      aria-label={`${count} out of 5 stars`}
+      style={{ fontSize: size }}
+    >
+      {Array.from({ length: 5 }).map((_, i) => (
+        <span key={i}>{i < count ? '★' : '☆'}</span>
+      ))}
+    </span>
+  );
+}
+
+/**
+ * Turn hero names inside a text string into clickable Next.js Links.
+ * Walks the entire heroes list, looks for English + zh-TW names, replaces them.
+ */
+function linkifyHeroNames(
+  text: string,
+  locale: Locale,
+): React.ReactNode {
+  if (!text) return text;
+
+  // Build a sorted (longest-first) map so "Zhang Fei" is matched before "Zhang"
+  const nameMap = new Map<string, { slug: string; name: string }>();
+  for (const h of heroes) {
+    const en = h.name;
+    const zh = h.nameZh;
+    nameMap.set(en.toLowerCase(), { slug: h.slug, name: en });
+    if (zh) nameMap.set(zh.toLowerCase(), { slug: h.slug, name: zh });
+  }
+
+  // Sort by length desc to avoid partial matches
+  const sorted = Array.from(nameMap.entries())
+    .sort((a, b) => b[0].length - a[0].length);
+
+  // We'll split and reconstruct
+  const parts: React.ReactNode[] = [];
+  let remaining = text;
+  let key = 0;
+
+  while (remaining.length > 0) {
+    let matched = false;
+    for (const [lower, { slug, name }] of sorted) {
+      const idx = remaining.toLowerCase().indexOf(lower);
+      if (idx === 0) {
+        // Check that it's a word boundary before/after
+        const beforeOk = parts.length === 0 || /[\s,，、.。!！?？:：(（\-—"「『【［]/.test(remaining.charAt(0) === name.charAt(0) ? '' : ' ');
+        const afterChar = remaining.charAt(name.length);
+        const afterOk = !afterChar || /[\s,，、.。!！?？:：(（\-—"「『】］)）]/.test(afterChar);
+
+        if (beforeOk && afterOk) {
+          parts.push(
+            <Link
+              key={key++}
+              href={localePath(locale, `/hero/${slug}`)}
+              className="font-medium text-hok-gold hover:underline"
+            >
+              {name}
+            </Link>,
+          );
+          remaining = remaining.slice(name.length);
+          matched = true;
+          break;
+        }
+      }
+    }
+
+    if (!matched) {
+      // Take one char
+      parts.push(remaining.charAt(0));
+      remaining = remaining.slice(1);
+    }
+  }
+
+  return <>{parts}</>;
+}
+
+/* ─── Counter card (enhanced) ─── */
+
+function EnhancedCounterCard({
+  name,
+  advantage,
+  locale,
+}: {
+  name: string;
+  advantage?: number;
+  locale: Locale;
+}) {
+  const t = createT(locale);
   const counterHero = getHeroByName(name);
   if (!counterHero) {
     return (
@@ -26,30 +137,43 @@ function CounterCard({ name, locale }: { name: string; locale: Locale }) {
   }
 
   const displayName = getHeroDisplayName(counterHero, locale);
+  const stars = computeStars(counterHero.tier, advantage);
 
   return (
     <Link
       href={localePath(locale, `/hero/${counterHero.slug}/counters`)}
-      className="flex items-center gap-3 rounded border border-hok-border bg-hok-card/50 px-3 py-2 transition hover:border-hok-gold/40"
+      className="flex flex-col gap-2 rounded border border-hok-border bg-hok-card/50 px-3 py-3 transition hover:border-hok-gold/40"
     >
-      {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img
-        src={counterHero.avatar}
-        alt=""
-        width={40}
-        height={40}
-        className="h-10 w-10 rounded-full object-cover"
-        loading="lazy"
-      />
-      <div className="min-w-0 flex-1">
-        <div className="text-sm font-medium text-white">{displayName}</div>
-        <div className="text-xs text-gray-400">
-          {translateRole(counterHero.role, locale)} · {counterHero.tier}
+      <div className="flex items-center gap-3">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src={counterHero.avatar}
+          alt=""
+          width={44}
+          height={44}
+          className="h-11 w-11 rounded-full object-cover border border-hok-border"
+          loading="lazy"
+        />
+        <div className="min-w-0 flex-1">
+          <div className="text-sm font-semibold text-white">{displayName}</div>
+          <div className="text-xs text-gray-400">
+            {translateRole(counterHero.role, locale)} · {counterHero.tier}
+          </div>
         </div>
+      </div>
+      <div className="flex flex-wrap items-center gap-2 text-xs">
+        <StarRating count={stars} size={12} />
+        {advantage !== undefined && advantage > 0 && (
+          <span className="rounded-full bg-green-500/15 px-2 py-0.5 font-medium text-green-400">
+            {t('counterPage.counterAdvantage', { advantage })}
+          </span>
+        )}
       </div>
     </Link>
   );
 }
+
+/* ─── main view ─── */
 
 export function CounterPageView({ hero, locale = 'en' }: { hero: Hero; locale?: Locale }) {
   const t = createT(locale);
@@ -59,8 +183,18 @@ export function CounterPageView({ hero, locale = 'en' }: { hero: Hero; locale?: 
   const whyBullets = getCounterWhyBullets(hero, locale);
   const mistakes = getCounterMistakes(hero, locale);
   const faqs = getCounterFaqs(hero, locale);
-  const related = getRelatedCounterHeroes(hero, 3);
+  const related = getRelatedCounters(hero, 6);
+
+  // New data
+  const bestCounter = getBestCounter(hero.slug, locale);
+  const counterDetails = getCounterDetails(hero.slug, locale);
+  const metaTrend = getMetaTrend(hero.slug, locale);
+  const playstyle = getPlaystyle(hero.slug, locale);
   const updated = hero.dataUpdated || '—';
+
+  // Build a counter name → advantage map (from overrides)
+  const advantageMap = new Map<string, number>();
+  if (bestCounter) advantageMap.set(bestCounter.hero, bestCounter.advantage);
 
   const breadcrumbs = [
     { name: t('common.home'), path: localePath(locale, '/') },
@@ -71,6 +205,12 @@ export function CounterPageView({ hero, locale = 'en' }: { hero: Hero; locale?: 
       path: localePath(locale, `/hero/${hero.slug}/counters`),
     },
   ];
+
+  // Best counter hero data for the conclusion card
+  const bestCounterHero = bestCounter ? getHeroByName(bestCounter.hero) : undefined;
+
+  // Build detail map: counter name → CounterDetail
+  const detailMap = new Map(counterDetails.map((d) => [d.hero, d]));
 
   return (
     <div className="container-wide">
@@ -86,6 +226,7 @@ export function CounterPageView({ hero, locale = 'en' }: { hero: Hero; locale?: 
         ]}
       />
 
+      {/* ── Hero header ── */}
       <div className="mb-6 flex items-start gap-4">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
@@ -108,7 +249,8 @@ export function CounterPageView({ hero, locale = 'en' }: { hero: Hero; locale?: 
         </div>
       </div>
 
-      <div className="mb-8 flex flex-wrap gap-3 text-sm">
+      {/* ── Snapshot badges ── */}
+      <div className="mb-6 flex flex-wrap gap-3 text-sm">
         <span className="rounded border border-hok-border bg-hok-card px-3 py-1.5">
           {t('counterPage.snapshotTier', { tier: hero.tier })}
         </span>
@@ -128,8 +270,79 @@ export function CounterPageView({ hero, locale = 'en' }: { hero: Hero; locale?: 
         </span>
       </div>
 
+      {/* ── P0: Best Counter conclusion card ── */}
+      {bestCounter && bestCounterHero && (
+        <section className="mb-8 rounded-xl border-2 border-hok-gold/40 bg-gradient-to-r from-hok-card/80 to-hok-dark/80 p-5">
+          <div className="flex items-start gap-4">
+            <Link
+              href={localePath(locale, `/hero/${bestCounterHero.slug}`)}
+              className="flex-shrink-0"
+            >
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src={bestCounterHero.avatar}
+                alt=""
+                width={64}
+                height={64}
+                className="h-16 w-16 rounded-lg object-cover border-2 border-hok-gold/60 hover:border-hok-gold transition"
+              />
+            </Link>
+            <div className="flex-1">
+              <div className="flex items-center gap-2 mb-1">
+                <span className="text-hok-gold font-bold text-lg">
+                  {t('counterPage.bestCounterTitle')}
+                </span>
+                <span className="rounded-full bg-green-500/20 px-2 py-0.5 text-xs font-medium text-green-400">
+                  {t('counterPage.bestCounterAdvantage', { advantage: bestCounter.advantage })}
+                </span>
+                <StarRating count={computeStars(bestCounterHero.tier, bestCounter.advantage)} size={14} />
+              </div>
+              <Link
+                href={localePath(locale, `/hero/${bestCounterHero.slug}`)}
+                className="text-white font-semibold text-lg hover:text-hok-gold transition mb-2 inline-block"
+              >
+                {getHeroDisplayName(bestCounterHero, locale)}
+              </Link>
+              <p className="text-xs text-gray-400 mb-2">
+                {t('counterPage.bestCounterReasons', { name: getHeroDisplayName(bestCounterHero, locale) })}
+              </p>
+              <ul className="space-y-1 text-sm text-gray-300">
+                {bestCounter.reasons.map((reason, idx) => (
+                  <li key={idx} className="flex items-start gap-2">
+                    <span className="text-hok-gold mt-0.5 shrink-0">•</span>
+                    <span>{linkifyHeroNames(reason, locale)}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* ── P0.5: Playstyle & Damage Source ── */}
+      {playstyle && (
+        <section className="mb-8 rounded-xl border border-hok-gold/30 bg-hok-card/40 p-5">
+          <h2 className="mb-3 text-lg font-semibold text-hok-gold flex items-center gap-2">
+            <span>⚔️</span>
+            {t('counterPage.playstyleTitle', { name: displayName })}
+          </h2>
+          <p className="text-sm leading-relaxed text-gray-300 mb-3">
+            {linkifyHeroNames(playstyle.summary, locale)}
+          </p>
+          <ul className="space-y-1.5 text-sm leading-relaxed text-gray-400">
+            {playstyle.points.map((point, idx) => (
+              <li key={idx} className="flex items-start gap-2">
+                <span className="text-hok-gold mt-0.5 shrink-0">▸</span>
+                <span>{linkifyHeroNames(point, locale)}</span>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
+
       <div className="grid gap-8 lg:grid-cols-[1fr_260px]">
         <div className="space-y-8">
+          {/* ── Counter list (P0: enhanced cards) ── */}
           {counters.length > 0 && (
             <section>
               <h2 className="mb-3 text-lg font-semibold text-red-400">
@@ -137,34 +350,142 @@ export function CounterPageView({ hero, locale = 'en' }: { hero: Hero; locale?: 
               </h2>
               <div className="grid gap-2 sm:grid-cols-2">
                 {counters.map((name) => (
-                  <CounterCard key={name} name={name} locale={locale} />
+                  <EnhancedCounterCard
+                    key={name}
+                    name={name}
+                    advantage={advantageMap.get(name.toLowerCase())}
+                    locale={locale}
+                  />
                 ))}
               </div>
             </section>
           )}
 
-          <section className="rounded-xl border border-hok-border bg-hok-card/30 p-5">
-            <h2 className="mb-3 text-lg font-semibold text-hok-gold">
-              {t('counterPage.whyTitle')}
-            </h2>
-            <ul className="space-y-2 text-sm leading-relaxed text-gray-300">
-              {whyBullets.map((line) => (
-                <li key={line}>• {line}</li>
-              ))}
-            </ul>
-          </section>
+          {/* ── P1: Why each counter works (expanded, per-hero details) ── */}
+          {counterDetails.length > 0 && (
+            <section className="rounded-xl border border-hok-border bg-hok-card/30 p-5">
+              <h2 className="mb-4 text-lg font-semibold text-hok-gold">
+                {t('counterPage.whyTitle')}
+              </h2>
+              <div className="space-y-4">
+                {counterDetails.map((detail) => {
+                  const detailHero = getHeroByName(detail.hero);
+                  if (!detailHero) return null;
+                  const detailDisplayName = getHeroDisplayName(detailHero, locale);
+                  return (
+                    <div
+                      key={detail.hero}
+                      className="flex gap-3 rounded-lg border border-hok-border/60 bg-hok-dark/30 p-3"
+                    >
+                      <Link
+                        href={localePath(locale, `/hero/${detailHero.slug}`)}
+                        className="flex-shrink-0"
+                      >
+                        {/* eslint-disable-next-line @next/next/no-img-element */}
+                        <img
+                          src={detailHero.avatar}
+                          alt=""
+                          width={40}
+                          height={40}
+                          className="h-10 w-10 rounded-full object-cover border border-hok-border hover:border-hok-gold/60 transition"
+                          loading="lazy"
+                        />
+                      </Link>
+                      <div className="min-w-0 flex-1">
+                        <h3 className="text-sm font-semibold text-white mb-1">
+                          <Link
+                            href={localePath(locale, `/hero/${detailHero.slug}`)}
+                            className="hover:text-hok-gold transition"
+                          >
+                            {t('counterPage.counterDetailTitle', {
+                              counter: detailDisplayName,
+                              name: displayName,
+                            })}
+                          </Link>
+                        </h3>
+                        <p className="text-sm leading-relaxed text-gray-300">
+                          {linkifyHeroNames(detail.reason, locale)}
+                        </p>
+                        {detail.tags && detail.tags.length > 0 && (
+                          <div className="mt-2 flex flex-wrap gap-1.5">
+                            {detail.tags.map((tag) => (
+                              <span
+                                key={tag}
+                                className="rounded-full bg-hok-gold/10 px-2 py-0.5 text-xs text-hok-gold"
+                              >
+                                {tag}
+                              </span>
+                            ))}
+                          </div>
+                        )}
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+            </section>
+          )}
 
-          <section className="rounded-xl border border-hok-border bg-hok-card/30 p-5">
-            <h2 className="mb-3 text-lg font-semibold text-white">
-              {t('counterPage.mistakesTitle')}
-            </h2>
-            <ul className="space-y-2 text-sm leading-relaxed text-gray-300">
-              {mistakes.map((line) => (
-                <li key={line}>• {line}</li>
-              ))}
-            </ul>
-          </section>
+          {/* ── Fallback: generic why bullets (only when no counterDetails) ── */}
+          {counterDetails.length === 0 && whyBullets.length > 0 && (
+            <section className="rounded-xl border border-hok-border bg-hok-card/30 p-5">
+              <h2 className="mb-3 text-lg font-semibold text-hok-gold">
+                {t('counterPage.whyTitle')}
+              </h2>
+              <ul className="space-y-2 text-sm leading-relaxed text-gray-300">
+                {whyBullets.map((line) => (
+                  <li key={line}>• {linkifyHeroNames(line, locale)}</li>
+                ))}
+              </ul>
+            </section>
+          )}
 
+          {/* ── P1: Meta trend analysis ── */}
+          {metaTrend ? (
+            <section className="rounded-xl border border-hok-border bg-hok-card/30 p-5">
+              <h2 className="mb-3 text-lg font-semibold text-hok-gold flex items-center gap-2">
+                <span>📊</span>
+                {t('counterPage.metaTrendTitle', { name: displayName })}
+              </h2>
+              <p className="text-sm leading-relaxed text-gray-300 mb-3">
+                {linkifyHeroNames(metaTrend.summary, locale)}
+              </p>
+              <ul className="space-y-2 text-sm leading-relaxed text-gray-300">
+                {metaTrend.reasons.map((reason, idx) => (
+                  <li key={idx} className="flex items-start gap-2">
+                    <span className="text-hok-gold mt-0.5 shrink-0">{idx + 1}.</span>
+                    <span>{linkifyHeroNames(reason, locale)}</span>
+                  </li>
+                ))}
+              </ul>
+            </section>
+          ) : (
+            <section className="rounded-xl border border-hok-border/50 bg-hok-card/20 p-5">
+              <h2 className="mb-2 text-lg font-semibold text-gray-500 flex items-center gap-2">
+                <span>📊</span>
+                {t('counterPage.metaTrendTitle', { name: displayName })}
+              </h2>
+              <p className="text-sm text-gray-500">
+                {t('counterPage.metaTrendNoData', { name: displayName })}
+              </p>
+            </section>
+          )}
+
+          {/* ── Common mistakes ── */}
+          {mistakes.length > 0 && (
+            <section className="rounded-xl border border-hok-border bg-hok-card/30 p-5">
+              <h2 className="mb-3 text-lg font-semibold text-white">
+                {t('counterPage.mistakesTitle')}
+              </h2>
+              <ul className="space-y-2 text-sm leading-relaxed text-gray-300">
+                {mistakes.map((line) => (
+                  <li key={line}>• {linkifyHeroNames(line, locale)}</li>
+                ))}
+              </ul>
+            </section>
+          )}
+
+          {/* ── FAQ (condensed) ── */}
           <section>
             <h2 className="mb-3 text-lg font-semibold text-white">
               {t('counterPage.faqTitle')}
@@ -178,18 +499,45 @@ export function CounterPageView({ hero, locale = 'en' }: { hero: Hero; locale?: 
                   <h3 className="mb-1 text-sm font-semibold text-hok-gold">
                     {faq.question}
                   </h3>
-                  <p className="text-sm leading-relaxed text-gray-400">{faq.answer}</p>
+                  <p className="text-sm leading-relaxed text-gray-400">
+                    {linkifyHeroNames(faq.answer, locale)}
+                  </p>
                 </div>
               ))}
             </div>
           </section>
         </div>
 
+        {/* ── Sidebar: Related counter guides (P1) ── */}
         <aside className="space-y-4">
           <div className="rounded border border-hok-border bg-hok-card/30 p-4">
-            <h3 className="mb-2 text-sm font-semibold text-white">
-              {t('counterPage.relatedTitle')}
+            <h3 className="mb-3 text-sm font-semibold text-white">
+              {t('counterPage.relatedCounterTitle')}
             </h3>
+            <ul className="space-y-2">
+              {related.map((h) => (
+                <li key={h.slug}>
+                  <Link
+                    href={localePath(locale, `/hero/${h.slug}/counters`)}
+                    className="flex items-center gap-2 text-sm text-gray-300 hover:text-hok-gold transition"
+                  >
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img
+                      src={h.avatar}
+                      alt=""
+                      width={24}
+                      height={24}
+                      className="h-6 w-6 rounded-full object-cover"
+                      loading="lazy"
+                    />
+                    <span>{t('counterPage.viewCounterGuide', { name: getHeroDisplayName(h, locale) })}</span>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div className="rounded border border-hok-border bg-hok-card/30 p-4">
             <Link
               href={localePath(locale, `/hero/${hero.slug}`)}
               className="mb-2 block text-sm text-hok-gold hover:underline"
@@ -203,28 +551,6 @@ export function CounterPageView({ hero, locale = 'en' }: { hero: Hero; locale?: 
               {t('counterPage.counterPickerLink')} →
             </Link>
           </div>
-
-          {related.length > 0 && (
-            <div className="rounded border border-hok-border bg-hok-card/30 p-4">
-              <h3 className="mb-2 text-sm font-semibold text-white">
-                {t('counterPage.relatedCounters')}
-              </h3>
-              <ul className="space-y-2">
-                {related.map((h) => (
-                  <li key={h.slug}>
-                    <Link
-                      href={localePath(locale, `/hero/${h.slug}/counters`)}
-                      className="text-sm text-hok-gold hover:underline"
-                    >
-                      {t('counterPage.viewCounterGuide', {
-                        name: getHeroDisplayName(h, locale),
-                      })}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          )}
         </aside>
       </div>
     </div>

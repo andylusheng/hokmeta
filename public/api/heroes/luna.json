@@ -19,7 +19,7 @@
   "heroCover": "https://camp.honorofkings.com/social/game/src/image_hero_cover_1275*718/qGCGOIn8.jpg",
   "tencentId": 146,
   "dataSource": "Camp HOK bilingual (primary)",
-  "dataUpdated": "2026-06-07",
+  "dataUpdated": "2026-06-10",
   "skills": [
     {
       "slot": "passive",
@@ -83,24 +83,24 @@
   "build": [
     {
       "slot": 1,
-      "itemId": "1240",
-      "name": "Insatiable Tome",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1240.png",
-      "description": "MATK +160, Magical Lifesteal +24%, HP +750\nLifesteal increases CDR"
+      "itemId": "1531",
+      "name": "Runeblade",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1531.png",
+      "description": "MATK +130, CDR +10%, MSPD +5%\nMonster kills boost MATK"
     },
     {
       "slot": 2,
-      "itemId": "1244",
-      "name": "Breakthrough Robe",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1244.png",
-      "description": "MATK +120, HP +900\nConverts HP into Magical Pierce"
-    },
-    {
-      "slot": 3,
       "itemId": "1231",
       "name": "Void Staff",
       "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1231.png",
       "description": "MATK +210, HP +500, CDR +5%\nAnti-tank"
+    },
+    {
+      "slot": 3,
+      "itemId": "1232",
+      "name": "Savant's Wrath",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1232.png",
+      "description": "MATK +210\nGreatly boosts MATK"
     },
     {
       "slot": 4,
@@ -111,40 +111,40 @@
     },
     {
       "slot": 5,
-      "itemId": "1239",
-      "name": "Splendor",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1239.png",
-      "description": "MATK +160, CDR +7.5%, Magical Lifesteal +12%\nTemp. invincibility"
-    },
-    {
-      "slot": 6,
       "itemId": "1127",
       "name": "Destiny",
       "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
       "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
+    },
+    {
+      "slot": 6,
+      "itemId": "1239",
+      "name": "Splendor",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1239.png",
+      "description": "MATK +160, CDR +7.5%, Magical Lifesteal +12%\nTemp. invincibility"
     }
   ],
   "buildZh": [
     {
       "slot": 1,
-      "itemId": "1240",
-      "name": "噬神之書",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1240.png",
-      "description": "+160點法攻+24%法術吸血+750點生命值 吸血拉長冷卻時間"
+      "itemId": "1531",
+      "name": "符文大劍",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1531.png",
+      "description": "+130法攻+10%冷縮+5%移速\n打野怪加法強"
     },
     {
       "slot": 2,
-      "itemId": "1244",
-      "name": "破繭之衣",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1244.png",
-      "description": "+120點法攻+900點生命值\n生命值轉法穿"
-    },
-    {
-      "slot": 3,
       "itemId": "1231",
       "name": "虛無法杖",
       "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1231.png",
       "description": "+210點法攻+500點生命值+5%減冷卻時間\n打坦克用"
+    },
+    {
+      "slot": 3,
+      "itemId": "1232",
+      "name": "博學者之怒",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1232.png",
+      "description": "+210點法術攻擊\n大幅提升法強"
     },
     {
       "slot": 4,
@@ -155,45 +155,45 @@
     },
     {
       "slot": 5,
-      "itemId": "1239",
-      "name": "輝月",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1239.png",
-      "description": "+160點法攻+7.5%減冷卻時間+12%法術吸血\n暫時無敵"
-    },
-    {
-      "slot": 6,
       "itemId": "1127",
       "name": "名刀・司命",
       "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
       "description": "+75點攻擊+15%攻速+500點生命值\n保命"
+    },
+    {
+      "slot": 6,
+      "itemId": "1239",
+      "name": "輝月",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1239.png",
+      "description": "+160點法攻+7.5%減冷卻時間+12%法術吸血\n暫時無敵"
     }
   ],
   "builds": [
     {
       "id": "camp-0",
-      "label": "Zixx Luna Sigma",
+      "label": "TING TING",
       "lane": "Jungle",
       "items": [
         {
           "slot": 1,
-          "itemId": "1240",
-          "name": "Insatiable Tome",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1240.png",
-          "description": "MATK +160, Magical Lifesteal +24%, HP +750\nLifesteal increases CDR"
+          "itemId": "1531",
+          "name": "Runeblade",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1531.png",
+          "description": "MATK +130, CDR +10%, MSPD +5%\nMonster kills boost MATK"
         },
         {
           "slot": 2,
-          "itemId": "1244",
-          "name": "Breakthrough Robe",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1244.png",
-          "description": "MATK +120, HP +900\nConverts HP into Magical Pierce"
-        },
-        {
-          "slot": 3,
           "itemId": "1231",
           "name": "Void Staff",
           "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1231.png",
           "description": "MATK +210, HP +500, CDR +5%\nAnti-tank"
+        },
+        {
+          "slot": 3,
+          "itemId": "1232",
+          "name": "Savant's Wrath",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1232.png",
+          "description": "MATK +210\nGreatly boosts MATK"
         },
         {
           "slot": 4,
@@ -204,72 +204,72 @@
         },
         {
           "slot": 5,
+          "itemId": "1127",
+          "name": "Destiny",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
+        },
+        {
+          "slot": 6,
+          "itemId": "1239",
+          "name": "Splendor",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1239.png",
+          "description": "MATK +160, CDR +7.5%, Magical Lifesteal +12%\nTemp. invincibility"
+        }
+      ]
+    },
+    {
+      "id": "camp-1",
+      "label": "Preset",
+      "lane": "Jungle",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1531",
+          "name": "Runeblade",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1531.png",
+          "description": "MATK +130, CDR +10%, MSPD +5%\nMonster kills boost MATK"
+        },
+        {
+          "slot": 2,
+          "itemId": "1231",
+          "name": "Void Staff",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1231.png",
+          "description": "MATK +210, HP +500, CDR +5%\nAnti-tank"
+        },
+        {
+          "slot": 3,
+          "itemId": "1232",
+          "name": "Savant's Wrath",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1232.png",
+          "description": "MATK +210\nGreatly boosts MATK"
+        },
+        {
+          "slot": 4,
           "itemId": "1239",
           "name": "Splendor",
           "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1239.png",
           "description": "MATK +160, CDR +7.5%, Magical Lifesteal +12%\nTemp. invincibility"
         },
         {
+          "slot": 5,
+          "itemId": "1422",
+          "name": "Boots of Resistance",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1422.png",
+          "description": "MDEF +100, PDEF +50, MSPD +50\nShortens crowd control"
+        },
+        {
           "slot": 6,
-          "itemId": "1127",
-          "name": "Destiny",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
-          "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
-        }
-      ]
-    },
-    {
-      "id": "camp-1",
-      "label": "ﺔﻌﺋﺎﺷ",
-      "lane": "Jungle",
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1240",
-          "name": "Insatiable Tome",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1240.png",
-          "description": "MATK +160, Magical Lifesteal +24%, HP +750\nLifesteal increases CDR"
-        },
-        {
-          "slot": 2,
-          "itemId": "1244",
-          "name": "Breakthrough Robe",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1244.png",
-          "description": "MATK +120, HP +900\nConverts HP into Magical Pierce"
-        },
-        {
-          "slot": 3,
-          "itemId": "1231",
-          "name": "Void Staff",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1231.png",
-          "description": "MATK +210, HP +500, CDR +5%\nAnti-tank"
-        },
-        {
-          "slot": 4,
           "itemId": "1337",
           "name": "Sage's Sanctuary",
           "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
           "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
-        },
-        {
-          "slot": 5,
-          "itemId": "1127",
-          "name": "Destiny",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
-          "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
-        },
-        {
-          "slot": 6,
-          "itemId": "1421",
-          "name": "Boots of Fortitude",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1421.png",
-          "description": "PDEF +100, MDEF +50, MSPD +50\nReduces physical damage"
         }
       ]
     },
     {
       "id": "camp-2",
-      "label": "Royal's",
+      "label": "Ryuen's",
       "lane": "Jungle",
       "items": [
         {
@@ -318,29 +318,29 @@
     },
     {
       "id": "camp-3",
-      "label": "UNO' LUNA",
+      "label": "Zixx Luna Sigma",
       "lane": "Jungle",
       "items": [
         {
           "slot": 1,
-          "itemId": "1531",
-          "name": "Runeblade",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1531.png",
-          "description": "MATK +130, CDR +10%, MSPD +5%\nMonster kills boost MATK"
+          "itemId": "1240",
+          "name": "Insatiable Tome",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1240.png",
+          "description": "MATK +160, Magical Lifesteal +24%, HP +750\nLifesteal increases CDR"
         },
         {
           "slot": 2,
-          "itemId": "1231",
-          "name": "Void Staff",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1231.png",
-          "description": "MATK +210, HP +500, CDR +5%\nAnti-tank"
-        },
-        {
-          "slot": 3,
           "itemId": "1244",
           "name": "Breakthrough Robe",
           "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1244.png",
           "description": "MATK +120, HP +900\nConverts HP into Magical Pierce"
+        },
+        {
+          "slot": 3,
+          "itemId": "1231",
+          "name": "Void Staff",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1231.png",
+          "description": "MATK +210, HP +500, CDR +5%\nAnti-tank"
         },
         {
           "slot": 4,
@@ -369,29 +369,29 @@
   "buildsZh": [
     {
       "id": "camp-0",
-      "label": "Zixx Luna Sigma",
+      "label": "TING TING",
       "lane": "Jungle",
       "items": [
         {
           "slot": 1,
-          "itemId": "1240",
-          "name": "噬神之書",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1240.png",
-          "description": "+160點法攻+24%法術吸血+750點生命值 吸血拉長冷卻時間"
+          "itemId": "1531",
+          "name": "符文大劍",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1531.png",
+          "description": "+130法攻+10%冷縮+5%移速\n打野怪加法強"
         },
         {
           "slot": 2,
-          "itemId": "1244",
-          "name": "破繭之衣",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1244.png",
-          "description": "+120點法攻+900點生命值\n生命值轉法穿"
-        },
-        {
-          "slot": 3,
           "itemId": "1231",
           "name": "虛無法杖",
           "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1231.png",
           "description": "+210點法攻+500點生命值+5%減冷卻時間\n打坦克用"
+        },
+        {
+          "slot": 3,
+          "itemId": "1232",
+          "name": "博學者之怒",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1232.png",
+          "description": "+210點法術攻擊\n大幅提升法強"
         },
         {
           "slot": 4,
@@ -402,72 +402,72 @@
         },
         {
           "slot": 5,
+          "itemId": "1127",
+          "name": "名刀・司命",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "+75點攻擊+15%攻速+500點生命值\n保命"
+        },
+        {
+          "slot": 6,
+          "itemId": "1239",
+          "name": "輝月",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1239.png",
+          "description": "+160點法攻+7.5%減冷卻時間+12%法術吸血\n暫時無敵"
+        }
+      ]
+    },
+    {
+      "id": "camp-1",
+      "label": "Preset",
+      "lane": "Jungle",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1531",
+          "name": "符文大劍",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1531.png",
+          "description": "+130法攻+10%冷縮+5%移速\n打野怪加法強"
+        },
+        {
+          "slot": 2,
+          "itemId": "1231",
+          "name": "虛無法杖",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1231.png",
+          "description": "+210點法攻+500點生命值+5%減冷卻時間\n打坦克用"
+        },
+        {
+          "slot": 3,
+          "itemId": "1232",
+          "name": "博學者之怒",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1232.png",
+          "description": "+210點法術攻擊\n大幅提升法強"
+        },
+        {
+          "slot": 4,
           "itemId": "1239",
           "name": "輝月",
           "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1239.png",
           "description": "+160點法攻+7.5%減冷卻時間+12%法術吸血\n暫時無敵"
         },
         {
+          "slot": 5,
+          "itemId": "1422",
+          "name": "抵抗之靴",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1422.png",
+          "description": "+100點法防+50點物防+50點移速\n減少被控時間"
+        },
+        {
           "slot": 6,
-          "itemId": "1127",
-          "name": "名刀・司命",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
-          "description": "+75點攻擊+15%攻速+500點生命值\n保命"
-        }
-      ]
-    },
-    {
-      "id": "camp-1",
-      "label": "ﺔﻌﺋﺎﺷ",
-      "lane": "Jungle",
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1240",
-          "name": "噬神之書",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1240.png",
-          "description": "+160點法攻+24%法術吸血+750點生命值 吸血拉長冷卻時間"
-        },
-        {
-          "slot": 2,
-          "itemId": "1244",
-          "name": "破繭之衣",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1244.png",
-          "description": "+120點法攻+900點生命值\n生命值轉法穿"
-        },
-        {
-          "slot": 3,
-          "itemId": "1231",
-          "name": "虛無法杖",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1231.png",
-          "description": "+210點法攻+500點生命值+5%減冷卻時間\n打坦克用"
-        },
-        {
-          "slot": 4,
           "itemId": "1337",
           "name": "賢者的庇護",
           "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
           "description": "+900點生命值+150點物防+150點法防……\n原地復活"
-        },
-        {
-          "slot": 5,
-          "itemId": "1127",
-          "name": "名刀・司命",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
-          "description": "+75點攻擊+15%攻速+500點生命值\n保命"
-        },
-        {
-          "slot": 6,
-          "itemId": "1421",
-          "name": "影忍之足",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1421.png",
-          "description": "+100點物防+50點法防+50點移速\n減少物理傷害"
         }
       ]
     },
     {
       "id": "camp-2",
-      "label": "Royal's",
+      "label": "Ryuen's",
       "lane": "Jungle",
       "items": [
         {
@@ -516,29 +516,29 @@
     },
     {
       "id": "camp-3",
-      "label": "UNO' LUNA",
+      "label": "Zixx Luna Sigma",
       "lane": "Jungle",
       "items": [
         {
           "slot": 1,
-          "itemId": "1531",
-          "name": "符文大劍",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1531.png",
-          "description": "+130法攻+10%冷縮+5%移速\n打野怪加法強"
+          "itemId": "1240",
+          "name": "噬神之書",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1240.png",
+          "description": "+160點法攻+24%法術吸血+750點生命值 吸血拉長冷卻時間"
         },
         {
           "slot": 2,
-          "itemId": "1231",
-          "name": "虛無法杖",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1231.png",
-          "description": "+210點法攻+500點生命值+5%減冷卻時間\n打坦克用"
-        },
-        {
-          "slot": 3,
           "itemId": "1244",
           "name": "破繭之衣",
           "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1244.png",
           "description": "+120點法攻+900點生命值\n生命值轉法穿"
+        },
+        {
+          "slot": 3,
+          "itemId": "1231",
+          "name": "虛無法杖",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1231.png",
+          "description": "+210點法攻+500點生命值+5%減冷卻時間\n打坦克用"
         },
         {
           "slot": 4,
@@ -593,11 +593,11 @@
   "tips": [
     "Luna (Mage): Tier A — 48.84% WR (Camp HOK).",
     "Lane: Jungling.",
-    "Build: Insatiable Tome, Breakthrough Robe, Void Staff."
+    "Build: Runeblade, Void Staff, Savant's Wrath."
   ],
   "tipsZh": [
     "露娜（打野）：梯度 A，勝率 48.84%（Camp HOK）。",
-    "出裝：噬神之書、破繭之衣、虛無法杖."
+    "出裝：符文大劍、虛無法杖、博學者之怒."
   ],
   "patchHistory": [
     {
@@ -678,7 +678,7 @@
     {
       "id": "faq-best-build",
       "question": "What is the best Luna build?",
-      "answer": "Recommended: Insatiable Tome, Breakthrough Robe, Void Staff, Sage's Sanctuary, Splendor, Destiny."
+      "answer": "Recommended: Runeblade, Void Staff, Savant's Wrath, Sage's Sanctuary, Destiny, Splendor."
     },
     {
       "id": "faq-counter",
@@ -695,7 +695,7 @@
     {
       "id": "faq-best-build",
       "question": "露娜 出裝怎麼搭配？",
-      "answer": "推薦：噬神之書、破繭之衣、虛無法杖、賢者的庇護、輝月、名刀・司命."
+      "answer": "推薦：符文大劍、虛無法杖、博學者之怒、賢者的庇護、名刀・司命、輝月."
     },
     {
       "id": "faq-counter",
@@ -704,13 +704,13 @@
     }
   ],
   "metaAnalysis": [
-    "Luna win rate 48.84% (Camp HOK, 2026-06-07).",
+    "Luna win rate 48.84% (Camp HOK, 2026-06-10).",
     "Pick rate 0.58%.",
     "Ban rate 0.32%.",
     "Counters: Yuhuan, Lady Zhen, Heino. Weak into: Athena, Augran, Fuzi."
   ],
   "metaAnalysisZh": [
-    "露娜 勝率 48.84%（Camp HOK，2026-06-07）",
+    "露娜 勝率 48.84%（Camp HOK，2026-06-10）",
     "選取率 0.58%",
     "禁用率 0.32%",
     "克制：Yuhuan、Lady Zhen、Heino；被克制：Athena、Augran、Fuzi"

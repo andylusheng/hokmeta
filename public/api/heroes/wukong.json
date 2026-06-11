@@ -19,7 +19,7 @@
   "heroCover": "https://camp.honorofkings.com/social/game/src/image_hero_cover_1275*718/zQQLOSC9.jpg",
   "tencentId": 167,
   "dataSource": "Camp HOK bilingual (primary)",
-  "dataUpdated": "2026-06-07",
+  "dataUpdated": "2026-06-10",
   "skills": [
     {
       "slot": "passive",
@@ -90,38 +90,38 @@
     },
     {
       "slot": 2,
+      "itemId": "1136",
+      "name": "Shadow Ripper",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1136.png",
+      "description": "PATK +45, ASPD +35%, Crit Rate +20%, MSPD +7.5%\nCrits boosts ASPD"
+    },
+    {
+      "slot": 3,
       "itemId": "1134",
       "name": "Master Sword",
       "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1134.png",
       "description": "PATK +55, Crit Rate +20%, HP +600\nEnhances BAs"
     },
     {
-      "slot": 3,
+      "slot": 4,
       "itemId": "1131",
       "name": "Starbreaker",
       "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1131.png",
       "description": "PATK +90, HP +700, MSPD +7.5%\nAnti-tank"
     },
     {
-      "slot": 4,
+      "slot": 5,
       "itemId": "1337",
       "name": "Sage's Sanctuary",
       "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
       "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
     },
     {
-      "slot": 5,
-      "itemId": "1127",
-      "name": "Destiny",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
-      "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
-    },
-    {
       "slot": 6,
-      "itemId": "1239",
-      "name": "Splendor",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1239.png",
-      "description": "MATK +160, CDR +7.5%, Magical Lifesteal +12%\nTemp. invincibility"
+      "itemId": "1335",
+      "name": "Succubus Cloak",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
+      "description": "MDEF +300, HP +1,100\nNegates magical damage"
     }
   ],
   "buildZh": [
@@ -134,43 +134,92 @@
     },
     {
       "slot": 2,
+      "itemId": "1136",
+      "name": "影刃",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1136.png",
+      "description": "+45點攻擊 +35%攻速+20%暴擊+7.5%移速\n暴擊增加攻速"
+    },
+    {
+      "slot": 3,
       "itemId": "1134",
       "name": "宗師之力",
       "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1134.png",
       "description": "+55點攻擊+20%暴擊+600點生命值……\n強化普攻"
     },
     {
-      "slot": 3,
+      "slot": 4,
       "itemId": "1131",
       "name": "碎星錘",
       "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1131.png",
       "description": "+90點攻擊+700點生命值+7.5%移速\n打坦克用"
     },
     {
-      "slot": 4,
+      "slot": 5,
       "itemId": "1337",
       "name": "賢者的庇護",
       "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
       "description": "+900點生命值+150點物防+150點法防……\n原地復活"
     },
     {
-      "slot": 5,
-      "itemId": "1127",
-      "name": "名刀・司命",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
-      "description": "+75點攻擊+15%攻速+500點生命值\n保命"
-    },
-    {
       "slot": 6,
-      "itemId": "1239",
-      "name": "輝月",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1239.png",
-      "description": "+160點法攻+7.5%減冷卻時間+12%法術吸血\n暫時無敵"
+      "itemId": "1335",
+      "name": "魔女斗篷",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
+      "description": "+300點法防+1100點生命值\n吸收法術傷害"
     }
   ],
   "builds": [
     {
       "id": "camp-0",
+      "label": "Jungling 1",
+      "lane": "Jungle",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1533",
+          "name": "Rapacious Bite",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1533.png",
+          "description": "PATK +90, MSPD +5%, CDR +7.5%\nMonster kills boost ATK"
+        },
+        {
+          "slot": 2,
+          "itemId": "1136",
+          "name": "Shadow Ripper",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1136.png",
+          "description": "PATK +45, ASPD +35%, Crit Rate +20%, MSPD +7.5%\nCrits boosts ASPD"
+        },
+        {
+          "slot": 3,
+          "itemId": "1134",
+          "name": "Master Sword",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1134.png",
+          "description": "PATK +55, Crit Rate +20%, HP +600\nEnhances BAs"
+        },
+        {
+          "slot": 4,
+          "itemId": "1131",
+          "name": "Starbreaker",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1131.png",
+          "description": "PATK +90, HP +700, MSPD +7.5%\nAnti-tank"
+        },
+        {
+          "slot": 5,
+          "itemId": "1337",
+          "name": "Sage's Sanctuary",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
+        },
+        {
+          "slot": 6,
+          "itemId": "1335",
+          "name": "Succubus Cloak",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
+          "description": "MDEF +300, HP +1,100\nNegates magical damage"
+        }
+      ]
+    },
+    {
+      "id": "camp-1",
       "label": "Seisuke build",
       "lane": "Jungle",
       "items": [
@@ -219,7 +268,7 @@
       ]
     },
     {
-      "id": "camp-1",
+      "id": "camp-2",
       "label": "Damage",
       "lane": "Jungle",
       "items": [
@@ -268,7 +317,7 @@
       ]
     },
     {
-      "id": "camp-2",
+      "id": "camp-3",
       "label": "Popular",
       "lane": "Jungle",
       "items": [
@@ -315,60 +364,60 @@
           "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
         }
       ]
-    },
-    {
-      "id": "camp-3",
-      "label": "Jungling 2",
-      "lane": "Jungle",
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1133",
-          "name": "Eternity Blade",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1133.png",
-          "description": "PATK +120, Crit Rate +20%\nHigh crit damage"
-        },
-        {
-          "slot": 2,
-          "itemId": "1136",
-          "name": "Shadow Ripper",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1136.png",
-          "description": "PATK +45, ASPD +35%, Crit Rate +20%, MSPD +7.5%\nCrits boosts ASPD"
-        },
-        {
-          "slot": 3,
-          "itemId": "1131",
-          "name": "Starbreaker",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1131.png",
-          "description": "PATK +90, HP +700, MSPD +7.5%\nAnti-tank"
-        },
-        {
-          "slot": 4,
-          "itemId": "1132",
-          "name": "Bloodweeper",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1132.png",
-          "description": "PATK +85, Lifesteal +25%, HP +500\nPhysical Lifesteal"
-        },
-        {
-          "slot": 5,
-          "itemId": "1337",
-          "name": "Sage's Sanctuary",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
-          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
-        },
-        {
-          "slot": 6,
-          "itemId": "1127",
-          "name": "Destiny",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
-          "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
-        }
-      ]
     }
   ],
   "buildsZh": [
     {
       "id": "camp-0",
+      "label": "Jungling 1",
+      "lane": "Jungle",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1533",
+          "name": "貪婪之噬",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1533.png",
+          "description": "+90攻擊+5%移速+7.5%冷縮\n打野怪加攻擊"
+        },
+        {
+          "slot": 2,
+          "itemId": "1136",
+          "name": "影刃",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1136.png",
+          "description": "+45點攻擊 +35%攻速+20%暴擊+7.5%移速\n暴擊增加攻速"
+        },
+        {
+          "slot": 3,
+          "itemId": "1134",
+          "name": "宗師之力",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1134.png",
+          "description": "+55點攻擊+20%暴擊+600點生命值……\n強化普攻"
+        },
+        {
+          "slot": 4,
+          "itemId": "1131",
+          "name": "碎星錘",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1131.png",
+          "description": "+90點攻擊+700點生命值+7.5%移速\n打坦克用"
+        },
+        {
+          "slot": 5,
+          "itemId": "1337",
+          "name": "賢者的庇護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+        },
+        {
+          "slot": 6,
+          "itemId": "1335",
+          "name": "魔女斗篷",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
+          "description": "+300點法防+1100點生命值\n吸收法術傷害"
+        }
+      ]
+    },
+    {
+      "id": "camp-1",
       "label": "Seisuke build",
       "lane": "Jungle",
       "items": [
@@ -417,7 +466,7 @@
       ]
     },
     {
-      "id": "camp-1",
+      "id": "camp-2",
       "label": "Damage",
       "lane": "Jungle",
       "items": [
@@ -466,7 +515,7 @@
       ]
     },
     {
-      "id": "camp-2",
+      "id": "camp-3",
       "label": "Popular",
       "lane": "Jungle",
       "items": [
@@ -513,66 +562,17 @@
           "description": "+75點攻擊+15%攻速+500點生命值\n保命"
         }
       ]
-    },
-    {
-      "id": "camp-3",
-      "label": "Jungling 2",
-      "lane": "Jungle",
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1133",
-          "name": "無盡戰刃",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1133.png",
-          "description": "+120點攻擊+20%暴擊\n高額暴擊傷害"
-        },
-        {
-          "slot": 2,
-          "itemId": "1136",
-          "name": "影刃",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1136.png",
-          "description": "+45點攻擊 +35%攻速+20%暴擊+7.5%移速\n暴擊增加攻速"
-        },
-        {
-          "slot": 3,
-          "itemId": "1131",
-          "name": "碎星錘",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1131.png",
-          "description": "+90點攻擊+700點生命值+7.5%移速\n打坦克用"
-        },
-        {
-          "slot": 4,
-          "itemId": "1132",
-          "name": "泣血之刃",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1132.png",
-          "description": "+85點攻擊+25%吸血+500點生命值\n物理吸血"
-        },
-        {
-          "slot": 5,
-          "itemId": "1337",
-          "name": "賢者的庇護",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
-          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
-        },
-        {
-          "slot": 6,
-          "itemId": "1127",
-          "name": "名刀・司命",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
-          "description": "+75點攻擊+15%攻速+500點生命值\n保命"
-        }
-      ]
     }
   ],
   "arcana": [
+    "Lvl 5: Calamity",
     "Lvl 5: Unparalleled",
-    "Lvl 5: Reaver",
-    "Lvl 5: Eagle Eye"
+    "Lvl 5: Stealth"
   ],
   "arcanaZh": [
+    "5級：禍源",
     "5級：無雙",
-    "5級：奪萃",
-    "5級：鷹眼"
+    "5級：隱匿"
   ],
   "spells": [
     "Smite"
@@ -593,11 +593,11 @@
   "tips": [
     "Wukong (Assassin): Tier S — 49.74% WR (Camp HOK).",
     "Lane: Jungling.",
-    "Build: Rapacious Bite, Master Sword, Starbreaker."
+    "Build: Rapacious Bite, Shadow Ripper, Master Sword."
   ],
   "tipsZh": [
     "孫悟空（打野）：梯度 S，勝率 49.74%（Camp HOK）。",
-    "出裝：貪婪之噬、宗師之力、碎星錘."
+    "出裝：貪婪之噬、影刃、宗師之力."
   ],
   "patchHistory": [
     {
@@ -700,7 +700,7 @@
     {
       "id": "faq-best-build",
       "question": "What is the best Wukong build?",
-      "answer": "Recommended: Rapacious Bite, Master Sword, Starbreaker, Sage's Sanctuary, Destiny, Splendor."
+      "answer": "Recommended: Rapacious Bite, Shadow Ripper, Master Sword, Starbreaker, Sage's Sanctuary, Succubus Cloak."
     },
     {
       "id": "faq-counter",
@@ -717,7 +717,7 @@
     {
       "id": "faq-best-build",
       "question": "孫悟空 出裝怎麼搭配？",
-      "answer": "推薦：貪婪之噬、宗師之力、碎星錘、賢者的庇護、名刀・司命、輝月."
+      "answer": "推薦：貪婪之噬、影刃、宗師之力、碎星錘、賢者的庇護、魔女斗篷."
     },
     {
       "id": "faq-counter",
@@ -726,13 +726,13 @@
     }
   ],
   "metaAnalysis": [
-    "Wukong win rate 49.74% (Camp HOK, 2026-06-07).",
+    "Wukong win rate 49.74% (Camp HOK, 2026-06-10).",
     "Pick rate 1.46%.",
     "Ban rate 0.28%.",
     "Counters: Dun, Lian Po, Xiang Yu. Weak into: Agudo, Gao, Heino."
   ],
   "metaAnalysisZh": [
-    "孫悟空 勝率 49.74%（Camp HOK，2026-06-07）",
+    "孫悟空 勝率 49.74%（Camp HOK，2026-06-10）",
     "選取率 1.46%",
     "禁用率 0.28%",
     "克制：Dun、Lian Po、Xiang Yu；被克制：Agudo、Gao、Heino"

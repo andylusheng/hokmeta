@@ -6,9 +6,16 @@ import { heroToLane } from '@/lib/lanes';
 import { getClimbPicksByLane } from '@/lib/climb-picks';
 import type { Hero } from '@/types/hero';
 import {
+  getBestCounter,
+  getCounterDetails,
   getCounterOverride,
+  getMetaTrend,
+  getPlaystyle,
+  getOverrideFaqHowToLane,
   getOverrideFaqItems,
+  getOverrideFaqSeason,
   getOverrideFaqUltimate,
+  getOverrideFaqWho,
   locList,
 } from '@/lib/counter-rationale-overrides';
 
@@ -155,6 +162,12 @@ export function getCounterFaqs(
   const wr = formatRate(hero.winRate);
   const pick = formatRate(hero.pickRate);
   const ban = formatRate(hero.banRate);
+  const lane = hero.lane || '—';
+  const role = hero.role || '—';
+
+  // Build weakness description from hero data
+  const weaknessZh = `${name}是${role}，走${lane}路。核心弱點：缺乏硬控自保，怕被多人衝臉或硬控打斷技能節奏。`;
+  const weaknessEn = `${name} is a ${role} in the ${lane} lane. Core weakness: lacks hard CC for self-peel, vulnerable to dive and CC interrupts.`;
 
   const ultAnswer =
     getOverrideFaqUltimate(hero.slug, locale) ||
@@ -164,13 +177,39 @@ export function getCounterFaqs(
     getOverrideFaqItems(hero.slug, locale) ||
     t('counterPage.faqItemsGeneric', { name, role: hero.role });
 
+  const whoAnswer =
+    getOverrideFaqWho(hero.slug, locale) ||
+    (counters.length > 0
+      ? t('counterPage.faqWhoAnswer', { name, list })
+      : t('counterPage.faqWhoNone', { name }));
+
+  const laneAnswer =
+    getOverrideFaqHowToLane(hero.slug, locale) ||
+    t('counterPage.faqHowToLaneAnswer', {
+      name,
+      weakness: locale === 'zh-TW' ? weaknessZh : weaknessEn,
+      lane,
+    });
+
+  const seasonAnswer =
+    getOverrideFaqSeason(hero.slug, locale) ||
+    t('counterPage.faqSeasonAnswer', {
+      name,
+      tier: hero.tier,
+      wr,
+      pick,
+      ban,
+      date,
+    });
+
   return [
     {
       question: t('counterPage.faqWho', { name }),
-      answer:
-        counters.length > 0
-          ? t('counterPage.faqWhoAnswer', { name, list })
-          : t('counterPage.faqWhoNone', { name }),
+      answer: whoAnswer,
+    },
+    {
+      question: t('counterPage.faqHowToLane', { name }),
+      answer: laneAnswer,
     },
     {
       question: t('counterPage.faqUltimate', { name }),
@@ -182,14 +221,7 @@ export function getCounterFaqs(
     },
     {
       question: t('counterPage.faqSeason', { name, season: getMetaSeasonLabel(locale) }),
-      answer: t('counterPage.faqSeasonAnswer', {
-        name,
-        tier: hero.tier,
-        wr,
-        pick,
-        ban,
-        date,
-      }),
+      answer: seasonAnswer,
     },
   ];
 }
@@ -221,3 +253,34 @@ export function getRelatedCounterHeroes(hero: Hero, limit = 3): Hero[] {
 
   return related;
 }
+
+/** Get related counter heroes by same lane, sorted by popularity */
+export function getRelatedCounters(hero: Hero, limit = 6): Hero[] {
+  const lane = heroToLane(hero);
+  const picks = getClimbPicksByLane(lane, 12)
+    .map((p) => p.hero)
+    .filter((h) => h.slug !== hero.slug);
+
+  const seen = new Set<string>();
+  const related: Hero[] = [];
+  for (const h of picks) {
+    if (seen.has(h.slug)) continue;
+    seen.add(h.slug);
+    related.push(h);
+    if (related.length >= limit) break;
+  }
+
+  if (related.length < limit) {
+    for (const h of heroes) {
+      if (h.slug === hero.slug || seen.has(h.slug)) continue;
+      if (heroToLane(h) !== lane) continue;
+      related.push(h);
+      seen.add(h.slug);
+      if (related.length >= limit) break;
+    }
+  }
+
+  return related;
+}
+
+export { getBestCounter, getCounterDetails, getMetaTrend, getPlaystyle } from '@/lib/counter-rationale-overrides';
