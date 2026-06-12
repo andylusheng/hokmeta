@@ -207,7 +207,7 @@ const OVERRIDES: Record<string, CounterOverride> = {
         ],
       },
       {
-        hero: 'yu-ji',
+        hero: 'consort-yu',
         reason: {
           en: 'Yu Ji\'s Skill 2 grants 2s physical damage immunity — Marco\'s entire kit deals zero damage. Her Ultimate is a point-click stun he cannot dodge. In a pure 1v1 matchup, Yu Ji bullies Marco in lane with Skill 2 up and forces him to concede farm.',
           'zh-TW': '虞姬二技能物理免疫2秒——馬可全套技能打空氣。大招指向暈眩他躲不掉。純射手1v1對線，虞姬開二技能往臉上走馬可就得退。',
