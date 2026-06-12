@@ -56,6 +56,14 @@ export function getCounterOverride(slug: string): CounterOverride | undefined {
   return OVERRIDES[slug];
 }
 
+export function getCountOverrides(slug: string): { counteredBy: string[]; counters: string[] } {
+  const override = OVERRIDES[slug];
+  return {
+    counteredBy: override?.counterDetails?.map((d) => d.hero) || [],
+    counters: [],
+  };
+}
+
 export function getOverrideFaqUltimate(
   slug: string,
   locale: Locale
