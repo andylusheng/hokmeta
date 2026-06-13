@@ -1,6 +1,6 @@
 import type { MetadataRoute } from 'next';
 import { site, heroes } from '@/lib/data';
-import { getLearnSlugs } from '@/lib/learn';
+import { getLearnArticle, getLearnSlugs } from '@/lib/learn';
 import { ROLES } from '@/types/hero';
 import { localePath, type Locale } from '@/lib/i18n';
 
@@ -105,13 +105,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })
   );
 
-  const learnRoutes = getLearnSlugs().flatMap((slug) =>
-    localizedEntries(base, `/learn/${slug}`, {
+  const learnRoutes = getLearnSlugs().flatMap((slug) => {
+    const article = getLearnArticle(slug);
+    const isHeroArticle = !!article?.relatedHeroSlug;
+    return localizedEntries(base, `/learn/${slug}`, {
       lastModified: now,
-      changeFrequency: 'monthly',
-      priority: 0.72,
-    })
-  );
+      changeFrequency: isHeroArticle ? 'weekly' : 'monthly',
+      priority: isHeroArticle ? 0.82 : 0.72,
+    });
+  });
 
   return [...staticRoutes, ...heroRoutes, ...roleRoutes, ...learnRoutes];
 }

@@ -26,6 +26,11 @@ import {
   topWR,
 } from '@/lib/learn-stats';
 import { learnArticlesZh, learnDataNoteZh } from '@/lib/learn-zh';
+import { getHeroLearnArticles } from '@/lib/learn-hero-articles';
+import { getHeroLearnArticlesZh } from '@/lib/learn-hero-articles-zh';
+
+const heroLearnArticles = getHeroLearnArticles();
+const heroLearnArticlesZh = getHeroLearnArticlesZh();
 
 export interface LearnArticle {
   slug: string;
@@ -33,6 +38,8 @@ export interface LearnArticle {
   description: string;
   badge?: string;
   sections: { heading: string; body: string }[];
+  /** Hero slug this article is about, if hero-specific. Enables back-linking. */
+  relatedHeroSlug?: string;
 }
 
 export const learnDataSync = DATA_SYNC;
@@ -360,7 +367,9 @@ export function getLearnDataNote(locale: Locale = 'en'): string {
 }
 
 export function getLearnArticles(locale: Locale = 'en') {
-  return locale === 'zh-TW' ? learnArticlesZh : learnArticles;
+  const base = locale === 'zh-TW' ? learnArticlesZh : learnArticles;
+  const hero = locale === 'zh-TW' ? heroLearnArticlesZh : heroLearnArticles;
+  return [...base, ...hero];
 }
 
 export function getLearnArticle(slug: string, locale: Locale = 'en') {
@@ -368,5 +377,7 @@ export function getLearnArticle(slug: string, locale: Locale = 'en') {
 }
 
 export function getLearnSlugs() {
-  return learnArticles.map((a) => a.slug);
+  const baseSlugs = learnArticles.map((a) => a.slug);
+  const heroSlugs = heroLearnArticles.map((a) => a.slug);
+  return [...baseSlugs, ...heroSlugs];
 }

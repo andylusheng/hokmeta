@@ -19,7 +19,7 @@ export function BuildStrip({
   if (!items.length) return null;
 
   return (
-    <div className="mb-8 flex flex-wrap items-center gap-2 rounded-xl border border-hok-border bg-hok-card/80 p-3">
+    <div className="mb-6 flex flex-wrap items-center gap-2 rounded-xl border border-hok-border bg-hok-card/80 p-3">
       {items.map((item) => (
         <div
           key={`${item.slot}-${item.itemId || item.name}`}

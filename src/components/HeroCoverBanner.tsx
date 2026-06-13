@@ -19,7 +19,7 @@ export function HeroCoverBanner({
   const cover = getHeroCoverUrl(hero);
 
   return (
-    <section className="relative mb-8 overflow-hidden rounded-2xl border border-hok-border">
+    <section className="relative mb-6 overflow-hidden rounded-2xl border border-hok-border">
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
         src={cover}

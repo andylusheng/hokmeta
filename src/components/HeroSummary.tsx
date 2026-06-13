@@ -21,7 +21,7 @@ export function HeroSummary({
   return (
     <section
       id="overview"
-      className="scroll-mt-20 mb-8 rounded-xl border border-hok-gold/30 bg-gradient-to-br from-hok-card to-hok-dark/80 p-5 sm:p-6"
+      className="scroll-mt-20 mb-6 rounded-xl border border-hok-gold/30 bg-gradient-to-br from-hok-card to-hok-dark/80 p-5 sm:p-6"
     >
       {!compact && (
         <div className="mb-4 flex flex-col gap-4 sm:flex-row sm:items-start">

@@ -41,23 +41,7 @@ export function HeroGuideBlock({
         <p className="text-sm leading-relaxed text-gray-300">{g.highRank}</p>
       </div>
 
-      {g.comparisons && g.comparisons.length > 0 && (
-        <div id="comparisons" className="scroll-mt-20">
-          <h3 className="mb-3 text-sm font-semibold text-white">
-            {t('guide.comparisons')}
-          </h3>
-          <ul className="space-y-2">
-            {g.comparisons.map((line) => (
-              <li
-                key={line}
-                className="rounded border border-hok-border bg-hok-dark/30 px-3 py-2 text-sm text-gray-300"
-              >
-                {line}
-              </li>
-            ))}
-          </ul>
-        </div>
-      )}
+
     </div>
   );
 }

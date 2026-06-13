@@ -105,7 +105,7 @@ export function buildHighRankNote(hero: Hero, locale: Locale): string {
   return parts.join(' ');
 }
 
-function topPeer(hero: Hero): Hero | undefined {
+export function topPeer(hero: Hero): Hero | undefined {
   return [...heroes]
     .filter(
       (h) =>
@@ -116,7 +116,7 @@ function topPeer(hero: Hero): Hero | undefined {
     .sort((a, b) => (b.pickRate ?? 0) - (a.pickRate ?? 0))[0];
 }
 
-function peerComparison(hero: Hero, peer: Hero, locale: Locale): string {
+export function peerComparison(hero: Hero, peer: Hero, locale: Locale): string {
   const t = createT(locale);
   const name = getHeroDisplayName(hero, locale);
   const peerName = getHeroDisplayName(peer, locale);

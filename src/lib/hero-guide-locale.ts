@@ -1,7 +1,8 @@
 import type { Hero } from '@/types/hero';
+import { heroes } from '@/lib/data';
 import { createT, type Locale } from '@/lib/i18n';
 import { getLocalizedGuideZh } from '@/lib/hero-content-zh';
-import { buildLaningTip, buildHighRankNote } from '@/lib/hero-faq';
+import { buildLaningTip, buildHighRankNote, topPeer, peerComparison } from '@/lib/hero-faq';
 
 const TEAMFIGHT_KEYS: Record<string, string> = {
   Tank: 'guide.teamfight.tank',
@@ -29,6 +30,21 @@ export interface LocalizedGuideContent {
   comparisons: string[];
 }
 
+/** Generate localized comparison text for a hero vs its top same-role peers */
+function buildComparisons(hero: Hero, locale: Locale, count = 2): string[] {
+  const peers = [...heroes]
+    .filter(
+      (h) =>
+        h.slug !== hero.slug &&
+        h.role === hero.role &&
+        (h.lane === hero.lane || !hero.lane)
+    )
+    .sort((a, b) => (b.pickRate ?? 0) - (a.pickRate ?? 0))
+    .slice(0, count);
+
+  return peers.map((peer) => peerComparison(hero, peer, locale));
+}
+
 /** Camp-data-derived guide copy (lane/role templates + live stats). Not invented prose. */
 export function getDerivedGuideContent(
   hero: Hero,
@@ -38,7 +54,7 @@ export function getDerivedGuideContent(
     laning: buildLaningTip(hero, locale),
     teamfight: buildTeamfightTip(hero, locale),
     highRank: buildHighRankNote(hero, locale),
-    comparisons: hero.guide?.comparisons ?? [],
+    comparisons: locale === 'zh-TW' ? buildComparisons(hero, locale) : (hero.guide?.comparisons ?? []),
   };
 }
 

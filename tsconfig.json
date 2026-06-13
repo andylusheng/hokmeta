@@ -36,6 +36,9 @@
     "out/types/**/*.ts"
   ],
   "exclude": [
-    "node_modules"
+    "node_modules",
+    "_batch_new_heroes.ts",
+    "_overrides_batch.ts",
+    "_restored_overrides.ts"
   ]
 }

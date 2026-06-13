@@ -14,6 +14,8 @@ import {
   getRelatedCounters,
 } from '@/lib/counter-rationale';
 import { createT, getMetaSeasonLabel, localePath, type Locale } from '@/lib/i18n';
+import { getLearnArticle } from '@/lib/learn';
+import { getCounterRelatedArticle } from '@/lib/learn-hero-links';
 import { getHeroDisplayName } from '@/lib/locale-names';
 import { translateLane, translateRole } from '@/lib/locale-labels';
 import { Breadcrumb } from '@/components/Breadcrumb';
@@ -207,6 +209,15 @@ export function CounterPageView({ hero, locale = 'en' }: { hero: Hero; locale?: 
 
   // Build detail map: counter name → CounterDetail
   const detailMap = new Map(counterDetails.map((d) => [d.hero, d]));
+
+  // FAQ types by order in getCounterFaqs()
+  const faqTypes = ['who', 'howToLane', 'ultimate', 'items', 'season'] as const;
+  const faqArticleLinks = faqs.map((faq, i) => ({
+    faq,
+    link: i < faqTypes.length
+      ? getCounterRelatedArticle(faqTypes[i], hero.slug, locale)
+      : undefined,
+  }));
 
   return (
     <div className="container-wide">
@@ -499,7 +510,7 @@ export function CounterPageView({ hero, locale = 'en' }: { hero: Hero; locale?: 
               {t('counterPage.faqTitle')}
             </h2>
             <div className="space-y-3">
-              {faqs.map((faq) => (
+              {faqArticleLinks.map(({ faq, link }) => (
                 <div
                   key={faq.question}
                   className="rounded border border-hok-border bg-hok-card/30 p-4"
@@ -510,6 +521,14 @@ export function CounterPageView({ hero, locale = 'en' }: { hero: Hero; locale?: 
                   <p className="text-sm leading-relaxed text-gray-400">
                     {linkifyHeroNames(faq.answer, locale)}
                   </p>
+                  {link && (
+                    <Link
+                      href={link.url}
+                      className="mt-2 inline-flex items-center gap-1 text-xs font-medium text-hok-gold hover:underline"
+                    >
+                      {link.title} →
+                    </Link>
+                  )}
                 </div>
               ))}
             </div>
@@ -542,6 +561,36 @@ export function CounterPageView({ hero, locale = 'en' }: { hero: Hero; locale?: 
                   </Link>
                 </li>
               ))}
+            </ul>
+          </div>
+
+          {/* ── Related Learn Articles ── */}
+          <div className="rounded border border-hok-border bg-hok-card/30 p-4">
+            <h3 className="mb-3 text-sm font-semibold text-white">
+              {locale === 'zh-TW' ? '相關攻略' : 'Related Guides'}
+            </h3>
+            <ul className="space-y-2">
+              {(() => {
+                const slugs = [
+                  `how-to-counter-${hero.slug}`,
+                  `${hero.slug}-guide`,
+                  `${hero.slug}-weaknesses`,
+                ];
+                return slugs.map((slug) => {
+                  const article = getLearnArticle(slug, locale);
+                  if (!article) return null;
+                  return (
+                    <li key={slug}>
+                      <Link
+                        href={localePath(locale, `/learn/${slug}`)}
+                        className="block text-sm text-gray-300 hover:text-hok-gold transition"
+                      >
+                        {article.title} →
+                      </Link>
+                    </li>
+                  );
+                });
+              })()}
             </ul>
           </div>
 

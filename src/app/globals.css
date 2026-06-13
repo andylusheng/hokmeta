@@ -108,4 +108,13 @@
   .patch-tag-adjust {
     @apply rounded px-1.5 py-0.5 text-[10px] font-bold uppercase tracking-wide text-sky-400 ring-1 ring-sky-500/30;
   }
+  .article-body p {
+    @apply mb-3;
+  }
+  .article-body p:last-child {
+    @apply mb-0;
+  }
+  .hero-link {
+    @apply font-semibold text-hok-gold underline decoration-hok-gold/40 underline-offset-2 transition hover:text-yellow-300 hover:decoration-yellow-300/70;
+  }
 }
