@@ -19,7 +19,7 @@
   "heroCover": "https://camp.honorofkings.com/social/game/src/image_hero_cover_1275*718/kkRXWWRM.jpg",
   "tencentId": 130,
   "dataSource": "Camp HOK bilingual (primary)",
-  "dataUpdated": "2026-06-10",
+  "dataUpdated": "2026-06-12",
   "skills": [
     {
       "slot": "passive",
@@ -83,17 +83,17 @@
   "build": [
     {
       "slot": 1,
-      "itemId": "1533",
-      "name": "Rapacious Bite",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1533.png",
-      "description": "PATK +90, MSPD +5%, CDR +7.5%\nMonster kills boost ATK"
-    },
-    {
-      "slot": 2,
       "itemId": "1422",
       "name": "Boots of Resistance",
       "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1422.png",
       "description": "MDEF +100, PDEF +50, MSPD +50\nShortens crowd control"
+    },
+    {
+      "slot": 2,
+      "itemId": "1532",
+      "name": "Giant's Grip",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1532.png",
+      "description": "HP +1,200, MSPD +5%, CDR +5%\nMonster kills boost HP"
     },
     {
       "slot": 3,
@@ -111,33 +111,33 @@
     },
     {
       "slot": 5,
-      "itemId": "1132",
-      "name": "Bloodweeper",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1132.png",
-      "description": "PATK +85, Lifesteal +25%, HP +500\nPhysical Lifesteal"
+      "itemId": "11311",
+      "name": "Pure Sky",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/11311.png",
+      "description": "PATK +80, PDEF +150, CDR +10%\nTemp. damage reduction"
     },
     {
       "slot": 6,
-      "itemId": "1337",
-      "name": "Sage's Sanctuary",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
-      "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
+      "itemId": "1331",
+      "name": "Blazing Cape",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1331.png",
+      "description": "PDEF +150, MDEF +150, HP +1,100\nArea burn & imperil"
     }
   ],
   "buildZh": [
     {
       "slot": 1,
-      "itemId": "1533",
-      "name": "貪婪之噬",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1533.png",
-      "description": "+90攻擊+5%移速+7.5%冷縮\n打野怪加攻擊"
-    },
-    {
-      "slot": 2,
       "itemId": "1422",
       "name": "抵抗之靴",
       "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1422.png",
       "description": "+100點法防+50點物防+50點移速\n減少被控時間"
+    },
+    {
+      "slot": 2,
+      "itemId": "1532",
+      "name": "巨人之握",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1532.png",
+      "description": "+1200點生命值+5%移速+5%冷縮\n打野怪加生命"
     },
     {
       "slot": 3,
@@ -155,22 +155,71 @@
     },
     {
       "slot": 5,
-      "itemId": "1132",
-      "name": "泣血之刃",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1132.png",
-      "description": "+85點攻擊+25%吸血+500點生命值\n物理吸血"
+      "itemId": "11311",
+      "name": "純淨蒼穹",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/11311.png",
+      "description": "+80點攻擊+150點物防+10%冷卻時間縮減\n暫時增加免傷"
     },
     {
       "slot": 6,
-      "itemId": "1337",
-      "name": "賢者的庇護",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
-      "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+      "itemId": "1331",
+      "name": "紅蓮斗篷",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1331.png",
+      "description": "+150點物防+150點法防+1100點生命值\n範圍灼燒重傷"
     }
   ],
   "builds": [
     {
       "id": "camp-0",
+      "label": "TANK",
+      "lane": "Jungle",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1422",
+          "name": "Boots of Resistance",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1422.png",
+          "description": "MDEF +100, PDEF +50, MSPD +50\nShortens crowd control"
+        },
+        {
+          "slot": 2,
+          "itemId": "1532",
+          "name": "Giant's Grip",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1532.png",
+          "description": "HP +1,200, MSPD +5%, CDR +5%\nMonster kills boost HP"
+        },
+        {
+          "slot": 3,
+          "itemId": "1137",
+          "name": "Axe of Torment",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1137.png",
+          "description": "PATK +80, CDR +10%, HP +500\nAnti-squishy"
+        },
+        {
+          "slot": 4,
+          "itemId": "13310",
+          "name": "Frostscar's Embrace",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/13310.png",
+          "description": "PATK +60, PDEF +300, CDR +10%\nEnhanced BAs slow"
+        },
+        {
+          "slot": 5,
+          "itemId": "11311",
+          "name": "Pure Sky",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/11311.png",
+          "description": "PATK +80, PDEF +150, CDR +10%\nTemp. damage reduction"
+        },
+        {
+          "slot": 6,
+          "itemId": "1331",
+          "name": "Blazing Cape",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1331.png",
+          "description": "PDEF +150, MDEF +150, HP +1,100\nArea burn & imperil"
+        }
+      ]
+    },
+    {
+      "id": "camp-1",
       "label": "Cina",
       "lane": "Jungle",
       "items": [
@@ -219,7 +268,7 @@
       ]
     },
     {
-      "id": "camp-1",
+      "id": "camp-2",
       "label": "Jungling 4",
       "lane": "Top",
       "items": [
@@ -268,7 +317,7 @@
       ]
     },
     {
-      "id": "camp-2",
+      "id": "camp-3",
       "label": "Popular",
       "lane": "Jungle",
       "items": [
@@ -315,60 +364,60 @@
           "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
         }
       ]
-    },
-    {
-      "id": "camp-3",
-      "label": "Top",
-      "lane": "Jungle",
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1534",
-          "name": "Dragon's Rage",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1536.png",
-          "description": "HP +1,350, PDEF +180, MDEF +90\nBoosts BA damage"
-        },
-        {
-          "slot": 2,
-          "itemId": "13310",
-          "name": "Frostscar's Embrace",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/13310.png",
-          "description": "PATK +60, PDEF +300, CDR +10%\nEnhanced BAs slow"
-        },
-        {
-          "slot": 3,
-          "itemId": "1422",
-          "name": "Boots of Resistance",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1422.png",
-          "description": "MDEF +100, PDEF +50, MSPD +50\nShortens crowd control"
-        },
-        {
-          "slot": 4,
-          "itemId": "1335",
-          "name": "Succubus Cloak",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
-          "description": "MDEF +300, HP +1,100\nNegates magical damage"
-        },
-        {
-          "slot": 5,
-          "itemId": "1337",
-          "name": "Sage's Sanctuary",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
-          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
-        },
-        {
-          "slot": 6,
-          "itemId": "1127",
-          "name": "Destiny",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
-          "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
-        }
-      ]
     }
   ],
   "buildsZh": [
     {
       "id": "camp-0",
+      "label": "TANK",
+      "lane": "Jungle",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1422",
+          "name": "抵抗之靴",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1422.png",
+          "description": "+100點法防+50點物防+50點移速\n減少被控時間"
+        },
+        {
+          "slot": 2,
+          "itemId": "1532",
+          "name": "巨人之握",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1532.png",
+          "description": "+1200點生命值+5%移速+5%冷縮\n打野怪加生命"
+        },
+        {
+          "slot": 3,
+          "itemId": "1137",
+          "name": "暗影戰斧",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1137.png",
+          "description": "+80點攻擊+10%減冷卻時間+500點生命值\n打血薄用"
+        },
+        {
+          "slot": 4,
+          "itemId": "13310",
+          "name": "冰痕之握",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/13310.png",
+          "description": "+60點攻擊+300點物防+10%減冷卻時間……\n強化普攻減速"
+        },
+        {
+          "slot": 5,
+          "itemId": "11311",
+          "name": "純淨蒼穹",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/11311.png",
+          "description": "+80點攻擊+150點物防+10%冷卻時間縮減\n暫時增加免傷"
+        },
+        {
+          "slot": 6,
+          "itemId": "1331",
+          "name": "紅蓮斗篷",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1331.png",
+          "description": "+150點物防+150點法防+1100點生命值\n範圍灼燒重傷"
+        }
+      ]
+    },
+    {
+      "id": "camp-1",
       "label": "Cina",
       "lane": "Jungle",
       "items": [
@@ -417,7 +466,7 @@
       ]
     },
     {
-      "id": "camp-1",
+      "id": "camp-2",
       "label": "Jungling 4",
       "lane": "Top",
       "items": [
@@ -466,7 +515,7 @@
       ]
     },
     {
-      "id": "camp-2",
+      "id": "camp-3",
       "label": "Popular",
       "lane": "Jungle",
       "items": [
@@ -513,66 +562,17 @@
           "description": "+75點攻擊+15%攻速+500點生命值\n保命"
         }
       ]
-    },
-    {
-      "id": "camp-3",
-      "label": "Top",
-      "lane": "Jungle",
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1534",
-          "name": "怒龍劍盾",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1536.png",
-          "description": "+1350點生命值+180點物防+90點法防\n普攻額外傷害"
-        },
-        {
-          "slot": 2,
-          "itemId": "13310",
-          "name": "冰痕之握",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/13310.png",
-          "description": "+60點攻擊+300點物防+10%減冷卻時間……\n強化普攻減速"
-        },
-        {
-          "slot": 3,
-          "itemId": "1422",
-          "name": "抵抗之靴",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1422.png",
-          "description": "+100點法防+50點物防+50點移速\n減少被控時間"
-        },
-        {
-          "slot": 4,
-          "itemId": "1335",
-          "name": "魔女斗篷",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
-          "description": "+300點法防+1100點生命值\n吸收法術傷害"
-        },
-        {
-          "slot": 5,
-          "itemId": "1337",
-          "name": "賢者的庇護",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
-          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
-        },
-        {
-          "slot": 6,
-          "itemId": "1127",
-          "name": "名刀・司命",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
-          "description": "+75點攻擊+15%攻速+500點生命值\n保命"
-        }
-      ]
     }
   ],
   "arcana": [
-    "Lvl 5: Red Moon",
     "Lvl 5: Mutation",
-    "Lvl 5: Reaver"
+    "Lvl 5: Harmony",
+    "Lvl 5: Void"
   ],
   "arcanaZh": [
-    "5級：紅月",
     "5級：異變",
-    "5級：奪萃"
+    "5級：調和",
+    "5級：虛空"
   ],
   "spells": [
     "Smite"
@@ -592,11 +592,11 @@
   "tips": [
     "Musashi (Assassin): Tier A — 51.16% WR (Camp HOK).",
     "Lane: Jungling.",
-    "Build: Rapacious Bite, Boots of Resistance, Axe of Torment."
+    "Build: Boots of Resistance, Giant's Grip, Axe of Torment."
   ],
   "tipsZh": [
     "宮本武藏（打野）：梯度 A，勝率 51.16%（Camp HOK）。",
-    "出裝：貪婪之噬、抵抗之靴、暗影戰斧."
+    "出裝：抵抗之靴、巨人之握、暗影戰斧."
   ],
   "patchHistory": [
     {
@@ -699,7 +699,7 @@
     {
       "id": "faq-best-build",
       "question": "What is the best Musashi build?",
-      "answer": "Recommended: Rapacious Bite, Boots of Resistance, Axe of Torment, Frostscar's Embrace, Bloodweeper, Sage's Sanctuary."
+      "answer": "Recommended: Boots of Resistance, Giant's Grip, Axe of Torment, Frostscar's Embrace, Pure Sky, Blazing Cape."
     },
     {
       "id": "faq-counter",
@@ -716,7 +716,7 @@
     {
       "id": "faq-best-build",
       "question": "宮本武藏 出裝怎麼搭配？",
-      "answer": "推薦：貪婪之噬、抵抗之靴、暗影戰斧、冰痕之握、泣血之刃、賢者的庇護."
+      "answer": "推薦：抵抗之靴、巨人之握、暗影戰斧、冰痕之握、純淨蒼穹、紅蓮斗篷."
     },
     {
       "id": "faq-counter",
@@ -725,13 +725,13 @@
     }
   ],
   "metaAnalysis": [
-    "Musashi win rate 51.16% (Camp HOK, 2026-06-10).",
+    "Musashi win rate 51.16% (Camp HOK, 2026-06-12).",
     "Pick rate 1.1%.",
     "Ban rate 0.19%.",
     "Counters: Diaochan, Luna, Shangguan. Weak into: Dyadia, Sun Bin."
   ],
   "metaAnalysisZh": [
-    "宮本武藏 勝率 51.16%（Camp HOK，2026-06-10）",
+    "宮本武藏 勝率 51.16%（Camp HOK，2026-06-12）",
     "選取率 1.1%",
     "禁用率 0.19%",
     "克制：Diaochan、Luna、Shangguan；被克制：Dyadia、Sun Bin"

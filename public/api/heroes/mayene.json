@@ -19,7 +19,7 @@
   "heroCover": "https://camp.honorofkings.com/social/game/src/image_hero_cover_1275*718/b3yQ8huR.jpg",
   "tencentId": 564,
   "dataSource": "Camp HOK bilingual (primary)",
-  "dataUpdated": "2026-06-10",
+  "dataUpdated": "2026-06-12",
   "skills": [
     {
       "slot": "passive",
@@ -83,94 +83,143 @@
   "build": [
     {
       "slot": 1,
-      "itemId": "1138",
-      "name": "Overlord's Might",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1138.png",
-      "description": "PATK +150, CDR +5%\nHigh-damage attack"
+      "itemId": "1422",
+      "name": "Boots of Resistance",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1422.png",
+      "description": "MDEF +100, PDEF +50, MSPD +50\nShortens crowd control"
     },
     {
       "slot": 2,
-      "itemId": "13310",
-      "name": "Frostscar's Embrace",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/13310.png",
-      "description": "PATK +60, PDEF +300, CDR +10%\nEnhanced BAs slow"
+      "itemId": "11311",
+      "name": "Pure Sky",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/11311.png",
+      "description": "PATK +80, PDEF +150, CDR +10%\nTemp. damage reduction"
     },
     {
       "slot": 3,
+      "itemId": "1331",
+      "name": "Blazing Cape",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1331.png",
+      "description": "PDEF +150, MDEF +150, HP +1,100\nArea burn & imperil"
+    },
+    {
+      "slot": 4,
+      "itemId": "1336",
+      "name": "Glacial Buckler",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1336.png",
+      "description": "CDR +20%, HP +600, PDEF +240\nGroup damage & slow"
+    },
+    {
+      "slot": 5,
+      "itemId": "1335",
+      "name": "Succubus Cloak",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
+      "description": "MDEF +300, HP +1,100\nNegates magical damage"
+    },
+    {
+      "slot": 6,
       "itemId": "1131",
       "name": "Starbreaker",
       "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1131.png",
       "description": "PATK +90, HP +700, MSPD +7.5%\nAnti-tank"
-    },
-    {
-      "slot": 4,
-      "itemId": "1337",
-      "name": "Sage's Sanctuary",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
-      "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
-    },
-    {
-      "slot": 5,
-      "itemId": "1127",
-      "name": "Destiny",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
-      "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
-    },
-    {
-      "slot": 6,
-      "itemId": "1157",
-      "name": "Immovable - Sky Dome",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1157.png",
-      "description": "PATK +80, PDEF +150, CDR +10%\nTemp. damage reduction"
     }
   ],
   "buildZh": [
     {
       "slot": 1,
-      "itemId": "1138",
-      "name": "強者破軍",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1138.png",
-      "description": "+150點攻擊+5%減冷卻時間\n高額攻擊"
+      "itemId": "1422",
+      "name": "抵抗之靴",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1422.png",
+      "description": "+100點法防+50點物防+50點移速\n減少被控時間"
     },
     {
       "slot": 2,
-      "itemId": "13310",
-      "name": "冰痕之握",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/13310.png",
-      "description": "+60點攻擊+300點物防+10%減冷卻時間……\n強化普攻減速"
+      "itemId": "11311",
+      "name": "純淨蒼穹",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/11311.png",
+      "description": "+80點攻擊+150點物防+10%冷卻時間縮減\n暫時增加免傷"
     },
     {
       "slot": 3,
+      "itemId": "1331",
+      "name": "紅蓮斗篷",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1331.png",
+      "description": "+150點物防+150點法防+1100點生命值\n範圍灼燒重傷"
+    },
+    {
+      "slot": 4,
+      "itemId": "1336",
+      "name": "極寒風暴",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1336.png",
+      "description": "+20%減冷卻時間+600點生命值+240點物防\n群體傷害減速"
+    },
+    {
+      "slot": 5,
+      "itemId": "1335",
+      "name": "魔女斗篷",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
+      "description": "+300點法防+1100點生命值\n吸收法術傷害"
+    },
+    {
+      "slot": 6,
       "itemId": "1131",
       "name": "碎星錘",
       "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1131.png",
       "description": "+90點攻擊+700點生命值+7.5%移速\n打坦克用"
-    },
-    {
-      "slot": 4,
-      "itemId": "1337",
-      "name": "賢者的庇護",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
-      "description": "+900點生命值+150點物防+150點法防……\n原地復活"
-    },
-    {
-      "slot": 5,
-      "itemId": "1127",
-      "name": "名刀・司命",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
-      "description": "+75點攻擊+15%攻速+500點生命值\n保命"
-    },
-    {
-      "slot": 6,
-      "itemId": "1157",
-      "name": "不動・天穹",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1157.png",
-      "description": "+80點攻擊+150點物防+10%冷卻時間縮減\n暫時增加免傷"
     }
   ],
   "builds": [
     {
       "id": "camp-0",
+      "label": "Wang. Lin~",
+      "lane": "Top",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1422",
+          "name": "Boots of Resistance",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1422.png",
+          "description": "MDEF +100, PDEF +50, MSPD +50\nShortens crowd control"
+        },
+        {
+          "slot": 2,
+          "itemId": "11311",
+          "name": "Pure Sky",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/11311.png",
+          "description": "PATK +80, PDEF +150, CDR +10%\nTemp. damage reduction"
+        },
+        {
+          "slot": 3,
+          "itemId": "1331",
+          "name": "Blazing Cape",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1331.png",
+          "description": "PDEF +150, MDEF +150, HP +1,100\nArea burn & imperil"
+        },
+        {
+          "slot": 4,
+          "itemId": "1336",
+          "name": "Glacial Buckler",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1336.png",
+          "description": "CDR +20%, HP +600, PDEF +240\nGroup damage & slow"
+        },
+        {
+          "slot": 5,
+          "itemId": "1335",
+          "name": "Succubus Cloak",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
+          "description": "MDEF +300, HP +1,100\nNegates magical damage"
+        },
+        {
+          "slot": 6,
+          "itemId": "1131",
+          "name": "Starbreaker",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1131.png",
+          "description": "PATK +90, HP +700, MSPD +7.5%\nAnti-tank"
+        }
+      ]
+    },
+    {
+      "id": "camp-1",
       "label": "40%+Dano",
       "lane": "Top",
       "items": [
@@ -219,7 +268,7 @@
       ]
     },
     {
-      "id": "camp-1",
+      "id": "camp-2",
       "label": "Tebel Semi-Tank",
       "lane": "Top",
       "items": [
@@ -268,7 +317,7 @@
       ]
     },
     {
-      "id": "camp-2",
+      "id": "camp-3",
       "label": "BestMayene",
       "lane": "Top",
       "items": [
@@ -315,60 +364,60 @@
           "description": "PDEF +150, MDEF +150, HP +1,100\nArea burn & imperil"
         }
       ]
-    },
-    {
-      "id": "camp-3",
-      "label": "打爆对面假牙",
-      "lane": "Top",
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1423",
-          "name": "Boots of Tranquility",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1423.png",
-          "description": "CDR +15%, MSPD +50\nSpeeds up skill cooldown"
-        },
-        {
-          "slot": 2,
-          "itemId": "1137",
-          "name": "Axe of Torment",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1137.png",
-          "description": "PATK +80, CDR +10%, HP +500\nAnti-squishy"
-        },
-        {
-          "slot": 3,
-          "itemId": "1134",
-          "name": "Master Sword",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1134.png",
-          "description": "PATK +55, Crit Rate +20%, HP +600\nEnhances BAs"
-        },
-        {
-          "slot": 4,
-          "itemId": "1133",
-          "name": "Eternity Blade",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1133.png",
-          "description": "PATK +120, Crit Rate +20%\nHigh crit damage"
-        },
-        {
-          "slot": 5,
-          "itemId": "1131",
-          "name": "Starbreaker",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1131.png",
-          "description": "PATK +90, HP +700, MSPD +7.5%\nAnti-tank"
-        },
-        {
-          "slot": 6,
-          "itemId": "1334",
-          "name": "Eye of the Phoenix",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1334.png",
-          "description": "MDEF +180, PDEF +90, HP +1,350\nBoosts HP Regen"
-        }
-      ]
     }
   ],
   "buildsZh": [
     {
       "id": "camp-0",
+      "label": "Wang. Lin~",
+      "lane": "Top",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1422",
+          "name": "抵抗之靴",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1422.png",
+          "description": "+100點法防+50點物防+50點移速\n減少被控時間"
+        },
+        {
+          "slot": 2,
+          "itemId": "11311",
+          "name": "純淨蒼穹",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/11311.png",
+          "description": "+80點攻擊+150點物防+10%冷卻時間縮減\n暫時增加免傷"
+        },
+        {
+          "slot": 3,
+          "itemId": "1331",
+          "name": "紅蓮斗篷",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1331.png",
+          "description": "+150點物防+150點法防+1100點生命值\n範圍灼燒重傷"
+        },
+        {
+          "slot": 4,
+          "itemId": "1336",
+          "name": "極寒風暴",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1336.png",
+          "description": "+20%減冷卻時間+600點生命值+240點物防\n群體傷害減速"
+        },
+        {
+          "slot": 5,
+          "itemId": "1335",
+          "name": "魔女斗篷",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
+          "description": "+300點法防+1100點生命值\n吸收法術傷害"
+        },
+        {
+          "slot": 6,
+          "itemId": "1131",
+          "name": "碎星錘",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1131.png",
+          "description": "+90點攻擊+700點生命值+7.5%移速\n打坦克用"
+        }
+      ]
+    },
+    {
+      "id": "camp-1",
       "label": "40%+Dano",
       "lane": "Top",
       "items": [
@@ -417,7 +466,7 @@
       ]
     },
     {
-      "id": "camp-1",
+      "id": "camp-2",
       "label": "Tebel Semi-Tank",
       "lane": "Top",
       "items": [
@@ -466,7 +515,7 @@
       ]
     },
     {
-      "id": "camp-2",
+      "id": "camp-3",
       "label": "BestMayene",
       "lane": "Top",
       "items": [
@@ -513,66 +562,17 @@
           "description": "+150點物防+150點法防+1100點生命值\n範圍灼燒重傷"
         }
       ]
-    },
-    {
-      "id": "camp-3",
-      "label": "打爆对面假牙",
-      "lane": "Top",
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1423",
-          "name": "冷靜之靴",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1423.png",
-          "description": "+15%減冷卻時間+50點移速\n加快技能冷卻"
-        },
-        {
-          "slot": 2,
-          "itemId": "1137",
-          "name": "暗影戰斧",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1137.png",
-          "description": "+80點攻擊+10%減冷卻時間+500點生命值\n打血薄用"
-        },
-        {
-          "slot": 3,
-          "itemId": "1134",
-          "name": "宗師之力",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1134.png",
-          "description": "+55點攻擊+20%暴擊+600點生命值……\n強化普攻"
-        },
-        {
-          "slot": 4,
-          "itemId": "1133",
-          "name": "無盡戰刃",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1133.png",
-          "description": "+120點攻擊+20%暴擊\n高額暴擊傷害"
-        },
-        {
-          "slot": 5,
-          "itemId": "1131",
-          "name": "碎星錘",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1131.png",
-          "description": "+90點攻擊+700點生命值+7.5%移速\n打坦克用"
-        },
-        {
-          "slot": 6,
-          "itemId": "1334",
-          "name": "不死鳥之眼",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1334.png",
-          "description": "+180點法防+90點物防+1350點生命值……\n增加回血效果"
-        }
-      ]
     }
   ],
   "arcana": [
+    "Lvl 5: Unparalleled",
     "Lvl 5: Mutation",
-    "Lvl 5: Stealth",
-    "Lvl 5: Eagle Eye"
+    "Lvl 5: Stealth"
   ],
   "arcanaZh": [
+    "5級：無雙",
     "5級：異變",
-    "5級：隱匿",
-    "5級：鷹眼"
+    "5級：隱匿"
   ],
   "spells": [
     "Flash"
@@ -591,11 +591,11 @@
   "tips": [
     "Mayene (Warrior): Tier B — 48.23% WR (Camp HOK).",
     "Lane: Clash Lane.",
-    "Build: Overlord's Might, Frostscar's Embrace, Starbreaker."
+    "Build: Boots of Resistance, Pure Sky, Blazing Cape."
   ],
   "tipsZh": [
     "姬小滿（對抗路）：梯度 B，勝率 48.23%（Camp HOK）。",
-    "出裝：強者破軍、冰痕之握、碎星錘."
+    "出裝：抵抗之靴、純淨蒼穹、紅蓮斗篷."
   ],
   "patchHistory": [
     {
@@ -654,7 +654,7 @@
     {
       "id": "faq-best-build",
       "question": "What is the best Mayene build?",
-      "answer": "Recommended: Overlord's Might, Frostscar's Embrace, Starbreaker, Sage's Sanctuary, Destiny, Immovable - Sky Dome."
+      "answer": "Recommended: Boots of Resistance, Pure Sky, Blazing Cape, Glacial Buckler, Succubus Cloak, Starbreaker."
     },
     {
       "id": "faq-counter",
@@ -671,7 +671,7 @@
     {
       "id": "faq-best-build",
       "question": "姬小滿 出裝怎麼搭配？",
-      "answer": "推薦：強者破軍、冰痕之握、碎星錘、賢者的庇護、名刀・司命、不動・天穹."
+      "answer": "推薦：抵抗之靴、純淨蒼穹、紅蓮斗篷、極寒風暴、魔女斗篷、碎星錘."
     },
     {
       "id": "faq-counter",
@@ -680,13 +680,13 @@
     }
   ],
   "metaAnalysis": [
-    "Mayene win rate 48.23% (Camp HOK, 2026-06-10).",
+    "Mayene win rate 48.23% (Camp HOK, 2026-06-12).",
     "Pick rate 0.59%.",
     "Ban rate 0.1%.",
     "Counters: Nuwa, Mi Yue, Liang. Weak into: Yaria."
   ],
   "metaAnalysisZh": [
-    "姬小滿 勝率 48.23%（Camp HOK，2026-06-10）",
+    "姬小滿 勝率 48.23%（Camp HOK，2026-06-12）",
     "選取率 0.59%",
     "禁用率 0.1%",
     "克制：Nuwa、Mi Yue、Liang；被克制：Yaria"

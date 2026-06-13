@@ -35,7 +35,7 @@ export function BuildTable({
             <th scope="col" className="px-3 py-2 font-semibold">
               {t('build.colOrder')}
             </th>
-            <th scope="col" className="px-3 py-2 font-semibold">
+            <th scope="col" className="px-3 py-2 font-semibold min-w-[100px]">
               {t('build.colItem')}
             </th>
             <th scope="col" className="px-3 py-2 font-semibold">
@@ -76,7 +76,7 @@ export function BuildTable({
                         loading="lazy"
                       />
                     )}
-                    <span className="font-medium text-white">
+                    <span className="font-medium text-white whitespace-nowrap">
                       {translateItemName(item.name, locale, item.itemId)}
                     </span>
                   </div>

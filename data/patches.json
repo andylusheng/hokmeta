@@ -2,7 +2,7 @@
   "season": "S14",
   "currentSeason": "S14",
   "source": "Camp HOK bilingual (api-camp.honorofkings.com)",
-  "updated": "2026-06-10",
+  "updated": "2026-06-12",
   "heroCount": 112,
   "seasons": [
     {
@@ -2350,6 +2350,18 @@
           "publishedAt": "2025-01-24T02:00:29Z"
         },
         {
+          "heroSlug": "consort-yu",
+          "heroName": "Consort Yu",
+          "heroNameZh": "虞姬",
+          "tag": "Stat Buffs",
+          "change": "Increased passive damage.",
+          "changeZh": "提升被動傷害",
+          "detail": "Consort Yu's passive triggers on a chance. We wanted to give it more consistent damage output when it triggers.",
+          "detailZh": "「虞姬的被動觸發有一定隨機性，我們希望在觸發的時候能夠造成更穩定的傷害。」",
+          "versionName": "20250109",
+          "publishedAt": "2025-01-09T02:33:14Z"
+        },
+        {
           "heroSlug": "cirrus",
           "heroName": "Cirrus",
           "heroNameZh": "雲中君",
@@ -2468,6 +2480,18 @@
           "detailZh": "「明世隱在增強隊友的同時，往往還要在隊友身前吸引火力；我們略微提高了他被動的自身回復效果，讓他在戰鬥中更加從容。」",
           "versionName": "20250213",
           "publishedAt": "2025-02-13T03:25:14Z"
+        },
+        {
+          "heroSlug": "arthur",
+          "heroName": "Arthur",
+          "heroNameZh": "亞瑟",
+          "tag": "Stat Buffs",
+          "change": "Buffed base Physical Defense.",
+          "changeZh": "增強基礎物理防禦",
+          "detail": "Buffed base Physical Defense.",
+          "detailZh": "增强基础物理防御",
+          "versionName": "20250124",
+          "publishedAt": "2025-01-24T02:00:29Z"
         },
         {
           "heroSlug": "han-xin",
@@ -2786,6 +2810,18 @@
           "detailZh": "「干將莫邪放大招後傷害非常高，但一旦失手，短期內很難造成傷害。因此，我們給了他們更多的嘗試機會，並讓他們更自由地選擇舒適的輸出距離。」",
           "versionName": "20240925",
           "publishedAt": "2024-09-25T03:24:02Z"
+        },
+        {
+          "heroSlug": "arthur",
+          "heroName": "Arthur",
+          "heroNameZh": "亞瑟",
+          "tag": "Stat Buffs",
+          "change": "Reduced Skill 1 cooldown, adjusted damage structure.",
+          "changeZh": "降低1技能冷卻，調整傷害結構",
+          "detail": "\"Arthur's mobility and the silence effect on his Skill 1 are crucial for his playstyle. The initial cooldown of this skill has been a bit too long, so we're reducing it to give Arthur more flexibility in skill upgrades.\"",
+          "detailZh": "「1技能加速效果關乎亞瑟的機動性，沉默效果也能夠對敵人形成一定的限制；目前1技能的初始冷卻時間有點太長了，因此我們適當降低前期的冷卻時間，讓亞瑟在技能升級的選擇上有更多靈活性。」",
+          "versionName": "20241017",
+          "publishedAt": "2024-10-17T02:18:42Z"
         },
         {
           "heroSlug": "charlotte",
@@ -3508,6 +3544,18 @@
           "publishedAt": "2024-04-10T15:15:27Z"
         },
         {
+          "heroSlug": "consort-yu",
+          "heroName": "Consort Yu",
+          "heroNameZh": "虞姬",
+          "tag": "Mechanics Upgrade",
+          "change": "Increased basic Movement Speed.Increased Attack Speed to enhance Skill 1 and Ultimate effects, while slightly weakening Skill 2",
+          "changeZh": "提升基礎移動速度。提升攻擊速度可以強化1技能和大招的效果，略微削弱2技能",
+          "detail": "As a late-game marksman, Consort Yu's original skill mechanics have made it increasingly difficult to support her position in the current environment.We hope that this update will make Consort Yu's Skill 1 an important part of her damage output in late-game team fights, while also improving the attack power of her Ultimate",
+          "detailZh": "虞姬作為遊戲後期射手英雄之一，她原有的技能機制逐漸難以支撐她在當前環境中的地位。我們希望本次改動過後，虞姬的1技能可以在遊戲後期的團戰中作為她傷害重要的組成部分，同時讓她的大招可以更具攻擊性。",
+          "versionName": "20240509",
+          "publishedAt": "2024-05-09T02:31:07Z"
+        },
+        {
           "heroSlug": "angela",
           "heroName": "Angela",
           "heroNameZh": "安琪拉",
@@ -3742,6 +3790,18 @@
       "seasonId": "4",
       "changes": [
         {
+          "heroSlug": "luban-no-7",
+          "heroName": "Luban No.7",
+          "heroNameZh": "魯班七號",
+          "tag": "Stat Nerfs",
+          "change": "Reduced the base damage of Luban No.7's passive skill, and increased the base cooldown of his Ultimate.",
+          "changeZh": "降低魯班七號被動技能基礎傷害，提高大招基礎冷卻時間",
+          "detail": "Reduced the base damage of Luban No.7's passive skill, and increased the base cooldown of his Ultimate.\nWith his unique damage capabilities, Luban No.7 has become a common choice for marksman players. He is easy to play and can rapidly tear through various types of enemy with ease. We have nerfed Luban No.7 in order to give rivals a fairer chance of getting close to him.",
+          "detailZh": "降低魯班七號被動技能基礎傷害，提高大招基礎冷卻時間。\n魯班七號在目前版本中，憑著獨一無二的傷害製造能力，成為許多射手玩家的常備選項。他往往只需要簡單的操作，就可以在短時間內輕鬆撕碎面前所有類型的敵人。我們希望能適當削弱魯班七號，來讓魯班七號的對手有更多機會來接近他。",
+          "versionName": "20240306",
+          "publishedAt": "2024-03-06T02:00:50Z"
+        },
+        {
           "heroSlug": "zilong",
           "heroName": "Zilong",
           "heroNameZh": "趙雲",
@@ -3884,6 +3944,18 @@
           "detailZh": "削弱重劍形態下的2技能，削弱2種形態下大招的傷害\n雖然之前抵抗之靴的韌性僅調低了5%，但這樣的調整卻足以讓花木蘭完整地對敵人打出連招，由於很少有英雄能徹底扛住那段連招的傷害，我們希望適度降低花木蘭重劍形態下2技能的揮砍及大招傷害，藉此平衡因抵抗之靴調整而受益的花木蘭。",
           "versionName": "20240320",
           "publishedAt": "2024-03-20T03:11:35Z"
+        },
+        {
+          "heroSlug": "kaizer",
+          "heroName": "Kaizer",
+          "heroNameZh": "鎧",
+          "tag": "Stat Buffs",
+          "change": "Enhanced the damage bonus ratio for Skills 1 and 2, and adjusted the damage and stat bonus ratios for his Ultimate.",
+          "changeZh": "Enhanced the damage bonus ratio for Skills 1 and 2, and adjusted the damage and stat bonus ratios for his Ultimate.",
+          "detail": "As one of the first heroes in Honor of Kings, Kaizer may seem a little weak in comparison to the heroes that have joined since. We hope improving Kaizer's skill damage and stat bonuses will allow him, with the right equipment, to become a true fighter who balances damage output and sustain.",
+          "detailZh": "As one of the first heroes in Honor of Kings, Kaizer may seem a little weak in comparison to the heroes that have joined since. We hope improving Kaizer's skill damage and stat bonuses will allow him, with the right equipment, to become a true fighter who balances damage output and sustain.",
+          "versionName": "20240124",
+          "publishedAt": "2024-01-24T07:50:01Z"
         },
         {
           "heroSlug": "gao",
@@ -4120,6 +4192,18 @@
           "publishedAt": "2023-10-11T12:03:22Z"
         },
         {
+          "heroSlug": "kaizer",
+          "heroName": "Kaizer",
+          "heroNameZh": "鎧",
+          "tag": "Stat Buffs",
+          "change": "Mana cost reduction",
+          "changeZh": "Mana cost reduction",
+          "detail": null,
+          "detailZh": null,
+          "versionName": "20231011",
+          "publishedAt": "2023-10-11T12:03:22Z"
+        },
+        {
           "heroSlug": "zhou-yu",
           "heroName": "Zhou Yu",
           "heroNameZh": "周瑜",
@@ -4250,18 +4334,6 @@
           "detailZh": null,
           "versionName": "20231011",
           "publishedAt": "2023-10-11T12:03:22Z"
-        },
-        {
-          "heroSlug": "luna",
-          "heroName": "Luna",
-          "heroNameZh": "露娜",
-          "tag": "Stat Buffs",
-          "change": "Increased magical damage dealt by Skill 1.",
-          "changeZh": "Increased magical damage dealt by Skill 1.",
-          "detail": "With her high level of difficulty and enormous potential, Luna can deal massive damage as long as she constantly refreshes her Ultimate. But when Lunais interrupted or the player makes a mistake, there's not much left for her to do other than spam Skill 1. Considering the occasional mistakes, we want Skill 1 to pose more of a threat. In this way, we can further increase Luna's overall strength and let her shine even brighter in the Gorge.",
-          "detailZh": "With her high level of difficulty and enormous potential, Luna can deal massive damage as long as she constantly refreshes her Ultimate. But when Lunais interrupted or the player makes a mistake, there's not much left for her to do other than spam Skill 1. Considering the occasional mistakes, we want Skill 1 to pose more of a threat. In this way, we can further increase Luna's overall strength and let her shine even brighter in the Gorge.",
-          "versionName": "20231108",
-          "publishedAt": "2023-11-08T12:02:09Z"
         },
         {
           "heroSlug": "guan-yu",

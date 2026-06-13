@@ -9,6 +9,7 @@ import {
   getBestCounter,
   getCounterDetails,
   getCounterOverride,
+  getCountOverrides,
   getMetaTrend,
   getPlaystyle,
   getOverrideFaqHowToLane,
@@ -33,8 +34,15 @@ export function getCounterList(hero: Hero): string[] {
     .filter(h => (h.counters || []).some(n => n.toLowerCase() === currentHeroName))
     .map(h => h.name);
 
-  // 3. 合并去重，最多5个
-  return [...new Set([...original, ...reverse])].slice(0, 5);
+  // 3. 合并 override 补充的克制关系
+  const overrides = getCountOverrides(hero.slug);
+  const overridden = overrides.counteredBy.map(name => {
+    const h = heroes.find((h2: Hero) => h2.name.toLowerCase() === name.toLowerCase() || h2.slug.toLowerCase() === name.toLowerCase());
+    return h ? h.name : name;
+  });
+
+  // 4. 合并去重，最多5个
+  return [...new Set([...original, ...reverse, ...overridden])].slice(0, 5);
 }
 
 function resolveCounterHero(name: string): Hero | undefined {
@@ -281,6 +289,58 @@ export function getRelatedCounters(hero: Hero, limit = 6): Hero[] {
   }
 
   return related;
+}
+
+/** Counter list split by lane relevance. */
+export interface LaneCounterList {
+  /** Heroes sharing the same lane — direct lane matchup counters. */
+  sameLane: string[];
+  /** Heroes in different lanes — teamfight / cross-lane counters. */
+  otherLane: string[];
+}
+
+/**
+ * Get the full counter list split by lane relevance.
+ * Same-lane counters are shown first as they matter most for lane-phase drafting.
+ */
+export function getCounterListByLane(hero: Hero): LaneCounterList {
+  const all = getCounterList(hero);
+  const myLane = heroToLane(hero);
+  const sameLane: string[] = [];
+  const otherLane: string[] = [];
+
+  for (const name of all) {
+    const h = getHeroByName(name);
+    if (h && heroToLane(h) === myLane) {
+      sameLane.push(name);
+    } else {
+      otherLane.push(name);
+    }
+  }
+
+  return { sameLane, otherLane };
+}
+
+/** Get the raw Camp-only counteredBy list (no overrides, no reverse lookup) */
+export function getCampCounteredBy(hero: Hero): string[] {
+  return (hero.counteredBy || []).filter(c => c && c !== 'Data unavailable');
+}
+
+/** Get the raw Camp-only counters list (no overrides) */
+export function getCampCounters(hero: Hero): string[] {
+  return (hero.counters || []).filter(c => c && c !== 'Data unavailable');
+}
+
+/** Get the override-only counteredBy list */
+export function getOverrideCounteredBy(hero: Hero): string[] {
+  const overrides = getCountOverrides(hero.slug);
+  return overrides.counteredBy;
+}
+
+/** Get the override-only counters list */
+export function getOverrideCounters(hero: Hero): string[] {
+  const overrides = getCountOverrides(hero.slug);
+  return overrides.counters;
 }
 
 export { getBestCounter, getCounterDetails, getMetaTrend, getPlaystyle } from '@/lib/counter-rationale-overrides';

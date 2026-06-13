@@ -19,7 +19,7 @@
   "heroCover": "https://camp.honorofkings.com/camp/admin/hero/cover_1275-718/dZ2BEjY8.jpg",
   "tencentId": 172,
   "dataSource": "Camp HOK bilingual (primary)",
-  "dataUpdated": "2026-06-10",
+  "dataUpdated": "2026-06-12",
   "skills": [
     {
       "slot": "passive",
@@ -83,94 +83,192 @@
   "build": [
     {
       "slot": 1,
+      "itemId": "1331",
+      "name": "Blazing Cape",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1331.png",
+      "description": "PDEF +150, MDEF +150, HP +1,100\nArea burn & imperil"
+    },
+    {
+      "slot": 2,
+      "itemId": "1126",
+      "name": "Doomsday",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1126.png",
+      "description": "PATK +40, ASPD +20%, HP +500, Lifesteal +20%\nBoosts BA damage"
+    },
+    {
+      "slot": 3,
       "itemId": "1328",
       "name": "Blood Rage",
       "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1328.png",
       "description": "PATK +75, HP +900\nTrades HP for shield"
     },
     {
-      "slot": 2,
+      "slot": 4,
+      "itemId": "1338",
+      "name": "Cuirass of Savagery",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1338.png",
+      "description": "PATK +35, PDEF +210, HP +900\nOffense & defense"
+    },
+    {
+      "slot": 5,
+      "itemId": "1347",
+      "name": "Longnight Guardian",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1347.png",
+      "description": "MDEF +210, HP +1,000, MSPD +7.5%\nReduces magical damage"
+    },
+    {
+      "slot": 6,
       "itemId": "1337",
       "name": "Sage's Sanctuary",
       "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
       "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
-    },
-    {
-      "slot": 3,
-      "itemId": "1127",
-      "name": "Destiny",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
-      "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
-    },
-    {
-      "slot": 4,
-      "itemId": "1239",
-      "name": "Splendor",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1239.png",
-      "description": "MATK +160, CDR +7.5%, Magical Lifesteal +12%\nTemp. invincibility"
-    },
-    {
-      "slot": 5,
-      "itemId": "1350",
-      "name": "Ravage - Phantom",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1350.png",
-      "description": "PATK +75, HP +900\nTrades HP for shield"
-    },
-    {
-      "slot": 6,
-      "itemId": "1159",
-      "name": "Tempest",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1159.png",
-      "description": "PATK +50, ASPD +30%, Max HP +600\nBoosts BA damage"
     }
   ],
   "buildZh": [
     {
       "slot": 1,
+      "itemId": "1331",
+      "name": "紅蓮斗篷",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1331.png",
+      "description": "+150點物防+150點法防+1100點生命值\n範圍灼燒重傷"
+    },
+    {
+      "slot": 2,
+      "itemId": "1126",
+      "name": "末世",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1126.png",
+      "description": "+40點攻擊+20%攻速+500點生命值+20%吸血\n普攻額外傷害"
+    },
+    {
+      "slot": 3,
       "itemId": "1328",
       "name": "血魔之怒",
       "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1328.png",
       "description": "+75點攻擊+900點生命值 \n犧牲生命值換取護盾值"
     },
     {
-      "slot": 2,
+      "slot": 4,
+      "itemId": "1338",
+      "name": "暴烈之甲",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1338.png",
+      "description": "+35點攻擊+210點物防+900點生命值\n能抗能打"
+    },
+    {
+      "slot": 5,
+      "itemId": "1347",
+      "name": "永夜守護",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1347.png",
+      "description": "+210點法防+1000點生命值\n+7.5%移速減少法術傷害"
+    },
+    {
+      "slot": 6,
       "itemId": "1337",
       "name": "賢者的庇護",
       "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
       "description": "+900點生命值+150點物防+150點法防……\n原地復活"
-    },
-    {
-      "slot": 3,
-      "itemId": "1127",
-      "name": "名刀・司命",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
-      "description": "+75點攻擊+15%攻速+500點生命值\n保命"
-    },
-    {
-      "slot": 4,
-      "itemId": "1239",
-      "name": "輝月",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1239.png",
-      "description": "+160點法攻+7.5%減冷卻時間+12%法術吸血\n暫時無敵"
-    },
-    {
-      "slot": 5,
-      "itemId": "1350",
-      "name": "侵略・怒魂",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1350.png",
-      "description": "+75點攻擊+900點生命值\n犧牲生命值換取護盾值"
-    },
-    {
-      "slot": 6,
-      "itemId": "1159",
-      "name": "逐風",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1159.png",
-      "description": "+50點攻擊+30%攻速+600點最大生命值\n普攻傷害提升"
     }
   ],
   "builds": [
     {
       "id": "camp-0",
+      "label": "TANKY",
+      "lane": "Top",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1331",
+          "name": "Blazing Cape",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1331.png",
+          "description": "PDEF +150, MDEF +150, HP +1,100\nArea burn & imperil"
+        },
+        {
+          "slot": 2,
+          "itemId": "1126",
+          "name": "Doomsday",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1126.png",
+          "description": "PATK +40, ASPD +20%, HP +500, Lifesteal +20%\nBoosts BA damage"
+        },
+        {
+          "slot": 3,
+          "itemId": "1328",
+          "name": "Blood Rage",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1328.png",
+          "description": "PATK +75, HP +900\nTrades HP for shield"
+        },
+        {
+          "slot": 4,
+          "itemId": "1338",
+          "name": "Cuirass of Savagery",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1338.png",
+          "description": "PATK +35, PDEF +210, HP +900\nOffense & defense"
+        },
+        {
+          "slot": 5,
+          "itemId": "1347",
+          "name": "Longnight Guardian",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1347.png",
+          "description": "MDEF +210, HP +1,000, MSPD +7.5%\nReduces magical damage"
+        },
+        {
+          "slot": 6,
+          "itemId": "1337",
+          "name": "Sage's Sanctuary",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
+        }
+      ]
+    },
+    {
+      "id": "camp-1",
+      "label": "Topw",
+      "lane": "Top",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1425",
+          "name": "Boots of Dexterity",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1425.png",
+          "description": "ASPD +20%, MSPD +50\nBAs restore HP"
+        },
+        {
+          "slot": 2,
+          "itemId": "1126",
+          "name": "Doomsday",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1126.png",
+          "description": "PATK +40, ASPD +20%, HP +500, Lifesteal +20%\nBoosts BA damage"
+        },
+        {
+          "slot": 3,
+          "itemId": "1127",
+          "name": "Destiny",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
+        },
+        {
+          "slot": 4,
+          "itemId": "1155",
+          "name": "Daybreaker's Virtue",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1155.png",
+          "description": "PATK +75, ASPD +30%, Crit Rate +15%\nGreat for marksmen"
+        },
+        {
+          "slot": 5,
+          "itemId": "1159",
+          "name": "Tempest",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1159.png",
+          "description": "PATK +50, ASPD +30%, Max HP +600\nBoosts BA damage"
+        },
+        {
+          "slot": 6,
+          "itemId": "1337",
+          "name": "Sage's Sanctuary",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
+        }
+      ]
+    },
+    {
+      "id": "camp-2",
       "label": "LUCi HOK tiktok",
       "lane": "Top",
       "items": [
@@ -219,7 +317,7 @@
       ]
     },
     {
-      "id": "camp-1",
+      "id": "camp-3",
       "label": "KPL HYPERCARRY",
       "lane": null,
       "items": [
@@ -266,109 +364,109 @@
           "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
         }
       ]
-    },
-    {
-      "id": "camp-2",
-      "label": "Knight_chicha",
-      "lane": "Jungle",
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1328",
-          "name": "Blood Rage",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1328.png",
-          "description": "PATK +75, HP +900\nTrades HP for shield"
-        },
-        {
-          "slot": 2,
-          "itemId": "1337",
-          "name": "Sage's Sanctuary",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
-          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
-        },
-        {
-          "slot": 3,
-          "itemId": "1127",
-          "name": "Destiny",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
-          "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
-        },
-        {
-          "slot": 4,
-          "itemId": "1131",
-          "name": "Starbreaker",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1131.png",
-          "description": "PATK +90, HP +700, MSPD +7.5%\nAnti-tank"
-        },
-        {
-          "slot": 5,
-          "itemId": "1137",
-          "name": "Axe of Torment",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1137.png",
-          "description": "PATK +80, CDR +10%, HP +500\nAnti-squishy"
-        },
-        {
-          "slot": 6,
-          "itemId": "1133",
-          "name": "Eternity Blade",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1133.png",
-          "description": "PATK +120, Crit Rate +20%\nHigh crit damage"
-        }
-      ]
-    },
-    {
-      "id": "camp-3",
-      "label": "Royal's",
-      "lane": "Top",
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1126",
-          "name": "Doomsday",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1126.png",
-          "description": "PATK +40, ASPD +20%, HP +500, Lifesteal +20%\nBoosts BA damage"
-        },
-        {
-          "slot": 2,
-          "itemId": "1327",
-          "name": "Spikemail",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1327.png",
-          "description": "PATK +45, PDEF +300, HP +700\nReflects damage"
-        },
-        {
-          "slot": 3,
-          "itemId": "1155",
-          "name": "Daybreaker's Virtue",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1155.png",
-          "description": "PATK +75, ASPD +30%, Crit Rate +15%\nGreat for marksmen"
-        },
-        {
-          "slot": 4,
-          "itemId": "1335",
-          "name": "Succubus Cloak",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
-          "description": "MDEF +300, HP +1,100\nNegates magical damage"
-        },
-        {
-          "slot": 5,
-          "itemId": "1337",
-          "name": "Sage's Sanctuary",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
-          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
-        },
-        {
-          "slot": 6,
-          "itemId": "1127",
-          "name": "Destiny",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
-          "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
-        }
-      ]
     }
   ],
   "buildsZh": [
     {
       "id": "camp-0",
+      "label": "TANKY",
+      "lane": "Top",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1331",
+          "name": "紅蓮斗篷",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1331.png",
+          "description": "+150點物防+150點法防+1100點生命值\n範圍灼燒重傷"
+        },
+        {
+          "slot": 2,
+          "itemId": "1126",
+          "name": "末世",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1126.png",
+          "description": "+40點攻擊+20%攻速+500點生命值+20%吸血\n普攻額外傷害"
+        },
+        {
+          "slot": 3,
+          "itemId": "1328",
+          "name": "血魔之怒",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1328.png",
+          "description": "+75點攻擊+900點生命值 \n犧牲生命值換取護盾值"
+        },
+        {
+          "slot": 4,
+          "itemId": "1338",
+          "name": "暴烈之甲",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1338.png",
+          "description": "+35點攻擊+210點物防+900點生命值\n能抗能打"
+        },
+        {
+          "slot": 5,
+          "itemId": "1347",
+          "name": "永夜守護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1347.png",
+          "description": "+210點法防+1000點生命值\n+7.5%移速減少法術傷害"
+        },
+        {
+          "slot": 6,
+          "itemId": "1337",
+          "name": "賢者的庇護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+        }
+      ]
+    },
+    {
+      "id": "camp-1",
+      "label": "Topw",
+      "lane": "Top",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1425",
+          "name": "急速戰靴",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1425.png",
+          "description": "+20%攻速+50點移速\n普攻回復生命值"
+        },
+        {
+          "slot": 2,
+          "itemId": "1126",
+          "name": "末世",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1126.png",
+          "description": "+40點攻擊+20%攻速+500點生命值+20%吸血\n普攻額外傷害"
+        },
+        {
+          "slot": 3,
+          "itemId": "1127",
+          "name": "名刀・司命",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "+75點攻擊+15%攻速+500點生命值\n保命"
+        },
+        {
+          "slot": 4,
+          "itemId": "1155",
+          "name": "仁者破曉",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1155.png",
+          "description": "+75點攻擊+30%攻速+15%暴擊\n射手神裝"
+        },
+        {
+          "slot": 5,
+          "itemId": "1159",
+          "name": "逐風",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1159.png",
+          "description": "+50點攻擊+30%攻速+600點最大生命值\n普攻傷害提升"
+        },
+        {
+          "slot": 6,
+          "itemId": "1337",
+          "name": "賢者的庇護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+        }
+      ]
+    },
+    {
+      "id": "camp-2",
       "label": "LUCi HOK tiktok",
       "lane": "Top",
       "items": [
@@ -417,7 +515,7 @@
       ]
     },
     {
-      "id": "camp-1",
+      "id": "camp-3",
       "label": "KPL HYPERCARRY",
       "lane": null,
       "items": [
@@ -464,121 +562,23 @@
           "description": "+75點攻擊+15%攻速+500點生命值\n保命"
         }
       ]
-    },
-    {
-      "id": "camp-2",
-      "label": "Knight_chicha",
-      "lane": "Jungle",
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1328",
-          "name": "血魔之怒",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1328.png",
-          "description": "+75點攻擊+900點生命值 \n犧牲生命值換取護盾值"
-        },
-        {
-          "slot": 2,
-          "itemId": "1337",
-          "name": "賢者的庇護",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
-          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
-        },
-        {
-          "slot": 3,
-          "itemId": "1127",
-          "name": "名刀・司命",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
-          "description": "+75點攻擊+15%攻速+500點生命值\n保命"
-        },
-        {
-          "slot": 4,
-          "itemId": "1131",
-          "name": "碎星錘",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1131.png",
-          "description": "+90點攻擊+700點生命值+7.5%移速\n打坦克用"
-        },
-        {
-          "slot": 5,
-          "itemId": "1137",
-          "name": "暗影戰斧",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1137.png",
-          "description": "+80點攻擊+10%減冷卻時間+500點生命值\n打血薄用"
-        },
-        {
-          "slot": 6,
-          "itemId": "1133",
-          "name": "無盡戰刃",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1133.png",
-          "description": "+120點攻擊+20%暴擊\n高額暴擊傷害"
-        }
-      ]
-    },
-    {
-      "id": "camp-3",
-      "label": "Royal's",
-      "lane": "Top",
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1126",
-          "name": "末世",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1126.png",
-          "description": "+40點攻擊+20%攻速+500點生命值+20%吸血\n普攻額外傷害"
-        },
-        {
-          "slot": 2,
-          "itemId": "1327",
-          "name": "反傷刺甲",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1327.png",
-          "description": "+45點攻擊+300點物防\n+700點生命值反彈傷害"
-        },
-        {
-          "slot": 3,
-          "itemId": "1155",
-          "name": "仁者破曉",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1155.png",
-          "description": "+75點攻擊+30%攻速+15%暴擊\n射手神裝"
-        },
-        {
-          "slot": 4,
-          "itemId": "1335",
-          "name": "魔女斗篷",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
-          "description": "+300點法防+1100點生命值\n吸收法術傷害"
-        },
-        {
-          "slot": 5,
-          "itemId": "1337",
-          "name": "賢者的庇護",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
-          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
-        },
-        {
-          "slot": 6,
-          "itemId": "1127",
-          "name": "名刀・司命",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
-          "description": "+75點攻擊+15%攻速+500點生命值\n保命"
-        }
-      ]
     }
   ],
   "arcana": [
     "Lvl 5: Fate",
-    "Lvl 5: Red Moon",
-    "Lvl 5: Stealth"
+    "Lvl 5: Stealth",
+    "Lvl 5: Eagle Eye"
   ],
   "arcanaZh": [
     "5級：宿命",
-    "5級：紅月",
-    "5級：隱匿"
+    "5級：隱匿",
+    "5級：鷹眼"
   ],
   "spells": [
-    "Flash"
+    "Intimidate"
   ],
   "spellsZh": [
-    "閃現"
+    "弱化"
   ],
   "counters": [
     "Sakeer",
@@ -593,11 +593,11 @@
   "tips": [
     "Chicha (Warrior): Tier S — 50.64% WR (Camp HOK).",
     "Lane: Clash Lane.",
-    "Build: Blood Rage, Sage's Sanctuary, Destiny."
+    "Build: Blazing Cape, Doomsday, Blood Rage."
   ],
   "tipsZh": [
     "蚩奼（對抗路）：梯度 S，勝率 50.64%（Camp HOK）。",
-    "出裝：血魔之怒、賢者的庇護、名刀・司命."
+    "出裝：紅蓮斗篷、末世、血魔之怒."
   ],
   "patchHistory": [
     {
@@ -656,7 +656,7 @@
     {
       "id": "faq-best-build",
       "question": "What is the best Chicha build?",
-      "answer": "Recommended: Blood Rage, Sage's Sanctuary, Destiny, Splendor, Ravage - Phantom, Tempest."
+      "answer": "Recommended: Blazing Cape, Doomsday, Blood Rage, Cuirass of Savagery, Longnight Guardian, Sage's Sanctuary."
     },
     {
       "id": "faq-counter",
@@ -673,7 +673,7 @@
     {
       "id": "faq-best-build",
       "question": "蚩奼 出裝怎麼搭配？",
-      "answer": "推薦：血魔之怒、賢者的庇護、名刀・司命、輝月、侵略・怒魂、逐風."
+      "answer": "推薦：紅蓮斗篷、末世、血魔之怒、暴烈之甲、永夜守護、賢者的庇護."
     },
     {
       "id": "faq-counter",
@@ -682,13 +682,13 @@
     }
   ],
   "metaAnalysis": [
-    "Chicha win rate 50.64% (Camp HOK, 2026-06-10).",
+    "Chicha win rate 50.64% (Camp HOK, 2026-06-12).",
     "Pick rate 1.5%.",
     "Ban rate 0.37%.",
     "Counters: Sakeer, Angela, Guiguzi. Weak into: Hou Yi, Marco Polo, Lady Sun."
   ],
   "metaAnalysisZh": [
-    "蚩奼 勝率 50.64%（Camp HOK，2026-06-10）",
+    "蚩奼 勝率 50.64%（Camp HOK，2026-06-12）",
     "選取率 1.5%",
     "禁用率 0.37%",
     "克制：Sakeer、Angela、Guiguzi；被克制：Hou Yi、Marco Polo、Lady Sun"

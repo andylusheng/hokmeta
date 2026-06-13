@@ -19,7 +19,7 @@
   "heroCover": "https://camp.honorofkings.com/social/game/src/image_hero_cover_1275*718/YV1tqwDo.jpg",
   "tencentId": 139,
   "dataSource": "Camp HOK bilingual (primary)",
-  "dataUpdated": "2026-06-10",
+  "dataUpdated": "2026-06-12",
   "skills": [
     {
       "slot": "passive",
@@ -83,10 +83,10 @@
   "build": [
     {
       "slot": 1,
-      "itemId": "1421",
-      "name": "Boots of Fortitude",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1421.png",
-      "description": "PDEF +100, MDEF +50, MSPD +50\nReduces physical damage"
+      "itemId": "1425",
+      "name": "Boots of Dexterity",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1425.png",
+      "description": "ASPD +20%, MSPD +50\nBAs restore HP"
     },
     {
       "slot": 2,
@@ -97,17 +97,17 @@
     },
     {
       "slot": 3,
-      "itemId": "1126",
-      "name": "Doomsday",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1126.png",
-      "description": "PATK +40, ASPD +20%, HP +500, Lifesteal +20%\nBoosts BA damage"
+      "itemId": "1341",
+      "name": "Frigid Charge",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1341.png",
+      "description": "PDEF +150, HP +900, CDR +7.5%, Resistance +10%\nGreat crowd control"
     },
     {
       "slot": 4,
-      "itemId": "1327",
-      "name": "Spikemail",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1327.png",
-      "description": "PATK +45, PDEF +300, HP +700\nReflects damage"
+      "itemId": "11311",
+      "name": "Pure Sky",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/11311.png",
+      "description": "PATK +80, PDEF +150, CDR +10%\nTemp. damage reduction"
     },
     {
       "slot": 5,
@@ -118,19 +118,19 @@
     },
     {
       "slot": 6,
-      "itemId": "1328",
-      "name": "Blood Rage",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1328.png",
-      "description": "PATK +75, HP +900\nTrades HP for shield"
+      "itemId": "1126",
+      "name": "Doomsday",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1126.png",
+      "description": "PATK +40, ASPD +20%, HP +500, Lifesteal +20%\nBoosts BA damage"
     }
   ],
   "buildZh": [
     {
       "slot": 1,
-      "itemId": "1421",
-      "name": "影忍之足",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1421.png",
-      "description": "+100點物防+50點法防+50點移速\n減少物理傷害"
+      "itemId": "1425",
+      "name": "急速戰靴",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1425.png",
+      "description": "+20%攻速+50點移速\n普攻回復生命值"
     },
     {
       "slot": 2,
@@ -141,17 +141,17 @@
     },
     {
       "slot": 3,
-      "itemId": "1126",
-      "name": "末世",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1126.png",
-      "description": "+40點攻擊+20%攻速+500點生命值+20%吸血\n普攻額外傷害"
+      "itemId": "1341",
+      "name": "冰霜衝擊",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1341.png",
+      "description": "+150點物防+900點生命值+7.5%冷卻時間+10%韌性\n群體控制"
     },
     {
       "slot": 4,
-      "itemId": "1327",
-      "name": "反傷刺甲",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1327.png",
-      "description": "+45點攻擊+300點物防\n+700點生命值反彈傷害"
+      "itemId": "11311",
+      "name": "純淨蒼穹",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/11311.png",
+      "description": "+80點攻擊+150點物防+10%冷卻時間縮減\n暫時增加免傷"
     },
     {
       "slot": 5,
@@ -162,15 +162,64 @@
     },
     {
       "slot": 6,
-      "itemId": "1328",
-      "name": "血魔之怒",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1328.png",
-      "description": "+75點攻擊+900點生命值 \n犧牲生命值換取護盾值"
+      "itemId": "1126",
+      "name": "末世",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1126.png",
+      "description": "+40點攻擊+20%攻速+500點生命值+20%吸血\n普攻額外傷害"
     }
   ],
   "builds": [
     {
       "id": "camp-0",
+      "label": "疾风霸者",
+      "lane": "Top",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1425",
+          "name": "Boots of Dexterity",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1425.png",
+          "description": "ASPD +20%, MSPD +50\nBAs restore HP"
+        },
+        {
+          "slot": 2,
+          "itemId": "1135",
+          "name": "Sparkforged Dagger",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1135.png",
+          "description": "PATK +40, ASPD +35%, MSPD +7.5%\nChain lightning BA"
+        },
+        {
+          "slot": 3,
+          "itemId": "1341",
+          "name": "Frigid Charge",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1341.png",
+          "description": "PDEF +150, HP +900, CDR +7.5%, Resistance +10%\nGreat crowd control"
+        },
+        {
+          "slot": 4,
+          "itemId": "11311",
+          "name": "Pure Sky",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/11311.png",
+          "description": "PATK +80, PDEF +150, CDR +10%\nTemp. damage reduction"
+        },
+        {
+          "slot": 5,
+          "itemId": "1335",
+          "name": "Succubus Cloak",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
+          "description": "MDEF +300, HP +1,100\nNegates magical damage"
+        },
+        {
+          "slot": 6,
+          "itemId": "1126",
+          "name": "Doomsday",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1126.png",
+          "description": "PATK +40, ASPD +20%, HP +500, Lifesteal +20%\nBoosts BA damage"
+        }
+      ]
+    },
+    {
+      "id": "camp-1",
       "label": "Preset",
       "lane": "Top",
       "items": [
@@ -219,7 +268,7 @@
       ]
     },
     {
-      "id": "camp-1",
+      "id": "camp-2",
       "label": "Clash",
       "lane": "Top",
       "items": [
@@ -271,6 +320,55 @@
   "buildsZh": [
     {
       "id": "camp-0",
+      "label": "疾风霸者",
+      "lane": "Top",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1425",
+          "name": "急速戰靴",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1425.png",
+          "description": "+20%攻速+50點移速\n普攻回復生命值"
+        },
+        {
+          "slot": 2,
+          "itemId": "1135",
+          "name": "閃電匕首",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1135.png",
+          "description": "+40點攻擊+35%攻速+7.5%移速\n普攻附帶閃電"
+        },
+        {
+          "slot": 3,
+          "itemId": "1341",
+          "name": "冰霜衝擊",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1341.png",
+          "description": "+150點物防+900點生命值+7.5%冷卻時間+10%韌性\n群體控制"
+        },
+        {
+          "slot": 4,
+          "itemId": "11311",
+          "name": "純淨蒼穹",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/11311.png",
+          "description": "+80點攻擊+150點物防+10%冷卻時間縮減\n暫時增加免傷"
+        },
+        {
+          "slot": 5,
+          "itemId": "1335",
+          "name": "魔女斗篷",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
+          "description": "+300點法防+1100點生命值\n吸收法術傷害"
+        },
+        {
+          "slot": 6,
+          "itemId": "1126",
+          "name": "末世",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1126.png",
+          "description": "+40點攻擊+20%攻速+500點生命值+20%吸血\n普攻額外傷害"
+        }
+      ]
+    },
+    {
+      "id": "camp-1",
       "label": "Preset",
       "lane": "Top",
       "items": [
@@ -319,7 +417,7 @@
       ]
     },
     {
-      "id": "camp-1",
+      "id": "camp-2",
       "label": "Clash",
       "lane": "Top",
       "items": [
@@ -371,12 +469,12 @@
   "arcana": [
     "Lvl 5: Fate",
     "Lvl 5: Hunt",
-    "Lvl 5: Eagle Eye"
+    "Lvl 5: Void"
   ],
   "arcanaZh": [
     "5級：宿命",
     "5級：狩獵",
-    "5級：鷹眼"
+    "5級：虛空"
   ],
   "spells": [
     "Flash"
@@ -397,11 +495,11 @@
   "tips": [
     "Fuzi (Warrior): Tier B — 52.53% WR (Camp HOK).",
     "Lane: Clash Lane.",
-    "Build: Boots of Fortitude, Sparkforged Dagger, Doomsday."
+    "Build: Boots of Dexterity, Sparkforged Dagger, Frigid Charge."
   ],
   "tipsZh": [
     "老夫子（對抗路）：梯度 B，勝率 52.53%（Camp HOK）。",
-    "出裝：影忍之足、閃電匕首、末世."
+    "出裝：急速戰靴、閃電匕首、冰霜衝擊."
   ],
   "patchHistory": [
     {
@@ -526,7 +624,7 @@
     {
       "id": "faq-best-build",
       "question": "What is the best Fuzi build?",
-      "answer": "Recommended: Boots of Fortitude, Sparkforged Dagger, Doomsday, Spikemail, Succubus Cloak, Blood Rage."
+      "answer": "Recommended: Boots of Dexterity, Sparkforged Dagger, Frigid Charge, Pure Sky, Succubus Cloak, Doomsday."
     },
     {
       "id": "faq-counter",
@@ -543,7 +641,7 @@
     {
       "id": "faq-best-build",
       "question": "老夫子 出裝怎麼搭配？",
-      "answer": "推薦：影忍之足、閃電匕首、末世、反傷刺甲、魔女斗篷、血魔之怒."
+      "answer": "推薦：急速戰靴、閃電匕首、冰霜衝擊、純淨蒼穹、魔女斗篷、末世."
     },
     {
       "id": "faq-counter",
@@ -552,13 +650,13 @@
     }
   ],
   "metaAnalysis": [
-    "Fuzi win rate 52.53% (Camp HOK, 2026-06-10).",
+    "Fuzi win rate 52.53% (Camp HOK, 2026-06-12).",
     "Pick rate 0.45%.",
     "Ban rate 0.08%.",
     "Counters: Milady, Luna, Mai Shiranui. Weak into: Charlotte, Hou Yi, Marco Polo."
   ],
   "metaAnalysisZh": [
-    "老夫子 勝率 52.53%（Camp HOK，2026-06-10）",
+    "老夫子 勝率 52.53%（Camp HOK，2026-06-12）",
     "選取率 0.45%",
     "禁用率 0.08%",
     "克制：Milady、Luna、Mai Shiranui；被克制：Charlotte、Hou Yi、Marco Polo"

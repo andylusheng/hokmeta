@@ -19,7 +19,7 @@
   "heroCover": "https://camp.honorofkings.com/social/game/src/image_hero_cover_1275*718/EwgarWHr.jpg",
   "tencentId": 113,
   "dataSource": "Camp HOK bilingual (primary)",
-  "dataUpdated": "2026-06-10",
+  "dataUpdated": "2026-06-12",
   "skills": [
     {
       "slot": "passive",
@@ -171,7 +171,7 @@
   "builds": [
     {
       "id": "camp-0",
-      "label": "Tank Roam",
+      "label": "VA.RockLee",
       "lane": null,
       "items": [
         {
@@ -220,6 +220,55 @@
     },
     {
       "id": "camp-1",
+      "label": "Tank Roam",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1421",
+          "name": "Boots of Fortitude",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1421.png",
+          "description": "PDEF +100, MDEF +50, MSPD +50\nReduces physical damage"
+        },
+        {
+          "slot": 2,
+          "itemId": "1724",
+          "name": "Guardian - Redemption",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1751.png",
+          "description": "HP +1,200, MSPD +7.5%\nSurvivability aura"
+        },
+        {
+          "slot": 3,
+          "itemId": "1353",
+          "name": "Dawnlight",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1353.png",
+          "description": "PDEF +210, HP +900, CDR +10%\nShields on dealing damage"
+        },
+        {
+          "slot": 4,
+          "itemId": "1335",
+          "name": "Succubus Cloak",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
+          "description": "MDEF +300, HP +1,100\nNegates magical damage"
+        },
+        {
+          "slot": 5,
+          "itemId": "1333",
+          "name": "Ominous Premonition",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1333.png",
+          "description": "PDEF +300, HP +1,200\nSlows attackers"
+        },
+        {
+          "slot": 6,
+          "itemId": "1332",
+          "name": "Overlord's Platemail",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1332.png",
+          "description": "HP +1,800, PDEF +160, MDEF +80\nExtra HP"
+        }
+      ]
+    },
+    {
+      "id": "camp-2",
       "label": "Principais",
       "lane": null,
       "items": [
@@ -268,7 +317,7 @@
       ]
     },
     {
-      "id": "camp-2",
+      "id": "camp-3",
       "label": "WHALE",
       "lane": null,
       "items": [
@@ -315,61 +364,12 @@
           "description": "HP +1,800, PDEF +160, MDEF +80\nExtra HP"
         }
       ]
-    },
-    {
-      "id": "camp-3",
-      "label": "Zhuangzipot",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1353",
-          "name": "Dawnlight",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1353.png",
-          "description": "PDEF +210, HP +900, CDR +10%\nShields on dealing damage"
-        },
-        {
-          "slot": 2,
-          "itemId": "1335",
-          "name": "Succubus Cloak",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
-          "description": "MDEF +300, HP +1,100\nNegates magical damage"
-        },
-        {
-          "slot": 3,
-          "itemId": "1333",
-          "name": "Ominous Premonition",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1333.png",
-          "description": "PDEF +300, HP +1,200\nSlows attackers"
-        },
-        {
-          "slot": 4,
-          "itemId": "1332",
-          "name": "Overlord's Platemail",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1332.png",
-          "description": "HP +1,800, PDEF +160, MDEF +80\nExtra HP"
-        },
-        {
-          "slot": 5,
-          "itemId": "1337",
-          "name": "Sage's Sanctuary",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
-          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
-        },
-        {
-          "slot": 6,
-          "itemId": "1350",
-          "name": "Ravage - Phantom",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1350.png",
-          "description": "PATK +75, HP +900\nTrades HP for shield"
-        }
-      ]
     }
   ],
   "buildsZh": [
     {
       "id": "camp-0",
-      "label": "Tank Roam",
+      "label": "VA.RockLee",
       "lane": null,
       "items": [
         {
@@ -418,6 +418,55 @@
     },
     {
       "id": "camp-1",
+      "label": "Tank Roam",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1421",
+          "name": "影忍之足",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1421.png",
+          "description": "+100點物防+50點法防+50點移速\n減少物理傷害"
+        },
+        {
+          "slot": 2,
+          "itemId": "1724",
+          "name": "近衛・救贖",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1751.png",
+          "description": "+1200點生命值+7.5%移速\n光環強化生存"
+        },
+        {
+          "slot": 3,
+          "itemId": "1353",
+          "name": "旭日初光",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1353.png",
+          "description": "+210點物防+900點生命值+10%減冷卻時間\n傷害敵人時獲得護盾值"
+        },
+        {
+          "slot": 4,
+          "itemId": "1335",
+          "name": "魔女斗篷",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
+          "description": "+300點法防+1100點生命值\n吸收法術傷害"
+        },
+        {
+          "slot": 5,
+          "itemId": "1333",
+          "name": "不祥徵兆",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1333.png",
+          "description": "+300點物防+1200點生命值\n受擊時將敵人減速"
+        },
+        {
+          "slot": 6,
+          "itemId": "1332",
+          "name": "霸者重裝",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1332.png",
+          "description": "+1800點生命值+160點物防+80點法防\n提高額外生命值"
+        }
+      ]
+    },
+    {
+      "id": "camp-2",
       "label": "Principais",
       "lane": null,
       "items": [
@@ -466,7 +515,7 @@
       ]
     },
     {
-      "id": "camp-2",
+      "id": "camp-3",
       "label": "WHALE",
       "lane": null,
       "items": [
@@ -513,66 +562,17 @@
           "description": "+1800點生命值+160點物防+80點法防\n提高額外生命值"
         }
       ]
-    },
-    {
-      "id": "camp-3",
-      "label": "Zhuangzipot",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1353",
-          "name": "旭日初光",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1353.png",
-          "description": "+210點物防+900點生命值+10%減冷卻時間\n傷害敵人時獲得護盾值"
-        },
-        {
-          "slot": 2,
-          "itemId": "1335",
-          "name": "魔女斗篷",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
-          "description": "+300點法防+1100點生命值\n吸收法術傷害"
-        },
-        {
-          "slot": 3,
-          "itemId": "1333",
-          "name": "不祥徵兆",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1333.png",
-          "description": "+300點物防+1200點生命值\n受擊時將敵人減速"
-        },
-        {
-          "slot": 4,
-          "itemId": "1332",
-          "name": "霸者重裝",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1332.png",
-          "description": "+1800點生命值+160點物防+80點法防\n提高額外生命值"
-        },
-        {
-          "slot": 5,
-          "itemId": "1337",
-          "name": "賢者的庇護",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
-          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
-        },
-        {
-          "slot": 6,
-          "itemId": "1350",
-          "name": "侵略・怒魂",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1350.png",
-          "description": "+75點攻擊+900點生命值\n犧牲生命值換取護盾值"
-        }
-      ]
     }
   ],
   "arcana": [
     "Lvl 5: Fate",
     "Lvl 5: Harmony",
-    "Lvl 5: Reverberation"
+    "Lvl 5: Void"
   ],
   "arcanaZh": [
     "5級：宿命",
     "5級：調和",
-    "5級：回聲"
+    "5級：虛空"
   ],
   "spells": [
     "Heal"
@@ -682,13 +682,13 @@
     }
   ],
   "metaAnalysis": [
-    "Zhuangzi win rate 50.17% (Camp HOK, 2026-06-10).",
+    "Zhuangzi win rate 50.17% (Camp HOK, 2026-06-12).",
     "Pick rate 0.66%.",
     "Ban rate 1.04%.",
     "Counters: Cirrus, Dian Wei, Menki. Weak into: Allain, Wukong, Musashi."
   ],
   "metaAnalysisZh": [
-    "莊周 勝率 50.17%（Camp HOK，2026-06-10）",
+    "莊周 勝率 50.17%（Camp HOK，2026-06-12）",
     "選取率 0.66%",
     "禁用率 1.04%",
     "克制：Cirrus、Dian Wei、Menki；被克制：Allain、Wukong、Musashi"

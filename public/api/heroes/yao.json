@@ -19,7 +19,7 @@
   "heroCover": "https://camp.honorofkings.com/social/game/src/image_hero_cover_1275*718/NVoAEXcn.jpg",
   "tencentId": 522,
   "dataSource": "Camp HOK bilingual (primary)",
-  "dataUpdated": "2026-06-10",
+  "dataUpdated": "2026-06-12",
   "skills": [
     {
       "slot": "passive",
@@ -83,94 +83,143 @@
   "build": [
     {
       "slot": 1,
-      "itemId": "1533",
-      "name": "Rapacious Bite",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1533.png",
-      "description": "PATK +90, MSPD +5%, CDR +7.5%\nMonster kills boost ATK"
+      "itemId": "1338",
+      "name": "Cuirass of Savagery",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1338.png",
+      "description": "PATK +35, PDEF +210, HP +900\nOffense & defense"
     },
     {
       "slot": 2,
-      "itemId": "1534",
-      "name": "Dragon's Rage",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1536.png",
-      "description": "HP +1,350, PDEF +180, MDEF +90\nBoosts BA damage"
-    },
-    {
-      "slot": 3,
-      "itemId": "1335",
-      "name": "Succubus Cloak",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
-      "description": "MDEF +300, HP +1,100\nNegates magical damage"
-    },
-    {
-      "slot": 4,
       "itemId": "1138",
       "name": "Overlord's Might",
       "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1138.png",
       "description": "PATK +150, CDR +5%\nHigh-damage attack"
     },
     {
-      "slot": 5,
+      "slot": 3,
       "itemId": "1337",
       "name": "Sage's Sanctuary",
       "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
       "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
     },
     {
-      "slot": 6,
+      "slot": 4,
       "itemId": "1127",
       "name": "Destiny",
       "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
       "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
+    },
+    {
+      "slot": 5,
+      "itemId": "1335",
+      "name": "Succubus Cloak",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
+      "description": "MDEF +300, HP +1,100\nNegates magical damage"
+    },
+    {
+      "slot": 6,
+      "itemId": "1131",
+      "name": "Starbreaker",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1131.png",
+      "description": "PATK +90, HP +700, MSPD +7.5%\nAnti-tank"
     }
   ],
   "buildZh": [
     {
       "slot": 1,
-      "itemId": "1533",
-      "name": "貪婪之噬",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1533.png",
-      "description": "+90攻擊+5%移速+7.5%冷縮\n打野怪加攻擊"
+      "itemId": "1338",
+      "name": "暴烈之甲",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1338.png",
+      "description": "+35點攻擊+210點物防+900點生命值\n能抗能打"
     },
     {
       "slot": 2,
-      "itemId": "1534",
-      "name": "怒龍劍盾",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1536.png",
-      "description": "+1350點生命值+180點物防+90點法防\n普攻額外傷害"
-    },
-    {
-      "slot": 3,
-      "itemId": "1335",
-      "name": "魔女斗篷",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
-      "description": "+300點法防+1100點生命值\n吸收法術傷害"
-    },
-    {
-      "slot": 4,
       "itemId": "1138",
       "name": "強者破軍",
       "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1138.png",
       "description": "+150點攻擊+5%減冷卻時間\n高額攻擊"
     },
     {
-      "slot": 5,
+      "slot": 3,
       "itemId": "1337",
       "name": "賢者的庇護",
       "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
       "description": "+900點生命值+150點物防+150點法防……\n原地復活"
     },
     {
-      "slot": 6,
+      "slot": 4,
       "itemId": "1127",
       "name": "名刀・司命",
       "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
       "description": "+75點攻擊+15%攻速+500點生命值\n保命"
+    },
+    {
+      "slot": 5,
+      "itemId": "1335",
+      "name": "魔女斗篷",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
+      "description": "+300點法防+1100點生命值\n吸收法術傷害"
+    },
+    {
+      "slot": 6,
+      "itemId": "1131",
+      "name": "碎星錘",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1131.png",
+      "description": "+90點攻擊+700點生命值+7.5%移速\n打坦克用"
     }
   ],
   "builds": [
     {
       "id": "camp-0",
+      "label": "lightning",
+      "lane": "Jungle",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1338",
+          "name": "Cuirass of Savagery",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1338.png",
+          "description": "PATK +35, PDEF +210, HP +900\nOffense & defense"
+        },
+        {
+          "slot": 2,
+          "itemId": "1138",
+          "name": "Overlord's Might",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1138.png",
+          "description": "PATK +150, CDR +5%\nHigh-damage attack"
+        },
+        {
+          "slot": 3,
+          "itemId": "1337",
+          "name": "Sage's Sanctuary",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
+        },
+        {
+          "slot": 4,
+          "itemId": "1127",
+          "name": "Destiny",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
+        },
+        {
+          "slot": 5,
+          "itemId": "1335",
+          "name": "Succubus Cloak",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
+          "description": "MDEF +300, HP +1,100\nNegates magical damage"
+        },
+        {
+          "slot": 6,
+          "itemId": "1131",
+          "name": "Starbreaker",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1131.png",
+          "description": "PATK +90, HP +700, MSPD +7.5%\nAnti-tank"
+        }
+      ]
+    },
+    {
+      "id": "camp-1",
       "label": "Top",
       "lane": "Jungle",
       "items": [
@@ -219,7 +268,7 @@
       ]
     },
     {
-      "id": "camp-1",
+      "id": "camp-2",
       "label": "Try this Jungle",
       "lane": "Jungle",
       "items": [
@@ -268,7 +317,7 @@
       ]
     },
     {
-      "id": "camp-2",
+      "id": "camp-3",
       "label": "Tarik Ulur",
       "lane": "Jungle",
       "items": [
@@ -315,60 +364,60 @@
           "description": "PATK +75, HP +900\nTrades HP for shield"
         }
       ]
-    },
-    {
-      "id": "camp-3",
-      "label": "Top",
-      "lane": "Jungle",
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1422",
-          "name": "Boots of Resistance",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1422.png",
-          "description": "MDEF +100, PDEF +50, MSPD +50\nShortens crowd control"
-        },
-        {
-          "slot": 2,
-          "itemId": "1534",
-          "name": "Dragon's Rage",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1536.png",
-          "description": "HP +1,350, PDEF +180, MDEF +90\nBoosts BA damage"
-        },
-        {
-          "slot": 3,
-          "itemId": "1335",
-          "name": "Succubus Cloak",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
-          "description": "MDEF +300, HP +1,100\nNegates magical damage"
-        },
-        {
-          "slot": 4,
-          "itemId": "1138",
-          "name": "Overlord's Might",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1138.png",
-          "description": "PATK +150, CDR +5%\nHigh-damage attack"
-        },
-        {
-          "slot": 5,
-          "itemId": "1337",
-          "name": "Sage's Sanctuary",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
-          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
-        },
-        {
-          "slot": 6,
-          "itemId": "1127",
-          "name": "Destiny",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
-          "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
-        }
-      ]
     }
   ],
   "buildsZh": [
     {
       "id": "camp-0",
+      "label": "lightning",
+      "lane": "Jungle",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1338",
+          "name": "暴烈之甲",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1338.png",
+          "description": "+35點攻擊+210點物防+900點生命值\n能抗能打"
+        },
+        {
+          "slot": 2,
+          "itemId": "1138",
+          "name": "強者破軍",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1138.png",
+          "description": "+150點攻擊+5%減冷卻時間\n高額攻擊"
+        },
+        {
+          "slot": 3,
+          "itemId": "1337",
+          "name": "賢者的庇護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+        },
+        {
+          "slot": 4,
+          "itemId": "1127",
+          "name": "名刀・司命",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "+75點攻擊+15%攻速+500點生命值\n保命"
+        },
+        {
+          "slot": 5,
+          "itemId": "1335",
+          "name": "魔女斗篷",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
+          "description": "+300點法防+1100點生命值\n吸收法術傷害"
+        },
+        {
+          "slot": 6,
+          "itemId": "1131",
+          "name": "碎星錘",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1131.png",
+          "description": "+90點攻擊+700點生命值+7.5%移速\n打坦克用"
+        }
+      ]
+    },
+    {
+      "id": "camp-1",
       "label": "Top",
       "lane": "Jungle",
       "items": [
@@ -417,7 +466,7 @@
       ]
     },
     {
-      "id": "camp-1",
+      "id": "camp-2",
       "label": "Try this Jungle",
       "lane": "Jungle",
       "items": [
@@ -466,7 +515,7 @@
       ]
     },
     {
-      "id": "camp-2",
+      "id": "camp-3",
       "label": "Tarik Ulur",
       "lane": "Jungle",
       "items": [
@@ -513,66 +562,17 @@
           "description": "+75點攻擊+900點生命值\n犧牲生命值換取護盾值"
         }
       ]
-    },
-    {
-      "id": "camp-3",
-      "label": "Top",
-      "lane": "Jungle",
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1422",
-          "name": "抵抗之靴",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1422.png",
-          "description": "+100點法防+50點物防+50點移速\n減少被控時間"
-        },
-        {
-          "slot": 2,
-          "itemId": "1534",
-          "name": "怒龍劍盾",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1536.png",
-          "description": "+1350點生命值+180點物防+90點法防\n普攻額外傷害"
-        },
-        {
-          "slot": 3,
-          "itemId": "1335",
-          "name": "魔女斗篷",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
-          "description": "+300點法防+1100點生命值\n吸收法術傷害"
-        },
-        {
-          "slot": 4,
-          "itemId": "1138",
-          "name": "強者破軍",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1138.png",
-          "description": "+150點攻擊+5%減冷卻時間\n高額攻擊"
-        },
-        {
-          "slot": 5,
-          "itemId": "1337",
-          "name": "賢者的庇護",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
-          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
-        },
-        {
-          "slot": 6,
-          "itemId": "1127",
-          "name": "名刀・司命",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
-          "description": "+75點攻擊+15%攻速+500點生命值\n保命"
-        }
-      ]
     }
   ],
   "arcana": [
+    "Lvl 5: Red Moon",
     "Lvl 5: Mutation",
-    "Lvl 5: Stealth",
-    "Lvl 5: Eagle Eye"
+    "Lvl 5: Stealth"
   ],
   "arcanaZh": [
+    "5級：紅月",
     "5級：異變",
-    "5級：隱匿",
-    "5級：鷹眼"
+    "5級：隱匿"
   ],
   "spells": [
     "Smite"
@@ -593,11 +593,11 @@
   "tips": [
     "Yao (Assassin): Tier B — 51.43% WR (Camp HOK).",
     "Lane: Jungling.",
-    "Build: Rapacious Bite, Dragon's Rage, Succubus Cloak."
+    "Build: Cuirass of Savagery, Overlord's Might, Sage's Sanctuary."
   ],
   "tipsZh": [
     "曜（打野）：梯度 B，勝率 51.43%（Camp HOK）。",
-    "出裝：貪婪之噬、怒龍劍盾、魔女斗篷."
+    "出裝：暴烈之甲、強者破軍、賢者的庇護."
   ],
   "patchHistory": [
     {
@@ -700,7 +700,7 @@
     {
       "id": "faq-best-build",
       "question": "What is the best Yao build?",
-      "answer": "Recommended: Rapacious Bite, Dragon's Rage, Succubus Cloak, Overlord's Might, Sage's Sanctuary, Destiny."
+      "answer": "Recommended: Cuirass of Savagery, Overlord's Might, Sage's Sanctuary, Destiny, Succubus Cloak, Starbreaker."
     },
     {
       "id": "faq-counter",
@@ -717,7 +717,7 @@
     {
       "id": "faq-best-build",
       "question": "曜 出裝怎麼搭配？",
-      "answer": "推薦：貪婪之噬、怒龍劍盾、魔女斗篷、強者破軍、賢者的庇護、名刀・司命."
+      "answer": "推薦：暴烈之甲、強者破軍、賢者的庇護、名刀・司命、魔女斗篷、碎星錘."
     },
     {
       "id": "faq-counter",
@@ -726,13 +726,13 @@
     }
   ],
   "metaAnalysis": [
-    "Yao win rate 51.43% (Camp HOK, 2026-06-10).",
+    "Yao win rate 51.43% (Camp HOK, 2026-06-12).",
     "Pick rate 0.56%.",
     "Ban rate 0.04%.",
     "Counters: Angela, Mi Yue, Ziya. Weak into: Hou Yi, Daji, Angela."
   ],
   "metaAnalysisZh": [
-    "曜 勝率 51.43%（Camp HOK，2026-06-10）",
+    "曜 勝率 51.43%（Camp HOK，2026-06-12）",
     "選取率 0.56%",
     "禁用率 0.04%",
     "克制：Angela、Mi Yue、Ziya；被克制：Hou Yi、Daji、Angela"

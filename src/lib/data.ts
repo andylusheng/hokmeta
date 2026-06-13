@@ -54,7 +54,10 @@ export function defaultBuildPresetIndex(hero: Hero, locale: Locale = 'en'): numb
 export function getHeroByName(name: string): Hero | undefined {
   const key = name.trim().toLowerCase();
   if (!key || key === 'data unavailable') return undefined;
-  return heroes.find((h) => h.name.toLowerCase() === key);
+  return (
+    heroes.find((h) => h.name.toLowerCase() === key) ||
+    heroes.find((h) => h.slug.toLowerCase() === key)
+  );
 }
 
 export function getHeroesGroupedByRole(): Record<HeroRole, Hero[]> {

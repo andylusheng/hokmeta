@@ -3,10 +3,10 @@ import React from 'react';
 
 import { formatRate, getHeroByName, heroes } from '@/lib/data';
 import {
-  getBestCounter,
   getCounterDetails,
   getCounterFaqs,
   getCounterList,
+  getCounterListByLane,
   getCounterMistakes,
   getCounterWhyBullets,
   getMetaTrend,
@@ -180,21 +180,17 @@ export function CounterPageView({ hero, locale = 'en' }: { hero: Hero; locale?: 
   const displayName = getHeroDisplayName(hero, locale);
   const season = getMetaSeasonLabel(locale);
   const counters = getCounterList(hero);
+  const laneCounters = getCounterListByLane(hero);
   const whyBullets = getCounterWhyBullets(hero, locale);
   const mistakes = getCounterMistakes(hero, locale);
   const faqs = getCounterFaqs(hero, locale);
   const related = getRelatedCounters(hero, 6);
 
   // New data
-  const bestCounter = getBestCounter(hero.slug, locale);
   const counterDetails = getCounterDetails(hero.slug, locale);
   const metaTrend = getMetaTrend(hero.slug, locale);
   const playstyle = getPlaystyle(hero.slug, locale);
   const updated = hero.dataUpdated || '—';
-
-  // Build a counter name → advantage map (from overrides)
-  const advantageMap = new Map<string, number>();
-  if (bestCounter) advantageMap.set(bestCounter.hero, bestCounter.advantage);
 
   const breadcrumbs = [
     { name: t('common.home'), path: localePath(locale, '/') },
@@ -206,8 +202,8 @@ export function CounterPageView({ hero, locale = 'en' }: { hero: Hero; locale?: 
     },
   ];
 
-  // Best counter hero data for the conclusion card
-  const bestCounterHero = bestCounter ? getHeroByName(bestCounter.hero) : undefined;
+  // Build an empty advantage map (bestCounter feature removed).
+  const advantageMap = new Map<string, number>();
 
   // Build detail map: counter name → CounterDetail
   const detailMap = new Map(counterDetails.map((d) => [d.hero, d]));
@@ -270,58 +266,16 @@ export function CounterPageView({ hero, locale = 'en' }: { hero: Hero; locale?: 
         </span>
       </div>
 
-      {/* ── P0: Best Counter conclusion card ── */}
-      {bestCounter && bestCounterHero && (
-        <section className="mb-8 rounded-xl border-2 border-hok-gold/40 bg-gradient-to-r from-hok-card/80 to-hok-dark/80 p-5">
-          <div className="flex items-start gap-4">
-            <Link
-              href={localePath(locale, `/hero/${bestCounterHero.slug}`)}
-              className="flex-shrink-0"
-            >
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src={bestCounterHero.avatar}
-                alt=""
-                width={64}
-                height={64}
-                className="h-16 w-16 rounded-lg object-cover border-2 border-hok-gold/60 hover:border-hok-gold transition"
-              />
-            </Link>
-            <div className="flex-1">
-              <div className="flex items-center gap-2 mb-1">
-                <span className="text-hok-gold font-bold text-lg">
-                  {t('counterPage.bestCounterTitle')}
-                </span>
-                <span className="rounded-full bg-green-500/20 px-2 py-0.5 text-xs font-medium text-green-400">
-                  {t('counterPage.bestCounterAdvantage', { advantage: bestCounter.advantage })}
-                </span>
-                <StarRating count={computeStars(bestCounterHero.tier, bestCounter.advantage)} size={14} />
-              </div>
-              <Link
-                href={localePath(locale, `/hero/${bestCounterHero.slug}`)}
-                className="text-white font-semibold text-lg hover:text-hok-gold transition mb-2 inline-block"
-              >
-                {getHeroDisplayName(bestCounterHero, locale)}
-              </Link>
-              <p className="text-xs text-gray-400 mb-2">
-                {t('counterPage.bestCounterReasons', { name: getHeroDisplayName(bestCounterHero, locale) })}
-              </p>
-              <ul className="space-y-1 text-sm text-gray-300">
-                {bestCounter.reasons.map((reason, idx) => (
-                  <li key={idx} className="flex items-start gap-2">
-                    <span className="text-hok-gold mt-0.5 shrink-0">•</span>
-                    <span>{linkifyHeroNames(reason, locale)}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
-        </section>
-      )}
 
       {/* ── P0.5: Playstyle & Damage Source ── */}
       {playstyle && (
-        <section className="mb-8 rounded-xl border border-hok-gold/30 bg-hok-card/40 p-5">
+        <section className="mb-8 rounded-xl border border-green-500/25 bg-green-500/5 p-5">
+          <div className="mb-2 flex items-center gap-2">
+            <span className="rounded bg-green-500/20 px-2 py-0.5 text-[10px] font-semibold uppercase text-green-300">
+              hokmeta
+            </span>
+            <span className="text-xs text-gray-500">{t('counterPage.hokmetaAnalysisTitle')}</span>
+          </div>
           <h2 className="mb-3 text-lg font-semibold text-hok-gold flex items-center gap-2">
             <span>⚔️</span>
             {t('counterPage.playstyleTitle', { name: displayName })}
@@ -342,28 +296,76 @@ export function CounterPageView({ hero, locale = 'en' }: { hero: Hero; locale?: 
 
       <div className="grid gap-8 lg:grid-cols-[1fr_260px]">
         <div className="space-y-8">
-          {/* ── Counter list (P0: enhanced cards) ── */}
+          {/* ── Counter list blocked by lane ── */}
           {counters.length > 0 && (
             <section>
-              <h2 className="mb-3 text-lg font-semibold text-red-400">
-                {t('counterPage.bestCounters', { name: displayName })}
-              </h2>
-              <div className="grid gap-2 sm:grid-cols-2">
-                {counters.map((name) => (
-                  <EnhancedCounterCard
-                    key={name}
-                    name={name}
-                    advantage={advantageMap.get(name.toLowerCase())}
-                    locale={locale}
-                  />
-                ))}
+              <div className="mb-3 flex items-center gap-2">
+                <span className="rounded bg-blue-500/15 px-2 py-0.5 text-[10px] font-semibold uppercase text-blue-300">
+                  Camp HOK
+                </span>
+                <h2 className="text-lg font-semibold text-red-400">
+                  {t('counterPage.bestCounters', { name: displayName })}
+                </h2>
               </div>
+              <p className="mb-3 text-xs italic text-gray-500">
+                {t('counterPage.bestCounterBaseData')}
+              </p>
+
+              {/* Same-lane counters — most impactful */}
+              {laneCounters.sameLane.length > 0 && (
+                <div className="mb-4">
+                  <div className="mb-2 flex items-center gap-2">
+                    <h3 className="text-sm font-semibold text-hok-gold">
+                      {t('counterPage.sameLaneCounters')}
+                    </h3>
+                    <span className="text-[10px] text-gray-600">{t('counterPage.sameLaneHint')}</span>
+                  </div>
+                  <div className="grid gap-2 sm:grid-cols-2">
+                    {laneCounters.sameLane.map((name) => (
+                      <EnhancedCounterCard
+                        key={name}
+                        name={name}
+                        advantage={advantageMap.get(name.toLowerCase())}
+                        locale={locale}
+                      />
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              {/* Other-lane counters — secondary */}
+              {laneCounters.otherLane.length > 0 && (
+                <div>
+                  <div className="mb-2 flex items-center gap-2">
+                    <h3 className="text-sm font-semibold text-gray-400">
+                      {t('counterPage.otherLaneCounters')}
+                    </h3>
+                    <span className="text-[10px] text-gray-600">{t('counterPage.otherLaneHint')}</span>
+                  </div>
+                  <div className="grid gap-2 sm:grid-cols-2">
+                    {laneCounters.otherLane.map((name) => (
+                      <EnhancedCounterCard
+                        key={name}
+                        name={name}
+                        advantage={advantageMap.get(name.toLowerCase())}
+                        locale={locale}
+                      />
+                    ))}
+                  </div>
+                </div>
+              )}
             </section>
           )}
 
           {/* ── P1: Why each counter works (expanded, per-hero details) ── */}
           {counterDetails.length > 0 && (
-            <section className="rounded-xl border border-hok-border bg-hok-card/30 p-5">
+            <section className="rounded-xl border border-green-500/20 bg-green-500/5 p-5">
+              <div className="mb-3 flex items-center gap-2">
+                <span className="rounded bg-green-500/20 px-2 py-0.5 text-[10px] font-semibold uppercase text-green-300">
+                  hokmeta
+                </span>
+                <span className="text-xs text-gray-500">{t('counterPage.hokmetaAnalysisTitle')}</span>
+              </div>
               <h2 className="mb-4 text-lg font-semibold text-hok-gold">
                 {t('counterPage.whyTitle')}
               </h2>
@@ -442,7 +444,13 @@ export function CounterPageView({ hero, locale = 'en' }: { hero: Hero; locale?: 
 
           {/* ── P1: Meta trend analysis ── */}
           {metaTrend ? (
-            <section className="rounded-xl border border-hok-border bg-hok-card/30 p-5">
+            <section className="rounded-xl border border-green-500/20 bg-green-500/5 p-5">
+              <div className="mb-3 flex items-center gap-2">
+                <span className="rounded bg-green-500/20 px-2 py-0.5 text-[10px] font-semibold uppercase text-green-300">
+                  hokmeta
+                </span>
+                <span className="text-xs text-gray-500">{t('counterPage.hokmetaAnalysisTitle')}</span>
+              </div>
               <h2 className="mb-3 text-lg font-semibold text-hok-gold flex items-center gap-2">
                 <span>📊</span>
                 {t('counterPage.metaTrendTitle', { name: displayName })}
