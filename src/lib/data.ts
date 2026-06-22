@@ -18,6 +18,16 @@ export const heroes = heroesData as Hero[];
 export const items = itemsData as GameItem[];
 export const keywords = keywordsData as KeywordsMap;
 
+/** Latest Camp sync stamp across all heroes (for sitemap / freshness signals). */
+export function getLatestHeroDataDate(): string {
+  let latest = site.dateModified;
+  for (const hero of heroes) {
+    const d = hero.dataUpdated?.trim();
+    if (d && d > latest) latest = d;
+  }
+  return latest;
+}
+
 export function getItemById(id: string): GameItem | undefined {
   return items.find((i) => i.id === id);
 }

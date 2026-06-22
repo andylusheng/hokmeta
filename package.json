@@ -12,7 +12,7 @@
     "lint": "next lint",
     "sync-meta": "node scripts/sync-meta.js",
     "sync-global": "node scripts/sync-global.js",
-    "sync-camp": "node scripts/sync-camp.js",
+    "bump-sync-date": "node scripts/bump-sync-date.js",
     "sync-camp:quick": "node scripts/sync-camp.js --limit=5 --skip-items --skip-counters",
     "enrich-covers": "node scripts/camp/enrich-covers.js",
     "fix-skill-icons": "node scripts/fix-skill-icons.js",

@@ -10,16 +10,16 @@
   "laneZh": "遊走",
   "difficulty": "Easy",
   "tier": "B",
-  "winRate": 50.24,
-  "pickRate": 0.47,
-  "banRate": 0.03,
-  "rank": 67,
+  "winRate": 51.24,
+  "pickRate": 0.53,
+  "banRate": 0.04,
+  "rank": 44,
   "avatar": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/ubeT1R84.png",
   "avatarFallback": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/501/501.jpg",
   "heroCover": "https://camp.honorofkings.com/social/game/src/image_hero_cover_1275*718/M3OTSHPF.jpg",
   "tencentId": 501,
   "dataSource": "Camp HOK bilingual (primary)",
-  "dataUpdated": "2026-06-12",
+  "dataUpdated": "2026-06-22",
   "skills": [
     {
       "slot": "passive",
@@ -33,14 +33,14 @@
       "name": "Time - Carefree",
       "description": "Throws his instrument and links it to a teammate, increasing their main attack stat and Attack Speed.\nEnemies who touch the link take damage over time.\nPassive: Increases Ming's Physical Attack, Magical Attack, and Movement Speed.",
       "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/50110.png",
-      "cooldown": "3s"
+      "cooldown": "5s"
     },
     {
       "slot": "skill2",
       "name": "Mastery - Glide",
       "description": "Throws his instrument and links it to an enemy, reducing their Physical and Magical Defense.\nEnemies who touch the link take damage over time.\nPassive: Gains Physical and Magical Defense.",
       "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/50111.png",
-      "cooldown": "3s"
+      "cooldown": "5s"
     },
     {
       "slot": "ultimate",
@@ -63,14 +63,14 @@
       "name": "臨卦・無憂",
       "description": "明世隱投擲法器連結隊友，增加其主攻屬性和攻速。\n觸碰鍊子的敵人持續受到傷害。\n被動：自身提升物理攻擊、法術攻擊和移速。",
       "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/50110.png",
-      "cooldown": "3s"
+      "cooldown": "5s"
     },
     {
       "slot": "skill2",
       "name": "師卦・飛翼",
       "description": "明世隱投擲法器連結敵人，減少其物理防禦和法術防禦。\n觸碰鍊子的敵人持續受到傷害。\n被動：自身提升物理防禦和法術防禦。",
       "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/50111.png",
-      "cooldown": "3s"
+      "cooldown": "5s"
     },
     {
       "slot": "ultimate",
@@ -591,15 +591,26 @@
     "Ying"
   ],
   "tips": [
-    "Ming (Support): Tier B — 50.24% WR (Camp HOK).",
+    "Ming (Support): Tier B — 51.24% WR (Camp HOK).",
     "Lane: Roaming.",
     "Build: Boots of Fortitude, Guardian - Starspring, Augur's Word."
   ],
   "tipsZh": [
-    "明世隱（遊走）：梯度 B，勝率 50.24%（Camp HOK）。",
+    "明世隱（遊走）：梯度 B，勝率 51.24%（Camp HOK）。",
     "出裝：影忍之足、近衛・星泉、時之預言."
   ],
   "patchHistory": [
+    {
+      "seasonId": "15",
+      "seasonName": "S15",
+      "versionName": "2026/06/17",
+      "publishedAt": "2026-06-17T01:00:00Z",
+      "isCurrent": true,
+      "tag": "Stat Buffs",
+      "change": "Increased skill damage",
+      "detail": "",
+      "version": "S15"
+    },
     {
       "seasonId": "9",
       "seasonName": "S9",
@@ -635,6 +646,17 @@
     }
   ],
   "patchHistoryZh": [
+    {
+      "seasonId": "15",
+      "seasonName": "S15",
+      "versionName": "2026/06/17",
+      "publishedAt": "2026-06-17T01:00:00Z",
+      "isCurrent": true,
+      "tag": "數值增強",
+      "change": "提升技能傷害",
+      "detail": "",
+      "version": "S15"
+    },
     {
       "seasonId": "9",
       "seasonName": "S9",
@@ -673,7 +695,7 @@
     {
       "id": "faq-good-season",
       "question": "Is Ming good in current season?",
-      "answer": "Ming is Tier B Support with 50.24% win rate, 0.47% pick rate, and 0.03% ban rate (Camp HOK international)."
+      "answer": "Ming is Tier B Support with 51.24% win rate, 0.53% pick rate, and 0.04% ban rate (Camp HOK international)."
     },
     {
       "id": "faq-best-build",
@@ -690,7 +712,7 @@
     {
       "id": "faq-good-season",
       "question": "明世隱 這版本適合上分嗎？",
-      "answer": "明世隱 為 B 梯度，勝率 50.24%、選取 0.47%、禁用 0.03%（Camp HOK 國際服）。"
+      "answer": "明世隱 為 B 梯度，勝率 51.24%、選取 0.53%、禁用 0.04%（Camp HOK 國際服）。"
     },
     {
       "id": "faq-best-build",
@@ -704,15 +726,15 @@
     }
   ],
   "metaAnalysis": [
-    "Ming win rate 50.24% (Camp HOK, 2026-06-12).",
-    "Pick rate 0.47%.",
-    "Ban rate 0.03%.",
+    "Ming win rate 51.24% (Camp HOK, 2026-06-22).",
+    "Pick rate 0.53%.",
+    "Ban rate 0.04%.",
     "Counters: Cirrus, Menki, Wuyan. Weak into: Wukong, Musashi, Ying."
   ],
   "metaAnalysisZh": [
-    "明世隱 勝率 50.24%（Camp HOK，2026-06-12）",
-    "選取率 0.47%",
-    "禁用率 0.03%",
+    "明世隱 勝率 51.24%（Camp HOK，2026-06-22）",
+    "選取率 0.53%",
+    "禁用率 0.04%",
     "克制：Cirrus、Menki、Wuyan；被克制：Wukong、Musashi、Ying"
   ],
   "guide": {

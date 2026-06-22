@@ -10,42 +10,42 @@
   "laneZh": "對抗路",
   "difficulty": "Medium",
   "tier": "S+",
-  "winRate": 52.24,
-  "pickRate": 1.86,
-  "banRate": 1.32,
-  "rank": 18,
+  "winRate": 53.38,
+  "pickRate": 2.26,
+  "banRate": 1.48,
+  "rank": 7,
   "avatar": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/mWSBbpVr.png",
   "avatarFallback": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/507/507.jpg",
   "heroCover": "https://camp.honorofkings.com/social/game/src/image_hero_cover_1275*718/EkLLICvo.jpg",
   "tencentId": 507,
   "dataSource": "Camp HOK bilingual (primary)",
-  "dataUpdated": "2026-06-12",
+  "dataUpdated": "2026-06-22",
   "skills": [
     {
       "slot": "passive",
       "name": "Ashen Razor",
-      "description": "Basic Attacks and Skill 2 grant EXP when they hit enemy heroes.",
+      "description": "Gains EXP when hitting enemy heroes with Basic Attacks and Chaos Wave.",
       "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/50740.png",
       "cooldown": "1s"
     },
     {
       "slot": "skill1",
       "name": "Lightning Dash",
-      "description": "Dashes in the target direction.",
+      "description": "Dashes forward.",
       "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/50710.png",
       "cooldown": "7s"
     },
     {
       "slot": "skill2",
       "name": "Chaos Wave",
-      "description": "Unleashes sword energy in the target direction, dealing damage to enemies in its path and slowing them.",
+      "description": "Unleashes sword energy, damaging and slowing the target.",
       "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/50720.png",
       "cooldown": "5s"
     },
     {
       "slot": "ultimate",
       "name": "Dark Awakening",
-      "description": "Awakens and enters Revenge Form.",
+      "description": "Transforms into Revenge form. This process cannot be interrupted and is faster at higher skill levels.",
       "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/50741.png",
       "cooldown": "30s"
     }
@@ -54,28 +54,28 @@
     {
       "slot": "passive",
       "name": "灰暗利刃",
-      "description": "李信的普攻和2技能命中敵方英雄會提供經驗值。",
+      "description": "李信普攻和【強力斬擊】命中英雄獲得經驗值。",
       "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/50740.png",
       "cooldown": "1s"
     },
     {
       "slot": "skill1",
       "name": "急速突進",
-      "description": "朝指定方向突進。",
+      "description": "李信向前位移。",
       "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/50710.png",
       "cooldown": "7s"
     },
     {
       "slot": "skill2",
       "name": "強力斬擊",
-      "description": "朝指定方向斬出劍氣，對沿途敵人造成傷害和減速效果。",
+      "description": "李信斬出劍氣對目標造成傷害和減速效果。",
       "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/50720.png",
       "cooldown": "5s"
     },
     {
       "slot": "ultimate",
       "name": "力量覺醒・暗",
-      "description": "李信立刻覺醒，進入狂暴形態。",
+      "description": "李信轉換為狂暴形態，此過程無法被打斷，變身時間隨技能等級成長而降低。",
       "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/50741.png",
       "cooldown": "30s"
     }
@@ -590,15 +590,26 @@
     "Guiguzi"
   ],
   "tips": [
-    "Li Xin (Warrior): Tier S+ — 52.24% WR (Camp HOK).",
+    "Li Xin (Warrior): Tier S+ — 53.38% WR (Camp HOK).",
     "Lane: Clash Lane.",
     "Build: Longnight Guardian, Tempest, Sage's Sanctuary."
   ],
   "tipsZh": [
-    "李信（對抗路）：梯度 S+，勝率 52.24%（Camp HOK）。",
+    "李信（對抗路）：梯度 S+，勝率 53.38%（Camp HOK）。",
     "出裝：永夜守護、逐風、賢者的庇護."
   ],
   "patchHistory": [
+    {
+      "seasonId": "15",
+      "seasonName": "S15",
+      "versionName": "2026/06/17",
+      "publishedAt": "2026-06-17T01:00:00Z",
+      "isCurrent": true,
+      "tag": "Mechanics Upgrade",
+      "change": "Skill Mechanics Upgraded",
+      "detail": "",
+      "version": "S15"
+    },
     {
       "seasonId": "6",
       "seasonName": "S6",
@@ -612,6 +623,17 @@
     }
   ],
   "patchHistoryZh": [
+    {
+      "seasonId": "15",
+      "seasonName": "S15",
+      "versionName": "2026/06/17",
+      "publishedAt": "2026-06-17T01:00:00Z",
+      "isCurrent": true,
+      "tag": "機制升級",
+      "change": "技能機制升級",
+      "detail": "",
+      "version": "S15"
+    },
     {
       "seasonId": "6",
       "seasonName": "S6",
@@ -628,7 +650,7 @@
     {
       "id": "faq-good-season",
       "question": "Is Li Xin good in current season?",
-      "answer": "Li Xin is Tier S+ Warrior with 52.24% win rate, 1.86% pick rate, and 1.32% ban rate (Camp HOK international)."
+      "answer": "Li Xin is Tier S+ Warrior with 53.38% win rate, 2.26% pick rate, and 1.48% ban rate (Camp HOK international)."
     },
     {
       "id": "faq-best-build",
@@ -645,7 +667,7 @@
     {
       "id": "faq-good-season",
       "question": "李信 這版本適合上分嗎？",
-      "answer": "李信 為 S+ 梯度，勝率 52.24%、選取 1.86%、禁用 1.32%（Camp HOK 國際服）。"
+      "answer": "李信 為 S+ 梯度，勝率 53.38%、選取 2.26%、禁用 1.48%（Camp HOK 國際服）。"
     },
     {
       "id": "faq-best-build",
@@ -659,15 +681,15 @@
     }
   ],
   "metaAnalysis": [
-    "Li Xin win rate 52.24% (Camp HOK, 2026-06-12).",
-    "Pick rate 1.86%.",
-    "Ban rate 1.32%.",
+    "Li Xin win rate 53.38% (Camp HOK, 2026-06-22).",
+    "Pick rate 2.26%.",
+    "Ban rate 1.48%.",
     "Counters: Da Qiao, Liang. Weak into: Cai Yan, Da Qiao, Guiguzi."
   ],
   "metaAnalysisZh": [
-    "李信 勝率 52.24%（Camp HOK，2026-06-12）",
-    "選取率 1.86%",
-    "禁用率 1.32%",
+    "李信 勝率 53.38%（Camp HOK，2026-06-22）",
+    "選取率 2.26%",
+    "禁用率 1.48%",
     "克制：Da Qiao、Liang；被克制：Cai Yan、Da Qiao、Guiguzi"
   ],
   "guide": {

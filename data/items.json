@@ -20,22 +20,6 @@
     "level": 3
   },
   {
-    "id": "1313",
-    "slug": "anti-magic-cloak",
-    "name": "Anti-magic Cloak",
-    "nameZh": "抗魔披風",
-    "description": "MDEF +100",
-    "descriptionZh": "+100點法防",
-    "descLabel": null,
-    "descLabelZh": null,
-    "passiveSkills": null,
-    "passiveSkillsZh": null,
-    "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1313.png",
-    "gold": 275,
-    "type": "Defense",
-    "level": 1
-  },
-  {
     "id": "1227",
     "slug": "ardent-dominion",
     "name": "Ardent Dominion",
@@ -390,22 +374,6 @@
     "level": 2
   },
   {
-    "id": "1312",
-    "slug": "cloth-jerkin",
-    "name": "Cloth Jerkin",
-    "nameZh": "布甲",
-    "description": "PDEF +100",
-    "descriptionZh": "+100點物防",
-    "descLabel": null,
-    "descLabelZh": null,
-    "passiveSkills": null,
-    "passiveSkillsZh": null,
-    "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1312.png",
-    "gold": 275,
-    "type": "Defense",
-    "level": 1
-  },
-  {
     "id": "1154",
     "slug": "cloud-piercer",
     "name": "Cloud Piercer",
@@ -446,34 +414,6 @@
     "gold": 850,
     "type": null,
     "level": 2
-  },
-  {
-    "id": "1723",
-    "slug": "crimson-shadow-howl",
-    "name": "Crimson Shadow - Howl",
-    "nameZh": "極影・奔狼",
-    "description": "HP +1,200, MSPD +7.5%\nDPS aura",
-    "descriptionZh": "+1200點生命值+7.5%移速\n光環提升輸出",
-    "descLabel": "Group speedup",
-    "descLabelZh": "群體加速",
-    "passiveSkills": [
-      "Active - Rally\nTeammates within range gradually gain a Movement Speed over 2s, up to a max increase of 100%–200% for 5s. Teammates that enter the skill's range after activation gain the current Movement Speed boost. The effect is reduced to a 20% Movement Speed increase upon attacking or being attacked by enemy heroes.\n(: 90s)\nRoaming equipment active skill cooldown is shared by the team.",
-      "Passive - Agility Aura\nGrants 20% Attack Speed and 15% Cooldown Reduction, and restores 15 Mana every 5s. Teammates within a range of 800 gain 50% of this effect.\n\nPassive - Reward\nIncreases Max Health by 400–800 \nIncreases Main Attack Stat by 25–50\n(1 main attack stat = 1 Physical Attack or 2 Magical Attack)",
-      "Passive - Guerrilla\nEvery 3s, grants 6 EXP, and grants 6 Gold to the teammate with the lowest amount of Gold.",
-      "Wielder does not take a share of the earnings from monster and minion kills, but instead gains a separate 25%-50% Gold and EXP (maxes out at the 20:00 mark).\n\nIf lane minions die and their Gold is not collected, 50% of the Gold will drop on the ground. Up to 600 Gold can be picked up.",
-      "Can quickly switch between Crimson Shadow roaming equipment at no cost ( 300s)."
-    ],
-    "passiveSkillsZh": [
-      "主動-奔騰號令\n範圍內友方英雄2秒內逐漸增加移速，最高增加100%~200%移速，持續5秒。途經未加速的友軍英雄時，會將目前狀態同步給友軍，攻擊或受到敵方英雄攻擊時保留20%加速效果\n(90秒)\n遊走裝主動技能隊伍共享冷卻",
-      "被動-迅捷光環\n增加自身20%攻速，15%冷卻時間縮減和每5秒回復15點法力值，並對800點範圍值內友方造成50%效果\n\n被動-獎賞\n增加400-800點最大生命值\n增加25-50點主攻屬性值\n(1點主攻擊屬性值=1點物理攻擊或2點法術攻擊)",
-      "被動-游擊\n每3秒使自身增加6點經驗值，並使隊伍中經濟最低的英雄增加6枚金幣",
-      "不與隊友分配野怪/小兵收益，單獨獲得25%-50%金幣和經驗值(20分鐘達到上限)\n\n如果未獲得兵線經濟，則其中50%會掉落在地面，拾取金幣上限為600枚。",
-      "極影系列遊走裝之間可以免費切換(300秒)"
-    ],
-    "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1748.png",
-    "gold": 2080,
-    "type": null,
-    "level": 3
   },
   {
     "id": "1737",
@@ -740,8 +680,8 @@
     "slug": "dragons-rage",
     "name": "Dragon's Rage",
     "nameZh": "怒龍劍盾",
-    "description": "HP +1,350, PDEF +180, MDEF +90\nBoosts BA damage",
-    "descriptionZh": "+1350點生命值+180點物防+90點法防\n普攻額外傷害",
+    "description": "HP +1,350, PDEF +180, MDEF +90\nGrants extra damage and recovery",
+    "descriptionZh": "+1350點生命值+180點物防+90點法防\n額外傷害與回復",
     "descLabel": "Boosts BA damage",
     "descLabelZh": "普攻額外傷害",
     "passiveSkills": [
@@ -830,22 +770,6 @@
     ],
     "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1341.png",
     "gold": 2030,
-    "type": "Defense",
-    "level": 2
-  },
-  {
-    "id": "1324",
-    "slug": "frosthold-targe",
-    "name": "Frosthold Targe",
-    "nameZh": "雪山圓盾",
-    "description": "PDEF +150, CDR +7.5%",
-    "descriptionZh": "+150點物防+7.5%冷卻時間縮減",
-    "descLabel": null,
-    "descLabelZh": null,
-    "passiveSkills": null,
-    "passiveSkillsZh": null,
-    "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1324.png",
-    "gold": 750,
     "type": "Defense",
     "level": 2
   },
@@ -1058,34 +982,6 @@
     "level": 3
   },
   {
-    "id": "1725",
-    "slug": "guardian-starspring",
-    "name": "Guardian - Starspring",
-    "nameZh": "近衛・星泉",
-    "description": "HP +1,200, MSPD +7.5%\nSurvivability aura",
-    "descriptionZh": "+1200點生命值+7.5%移速\n光環強化生存",
-    "descLabel": "Restores teammate Health & Mana",
-    "descLabelZh": "為隊友回復狀態",
-    "passiveSkills": [
-      "Active - Starburst\nLinks with a teammate (by default, the teammate with the lowest Health) within range for 5s, recovering (500–1,060 + 20% HP) Health and 25% of max Mana to both self and that teammate for the duration. The link will be broken when it exceeds a certain distance. Recovery effects decrease to 20% upon attacking or being attacked. 1 use of Starburst is gained every 50s, and up to 2 can be stored at a time.\n(: 5s)\nRoaming equipment active skill cooldown is shared by the team.",
-      "Passive - Guardian Aura\nGrants 65–130 Physical Defense and Magical Defense, and restores 0.6% HP every 5s. Teammates within a range of 800 gain 50% of this effect.\n\nPassive - Reward\nMax Health +400–800 \nMain Attack Stat +25–50\n(1 main attack stat = 1 Physical Attack or 2 Magical Attack)",
-      "Passive - Guerrilla\nEvery 3s, grants 6 EXP, and grants 6 Gold to the teammate with the lowest amount of Gold.",
-      "Wielder does not take a share of the earnings from monster and minion kills, but instead gains a separate 25%-50% Gold and EXP (maxes out at the 20:00 mark).\n\nIf lane minions die and their Gold is not collected, 50% of the Gold will drop on the ground. Up to 600 Gold can be picked up.",
-      "Can quickly switch between Guardian roaming equipment at no cost ( 300s)."
-    ],
-    "passiveSkillsZh": [
-      "主動-星芒\n與範圍內的一名友方英雄(預設為血量最低)建立連結，5秒內回復雙方(500~1060+20%HP)點生命值與25%最大法力值，連結超過一定範圍斷開，攻擊或者受到敵方英雄攻擊後回復效果只生效20%。每50秒儲備一次[星芒]，最多可儲備2次\n(5秒)\n遊走裝主動技能隊伍共享冷卻時間",
-      "被動-守護光環\n增加自身65-130點物理防禦、法術防禦和每5秒回血0.6%HP，並對800點範圍值內友方造成50%效果\n\n被動-獎賞\n增加400-800點最大生命值\n增加25-50點主攻屬性值\n(1點主攻擊屬性值=1點物理攻擊或2點法術攻擊)",
-      "被動-游擊\n每3秒使自身增加6點經驗值，並使隊伍中經濟最低的英雄增加6枚金幣",
-      "不與隊友分配野怪/小兵收益，單獨獲得25%-50%金幣和經驗值(20分鐘達到上限)\n\n如果未獲得兵線經濟，則其中50%會掉落在地面，拾取金幣上限為600枚。",
-      "近衛系列遊走裝之間可以免費切換 (300秒)"
-    ],
-    "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1752.png",
-    "gold": 2080,
-    "type": null,
-    "level": 3
-  },
-  {
     "id": "1521",
     "slug": "guerrilla-machete",
     "name": "Guerrilla Machete",
@@ -1201,7 +1097,7 @@
     "name": "Insatiable Tome",
     "nameZh": "噬神之書",
     "description": "MATK +160, Magical Lifesteal +24%, HP +750\nLifesteal increases CDR",
-    "descriptionZh": "+160點法攻+24%法術吸血+750點生命值 吸血拉長冷卻時間",
+    "descriptionZh": "+160點法攻 +24%法術吸血 \n+750點生命值吸血拉長冷卻時間",
     "descLabel": "Magical Lifesteal",
     "descLabelZh": "法術吸血",
     "passiveSkills": [
@@ -1232,22 +1128,6 @@
     "level": 1
   },
   {
-    "id": "11211",
-    "slug": "ironbrand",
-    "name": "Ironbrand",
-    "nameZh": "精鋼鍛刀",
-    "description": "ASPD +15%, HP +450",
-    "descriptionZh": "+15%攻速+450點生命值",
-    "descLabel": null,
-    "descLabelZh": null,
-    "passiveSkills": null,
-    "passiveSkillsZh": null,
-    "icon": "https://camp.honorofkings.com/social/game/BattleEquip/11211.png",
-    "gold": 850,
-    "type": "Attack",
-    "level": 2
-  },
-  {
     "id": "1701",
     "slug": "knowledge-gem",
     "name": "Knowledge Gem",
@@ -1267,22 +1147,6 @@
     "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1701.png",
     "gold": 300,
     "type": null,
-    "level": 1
-  },
-  {
-    "id": "1115",
-    "slug": "lance-of-swiftness",
-    "name": "Lance of Swiftness",
-    "nameZh": "迅捷長矛",
-    "description": "PATK +35, MSPD +7.5%",
-    "descriptionZh": "+35點攻擊+7.5%移速",
-    "descLabel": null,
-    "descLabelZh": null,
-    "passiveSkills": null,
-    "passiveSkillsZh": null,
-    "icon": "https://camp.honorofkings.com/social/game/BattleEquip/11151.png",
-    "gold": 760,
-    "type": "Attack",
     "level": 1
   },
   {
@@ -1382,22 +1246,6 @@
     "level": 2
   },
   {
-    "id": "13211",
-    "slug": "mirror-of-radiance",
-    "name": "Mirror of Radiance",
-    "nameZh": "瑪瑙護心鏡",
-    "description": "HP +450, MSPD +7.5%",
-    "descriptionZh": "+450點生命值+7.5%移速",
-    "descLabel": null,
-    "descLabelZh": null,
-    "passiveSkills": null,
-    "passiveSkillsZh": null,
-    "icon": "https://camp.honorofkings.com/social/game/BattleEquip/13211.png",
-    "gold": 800,
-    "type": "Defense",
-    "level": 2
-  },
-  {
     "id": "11210",
     "slug": "mortal-punisher",
     "name": "Mortal Punisher",
@@ -1418,22 +1266,6 @@
     "gold": 2080,
     "type": "Attack",
     "level": 2
-  },
-  {
-    "id": "1217",
-    "slug": "mystic-page",
-    "name": "Mystic Page",
-    "nameZh": "祕法殘頁",
-    "description": "Magical Lifesteal +8%",
-    "descriptionZh": "+8%法術吸血",
-    "descLabel": null,
-    "descLabelZh": null,
-    "passiveSkills": null,
-    "passiveSkillsZh": null,
-    "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1217.png",
-    "gold": 300,
-    "type": "Magic",
-    "level": 1
   },
   {
     "id": "1243",
@@ -1556,26 +1388,6 @@
     "level": 2
   },
   {
-    "id": "1349",
-    "slug": "pearl-of-origin",
-    "name": "Pearl of Origin",
-    "nameZh": "原初遺珠",
-    "description": "PDEF +150, MDEF +150",
-    "descriptionZh": "+150點物防+150點法防",
-    "descLabel": "Equipment evolution",
-    "descLabelZh": "裝備進化",
-    "passiveSkills": [
-      "Sage's Sanctuary has been damaged, but its energy core can still enhance equipment under the influence of the Primals. (Purchasable after 20m.)"
-    ],
-    "passiveSkillsZh": [
-      "賢者的庇護雖已損壞，但其能量核心在原初之息的浸染下擁有了強化裝備的效果(20分鐘後開放購買)"
-    ],
-    "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1349.png",
-    "gold": 800,
-    "type": "Defense",
-    "level": 2
-  },
-  {
     "id": "11110",
     "slug": "plume-of-enchantment",
     "name": "Plume of Enchantment",
@@ -1622,22 +1434,6 @@
     "gold": 800,
     "type": "Defense",
     "level": 2
-  },
-  {
-    "id": "1113",
-    "slug": "pugilists-gauntlet",
-    "name": "Pugilist's Gauntlet",
-    "nameZh": "搏擊拳套",
-    "description": "Critical Rate",
-    "descriptionZh": "暴擊率",
-    "descLabel": null,
-    "descLabelZh": null,
-    "passiveSkills": null,
-    "passiveSkillsZh": null,
-    "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1113.png",
-    "gold": 300,
-    "type": "Attack",
-    "level": 1
   },
   {
     "id": "11311",
@@ -1730,22 +1526,6 @@
     "gold": 700,
     "type": "Jungle",
     "level": 2
-  },
-  {
-    "id": "1311",
-    "slug": "resilient-agate",
-    "name": "Resilient Agate",
-    "nameZh": "紅瑪瑙",
-    "description": "Health",
-    "descriptionZh": "生命值",
-    "descLabel": null,
-    "descLabelZh": null,
-    "passiveSkills": null,
-    "passiveSkillsZh": null,
-    "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1311.png",
-    "gold": 300,
-    "type": "Defense",
-    "level": 1
   },
   {
     "id": "1531",
@@ -1947,7 +1727,7 @@
     "name": "Splendor",
     "nameZh": "輝月",
     "description": "MATK +160, CDR +7.5%, Magical Lifesteal +12%\nTemp. invincibility",
-    "descriptionZh": "+160點法攻+7.5%減冷卻時間+12%法術吸血\n暫時無敵",
+    "descriptionZh": "+160法攻 +7.5%減冷卻時間+12%法術吸血\n暫時無敵",
     "descLabel": "Temp. invincibility",
     "descLabelZh": "暫時無敵",
     "passiveSkills": null,
@@ -2157,22 +1937,6 @@
     "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1727.png",
     "gold": 2040,
     "type": "Magic",
-    "level": 2
-  },
-  {
-    "id": "1123",
-    "slug": "twinblades-of-destruction",
-    "name": "Twinblades of Destruction",
-    "nameZh": "狂暴雙刃",
-    "description": "ASPD +15%, MSPD +7.5%",
-    "descriptionZh": "+15%攻速+7.5%移速",
-    "descLabel": null,
-    "descLabelZh": null,
-    "passiveSkills": null,
-    "passiveSkillsZh": null,
-    "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1123.png",
-    "gold": 760,
-    "type": "Attack",
     "level": 2
   },
   {

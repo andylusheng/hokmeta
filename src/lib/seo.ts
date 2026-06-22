@@ -12,6 +12,8 @@ export interface SeoInput {
   noindex?: boolean;
   type?: 'website' | 'article';
   keywords?: string[];
+  /** ISO date for article freshness (hero pages, guides). */
+  modifiedTime?: string;
 }
 
 export function getSiteBase(): string {
@@ -80,6 +82,12 @@ export function buildMetadata(input: SeoInput): Metadata {
       alternateLocale: locale === 'zh-TW' ? ['en_US'] : ['zh_TW'],
       type: input.type ?? 'website',
       images: [{ url: fullOg, width: 1200, height: 630, alt: input.title }],
+      ...(input.modifiedTime
+        ? {
+            publishedTime: site.datePublished,
+            modifiedTime: input.modifiedTime,
+          }
+        : {}),
     },
     twitter: {
       card: 'summary_large_image',

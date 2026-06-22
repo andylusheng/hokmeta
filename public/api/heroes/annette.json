@@ -1,0 +1,159 @@
+{
+  "id": "annette",
+  "slug": "annette",
+  "name": "Annette",
+  "nameZh": "安奈特",
+  "role": "Support",
+  "roles": "Support, Mage",
+  "rolesZh": "輔助, 法師",
+  "lane": "Roaming",
+  "laneZh": "遊走",
+  "difficulty": "Easy",
+  "tier": "S",
+  "winRate": 49.46,
+  "pickRate": 1.25,
+  "banRate": 1.01,
+  "rank": 85,
+  "avatar": "https://camp.honorofkings.com/camp/admin/hero/head_128-128/49o0xBua.png",
+  "avatarFallback": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/640/640.jpg",
+  "heroCover": "https://camp.honorofkings.com/camp/admin/hero/cover_1275-718/uPwLTCoZ.jpg",
+  "tencentId": 640,
+  "dataSource": "Camp HOK bilingual (primary)",
+  "dataUpdated": "2026-06-22",
+  "skills": [
+    {
+      "slot": "passive",
+      "name": "Whisperwind",
+      "description": "Gains Mana and increased cooldown speed while moving. If there are teammates nearby, also gains Movement Speed.",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/64000.png",
+      "cooldown": "1s"
+    },
+    {
+      "slot": "skill1",
+      "name": "Gust Force",
+      "description": "Conjures a persistent magic circle at the target location.\nThe magic circle damages and slows enemy units.\nThe magic circle grants Movement Speed to teammates.",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/64010.png",
+      "cooldown": "13s"
+    },
+    {
+      "slot": "skill2",
+      "name": "Wind Cuffs",
+      "description": "Fires an orb in the target direction, gaining a shield and Movement Speed.\nThe orb damages enemies it hits.\nThe orb grants a shield to teammates it hits.\nIf the orb passes through a Gust Force magic circle, it pushes the magic circle to its destination.",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/64020.png",
+      "cooldown": "15s"
+    },
+    {
+      "slot": "ultimate",
+      "name": "Hurricane Wall",
+      "description": "Conjures a barrier around herself, knocking back enemies and dealing damage. Enemies that touch the barrier take damage and are stunned. Teammates within the barrier gain crowd control immunity.\nUntargetable while channeling.",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/64030.png",
+      "cooldown": "75s"
+    }
+  ],
+  "skillsZh": [
+    {
+      "slot": "passive",
+      "name": "風語",
+      "description": "安奈特移動時減少技能冷卻並獲得法力值，附近有隊友時自身獲得加速。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/64000.png",
+      "cooldown": "1s"
+    },
+    {
+      "slot": "skill1",
+      "name": "風起雲湧",
+      "description": "安奈特在指定位置召喚持續生效的法陣。\n法陣對敵方單位造成傷害和減速。\n法陣為友方單位提供加速。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/64010.png",
+      "cooldown": "13s"
+    },
+    {
+      "slot": "skill2",
+      "name": "風之守護",
+      "description": "安奈特朝指定方向發射光球，並使自身獲得護盾和加速。\n光球對命中的敵人造成傷害。\n光球為命中的隊友提供護盾。\n光球經過【風起雲湧】的法陣時，會將法陣推至終點。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/64020.png",
+      "cooldown": "15s"
+    },
+    {
+      "slot": "ultimate",
+      "name": "煦風屏障",
+      "description": "安奈特在自身周圍召喚屏障擊退敵人並造成傷害，對觸碰屏障的敵人造成傷害和暈眩，屏障內的隊友獲得霸體。\n引導期間安奈特無法鎖定為目標。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/64030.png",
+      "cooldown": "75s"
+    }
+  ],
+  "build": [],
+  "buildZh": [],
+  "arcana": [],
+  "arcanaZh": [],
+  "spells": [
+    "Flash",
+    "Execute"
+  ],
+  "spellsZh": [],
+  "counters": [
+    "Data unavailable",
+    "Data unavailable",
+    "Data unavailable"
+  ],
+  "counteredBy": [
+    "Data unavailable",
+    "Data unavailable",
+    "Data unavailable"
+  ],
+  "tips": [
+    "Annette (Support): Tier S — 49.46% WR (Camp HOK).",
+    "Lane: Roaming.",
+    "Build: see builds."
+  ],
+  "tipsZh": [
+    "安奈特（遊走）：梯度 S，勝率 49.46%（Camp HOK）。",
+    "出裝：見出裝區."
+  ],
+  "patchHistory": [],
+  "patchHistoryZh": [],
+  "faqs": [
+    {
+      "id": "faq-good-season",
+      "question": "Is Annette good in current season?",
+      "answer": "Annette is Tier S Support with 49.46% win rate, 1.25% pick rate, and 1.01% ban rate (Camp HOK international)."
+    },
+    {
+      "id": "faq-best-build",
+      "question": "What is the best Annette build?",
+      "answer": "Recommended: see build section."
+    },
+    {
+      "id": "faq-counter",
+      "question": "How to counter Annette?",
+      "answer": "Pick Data unavailable, Data unavailable, Data unavailable. Strong into Data unavailable, Data unavailable, Data unavailable."
+    }
+  ],
+  "faqsZh": [
+    {
+      "id": "faq-good-season",
+      "question": "安奈特 這版本適合上分嗎？",
+      "answer": "安奈特 為 S 梯度，勝率 49.46%、選取 1.25%、禁用 1.01%（Camp HOK 國際服）。"
+    },
+    {
+      "id": "faq-best-build",
+      "question": "安奈特 出裝怎麼搭配？",
+      "answer": "推薦：見本頁出裝區."
+    },
+    {
+      "id": "faq-counter",
+      "question": "怎麼克制 安奈特？",
+      "answer": "可選 Data unavailable、Data unavailable、Data unavailable。安奈特 克制 Data unavailable、Data unavailable、Data unavailable。"
+    }
+  ],
+  "metaAnalysis": [
+    "Annette win rate 49.46% (Camp HOK, 2026-06-22).",
+    "Pick rate 1.25%.",
+    "Ban rate 1.01%.",
+    "Counters: Data unavailable, Data unavailable, Data unavailable. Weak into: Data unavailable, Data unavailable, Data unavailable."
+  ],
+  "metaAnalysisZh": [
+    "安奈特 勝率 49.46%（Camp HOK，2026-06-22）",
+    "選取率 1.25%",
+    "禁用率 1.01%",
+    "克制：Data unavailable、Data unavailable、Data unavailable；被克制：Data unavailable、Data unavailable、Data unavailable"
+  ]
+}

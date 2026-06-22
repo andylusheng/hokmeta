@@ -1,5 +1,5 @@
 import type { MetadataRoute } from 'next';
-import { site, heroes } from '@/lib/data';
+import { site, heroes, items, getLatestHeroDataDate } from '@/lib/data';
 import { getLearnArticle, getLearnSlugs } from '@/lib/learn';
 import { ROLES } from '@/types/hero';
 import { localePath, type Locale } from '@/lib/i18n';
@@ -43,36 +43,36 @@ function localizedEntries(
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = site.domain.replace(/\/$/, '');
-  const now = new Date();
+  const freshness = new Date(getLatestHeroDataDate());
 
   const staticPaths = [
-    { path: '/', priority: 1 },
-    { path: '/heroes', priority: 0.85 },
-    { path: '/tier-list', priority: 0.95 },
-    { path: '/items', priority: 0.78 },
-    { path: '/arcana', priority: 0.72 },
-    { path: '/patches', priority: 0.7 },
-    { path: '/hero-trends', priority: 0.8 },
-    { path: '/best-heroes', priority: 0.8 },
-    { path: '/tools', priority: 0.8 },
-    { path: '/tools/build-generator', priority: 0.75 },
-    { path: '/tools/counter-picker', priority: 0.75 },
-    { path: '/learn', priority: 0.72 },
-    { path: '/about', priority: 0.55 },
-    { path: '/privacy', priority: 0.5 },
+    { path: '/', priority: 1, changeFrequency: 'daily' as const },
+    { path: '/heroes', priority: 0.85, changeFrequency: 'daily' as const },
+    { path: '/tier-list', priority: 0.95, changeFrequency: 'daily' as const },
+    { path: '/items', priority: 0.78, changeFrequency: 'weekly' as const },
+    { path: '/arcana', priority: 0.72, changeFrequency: 'weekly' as const },
+    { path: '/patches', priority: 0.7, changeFrequency: 'weekly' as const },
+    { path: '/hero-trends', priority: 0.8, changeFrequency: 'daily' as const },
+    { path: '/best-heroes', priority: 0.8, changeFrequency: 'daily' as const },
+    { path: '/tools', priority: 0.8, changeFrequency: 'monthly' as const },
+    { path: '/tools/build-generator', priority: 0.75, changeFrequency: 'monthly' as const },
+    { path: '/tools/counter-picker', priority: 0.75, changeFrequency: 'monthly' as const },
+    { path: '/learn', priority: 0.72, changeFrequency: 'weekly' as const },
+    { path: '/about', priority: 0.55, changeFrequency: 'monthly' as const },
+    { path: '/privacy', priority: 0.5, changeFrequency: 'monthly' as const },
   ];
 
-  const staticRoutes = staticPaths.flatMap(({ path, priority }) =>
+  const staticRoutes = staticPaths.flatMap(({ path, priority, changeFrequency }) =>
     localizedEntries(base, path, {
-      lastModified: now,
-      changeFrequency: 'weekly',
+      lastModified: freshness,
+      changeFrequency,
       priority: path === '/' ? priority : priority,
       zhPriorityScale: path === '/' ? 0.95 : 0.98,
     })
   );
 
   const heroRoutes = heroes.flatMap((hero) => {
-    const lastModified = hero.dataUpdated ? new Date(hero.dataUpdated) : now;
+    const lastModified = hero.dataUpdated ? new Date(hero.dataUpdated) : freshness;
     const priority =
       hero.tier === 'S+' || hero.tier === 'S'
         ? 0.95
@@ -81,26 +81,31 @@ export default function sitemap(): MetadataRoute.Sitemap {
           : 0.85;
     const routes = localizedEntries(base, `/hero/${hero.slug}`, {
       lastModified,
-      changeFrequency: 'weekly',
+      changeFrequency: 'daily',
       priority,
     });
-    // Add counter pages for S+ and S tier heroes
-    if (hero.tier === 'S+' || hero.tier === 'S') {
-      routes.push(
-        ...localizedEntries(base, `/hero/${hero.slug}/counters`, {
-          lastModified,
-          changeFrequency: 'weekly',
-          priority: priority * 0.92,
-        })
-      );
-    }
+    routes.push(
+      ...localizedEntries(base, `/hero/${hero.slug}/counters`, {
+        lastModified,
+        changeFrequency: 'daily',
+        priority: Math.max(priority * 0.9, 0.68),
+      })
+    );
     return routes;
   });
 
+  const itemRoutes = items.flatMap((item) =>
+    localizedEntries(base, `/items/${item.id}`, {
+      lastModified: freshness,
+      changeFrequency: 'monthly',
+      priority: 0.62,
+    })
+  );
+
   const roleRoutes = ROLES.flatMap((role) =>
     localizedEntries(base, `/best-heroes/${role.toLowerCase()}`, {
-      lastModified: now,
-      changeFrequency: 'weekly',
+      lastModified: freshness,
+      changeFrequency: 'daily',
       priority: 0.75,
     })
   );
@@ -109,11 +114,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     const article = getLearnArticle(slug);
     const isHeroArticle = !!article?.relatedHeroSlug;
     return localizedEntries(base, `/learn/${slug}`, {
-      lastModified: now,
+      lastModified: freshness,
       changeFrequency: isHeroArticle ? 'weekly' : 'monthly',
       priority: isHeroArticle ? 0.82 : 0.72,
     });
   });
 
-  return [...staticRoutes, ...heroRoutes, ...roleRoutes, ...learnRoutes];
+  return [...staticRoutes, ...heroRoutes, ...itemRoutes, ...roleRoutes, ...learnRoutes];
 }

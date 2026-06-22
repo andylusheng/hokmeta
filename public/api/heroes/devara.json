@@ -1,0 +1,650 @@
+{
+  "id": "devara",
+  "slug": "devara",
+  "name": "Devara",
+  "nameZh": "諦梵羅",
+  "role": "Mage",
+  "roles": "Fighter, Mage",
+  "rolesZh": "戰士, 法師",
+  "lane": "Clash Lane",
+  "laneZh": "對抗路",
+  "difficulty": "Medium",
+  "tier": "S+",
+  "winRate": 43.05,
+  "pickRate": 2.02,
+  "banRate": 0.55,
+  "rank": 116,
+  "avatar": "https://camp.honorofkings.com/camp/admin/default/MagzAk8i.png",
+  "avatarFallback": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/537/537.jpg",
+  "heroCover": "https://camp.honorofkings.com/camp/admin/default/yC5RU8ZV.jpg",
+  "tencentId": 537,
+  "dataSource": "Camp HOK bilingual (primary)",
+  "dataUpdated": "2026-06-22",
+  "skills": [
+    {
+      "slot": "passive",
+      "name": "Wish of the Living",
+      "description": "Devara's Basic Attacks grant Energy. Becomes enhanced and gains another basic skill chance upon reaching the limit.",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/53700.png",
+      "cooldown": "1s"
+    },
+    {
+      "slot": "skill1",
+      "name": "Thunderblaze",
+      "description": "Dashes forward, dealing damage to enemies in his path while gaining a shield.",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/53710.png",
+      "cooldown": "8s"
+    },
+    {
+      "slot": "skill2",
+      "name": "Divine Judgment",
+      "description": "Knocks back and damages enemies in front of him.",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/53720.png",
+      "cooldown": "8s"
+    },
+    {
+      "slot": "ultimate",
+      "name": "Millennium Echo",
+      "description": "Gains crowd control immunity and a Movement Speed boost. Upon landing, enhances Basic Attack. Basic Attacks grant Energy.",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/53730.png",
+      "cooldown": "60s"
+    }
+  ],
+  "skillsZh": [
+    {
+      "slot": "passive",
+      "name": "眾生之願",
+      "description": "諦梵羅普攻可獲得能量，達到上限後獲得強化，並額外獲得一次基礎技能機會。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/53700.png",
+      "cooldown": "1s"
+    },
+    {
+      "slot": "skill1",
+      "name": "薪火雷馳",
+      "description": "諦梵羅向前位移，對路徑上的敵人造成傷害並獲得護盾。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/53710.png",
+      "cooldown": "8s"
+    },
+    {
+      "slot": "skill2",
+      "name": "諦聽神罰",
+      "description": "諦梵羅擊退前方敵人並造成傷害。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/53720.png",
+      "cooldown": "8s"
+    },
+    {
+      "slot": "ultimate",
+      "name": "千年迴響",
+      "description": "諦梵羅獲得霸體和加速，落地後強化普攻，每次普攻增加獲得的能量。",
+      "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/53730.png",
+      "cooldown": "60s"
+    }
+  ],
+  "build": [
+    {
+      "slot": 1,
+      "itemId": "1421",
+      "name": "Boots of Fortitude",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1421.png",
+      "description": "PDEF +100, MDEF +50, MSPD +50\nReduces physical damage"
+    },
+    {
+      "slot": 2,
+      "itemId": "1126",
+      "name": "Doomsday",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1126.png",
+      "description": "PATK +40, ASPD +20%, HP +500, Lifesteal +20%\nBoosts BA damage"
+    },
+    {
+      "slot": 3,
+      "itemId": "1155",
+      "name": "Daybreaker's Virtue",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1155.png",
+      "description": "PATK +75, ASPD +30%, Crit Rate +15%\nGreat for marksmen"
+    },
+    {
+      "slot": 4,
+      "itemId": "1327",
+      "name": "Spikemail",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1327.png",
+      "description": "PATK +45, PDEF +300, HP +700\nReflects damage"
+    },
+    {
+      "slot": 5,
+      "itemId": "1337",
+      "name": "Sage's Sanctuary",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+      "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
+    },
+    {
+      "slot": 6,
+      "itemId": "1127",
+      "name": "Destiny",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+      "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
+    }
+  ],
+  "buildZh": [
+    {
+      "slot": 1,
+      "itemId": "1421",
+      "name": "影忍之足",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1421.png",
+      "description": "+100點物防+50點法防+50點移速\n減少物理傷害"
+    },
+    {
+      "slot": 2,
+      "itemId": "1126",
+      "name": "末世",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1126.png",
+      "description": "+40點攻擊+20%攻速+500點生命值+20%吸血\n普攻額外傷害"
+    },
+    {
+      "slot": 3,
+      "itemId": "1155",
+      "name": "仁者破曉",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1155.png",
+      "description": "+75點攻擊+30%攻速+15%暴擊\n射手神裝"
+    },
+    {
+      "slot": 4,
+      "itemId": "1327",
+      "name": "反傷刺甲",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1327.png",
+      "description": "+45點攻擊+300點物防\n+700點生命值反彈傷害"
+    },
+    {
+      "slot": 5,
+      "itemId": "1337",
+      "name": "賢者的庇護",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+      "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+    },
+    {
+      "slot": 6,
+      "itemId": "1127",
+      "name": "名刀・司命",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+      "description": "+75點攻擊+15%攻速+500點生命值\n保命"
+    }
+  ],
+  "builds": [
+    {
+      "id": "camp-0",
+      "label": "META MTS",
+      "lane": "Top",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1421",
+          "name": "Boots of Fortitude",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1421.png",
+          "description": "PDEF +100, MDEF +50, MSPD +50\nReduces physical damage"
+        },
+        {
+          "slot": 2,
+          "itemId": "1126",
+          "name": "Doomsday",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1126.png",
+          "description": "PATK +40, ASPD +20%, HP +500, Lifesteal +20%\nBoosts BA damage"
+        },
+        {
+          "slot": 3,
+          "itemId": "1155",
+          "name": "Daybreaker's Virtue",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1155.png",
+          "description": "PATK +75, ASPD +30%, Crit Rate +15%\nGreat for marksmen"
+        },
+        {
+          "slot": 4,
+          "itemId": "1327",
+          "name": "Spikemail",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1327.png",
+          "description": "PATK +45, PDEF +300, HP +700\nReflects damage"
+        },
+        {
+          "slot": 5,
+          "itemId": "1337",
+          "name": "Sage's Sanctuary",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
+        },
+        {
+          "slot": 6,
+          "itemId": "1127",
+          "name": "Destiny",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
+        }
+      ]
+    },
+    {
+      "id": "camp-1",
+      "label": "SEMI",
+      "lane": "Top",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1126",
+          "name": "Doomsday",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1126.png",
+          "description": "PATK +40, ASPD +20%, HP +500, Lifesteal +20%\nBoosts BA damage"
+        },
+        {
+          "slot": 2,
+          "itemId": "1534",
+          "name": "Dragon's Rage",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1536.png",
+          "description": "HP +1,350, PDEF +180, MDEF +90\nGrants extra damage and recovery"
+        },
+        {
+          "slot": 3,
+          "itemId": "1328",
+          "name": "Blood Rage",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1328.png",
+          "description": "PATK +75, HP +900\nTrades HP for shield"
+        },
+        {
+          "slot": 4,
+          "itemId": "1155",
+          "name": "Daybreaker's Virtue",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1155.png",
+          "description": "PATK +75, ASPD +30%, Crit Rate +15%\nGreat for marksmen"
+        },
+        {
+          "slot": 5,
+          "itemId": "1337",
+          "name": "Sage's Sanctuary",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
+        },
+        {
+          "slot": 6,
+          "itemId": "1127",
+          "name": "Destiny",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
+        }
+      ]
+    },
+    {
+      "id": "camp-2",
+      "label": "Rota superior 1",
+      "lane": "Top",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1135",
+          "name": "Sparkforged Dagger",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1135.png",
+          "description": "PATK +40, ASPD +35%, MSPD +7.5%\nChain lightning BA"
+        },
+        {
+          "slot": 2,
+          "itemId": "1159",
+          "name": "Tempest",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1159.png",
+          "description": "PATK +50, ASPD +30%, Max HP +600\nBoosts BA damage"
+        },
+        {
+          "slot": 3,
+          "itemId": "1126",
+          "name": "Doomsday",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1126.png",
+          "description": "PATK +40, ASPD +20%, HP +500, Lifesteal +20%\nBoosts BA damage"
+        },
+        {
+          "slot": 4,
+          "itemId": "1534",
+          "name": "Dragon's Rage",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1536.png",
+          "description": "HP +1,350, PDEF +180, MDEF +90\nGrants extra damage and recovery"
+        },
+        {
+          "slot": 5,
+          "itemId": "1155",
+          "name": "Daybreaker's Virtue",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1155.png",
+          "description": "PATK +75, ASPD +30%, Crit Rate +15%\nGreat for marksmen"
+        },
+        {
+          "slot": 6,
+          "itemId": "1337",
+          "name": "Sage's Sanctuary",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
+        }
+      ]
+    },
+    {
+      "id": "camp-3",
+      "label": "Clash Lane 1",
+      "lane": "Top",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1126",
+          "name": "Doomsday",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1126.png",
+          "description": "PATK +40, ASPD +20%, HP +500, Lifesteal +20%\nBoosts BA damage"
+        },
+        {
+          "slot": 2,
+          "itemId": "1236",
+          "name": "Staves of Sorcery",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1236.png",
+          "description": "MATK +180, HP +600, MSPD +7.5%\nEnhances BAs"
+        },
+        {
+          "slot": 3,
+          "itemId": "1128",
+          "name": "Deepfrost Siege",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1128.png",
+          "description": "PATK +70, ASPD +25%, HP +750\nBAs slow"
+        },
+        {
+          "slot": 4,
+          "itemId": "1337",
+          "name": "Sage's Sanctuary",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
+        },
+        {
+          "slot": 5,
+          "itemId": "1242",
+          "name": "Enigma - Moon Goddess",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1242.png",
+          "description": "MATK +160, CDR +7.5%, Magical Lifesteal +12%\nTemp. invincibility"
+        },
+        {
+          "slot": 6,
+          "itemId": "1127",
+          "name": "Destiny",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
+        }
+      ]
+    }
+  ],
+  "buildsZh": [
+    {
+      "id": "camp-0",
+      "label": "META MTS",
+      "lane": "Top",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1421",
+          "name": "影忍之足",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1421.png",
+          "description": "+100點物防+50點法防+50點移速\n減少物理傷害"
+        },
+        {
+          "slot": 2,
+          "itemId": "1126",
+          "name": "末世",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1126.png",
+          "description": "+40點攻擊+20%攻速+500點生命值+20%吸血\n普攻額外傷害"
+        },
+        {
+          "slot": 3,
+          "itemId": "1155",
+          "name": "仁者破曉",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1155.png",
+          "description": "+75點攻擊+30%攻速+15%暴擊\n射手神裝"
+        },
+        {
+          "slot": 4,
+          "itemId": "1327",
+          "name": "反傷刺甲",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1327.png",
+          "description": "+45點攻擊+300點物防\n+700點生命值反彈傷害"
+        },
+        {
+          "slot": 5,
+          "itemId": "1337",
+          "name": "賢者的庇護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+        },
+        {
+          "slot": 6,
+          "itemId": "1127",
+          "name": "名刀・司命",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "+75點攻擊+15%攻速+500點生命值\n保命"
+        }
+      ]
+    },
+    {
+      "id": "camp-1",
+      "label": "SEMI",
+      "lane": "Top",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1126",
+          "name": "末世",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1126.png",
+          "description": "+40點攻擊+20%攻速+500點生命值+20%吸血\n普攻額外傷害"
+        },
+        {
+          "slot": 2,
+          "itemId": "1534",
+          "name": "怒龍劍盾",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1536.png",
+          "description": "+1350點生命值+180點物防+90點法防\n額外傷害與回復"
+        },
+        {
+          "slot": 3,
+          "itemId": "1328",
+          "name": "血魔之怒",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1328.png",
+          "description": "+75點攻擊+900點生命值 \n犧牲生命值換取護盾值"
+        },
+        {
+          "slot": 4,
+          "itemId": "1155",
+          "name": "仁者破曉",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1155.png",
+          "description": "+75點攻擊+30%攻速+15%暴擊\n射手神裝"
+        },
+        {
+          "slot": 5,
+          "itemId": "1337",
+          "name": "賢者的庇護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+        },
+        {
+          "slot": 6,
+          "itemId": "1127",
+          "name": "名刀・司命",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "+75點攻擊+15%攻速+500點生命值\n保命"
+        }
+      ]
+    },
+    {
+      "id": "camp-2",
+      "label": "Rota superior 1",
+      "lane": "Top",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1135",
+          "name": "閃電匕首",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1135.png",
+          "description": "+40點攻擊+35%攻速+7.5%移速\n普攻附帶閃電"
+        },
+        {
+          "slot": 2,
+          "itemId": "1159",
+          "name": "逐風",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1159.png",
+          "description": "+50點攻擊+30%攻速+600點最大生命值\n普攻傷害提升"
+        },
+        {
+          "slot": 3,
+          "itemId": "1126",
+          "name": "末世",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1126.png",
+          "description": "+40點攻擊+20%攻速+500點生命值+20%吸血\n普攻額外傷害"
+        },
+        {
+          "slot": 4,
+          "itemId": "1534",
+          "name": "怒龍劍盾",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1536.png",
+          "description": "+1350點生命值+180點物防+90點法防\n額外傷害與回復"
+        },
+        {
+          "slot": 5,
+          "itemId": "1155",
+          "name": "仁者破曉",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1155.png",
+          "description": "+75點攻擊+30%攻速+15%暴擊\n射手神裝"
+        },
+        {
+          "slot": 6,
+          "itemId": "1337",
+          "name": "賢者的庇護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+        }
+      ]
+    },
+    {
+      "id": "camp-3",
+      "label": "Clash Lane 1",
+      "lane": "Top",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1126",
+          "name": "末世",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1126.png",
+          "description": "+40點攻擊+20%攻速+500點生命值+20%吸血\n普攻額外傷害"
+        },
+        {
+          "slot": 2,
+          "itemId": "1236",
+          "name": "巫術法杖",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1236.png",
+          "description": "+180點法攻+600點生命值+7.5%移速……\n強化普攻"
+        },
+        {
+          "slot": 3,
+          "itemId": "1128",
+          "name": "寒霜襲侵",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1128.png",
+          "description": "+70點攻擊+25%攻速+750點生命值\n普攻減移速"
+        },
+        {
+          "slot": 4,
+          "itemId": "1337",
+          "name": "賢者的庇護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+        },
+        {
+          "slot": 5,
+          "itemId": "1242",
+          "name": "難知・月神",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1242.png",
+          "description": "+160點法攻 +7.5%減冷卻時間\n+12%法術吸血暫時無敵"
+        },
+        {
+          "slot": 6,
+          "itemId": "1127",
+          "name": "名刀・司命",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "+75點攻擊+15%攻速+500點生命值\n保命"
+        }
+      ]
+    }
+  ],
+  "arcana": [
+    "Lvl 5: Nightmare",
+    "Lvl 5: Saint",
+    "Lvl 5: Omen"
+  ],
+  "arcanaZh": [
+    "5級：夢魘",
+    "5級：聖人",
+    "5級：凶兆"
+  ],
+  "spells": [
+    "Frenzy"
+  ],
+  "spellsZh": [
+    "狂暴"
+  ],
+  "counters": [
+    "Data unavailable",
+    "Data unavailable",
+    "Data unavailable"
+  ],
+  "counteredBy": [
+    "Data unavailable",
+    "Data unavailable",
+    "Data unavailable"
+  ],
+  "tips": [
+    "Devara (Mage): Tier S+ — 43.05% WR (Camp HOK).",
+    "Lane: Clash Lane.",
+    "Build: Boots of Fortitude, Doomsday, Daybreaker's Virtue."
+  ],
+  "tipsZh": [
+    "諦梵羅（對抗路）：梯度 S+，勝率 43.05%（Camp HOK）。",
+    "出裝：影忍之足、末世、仁者破曉."
+  ],
+  "patchHistory": [],
+  "patchHistoryZh": [],
+  "faqs": [
+    {
+      "id": "faq-good-season",
+      "question": "Is Devara good in current season?",
+      "answer": "Devara is Tier S+ Mage with 43.05% win rate, 2.02% pick rate, and 0.55% ban rate (Camp HOK international)."
+    },
+    {
+      "id": "faq-best-build",
+      "question": "What is the best Devara build?",
+      "answer": "Recommended: Boots of Fortitude, Doomsday, Daybreaker's Virtue, Spikemail, Sage's Sanctuary, Destiny."
+    },
+    {
+      "id": "faq-counter",
+      "question": "How to counter Devara?",
+      "answer": "Pick Data unavailable, Data unavailable, Data unavailable. Strong into Data unavailable, Data unavailable, Data unavailable."
+    }
+  ],
+  "faqsZh": [
+    {
+      "id": "faq-good-season",
+      "question": "諦梵羅 這版本適合上分嗎？",
+      "answer": "諦梵羅 為 S+ 梯度，勝率 43.05%、選取 2.02%、禁用 0.55%（Camp HOK 國際服）。"
+    },
+    {
+      "id": "faq-best-build",
+      "question": "諦梵羅 出裝怎麼搭配？",
+      "answer": "推薦：影忍之足、末世、仁者破曉、反傷刺甲、賢者的庇護、名刀・司命."
+    },
+    {
+      "id": "faq-counter",
+      "question": "怎麼克制 諦梵羅？",
+      "answer": "可選 Data unavailable、Data unavailable、Data unavailable。諦梵羅 克制 Data unavailable、Data unavailable、Data unavailable。"
+    }
+  ],
+  "metaAnalysis": [
+    "Devara win rate 43.05% (Camp HOK, 2026-06-22).",
+    "Pick rate 2.02%.",
+    "Ban rate 0.55%.",
+    "Counters: Data unavailable, Data unavailable, Data unavailable. Weak into: Data unavailable, Data unavailable, Data unavailable."
+  ],
+  "metaAnalysisZh": [
+    "諦梵羅 勝率 43.05%（Camp HOK，2026-06-22）",
+    "選取率 2.02%",
+    "禁用率 0.55%",
+    "克制：Data unavailable、Data unavailable、Data unavailable；被克制：Data unavailable、Data unavailable、Data unavailable"
+  ]
+}

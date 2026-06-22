@@ -10,16 +10,16 @@
   "laneZh": "打野",
   "difficulty": "Medium",
   "tier": "A",
-  "winRate": 52.14,
-  "pickRate": 0.6,
-  "banRate": 0.78,
-  "rank": 20,
+  "winRate": 51.67,
+  "pickRate": 0.57,
+  "banRate": 0.7,
+  "rank": 30,
   "avatar": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/IUMPYUy4.png",
   "avatarFallback": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/116/116.jpg",
   "heroCover": "https://camp.honorofkings.com/social/game/src/image_hero_cover_1275*718/nzETFQAc.jpg",
   "tencentId": 116,
   "dataSource": "Camp HOK bilingual (primary)",
-  "dataUpdated": "2026-06-12",
+  "dataUpdated": "2026-06-22",
   "skills": [
     {
       "slot": "passive",
@@ -83,17 +83,17 @@
   "build": [
     {
       "slot": 1,
-      "itemId": "1533",
-      "name": "Rapacious Bite",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1533.png",
-      "description": "PATK +90, MSPD +5%, CDR +7.5%\nMonster kills boost ATK"
-    },
-    {
-      "slot": 2,
       "itemId": "1133",
       "name": "Eternity Blade",
       "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1133.png",
       "description": "PATK +120, Crit Rate +20%\nHigh crit damage"
+    },
+    {
+      "slot": 2,
+      "itemId": "1533",
+      "name": "Rapacious Bite",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1533.png",
+      "description": "PATK +90, MSPD +5%, CDR +7.5%\nMonster kills boost ATK"
     },
     {
       "slot": 3,
@@ -127,17 +127,17 @@
   "buildZh": [
     {
       "slot": 1,
-      "itemId": "1533",
-      "name": "貪婪之噬",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1533.png",
-      "description": "+90攻擊+5%移速+7.5%冷縮\n打野怪加攻擊"
-    },
-    {
-      "slot": 2,
       "itemId": "1133",
       "name": "無盡戰刃",
       "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1133.png",
       "description": "+120點攻擊+20%暴擊\n高額暴擊傷害"
+    },
+    {
+      "slot": 2,
+      "itemId": "1533",
+      "name": "貪婪之噬",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1533.png",
+      "description": "+90攻擊+5%移速+7.5%冷縮\n打野怪加攻擊"
     },
     {
       "slot": 3,
@@ -171,22 +171,22 @@
   "builds": [
     {
       "id": "camp-0",
-      "label": "Jungling 1",
+      "label": "TT:LUNJAYYY",
       "lane": "Jungle",
       "items": [
         {
           "slot": 1,
-          "itemId": "1533",
-          "name": "Rapacious Bite",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1533.png",
-          "description": "PATK +90, MSPD +5%, CDR +7.5%\nMonster kills boost ATK"
-        },
-        {
-          "slot": 2,
           "itemId": "1133",
           "name": "Eternity Blade",
           "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1133.png",
           "description": "PATK +120, Crit Rate +20%\nHigh crit damage"
+        },
+        {
+          "slot": 2,
+          "itemId": "1533",
+          "name": "Rapacious Bite",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1533.png",
+          "description": "PATK +90, MSPD +5%, CDR +7.5%\nMonster kills boost ATK"
         },
         {
           "slot": 3,
@@ -220,56 +220,7 @@
     },
     {
       "id": "camp-1",
-      "label": "KENZO BUILD",
-      "lane": "Jungle",
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1134",
-          "name": "Master Sword",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1134.png",
-          "description": "PATK +55, Crit Rate +20%, HP +600\nEnhances BAs"
-        },
-        {
-          "slot": 2,
-          "itemId": "1131",
-          "name": "Starbreaker",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1131.png",
-          "description": "PATK +90, HP +700, MSPD +7.5%\nAnti-tank"
-        },
-        {
-          "slot": 3,
-          "itemId": "1337",
-          "name": "Sage's Sanctuary",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
-          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
-        },
-        {
-          "slot": 4,
-          "itemId": "1239",
-          "name": "Splendor",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1239.png",
-          "description": "MATK +160, CDR +7.5%, Magical Lifesteal +12%\nTemp. invincibility"
-        },
-        {
-          "slot": 5,
-          "itemId": "1127",
-          "name": "Destiny",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
-          "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
-        },
-        {
-          "slot": 6,
-          "itemId": "1132",
-          "name": "Bloodweeper",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1132.png",
-          "description": "PATK +85, Lifesteal +25%, HP +500\nPhysical Lifesteal"
-        }
-      ]
-    },
-    {
-      "id": "camp-2",
-      "label": "传统暴击",
+      "label": "传统暴击流",
       "lane": "Jungle",
       "items": [
         {
@@ -317,51 +268,51 @@
       ]
     },
     {
-      "id": "camp-3",
-      "label": "Jungling",
+      "id": "camp-2",
+      "label": "YT: KENZO HOK",
       "lane": "Jungle",
       "items": [
         {
           "slot": 1,
-          "itemId": "1533",
-          "name": "Rapacious Bite",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1533.png",
-          "description": "PATK +90, MSPD +5%, CDR +7.5%\nMonster kills boost ATK"
-        },
-        {
-          "slot": 2,
-          "itemId": "1133",
-          "name": "Eternity Blade",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1133.png",
-          "description": "PATK +120, Crit Rate +20%\nHigh crit damage"
-        },
-        {
-          "slot": 3,
           "itemId": "1134",
           "name": "Master Sword",
           "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1134.png",
           "description": "PATK +55, Crit Rate +20%, HP +600\nEnhances BAs"
         },
         {
-          "slot": 4,
+          "slot": 2,
           "itemId": "1131",
           "name": "Starbreaker",
           "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1131.png",
           "description": "PATK +90, HP +700, MSPD +7.5%\nAnti-tank"
         },
         {
-          "slot": 5,
+          "slot": 3,
           "itemId": "1337",
           "name": "Sage's Sanctuary",
           "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
           "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
         },
         {
+          "slot": 4,
+          "itemId": "1239",
+          "name": "Splendor",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1239.png",
+          "description": "MATK +160, CDR +7.5%, Magical Lifesteal +12%\nTemp. invincibility"
+        },
+        {
+          "slot": 5,
+          "itemId": "1127",
+          "name": "Destiny",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
+        },
+        {
           "slot": 6,
-          "itemId": "1157",
-          "name": "Immovable - Sky Dome",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1157.png",
-          "description": "PATK +80, PDEF +150, CDR +10%\nTemp. damage reduction"
+          "itemId": "1132",
+          "name": "Bloodweeper",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1132.png",
+          "description": "PATK +85, Lifesteal +25%, HP +500\nPhysical Lifesteal"
         }
       ]
     }
@@ -369,22 +320,22 @@
   "buildsZh": [
     {
       "id": "camp-0",
-      "label": "Jungling 1",
+      "label": "TT:LUNJAYYY",
       "lane": "Jungle",
       "items": [
         {
           "slot": 1,
-          "itemId": "1533",
-          "name": "貪婪之噬",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1533.png",
-          "description": "+90攻擊+5%移速+7.5%冷縮\n打野怪加攻擊"
-        },
-        {
-          "slot": 2,
           "itemId": "1133",
           "name": "無盡戰刃",
           "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1133.png",
           "description": "+120點攻擊+20%暴擊\n高額暴擊傷害"
+        },
+        {
+          "slot": 2,
+          "itemId": "1533",
+          "name": "貪婪之噬",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1533.png",
+          "description": "+90攻擊+5%移速+7.5%冷縮\n打野怪加攻擊"
         },
         {
           "slot": 3,
@@ -418,56 +369,7 @@
     },
     {
       "id": "camp-1",
-      "label": "KENZO BUILD",
-      "lane": "Jungle",
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1134",
-          "name": "宗師之力",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1134.png",
-          "description": "+55點攻擊+20%暴擊+600點生命值……\n強化普攻"
-        },
-        {
-          "slot": 2,
-          "itemId": "1131",
-          "name": "碎星錘",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1131.png",
-          "description": "+90點攻擊+700點生命值+7.5%移速\n打坦克用"
-        },
-        {
-          "slot": 3,
-          "itemId": "1337",
-          "name": "賢者的庇護",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
-          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
-        },
-        {
-          "slot": 4,
-          "itemId": "1239",
-          "name": "輝月",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1239.png",
-          "description": "+160點法攻+7.5%減冷卻時間+12%法術吸血\n暫時無敵"
-        },
-        {
-          "slot": 5,
-          "itemId": "1127",
-          "name": "名刀・司命",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
-          "description": "+75點攻擊+15%攻速+500點生命值\n保命"
-        },
-        {
-          "slot": 6,
-          "itemId": "1132",
-          "name": "泣血之刃",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1132.png",
-          "description": "+85點攻擊+25%吸血+500點生命值\n物理吸血"
-        }
-      ]
-    },
-    {
-      "id": "camp-2",
-      "label": "传统暴击",
+      "label": "传统暴击流",
       "lane": "Jungle",
       "items": [
         {
@@ -515,51 +417,51 @@
       ]
     },
     {
-      "id": "camp-3",
-      "label": "Jungling",
+      "id": "camp-2",
+      "label": "YT: KENZO HOK",
       "lane": "Jungle",
       "items": [
         {
           "slot": 1,
-          "itemId": "1533",
-          "name": "貪婪之噬",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1533.png",
-          "description": "+90攻擊+5%移速+7.5%冷縮\n打野怪加攻擊"
-        },
-        {
-          "slot": 2,
-          "itemId": "1133",
-          "name": "無盡戰刃",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1133.png",
-          "description": "+120點攻擊+20%暴擊\n高額暴擊傷害"
-        },
-        {
-          "slot": 3,
           "itemId": "1134",
           "name": "宗師之力",
           "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1134.png",
           "description": "+55點攻擊+20%暴擊+600點生命值……\n強化普攻"
         },
         {
-          "slot": 4,
+          "slot": 2,
           "itemId": "1131",
           "name": "碎星錘",
           "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1131.png",
           "description": "+90點攻擊+700點生命值+7.5%移速\n打坦克用"
         },
         {
-          "slot": 5,
+          "slot": 3,
           "itemId": "1337",
           "name": "賢者的庇護",
           "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
           "description": "+900點生命值+150點物防+150點法防……\n原地復活"
         },
         {
+          "slot": 4,
+          "itemId": "1239",
+          "name": "輝月",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1239.png",
+          "description": "+160法攻 +7.5%減冷卻時間+12%法術吸血\n暫時無敵"
+        },
+        {
+          "slot": 5,
+          "itemId": "1127",
+          "name": "名刀・司命",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "+75點攻擊+15%攻速+500點生命值\n保命"
+        },
+        {
           "slot": 6,
-          "itemId": "1157",
-          "name": "不動・天穹",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1157.png",
-          "description": "+80點攻擊+150點物防+10%冷卻時間縮減\n暫時增加免傷"
+          "itemId": "1132",
+          "name": "泣血之刃",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1132.png",
+          "description": "+85點攻擊+25%吸血+500點生命值\n物理吸血"
         }
       ]
     }
@@ -590,13 +492,13 @@
     "Cai Yan"
   ],
   "tips": [
-    "Arke (Assassin): Tier A — 52.14% WR (Camp HOK).",
+    "Arke (Assassin): Tier A — 51.67% WR (Camp HOK).",
     "Lane: Jungling.",
-    "Build: Rapacious Bite, Eternity Blade, Master Sword."
+    "Build: Eternity Blade, Rapacious Bite, Master Sword."
   ],
   "tipsZh": [
-    "阿軻（打野）：梯度 A，勝率 52.14%（Camp HOK）。",
-    "出裝：貪婪之噬、無盡戰刃、宗師之力."
+    "阿軻（打野）：梯度 A，勝率 51.67%（Camp HOK）。",
+    "出裝：無盡戰刃、貪婪之噬、宗師之力."
   ],
   "patchHistory": [
     {
@@ -628,12 +530,12 @@
     {
       "id": "faq-good-season",
       "question": "Is Arke good in current season?",
-      "answer": "Arke is Tier A Assassin with 52.14% win rate, 0.6% pick rate, and 0.78% ban rate (Camp HOK international)."
+      "answer": "Arke is Tier A Assassin with 51.67% win rate, 0.57% pick rate, and 0.7% ban rate (Camp HOK international)."
     },
     {
       "id": "faq-best-build",
       "question": "What is the best Arke build?",
-      "answer": "Recommended: Rapacious Bite, Eternity Blade, Master Sword, Starbreaker, Sage's Sanctuary, Immovable - Sky Dome."
+      "answer": "Recommended: Eternity Blade, Rapacious Bite, Master Sword, Starbreaker, Sage's Sanctuary, Immovable - Sky Dome."
     },
     {
       "id": "faq-counter",
@@ -645,12 +547,12 @@
     {
       "id": "faq-good-season",
       "question": "阿軻 這版本適合上分嗎？",
-      "answer": "阿軻 為 A 梯度，勝率 52.14%、選取 0.6%、禁用 0.78%（Camp HOK 國際服）。"
+      "answer": "阿軻 為 A 梯度，勝率 51.67%、選取 0.57%、禁用 0.7%（Camp HOK 國際服）。"
     },
     {
       "id": "faq-best-build",
       "question": "阿軻 出裝怎麼搭配？",
-      "answer": "推薦：貪婪之噬、無盡戰刃、宗師之力、碎星錘、賢者的庇護、不動・天穹."
+      "answer": "推薦：無盡戰刃、貪婪之噬、宗師之力、碎星錘、賢者的庇護、不動・天穹."
     },
     {
       "id": "faq-counter",
@@ -659,15 +561,15 @@
     }
   ],
   "metaAnalysis": [
-    "Arke win rate 52.14% (Camp HOK, 2026-06-12).",
-    "Pick rate 0.6%.",
-    "Ban rate 0.78%.",
+    "Arke win rate 51.67% (Camp HOK, 2026-06-22).",
+    "Pick rate 0.57%.",
+    "Ban rate 0.7%.",
     "Counters: Alessio, Da Qiao. Weak into: Bai Qi, Arthur, Cai Yan."
   ],
   "metaAnalysisZh": [
-    "阿軻 勝率 52.14%（Camp HOK，2026-06-12）",
-    "選取率 0.6%",
-    "禁用率 0.78%",
+    "阿軻 勝率 51.67%（Camp HOK，2026-06-22）",
+    "選取率 0.57%",
+    "禁用率 0.7%",
     "克制：Alessio、Da Qiao；被克制：Bai Qi、Arthur、Cai Yan"
   ],
   "guide": {

@@ -1,5 +1,5 @@
 import { notFound } from 'next/navigation';
-import { getHeroBySlug, getHeroSlugs } from '@/lib/data';
+import { getHeroBySlug, getHeroSlugs, site } from '@/lib/data';
 import { getMetaSeasonLabel } from '@/lib/i18n';
 import { getHeroDisplayName } from '@/lib/locale-names';
 import { buildMetadata, defaultTitle } from '@/lib/seo';
@@ -20,6 +20,8 @@ export function generateMetadata({ params }: { params: { slug: string } }) {
     path: `/hero/${params.slug}/counters`,
     locale: 'zh-TW',
     ogImage: hero.avatar,
+    type: 'article',
+    modifiedTime: hero.dataUpdated ?? site.dateModified,
   });
 }
 

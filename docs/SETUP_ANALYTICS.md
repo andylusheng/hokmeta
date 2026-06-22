@@ -49,7 +49,24 @@ Paste high-priority hero URLs into **URL Inspection → Request indexing** (batc
 
 3. Rebuild and deploy — `GoogleAnalytics` loads automatically from `src/components/GoogleAnalytics.tsx`
 
-## 4. KPI pages to watch
+## 4. Google AdSense
+
+1. Create or open the AdSense site entry for `https://hokmeta.com`
+2. Copy the publisher ID (`pub-XXXXXXXXXXXXXXXX`) into:
+
+```json
+"adsensePublisherId": "pub-XXXXXXXXXXXXXXXX"
+```
+
+3. Replace the placeholder in `public/ads.txt` with the same publisher ID:
+
+```txt
+google.com, pub-XXXXXXXXXXXXXXXX, DIRECT, f08c47fec0942fa0
+```
+
+4. Rebuild and deploy. `GoogleAdSense` loads Auto Ads only when `adsensePublisherId` is set.
+
+## 5. KPI pages to watch
 
 | Page | Why |
 |------|-----|
@@ -59,7 +76,7 @@ Paste high-priority hero URLs into **URL Inspection → Request indexing** (batc
 | `/hero/{slug}/` | Long-tail builds |
 | `/learn/*` | Guide traffic |
 
-## 5. After each data sync
+## 6. After each data sync
 
 ```bash
 npm run repair-builds

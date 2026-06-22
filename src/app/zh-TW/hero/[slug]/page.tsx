@@ -3,6 +3,7 @@ import {
   getHeroBySlug,
   getHeroSlugs,
   getKeywordsForHero,
+  site,
 } from '@/lib/data';
 import { buildMetadata, defaultTitle } from '@/lib/seo';
 import { heroPageTitle, heroPageDescription } from '@/lib/meta-season';
@@ -33,6 +34,8 @@ export function generateMetadata({
     locale: 'zh-TW',
     ogImage: hero.avatar,
     keywords: kw.length ? kw : undefined,
+    type: 'article',
+    modifiedTime: hero.dataUpdated ?? site.dateModified,
   });
 }
 

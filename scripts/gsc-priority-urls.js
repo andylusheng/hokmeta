@@ -3,6 +3,7 @@
  * Usage: node scripts/gsc-priority-urls.js
  */
 const heroes = require('../data/heroes.json');
+const items = require('../data/items.json');
 const site = require('../config/site.json');
 
 const base = site.domain.replace(/\/$/, '');
@@ -37,4 +38,14 @@ for (const p of hub) console.log(`${base}${p}`);
 console.log(`\n## Top ${priority.length} hero pages\n`);
 for (const h of priority) {
   console.log(`${base}/hero/${h.slug}/  (${h.tier} ${h.role})`);
+}
+
+console.log(`\n## Top ${priority.length} counter pages\n`);
+for (const h of priority) {
+  console.log(`${base}/hero/${h.slug}/counters/  (${h.tier} ${h.role})`);
+}
+
+console.log(`\n## Item detail pages (${items.length})\n`);
+for (const item of items) {
+  console.log(`${base}/items/${item.id}/`);
 }

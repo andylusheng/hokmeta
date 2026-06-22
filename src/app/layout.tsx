@@ -7,6 +7,7 @@ import { buildMetadata } from '@/lib/seo';
 import { site } from '@/lib/data';
 import { JsonLd, webSiteSchema } from '@/lib/schema';
 import { GoogleAnalytics } from '@/components/GoogleAnalytics';
+import { GoogleAdSense } from '@/components/GoogleAdSense';
 import { LocaleDocument } from '@/components/LocaleDocument';
 import { SkipToContent } from '@/components/SkipToContent';
 
@@ -48,6 +49,7 @@ export default function RootLayout({
       <body className="font-sans">
         <LocaleDocument />
         <GoogleAnalytics />
+        <GoogleAdSense />
         <SkipToContent />
         <JsonLd data={orgSchema} />
         <JsonLd data={webSiteSchema()} />
