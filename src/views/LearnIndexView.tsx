@@ -4,7 +4,6 @@ import { useMemo, useState } from 'react';
 import Link from 'next/link';
 import { getLearnArticles } from '@/lib/learn';
 import { heroes } from '@/lib/data';
-import { absoluteUrl } from '@/lib/seo';
 import { createT, localePath, type Locale } from '@/lib/i18n';
 import { getHeroDisplayName } from '@/lib/locale-names';
 import { LearnCard } from '@/components/LearnCard';
@@ -22,7 +21,7 @@ const CATEGORY_ORDER = [
   'Meta & Data',
 ] as const;
 
-type Category = (typeof CATEGORY_ORDER)[number];
+const ROLE_ORDER = ['Tank', 'Warrior', 'Assassin', 'Mage', 'Marksman', 'Support'] as const;
 
 export function LearnIndexView({ locale = 'en' }: { locale?: Locale }) {
   const t = createT(locale);
@@ -94,8 +93,6 @@ export function LearnIndexView({ locale = 'en' }: { locale?: Locale }) {
     return Array.from(map.values());
   }, [heroArticles]);
 
-  // Group hero groups by role
-  const ROLE_ORDER = ['Tank', 'Warrior', 'Assassin', 'Mage', 'Marksman', 'Support'] as const;
   const roleLabel = (role: string): string => t(`roles.${role}`) || role;
 
   const heroGroupsByRole = useMemo(() => {
@@ -140,15 +137,6 @@ export function LearnIndexView({ locale = 'en' }: { locale?: Locale }) {
       }))
       .filter(({ groups }) => groups.length > 0);
   }, [heroGroupsByRole, heroSearch, locale]);
-
-  const filteredHeroGroups = useMemo(() => {
-    const q = heroSearch.trim().toLowerCase();
-    if (!q) return heroGroups;
-    return heroGroups.filter((g) => {
-      const name = getHeroDisplayName(g.hero, locale).toLowerCase();
-      return name.includes(q);
-    });
-  }, [heroGroups, heroSearch, locale]);
 
   // Count base articles per category
   const catCounts = useMemo(() => {

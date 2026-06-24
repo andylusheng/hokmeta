@@ -19,7 +19,7 @@
   "heroCover": "https://camp.honorofkings.com/camp/admin/hero/cover_1275-718/f1ljlJwt.jpg",
   "tencentId": 635,
   "dataSource": "Camp HOK bilingual (primary)",
-  "dataUpdated": "2026-06-22",
+  "dataUpdated": "2026-06-24",
   "skills": [
     {
       "slot": "passive",
@@ -80,13 +80,102 @@
       "cooldown": "18s"
     }
   ],
-  "build": [],
-  "buildZh": [],
-  "arcana": [],
+  "build": [
+    {
+      "slot": 1,
+      "itemId": "1234",
+      "name": "Frozen Breath",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1234.png",
+      "description": "MATK +180, CDR +7.5%, HP +500\nSkill hits slow"
+    },
+    {
+      "slot": 2,
+      "itemId": "12211",
+      "name": "Venomous Staff",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/12211.png",
+      "description": "MATK +240, CDR +7.5%, MSPD +7.5%\nLowers Health Regen"
+    },
+    {
+      "slot": 3,
+      "itemId": "1235",
+      "name": "Mask of Agony",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1235.png",
+      "description": "MATK +100, CDR +7.5%, HP +900\nBoosts skill damage"
+    },
+    {
+      "slot": 4,
+      "itemId": "1232",
+      "name": "Savant's Wrath",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1232.png",
+      "description": "MATK +210\nGreatly boosts MATK"
+    },
+    {
+      "slot": 5,
+      "itemId": "1240",
+      "name": "Insatiable Tome",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1240.png",
+      "description": "MATK +160, Magical Lifesteal +24%, HP +750\nLifesteal increases CDR"
+    },
+    {
+      "slot": 6,
+      "itemId": "1337",
+      "name": "Sage's Sanctuary",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+      "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
+    }
+  ],
+  "buildZh": [
+    {
+      "slot": 1,
+      "itemId": "1234",
+      "name": "凝冰之息",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1234.png",
+      "description": "+180點法攻+7.5%減冷卻時間+500點生命值\n技能命中減速"
+    },
+    {
+      "slot": 2,
+      "itemId": "12211",
+      "name": "夢魘之牙",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/12211.png",
+      "description": "+240點法攻+7.5%減冷卻時間+7.5%移速\n減少敵人回血"
+    },
+    {
+      "slot": 3,
+      "itemId": "1235",
+      "name": "痛苦面具",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1235.png",
+      "description": "+100點法攻+7.5%減冷卻時間+900點生命值 \n技能額外傷害"
+    },
+    {
+      "slot": 4,
+      "itemId": "1232",
+      "name": "博學者之怒",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1232.png",
+      "description": "+210點法術攻擊\n大幅提升法強"
+    },
+    {
+      "slot": 5,
+      "itemId": "1240",
+      "name": "噬神之書",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1240.png",
+      "description": "+160點法攻+24%法術吸血+750點生命值 吸血拉長冷卻時間"
+    },
+    {
+      "slot": 6,
+      "itemId": "1337",
+      "name": "賢者的庇護",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+      "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+    }
+  ],
+  "arcana": [
+    "Lvl 5: Nightmare",
+    "Lvl 5: Hunt",
+    "Lvl 5: Mind's Eye"
+  ],
   "arcanaZh": [],
   "spells": [
-    "Flash",
-    "Execute"
+    "Flash"
   ],
   "spellsZh": [],
   "counters": [
@@ -145,15 +234,215 @@
     }
   ],
   "metaAnalysis": [
-    "Lorion win rate 44.99% (Camp HOK, 2026-06-22).",
+    "Lorion win rate 44.99% (Camp HOK, 2026-06-24).",
     "Pick rate 1.1%.",
     "Ban rate 1.3%.",
     "Counters: Data unavailable, Data unavailable, Data unavailable. Weak into: Data unavailable, Data unavailable, Data unavailable."
   ],
   "metaAnalysisZh": [
-    "洛里昂 勝率 44.99%（Camp HOK，2026-06-22）",
+    "洛里昂 勝率 44.99%（Camp HOK，2026-06-24）",
     "選取率 1.1%",
     "禁用率 1.3%",
     "克制：Data unavailable、Data unavailable、Data unavailable；被克制：Data unavailable、Data unavailable、Data unavailable"
+  ],
+  "builds": [
+    {
+      "id": "recommended",
+      "label": "Control mage",
+      "lane": "Mid",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1234",
+          "name": "Frozen Breath",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1234.png",
+          "description": "MATK +180, CDR +7.5%, HP +500\nSkill hits slow"
+        },
+        {
+          "slot": 2,
+          "itemId": "12211",
+          "name": "Venomous Staff",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/12211.png",
+          "description": "MATK +240, CDR +7.5%, MSPD +7.5%\nLowers Health Regen"
+        },
+        {
+          "slot": 3,
+          "itemId": "1235",
+          "name": "Mask of Agony",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1235.png",
+          "description": "MATK +100, CDR +7.5%, HP +900\nBoosts skill damage"
+        },
+        {
+          "slot": 4,
+          "itemId": "1232",
+          "name": "Savant's Wrath",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1232.png",
+          "description": "MATK +210\nGreatly boosts MATK"
+        },
+        {
+          "slot": 5,
+          "itemId": "1240",
+          "name": "Insatiable Tome",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1240.png",
+          "description": "MATK +160, Magical Lifesteal +24%, HP +750\nLifesteal increases CDR"
+        },
+        {
+          "slot": 6,
+          "itemId": "1337",
+          "name": "Sage's Sanctuary",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
+        }
+      ]
+    },
+    {
+      "id": "alternate",
+      "label": "Scaling mage",
+      "lane": "Mid",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1235",
+          "name": "Mask of Agony",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1235.png",
+          "description": "MATK +100, CDR +7.5%, HP +900\nBoosts skill damage"
+        },
+        {
+          "slot": 2,
+          "itemId": "1727",
+          "name": "Twilight Stream",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1727.png",
+          "description": "MATK +160, CDR +10%, Max HP +500\nBoosts Magical Pierce"
+        },
+        {
+          "slot": 3,
+          "itemId": "1240",
+          "name": "Insatiable Tome",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1240.png",
+          "description": "MATK +160, Magical Lifesteal +24%, HP +750\nLifesteal increases CDR"
+        },
+        {
+          "slot": 4,
+          "itemId": "1232",
+          "name": "Savant's Wrath",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1232.png",
+          "description": "MATK +210\nGreatly boosts MATK"
+        },
+        {
+          "slot": 5,
+          "itemId": "1337",
+          "name": "Sage's Sanctuary",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
+        },
+        {
+          "slot": 6,
+          "itemId": "1242",
+          "name": "Enigma - Moon Goddess",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1242.png",
+          "description": "MATK +160, CDR +7.5%, Magical Lifesteal +12%\nTemp. invincibility"
+        }
+      ]
+    }
+  ],
+  "buildsZh": [
+    {
+      "id": "recommended",
+      "label": "Control mage",
+      "lane": "Mid",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1234",
+          "name": "凝冰之息",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1234.png",
+          "description": "+180點法攻+7.5%減冷卻時間+500點生命值\n技能命中減速"
+        },
+        {
+          "slot": 2,
+          "itemId": "12211",
+          "name": "夢魘之牙",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/12211.png",
+          "description": "+240點法攻+7.5%減冷卻時間+7.5%移速\n減少敵人回血"
+        },
+        {
+          "slot": 3,
+          "itemId": "1235",
+          "name": "痛苦面具",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1235.png",
+          "description": "+100點法攻+7.5%減冷卻時間+900點生命值 \n技能額外傷害"
+        },
+        {
+          "slot": 4,
+          "itemId": "1232",
+          "name": "博學者之怒",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1232.png",
+          "description": "+210點法術攻擊\n大幅提升法強"
+        },
+        {
+          "slot": 5,
+          "itemId": "1240",
+          "name": "噬神之書",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1240.png",
+          "description": "+160點法攻+24%法術吸血+750點生命值 吸血拉長冷卻時間"
+        },
+        {
+          "slot": 6,
+          "itemId": "1337",
+          "name": "賢者的庇護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+        }
+      ]
+    },
+    {
+      "id": "alternate",
+      "label": "Scaling mage",
+      "lane": "Mid",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1235",
+          "name": "痛苦面具",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1235.png",
+          "description": "+100點法攻+7.5%減冷卻時間+900點生命值 \n技能額外傷害"
+        },
+        {
+          "slot": 2,
+          "itemId": "1727",
+          "name": "日暮之流",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1727.png",
+          "description": "+160點法攻+10%減冷卻時間+500點最大生命值\n提升法術穿透"
+        },
+        {
+          "slot": 3,
+          "itemId": "1240",
+          "name": "噬神之書",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1240.png",
+          "description": "+160點法攻+24%法術吸血+750點生命值 吸血拉長冷卻時間"
+        },
+        {
+          "slot": 4,
+          "itemId": "1232",
+          "name": "博學者之怒",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1232.png",
+          "description": "+210點法術攻擊\n大幅提升法強"
+        },
+        {
+          "slot": 5,
+          "itemId": "1337",
+          "name": "賢者的庇護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+        },
+        {
+          "slot": 6,
+          "itemId": "1242",
+          "name": "難知・月神",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1242.png",
+          "description": "+160點法攻 +7.5%減冷卻時間\n+12%法術吸血暫時無敵"
+        }
+      ]
+    }
   ]
 }
