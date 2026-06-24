@@ -19,6 +19,7 @@ import { getCounterRelatedArticle } from '@/lib/learn-hero-links';
 import { getHeroDisplayName } from '@/lib/locale-names';
 import { translateLane, translateRole } from '@/lib/locale-labels';
 import { Breadcrumb } from '@/components/Breadcrumb';
+import { CounterQuickPlan } from '@/components/CounterQuickPlan';
 import { JsonLd, breadcrumbSchema, faqPageSchema } from '@/lib/schema';
 import type { Hero } from '@/types/hero';
 
@@ -243,7 +244,7 @@ export function CounterPageView({ hero, locale = 'en' }: { hero: Hero; locale?: 
           height={64}
           className="h-16 w-16 rounded-lg object-cover"
         />
-        <div>
+        <div className="min-w-0">
           <h1 className="text-2xl font-bold text-white">
             {t('counterPage.title', { name: displayName })}
           </h1>
@@ -277,6 +278,12 @@ export function CounterPageView({ hero, locale = 'en' }: { hero: Hero; locale?: 
         </span>
       </div>
 
+      <CounterQuickPlan
+        hero={hero}
+        locale={locale}
+        counters={counters}
+        laneCounters={laneCounters}
+      />
 
       {/* ── P0.5: Playstyle & Damage Source ── */}
       {playstyle && (
@@ -306,7 +313,7 @@ export function CounterPageView({ hero, locale = 'en' }: { hero: Hero; locale?: 
       )}
 
       <div className="grid gap-8 lg:grid-cols-[1fr_260px]">
-        <div className="space-y-8">
+        <div className="min-w-0 space-y-8">
           {/* ── Counter list blocked by lane ── */}
           {counters.length > 0 && (
             <section>
