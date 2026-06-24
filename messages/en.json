@@ -173,7 +173,39 @@
     "climbLaneRank": "#{rank} in {lane}",
     "climbIntro": "{name} is a recommended climb pick this patch:",
     "climbDataNote": "Based on Camp HOK tier, win/pick/ban rates — not a guarantee in every draft.",
-    "climbViewAll": "See all lane climb picks"
+    "climbViewAll": "See all lane climb picks",
+    "decision": {
+      "label": "Ranked quick read",
+      "title": "{name} TL;DR",
+      "tldr": "Fast conclusion",
+      "metaLine": "{name} is a Tier {tier} {lane} pick with {wr} win rate.",
+      "coreItems": "Core 3 items",
+      "coreFallback": "See the full build table for the current item order.",
+      "pickWhen": "Pick when",
+      "avoidWhen": "Avoid when",
+      "counterRisk": "Main threats: {names}.",
+      "counterCta": "Open full counter page",
+      "counterCtaHint": "Matchup notes, strong targets, and heroes that punish {name}.",
+      "pick": {
+        "highTier": "You need a current high-priority {lane} pick and your draft can play around its main timing.",
+        "marksman": "Your team can protect the backline and give you time to scale into item spikes.",
+        "mage": "Your draft needs mid wave clear, objective poke, or reliable control before fights.",
+        "assassin": "Enemy carries lack reliable peel, and your side lanes can help secure early jungle tempo.",
+        "support": "Your carry needs peel or engage setup, and your team can follow your first crowd-control window.",
+        "tank": "Your draft lacks frontline and needs someone to start fights around objectives.",
+        "warrior": "You need side-lane pressure, durable skirmishing, or a flank threat into the enemy backline.",
+        "default": "Your team needs a stable {role} pick and the enemy draft has not shown hard counters."
+      },
+      "avoid": {
+        "marksman": "The enemy has multiple hard-diving assassins or your team lacks reliable peel.",
+        "mage": "The enemy can dodge or interrupt your key control, or your team already lacks sustained damage.",
+        "assassin": "The enemy draft has strong peel, tanky frontliners, and few isolated carry targets.",
+        "support": "Your team cannot follow engage, or the enemy can punish your carry before you stabilize lane.",
+        "tank": "Your team lacks damage behind you, or the enemy can kite long front-to-back fights.",
+        "warrior": "The enemy can kite side lane pressure and collapse faster than your team can trade objectives.",
+        "default": "The enemy draft removes your main timing or forces you into unfavorable lane pressure."
+      }
+    }
   },
   "climb": {
     "title": "Climb Picks — Best Heroes This Patch",

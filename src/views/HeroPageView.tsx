@@ -11,7 +11,7 @@ import { getRelatedArticleForFaq } from '@/lib/learn-hero-links';
 import { Breadcrumb } from '@/components/Breadcrumb';
 import { HeroCoverBanner } from '@/components/HeroCoverBanner';
 import { BuildStrip } from '@/components/BuildStrip';
-import { HeroSummary } from '@/components/HeroSummary';
+import { HeroDecisionPanel } from '@/components/HeroDecisionPanel';
 import { BuildBlock } from '@/components/BuildBlock';
 import { SkillBlock } from '@/components/SkillBlock';
 import { ArcanaTable } from '@/components/ArcanaTable';
@@ -103,11 +103,11 @@ export function HeroPageView({
       <ContentLocaleNotice locale={locale} hero={hero} />
 
       <div className="grid gap-8 lg:grid-cols-[1fr_220px]">
-        <article>
+        <article className="min-w-0">
           <HeroCoverBanner hero={hero} locale={locale} />
           <HeroClimbRecommend hero={hero} locale={locale} />
           <BuildStrip hero={hero} locale={locale} />
-          <HeroSummary hero={hero} locale={locale} compact />
+          <HeroDecisionPanel hero={hero} locale={locale} />
 
           <section id="build" className="scroll-mt-20 mb-6">
             <h2 className="section-title">
