@@ -174,6 +174,12 @@
     "climbIntro": "本版本推薦上分英雄：{name}",
     "climbDataNote": "依據 Camp HOK 梯度與勝/選/禁率，實際效果仍視陣容與對位而定。",
     "climbViewAll": "查看全部分路推薦",
+    "damageTool": {
+      "label": "傷害工具",
+      "title": "計算 {name} 連招傷害",
+      "desc": "用 HOK 傷害計算器測試 {name} 的目前出裝、技能等級、穿透與真實傷害。",
+      "cta": "打開計算器"
+    },
     "decision": {
       "label": "排位速讀",
       "title": "{name} 懶人結論",
@@ -440,6 +446,10 @@
   "tools": {
     "title": "Meta 工具",
     "subtitle": "數據驅動工具——結果均來自本地 heroes.json，無 AI 生成。",
+    "damageTitle": "傷害計算器",
+    "damageDesc": "依英雄等級、裝備、目標防禦、穿透與真實傷害估算連招傷害。",
+    "damagePageTitle": "Honor of Kings 傷害計算器",
+    "damagePageDesc": "依英雄等級、技能等級、裝備屬性、穿透、真實傷害與 beta 602 防禦公式，估算英雄連招傷害。",
     "buildGenTitle": "出裝生成器",
     "buildGenDesc": "查看每位英雄的 Camp / HoKStats 出裝路線。",
     "counterTitle": "克制選人",
@@ -456,15 +466,49 @@
   },
   "learn": {
     "title": "攻略中心",
-    "subtitle": "陣容、上分與克制思路——以 Camp HOK 國際服數據為準。",
+    "metaTitle": "王者榮耀攻略、出裝、克制與梯度榜",
+    "metaDesc": "王者榮耀國際服攻略中心：英雄出裝、克制、梯度榜、打野路線、陣容模板與排位上分策略，依據 Camp HOK 數據整理。",
+    "subtitle": "王者榮耀國際服攻略：出裝、克制、梯度榜、打野路線、陣容模板與排位上分決策。",
     "byAuthor": "作者 {author} · 發布 {published} · 更新 {updated}",
     "dataNote": "數據說明",
     "searchPlaceholder": "搜尋攻略...",
     "allCategories": "全部",
+    "intentLabel": "依搜尋意圖開始",
+    "intentTitle": "直接找到下一場排位需要的攻略",
+    "intentDesc": "這些入口對應玩家最常搜尋的問題：上分英雄、如何克制刺客、打野梯度榜，以及陣容模板。",
+    "counterToolCta": "克制選人工具",
+    "findByRoleTitle": "依位置瀏覽",
+    "findByRoleDesc": "先看各位置英雄池，再進入具體攻略。",
+    "allBestHeroes": "全部強勢英雄",
+    "bestRoleGuide": "最強 {role} 英雄",
+    "heroLookupTitle": "查找英雄攻略",
+    "heroLookupDesc": "搜尋任一英雄，一行打開出裝、克制與弱點文章。",
     "heroGuides": "英雄攻略",
     "heroGuidesDesc": "個別英雄出裝、克制與打法攻略——共 {count} 篇，涵蓋 {heroCount} 位英雄。",
     "heroSearchPlaceholder": "搜尋英雄名稱...",
     "noResults": "找不到符合的攻略。",
+    "intent": {
+      "climb": {
+        "label": "上分",
+        "title": "單排上分英雄",
+        "desc": "先從目前最穩的排位英雄開始，再深入學對位。"
+      },
+      "counter": {
+        "label": "克制",
+        "title": "反制刺客秒殺",
+        "desc": "用保排、控制與裝備答案處理常見突進英雄。"
+      },
+      "jungle": {
+        "label": "打野",
+        "title": "打野梯度與路線",
+        "desc": "選節奏打野，規劃第一輪刷野，並把 gank 轉成物件。"
+      },
+      "teamComps": {
+        "label": "陣容",
+        "title": "能贏的 BP 模板",
+        "desc": "用可執行的五人結構，不要只拼舒適英雄。"
+      }
+    },
     "categories": {
       "Hero Guides": "英雄精講",
       "Team Comps": "陣容組合",

@@ -23,6 +23,36 @@ const CATEGORY_ORDER = [
 
 const ROLE_ORDER = ['Tank', 'Warrior', 'Assassin', 'Mage', 'Marksman', 'Support'] as const;
 
+const FEATURED_INTENTS = [
+  {
+    key: 'climb',
+    href: '/learn/best-solo-queue-heroes',
+    articleSlug: 'best-solo-queue-heroes',
+  },
+  {
+    key: 'counter',
+    href: '/learn/how-to-counter-assassins',
+    articleSlug: 'how-to-counter-assassins',
+  },
+  {
+    key: 'jungle',
+    href: '/learn/best-jungle-heroes',
+    articleSlug: 'best-jungle-heroes',
+  },
+  {
+    key: 'teamComps',
+    href: '/learn/strongest-rank-climb-comps',
+    articleSlug: 'strongest-rank-climb-comps',
+  },
+] as const;
+
+const ROLE_HUBS = [
+  { role: 'Marksman', href: '/best-heroes/marksman' },
+  { role: 'Assassin', href: '/best-heroes/assassin' },
+  { role: 'Mage', href: '/best-heroes/mage' },
+  { role: 'Support', href: '/best-heroes/support' },
+] as const;
+
 export function LearnIndexView({ locale = 'en' }: { locale?: Locale }) {
   const t = createT(locale);
   const allArticles = getLearnArticles(locale);
@@ -153,6 +183,19 @@ export function LearnIndexView({ locale = 'en' }: { locale?: Locale }) {
     return t(key);
   };
 
+  const articleBySlug = useMemo(() => {
+    const map = new Map<string, (typeof allArticles)[number]>();
+    for (const article of allArticles) {
+      map.set(article.slug, article);
+    }
+    return map;
+  }, [allArticles]);
+
+  const featuredIntentCards = FEATURED_INTENTS.map((intent) => ({
+    ...intent,
+    article: articleBySlug.get(intent.articleSlug),
+  }));
+
   return (
     <div className="container-wide">
       {/* Schema handled server-side in page.tsx if needed — client view skips it */}
@@ -167,7 +210,89 @@ export function LearnIndexView({ locale = 'en' }: { locale?: Locale }) {
       <h1 className="mb-2 font-display text-3xl font-black text-white sm:text-4xl">
         {t('learn.title')}
       </h1>
-      <p className="mb-8 max-w-2xl text-gray-400">{t('learn.subtitle')}</p>
+      <p className="mb-6 max-w-3xl text-gray-400">{t('learn.subtitle')}</p>
+
+      <section className="mb-8 rounded-xl border border-hok-gold/30 bg-gradient-to-br from-hok-card to-hok-dark/80 p-5 sm:p-6">
+        <div className="mb-4 flex flex-col gap-2 lg:flex-row lg:items-end lg:justify-between">
+          <div>
+            <p className="text-[11px] font-bold uppercase tracking-wider text-hok-gold">
+              {t('learn.intentLabel')}
+            </p>
+            <h2 className="mt-1 text-xl font-bold text-white">
+              {t('learn.intentTitle')}
+            </h2>
+            <p className="mt-2 max-w-3xl text-sm leading-relaxed text-gray-400">
+              {t('learn.intentDesc')}
+            </p>
+          </div>
+          <Link
+            href={localePath(locale, '/tools/counter-picker')}
+            className="inline-flex shrink-0 items-center justify-center rounded-lg border border-hok-gold/40 bg-hok-gold/10 px-4 py-2 text-sm font-semibold text-hok-gold hover:border-hok-gold hover:bg-hok-gold/15"
+          >
+            {t('learn.counterToolCta')}
+          </Link>
+        </div>
+
+        <div className="grid gap-3 md:grid-cols-2 xl:grid-cols-4">
+          {featuredIntentCards.map(({ key, href, article }) => (
+            <Link
+              key={key}
+              href={localePath(locale, href)}
+              className="rounded-lg border border-hok-border/70 bg-hok-dark/45 p-4 transition hover:border-hok-gold/50"
+            >
+              <p className="text-[11px] font-bold uppercase tracking-wider text-hok-gold">
+                {t(`learn.intent.${key}.label`)}
+              </p>
+              <h3 className="mt-2 text-sm font-semibold leading-snug text-white">
+                {t(`learn.intent.${key}.title`)}
+              </h3>
+              <p className="mt-2 text-xs leading-relaxed text-gray-400">
+                {article?.description || t(`learn.intent.${key}.desc`)}
+              </p>
+            </Link>
+          ))}
+        </div>
+      </section>
+
+      <section className="mb-8 grid gap-3 lg:grid-cols-[1fr_1fr]">
+        <div className="rounded-xl border border-hok-border bg-hok-card/40 p-4">
+          <div className="mb-3 flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
+            <div>
+              <h2 className="text-lg font-bold text-white">{t('learn.findByRoleTitle')}</h2>
+              <p className="text-sm text-gray-500">{t('learn.findByRoleDesc')}</p>
+            </div>
+            <Link
+              href={localePath(locale, '/best-heroes')}
+              className="text-sm font-semibold text-hok-gold hover:underline"
+            >
+              {t('learn.allBestHeroes')}
+            </Link>
+          </div>
+          <div className="grid gap-2 sm:grid-cols-2">
+            {ROLE_HUBS.map(({ role, href }) => (
+              <Link
+                key={role}
+                href={localePath(locale, href)}
+                className="rounded-lg border border-hok-border/70 bg-hok-dark/40 px-3 py-2 text-sm text-gray-300 hover:border-hok-gold/50 hover:text-hok-gold"
+              >
+                {t('learn.bestRoleGuide', { role: roleLabel(role) })}
+              </Link>
+            ))}
+          </div>
+        </div>
+
+        <div className="rounded-xl border border-hok-border bg-hok-card/40 p-4">
+          <h2 className="text-lg font-bold text-white">{t('learn.heroLookupTitle')}</h2>
+          <p className="mt-1 text-sm text-gray-500">{t('learn.heroLookupDesc')}</p>
+          <input
+            type="text"
+            value={heroSearch}
+            onChange={(e) => setHeroSearch(e.target.value)}
+            placeholder={t('learn.heroSearchPlaceholder')}
+            className="mt-4 w-full rounded-lg border border-hok-border bg-hok-dark/60 px-4 py-2.5 text-sm text-white placeholder:text-gray-500 focus:border-hok-gold/60 focus:outline-none"
+          />
+        </div>
+      </section>
 
       {/* ════ Category Pills ════ */}
       <div className="mb-6 flex flex-wrap gap-2">
@@ -250,13 +375,6 @@ export function LearnIndexView({ locale = 'en' }: { locale?: Locale }) {
               })}
             </p>
           </div>
-          <input
-            type="text"
-            value={heroSearch}
-            onChange={(e) => setHeroSearch(e.target.value)}
-            placeholder={t('learn.heroSearchPlaceholder')}
-            className="w-full rounded-lg border border-hok-border bg-hok-card px-4 py-2 text-sm text-white placeholder:text-gray-500 focus:border-hok-gold/60 focus:outline-none sm:w-64"
-          />
         </div>
 
         {filteredHeroGroupsByRole.length > 0 ? (
@@ -277,60 +395,33 @@ export function LearnIndexView({ locale = 'en' }: { locale?: Locale }) {
                     return (
                       <div
                         key={g.hero.slug}
-                        className="flex items-center gap-3 rounded-lg border border-hok-border/60 bg-hok-card/60 px-3 py-2 transition hover:border-hok-gold/30"
+                        className="flex flex-col gap-2 rounded-lg border border-hok-border/60 bg-hok-card/60 px-3 py-2 transition hover:border-hok-gold/30 sm:flex-row sm:items-center"
                       >
-                        <Link
-                          href={localePath(locale, `/hero/${g.hero.slug}`)}
-                          className="shrink-0"
-                        >
-                          <HeroAvatar hero={g.hero} size={36} />
-                        </Link>
-                        <div className="min-w-0 flex-1">
-                          <div className="flex items-center gap-2">
+                        <div className="flex min-w-0 items-center gap-3">
+                          <Link
+                            href={localePath(locale, `/hero/${g.hero.slug}`)}
+                            className="shrink-0"
+                          >
+                            <HeroAvatar hero={g.hero} size={36} />
+                          </Link>
+                          <div className="min-w-0 flex-1">
                             <Link
                               href={localePath(locale, `/hero/${g.hero.slug}`)}
-                              className="truncate text-sm font-semibold text-white hover:text-hok-gold"
+                              className="block truncate text-sm font-semibold text-white hover:text-hok-gold"
                             >
                               {name}
                             </Link>
-                            <div className="hidden shrink-0 gap-1 sm:flex">
-                              {g.guide && (
-                                <Link
-                                  href={localePath(locale, `/learn/${g.guide}`)}
-                                  className="rounded-full border border-hok-gold/30 bg-hok-gold/10 px-2 py-0.5 text-[10px] font-medium text-hok-gold transition hover:bg-hok-gold/20"
-                                >
-                                  {locale === 'zh-TW' ? '攻略' : 'Guide'}
-                                </Link>
-                              )}
-                              {g.counters && (
-                                <Link
-                                  href={localePath(locale, `/learn/${g.counters}`)}
-                                  className="rounded-full border border-hok-border bg-hok-card px-2 py-0.5 text-[10px] font-medium text-gray-400 transition hover:border-red-500/40 hover:text-red-400"
-                                >
-                                  {locale === 'zh-TW' ? '克制' : 'Counters'}
-                                </Link>
-                              )}
-                              {g.weaknesses && (
-                                <Link
-                                  href={localePath(locale, `/learn/${g.weaknesses}`)}
-                                  className="rounded-full border border-hok-border bg-hok-card px-2 py-0.5 text-[10px] font-medium text-gray-400 transition hover:border-amber-500/40 hover:text-amber-400"
-                                >
-                                  {locale === 'zh-TW' ? '弱點' : 'Weaknesses'}
-                                </Link>
-                              )}
-                            </div>
-                          </div>
-                          <p className="truncate text-xs text-gray-600">
-                            {g.hero.role}
+                            <p className="truncate text-xs text-gray-600">
+                              {roleLabel(g.hero.role)}
                             {g.hero.lane ? ` · ${g.hero.lane}` : ''}
                           </p>
+                          </div>
                         </div>
-                        {/* Mobile: pills below */}
-                        <div className="flex shrink-0 gap-1 sm:hidden">
+                        <div className="flex flex-wrap gap-1 sm:ml-auto sm:shrink-0">
                           {g.guide && (
                             <Link
                               href={localePath(locale, `/learn/${g.guide}`)}
-                              className="rounded-full border border-hok-gold/30 bg-hok-gold/10 px-2 py-0.5 text-[10px] font-medium text-hok-gold"
+                              className="rounded-full border border-hok-gold/30 bg-hok-gold/10 px-2 py-0.5 text-[10px] font-medium text-hok-gold transition hover:bg-hok-gold/20"
                             >
                               {locale === 'zh-TW' ? '攻略' : 'Guide'}
                             </Link>
@@ -338,7 +429,7 @@ export function LearnIndexView({ locale = 'en' }: { locale?: Locale }) {
                           {g.counters && (
                             <Link
                               href={localePath(locale, `/learn/${g.counters}`)}
-                              className="rounded-full border border-hok-border bg-hok-card px-2 py-0.5 text-[10px] font-medium text-gray-400"
+                              className="rounded-full border border-hok-border bg-hok-card px-2 py-0.5 text-[10px] font-medium text-gray-400 transition hover:border-red-500/40 hover:text-red-400"
                             >
                               {locale === 'zh-TW' ? '克制' : 'Counters'}
                             </Link>
@@ -346,7 +437,7 @@ export function LearnIndexView({ locale = 'en' }: { locale?: Locale }) {
                           {g.weaknesses && (
                             <Link
                               href={localePath(locale, `/learn/${g.weaknesses}`)}
-                              className="rounded-full border border-hok-border bg-hok-card px-2 py-0.5 text-[10px] font-medium text-gray-400"
+                              className="rounded-full border border-hok-border bg-hok-card px-2 py-0.5 text-[10px] font-medium text-gray-400 transition hover:border-amber-500/40 hover:text-amber-400"
                             >
                               {locale === 'zh-TW' ? '弱點' : 'Weaknesses'}
                             </Link>

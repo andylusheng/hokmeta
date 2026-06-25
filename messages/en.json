@@ -174,6 +174,12 @@
     "climbIntro": "{name} is a recommended climb pick this patch:",
     "climbDataNote": "Based on Camp HOK tier, win/pick/ban rates — not a guarantee in every draft.",
     "climbViewAll": "See all lane climb picks",
+    "damageTool": {
+      "label": "Damage tool",
+      "title": "Calculate {name} combo damage",
+      "desc": "Test {name}'s current build, skill levels, pierce, and true damage in the HOK damage calculator.",
+      "cta": "Open calculator"
+    },
     "decision": {
       "label": "Ranked quick read",
       "title": "{name} TL;DR",
@@ -440,6 +446,10 @@
   "tools": {
     "title": "HOK Meta Tools",
     "subtitle": "Data-driven tools — no AI APIs, all results from local JSON.",
+    "damageTitle": "Damage Calculator",
+    "damageDesc": "Estimate hero combo damage by level, equipment, target defense, pierce, and true damage.",
+    "damagePageTitle": "Honor of Kings Damage Calculator",
+    "damagePageDesc": "Calculate HOK hero combo damage with hero level, skill level, equipment stats, pierce, true damage, and the beta 602 defense formula.",
     "buildGenTitle": "Build Generator",
     "buildGenDesc": "View item build paths for every meta hero from heroes.json.",
     "counterTitle": "Counter Picker",
@@ -456,15 +466,49 @@
   },
   "learn": {
     "title": "Learning Hub",
-    "subtitle": "Meta comps, rank strategies, and counter guides — backed by Camp HOK data.",
+    "metaTitle": "Honor of Kings Guides, Builds, Counters & Tier Lists",
+    "metaDesc": "Honor of Kings Global guides for hero builds, counters, tier lists, jungle routes, team comps, and ranked climb strategy backed by Camp HOK data.",
+    "subtitle": "Honor of Kings Global guides for builds, counters, tier lists, jungle routes, team comps, and ranked climb decisions.",
     "byAuthor": "By {author} · Published {published} · Updated {updated}",
     "dataNote": "Data note",
     "searchPlaceholder": "Search guides...",
     "allCategories": "All",
+    "intentLabel": "Start by search intent",
+    "intentTitle": "Find the exact guide for your next ranked decision",
+    "intentDesc": "Use these routes for the searches players actually make: best heroes to climb, how to counter assassins, jungle tier lists, and team comp templates.",
+    "counterToolCta": "Counter picker tool",
+    "findByRoleTitle": "Browse by role",
+    "findByRoleDesc": "Jump straight to role-based hero pools before choosing a guide.",
+    "allBestHeroes": "All best heroes",
+    "bestRoleGuide": "Best {role} heroes",
+    "heroLookupTitle": "Find a hero guide",
+    "heroLookupDesc": "Search any hero to open build, counter, and weakness articles from one row.",
     "heroGuides": "Hero Guides",
     "heroGuidesDesc": "Individual hero build, counter, and playstyle guides — {count} articles across {heroCount} heroes.",
     "heroSearchPlaceholder": "Search by hero name...",
     "noResults": "No guides match your search.",
+    "intent": {
+      "climb": {
+        "label": "Climb",
+        "title": "Best heroes for solo queue",
+        "desc": "Start with the safest current ranked picks before learning deeper matchups."
+      },
+      "counter": {
+        "label": "Counter",
+        "title": "Stop assassin one-shots",
+        "desc": "Draft peel, control, and item answers against common dive heroes."
+      },
+      "jungle": {
+        "label": "Jungle",
+        "title": "Jungle tier list and pathing",
+        "desc": "Pick tempo junglers, plan first clear, and convert ganks into objectives."
+      },
+      "teamComps": {
+        "label": "Team comps",
+        "title": "Draft templates that win",
+        "desc": "Use proven 5-stack structures instead of random comfort picks."
+      }
+    },
     "categories": {
       "Hero Guides": "Hero Guides",
       "Team Comps": "Team Comps",

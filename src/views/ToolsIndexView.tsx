@@ -7,6 +7,11 @@ export function ToolsIndexView({ locale = 'en' }: { locale?: Locale }) {
   const t = createT(locale);
   const tools = [
     {
+      href: localePath(locale, '/tools/damage-calculator'),
+      title: t('tools.damageTitle'),
+      description: t('tools.damageDesc'),
+    },
+    {
       href: localePath(locale, '/tools/build-generator'),
       title: t('tools.buildGenTitle'),
       description: t('tools.buildGenDesc'),
@@ -34,7 +39,7 @@ export function ToolsIndexView({ locale = 'en' }: { locale?: Locale }) {
       />
       <h1 className="mb-2 text-3xl font-bold text-white">{t('tools.title')}</h1>
       <p className="mb-8 text-gray-400">{t('tools.subtitle')}</p>
-      <div className="grid gap-4 sm:grid-cols-2">
+      <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {tools.map((tool) => (
           <Link key={tool.href} href={tool.href} className="card block hover:border-hok-gold/50">
             <h2 className="mb-2 text-lg font-semibold text-white">{tool.title}</h2>

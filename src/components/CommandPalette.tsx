@@ -59,7 +59,7 @@ export function CommandPaletteHost() {
       { label: t('nav.climbPicks'), href: localePath(locale, '/climb-picks') },
       { label: t('nav.tierList'), href: localePath(locale, '/tier-list') },
       { label: t('nav.heroBuilds'), href: localePath(locale, '/heroes') },
-      { label: t('nav.comps'), href: localePath(locale, '/comps') },
+      { label: t('nav.tools'), href: localePath(locale, '/tools') },
       { label: t('nav.items'), href: localePath(locale, '/items') },
       { label: t('nav.arcana'), href: localePath(locale, '/arcana') },
       { label: t('nav.guides'), href: localePath(locale, '/learn') },

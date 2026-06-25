@@ -5,8 +5,8 @@ import { LearnIndexView } from '@/views/LearnIndexView';
 const t = createT('zh-TW');
 
 export const metadata = buildMetadata({
-  title: defaultTitle(t('learn.title')),
-  description: t('learn.subtitle'),
+  title: defaultTitle(t('learn.metaTitle')),
+  description: t('learn.metaDesc'),
   path: '/learn',
   locale: 'zh-TW',
 });

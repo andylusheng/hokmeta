@@ -64,6 +64,8 @@ export function HeroPageView({
   const keywords = getKeywordsForHero(hero.slug);
   const featuredFaqs = getLocalizedFaqs(hero, locale, 5);
   const heroPath = `/hero/${hero.slug}`;
+  const heroName = getHeroDisplayName(hero, locale);
+  const damageCalculatorPath = `${localePath(locale, '/tools/damage-calculator')}?hero=${hero.slug}`;
 
   // Build FAQ → learn article links
   const faqArticleLinks = Object.fromEntries(
@@ -81,7 +83,7 @@ export function HeroPageView({
         data={breadcrumbSchema([
           { name: t('common.home'), path: localePath(locale, '/') },
           { name: t('common.heroes'), path: localePath(locale, '/heroes') },
-          { name: getHeroDisplayName(hero, locale), path: localePath(locale, heroPath) },
+          { name: heroName, path: localePath(locale, heroPath) },
         ])}
       />
       <JsonLd
@@ -96,7 +98,7 @@ export function HeroPageView({
         items={[
           { label: t('common.home'), href: localePath(locale, '/') },
           { label: t('common.allHeroes'), href: localePath(locale, '/heroes') },
-          { label: getHeroDisplayName(hero, locale) },
+          { label: heroName },
         ]}
       />
 
@@ -109,9 +111,31 @@ export function HeroPageView({
           <BuildStrip hero={hero} locale={locale} />
           <HeroDecisionPanel hero={hero} locale={locale} />
 
+          <section className="mb-6 rounded border border-hok-gold/30 bg-hok-gold/10 p-4">
+            <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+              <div>
+                <p className="text-xs font-semibold uppercase tracking-wide text-hok-gold">
+                  {t('hero.damageTool.label')}
+                </p>
+                <h2 className="mt-1 text-lg font-bold text-white">
+                  {t('hero.damageTool.title', { name: heroName })}
+                </h2>
+                <p className="mt-1 max-w-2xl text-sm text-gray-300">
+                  {t('hero.damageTool.desc', { name: heroName })}
+                </p>
+              </div>
+              <Link
+                href={damageCalculatorPath}
+                className="inline-flex shrink-0 items-center justify-center rounded bg-hok-gold px-4 py-2 text-sm font-semibold text-black transition hover:bg-yellow-300"
+              >
+                {t('hero.damageTool.cta')}
+              </Link>
+            </div>
+          </section>
+
           <section id="build" className="scroll-mt-20 mb-6">
             <h2 className="section-title">
-              {t('hero.buildTitle', { name: getHeroDisplayName(hero, locale) })}
+              {t('hero.buildTitle', { name: heroName })}
             </h2>
             <p className="mb-4 text-sm text-gray-400">{t('hero.buildIntro')}</p>
             <BuildPhilosophyCard hero={hero} locale={locale} />

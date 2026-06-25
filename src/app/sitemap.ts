@@ -55,6 +55,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: '/hero-trends', priority: 0.8, changeFrequency: 'daily' as const },
     { path: '/best-heroes', priority: 0.8, changeFrequency: 'daily' as const },
     { path: '/tools', priority: 0.8, changeFrequency: 'monthly' as const },
+    { path: '/tools/damage-calculator', priority: 0.82, changeFrequency: 'weekly' as const },
     { path: '/tools/build-generator', priority: 0.75, changeFrequency: 'monthly' as const },
     { path: '/tools/counter-picker', priority: 0.75, changeFrequency: 'monthly' as const },
     { path: '/learn', priority: 0.72, changeFrequency: 'weekly' as const },
