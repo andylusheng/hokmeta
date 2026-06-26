@@ -7,6 +7,7 @@ import {
   getPlaystyle,
   getMetaTrend,
 } from '@/lib/counter-rationale-overrides';
+import { buildTopHeroGuide } from '@/lib/learn-top-hero-guides';
 
 /* ═══════════════════════════════════════════
    Helpers
@@ -141,6 +142,9 @@ function tierLabel(h: typeof heroes[number]): string {
 function generateGuideArticle(hero: typeof heroes[number]): LearnArticle {
   const name = hero.name;
   const slug = hero.slug;
+
+  const topGuide = buildTopHeroGuide(hero);
+  if (topGuide) return topGuide;
 
   // High-quality override playstyle data
   const ps = getPlaystyle(slug, 'en');

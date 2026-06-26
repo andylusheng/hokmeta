@@ -92,15 +92,21 @@ export function DamageCalculatorClient({
   heroes,
   items,
   locale = 'en',
+  initialHeroSlug,
 }: {
   heroes: Hero[];
   items: GameItem[];
   locale?: Locale;
+  initialHeroSlug?: string;
 }) {
   const t = createT(locale);
   const copy = text[locale];
   const [slug, setSlug] = useState(
-    heroes.some((hero) => hero.slug === 'hou-yi') ? 'hou-yi' : heroes[0]?.slug ?? ''
+    initialHeroSlug && heroes.some((hero) => hero.slug === initialHeroSlug)
+      ? initialHeroSlug
+      : heroes.some((hero) => hero.slug === 'hou-yi')
+        ? 'hou-yi'
+        : heroes[0]?.slug ?? ''
   );
   const [level, setLevel] = useState(15);
   const [skillLevel, setSkillLevel] = useState(6);
@@ -127,7 +133,7 @@ export function DamageCalculatorClient({
     if (param && heroes.some((h) => h.slug === param)) {
       setSlug(param);
     }
-  }, [heroes]);
+  }, [heroes, initialHeroSlug]);
 
   useEffect(() => {
     const ids = getBuildItemIds(hero.build).slice(0, 6);

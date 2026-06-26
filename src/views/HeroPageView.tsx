@@ -65,7 +65,8 @@ export function HeroPageView({
   const featuredFaqs = getLocalizedFaqs(hero, locale, 5);
   const heroPath = `/hero/${hero.slug}`;
   const heroName = getHeroDisplayName(hero, locale);
-  const damageCalculatorPath = `${localePath(locale, '/tools/damage-calculator')}?hero=${hero.slug}`;
+  const damageCalculatorPath = localePath(locale, `/tools/damage-calculator/${hero.slug}`);
+  const buildComparePath = localePath(locale, `/tools/build-compare/${hero.slug}`);
 
   // Build FAQ → learn article links
   const faqArticleLinks = Object.fromEntries(
@@ -115,21 +116,29 @@ export function HeroPageView({
             <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
               <div>
                 <p className="text-xs font-semibold uppercase tracking-wide text-hok-gold">
-                  {t('hero.damageTool.label')}
+                  {t('hero.buildCompareTool.label')}
                 </p>
                 <h2 className="mt-1 text-lg font-bold text-white">
-                  {t('hero.damageTool.title', { name: heroName })}
+                  {t('hero.buildCompareTool.title', { name: heroName })}
                 </h2>
                 <p className="mt-1 max-w-2xl text-sm text-gray-300">
-                  {t('hero.damageTool.desc', { name: heroName })}
+                  {t('hero.buildCompareTool.desc', { name: heroName })}
                 </p>
               </div>
-              <Link
-                href={damageCalculatorPath}
-                className="inline-flex shrink-0 items-center justify-center rounded bg-hok-gold px-4 py-2 text-sm font-semibold text-black transition hover:bg-yellow-300"
-              >
-                {t('hero.damageTool.cta')}
-              </Link>
+              <div className="flex shrink-0 flex-col gap-2 sm:flex-row">
+                <Link
+                  href={damageCalculatorPath}
+                  className="inline-flex items-center justify-center rounded bg-hok-gold px-4 py-2 text-sm font-semibold text-black transition hover:bg-yellow-300"
+                >
+                  {t('hero.buildCompareTool.damageCta')}
+                </Link>
+                <Link
+                  href={buildComparePath}
+                  className="inline-flex items-center justify-center rounded border border-hok-gold/60 px-4 py-2 text-sm font-semibold text-hok-gold transition hover:bg-hok-gold/10"
+                >
+                  {t('hero.buildCompareTool.compareCta')}
+                </Link>
+              </div>
             </div>
           </section>
 

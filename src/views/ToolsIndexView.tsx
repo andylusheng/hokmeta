@@ -17,6 +17,11 @@ export function ToolsIndexView({ locale = 'en' }: { locale?: Locale }) {
       description: t('tools.buildGenDesc'),
     },
     {
+      href: localePath(locale, '/tools/build-compare'),
+      title: t('tools.buildCompareTitle'),
+      description: t('tools.buildCompareDesc'),
+    },
+    {
       href: localePath(locale, '/tools/counter-picker'),
       title: t('tools.counterTitle'),
       description: t('tools.counterDesc'),

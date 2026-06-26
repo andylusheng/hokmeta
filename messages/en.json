@@ -180,6 +180,13 @@
       "desc": "Test {name}'s current build, skill levels, pierce, and true damage in the HOK damage calculator.",
       "cta": "Open calculator"
     },
+    "buildCompareTool": {
+      "label": "Tools",
+      "title": "Test {name} damage and item builds",
+      "desc": "Use the calculator for combo damage, or compare two item builds side by side before changing your ranked setup.",
+      "damageCta": "Damage calculator",
+      "compareCta": "Compare builds"
+    },
     "decision": {
       "label": "Ranked quick read",
       "title": "{name} TL;DR",
@@ -450,6 +457,13 @@
     "damageDesc": "Estimate hero combo damage by level, equipment, target defense, pierce, and true damage.",
     "damagePageTitle": "Honor of Kings Damage Calculator",
     "damagePageDesc": "Calculate HOK hero combo damage with hero level, skill level, equipment stats, pierce, true damage, and the beta 602 defense formula.",
+    "damageShortTitle": "Damage Calculator",
+    "damageHeroDesc": "Calculate {name} damage as a Tier {tier} {role}: current build, item swaps, skill levels, pierce, true damage, and the beta 602 defense formula.",
+    "buildCompareTitle": "Build Compare",
+    "buildCompareDesc": "Compare two item builds for the same hero and see damage, stats, pierce, and item tradeoffs.",
+    "buildComparePageTitle": "Honor of Kings Build Compare",
+    "buildComparePageDesc": "Compare HOK hero builds side by side with item stats, pierce, skill damage, and actual damage after the beta 602 defense formula.",
+    "buildCompareHeroDesc": "Compare {name} builds side by side: recommended items, alternate Camp presets, custom item swaps, and actual damage output.",
     "buildGenTitle": "Build Generator",
     "buildGenDesc": "View item build paths for every meta hero from heroes.json.",
     "counterTitle": "Counter Picker",

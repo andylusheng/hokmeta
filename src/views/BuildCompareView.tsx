@@ -1,10 +1,10 @@
 import type { GameItem, Hero } from '@/types/hero';
 import { Breadcrumb } from '@/components/Breadcrumb';
-import { DamageCalculatorClient } from '@/components/DamageCalculatorClient';
+import { BuildCompareClient } from '@/components/BuildCompareClient';
 import { createT, localePath, type Locale } from '@/lib/i18n';
 import { JsonLd, breadcrumbSchema } from '@/lib/schema';
 
-export function DamageCalculatorView({
+export function BuildCompareView({
   heroes,
   items,
   locale = 'en',
@@ -18,14 +18,12 @@ export function DamageCalculatorView({
   const t = createT(locale);
   const hero = initialHeroSlug ? heroes.find((h) => h.slug === initialHeroSlug) : undefined;
   const title = hero
-    ? `${hero.name} ${t('tools.damageShortTitle')}`
-    : t('tools.damagePageTitle');
+    ? `${hero.name} ${t('tools.buildCompareTitle')}`
+    : t('tools.buildComparePageTitle');
   const description = hero
-    ? t('tools.damageHeroDesc', { name: hero.name, tier: hero.tier, role: hero.role })
-    : t('tools.damagePageDesc');
-  const path = hero
-    ? `/tools/damage-calculator/${hero.slug}`
-    : '/tools/damage-calculator';
+    ? t('tools.buildCompareHeroDesc', { name: hero.name })
+    : t('tools.buildComparePageDesc');
+  const path = hero ? `/tools/build-compare/${hero.slug}` : '/tools/build-compare';
 
   return (
     <div className="container-page">
@@ -33,7 +31,7 @@ export function DamageCalculatorView({
         data={breadcrumbSchema([
           { name: t('common.home'), path: localePath(locale, '/') },
           { name: t('nav.tools'), path: localePath(locale, '/tools') },
-          { name: t('tools.damagePageTitle'), path: localePath(locale, '/tools/damage-calculator') },
+          { name: t('tools.buildComparePageTitle'), path: localePath(locale, '/tools/build-compare') },
           ...(hero ? [{ name: title, path: localePath(locale, path) }] : []),
         ])}
       />
@@ -43,17 +41,17 @@ export function DamageCalculatorView({
           { label: t('nav.tools'), href: localePath(locale, '/tools') },
           ...(hero
             ? [
-                { label: t('tools.damagePageTitle'), href: localePath(locale, '/tools/damage-calculator') },
+                { label: t('tools.buildComparePageTitle'), href: localePath(locale, '/tools/build-compare') },
                 { label: title },
               ]
-            : [{ label: t('tools.damagePageTitle') }]),
+            : [{ label: t('tools.buildComparePageTitle') }]),
         ]}
       />
       <div className="mb-6 max-w-3xl">
         <h1 className="mb-2 text-3xl font-bold text-white">{title}</h1>
         <p className="text-gray-400">{description}</p>
       </div>
-      <DamageCalculatorClient
+      <BuildCompareClient
         heroes={heroes}
         items={items}
         locale={locale}

@@ -56,6 +56,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: '/best-heroes', priority: 0.8, changeFrequency: 'daily' as const },
     { path: '/tools', priority: 0.8, changeFrequency: 'monthly' as const },
     { path: '/tools/damage-calculator', priority: 0.82, changeFrequency: 'weekly' as const },
+    { path: '/tools/build-compare', priority: 0.8, changeFrequency: 'weekly' as const },
     { path: '/tools/build-generator', priority: 0.75, changeFrequency: 'monthly' as const },
     { path: '/tools/counter-picker', priority: 0.75, changeFrequency: 'monthly' as const },
     { path: '/learn', priority: 0.72, changeFrequency: 'weekly' as const },
@@ -90,6 +91,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
         lastModified,
         changeFrequency: 'daily',
         priority: Math.max(priority * 0.9, 0.68),
+      })
+    );
+    routes.push(
+      ...localizedEntries(base, `/tools/damage-calculator/${hero.slug}`, {
+        lastModified,
+        changeFrequency: 'weekly',
+        priority: Math.max(priority * 0.86, 0.72),
+      }),
+      ...localizedEntries(base, `/tools/build-compare/${hero.slug}`, {
+        lastModified,
+        changeFrequency: 'weekly',
+        priority: Math.max(priority * 0.82, 0.7),
       })
     );
     return routes;

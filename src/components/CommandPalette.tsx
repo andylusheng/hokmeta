@@ -60,6 +60,8 @@ export function CommandPaletteHost() {
       { label: t('nav.tierList'), href: localePath(locale, '/tier-list') },
       { label: t('nav.heroBuilds'), href: localePath(locale, '/heroes') },
       { label: t('nav.tools'), href: localePath(locale, '/tools') },
+      { label: t('tools.damageTitle'), href: localePath(locale, '/tools/damage-calculator') },
+      { label: t('tools.buildCompareTitle'), href: localePath(locale, '/tools/build-compare') },
       { label: t('nav.items'), href: localePath(locale, '/items') },
       { label: t('nav.arcana'), href: localePath(locale, '/arcana') },
       { label: t('nav.guides'), href: localePath(locale, '/learn') },

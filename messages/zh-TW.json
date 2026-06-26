@@ -180,6 +180,13 @@
       "desc": "用 HOK 傷害計算器測試 {name} 的目前出裝、技能等級、穿透與真實傷害。",
       "cta": "打開計算器"
     },
+    "buildCompareTool": {
+      "label": "工具",
+      "title": "測試 {name} 傷害與出裝",
+      "desc": "用傷害計算器看連招輸出，或並排對比兩套出裝再調整排位配置。",
+      "damageCta": "傷害計算器",
+      "compareCta": "對比出裝"
+    },
     "decision": {
       "label": "排位速讀",
       "title": "{name} 懶人結論",
@@ -450,6 +457,13 @@
     "damageDesc": "依英雄等級、裝備、目標防禦、穿透與真實傷害估算連招傷害。",
     "damagePageTitle": "Honor of Kings 傷害計算器",
     "damagePageDesc": "依英雄等級、技能等級、裝備屬性、穿透、真實傷害與 beta 602 防禦公式，估算英雄連招傷害。",
+    "damageShortTitle": "傷害計算器",
+    "damageHeroDesc": "計算 {name} 作為 Tier {tier} {role} 的裝備、技能等級、穿透、真實傷害與實際輸出。",
+    "buildCompareTitle": "出裝對比",
+    "buildCompareDesc": "對比同一英雄的兩套出裝，查看傷害、屬性、穿透與裝備取捨。",
+    "buildComparePageTitle": "Honor of Kings 出裝對比",
+    "buildComparePageDesc": "並排對比 HOK 英雄出裝，根據裝備屬性、穿透、技能傷害與 beta 602 防禦公式計算實際傷害。",
+    "buildCompareHeroDesc": "並排對比 {name} 的推薦出裝、Camp 備選出裝、自訂換裝與實際傷害。",
     "buildGenTitle": "出裝生成器",
     "buildGenDesc": "查看每位英雄的 Camp / HoKStats 出裝路線。",
     "counterTitle": "克制選人",
