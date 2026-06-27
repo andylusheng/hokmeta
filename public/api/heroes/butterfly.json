@@ -19,7 +19,7 @@
   "heroCover": "https://camp.honorofkings.com/camp/admin/hero/cover_1275-718/J0PoSp6s.jpg",
   "tencentId": 646,
   "dataSource": "Camp HOK bilingual (primary)",
-  "dataUpdated": "2026-06-22",
+  "dataUpdated": "2026-06-27",
   "skills": [
     {
       "slot": "passive",
@@ -90,38 +90,38 @@
     },
     {
       "slot": 2,
-      "itemId": "1133",
-      "name": "Eternity Blade",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1133.png",
-      "description": "PATK +120, Crit Rate +20%\nHigh crit damage"
+      "itemId": "1137",
+      "name": "Axe of Torment",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1137.png",
+      "description": "PATK +80, CDR +10%, HP +500\nAnti-squishy"
     },
     {
       "slot": 3,
-      "itemId": "1138",
-      "name": "Overlord's Might",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1138.png",
-      "description": "PATK +150, CDR +5%\nHigh-damage attack"
+      "itemId": "1533",
+      "name": "Rapacious Bite",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1533.png",
+      "description": "PATK +90, MSPD +5%, CDR +7.5%\nMonster kills boost ATK"
     },
     {
       "slot": 4,
-      "itemId": "11210",
-      "name": "Mortal Punisher",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/11210.png",
-      "description": "PATK +100, Lifesteal +20%, ASPD +20%\nLowers Health regen"
+      "itemId": "1134",
+      "name": "Master Sword",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1134.png",
+      "description": "PATK +55, Crit Rate +20%, HP +600\nEnhances BAs"
     },
     {
       "slot": 5,
-      "itemId": "1337",
-      "name": "Sage's Sanctuary",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
-      "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
+      "itemId": "1331",
+      "name": "Blazing Cape",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1331.png",
+      "description": "PDEF +150, MDEF +150, HP +1,100\nArea burn & imperil"
     },
     {
       "slot": 6,
-      "itemId": "1127",
-      "name": "Destiny",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
-      "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
+      "itemId": "1534",
+      "name": "Dragon's Rage",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1536.png",
+      "description": "HP +1,350, PDEF +180, MDEF +90\nGrants extra damage and recovery"
     }
   ],
   "buildZh": [
@@ -134,43 +134,92 @@
     },
     {
       "slot": 2,
-      "itemId": "1133",
-      "name": "無盡戰刃",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1133.png",
-      "description": "+120點攻擊+20%暴擊\n高額暴擊傷害"
+      "itemId": "1137",
+      "name": "暗影戰斧",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1137.png",
+      "description": "+80點攻擊+10%減冷卻時間+500點生命值\n打血薄用"
     },
     {
       "slot": 3,
-      "itemId": "1138",
-      "name": "強者破軍",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1138.png",
-      "description": "+150點攻擊+5%減冷卻時間\n高額攻擊"
+      "itemId": "1533",
+      "name": "貪婪之噬",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1533.png",
+      "description": "+90攻擊+5%移速+7.5%冷縮\n打野怪加攻擊"
     },
     {
       "slot": 4,
-      "itemId": "11210",
-      "name": "制裁之刃",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/11210.png",
-      "description": "+100點攻擊+20%吸血+20%攻速\n減少敵人回血"
+      "itemId": "1134",
+      "name": "宗師之力",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1134.png",
+      "description": "+55點攻擊+20%暴擊+600點生命值……\n強化普攻"
     },
     {
       "slot": 5,
-      "itemId": "1337",
-      "name": "賢者的庇護",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
-      "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+      "itemId": "1331",
+      "name": "紅蓮斗篷",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1331.png",
+      "description": "+150點物防+150點法防+1100點生命值\n範圍灼燒重傷"
     },
     {
       "slot": 6,
-      "itemId": "1127",
-      "name": "名刀・司命",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
-      "description": "+75點攻擊+15%攻速+500點生命值\n保命"
+      "itemId": "1534",
+      "name": "怒龍劍盾",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1536.png",
+      "description": "+1350點生命值+180點物防+90點法防\n額外傷害與回復"
     }
   ],
   "builds": [
     {
       "id": "camp-0",
+      "label": "Top",
+      "lane": "Jungle",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1422",
+          "name": "Boots of Resistance",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1422.png",
+          "description": "MDEF +100, PDEF +50, MSPD +50\nShortens crowd control"
+        },
+        {
+          "slot": 2,
+          "itemId": "1137",
+          "name": "Axe of Torment",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1137.png",
+          "description": "PATK +80, CDR +10%, HP +500\nAnti-squishy"
+        },
+        {
+          "slot": 3,
+          "itemId": "1533",
+          "name": "Rapacious Bite",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1533.png",
+          "description": "PATK +90, MSPD +5%, CDR +7.5%\nMonster kills boost ATK"
+        },
+        {
+          "slot": 4,
+          "itemId": "1134",
+          "name": "Master Sword",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1134.png",
+          "description": "PATK +55, Crit Rate +20%, HP +600\nEnhances BAs"
+        },
+        {
+          "slot": 5,
+          "itemId": "1331",
+          "name": "Blazing Cape",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1331.png",
+          "description": "PDEF +150, MDEF +150, HP +1,100\nArea burn & imperil"
+        },
+        {
+          "slot": 6,
+          "itemId": "1534",
+          "name": "Dragon's Rage",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1536.png",
+          "description": "HP +1,350, PDEF +180, MDEF +90\nGrants extra damage and recovery"
+        }
+      ]
+    },
+    {
+      "id": "camp-1",
       "label": "MadeInHeaven's",
       "lane": "Jungle",
       "items": [
@@ -219,7 +268,7 @@
       ]
     },
     {
-      "id": "camp-1",
+      "id": "camp-2",
       "label": "名刀反杀流",
       "lane": "Jungle",
       "items": [
@@ -271,6 +320,55 @@
   "buildsZh": [
     {
       "id": "camp-0",
+      "label": "Top",
+      "lane": "Jungle",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1422",
+          "name": "抵抗之靴",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1422.png",
+          "description": "+100點法防+50點物防+50點移速\n減少被控時間"
+        },
+        {
+          "slot": 2,
+          "itemId": "1137",
+          "name": "暗影戰斧",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1137.png",
+          "description": "+80點攻擊+10%減冷卻時間+500點生命值\n打血薄用"
+        },
+        {
+          "slot": 3,
+          "itemId": "1533",
+          "name": "貪婪之噬",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1533.png",
+          "description": "+90攻擊+5%移速+7.5%冷縮\n打野怪加攻擊"
+        },
+        {
+          "slot": 4,
+          "itemId": "1134",
+          "name": "宗師之力",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1134.png",
+          "description": "+55點攻擊+20%暴擊+600點生命值……\n強化普攻"
+        },
+        {
+          "slot": 5,
+          "itemId": "1331",
+          "name": "紅蓮斗篷",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1331.png",
+          "description": "+150點物防+150點法防+1100點生命值\n範圍灼燒重傷"
+        },
+        {
+          "slot": 6,
+          "itemId": "1534",
+          "name": "怒龍劍盾",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1536.png",
+          "description": "+1350點生命值+180點物防+90點法防\n額外傷害與回復"
+        }
+      ]
+    },
+    {
+      "id": "camp-1",
       "label": "MadeInHeaven's",
       "lane": "Jungle",
       "items": [
@@ -319,7 +417,7 @@
       ]
     },
     {
-      "id": "camp-1",
+      "id": "camp-2",
       "label": "名刀反杀流",
       "lane": "Jungle",
       "items": [
@@ -369,14 +467,14 @@
     }
   ],
   "arcana": [
+    "Lvl 5: Conflict",
     "Lvl 5: Mutation",
-    "Lvl 5: Calamity",
-    "Lvl 5: Hunt"
+    "Lvl 5: Reaver"
   ],
   "arcanaZh": [
+    "5級：紛爭",
     "5級：異變",
-    "5級：禍源",
-    "5級：狩獵"
+    "5級：奪萃"
   ],
   "spells": [
     "Smite"
@@ -397,11 +495,11 @@
   "tips": [
     "Butterfly (Warrior): Tier B — 52.23% WR (Camp HOK).",
     "Lane: Jungling.",
-    "Build: Boots of Resistance, Eternity Blade, Overlord's Might."
+    "Build: Boots of Resistance, Axe of Torment, Rapacious Bite."
   ],
   "tipsZh": [
     "刀鋒寶貝（打野）：梯度 B，勝率 52.23%（Camp HOK）。",
-    "出裝：抵抗之靴、無盡戰刃、強者破軍."
+    "出裝：抵抗之靴、暗影戰斧、貪婪之噬."
   ],
   "patchHistory": [
     {
@@ -526,7 +624,7 @@
     {
       "id": "faq-best-build",
       "question": "What is the best Butterfly build?",
-      "answer": "Recommended: Boots of Resistance, Eternity Blade, Overlord's Might, Mortal Punisher, Sage's Sanctuary, Destiny."
+      "answer": "Recommended: Boots of Resistance, Axe of Torment, Rapacious Bite, Master Sword, Blazing Cape, Dragon's Rage."
     },
     {
       "id": "faq-counter",
@@ -543,7 +641,7 @@
     {
       "id": "faq-best-build",
       "question": "刀鋒寶貝 出裝怎麼搭配？",
-      "answer": "推薦：抵抗之靴、無盡戰刃、強者破軍、制裁之刃、賢者的庇護、名刀・司命."
+      "answer": "推薦：抵抗之靴、暗影戰斧、貪婪之噬、宗師之力、紅蓮斗篷、怒龍劍盾."
     },
     {
       "id": "faq-counter",
@@ -552,13 +650,13 @@
     }
   ],
   "metaAnalysis": [
-    "Butterfly win rate 52.23% (Camp HOK, 2026-06-22).",
+    "Butterfly win rate 52.23% (Camp HOK, 2026-06-27).",
     "Pick rate 0.56%.",
     "Ban rate 0.07%.",
     "Counters: Heino, Sakeer, Angela. Weak into: Hou Yi, Marco Polo, Lady Sun."
   ],
   "metaAnalysisZh": [
-    "刀鋒寶貝 勝率 52.23%（Camp HOK，2026-06-22）",
+    "刀鋒寶貝 勝率 52.23%（Camp HOK，2026-06-27）",
     "選取率 0.56%",
     "禁用率 0.07%",
     "克制：Heino、Sakeer、Angela；被克制：Hou Yi、Marco Polo、Lady Sun"

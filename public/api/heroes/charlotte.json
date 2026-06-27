@@ -19,7 +19,7 @@
   "heroCover": "https://camp.honorofkings.com/social/game/src/image_hero_cover_1275*718/NyNf5PFS.jpg",
   "tencentId": 536,
   "dataSource": "Camp HOK bilingual (primary)",
-  "dataUpdated": "2026-06-22",
+  "dataUpdated": "2026-06-27",
   "skills": [
     {
       "slot": "passive",
@@ -83,152 +83,103 @@
   "build": [
     {
       "slot": 1,
-      "itemId": "1341",
-      "name": "Frigid Charge",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1341.png",
-      "description": "PDEF +150, HP +900, CDR +7.5%, Resistance +10%\nGreat crowd control"
+      "itemId": "1422",
+      "name": "Boots of Resistance",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1422.png",
+      "description": "MDEF +100, PDEF +50, MSPD +50\nShortens crowd control"
     },
     {
       "slot": 2,
-      "itemId": "1337",
-      "name": "Sage's Sanctuary",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
-      "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
+      "itemId": "11311",
+      "name": "Pure Sky",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/11311.png",
+      "description": "PATK +80, PDEF +150, CDR +10%\nTemp. damage reduction"
     },
     {
       "slot": 3,
-      "itemId": "1127",
-      "name": "Destiny",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
-      "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
-    },
-    {
-      "slot": 4,
       "itemId": "1335",
       "name": "Succubus Cloak",
       "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
       "description": "MDEF +300, HP +1,100\nNegates magical damage"
     },
     {
+      "slot": 4,
+      "itemId": "1341",
+      "name": "Frigid Charge",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1341.png",
+      "description": "PDEF +150, HP +900, CDR +7.5%, Resistance +10%\nGreat crowd control"
+    },
+    {
       "slot": 5,
-      "itemId": "1338",
-      "name": "Cuirass of Savagery",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1338.png",
-      "description": "PATK +35, PDEF +210, HP +900\nOffense & defense"
+      "itemId": "1337",
+      "name": "Sage's Sanctuary",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+      "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
     },
     {
       "slot": 6,
-      "itemId": "1157",
-      "name": "Immovable - Sky Dome",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1157.png",
-      "description": "PATK +80, PDEF +150, CDR +10%\nTemp. damage reduction"
+      "itemId": "1127",
+      "name": "Destiny",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+      "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
     }
   ],
   "buildZh": [
     {
       "slot": 1,
-      "itemId": "1341",
-      "name": "冰霜衝擊",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1341.png",
-      "description": "+150點物防+900點生命值+7.5%冷卻時間+10%韌性\n群體控制"
+      "itemId": "1422",
+      "name": "抵抗之靴",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1422.png",
+      "description": "+100點法防+50點物防+50點移速\n減少被控時間"
     },
     {
       "slot": 2,
-      "itemId": "1337",
-      "name": "賢者的庇護",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
-      "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+      "itemId": "11311",
+      "name": "純淨蒼穹",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/11311.png",
+      "description": "+80點攻擊+150點物防+10%冷卻時間縮減\n暫時增加免傷"
     },
     {
       "slot": 3,
-      "itemId": "1127",
-      "name": "名刀・司命",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
-      "description": "+75點攻擊+15%攻速+500點生命值\n保命"
-    },
-    {
-      "slot": 4,
       "itemId": "1335",
       "name": "魔女斗篷",
       "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
       "description": "+300點法防+1100點生命值\n吸收法術傷害"
     },
     {
+      "slot": 4,
+      "itemId": "1341",
+      "name": "冰霜衝擊",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1341.png",
+      "description": "+150點物防+900點生命值+7.5%冷卻時間+10%韌性\n群體控制"
+    },
+    {
       "slot": 5,
-      "itemId": "1338",
-      "name": "暴烈之甲",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1338.png",
-      "description": "+35點攻擊+210點物防+900點生命值\n能抗能打"
+      "itemId": "1337",
+      "name": "賢者的庇護",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+      "description": "+900點生命值+150點物防+150點法防……\n原地復活"
     },
     {
       "slot": 6,
-      "itemId": "1157",
-      "name": "不動・天穹",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1157.png",
-      "description": "+80點攻擊+150點物防+10%冷卻時間縮減\n暫時增加免傷"
+      "itemId": "1127",
+      "name": "名刀・司命",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+      "description": "+75點攻擊+15%攻速+500點生命值\n保命"
     }
   ],
   "builds": [
     {
       "id": "camp-0",
-      "label": "LUCi HOK tiktok",
+      "label": "Top",
       "lane": "Top",
       "items": [
         {
           "slot": 1,
-          "itemId": "1341",
-          "name": "Frigid Charge",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1341.png",
-          "description": "PDEF +150, HP +900, CDR +7.5%, Resistance +10%\nGreat crowd control"
-        },
-        {
-          "slot": 2,
-          "itemId": "1337",
-          "name": "Sage's Sanctuary",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
-          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
-        },
-        {
-          "slot": 3,
-          "itemId": "1127",
-          "name": "Destiny",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
-          "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
-        },
-        {
-          "slot": 4,
-          "itemId": "1335",
-          "name": "Succubus Cloak",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
-          "description": "MDEF +300, HP +1,100\nNegates magical damage"
-        },
-        {
-          "slot": 5,
-          "itemId": "1338",
-          "name": "Cuirass of Savagery",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1338.png",
-          "description": "PATK +35, PDEF +210, HP +900\nOffense & defense"
-        },
-        {
-          "slot": 6,
-          "itemId": "1157",
-          "name": "Immovable - Sky Dome",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1157.png",
-          "description": "PATK +80, PDEF +150, CDR +10%\nTemp. damage reduction"
-        }
-      ]
-    },
-    {
-      "id": "camp-1",
-      "label": "对抗路之神",
-      "lane": "Top",
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1534",
-          "name": "Dragon's Rage",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1536.png",
-          "description": "HP +1,350, PDEF +180, MDEF +90\nBoosts BA damage"
+          "itemId": "1422",
+          "name": "Boots of Resistance",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1422.png",
+          "description": "MDEF +100, PDEF +50, MSPD +50\nShortens crowd control"
         },
         {
           "slot": 2,
@@ -246,108 +197,10 @@
         },
         {
           "slot": 4,
-          "itemId": "1337",
-          "name": "Sage's Sanctuary",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
-          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
-        },
-        {
-          "slot": 5,
-          "itemId": "1127",
-          "name": "Destiny",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
-          "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
-        },
-        {
-          "slot": 6,
-          "itemId": "1157",
-          "name": "Immovable - Sky Dome",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1157.png",
-          "description": "PATK +80, PDEF +150, CDR +10%\nTemp. damage reduction"
-        }
-      ]
-    },
-    {
-      "id": "camp-2",
-      "label": "TT:z3nar",
-      "lane": "Jungle",
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1328",
-          "name": "Blood Rage",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1328.png",
-          "description": "PATK +75, HP +900\nTrades HP for shield"
-        },
-        {
-          "slot": 2,
           "itemId": "1341",
           "name": "Frigid Charge",
           "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1341.png",
           "description": "PDEF +150, HP +900, CDR +7.5%, Resistance +10%\nGreat crowd control"
-        },
-        {
-          "slot": 3,
-          "itemId": "1337",
-          "name": "Sage's Sanctuary",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
-          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
-        },
-        {
-          "slot": 4,
-          "itemId": "1127",
-          "name": "Destiny",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
-          "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
-        },
-        {
-          "slot": 5,
-          "itemId": "1421",
-          "name": "Boots of Fortitude",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1421.png",
-          "description": "PDEF +100, MDEF +50, MSPD +50\nReduces physical damage"
-        },
-        {
-          "slot": 6,
-          "itemId": "1334",
-          "name": "Eye of the Phoenix",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1334.png",
-          "description": "MDEF +180, PDEF +90, HP +1,350\nBoosts HP Regen"
-        }
-      ]
-    },
-    {
-      "id": "camp-3",
-      "label": "Principais",
-      "lane": "Top",
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1137",
-          "name": "Axe of Torment",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1137.png",
-          "description": "PATK +80, CDR +10%, HP +500\nAnti-squishy"
-        },
-        {
-          "slot": 2,
-          "itemId": "1534",
-          "name": "Dragon's Rage",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1536.png",
-          "description": "HP +1,350, PDEF +180, MDEF +90\nBoosts BA damage"
-        },
-        {
-          "slot": 3,
-          "itemId": "1335",
-          "name": "Succubus Cloak",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
-          "description": "MDEF +300, HP +1,100\nNegates magical damage"
-        },
-        {
-          "slot": 4,
-          "itemId": "1422",
-          "name": "Boots of Resistance",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1422.png",
-          "description": "MDEF +100, PDEF +50, MSPD +50\nShortens crowd control"
         },
         {
           "slot": 5,
@@ -369,64 +222,15 @@
   "buildsZh": [
     {
       "id": "camp-0",
-      "label": "LUCi HOK tiktok",
+      "label": "Top",
       "lane": "Top",
       "items": [
         {
           "slot": 1,
-          "itemId": "1341",
-          "name": "冰霜衝擊",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1341.png",
-          "description": "+150點物防+900點生命值+7.5%冷卻時間+10%韌性\n群體控制"
-        },
-        {
-          "slot": 2,
-          "itemId": "1337",
-          "name": "賢者的庇護",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
-          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
-        },
-        {
-          "slot": 3,
-          "itemId": "1127",
-          "name": "名刀・司命",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
-          "description": "+75點攻擊+15%攻速+500點生命值\n保命"
-        },
-        {
-          "slot": 4,
-          "itemId": "1335",
-          "name": "魔女斗篷",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
-          "description": "+300點法防+1100點生命值\n吸收法術傷害"
-        },
-        {
-          "slot": 5,
-          "itemId": "1338",
-          "name": "暴烈之甲",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1338.png",
-          "description": "+35點攻擊+210點物防+900點生命值\n能抗能打"
-        },
-        {
-          "slot": 6,
-          "itemId": "1157",
-          "name": "不動・天穹",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1157.png",
-          "description": "+80點攻擊+150點物防+10%冷卻時間縮減\n暫時增加免傷"
-        }
-      ]
-    },
-    {
-      "id": "camp-1",
-      "label": "对抗路之神",
-      "lane": "Top",
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1534",
-          "name": "怒龍劍盾",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1536.png",
-          "description": "+1350點生命值+180點物防+90點法防\n普攻額外傷害"
+          "itemId": "1422",
+          "name": "抵抗之靴",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1422.png",
+          "description": "+100點法防+50點物防+50點移速\n減少被控時間"
         },
         {
           "slot": 2,
@@ -444,108 +248,10 @@
         },
         {
           "slot": 4,
-          "itemId": "1337",
-          "name": "賢者的庇護",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
-          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
-        },
-        {
-          "slot": 5,
-          "itemId": "1127",
-          "name": "名刀・司命",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
-          "description": "+75點攻擊+15%攻速+500點生命值\n保命"
-        },
-        {
-          "slot": 6,
-          "itemId": "1157",
-          "name": "不動・天穹",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1157.png",
-          "description": "+80點攻擊+150點物防+10%冷卻時間縮減\n暫時增加免傷"
-        }
-      ]
-    },
-    {
-      "id": "camp-2",
-      "label": "TT:z3nar",
-      "lane": "Jungle",
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1328",
-          "name": "血魔之怒",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1328.png",
-          "description": "+75點攻擊+900點生命值 \n犧牲生命值換取護盾值"
-        },
-        {
-          "slot": 2,
           "itemId": "1341",
           "name": "冰霜衝擊",
           "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1341.png",
           "description": "+150點物防+900點生命值+7.5%冷卻時間+10%韌性\n群體控制"
-        },
-        {
-          "slot": 3,
-          "itemId": "1337",
-          "name": "賢者的庇護",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
-          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
-        },
-        {
-          "slot": 4,
-          "itemId": "1127",
-          "name": "名刀・司命",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
-          "description": "+75點攻擊+15%攻速+500點生命值\n保命"
-        },
-        {
-          "slot": 5,
-          "itemId": "1421",
-          "name": "影忍之足",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1421.png",
-          "description": "+100點物防+50點法防+50點移速\n減少物理傷害"
-        },
-        {
-          "slot": 6,
-          "itemId": "1334",
-          "name": "不死鳥之眼",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1334.png",
-          "description": "+180點法防+90點物防+1350點生命值……\n增加回血效果"
-        }
-      ]
-    },
-    {
-      "id": "camp-3",
-      "label": "Principais",
-      "lane": "Top",
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1137",
-          "name": "暗影戰斧",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1137.png",
-          "description": "+80點攻擊+10%減冷卻時間+500點生命值\n打血薄用"
-        },
-        {
-          "slot": 2,
-          "itemId": "1534",
-          "name": "怒龍劍盾",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1536.png",
-          "description": "+1350點生命值+180點物防+90點法防\n普攻額外傷害"
-        },
-        {
-          "slot": 3,
-          "itemId": "1335",
-          "name": "魔女斗篷",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
-          "description": "+300點法防+1100點生命值\n吸收法術傷害"
-        },
-        {
-          "slot": 4,
-          "itemId": "1422",
-          "name": "抵抗之靴",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1422.png",
-          "description": "+100點法防+50點物防+50點移速\n減少被控時間"
         },
         {
           "slot": 5,
@@ -566,12 +272,12 @@
   ],
   "arcana": [
     "Lvl 5: Mutation",
-    "Lvl 5: Stealth",
+    "Lvl 5: Harmony",
     "Lvl 5: Hunt"
   ],
   "arcanaZh": [
     "5級：異變",
-    "5級：隱匿",
+    "5級：調和",
     "5級：狩獵"
   ],
   "spells": [
@@ -591,11 +297,11 @@
   "tips": [
     "Charlotte (Warrior): Tier A — 50.91% WR (Camp HOK).",
     "Lane: Clash Lane.",
-    "Build: Frigid Charge, Sage's Sanctuary, Destiny."
+    "Build: Boots of Resistance, Pure Sky, Succubus Cloak."
   ],
   "tipsZh": [
     "夏洛特（對抗路）：梯度 A，勝率 50.91%（Camp HOK）。",
-    "出裝：冰霜衝擊、賢者的庇護、名刀・司命."
+    "出裝：抵抗之靴、純淨蒼穹、魔女斗篷."
   ],
   "patchHistory": [
     {
@@ -720,7 +426,7 @@
     {
       "id": "faq-best-build",
       "question": "What is the best Charlotte build?",
-      "answer": "Recommended: Frigid Charge, Sage's Sanctuary, Destiny, Succubus Cloak, Cuirass of Savagery, Immovable - Sky Dome."
+      "answer": "Recommended: Boots of Resistance, Pure Sky, Succubus Cloak, Frigid Charge, Sage's Sanctuary, Destiny."
     },
     {
       "id": "faq-counter",
@@ -737,7 +443,7 @@
     {
       "id": "faq-best-build",
       "question": "夏洛特 出裝怎麼搭配？",
-      "answer": "推薦：冰霜衝擊、賢者的庇護、名刀・司命、魔女斗篷、暴烈之甲、不動・天穹."
+      "answer": "推薦：抵抗之靴、純淨蒼穹、魔女斗篷、冰霜衝擊、賢者的庇護、名刀・司命."
     },
     {
       "id": "faq-counter",
@@ -746,13 +452,13 @@
     }
   ],
   "metaAnalysis": [
-    "Charlotte win rate 50.91% (Camp HOK, 2026-06-22).",
+    "Charlotte win rate 50.91% (Camp HOK, 2026-06-27).",
     "Pick rate 0.76%.",
     "Ban rate 0.07%.",
     "Counters: Fuzi, Hou Yi. Weak into: Arli, Kaizer."
   ],
   "metaAnalysisZh": [
-    "夏洛特 勝率 50.91%（Camp HOK，2026-06-22）",
+    "夏洛特 勝率 50.91%（Camp HOK，2026-06-27）",
     "選取率 0.76%",
     "禁用率 0.07%",
     "克制：Fuzi、Hou Yi；被克制：Arli、Kaizer"

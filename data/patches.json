@@ -2,7 +2,7 @@
   "season": "S15",
   "currentSeason": "S15",
   "source": "Camp HOK bilingual (api-camp.honorofkings.com)",
-  "updated": "2026-06-22",
+  "updated": "2026-06-27",
   "heroCount": 116,
   "seasons": [
     {
@@ -3532,6 +3532,18 @@
           "publishedAt": "2024-08-08T02:00:57Z"
         },
         {
+          "heroSlug": "heino",
+          "heroName": "Heino",
+          "heroNameZh": "海諾",
+          "tag": "Stat Nerfs",
+          "change": "Reduced the continuous poke of Skill 1 and reduced the damage reduction when Ultimate is used.",
+          "changeZh": "降低1技能持續消耗能力，降低大招施放期間的免傷效果",
+          "detail": "\"Currently, Heino offers a poor counterplay experience for opponents. His Ultimate's high damage reduction and restoration allow him to continuously poke enemies while being difficult to counter. We've reduced his damage output and the room for error in his Ultimate, giving opponents more opportunities to counter him.\"",
+          "detailZh": "目前海諾給對手的對抗體驗較差，大招高額的免傷和回復能力使其可以在敵方面前持續消耗且不容易受到反制，我們降低了他的輸出能力和大招容錯率，給對手更多的反制空間",
+          "versionName": "20240822",
+          "publishedAt": "2024-08-22T07:13:54Z"
+        },
+        {
           "heroSlug": "arli",
           "heroName": "Arli",
           "heroNameZh": "公孫離",
@@ -3644,18 +3656,6 @@
           "detailZh": "王昭君一直具備不錯的前期作戰能力，但是當遊戲行進至中後期時，王昭君反而會更加依賴隊友，從而變成一個單純的控制機器或守塔機器。我們希望通過調整她的被動技能，來改變她前期過強而後期體驗過分單調的處境。",
           "versionName": "20240523",
           "publishedAt": "2024-05-23T12:11:56Z"
-        },
-        {
-          "heroSlug": "angela",
-          "heroName": "Angela",
-          "heroNameZh": "安琪拉",
-          "tag": "Stat Changes",
-          "change": "Increased the skill damage bonus multiplier from her Passive",
-          "changeZh": "調整被動技能中，對技能傷害提升的加成係數",
-          "detail": "Increased the skill damage bonus multiplier from her Passive\nAngela is a hero capable of dealing high burst damage. However, her strength in early and late game is currently somewhat unbalanced.We have thus made some changes to the base stats and bonus multiplier of her Passive.This ensures that while she won't be too powerful in early game, she can still deal more damage in late game.",
-          "detailZh": "「安琪拉是一名爆發傷害很高的英雄，但是目前她在前期和後期的強度有些不夠均衡。因此我們調整她被動技能中的基礎數值和加成係數。確保她前期不會過於強大，同時提升她在後期戰鬥中的傷害。」",
-          "versionName": "20240424",
-          "publishedAt": "2024-04-24T09:58:37Z"
         },
         {
           "heroSlug": "consort-yu",
@@ -4186,18 +4186,6 @@
           "publishedAt": "2023-11-08T12:02:09Z"
         },
         {
-          "heroSlug": "angela",
-          "heroName": "Angela",
-          "heroNameZh": "安琪拉",
-          "tag": "Stat Buffs",
-          "change": "Buff stacks expiry mechanic",
-          "changeZh": "Buff stacks expiry mechanic",
-          "detail": null,
-          "detailZh": null,
-          "versionName": "20231011",
-          "publishedAt": "2023-10-11T12:03:22Z"
-        },
-        {
           "heroSlug": "zhou-yu",
           "heroName": "Zhou Yu",
           "heroNameZh": "周瑜",
@@ -4268,6 +4256,30 @@
           "detailZh": "Guitarist is one of just a few mages in the game who are able to engage in melee combat. To these heroes, the ability to stay alive and in the fight is key. We hope to give our players more choices when it comes to mage heroes, and that by enhancing his Skill 2 recovery, he'll be able to take part in team fights more often without having to worry too much about taking some damage.",
           "versionName": "20231122",
           "publishedAt": "2023-11-22T12:01:46Z"
+        },
+        {
+          "heroSlug": "di-renjie",
+          "heroName": "Di Renjie",
+          "heroNameZh": "狄仁傑",
+          "tag": "Stat Changes",
+          "change": "Reduced the base damage of Skills 1 and 2, but kept the same basic damage as before at max level.",
+          "changeZh": "Reduced the base damage of Skills 1 and 2, but kept the same basic damage as before at max level.",
+          "detail": "Di Renjie deals high burst damage in melee range with Skills 1 and 2, and is able to poke enemies from afar with his Basic Attacks. These two characterisics made him very powerful at laning during early game, even before he's all geared up. Considering that he's a solid hero during mid to late game, we want Di Renjie to be less punishing during early game.",
+          "detailZh": "Di Renjie deals high burst damage in melee range with Skills 1 and 2, and is able to poke enemies from afar with his Basic Attacks. These two characterisics made him very powerful at laning during early game, even before he's all geared up. Considering that he's a solid hero during mid to late game, we want Di Renjie to be less punishing during early game.",
+          "versionName": "20231206",
+          "publishedAt": "2023-12-06T09:28:03Z"
+        },
+        {
+          "heroSlug": "di-renjie",
+          "heroName": "Di Renjie",
+          "heroNameZh": "狄仁傑",
+          "tag": "Stat Buffs",
+          "change": "Buff stacks expiry mechanic",
+          "changeZh": "Buff stacks expiry mechanic",
+          "detail": null,
+          "detailZh": null,
+          "versionName": "20231011",
+          "publishedAt": "2023-10-11T12:03:22Z"
         },
         {
           "heroSlug": "agudo",
@@ -4388,18 +4400,6 @@
           "detailZh": "Thanks to his skill's true damage mechanic, Marco Polo can equip multiple pieces of defensive equipment while still being able to deal lots of damage when poking and deliver tremendous burst damage during team fights. By mid to late game, Marco Polo is able to do just about everything the other marksmen can. By making some slight adjustments to his laning capabilities and late game strength, we hope to make this highly versatily marksman just a little bit less powerful.",
           "versionName": "20231122",
           "publishedAt": "2023-11-22T12:01:46Z"
-        },
-        {
-          "heroSlug": "milady",
-          "heroName": "Milady",
-          "heroNameZh": "米萊狄",
-          "tag": "Stat Nerfs",
-          "change": "Skills (Nerf)",
-          "changeZh": "Skills (Nerf)",
-          "detail": null,
-          "detailZh": null,
-          "versionName": "20231011",
-          "publishedAt": "2023-10-11T12:03:22Z"
         },
         {
           "heroSlug": "yaria",

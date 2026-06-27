@@ -19,7 +19,7 @@
   "heroCover": "https://camp.honorofkings.com/social/game/src/image_hero_cover_1275*718/mSwYbrln.jpg",
   "tencentId": 538,
   "dataSource": "Camp HOK bilingual (primary)",
-  "dataUpdated": "2026-06-22",
+  "dataUpdated": "2026-06-27",
   "skills": [
     {
       "slot": "passive",
@@ -83,38 +83,38 @@
   "build": [
     {
       "slot": 1,
-      "itemId": "13310",
-      "name": "Frostscar's Embrace",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/13310.png",
-      "description": "PATK +60, PDEF +300, CDR +10%\nEnhanced BAs slow"
+      "itemId": "1422",
+      "name": "Boots of Resistance",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1422.png",
+      "description": "MDEF +100, PDEF +50, MSPD +50\nShortens crowd control"
     },
     {
       "slot": 2,
-      "itemId": "1534",
-      "name": "Dragon's Rage",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1536.png",
-      "description": "HP +1,350, PDEF +180, MDEF +90\nGrants extra damage and recovery"
+      "itemId": "1338",
+      "name": "Cuirass of Savagery",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1338.png",
+      "description": "PATK +35, PDEF +210, HP +900\nOffense & defense"
     },
     {
       "slot": 3,
+      "itemId": "1138",
+      "name": "Overlord's Might",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1138.png",
+      "description": "PATK +150, CDR +5%\nHigh-damage attack"
+    },
+    {
+      "slot": 4,
       "itemId": "1335",
       "name": "Succubus Cloak",
       "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
       "description": "MDEF +300, HP +1,100\nNegates magical damage"
     },
     {
-      "slot": 4,
+      "slot": 5,
       "itemId": "1337",
       "name": "Sage's Sanctuary",
       "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
       "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
-    },
-    {
-      "slot": 5,
-      "itemId": "1328",
-      "name": "Blood Rage",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1328.png",
-      "description": "PATK +75, HP +900\nTrades HP for shield"
     },
     {
       "slot": 6,
@@ -127,38 +127,38 @@
   "buildZh": [
     {
       "slot": 1,
-      "itemId": "13310",
-      "name": "冰痕之握",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/13310.png",
-      "description": "+60點攻擊+300點物防+10%減冷卻時間……\n強化普攻減速"
+      "itemId": "1422",
+      "name": "抵抗之靴",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1422.png",
+      "description": "+100點法防+50點物防+50點移速\n減少被控時間"
     },
     {
       "slot": 2,
-      "itemId": "1534",
-      "name": "怒龍劍盾",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1536.png",
-      "description": "+1350點生命值+180點物防+90點法防\n額外傷害與回復"
+      "itemId": "1338",
+      "name": "暴烈之甲",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1338.png",
+      "description": "+35點攻擊+210點物防+900點生命值\n能抗能打"
     },
     {
       "slot": 3,
+      "itemId": "1138",
+      "name": "強者破軍",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1138.png",
+      "description": "+150點攻擊+5%減冷卻時間\n高額攻擊"
+    },
+    {
+      "slot": 4,
       "itemId": "1335",
       "name": "魔女斗篷",
       "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
       "description": "+300點法防+1100點生命值\n吸收法術傷害"
     },
     {
-      "slot": 4,
+      "slot": 5,
       "itemId": "1337",
       "name": "賢者的庇護",
       "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
       "description": "+900點生命值+150點物防+150點法防……\n原地復活"
-    },
-    {
-      "slot": 5,
-      "itemId": "1328",
-      "name": "血魔之怒",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1328.png",
-      "description": "+75點攻擊+900點生命值 \n犧牲生命值換取護盾值"
     },
     {
       "slot": 6,
@@ -171,6 +171,55 @@
   "builds": [
     {
       "id": "camp-0",
+      "label": "高额伤害",
+      "lane": "Jungle",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1422",
+          "name": "Boots of Resistance",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1422.png",
+          "description": "MDEF +100, PDEF +50, MSPD +50\nShortens crowd control"
+        },
+        {
+          "slot": 2,
+          "itemId": "1338",
+          "name": "Cuirass of Savagery",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1338.png",
+          "description": "PATK +35, PDEF +210, HP +900\nOffense & defense"
+        },
+        {
+          "slot": 3,
+          "itemId": "1138",
+          "name": "Overlord's Might",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1138.png",
+          "description": "PATK +150, CDR +5%\nHigh-damage attack"
+        },
+        {
+          "slot": 4,
+          "itemId": "1335",
+          "name": "Succubus Cloak",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
+          "description": "MDEF +300, HP +1,100\nNegates magical damage"
+        },
+        {
+          "slot": 5,
+          "itemId": "1337",
+          "name": "Sage's Sanctuary",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
+        },
+        {
+          "slot": 6,
+          "itemId": "1127",
+          "name": "Destiny",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
+        }
+      ]
+    },
+    {
+      "id": "camp-1",
       "label": "Popular",
       "lane": "Jungle",
       "items": [
@@ -219,7 +268,7 @@
       ]
     },
     {
-      "id": "camp-1",
+      "id": "camp-2",
       "label": "jungle meta",
       "lane": "Jungle",
       "items": [
@@ -271,6 +320,55 @@
   "buildsZh": [
     {
       "id": "camp-0",
+      "label": "高额伤害",
+      "lane": "Jungle",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1422",
+          "name": "抵抗之靴",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1422.png",
+          "description": "+100點法防+50點物防+50點移速\n減少被控時間"
+        },
+        {
+          "slot": 2,
+          "itemId": "1338",
+          "name": "暴烈之甲",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1338.png",
+          "description": "+35點攻擊+210點物防+900點生命值\n能抗能打"
+        },
+        {
+          "slot": 3,
+          "itemId": "1138",
+          "name": "強者破軍",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1138.png",
+          "description": "+150點攻擊+5%減冷卻時間\n高額攻擊"
+        },
+        {
+          "slot": 4,
+          "itemId": "1335",
+          "name": "魔女斗篷",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
+          "description": "+300點法防+1100點生命值\n吸收法術傷害"
+        },
+        {
+          "slot": 5,
+          "itemId": "1337",
+          "name": "賢者的庇護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+        },
+        {
+          "slot": 6,
+          "itemId": "1127",
+          "name": "名刀・司命",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "+75點攻擊+15%攻速+500點生命值\n保命"
+        }
+      ]
+    },
+    {
+      "id": "camp-1",
       "label": "Popular",
       "lane": "Jungle",
       "items": [
@@ -319,7 +417,7 @@
       ]
     },
     {
-      "id": "camp-1",
+      "id": "camp-2",
       "label": "jungle meta",
       "lane": "Jungle",
       "items": [
@@ -397,11 +495,11 @@
   "tips": [
     "Ying (Assassin): Tier A — 52.94% WR (Camp HOK).",
     "Lane: Jungling.",
-    "Build: Frostscar's Embrace, Dragon's Rage, Succubus Cloak."
+    "Build: Boots of Resistance, Cuirass of Savagery, Overlord's Might."
   ],
   "tipsZh": [
     "雲纓（打野）：梯度 A，勝率 52.94%（Camp HOK）。",
-    "出裝：冰痕之握、怒龍劍盾、魔女斗篷."
+    "出裝：抵抗之靴、暴烈之甲、強者破軍."
   ],
   "patchHistory": [
     {
@@ -504,7 +602,7 @@
     {
       "id": "faq-best-build",
       "question": "What is the best Ying build?",
-      "answer": "Recommended: Frostscar's Embrace, Dragon's Rage, Succubus Cloak, Sage's Sanctuary, Blood Rage, Destiny."
+      "answer": "Recommended: Boots of Resistance, Cuirass of Savagery, Overlord's Might, Succubus Cloak, Sage's Sanctuary, Destiny."
     },
     {
       "id": "faq-counter",
@@ -521,7 +619,7 @@
     {
       "id": "faq-best-build",
       "question": "雲纓 出裝怎麼搭配？",
-      "answer": "推薦：冰痕之握、怒龍劍盾、魔女斗篷、賢者的庇護、血魔之怒、名刀・司命."
+      "answer": "推薦：抵抗之靴、暴烈之甲、強者破軍、魔女斗篷、賢者的庇護、名刀・司命."
     },
     {
       "id": "faq-counter",
@@ -530,13 +628,13 @@
     }
   ],
   "metaAnalysis": [
-    "Ying win rate 52.94% (Camp HOK, 2026-06-22).",
+    "Ying win rate 52.94% (Camp HOK, 2026-06-27).",
     "Pick rate 0.83%.",
     "Ban rate 0.09%.",
     "Counters: Kongming, Liang, Yuhuan. Weak into: Di Renjie, Erin, Lady Sun."
   ],
   "metaAnalysisZh": [
-    "雲纓 勝率 52.94%（Camp HOK，2026-06-22）",
+    "雲纓 勝率 52.94%（Camp HOK，2026-06-27）",
     "選取率 0.83%",
     "禁用率 0.09%",
     "克制：Kongming、Liang、Yuhuan；被克制：Di Renjie、Erin、Lady Sun"
