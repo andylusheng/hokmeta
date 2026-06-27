@@ -1,4 +1,4 @@
-import { heroes } from '@/lib/data';
+import { heroes, items } from '@/lib/data';
 import { buildMetadata, defaultTitle } from '@/lib/seo';
 import { createT } from '@/lib/i18n';
 import { CounterPickerView } from '@/views/CounterPickerView';
@@ -13,5 +13,5 @@ export const metadata = buildMetadata({
 });
 
 export default function ZhTWCounterPickerPage() {
-  return <CounterPickerView heroes={heroes} locale="zh-TW" />;
+  return <CounterPickerView heroes={heroes} items={items} locale="zh-TW" />;
 }

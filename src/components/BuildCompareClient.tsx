@@ -6,8 +6,10 @@ import { HeroSelect } from '@/components/HeroSelect';
 import { createT, type Locale } from '@/lib/i18n';
 import {
   calculateDamage,
+  defenseMultiplier,
   getBuildItemIds,
   getDamageProfile,
+  targetPresets,
   type DamageResult,
 } from '@/lib/damage';
 
@@ -78,14 +80,6 @@ function defaultBuildIds(hero: Hero): string[] {
   return getBuildItemIds(hero.build).slice(0, 6);
 }
 
-function compareTarget(level: number) {
-  return {
-    hp: 6600 + level * 180,
-    physicalDefense: 300 + level * 26,
-    magicalDefense: 230 + level * 18,
-  };
-}
-
 function itemById(items: GameItem[], ids: string[]): GameItem[] {
   return ids
     .map((id) => items.find((item) => item.id === id))
@@ -96,6 +90,18 @@ function winnerLabel(resultA: DamageResult, resultB: DamageResult, labels: { a: 
   const diff = Math.abs(resultA.totalDamage - resultB.totalDamage);
   if (diff < 50) return tie;
   return resultA.totalDamage > resultB.totalDamage ? labels.a : labels.b;
+}
+
+function survivalScore(result: DamageResult): number {
+  const hp = Math.max(1, result.attackerStats.hp);
+  const physicalEhp = hp / defenseMultiplier(result.attackerStats.physicalDefense);
+  const magicalEhp = hp / defenseMultiplier(result.attackerStats.magicalDefense);
+  return (physicalEhp + magicalEhp) / 2;
+}
+
+function compareNumber(a: number, b: number, labels: { a: string; b: string }, tie: string): string {
+  if (Math.abs(a - b) < 50) return tie;
+  return a > b ? labels.a : labels.b;
 }
 
 export function BuildCompareClient({
@@ -155,7 +161,7 @@ export function BuildCompareClient({
 
   const selectedA = useMemo(() => itemById(items, idsA), [items, idsA]);
   const selectedB = useMemo(() => itemById(items, idsB), [items, idsB]);
-  const target = useMemo(() => compareTarget(level), [level]);
+  const target = targetPresets.find((preset) => preset.id === 'fighter')?.stats ?? targetPresets[0].stats;
 
   const resultA = calculateDamage({
     profile,
@@ -177,6 +183,36 @@ export function BuildCompareClient({
     target,
     heroRole: hero.role,
   });
+
+  const templateResults = targetPresets.map((preset) => {
+    const a = calculateDamage({
+      profile,
+      level,
+      skillLevel,
+      selectedSkillIds,
+      basicAttackCount,
+      selectedItems: selectedA,
+      target: preset.stats,
+      heroRole: hero.role,
+    });
+    const b = calculateDamage({
+      profile,
+      level,
+      skillLevel,
+      selectedSkillIds,
+      basicAttackCount,
+      selectedItems: selectedB,
+      target: preset.stats,
+      heroRole: hero.role,
+    });
+    return { preset, a, b, diff: b.totalDamage - a.totalDamage };
+  });
+  const tankTemplate = templateResults.find((entry) => entry.preset.id === 'tank') ?? templateResults[0]!;
+  const marksmanTemplate = templateResults.find((entry) => entry.preset.id === 'marksman') ?? templateResults[0]!;
+  const overallA = templateResults.reduce((sum, entry) => sum + entry.a.totalDamage, 0);
+  const overallB = templateResults.reduce((sum, entry) => sum + entry.b.totalDamage, 0);
+  const survivalA = survivalScore(resultA);
+  const survivalB = survivalScore(resultB);
 
   const itemOptions = useMemo(() => {
     const q = query.trim().toLowerCase();
@@ -357,6 +393,88 @@ export function BuildCompareClient({
             </p>
           </div>
         </div>
+      </section>
+
+      <section className="card">
+        <h2 className="section-title">Target templates</h2>
+        <div className="overflow-x-auto">
+          <table className="min-w-full text-sm">
+            <thead className="text-left text-gray-400">
+              <tr>
+                <th className="py-2 pr-4">Target</th>
+                <th className="py-2 pr-4">{c.buildA}</th>
+                <th className="py-2 pr-4">{c.buildB}</th>
+                <th className="py-2 pr-4">Winner</th>
+                <th className="py-2 pr-4">Defense</th>
+              </tr>
+            </thead>
+            <tbody>
+              {templateResults.map((entry) => (
+                <tr key={entry.preset.id} className="border-t border-hok-border">
+                  <td className="py-3 pr-4">
+                    <p className="font-semibold text-white">{entry.preset.label}</p>
+                    <p className="text-xs text-gray-500">{entry.preset.description}</p>
+                  </td>
+                  <td className="py-3 pr-4 text-gray-300">{fmt(entry.a.totalDamage)}</td>
+                  <td className="py-3 pr-4 text-gray-300">{fmt(entry.b.totalDamage)}</td>
+                  <td className="py-3 pr-4 font-semibold text-hok-gold">
+                    {winnerLabel(entry.a, entry.b, { a: c.buildA, b: c.buildB }, c.tie)}
+                  </td>
+                  <td className="py-3 pr-4 text-xs text-gray-500">
+                    HP {fmt(entry.preset.stats.hp)} / PDEF {fmt(entry.preset.stats.physicalDefense)} / MDEF{' '}
+                    {fmt(entry.preset.stats.magicalDefense)}
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section className="card">
+        <h2 className="section-title">Auto conclusions</h2>
+        <div className="grid gap-3 md:grid-cols-4">
+          <div className="rounded border border-hok-border bg-hok-dark p-4">
+            <p className="text-sm text-gray-400">Stronger into tanks</p>
+            <p className="mt-1 text-xl font-bold text-white">
+              {winnerLabel(tankTemplate.a, tankTemplate.b, { a: c.buildA, b: c.buildB }, c.tie)}
+            </p>
+            <p className="mt-1 text-xs text-gray-500">
+              Tank delta: {tankTemplate.diff > 0 ? '+' : ''}{fmt(tankTemplate.diff)}
+            </p>
+          </div>
+          <div className="rounded border border-hok-border bg-hok-dark p-4">
+            <p className="text-sm text-gray-400">Better survival</p>
+            <p className="mt-1 text-xl font-bold text-white">
+              {compareNumber(survivalA, survivalB, { a: c.buildA, b: c.buildB }, c.tie)}
+            </p>
+            <p className="mt-1 text-xs text-gray-500">
+              EHP delta: {survivalB - survivalA > 0 ? '+' : ''}{fmt(survivalB - survivalA)}
+            </p>
+          </div>
+          <div className="rounded border border-hok-border bg-hok-dark p-4">
+            <p className="text-sm text-gray-400">Squishy burst</p>
+            <p className="mt-1 text-xl font-bold text-white">
+              {winnerLabel(marksmanTemplate.a, marksmanTemplate.b, { a: c.buildA, b: c.buildB }, c.tie)}
+            </p>
+            <p className="mt-1 text-xs text-gray-500">
+              Marksman delta: {marksmanTemplate.diff > 0 ? '+' : ''}{fmt(marksmanTemplate.diff)}
+            </p>
+          </div>
+          <div className="rounded border border-hok-gold/40 bg-hok-gold/10 p-4">
+            <p className="text-sm text-gray-300">Best overall damage</p>
+            <p className="mt-1 text-xl font-bold text-white">
+              {compareNumber(overallA, overallB, { a: c.buildA, b: c.buildB }, c.tie)}
+            </p>
+            <p className="mt-1 text-xs text-gray-500">
+              Four-template delta: {overallB - overallA > 0 ? '+' : ''}{fmt(overallB - overallA)}
+            </p>
+          </div>
+        </div>
+        <p className="mt-4 text-xs text-gray-500">
+          Template targets represent common marksman, mage, fighter, and tank durability profiles. They use the same
+          beta 602 defense formula as the calculator, so penetration and defensive items change the verdict immediately.
+        </p>
       </section>
 
       <div className="grid gap-6 lg:grid-cols-2">
