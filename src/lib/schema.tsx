@@ -97,6 +97,35 @@ export function webSiteSchema() {
   };
 }
 
+export function webApplicationSchema(input: {
+  name: string;
+  path: string;
+  description: string;
+  applicationCategory?: string;
+  operatingSystem?: string;
+  keywords?: string[];
+}) {
+  const url = canonicalUrl(input.path);
+
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'WebApplication',
+    name: input.name,
+    url,
+    description: input.description,
+    applicationCategory: input.applicationCategory ?? 'GameApplication',
+    operatingSystem: input.operatingSystem ?? 'Web',
+    browserRequirements: 'Requires JavaScript',
+    isAccessibleForFree: true,
+    publisher: {
+      '@type': 'Organization',
+      name: site.author,
+      url: site.domain,
+    },
+    ...(input.keywords?.length ? { keywords: input.keywords.join(', ') } : {}),
+  };
+}
+
 export function heroArticleSchema(hero: Hero, path: string) {
   return {
     '@context': 'https://schema.org',

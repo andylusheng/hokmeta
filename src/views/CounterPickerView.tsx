@@ -2,7 +2,7 @@ import type { GameItem, Hero } from '@/types/hero';
 import { createT, localePath, type Locale } from '@/lib/i18n';
 import { CounterPickerClient } from '@/components/CounterPickerClient';
 import { Breadcrumb } from '@/components/Breadcrumb';
-import { JsonLd, breadcrumbSchema } from '@/lib/schema';
+import { JsonLd, breadcrumbSchema, webApplicationSchema } from '@/lib/schema';
 
 export function CounterPickerView({
   heroes,
@@ -22,6 +22,20 @@ export function CounterPickerView({
           { name: t('common.home'), path: localePath(locale, '/') },
           { name: t('tools.counterPageTitle'), path: localePath(locale, '/tools/counter-picker') },
         ])}
+      />
+      <JsonLd
+        data={webApplicationSchema({
+          name: t('tools.counterPageTitle'),
+          path: localePath(locale, '/tools/counter-picker'),
+          description:
+            'Enter the enemy Honor of Kings draft to compare counter picks, ban priority, equipment answers, and teamfight rules.',
+          keywords: [
+            'Honor of Kings counter picker',
+            'HOK counter picks',
+            'Honor of Kings draft tool',
+            'HOK ban recommendations',
+          ],
+        })}
       />
       <Breadcrumb
         items={[

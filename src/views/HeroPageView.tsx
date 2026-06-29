@@ -12,6 +12,7 @@ import { Breadcrumb } from '@/components/Breadcrumb';
 import { HeroCoverBanner } from '@/components/HeroCoverBanner';
 import { BuildStrip } from '@/components/BuildStrip';
 import { HeroDecisionPanel } from '@/components/HeroDecisionPanel';
+import { HeroGeoAnswerBox } from '@/components/HeroGeoAnswerBox';
 import { BuildBlock } from '@/components/BuildBlock';
 import { SkillBlock } from '@/components/SkillBlock';
 import { ArcanaTable } from '@/components/ArcanaTable';
@@ -33,6 +34,8 @@ import {
   heroArticleSchema,
   heroGameSchema,
 } from '@/lib/schema';
+import { heroGeoFaqs } from '@/lib/hero-geo';
+import { GEO_BUILD_YEAR } from '@/lib/meta-season';
 
 function ComparisonsBlock({ hero, locale }: { hero: Hero; locale: Locale }) {
   const g = getLocalizedGuide(hero, locale);
@@ -62,9 +65,17 @@ export function HeroPageView({
 }) {
   const t = createT(locale);
   const keywords = getKeywordsForHero(hero.slug);
-  const featuredFaqs = getLocalizedFaqs(hero, locale, 5);
   const heroPath = `/hero/${hero.slug}`;
   const heroName = getHeroDisplayName(hero, locale);
+  const featuredFaqs = getLocalizedFaqs(hero, locale, 5);
+  const geoFaqs = heroGeoFaqs(hero, locale);
+  const visibleFaqs = [...geoFaqs, ...featuredFaqs]
+    .filter((faq, index, list) => list.findIndex((f) => f.id === faq.id) === index)
+    .slice(0, 8);
+  const faqTitle =
+    locale === 'zh-TW'
+      ? `${heroName} ${GEO_BUILD_YEAR} 出裝常見問題`
+      : `${heroName} Build ${GEO_BUILD_YEAR} FAQ`;
   const damageCalculatorPath = localePath(locale, `/tools/damage-calculator/${hero.slug}`);
   const buildComparePath = localePath(locale, `/tools/build-compare/${hero.slug}`);
 
@@ -89,7 +100,7 @@ export function HeroPageView({
       />
       <JsonLd
         data={faqPageSchema(
-          featuredFaqs.map((f) => ({ question: f.question, answer: f.answer }))
+          visibleFaqs.map((f) => ({ question: f.question, answer: f.answer }))
         )}
       />
       <JsonLd data={heroGameSchema(hero, localePath(locale, heroPath))} />
@@ -108,6 +119,7 @@ export function HeroPageView({
       <div className="grid gap-8 lg:grid-cols-[1fr_220px]">
         <article className="min-w-0">
           <HeroCoverBanner hero={hero} locale={locale} />
+          <HeroGeoAnswerBox hero={hero} locale={locale} />
           <HeroClimbRecommend hero={hero} locale={locale} />
           <BuildStrip hero={hero} locale={locale} />
           <HeroDecisionPanel hero={hero} locale={locale} />
@@ -194,8 +206,13 @@ export function HeroPageView({
           </section>
 
           <section id="faq" className="scroll-mt-20 mb-6">
-            <h2 className="section-title">{t('hero.faqTitle')}</h2>
-            <FaqAccordion faqs={featuredFaqs} relatedLinks={faqArticleLinks} maxVisible={3} />
+            <h2 className="section-title">{faqTitle}</h2>
+            <p className="mb-4 text-sm leading-6 text-gray-400">
+              {locale === 'zh-TW'
+                ? `快速確認 ${heroName} 的出裝、銘文、克制、分路與是否值得練。`
+                : `Quick answers for ${heroName} builds, arcana, counters, lane choice, and ranked value.`}
+            </p>
+            <FaqAccordion faqs={visibleFaqs} relatedLinks={faqArticleLinks} maxVisible={6} />
           </section>
 
           <DataAttribution

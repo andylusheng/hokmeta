@@ -3,7 +3,7 @@ import type { GameItem, Hero } from '@/types/hero';
 import { Breadcrumb } from '@/components/Breadcrumb';
 import { BuildCompareClient } from '@/components/BuildCompareClient';
 import { createT, localePath, type Locale } from '@/lib/i18n';
-import { JsonLd, breadcrumbSchema } from '@/lib/schema';
+import { JsonLd, breadcrumbSchema, webApplicationSchema } from '@/lib/schema';
 
 function rate(value: number | null): string {
   return value == null ? 'untracked' : `${value.toFixed(1)}%`;
@@ -39,6 +39,25 @@ export function BuildCompareView({
           { name: t('tools.buildComparePageTitle'), path: localePath(locale, '/tools/build-compare') },
           ...(hero ? [{ name: title, path: localePath(locale, path) }] : []),
         ])}
+      />
+      <JsonLd
+        data={webApplicationSchema({
+          name: title,
+          path: localePath(locale, path),
+          description,
+          keywords: hero
+            ? [
+                `${hero.name} build compare`,
+                `${hero.name} build 2026`,
+                `best build for ${hero.name} in HOK`,
+                'Honor of Kings build compare',
+              ]
+            : [
+                'Honor of Kings build compare',
+                'HOK build compare',
+                'Honor of Kings item comparison',
+              ],
+        })}
       />
       <Breadcrumb
         items={[

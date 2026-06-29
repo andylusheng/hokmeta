@@ -3,7 +3,7 @@ import type { GameItem, Hero } from '@/types/hero';
 import { Breadcrumb } from '@/components/Breadcrumb';
 import { DamageCalculatorClient } from '@/components/DamageCalculatorClient';
 import { createT, localePath, type Locale } from '@/lib/i18n';
-import { JsonLd, breadcrumbSchema } from '@/lib/schema';
+import { JsonLd, breadcrumbSchema, webApplicationSchema } from '@/lib/schema';
 
 function rate(value: number | null): string {
   return value == null ? 'untracked' : `${value.toFixed(1)}%`;
@@ -41,6 +41,25 @@ export function DamageCalculatorView({
           { name: t('tools.damagePageTitle'), path: localePath(locale, '/tools/damage-calculator') },
           ...(hero ? [{ name: title, path: localePath(locale, path) }] : []),
         ])}
+      />
+      <JsonLd
+        data={webApplicationSchema({
+          name: title,
+          path: localePath(locale, path),
+          description,
+          keywords: hero
+            ? [
+                `${hero.name} damage calculator`,
+                `${hero.name} build damage`,
+                `Honor of Kings ${hero.name} build`,
+                'HOK damage calculator',
+              ]
+            : [
+                'Honor of Kings damage calculator',
+                'HOK damage calculator',
+                'Honor of Kings item damage',
+              ],
+        })}
       />
       <Breadcrumb
         items={[

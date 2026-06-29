@@ -59,6 +59,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: '/tools/build-compare', priority: 0.8, changeFrequency: 'weekly' as const },
     { path: '/tools/build-generator', priority: 0.75, changeFrequency: 'monthly' as const },
     { path: '/tools/counter-picker', priority: 0.75, changeFrequency: 'monthly' as const },
+    { path: '/docs/api', priority: 0.72, changeFrequency: 'weekly' as const },
     { path: '/learn', priority: 0.72, changeFrequency: 'weekly' as const },
     { path: '/about', priority: 0.55, changeFrequency: 'monthly' as const },
     { path: '/privacy', priority: 0.5, changeFrequency: 'monthly' as const },
