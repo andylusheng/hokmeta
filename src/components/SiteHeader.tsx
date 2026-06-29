@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { SearchTrigger } from '@/components/CommandPalette';
+import { SearchTrigger } from '@/components/SearchTrigger';
 import { LanguageSwitcher } from '@/components/LanguageSwitcher';
 import {
   createT,

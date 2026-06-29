@@ -1,7 +1,13 @@
 import type { Hero } from '@/types/hero';
 
+const localHeroCoverBySlug: Record<string, string> = {
+  'hou-yi': '/images/home/hou-yi-splash.webp',
+};
+
 /** Camp hero splash / cover (wide art). Falls back to avatar. */
 export function getHeroCoverUrl(hero: Hero): string {
+  const localCover = localHeroCoverBySlug[hero.slug];
+  if (localCover) return localCover;
   if (hero.heroCover) return hero.heroCover;
   return hero.avatar || hero.avatarFallback || '';
 }

@@ -1,33 +1,14 @@
 'use client';
 
 import { useEffect, useMemo, useState } from 'react';
-import { useRouter, usePathname } from 'next/navigation';
+import { usePathname, useRouter } from 'next/navigation';
 import { heroes } from '@/lib/data';
 import { HeroAvatar } from '@/components/HeroAvatar';
 import { createT, detectLocaleFromPath, localePath } from '@/lib/i18n';
 import { getHeroDisplayName } from '@/lib/locale-names';
 
-export function SearchTrigger() {
-  const pathname = usePathname();
-  const locale = detectLocaleFromPath(pathname);
-  const t = createT(locale);
-
-  return (
-    <button
-      type="button"
-      onClick={() => window.dispatchEvent(new CustomEvent('hokmeta-open-search'))}
-      className="flex min-w-[140px] items-center gap-2 rounded-lg border border-hok-border bg-hok-card px-3 py-2 text-sm text-gray-400 transition hover:border-hok-gold/40 hover:text-white sm:min-w-[200px]"
-    >
-      <span className="flex-1 text-left">{t('search.placeholder')}</span>
-      <kbd className="hidden rounded border border-hok-border px-1.5 py-0.5 text-[10px] text-gray-500 sm:inline">
-        ⌘K
-      </kbd>
-    </button>
-  );
-}
-
-export function CommandPaletteHost() {
-  const [open, setOpen] = useState(false);
+export function CommandPaletteHost({ initialOpen = false }: { initialOpen?: boolean }) {
+  const [open, setOpen] = useState(initialOpen);
   const [q, setQ] = useState('');
   const [idx, setIdx] = useState(0);
   const router = useRouter();
@@ -144,7 +125,7 @@ export function CommandPaletteHost() {
           ))}
         </ul>
         <p className="border-t border-hok-border px-4 py-2 text-[10px] text-hok-muted">
-          ↑↓ {t('search.navigate')} · ↵ {t('search.open')}
+          Up/down to navigate. Enter to open.
         </p>
       </div>
     </div>

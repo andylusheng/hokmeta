@@ -16,6 +16,7 @@ export function HomePageView({ locale = 'en' }: { locale?: Locale }) {
   const t = createT(locale);
 
   const splashHero =
+    heroes.find((h) => h.slug === 'hou-yi') ||
     sortByMetaScore(heroes.filter((h) => h.tier === 'S+' || h.tier === 'S'))[0] ||
     heroes[0];
 
@@ -46,19 +47,23 @@ export function HomePageView({ locale = 'en' }: { locale?: Locale }) {
         <HubNavGrid locale={locale} />
       </section>
 
-      <RecentPatchList locale={locale} />
+      <div className="defer-section">
+        <RecentPatchList locale={locale} />
+      </div>
 
-      <ClimbPicksSection locale={locale} />
+      <div className="defer-section">
+        <ClimbPicksSection locale={locale} />
+      </div>
 
       {exclusive.length > 0 && (
-        <section className="mb-12">
+        <section className="defer-section mb-12">
           <h2 className="section-title">{t('home.exclusiveGlobal')}</h2>
           <p className="mb-4 text-sm text-hok-muted">{t('home.exclusiveDesc')}</p>
           <HeroAvatarGrid heroes={exclusive} locale={locale} columns="grid-cols-3 sm:grid-cols-5 md:grid-cols-9" />
         </section>
       )}
 
-      <section className="mb-12">
+      <section className="defer-section mb-12">
         <div className="mb-4 flex items-center justify-between gap-2">
           <h2 className="section-title mb-0">{t('home.browseAll')}</h2>
           <Link
@@ -71,7 +76,7 @@ export function HomePageView({ locale = 'en' }: { locale?: Locale }) {
         <HeroAvatarGrid heroes={browseHeroes} locale={locale} />
       </section>
 
-      <section className="mb-8">
+      <section className="defer-section mb-8">
         <div className="mb-6 flex items-center justify-between gap-2">
           <h2 className="section-title mb-0">{t('home.laneTierPreview')}</h2>
           <Link

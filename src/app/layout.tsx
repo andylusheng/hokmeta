@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import './globals.css';
 import { SiteHeader } from '@/components/SiteHeader';
-import { CommandPaletteHost } from '@/components/CommandPalette';
+import { CommandPaletteLazyHost } from '@/components/CommandPaletteLazyHost';
 import { SiteFooter } from '@/components/SiteFooter';
 import { buildMetadata } from '@/lib/seo';
 import { site } from '@/lib/data';
@@ -46,6 +46,14 @@ export default function RootLayout({
 
   return (
     <html lang="en">
+      <head>
+        <link rel="preconnect" href="https://camp.honorofkings.com" />
+        <link rel="preconnect" href="https://game.gtimg.cn" />
+        <link rel="preconnect" href="https://image.inews.gtimg.com" />
+        <link rel="dns-prefetch" href="https://hokstats.gg" />
+        <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+        <link rel="dns-prefetch" href="https://pagead2.googlesyndication.com" />
+      </head>
       <body className="font-sans">
         <LocaleDocument />
         <GoogleAnalytics />
@@ -54,7 +62,7 @@ export default function RootLayout({
         <JsonLd data={orgSchema} />
         <JsonLd data={webSiteSchema()} />
         <SiteHeader />
-        <CommandPaletteHost />
+        <CommandPaletteLazyHost />
         <main id="main-content" className="min-h-[70vh] py-6 sm:py-8">
           {children}
         </main>

@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import type { Hero } from '@/types/hero';
 import patchesMeta from '../../../data/patches.json';
 import { getHeroCoverUrl, getHeroSplashMeta } from '@/lib/hero-media';
@@ -25,13 +26,17 @@ export function HeroSplash({
   return (
     <section className="relative mb-10 overflow-hidden rounded-2xl border border-hok-border bg-hok-card">
       <div className="absolute inset-0 bg-hero-glow" aria-hidden />
-      {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img
-        src={cover}
-        alt=""
-        className="absolute right-0 top-0 h-full w-[55%] object-cover object-top opacity-90 sm:w-[50%]"
-        loading="eager"
-      />
+      <div className="absolute right-0 top-0 h-full w-[55%] sm:w-[50%]" aria-hidden>
+        <Image
+          alt=""
+          src={cover}
+          fill
+          priority
+          fetchPriority="high"
+          sizes="(max-width: 640px) 55vw, (max-width: 1024px) 50vw, 700px"
+          className="object-cover object-top opacity-90"
+        />
+      </div>
       <div className="absolute inset-0 bg-splash-gradient" aria-hidden />
       <div className="relative z-10 flex min-h-[280px] flex-col justify-center p-6 sm:min-h-[320px] sm:p-10 lg:max-w-[58%]">
         <div className="mb-3 flex flex-wrap items-center gap-2">
