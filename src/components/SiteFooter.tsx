@@ -14,7 +14,6 @@ export function SiteFooter() {
     'updated' in patchesMeta && patchesMeta.updated ? patchesMeta.updated : null;
 
   const footerLinks = [
-    { href: localePath(locale, '/tier-list'), label: t('nav.tierList') },
     { href: localePath(locale, '/heroes'), label: t('nav.heroBuilds') },
     { href: localePath(locale, '/items'), label: t('nav.items') },
     { href: localePath(locale, '/arcana'), label: t('nav.arcana') },

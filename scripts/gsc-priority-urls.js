@@ -23,8 +23,24 @@ const hub = [
   '/hero-trends/',
   '/best-heroes/',
   '/learn/',
+  '/tools/',
+  '/tools/damage-calculator/',
+  '/tools/build-compare/',
   '/tools/build-generator/',
   '/tools/counter-picker/',
+];
+
+const topGuideSlugs = [
+  'hou-yi-guide',
+  'angela-guide',
+  'marco-polo-guide',
+  'garo-guide',
+  'luban-no-7-guide',
+  'daji-guide',
+  'li-bai-guide',
+  'wukong-guide',
+  'dolia-guide',
+  'augran-guide',
 ];
 
 console.log('# === Submit in Google Search Console & Bing Webmaster ===');
@@ -34,6 +50,9 @@ console.log('# Bing: Sitemaps → Submit sitemap → same URL\n');
 
 console.log('## Hub pages (index first)\n');
 for (const p of hub) console.log(`${base}${p}`);
+
+console.log('\n## Top long-tail guide pages\n');
+for (const slug of topGuideSlugs) console.log(`${base}/learn/${slug}/`);
 
 console.log(`\n## Top ${priority.length} hero pages\n`);
 for (const h of priority) {

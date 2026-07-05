@@ -69,6 +69,9 @@ export function heroGeoFaqs(hero: Hero, locale: Locale) {
     (locale === 'zh-TW' ? '查看頁面內銘文配置' : 'see the recommended arcana setup');
   const spells =
     answer.spellNames.join(locale === 'zh-TW' ? ' / ' : ', ') || 'Flash';
+  const firstItem =
+    answer.itemNames[0] ||
+    (locale === 'zh-TW' ? '推薦出裝第一件核心裝' : 'the first recommended core item');
   const weak =
     formatHeroNameList(answer.weakInto, locale) ||
     (locale === 'zh-TW' ? '強突進與控制陣容' : 'hard engage and crowd control drafts');
@@ -90,6 +93,11 @@ export function heroGeoFaqs(hero: Hero, locale: Locale) {
         answer: `${answer.name} 推薦銘文是 ${arcana}。如果你在排位裡需要更穩的容錯，可以先保留核心輸出銘文，再依照對線壓力調整移速、穿透或續航。`,
       },
       {
+        id: 'geo-first-item',
+        question: `${answer.name} 第一件裝備應該出什麼？`,
+        answer: `${answer.name} 通常優先做 ${firstItem}，因為第一件裝備要先支撐 ${answer.lane} 的清線、換血或節奏能力。若前期被強壓，可以先補小防裝或鞋子，但不要拖太久核心輸出。`,
+      },
+      {
         id: 'geo-counter-build',
         question: `${answer.name} 遇到坦克或高防禦陣容要怎麼調整？`,
         answer: `先用 HOKMeta 傷害計算器或 Build Compare 檢查穿透、續航與保命裝的實際收益。如果敵方前排很厚，優先比較反坦、穿透與能持續輸出的裝備，不要只看面板攻擊。`,
@@ -109,6 +117,11 @@ export function heroGeoFaqs(hero: Hero, locale: Locale) {
         question: `${answer.name} 現在值得練嗎？`,
         answer: `${tierLine} 如果你需要一個能在 ${answer.lane} 穩定提供輸出的英雄，${answer.name} 值得練；但遇到 ${weak} 時，需要更依賴站位與隊友保護。`,
       },
+      {
+        id: 'geo-teamfight',
+        question: `${answer.name} 團戰應該怎麼打？`,
+        answer: `${answer.name} 團戰要先確認敵方強開與控制技能位置，再根據 ${answer.role} 的定位輸出、保護或進場。順風時圍繞核心裝備壓節奏，逆風時優先保命和清線，不要孤身進入草叢。`,
+      },
     ];
   }
 
@@ -122,6 +135,11 @@ export function heroGeoFaqs(hero: Hero, locale: Locale) {
       id: 'geo-best-arcana',
       question: `What is the best arcana for ${answer.name}?`,
       answer: `The best ${answer.name} arcana setup is ${arcana}. Keep the core damage arcana first, then adjust movement speed, pierce, or sustain only when the matchup makes your lane unsafe.`,
+    },
+    {
+      id: 'geo-first-item',
+      question: `What should ${answer.name} build first?`,
+      answer: `${answer.name} usually wants ${firstItem} first because the first item should stabilize ${answer.lane} clear speed, trading power, or tempo. If the lane is unsafe, adjust boots or a small defensive component first, but do not delay the core damage curve too long.`,
     },
     {
       id: 'geo-counter-build',
@@ -142,6 +160,11 @@ export function heroGeoFaqs(hero: Hero, locale: Locale) {
       id: 'geo-good-pick',
       question: `Is ${answer.name} good in Honor of Kings?`,
       answer: `${tierLine} ${answer.name} is worth playing if your team needs reliable ${answer.lane} pressure, but you should avoid blind-picking into ${weak} without peel or defensive item planning.`,
+    },
+    {
+      id: 'geo-teamfight',
+      question: `How do you play ${answer.name} in teamfights?`,
+      answer: `In teamfights, ${answer.name} should respect enemy engage range first, then play around the hero's ${answer.role} job: dealing damage, protecting carries, or entering after key control is used. When behind, clear waves and preserve cooldowns instead of face-checking fog.`,
     },
   ];
 }

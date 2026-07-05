@@ -1,6 +1,6 @@
 # HOKMeta Long-tail SEO Plan
 
-Updated: 2026-06-24
+Updated: 2026-06-30
 
 ## 1. Current Inventory
 
@@ -223,3 +223,14 @@ Decision rules:
 3. Refresh top hero pages in this order: Ao'yin, Augran, Daji, Liang, Angela, Li Xin, Milady, Hou Yi, Wang Zhaojun, Devara.
 4. Refresh counter pages in this order: Angela, Daji, Liang, Ao'yin, Augran, Marco Polo, Donghuang, Wukong.
 5. Export GSC data after 14 days and replace estimated scores.
+
+## 9. Backlink and GEO Publishing Assets
+
+Operational files added on 2026-06-30:
+
+- `docs/GSC_INDEXING_PRIORITY_2026-06-30.md` - manual GSC/Bing indexing queue for hubs, tools, top hero pages, top counter pages, and top guide pages.
+- `docs/BACKLINK_PUBLISHING_KIT_2026-06-30.md` - publish-ready external posts for Medium, GitHub, V2EX/Indie Hackers style communities, X, and Reddit.
+- `docs/backlink-tracker.csv` - backlink publication log.
+- `docs/SEO_WEEKLY_MEASUREMENT_TEMPLATE.csv` - weekly GSC/GA4 measurement template.
+
+Backlink positioning rule: share real build and product data, not inflated claims. Current truthful proof points are 116 hero pages, 116 counter pages, 105 item pages, public JSON endpoints, tool pages, and the 1,985-page static build generated on 2026-06-30.

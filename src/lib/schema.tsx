@@ -1,8 +1,7 @@
-import { canonicalUrl, absoluteUrl } from '@/lib/seo';
+import { canonicalUrl } from '@/lib/seo';
 import { site } from '@/lib/data';
 import { formatRate } from '@/lib/data';
-import type { Hero, HeroRole, HeroTier } from '@/types/hero';
-import { ROLES_AZ } from '@/types/hero';
+import type { Hero } from '@/types/hero';
 
 interface BreadcrumbItem {
   name: string;
@@ -130,8 +129,8 @@ export function heroArticleSchema(hero: Hero, path: string) {
   return {
     '@context': 'https://schema.org',
     '@type': 'Article',
-    headline: `${hero.name} Build & Guide`,
-    description: `${hero.name} ${hero.role} — Tier ${hero.tier}. Builds, counters, and meta analysis.`,
+    headline: `${hero.name} Build, Items, Arcana & Counters`,
+    description: `${hero.name} ${hero.role} — Tier ${hero.tier}. Best build, core items, arcana, counters, and meta analysis.`,
     author: { '@type': 'Organization', name: site.author },
     publisher: {
       '@type': 'Organization',
@@ -245,45 +244,4 @@ export function heroGameSchema(hero: Hero, path: string) {
 /** @deprecated Use heroGameSchema */
 export function videoGameSchema(hero: Hero) {
   return heroGameSchema(hero, `/hero/${hero.slug}`);
-}
-
-const TIER_BANDS: HeroTier[] = ['S+', 'S', 'A', 'B'];
-
-/** Full tier list as ItemList with role, tier band, and position. */
-export function tierListSchema(
-  grouped: Record<HeroRole, Record<HeroTier, Hero[]>>
-) {
-  const itemListElement: object[] = [];
-  let position = 1;
-
-  for (const role of ROLES_AZ) {
-    for (const tier of TIER_BANDS) {
-      const list = grouped[role]?.[tier] ?? [];
-      for (const hero of list) {
-        itemListElement.push({
-          '@type': 'ListItem',
-          position,
-          name: hero.name,
-          url: absoluteUrl(`/hero/${hero.slug}`),
-          additionalProperty: [
-            property('Role', role),
-            property('Tier', tier),
-            property('Win Rate', formatRate(hero.winRate)),
-            ...(hero.lane ? [property('Lane', hero.lane)] : []),
-          ],
-        });
-        position += 1;
-      }
-    }
-  }
-
-  return {
-    '@context': 'https://schema.org',
-    '@type': 'ItemList',
-    name: 'Honor of Kings Meta Tier List',
-    description:
-      'Hero tier rankings by primary role (Assassin through Warrior) and tier band S+ to B.',
-    numberOfItems: itemListElement.length,
-    itemListElement,
-  };
 }

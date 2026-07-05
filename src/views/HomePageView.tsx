@@ -8,9 +8,8 @@ import { StatsStrip } from '@/components/home/StatsStrip';
 import { HubNavGrid } from '@/components/home/HubNavGrid';
 import { RecentPatchList } from '@/components/home/RecentPatchList';
 import { HeroAvatarGrid } from '@/components/HeroAvatarGrid';
-import { LaneTierGrid } from '@/components/LaneTierGrid';
 import { ClimbPicksSection } from '@/components/home/ClimbPicksSection';
-import { getExclusiveGlobalHeroes, getTierListByLane } from '@/lib/lanes';
+import { getExclusiveGlobalHeroes } from '@/lib/lanes';
 
 export function HomePageView({ locale = 'en' }: { locale?: Locale }) {
   const t = createT(locale);
@@ -22,7 +21,6 @@ export function HomePageView({ locale = 'en' }: { locale?: Locale }) {
 
   const browseHeroes = sortByMetaScore(heroes).slice(0, 14);
   const exclusive = getExclusiveGlobalHeroes();
-  const laneTiers = getTierListByLane();
 
   const listSchema = itemListSchema(
     'HOKMeta Heroes',
@@ -76,18 +74,6 @@ export function HomePageView({ locale = 'en' }: { locale?: Locale }) {
         <HeroAvatarGrid heroes={browseHeroes} locale={locale} />
       </section>
 
-      <section className="defer-section mb-8">
-        <div className="mb-6 flex items-center justify-between gap-2">
-          <h2 className="section-title mb-0">{t('home.laneTierPreview')}</h2>
-          <Link
-            href={localePath(locale, '/tier-list')}
-            className="text-sm font-semibold text-hok-gold hover:underline"
-          >
-            {t('home.fullTierList')}
-          </Link>
-        </div>
-        <LaneTierGrid grouped={laneTiers} locale={locale} compact />
-      </section>
     </div>
   );
 }

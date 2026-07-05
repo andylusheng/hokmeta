@@ -38,7 +38,6 @@ export function CommandPaletteHost({ initialOpen = false }: { initialOpen?: bool
   const pages = useMemo(
     () => [
       { label: t('nav.climbPicks'), href: localePath(locale, '/climb-picks') },
-      { label: t('nav.tierList'), href: localePath(locale, '/tier-list') },
       { label: t('nav.heroBuilds'), href: localePath(locale, '/heroes') },
       { label: t('nav.tools'), href: localePath(locale, '/tools') },
       { label: t('tools.damageTitle'), href: localePath(locale, '/tools/damage-calculator') },

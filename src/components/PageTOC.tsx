@@ -2,6 +2,8 @@ import { createT, type Locale } from '@/lib/i18n';
 
 const SECTION_IDS = [
   'overview',
+  'decision',
+  'authority',
   'build',
   'arcana',
   'skills',
@@ -14,6 +16,8 @@ const SECTION_IDS = [
 
 const SECTION_KEYS: Record<(typeof SECTION_IDS)[number], string> = {
   overview: 'toc.summary',
+  decision: 'hero.decision.label',
+  authority: 'toc.authority',
   build: 'toc.build',
   arcana: 'toc.arcana',
   skills: 'toc.abilities',
@@ -26,6 +30,9 @@ const SECTION_KEYS: Record<(typeof SECTION_IDS)[number], string> = {
 
 export function PageTOC({ locale = 'en' }: { locale?: Locale }) {
   const t = createT(locale);
+  const sectionIds = SECTION_IDS.filter(
+    (id) => id !== 'authority' || locale === 'en',
+  );
 
   return (
     <nav
@@ -36,7 +43,7 @@ export function PageTOC({ locale = 'en' }: { locale?: Locale }) {
         {t('toc.onPage')}
       </p>
       <ul className="space-y-1 text-sm">
-        {SECTION_IDS.map((id) => (
+        {sectionIds.map((id) => (
           <li key={id}>
             <a
               href={`#${id}`}

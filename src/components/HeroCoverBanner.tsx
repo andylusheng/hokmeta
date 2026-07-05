@@ -17,6 +17,9 @@ export function HeroCoverBanner({
 }) {
   const t = createT(locale);
   const cover = getHeroCoverUrl(hero);
+  const isZh = locale === 'zh-TW';
+  const heroTitle = formatHeroBilingualTitle(hero, locale);
+  const lane = translateLane(hero.lane, locale) || translateRole(hero.role, locale);
 
   return (
     <section className="relative mb-6 overflow-hidden rounded-2xl border border-hok-border">
@@ -33,12 +36,19 @@ export function HeroCoverBanner({
           <div className="mb-2 flex flex-wrap items-center gap-2">
             <TierBadge tier={heroLaneTierBand(hero)} />
             <span className="text-sm text-hok-gold">
-              {translateLane(hero.lane, locale) || translateRole(hero.role, locale)}
+              {lane}
             </span>
           </div>
           <h1 className="font-display text-2xl font-black text-white sm:text-4xl">
-            {formatHeroBilingualTitle(hero, locale)}
+            {isZh
+              ? `${heroTitle} 出裝、裝備、銘文與克制`
+              : `${heroTitle} Build, Items, Arcana & Counters`}
           </h1>
+          <p className="mt-2 max-w-3xl text-sm leading-6 text-gray-300 sm:text-base">
+            {isZh
+              ? `${heroTitle} 是 ${lane} 的 Tier ${hero.tier} 選角；查看最佳出裝、核心裝備、銘文、召喚師技能、克制與工具計算。`
+              : `${heroTitle} is a Tier ${hero.tier} ${lane} pick. Get the best build, core items, arcana, battle spell, counters, and tool-backed item decisions.`}
+          </p>
           <div className="mt-3 flex flex-wrap gap-4 text-sm">
             <span>
               <span className="text-hok-muted">{t('stats.wr')}</span>{' '}

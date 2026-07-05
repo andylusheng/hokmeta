@@ -19,7 +19,7 @@ export function DataAttribution({
   const t = createT(locale);
   const source =
     dataSource?.trim() ||
-    'Camp HOK ranked stats + HoKStats.gg international builds & counters';
+    'Camp HOK international server data + HOKMeta editorial review';
   const updated = dataUpdated?.trim() || site.dateModified;
 
   return (

@@ -3,8 +3,6 @@ import Image from 'next/image';
 import type { Hero } from '@/types/hero';
 import patchesMeta from '../../../data/patches.json';
 import { getHeroCoverUrl, getHeroSplashMeta } from '@/lib/hero-media';
-import { heroLaneTierBand } from '@/lib/lanes';
-import { TierBadge } from '@/components/TierBadge';
 import { createT, localePath, type Locale } from '@/lib/i18n';
 import { getHeroDisplayName } from '@/lib/locale-names';
 import { translateLane } from '@/lib/locale-labels';
@@ -43,7 +41,6 @@ export function HeroSplash({
           <span className="rounded-full bg-hok-gold/15 px-3 py-1 text-xs font-bold uppercase tracking-wider text-hok-gold ring-1 ring-hok-gold/30">
             {t('home.splashPatch', { season })}
           </span>
-          <TierBadge tier={heroLaneTierBand(hero)} />
           <span className="text-xs text-hok-muted">
             {translateLane(hero.lane, locale) || hero.role}
           </span>
@@ -62,10 +59,10 @@ export function HeroSplash({
             {t('home.splashViewBuild')}
           </Link>
           <Link
-            href={localePath(locale, '/tier-list')}
+            href={localePath(locale, '/heroes')}
             className="btn-secondary"
           >
-            {t('home.splashTierList')}
+            {t('nav.heroBuilds')}
           </Link>
         </div>
       </div>

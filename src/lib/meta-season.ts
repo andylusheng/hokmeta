@@ -6,9 +6,9 @@ export const GEO_BUILD_YEAR = '2026';
 
 export function heroPageTitle(heroName: string, locale: Locale = 'en'): string {
   if (locale === 'zh-TW') {
-    return `${heroName} 出裝 ${GEO_BUILD_YEAR} - 裝備、銘文、克制與攻略`;
+    return `${heroName} 出裝、裝備、銘文與克制 - Honor of Kings`;
   }
-  return `${heroName} Build ${GEO_BUILD_YEAR} - Best Items, Arcana, Counters & Guide`;
+  return `${heroName} Build, Items, Arcana & Counters - Honor of Kings`;
 }
 
 export function heroPageDescription(
@@ -19,9 +19,7 @@ export function heroPageDescription(
 ): string {
   const season = getMetaSeasonLabel(locale);
   if (locale === 'zh-TW') {
-    return `${heroName} ${lane} ${GEO_BUILD_YEAR} 出裝攻略，包含最佳裝備、銘文、召喚師技能、克制、分路打法與工具計算。更新：${date}，版本：${season}。`;
+    return `${heroName} ${lane} ${season} 出裝攻略，包含核心裝備、銘文、召喚師技能、克制、分路打法與工具計算。更新：${date}。`;
   }
-  const t = createT(locale);
-  const fallback = t('hero.metaDesc', { name: heroName, lane, date });
-  return `Best ${heroName} build for Honor of Kings in ${GEO_BUILD_YEAR}, including items, arcana, counters, skills, lane tips, and damage tools. Updated ${date}. ${fallback}`;
+  return `Best ${heroName} build for Honor of Kings Global ${season}, with core items, arcana, battle spell, counters, matchup tips, and damage tools. Updated ${date}.`;
 }

@@ -51,12 +51,11 @@ export function BestHeroesRoleView({
       <p className="mb-8 text-gray-400">
         {t('bestHeroes.roleSubtitle', { count: list.length, role: roleLabel })}{' '}
         <Link
-          href={`${localePath(locale, '/tier-list')}#role-${roleSlug}`}
+          href={localePath(locale, '/heroes')}
           className="text-hok-gold hover:underline"
         >
-          {t('bestHeroes.tierBands')}
-        </Link>{' '}
-        {t('bestHeroes.onTierList')}
+          {t('bestHeroes.allHeroesLink')}
+        </Link>
       </p>
       <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
         {list.map((hero) => (

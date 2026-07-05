@@ -144,6 +144,81 @@ const TOP_GUIDES: Record<string, TopGuideConfig> = {
     counters:
       'Lian Po, Liu Bang, and Zhang Fei are annoying because they interrupt or absorb your commit window. Do not ult into saved control. Pick Marco when the enemy has multiple frontliners and your team can occupy them long enough for passive stacks to matter.',
   },
+  garo: {
+    title: 'Garo Best Build, Counters and Farm Lane Guide',
+    description:
+      'Garo guide for Honor of Kings Global with best build, farm lane spacing, shield-breaking pressure, late-game teamfight rules, and counter picks.',
+    identity:
+      'Garo is a range and discipline marksman. She does not need to win every early trade; she needs to reach the stage where her extended range controls the fight before enemies can touch her. The best Garo games look quiet for eight minutes, then suddenly every objective becomes impossible for the enemy frontline to enter. The worst Garo games happen when players stand too far forward because the range feels safe.',
+    build:
+      'Her build should protect the late-game damage plan: attack speed, critical scaling, and penetration so she can punish tanks and shielded targets. Defensive or revive items are not wasted slots on Garo, because one extra second of free firing is often worth more than another raw damage component. If the enemy has multiple divers, finish your damage core but do not delay survival forever.',
+    lane:
+      'Treat the lane as a spacing test. Farm from max range, punish short steps with enhanced autos, and avoid river trades unless your support has vision. Garo can chip enemies down, but she is not built to escape a clean engage. If your support roams, hold the wave near your tower and trade only after the enemy farm lane spends mobility or crowd control.',
+    teamfight:
+      'Garo should play front-to-back. Hit whoever is closest, keep moving between autos, and let your range force the enemy tank to choose between retreating or dying slowly. Do not chase assassins into fog. If the enemy dive is still available, stand behind terrain or your support and wait for the first engage to be absorbed before stepping forward.',
+    counters:
+      'Hard engage and flank pressure are the real threats. Garo is strong when your team has a stable frontline, reliable peel, and objective control. Avoid drafting her into comps that can start fights from two angles at once unless your support is dedicated to protecting farm lane.',
+  },
+  'li-bai': {
+    title: 'Li Bai Best Build, Counters and Jungle Guide',
+    description:
+      'Li Bai guide for Honor of Kings Global with best build, jungle tempo, combo windows, objective timing, counterplay, and ranked draft advice.',
+    identity:
+      'Li Bai is a timing assassin. His value comes from entering after the enemy has already shown key control, spending a clean burst window, then leaving before the punish arrives. He feels unfair when he is ahead because he gets to choose the fight. He feels terrible from behind because every forced entry becomes a coin flip. Your first job is not montage kills; it is clean jungle tempo.',
+    build:
+      'The build should give Li Bai enough burst to threaten backline targets while keeping his cooldown rhythm playable. Damage matters, but so does not wasting gold on fights you cannot actually enter. If the enemy has layered crowd control, a defensive timing item or revive option can be the difference between finishing a carry and donating shutdown gold.',
+    lane:
+      'As a jungler, your lane phase is route planning. Clear efficiently, track which side lane has crowd control, and gank only when the wave makes sense. Li Bai does not want to walk into a full-health lane with no setup. Stack passive through camps or safe targets, then use the window to threaten a real kill or force a summoner spell before the next objective.',
+    teamfight:
+      'Do not be the first hero seen. Wait outside vision, count stuns, and enter when the enemy carry has already committed to hitting your frontline. If you spend your return tool badly, stop chasing. A good Li Bai fight is quick: appear, burst, reset the angle, and either re-enter or take the objective your pressure created.',
+    counters:
+      'Point-and-click control, grouped formations, and tanky supports make Li Bai work harder. Draft him when your lanes can create priority and your team has someone else to start fights. If your comp has no engage and no lane pressure, Li Bai is forced to do too much by himself.',
+  },
+  wukong: {
+    title: 'Wukong Best Build, Counters and Jungle Guide',
+    description:
+      'Wukong guide for Honor of Kings Global covering best build, jungle pathing, burst target selection, teamfight entry, counters, and climb advice.',
+    identity:
+      'Wukong is a crit assassin who punishes bad spacing. He is not subtle, and that is fine. The strength of the pick is that one clean entry can remove the enemy marksman before the fight even starts. The weakness is that everyone knows what you want. Good Wukong players are patient enough to wait for vision and cooldowns instead of jumping at the first red health bar.',
+    build:
+      'Wukong wants a damage curve that makes his first real burst window matter. Crit and physical damage are the core, but late defensive insurance is still important because he often carries shutdown gold. If the enemy has armor stacking, penetration becomes mandatory. If the enemy has instant control, build and play as if you only get one clean attempt.',
+    lane:
+      'Your early jungle should be clean and predictable for yourself, not for the enemy. Path toward the lane that can actually follow your knock-up. Do not force a gank into a pushed lane with no control just because Wukong is supposed to snowball. Farm, take the guaranteed camp, and punish overextended enemies when they step past river without vision.',
+    teamfight:
+      'Wukong should enter from a side angle after the frontline fight starts. If you jump through the front door, tanks will absorb the burst and the enemy backline will kite you. Use brush, fog, and objective pressure to make the carry look at someone else first. After the kill attempt, either reset behind your team or finish the fight fast; extended front-to-back fights are not where Wukong shines.',
+    counters:
+      'Tanky peel, early invades, and supports with saved control are the main problems. Draft Wukong when your lanes can survive early and your team can force enemies into predictable objective setups. Avoid him when every enemy carry has self-peel and your lanes cannot create map pressure.',
+  },
+  dolia: {
+    title: 'Dolia Best Build, Counters and Support Guide',
+    description:
+      'Dolia guide for Honor of Kings Global with best build, roaming priorities, ultimate reset timing, lane protection, counters, and ranked draft notes.',
+    identity:
+      'Dolia is a support who makes good teammates better. Her reset value is strongest when your carry, mage, or jungler has a cooldown worth repeating. That means the pick is not only about your own mechanics. It is about reading which ally is the real win condition and staying close enough to turn their second spell rotation into the fight-winning moment.',
+    build:
+      'Build Dolia for uptime, survivability, and team utility. She needs to be alive when the decisive cooldown comes back, so greedy damage choices rarely make sense. Defensive support items and cooldown-friendly choices are valuable because Dolia often plays near the center of the fight rather than safely behind it.',
+    lane:
+      'In the first minutes, protect farm lane when the enemy has dive pressure and roam only when the wave is safe. Dolia can help mid and jungle tempo, but abandoning a vulnerable marksman turns her best late-game partner into a liability. When roaming, move with vision and arrive before the fight starts; showing up after cooldowns are already spent wastes the reason you picked her.',
+    teamfight:
+      'Before every fight, decide who deserves the reset. Do not press ultimate automatically on the first ally who loses health. A second mage control spell, second assassin entry, or second marksman survival tool can change the entire fight. Dolia should stay close enough to support that target, but not so close that one engage hits both of you.',
+    counters:
+      'Burst engage and split fights reduce Dolia value because she needs time and grouping to amplify the right ally. Draft her with heroes who have high-impact cooldowns and avoid pairing her with comps where everyone dives in different directions. If the enemy has hard backline access, play more defensively and make the reset about survival first.',
+  },
+  augran: {
+    title: 'Augran Best Build, Counters and Jungle Guide',
+    description:
+      'Augran guide for Honor of Kings Global with best build, jungle tempo, soul-chain fights, objective control, counters, and ranked execution tips.',
+    identity:
+      'Augran wins by turning skirmishes into extended, controlled fights. He has enough threat to pressure carries, but his best games come from choosing fights where the enemy cannot instantly disengage or burst him down. If you enter with no follow-up, he feels clunky. If your team is close and the fight stays in his range, he becomes extremely difficult to remove.',
+    build:
+      'Augran wants a balance of damage and durability. You need enough threat to punish carries, but you also need to survive while your chains and follow-up damage do the work. Against squishy drafts, lean into tempo and burst. Against tankier teams, value sustained damage and defensive items that let you stay attached to the fight.',
+    lane:
+      'As a jungler, route toward lanes that can lock enemies in place. Augran ganks are much better when the target has already used movement or when your laner can start the trade. Do not waste time forcing low-percentage dives. Clear efficiently, contest river when your lanes have priority, and use objective spawns to make enemies walk into your preferred fight range.',
+    teamfight:
+      'Augran should not drift alone into fog. Enter with your frontline or from a covered angle, connect onto a target your team can hit, and keep the fight moving toward your damage dealers. If the enemy carry is unreachable, punish the nearest fighter first and use the pressure to open the next target. Winning the first five seconds matters more than chasing a perfect backline highlight.',
+    counters:
+      'Heavy disengage, long-range poke, and chain crowd control can stop Augran before he gets full value. Draft him when your lanes have control and your comp wants to fight around objectives. Avoid forcing him into games where your team has no setup and every fight starts with the enemy kiting backward.',
+  },
   'wang-zhaojun': {
     title: 'Wang Zhaojun Best Build, Counters and Control Mage Guide',
     description:

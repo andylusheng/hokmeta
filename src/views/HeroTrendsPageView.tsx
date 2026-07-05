@@ -56,10 +56,10 @@ export function HeroTrendsPageView({ locale = 'en' }: { locale?: Locale }) {
       <p className="mb-8 text-sm text-gray-500">
         {t('trends.syncNote', { date: syncDate })}{' '}
         <Link
-          href={localePath(locale, '/tier-list')}
+          href={localePath(locale, '/heroes')}
           className="text-hok-gold hover:underline"
         >
-          {t('trends.tierListLink')}
+          {t('nav.heroBuilds')}
         </Link>{' '}
         {t('trends.andHeroPages')}
       </p>

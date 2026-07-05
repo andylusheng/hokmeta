@@ -6,12 +6,14 @@ import {
 import { getLocalizedFaqs } from '@/lib/hero-faq';
 import { getLocalizedGuide } from '@/lib/hero-playbook';
 import { createT, localePath, type Locale } from '@/lib/i18n';
+import { translateRole } from '@/lib/locale-labels';
 import { getHeroDisplayName } from '@/lib/locale-names';
 import { getRelatedArticleForFaq } from '@/lib/learn-hero-links';
+import { buildTopHeroGuide } from '@/lib/learn-top-hero-guides';
 import { Breadcrumb } from '@/components/Breadcrumb';
 import { HeroCoverBanner } from '@/components/HeroCoverBanner';
-import { BuildStrip } from '@/components/BuildStrip';
 import { HeroDecisionPanel } from '@/components/HeroDecisionPanel';
+import { HeroAuthorityGuide } from '@/components/HeroAuthorityGuide';
 import { HeroGeoAnswerBox } from '@/components/HeroGeoAnswerBox';
 import { BuildBlock } from '@/components/BuildBlock';
 import { SkillBlock } from '@/components/SkillBlock';
@@ -78,6 +80,7 @@ export function HeroPageView({
       : `${heroName} Build ${GEO_BUILD_YEAR} FAQ`;
   const damageCalculatorPath = localePath(locale, `/tools/damage-calculator/${hero.slug}`);
   const buildComparePath = localePath(locale, `/tools/build-compare/${hero.slug}`);
+  const topHeroGuide = locale === 'en' ? buildTopHeroGuide(hero) : null;
 
   // Build FAQ → learn article links
   const faqArticleLinks = Object.fromEntries(
@@ -121,8 +124,8 @@ export function HeroPageView({
           <HeroCoverBanner hero={hero} locale={locale} />
           <HeroGeoAnswerBox hero={hero} locale={locale} />
           <HeroClimbRecommend hero={hero} locale={locale} />
-          <BuildStrip hero={hero} locale={locale} />
           <HeroDecisionPanel hero={hero} locale={locale} />
+          <HeroAuthorityGuide hero={hero} locale={locale} />
 
           <section className="mb-6 rounded border border-hok-gold/30 bg-hok-gold/10 p-4">
             <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
@@ -205,6 +208,42 @@ export function HeroPageView({
             <HeroGuideBlock hero={hero} locale={locale} />
           </section>
 
+          {topHeroGuide ? (
+            <section
+              id="ranked-guide"
+              className="mb-6 rounded border border-hok-border bg-hok-card/80 p-4"
+            >
+              <p className="text-xs font-semibold uppercase tracking-wide text-hok-gold">
+                Updated {GEO_BUILD_YEAR} ranked guide
+              </p>
+              <h2 className="mt-1 text-xl font-bold text-white">{topHeroGuide.title}</h2>
+              <p className="mt-2 max-w-3xl text-sm leading-6 text-gray-300">
+                {topHeroGuide.description}
+              </p>
+              <div className="mt-4 flex flex-wrap gap-3 text-sm">
+                <Link
+                  href={localePath(locale, `/learn/${topHeroGuide.slug}`)}
+                  className="inline-flex items-center justify-center rounded bg-hok-gold px-4 py-2 font-semibold text-black transition hover:bg-yellow-300"
+                >
+                  Read the full {heroName} guide
+                </Link>
+                <Link
+                  href={localePath(locale, `/hero/${hero.slug}/counters`)}
+                  className="inline-flex items-center justify-center rounded border border-hok-border px-4 py-2 font-semibold text-gray-200 transition hover:border-hok-gold/60 hover:text-hok-gold"
+                >
+                  Check counters
+                </Link>
+              </div>
+            </section>
+          ) : null}
+
+          <RelatedDecisionLinks
+            hero={hero}
+            heroName={heroName}
+            locale={locale}
+            guideSlug={topHeroGuide?.slug}
+          />
+
           <section id="faq" className="scroll-mt-20 mb-6">
             <h2 className="section-title">{faqTitle}</h2>
             <p className="mb-4 text-sm leading-6 text-gray-400">
@@ -239,5 +278,82 @@ export function HeroPageView({
         </Link>
       </p>
     </div>
+  );
+}
+
+function RelatedDecisionLinks({
+  hero,
+  heroName,
+  locale,
+  guideSlug,
+}: {
+  hero: Hero;
+  heroName: string;
+  locale: Locale;
+  guideSlug?: string;
+}) {
+  const isZh = locale === 'zh-TW';
+  const roleName = translateRole(hero.role, locale);
+  const links = [
+    guideSlug
+      ? {
+          label: isZh ? `${heroName} 完整攻略` : `${heroName} full guide`,
+          href: `/learn/${guideSlug}`,
+          desc: isZh
+            ? '分路打法、團戰處理、排位常見失誤與對局思路。'
+            : 'Lane plan, teamfight rules, ranked mistakes, and matchup notes.',
+        }
+      : null,
+    {
+      label: isZh ? `${heroName} 克制` : `${heroName} counters`,
+      href: `/hero/${hero.slug}/counters`,
+      desc: isZh
+        ? '最佳克制英雄、對局細節與 BP 風險。'
+        : 'Best counter picks, matchup notes, and draft risks.',
+    },
+    {
+      label: isZh ? `${heroName} 傷害計算器` : `${heroName} damage calculator`,
+      href: `/tools/damage-calculator/${hero.slug}`,
+      desc: isZh
+        ? '測試出裝打射手、法師、戰士與坦克模板的實際傷害。'
+        : 'Test item damage against marksman, mage, fighter, and tank templates.',
+    },
+    {
+      label: isZh ? `${heroName} 出裝比較` : `${heroName} build compare`,
+      href: `/tools/build-compare/${hero.slug}`,
+      desc: isZh
+        ? '比較兩套出裝，查看不同對局下的結論。'
+        : 'Compare two item builds and get matchup-specific conclusions.',
+    },
+    {
+      label: isZh ? `最佳 ${roleName} 英雄` : `Best ${roleName} heroes`,
+      href: `/best-heroes/${hero.role.toLowerCase()}`,
+      desc: isZh
+        ? '把這個英雄和同定位英雄放在一起比較。'
+        : 'Compare this pick with other heroes in the same role.',
+    },
+  ].filter(Boolean) as Array<{ label: string; href: string; desc: string }>;
+
+  return (
+    <section className="mb-6 rounded-xl border border-hok-border bg-hok-card/70 p-4">
+      <p className="text-xs font-semibold uppercase tracking-wide text-hok-gold">
+        {isZh ? '相關決策' : 'Related decisions'}
+      </p>
+      <h2 className="mt-1 text-lg font-bold text-white">
+        {isZh ? `繼續研究 ${heroName}` : `Keep researching ${heroName}`}
+      </h2>
+      <div className="mt-4 grid gap-3 md:grid-cols-2">
+        {links.map((link) => (
+          <Link
+            key={link.href}
+            href={localePath(locale, link.href)}
+            className="rounded-lg border border-hok-border/70 bg-hok-dark/35 p-3 transition hover:border-hok-gold/60 hover:bg-hok-dark/55"
+          >
+            <p className="text-sm font-semibold text-white">{link.label}</p>
+            <p className="mt-1 text-xs leading-5 text-gray-400">{link.desc}</p>
+          </Link>
+        ))}
+      </div>
+    </section>
   );
 }

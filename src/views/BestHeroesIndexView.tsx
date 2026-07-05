@@ -29,13 +29,6 @@ export function BestHeroesIndexView({ locale = 'en' }: { locale?: Locale }) {
       <p className="mb-4 max-w-2xl text-gray-400">
         {t('bestHeroes.subtitle')}{' '}
         <Link
-          href={localePath(locale, '/tier-list')}
-          className="text-hok-gold hover:underline"
-        >
-          {t('bestHeroes.tierListLink')}
-        </Link>
-        {t('bestHeroes.midLink')}{' '}
-        <Link
           href={localePath(locale, '/heroes')}
           className="text-hok-gold hover:underline"
         >

@@ -15,7 +15,6 @@ function navItems(locale: Locale) {
   const t = createT(locale);
   return [
     { href: localePath(locale, '/climb-picks'), label: t('nav.climbPicks') },
-    { href: localePath(locale, '/tier-list'), label: t('nav.tierList') },
     { href: localePath(locale, '/heroes'), label: t('nav.heroBuilds') },
     { href: localePath(locale, '/tools'), label: t('nav.tools') },
     { href: localePath(locale, '/items'), label: t('nav.items') },

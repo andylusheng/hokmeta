@@ -1,22 +1,12 @@
 import Link from 'next/link';
 import { heroes, items } from '@/lib/data';
 import { countUniqueArcana } from '@/lib/lanes';
-import patchesMeta from '../../../data/patches.json';
 import { createT, localePath, type Locale } from '@/lib/i18n';
 
 export function HubNavGrid({ locale = 'en' }: { locale?: Locale }) {
   const t = createT(locale);
-  const season =
-    'season' in patchesMeta && patchesMeta.season
-      ? String(patchesMeta.season)
-      : 'Live';
 
   const cards = [
-    {
-      href: localePath(locale, '/tier-list'),
-      title: t('nav.tierList'),
-      desc: t('home.hubTierList', { count: heroes.length, season }),
-    },
     {
       href: localePath(locale, '/heroes'),
       title: t('nav.heroBuilds'),

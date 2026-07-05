@@ -361,10 +361,10 @@ export function CounterPickerClient({
               </ul>
               <div className="mt-4 flex flex-wrap gap-2 text-xs">
                 <Link
-                  href={localePath(locale, '/tier-list')}
+                  href={localePath(locale, '/heroes')}
                   className="rounded border border-hok-border px-3 py-1.5 text-gray-300 hover:border-hok-gold hover:text-hok-gold"
                 >
-                  Tier list
+                  Hero builds
                 </Link>
                 <Link
                   href={localePath(locale, '/items')}

@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import type { Hero } from '@/types/hero';
+import { formatRate } from '@/lib/data';
 import { getHeroGeoAnswer } from '@/lib/hero-geo';
 import { createT, localePath, type Locale } from '@/lib/i18n';
 import { formatHeroNameList } from '@/lib/locale-names';
@@ -21,32 +22,54 @@ export function HeroGeoAnswerBox({
   const isZh = locale === 'zh-TW';
   const strongText = formatHeroNameList(answer.strongInto, locale) || (isZh ? '脆皮後排與缺少位移的陣容' : 'low-mobility carries and fragile backlines');
   const weakText = formatHeroNameList(answer.weakInto, locale) || (isZh ? '強開、突進與控制陣容' : 'hard engage, dive, and crowd control drafts');
+  const source = hero.dataSource?.trim() || (isZh ? 'Camp HOK 國際服資料 + HOKMeta 編輯校對' : 'Camp HOK international server data + HOKMeta editorial review');
+  const coreItems = answer.itemNames.slice(0, 3);
 
   return (
-    <section className="mb-6 rounded-xl border border-hok-gold/35 bg-hok-card/85 p-5 shadow-lg shadow-black/20">
+    <section
+      id="overview"
+      className="scroll-mt-20 mb-6 rounded-xl border border-hok-gold/35 bg-hok-card/85 p-5 shadow-lg shadow-black/20"
+    >
       <div className="mb-4 flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
         <div>
           <p className="text-[11px] font-bold uppercase tracking-wider text-hok-gold">
-            {isZh ? '直接答案' : 'Direct answer'}
+            {isZh ? '直接答案' : 'Build answer'}
           </p>
           <h2 className="mt-1 text-2xl font-bold text-white">
             {isZh
-              ? `${answer.name} 出裝 ${answer.year}`
-              : `${answer.name} Build ${answer.year}`}
+              ? `${answer.name} ${answer.season} 最佳出裝一覽`
+              : `${answer.name} best build for ${answer.season}`}
           </h2>
         </div>
-        <p className="text-xs text-gray-500">
-          {answer.season} · {answer.updated}
-        </p>
+        <div className="text-xs text-gray-500 sm:text-right">
+          <p>{isZh ? '國際服' : 'International server'}</p>
+          <p>{isZh ? '更新' : 'Updated'}: {answer.updated}</p>
+        </div>
       </div>
 
-      <div className="grid gap-3 md:grid-cols-2 xl:grid-cols-4">
+      <div className="grid gap-3 md:grid-cols-2 xl:grid-cols-3">
         <div className="rounded-lg border border-hok-border/70 bg-hok-dark/45 p-4">
           <p className="text-xs font-semibold uppercase tracking-wide text-gray-500">
-            {isZh ? '定位' : 'Role and lane'}
+            {isZh ? '定位與難度' : 'Role, lane, difficulty'}
           </p>
           <p className="mt-2 text-sm font-semibold text-white">
-            {answer.lane} · {answer.role} · Tier {hero.tier}
+            {answer.lane} · {answer.role} · Tier {hero.tier} · {hero.difficulty}
+          </p>
+        </div>
+        <div className="rounded-lg border border-hok-border/70 bg-hok-dark/45 p-4">
+          <p className="text-xs font-semibold uppercase tracking-wide text-gray-500">
+            {isZh ? '目前數據' : 'Current patch rates'}
+          </p>
+          <p className="mt-2 text-sm font-semibold text-white">
+            {formatRate(hero.winRate)} WR · {formatRate(hero.pickRate)} Pick · {formatRate(hero.banRate)} Ban
+          </p>
+        </div>
+        <div className="rounded-lg border border-hok-border/70 bg-hok-dark/45 p-4">
+          <p className="text-xs font-semibold uppercase tracking-wide text-gray-500">
+            {isZh ? '核心三件' : 'Core 3 items'}
+          </p>
+          <p className="mt-2 text-sm font-semibold text-white">
+            {coreItems.length ? join(coreItems, locale) : (isZh ? '查看出裝區' : 'See build section')}
           </p>
         </div>
         <div className="rounded-lg border border-hok-border/70 bg-hok-dark/45 p-4">
@@ -67,7 +90,13 @@ export function HeroGeoAnswerBox({
         </div>
         <div className="rounded-lg border border-hok-border/70 bg-hok-dark/45 p-4">
           <p className="text-xs font-semibold uppercase tracking-wide text-gray-500">
-            {isZh ? '克制風險' : 'Counter risk'}
+            {isZh ? '強勢對局' : 'Best into'}
+          </p>
+          <p className="mt-2 text-sm font-semibold text-white">{strongText}</p>
+        </div>
+        <div className="rounded-lg border border-hok-border/70 bg-hok-dark/45 p-4">
+          <p className="text-xs font-semibold uppercase tracking-wide text-gray-500">
+            {isZh ? '克制風險' : 'Watch out for'}
           </p>
           <p className="mt-2 text-sm font-semibold text-white">{weakText}</p>
         </div>
@@ -80,8 +109,9 @@ export function HeroGeoAnswerBox({
           </p>
           <div className="grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
             {answer.items.map((item, index) => (
-              <div
+              <Link
                 key={`${item.slot}-${item.itemId || item.name}`}
+                href={item.itemId ? localePath(locale, `/items/${item.itemId}`) : localePath(locale, `/hero/${hero.slug}#build`)}
                 className="flex min-w-0 items-center gap-3 rounded-lg border border-hok-border/70 bg-hok-card/60 p-2"
               >
                 <div className="flex h-10 w-10 shrink-0 items-center justify-center overflow-hidden rounded bg-hok-dark">
@@ -105,11 +135,31 @@ export function HeroGeoAnswerBox({
                     {isZh ? `第 ${index + 1} 件` : `Slot ${index + 1}`}
                   </p>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
         </div>
       ) : null}
+
+      <div className="mt-4 rounded-lg border border-hok-border/70 bg-hok-dark/35 p-4">
+        <p className="text-xs font-semibold uppercase tracking-wide text-gray-500">
+          {isZh ? '資料可信度' : 'Data trust'}
+        </p>
+        <div className="mt-2 grid gap-2 text-sm text-gray-300 md:grid-cols-3">
+          <p>
+            <span className="text-gray-500">{isZh ? '來源' : 'Source'}:</span> {source}
+          </p>
+          <p>
+            <span className="text-gray-500">{isZh ? '同步' : 'Last synced'}:</span> {answer.updated}
+          </p>
+          <p>
+            <span className="text-gray-500">{isZh ? '公開資料' : 'Public data'}:</span>{' '}
+            <Link href={localePath(locale, '/docs/api')} className="text-hok-gold hover:underline">
+              {isZh ? 'API 文件' : 'API docs'}
+            </Link>
+          </p>
+        </div>
+      </div>
 
       <p className="mt-4 text-sm leading-7 text-gray-300">
         {isZh

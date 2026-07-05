@@ -48,9 +48,20 @@ export function HeroesPageView({ locale = 'en' }: { locale?: Locale }) {
         {t('heroes.subtitle', { count: heroes.length })}
       </p>
 
-      <section className="mb-12">
-        <HeroAvatarGrid heroes={sorted} locale={locale} size={56} />
-      </section>
+      <nav
+        aria-label={locale === 'zh-TW' ? '分路篩選' : 'Lane shortcuts'}
+        className="mb-8 flex flex-wrap gap-2"
+      >
+        {LANE_ORDER.map((lane) => (
+          <a
+            key={lane}
+            href={`#lane-${lane}`}
+            className="rounded-full border border-hok-border bg-hok-card/70 px-3 py-1.5 text-sm font-medium text-gray-300 transition hover:border-hok-gold/60 hover:text-hok-gold"
+          >
+            {translateLane(LANE_LABEL[lane], locale)}
+          </a>
+        ))}
+      </nav>
 
       <div className="space-y-10">
         {LANE_ORDER.map((lane) => {
@@ -65,6 +76,7 @@ export function HeroesPageView({ locale = 'en' }: { locale?: Locale }) {
                 heroes={laneHeroes}
                 locale={locale}
                 size={52}
+                showTier={false}
                 columns="grid-cols-4 sm:grid-cols-6 md:grid-cols-8 lg:grid-cols-10"
               />
             </section>

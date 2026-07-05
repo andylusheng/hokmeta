@@ -65,7 +65,7 @@ export function HeroDecisionPanel({
 
   return (
     <section
-      id="overview"
+      id="decision"
       className="scroll-mt-20 mb-6 rounded-xl border border-hok-gold/30 bg-gradient-to-br from-hok-card to-hok-dark/80 p-5 sm:p-6"
     >
       <div className="mb-4 flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between">
