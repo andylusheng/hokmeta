@@ -39,6 +39,21 @@ function snapshot(hero: Hero): string {
 }
 
 const TOP_GUIDES: Record<string, TopGuideConfig> = {
+  aoyin: {
+    title: "Ao'yin Best Build, Counters and Farm Lane Guide",
+    description:
+      "Ao'yin guide for Honor of Kings Global with best build, farm lane spacing, dragon-form damage windows, counters, and ranked draft advice.",
+    identity:
+      "Ao'yin is a farm lane carry who rewards patience. He has enough range and burst pressure to punish mistakes, but he still needs clean spacing before he commits to a trade. The best Ao'yin games are not constant fighting. They are controlled lanes where you farm safely, chip the enemy down, then use your big cooldowns when the enemy support or jungler has already shown.",
+    build:
+      "The current build should keep his damage curve online while leaving room for survival. Ao'yin wants enough attack speed and damage to punish frontliners, but he cannot afford to walk into hard engage without a defensive answer. If the enemy has multiple dive tools, treat one defensive slot as part of the core build rather than a luxury.",
+    lane:
+      "Play the first waves around spacing and cooldown tracking. Do not trade just because your damage is available; trade when the enemy support cannot immediately punish your position. If your support leaves lane, thin the wave from safety and avoid standing in the long lane without vision. Ao'yin scales well enough that preserving Flash and farm is often better than forcing a low-percentage kill.",
+    teamfight:
+      "Ao'yin should enter fights after the first engage has been absorbed. Hit the closest safe target, keep your escape path open, and do not chase into fog just because a carry is low. If the enemy tank is the only target you can hit, that is fine as long as your build has the penetration or sustained damage to make it matter.",
+    counters:
+      "Kaizer, Dun, and Arthur-style frontliners punish Ao'yin when they can lock him in place before he sets his damage window. Draft him with peel or a support that can stop the first dive. Avoid blind-picking him into comps that can start from multiple angles unless your team has strong vision control.",
+  },
   'hou-yi': {
     title: 'Hou Yi Best Build, Counters and Ranked Guide',
     description:
@@ -68,6 +83,21 @@ const TOP_GUIDES: Record<string, TopGuideConfig> = {
       'Li Xin has to decide before the fight starts: flank, peel, or split. If your marksman is fed, hovering near them and cutting off divers is often better than chasing the enemy backline. If your team lacks engage, look for a flank after the enemy uses their first control spell. If side wave is stacked and the objective is not spawning, pressure tower and force someone to answer you.',
     counters:
       'Cai Yan, Da Qiao, and Guiguzi punish sloppy engages because they either reset the fight or start it before you are ready. Into these drafts, do not be the first body seen in river. Clear side wave, enter from an angle, and make them spend control on someone else before you commit.',
+  },
+  liang: {
+    title: 'Liang Best Build, Counters and Mid Lane Control Guide',
+    description:
+      'Liang guide for Honor of Kings Global with best build, suppression timing, mid lane control, counter picks, and ranked draft advice.',
+    identity:
+      'Liang is valuable because he removes options. His suppression and control make mobile assassins and greedy carries play slower than they want to. He is not picked to top the damage chart every game. He is picked to make one key enemy unable to play the fight. If your team understands that, Liang turns chaotic ranked games into simple target calls.',
+    build:
+      'Liang wants enough magic power and penetration to punish caught targets, but his build should also respect how close he has to stand when committing control. Utility and safety matter more than chasing a perfect burst number. A dead Liang cannot suppress anyone, and a Liang who saves control too long gives the enemy carry a free fight.',
+    lane:
+      'Clear mid safely and move with your roamer or jungler. Liang is strongest when he arrives second and turns an existing skirmish into a guaranteed pick. Do not waste your control on a tank walking through mid wave. Hold it for the assassin, marksman, or mage who actually decides the fight.',
+    teamfight:
+      'Before the fight, identify the target. If the enemy has one fed assassin, your job may be defensive suppression. If your team has engage, your job may be locking the enemy carry after the first knock-up. Liang teamfights are about discipline: use the control on the winning target, not the first target.',
+    counters:
+      'Li Xin, Mayene, and Mulan can punish Liang if they flank or force him to use control defensively. Draft Liang when your team can follow up on one locked target. Avoid using him as your only damage source into tank-heavy comps unless your side lanes already cover sustained DPS.',
   },
   'luban-no-7': {
     title: 'Luban No.7 Best Build, Counters and Farm Lane Guide',

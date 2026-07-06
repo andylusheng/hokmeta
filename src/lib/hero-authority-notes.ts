@@ -10,6 +10,26 @@ export interface HeroAuthorityNotes {
 }
 
 const TOP_NOTES: Record<string, HeroAuthorityNotes> = {
+  aoyin: {
+    pick:
+      "Pick Ao'yin when your team can protect farm lane long enough for him to reach a stable damage curve. He is strongest when fights start front-to-back and he can choose when to step forward.",
+    avoid:
+      "Avoid blind-picking Ao'yin into multiple hard divers or point-and-click lockdown unless your support is committed to peel. He has damage, but he still needs space before the first engage lands.",
+    powerSpikes: [
+      'First core damage item: lane trading becomes less defensive and tower pressure starts to matter.',
+      'Two to three items: objective fights become playable if he can hit from behind his frontline.',
+      'Late defensive or revive option: protects the shutdown gold and lets him survive one committed dive.',
+    ],
+    buildDecision:
+      "Ao'yin should not copy a greedy stationary marksman build every game. Keep the damage core, then decide whether the enemy draft asks for earlier defense, penetration, or safer boots.",
+    matchupLogic:
+      'Against tanks, value sustained damage and penetration. Against dive, value spacing, Flash discipline, and support peel. Against poke, keep the wave closer until the enemy mid or jungler shows.',
+    commonMistakes: [
+      'Trading forward while the enemy support still has engage ready.',
+      'Farming long side lane alone after the first tower falls.',
+      'Chasing a low target into fog instead of hitting the closest safe target.',
+    ],
+  },
   'hou-yi': {
     pick:
       'Pick Hou Yi when your team already has a front line or a support that can stop the first dive. He is strongest when fights are predictable and he can hit the closest target without moving first.',
@@ -28,6 +48,46 @@ const TOP_NOTES: Record<string, HeroAuthorityNotes> = {
       'Using Burning Sun Arrow for random poke instead of saving it for engage or peel.',
       'Walking into river first after lane phase ends.',
       'Chasing the backline instead of killing the closest target safely.',
+    ],
+  },
+  'li-xin': {
+    pick:
+      'Pick Li Xin when your team needs side-lane pressure and a clash laner who can force the enemy to answer waves before objectives spawn.',
+    avoid:
+      'Avoid Li Xin when your team already lacks grouped fight presence and the enemy can collapse on side lanes faster than your team can trade objectives.',
+    powerSpikes: [
+      'First wave-clear item: side pressure starts becoming reliable instead of risky.',
+      'Mid-game damage-durability mix: he can threaten towers and survive the first collapse.',
+      'Late Teleport or flank timing: lets him convert side pressure into a real objective fight.',
+    ],
+    buildDecision:
+      'Li Xin should build for the job the draft needs. If you are the side-lane win condition, keep tower pressure and duel threat. If your team needs frontline, add survival before forcing grouped fights.',
+    matchupLogic:
+      'Use wave state as your weapon. Push before rotating, arrive before the objective starts, and do not abandon a stacked side wave just to hover mid with no cooldowns ready.',
+    commonMistakes: [
+      'Teleporting while a side wave dies under your own tower.',
+      'Treating every lead as permission to 1v3.',
+      'Splitting when the next Tyrant or Overlord fight is already starting.',
+    ],
+  },
+  liang: {
+    pick:
+      'Pick Liang when the enemy draft relies on one mobile carry, assassin, or diver that must be locked down for your team to win the fight.',
+    avoid:
+      'Avoid Liang when your team has no follow-up damage or the enemy frontline can absorb every control spell while their carries hit safely.',
+    powerSpikes: [
+      'Level 4: suppression turns mid-jungle skirmishes into reliable picks.',
+      'First magic power item: controlled targets start dying before they can reset the fight.',
+      'Mid-game grouped objectives: his value rises when one locked target means a free tower or objective.',
+    ],
+    buildDecision:
+      'Build enough damage to punish the locked target, but do not ignore safety. Liang often stands close enough to be punished after he commits control.',
+    matchupLogic:
+      'Before each fight, name the target. If the fed assassin is the problem, hold control defensively. If your tank starts the fight, lock the enemy carry after their first escape is gone.',
+    commonMistakes: [
+      'Using suppression on the enemy tank by default.',
+      'Walking through river alone because control is available.',
+      'Holding ultimate so long that the enemy carry gets a free fight.',
     ],
   },
   angela: {
@@ -50,6 +110,26 @@ const TOP_NOTES: Record<string, HeroAuthorityNotes> = {
       'Roaming through river alone without support or jungle information.',
     ],
   },
+  devara: {
+    pick:
+      'Pick Devara when your team can keep enemies inside the fight long enough for his enhanced windows and follow-up damage to matter.',
+    avoid:
+      'Avoid Devara when the enemy draft is built around disengage, chain control, or kiting backward forever. He needs a fight he can actually stay attached to.',
+    powerSpikes: [
+      'First mixed damage-survival item: short trades stop being purely defensive.',
+      'Mid-game skirmishes: he can convert one controlled target into a full fight win.',
+      'Late defensive timing: lets him survive the first lock-down and finish the second rotation.',
+    ],
+    buildDecision:
+      'Devara needs a bruiser balance. If he dies during the first entry, the damage build failed. If carries can ignore him, the tank build failed.',
+    matchupLogic:
+      'Enter after the first control spell is gone, not before. Fight near teammates who can follow his target, and peel when the backline angle is unrealistic.',
+    commonMistakes: [
+      'Forcing all-in trades before the enhanced window is ready.',
+      'Building pure damage into chain crowd control.',
+      'Chasing the backline while the team is fighting a winnable frontline target.',
+    ],
+  },
   'marco-polo': {
     pick:
       'Pick Marco Polo into teams with multiple frontliners or predictable engage. His mobility and true damage pressure are valuable when fights last long enough for passive stacks.',
@@ -68,6 +148,46 @@ const TOP_NOTES: Record<string, HeroAuthorityNotes> = {
       'Dashing forward just to trade before the enemy support uses control.',
       'Starting ultimate into five ready enemies.',
       'Building like a stationary crit marksman instead of a mobile sustained-damage carry.',
+    ],
+  },
+  'wang-zhaojun': {
+    pick:
+      'Pick Wang Zhaojun when your team wants objective control, choke-point denial, and a mid laner who can punish enemies walking through narrow paths.',
+    avoid:
+      'Avoid Wang Zhaojun when your team has no frontline and the enemy can poke from range without ever entering your control zones.',
+    powerSpikes: [
+      'Level 4: objective zones and river fights become much harder for enemies to enter.',
+      'First utility-damage item: wave clear and control pressure become more consistent.',
+      'Mid-game grouped fights: one freeze or ultimate zone can decide Tyrant, tower, or Overlord control.',
+    ],
+    buildDecision:
+      'Do not overbuild raw damage if you are dying before the second spell cycle. Wang Zhaojun wins by casting control repeatedly, not by racing burst mages on one combo.',
+    matchupLogic:
+      'Place skills where enemies must walk, not where they currently stand. Against divers, save freeze defensively. Against grouped teams, make the objective entrance impossible to cross.',
+    commonMistakes: [
+      'Throwing freeze at max range with no slow or setup.',
+      'Casting ultimate behind the enemy instead of across the path they need.',
+      'Face-checking river when Skill 1 can check vision first.',
+    ],
+  },
+  milady: {
+    pick:
+      'Pick Milady when your team wants mid priority, tower pressure, and a mage who can turn wave control into objective tempo.',
+    avoid:
+      'Avoid Milady when the enemy has reliable backline dive and your team cannot protect mid lane vision. She is powerful with wave control but fragile when caught.',
+    powerSpikes: [
+      'First minion-pressure item: mid shove starts turning into tower chip and roam windows.',
+      'Two-item point: robot pressure makes objectives and sieges much harder to ignore.',
+      'Late penetration item: keeps her relevant after enemies buy magic resistance.',
+    ],
+    buildDecision:
+      'Milady should build around sustained spell pressure, penetration, and enough safety to survive dive. If assassins are farming you, a greedier damage curve does not solve the problem.',
+    matchupLogic:
+      'Push when you know where the enemy jungler is. If information is missing, thin the wave and hold safer spacing. Her pressure comes from controlling waves, not standing forward alone.',
+    commonMistakes: [
+      'Staying in lane after shoving without turning pressure into tower, vision, or rotation.',
+      'Walking forward to auto while assassins are missing.',
+      'Using minions only for damage instead of wave and structure pressure.',
     ],
   },
   garo: {
