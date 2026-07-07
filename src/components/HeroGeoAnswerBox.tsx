@@ -1,10 +1,11 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import type { Hero } from '@/types/hero';
-import { formatRate } from '@/lib/data';
+import { formatRate, site } from '@/lib/data';
 import { getHeroGeoAnswer } from '@/lib/hero-geo';
 import { createT, localePath, type Locale } from '@/lib/i18n';
 import { formatHeroNameList } from '@/lib/locale-names';
+import { META_SEASON_LABEL } from '@/lib/meta-season';
 
 function join(values: string[], locale: Locale): string {
   return values.join(locale === 'zh-TW' ? '、' : ', ');
@@ -44,6 +45,7 @@ export function HeroGeoAnswerBox({
         <div className="text-xs text-gray-500 sm:text-right">
           <p>{isZh ? '國際服' : 'International server'}</p>
           <p>{isZh ? '更新' : 'Updated'}: {answer.updated}</p>
+          <p>{isZh ? '編輯校對' : 'Reviewed by'}: {site.author}</p>
         </div>
       </div>
 
@@ -150,13 +152,26 @@ export function HeroGeoAnswerBox({
             <span className="text-gray-500">{isZh ? '來源' : 'Source'}:</span> {source}
           </p>
           <p>
-            <span className="text-gray-500">{isZh ? '同步' : 'Last synced'}:</span> {answer.updated}
+            <span className="text-gray-500">{isZh ? '最後驗證' : 'Last verified'}:</span> {answer.updated}
           </p>
           <p>
             <span className="text-gray-500">{isZh ? '公開資料' : 'Public data'}:</span>{' '}
             <Link href={localePath(locale, '/docs/api')} className="text-hok-gold hover:underline">
               {isZh ? 'API 文件' : 'API docs'}
             </Link>
+          </p>
+          <p>
+            <span className="text-gray-500">{isZh ? '版本' : 'Updated for'}:</span> {META_SEASON_LABEL}
+          </p>
+          <p>
+            <span className="text-gray-500">{isZh ? '編輯' : 'Reviewed by'}:</span>{' '}
+            <Link href={localePath(locale, '/about')} className="text-hok-gold hover:underline">
+              {site.author}
+            </Link>
+          </p>
+          <p>
+            <span className="text-gray-500">{isZh ? '狀態' : 'Status'}:</span>{' '}
+            {isZh ? '國際服資料校對' : 'International data reviewed'}
           </p>
         </div>
       </div>

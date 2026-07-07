@@ -294,6 +294,51 @@ const TOP_GUIDES: Record<string, TopGuideConfig> = {
     counters:
       'Kaizer, Dun, and Arthur punish her if she rolls into their threat range. Draft Lady Sun when your team can create small skirmishes or peel the first dive. Avoid using her as the only late-game insurance if your comp has no frontline, because she needs space to reset and reposition.',
   },
+  kaizer: {
+    title: 'Kaizer Best Build, Counters and Clash Lane Guide',
+    description:
+      'Kaizer guide for Honor of Kings Global with best build, clash lane trading, anti-carry entry timing, teamfight targets, and counters.',
+    identity:
+      'Kaizer is a clash lane bruiser who turns short windows into decisive kills. He is strongest when he can walk through the first layer of damage, reach a carry, and force the enemy team to spend cooldowns on him instead of your backline. The trap is treating him like a permanent frontliner. Kaizer can start fights, but he still needs timing, target selection, and enough durability to survive the first answer.',
+    build:
+      'The best Kaizer build should keep a bruiser balance: enough physical threat to punish carries, enough defense to survive entry, and enough cooldown value to keep trading after the first combo. If the enemy has multiple marksmen or fragile mages, damage and mobility matter. If the enemy has chain control, one defensive slot often wins more fights than a greedy damage item.',
+    lane:
+      'Play the lane around wave control and cooldown punishment. Do not spend mobility just to poke if the enemy jungler is missing. Kaizer can threaten all-ins, but he is much better when the enemy has already used their escape or control. Push before rotating, and only leave side lane when the objective timing or mid fight is actually worth the lost wave.',
+    teamfight:
+      'Kaizer should enter after the enemy frontline or support has shown the first control spell. If you can reach the marksman, commit with your team close enough to follow. If the backline is protected, hit the nearest winning target and force the enemy carries to step backward. A good Kaizer fight is not always a backline dive; sometimes it is zoning two carries while your team wins the front.',
+    counters:
+      'Kiting, displacement, and layered control punish Kaizer when he enters too early. Draft him when your team can follow his pressure or when the enemy carries lack reliable peel. Avoid forcing him as the only engage into teams that can slow, knock back, and reset every fight.',
+  },
+  dun: {
+    title: 'Dun Best Build, Counters and Tank Guide',
+    description:
+      'Dun guide for Honor of Kings Global with best build, tank item choices, engage timing, peel decisions, counters, and ranked teamfight advice.',
+    identity:
+      'Dun is a tank who wins through timing and disruption, not damage charts. He is valuable because he can start fights, absorb pressure, and create enough chaos for carries to hit safely. The best Dun games feel simple: protect the wave, arrive first to objectives, force one clean engage, then peel if the enemy tries to counter-dive.',
+    build:
+      'Dun builds should react to the enemy damage profile. Physical-heavy teams ask for armor and anti-crit value. Magic-heavy teams ask for resistance and health. If the enemy has strong healing, anti-heal matters earlier. The goal is not to become unkillable in theory; it is to survive long enough for your carries to finish the fight you started.',
+    lane:
+      'In clash lane or flex tank situations, clear safely and avoid pointless extended trades against heroes who outscale side-lane duels. Dun should use wave priority to move first, not to chase kills under tower. When objective timers are close, push the wave, group early, and make the enemy walk through your vision and control.',
+    teamfight:
+      'Before engaging, decide whether your team needs start or peel. If your marksman is fed and the enemy assassin is missing, holding control defensively can be better than diving forward. If your team lacks engage, start from fog or a flank angle so the enemy carry cannot simply walk away. Dun wins fights by making the first five seconds easy for his team.',
+    counters:
+      'Sustained true damage, heavy kiting, and anti-tank marksmen reduce Dun value if he walks in alone. Draft him with carries who can punish his engage. Avoid using him as the only front line when the rest of the team cannot follow up before his control window ends.',
+  },
+  'mai-shiranui': {
+    title: 'Mai Shiranui Best Build, Counters and Mid Lane Combo Guide',
+    description:
+      'Mai Shiranui guide for Honor of Kings Global with best build, mid lane combo timing, poke setup, flank angles, counters, and ranked advice.',
+    identity:
+      'Mai Shiranui is a mobile burst mage who wins by choosing angles. She is not meant to stand mid and trade skill shots forever. Her strength is threatening a carry from fog, poking before the fight, then using mobility to finish or escape. The hard part is discipline: every dash forward needs a reason, because one missed combo can put her inside the enemy team with no safe exit.',
+    build:
+      'Mai wants magic power, penetration, and enough safety to survive the moment after she commits. A pure damage build feels good when ahead, but against hard control you need to respect how close she gets to the target. Build to kill the priority target, then adapt if the enemy starts buying resistance or saving control only for you.',
+    lane:
+      'Clear mid without wasting every mobility tool, then look for side-lane angles with your jungler or support. Poke first, all-in second. Mai should not force a full combo into a full-health target unless your teammate can lock them down. When the enemy mid disappears, ping early and avoid face-checking river alone.',
+    teamfight:
+      'Mai teamfights are about flank timing. Poke with safe skills before the objective starts, then wait for the carry or mage to step away from peel. If the enemy support is holding control, do not dive through them. Use mobility to reposition, threaten the angle, and commit only when the target has already used escape or is trapped by your frontline.',
+    counters:
+      'Point-and-click control, tanky peel, and long-range poke can make Mai work harder. Draft her when your team has enough frontline or vision control to create flank paths. Avoid picking her into comps where every fight happens in open space and the enemy backline never has to move forward.',
+  },
 };
 
 export function buildTopHeroGuide(hero: Hero): LearnArticle | null {

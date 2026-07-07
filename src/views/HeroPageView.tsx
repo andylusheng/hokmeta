@@ -15,6 +15,8 @@ import { HeroCoverBanner } from '@/components/HeroCoverBanner';
 import { HeroDecisionPanel } from '@/components/HeroDecisionPanel';
 import { HeroAuthorityGuide } from '@/components/HeroAuthorityGuide';
 import { HeroGeoAnswerBox } from '@/components/HeroGeoAnswerBox';
+import { HeroBuildVariants } from '@/components/HeroBuildVariants';
+import { HeroPatchHistory } from '@/components/HeroPatchHistory';
 import { BuildBlock } from '@/components/BuildBlock';
 import { SkillBlock } from '@/components/SkillBlock';
 import { ArcanaTable } from '@/components/ArcanaTable';
@@ -38,6 +40,7 @@ import {
 } from '@/lib/schema';
 import { heroGeoFaqs } from '@/lib/hero-geo';
 import { GEO_BUILD_YEAR } from '@/lib/meta-season';
+import { isFeaturedHero } from '@/lib/featured-heroes';
 
 function ComparisonsBlock({ hero, locale }: { hero: Hero; locale: Locale }) {
   const g = getLocalizedGuide(hero, locale);
@@ -81,6 +84,7 @@ export function HeroPageView({
   const damageCalculatorPath = localePath(locale, `/tools/damage-calculator/${hero.slug}`);
   const buildComparePath = localePath(locale, `/tools/build-compare/${hero.slug}`);
   const topHeroGuide = locale === 'en' ? buildTopHeroGuide(hero) : null;
+  const showFeaturedSeoBlocks = isFeaturedHero(hero.slug);
 
   // Build FAQ → learn article links
   const faqArticleLinks = Object.fromEntries(
@@ -166,6 +170,8 @@ export function HeroPageView({
             <BuildBlock hero={hero} locale={locale} />
           </section>
 
+          {showFeaturedSeoBlocks ? <HeroBuildVariants hero={hero} locale={locale} /> : null}
+
           <section id="arcana" className="scroll-mt-20 mb-6">
             <h2 className="section-title">{t('hero.arcanaTitle')}</h2>
             <ArcanaTable hero={hero} locale={locale} />
@@ -207,6 +213,8 @@ export function HeroPageView({
             <h2 className="section-title">{t('hero.playstyleTitle')}</h2>
             <HeroGuideBlock hero={hero} locale={locale} />
           </section>
+
+          {showFeaturedSeoBlocks ? <HeroPatchHistory hero={hero} locale={locale} /> : null}
 
           {topHeroGuide ? (
             <section
@@ -265,7 +273,7 @@ export function HeroPageView({
         </article>
 
         <aside>
-          <PageTOC locale={locale} />
+          <PageTOC locale={locale} showFeaturedSections={showFeaturedSeoBlocks} />
         </aside>
       </div>
 

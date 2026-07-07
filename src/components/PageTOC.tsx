@@ -5,12 +5,14 @@ const SECTION_IDS = [
   'decision',
   'authority',
   'build',
+  'build-variants',
   'arcana',
   'skills',
   'combos',
   'counters',
   'comparisons',
   'guide',
+  'patch-history',
   'faq',
 ] as const;
 
@@ -19,20 +21,32 @@ const SECTION_KEYS: Record<(typeof SECTION_IDS)[number], string> = {
   decision: 'hero.decision.label',
   authority: 'toc.authority',
   build: 'toc.build',
+  'build-variants': 'toc.buildVariants',
   arcana: 'toc.arcana',
   skills: 'toc.abilities',
   combos: 'toc.combos',
   counters: 'toc.counters',
   comparisons: 'toc.comparisons',
   guide: 'toc.playstyle',
+  'patch-history': 'toc.patchHistory',
   faq: 'toc.faq',
 };
 
-export function PageTOC({ locale = 'en' }: { locale?: Locale }) {
+export function PageTOC({
+  locale = 'en',
+  showFeaturedSections = false,
+}: {
+  locale?: Locale;
+  showFeaturedSections?: boolean;
+}) {
   const t = createT(locale);
-  const sectionIds = SECTION_IDS.filter(
-    (id) => id !== 'authority' || locale === 'en',
-  );
+  const sectionIds = SECTION_IDS.filter((id) => {
+    if (id === 'authority' && locale !== 'en') return false;
+    if ((id === 'build-variants' || id === 'patch-history') && !showFeaturedSections) {
+      return false;
+    }
+    return true;
+  });
 
   return (
     <nav

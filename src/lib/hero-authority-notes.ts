@@ -310,6 +310,86 @@ const TOP_NOTES: Record<string, HeroAuthorityNotes> = {
       'Standing so close to the carry that one engage hits both of you.',
     ],
   },
+  'lady-sun': {
+    pick:
+      'Pick Lady Sun when your team can create short skirmishes and give her space to roll for enhanced shots instead of standing still in a front-to-back damage race.',
+    avoid:
+      'Avoid Lady Sun when your team has no frontline and the enemy has multiple point-and-click divers. Her roll is strong, but it does not save her if every fight starts on top of her.',
+    powerSpikes: [
+      'First burst item: Rolling Raid trades start to punish squishy targets.',
+      'Penetration item: enhanced autos can threaten tanks and bruisers instead of only carries.',
+      'Late defensive or revive option: protects her from one failed roll or flank engage.',
+    ],
+    buildDecision:
+      'Lady Sun should keep her burst core, then decide whether the draft asks for earlier penetration, lifesteal, or defensive insurance. If rolling forward gets punished every fight, the build needs more safety.',
+    matchupLogic:
+      'Trade sideways or backward when engage is available. Roll forward only after the enemy control is down or your support has started the fight.',
+    commonMistakes: [
+      'Rolling forward just to use the enhanced shot.',
+      'Using ultimate as a chase tool into fog.',
+      'Ignoring defensive items when the enemy draft has direct backline access.',
+    ],
+  },
+  kaizer: {
+    pick:
+      'Pick Kaizer when your team needs a clash laner who can pressure side waves, threaten carries, and survive long enough to force enemy cooldowns.',
+    avoid:
+      'Avoid Kaizer when the enemy draft has layered kiting, displacement, and no realistic target for him to reach after the first engage.',
+    powerSpikes: [
+      'First bruiser item: lane trades become harder for squishy or low-sustain opponents to answer.',
+      'Mid-game durability spike: he can enter objective fights without dying to the first counter-burst.',
+      'Late defensive timing: lets him zone carries or survive one failed entry.',
+    ],
+    buildDecision:
+      'Kaizer should not build like a pure assassin unless the enemy backline has no peel. Keep enough damage to matter, but add durability when your job is to start or soak cooldowns.',
+    matchupLogic:
+      'Push side waves before rotating, then enter fights after the first control spell is used. If the backline is unreachable, pressure the nearest target and zone carries away from the objective.',
+    commonMistakes: [
+      'Diving before teammates are close enough to follow.',
+      'Building full damage into chain crowd control.',
+      'Leaving side wave too early for a mid fight that cannot start.',
+    ],
+  },
+  dun: {
+    pick:
+      'Pick Dun when your team needs reliable engage, peel, and a tank who can arrive early to objectives and make the first seconds of a fight stable.',
+    avoid:
+      'Avoid Dun when your carries cannot follow his engage or the enemy draft can kite backward forever while shredding tanks.',
+    powerSpikes: [
+      'First defensive item: he can contest lane and river without losing too much health.',
+      'Objective grouping: engage and peel value rise when both teams must walk through the same choke points.',
+      'Late resistance item: lets him survive long enough to cast a second control cycle.',
+    ],
+    buildDecision:
+      'Dun builds should follow the enemy damage profile. Armor, magic resistance, anti-heal, and anti-crit choices should change based on who is actually carrying the enemy team.',
+    matchupLogic:
+      'Decide before each fight whether your team needs engage or peel. If your marksman is the win condition, holding control for the enemy assassin can be better than starting too deep.',
+    commonMistakes: [
+      'Starting fights when carries are not in range to follow.',
+      'Building generic tank items without checking enemy damage type.',
+      'Diving forward while the enemy assassin has a free path to your backline.',
+    ],
+  },
+  'mai-shiranui': {
+    pick:
+      'Pick Mai Shiranui when your team can create vision control and flank paths so she can threaten carries from angles instead of walking through the frontline.',
+    avoid:
+      'Avoid Mai when the enemy has point-and-click lockdown, heavy peel, and open-space fights where she cannot safely choose an entry angle.',
+    powerSpikes: [
+      'Level 4: first real burst-roam window opens if side lanes have setup.',
+      'First magic penetration spike: poke and all-in threat become meaningful against carries.',
+      'Mid-game flank timing: objective fights become dangerous for enemies who lose vision control.',
+    ],
+    buildDecision:
+      'Mai needs burst, penetration, and enough safety to survive after committing. If enemies save all control for her, a greedier damage build will not fix the entry problem.',
+    matchupLogic:
+      'Poke first, commit second. Wait for escape or control cooldowns, then enter from fog or a side angle rather than dashing through the enemy tank line.',
+    commonMistakes: [
+      'Using every dash forward before confirming the kill angle.',
+      'Face-checking river instead of moving with support or jungle.',
+      'Trying to burst the tank because the carry is hard to reach.',
+    ],
+  },
   augran: {
     pick:
       'Pick Augran when your lanes can help lock targets in place and your team wants extended objective fights. He is strongest when enemies cannot instantly disengage.',
