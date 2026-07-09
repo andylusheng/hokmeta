@@ -57,12 +57,9 @@
     }
   },
   "arcana": {
-    "title": "Honor of Kings Arcana",
-    "subtitle": "{count} runes used across meta builds",
-    "name": "Arcana",
-    "usedBy": "Hero builds",
-    "hint": "Per-hero arcana sets:",
-    "campSource": "Icons and stat lines from Camp HOK rune payloads (bilingual)."
+    "colSlot": "Slot",
+    "colChoice": "Choice",
+    "colEffect": "Effect"
   },
   "patches": {
     "title": "Patch Notes & Balance",
@@ -109,7 +106,9 @@
     "allTrends": "All trends →",
     "featured": "Featured Meta Heroes",
     "learningHub": "Learning Hub",
-    "allGuides": "View all guides →"
+    "allGuides": "View all guides →",
+    "hubTrends": "Weekly D1 trends for win rate, pick rate, ban pressure, and sleeper picks",
+    "hubMetaReport": "Read this week's data report: top win-rate heroes, most picked heroes, and underrated picks"
   },
   "heroes": {
     "title": "Honor of Kings Heroes",
@@ -248,11 +247,6 @@
     "presetCn": "CN server community preset",
     "presetDefault": "Default ranked path"
   },
-  "arcana": {
-    "colSlot": "Slot",
-    "colChoice": "Choice",
-    "colEffect": "Effect"
-  },
   "combo": {
     "when": "When"
   },
@@ -304,6 +298,7 @@
   "toc": {
     "summary": "Summary",
     "authority": "Current patch guide",
+    "trendHistory": "30-day trend",
     "build": "Build",
     "buildVariants": "Build variants",
     "arcana": "Arcana",

@@ -13,6 +13,16 @@ export function HubNavGrid({ locale = 'en' }: { locale?: Locale }) {
       desc: t('home.hubHeroes', { count: heroes.length }),
     },
     {
+      href: localePath(locale, '/hero-trends'),
+      title: t('nav.trends'),
+      desc: t('home.hubTrends'),
+    },
+    {
+      href: localePath(locale, '/meta-report'),
+      title: locale === 'zh-TW' ? 'Meta 報告' : 'Meta Report',
+      desc: t('home.hubMetaReport'),
+    },
+    {
       href: localePath(locale, '/items'),
       title: t('nav.items'),
       desc: t('home.hubItems', { count: items.length }),
