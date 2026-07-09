@@ -37,7 +37,7 @@
     "contentPartialNotice": "技能與裝備名稱保留英文。界面、FAQ 與數據解讀為繁體中文。",
     "skillsEnglishNotice": "技能與裝備名稱與王者榮耀國際服客戶端一致（英文）。勝率與出裝來自 Camp HOK 國際服數據。",
     "skillsFallbackNotice": "此英雄尚未同步 Camp 繁體技能文案，暫顯示英文客戶端原文；數據與出裝仍來自 Camp HOK。",
-    "learnBodyNotice": "攻略正文含 Camp HOK 國際服即時數據（英雄名為英文）。"
+    "learnBodyNotice": "攻略正文與數據解讀已本地化；英雄名稱保留國際服英文，方便對照遊戲內搜尋。"
   },
   "items": {
     "title": "裝備圖鑑",
@@ -57,12 +57,9 @@
     }
   },
   "arcana": {
-    "title": "銘文",
-    "subtitle": "Meta 出裝中出現的 {count} 種銘文",
-    "name": "銘文",
-    "usedBy": "出現次數",
-    "hint": "各英雄專屬銘文配置：",
-    "campSource": "圖標與屬性來自 Camp HOK 銘文數據（雙語）。"
+    "colSlot": "欄位",
+    "colChoice": "選擇",
+    "colEffect": "效果"
   },
   "patches": {
     "title": "版本與平衡",
@@ -109,7 +106,9 @@
     "allTrends": "全部趨勢 →",
     "featured": "熱門 Meta 英雄",
     "learningHub": "攻略中心",
-    "allGuides": "查看全部攻略 →"
+    "allGuides": "查看全部攻略 →",
+    "hubTrends": "每週 D1 趨勢：勝率、出場率、禁用壓力與冷門強勢英雄",
+    "hubMetaReport": "閱讀本週資料報告：最高勝率、最多出場與被低估英雄"
   },
   "heroes": {
     "title": "王者榮耀英雄",
@@ -248,11 +247,6 @@
     "presetCn": "國服社群方案",
     "presetDefault": "排位預設路線"
   },
-  "arcana": {
-    "colSlot": "欄位",
-    "colChoice": "選擇",
-    "colEffect": "效果"
-  },
   "combo": {
     "when": "適用場景"
   },
@@ -304,6 +298,7 @@
   "toc": {
     "summary": "概覽",
     "authority": "版本決策",
+    "trendHistory": "30 天趨勢",
     "build": "出裝",
     "buildVariants": "出裝變體",
     "arcana": "銘文",

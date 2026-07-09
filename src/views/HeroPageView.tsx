@@ -14,6 +14,7 @@ import { Breadcrumb } from '@/components/Breadcrumb';
 import { HeroCoverBanner } from '@/components/HeroCoverBanner';
 import { HeroDecisionPanel } from '@/components/HeroDecisionPanel';
 import { HeroAuthorityGuide } from '@/components/HeroAuthorityGuide';
+import { HeroTrendHistory } from '@/components/HeroTrendHistory';
 import { HeroGeoAnswerBox } from '@/components/HeroGeoAnswerBox';
 import { HeroBuildVariants } from '@/components/HeroBuildVariants';
 import { HeroPatchHistory } from '@/components/HeroPatchHistory';
@@ -130,6 +131,7 @@ export function HeroPageView({
           <HeroClimbRecommend hero={hero} locale={locale} />
           <HeroDecisionPanel hero={hero} locale={locale} />
           <HeroAuthorityGuide hero={hero} locale={locale} />
+          <HeroTrendHistory hero={hero} locale={locale} />
 
           <section className="mb-6 rounded border border-hok-gold/30 bg-hok-gold/10 p-4">
             <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
