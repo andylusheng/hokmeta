@@ -9,6 +9,8 @@ import { createT, localePath, type Locale } from '@/lib/i18n';
 import { translateRole } from '@/lib/locale-labels';
 import { getHeroDisplayName } from '@/lib/locale-names';
 import { getRelatedArticleForFaq } from '@/lib/learn-hero-links';
+import { getLearnArticle } from '@/lib/learn';
+import { isLocaleReadyForPath } from '@/lib/locale-readiness';
 import { buildTopHeroGuide } from '@/lib/learn-top-hero-guides';
 import { Breadcrumb } from '@/components/Breadcrumb';
 import { HeroCoverBanner } from '@/components/HeroCoverBanner';
@@ -84,7 +86,10 @@ export function HeroPageView({
       : `${heroName} Build ${GEO_BUILD_YEAR} FAQ`;
   const damageCalculatorPath = localePath(locale, `/tools/damage-calculator/${hero.slug}`);
   const buildComparePath = localePath(locale, `/tools/build-compare/${hero.slug}`);
-  const topHeroGuide = locale === 'en' ? buildTopHeroGuide(hero) : null;
+  const learnReady = isLocaleReadyForPath(locale, '/learn');
+  const topHeroGuide = locale === 'en' && learnReady ? buildTopHeroGuide(hero) : null;
+  const guideArticle = learnReady ? getLearnArticle(`${hero.slug}-guide`, locale) : undefined;
+  const guideSlug = guideArticle?.slug;
   const showFeaturedSeoBlocks = isFeaturedHero(hero.slug);
 
   // Build FAQ → learn article links
@@ -251,7 +256,7 @@ export function HeroPageView({
             hero={hero}
             heroName={heroName}
             locale={locale}
-            guideSlug={topHeroGuide?.slug}
+            guideSlug={guideSlug}
           />
 
           <section id="faq" className="scroll-mt-20 mb-6">

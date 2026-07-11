@@ -2,10 +2,10 @@ import Link from 'next/link';
 import Image from 'next/image';
 import type { Hero } from '@/types/hero';
 import patchesMeta from '../../../data/patches.json';
-import { getHeroCoverUrl, getHeroSplashMeta } from '@/lib/hero-media';
+import { getHeroCoverUrl } from '@/lib/hero-media';
 import { createT, localePath, type Locale } from '@/lib/i18n';
 import { getHeroDisplayName } from '@/lib/locale-names';
-import { translateLane } from '@/lib/locale-labels';
+import { translateLane, translateRole } from '@/lib/locale-labels';
 
 export function HeroSplash({
   hero,
@@ -20,6 +20,22 @@ export function HeroSplash({
     'season' in patchesMeta && patchesMeta.season
       ? String(patchesMeta.season)
       : 'Live';
+  const heroTitle = getHeroDisplayName(hero, locale);
+  const lane = translateLane(hero.lane, locale) || translateRole(hero.role, locale);
+  const wr = hero.winRate != null ? `${hero.winRate.toFixed(1)}%` : '';
+  const build =
+    locale === 'zh-TW'
+      ? hero.buildZh?.find((b) => b.name && b.name !== 'Data unavailable')?.name ||
+        hero.build?.find((b) => b.name && b.name !== 'Data unavailable')?.name
+      : hero.build?.find((b) => b.name && b.name !== 'Data unavailable')?.name;
+  const summary =
+    locale === 'zh-TW'
+      ? `${heroTitle} 是 ${lane} 的 ${hero.tier} 梯度選角${wr ? `（勝率 ${wr}）` : ''}${build ? `，核心裝是 ${build}` : ''}。`
+      : locale === 'id'
+        ? `${heroTitle} adalah pick Tier ${hero.tier} di ${lane}${wr ? ` (WR ${wr})` : ''}${build ? ` — item core ${build}` : ''}.`
+        : locale === 'fil'
+          ? `${heroTitle} ay Tier ${hero.tier} pick sa ${lane}${wr ? ` (${wr} WR)` : ''}${build ? ` — core item ${build}` : ''}.`
+          : `${heroTitle} is a ${hero.tier}-tier ${lane} pick${wr ? ` (${wr} WR)` : ''}${build ? ` — core item ${build}` : ''}.`;
 
   return (
     <section className="relative mb-10 overflow-hidden rounded-2xl border border-hok-border bg-hok-card">
@@ -42,14 +58,14 @@ export function HeroSplash({
             {t('home.splashPatch', { season })}
           </span>
           <span className="text-xs text-hok-muted">
-            {translateLane(hero.lane, locale) || hero.role}
+            {lane}
           </span>
         </div>
         <h1 className="font-display text-3xl font-black text-white sm:text-4xl lg:text-5xl">
-          {getHeroDisplayName(hero, locale)}
+          {heroTitle}
         </h1>
         <p className="mt-4 text-sm leading-relaxed text-gray-300 sm:text-base">
-          {getHeroSplashMeta(hero)}
+          {summary}
         </p>
         <div className="mt-6 flex flex-wrap gap-3">
           <Link

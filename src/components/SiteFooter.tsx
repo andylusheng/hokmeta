@@ -5,6 +5,7 @@ import { usePathname } from 'next/navigation';
 import { site } from '@/lib/data';
 import patchesMeta from '../../data/patches.json';
 import { createT, detectLocaleFromPath, localePath } from '@/lib/i18n';
+import { isLocaleReadyForPath } from '@/lib/locale-readiness';
 
 export function SiteFooter() {
   const pathname = usePathname();
@@ -21,7 +22,7 @@ export function SiteFooter() {
     { href: localePath(locale, '/patches'), label: t('nav.patches') },
     { href: localePath(locale, '/about'), label: t('nav.about') },
     { href: localePath(locale, '/privacy'), label: t('nav.privacy') },
-  ];
+  ].filter((item) => isLocaleReadyForPath(locale, item.href));
 
   return (
     <footer className="mt-12 border-t border-hok-border py-8 text-sm text-gray-500">

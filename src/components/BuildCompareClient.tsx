@@ -60,7 +60,15 @@ const copy = {
     beta: 'Beta 數據：計算使用目前裝備屬性與 beta 602 防禦公式，英雄倍率仍在校準。',
     noItems: '空格',
   },
+  id: null,
+  fil: null,
 } as const;
+
+const buildCompareCopy = {
+  ...copy,
+  id: copy.en,
+  fil: copy.en,
+};
 
 type Side = 'a' | 'b';
 
@@ -116,7 +124,7 @@ export function BuildCompareClient({
   initialHeroSlug?: string;
 }) {
   const t = createT(locale);
-  const c = copy[locale];
+  const c = buildCompareCopy[locale];
   const [slug, setSlug] = useState(
     initialHeroSlug && heroes.some((hero) => hero.slug === initialHeroSlug)
       ? initialHeroSlug

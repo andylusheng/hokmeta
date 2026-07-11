@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { site } from '@/lib/data';
-import { localePath, ogLocale, type Locale } from '@/lib/i18n';
+import { LOCALES, localePath, ogLocale, stripLocalePrefix, type Locale } from '@/lib/i18n';
+import { isLocaleReadyForPath, LOCALE_READINESS_MANIFEST } from '@/lib/locale-readiness';
 
 export interface SeoInput {
   title: string;
@@ -35,14 +36,21 @@ export function absoluteUrl(path: string): string {
 
 export function buildMetadata(input: SeoInput): Metadata {
   const locale = input.locale ?? 'en';
-  const logicalPath = input.path.startsWith('/zh-TW')
-    ? input.path.replace(/^\/zh-TW/, '') || '/'
-    : input.path;
-  const canonicalPath =
-    locale === 'zh-TW' ? localePath('zh-TW', logicalPath) : logicalPath;
+  const logicalPath = stripLocalePrefix(input.path);
+  const canonicalPath = localePath(locale, logicalPath);
   const url = canonicalUrl(canonicalPath);
-  const enUrl = canonicalUrl(logicalPath);
-  const zhUrl = canonicalUrl(localePath('zh-TW', logicalPath));
+  const readyLocales = LOCALES.filter(
+    (candidate) =>
+      LOCALE_READINESS_MANIFEST[candidate].status === 'live' &&
+      isLocaleReadyForPath(candidate, logicalPath)
+  );
+  const languageAlternates = Object.fromEntries(
+    readyLocales.map((candidate) => [
+      LOCALE_READINESS_MANIFEST[candidate].hrefLang,
+      canonicalUrl(localePath(candidate, logicalPath)),
+    ])
+  );
+  const enUrl = canonicalUrl(localePath('en', logicalPath));
   const og = input.ogImage ?? site.ogImage;
   const fullOg = og.startsWith('http') ? og : `${getSiteBase()}${og}`;
 
@@ -64,8 +72,7 @@ export function buildMetadata(input: SeoInput): Metadata {
     alternates: {
       canonical: url,
       languages: {
-        en: enUrl,
-        'zh-Hant': zhUrl,
+        ...languageAlternates,
         'x-default': enUrl,
       },
     },
@@ -79,7 +86,9 @@ export function buildMetadata(input: SeoInput): Metadata {
       url,
       siteName: site.name,
       locale: ogLocale(locale),
-      alternateLocale: locale === 'zh-TW' ? ['en_US'] : ['zh_TW'],
+      alternateLocale: readyLocales
+        .filter((candidate) => candidate !== locale)
+        .map((candidate) => ogLocale(candidate)),
       type: input.type ?? 'website',
       images: [{ url: fullOg, width: 1200, height: 630, alt: input.title }],
       ...(input.modifiedTime

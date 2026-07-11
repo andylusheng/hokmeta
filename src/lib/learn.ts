@@ -30,6 +30,10 @@ import { getHeroLearnArticles } from '@/lib/learn-hero-articles';
 import { getHeroLearnArticlesZh } from '@/lib/learn-hero-articles-zh';
 import { featuredArticles } from '@/lib/learn-featured';
 import { featuredArticlesZh } from '@/lib/learn-featured-zh';
+import {
+  trendLearnArticles,
+  trendLearnArticlesZh,
+} from '@/lib/learn-trend-articles';
 
 const heroLearnArticles = getHeroLearnArticles();
 const heroLearnArticlesZh = getHeroLearnArticlesZh();
@@ -399,7 +403,8 @@ export function getLearnArticles(locale: Locale = 'en') {
   const base = locale === 'zh-TW' ? learnArticlesZh : learnArticles;
   const hero = locale === 'zh-TW' ? heroLearnArticlesZh : heroLearnArticles;
   const featured = locale === 'zh-TW' ? featuredArticlesZh : featuredArticles;
-  return [...base, ...featured, ...hero];
+  const trends = locale === 'zh-TW' ? trendLearnArticlesZh : trendLearnArticles;
+  return [...base, ...featured, ...trends, ...hero];
 }
 
 export function getLearnArticle(slug: string, locale: Locale = 'en') {
@@ -410,5 +415,6 @@ export function getLearnSlugs() {
   const baseSlugs = learnArticles.map((a) => a.slug);
   const heroSlugs = heroLearnArticles.map((a) => a.slug);
   const featuredSlugs = featuredArticles.map((a) => a.slug);
-  return [...baseSlugs, ...featuredSlugs, ...heroSlugs];
+  const trendSlugs = trendLearnArticles.map((a) => a.slug);
+  return [...baseSlugs, ...featuredSlugs, ...trendSlugs, ...heroSlugs];
 }

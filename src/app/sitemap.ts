@@ -2,7 +2,8 @@ import type { MetadataRoute } from 'next';
 import { site, heroes, items, getLatestHeroDataDate } from '@/lib/data';
 import { getLearnArticle, getLearnSlugs } from '@/lib/learn';
 import { ROLES } from '@/types/hero';
-import { localePath, type Locale } from '@/lib/i18n';
+import { LOCALES, localePath } from '@/lib/i18n';
+import { isLocaleReadyForPath } from '@/lib/locale-readiness';
 
 function sitemapEntry(
   base: string,
@@ -32,12 +33,19 @@ function localizedEntries(
   }
 ) {
   const zhScale = opts.zhPriorityScale ?? 0.98;
-  return (['en', 'zh-TW'] as Locale[]).map((locale) =>
-    sitemapEntry(base, localePath(locale, logicalPath), {
-      lastModified: opts.lastModified,
-      changeFrequency: opts.changeFrequency,
-      priority: locale === 'zh-TW' ? opts.priority * zhScale : opts.priority,
-    })
+  const secondaryScale = 0.94;
+  return LOCALES.filter((locale) => isLocaleReadyForPath(locale, logicalPath)).map(
+    (locale) =>
+      sitemapEntry(base, localePath(locale, logicalPath), {
+        lastModified: opts.lastModified,
+        changeFrequency: opts.changeFrequency,
+        priority:
+          locale === 'zh-TW'
+            ? opts.priority * zhScale
+            : locale === 'en'
+              ? opts.priority
+              : opts.priority * secondaryScale,
+      })
   );
 }
 
@@ -53,6 +61,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: '/arcana', priority: 0.72, changeFrequency: 'weekly' as const },
     { path: '/patches', priority: 0.7, changeFrequency: 'weekly' as const },
     { path: '/hero-trends', priority: 0.8, changeFrequency: 'daily' as const },
+    { path: '/meta-report', priority: 0.84, changeFrequency: 'daily' as const },
     { path: '/best-heroes', priority: 0.8, changeFrequency: 'daily' as const },
     { path: '/tools', priority: 0.8, changeFrequency: 'monthly' as const },
     { path: '/tools/damage-calculator', priority: 0.82, changeFrequency: 'weekly' as const },

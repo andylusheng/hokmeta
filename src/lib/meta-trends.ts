@@ -1,4 +1,5 @@
 import metaTrendsData from '../../data/meta-trends.json';
+import type { Locale } from '@/lib/i18n';
 
 export interface MetaTrendDelta {
   winRate: number | null;
@@ -101,7 +102,7 @@ export function getTrendHero(slug: string): MetaTrendHero | undefined {
   return metaTrends.allHeroes.find((hero) => hero.slug === slug);
 }
 
-export function laneLabel(lane: string | null, locale: 'en' | 'zh-TW' = 'en'): string {
+export function laneLabel(lane: string | null, locale: Locale = 'en'): string {
   if (!lane) return locale === 'zh-TW' ? '未指定分路' : 'Unassigned';
   if (locale === 'zh-TW') {
     if (lane === 'Clash') return '對抗路';

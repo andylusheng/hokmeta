@@ -1,13 +1,24 @@
+import Link from 'next/link';
 import type { Hero } from '@/types/hero';
-import { getTrendHero, trendDelta, trendDirection, trendRate, type MetaTrendHistoryPoint } from '@/lib/meta-trends';
-import { type Locale } from '@/lib/i18n';
+import {
+  getTrendHero,
+  trendDelta,
+  trendDirection,
+  trendRate,
+  type MetaTrendHistoryPoint,
+} from '@/lib/meta-trends';
+import { getLearnArticle } from '@/lib/learn';
+import { formatCurrentSeasonPatch } from '@/lib/current-season-patches';
+import { localePath, type Locale } from '@/lib/i18n';
 import { getHeroDisplayName } from '@/lib/locale-names';
+import { isFeaturedHero } from '@/lib/featured-heroes';
+import { isLocaleReadyForPath } from '@/lib/locale-readiness';
 
 function sectionCopy(locale: Locale) {
   if (locale === 'zh-TW') {
     return {
       label: '30 天數據趨勢',
-      title: '近 30 天勝率、出場率與禁用率',
+      title: '最近 30 天勝率、出場率與禁用率',
       desc: '用每日同步快照看這個英雄最近一個月是升溫、降溫，還是只是在高熱度下被高估。',
       noData: '目前缺少足夠的 30 天歷史快照，等下一輪同步後再顯示。',
       winRate: '勝率',
@@ -17,8 +28,13 @@ function sectionCopy(locale: Locale) {
       delta7d: '7 日變化',
       delta30d: '30 日變化',
       why: '趨勢判讀',
-      patch: '最近平衡記錄',
+      patch: '版本原因',
+      nextSteps: '下一步直接看',
+      guide: '完整攻略',
+      counters: '克制頁',
       stable: '數據大致持平，這個英雄目前沒有明顯結構性變化。',
+      noPatch:
+        '目前賽季最近 45 天內沒有可直接引用的官方平衡改動，這段變化先按出裝、對局環境與熟練度波動理解。',
     };
   }
 
@@ -34,8 +50,13 @@ function sectionCopy(locale: Locale) {
     delta7d: '7d change',
     delta30d: '30d change',
     why: 'Trend read',
-    patch: 'Recent balance note',
+    patch: 'Patch reason',
+    nextSteps: 'Read next',
+    guide: 'Full guide',
+    counters: 'Counters',
     stable: 'The numbers are mostly flat right now, so there is no strong structural shift to react to.',
+    noPatch:
+      'There is no current-season official balance entry to cite in the last 45 days, so read this move as a mix of build adaptation, draft pressure, and player execution.',
   };
 }
 
@@ -98,8 +119,59 @@ function directionCopy(locale: Locale, value: number | null, label: string) {
   return `${label} is mostly flat.`;
 }
 
-function recentPatch(hero: Hero) {
-  return hero.patchHistory.find((entry) => entry.change && entry.change !== 'Data unavailable');
+function buildReasonNotes(
+  locale: Locale,
+  heroName: string,
+  values: {
+    win30: number | null;
+    pick30: number | null;
+    ban30: number | null;
+    win7: number | null;
+  }
+) {
+  const winDirection = trendDirection(values.win30);
+  const pickDirection = trendDirection(values.pick30);
+  const banDirection = trendDirection(values.ban30);
+
+  if (locale === 'zh-TW') {
+    const notes: string[] = [];
+    if (winDirection === 'up' && pickDirection !== 'down') {
+      notes.push(`${heroName} 的勝率和出場率一起往上，通常代表當前出裝或版本節奏更適合這個英雄。`);
+    } else if (winDirection === 'up' && pickDirection === 'down') {
+      notes.push(`${heroName} 的勝率在升，但出場率沒有跟上，這更像熟練玩家在更乾淨的對局裡把勝率拉高。`);
+    } else if (winDirection === 'down' && pickDirection === 'up') {
+      notes.push(`${heroName} 仍然常被拿出來，但轉化成勝場的能力在下降，常見原因是被過度搶、沿用舊版出裝，或現在的對局環境不再友好。`);
+    } else if (winDirection === 'down') {
+      notes.push(`${heroName} 的勝率走低，代表這個英雄更吃對面陣容、進場時機和隊友配合，不能再當萬用先手。`);
+    }
+
+    if (banDirection === 'up') {
+      notes.push(`禁用率還在抬升，說明玩家對這個英雄的壓力感沒有消失，排位裡要同時看數據和 BP 環境。`);
+    } else if (values.win7 != null && Math.abs(values.win7) >= 0.35) {
+      notes.push(`最近 7 天變化已經超過 ${trendDelta(values.win7)}，代表這不是一天的噪音，值得直接回頭檢查裝備、對線和團戰節奏。`);
+    }
+
+    return notes;
+  }
+
+  const notes: string[] = [];
+  if (winDirection === 'up' && pickDirection !== 'down') {
+    notes.push(`${heroName} is converting better while usage stays healthy, which usually points to cleaner build fit or a patch pace that now favors the kit.`);
+  } else if (winDirection === 'up' && pickDirection === 'down') {
+    notes.push(`${heroName} is winning more without becoming more popular, which often means experienced players are getting cleaner value in narrower drafts.`);
+  } else if (winDirection === 'down' && pickDirection === 'up') {
+    notes.push(`${heroName} is still getting picked, but the conversion into wins is slipping. That usually means the old build path is being overused or the patch is less forgiving now.`);
+  } else if (winDirection === 'down') {
+    notes.push(`${heroName} is trending down, so matchup quality, engage timing, and team support matter more than they did a few weeks ago.`);
+  }
+
+  if (banDirection === 'up') {
+    notes.push(`Ban pressure is still climbing, so draft respect remains higher than the raw win rate alone suggests.`);
+  } else if (values.win7 != null && Math.abs(values.win7) >= 0.35) {
+    notes.push(`The last 7 days already moved by ${trendDelta(values.win7)}, so this is not just one-day noise. Recheck build order, lane handling, and fight timing.`);
+  }
+
+  return notes;
 }
 
 export function HeroTrendHistory({
@@ -112,6 +184,10 @@ export function HeroTrendHistory({
   const copy = sectionCopy(locale);
   const trendHero = getTrendHero(hero.slug);
   const heroName = getHeroDisplayName(hero, locale);
+  const guideArticle = isLocaleReadyForPath(locale, '/learn')
+    ? getLearnArticle(`${hero.slug}-guide`, locale)
+    : undefined;
+  const showFeaturedLinks = isFeaturedHero(hero.slug);
 
   if (!trendHero || trendHero.history30d.length < 2) {
     return (
@@ -123,12 +199,18 @@ export function HeroTrendHistory({
     );
   }
 
-  const patch = recentPatch(hero);
+  const patch = formatCurrentSeasonPatch(hero.slug, locale);
   const trendNotes = [
     directionCopy(locale, trendHero.delta30d.winRate, copy.winRate),
     directionCopy(locale, trendHero.delta30d.pickRate, copy.pickRate),
     directionCopy(locale, trendHero.delta30d.banRate, copy.banRate),
   ].filter(Boolean) as string[];
+  const reasonNotes = buildReasonNotes(locale, heroName, {
+    win30: trendHero.delta30d.winRate,
+    pick30: trendHero.delta30d.pickRate,
+    ban30: trendHero.delta30d.banRate,
+    win7: trendHero.delta7d.winRate,
+  });
 
   const summaryLine =
     locale === 'zh-TW'
@@ -184,18 +266,43 @@ export function HeroTrendHistory({
             ) : (
               <p className="rounded border border-hok-border/70 bg-hok-card/45 px-3 py-2">{copy.stable}</p>
             )}
+            {reasonNotes.map((note) => (
+              <p key={note} className="rounded border border-hok-border/70 bg-hok-card/45 px-3 py-2">
+                {note}
+              </p>
+            ))}
           </div>
         </div>
 
         <div className="rounded-lg border border-hok-border/70 bg-hok-dark/35 p-4">
           <h3 className="text-sm font-semibold text-white">{copy.patch}</h3>
           <p className="mt-2 text-sm leading-6 text-gray-300">
-            {patch
-              ? `${patch.version}: ${patch.change}`
-              : locale === 'zh-TW'
-                ? '最近 30 天內沒有明確的平衡條目可直接引用，暫時以勝率、出場率與禁用率變化為主。'
-                : 'There is no clear recent balance entry to cite here, so treat the trend as a live read from win rate, pick rate, and ban rate movement first.'}
+            {patch || copy.noPatch}
           </p>
+
+          {showFeaturedLinks ? (
+            <div className="mt-4">
+              <p className="text-xs font-semibold uppercase tracking-wide text-hok-gold">
+                {copy.nextSteps}
+              </p>
+              <div className="mt-3 flex flex-wrap gap-2">
+                {guideArticle ? (
+                  <Link
+                    href={localePath(locale, `/learn/${guideArticle.slug}`)}
+                    className="rounded border border-hok-border px-3 py-2 text-sm font-semibold text-hok-gold transition hover:border-hok-gold"
+                  >
+                    {heroName} {copy.guide}
+                  </Link>
+                ) : null}
+                <Link
+                  href={localePath(locale, `/hero/${hero.slug}/counters`)}
+                  className="rounded border border-hok-border px-3 py-2 text-sm font-semibold text-hok-gold transition hover:border-hok-gold"
+                >
+                  {heroName} {copy.counters}
+                </Link>
+              </div>
+            </div>
+          ) : null}
         </div>
       </div>
     </section>

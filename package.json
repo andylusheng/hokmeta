@@ -14,6 +14,7 @@
     "sync-global": "node scripts/sync-global.js",
     "bump-sync-date": "node scripts/bump-sync-date.js",
     "sync-camp": "node scripts/sync-camp.js",
+    "sync-trends": "node scripts/sync-trends-from-d1.js",
     "sync-camp:quick": "node scripts/sync-camp.js --limit=5 --skip-items --skip-counters",
     "enrich-covers": "node scripts/camp/enrich-covers.js",
     "fix-skill-icons": "node scripts/fix-skill-icons.js",
@@ -25,7 +26,7 @@
     "enrich-guides": "node scripts/enrich-hero-guides.js",
     "patch-musashi": "node scripts/patch-musashi-guide.js",
     "qa-zh-locale": "node scripts/qa-zh-locale.js",
-    "postbuild": "node scripts/copy-api.js"
+    "postbuild": "node scripts/copy-api.js && node scripts/postbuild-locales.js"
   },
   "dependencies": {
     "next": "14.2.28",

@@ -7,6 +7,7 @@ import {
   type MetaTrendHero,
 } from '@/lib/meta-trends';
 import { createT, localePath, type Locale } from '@/lib/i18n';
+import { translateRole } from '@/lib/locale-labels';
 import { Breadcrumb } from '@/components/Breadcrumb';
 import { JsonLd, breadcrumbSchema } from '@/lib/schema';
 
@@ -132,7 +133,7 @@ function ReportTable({
                     {hero.name}
                   </Link>
                   <div className="text-xs text-gray-500">
-                    {hero.role} · Tier {hero.tier}
+                    {translateRole(hero.role, locale)} · Tier {hero.tier}
                   </div>
                 </td>
                 <td className="px-3 py-3 text-gray-300">{laneLabel(hero.lane, locale)}</td>
@@ -205,7 +206,7 @@ function LaneLeaderCards({ locale }: { locale: Locale }) {
                         {hero.name}
                       </Link>
                       <p className="mt-1 text-xs text-gray-500">
-                        {hero.role} · Tier {hero.tier}
+                        {translateRole(hero.role, locale)} · Tier {hero.tier}
                       </p>
                     </div>
                     <div className="text-right">

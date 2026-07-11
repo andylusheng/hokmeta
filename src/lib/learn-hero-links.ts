@@ -1,6 +1,7 @@
 import type { Locale } from '@/lib/i18n';
 import { localePath } from '@/lib/i18n';
 import { getLearnArticle } from '@/lib/learn';
+import { isLocaleReadyForPath } from '@/lib/locale-readiness';
 
 export interface ArticleLink {
   url: string;
@@ -16,6 +17,7 @@ export function getRelatedArticleForFaq(
   heroSlug: string,
   locale: Locale = 'en'
 ): ArticleLink | undefined {
+  if (!isLocaleReadyForPath(locale, '/learn')) return undefined;
   const slug = faqToHeroSlug(faqId, heroSlug);
   if (!slug) return undefined;
   const article = getLearnArticle(slug, locale);
@@ -35,6 +37,7 @@ export function getCounterRelatedArticle(
   heroSlug: string,
   locale: Locale = 'en'
 ): ArticleLink | undefined {
+  if (!isLocaleReadyForPath(locale, '/learn')) return undefined;
   const slug = counterFaqToSlug(faqType, heroSlug);
   if (!slug) return undefined;
   const article = getLearnArticle(slug, locale);

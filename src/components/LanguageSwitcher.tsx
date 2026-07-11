@@ -2,39 +2,35 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import {
-  alternateLocalePath,
-  detectLocaleFromPath,
-  type Locale,
-} from '@/lib/i18n';
-
-const LABELS: Record<Locale, string> = {
-  en: 'EN',
-  'zh-TW': '繁中',
-};
+import { getLanguageSwitcherEntries } from '@/lib/locale-readiness';
 
 export function LanguageSwitcher() {
   const pathname = usePathname();
-  const current = detectLocaleFromPath(pathname);
-  const other: Locale = current === 'en' ? 'zh-TW' : 'en';
-  const href = alternateLocalePath(pathname, other);
+  const entries = getLanguageSwitcherEntries(pathname);
 
   return (
     <div className="flex items-center gap-1 rounded border border-hok-border bg-hok-card/80 p-0.5 text-xs">
-      <span
-        className="rounded px-2 py-1 font-semibold text-hok-gold"
-        aria-current="true"
-      >
-        {LABELS[current]}
-      </span>
-      <Link
-        href={href}
-        className="rounded px-2 py-1 text-gray-400 transition hover:bg-hok-dark hover:text-white"
-        hrefLang={other === 'zh-TW' ? 'zh-Hant' : 'en'}
-        rel="alternate"
-      >
-        {LABELS[other]}
-      </Link>
+      {entries.map((entry) =>
+        entry.current ? (
+          <span
+            key={entry.locale}
+            className="rounded px-2 py-1 font-semibold text-hok-gold"
+            aria-current="true"
+          >
+            {entry.label}
+          </span>
+        ) : (
+          <Link
+            key={entry.locale}
+            href={entry.href}
+            className="rounded px-2 py-1 text-gray-400 transition hover:bg-hok-dark hover:text-white"
+            hrefLang={entry.hrefLang}
+            rel="alternate"
+          >
+            {entry.label}
+          </Link>
+        )
+      )}
     </div>
   );
 }

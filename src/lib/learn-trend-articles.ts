@@ -1,4 +1,4 @@
-import { getHeroBySlug } from '@/lib/data';
+import { formatCurrentSeasonPatch } from '@/lib/current-season-patches';
 import {
   laneLabel,
   metaTrends,
@@ -31,18 +31,15 @@ function topNames(items: MetaTrendHero[]) {
 }
 
 function patchReason(hero: MetaTrendHero, locale: 'en' | 'zh-TW' = 'en') {
-  const fullHero = getHeroBySlug(hero.slug);
-  const latestPatch = fullHero?.patchHistory?.find(
-    (entry) => entry.change && entry.change !== 'Data unavailable'
-  );
+  const latestPatch = formatCurrentSeasonPatch(hero.slug, locale);
   if (!latestPatch) {
     return locale === 'zh-TW'
-      ? `${hero.name} 最近沒有可直接引用的平衡條目，所以目前更應該從勝率、出場率與禁用率變化去判斷它是變強還是被環境針對。`
-      : `${hero.name} does not have a clean recent balance note to quote, so the safer read is to treat the current movement as a live result of win rate, pick rate, and ban pressure instead.`;
+      ? `${hero.name} 目前賽季最近 45 天內沒有可直接引用的官方平衡改動，所以目前更應該從勝率、出場率與禁用率變化去判斷它是變強還是被環境針對。`
+      : `${hero.name} does not have a current-season official balance note in the last 45 days, so the safer read is to treat the current movement as a live result of win rate, pick rate, and ban pressure instead.`;
   }
   return locale === 'zh-TW'
-    ? `${hero.name} 最近可見的平衡條目是 ${latestPatch.version}: ${latestPatch.change}。這通常是最近勝率變化最先要檢查的原因。`
-    : `${hero.name}'s latest visible balance note is ${latestPatch.version}: ${latestPatch.change}. That is usually the first reason to check when the weekly numbers shift.`;
+    ? `${hero.name} 最近可直接引用的官方平衡條目是 ${latestPatch}。這通常是最近勝率變化最先要檢查的原因。`
+    : `${hero.name}'s latest official balance note worth citing is ${latestPatch}. That is usually the first reason to check when the weekly numbers shift.`;
 }
 
 function trendReason(hero: MetaTrendHero, locale: 'en' | 'zh-TW' = 'en') {

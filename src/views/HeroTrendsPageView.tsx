@@ -9,6 +9,7 @@ import {
 } from '@/lib/meta-trends';
 import { getHeroBySlug } from '@/lib/data';
 import { createT, localePath, type Locale } from '@/lib/i18n';
+import { translateRole } from '@/lib/locale-labels';
 import { Breadcrumb } from '@/components/Breadcrumb';
 import { HeroAvatar } from '@/components/HeroAvatar';
 import { JsonLd, breadcrumbSchema } from '@/lib/schema';
@@ -16,8 +17,7 @@ import { JsonLd, breadcrumbSchema } from '@/lib/schema';
 function sectionCopy(locale: Locale) {
   if (locale === 'zh-TW') {
     return {
-      subtitle:
-        '基於 Cloudflare D1 中的 Camp HOK 每日快照，整理本週最值得關注的高勝率、低勝率與分路冠軍，避免看一堆重複榜單。',
+      subtitle: '基於官方每日勝率統計。',
       updated: '最新同步',
       coverage: '覆蓋',
       days: '有效快照天數',
@@ -26,20 +26,63 @@ function sectionCopy(locale: Locale) {
       lowestWinRate: '本週最低勝率 Top 10',
       laneLeaders: '各分路勝率前 5',
       delta7d: '7 日變化',
-      explanationTitle: '這頁怎麼看',
+      explanationTitle: '玩家怎麼用',
       explanation:
-        '高勝率榜告訴你哪些英雄現在真的穩，低勝率榜告訴你哪些英雄容易拖累排位。分路前 5 比整站大榜更實用，因為大部分玩家只關心自己那一路。',
+        '先看你主玩的那一路。高勝率榜用來找穩定答案，低勝率榜用來避坑，分路前 5 比整站總榜更實用。',
       dataNote:
-        'HOKMeta 不把低樣本尖峰直接當成答案。這裡會先看勝率，再交叉參考出場率、禁用率與最近 7 天變化。',
+        '同一個英雄要一起看勝率、出場率和最近 7 天變化，不要只看單天尖峰。',
       up: '上升',
       down: '下降',
       flat: '持平',
     };
   }
 
+  if (locale === 'id') {
+    return {
+      subtitle: 'Berdasarkan statistik win rate harian resmi.',
+      updated: 'Sync terbaru',
+      coverage: 'Cakupan',
+      days: 'hari snapshot',
+      heroes: 'hero',
+      topWinRate: 'Top 10 win rate terpercaya minggu ini',
+      lowestWinRate: 'Top 10 win rate terendah minggu ini',
+      laneLeaders: 'Top 5 per lane',
+      delta7d: 'Perubahan 7 hari',
+      explanationTitle: 'Cara memakai halaman ini',
+      explanation:
+        'Mulai dari lane utama kamu. Board win rate tinggi membantu mencari pick stabil, board win rate rendah membantu menghindari pick berisiko, dan top 5 per lane lebih praktis daripada daftar global.',
+      dataNote:
+        'Baca win rate bersama pick rate dan perubahan 7 hari. Jangan percaya lonjakan satu hari saja.',
+      up: 'Naik',
+      down: 'Turun',
+      flat: 'Datar',
+    };
+  }
+
+  if (locale === 'fil') {
+    return {
+      subtitle: 'Batay sa opisyal na daily win-rate stats.',
+      updated: 'Latest sync',
+      coverage: 'Coverage',
+      days: 'tracked days',
+      heroes: 'heroes',
+      topWinRate: 'Top 10 trusted win rate heroes this week',
+      lowestWinRate: 'Top 10 lowest win rate heroes this week',
+      laneLeaders: 'Top 5 per lane',
+      delta7d: '7-day change',
+      explanationTitle: 'Paano gamitin ng players',
+      explanation:
+        'Magsimula sa main lane mo. Gamitin ang high-win board para sa stable ranked picks, low-win board para umiwas sa risky picks, at lane leaders para sa mas praktikal na shortlist.',
+      dataNote:
+        'Basahin ang win rate kasama ng pick rate at 7-day movement. Huwag umasa sa one-day spike lang.',
+      up: 'Up',
+      down: 'Down',
+      flat: 'Flat',
+    };
+  }
+
   return {
-    subtitle:
-      'Camp HOK daily snapshots from Cloudflare D1, trimmed into the three views that matter most right now: highest win rate, lowest win rate, and lane-by-lane leaders.',
+    subtitle: 'Built from official daily win-rate stats.',
     updated: 'Latest sync',
     coverage: 'Coverage',
     days: 'tracked days',
@@ -48,11 +91,11 @@ function sectionCopy(locale: Locale) {
     lowestWinRate: 'Top 10 lowest win rate heroes',
     laneLeaders: 'Top 5 by lane',
     delta7d: '7d change',
-    explanationTitle: 'How to read this page',
+    explanationTitle: 'How players should use this',
     explanation:
-      'The high-win board shows who is converting games right now. The low-win board highlights risky picks that may need cleaner builds, clearer matchups, or a better patch fit. Lane leaders matter because most ranked decisions are role-specific, not global.',
+      'Start with your main lane. Use the high-win board for stable ranked answers, the low-win board to avoid traps, and the lane leaders for the most practical shortlist.',
     dataNote:
-      'HOKMeta does not treat low-sample spikes as truth. Win rate is shown together with pick rate, ban pressure, and 7-day movement so the board stays usable.',
+      'Read win rate together with pick rate and 7-day movement instead of trusting one-day spikes.',
     up: 'Up',
     down: 'Down',
     flat: 'Flat',
@@ -108,7 +151,7 @@ function TrendHeroRow({
             {item.name}
           </div>
           <div className="text-xs text-gray-500">
-            {laneLabel(item.lane, locale)} · {item.role} · Tier {item.tier}
+            {laneLabel(item.lane, locale)} · {translateRole(item.role, locale)} · Tier {item.tier}
           </div>
         </div>
       </div>

@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { SearchTrigger } from '@/components/SearchTrigger';
 import { LanguageSwitcher } from '@/components/LanguageSwitcher';
+import { isLocaleReadyForPath } from '@/lib/locale-readiness';
 import {
   createT,
   detectLocaleFromPath,
@@ -22,7 +23,7 @@ function navItems(locale: Locale) {
     { href: localePath(locale, '/arcana'), label: t('nav.arcana') },
     { href: localePath(locale, '/learn'), label: t('nav.guides') },
     { href: localePath(locale, '/patches'), label: t('nav.patches') },
-  ];
+  ].filter((item) => isLocaleReadyForPath(locale, item.href));
 }
 
 export function SiteHeader() {

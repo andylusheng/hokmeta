@@ -58,7 +58,15 @@ const text = {
     baseline: '職業基準倍率',
     noItems: '尚未選擇裝備。',
   },
+  id: null,
+  fil: null,
 } as const;
+
+const damageCopy = {
+  ...text,
+  id: text.en,
+  fil: text.en,
+};
 
 function fmt(value: number): string {
   return Math.round(value).toLocaleString('en-US');
@@ -100,7 +108,7 @@ export function DamageCalculatorClient({
   initialHeroSlug?: string;
 }) {
   const t = createT(locale);
-  const copy = text[locale];
+  const copy = damageCopy[locale];
   const [slug, setSlug] = useState(
     initialHeroSlug && heroes.some((hero) => hero.slug === initialHeroSlug)
       ? initialHeroSlug

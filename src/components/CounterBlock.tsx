@@ -146,7 +146,7 @@ export function CounterBlock({
                 <ul className="mt-2 space-y-0.5 pl-2 text-xs leading-relaxed text-gray-400">
                   {override.bestCounter.reasons.slice(0, 2).map((r, i) => (
                     <li key={i} className="line-clamp-1">
-                      • {typeof r === 'string' ? r : r[locale] || r.en}
+                      • {typeof r === 'string' ? r : locale === 'zh-TW' ? r['zh-TW'] || r.en : r.en}
                     </li>
                   ))}
                 </ul>
