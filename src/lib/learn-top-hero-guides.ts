@@ -99,6 +99,36 @@ const TOP_GUIDES: Record<string, TopGuideConfig> = {
     counters:
       'Li Xin, Mayene, and Mulan can punish Liang if they flank or force him to use control defensively. Draft Liang when your team can follow up on one locked target. Avoid using him as your only damage source into tank-heavy comps unless your side lanes already cover sustained DPS.',
   },
+  butterfly: {
+    title: 'Butterfly Best Build, Counters and Jungle Reset Guide',
+    description:
+      'Butterfly guide for Honor of Kings Global with best build, jungle pathing, reset timing, backline cleanup, counters, and ranked tips.',
+    identity:
+      'Butterfly is a reset jungler. She does not need a long fight to look good; she needs one target to fall, then her cooldown reset turns the fight into a second kill. The mistake is jumping in first just because ultimate is available. A good Butterfly player waits for health bars to drop, enters from fog, and uses the first takedown to snowball the fight instead of forcing a 1v5 highlight.',
+    build:
+      'Her build should support fast jungle tempo, burst damage, and enough survivability to live through the first answer. Damage items help her finish low targets, but one defensive choice is often better than a greedy sixth damage item when the enemy has point-and-click control. If you are ahead, keep clearing and invading. If you are even, build for the fight you can actually survive.',
+    lane:
+      'Clear efficiently and look for lanes where enemies have already used mobility. Butterfly ganks are best after your laner has forced a trade or when the enemy wave is pushed too far. Do not show on every river wave. If the enemy knows where you are before level four, your reset pressure drops sharply. Farm, track the enemy jungler, then arrive when the target is already committed.',
+    teamfight:
+      'In teamfights, Butterfly is usually a second-entry hero. Let your frontline or mage create the first low-health target, then commit. If you spend ultimate on a full-health tank, the fight becomes slow and you lose the reason you picked her. After the first reset, decide quickly: chase the next carry if your team can follow, or leave with the reset value already won.',
+    counters:
+      'Hard control, peel supports, and tanky drafts punish Butterfly because they deny the first reset. She is stronger into fragile backlines and messy skirmishes where enemies split damage across several targets. Avoid blind picking her when the enemy comp can lock her down immediately after entry.',
+  },
+  annette: {
+    title: 'Annette Best Build, Counters and Roaming Support Guide',
+    description:
+      'Annette guide for Honor of Kings Global with best build, roaming pathing, Hurricane Wall timing, peel decisions, counters, and ranked support tips.',
+    identity:
+      'Annette is a protective roaming support with strong disengage and fight control. She is not just a backline passenger. Her value comes from making the enemy dive awkward: slowing the entry, shielding the carry, and using Hurricane Wall to split a fight that the enemy thought was already started. If you waste her ultimate early, she becomes much easier to run over.',
+    build:
+      'Annette wants support utility, cooldown value, and enough defensive stats to stand near the carry without dying instantly. The build should answer the enemy engage pattern: physical defense against marksman and fighter dive, magic defense against burst mages, and utility when your team needs cleaner objective fights. Damage is secondary; keeping the correct teammate alive is the win condition.',
+    lane:
+      'Start by protecting your farm lane unless your mid or jungler has a clear invade plan. Use Gust Force to control space and help your carry trade without walking forward. When you roam, leave after the wave is safe, not while your marksman is trapped under pressure. Annette loses value when she is late to the fight she is supposed to protect.',
+    teamfight:
+      'Hurricane Wall should usually answer a dive or cut off a follow-up path. Do not press it just because enemies are near you. Wait until the assassin or fighter commits, then push them away from the carry or isolate the target your team can kill. Her best fights look calm because the enemy engage never fully connects.',
+    counters:
+      'Long-range poke and patient teams can make Annette spend tools without committing. Hard engage also punishes her if Hurricane Wall is down. Draft her when your carry needs peel or when the enemy relies on melee entry. Avoid picking her as the only frontline if your team has no one willing to start fights.',
+  },
   'luban-no-7': {
     title: 'Luban No.7 Best Build, Counters and Farm Lane Guide',
     description:

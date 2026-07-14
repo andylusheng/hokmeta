@@ -21,6 +21,7 @@ const hub = [
   '/',
   '/tier-list/',
   '/hero-trends/',
+  '/meta-report/',
   '/best-heroes/',
   '/learn/',
   '/tools/',
@@ -41,6 +42,10 @@ const topGuideSlugs = [
   'wukong-guide',
   'dolia-guide',
   'augran-guide',
+  'highest-win-rate-heroes-this-week',
+  'most-picked-heroes-this-week',
+  'most-underrated-heroes-this-week',
+  'most-banned-heroes-this-week',
 ];
 
 console.log('# === Submit in Google Search Console & Bing Webmaster ===');
