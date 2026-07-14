@@ -105,6 +105,7 @@
     "learningHub": "Pusat Panduan",
     "allGuides": "Lihat semua panduan →",
     "hubTrends": "Tren mingguan untuk win rate, pick rate, ban pressure, dan sleeper pick",
+    "hubMetaReportTitle": "Laporan Meta",
     "hubMetaReport": "Baca laporan data minggu ini: hero win-rate tertinggi, paling sering dipilih, dan pick yang diremehkan"
   },
   "heroes": {
@@ -150,6 +151,7 @@
     "playstyleTitle": "Gaya Main & Tips Ranked",
     "faqTitle": "FAQ",
     "counterPicker": "Tool counter picker",
+    "fullCounterAnalysis": "Analisis counter lengkap →",
     "summaryBuild": "Core build",
     "summaryCombo": "Combo",
     "summaryDraft": "Draft",
@@ -179,6 +181,107 @@
       "avoidWhen": "Hindari saat",
       "counterRisk": "Ancaman utama: {names}.",
       "counterCta": "Buka halaman counter"
+    }
+  },
+  "arcana": {
+    "colSlot": "Slot",
+    "colChoice": "Pilihan",
+    "colEffect": "Efek"
+  },
+  "build": {
+    "colOrder": "#",
+    "colItem": "Item",
+    "colGold": "Gold",
+    "colStats": "Stat",
+    "colWhy": "Alasan",
+    "presetsHint": "{count} preset — ganti sesuai draft, lane, atau meta CN. Default mengikuti {lane} jika tersedia.",
+    "presetJungle": "Tempo clear jungle & gank",
+    "presetClash": "Side lane bruiser / split",
+    "presetFarm": "Scaling farm lane",
+    "presetMid": "Tekanan mid & roam",
+    "presetRoam": "Roaming peel & vision",
+    "presetCn": "Preset komunitas CN",
+    "presetDefault": "Path ranked default"
+  },
+  "combo": {
+    "when": "Kapan"
+  },
+  "counters": {
+    "strongInto": "{name} kuat melawan",
+    "strongHint": "Pilih {name} ketika lawan mengambil hero-hero ini.",
+    "weakInto": "{name} lemah melawan",
+    "weakHint": "Hindari {name} atau ban hero ini jika muncul di draft lawan.",
+    "unavailable": "Data belum tersedia",
+    "campLabel": "Data counter resmi",
+    "campHint": "Referensi counter dari statistik ranked resmi.",
+    "hokmetaLabel": "Analisis statistik HOKMeta",
+    "hokmetaHint": "Analisis tambahan dari win rate, pick rate, dan data matchup.",
+    "campStrong": "Resmi: {name} meng-counter",
+    "campWeak": "Resmi: {name} di-counter oleh",
+    "hokmetaBestCounter": "Counter terbaik HOKMeta",
+    "hokmetaAnalysis": "Analisis counter HOKMeta"
+  },
+  "guide": {
+    "laning": "Fase lane",
+    "teamfightHeading": "Peran teamfight",
+    "highRank": "Rank tinggi (Diamond+)",
+    "comparisons": "vs hero serupa"
+  },
+  "skills": {
+    "passive": "Pasif",
+    "skill1": "Skill 1",
+    "skill2": "Skill 2",
+    "ultimate": "Ultimate",
+    "unavailable": "Data skill belum tersedia."
+  },
+  "attribution": {
+    "title": "Data meta & editorial",
+    "sources": "Sumber",
+    "synced": "Terakhir sinkron",
+    "buildNote": "Build menampilkan item end-game; urutan beli di dalam match bisa berbeda. Win/pick/ban dan build diperbarui setelah setiap sinkronisasi data resmi.",
+    "editedBy": "Diedit oleh",
+    "disclaimer": "Tidak berafiliasi dengan Tencent atau Level Infinite."
+  },
+  "toc": {
+    "summary": "Ringkasan",
+    "authority": "Panduan patch saat ini",
+    "trendHistory": "Tren 30 hari",
+    "build": "Build",
+    "buildVariants": "Varian build",
+    "arcana": "Arcana",
+    "skillOrder": "Urutan skill",
+    "combos": "Combo",
+    "abilities": "Skill",
+    "counters": "Counter",
+    "comparisons": "Perbandingan",
+    "playstyle": "Gaya main",
+    "patchHistory": "Riwayat patch",
+    "faq": "FAQ",
+    "onPage": "Di halaman ini"
+  },
+  "rationale": {
+    "title": "Filosofi build",
+    "passiveRef": "Pasif:",
+    "arcanaHint": "Arcana:",
+    "summaryDefault": "{name} mendapat nilai dari {priorities}; sesuaikan item dan rune dengan scaling kit.",
+    "arcanaDefault": "Prioritaskan rune yang memperkuat {priorities} untuk scaling pasif dan skill hero ini.",
+    "itemWhyMatch": "Cocok dengan prioritas {stat} — {passive}",
+    "itemWhyLabel": "{label} mendukung fokus {stat}.",
+    "itemWhyFallback": "Item core untuk slot {slot} dalam build ini.",
+    "arcanaWhyMatch": "{rune}: {stat} — {effect}",
+    "arcanaFallback": "Rune yang selaras dengan {priorities} untuk hero ini.",
+    "stat": {
+      "aspd": "Attack speed",
+      "patk": "Physical attack",
+      "crit": "Crit",
+      "lifesteal": "Lifesteal",
+      "onhit": "On-hit",
+      "cdr": "Cooldown reduction",
+      "matk": "Magic attack",
+      "pen": "Penetration",
+      "tank": "Survivability",
+      "ms": "Movement speed",
+      "core": "stat core"
     }
   },
   "trends": {

@@ -7,6 +7,7 @@ import {
   type MetaTrendHero,
 } from '@/lib/meta-trends';
 import { createT, localePath, type Locale } from '@/lib/i18n';
+import { isLocaleReadyForPath } from '@/lib/locale-readiness';
 import { translateRole } from '@/lib/locale-labels';
 import { Breadcrumb } from '@/components/Breadcrumb';
 import { JsonLd, breadcrumbSchema } from '@/lib/schema';
@@ -21,8 +22,7 @@ function copy(locale: Locale) {
       lowWin: '本週勝率最低 Top 10',
       laneLeaders: '各分路前 5',
       why: '為什麼值得看',
-      source:
-        '資料來自 HOKMeta 同步到 Cloudflare D1 的 Camp HOK 國際服每日快照。',
+      source: '基於官方每日勝率統計。',
       updated: '最新同步',
       compared: '對比日期',
       and: '與',
@@ -46,6 +46,72 @@ function copy(locale: Locale) {
     };
   }
 
+  if (locale === 'id') {
+    return {
+      title: 'Laporan Meta Mingguan Honor of Kings Global',
+      subtitle:
+        'Ringkasan mingguan untuk tiga keputusan ranked: hero mana yang paling stabil, hero mana yang sedang berisiko, dan siapa pemimpin tiap lane saat ini.',
+      topWin: 'Top 10 hero win rate tertinggi minggu ini',
+      lowWin: 'Top 10 hero win rate terendah minggu ini',
+      laneLeaders: 'Top 5 per lane',
+      why: 'Kenapa penting',
+      source: 'Berdasarkan statistik win rate harian resmi.',
+      updated: 'Sync terbaru',
+      compared: 'Dibandingkan dengan',
+      and: 'dan',
+      openDashboard: 'Buka dashboard tren lengkap',
+      relatedReports: 'Laporan terkait',
+      actions: 'Link aksi',
+      hero: 'Hero',
+      lane: 'Lane',
+      heroPage: 'Hero',
+      counters: 'Counter',
+      buildCompare: 'Bandingkan build',
+      damage: 'Kalkulator damage',
+      topWinGuide: 'Hero win rate tinggi',
+      lowWinGuide: 'Hero win rate rendah',
+      laneGuide: 'Pemimpin lane',
+      pickedGuide: 'Hero paling sering dipilih',
+      sleeperGuide: 'Hero underrated',
+      summaryTitle: 'Kesimpulan minggu ini',
+      summary:
+        'Gunakan tabel win rate tinggi untuk mencari pick stabil. Gunakan tabel win rate rendah sebagai daftar peringatan sebelum memaksakan hero yang sedang kurang cocok dengan patch atau matchup.',
+    };
+  }
+
+  if (locale === 'fil') {
+    return {
+      title: 'Honor of Kings Global Weekly Meta Report',
+      subtitle:
+        'Isang weekly summary para sa ranked decisions: aling heroes ang pinaka-stable, alin ang delikado ngayon, at sino ang nangunguna sa bawat lane.',
+      topWin: 'Top 10 highest win-rate heroes this week',
+      lowWin: 'Top 10 lowest win-rate heroes this week',
+      laneLeaders: 'Top 5 per lane',
+      why: 'Bakit mahalaga',
+      source: 'Based on official daily win-rate stats.',
+      updated: 'Latest sync',
+      compared: 'Compared with',
+      and: 'and',
+      openDashboard: 'Open full trend dashboard',
+      relatedReports: 'Related reports',
+      actions: 'Action links',
+      hero: 'Hero',
+      lane: 'Lane',
+      heroPage: 'Hero',
+      counters: 'Counters',
+      buildCompare: 'Build compare',
+      damage: 'Damage calc',
+      topWinGuide: 'High win-rate heroes',
+      lowWinGuide: 'Low win-rate heroes',
+      laneGuide: 'Lane leaders',
+      pickedGuide: 'Most picked',
+      sleeperGuide: 'Underrated',
+      summaryTitle: 'This week in one read',
+      summary:
+        'Use the high-win table para sa stable ranked picks. Use the low-win table bilang warning list bago pilitin ang hero na hindi fit sa patch o matchup.',
+    };
+  }
+
   return {
     title: 'Honor of Kings Global Weekly Meta Report',
     subtitle:
@@ -54,8 +120,7 @@ function copy(locale: Locale) {
     lowWin: 'Top 10 lowest win-rate heroes this week',
     laneLeaders: 'Top 5 by lane',
     why: 'Why it matters',
-    source:
-      'Data comes from Camp HOK international snapshots synced by HOKMeta into Cloudflare D1.',
+    source: 'Built from official daily win-rate stats.',
     updated: 'Latest sync',
     compared: 'Compared with',
     and: 'and',
@@ -85,6 +150,20 @@ function insightNote(locale: Locale, type: 'win' | 'low', hero: MetaTrendHero) {
       return `${hero.name} 目前勝率 ${trendRate(hero.winRate)}，同時有 ${trendRate(hero.pickRate)} 出場率。這代表它不只是低樣本尖峰，而是真的在排位裡穩定轉化勝場。`;
     }
     return `${hero.name} 目前勝率只有 ${trendRate(hero.winRate)}。如果你最近常輸在這個英雄上，應該先檢查版本適配、核心裝順序與對線是否本來就吃虧。`;
+  }
+
+  if (locale === 'id') {
+    if (type === 'win') {
+      return `${hero.name} punya win rate ${trendRate(hero.winRate)} dan pick rate ${trendRate(hero.pickRate)}. Ini lebih kuat daripada spike kecil karena tetap muncul di ranked.`;
+    }
+    return `${hero.name} hanya berada di ${trendRate(hero.winRate)} win rate. Cek ulang urutan item, matchup, dan apakah patch saat ini memang kurang mendukung hero ini.`;
+  }
+
+  if (locale === 'fil') {
+    if (type === 'win') {
+      return `${hero.name} has ${trendRate(hero.winRate)} win rate with ${trendRate(hero.pickRate)} pick rate, kaya mas reliable ito kaysa one-day spike lang.`;
+    }
+    return `${hero.name} is only at ${trendRate(hero.winRate)} win rate. Treat it as a warning to review build order, matchup fit, and patch comfort.`;
   }
 
   if (type === 'win') {
@@ -241,6 +320,7 @@ function LaneLeaderCards({ locale }: { locale: Locale }) {
 export function MetaReportPageView({ locale = 'en' }: { locale?: Locale }) {
   const t = createT(locale);
   const c = copy(locale);
+  const learnReady = isLocaleReadyForPath(locale, '/learn');
 
   return (
     <div className="container-page">
@@ -278,26 +358,28 @@ export function MetaReportPageView({ locale = 'en' }: { locale?: Locale }) {
         <p className="mt-2 text-sm leading-6 text-gray-300">{c.summary}</p>
       </div>
 
-      <section className="mb-8">
-        <h2 className="mb-3 text-lg font-bold text-white">{c.relatedReports}</h2>
-        <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-5">
-          {[
-            ['highest-win-rate-heroes-this-week', c.topWinGuide],
-            ['lowest-win-rate-heroes-this-week', c.lowWinGuide],
-            ['best-heroes-by-lane-this-week', c.laneGuide],
-            ['most-picked-heroes-this-week', c.pickedGuide],
-            ['most-underrated-heroes-this-week', c.sleeperGuide],
-          ].map(([slug, label]) => (
-            <Link
-              key={slug}
-              href={localePath(locale, `/learn/${slug}`)}
-              className="rounded-lg border border-hok-border bg-hok-card/40 px-4 py-3 text-sm font-semibold text-hok-gold hover:border-hok-gold"
-            >
-              {label}
-            </Link>
-          ))}
-        </div>
-      </section>
+      {learnReady ? (
+        <section className="mb-8">
+          <h2 className="mb-3 text-lg font-bold text-white">{c.relatedReports}</h2>
+          <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-5">
+            {[
+              ['highest-win-rate-heroes-this-week', c.topWinGuide],
+              ['lowest-win-rate-heroes-this-week', c.lowWinGuide],
+              ['best-heroes-by-lane-this-week', c.laneGuide],
+              ['most-picked-heroes-this-week', c.pickedGuide],
+              ['most-underrated-heroes-this-week', c.sleeperGuide],
+            ].map(([slug, label]) => (
+              <Link
+                key={slug}
+                href={localePath(locale, `/learn/${slug}`)}
+                className="rounded-lg border border-hok-border bg-hok-card/40 px-4 py-3 text-sm font-semibold text-hok-gold hover:border-hok-gold"
+              >
+                {label}
+              </Link>
+            ))}
+          </div>
+        </section>
+      ) : null}
 
       <div className="space-y-8">
         <ReportTable

@@ -11,6 +11,176 @@ function join(values: string[], locale: Locale): string {
   return values.join(locale === 'zh-TW' ? '、' : ', ');
 }
 
+function geoAnswerCopy(locale: Locale) {
+  const copy = {
+    'zh-TW': {
+      eyebrow: '直接答案',
+      title: (name: string, season: string) => `${name} ${season} 最佳出裝一覽`,
+      server: '國際服',
+      updated: '更新',
+      reviewedBy: '編輯校對',
+      roleLaneDifficulty: '定位與難度',
+      currentRates: '目前數據',
+      coreItems: '核心三件',
+      seeBuild: '查看出裝區',
+      bestArcana: '最佳銘文',
+      seeArcana: '查看銘文區',
+      battleSpell: '召喚師技能',
+      bestInto: '強勢對局',
+      watchOutFor: '克制風險',
+      recommendedBuild: '推薦六神裝',
+      slot: (index: number) => `第 ${index + 1} 件`,
+      dataTrust: '資料可信度',
+      source: '來源',
+      lastVerified: '最後驗證',
+      publicData: '公開資料',
+      apiDocs: 'API 文件',
+      updatedFor: '版本',
+      reviewed: '編輯',
+      status: '狀態',
+      reviewedStatus: '國際服資料校對',
+      strongFallback: '脆皮後排與缺少位移的陣容',
+      weakFallback: '強開、突進與控制陣容',
+      sourceFallback: '官方每日勝率統計 + HOKMeta 編輯校對',
+      summary: (name: string, year: string, lane: string, strong: string, weak: string) =>
+        `${name} 在 ${year} 版本的核心思路是用這套出裝和銘文穩定打出 ${lane} 節奏；面對 ${strong} 時更容易發揮，遇到 ${weak} 時要優先考慮走位、保命裝與隊友保護。`,
+      counterPage: '查看克制',
+    },
+    id: {
+      eyebrow: 'Jawaban cepat',
+      title: (name: string, season: string) => `${name} build terbaik untuk ${season}`,
+      server: 'Server internasional',
+      updated: 'Update',
+      reviewedBy: 'Ditinjau oleh',
+      roleLaneDifficulty: 'Role, lane, dan tingkat sulit',
+      currentRates: 'Stat patch saat ini',
+      coreItems: '3 item core',
+      seeBuild: 'Lihat bagian build',
+      bestArcana: 'Arcana terbaik',
+      seeArcana: 'Lihat bagian arcana',
+      battleSpell: 'Battle spell',
+      bestInto: 'Kuat melawan',
+      watchOutFor: 'Perlu diwaspadai',
+      recommendedBuild: 'Rekomendasi build item',
+      slot: (index: number) => `Slot ${index + 1}`,
+      dataTrust: 'Kepercayaan data',
+      source: 'Sumber',
+      lastVerified: 'Terakhir dicek',
+      publicData: 'Data publik',
+      apiDocs: 'Dokumen API',
+      updatedFor: 'Versi',
+      reviewed: 'Editor',
+      status: 'Status',
+      reviewedStatus: 'Data server internasional ditinjau',
+      strongFallback: 'carry tanpa mobilitas dan backline rapuh',
+      weakFallback: 'komposisi hard engage, dive, dan crowd control',
+      sourceFallback: 'Statistik win rate harian resmi + review editorial HOKMeta',
+      summary: (name: string, year: string, lane: string, strong: string, weak: string) =>
+        `Build ${name} ${year} ini dipakai untuk menjaga tempo ${lane} tetap stabil. Build ini lebih nyaman melawan ${strong}, tetapi saat menghadapi ${weak}, prioritaskan posisi aman, item defensif, atau perlindungan tim.`,
+      counterPage: 'Halaman counter',
+    },
+    fil: {
+      eyebrow: 'Quick answer',
+      title: (name: string, season: string) => `${name} best build para sa ${season}`,
+      server: 'International server',
+      updated: 'Updated',
+      reviewedBy: 'Reviewed by',
+      roleLaneDifficulty: 'Role, lane, at difficulty',
+      currentRates: 'Current patch rates',
+      coreItems: 'Core 3 items',
+      seeBuild: 'Tingnan ang build section',
+      bestArcana: 'Best arcana',
+      seeArcana: 'Tingnan ang arcana section',
+      battleSpell: 'Battle spell',
+      bestInto: 'Malakas laban sa',
+      watchOutFor: 'Bantayan kapag laban sa',
+      recommendedBuild: 'Recommended item build',
+      slot: (index: number) => `Slot ${index + 1}`,
+      dataTrust: 'Data trust',
+      source: 'Source',
+      lastVerified: 'Last verified',
+      publicData: 'Public data',
+      apiDocs: 'API docs',
+      updatedFor: 'Updated for',
+      reviewed: 'Reviewed by',
+      status: 'Status',
+      reviewedStatus: 'International data reviewed',
+      strongFallback: 'low-mobility carries at fragile backlines',
+      weakFallback: 'hard engage, dive, at crowd control drafts',
+      sourceFallback: 'Official daily win-rate stats + HOKMeta editorial review',
+      summary: (name: string, year: string, lane: string, strong: string, weak: string) =>
+        `Ang ${name} ${year} build na ito ay para gawing stable ang tempo sa ${lane}. Mas maganda ito laban sa ${strong}, pero kung kalaban ang ${weak}, unahin ang safe positioning, defensive item, o peel mula sa team.`,
+      counterPage: 'Counter page',
+    },
+    en: {
+      eyebrow: 'Build answer',
+      title: (name: string, season: string) => `${name} best build for ${season}`,
+      server: 'International server',
+      updated: 'Updated',
+      reviewedBy: 'Reviewed by',
+      roleLaneDifficulty: 'Role, lane, difficulty',
+      currentRates: 'Current patch rates',
+      coreItems: 'Core 3 items',
+      seeBuild: 'See build section',
+      bestArcana: 'Best arcana',
+      seeArcana: 'See arcana section',
+      battleSpell: 'Battle spell',
+      bestInto: 'Best into',
+      watchOutFor: 'Watch out for',
+      recommendedBuild: 'Recommended item build',
+      slot: (index: number) => `Slot ${index + 1}`,
+      dataTrust: 'Data trust',
+      source: 'Source',
+      lastVerified: 'Last verified',
+      publicData: 'Public data',
+      apiDocs: 'API docs',
+      updatedFor: 'Updated for',
+      reviewed: 'Reviewed by',
+      status: 'Status',
+      reviewedStatus: 'International data reviewed',
+      strongFallback: 'low-mobility carries and fragile backlines',
+      weakFallback: 'hard engage, dive, and crowd control drafts',
+      sourceFallback: 'Official daily win-rate stats + HOKMeta editorial review',
+      summary: (name: string, year: string, lane: string, strong: string, weak: string) =>
+        `${name}'s ${year} build is designed to make the hero reliable in ${lane}. It performs best into ${strong}, but you should respect ${weak} and adjust defensive or penetration items when the draft demands it.`,
+      counterPage: 'Counter page',
+    },
+  } satisfies Record<Locale, {
+    eyebrow: string;
+    title: (name: string, season: string) => string;
+    server: string;
+    updated: string;
+    reviewedBy: string;
+    roleLaneDifficulty: string;
+    currentRates: string;
+    coreItems: string;
+    seeBuild: string;
+    bestArcana: string;
+    seeArcana: string;
+    battleSpell: string;
+    bestInto: string;
+    watchOutFor: string;
+    recommendedBuild: string;
+    slot: (index: number) => string;
+    dataTrust: string;
+    source: string;
+    lastVerified: string;
+    publicData: string;
+    apiDocs: string;
+    updatedFor: string;
+    reviewed: string;
+    status: string;
+    reviewedStatus: string;
+    strongFallback: string;
+    weakFallback: string;
+    sourceFallback: string;
+    summary: (name: string, year: string, lane: string, strong: string, weak: string) => string;
+    counterPage: string;
+  }>;
+
+  return copy[locale];
+}
+
 export function HeroGeoAnswerBox({
   hero,
   locale = 'en',
@@ -20,10 +190,14 @@ export function HeroGeoAnswerBox({
 }) {
   const t = createT(locale);
   const answer = getHeroGeoAnswer(hero, locale);
-  const isZh = locale === 'zh-TW';
-  const strongText = formatHeroNameList(answer.strongInto, locale) || (isZh ? '脆皮後排與缺少位移的陣容' : 'low-mobility carries and fragile backlines');
-  const weakText = formatHeroNameList(answer.weakInto, locale) || (isZh ? '強開、突進與控制陣容' : 'hard engage, dive, and crowd control drafts');
-  const source = hero.dataSource?.trim() || (isZh ? 'Camp HOK 國際服資料 + HOKMeta 編輯校對' : 'Camp HOK international server data + HOKMeta editorial review');
+  const copy = geoAnswerCopy(locale);
+  const strongText = formatHeroNameList(answer.strongInto, locale) || copy.strongFallback;
+  const weakText = formatHeroNameList(answer.weakInto, locale) || copy.weakFallback;
+  const rawSource = hero.dataSource?.trim();
+  const source =
+    rawSource && !/Camp HOK/i.test(rawSource)
+      ? rawSource
+      : copy.sourceFallback;
   const coreItems = answer.itemNames.slice(0, 3);
 
   return (
@@ -34,25 +208,23 @@ export function HeroGeoAnswerBox({
       <div className="mb-4 flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
         <div>
           <p className="text-[11px] font-bold uppercase tracking-wider text-hok-gold">
-            {isZh ? '直接答案' : 'Build answer'}
+            {copy.eyebrow}
           </p>
           <h2 className="mt-1 text-2xl font-bold text-white">
-            {isZh
-              ? `${answer.name} ${answer.season} 最佳出裝一覽`
-              : `${answer.name} best build for ${answer.season}`}
+            {copy.title(answer.name, answer.season)}
           </h2>
         </div>
         <div className="text-xs text-gray-500 sm:text-right">
-          <p>{isZh ? '國際服' : 'International server'}</p>
-          <p>{isZh ? '更新' : 'Updated'}: {answer.updated}</p>
-          <p>{isZh ? '編輯校對' : 'Reviewed by'}: {site.author}</p>
+          <p>{copy.server}</p>
+          <p>{copy.updated}: {answer.updated}</p>
+          <p>{copy.reviewedBy}: {site.author}</p>
         </div>
       </div>
 
       <div className="grid gap-3 md:grid-cols-2 xl:grid-cols-3">
         <div className="rounded-lg border border-hok-border/70 bg-hok-dark/45 p-4">
           <p className="text-xs font-semibold uppercase tracking-wide text-gray-500">
-            {isZh ? '定位與難度' : 'Role, lane, difficulty'}
+            {copy.roleLaneDifficulty}
           </p>
           <p className="mt-2 text-sm font-semibold text-white">
             {answer.lane} · {answer.role} · Tier {hero.tier} · {hero.difficulty}
@@ -60,7 +232,7 @@ export function HeroGeoAnswerBox({
         </div>
         <div className="rounded-lg border border-hok-border/70 bg-hok-dark/45 p-4">
           <p className="text-xs font-semibold uppercase tracking-wide text-gray-500">
-            {isZh ? '目前數據' : 'Current patch rates'}
+            {copy.currentRates}
           </p>
           <p className="mt-2 text-sm font-semibold text-white">
             {formatRate(hero.winRate)} WR · {formatRate(hero.pickRate)} Pick · {formatRate(hero.banRate)} Ban
@@ -68,23 +240,23 @@ export function HeroGeoAnswerBox({
         </div>
         <div className="rounded-lg border border-hok-border/70 bg-hok-dark/45 p-4">
           <p className="text-xs font-semibold uppercase tracking-wide text-gray-500">
-            {isZh ? '核心三件' : 'Core 3 items'}
+            {copy.coreItems}
           </p>
           <p className="mt-2 text-sm font-semibold text-white">
-            {coreItems.length ? join(coreItems, locale) : (isZh ? '查看出裝區' : 'See build section')}
+            {coreItems.length ? join(coreItems, locale) : copy.seeBuild}
           </p>
         </div>
         <div className="rounded-lg border border-hok-border/70 bg-hok-dark/45 p-4">
           <p className="text-xs font-semibold uppercase tracking-wide text-gray-500">
-            {isZh ? '最佳銘文' : 'Best arcana'}
+            {copy.bestArcana}
           </p>
           <p className="mt-2 text-sm font-semibold text-white">
-            {join(answer.arcanaNames, locale) || (isZh ? '查看銘文區' : 'See arcana section')}
+            {join(answer.arcanaNames, locale) || copy.seeArcana}
           </p>
         </div>
         <div className="rounded-lg border border-hok-border/70 bg-hok-dark/45 p-4">
           <p className="text-xs font-semibold uppercase tracking-wide text-gray-500">
-            {isZh ? '召喚師技能' : 'Battle spell'}
+            {copy.battleSpell}
           </p>
           <p className="mt-2 text-sm font-semibold text-white">
             {join(answer.spellNames, locale) || 'Flash'}
@@ -92,13 +264,13 @@ export function HeroGeoAnswerBox({
         </div>
         <div className="rounded-lg border border-hok-border/70 bg-hok-dark/45 p-4">
           <p className="text-xs font-semibold uppercase tracking-wide text-gray-500">
-            {isZh ? '強勢對局' : 'Best into'}
+            {copy.bestInto}
           </p>
           <p className="mt-2 text-sm font-semibold text-white">{strongText}</p>
         </div>
         <div className="rounded-lg border border-hok-border/70 bg-hok-dark/45 p-4">
           <p className="text-xs font-semibold uppercase tracking-wide text-gray-500">
-            {isZh ? '克制風險' : 'Watch out for'}
+            {copy.watchOutFor}
           </p>
           <p className="mt-2 text-sm font-semibold text-white">{weakText}</p>
         </div>
@@ -107,7 +279,7 @@ export function HeroGeoAnswerBox({
       {answer.items.length ? (
         <div className="mt-4 rounded-lg border border-hok-border/70 bg-hok-dark/45 p-4">
           <p className="mb-3 text-xs font-semibold uppercase tracking-wide text-gray-500">
-            {isZh ? '推薦六神裝' : 'Recommended item build'}
+            {copy.recommendedBuild}
           </p>
           <div className="grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
             {answer.items.map((item, index) => (
@@ -134,7 +306,7 @@ export function HeroGeoAnswerBox({
                     {answer.itemNames[index]}
                   </p>
                   <p className="text-xs text-gray-500">
-                    {isZh ? `第 ${index + 1} 件` : `Slot ${index + 1}`}
+                    {copy.slot(index)}
                   </p>
                 </div>
               </Link>
@@ -145,41 +317,39 @@ export function HeroGeoAnswerBox({
 
       <div className="mt-4 rounded-lg border border-hok-border/70 bg-hok-dark/35 p-4">
         <p className="text-xs font-semibold uppercase tracking-wide text-gray-500">
-          {isZh ? '資料可信度' : 'Data trust'}
+          {copy.dataTrust}
         </p>
         <div className="mt-2 grid gap-2 text-sm text-gray-300 md:grid-cols-3">
           <p>
-            <span className="text-gray-500">{isZh ? '來源' : 'Source'}:</span> {source}
+            <span className="text-gray-500">{copy.source}:</span> {source}
           </p>
           <p>
-            <span className="text-gray-500">{isZh ? '最後驗證' : 'Last verified'}:</span> {answer.updated}
+            <span className="text-gray-500">{copy.lastVerified}:</span> {answer.updated}
           </p>
           <p>
-            <span className="text-gray-500">{isZh ? '公開資料' : 'Public data'}:</span>{' '}
+            <span className="text-gray-500">{copy.publicData}:</span>{' '}
             <Link href={localePath(locale, '/docs/api')} className="text-hok-gold hover:underline">
-              {isZh ? 'API 文件' : 'API docs'}
+              {copy.apiDocs}
             </Link>
           </p>
           <p>
-            <span className="text-gray-500">{isZh ? '版本' : 'Updated for'}:</span> {META_SEASON_LABEL}
+            <span className="text-gray-500">{copy.updatedFor}:</span> {META_SEASON_LABEL}
           </p>
           <p>
-            <span className="text-gray-500">{isZh ? '編輯' : 'Reviewed by'}:</span>{' '}
+            <span className="text-gray-500">{copy.reviewed}:</span>{' '}
             <Link href={localePath(locale, '/about')} className="text-hok-gold hover:underline">
               {site.author}
             </Link>
           </p>
           <p>
-            <span className="text-gray-500">{isZh ? '狀態' : 'Status'}:</span>{' '}
-            {isZh ? '國際服資料校對' : 'International data reviewed'}
+            <span className="text-gray-500">{copy.status}:</span>{' '}
+            {copy.reviewedStatus}
           </p>
         </div>
       </div>
 
       <p className="mt-4 text-sm leading-7 text-gray-300">
-        {isZh
-          ? `${answer.name} 在 ${answer.year} 版本的核心思路是用這套出裝和銘文穩定打出 ${answer.lane} 節奏；面對 ${strongText} 時更容易發揮，遇到 ${weakText} 時要優先考慮走位、保命裝與隊友保護。`
-          : `${answer.name}'s ${answer.year} build is designed to make the hero reliable in ${answer.lane}. It performs best into ${strongText}, but you should respect ${weakText} and adjust defensive or penetration items when the draft demands it.`}
+        {copy.summary(answer.name, answer.year, answer.lane, strongText, weakText)}
       </p>
 
       <div className="mt-4 flex flex-wrap gap-2">
@@ -199,7 +369,7 @@ export function HeroGeoAnswerBox({
           href={localePath(locale, `/hero/${hero.slug}/counters`)}
           className="rounded border border-hok-border px-3 py-2 text-sm font-semibold text-gray-200 transition hover:border-hok-gold hover:text-hok-gold"
         >
-          {isZh ? '查看克制' : 'Counter page'}
+          {copy.counterPage}
         </Link>
       </div>
     </section>

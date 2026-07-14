@@ -17,9 +17,26 @@ export function HeroCoverBanner({
 }) {
   const t = createT(locale);
   const cover = getHeroCoverUrl(hero);
-  const isZh = locale === 'zh-TW';
   const heroTitle = formatHeroBilingualTitle(hero, locale);
   const lane = translateLane(hero.lane, locale) || translateRole(hero.role, locale);
+  const copy = {
+    'zh-TW': {
+      title: `${heroTitle} 出裝、裝備、銘文與克制`,
+      summary: `${heroTitle} 是 ${lane} 的 Tier ${hero.tier} 選角；查看最佳出裝、核心裝備、銘文、召喚師技能、克制與工具計算。`,
+    },
+    id: {
+      title: `${heroTitle} Build, Item, Arcana & Counter`,
+      summary: `${heroTitle} adalah pick Tier ${hero.tier} untuk ${lane}. Lihat build terbaik, item core, arcana, battle spell, counter, dan keputusan item berbasis tool.`,
+    },
+    fil: {
+      title: `${heroTitle} Build, Items, Arcana at Counters`,
+      summary: `${heroTitle} ay Tier ${hero.tier} pick sa ${lane}. Tingnan ang best build, core items, arcana, battle spell, counters, at tool-backed item decisions.`,
+    },
+    en: {
+      title: `${heroTitle} Build, Items, Arcana & Counters`,
+      summary: `${heroTitle} is a Tier ${hero.tier} ${lane} pick. Get the best build, core items, arcana, battle spell, counters, and tool-backed item decisions.`,
+    },
+  }[locale];
 
   return (
     <section className="relative mb-6 overflow-hidden rounded-2xl border border-hok-border">
@@ -40,14 +57,10 @@ export function HeroCoverBanner({
             </span>
           </div>
           <h1 className="font-display text-2xl font-black text-white sm:text-4xl">
-            {isZh
-              ? `${heroTitle} 出裝、裝備、銘文與克制`
-              : `${heroTitle} Build, Items, Arcana & Counters`}
+            {copy.title}
           </h1>
           <p className="mt-2 max-w-3xl text-sm leading-6 text-gray-300 sm:text-base">
-            {isZh
-              ? `${heroTitle} 是 ${lane} 的 Tier ${hero.tier} 選角；查看最佳出裝、核心裝備、銘文、召喚師技能、克制與工具計算。`
-              : `${heroTitle} is a Tier ${hero.tier} ${lane} pick. Get the best build, core items, arcana, battle spell, counters, and tool-backed item decisions.`}
+            {copy.summary}
           </p>
           <div className="mt-3 flex flex-wrap gap-4 text-sm">
             <span>

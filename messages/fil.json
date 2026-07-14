@@ -105,6 +105,7 @@
     "learningHub": "Learning Hub",
     "allGuides": "Tingnan lahat ng guides →",
     "hubTrends": "Weekly trends para sa win rate, pick rate, ban pressure, at sleeper picks",
+    "hubMetaReportTitle": "Meta Report",
     "hubMetaReport": "Basahin ang data report ngayong linggo: top win-rate heroes, most picked heroes, at underrated picks"
   },
   "heroes": {
@@ -150,6 +151,7 @@
     "playstyleTitle": "Playstyle & Ranked Tips",
     "faqTitle": "FAQ",
     "counterPicker": "Counter picker tool",
+    "fullCounterAnalysis": "Full counter analysis →",
     "summaryBuild": "Build core",
     "summaryCombo": "Combo",
     "summaryDraft": "Draft",
@@ -179,6 +181,107 @@
       "avoidWhen": "Iwasan kapag",
       "counterRisk": "Main threats: {names}.",
       "counterCta": "Buksan full counter page"
+    }
+  },
+  "arcana": {
+    "colSlot": "Slot",
+    "colChoice": "Choice",
+    "colEffect": "Effect"
+  },
+  "build": {
+    "colOrder": "#",
+    "colItem": "Item",
+    "colGold": "Gold",
+    "colStats": "Stats",
+    "colWhy": "Bakit",
+    "presetsHint": "{count} presets — palitan ayon sa draft, lane, o CN meta. Default ay sumusunod sa {lane} kung available.",
+    "presetJungle": "Jungle clear & gank tempo",
+    "presetClash": "Side lane bruiser / split",
+    "presetFarm": "Farm lane scaling",
+    "presetMid": "Mid pressure & roam",
+    "presetRoam": "Roaming peel & vision",
+    "presetCn": "CN community preset",
+    "presetDefault": "Default ranked path"
+  },
+  "combo": {
+    "when": "Kailan"
+  },
+  "counters": {
+    "strongInto": "Malakas si {name} laban sa",
+    "strongHint": "Piliin si {name} kapag ito ang draft ng kalaban.",
+    "weakInto": "Nahihirapan si {name} laban sa",
+    "weakHint": "Iwasan si {name} o i-ban ang mga ito kapag nasa enemy draft.",
+    "unavailable": "Wala pang data",
+    "campLabel": "Official counter data",
+    "campHint": "Counter reference mula sa official ranked statistics.",
+    "hokmetaLabel": "HOKMeta statistical analysis",
+    "hokmetaHint": "Extra analysis mula sa win rate, pick rate, at matchup data.",
+    "campStrong": "Official: counters ni {name}",
+    "campWeak": "Official: countered si {name} ng",
+    "hokmetaBestCounter": "HOKMeta best counter",
+    "hokmetaAnalysis": "HOKMeta counter analysis"
+  },
+  "guide": {
+    "laning": "Laning phase",
+    "teamfightHeading": "Teamfight role",
+    "highRank": "High rank (Diamond+)",
+    "comparisons": "vs similar heroes"
+  },
+  "skills": {
+    "passive": "Passive",
+    "skill1": "Skill 1",
+    "skill2": "Skill 2",
+    "ultimate": "Ultimate",
+    "unavailable": "Wala pang skill data."
+  },
+  "attribution": {
+    "title": "Meta data at editorial",
+    "sources": "Sources",
+    "synced": "Last synced",
+    "buildNote": "Builds ay end-game items; maaaring mag-iba ang purchase order sa actual match. Win/pick/ban at builds ay nire-refresh pagkatapos ng bawat official data sync.",
+    "editedBy": "Edited by",
+    "disclaimer": "Hindi affiliated sa Tencent o Level Infinite."
+  },
+  "toc": {
+    "summary": "Summary",
+    "authority": "Current patch guide",
+    "trendHistory": "30-day trend",
+    "build": "Build",
+    "buildVariants": "Build variants",
+    "arcana": "Arcana",
+    "skillOrder": "Skill order",
+    "combos": "Combos",
+    "abilities": "Abilities",
+    "counters": "Counters",
+    "comparisons": "Comparisons",
+    "playstyle": "Playstyle",
+    "patchHistory": "Patch history",
+    "faq": "FAQ",
+    "onPage": "On this page"
+  },
+  "rationale": {
+    "title": "Build philosophy",
+    "passiveRef": "Passive:",
+    "arcanaHint": "Arcana:",
+    "summaryDefault": "Nakikinabang si {name} sa {priorities}; itugma ang items at runes sa kit scaling.",
+    "arcanaDefault": "Unahin ang runes na nagpapalakas sa {priorities} para sa passive at skill scaling ng hero.",
+    "itemWhyMatch": "Bagay sa {stat} priority — {passive}",
+    "itemWhyLabel": "Tinutulungan ng {label} ang {stat} focus.",
+    "itemWhyFallback": "Core item para sa slot {slot} sa build path na ito.",
+    "arcanaWhyMatch": "{rune}: {stat} — {effect}",
+    "arcanaFallback": "Runes na bagay sa {priorities} para sa hero na ito.",
+    "stat": {
+      "aspd": "Attack speed",
+      "patk": "Physical attack",
+      "crit": "Crit",
+      "lifesteal": "Lifesteal",
+      "onhit": "On-hit",
+      "cdr": "Cooldown reduction",
+      "matk": "Magic attack",
+      "pen": "Penetration",
+      "tank": "Survivability",
+      "ms": "Movement speed",
+      "core": "core stats"
     }
   },
   "trends": {

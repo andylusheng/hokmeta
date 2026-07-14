@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { heroes, items } from '@/lib/data';
 import { countUniqueArcana } from '@/lib/lanes';
 import { createT, localePath, type Locale } from '@/lib/i18n';
+import { isLocaleReadyForPath } from '@/lib/locale-readiness';
 
 export function HubNavGrid({ locale = 'en' }: { locale?: Locale }) {
   const t = createT(locale);
@@ -19,7 +20,7 @@ export function HubNavGrid({ locale = 'en' }: { locale?: Locale }) {
     },
     {
       href: localePath(locale, '/meta-report'),
-      title: locale === 'zh-TW' ? 'Meta 報告' : 'Meta Report',
+      title: t('home.hubMetaReportTitle'),
       desc: t('home.hubMetaReport'),
     },
     {
@@ -42,7 +43,7 @@ export function HubNavGrid({ locale = 'en' }: { locale?: Locale }) {
       title: t('nav.patches'),
       desc: t('home.hubPatches'),
     },
-  ];
+  ].filter((card) => isLocaleReadyForPath(locale, card.href));
 
   return (
     <div className="mb-12 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">

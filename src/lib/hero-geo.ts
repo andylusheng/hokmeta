@@ -30,6 +30,57 @@ function cleanNames(values: string[]): string[] {
   return values.filter((value) => value && value !== 'Data unavailable');
 }
 
+function listJoin(values: string[], locale: Locale): string {
+  if (locale === 'zh-TW') return values.join('、');
+  if (locale === 'fil') return values.join(', ');
+  return values.join(', ');
+}
+
+function geoFaqCopy(locale: Locale) {
+  const copy = {
+    'zh-TW': {
+      itemsFallback: '查看頁面內推薦出裝',
+      arcanaFallback: '查看頁面內銘文配置',
+      firstItemFallback: '推薦出裝第一件核心裝',
+      weakFallback: '強突進與控制陣容',
+      tierLine: (name: string, tier: string, winRate: string, pickRate: string) =>
+        `目前資料顯示 ${name} 是 Tier ${tier}，勝率 ${winRate}，選取率 ${pickRate}。`,
+    },
+    id: {
+      itemsFallback: 'lihat rekomendasi build item di halaman ini',
+      arcanaFallback: 'lihat rekomendasi arcana di halaman ini',
+      firstItemFallback: 'item core pertama yang direkomendasikan',
+      weakFallback: 'komposisi hard engage dan crowd control',
+      tierLine: (name: string, tier: string, winRate: string, pickRate: string) =>
+        `Data HOKMeta saat ini menempatkan ${name} di Tier ${tier}, dengan win rate ${winRate} dan pick rate ${pickRate}.`,
+    },
+    fil: {
+      itemsFallback: 'tingnan ang recommended item build sa page na ito',
+      arcanaFallback: 'tingnan ang recommended arcana setup sa page na ito',
+      firstItemFallback: 'unang recommended core item',
+      weakFallback: 'hard engage at crowd control drafts',
+      tierLine: (name: string, tier: string, winRate: string, pickRate: string) =>
+        `Sa current HOKMeta data, si ${name} ay Tier ${tier}, may ${winRate} win rate at ${pickRate} pick rate.`,
+    },
+    en: {
+      itemsFallback: 'see the recommended item build',
+      arcanaFallback: 'see the recommended arcana setup',
+      firstItemFallback: 'the first recommended core item',
+      weakFallback: 'hard engage and crowd control drafts',
+      tierLine: (name: string, tier: string, winRate: string, pickRate: string) =>
+        `Current HOKMeta data lists ${name} as Tier ${tier}, with ${winRate} win rate and ${pickRate} pick rate.`,
+    },
+  } satisfies Record<Locale, {
+    itemsFallback: string;
+    arcanaFallback: string;
+    firstItemFallback: string;
+    weakFallback: string;
+    tierLine: (name: string, tier: string, winRate: string, pickRate: string) => string;
+  }>;
+
+  return copy[locale];
+}
+
 export function getHeroGeoAnswer(hero: Hero, locale: Locale): HeroGeoAnswer {
   const presets = getHeroBuildPresets(hero, locale);
   const preset = presets[defaultBuildPresetIndex(hero, locale)];
@@ -61,24 +112,24 @@ export function getHeroGeoAnswer(hero: Hero, locale: Locale): HeroGeoAnswer {
 
 export function heroGeoFaqs(hero: Hero, locale: Locale) {
   const answer = getHeroGeoAnswer(hero, locale);
+  const copy = geoFaqCopy(locale);
   const items =
-    answer.itemNames.join(locale === 'zh-TW' ? '、' : ', ') ||
-    (locale === 'zh-TW' ? '查看頁面內推薦出裝' : 'see the recommended item build');
+    listJoin(answer.itemNames, locale) || copy.itemsFallback;
   const arcana =
-    answer.arcanaNames.join(locale === 'zh-TW' ? '、' : ', ') ||
-    (locale === 'zh-TW' ? '查看頁面內銘文配置' : 'see the recommended arcana setup');
+    listJoin(answer.arcanaNames, locale) || copy.arcanaFallback;
   const spells =
     answer.spellNames.join(locale === 'zh-TW' ? ' / ' : ', ') || 'Flash';
   const firstItem =
-    answer.itemNames[0] ||
-    (locale === 'zh-TW' ? '推薦出裝第一件核心裝' : 'the first recommended core item');
+    answer.itemNames[0] || copy.firstItemFallback;
   const weak =
     formatHeroNameList(answer.weakInto, locale) ||
-    (locale === 'zh-TW' ? '強突進與控制陣容' : 'hard engage and crowd control drafts');
-  const tierLine =
-    locale === 'zh-TW'
-      ? `目前資料顯示 ${answer.name} 是 Tier ${hero.tier}，勝率 ${formatRate(hero.winRate)}，選取率 ${formatRate(hero.pickRate)}。`
-      : `Current HOKMeta data lists ${answer.name} as Tier ${hero.tier}, with ${formatRate(hero.winRate)} win rate and ${formatRate(hero.pickRate)} pick rate.`;
+    copy.weakFallback;
+  const tierLine = copy.tierLine(
+    answer.name,
+    hero.tier,
+    formatRate(hero.winRate),
+    formatRate(hero.pickRate)
+  );
 
   if (locale === 'zh-TW') {
     return [
@@ -121,6 +172,96 @@ export function heroGeoFaqs(hero: Hero, locale: Locale) {
         id: 'geo-teamfight',
         question: `${answer.name} 團戰應該怎麼打？`,
         answer: `${answer.name} 團戰要先確認敵方強開與控制技能位置，再根據 ${answer.role} 的定位輸出、保護或進場。順風時圍繞核心裝備壓節奏，逆風時優先保命和清線，不要孤身進入草叢。`,
+      },
+    ];
+  }
+
+  if (locale === 'id') {
+    return [
+      {
+        id: 'geo-best-build-2026',
+        question: `Apa build ${answer.name} terbaik di ${answer.year}?`,
+        answer: `Build ${answer.name} terbaik di ${answer.year} memakai ${items}. Mainkan ${answer.name} di ${answer.lane}, gunakan arcana ${arcana}, dan biasanya ambil ${spells}. Rekomendasi ini mengikuti ${answer.season} dan snapshot data HOKMeta ${answer.updated}.`,
+      },
+      {
+        id: 'geo-best-arcana',
+        question: `Apa arcana terbaik untuk ${answer.name}?`,
+        answer: `Arcana terbaik untuk ${answer.name} adalah ${arcana}. Pertahankan arcana damage utama terlebih dahulu, lalu sesuaikan movement speed, pierce, atau sustain jika matchup lane terlalu berisiko.`,
+      },
+      {
+        id: 'geo-first-item',
+        question: `${answer.name} sebaiknya membeli item pertama apa?`,
+        answer: `${answer.name} biasanya memprioritaskan ${firstItem} karena item pertama harus membantu clear wave, trading, atau tempo di ${answer.lane}. Jika lane tidak aman, boleh sesuaikan boots atau komponen defensif kecil, tetapi jangan terlalu lama menunda core damage.`,
+      },
+      {
+        id: 'geo-counter-build',
+        question: `Apa build ${answer.name} melawan tank?`,
+        answer: `Gunakan damage calculator atau build compare HOKMeta untuk membandingkan penetration, sustained damage, dan survivability. Pilihan anti-tank terbaik bergantung pada apakah ${answer.name} bisa terus menyerang dengan aman atau perlu item defensif untuk bertahan dari engage pertama.`,
+      },
+      {
+        id: 'geo-countered-by',
+        question: `Siapa yang counter ${answer.name}?`,
+        answer: `${answer.name} paling rentan terhadap ${weak}. Saat draft, perhatikan jarak engage, chain control, dan perlindungan tim sebelum memilih build yang terlalu agresif.`,
+      },
+      {
+        id: 'geo-best-lane',
+        question: `${answer.name} main di lane apa?`,
+        answer: `${answer.name} biasanya dimainkan sebagai ${answer.role} di ${answer.lane}. Di ranked, utamakan pola farming yang stabil dan rotasi hanya ketika wave sudah aman.`,
+      },
+      {
+        id: 'geo-good-pick',
+        question: `Apakah ${answer.name} masih bagus di Honor of Kings?`,
+        answer: `${tierLine} ${answer.name} layak dipakai jika tim membutuhkan tekanan stabil di ${answer.lane}, tetapi hindari blind pick ke ${weak} tanpa peel atau rencana item defensif.`,
+      },
+      {
+        id: 'geo-teamfight',
+        question: `Bagaimana cara memainkan ${answer.name} saat teamfight?`,
+        answer: `Saat teamfight, ${answer.name} harus menghormati jarak engage musuh terlebih dahulu, lalu menjalankan tugas ${answer.role}: memberi damage, melindungi carry, atau masuk setelah skill control penting terpakai.`,
+      },
+    ];
+  }
+
+  if (locale === 'fil') {
+    return [
+      {
+        id: 'geo-best-build-2026',
+        question: `Ano ang best ${answer.name} build sa ${answer.year}?`,
+        answer: `Ang best ${answer.name} build sa ${answer.year} ay gumagamit ng ${items}. I-play si ${answer.name} sa ${answer.lane}, kunin ang ${arcana} arcana, at kadalasang gamitin ang ${spells}. Naka-align ito sa ${answer.season} at sa HOKMeta data snapshot noong ${answer.updated}.`,
+      },
+      {
+        id: 'geo-best-arcana',
+        question: `Ano ang best arcana para kay ${answer.name}?`,
+        answer: `Ang best arcana setup ni ${answer.name} ay ${arcana}. Unahin ang core damage arcana, tapos mag-adjust ng movement speed, pierce, o sustain kung delikado ang lane matchup.`,
+      },
+      {
+        id: 'geo-first-item',
+        question: `Ano ang unang item na dapat bilhin ni ${answer.name}?`,
+        answer: `Karaniwang inuuna ni ${answer.name} ang ${firstItem} dahil dapat tulungan ng unang item ang clear speed, trading power, o tempo sa ${answer.lane}. Kung unsafe ang lane, puwedeng mag-adjust muna sa boots o maliit na defensive component.`,
+      },
+      {
+        id: 'geo-counter-build',
+        question: `Ano ang build ni ${answer.name} laban sa tanks?`,
+        answer: `Gamitin ang HOKMeta damage calculator o build compare tool para i-test ang penetration, sustained damage, at survivability. Depende ang anti-tank choice sa kung makaka-hit nang safe si ${answer.name} o kailangan muna ng defensive item.`,
+      },
+      {
+        id: 'geo-countered-by',
+        question: `Sino ang counter kay ${answer.name}?`,
+        answer: `Mas delikado si ${answer.name} laban sa ${weak}. Sa draft, bantayan ang engage range, chain control, at kung may sapat na peel bago pumili ng sobrang agresibong build.`,
+      },
+      {
+        id: 'geo-best-lane',
+        question: `Anong lane nilalaro si ${answer.name}?`,
+        answer: `Si ${answer.name} ay pangunahing ${answer.role} sa ${answer.lane}. Sa ranked, unahin ang stable farm pattern at mag-rotate lang kapag safe ang wave state.`,
+      },
+      {
+        id: 'geo-good-pick',
+        question: `Maganda pa bang gamitin si ${answer.name} sa Honor of Kings?`,
+        answer: `${tierLine} Sulit gamitin si ${answer.name} kung kailangan ng team ng stable pressure sa ${answer.lane}, pero iwasan ang blind pick laban sa ${weak} kung walang peel o defensive item plan.`,
+      },
+      {
+        id: 'geo-teamfight',
+        question: `Paano laruin si ${answer.name} sa teamfight?`,
+        answer: `Sa teamfight, unahin muna ni ${answer.name} ang respeto sa engage range ng kalaban, tapos gawin ang trabaho ng ${answer.role}: damage, protection, o pagpasok pagkatapos magamit ang key control skills.`,
       },
     ];
   }

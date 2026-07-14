@@ -34,7 +34,51 @@ function sectionCopy(locale: Locale) {
       counters: '克制頁',
       stable: '數據大致持平，這個英雄目前沒有明顯結構性變化。',
       noPatch:
-        '目前賽季最近 45 天內沒有可直接引用的官方平衡改動，這段變化先按出裝、對局環境與熟練度波動理解。',
+        '目前賽季最近 45 天內沒有可直接引用的官方平衡改動。',
+    };
+  }
+
+  if (locale === 'id') {
+    return {
+      label: 'Tren data 30 hari',
+      title: 'Win rate, pick rate, dan ban rate 30 hari terakhir',
+      desc: 'Melihat perubahan hero dari snapshot harian resmi.',
+      noData: 'Riwayat snapshot 30 hari belum cukup. Panel ini akan terisi setelah sync berikutnya.',
+      winRate: 'Win rate',
+      pickRate: 'Pick rate',
+      banRate: 'Ban rate',
+      current: 'Saat ini',
+      delta7d: 'Perubahan 7 hari',
+      delta30d: 'Perubahan 30 hari',
+      why: 'Status tren',
+      patch: 'Catatan patch',
+      nextSteps: 'Lihat berikutnya',
+      guide: 'panduan lengkap',
+      counters: 'counter',
+      stable: 'Data saat ini relatif stabil.',
+      noPatch: 'Tidak ada perubahan balance resmi yang bisa dikutip dalam 45 hari terakhir musim ini.',
+    };
+  }
+
+  if (locale === 'fil') {
+    return {
+      label: '30-day data trend',
+      title: 'Last 30 days ng win rate, pick rate, at ban rate',
+      desc: 'Tingnan ang galaw ng hero mula sa official daily snapshots.',
+      noData: 'Kulang pa ang 30-day snapshot history. Mapupuno ang panel na ito pagkatapos ng susunod na sync.',
+      winRate: 'Win rate',
+      pickRate: 'Pick rate',
+      banRate: 'Ban rate',
+      current: 'Current',
+      delta7d: '7-day change',
+      delta30d: '30-day change',
+      why: 'Trend status',
+      patch: 'Patch note',
+      nextSteps: 'Read next',
+      guide: 'full guide',
+      counters: 'counters',
+      stable: 'Mostly flat ang current data.',
+      noPatch: 'Walang official balance change na puwedeng i-cite sa last 45 days ng current season.',
     };
   }
 
@@ -56,7 +100,7 @@ function sectionCopy(locale: Locale) {
     counters: 'Counters',
     stable: 'The numbers are mostly flat right now, so there is no strong structural shift to react to.',
     noPatch:
-      'There is no current-season official balance entry to cite in the last 45 days, so read this move as a mix of build adaptation, draft pressure, and player execution.',
+      'There is no current-season official balance entry to cite in the last 45 days.',
   };
 }
 
@@ -114,64 +158,19 @@ function directionCopy(locale: Locale, value: number | null, label: string) {
     if (direction === 'down') return `${label} 正在下滑，變化 ${trendDelta(value)}。`;
     return `${label} 基本持平。`;
   }
+  if (locale === 'id') {
+    if (direction === 'up') return `${label} naik ${trendDelta(value)}.`;
+    if (direction === 'down') return `${label} turun ${trendDelta(value)}.`;
+    return `${label} relatif datar.`;
+  }
+  if (locale === 'fil') {
+    if (direction === 'up') return `${label} up by ${trendDelta(value)}.`;
+    if (direction === 'down') return `${label} down by ${trendDelta(value)}.`;
+    return `${label} is mostly flat.`;
+  }
   if (direction === 'up') return `${label} is climbing by ${trendDelta(value)}.`;
   if (direction === 'down') return `${label} is falling by ${trendDelta(value)}.`;
   return `${label} is mostly flat.`;
-}
-
-function buildReasonNotes(
-  locale: Locale,
-  heroName: string,
-  values: {
-    win30: number | null;
-    pick30: number | null;
-    ban30: number | null;
-    win7: number | null;
-  }
-) {
-  const winDirection = trendDirection(values.win30);
-  const pickDirection = trendDirection(values.pick30);
-  const banDirection = trendDirection(values.ban30);
-
-  if (locale === 'zh-TW') {
-    const notes: string[] = [];
-    if (winDirection === 'up' && pickDirection !== 'down') {
-      notes.push(`${heroName} 的勝率和出場率一起往上，通常代表當前出裝或版本節奏更適合這個英雄。`);
-    } else if (winDirection === 'up' && pickDirection === 'down') {
-      notes.push(`${heroName} 的勝率在升，但出場率沒有跟上，這更像熟練玩家在更乾淨的對局裡把勝率拉高。`);
-    } else if (winDirection === 'down' && pickDirection === 'up') {
-      notes.push(`${heroName} 仍然常被拿出來，但轉化成勝場的能力在下降，常見原因是被過度搶、沿用舊版出裝，或現在的對局環境不再友好。`);
-    } else if (winDirection === 'down') {
-      notes.push(`${heroName} 的勝率走低，代表這個英雄更吃對面陣容、進場時機和隊友配合，不能再當萬用先手。`);
-    }
-
-    if (banDirection === 'up') {
-      notes.push(`禁用率還在抬升，說明玩家對這個英雄的壓力感沒有消失，排位裡要同時看數據和 BP 環境。`);
-    } else if (values.win7 != null && Math.abs(values.win7) >= 0.35) {
-      notes.push(`最近 7 天變化已經超過 ${trendDelta(values.win7)}，代表這不是一天的噪音，值得直接回頭檢查裝備、對線和團戰節奏。`);
-    }
-
-    return notes;
-  }
-
-  const notes: string[] = [];
-  if (winDirection === 'up' && pickDirection !== 'down') {
-    notes.push(`${heroName} is converting better while usage stays healthy, which usually points to cleaner build fit or a patch pace that now favors the kit.`);
-  } else if (winDirection === 'up' && pickDirection === 'down') {
-    notes.push(`${heroName} is winning more without becoming more popular, which often means experienced players are getting cleaner value in narrower drafts.`);
-  } else if (winDirection === 'down' && pickDirection === 'up') {
-    notes.push(`${heroName} is still getting picked, but the conversion into wins is slipping. That usually means the old build path is being overused or the patch is less forgiving now.`);
-  } else if (winDirection === 'down') {
-    notes.push(`${heroName} is trending down, so matchup quality, engage timing, and team support matter more than they did a few weeks ago.`);
-  }
-
-  if (banDirection === 'up') {
-    notes.push(`Ban pressure is still climbing, so draft respect remains higher than the raw win rate alone suggests.`);
-  } else if (values.win7 != null && Math.abs(values.win7) >= 0.35) {
-    notes.push(`The last 7 days already moved by ${trendDelta(values.win7)}, so this is not just one-day noise. Recheck build order, lane handling, and fight timing.`);
-  }
-
-  return notes;
 }
 
 export function HeroTrendHistory({
@@ -205,16 +204,13 @@ export function HeroTrendHistory({
     directionCopy(locale, trendHero.delta30d.pickRate, copy.pickRate),
     directionCopy(locale, trendHero.delta30d.banRate, copy.banRate),
   ].filter(Boolean) as string[];
-  const reasonNotes = buildReasonNotes(locale, heroName, {
-    win30: trendHero.delta30d.winRate,
-    pick30: trendHero.delta30d.pickRate,
-    ban30: trendHero.delta30d.banRate,
-    win7: trendHero.delta7d.winRate,
-  });
-
   const summaryLine =
     locale === 'zh-TW'
       ? `${heroName} 目前勝率 ${trendRate(trendHero.winRate)}，30 日變化 ${trendDelta(trendHero.delta30d.winRate)}，7 日變化 ${trendDelta(trendHero.delta7d.winRate)}。`
+      : locale === 'id'
+        ? `${heroName} saat ini berada di ${trendRate(trendHero.winRate)} win rate, perubahan 30 hari ${trendDelta(trendHero.delta30d.winRate)}, dan perubahan 7 hari ${trendDelta(trendHero.delta7d.winRate)}.`
+        : locale === 'fil'
+          ? `${heroName} currently has ${trendRate(trendHero.winRate)} win rate, with 30-day change ${trendDelta(trendHero.delta30d.winRate)} and 7-day change ${trendDelta(trendHero.delta7d.winRate)}.`
       : `${heroName} currently sits at ${trendRate(trendHero.winRate)} win rate, with a 30-day move of ${trendDelta(trendHero.delta30d.winRate)} and a 7-day move of ${trendDelta(trendHero.delta7d.winRate)}.`;
 
   return (
@@ -266,11 +262,6 @@ export function HeroTrendHistory({
             ) : (
               <p className="rounded border border-hok-border/70 bg-hok-card/45 px-3 py-2">{copy.stable}</p>
             )}
-            {reasonNotes.map((note) => (
-              <p key={note} className="rounded border border-hok-border/70 bg-hok-card/45 px-3 py-2">
-                {note}
-              </p>
-            ))}
           </div>
         </div>
 

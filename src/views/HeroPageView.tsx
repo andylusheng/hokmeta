@@ -83,7 +83,11 @@ export function HeroPageView({
   const faqTitle =
     locale === 'zh-TW'
       ? `${heroName} ${GEO_BUILD_YEAR} 出裝常見問題`
-      : `${heroName} Build ${GEO_BUILD_YEAR} FAQ`;
+      : locale === 'id'
+        ? `FAQ Build ${heroName} ${GEO_BUILD_YEAR}`
+        : locale === 'fil'
+          ? `${heroName} Build ${GEO_BUILD_YEAR} FAQ`
+          : `${heroName} Build ${GEO_BUILD_YEAR} FAQ`;
   const damageCalculatorPath = localePath(locale, `/tools/damage-calculator/${hero.slug}`);
   const buildComparePath = localePath(locale, `/tools/build-compare/${hero.slug}`);
   const learnReady = isLocaleReadyForPath(locale, '/learn');
@@ -91,6 +95,7 @@ export function HeroPageView({
   const guideArticle = learnReady ? getLearnArticle(`${hero.slug}-guide`, locale) : undefined;
   const guideSlug = guideArticle?.slug;
   const showFeaturedSeoBlocks = isFeaturedHero(hero.slug);
+  const showLocalizedLongform = locale === 'en' || locale === 'zh-TW';
 
   // Build FAQ → learn article links
   const faqArticleLinks = Object.fromEntries(
@@ -184,19 +189,23 @@ export function HeroPageView({
             <ArcanaTable hero={hero} locale={locale} />
           </section>
 
-          <section id="skills" className="scroll-mt-20 mb-6">
-            <h2 className="section-title">{t('hero.abilitiesTitle')}</h2>
-            <div className="mb-3">
-              <h3 className="mb-1 text-sm font-semibold text-gray-400">{t('hero.skillOrderTitle')}</h3>
-              <SkillOrderBlock hero={hero} locale={locale} />
-            </div>
-            <SkillBlock hero={hero} locale={locale} />
-          </section>
+          {showLocalizedLongform ? (
+            <section id="skills" className="scroll-mt-20 mb-6">
+              <h2 className="section-title">{t('hero.abilitiesTitle')}</h2>
+              <div className="mb-3">
+                <h3 className="mb-1 text-sm font-semibold text-gray-400">{t('hero.skillOrderTitle')}</h3>
+                <SkillOrderBlock hero={hero} locale={locale} />
+              </div>
+              <SkillBlock hero={hero} locale={locale} />
+            </section>
+          ) : null}
 
-          <section id="combos" className="scroll-mt-20 mb-6">
-            <h2 className="section-title">{t('hero.combosTitle')}</h2>
-            <ComboListBlock hero={hero} locale={locale} />
-          </section>
+          {showLocalizedLongform ? (
+            <section id="combos" className="scroll-mt-20 mb-6">
+              <h2 className="section-title">{t('hero.combosTitle')}</h2>
+              <ComboListBlock hero={hero} locale={locale} />
+            </section>
+          ) : null}
 
           <section id="counters" className="scroll-mt-20 mb-6">
             <h2 className="section-title">{t('hero.countersTitle')}</h2>
@@ -206,22 +215,28 @@ export function HeroPageView({
                 href={localePath(locale, `/hero/${hero.slug}/counters`)}
                 className="text-sm text-hok-gold hover:underline"
               >
-                Full counter analysis →
+                {t('hero.fullCounterAnalysis')}
               </Link>
             </div>
           </section>
 
-          <section id="comparisons" className="scroll-mt-20 mb-6">
-            <h2 className="section-title">{t('guide.comparisons')}</h2>
-            <ComparisonsBlock hero={hero} locale={locale} />
-          </section>
+          {showLocalizedLongform ? (
+            <section id="comparisons" className="scroll-mt-20 mb-6">
+              <h2 className="section-title">{t('guide.comparisons')}</h2>
+              <ComparisonsBlock hero={hero} locale={locale} />
+            </section>
+          ) : null}
 
-          <section id="guide" className="scroll-mt-20 mb-6">
-            <h2 className="section-title">{t('hero.playstyleTitle')}</h2>
-            <HeroGuideBlock hero={hero} locale={locale} />
-          </section>
+          {showLocalizedLongform ? (
+            <section id="guide" className="scroll-mt-20 mb-6">
+              <h2 className="section-title">{t('hero.playstyleTitle')}</h2>
+              <HeroGuideBlock hero={hero} locale={locale} />
+            </section>
+          ) : null}
 
-          {showFeaturedSeoBlocks ? <HeroPatchHistory hero={hero} locale={locale} /> : null}
+          {showFeaturedSeoBlocks && showLocalizedLongform ? (
+            <HeroPatchHistory hero={hero} locale={locale} />
+          ) : null}
 
           {topHeroGuide ? (
             <section
@@ -264,6 +279,10 @@ export function HeroPageView({
             <p className="mb-4 text-sm leading-6 text-gray-400">
               {locale === 'zh-TW'
                 ? `快速確認 ${heroName} 的出裝、銘文、克制、分路與是否值得練。`
+                : locale === 'id'
+                  ? `Jawaban cepat untuk build, arcana, counter, lane, dan nilai ranked ${heroName}.`
+                  : locale === 'fil'
+                    ? `Quick answers para sa ${heroName} builds, arcana, counters, lane choice, at ranked value.`
                 : `Quick answers for ${heroName} builds, arcana, counters, lane choice, and ranked value.`}
             </p>
             <FaqAccordion faqs={visibleFaqs} relatedLinks={faqArticleLinks} maxVisible={6} />
@@ -280,7 +299,11 @@ export function HeroPageView({
         </article>
 
         <aside>
-          <PageTOC locale={locale} showFeaturedSections={showFeaturedSeoBlocks} />
+          <PageTOC
+            locale={locale}
+            showFeaturedSections={showFeaturedSeoBlocks}
+            showLongformSections={showLocalizedLongform}
+          />
         </aside>
       </div>
 
@@ -307,55 +330,104 @@ function RelatedDecisionLinks({
   locale: Locale;
   guideSlug?: string;
 }) {
-  const isZh = locale === 'zh-TW';
   const roleName = translateRole(hero.role, locale);
+  const copy =
+    locale === 'zh-TW'
+      ? {
+          label: '相關決策',
+          title: `繼續研究 ${heroName}`,
+          guide: `${heroName} 完整攻略`,
+          guideDesc: '分路打法、團戰處理、排位常見失誤與對局思路。',
+          counters: `${heroName} 克制`,
+          countersDesc: '最佳克制英雄、對局細節與 BP 風險。',
+          damage: `${heroName} 傷害計算器`,
+          damageDesc: '測試出裝打射手、法師、戰士與坦克模板的實際傷害。',
+          compare: `${heroName} 出裝比較`,
+          compareDesc: '比較兩套出裝，查看不同對局下的結論。',
+          bestRole: `最佳 ${roleName} 英雄`,
+          bestRoleDesc: '把這個英雄和同定位英雄放在一起比較。',
+        }
+      : locale === 'id'
+        ? {
+            label: 'Keputusan terkait',
+            title: `Lanjut riset ${heroName}`,
+            guide: `Panduan lengkap ${heroName}`,
+            guideDesc: 'Rencana lane, aturan teamfight, kesalahan ranked, dan catatan matchup.',
+            counters: `Counter ${heroName}`,
+            countersDesc: 'Counter terbaik, catatan matchup, dan risiko draft.',
+            damage: `Kalkulator damage ${heroName}`,
+            damageDesc: 'Uji damage item melawan template marksman, mage, fighter, dan tank.',
+            compare: `Bandingkan build ${heroName}`,
+            compareDesc: 'Bandingkan dua build item dan lihat kesimpulan per matchup.',
+            bestRole: `Hero ${roleName} terbaik`,
+            bestRoleDesc: 'Bandingkan pick ini dengan hero lain di role yang sama.',
+          }
+        : locale === 'fil'
+          ? {
+              label: 'Related decisions',
+              title: `I-check pa si ${heroName}`,
+              guide: `${heroName} full guide`,
+              guideDesc: 'Lane plan, teamfight rules, ranked mistakes, at matchup notes.',
+              counters: `${heroName} counters`,
+              countersDesc: 'Best counter picks, matchup notes, at draft risks.',
+              damage: `${heroName} damage calculator`,
+              damageDesc: 'I-test ang item damage laban sa marksman, mage, fighter, at tank templates.',
+              compare: `${heroName} build compare`,
+              compareDesc: 'Ikumpara ang dalawang item builds at tingnan ang matchup-specific conclusions.',
+              bestRole: `Best ${roleName} heroes`,
+              bestRoleDesc: 'Ikumpara ang pick na ito sa ibang heroes sa parehong role.',
+            }
+          : {
+              label: 'Related decisions',
+              title: `Keep researching ${heroName}`,
+              guide: `${heroName} full guide`,
+              guideDesc: 'Lane plan, teamfight rules, ranked mistakes, and matchup notes.',
+              counters: `${heroName} counters`,
+              countersDesc: 'Best counter picks, matchup notes, and draft risks.',
+              damage: `${heroName} damage calculator`,
+              damageDesc: 'Test item damage against marksman, mage, fighter, and tank templates.',
+              compare: `${heroName} build compare`,
+              compareDesc: 'Compare two item builds and get matchup-specific conclusions.',
+              bestRole: `Best ${roleName} heroes`,
+              bestRoleDesc: 'Compare this pick with other heroes in the same role.',
+            };
   const links = [
     guideSlug
       ? {
-          label: isZh ? `${heroName} 完整攻略` : `${heroName} full guide`,
+          label: copy.guide,
           href: `/learn/${guideSlug}`,
-          desc: isZh
-            ? '分路打法、團戰處理、排位常見失誤與對局思路。'
-            : 'Lane plan, teamfight rules, ranked mistakes, and matchup notes.',
+          desc: copy.guideDesc,
         }
       : null,
     {
-      label: isZh ? `${heroName} 克制` : `${heroName} counters`,
+      label: copy.counters,
       href: `/hero/${hero.slug}/counters`,
-      desc: isZh
-        ? '最佳克制英雄、對局細節與 BP 風險。'
-        : 'Best counter picks, matchup notes, and draft risks.',
+      desc: copy.countersDesc,
     },
     {
-      label: isZh ? `${heroName} 傷害計算器` : `${heroName} damage calculator`,
+      label: copy.damage,
       href: `/tools/damage-calculator/${hero.slug}`,
-      desc: isZh
-        ? '測試出裝打射手、法師、戰士與坦克模板的實際傷害。'
-        : 'Test item damage against marksman, mage, fighter, and tank templates.',
+      desc: copy.damageDesc,
     },
     {
-      label: isZh ? `${heroName} 出裝比較` : `${heroName} build compare`,
+      label: copy.compare,
       href: `/tools/build-compare/${hero.slug}`,
-      desc: isZh
-        ? '比較兩套出裝，查看不同對局下的結論。'
-        : 'Compare two item builds and get matchup-specific conclusions.',
+      desc: copy.compareDesc,
     },
     {
-      label: isZh ? `最佳 ${roleName} 英雄` : `Best ${roleName} heroes`,
+      label: copy.bestRole,
       href: `/best-heroes/${hero.role.toLowerCase()}`,
-      desc: isZh
-        ? '把這個英雄和同定位英雄放在一起比較。'
-        : 'Compare this pick with other heroes in the same role.',
+      desc: copy.bestRoleDesc,
     },
   ].filter(Boolean) as Array<{ label: string; href: string; desc: string }>;
 
   return (
     <section className="mb-6 rounded-xl border border-hok-border bg-hok-card/70 p-4">
       <p className="text-xs font-semibold uppercase tracking-wide text-hok-gold">
-        {isZh ? '相關決策' : 'Related decisions'}
+        {copy.label}
       </p>
       <h2 className="mt-1 text-lg font-bold text-white">
-        {isZh ? `繼續研究 ${heroName}` : `Keep researching ${heroName}`}
+        {copy.title}
       </h2>
       <div className="mt-4 grid gap-3 md:grid-cols-2">
         {links.map((link) => (

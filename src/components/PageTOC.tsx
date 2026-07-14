@@ -37,13 +37,18 @@ const SECTION_KEYS: Record<(typeof SECTION_IDS)[number], string> = {
 export function PageTOC({
   locale = 'en',
   showFeaturedSections = false,
+  showLongformSections = true,
 }: {
   locale?: Locale;
   showFeaturedSections?: boolean;
+  showLongformSections?: boolean;
 }) {
   const t = createT(locale);
   const sectionIds = SECTION_IDS.filter((id) => {
     if (id === 'authority' && locale !== 'en') return false;
+    if (!showLongformSections && ['skills', 'combos', 'comparisons', 'guide', 'patch-history'].includes(id)) {
+      return false;
+    }
     if ((id === 'build-variants' || id === 'patch-history') && !showFeaturedSections) {
       return false;
     }

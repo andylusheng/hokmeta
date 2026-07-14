@@ -17,15 +17,35 @@ export function DataAttribution({
   locale = 'en',
 }: DataAttributionProps) {
   const t = createT(locale);
+  const copy = {
+    'zh-TW': {
+      sourceFallback: '官方每日勝率統計 + HOKMeta 編輯校對',
+      aria: '資料來源與編輯政策',
+    },
+    id: {
+      sourceFallback: 'Statistik win rate harian resmi + review editorial HOKMeta',
+      aria: 'Sumber data dan kebijakan editorial',
+    },
+    fil: {
+      sourceFallback: 'Official daily win-rate stats + HOKMeta editorial review',
+      aria: 'Data sources at editorial policy',
+    },
+    en: {
+      sourceFallback: 'Official daily win-rate stats + HOKMeta editorial review',
+      aria: 'Data sources and editorial policy',
+    },
+  }[locale];
+  const rawSource = dataSource?.trim();
   const source =
-    dataSource?.trim() ||
-    'Camp HOK international server data + HOKMeta editorial review';
+    rawSource && !/Camp HOK/i.test(rawSource)
+      ? rawSource
+      : copy.sourceFallback;
   const updated = dataUpdated?.trim() || site.dateModified;
 
   return (
     <aside
       className="mb-8 rounded-lg border border-hok-gold/25 bg-hok-card/60 px-4 py-3 text-sm leading-relaxed text-gray-400"
-      aria-label="Data sources and editorial policy"
+      aria-label={copy.aria}
     >
       <p className="mb-1 font-medium text-gray-300">
         {subject ? `${subject} — ` : ''}

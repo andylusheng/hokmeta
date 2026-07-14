@@ -18,6 +18,7 @@ function sectionCopy(locale: Locale) {
   if (locale === 'zh-TW') {
     return {
       subtitle: '基於官方每日勝率統計。',
+      eyebrow: '官方勝率趨勢',
       updated: '最新同步',
       coverage: '覆蓋',
       days: '有效快照天數',
@@ -40,6 +41,7 @@ function sectionCopy(locale: Locale) {
   if (locale === 'id') {
     return {
       subtitle: 'Berdasarkan statistik win rate harian resmi.',
+      eyebrow: 'Tren win rate resmi',
       updated: 'Sync terbaru',
       coverage: 'Cakupan',
       days: 'hari snapshot',
@@ -62,6 +64,7 @@ function sectionCopy(locale: Locale) {
   if (locale === 'fil') {
     return {
       subtitle: 'Batay sa opisyal na daily win-rate stats.',
+      eyebrow: 'Official win-rate trends',
       updated: 'Latest sync',
       coverage: 'Coverage',
       days: 'tracked days',
@@ -83,6 +86,7 @@ function sectionCopy(locale: Locale) {
 
   return {
     subtitle: 'Built from official daily win-rate stats.',
+    eyebrow: 'Official win-rate trends',
     updated: 'Latest sync',
     coverage: 'Coverage',
     days: 'tracked days',
@@ -218,7 +222,7 @@ export function HeroTrendsPageView({ locale = 'en' }: { locale?: Locale }) {
 
       <div className="mb-8 max-w-4xl">
         <p className="mb-2 text-sm font-semibold uppercase tracking-wide text-hok-gold">
-          HOKMeta D1 Meta Intelligence
+          {copy.eyebrow}
         </p>
         <h1 className="mb-3 text-4xl font-black text-white">{t('trends.title')}</h1>
         <p className="text-base leading-relaxed text-gray-400">{copy.subtitle}</p>
