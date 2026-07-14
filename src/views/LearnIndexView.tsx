@@ -183,6 +183,19 @@ export function LearnIndexView({ locale = 'en' }: { locale?: Locale }) {
     return t(key);
   };
 
+  const heroArticleLabel = (type: 'guide' | 'counters' | 'weaknesses'): string => {
+    if (locale === 'zh-TW') {
+      return type === 'guide' ? '攻略' : type === 'counters' ? '克制' : '弱點';
+    }
+    if (locale === 'id') {
+      return type === 'guide' ? 'Panduan' : type === 'counters' ? 'Counter' : 'Kelemahan';
+    }
+    if (locale === 'fil') {
+      return type === 'guide' ? 'Gabay' : type === 'counters' ? 'Counter' : 'Kahinaan';
+    }
+    return type === 'guide' ? 'Guide' : type === 'counters' ? 'Counters' : 'Weaknesses';
+  };
+
   const articleBySlug = useMemo(() => {
     const map = new Map<string, (typeof allArticles)[number]>();
     for (const article of allArticles) {
@@ -423,7 +436,7 @@ export function LearnIndexView({ locale = 'en' }: { locale?: Locale }) {
                               href={localePath(locale, `/learn/${g.guide}`)}
                               className="rounded-full border border-hok-gold/30 bg-hok-gold/10 px-2 py-0.5 text-[10px] font-medium text-hok-gold transition hover:bg-hok-gold/20"
                             >
-                              {locale === 'zh-TW' ? '攻略' : 'Guide'}
+                              {heroArticleLabel('guide')}
                             </Link>
                           )}
                           {g.counters && (
@@ -431,7 +444,7 @@ export function LearnIndexView({ locale = 'en' }: { locale?: Locale }) {
                               href={localePath(locale, `/learn/${g.counters}`)}
                               className="rounded-full border border-hok-border bg-hok-card px-2 py-0.5 text-[10px] font-medium text-gray-400 transition hover:border-red-500/40 hover:text-red-400"
                             >
-                              {locale === 'zh-TW' ? '克制' : 'Counters'}
+                              {heroArticleLabel('counters')}
                             </Link>
                           )}
                           {g.weaknesses && (
@@ -439,7 +452,7 @@ export function LearnIndexView({ locale = 'en' }: { locale?: Locale }) {
                               href={localePath(locale, `/learn/${g.weaknesses}`)}
                               className="rounded-full border border-hok-border bg-hok-card px-2 py-0.5 text-[10px] font-medium text-gray-400 transition hover:border-amber-500/40 hover:text-amber-400"
                             >
-                              {locale === 'zh-TW' ? '弱點' : 'Weaknesses'}
+                              {heroArticleLabel('weaknesses')}
                             </Link>
                           )}
                         </div>

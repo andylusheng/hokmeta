@@ -87,7 +87,10 @@ function matchPriority(itemStats: StatPriority[], heroPriority: StatPriority[]):
 export function getBuildPhilosophy(hero: Hero, locale: Locale): BuildPhilosophy {
   const override = getHeroRationaleOverride(hero, locale);
   const passive = passiveSkill(hero, locale);
-  const passiveQuote = passive?.description?.split('\n')[0]?.trim() || '';
+  const passiveQuote =
+    locale === 'id' || locale === 'fil'
+      ? ''
+      : passive?.description?.split('\n')[0]?.trim() || '';
 
   if (override) {
     return {
@@ -134,6 +137,13 @@ export function getItemSlotWhy(
   const itemStats = itemStatHints(buildItem.itemId, locale);
   const match = matchPriority(itemStats, philosophy.statPriority);
 
+  if ((locale === 'id' || locale === 'fil') && match) {
+    return t('rationale.itemWhyLabel', {
+      label: t(`rationale.stat.${match}`),
+      stat: t(`rationale.stat.${match}`),
+    });
+  }
+
   if (passives.length && match) {
     const passiveShort = passives[0].split('\n').slice(0, 2).join(' — ');
     return t('rationale.itemWhyMatch', {
@@ -142,7 +152,7 @@ export function getItemSlotWhy(
     });
   }
 
-  if (passives.length) {
+  if (passives.length && locale !== 'id' && locale !== 'fil') {
     return passives[0].split('\n')[0];
   }
 
@@ -154,7 +164,12 @@ export function getItemSlotWhy(
     });
   }
 
-  if (buildItem.description && buildItem.description !== 'Data unavailable') {
+  if (
+    locale !== 'id' &&
+    locale !== 'fil' &&
+    buildItem.description &&
+    buildItem.description !== 'Data unavailable'
+  ) {
     return buildItem.description.split('\n').pop() || buildItem.description;
   }
 
@@ -186,6 +201,14 @@ export function getArcanaRationale(
   const runeStats = desc ? detectPrioritiesFromPassive(desc) : [];
   const match = matchPriority(runeStats, philosophy.statPriority);
 
+  if ((locale === 'id' || locale === 'fil') && match && rune) {
+    return t('rationale.arcanaWhyMatch', {
+      rune: getLocalizedRuneName(rune, locale) || decoded,
+      stat: t(`rationale.stat.${match}`),
+      effect: t(`rationale.stat.${match}`),
+    });
+  }
+
   if (match && desc && rune) {
     return t('rationale.arcanaWhyMatch', {
       rune: getLocalizedRuneName(rune, locale) || decoded,
@@ -194,7 +217,7 @@ export function getArcanaRationale(
     });
   }
 
-  if (desc) return desc.split('\n').join(' · ');
+  if (desc && locale !== 'id' && locale !== 'fil') return desc.split('\n').join(' · ');
 
   return t('rationale.arcanaFallback', {
     priorities: philosophy.statPriority

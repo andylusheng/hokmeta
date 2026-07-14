@@ -10,6 +10,12 @@ function formatGold(gold: number | null | undefined): string {
   return `${gold.toLocaleString()}g`;
 }
 
+function itemStatsSummary(locale: Locale): string {
+  if (locale === 'id') return 'Atribut item resmi; lihat nama item di client global untuk detail lengkap.';
+  if (locale === 'fil') return 'Official item stats; tingnan ang item name sa global client para sa full details.';
+  return '';
+}
+
 export function BuildTable({
   hero,
   items,
@@ -53,7 +59,10 @@ export function BuildTable({
           {rows.map((item) => {
             const db = item.itemId ? getItemById(item.itemId) : undefined;
             const gold = db?.gold ?? null;
-            const stats = item.description || db?.description || '—';
+            const stats =
+              locale === 'id' || locale === 'fil'
+                ? itemStatsSummary(locale)
+                : item.description || db?.description || '—';
             const why = noteBySlot.get(item.slot) || '—';
             return (
               <tr

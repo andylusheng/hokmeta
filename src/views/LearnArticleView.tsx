@@ -88,20 +88,38 @@ export function LearnArticleView({
       {relatedHero && (
         <div className="mt-8 rounded-lg border border-hok-border bg-hok-card/30 p-4">
           <h3 className="mb-2 text-sm font-semibold text-gray-400">
-            {locale === 'zh-TW' ? '相關英雄' : 'Related Hero'}
+            {locale === 'zh-TW'
+              ? '相關英雄'
+              : locale === 'id'
+                ? 'Hero terkait'
+                : locale === 'fil'
+                  ? 'Kaugnay na hero'
+                  : 'Related Hero'}
           </h3>
           <div className="flex flex-wrap gap-3">
             <Link
               href={localePath(locale, `/hero/${relatedHero.slug}`)}
               className="text-sm text-hok-gold hover:underline"
             >
-              {locale === 'zh-TW' ? `← ${getHeroDisplayName(relatedHero, locale)} 英雄首頁` : `← ${getHeroDisplayName(relatedHero, locale)} Hero Page`}
+              {locale === 'zh-TW'
+                ? `← ${getHeroDisplayName(relatedHero, locale)} 英雄首頁`
+                : locale === 'id'
+                  ? `← Halaman hero ${getHeroDisplayName(relatedHero, locale)}`
+                  : locale === 'fil'
+                    ? `← Hero page ni ${getHeroDisplayName(relatedHero, locale)}`
+                    : `← ${getHeroDisplayName(relatedHero, locale)} Hero Page`}
             </Link>
             <Link
               href={localePath(locale, `/hero/${relatedHero.slug}/counters`)}
               className="text-sm text-hok-gold hover:underline"
             >
-              {locale === 'zh-TW' ? `${getHeroDisplayName(relatedHero, locale)} 克制頁 →` : `${getHeroDisplayName(relatedHero, locale)} Counters →`}
+              {locale === 'zh-TW'
+                ? `${getHeroDisplayName(relatedHero, locale)} 克制頁 →`
+                : locale === 'id'
+                  ? `Counter ${getHeroDisplayName(relatedHero, locale)} →`
+                  : locale === 'fil'
+                    ? `Counters ni ${getHeroDisplayName(relatedHero, locale)} →`
+                    : `${getHeroDisplayName(relatedHero, locale)} Counters →`}
             </Link>
           </div>
         </div>

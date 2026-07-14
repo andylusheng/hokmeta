@@ -100,15 +100,15 @@ export const LOCALE_READINESS_MANIFEST: Record<LocaleCandidate, LocaleReadinessE
     status: 'live',
     label: 'ID',
     hrefLang: hrefLang('id'),
-    routeGroups: readyExcept(['learn', 'patches', 'tier-list']),
-    note: 'Indonesia locale is live for core product routes. Long-form learn, patch history, and tier-list pages stay hidden until body copy is translated or intentionally retired.',
+    routeGroups: readyExcept(['tier-list']),
+    note: 'Indonesia locale is live for core product, learn, and patch routes. Tier-list stays hidden because HOKMeta has retired that surface in favor of hero builds and trends.',
   },
   fil: {
     status: 'live',
     label: 'FIL',
     hrefLang: hrefLang('fil'),
-    routeGroups: readyExcept(['learn', 'patches', 'tier-list']),
-    note: 'Filipino locale is live for core product routes. Long-form learn, patch history, and tier-list pages stay hidden until body copy is translated or intentionally retired.',
+    routeGroups: readyExcept(['tier-list']),
+    note: 'Filipino locale is live for core product, learn, and patch routes. Tier-list stays hidden because HOKMeta has retired that surface in favor of hero builds and trends.',
   },
 };
 

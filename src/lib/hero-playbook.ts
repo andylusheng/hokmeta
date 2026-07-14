@@ -241,7 +241,9 @@ function defaultArcanaRows(hero: Hero, locale: Locale): HeroArcanaRow[] {
       slot: t('playbook.arcanaSpell'),
       rune: spells.join(' / '),
       effect:
-        hero.guide?.arcanaSpells?.split('.')[0] || t('playbook.arcanaSpellHint'),
+        locale === 'en' && hero.guide?.arcanaSpells
+          ? hero.guide.arcanaSpells.split('.')[0]
+          : t('playbook.arcanaSpellHint'),
     });
   }
   return rows;

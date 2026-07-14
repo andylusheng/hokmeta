@@ -103,13 +103,32 @@ export function getTrendHero(slug: string): MetaTrendHero | undefined {
 }
 
 export function laneLabel(lane: string | null, locale: Locale = 'en'): string {
-  if (!lane) return locale === 'zh-TW' ? '未指定分路' : 'Unassigned';
+  if (!lane) {
+    if (locale === 'zh-TW') return '未指定分路';
+    if (locale === 'id') return 'Belum ditentukan';
+    if (locale === 'fil') return 'Hindi pa nakatakda';
+    return 'Unassigned';
+  }
   if (locale === 'zh-TW') {
     if (lane === 'Clash') return '對抗路';
     if (lane === 'Jungle') return '打野';
     if (lane === 'Mid') return '中路';
     if (lane === 'Farm') return '發育路';
     if (lane === 'Roam') return '遊走';
+  }
+  if (locale === 'id') {
+    if (lane === 'Clash') return 'Clash Lane';
+    if (lane === 'Jungle') return 'Jungle';
+    if (lane === 'Mid') return 'Mid Lane';
+    if (lane === 'Farm') return 'Farm Lane';
+    if (lane === 'Roam') return 'Roam';
+  }
+  if (locale === 'fil') {
+    if (lane === 'Clash') return 'Clash Lane';
+    if (lane === 'Jungle') return 'Jungle';
+    if (lane === 'Mid') return 'Mid Lane';
+    if (lane === 'Farm') return 'Farm Lane';
+    if (lane === 'Roam') return 'Roam';
   }
   if (lane === 'Clash') return 'Clash Lane';
   if (lane === 'Jungle') return 'Jungle';

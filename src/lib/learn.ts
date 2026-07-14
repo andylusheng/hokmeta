@@ -34,6 +34,11 @@ import {
   trendLearnArticles,
   trendLearnArticlesZh,
 } from '@/lib/learn-trend-articles';
+import {
+  getLearnArticlesFil,
+  getLearnArticlesId,
+  getLearnDataNoteIdFil,
+} from '@/lib/learn-id-fil';
 
 const heroLearnArticles = getHeroLearnArticles();
 const heroLearnArticlesZh = getHeroLearnArticlesZh();
@@ -396,10 +401,15 @@ export const learnArticles: LearnArticle[] = [
 ];
 
 export function getLearnDataNote(locale: Locale = 'en'): string {
-  return locale === 'zh-TW' ? learnDataNoteZh : learnDataNote;
+  if (locale === 'zh-TW') return learnDataNoteZh;
+  if (locale === 'id') return getLearnDataNoteIdFil('id');
+  if (locale === 'fil') return getLearnDataNoteIdFil('fil');
+  return learnDataNote;
 }
 
 export function getLearnArticles(locale: Locale = 'en') {
+  if (locale === 'id') return getLearnArticlesId();
+  if (locale === 'fil') return getLearnArticlesFil();
   const base = locale === 'zh-TW' ? learnArticlesZh : learnArticles;
   const hero = locale === 'zh-TW' ? heroLearnArticlesZh : heroLearnArticles;
   const featured = locale === 'zh-TW' ? featuredArticlesZh : featuredArticles;

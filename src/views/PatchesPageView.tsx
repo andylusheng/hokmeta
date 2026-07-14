@@ -4,9 +4,10 @@ import { createT, localePath, type Locale } from '@/lib/i18n';
 import {
   getCurrentSeason,
   getSeasonPatches,
-  localizedChange,
-  localizedHeroName,
-} from '@/lib/patches';
+  localizedChange,
+  localizedHeroName,
+  localizedPatchTag,
+} from '@/lib/patches';
 import { Breadcrumb } from '@/components/Breadcrumb';
 
 function tagClass(tag: string | null | undefined): string {
@@ -20,8 +21,24 @@ export function PatchesPageView({ locale = 'en' }: { locale?: Locale }) {
   const t = createT(locale);
   const updated =
     'updated' in patchesMeta && patchesMeta.updated ? patchesMeta.updated : null;
-  const seasons = getSeasonPatches();
-  const currentSeason = getCurrentSeason();
+  const seasons = getSeasonPatches();
+  const currentSeason = getCurrentSeason();
+  const sourceText =
+    locale === 'zh-TW'
+      ? '官方每日勝率統計與國際服版本資料'
+      : locale === 'id'
+        ? 'Statistik win rate harian resmi dan catatan patch server internasional'
+        : locale === 'fil'
+          ? 'Official daily win-rate stats at international server patch records'
+          : 'Official daily win-rate stats and international server patch records';
+  const heroCountLabel =
+    locale === 'zh-TW'
+      ? '英雄'
+      : locale === 'id'
+        ? 'hero'
+        : locale === 'fil'
+          ? 'heroes'
+          : 'heroes';
 
   return (
     <div className="container-wide">
@@ -35,16 +52,16 @@ export function PatchesPageView({ locale = 'en' }: { locale?: Locale }) {
       <p className="mb-4 text-gray-400">{t('patches.subtitle')}</p>
 
       <div className="mb-8 rounded-lg border border-hok-border bg-hok-card px-4 py-3 text-sm text-gray-300">
-        <p>
-          <span className="text-hok-gold">{t('patches.source')}:</span>{' '}
-          {'source' in patchesMeta ? String(patchesMeta.source) : 'Camp HOK'}
-        </p>
+        <p>
+          <span className="text-hok-gold">{t('patches.source')}:</span>{' '}
+          {sourceText}
+        </p>
         {updated && (
           <p className="mt-1">
-            {t('metaBanner.updated')} {updated}
-            {'heroCount' in patchesMeta && patchesMeta.heroCount
-              ? ` · ${patchesMeta.heroCount} heroes`
-              : ''}
+            {t('metaBanner.updated')} {updated}
+            {'heroCount' in patchesMeta && patchesMeta.heroCount
+              ? ` · ${patchesMeta.heroCount} ${heroCountLabel}`
+              : ''}
             {currentSeason ? ` · ${t('patches.currentSeason', { season: currentSeason })}` : ''}
           </p>
         )}
@@ -80,9 +97,9 @@ export function PatchesPageView({ locale = 'en' }: { locale?: Locale }) {
                       >
                         {localizedHeroName(row, locale)}
                       </Link>
-                      {row.tag && (
-                        <span className={tagClass(row.tag)}>{row.tag}</span>
-                      )}
+                      {row.tag && (
+                        <span className={tagClass(row.tag)}>{localizedPatchTag(row.tag, locale)}</span>
+                      )}
                       {row.versionName && (
                         <span className="text-xs text-gray-500">{row.versionName}</span>
                       )}
