@@ -1,10 +1,9 @@
 'use client';
 
 import { useEffect, useMemo, useState } from 'react';
-import type { GameItem, Hero } from '@/types/hero';
 import { HeroSelect } from '@/components/HeroSelect';
 import { createT, type Locale } from '@/lib/i18n';
-import { getLocalizedSkills } from '@/lib/hero-locale-data';
+import { loadToolData, type ToolData, type ToolHero, type ToolItem } from '@/lib/tool-data';
 import {
   calculateDamage,
   damageHeroProfiles,
@@ -35,6 +34,8 @@ const text = {
     supported: 'Hero-specific scaling profile',
     baseline: 'Role baseline profile',
     noItems: 'No equipment selected.',
+    loading: 'Loading calculator data…',
+    loadError: 'Calculator data could not be loaded. Refresh the page and try again.',
   },
   'zh-TW': {
     hero: '英雄',
@@ -57,6 +58,8 @@ const text = {
     supported: '英雄專用倍率',
     baseline: '職業基準倍率',
     noItems: '尚未選擇裝備。',
+    loading: '正在載入計算器資料…',
+    loadError: '無法載入計算器資料，請重新整理頁面後再試。',
   },
   id: null,
   fil: null,
@@ -64,8 +67,12 @@ const text = {
 
 const damageCopy = {
   ...text,
-  id: text.en,
-  fil: text.en,
+  id: {
+    hero: 'Hero', level: 'Level hero', skillLevel: 'Level skill', build: 'Equipment', addItem: 'Tambah item', remove: 'Hapus', combo: 'Combo', basicAttacks: 'Basic attack', result: 'Hasil damage', raw: 'Mentah', actual: 'Aktual', formula: 'Rumus defense', formulaBody: 'Damage fisik dan magic memakai defense efektif = defense x (1 - percent pierce) - flat pierce, lalu damage = raw x 602 / (602 + defense efektif). True damage melewati defense.', beta: 'Data beta: mesin kalkulator mendukung nilai presisi, tetapi scaling hero masih ditandai beta sampai diverifikasi di dalam game.', profile: 'Profil', supported: 'Profil scaling khusus hero', baseline: 'Profil dasar role', noItems: 'Belum ada equipment dipilih.', loading: 'Memuat data kalkulator…', loadError: 'Data kalkulator tidak dapat dimuat. Coba muat ulang halaman.',
+  },
+  fil: {
+    hero: 'Hero', level: 'Hero level', skillLevel: 'Skill level', build: 'Equipment', addItem: 'Magdagdag ng item', remove: 'Alisin', combo: 'Combo', basicAttacks: 'Basic attacks', result: 'Damage result', raw: 'Raw', actual: 'Actual', formula: 'Defense formula', formulaBody: 'Para sa physical at magical damage: effective defense = defense x (1 - percent pierce) - flat pierce, at damage = raw x 602 / (602 + effective defense). Hindi naaapektuhan ng defense ang true damage.', beta: 'Beta data: may support ang calculator sa precise values, pero beta pa ang hero scaling profiles hanggang ma-verify sa game.', profile: 'Profile', supported: 'Hero-specific scaling profile', baseline: 'Role baseline profile', noItems: 'Walang napiling equipment.', loading: 'Naglo-load ng calculator data…', loadError: 'Hindi ma-load ang calculator data. I-refresh ang page.',
+  },
 };
 
 function fmt(value: number): string {
@@ -97,13 +104,34 @@ function itemTypeLabel(type: string | null, locale: Locale): string {
 }
 
 export function DamageCalculatorClient({
+  locale = 'en',
+  initialHeroSlug,
+}: {
+  locale?: Locale;
+  initialHeroSlug?: string;
+}) {
+  const copy = damageCopy[locale];
+  const [data, setData] = useState<ToolData | null>(null);
+  const [error, setError] = useState(false);
+
+  useEffect(() => {
+    loadToolData().then(setData).catch(() => setError(true));
+  }, []);
+
+  if (error) return <p className="card text-sm text-red-200">{copy.loadError}</p>;
+  if (!data) return <p className="card text-sm text-gray-400">{copy.loading}</p>;
+
+  return <DamageCalculatorWorkspace heroes={data.heroes} items={data.items} locale={locale} initialHeroSlug={initialHeroSlug} />;
+}
+
+function DamageCalculatorWorkspace({
   heroes,
   items,
   locale = 'en',
   initialHeroSlug,
 }: {
-  heroes: Hero[];
-  items: GameItem[];
+  heroes: ToolHero[];
+  items: ToolItem[];
   locale?: Locale;
   initialHeroSlug?: string;
 }) {
@@ -128,7 +156,10 @@ export function DamageCalculatorClient({
     [heroes, slug]
   );
   const profile = useMemo(() => getDamageProfile(hero), [hero]);
-  const heroSkills = useMemo(() => getLocalizedSkills(hero, locale), [hero, locale]);
+  const heroSkills = useMemo(
+    () => (locale === 'zh-TW' && hero.skillsZh?.length ? hero.skillsZh : hero.skills),
+    [hero, locale]
+  );
   const skillIconBySlot = useMemo(
     () => new Map(heroSkills.map((skill) => [skill.slot, skill.icon])),
     [heroSkills]
@@ -152,7 +183,7 @@ export function DamageCalculatorClient({
   const selectedItems = useMemo(
     () => selectedItemIds
       .map((id) => items.find((item) => item.id === id))
-      .filter((item): item is GameItem => Boolean(item)),
+      .filter((item): item is ToolItem => Boolean(item)),
     [items, selectedItemIds]
   );
 
@@ -221,7 +252,7 @@ export function DamageCalculatorClient({
         <section className="space-y-5">
           <div className="card">
             <h2 className="section-title">{copy.hero}</h2>
-            <HeroSelect heroes={heroes} value={hero.slug} onChange={setSlug} />
+        <HeroSelect heroes={heroes} value={hero.slug} onChange={setSlug} locale={locale} />
             <div className="mt-4 grid gap-3 sm:grid-cols-2">
               <label className="block">
                 <span className="mb-2 block text-sm text-gray-400">{copy.level}</span>

@@ -259,7 +259,7 @@ export const damageHeroProfiles: Record<string, DamageHeroProfile> = {
   },
 };
 
-export function getDamageProfile(hero: Hero): DamageHeroProfile {
+export function getDamageProfile(hero: Pick<Hero, 'slug' | 'role'>): DamageHeroProfile {
   return (
     damageHeroProfiles[hero.slug] ?? {
       slug: hero.slug,
@@ -312,7 +312,11 @@ function levelScale(level: number, min: number, max: number): number {
   return min + ((max - min) * (capped - 1)) / 14;
 }
 
-export function itemStats(item: GameItem, level: number, heroRole?: string): CombatStats {
+export function itemStats(
+  item: Pick<GameItem, 'id' | 'description' | 'passiveSkills'>,
+  level: number,
+  heroRole?: string
+): CombatStats {
   const text = `${item.description}\n${(item.passiveSkills ?? []).join('\n')}`;
   const stats = { ...emptyStats };
   stats.hp += readStat(text, ['HP', 'Max HP']);
@@ -358,7 +362,7 @@ export function combineStats(parts: CombatStats[]): CombatStats {
   );
 }
 
-export function getBuildItemIds(build: HeroBuildItem[]): string[] {
+export function getBuildItemIds(build: Array<Pick<HeroBuildItem, 'itemId'>>): string[] {
   return build.map((item) => item.itemId).filter((id): id is string => Boolean(id));
 }
 
@@ -381,7 +385,7 @@ export function calculateDamage(input: {
   skillLevel: number;
   selectedSkillIds: string[];
   basicAttackCount: number;
-  selectedItems: GameItem[];
+  selectedItems: Array<Pick<GameItem, 'id' | 'description' | 'passiveSkills'>>;
   target: Pick<CombatStats, 'hp' | 'physicalDefense' | 'magicalDefense'>;
   heroRole?: string;
 }): DamageResult {

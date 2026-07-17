@@ -8,6 +8,13 @@ import type {
 import type { Locale } from '@/lib/i18n';
 import { getHeroNameZh } from '@/lib/locale-names';
 
+export type HeroBuildSource = Pick<
+  Hero,
+  'build' | 'buildZh' | 'builds' | 'buildsZh'
+>;
+
+export type HeroSkillSource = Pick<Hero, 'skills' | 'skillsZh'>;
+
 export function hasCampZhContent(hero: Hero): boolean {
   return Boolean(
     hero.skillsZh?.length &&
@@ -22,17 +29,23 @@ export function getLocalizedHeroName(hero: Hero, locale: Locale): string {
   return hero.name;
 }
 
-export function getLocalizedSkills(hero: Hero, locale: Locale): HeroSkill[] {
+export function getLocalizedSkills(hero: HeroSkillSource, locale: Locale): HeroSkill[] {
   if (locale === 'zh-TW' && hero.skillsZh?.length) return hero.skillsZh;
   return hero.skills;
 }
 
-export function getLocalizedBuild(hero: Hero, locale: Locale): HeroBuildItem[] {
+export function getLocalizedBuild(
+  hero: Pick<Hero, 'build' | 'buildZh'>,
+  locale: Locale
+): HeroBuildItem[] {
   if (locale === 'zh-TW' && hero.buildZh?.length) return hero.buildZh;
   return hero.build;
 }
 
-export function getLocalizedBuildPresets(hero: Hero, locale: Locale): HeroBuildPreset[] {
+export function getLocalizedBuildPresets(
+  hero: HeroBuildSource,
+  locale: Locale
+): HeroBuildPreset[] {
   if (locale === 'zh-TW' && hero.buildsZh?.length) {
     return hero.buildsZh.filter((b) => b.items?.length);
   }

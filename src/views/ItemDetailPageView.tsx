@@ -107,7 +107,15 @@ export function ItemDetailPageView({
                 href={localePath(locale, `/hero/${h.slug}#build`)}
                 className="flex items-center gap-2 rounded-lg border border-hok-border px-2 py-1.5 hover:border-hok-gold/40"
               >
-                <HeroAvatar hero={h} size={36} />
+                <HeroAvatar
+                  hero={{
+                    slug: h.slug,
+                    name: h.name,
+                    avatar: h.avatar,
+                    avatarFallback: h.avatarFallback,
+                  }}
+                  size={36}
+                />
                 <span className="text-sm text-gray-300">{getHeroDisplayName(h, locale)}</span>
               </Link>
             ))}

@@ -48,7 +48,17 @@ export function HeroCoverBanner({
       />
       <div className="absolute inset-0 bg-gradient-to-r from-hok-dark via-hok-dark/92 to-hok-dark/70" />
       <div className="relative z-10 flex flex-col gap-4 p-5 sm:flex-row sm:items-end sm:p-8">
-        <HeroAvatar hero={hero} size={96} priority className="rounded-2xl ring-2 ring-hok-gold/40" />
+        <HeroAvatar
+          hero={{
+            name: hero.name,
+            slug: hero.slug,
+            avatar: hero.avatar,
+            avatarFallback: hero.avatarFallback,
+          }}
+          size={96}
+          priority
+          className="rounded-2xl ring-2 ring-hok-gold/40"
+        />
         <div className="min-w-0 flex-1">
           <div className="mb-2 flex flex-wrap items-center gap-2">
             <TierBadge tier={heroLaneTierBand(hero)} />

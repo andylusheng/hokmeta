@@ -1,4 +1,3 @@
-import { heroes, items } from '@/lib/data';
 import { buildMetadata, defaultTitle } from '@/lib/seo';
 import { createT } from '@/lib/i18n';
 import { BuildCompareView } from '@/views/BuildCompareView';
@@ -18,5 +17,5 @@ export const metadata = buildMetadata({
 });
 
 export default function ZhTWBuildComparePage() {
-  return <BuildCompareView heroes={heroes} items={items} locale="id" />;
+  return <BuildCompareView locale="id" />;
 }

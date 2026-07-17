@@ -2,16 +2,19 @@
 
 import { useMemo, useState } from 'react';
 import type { Hero } from '@/types/hero';
+import type { Locale } from '@/lib/i18n';
 import { HeroAvatar } from '@/components/HeroAvatar';
 
 export function HeroSelect({
   heroes,
   value,
   onChange,
+  locale = 'en',
 }: {
-  heroes: Hero[];
+  heroes: Array<Pick<Hero, 'slug' | 'name' | 'role' | 'tier' | 'avatar' | 'avatarFallback'>>;
   value: string;
   onChange: (slug: string) => void;
+  locale?: Locale;
 }) {
   const [query, setQuery] = useState('');
   const selected = heroes.find((h) => h.slug === value);
@@ -43,7 +46,7 @@ export function HeroSelect({
 
       <input
         type="search"
-        placeholder="Search hero…"
+        placeholder={locale === 'zh-TW' ? '搜尋英雄…' : locale === 'id' ? 'Cari hero…' : locale === 'fil' ? 'Hanapin ang hero…' : 'Search hero…'}
         value={query}
         onChange={(e) => setQuery(e.target.value)}
         className="w-full max-w-md rounded border border-hok-border bg-hok-card px-3 py-2 text-sm text-white placeholder:text-gray-500"
@@ -66,7 +69,9 @@ export function HeroSelect({
           </li>
         ))}
         {!filtered.length && (
-          <li className="px-3 py-4 text-sm text-gray-500">No heroes found.</li>
+          <li className="px-3 py-4 text-sm text-gray-500">
+            {locale === 'zh-TW' ? '找不到英雄。' : locale === 'id' ? 'Hero tidak ditemukan.' : locale === 'fil' ? 'Walang nahanap na hero.' : 'No heroes found.'}
+          </li>
         )}
       </ul>
     </div>

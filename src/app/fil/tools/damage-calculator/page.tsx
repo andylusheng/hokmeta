@@ -1,4 +1,3 @@
-import { heroes, items } from '@/lib/data';
 import { buildMetadata, defaultTitle } from '@/lib/seo';
 import { createT } from '@/lib/i18n';
 import { DamageCalculatorView } from '@/views/DamageCalculatorView';
@@ -18,5 +17,5 @@ export const metadata = buildMetadata({
 });
 
 export default function FilDamageCalculatorPage() {
-  return <DamageCalculatorView heroes={heroes} items={items} locale="fil" />;
+  return <DamageCalculatorView locale="fil" />;
 }

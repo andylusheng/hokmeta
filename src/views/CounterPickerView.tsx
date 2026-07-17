@@ -1,16 +1,11 @@
-import type { GameItem, Hero } from '@/types/hero';
 import { createT, localePath, type Locale } from '@/lib/i18n';
 import { CounterPickerClient } from '@/components/CounterPickerClient';
 import { Breadcrumb } from '@/components/Breadcrumb';
 import { JsonLd, breadcrumbSchema, webApplicationSchema } from '@/lib/schema';
 
 export function CounterPickerView({
-  heroes,
-  items,
   locale = 'en',
 }: {
-  heroes: Hero[];
-  items: GameItem[];
   locale?: Locale;
 }) {
   const t = createT(locale);
@@ -50,7 +45,7 @@ export function CounterPickerView({
           of Kings Global ranked games.
         </p>
       </div>
-      <CounterPickerClient heroes={heroes} items={items} locale={locale} />
+      <CounterPickerClient locale={locale} />
     </div>
   );
 }

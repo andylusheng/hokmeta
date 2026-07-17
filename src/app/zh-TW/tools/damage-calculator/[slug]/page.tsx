@@ -1,5 +1,5 @@
 import { notFound } from 'next/navigation';
-import { heroes, items, getHeroBySlug } from '@/lib/data';
+import { heroes, getHeroBySlug } from '@/lib/data';
 import { buildMetadata, defaultTitle } from '@/lib/seo';
 import { DamageCalculatorView } from '@/views/DamageCalculatorView';
 
@@ -36,5 +36,5 @@ export default function ZhTWHeroDamageCalculatorPage({
   const hero = getHeroBySlug(params.slug);
   if (!hero) notFound();
 
-  return <DamageCalculatorView heroes={heroes} items={items} locale="zh-TW" initialHeroSlug={hero.slug} />;
+  return <DamageCalculatorView hero={hero} locale="zh-TW" />;
 }

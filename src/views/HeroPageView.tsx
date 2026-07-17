@@ -4,7 +4,7 @@ import {
   getKeywordsForHero,
 } from '@/lib/data';
 import { getLocalizedFaqs } from '@/lib/hero-faq';
-import { getLocalizedGuide } from '@/lib/hero-playbook';
+import { getHeroPlaybook, getLocalizedGuide } from '@/lib/hero-playbook';
 import { createT, localePath, type Locale } from '@/lib/i18n';
 import { translateRole } from '@/lib/locale-labels';
 import { getHeroDisplayName } from '@/lib/locale-names';
@@ -96,6 +96,22 @@ export function HeroPageView({
   const guideSlug = guideArticle?.slug;
   const showFeaturedSeoBlocks = isFeaturedHero(hero.slug);
   const showLocalizedLongform = locale === 'en' || locale === 'zh-TW';
+  const buildItemNotes = getHeroPlaybook(hero, locale).itemNotes;
+  const buildClientHero = {
+    slug: hero.slug,
+    lane: hero.lane,
+    build: hero.build,
+    buildZh: hero.buildZh,
+    builds: hero.builds,
+    buildsZh: hero.buildsZh,
+  };
+  const skillClientHero = {
+    slug: hero.slug,
+    avatar: hero.avatar,
+    avatarFallback: hero.avatarFallback,
+    skills: hero.skills,
+    skillsZh: hero.skillsZh,
+  };
 
   // Build FAQ → learn article links
   const faqArticleLinks = Object.fromEntries(
@@ -179,7 +195,7 @@ export function HeroPageView({
             </h2>
             <p className="mb-4 text-sm text-gray-400">{t('hero.buildIntro')}</p>
             <BuildPhilosophyCard hero={hero} locale={locale} />
-            <BuildBlock hero={hero} locale={locale} />
+            <BuildBlock hero={buildClientHero} itemNotes={buildItemNotes} locale={locale} />
           </section>
 
           {showFeaturedSeoBlocks ? <HeroBuildVariants hero={hero} locale={locale} /> : null}
@@ -196,7 +212,7 @@ export function HeroPageView({
                 <h3 className="mb-1 text-sm font-semibold text-gray-400">{t('hero.skillOrderTitle')}</h3>
                 <SkillOrderBlock hero={hero} locale={locale} />
               </div>
-              <SkillBlock hero={hero} locale={locale} />
+              <SkillBlock hero={skillClientHero} locale={locale} />
             </section>
           ) : null}
 

@@ -1,7 +1,6 @@
 import type { HeroBuildItem } from '@/types/hero';
 import { getItemById } from '@/lib/data';
-import { getHeroPlaybook } from '@/lib/hero-playbook';
-import type { Hero } from '@/types/hero';
+import type { HeroItemNote } from '@/types/hero';
 import { createT, type Locale } from '@/lib/i18n';
 import { translateItemName } from '@/lib/locale-names';
 
@@ -17,17 +16,16 @@ function itemStatsSummary(locale: Locale): string {
 }
 
 export function BuildTable({
-  hero,
   items,
+  itemNotes,
   locale = 'en',
 }: {
-  hero: Hero;
   items: HeroBuildItem[];
+  itemNotes: HeroItemNote[];
   locale?: Locale;
 }) {
   const t = createT(locale);
-  const notes = getHeroPlaybook(hero, locale).itemNotes;
-  const noteBySlot = new Map(notes.map((n) => [n.slot, n.why]));
+  const noteBySlot = new Map(itemNotes.map((n) => [n.slot, n.why]));
 
   const rows = items.filter((b) => b.name && b.name !== 'Data unavailable');
   if (!rows.length) return null;

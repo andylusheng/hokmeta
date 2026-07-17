@@ -18,7 +18,10 @@ export function getHeroNameZh(slug: string): string | undefined {
 }
 
 /** Primary display name for UI (zh-TW uses Traditional Chinese when mapped). */
-export function getHeroDisplayName(hero: Hero, locale: Locale): string {
+export function getHeroDisplayName(
+  hero: Pick<Hero, 'slug' | 'name' | 'nameZh'>,
+  locale: Locale
+): string {
   if (locale === 'zh-TW') {
     return hero.nameZh || HERO_ZH[hero.slug] || hero.name;
   }

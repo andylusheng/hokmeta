@@ -1,5 +1,5 @@
 import { notFound } from 'next/navigation';
-import { heroes, items, getHeroBySlug } from '@/lib/data';
+import { heroes, getHeroBySlug } from '@/lib/data';
 import { buildMetadata, defaultTitle } from '@/lib/seo';
 import { BuildCompareView } from '@/views/BuildCompareView';
 
@@ -36,5 +36,5 @@ export default function ZhTWHeroBuildComparePage({
   const hero = getHeroBySlug(params.slug);
   if (!hero) notFound();
 
-  return <BuildCompareView heroes={heroes} items={items} locale="zh-TW" initialHeroSlug={hero.slug} />;
+  return <BuildCompareView hero={hero} locale="zh-TW" />;
 }

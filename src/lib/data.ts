@@ -2,7 +2,7 @@ import heroesData from '../../data/heroes.json';
 import itemsData from '../../data/items.json';
 import keywordsData from '../../data/keywords.json';
 import siteConfig from '../../config/site.json';
-import { getLocalizedBuildPresets } from '@/lib/hero-locale-data';
+import { getLocalizedBuildPresets, type HeroBuildSource } from '@/lib/hero-locale-data';
 import type { Locale } from '@/lib/i18n';
 import type {
   GameItem,
@@ -40,11 +40,17 @@ export function getHeroBySlug(slug: string): Hero | undefined {
   return heroes.find((h) => h.slug === slug);
 }
 
-export function getHeroBuildPresets(hero: Hero, locale: Locale = 'en'): HeroBuildPreset[] {
+export function getHeroBuildPresets(
+  hero: HeroBuildSource,
+  locale: Locale = 'en'
+): HeroBuildPreset[] {
   return getLocalizedBuildPresets(hero, locale);
 }
 
-export function defaultBuildPresetIndex(hero: Hero, locale: Locale = 'en'): number {
+export function defaultBuildPresetIndex(
+  hero: HeroBuildSource & Pick<Hero, 'lane'>,
+  locale: Locale = 'en'
+): number {
   const presets = getHeroBuildPresets(hero, locale);
   if (!presets.length) return 0;
   if (hero.lane) {

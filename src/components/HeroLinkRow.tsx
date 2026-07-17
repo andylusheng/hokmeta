@@ -40,7 +40,7 @@ export function HeroLinkRow({
   className = '',
   nameClassName = 'truncate text-sm font-medium text-hok-gold group-hover:text-white',
 }: {
-  hero: Hero;
+  hero: Pick<Hero, 'slug' | 'name' | 'nameZh' | 'avatar' | 'avatarFallback'>;
   locale?: Locale;
   href?: string;
   avatarSize?: number;

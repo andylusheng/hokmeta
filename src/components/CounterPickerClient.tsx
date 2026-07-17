@@ -1,18 +1,18 @@
 'use client';
 
 import Link from 'next/link';
-import { useMemo, useState } from 'react';
-import type { GameItem, Hero } from '@/types/hero';
+import { useEffect, useMemo, useState } from 'react';
 import { HeroSelect } from '@/components/HeroSelect';
 import { HeroLinkRow } from '@/components/HeroLinkRow';
 import { createT, localePath, type Locale } from '@/lib/i18n';
 import { getHeroDisplayName } from '@/lib/locale-names';
 import { translateLane, translateRole } from '@/lib/locale-labels';
+import { loadToolData, type ToolData, type ToolHero, type ToolItem } from '@/lib/tool-data';
 
 type DraftAdvice = {
-  hero: Hero;
+  hero: ToolHero;
   score: number;
-  matchedEnemies: Hero[];
+  matchedEnemies: ToolHero[];
   reasons: string[];
 };
 
@@ -36,7 +36,7 @@ function formatRate(value: number | null | undefined): string {
   return value == null ? 'n/a' : `${value.toFixed(1)}%`;
 }
 
-function counterNamesFor(enemy: Hero, heroes: Hero[]): string[] {
+function counterNamesFor(enemy: ToolHero, heroes: ToolHero[]): string[] {
   const direct = (enemy.counteredBy || []).filter((name) => name && name !== 'Data unavailable');
   const reverse = heroes
     .filter((candidate) => (candidate.counters || []).some((name) => namesMatch(name, enemy.name)))
@@ -44,14 +44,14 @@ function counterNamesFor(enemy: Hero, heroes: Hero[]): string[] {
   return Array.from(new Set([...direct, ...reverse]));
 }
 
-function countersEnemy(candidate: Hero, enemy: Hero, heroes: Hero[]): boolean {
+function countersEnemy(candidate: ToolHero, enemy: ToolHero, heroes: ToolHero[]): boolean {
   return (
     counterNamesFor(enemy, heroes).some((name) => namesMatch(name, candidate.name)) ||
     (candidate.counters || []).some((name) => namesMatch(name, enemy.name))
   );
 }
 
-function roleCounterBonus(candidate: Hero, enemy: Hero): number {
+function roleCounterBonus(candidate: ToolHero, enemy: ToolHero): number {
   if (enemy.role === 'Marksman' || enemy.role === 'Mage') {
     return candidate.role === 'Assassin' || candidate.role === 'Warrior' ? 8 : 0;
   }
@@ -67,13 +67,13 @@ function roleCounterBonus(candidate: Hero, enemy: Hero): number {
   return 0;
 }
 
-function buildDraftAdvice(heroes: Hero[], enemies: Hero[]): DraftAdvice[] {
+function buildDraftAdvice(heroes: ToolHero[], enemies: ToolHero[]): DraftAdvice[] {
   const enemySlugs = new Set(enemies.map((hero) => hero.slug));
 
   return heroes
     .filter((candidate) => !enemySlugs.has(candidate.slug))
     .map((candidate) => {
-      const matchedEnemies: Hero[] = [];
+      const matchedEnemies: ToolHero[] = [];
       const reasons: string[] = [];
       let score = tierScore[candidate.tier] ?? 0;
       score += Math.max(0, (candidate.winRate ?? 49) - 49) * 2;
@@ -119,7 +119,7 @@ function buildDraftAdvice(heroes: Hero[], enemies: Hero[]): DraftAdvice[] {
     .slice(0, 6);
 }
 
-function buildBanList(enemies: Hero[]): Hero[] {
+function buildBanList(enemies: ToolHero[]): ToolHero[] {
   return [...enemies].sort((a, b) => {
     const scoreA =
       (tierScore[a.tier] ?? 0) * 3 +
@@ -135,13 +135,13 @@ function buildBanList(enemies: Hero[]): Hero[] {
   });
 }
 
-function itemByName(items: GameItem[], names: string[]): GameItem[] {
+function itemByName(items: ToolItem[], names: string[]): ToolItem[] {
   return names
     .map((name) => items.find((item) => namesMatch(item.name, name)))
-    .filter((item): item is GameItem => Boolean(item));
+    .filter((item): item is ToolItem => Boolean(item));
 }
 
-function recommendedItems(items: GameItem[], enemies: Hero[]): { title: string; items: GameItem[]; note: string }[] {
+function recommendedItems(items: ToolItem[], enemies: ToolHero[]): { title: string; items: ToolItem[]; note: string }[] {
   const physicalPressure = enemies.filter((hero) =>
     ['Marksman', 'Assassin', 'Warrior'].includes(hero.role)
   ).length;
@@ -150,7 +150,7 @@ function recommendedItems(items: GameItem[], enemies: Hero[]): { title: string; 
     ['Tank', 'Warrior', 'Support'].includes(hero.role)
   ).length;
 
-  const groups: { title: string; items: GameItem[]; note: string }[] = [];
+  const groups: { title: string; items: ToolItem[]; note: string }[] = [];
   if (physicalPressure >= 2 || enemies.some((hero) => hero.role === 'Marksman')) {
     groups.push({
       title: 'Physical pressure',
@@ -182,7 +182,7 @@ function recommendedItems(items: GameItem[], enemies: Hero[]): { title: string; 
   return groups;
 }
 
-function fightPlan(enemies: Hero[]): string[] {
+function fightPlan(enemies: ToolHero[]): string[] {
   const roles = new Set(enemies.map((hero) => hero.role));
   const plan: string[] = [];
   if (roles.has('Marksman')) {
@@ -201,12 +201,35 @@ function fightPlan(enemies: Hero[]): string[] {
 }
 
 export function CounterPickerClient({
+  locale = 'en',
+}: {
+  locale?: Locale;
+}) {
+  const [data, setData] = useState<ToolData | null>(null);
+  const [error, setError] = useState(false);
+
+  useEffect(() => {
+    loadToolData().then(setData).catch(() => setError(true));
+  }, []);
+
+  if (error) {
+    return <p className="card text-sm text-red-200">Counter data could not be loaded. Refresh the page and try again.</p>;
+  }
+
+  if (!data) {
+    return <p className="card text-sm text-gray-400">Loading counter data...</p>;
+  }
+
+  return <CounterPickerWorkspace heroes={data.heroes} items={data.items} locale={locale} />;
+}
+
+function CounterPickerWorkspace({
   heroes,
   items,
   locale = 'en',
 }: {
-  heroes: Hero[];
-  items: GameItem[];
+  heroes: ToolHero[];
+  items: ToolItem[];
   locale?: Locale;
 }) {
   const t = createT(locale);
@@ -217,7 +240,7 @@ export function CounterPickerClient({
     () =>
       enemySlugs
         .map((slug) => heroes.find((hero) => hero.slug === slug))
-        .filter((hero): hero is Hero => Boolean(hero)),
+        .filter((hero): hero is ToolHero => Boolean(hero)),
     [heroes, enemySlugs]
   );
   const draftHero = heroes.find((hero) => hero.slug === draftSlug);

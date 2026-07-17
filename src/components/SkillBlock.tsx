@@ -22,7 +22,7 @@ export function SkillBlock({
   hero,
   locale = 'en',
 }: {
-  hero: Hero;
+  hero: Pick<Hero, 'slug' | 'avatar' | 'avatarFallback' | 'skills' | 'skillsZh'>;
   locale?: Locale;
 }) {
   const t = createT(locale);

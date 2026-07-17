@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useMemo, useState } from 'react';
-import type { Hero } from '@/types/hero';
+import type { Hero, HeroItemNote } from '@/types/hero';
 import { defaultBuildPresetIndex, getHeroBuildPresets } from '@/lib/data';
 import { BuildTable } from '@/components/BuildTable';
 import { createT, type Locale } from '@/lib/i18n';
@@ -26,9 +26,11 @@ function presetHintKey(label: string, lane?: string | null): string | null {
 
 export function BuildBlock({
   hero,
+  itemNotes,
   locale = 'en',
 }: {
-  hero: Hero;
+  hero: Pick<Hero, 'slug' | 'lane' | 'build' | 'buildZh' | 'builds' | 'buildsZh'>;
+  itemNotes: HeroItemNote[];
   locale?: Locale;
 }) {
   const t = createT(locale);
@@ -88,7 +90,7 @@ export function BuildBlock({
           </div>
         </div>
       )}
-      <BuildTable hero={hero} items={current.items} locale={locale} />
+      <BuildTable items={current.items} itemNotes={itemNotes} locale={locale} />
     </div>
   );
 }

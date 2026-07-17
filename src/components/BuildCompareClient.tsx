@@ -1,9 +1,9 @@
 'use client';
 
 import { useEffect, useMemo, useState } from 'react';
-import type { GameItem, Hero, HeroBuildPreset } from '@/types/hero';
 import { HeroSelect } from '@/components/HeroSelect';
 import { createT, type Locale } from '@/lib/i18n';
+import { loadToolData, type ToolData, type ToolBuildPreset, type ToolHero, type ToolItem } from '@/lib/tool-data';
 import {
   calculateDamage,
   defenseMultiplier,
@@ -36,6 +36,9 @@ const copy = {
     details: 'Damage sources',
     beta: 'Beta data: damage formulas use current item stats and the beta 602 defense formula. Hero scaling profiles are still being verified.',
     noItems: 'No item',
+    loading: 'Loading comparison data…',
+    loadError: 'Comparison data could not be loaded. Refresh the page and try again.',
+    targetTemplates: 'Target templates', target: 'Target', defense: 'Defense', autoConclusions: 'Auto conclusions', tank: 'Stronger into tanks', survival: 'Better survival', squishy: 'Squishy burst', overall: 'Best overall damage',
   },
   'zh-TW': {
     hero: '英雄',
@@ -59,15 +62,22 @@ const copy = {
     details: '傷害來源',
     beta: 'Beta 數據：計算使用目前裝備屬性與 beta 602 防禦公式，英雄倍率仍在校準。',
     noItems: '空格',
+    loading: '正在載入對比資料…',
+    loadError: '無法載入對比資料，請重新整理頁面後再試。',
+    targetTemplates: '目標模板', target: '目標', defense: '防禦', autoConclusions: '自動結論', tank: '對坦克更強', survival: '生存能力更好', squishy: '脆皮爆發', overall: '整體傷害最佳',
   },
-  id: null,
-  fil: null,
+  id: {
+    hero: 'Hero', level: 'Level hero', skillLevel: 'Level skill', basicAttacks: 'Basic attack', buildA: 'Build A', buildB: 'Build B', preset: 'Preset', custom: 'Kustom', addItem: 'Tambah item', remove: 'Hapus', search: 'Cari equipment...', result: 'Hasil perbandingan', winner: 'Damage lebih tinggi', tie: 'Output mirip', damage: 'Damage aktual', raw: 'Damage mentah', delta: 'Selisih', stats: 'Stat inti', details: 'Sumber damage', beta: 'Data beta: rumus damage memakai stat item saat ini dan rumus defense beta 602. Profil scaling hero masih diverifikasi.', noItems: 'Tanpa item', loading: 'Memuat data perbandingan…', loadError: 'Data perbandingan tidak dapat dimuat. Coba muat ulang halaman.', targetTemplates: 'Template target', target: 'Target', defense: 'Defense', autoConclusions: 'Kesimpulan otomatis', tank: 'Lebih kuat melawan tank', survival: 'Survivability lebih baik', squishy: 'Burst untuk hero tipis', overall: 'Damage keseluruhan terbaik',
+  },
+  fil: {
+    hero: 'Hero', level: 'Hero level', skillLevel: 'Skill level', basicAttacks: 'Basic attacks', buildA: 'Build A', buildB: 'Build B', preset: 'Preset', custom: 'Custom', addItem: 'Magdagdag ng item', remove: 'Alisin', search: 'Maghanap ng equipment...', result: 'Comparison result', winner: 'Mas mataas na damage', tie: 'Magkalapit ang output', damage: 'Actual damage', raw: 'Raw damage', delta: 'Difference', stats: 'Core stats', details: 'Damage sources', beta: 'Beta data: ginagamit ng damage formula ang kasalukuyang item stats at beta 602 defense formula. Vine-verify pa ang hero scaling profiles.', noItems: 'Walang item', loading: 'Naglo-load ng comparison data…', loadError: 'Hindi ma-load ang comparison data. I-refresh ang page.', targetTemplates: 'Target templates', target: 'Target', defense: 'Defense', autoConclusions: 'Automatic conclusions', tank: 'Mas malakas laban sa tanks', survival: 'Mas magandang survival', squishy: 'Burst laban sa squishy', overall: 'Pinakamahusay na overall damage',
+  },
 } as const;
 
 const buildCompareCopy = {
   ...copy,
-  id: copy.en,
-  fil: copy.en,
+  id: copy.id,
+  fil: copy.fil,
 };
 
 type Side = 'a' | 'b';
@@ -80,18 +90,18 @@ function pct(value: number): string {
   return `${Math.round(value * 100)}%`;
 }
 
-function buildIdsFromPreset(preset?: HeroBuildPreset): string[] {
+function buildIdsFromPreset(preset?: ToolBuildPreset): string[] {
   return preset ? getBuildItemIds(preset.items).slice(0, 6) : [];
 }
 
-function defaultBuildIds(hero: Hero): string[] {
+function defaultBuildIds(hero: ToolHero): string[] {
   return getBuildItemIds(hero.build).slice(0, 6);
 }
 
-function itemById(items: GameItem[], ids: string[]): GameItem[] {
+function itemById(items: ToolItem[], ids: string[]): ToolItem[] {
   return ids
     .map((id) => items.find((item) => item.id === id))
-    .filter((item): item is GameItem => Boolean(item));
+    .filter((item): item is ToolItem => Boolean(item));
 }
 
 function winnerLabel(resultA: DamageResult, resultB: DamageResult, labels: { a: string; b: string }, tie: string): string {
@@ -113,13 +123,34 @@ function compareNumber(a: number, b: number, labels: { a: string; b: string }, t
 }
 
 export function BuildCompareClient({
+  locale = 'en',
+  initialHeroSlug,
+}: {
+  locale?: Locale;
+  initialHeroSlug?: string;
+}) {
+  const c = buildCompareCopy[locale];
+  const [data, setData] = useState<ToolData | null>(null);
+  const [error, setError] = useState(false);
+
+  useEffect(() => {
+    loadToolData().then(setData).catch(() => setError(true));
+  }, []);
+
+  if (error) return <p className="card text-sm text-red-200">{c.loadError}</p>;
+  if (!data) return <p className="card text-sm text-gray-400">{c.loading}</p>;
+
+  return <BuildCompareWorkspace heroes={data.heroes} items={data.items} locale={locale} initialHeroSlug={initialHeroSlug} />;
+}
+
+function BuildCompareWorkspace({
   heroes,
   items,
   locale = 'en',
   initialHeroSlug,
 }: {
-  heroes: Hero[];
-  items: GameItem[];
+  heroes: ToolHero[];
+  items: ToolItem[];
   locale?: Locale;
   initialHeroSlug?: string;
 }) {
@@ -257,7 +288,7 @@ export function BuildCompareClient({
     }
   }
 
-  function buildPanel(side: Side, title: string, selected: GameItem[], selectedPreset: string) {
+  function buildPanel(side: Side, title: string, selected: ToolItem[], selectedPreset: string) {
     return (
       <section className="card">
         <div className="mb-4 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
@@ -321,7 +352,7 @@ export function BuildCompareClient({
 
       <section className="card">
         <h2 className="section-title">{c.hero}</h2>
-        <HeroSelect heroes={heroes} value={hero.slug} onChange={setSlug} />
+        <HeroSelect heroes={heroes} value={hero.slug} onChange={setSlug} locale={locale} />
         <div className="mt-4 grid gap-3 sm:grid-cols-3">
           <label>
             <span className="mb-2 block text-sm text-gray-400">{c.level}</span>
@@ -404,16 +435,16 @@ export function BuildCompareClient({
       </section>
 
       <section className="card">
-        <h2 className="section-title">Target templates</h2>
+        <h2 className="section-title">{c.targetTemplates}</h2>
         <div className="overflow-x-auto">
           <table className="min-w-full text-sm">
             <thead className="text-left text-gray-400">
               <tr>
-                <th className="py-2 pr-4">Target</th>
+                <th className="py-2 pr-4">{c.target}</th>
                 <th className="py-2 pr-4">{c.buildA}</th>
                 <th className="py-2 pr-4">{c.buildB}</th>
-                <th className="py-2 pr-4">Winner</th>
-                <th className="py-2 pr-4">Defense</th>
+                <th className="py-2 pr-4">{c.winner}</th>
+                <th className="py-2 pr-4">{c.defense}</th>
               </tr>
             </thead>
             <tbody>
@@ -440,10 +471,10 @@ export function BuildCompareClient({
       </section>
 
       <section className="card">
-        <h2 className="section-title">Auto conclusions</h2>
+        <h2 className="section-title">{c.autoConclusions}</h2>
         <div className="grid gap-3 md:grid-cols-4">
           <div className="rounded border border-hok-border bg-hok-dark p-4">
-            <p className="text-sm text-gray-400">Stronger into tanks</p>
+            <p className="text-sm text-gray-400">{c.tank}</p>
             <p className="mt-1 text-xl font-bold text-white">
               {winnerLabel(tankTemplate.a, tankTemplate.b, { a: c.buildA, b: c.buildB }, c.tie)}
             </p>
@@ -452,7 +483,7 @@ export function BuildCompareClient({
             </p>
           </div>
           <div className="rounded border border-hok-border bg-hok-dark p-4">
-            <p className="text-sm text-gray-400">Better survival</p>
+            <p className="text-sm text-gray-400">{c.survival}</p>
             <p className="mt-1 text-xl font-bold text-white">
               {compareNumber(survivalA, survivalB, { a: c.buildA, b: c.buildB }, c.tie)}
             </p>
@@ -461,7 +492,7 @@ export function BuildCompareClient({
             </p>
           </div>
           <div className="rounded border border-hok-border bg-hok-dark p-4">
-            <p className="text-sm text-gray-400">Squishy burst</p>
+            <p className="text-sm text-gray-400">{c.squishy}</p>
             <p className="mt-1 text-xl font-bold text-white">
               {winnerLabel(marksmanTemplate.a, marksmanTemplate.b, { a: c.buildA, b: c.buildB }, c.tie)}
             </p>
@@ -470,7 +501,7 @@ export function BuildCompareClient({
             </p>
           </div>
           <div className="rounded border border-hok-gold/40 bg-hok-gold/10 p-4">
-            <p className="text-sm text-gray-300">Best overall damage</p>
+            <p className="text-sm text-gray-300">{c.overall}</p>
             <p className="mt-1 text-xl font-bold text-white">
               {compareNumber(overallA, overallB, { a: c.buildA, b: c.buildB }, c.tie)}
             </p>
