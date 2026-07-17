@@ -61,9 +61,12 @@ export function HeroSplash({
             {lane}
           </span>
         </div>
-        <h1 className="font-display text-3xl font-black text-white sm:text-4xl lg:text-5xl">
-          {heroTitle}
-        </h1>
+        <p className="text-xs font-semibold uppercase tracking-wide text-hok-gold">
+          {t('home.splashFeaturedLabel')}
+        </p>
+        <h2 className="mt-2 font-display text-3xl font-black text-white sm:text-4xl lg:text-5xl">
+          {t('home.splashFeaturedTitle', { name: heroTitle })}
+        </h2>
         <p className="mt-4 text-sm leading-relaxed text-gray-300 sm:text-base">
           {summary}
         </p>

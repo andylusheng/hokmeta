@@ -10,16 +10,16 @@
   "laneZh": "對抗路",
   "difficulty": "Medium",
   "tier": "A",
-  "winRate": 51.35,
-  "pickRate": 0.68,
-  "banRate": 0.65,
-  "rank": 40,
+  "winRate": 50.71,
+  "pickRate": 0.82,
+  "banRate": 0.61,
+  "rank": 51,
   "avatar": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/eHvcCJb0.png",
   "avatarFallback": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/121/121.jpg",
   "heroCover": "https://camp.honorofkings.com/social/game/src/image_hero_cover_1275*718/FH2KyyWN.jpg",
   "tencentId": 121,
   "dataSource": "Camp HOK bilingual (primary)",
-  "dataUpdated": "2026-06-27",
+  "dataUpdated": "2026-07-16",
   "skills": [
     {
       "slot": "passive",
@@ -83,271 +83,124 @@
   "build": [
     {
       "slot": 1,
-      "itemId": "1728",
-      "name": "Golden Blade",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1728.png",
-      "description": "MATK +150, ASPD +20%, MSPD +7.5%\nKeeps enhancing BA"
+      "itemId": "1333",
+      "name": "Ominous Premonition",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1333.png",
+      "description": "PDEF +300, HP +1,200\nSlows attackers"
     },
     {
       "slot": 2,
+      "itemId": "1422",
+      "name": "Boots of Resistance",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1422.png",
+      "description": "MDEF +100, PDEF +50, MSPD +50\nShortens crowd control"
+    },
+    {
+      "slot": 3,
       "itemId": "1240",
       "name": "Insatiable Tome",
       "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1240.png",
       "description": "MATK +160, Magical Lifesteal +24%, HP +750\nLifesteal increases CDR"
     },
     {
-      "slot": 3,
-      "itemId": "1727",
-      "name": "Twilight Stream",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1727.png",
-      "description": "MATK +160, CDR +10%, Max HP +500\nBoosts Magical Pierce"
-    },
-    {
       "slot": 4,
-      "itemId": "1332",
-      "name": "Overlord's Platemail",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1332.png",
-      "description": "HP +1,800, PDEF +160, MDEF +80\nExtra HP"
+      "itemId": "1128",
+      "name": "Deepfrost Siege",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1128.png",
+      "description": "PATK +70, ASPD +25%, HP +750\nBAs slow"
     },
     {
       "slot": 5,
-      "itemId": "1337",
-      "name": "Sage's Sanctuary",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
-      "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
+      "itemId": "1127",
+      "name": "Destiny",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+      "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
     },
     {
       "slot": 6,
-      "itemId": "1242",
-      "name": "Enigma - Moon Goddess",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1242.png",
-      "description": "MATK +160, CDR +7.5%, Magical Lifesteal +12%\nTemp. invincibility"
+      "itemId": "1328",
+      "name": "Blood Rage",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1328.png",
+      "description": "PATK +75, HP +900\nTrades HP for shield"
     }
   ],
   "buildZh": [
     {
       "slot": 1,
-      "itemId": "1728",
-      "name": "金色聖劍",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1728.png",
-      "description": "+150點法攻+20%攻速+7.5%移速\n持續強化普攻"
+      "itemId": "1333",
+      "name": "不祥徵兆",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1333.png",
+      "description": "+300點物防+1200點生命值\n受擊時將敵人減速"
     },
     {
       "slot": 2,
-      "itemId": "1240",
-      "name": "噬神之書",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1240.png",
-      "description": "+160點法攻+24%法術吸血+750點生命值 吸血拉長冷卻時間"
+      "itemId": "1422",
+      "name": "抵抗之靴",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1422.png",
+      "description": "+100點法防+50點物防+50點移速\n減少被控時間"
     },
     {
       "slot": 3,
-      "itemId": "1727",
-      "name": "日暮之流",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1727.png",
-      "description": "+160點法攻+10%減冷卻時間+500點最大生命值\n提升法術穿透"
+      "itemId": "1240",
+      "name": "噬神之書",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1240.png",
+      "description": "+160點法攻 +24%法術吸血 \n+750點生命值吸血拉長冷卻時間"
     },
     {
       "slot": 4,
-      "itemId": "1332",
-      "name": "霸者重裝",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1332.png",
-      "description": "+1800點生命值+160點物防+80點法防\n提高額外生命值"
+      "itemId": "1128",
+      "name": "寒霜襲侵",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1128.png",
+      "description": "+70點攻擊+25%攻速+750點生命值\n普攻減移速"
     },
     {
       "slot": 5,
-      "itemId": "1337",
-      "name": "賢者的庇護",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
-      "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+      "itemId": "1127",
+      "name": "名刀・司命",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+      "description": "+75點攻擊+15%攻速+500點生命值\n保命"
     },
     {
       "slot": 6,
-      "itemId": "1242",
-      "name": "難知・月神",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1242.png",
-      "description": "+160點法攻 +7.5%減冷卻時間\n+12%法術吸血暫時無敵"
+      "itemId": "1328",
+      "name": "血魔之怒",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1328.png",
+      "description": "+75點攻擊+900點生命值 \n犧牲生命值換取護盾值"
     }
   ],
   "builds": [
     {
       "id": "camp-0",
-      "label": "Mi Yue Top",
+      "label": "Principal.",
       "lane": "Top",
       "items": [
         {
           "slot": 1,
-          "itemId": "1728",
-          "name": "Golden Blade",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1728.png",
-          "description": "MATK +150, ASPD +20%, MSPD +7.5%\nKeeps enhancing BA"
-        },
-        {
-          "slot": 2,
-          "itemId": "1240",
-          "name": "Insatiable Tome",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1240.png",
-          "description": "MATK +160, Magical Lifesteal +24%, HP +750\nLifesteal increases CDR"
-        },
-        {
-          "slot": 3,
-          "itemId": "1727",
-          "name": "Twilight Stream",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1727.png",
-          "description": "MATK +160, CDR +10%, Max HP +500\nBoosts Magical Pierce"
-        },
-        {
-          "slot": 4,
-          "itemId": "1332",
-          "name": "Overlord's Platemail",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1332.png",
-          "description": "HP +1,800, PDEF +160, MDEF +80\nExtra HP"
-        },
-        {
-          "slot": 5,
-          "itemId": "1337",
-          "name": "Sage's Sanctuary",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
-          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
-        },
-        {
-          "slot": 6,
-          "itemId": "1242",
-          "name": "Enigma - Moon Goddess",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1242.png",
-          "description": "MATK +160, CDR +7.5%, Magical Lifesteal +12%\nTemp. invincibility"
-        }
-      ]
-    },
-    {
-      "id": "camp-1",
-      "label": "Jungling 1",
-      "lane": "Jungle",
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1136",
-          "name": "Shadow Ripper",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1136.png",
-          "description": "PATK +45, ASPD +35%, Crit Rate +20%, MSPD +7.5%\nCrits boosts ASPD"
-        },
-        {
-          "slot": 2,
-          "itemId": "1240",
-          "name": "Insatiable Tome",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1240.png",
-          "description": "MATK +160, Magical Lifesteal +24%, HP +750\nLifesteal increases CDR"
-        },
-        {
-          "slot": 3,
-          "itemId": "1531",
-          "name": "Runeblade",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1531.png",
-          "description": "MATK +130, CDR +10%, MSPD +5%\nMonster kills boost MATK"
-        },
-        {
-          "slot": 4,
-          "itemId": "1727",
-          "name": "Twilight Stream",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1727.png",
-          "description": "MATK +160, CDR +10%, Max HP +500\nBoosts Magical Pierce"
-        },
-        {
-          "slot": 5,
-          "itemId": "1337",
-          "name": "Sage's Sanctuary",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
-          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
-        },
-        {
-          "slot": 6,
-          "itemId": "1242",
-          "name": "Enigma - Moon Goddess",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1242.png",
-          "description": "MATK +160, CDR +7.5%, Magical Lifesteal +12%\nTemp. invincibility"
-        }
-      ]
-    },
-    {
-      "id": "camp-2",
-      "label": "VonkaID",
-      "lane": "Top",
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1136",
-          "name": "Shadow Ripper",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1136.png",
-          "description": "PATK +45, ASPD +35%, Crit Rate +20%, MSPD +7.5%\nCrits boosts ASPD"
-        },
-        {
-          "slot": 2,
-          "itemId": "1235",
-          "name": "Mask of Agony",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1235.png",
-          "description": "MATK +100, CDR +7.5%, HP +900\nBoosts skill damage"
-        },
-        {
-          "slot": 3,
-          "itemId": "1727",
-          "name": "Twilight Stream",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1727.png",
-          "description": "MATK +160, CDR +10%, Max HP +500\nBoosts Magical Pierce"
-        },
-        {
-          "slot": 4,
-          "itemId": "1240",
-          "name": "Insatiable Tome",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1240.png",
-          "description": "MATK +160, Magical Lifesteal +24%, HP +750\nLifesteal increases CDR"
-        },
-        {
-          "slot": 5,
-          "itemId": "1335",
-          "name": "Succubus Cloak",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
-          "description": "MDEF +300, HP +1,100\nNegates magical damage"
-        },
-        {
-          "slot": 6,
-          "itemId": "1232",
-          "name": "Savant's Wrath",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1232.png",
-          "description": "MATK +210\nGreatly boosts MATK"
-        }
-      ]
-    },
-    {
-      "id": "camp-3",
-      "label": "Preajustes",
-      "lane": "Top",
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1136",
-          "name": "Shadow Ripper",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1136.png",
-          "description": "PATK +45, ASPD +35%, Crit Rate +20%, MSPD +7.5%\nCrits boosts ASPD"
-        },
-        {
-          "slot": 2,
-          "itemId": "1240",
-          "name": "Insatiable Tome",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1240.png",
-          "description": "MATK +160, Magical Lifesteal +24%, HP +750\nLifesteal increases CDR"
-        },
-        {
-          "slot": 3,
           "itemId": "1333",
           "name": "Ominous Premonition",
           "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1333.png",
           "description": "PDEF +300, HP +1,200\nSlows attackers"
         },
         {
+          "slot": 2,
+          "itemId": "1422",
+          "name": "Boots of Resistance",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1422.png",
+          "description": "MDEF +100, PDEF +50, MSPD +50\nShortens crowd control"
+        },
+        {
+          "slot": 3,
+          "itemId": "1240",
+          "name": "Insatiable Tome",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1240.png",
+          "description": "MATK +160, Magical Lifesteal +24%, HP +750\nLifesteal increases CDR"
+        },
+        {
           "slot": 4,
-          "itemId": "11311",
-          "name": "Pure Sky",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/11311.png",
-          "description": "PATK +80, PDEF +150, CDR +10%\nTemp. damage reduction"
+          "itemId": "1128",
+          "name": "Deepfrost Siege",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1128.png",
+          "description": "PATK +70, ASPD +25%, HP +750\nBAs slow"
         },
         {
           "slot": 5,
@@ -364,188 +217,139 @@
           "description": "PATK +75, HP +900\nTrades HP for shield"
         }
       ]
-    }
-  ],
-  "buildsZh": [
+    },
     {
-      "id": "camp-0",
-      "label": "Mi Yue Top",
+      "id": "camp-1",
+      "label": "Yue'er",
       "lane": "Top",
       "items": [
         {
           "slot": 1,
-          "itemId": "1728",
-          "name": "金色聖劍",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1728.png",
-          "description": "+150點法攻+20%攻速+7.5%移速\n持續強化普攻"
+          "itemId": "1727",
+          "name": "Twilight Stream",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1727.png",
+          "description": "MATK +160, CDR +10%, Max HP +500\nBoosts Magical Pierce"
         },
         {
           "slot": 2,
-          "itemId": "1240",
-          "name": "噬神之書",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1240.png",
-          "description": "+160點法攻+24%法術吸血+750點生命值 吸血拉長冷卻時間"
+          "itemId": "1333",
+          "name": "Ominous Premonition",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1333.png",
+          "description": "PDEF +300, HP +1,200\nSlows attackers"
         },
         {
           "slot": 3,
-          "itemId": "1727",
-          "name": "日暮之流",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1727.png",
-          "description": "+160點法攻+10%減冷卻時間+500點最大生命值\n提升法術穿透"
-        },
-        {
-          "slot": 4,
-          "itemId": "1332",
-          "name": "霸者重裝",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1332.png",
-          "description": "+1800點生命值+160點物防+80點法防\n提高額外生命值"
-        },
-        {
-          "slot": 5,
-          "itemId": "1337",
-          "name": "賢者的庇護",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
-          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
-        },
-        {
-          "slot": 6,
-          "itemId": "1242",
-          "name": "難知・月神",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1242.png",
-          "description": "+160點法攻 +7.5%減冷卻時間\n+12%法術吸血暫時無敵"
-        }
-      ]
-    },
-    {
-      "id": "camp-1",
-      "label": "Jungling 1",
-      "lane": "Jungle",
-      "items": [
-        {
-          "slot": 1,
           "itemId": "1136",
-          "name": "影刃",
+          "name": "Shadow Ripper",
           "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1136.png",
-          "description": "+45點攻擊 +35%攻速+20%暴擊+7.5%移速\n暴擊增加攻速"
-        },
-        {
-          "slot": 2,
-          "itemId": "1240",
-          "name": "噬神之書",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1240.png",
-          "description": "+160點法攻+24%法術吸血+750點生命值 吸血拉長冷卻時間"
-        },
-        {
-          "slot": 3,
-          "itemId": "1531",
-          "name": "符文大劍",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1531.png",
-          "description": "+130法攻+10%冷縮+5%移速\n打野怪加法強"
+          "description": "PATK +45, ASPD +35%, Crit Rate +20%, MSPD +7.5%\nCrits boosts ASPD"
         },
         {
           "slot": 4,
-          "itemId": "1727",
-          "name": "日暮之流",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1727.png",
-          "description": "+160點法攻+10%減冷卻時間+500點最大生命值\n提升法術穿透"
+          "itemId": "1421",
+          "name": "Boots of Fortitude",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1421.png",
+          "description": "PDEF +100, MDEF +50, MSPD +50\nReduces physical damage"
         },
         {
           "slot": 5,
           "itemId": "1337",
-          "name": "賢者的庇護",
+          "name": "Sage's Sanctuary",
           "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
-          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
         },
         {
           "slot": 6,
-          "itemId": "1242",
-          "name": "難知・月神",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1242.png",
-          "description": "+160點法攻 +7.5%減冷卻時間\n+12%法術吸血暫時無敵"
+          "itemId": "1127",
+          "name": "Destiny",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
         }
       ]
     },
     {
       "id": "camp-2",
-      "label": "VonkaID",
+      "label": "Mejores",
       "lane": "Top",
       "items": [
         {
           "slot": 1,
-          "itemId": "1136",
-          "name": "影刃",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1136.png",
-          "description": "+45點攻擊 +35%攻速+20%暴擊+7.5%移速\n暴擊增加攻速"
+          "itemId": "1240",
+          "name": "Insatiable Tome",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1240.png",
+          "description": "MATK +160, Magical Lifesteal +24%, HP +750\nLifesteal increases CDR"
         },
         {
           "slot": 2,
-          "itemId": "1235",
-          "name": "痛苦面具",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1235.png",
-          "description": "+100點法攻+7.5%減冷卻時間+900點生命值 \n技能額外傷害"
+          "itemId": "1727",
+          "name": "Twilight Stream",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1727.png",
+          "description": "MATK +160, CDR +10%, Max HP +500\nBoosts Magical Pierce"
         },
         {
           "slot": 3,
-          "itemId": "1727",
-          "name": "日暮之流",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1727.png",
-          "description": "+160點法攻+10%減冷卻時間+500點最大生命值\n提升法術穿透"
+          "itemId": "1331",
+          "name": "Blazing Cape",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1331.png",
+          "description": "PDEF +150, MDEF +150, HP +1,100\nArea burn & imperil"
         },
         {
           "slot": 4,
-          "itemId": "1240",
-          "name": "噬神之書",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1240.png",
-          "description": "+160點法攻+24%法術吸血+750點生命值 吸血拉長冷卻時間"
+          "itemId": "1136",
+          "name": "Shadow Ripper",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1136.png",
+          "description": "PATK +45, ASPD +35%, Crit Rate +20%, MSPD +7.5%\nCrits boosts ASPD"
         },
         {
           "slot": 5,
-          "itemId": "1335",
-          "name": "魔女斗篷",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
-          "description": "+300點法防+1100點生命值\n吸收法術傷害"
+          "itemId": "1337",
+          "name": "Sage's Sanctuary",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
         },
         {
           "slot": 6,
-          "itemId": "1232",
-          "name": "博學者之怒",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1232.png",
-          "description": "+210點法術攻擊\n大幅提升法強"
+          "itemId": "1242",
+          "name": "Enigma - Moon Goddess",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1242.png",
+          "description": "MATK +160, CDR +7.5%, Magical Lifesteal +12%\nTemp. invincibility"
         }
       ]
-    },
+    }
+  ],
+  "buildsZh": [
     {
-      "id": "camp-3",
-      "label": "Preajustes",
+      "id": "camp-0",
+      "label": "Principal.",
       "lane": "Top",
       "items": [
         {
           "slot": 1,
-          "itemId": "1136",
-          "name": "影刃",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1136.png",
-          "description": "+45點攻擊 +35%攻速+20%暴擊+7.5%移速\n暴擊增加攻速"
-        },
-        {
-          "slot": 2,
-          "itemId": "1240",
-          "name": "噬神之書",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1240.png",
-          "description": "+160點法攻+24%法術吸血+750點生命值 吸血拉長冷卻時間"
-        },
-        {
-          "slot": 3,
           "itemId": "1333",
           "name": "不祥徵兆",
           "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1333.png",
           "description": "+300點物防+1200點生命值\n受擊時將敵人減速"
         },
         {
+          "slot": 2,
+          "itemId": "1422",
+          "name": "抵抗之靴",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1422.png",
+          "description": "+100點法防+50點物防+50點移速\n減少被控時間"
+        },
+        {
+          "slot": 3,
+          "itemId": "1240",
+          "name": "噬神之書",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1240.png",
+          "description": "+160點法攻 +24%法術吸血 \n+750點生命值吸血拉長冷卻時間"
+        },
+        {
           "slot": 4,
-          "itemId": "11311",
-          "name": "純淨蒼穹",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/11311.png",
-          "description": "+80點攻擊+150點物防+10%冷卻時間縮減\n暫時增加免傷"
+          "itemId": "1128",
+          "name": "寒霜襲侵",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1128.png",
+          "description": "+70點攻擊+25%攻速+750點生命值\n普攻減移速"
         },
         {
           "slot": 5,
@@ -560,6 +364,104 @@
           "name": "血魔之怒",
           "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1328.png",
           "description": "+75點攻擊+900點生命值 \n犧牲生命值換取護盾值"
+        }
+      ]
+    },
+    {
+      "id": "camp-1",
+      "label": "Yue'er",
+      "lane": "Top",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1727",
+          "name": "日暮之流",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1727.png",
+          "description": "+160點法攻+10%減冷卻時間+500點最大生命值\n提升法術穿透"
+        },
+        {
+          "slot": 2,
+          "itemId": "1333",
+          "name": "不祥徵兆",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1333.png",
+          "description": "+300點物防+1200點生命值\n受擊時將敵人減速"
+        },
+        {
+          "slot": 3,
+          "itemId": "1136",
+          "name": "影刃",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1136.png",
+          "description": "+45點攻擊 +35%攻速+20%暴擊+7.5%移速\n暴擊增加攻速"
+        },
+        {
+          "slot": 4,
+          "itemId": "1421",
+          "name": "影忍之足",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1421.png",
+          "description": "+100點物防+50點法防+50點移速\n減少物理傷害"
+        },
+        {
+          "slot": 5,
+          "itemId": "1337",
+          "name": "賢者的庇護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+        },
+        {
+          "slot": 6,
+          "itemId": "1127",
+          "name": "名刀・司命",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "+75點攻擊+15%攻速+500點生命值\n保命"
+        }
+      ]
+    },
+    {
+      "id": "camp-2",
+      "label": "Mejores",
+      "lane": "Top",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1240",
+          "name": "噬神之書",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1240.png",
+          "description": "+160點法攻 +24%法術吸血 \n+750點生命值吸血拉長冷卻時間"
+        },
+        {
+          "slot": 2,
+          "itemId": "1727",
+          "name": "日暮之流",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1727.png",
+          "description": "+160點法攻+10%減冷卻時間+500點最大生命值\n提升法術穿透"
+        },
+        {
+          "slot": 3,
+          "itemId": "1331",
+          "name": "紅蓮斗篷",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1331.png",
+          "description": "+150點物防+150點法防+1100點生命值\n範圍灼燒重傷"
+        },
+        {
+          "slot": 4,
+          "itemId": "1136",
+          "name": "影刃",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1136.png",
+          "description": "+45點攻擊 +35%攻速+20%暴擊+7.5%移速\n暴擊增加攻速"
+        },
+        {
+          "slot": 5,
+          "itemId": "1337",
+          "name": "賢者的庇護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+        },
+        {
+          "slot": 6,
+          "itemId": "1242",
+          "name": "難知・月神",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1242.png",
+          "description": "+160點法攻 +7.5%減冷卻時間\n+12%法術吸血暫時無敵"
         }
       ]
     }
@@ -590,13 +492,13 @@
     "Dian Wei"
   ],
   "tips": [
-    "Mi Yue (Mage): Tier A — 51.35% WR (Camp HOK).",
+    "Mi Yue (Mage): Tier A — 50.71% WR (Camp HOK).",
     "Lane: Clash Lane.",
-    "Build: Golden Blade, Insatiable Tome, Twilight Stream."
+    "Build: Ominous Premonition, Boots of Resistance, Insatiable Tome."
   ],
   "tipsZh": [
-    "羋月（對抗路）：梯度 A，勝率 51.35%（Camp HOK）。",
-    "出裝：金色聖劍、噬神之書、日暮之流."
+    "羋月（對抗路）：梯度 A，勝率 50.71%（Camp HOK）。",
+    "出裝：不祥徵兆、抵抗之靴、噬神之書."
   ],
   "patchHistory": [
     {
@@ -628,12 +530,12 @@
     {
       "id": "faq-good-season",
       "question": "Is Mi Yue good in current season?",
-      "answer": "Mi Yue is Tier A Mage with 51.35% win rate, 0.68% pick rate, and 0.65% ban rate (Camp HOK international)."
+      "answer": "Mi Yue is Tier A Mage with 50.71% win rate, 0.82% pick rate, and 0.61% ban rate (Camp HOK international)."
     },
     {
       "id": "faq-best-build",
       "question": "What is the best Mi Yue build?",
-      "answer": "Recommended: Golden Blade, Insatiable Tome, Twilight Stream, Overlord's Platemail, Sage's Sanctuary, Enigma - Moon Goddess."
+      "answer": "Recommended: Ominous Premonition, Boots of Resistance, Insatiable Tome, Deepfrost Siege, Destiny, Blood Rage."
     },
     {
       "id": "faq-counter",
@@ -645,12 +547,12 @@
     {
       "id": "faq-good-season",
       "question": "羋月 這版本適合上分嗎？",
-      "answer": "羋月 為 A 梯度，勝率 51.35%、選取 0.68%、禁用 0.65%（Camp HOK 國際服）。"
+      "answer": "羋月 為 A 梯度，勝率 50.71%、選取 0.82%、禁用 0.61%（Camp HOK 國際服）。"
     },
     {
       "id": "faq-best-build",
       "question": "羋月 出裝怎麼搭配？",
-      "answer": "推薦：金色聖劍、噬神之書、日暮之流、霸者重裝、賢者的庇護、難知・月神."
+      "answer": "推薦：不祥徵兆、抵抗之靴、噬神之書、寒霜襲侵、名刀・司命、血魔之怒."
     },
     {
       "id": "faq-counter",
@@ -659,15 +561,15 @@
     }
   ],
   "metaAnalysis": [
-    "Mi Yue win rate 51.35% (Camp HOK, 2026-06-27).",
-    "Pick rate 0.68%.",
-    "Ban rate 0.65%.",
+    "Mi Yue win rate 50.71% (Camp HOK, 2026-07-16).",
+    "Pick rate 0.82%.",
+    "Ban rate 0.61%.",
     "Counters: Mai Shiranui, Wukong. Weak into: Cao Cao, Dharma, Dian Wei."
   ],
   "metaAnalysisZh": [
-    "羋月 勝率 51.35%（Camp HOK，2026-06-27）",
-    "選取率 0.68%",
-    "禁用率 0.65%",
+    "羋月 勝率 50.71%（Camp HOK，2026-07-16）",
+    "選取率 0.82%",
+    "禁用率 0.61%",
     "克制：Mai Shiranui、Wukong；被克制：Cao Cao、Dharma、Dian Wei"
   ],
   "guide": {

@@ -9,17 +9,17 @@
   "lane": "Jungling",
   "laneZh": "打野",
   "difficulty": "Medium",
-  "tier": "A",
+  "tier": "B",
   "winRate": 51.57,
-  "pickRate": 0.88,
-  "banRate": 0.19,
-  "rank": 36,
+  "pickRate": 0.51,
+  "banRate": 0.15,
+  "rank": 25,
   "avatar": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/k3w1wjDA.png",
   "avatarFallback": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/131/131.jpg",
   "heroCover": "https://camp.honorofkings.com/social/game/src/image_hero_cover_1275*718/9fQGYlvc.jpg",
   "tencentId": 131,
   "dataSource": "Camp HOK bilingual (primary)",
-  "dataUpdated": "2026-06-27",
+  "dataUpdated": "2026-07-16",
   "skills": [
     {
       "slot": "passive",
@@ -83,10 +83,10 @@
   "build": [
     {
       "slot": 1,
-      "itemId": "1137",
-      "name": "Axe of Torment",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1137.png",
-      "description": "PATK +80, CDR +10%, HP +500\nAnti-squishy"
+      "itemId": "1159",
+      "name": "Tempest",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1159.png",
+      "description": "PATK +50, ASPD +30%, Max HP +600\nBoosts BA damage"
     },
     {
       "slot": 2,
@@ -97,40 +97,40 @@
     },
     {
       "slot": 3,
-      "itemId": "1134",
-      "name": "Master Sword",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1134.png",
-      "description": "PATK +55, Crit Rate +20%, HP +600\nEnhances BAs"
-    },
-    {
-      "slot": 4,
-      "itemId": "1533",
-      "name": "Rapacious Bite",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1533.png",
-      "description": "PATK +90, MSPD +5%, CDR +7.5%\nMonster kills boost ATK"
-    },
-    {
-      "slot": 5,
       "itemId": "1138",
       "name": "Overlord's Might",
       "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1138.png",
       "description": "PATK +150, CDR +5%\nHigh-damage attack"
     },
     {
-      "slot": 6,
+      "slot": 4,
+      "itemId": "1337",
+      "name": "Sage's Sanctuary",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+      "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
+    },
+    {
+      "slot": 5,
       "itemId": "1127",
       "name": "Destiny",
       "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
       "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
+    },
+    {
+      "slot": 6,
+      "itemId": "1328",
+      "name": "Blood Rage",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1328.png",
+      "description": "PATK +75, HP +900\nTrades HP for shield"
     }
   ],
   "buildZh": [
     {
       "slot": 1,
-      "itemId": "1137",
-      "name": "暗影戰斧",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1137.png",
-      "description": "+80點攻擊+10%減冷卻時間+500點生命值\n打血薄用"
+      "itemId": "1159",
+      "name": "逐風",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1159.png",
+      "description": "+50點攻擊+30%攻速+600點最大生命值\n普攻傷害提升"
     },
     {
       "slot": 2,
@@ -141,36 +141,85 @@
     },
     {
       "slot": 3,
-      "itemId": "1134",
-      "name": "宗師之力",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1134.png",
-      "description": "+55點攻擊+20%暴擊+600點生命值……\n強化普攻"
-    },
-    {
-      "slot": 4,
-      "itemId": "1533",
-      "name": "貪婪之噬",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1533.png",
-      "description": "+90攻擊+5%移速+7.5%冷縮\n打野怪加攻擊"
-    },
-    {
-      "slot": 5,
       "itemId": "1138",
       "name": "強者破軍",
       "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1138.png",
       "description": "+150點攻擊+5%減冷卻時間\n高額攻擊"
     },
     {
-      "slot": 6,
+      "slot": 4,
+      "itemId": "1337",
+      "name": "賢者的庇護",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+      "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+    },
+    {
+      "slot": 5,
       "itemId": "1127",
       "name": "名刀・司命",
       "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
       "description": "+75點攻擊+15%攻速+500點生命值\n保命"
+    },
+    {
+      "slot": 6,
+      "itemId": "1328",
+      "name": "血魔之怒",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1328.png",
+      "description": "+75點攻擊+900點生命值 \n犧牲生命值換取護盾值"
     }
   ],
   "builds": [
     {
       "id": "camp-0",
+      "label": "mike",
+      "lane": "Jungle",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1159",
+          "name": "Tempest",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1159.png",
+          "description": "PATK +50, ASPD +30%, Max HP +600\nBoosts BA damage"
+        },
+        {
+          "slot": 2,
+          "itemId": "1132",
+          "name": "Bloodweeper",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1132.png",
+          "description": "PATK +85, Lifesteal +25%, HP +500\nPhysical Lifesteal"
+        },
+        {
+          "slot": 3,
+          "itemId": "1138",
+          "name": "Overlord's Might",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1138.png",
+          "description": "PATK +150, CDR +5%\nHigh-damage attack"
+        },
+        {
+          "slot": 4,
+          "itemId": "1337",
+          "name": "Sage's Sanctuary",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
+        },
+        {
+          "slot": 5,
+          "itemId": "1127",
+          "name": "Destiny",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
+        },
+        {
+          "slot": 6,
+          "itemId": "1328",
+          "name": "Blood Rage",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1328.png",
+          "description": "PATK +75, HP +900\nTrades HP for shield"
+        }
+      ]
+    },
+    {
+      "id": "camp-1",
       "label": "BEST",
       "lane": "Jungle",
       "items": [
@@ -219,7 +268,7 @@
       ]
     },
     {
-      "id": "camp-1",
+      "id": "camp-2",
       "label": "R9・Davvv",
       "lane": "Jungle",
       "items": [
@@ -268,7 +317,7 @@
       ]
     },
     {
-      "id": "camp-2",
+      "id": "camp-3",
       "label": "Sasin's",
       "lane": "Jungle",
       "items": [
@@ -315,60 +364,60 @@
           "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
         }
       ]
-    },
-    {
-      "id": "camp-3",
-      "label": "HeXinLiang",
-      "lane": "Jungle",
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1137",
-          "name": "Axe of Torment",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1137.png",
-          "description": "PATK +80, CDR +10%, HP +500\nAnti-squishy"
-        },
-        {
-          "slot": 2,
-          "itemId": "1132",
-          "name": "Bloodweeper",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1132.png",
-          "description": "PATK +85, Lifesteal +25%, HP +500\nPhysical Lifesteal"
-        },
-        {
-          "slot": 3,
-          "itemId": "1138",
-          "name": "Overlord's Might",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1138.png",
-          "description": "PATK +150, CDR +5%\nHigh-damage attack"
-        },
-        {
-          "slot": 4,
-          "itemId": "1127",
-          "name": "Destiny",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
-          "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
-        },
-        {
-          "slot": 5,
-          "itemId": "1533",
-          "name": "Rapacious Bite",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1533.png",
-          "description": "PATK +90, MSPD +5%, CDR +7.5%\nMonster kills boost ATK"
-        },
-        {
-          "slot": 6,
-          "itemId": "1337",
-          "name": "Sage's Sanctuary",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
-          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
-        }
-      ]
     }
   ],
   "buildsZh": [
     {
       "id": "camp-0",
+      "label": "mike",
+      "lane": "Jungle",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1159",
+          "name": "逐風",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1159.png",
+          "description": "+50點攻擊+30%攻速+600點最大生命值\n普攻傷害提升"
+        },
+        {
+          "slot": 2,
+          "itemId": "1132",
+          "name": "泣血之刃",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1132.png",
+          "description": "+85點攻擊+25%吸血+500點生命值\n物理吸血"
+        },
+        {
+          "slot": 3,
+          "itemId": "1138",
+          "name": "強者破軍",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1138.png",
+          "description": "+150點攻擊+5%減冷卻時間\n高額攻擊"
+        },
+        {
+          "slot": 4,
+          "itemId": "1337",
+          "name": "賢者的庇護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+        },
+        {
+          "slot": 5,
+          "itemId": "1127",
+          "name": "名刀・司命",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "+75點攻擊+15%攻速+500點生命值\n保命"
+        },
+        {
+          "slot": 6,
+          "itemId": "1328",
+          "name": "血魔之怒",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1328.png",
+          "description": "+75點攻擊+900點生命值 \n犧牲生命值換取護盾值"
+        }
+      ]
+    },
+    {
+      "id": "camp-1",
       "label": "BEST",
       "lane": "Jungle",
       "items": [
@@ -417,7 +466,7 @@
       ]
     },
     {
-      "id": "camp-1",
+      "id": "camp-2",
       "label": "R9・Davvv",
       "lane": "Jungle",
       "items": [
@@ -466,7 +515,7 @@
       ]
     },
     {
-      "id": "camp-2",
+      "id": "camp-3",
       "label": "Sasin's",
       "lane": "Jungle",
       "items": [
@@ -513,55 +562,6 @@
           "description": "+75點攻擊+15%攻速+500點生命值\n保命"
         }
       ]
-    },
-    {
-      "id": "camp-3",
-      "label": "HeXinLiang",
-      "lane": "Jungle",
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1137",
-          "name": "暗影戰斧",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1137.png",
-          "description": "+80點攻擊+10%減冷卻時間+500點生命值\n打血薄用"
-        },
-        {
-          "slot": 2,
-          "itemId": "1132",
-          "name": "泣血之刃",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1132.png",
-          "description": "+85點攻擊+25%吸血+500點生命值\n物理吸血"
-        },
-        {
-          "slot": 3,
-          "itemId": "1138",
-          "name": "強者破軍",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1138.png",
-          "description": "+150點攻擊+5%減冷卻時間\n高額攻擊"
-        },
-        {
-          "slot": 4,
-          "itemId": "1127",
-          "name": "名刀・司命",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
-          "description": "+75點攻擊+15%攻速+500點生命值\n保命"
-        },
-        {
-          "slot": 5,
-          "itemId": "1533",
-          "name": "貪婪之噬",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1533.png",
-          "description": "+90攻擊+5%移速+7.5%冷縮\n打野怪加攻擊"
-        },
-        {
-          "slot": 6,
-          "itemId": "1337",
-          "name": "賢者的庇護",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
-          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
-        }
-      ]
     }
   ],
   "arcana": [
@@ -591,13 +591,13 @@
     "Shi"
   ],
   "tips": [
-    "Li Bai (Assassin): Tier A — 51.57% WR (Camp HOK).",
+    "Li Bai (Assassin): Tier B — 51.57% WR (Camp HOK).",
     "Lane: Jungling.",
-    "Build: Axe of Torment, Bloodweeper, Master Sword."
+    "Build: Tempest, Bloodweeper, Overlord's Might."
   ],
   "tipsZh": [
-    "李白（打野）：梯度 A，勝率 51.57%（Camp HOK）。",
-    "出裝：暗影戰斧、泣血之刃、宗師之力."
+    "李白（打野）：梯度 B，勝率 51.57%（Camp HOK）。",
+    "出裝：逐風、泣血之刃、強者破軍."
   ],
   "patchHistory": [
     {
@@ -717,12 +717,12 @@
     {
       "id": "faq-good-season",
       "question": "Is Li Bai good in current season?",
-      "answer": "Li Bai is Tier A Assassin with 51.57% win rate, 0.88% pick rate, and 0.19% ban rate (Camp HOK international)."
+      "answer": "Li Bai is Tier B Assassin with 51.57% win rate, 0.51% pick rate, and 0.15% ban rate (Camp HOK international)."
     },
     {
       "id": "faq-best-build",
       "question": "What is the best Li Bai build?",
-      "answer": "Recommended: Axe of Torment, Bloodweeper, Master Sword, Rapacious Bite, Overlord's Might, Destiny."
+      "answer": "Recommended: Tempest, Bloodweeper, Overlord's Might, Sage's Sanctuary, Destiny, Blood Rage."
     },
     {
       "id": "faq-counter",
@@ -734,12 +734,12 @@
     {
       "id": "faq-good-season",
       "question": "李白 這版本適合上分嗎？",
-      "answer": "李白 為 A 梯度，勝率 51.57%、選取 0.88%、禁用 0.19%（Camp HOK 國際服）。"
+      "answer": "李白 為 B 梯度，勝率 51.57%、選取 0.51%、禁用 0.15%（Camp HOK 國際服）。"
     },
     {
       "id": "faq-best-build",
       "question": "李白 出裝怎麼搭配？",
-      "answer": "推薦：暗影戰斧、泣血之刃、宗師之力、貪婪之噬、強者破軍、名刀・司命."
+      "answer": "推薦：逐風、泣血之刃、強者破軍、賢者的庇護、名刀・司命、血魔之怒."
     },
     {
       "id": "faq-counter",
@@ -748,15 +748,15 @@
     }
   ],
   "metaAnalysis": [
-    "Li Bai win rate 51.57% (Camp HOK, 2026-06-27).",
-    "Pick rate 0.88%.",
-    "Ban rate 0.19%.",
+    "Li Bai win rate 51.57% (Camp HOK, 2026-07-16).",
+    "Pick rate 0.51%.",
+    "Ban rate 0.15%.",
     "Counters: Dun, Lian Po, Liu Shan. Weak into: Garo, Mozi, Shi."
   ],
   "metaAnalysisZh": [
-    "李白 勝率 51.57%（Camp HOK，2026-06-27）",
-    "選取率 0.88%",
-    "禁用率 0.19%",
+    "李白 勝率 51.57%（Camp HOK，2026-07-16）",
+    "選取率 0.51%",
+    "禁用率 0.15%",
     "克制：Dun、Lian Po、Liu Shan；被克制：Garo、Mozi、Shi"
   ],
   "guide": {

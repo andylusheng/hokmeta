@@ -34,15 +34,46 @@ export function HomePageView({ locale = 'en' }: { locale?: Locale }) {
     <div className="container-wide">
       <JsonLd data={listSchema} />
 
+      <section className="mb-8 max-w-4xl">
+        <h1 className="font-display text-3xl font-black text-white sm:text-4xl lg:text-5xl">
+          {t('home.headline')}
+        </h1>
+        <p className="mt-4 text-base leading-relaxed text-gray-300 sm:text-lg">
+          {t('home.subtitle', { count: heroes.length })}
+        </p>
+      </section>
+
       <HeroSplash hero={splashHero} locale={locale} />
 
       <section className="mb-10">
         <h2 className="sr-only">{t('home.dbTitle')}</h2>
-        <p className="mb-6 max-w-3xl text-base leading-relaxed text-gray-400">
-          {t('home.subtitle', { count: heroes.length })}
-        </p>
         <StatsStrip locale={locale} />
         <HubNavGrid locale={locale} />
+      </section>
+
+      <section className="defer-section mb-12 grid gap-4 lg:grid-cols-2">
+        <div className="rounded border border-hok-border bg-hok-card p-5">
+          <h2 className="text-xl font-bold text-white">{t('home.decisionsTitle')}</h2>
+          <p className="mt-3 text-sm leading-6 text-gray-300">{t('home.decisionsBody')}</p>
+          <div className="mt-4 flex flex-wrap gap-x-4 gap-y-2 text-sm font-semibold">
+            <Link href={localePath(locale, '/heroes')} className="text-hok-gold hover:underline">
+              {t('home.decisionsHeroesCta')}
+            </Link>
+            <Link href={localePath(locale, '/tools')} className="text-hok-gold hover:underline">
+              {t('home.decisionsToolsCta')}
+            </Link>
+          </div>
+        </div>
+        <div className="rounded border border-hok-border bg-hok-card p-5">
+          <h2 className="text-xl font-bold text-white">{t('home.trendsTitle')}</h2>
+          <p className="mt-3 text-sm leading-6 text-gray-300">{t('home.trendsBody')}</p>
+          <Link
+            href={localePath(locale, '/hero-trends')}
+            className="mt-4 inline-flex text-sm font-semibold text-hok-gold hover:underline"
+          >
+            {t('home.trendsCta')}
+          </Link>
+        </div>
       </section>
 
       <div className="defer-section">
@@ -72,6 +103,22 @@ export function HomePageView({ locale = 'en' }: { locale?: Locale }) {
           </Link>
         </div>
         <HeroAvatarGrid heroes={browseHeroes} locale={locale} />
+      </section>
+
+      <section className="defer-section mb-12 max-w-4xl">
+        <h2 className="section-title">{t('home.faqTitle')}</h2>
+        <div className="grid gap-3 md:grid-cols-3">
+          {[
+            ['faqWhatQuestion', 'faqWhatAnswer'],
+            ['faqUpdateQuestion', 'faqUpdateAnswer'],
+            ['faqBuildQuestion', 'faqBuildAnswer'],
+          ].map(([question, answer]) => (
+            <div key={question} className="rounded border border-hok-border bg-hok-card p-4">
+              <h3 className="text-sm font-bold text-white">{t(`home.${question}`)}</h3>
+              <p className="mt-2 text-sm leading-6 text-gray-300">{t(`home.${answer}`)}</p>
+            </div>
+          ))}
+        </div>
       </section>
 
     </div>

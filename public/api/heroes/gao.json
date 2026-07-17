@@ -10,16 +10,16 @@
   "laneZh": "中路",
   "difficulty": "Medium",
   "tier": "B",
-  "winRate": 51.16,
+  "winRate": 51.04,
   "pickRate": 0.41,
-  "banRate": 0.05,
-  "rank": 46,
+  "banRate": 0.03,
+  "rank": 40,
   "avatar": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/QWFCuWNn.png",
   "avatarFallback": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/115/115.jpg",
   "heroCover": "https://camp.honorofkings.com/social/game/src/image_hero_cover_1275*718/Eb9l4wn1.jpg",
   "tencentId": 115,
   "dataSource": "Camp HOK bilingual (primary)",
-  "dataUpdated": "2026-06-27",
+  "dataUpdated": "2026-07-16",
   "skills": [
     {
       "slot": "passive",
@@ -83,108 +83,209 @@
   "build": [
     {
       "slot": 1,
-      "itemId": "1240",
-      "name": "Insatiable Tome",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1240.jpg",
-      "description": "Magical Lifesteal"
+      "itemId": "1227",
+      "name": "Ardent Dominion",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1227.png",
+      "description": "MATK +150, Magical Lifesteal +12%, MSPD +7.5%\nCleanse and shield at low HP"
     },
     {
       "slot": 2,
-      "itemId": "1422",
-      "name": "Boots of Resistance",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
-      "description": "Shortens CC"
+      "itemId": "1232",
+      "name": "Savant's Wrath",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1232.png",
+      "description": "MATK +210\nGreatly boosts MATK"
     },
     {
       "slot": 3,
-      "itemId": "1232",
-      "name": "Savant's Wrath",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1232.jpg",
-      "description": "Greatly boosts MATK"
+      "itemId": "1231",
+      "name": "Void Staff",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1231.png",
+      "description": "MATK +210, HP +500, CDR +5%\nAnti-tank"
     },
     {
       "slot": 4,
-      "itemId": "1231",
-      "name": "Void Staff",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1231.jpg",
-      "description": "Anti-tank"
+      "itemId": "1238",
+      "name": "Sage's Tome",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1238.png",
+      "description": "MATK +350, CDR +10%\nGreat for mages"
     },
     {
       "slot": 5,
-      "itemId": "1236",
-      "name": "Staves of Sorcery",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1236.jpg",
-      "description": "Enhances BA"
+      "itemId": "1337",
+      "name": "Sage's Sanctuary",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+      "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
     },
     {
       "slot": 6,
-      "itemId": "1239",
-      "name": "Splendor",
-      "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1239.jpg",
-      "description": "Temp. invincibility"
+      "itemId": "1127",
+      "name": "Destiny",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+      "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
     }
   ],
-  "buildZh": [],
+  "buildZh": [
+    {
+      "slot": 1,
+      "itemId": "1227",
+      "name": "熾熱支配",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1227.png",
+      "description": "+150點法攻+12%法術吸血+7.5%移速\n殘血解控加盾"
+    },
+    {
+      "slot": 2,
+      "itemId": "1232",
+      "name": "博學者之怒",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1232.png",
+      "description": "+210點法術攻擊\n大幅提升法強"
+    },
+    {
+      "slot": 3,
+      "itemId": "1231",
+      "name": "虛無法杖",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1231.png",
+      "description": "+210點法攻+500點生命值+5%減冷卻時間\n打坦克用"
+    },
+    {
+      "slot": 4,
+      "itemId": "1238",
+      "name": "賢者天書",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1238.png",
+      "description": "+350點法攻+10%減冷卻時間\n法師神裝"
+    },
+    {
+      "slot": 5,
+      "itemId": "1337",
+      "name": "賢者的庇護",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+      "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+    },
+    {
+      "slot": 6,
+      "itemId": "1127",
+      "name": "名刀・司命",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+      "description": "+75點攻擊+15%攻速+500點生命值\n保命"
+    }
+  ],
   "builds": [
     {
-      "id": "recommended",
-      "label": "Recommended",
-      "position": null,
-      "lane": null,
+      "id": "camp-0",
+      "label": "国服套装",
+      "lane": "Mid",
       "items": [
         {
           "slot": 1,
-          "itemId": "1240",
-          "name": "Insatiable Tome",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1240.jpg",
-          "description": "Magical Lifesteal"
+          "itemId": "1227",
+          "name": "Ardent Dominion",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1227.png",
+          "description": "MATK +150, Magical Lifesteal +12%, MSPD +7.5%\nCleanse and shield at low HP"
         },
         {
           "slot": 2,
-          "itemId": "1422",
-          "name": "Boots of Resistance",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1422.jpg",
-          "description": "Shortens CC"
+          "itemId": "1232",
+          "name": "Savant's Wrath",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1232.png",
+          "description": "MATK +210\nGreatly boosts MATK"
         },
         {
           "slot": 3,
-          "itemId": "1232",
-          "name": "Savant's Wrath",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1232.jpg",
-          "description": "Greatly boosts MATK"
+          "itemId": "1231",
+          "name": "Void Staff",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1231.png",
+          "description": "MATK +210, HP +500, CDR +5%\nAnti-tank"
         },
         {
           "slot": 4,
-          "itemId": "1231",
-          "name": "Void Staff",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1231.jpg",
-          "description": "Anti-tank"
+          "itemId": "1238",
+          "name": "Sage's Tome",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1238.png",
+          "description": "MATK +350, CDR +10%\nGreat for mages"
         },
         {
           "slot": 5,
-          "itemId": "1236",
-          "name": "Staves of Sorcery",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1236.jpg",
-          "description": "Enhances BA"
+          "itemId": "1337",
+          "name": "Sage's Sanctuary",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
         },
         {
           "slot": 6,
-          "itemId": "1239",
-          "name": "Splendor",
-          "icon": "https://game.gtimg.cn/images/yxzj/img201606/itemimg/1239.jpg",
-          "description": "Temp. invincibility"
+          "itemId": "1127",
+          "name": "Destiny",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
+        }
+      ]
+    }
+  ],
+  "buildsZh": [
+    {
+      "id": "camp-0",
+      "label": "国服套装",
+      "lane": "Mid",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1227",
+          "name": "熾熱支配",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1227.png",
+          "description": "+150點法攻+12%法術吸血+7.5%移速\n殘血解控加盾"
+        },
+        {
+          "slot": 2,
+          "itemId": "1232",
+          "name": "博學者之怒",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1232.png",
+          "description": "+210點法術攻擊\n大幅提升法強"
+        },
+        {
+          "slot": 3,
+          "itemId": "1231",
+          "name": "虛無法杖",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1231.png",
+          "description": "+210點法攻+500點生命值+5%減冷卻時間\n打坦克用"
+        },
+        {
+          "slot": 4,
+          "itemId": "1238",
+          "name": "賢者天書",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1238.png",
+          "description": "+350點法攻+10%減冷卻時間\n法師神裝"
+        },
+        {
+          "slot": 5,
+          "itemId": "1337",
+          "name": "賢者的庇護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+        },
+        {
+          "slot": 6,
+          "itemId": "1127",
+          "name": "名刀・司命",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "+75點攻擊+15%攻速+500點生命值\n保命"
         }
       ]
     }
   ],
   "arcana": [
-    "Nightmare"
+    "Lvl 5: Omen",
+    "Lvl 5: Nightmare",
+    "Lvl 5: Hunt"
   ],
-  "arcanaZh": [],
+  "arcanaZh": [
+    "5級：凶兆",
+    "5級：夢魘",
+    "5級：狩獵"
+  ],
   "spells": [
-    "Flash"
+    "Frenzy"
   ],
-  "spellsZh": [],
+  "spellsZh": [
+    "狂暴"
+  ],
   "counters": [
     "Mai Shiranui",
     "Wukong",
@@ -196,13 +297,13 @@
     "Dun"
   ],
   "tips": [
-    "Gao (Mage): Tier B — 51.16% WR (Camp HOK).",
+    "Gao (Mage): Tier B — 51.04% WR (Camp HOK).",
     "Lane: Mid Lane.",
-    "Build: Insatiable Tome, Boots of Resistance, Savant's Wrath."
+    "Build: Ardent Dominion, Savant's Wrath, Void Staff."
   ],
   "tipsZh": [
-    "高漸離（中路）：梯度 B，勝率 51.16%（Camp HOK）。",
-    "出裝：見出裝區."
+    "高漸離（中路）：梯度 B，勝率 51.04%（Camp HOK）。",
+    "出裝：熾熱支配、博學者之怒、虛無法杖."
   ],
   "patchHistory": [
     {
@@ -344,12 +445,12 @@
     {
       "id": "faq-good-season",
       "question": "Is Gao good in current season?",
-      "answer": "Gao is Tier B Mage with 51.16% win rate, 0.41% pick rate, and 0.05% ban rate (Camp HOK international)."
+      "answer": "Gao is Tier B Mage with 51.04% win rate, 0.41% pick rate, and 0.03% ban rate (Camp HOK international)."
     },
     {
       "id": "faq-best-build",
       "question": "What is the best Gao build?",
-      "answer": "Recommended: Insatiable Tome, Boots of Resistance, Savant's Wrath, Void Staff, Staves of Sorcery, Splendor."
+      "answer": "Recommended: Ardent Dominion, Savant's Wrath, Void Staff, Sage's Tome, Sage's Sanctuary, Destiny."
     },
     {
       "id": "faq-counter",
@@ -361,12 +462,12 @@
     {
       "id": "faq-good-season",
       "question": "高漸離 這版本適合上分嗎？",
-      "answer": "高漸離 為 B 梯度，勝率 51.16%、選取 0.41%、禁用 0.05%（Camp HOK 國際服）。"
+      "answer": "高漸離 為 B 梯度，勝率 51.04%、選取 0.41%、禁用 0.03%（Camp HOK 國際服）。"
     },
     {
       "id": "faq-best-build",
       "question": "高漸離 出裝怎麼搭配？",
-      "answer": "推薦：見本頁出裝區."
+      "answer": "推薦：熾熱支配、博學者之怒、虛無法杖、賢者天書、賢者的庇護、名刀・司命."
     },
     {
       "id": "faq-counter",
@@ -375,15 +476,15 @@
     }
   ],
   "metaAnalysis": [
-    "Gao win rate 51.16% (Camp HOK, 2026-06-27).",
+    "Gao win rate 51.04% (Camp HOK, 2026-07-16).",
     "Pick rate 0.41%.",
-    "Ban rate 0.05%.",
+    "Ban rate 0.03%.",
     "Counters: Mai Shiranui, Wukong, Xuance. Weak into: Li Xin, Kaizer, Dun."
   ],
   "metaAnalysisZh": [
-    "高漸離 勝率 51.16%（Camp HOK，2026-06-27）",
+    "高漸離 勝率 51.04%（Camp HOK，2026-07-16）",
     "選取率 0.41%",
-    "禁用率 0.05%",
+    "禁用率 0.03%",
     "克制：Mai Shiranui、Wukong、Xuance；被克制：Li Xin、Kaizer、Dun"
   ],
   "guide": {

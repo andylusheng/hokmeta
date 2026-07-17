@@ -9,17 +9,17 @@
   "lane": "Jungling",
   "laneZh": "打野",
   "difficulty": "Medium",
-  "tier": "A",
-  "winRate": 49.34,
-  "pickRate": 0.49,
-  "banRate": 0.58,
-  "rank": 87,
+  "tier": "B",
+  "winRate": 49.29,
+  "pickRate": 0.48,
+  "banRate": 0.48,
+  "rank": 85,
   "avatar": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/hwk1ad6d.png",
   "avatarFallback": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/153/153.jpg",
   "heroCover": "https://camp.honorofkings.com/social/game/src/image_hero_cover_1275*718/lMlG78jy.jpg",
   "tencentId": 153,
   "dataSource": "Camp HOK bilingual (primary)",
-  "dataUpdated": "2026-06-27",
+  "dataUpdated": "2026-07-16",
   "skills": [
     {
       "slot": "passive",
@@ -83,192 +83,94 @@
   "build": [
     {
       "slot": 1,
+      "itemId": "1533",
+      "name": "Rapacious Bite",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1533.png",
+      "description": "PATK +90, MSPD +5%, CDR +7.5%\nMonster kills boost ATK"
+    },
+    {
+      "slot": 2,
+      "itemId": "1134",
+      "name": "Master Sword",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1134.png",
+      "description": "PATK +55, Crit Rate +20%, HP +600\nEnhances BAs"
+    },
+    {
+      "slot": 3,
+      "itemId": "1138",
+      "name": "Overlord's Might",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1138.png",
+      "description": "PATK +150, CDR +5%\nHigh-damage attack"
+    },
+    {
+      "slot": 4,
+      "itemId": "1131",
+      "name": "Starbreaker",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1131.png",
+      "description": "PATK +90, HP +700, MSPD +7.5%\nAnti-tank"
+    },
+    {
+      "slot": 5,
       "itemId": "1337",
       "name": "Sage's Sanctuary",
       "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
       "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
     },
     {
-      "slot": 2,
+      "slot": 6,
       "itemId": "1127",
       "name": "Destiny",
       "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
       "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
-    },
-    {
-      "slot": 3,
-      "itemId": "11210",
-      "name": "Mortal Punisher",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/11210.png",
-      "description": "PATK +100, Lifesteal +20%, ASPD +20%\nLowers Health regen"
-    },
-    {
-      "slot": 4,
-      "itemId": "1328",
-      "name": "Blood Rage",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1328.png",
-      "description": "PATK +75, HP +900\nTrades HP for shield"
-    },
-    {
-      "slot": 5,
-      "itemId": "1350",
-      "name": "Ravage - Phantom",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1350.png",
-      "description": "PATK +75, HP +900\nTrades HP for shield"
-    },
-    {
-      "slot": 6,
-      "itemId": "1157",
-      "name": "Immovable - Sky Dome",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1157.png",
-      "description": "PATK +80, PDEF +150, CDR +10%\nTemp. damage reduction"
     }
   ],
   "buildZh": [
     {
       "slot": 1,
+      "itemId": "1533",
+      "name": "貪婪之噬",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1533.png",
+      "description": "+90攻擊+5%移速+7.5%冷縮\n打野怪加攻擊"
+    },
+    {
+      "slot": 2,
+      "itemId": "1134",
+      "name": "宗師之力",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1134.png",
+      "description": "+55點攻擊+20%暴擊+600點生命值……\n強化普攻"
+    },
+    {
+      "slot": 3,
+      "itemId": "1138",
+      "name": "強者破軍",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1138.png",
+      "description": "+150點攻擊+5%減冷卻時間\n高額攻擊"
+    },
+    {
+      "slot": 4,
+      "itemId": "1131",
+      "name": "碎星錘",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1131.png",
+      "description": "+90點攻擊+700點生命值+7.5%移速\n打坦克用"
+    },
+    {
+      "slot": 5,
       "itemId": "1337",
       "name": "賢者的庇護",
       "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
       "description": "+900點生命值+150點物防+150點法防……\n原地復活"
     },
     {
-      "slot": 2,
+      "slot": 6,
       "itemId": "1127",
       "name": "名刀・司命",
       "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
       "description": "+75點攻擊+15%攻速+500點生命值\n保命"
-    },
-    {
-      "slot": 3,
-      "itemId": "11210",
-      "name": "制裁之刃",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/11210.png",
-      "description": "+100點攻擊+20%吸血+20%攻速\n減少敵人回血"
-    },
-    {
-      "slot": 4,
-      "itemId": "1328",
-      "name": "血魔之怒",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1328.png",
-      "description": "+75點攻擊+900點生命值 \n犧牲生命值換取護盾值"
-    },
-    {
-      "slot": 5,
-      "itemId": "1350",
-      "name": "侵略・怒魂",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1350.png",
-      "description": "+75點攻擊+900點生命值\n犧牲生命值換取護盾值"
-    },
-    {
-      "slot": 6,
-      "itemId": "1157",
-      "name": "不動・天穹",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1157.png",
-      "description": "+80點攻擊+150點物防+10%冷卻時間縮減\n暫時增加免傷"
     }
   ],
   "builds": [
     {
       "id": "camp-0",
-      "label": "Kill & Run",
-      "lane": "Jungle",
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1337",
-          "name": "Sage's Sanctuary",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
-          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
-        },
-        {
-          "slot": 2,
-          "itemId": "1127",
-          "name": "Destiny",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
-          "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
-        },
-        {
-          "slot": 3,
-          "itemId": "11210",
-          "name": "Mortal Punisher",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/11210.png",
-          "description": "PATK +100, Lifesteal +20%, ASPD +20%\nLowers Health regen"
-        },
-        {
-          "slot": 4,
-          "itemId": "1328",
-          "name": "Blood Rage",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1328.png",
-          "description": "PATK +75, HP +900\nTrades HP for shield"
-        },
-        {
-          "slot": 5,
-          "itemId": "1350",
-          "name": "Ravage - Phantom",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1350.png",
-          "description": "PATK +75, HP +900\nTrades HP for shield"
-        },
-        {
-          "slot": 6,
-          "itemId": "1157",
-          "name": "Immovable - Sky Dome",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1157.png",
-          "description": "PATK +80, PDEF +150, CDR +10%\nTemp. damage reduction"
-        }
-      ]
-    },
-    {
-      "id": "camp-1",
-      "label": "Jungling 1",
-      "lane": "Jungle",
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1533",
-          "name": "Rapacious Bite",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1533.png",
-          "description": "PATK +90, MSPD +5%, CDR +7.5%\nMonster kills boost ATK"
-        },
-        {
-          "slot": 2,
-          "itemId": "1134",
-          "name": "Master Sword",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1134.png",
-          "description": "PATK +55, Crit Rate +20%, HP +600\nEnhances BAs"
-        },
-        {
-          "slot": 3,
-          "itemId": "1338",
-          "name": "Cuirass of Savagery",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1338.png",
-          "description": "PATK +35, PDEF +210, HP +900\nOffense & defense"
-        },
-        {
-          "slot": 4,
-          "itemId": "1131",
-          "name": "Starbreaker",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1131.png",
-          "description": "PATK +90, HP +700, MSPD +7.5%\nAnti-tank"
-        },
-        {
-          "slot": 5,
-          "itemId": "1337",
-          "name": "Sage's Sanctuary",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
-          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
-        },
-        {
-          "slot": 6,
-          "itemId": "1127",
-          "name": "Destiny",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
-          "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
-        }
-      ]
-    },
-    {
-      "id": "camp-2",
       "label": "Lanlingg",
       "lane": "Jungle",
       "items": [
@@ -320,104 +222,6 @@
   "buildsZh": [
     {
       "id": "camp-0",
-      "label": "Kill & Run",
-      "lane": "Jungle",
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1337",
-          "name": "賢者的庇護",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
-          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
-        },
-        {
-          "slot": 2,
-          "itemId": "1127",
-          "name": "名刀・司命",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
-          "description": "+75點攻擊+15%攻速+500點生命值\n保命"
-        },
-        {
-          "slot": 3,
-          "itemId": "11210",
-          "name": "制裁之刃",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/11210.png",
-          "description": "+100點攻擊+20%吸血+20%攻速\n減少敵人回血"
-        },
-        {
-          "slot": 4,
-          "itemId": "1328",
-          "name": "血魔之怒",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1328.png",
-          "description": "+75點攻擊+900點生命值 \n犧牲生命值換取護盾值"
-        },
-        {
-          "slot": 5,
-          "itemId": "1350",
-          "name": "侵略・怒魂",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1350.png",
-          "description": "+75點攻擊+900點生命值\n犧牲生命值換取護盾值"
-        },
-        {
-          "slot": 6,
-          "itemId": "1157",
-          "name": "不動・天穹",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1157.png",
-          "description": "+80點攻擊+150點物防+10%冷卻時間縮減\n暫時增加免傷"
-        }
-      ]
-    },
-    {
-      "id": "camp-1",
-      "label": "Jungling 1",
-      "lane": "Jungle",
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1533",
-          "name": "貪婪之噬",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1533.png",
-          "description": "+90攻擊+5%移速+7.5%冷縮\n打野怪加攻擊"
-        },
-        {
-          "slot": 2,
-          "itemId": "1134",
-          "name": "宗師之力",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1134.png",
-          "description": "+55點攻擊+20%暴擊+600點生命值……\n強化普攻"
-        },
-        {
-          "slot": 3,
-          "itemId": "1338",
-          "name": "暴烈之甲",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1338.png",
-          "description": "+35點攻擊+210點物防+900點生命值\n能抗能打"
-        },
-        {
-          "slot": 4,
-          "itemId": "1131",
-          "name": "碎星錘",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1131.png",
-          "description": "+90點攻擊+700點生命值+7.5%移速\n打坦克用"
-        },
-        {
-          "slot": 5,
-          "itemId": "1337",
-          "name": "賢者的庇護",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
-          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
-        },
-        {
-          "slot": 6,
-          "itemId": "1127",
-          "name": "名刀・司命",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
-          "description": "+75點攻擊+15%攻速+500點生命值\n保命"
-        }
-      ]
-    },
-    {
-      "id": "camp-2",
       "label": "Lanlingg",
       "lane": "Jungle",
       "items": [
@@ -468,13 +272,13 @@
   ],
   "arcana": [
     "Lvl 5: Mutation",
-    "Lvl 5: Hunt",
-    "Lvl 5: Stealth"
+    "Lvl 5: Stealth",
+    "Lvl 5: Eagle Eye"
   ],
   "arcanaZh": [
     "5級：異變",
-    "5級：狩獵",
-    "5級：隱匿"
+    "5級：隱匿",
+    "5級：鷹眼"
   ],
   "spells": [
     "Smite"
@@ -493,13 +297,13 @@
     "Daji"
   ],
   "tips": [
-    "Gao Changgong (Assassin): Tier A — 49.34% WR (Camp HOK).",
+    "Gao Changgong (Assassin): Tier B — 49.29% WR (Camp HOK).",
     "Lane: Jungling.",
-    "Build: Sage's Sanctuary, Destiny, Mortal Punisher."
+    "Build: Rapacious Bite, Master Sword, Overlord's Might."
   ],
   "tipsZh": [
-    "蘭陵王（打野）：梯度 A，勝率 49.34%（Camp HOK）。",
-    "出裝：賢者的庇護、名刀・司命、制裁之刃."
+    "蘭陵王（打野）：梯度 B，勝率 49.29%（Camp HOK）。",
+    "出裝：貪婪之噬、宗師之力、強者破軍."
   ],
   "patchHistory": [
     {
@@ -575,12 +379,12 @@
     {
       "id": "faq-good-season",
       "question": "Is Gao Changgong good in current season?",
-      "answer": "Gao Changgong is Tier A Assassin with 49.34% win rate, 0.49% pick rate, and 0.58% ban rate (Camp HOK international)."
+      "answer": "Gao Changgong is Tier B Assassin with 49.29% win rate, 0.48% pick rate, and 0.48% ban rate (Camp HOK international)."
     },
     {
       "id": "faq-best-build",
       "question": "What is the best Gao Changgong build?",
-      "answer": "Recommended: Sage's Sanctuary, Destiny, Mortal Punisher, Blood Rage, Ravage - Phantom, Immovable - Sky Dome."
+      "answer": "Recommended: Rapacious Bite, Master Sword, Overlord's Might, Starbreaker, Sage's Sanctuary, Destiny."
     },
     {
       "id": "faq-counter",
@@ -592,12 +396,12 @@
     {
       "id": "faq-good-season",
       "question": "蘭陵王 這版本適合上分嗎？",
-      "answer": "蘭陵王 為 A 梯度，勝率 49.34%、選取 0.49%、禁用 0.58%（Camp HOK 國際服）。"
+      "answer": "蘭陵王 為 B 梯度，勝率 49.29%、選取 0.48%、禁用 0.48%（Camp HOK 國際服）。"
     },
     {
       "id": "faq-best-build",
       "question": "蘭陵王 出裝怎麼搭配？",
-      "answer": "推薦：賢者的庇護、名刀・司命、制裁之刃、血魔之怒、侵略・怒魂、不動・天穹."
+      "answer": "推薦：貪婪之噬、宗師之力、強者破軍、碎星錘、賢者的庇護、名刀・司命."
     },
     {
       "id": "faq-counter",
@@ -606,15 +410,15 @@
     }
   ],
   "metaAnalysis": [
-    "Gao Changgong win rate 49.34% (Camp HOK, 2026-06-27).",
-    "Pick rate 0.49%.",
-    "Ban rate 0.58%.",
+    "Gao Changgong win rate 49.29% (Camp HOK, 2026-07-16).",
+    "Pick rate 0.48%.",
+    "Ban rate 0.48%.",
     "Counters: Angela, Daji, Cai Yan. Weak into: Athena, Hou Yi, Daji."
   ],
   "metaAnalysisZh": [
-    "蘭陵王 勝率 49.34%（Camp HOK，2026-06-27）",
-    "選取率 0.49%",
-    "禁用率 0.58%",
+    "蘭陵王 勝率 49.29%（Camp HOK，2026-07-16）",
+    "選取率 0.48%",
+    "禁用率 0.48%",
     "克制：Angela、Daji、Cai Yan；被克制：Athena、Hou Yi、Daji"
   ],
   "guide": {

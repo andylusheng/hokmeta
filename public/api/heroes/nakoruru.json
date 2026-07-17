@@ -10,16 +10,16 @@
   "laneZh": "打野",
   "difficulty": "Medium",
   "tier": "B",
-  "winRate": 50.65,
-  "pickRate": 0.61,
-  "banRate": 0.06,
-  "rank": 63,
+  "winRate": 50.56,
+  "pickRate": 0.55,
+  "banRate": 0.04,
+  "rank": 54,
   "avatar": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/H9WAmWdN.png",
   "avatarFallback": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/162/162.jpg",
   "heroCover": "https://camp.honorofkings.com/social/game/src/image_hero_cover_1275*718/aNTpLNiS.jpg",
   "tencentId": 162,
   "dataSource": "Camp HOK bilingual (primary)",
-  "dataUpdated": "2026-06-27",
+  "dataUpdated": "2026-07-16",
   "skills": [
     {
       "slot": "passive",
@@ -83,24 +83,24 @@
   "build": [
     {
       "slot": 1,
-      "itemId": "1137",
-      "name": "Axe of Torment",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1137.png",
-      "description": "PATK +80, CDR +10%, HP +500\nAnti-squishy"
+      "itemId": "1422",
+      "name": "Boots of Resistance",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1422.png",
+      "description": "MDEF +100, PDEF +50, MSPD +50\nShortens crowd control"
     },
     {
       "slot": 2,
-      "itemId": "1533",
-      "name": "Rapacious Bite",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1533.png",
-      "description": "PATK +90, MSPD +5%, CDR +7.5%\nMonster kills boost ATK"
-    },
-    {
-      "slot": 3,
       "itemId": "1138",
       "name": "Overlord's Might",
       "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1138.png",
       "description": "PATK +150, CDR +5%\nHigh-damage attack"
+    },
+    {
+      "slot": 3,
+      "itemId": "13310",
+      "name": "Frostscar's Embrace",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/13310.png",
+      "description": "PATK +60, PDEF +300, CDR +10%\nEnhanced BAs slow"
     },
     {
       "slot": 4,
@@ -111,40 +111,40 @@
     },
     {
       "slot": 5,
-      "itemId": "1133",
-      "name": "Eternity Blade",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1133.png",
-      "description": "PATK +120, Crit Rate +20%\nHigh crit damage"
-    },
-    {
-      "slot": 6,
       "itemId": "1337",
       "name": "Sage's Sanctuary",
       "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
       "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
+    },
+    {
+      "slot": 6,
+      "itemId": "1127",
+      "name": "Destiny",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+      "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
     }
   ],
   "buildZh": [
     {
       "slot": 1,
-      "itemId": "1137",
-      "name": "暗影戰斧",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1137.png",
-      "description": "+80點攻擊+10%減冷卻時間+500點生命值\n打血薄用"
+      "itemId": "1422",
+      "name": "抵抗之靴",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1422.png",
+      "description": "+100點法防+50點物防+50點移速\n減少被控時間"
     },
     {
       "slot": 2,
-      "itemId": "1533",
-      "name": "貪婪之噬",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1533.png",
-      "description": "+90攻擊+5%移速+7.5%冷縮\n打野怪加攻擊"
-    },
-    {
-      "slot": 3,
       "itemId": "1138",
       "name": "強者破軍",
       "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1138.png",
       "description": "+150點攻擊+5%減冷卻時間\n高額攻擊"
+    },
+    {
+      "slot": 3,
+      "itemId": "13310",
+      "name": "冰痕之握",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/13310.png",
+      "description": "+60點攻擊+300點物防+10%減冷卻時間……\n強化普攻減速"
     },
     {
       "slot": 4,
@@ -155,22 +155,120 @@
     },
     {
       "slot": 5,
-      "itemId": "1133",
-      "name": "無盡戰刃",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1133.png",
-      "description": "+120點攻擊+20%暴擊\n高額暴擊傷害"
-    },
-    {
-      "slot": 6,
       "itemId": "1337",
       "name": "賢者的庇護",
       "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
       "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+    },
+    {
+      "slot": 6,
+      "itemId": "1127",
+      "name": "名刀・司命",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+      "description": "+75點攻擊+15%攻速+500點生命值\n保命"
     }
   ],
   "builds": [
     {
       "id": "camp-0",
+      "label": "TT:Z3nar",
+      "lane": "Jungle",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1422",
+          "name": "Boots of Resistance",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1422.png",
+          "description": "MDEF +100, PDEF +50, MSPD +50\nShortens crowd control"
+        },
+        {
+          "slot": 2,
+          "itemId": "1138",
+          "name": "Overlord's Might",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1138.png",
+          "description": "PATK +150, CDR +5%\nHigh-damage attack"
+        },
+        {
+          "slot": 3,
+          "itemId": "13310",
+          "name": "Frostscar's Embrace",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/13310.png",
+          "description": "PATK +60, PDEF +300, CDR +10%\nEnhanced BAs slow"
+        },
+        {
+          "slot": 4,
+          "itemId": "1131",
+          "name": "Starbreaker",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1131.png",
+          "description": "PATK +90, HP +700, MSPD +7.5%\nAnti-tank"
+        },
+        {
+          "slot": 5,
+          "itemId": "1337",
+          "name": "Sage's Sanctuary",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
+        },
+        {
+          "slot": 6,
+          "itemId": "1127",
+          "name": "Destiny",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
+        }
+      ]
+    },
+    {
+      "id": "camp-1",
+      "label": "LUNJAYYY",
+      "lane": "Jungle",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1137",
+          "name": "Axe of Torment",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1137.png",
+          "description": "PATK +80, CDR +10%, HP +500\nAnti-squishy"
+        },
+        {
+          "slot": 2,
+          "itemId": "1533",
+          "name": "Rapacious Bite",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1533.png",
+          "description": "PATK +90, MSPD +5%, CDR +7.5%\nMonster kills boost ATK"
+        },
+        {
+          "slot": 3,
+          "itemId": "1138",
+          "name": "Overlord's Might",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1138.png",
+          "description": "PATK +150, CDR +5%\nHigh-damage attack"
+        },
+        {
+          "slot": 4,
+          "itemId": "1338",
+          "name": "Cuirass of Savagery",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1338.png",
+          "description": "PATK +35, PDEF +210, HP +900\nOffense & defense"
+        },
+        {
+          "slot": 5,
+          "itemId": "1131",
+          "name": "Starbreaker",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1131.png",
+          "description": "PATK +90, HP +700, MSPD +7.5%\nAnti-tank"
+        },
+        {
+          "slot": 6,
+          "itemId": "1337",
+          "name": "Sage's Sanctuary",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
+        }
+      ]
+    },
+    {
+      "id": "camp-2",
       "label": "Jungling",
       "lane": "Jungle",
       "items": [
@@ -222,6 +320,104 @@
   "buildsZh": [
     {
       "id": "camp-0",
+      "label": "TT:Z3nar",
+      "lane": "Jungle",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1422",
+          "name": "抵抗之靴",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1422.png",
+          "description": "+100點法防+50點物防+50點移速\n減少被控時間"
+        },
+        {
+          "slot": 2,
+          "itemId": "1138",
+          "name": "強者破軍",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1138.png",
+          "description": "+150點攻擊+5%減冷卻時間\n高額攻擊"
+        },
+        {
+          "slot": 3,
+          "itemId": "13310",
+          "name": "冰痕之握",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/13310.png",
+          "description": "+60點攻擊+300點物防+10%減冷卻時間……\n強化普攻減速"
+        },
+        {
+          "slot": 4,
+          "itemId": "1131",
+          "name": "碎星錘",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1131.png",
+          "description": "+90點攻擊+700點生命值+7.5%移速\n打坦克用"
+        },
+        {
+          "slot": 5,
+          "itemId": "1337",
+          "name": "賢者的庇護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+        },
+        {
+          "slot": 6,
+          "itemId": "1127",
+          "name": "名刀・司命",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "+75點攻擊+15%攻速+500點生命值\n保命"
+        }
+      ]
+    },
+    {
+      "id": "camp-1",
+      "label": "LUNJAYYY",
+      "lane": "Jungle",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1137",
+          "name": "暗影戰斧",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1137.png",
+          "description": "+80點攻擊+10%減冷卻時間+500點生命值\n打血薄用"
+        },
+        {
+          "slot": 2,
+          "itemId": "1533",
+          "name": "貪婪之噬",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1533.png",
+          "description": "+90攻擊+5%移速+7.5%冷縮\n打野怪加攻擊"
+        },
+        {
+          "slot": 3,
+          "itemId": "1138",
+          "name": "強者破軍",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1138.png",
+          "description": "+150點攻擊+5%減冷卻時間\n高額攻擊"
+        },
+        {
+          "slot": 4,
+          "itemId": "1338",
+          "name": "暴烈之甲",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1338.png",
+          "description": "+35點攻擊+210點物防+900點生命值\n能抗能打"
+        },
+        {
+          "slot": 5,
+          "itemId": "1131",
+          "name": "碎星錘",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1131.png",
+          "description": "+90點攻擊+700點生命值+7.5%移速\n打坦克用"
+        },
+        {
+          "slot": 6,
+          "itemId": "1337",
+          "name": "賢者的庇護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+        }
+      ]
+    },
+    {
+      "id": "camp-2",
       "label": "Jungling",
       "lane": "Jungle",
       "items": [
@@ -272,13 +468,13 @@
   ],
   "arcana": [
     "Lvl 5: Mutation",
-    "Lvl 5: Conflict",
-    "Lvl 5: Stealth"
+    "Lvl 5: Stealth",
+    "Lvl 5: Hunt"
   ],
   "arcanaZh": [
     "5級：異變",
-    "5級：紛爭",
-    "5級：隱匿"
+    "5級：隱匿",
+    "5級：狩獵"
   ],
   "spells": [
     "Smite"
@@ -297,13 +493,13 @@
     "Garo"
   ],
   "tips": [
-    "Nakoruru (Assassin): Tier B — 50.65% WR (Camp HOK).",
+    "Nakoruru (Assassin): Tier B — 50.56% WR (Camp HOK).",
     "Lane: Jungling.",
-    "Build: Axe of Torment, Rapacious Bite, Overlord's Might."
+    "Build: Boots of Resistance, Overlord's Might, Frostscar's Embrace."
   ],
   "tipsZh": [
-    "娜可露露（打野）：梯度 B，勝率 50.65%（Camp HOK）。",
-    "出裝：暗影戰斧、貪婪之噬、強者破軍."
+    "娜可露露（打野）：梯度 B，勝率 50.56%（Camp HOK）。",
+    "出裝：抵抗之靴、強者破軍、冰痕之握."
   ],
   "patchHistory": [
     {
@@ -401,12 +597,12 @@
     {
       "id": "faq-good-season",
       "question": "Is Nakoruru good in current season?",
-      "answer": "Nakoruru is Tier B Assassin with 50.65% win rate, 0.61% pick rate, and 0.06% ban rate (Camp HOK international)."
+      "answer": "Nakoruru is Tier B Assassin with 50.56% win rate, 0.55% pick rate, and 0.04% ban rate (Camp HOK international)."
     },
     {
       "id": "faq-best-build",
       "question": "What is the best Nakoruru build?",
-      "answer": "Recommended: Axe of Torment, Rapacious Bite, Overlord's Might, Starbreaker, Eternity Blade, Sage's Sanctuary."
+      "answer": "Recommended: Boots of Resistance, Overlord's Might, Frostscar's Embrace, Starbreaker, Sage's Sanctuary, Destiny."
     },
     {
       "id": "faq-counter",
@@ -418,12 +614,12 @@
     {
       "id": "faq-good-season",
       "question": "娜可露露 這版本適合上分嗎？",
-      "answer": "娜可露露 為 B 梯度，勝率 50.65%、選取 0.61%、禁用 0.06%（Camp HOK 國際服）。"
+      "answer": "娜可露露 為 B 梯度，勝率 50.56%、選取 0.55%、禁用 0.04%（Camp HOK 國際服）。"
     },
     {
       "id": "faq-best-build",
       "question": "娜可露露 出裝怎麼搭配？",
-      "answer": "推薦：暗影戰斧、貪婪之噬、強者破軍、碎星錘、無盡戰刃、賢者的庇護."
+      "answer": "推薦：抵抗之靴、強者破軍、冰痕之握、碎星錘、賢者的庇護、名刀・司命."
     },
     {
       "id": "faq-counter",
@@ -432,15 +628,15 @@
     }
   ],
   "metaAnalysis": [
-    "Nakoruru win rate 50.65% (Camp HOK, 2026-06-27).",
-    "Pick rate 0.61%.",
-    "Ban rate 0.06%.",
+    "Nakoruru win rate 50.56% (Camp HOK, 2026-07-16).",
+    "Pick rate 0.55%.",
+    "Ban rate 0.04%.",
     "Counters: Wukong, Athena, Xiang Yu. Weak into: Diaochan, Fang, Garo."
   ],
   "metaAnalysisZh": [
-    "娜可露露 勝率 50.65%（Camp HOK，2026-06-27）",
-    "選取率 0.61%",
-    "禁用率 0.06%",
+    "娜可露露 勝率 50.56%（Camp HOK，2026-07-16）",
+    "選取率 0.55%",
+    "禁用率 0.04%",
     "克制：Wukong、Athena、Xiang Yu；被克制：Diaochan、Fang、Garo"
   ],
   "guide": {

@@ -10,16 +10,16 @@
   "laneZh": "中路",
   "difficulty": "Medium",
   "tier": "B",
-  "winRate": 50.13,
-  "pickRate": 0.54,
-  "banRate": 0.09,
-  "rank": 74,
+  "winRate": 50.19,
+  "pickRate": 0.53,
+  "banRate": 0.07,
+  "rank": 63,
   "avatar": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/YmpeG9H2.png",
   "avatarFallback": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/119/119.jpg",
   "heroCover": "https://camp.honorofkings.com/social/game/src/image_hero_cover_1275*718/l2V9q8tk.jpg",
   "tencentId": 119,
   "dataSource": "Camp HOK bilingual (primary)",
-  "dataUpdated": "2026-06-27",
+  "dataUpdated": "2026-07-16",
   "skills": [
     {
       "slot": "passive",
@@ -83,94 +83,241 @@
   "build": [
     {
       "slot": 1,
+      "itemId": "1423",
+      "name": "Boots of Tranquility",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1423.png",
+      "description": "CDR +15%, MSPD +50\nSpeeds up skill cooldown"
+    },
+    {
+      "slot": 2,
+      "itemId": "1238",
+      "name": "Sage's Tome",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1238.png",
+      "description": "MATK +350, CDR +10%\nGreat for mages"
+    },
+    {
+      "slot": 3,
+      "itemId": "12211",
+      "name": "Venomous Staff",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/12211.png",
+      "description": "MATK +240, CDR +7.5%, MSPD +7.5%\nLowers Health Regen"
+    },
+    {
+      "slot": 4,
+      "itemId": "1335",
+      "name": "Succubus Cloak",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
+      "description": "MDEF +300, HP +1,100\nNegates magical damage"
+    },
+    {
+      "slot": 5,
+      "itemId": "1333",
+      "name": "Ominous Premonition",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1333.png",
+      "description": "PDEF +300, HP +1,200\nSlows attackers"
+    },
+    {
+      "slot": 6,
       "itemId": "1231",
       "name": "Void Staff",
       "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1231.png",
       "description": "MATK +210, HP +500, CDR +5%\nAnti-tank"
-    },
-    {
-      "slot": 2,
-      "itemId": "1234",
-      "name": "Frozen Breath",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1234.png",
-      "description": "MATK +180, CDR +7.5%, HP +500\nSkill hits slow"
-    },
-    {
-      "slot": 3,
-      "itemId": "1727",
-      "name": "Twilight Stream",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1727.png",
-      "description": "MATK +160, CDR +10%, Max HP +500\nBoosts Magical Pierce"
-    },
-    {
-      "slot": 4,
-      "itemId": "1337",
-      "name": "Sage's Sanctuary",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
-      "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
-    },
-    {
-      "slot": 5,
-      "itemId": "1127",
-      "name": "Destiny",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
-      "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
-    },
-    {
-      "slot": 6,
-      "itemId": "1332",
-      "name": "Overlord's Platemail",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1332.png",
-      "description": "HP +1,800, PDEF +160, MDEF +80\nExtra HP"
     }
   ],
   "buildZh": [
     {
       "slot": 1,
+      "itemId": "1423",
+      "name": "冷靜之靴",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1423.png",
+      "description": "+15%減冷卻時間+50點移速\n加快技能冷卻"
+    },
+    {
+      "slot": 2,
+      "itemId": "1238",
+      "name": "賢者天書",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1238.png",
+      "description": "+350點法攻+10%減冷卻時間\n法師神裝"
+    },
+    {
+      "slot": 3,
+      "itemId": "12211",
+      "name": "夢魘之牙",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/12211.png",
+      "description": "+240點法攻+7.5%減冷卻時間+7.5%移速\n減少敵人回血"
+    },
+    {
+      "slot": 4,
+      "itemId": "1335",
+      "name": "魔女斗篷",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
+      "description": "+300點法防+1100點生命值\n吸收法術傷害"
+    },
+    {
+      "slot": 5,
+      "itemId": "1333",
+      "name": "不祥徵兆",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1333.png",
+      "description": "+300點物防+1200點生命值\n受擊時將敵人減速"
+    },
+    {
+      "slot": 6,
       "itemId": "1231",
       "name": "虛無法杖",
       "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1231.png",
       "description": "+210點法攻+500點生命值+5%減冷卻時間\n打坦克用"
-    },
-    {
-      "slot": 2,
-      "itemId": "1234",
-      "name": "凝冰之息",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1234.png",
-      "description": "+180點法攻+7.5%減冷卻時間+500點生命值\n技能命中減速"
-    },
-    {
-      "slot": 3,
-      "itemId": "1727",
-      "name": "日暮之流",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1727.png",
-      "description": "+160點法攻+10%減冷卻時間+500點最大生命值\n提升法術穿透"
-    },
-    {
-      "slot": 4,
-      "itemId": "1337",
-      "name": "賢者的庇護",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
-      "description": "+900點生命值+150點物防+150點法防……\n原地復活"
-    },
-    {
-      "slot": 5,
-      "itemId": "1127",
-      "name": "名刀・司命",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
-      "description": "+75點攻擊+15%攻速+500點生命值\n保命"
-    },
-    {
-      "slot": 6,
-      "itemId": "1332",
-      "name": "霸者重裝",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1332.png",
-      "description": "+1800點生命值+160點物防+80點法防\n提高額外生命值"
     }
   ],
   "builds": [
     {
       "id": "camp-0",
+      "label": "Principais",
+      "lane": "Mid",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1423",
+          "name": "Boots of Tranquility",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1423.png",
+          "description": "CDR +15%, MSPD +50\nSpeeds up skill cooldown"
+        },
+        {
+          "slot": 2,
+          "itemId": "1238",
+          "name": "Sage's Tome",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1238.png",
+          "description": "MATK +350, CDR +10%\nGreat for mages"
+        },
+        {
+          "slot": 3,
+          "itemId": "12211",
+          "name": "Venomous Staff",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/12211.png",
+          "description": "MATK +240, CDR +7.5%, MSPD +7.5%\nLowers Health Regen"
+        },
+        {
+          "slot": 4,
+          "itemId": "1335",
+          "name": "Succubus Cloak",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
+          "description": "MDEF +300, HP +1,100\nNegates magical damage"
+        },
+        {
+          "slot": 5,
+          "itemId": "1333",
+          "name": "Ominous Premonition",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1333.png",
+          "description": "PDEF +300, HP +1,200\nSlows attackers"
+        },
+        {
+          "slot": 6,
+          "itemId": "1231",
+          "name": "Void Staff",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1231.png",
+          "description": "MATK +210, HP +500, CDR +5%\nAnti-tank"
+        }
+      ]
+    },
+    {
+      "id": "camp-1",
+      "label": "JOGADOR_GG",
+      "lane": "Mid",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1424",
+          "name": "Boots of the Arcane",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1424.png",
+          "description": "MSPD +50, MP +400\nMagical Pierce"
+        },
+        {
+          "slot": 2,
+          "itemId": "12211",
+          "name": "Venomous Staff",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/12211.png",
+          "description": "MATK +240, CDR +7.5%, MSPD +7.5%\nLowers Health Regen"
+        },
+        {
+          "slot": 3,
+          "itemId": "1240",
+          "name": "Insatiable Tome",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1240.png",
+          "description": "MATK +160, Magical Lifesteal +24%, HP +750\nLifesteal increases CDR"
+        },
+        {
+          "slot": 4,
+          "itemId": "1234",
+          "name": "Frozen Breath",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1234.png",
+          "description": "MATK +180, CDR +7.5%, HP +500\nSkill hits slow"
+        },
+        {
+          "slot": 5,
+          "itemId": "1232",
+          "name": "Savant's Wrath",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1232.png",
+          "description": "MATK +210\nGreatly boosts MATK"
+        },
+        {
+          "slot": 6,
+          "itemId": "1231",
+          "name": "Void Staff",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1231.png",
+          "description": "MATK +210, HP +500, CDR +5%\nAnti-tank"
+        }
+      ]
+    },
+    {
+      "id": "camp-2",
+      "label": "辉夜Bian",
+      "lane": "Mid",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1244",
+          "name": "Breakthrough Robe",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1244.png",
+          "description": "MATK +120, HP +900\nConverts HP into Magical Pierce"
+        },
+        {
+          "slot": 2,
+          "itemId": "1231",
+          "name": "Void Staff",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1231.png",
+          "description": "MATK +210, HP +500, CDR +5%\nAnti-tank"
+        },
+        {
+          "slot": 3,
+          "itemId": "12211",
+          "name": "Venomous Staff",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/12211.png",
+          "description": "MATK +240, CDR +7.5%, MSPD +7.5%\nLowers Health Regen"
+        },
+        {
+          "slot": 4,
+          "itemId": "1337",
+          "name": "Sage's Sanctuary",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
+        },
+        {
+          "slot": 5,
+          "itemId": "1238",
+          "name": "Sage's Tome",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1238.png",
+          "description": "MATK +350, CDR +10%\nGreat for mages"
+        },
+        {
+          "slot": 6,
+          "itemId": "1127",
+          "name": "Destiny",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
+        }
+      ]
+    },
+    {
+      "id": "camp-3",
       "label": "@carl.dev18",
       "lane": "Mid",
       "items": [
@@ -222,6 +369,153 @@
   "buildsZh": [
     {
       "id": "camp-0",
+      "label": "Principais",
+      "lane": "Mid",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1423",
+          "name": "冷靜之靴",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1423.png",
+          "description": "+15%減冷卻時間+50點移速\n加快技能冷卻"
+        },
+        {
+          "slot": 2,
+          "itemId": "1238",
+          "name": "賢者天書",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1238.png",
+          "description": "+350點法攻+10%減冷卻時間\n法師神裝"
+        },
+        {
+          "slot": 3,
+          "itemId": "12211",
+          "name": "夢魘之牙",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/12211.png",
+          "description": "+240點法攻+7.5%減冷卻時間+7.5%移速\n減少敵人回血"
+        },
+        {
+          "slot": 4,
+          "itemId": "1335",
+          "name": "魔女斗篷",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
+          "description": "+300點法防+1100點生命值\n吸收法術傷害"
+        },
+        {
+          "slot": 5,
+          "itemId": "1333",
+          "name": "不祥徵兆",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1333.png",
+          "description": "+300點物防+1200點生命值\n受擊時將敵人減速"
+        },
+        {
+          "slot": 6,
+          "itemId": "1231",
+          "name": "虛無法杖",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1231.png",
+          "description": "+210點法攻+500點生命值+5%減冷卻時間\n打坦克用"
+        }
+      ]
+    },
+    {
+      "id": "camp-1",
+      "label": "JOGADOR_GG",
+      "lane": "Mid",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1424",
+          "name": "祕法之靴",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1424.png",
+          "description": "+50點移速+400點法力值\n法術穿透"
+        },
+        {
+          "slot": 2,
+          "itemId": "12211",
+          "name": "夢魘之牙",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/12211.png",
+          "description": "+240點法攻+7.5%減冷卻時間+7.5%移速\n減少敵人回血"
+        },
+        {
+          "slot": 3,
+          "itemId": "1240",
+          "name": "噬神之書",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1240.png",
+          "description": "+160點法攻 +24%法術吸血 \n+750點生命值吸血拉長冷卻時間"
+        },
+        {
+          "slot": 4,
+          "itemId": "1234",
+          "name": "凝冰之息",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1234.png",
+          "description": "+180點法攻+7.5%減冷卻時間+500點生命值\n技能命中減速"
+        },
+        {
+          "slot": 5,
+          "itemId": "1232",
+          "name": "博學者之怒",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1232.png",
+          "description": "+210點法術攻擊\n大幅提升法強"
+        },
+        {
+          "slot": 6,
+          "itemId": "1231",
+          "name": "虛無法杖",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1231.png",
+          "description": "+210點法攻+500點生命值+5%減冷卻時間\n打坦克用"
+        }
+      ]
+    },
+    {
+      "id": "camp-2",
+      "label": "辉夜Bian",
+      "lane": "Mid",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1244",
+          "name": "破繭之衣",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1244.png",
+          "description": "+120點法攻+900點生命值\n生命值轉法穿"
+        },
+        {
+          "slot": 2,
+          "itemId": "1231",
+          "name": "虛無法杖",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1231.png",
+          "description": "+210點法攻+500點生命值+5%減冷卻時間\n打坦克用"
+        },
+        {
+          "slot": 3,
+          "itemId": "12211",
+          "name": "夢魘之牙",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/12211.png",
+          "description": "+240點法攻+7.5%減冷卻時間+7.5%移速\n減少敵人回血"
+        },
+        {
+          "slot": 4,
+          "itemId": "1337",
+          "name": "賢者的庇護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+        },
+        {
+          "slot": 5,
+          "itemId": "1238",
+          "name": "賢者天書",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1238.png",
+          "description": "+350點法攻+10%減冷卻時間\n法師神裝"
+        },
+        {
+          "slot": 6,
+          "itemId": "1127",
+          "name": "名刀・司命",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "+75點攻擊+15%攻速+500點生命值\n保命"
+        }
+      ]
+    },
+    {
+      "id": "camp-3",
       "label": "@carl.dev18",
       "lane": "Mid",
       "items": [
@@ -272,19 +566,19 @@
   ],
   "arcana": [
     "Lvl 5: Nightmare",
-    "Lvl 5: Hunt",
-    "Lvl 5: Mind's Eye"
+    "Lvl 5: Avarice",
+    "Lvl 5: Hunt"
   ],
   "arcanaZh": [
     "5級：夢魘",
-    "5級：狩獵",
-    "5級：心眼"
+    "5級：貪婪",
+    "5級：狩獵"
   ],
   "spells": [
-    "Flash"
+    "Heal"
   ],
   "spellsZh": [
-    "閃現"
+    "治療術"
   ],
   "counters": [
     "Mai Shiranui",
@@ -294,13 +588,13 @@
     "Yang Jian"
   ],
   "tips": [
-    "Dr Bian (Mage): Tier B — 50.13% WR (Camp HOK).",
+    "Dr Bian (Mage): Tier B — 50.19% WR (Camp HOK).",
     "Lane: Mid Lane.",
-    "Build: Void Staff, Frozen Breath, Twilight Stream."
+    "Build: Boots of Tranquility, Sage's Tome, Venomous Staff."
   ],
   "tipsZh": [
-    "扁鵲（中路）：梯度 B，勝率 50.13%（Camp HOK）。",
-    "出裝：虛無法杖、凝冰之息、日暮之流."
+    "扁鵲（中路）：梯度 B，勝率 50.19%（Camp HOK）。",
+    "出裝：冷靜之靴、賢者天書、夢魘之牙."
   ],
   "patchHistory": [
     {
@@ -398,12 +692,12 @@
     {
       "id": "faq-good-season",
       "question": "Is Dr Bian good in current season?",
-      "answer": "Dr Bian is Tier B Mage with 50.13% win rate, 0.54% pick rate, and 0.09% ban rate (Camp HOK international)."
+      "answer": "Dr Bian is Tier B Mage with 50.19% win rate, 0.53% pick rate, and 0.07% ban rate (Camp HOK international)."
     },
     {
       "id": "faq-best-build",
       "question": "What is the best Dr Bian build?",
-      "answer": "Recommended: Void Staff, Frozen Breath, Twilight Stream, Sage's Sanctuary, Destiny, Overlord's Platemail."
+      "answer": "Recommended: Boots of Tranquility, Sage's Tome, Venomous Staff, Succubus Cloak, Ominous Premonition, Void Staff."
     },
     {
       "id": "faq-counter",
@@ -415,12 +709,12 @@
     {
       "id": "faq-good-season",
       "question": "扁鵲 這版本適合上分嗎？",
-      "answer": "扁鵲 為 B 梯度，勝率 50.13%、選取 0.54%、禁用 0.09%（Camp HOK 國際服）。"
+      "answer": "扁鵲 為 B 梯度，勝率 50.19%、選取 0.53%、禁用 0.07%（Camp HOK 國際服）。"
     },
     {
       "id": "faq-best-build",
       "question": "扁鵲 出裝怎麼搭配？",
-      "answer": "推薦：虛無法杖、凝冰之息、日暮之流、賢者的庇護、名刀・司命、霸者重裝."
+      "answer": "推薦：冷靜之靴、賢者天書、夢魘之牙、魔女斗篷、不祥徵兆、虛無法杖."
     },
     {
       "id": "faq-counter",
@@ -429,15 +723,15 @@
     }
   ],
   "metaAnalysis": [
-    "Dr Bian win rate 50.13% (Camp HOK, 2026-06-27).",
-    "Pick rate 0.54%.",
-    "Ban rate 0.09%.",
+    "Dr Bian win rate 50.19% (Camp HOK, 2026-07-16).",
+    "Pick rate 0.53%.",
+    "Ban rate 0.07%.",
     "Counters: Mai Shiranui, Diaochan. Weak into: Yang Jian."
   ],
   "metaAnalysisZh": [
-    "扁鵲 勝率 50.13%（Camp HOK，2026-06-27）",
-    "選取率 0.54%",
-    "禁用率 0.09%",
+    "扁鵲 勝率 50.19%（Camp HOK，2026-07-16）",
+    "選取率 0.53%",
+    "禁用率 0.07%",
     "克制：Mai Shiranui、Diaochan；被克制：Yang Jian"
   ],
   "guide": {
