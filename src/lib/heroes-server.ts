@@ -6,8 +6,6 @@
  * This file must NEVER be imported from 'use client' components.
  * Use '@/lib/data' (heroes-index) for client-safe lightweight data.
  */
-import fs from 'fs';
-import path from 'path';
 import type { Hero } from '@/types/hero';
 
 let _fullHeroes: Hero[] | null = null;
@@ -15,8 +13,12 @@ let _fullHeroes: Hero[] | null = null;
 /** Read the full heroes.json at build time (server-only). */
 export function getFullHeroes(): Hero[] {
   if (!_fullHeroes) {
-    const filePath = path.join(process.cwd(), 'data', 'heroes.json');
-    const raw = fs.readFileSync(filePath, 'utf-8');
+    // Dynamic require prevents webpack from statically resolving fs/path
+    // into client bundles (fixes CI "Can't resolve 'fs'" on Linux/Node 22).
+    const _fs = eval('require')('fs') as typeof import('fs');
+    const _path = eval('require')('path') as typeof import('path');
+    const filePath = _path.join(process.cwd(), 'data', 'heroes.json');
+    const raw = _fs.readFileSync(filePath, 'utf-8');
     _fullHeroes = JSON.parse(raw) as Hero[];
   }
   return _fullHeroes;
