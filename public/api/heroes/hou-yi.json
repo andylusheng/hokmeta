@@ -19,7 +19,7 @@
   "heroCover": "https://camp.honorofkings.com/social/game/src/image_hero_cover_1275*718/Dxizap1o.jpg",
   "tencentId": 169,
   "dataSource": "Camp HOK bilingual (primary)",
-  "dataUpdated": "2026-07-19",
+  "dataUpdated": "2026-07-20",
   "skills": [
     {
       "slot": "passive",
@@ -171,7 +171,7 @@
   "builds": [
     {
       "id": "camp-0",
-      "label": "Farm lane 1",
+      "label": "北辰出装",
       "lane": null,
       "items": [
         {
@@ -220,55 +220,6 @@
     },
     {
       "id": "camp-1",
-      "label": "ATKSPD CRIT",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1155",
-          "name": "Daybreaker's Virtue",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1155.png",
-          "description": "PATK +75, ASPD +30%, Crit Rate +15%\nGreat for marksmen"
-        },
-        {
-          "slot": 2,
-          "itemId": "1132",
-          "name": "Bloodweeper",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1132.png",
-          "description": "PATK +85, Lifesteal +25%, HP +500\nPhysical Lifesteal"
-        },
-        {
-          "slot": 3,
-          "itemId": "1141",
-          "name": "Sunchaser",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1141.png",
-          "description": "PATK +40, ASPD +20%, Crit Rate +15%, MSPD +7.5%\nBoosts attack range"
-        },
-        {
-          "slot": 4,
-          "itemId": "1337",
-          "name": "Sage's Sanctuary",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
-          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
-        },
-        {
-          "slot": 5,
-          "itemId": "1156",
-          "name": "Haste - Sunpool",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1156.png",
-          "description": "PATK +40, ASPD +20%, Crit Rate +15%, MSPD +7.5%\nBoosts attack range"
-        },
-        {
-          "slot": 6,
-          "itemId": "1127",
-          "name": "Destiny",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
-          "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
-        }
-      ]
-    },
-    {
-      "id": "camp-2",
       "label": "Farm Lane 2",
       "lane": null,
       "items": [
@@ -317,8 +268,57 @@
       ]
     },
     {
+      "id": "camp-2",
+      "label": "For tanks",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1155",
+          "name": "Daybreaker's Virtue",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1155.png",
+          "description": "PATK +75, ASPD +30%, Crit Rate +15%\nGreat for marksmen"
+        },
+        {
+          "slot": 2,
+          "itemId": "1141",
+          "name": "Sunchaser",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1141.png",
+          "description": "PATK +40, ASPD +20%, Crit Rate +15%, MSPD +7.5%\nBoosts attack range"
+        },
+        {
+          "slot": 3,
+          "itemId": "1337",
+          "name": "Sage's Sanctuary",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
+        },
+        {
+          "slot": 4,
+          "itemId": "1127",
+          "name": "Destiny",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
+        },
+        {
+          "slot": 5,
+          "itemId": "11210",
+          "name": "Mortal Punisher",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/11210.png",
+          "description": "PATK +100, Lifesteal +20%, ASPD +20%\nLowers Health regen"
+        },
+        {
+          "slot": 6,
+          "itemId": "1131",
+          "name": "Starbreaker",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1131.png",
+          "description": "PATK +90, HP +700, MSPD +7.5%\nAnti-tank"
+        }
+      ]
+    },
+    {
       "id": "camp-3",
-      "label": "Farm Lane 1",
+      "label": "Farm lane 1",
       "lane": null,
       "items": [
         {
@@ -337,31 +337,31 @@
         },
         {
           "slot": 3,
-          "itemId": "1128",
-          "name": "Deepfrost Siege",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1128.png",
-          "description": "PATK +70, ASPD +25%, HP +750\nBAs slow"
+          "itemId": "1141",
+          "name": "Sunchaser",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1141.png",
+          "description": "PATK +40, ASPD +20%, Crit Rate +15%, MSPD +7.5%\nBoosts attack range"
         },
         {
           "slot": 4,
-          "itemId": "1338",
-          "name": "Cuirass of Savagery",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1338.png",
-          "description": "PATK +35, PDEF +210, HP +900\nOffense & defense"
-        },
-        {
-          "slot": 5,
-          "itemId": "1127",
-          "name": "Destiny",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
-          "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
-        },
-        {
-          "slot": 6,
           "itemId": "1337",
           "name": "Sage's Sanctuary",
           "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
           "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
+        },
+        {
+          "slot": 5,
+          "itemId": "1156",
+          "name": "Haste - Sunpool",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1156.png",
+          "description": "PATK +40, ASPD +20%, Crit Rate +15%, MSPD +7.5%\nBoosts attack range"
+        },
+        {
+          "slot": 6,
+          "itemId": "1127",
+          "name": "Destiny",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
         }
       ]
     }
@@ -369,7 +369,7 @@
   "buildsZh": [
     {
       "id": "camp-0",
-      "label": "Farm lane 1",
+      "label": "北辰出装",
       "lane": null,
       "items": [
         {
@@ -418,55 +418,6 @@
     },
     {
       "id": "camp-1",
-      "label": "ATKSPD CRIT",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1155",
-          "name": "仁者破曉",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1155.png",
-          "description": "+75點攻擊+30%攻速+15%暴擊\n射手神裝"
-        },
-        {
-          "slot": 2,
-          "itemId": "1132",
-          "name": "泣血之刃",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1132.png",
-          "description": "+85點攻擊+25%吸血+500點生命值\n物理吸血"
-        },
-        {
-          "slot": 3,
-          "itemId": "1141",
-          "name": "逐日之弓",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1141.png",
-          "description": "+40點攻擊+20%攻速+15%暴擊+7.5%移速\n攻擊距離變遠"
-        },
-        {
-          "slot": 4,
-          "itemId": "1337",
-          "name": "賢者的庇護",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
-          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
-        },
-        {
-          "slot": 5,
-          "itemId": "1156",
-          "name": "迅疾・日淵",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1156.png",
-          "description": "+40點攻擊+20%攻速+15%暴擊+7.5%移速\n攻擊距離變遠"
-        },
-        {
-          "slot": 6,
-          "itemId": "1127",
-          "name": "名刀・司命",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
-          "description": "+75點攻擊+15%攻速+500點生命值\n保命"
-        }
-      ]
-    },
-    {
-      "id": "camp-2",
       "label": "Farm Lane 2",
       "lane": null,
       "items": [
@@ -515,8 +466,57 @@
       ]
     },
     {
+      "id": "camp-2",
+      "label": "For tanks",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1155",
+          "name": "仁者破曉",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1155.png",
+          "description": "+75點攻擊+30%攻速+15%暴擊\n射手神裝"
+        },
+        {
+          "slot": 2,
+          "itemId": "1141",
+          "name": "逐日之弓",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1141.png",
+          "description": "+40點攻擊+20%攻速+15%暴擊+7.5%移速\n攻擊距離變遠"
+        },
+        {
+          "slot": 3,
+          "itemId": "1337",
+          "name": "賢者的庇護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+        },
+        {
+          "slot": 4,
+          "itemId": "1127",
+          "name": "名刀・司命",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "+75點攻擊+15%攻速+500點生命值\n保命"
+        },
+        {
+          "slot": 5,
+          "itemId": "11210",
+          "name": "制裁之刃",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/11210.png",
+          "description": "+100點攻擊+20%吸血+20%攻速\n減少敵人回血"
+        },
+        {
+          "slot": 6,
+          "itemId": "1131",
+          "name": "碎星錘",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1131.png",
+          "description": "+90點攻擊+700點生命值+7.5%移速\n打坦克用"
+        }
+      ]
+    },
+    {
       "id": "camp-3",
-      "label": "Farm Lane 1",
+      "label": "Farm lane 1",
       "lane": null,
       "items": [
         {
@@ -535,44 +535,44 @@
         },
         {
           "slot": 3,
-          "itemId": "1128",
-          "name": "寒霜襲侵",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1128.png",
-          "description": "+70點攻擊+25%攻速+750點生命值\n普攻減移速"
+          "itemId": "1141",
+          "name": "逐日之弓",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1141.png",
+          "description": "+40點攻擊+20%攻速+15%暴擊+7.5%移速\n攻擊距離變遠"
         },
         {
           "slot": 4,
-          "itemId": "1338",
-          "name": "暴烈之甲",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1338.png",
-          "description": "+35點攻擊+210點物防+900點生命值\n能抗能打"
-        },
-        {
-          "slot": 5,
-          "itemId": "1127",
-          "name": "名刀・司命",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
-          "description": "+75點攻擊+15%攻速+500點生命值\n保命"
-        },
-        {
-          "slot": 6,
           "itemId": "1337",
           "name": "賢者的庇護",
           "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
           "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+        },
+        {
+          "slot": 5,
+          "itemId": "1156",
+          "name": "迅疾・日淵",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1156.png",
+          "description": "+40點攻擊+20%攻速+15%暴擊+7.5%移速\n攻擊距離變遠"
+        },
+        {
+          "slot": 6,
+          "itemId": "1127",
+          "name": "名刀・司命",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "+75點攻擊+15%攻速+500點生命值\n保命"
         }
       ]
     }
   ],
   "arcana": [
     "Lvl 5: Red Moon",
-    "Lvl 5: Hunt",
-    "Lvl 5: Reaver"
+    "Lvl 5: Reaver",
+    "Lvl 5: Hunt"
   ],
   "arcanaZh": [
     "5級：紅月",
-    "5級：狩獵",
-    "5級：奪萃"
+    "5級：奪萃",
+    "5級：狩獵"
   ],
   "spells": [
     "Flash"
@@ -747,13 +747,13 @@
     }
   ],
   "metaAnalysis": [
-    "Hou Yi win rate 49.66% (Camp HOK, 2026-07-19).",
+    "Hou Yi win rate 49.66% (Camp HOK, 2026-07-20).",
     "Pick rate 2.63%.",
     "Ban rate 0.14%.",
     "Counters: Cirrus, Mulan, Xuance. Weak into: Agudo, Master Luban."
   ],
   "metaAnalysisZh": [
-    "后羿 勝率 49.66%（Camp HOK，2026-07-19）",
+    "后羿 勝率 49.66%（Camp HOK，2026-07-20）",
     "選取率 2.63%",
     "禁用率 0.14%",
     "克制：Cirrus、Mulan、Xuance；被克制：Agudo、Master Luban"

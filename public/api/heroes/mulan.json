@@ -19,7 +19,7 @@
   "heroCover": "https://camp.honorofkings.com/social/game/src/image_hero_cover_1275*718/8bc1HQgG.jpg",
   "tencentId": 154,
   "dataSource": "Camp HOK bilingual (primary)",
-  "dataUpdated": "2026-07-19",
+  "dataUpdated": "2026-07-20",
   "skills": [
     {
       "slot": "passive",
@@ -97,31 +97,31 @@
     },
     {
       "slot": 3,
-      "itemId": "1125",
-      "name": "Demonsbane",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1125.png",
-      "description": "PATK +90, MDEF +150, HP +600\nBoosts Magical Defense"
+      "itemId": "1335",
+      "name": "Succubus Cloak",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
+      "description": "MDEF +300, HP +1,100\nNegates magical damage"
     },
     {
       "slot": 4,
+      "itemId": "1131",
+      "name": "Starbreaker",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1131.png",
+      "description": "PATK +90, HP +700, MSPD +7.5%\nAnti-tank"
+    },
+    {
+      "slot": 5,
       "itemId": "1337",
       "name": "Sage's Sanctuary",
       "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
       "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
     },
     {
-      "slot": 5,
+      "slot": 6,
       "itemId": "1127",
       "name": "Destiny",
       "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
       "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
-    },
-    {
-      "slot": 6,
-      "itemId": "1131",
-      "name": "Starbreaker",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1131.png",
-      "description": "PATK +90, HP +700, MSPD +7.5%\nAnti-tank"
     }
   ],
   "buildZh": [
@@ -141,36 +141,85 @@
     },
     {
       "slot": 3,
-      "itemId": "1125",
-      "name": "破魔刀",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1125.png",
-      "description": "+90點攻擊+150點法防+600點生命值\n增加法術防禦"
+      "itemId": "1335",
+      "name": "魔女斗篷",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
+      "description": "+300點法防+1100點生命值\n吸收法術傷害"
     },
     {
       "slot": 4,
+      "itemId": "1131",
+      "name": "碎星錘",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1131.png",
+      "description": "+90點攻擊+700點生命值+7.5%移速\n打坦克用"
+    },
+    {
+      "slot": 5,
       "itemId": "1337",
       "name": "賢者的庇護",
       "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
       "description": "+900點生命值+150點物防+150點法防……\n原地復活"
     },
     {
-      "slot": 5,
+      "slot": 6,
       "itemId": "1127",
       "name": "名刀・司命",
       "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
       "description": "+75點攻擊+15%攻速+500點生命值\n保命"
-    },
-    {
-      "slot": 6,
-      "itemId": "1131",
-      "name": "碎星錘",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1131.png",
-      "description": "+90點攻擊+700點生命值+7.5%移速\n打坦克用"
     }
   ],
   "builds": [
     {
       "id": "camp-0",
+      "label": "日常出装",
+      "lane": "Top",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1338",
+          "name": "Cuirass of Savagery",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1338.png",
+          "description": "PATK +35, PDEF +210, HP +900\nOffense & defense"
+        },
+        {
+          "slot": 2,
+          "itemId": "11311",
+          "name": "Pure Sky",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/11311.png",
+          "description": "PATK +80, PDEF +150, CDR +10%\nTemp. damage reduction"
+        },
+        {
+          "slot": 3,
+          "itemId": "1335",
+          "name": "Succubus Cloak",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
+          "description": "MDEF +300, HP +1,100\nNegates magical damage"
+        },
+        {
+          "slot": 4,
+          "itemId": "1131",
+          "name": "Starbreaker",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1131.png",
+          "description": "PATK +90, HP +700, MSPD +7.5%\nAnti-tank"
+        },
+        {
+          "slot": 5,
+          "itemId": "1337",
+          "name": "Sage's Sanctuary",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
+        },
+        {
+          "slot": 6,
+          "itemId": "1127",
+          "name": "Destiny",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
+        }
+      ]
+    },
+    {
+      "id": "camp-1",
       "label": "花木兰",
       "lane": "Top",
       "items": [
@@ -219,7 +268,7 @@
       ]
     },
     {
-      "id": "camp-1",
+      "id": "camp-2",
       "label": "Mulan",
       "lane": "Top",
       "items": [
@@ -268,7 +317,7 @@
       ]
     },
     {
-      "id": "camp-2",
+      "id": "camp-3",
       "label": "HeXinLiang",
       "lane": "Top",
       "items": [
@@ -320,6 +369,55 @@
   "buildsZh": [
     {
       "id": "camp-0",
+      "label": "日常出装",
+      "lane": "Top",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1338",
+          "name": "暴烈之甲",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1338.png",
+          "description": "+35點攻擊+210點物防+900點生命值\n能抗能打"
+        },
+        {
+          "slot": 2,
+          "itemId": "11311",
+          "name": "純淨蒼穹",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/11311.png",
+          "description": "+80點攻擊+150點物防+10%冷卻時間縮減\n暫時增加免傷"
+        },
+        {
+          "slot": 3,
+          "itemId": "1335",
+          "name": "魔女斗篷",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
+          "description": "+300點法防+1100點生命值\n吸收法術傷害"
+        },
+        {
+          "slot": 4,
+          "itemId": "1131",
+          "name": "碎星錘",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1131.png",
+          "description": "+90點攻擊+700點生命值+7.5%移速\n打坦克用"
+        },
+        {
+          "slot": 5,
+          "itemId": "1337",
+          "name": "賢者的庇護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+        },
+        {
+          "slot": 6,
+          "itemId": "1127",
+          "name": "名刀・司命",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "+75點攻擊+15%攻速+500點生命值\n保命"
+        }
+      ]
+    },
+    {
+      "id": "camp-1",
       "label": "花木兰",
       "lane": "Top",
       "items": [
@@ -368,7 +466,7 @@
       ]
     },
     {
-      "id": "camp-1",
+      "id": "camp-2",
       "label": "Mulan",
       "lane": "Top",
       "items": [
@@ -417,7 +515,7 @@
       ]
     },
     {
-      "id": "camp-2",
+      "id": "camp-3",
       "label": "HeXinLiang",
       "lane": "Top",
       "items": [
@@ -495,11 +593,11 @@
   "tips": [
     "Mulan (Assassin): Tier B — 50.71% WR (Camp HOK).",
     "Lane: Clash Lane.",
-    "Build: Cuirass of Savagery, Pure Sky, Demonsbane."
+    "Build: Cuirass of Savagery, Pure Sky, Succubus Cloak."
   ],
   "tipsZh": [
     "花木蘭（對抗路）：梯度 B，勝率 50.71%（Camp HOK）。",
-    "出裝：暴烈之甲、純淨蒼穹、破魔刀."
+    "出裝：暴烈之甲、純淨蒼穹、魔女斗篷."
   ],
   "patchHistory": [
     {
@@ -523,39 +621,6 @@
       "change": "Increased damage reduction while wielding the heavy sword and the damage of Skill 1 when wielding both heavy and dual swords.",
       "detail": "We made Mulan tankier while wielding her heavy sword and increased her overall damage output. Hopefully she will now perform better in team fights",
       "version": "S6"
-    },
-    {
-      "seasonId": "5",
-      "seasonName": "S5",
-      "versionName": "20240509",
-      "publishedAt": "2024-05-09T02:31:07Z",
-      "isCurrent": false,
-      "tag": "Stat Nerfs",
-      "change": "Base Health Reduced",
-      "detail": "Mulan's two stances give her mobility, burst damage, crowd control, and damage reduction. She can be used in many different lineups to attack many different opponents.In the current version, when Mulan gains the advantage, she becomes very difficult to counter.We hope that by reducing her base Health, we can give her less room for mistakes.",
-      "version": "S5"
-    },
-    {
-      "seasonId": "4",
-      "seasonName": "S4",
-      "versionName": "20240320",
-      "publishedAt": "2024-03-20T03:11:35Z",
-      "isCurrent": false,
-      "tag": "Stat Nerfs",
-      "change": "Reduced the damage dealt by her Skill 2 when she is using a heavy sword, and reduced the damage dealt by her Ultimate when she is using either weapon.",
-      "detail": "Reduced the damage dealt by her Skill 2 when she is using a heavy sword, and reduced the damage dealt by her Ultimate when she is using either weapon.\nAlthough the Resistance gained from the Boots of Resistance was previously lowered by only 5%, this change allowed many players to have Mulan unleash complete skill combos against enemies. Since very few heroes are capable of withstanding such an assault, we have lowered the damage dealt from her Skill 2 when using a heavy sword and her Ultimate, in order to balance out the buff granted by the Boots of Resistance.",
-      "version": "S4"
-    },
-    {
-      "seasonId": "3",
-      "seasonName": "S3",
-      "versionName": "20231108",
-      "publishedAt": "2023-11-08T12:02:09Z",
-      "isCurrent": false,
-      "tag": "Stat Nerfs",
-      "change": "Reduced the damage of Skill 1 when using dual swords or heavy sword.",
-      "detail": "Mulan's skill mechanics grant her mobility, crowd control immunity, burst damage, and crowd control. Different skill combinations let her face different opponents and adapt to evolving situations on the battlefield. Heroes like Mulan have enormous potential, and skilled players can do incredible things with them. We want Mulan players to have more of a challenge before taking over matches, rather than easily suppressing rivals with relatively simple and fixed tactics early on.",
-      "version": "S3"
     }
   ],
   "patchHistoryZh": [
@@ -580,39 +645,6 @@
       "change": "增加重劍形態的免傷效果，同時提升1技能在輕劍和重劍形態的傷害",
       "detail": "「提升花木蘭重劍的坦度和整體輸出能力，希望她在團戰中有更好的表現。」",
       "version": "S6"
-    },
-    {
-      "seasonId": "5",
-      "seasonName": "S5",
-      "versionName": "20240509",
-      "publishedAt": "2024-05-09T02:31:07Z",
-      "isCurrent": false,
-      "tag": "數值削弱",
-      "change": "降低基礎生命",
-      "detail": "花木蘭的兩個形態使得她同時擁有機動性，爆發傷害，控制能力以及傷害減免能力，她可以適配很多陣容，應對很多對手。在當前版本中，花木蘭一旦獲取優勢就會變得難以反制。我們希望通過降低花木蘭的生命，來降低她的容錯性。",
-      "version": "S5"
-    },
-    {
-      "seasonId": "4",
-      "seasonName": "S4",
-      "versionName": "20240320",
-      "publishedAt": "2024-03-20T03:11:35Z",
-      "isCurrent": false,
-      "tag": "數值削弱",
-      "change": "削弱重劍形態下的2技能，削弱2種形態下大招的傷害",
-      "detail": "削弱重劍形態下的2技能，削弱2種形態下大招的傷害\n雖然之前抵抗之靴的韌性僅調低了5%，但這樣的調整卻足以讓花木蘭完整地對敵人打出連招，由於很少有英雄能徹底扛住那段連招的傷害，我們希望適度降低花木蘭重劍形態下2技能的揮砍及大招傷害，藉此平衡因抵抗之靴調整而受益的花木蘭。",
-      "version": "S4"
-    },
-    {
-      "seasonId": "3",
-      "seasonName": "S3",
-      "versionName": "20231108",
-      "publishedAt": "2023-11-08T12:02:09Z",
-      "isCurrent": false,
-      "tag": "數值削弱",
-      "change": "Reduced the damage of Skill 1 when using dual swords or heavy sword.",
-      "detail": "Mulan's skill mechanics grant her mobility, crowd control immunity, burst damage, and crowd control. Different skill combinations let her face different opponents and adapt to evolving situations on the battlefield. Heroes like Mulan have enormous potential, and skilled players can do incredible things with them. We want Mulan players to have more of a challenge before taking over matches, rather than easily suppressing rivals with relatively simple and fixed tactics early on.",
-      "version": "S3"
     }
   ],
   "faqs": [
@@ -624,7 +656,7 @@
     {
       "id": "faq-best-build",
       "question": "What is the best Mulan build?",
-      "answer": "Recommended: Cuirass of Savagery, Pure Sky, Demonsbane, Sage's Sanctuary, Destiny, Starbreaker."
+      "answer": "Recommended: Cuirass of Savagery, Pure Sky, Succubus Cloak, Starbreaker, Sage's Sanctuary, Destiny."
     },
     {
       "id": "faq-counter",
@@ -641,7 +673,7 @@
     {
       "id": "faq-best-build",
       "question": "花木蘭 出裝怎麼搭配？",
-      "answer": "推薦：暴烈之甲、純淨蒼穹、破魔刀、賢者的庇護、名刀・司命、碎星錘."
+      "answer": "推薦：暴烈之甲、純淨蒼穹、魔女斗篷、碎星錘、賢者的庇護、名刀・司命."
     },
     {
       "id": "faq-counter",
@@ -650,13 +682,13 @@
     }
   ],
   "metaAnalysis": [
-    "Mulan win rate 50.71% (Camp HOK, 2026-07-19).",
+    "Mulan win rate 50.71% (Camp HOK, 2026-07-20).",
     "Pick rate 0.34%.",
     "Ban rate 0.03%.",
     "Counters: Liang, Mi Yue, Nuwa. Weak into: Diaochan, Heino, Hou Yi."
   ],
   "metaAnalysisZh": [
-    "花木蘭 勝率 50.71%（Camp HOK，2026-07-19）",
+    "花木蘭 勝率 50.71%（Camp HOK，2026-07-20）",
     "選取率 0.34%",
     "禁用率 0.03%",
     "克制：Liang、Mi Yue、Nuwa；被克制：Diaochan、Heino、Hou Yi"

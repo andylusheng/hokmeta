@@ -19,7 +19,7 @@
   "heroCover": "https://camp.honorofkings.com/social/game/src/image_hero_cover_1275*718/j1uAr71w.jpg",
   "tencentId": 524,
   "dataSource": "Camp HOK bilingual (primary)",
-  "dataUpdated": "2026-07-19",
+  "dataUpdated": "2026-07-20",
   "skills": [
     {
       "slot": "passive",
@@ -83,94 +83,143 @@
   "build": [
     {
       "slot": 1,
+      "itemId": "1425",
+      "name": "Boots of Dexterity",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1425.png",
+      "description": "ASPD +20%, MSPD +50\nBAs restore HP"
+    },
+    {
+      "slot": 2,
+      "itemId": "1136",
+      "name": "Shadow Ripper",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1136.png",
+      "description": "PATK +45, ASPD +35%, Crit Rate +20%, MSPD +7.5%\nCrits boosts ASPD"
+    },
+    {
+      "slot": 3,
+      "itemId": "1155",
+      "name": "Daybreaker's Virtue",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1155.png",
+      "description": "PATK +75, ASPD +30%, Crit Rate +15%\nGreat for marksmen"
+    },
+    {
+      "slot": 4,
       "itemId": "1126",
       "name": "Doomsday",
       "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1126.png",
       "description": "PATK +40, ASPD +20%, HP +500, Lifesteal +20%\nBoosts BA damage"
     },
     {
-      "slot": 2,
-      "itemId": "1138",
-      "name": "Overlord's Might",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1138.png",
-      "description": "PATK +150, CDR +5%\nHigh-damage attack"
-    },
-    {
-      "slot": 3,
-      "itemId": "1337",
-      "name": "Sage's Sanctuary",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
-      "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
-    },
-    {
-      "slot": 4,
-      "itemId": "1127",
-      "name": "Destiny",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
-      "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
-    },
-    {
       "slot": 5,
-      "itemId": "1328",
-      "name": "Blood Rage",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1328.png",
-      "description": "PATK +75, HP +900\nTrades HP for shield"
+      "itemId": "1134",
+      "name": "Master Sword",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1134.png",
+      "description": "PATK +55, Crit Rate +20%, HP +600\nEnhances BAs"
     },
     {
       "slot": 6,
-      "itemId": "11311",
-      "name": "Pure Sky",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/11311.png",
-      "description": "PATK +80, PDEF +150, CDR +10%\nTemp. damage reduction"
+      "itemId": "1133",
+      "name": "Eternity Blade",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1133.png",
+      "description": "PATK +120, Crit Rate +20%\nHigh crit damage"
     }
   ],
   "buildZh": [
     {
       "slot": 1,
+      "itemId": "1425",
+      "name": "急速戰靴",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1425.png",
+      "description": "+20%攻速+50點移速\n普攻回復生命值"
+    },
+    {
+      "slot": 2,
+      "itemId": "1136",
+      "name": "影刃",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1136.png",
+      "description": "+45點攻擊 +35%攻速+20%暴擊+7.5%移速\n暴擊增加攻速"
+    },
+    {
+      "slot": 3,
+      "itemId": "1155",
+      "name": "仁者破曉",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1155.png",
+      "description": "+75點攻擊+30%攻速+15%暴擊\n射手神裝"
+    },
+    {
+      "slot": 4,
       "itemId": "1126",
       "name": "末世",
       "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1126.png",
       "description": "+40點攻擊+20%攻速+500點生命值+20%吸血\n普攻額外傷害"
     },
     {
-      "slot": 2,
-      "itemId": "1138",
-      "name": "強者破軍",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1138.png",
-      "description": "+150點攻擊+5%減冷卻時間\n高額攻擊"
-    },
-    {
-      "slot": 3,
-      "itemId": "1337",
-      "name": "賢者的庇護",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
-      "description": "+900點生命值+150點物防+150點法防……\n原地復活"
-    },
-    {
-      "slot": 4,
-      "itemId": "1127",
-      "name": "名刀・司命",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
-      "description": "+75點攻擊+15%攻速+500點生命值\n保命"
-    },
-    {
       "slot": 5,
-      "itemId": "1328",
-      "name": "血魔之怒",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1328.png",
-      "description": "+75點攻擊+900點生命值 \n犧牲生命值換取護盾值"
+      "itemId": "1134",
+      "name": "宗師之力",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1134.png",
+      "description": "+55點攻擊+20%暴擊+600點生命值……\n強化普攻"
     },
     {
       "slot": 6,
-      "itemId": "11311",
-      "name": "純淨蒼穹",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/11311.png",
-      "description": "+80點攻擊+150點物防+10%冷卻時間縮減\n暫時增加免傷"
+      "itemId": "1133",
+      "name": "無盡戰刃",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1133.png",
+      "description": "+120點攻擊+20%暴擊\n高額暴擊傷害"
     }
   ],
   "builds": [
     {
       "id": "camp-0",
+      "label": "Daño critico 1",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1425",
+          "name": "Boots of Dexterity",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1425.png",
+          "description": "ASPD +20%, MSPD +50\nBAs restore HP"
+        },
+        {
+          "slot": 2,
+          "itemId": "1136",
+          "name": "Shadow Ripper",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1136.png",
+          "description": "PATK +45, ASPD +35%, Crit Rate +20%, MSPD +7.5%\nCrits boosts ASPD"
+        },
+        {
+          "slot": 3,
+          "itemId": "1155",
+          "name": "Daybreaker's Virtue",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1155.png",
+          "description": "PATK +75, ASPD +30%, Crit Rate +15%\nGreat for marksmen"
+        },
+        {
+          "slot": 4,
+          "itemId": "1126",
+          "name": "Doomsday",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1126.png",
+          "description": "PATK +40, ASPD +20%, HP +500, Lifesteal +20%\nBoosts BA damage"
+        },
+        {
+          "slot": 5,
+          "itemId": "1134",
+          "name": "Master Sword",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1134.png",
+          "description": "PATK +55, Crit Rate +20%, HP +600\nEnhances BAs"
+        },
+        {
+          "slot": 6,
+          "itemId": "1133",
+          "name": "Eternity Blade",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1133.png",
+          "description": "PATK +120, Crit Rate +20%\nHigh crit damage"
+        }
+      ]
+    },
+    {
+      "id": "camp-1",
       "label": "Principais",
       "lane": null,
       "items": [
@@ -219,7 +268,7 @@
       ]
     },
     {
-      "id": "camp-1",
+      "id": "camp-2",
       "label": "Takoyaki Build",
       "lane": null,
       "items": [
@@ -268,7 +317,7 @@
       ]
     },
     {
-      "id": "camp-2",
+      "id": "camp-3",
       "label": "Azh",
       "lane": null,
       "items": [
@@ -315,60 +364,60 @@
           "description": "PATK +100, Lifesteal +20%, ASPD +20%\nLowers Health regen"
         }
       ]
-    },
-    {
-      "id": "camp-3",
-      "label": "MENGYADAMAGER",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1133",
-          "name": "Eternity Blade",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1133.png",
-          "description": "PATK +120, Crit Rate +20%\nHigh crit damage"
-        },
-        {
-          "slot": 2,
-          "itemId": "11210",
-          "name": "Mortal Punisher",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/11210.png",
-          "description": "PATK +100, Lifesteal +20%, ASPD +20%\nLowers Health regen"
-        },
-        {
-          "slot": 3,
-          "itemId": "1127",
-          "name": "Destiny",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
-          "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
-        },
-        {
-          "slot": 4,
-          "itemId": "1155",
-          "name": "Daybreaker's Virtue",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1155.png",
-          "description": "PATK +75, ASPD +30%, Crit Rate +15%\nGreat for marksmen"
-        },
-        {
-          "slot": 5,
-          "itemId": "1126",
-          "name": "Doomsday",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1126.png",
-          "description": "PATK +40, ASPD +20%, HP +500, Lifesteal +20%\nBoosts BA damage"
-        },
-        {
-          "slot": 6,
-          "itemId": "1138",
-          "name": "Overlord's Might",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1138.png",
-          "description": "PATK +150, CDR +5%\nHigh-damage attack"
-        }
-      ]
     }
   ],
   "buildsZh": [
     {
       "id": "camp-0",
+      "label": "Daño critico 1",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1425",
+          "name": "急速戰靴",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1425.png",
+          "description": "+20%攻速+50點移速\n普攻回復生命值"
+        },
+        {
+          "slot": 2,
+          "itemId": "1136",
+          "name": "影刃",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1136.png",
+          "description": "+45點攻擊 +35%攻速+20%暴擊+7.5%移速\n暴擊增加攻速"
+        },
+        {
+          "slot": 3,
+          "itemId": "1155",
+          "name": "仁者破曉",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1155.png",
+          "description": "+75點攻擊+30%攻速+15%暴擊\n射手神裝"
+        },
+        {
+          "slot": 4,
+          "itemId": "1126",
+          "name": "末世",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1126.png",
+          "description": "+40點攻擊+20%攻速+500點生命值+20%吸血\n普攻額外傷害"
+        },
+        {
+          "slot": 5,
+          "itemId": "1134",
+          "name": "宗師之力",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1134.png",
+          "description": "+55點攻擊+20%暴擊+600點生命值……\n強化普攻"
+        },
+        {
+          "slot": 6,
+          "itemId": "1133",
+          "name": "無盡戰刃",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1133.png",
+          "description": "+120點攻擊+20%暴擊\n高額暴擊傷害"
+        }
+      ]
+    },
+    {
+      "id": "camp-1",
       "label": "Principais",
       "lane": null,
       "items": [
@@ -417,7 +466,7 @@
       ]
     },
     {
-      "id": "camp-1",
+      "id": "camp-2",
       "label": "Takoyaki Build",
       "lane": null,
       "items": [
@@ -466,7 +515,7 @@
       ]
     },
     {
-      "id": "camp-2",
+      "id": "camp-3",
       "label": "Azh",
       "lane": null,
       "items": [
@@ -513,65 +562,16 @@
           "description": "+100點攻擊+20%吸血+20%攻速\n減少敵人回血"
         }
       ]
-    },
-    {
-      "id": "camp-3",
-      "label": "MENGYADAMAGER",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1133",
-          "name": "無盡戰刃",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1133.png",
-          "description": "+120點攻擊+20%暴擊\n高額暴擊傷害"
-        },
-        {
-          "slot": 2,
-          "itemId": "11210",
-          "name": "制裁之刃",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/11210.png",
-          "description": "+100點攻擊+20%吸血+20%攻速\n減少敵人回血"
-        },
-        {
-          "slot": 3,
-          "itemId": "1127",
-          "name": "名刀・司命",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
-          "description": "+75點攻擊+15%攻速+500點生命值\n保命"
-        },
-        {
-          "slot": 4,
-          "itemId": "1155",
-          "name": "仁者破曉",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1155.png",
-          "description": "+75點攻擊+30%攻速+15%暴擊\n射手神裝"
-        },
-        {
-          "slot": 5,
-          "itemId": "1126",
-          "name": "末世",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1126.png",
-          "description": "+40點攻擊+20%攻速+500點生命值+20%吸血\n普攻額外傷害"
-        },
-        {
-          "slot": 6,
-          "itemId": "1138",
-          "name": "強者破軍",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1138.png",
-          "description": "+150點攻擊+5%減冷卻時間\n高額攻擊"
-        }
-      ]
     }
   ],
   "arcana": [
     "Lvl 5: Calamity",
-    "Lvl 5: Hunt",
+    "Lvl 5: Beast Scar",
     "Lvl 5: Eagle Eye"
   ],
   "arcanaZh": [
     "5級：禍源",
-    "5級：狩獵",
+    "5級：獸痕",
     "5級：鷹眼"
   ],
   "spells": [
@@ -591,11 +591,11 @@
   "tips": [
     "Meng Ya (Marksman): Tier B — 53.82% WR (Camp HOK).",
     "Lane: Farm Lane.",
-    "Build: Doomsday, Overlord's Might, Sage's Sanctuary."
+    "Build: Boots of Dexterity, Shadow Ripper, Daybreaker's Virtue."
   ],
   "tipsZh": [
     "蒙犽（發育路）：梯度 B，勝率 53.82%（Camp HOK）。",
-    "出裝：末世、強者破軍、賢者的庇護."
+    "出裝：急速戰靴、影刃、仁者破曉."
   ],
   "patchHistory": [
     {
@@ -654,7 +654,7 @@
     {
       "id": "faq-best-build",
       "question": "What is the best Meng Ya build?",
-      "answer": "Recommended: Doomsday, Overlord's Might, Sage's Sanctuary, Destiny, Blood Rage, Pure Sky."
+      "answer": "Recommended: Boots of Dexterity, Shadow Ripper, Daybreaker's Virtue, Doomsday, Master Sword, Eternity Blade."
     },
     {
       "id": "faq-counter",
@@ -671,7 +671,7 @@
     {
       "id": "faq-best-build",
       "question": "蒙犽 出裝怎麼搭配？",
-      "answer": "推薦：末世、強者破軍、賢者的庇護、名刀・司命、血魔之怒、純淨蒼穹."
+      "answer": "推薦：急速戰靴、影刃、仁者破曉、末世、宗師之力、無盡戰刃."
     },
     {
       "id": "faq-counter",
@@ -680,13 +680,13 @@
     }
   ],
   "metaAnalysis": [
-    "Meng Ya win rate 53.82% (Camp HOK, 2026-07-19).",
+    "Meng Ya win rate 53.82% (Camp HOK, 2026-07-20).",
     "Pick rate 0.57%.",
     "Ban rate 0.01%.",
     "Counters: Mai Shiranui, Pei, Diaochan. Weak into: Liu Bang."
   ],
   "metaAnalysisZh": [
-    "蒙犽 勝率 53.82%（Camp HOK，2026-07-19）",
+    "蒙犽 勝率 53.82%（Camp HOK，2026-07-20）",
     "選取率 0.57%",
     "禁用率 0.01%",
     "克制：Mai Shiranui、Pei、Diaochan；被克制：Liu Bang"

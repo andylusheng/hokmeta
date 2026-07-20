@@ -19,7 +19,7 @@
   "heroCover": "https://camp.honorofkings.com/social/game/src/image_hero_cover_1275*718/pSFK8RBs.jpg",
   "tencentId": 193,
   "dataSource": "Camp HOK bilingual (primary)",
-  "dataUpdated": "2026-07-19",
+  "dataUpdated": "2026-07-20",
   "skills": [
     {
       "slot": "passive",
@@ -83,24 +83,24 @@
   "build": [
     {
       "slot": 1,
-      "itemId": "1533",
-      "name": "Rapacious Bite",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1533.png",
-      "description": "PATK +90, MSPD +5%, CDR +7.5%\nMonster kills boost ATK"
-    },
-    {
-      "slot": 2,
       "itemId": "1134",
       "name": "Master Sword",
       "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1134.png",
       "description": "PATK +55, Crit Rate +20%, HP +600\nEnhances BAs"
     },
     {
+      "slot": 2,
+      "itemId": "1347",
+      "name": "Longnight Guardian",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1347.png",
+      "description": "MDEF +210, HP +1,000, MSPD +7.5%\nReduces magical damage"
+    },
+    {
       "slot": 3,
-      "itemId": "1335",
-      "name": "Succubus Cloak",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
-      "description": "MDEF +300, HP +1,100\nNegates magical damage"
+      "itemId": "1328",
+      "name": "Blood Rage",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1328.png",
+      "description": "PATK +75, HP +900\nTrades HP for shield"
     },
     {
       "slot": 4,
@@ -127,24 +127,24 @@
   "buildZh": [
     {
       "slot": 1,
-      "itemId": "1533",
-      "name": "貪婪之噬",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1533.png",
-      "description": "+90攻擊+5%移速+7.5%冷縮\n打野怪加攻擊"
-    },
-    {
-      "slot": 2,
       "itemId": "1134",
       "name": "宗師之力",
       "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1134.png",
       "description": "+55點攻擊+20%暴擊+600點生命值……\n強化普攻"
     },
     {
+      "slot": 2,
+      "itemId": "1347",
+      "name": "永夜守護",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1347.png",
+      "description": "+210點法防+1000點生命值\n+7.5%移速減少法術傷害"
+    },
+    {
       "slot": 3,
-      "itemId": "1335",
-      "name": "魔女斗篷",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
-      "description": "+300點法防+1100點生命值\n吸收法術傷害"
+      "itemId": "1328",
+      "name": "血魔之怒",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1328.png",
+      "description": "+75點攻擊+900點生命值 \n犧牲生命值換取護盾值"
     },
     {
       "slot": 4,
@@ -171,6 +171,55 @@
   "builds": [
     {
       "id": "camp-0",
+      "label": "对抗路",
+      "lane": "Top",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1134",
+          "name": "Master Sword",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1134.png",
+          "description": "PATK +55, Crit Rate +20%, HP +600\nEnhances BAs"
+        },
+        {
+          "slot": 2,
+          "itemId": "1347",
+          "name": "Longnight Guardian",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1347.png",
+          "description": "MDEF +210, HP +1,000, MSPD +7.5%\nReduces magical damage"
+        },
+        {
+          "slot": 3,
+          "itemId": "1328",
+          "name": "Blood Rage",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1328.png",
+          "description": "PATK +75, HP +900\nTrades HP for shield"
+        },
+        {
+          "slot": 4,
+          "itemId": "1327",
+          "name": "Spikemail",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1327.png",
+          "description": "PATK +45, PDEF +300, HP +700\nReflects damage"
+        },
+        {
+          "slot": 5,
+          "itemId": "1337",
+          "name": "Sage's Sanctuary",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
+        },
+        {
+          "slot": 6,
+          "itemId": "1127",
+          "name": "Destiny",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
+        }
+      ]
+    },
+    {
+      "id": "camp-1",
       "label": "前期速刷铠",
       "lane": "Jungle",
       "items": [
@@ -219,7 +268,7 @@
       ]
     },
     {
-      "id": "camp-1",
+      "id": "camp-2",
       "label": "META",
       "lane": "Jungle",
       "items": [
@@ -268,7 +317,7 @@
       ]
     },
     {
-      "id": "camp-2",
+      "id": "camp-3",
       "label": "BUILD",
       "lane": "Top",
       "items": [
@@ -315,60 +364,60 @@
           "description": "PATK +75, HP +900\nTrades HP for shield"
         }
       ]
-    },
-    {
-      "id": "camp-3",
-      "label": "Jungler",
-      "lane": "Jungle",
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1337",
-          "name": "Sage's Sanctuary",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
-          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
-        },
-        {
-          "slot": 2,
-          "itemId": "1239",
-          "name": "Splendor",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1239.png",
-          "description": "MATK +160, CDR +7.5%, Magical Lifesteal +12%\nTemp. invincibility"
-        },
-        {
-          "slot": 3,
-          "itemId": "1127",
-          "name": "Destiny",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
-          "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
-        },
-        {
-          "slot": 4,
-          "itemId": "11311",
-          "name": "Pure Sky",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/11311.png",
-          "description": "PATK +80, PDEF +150, CDR +10%\nTemp. damage reduction"
-        },
-        {
-          "slot": 5,
-          "itemId": "1328",
-          "name": "Blood Rage",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1328.png",
-          "description": "PATK +75, HP +900\nTrades HP for shield"
-        },
-        {
-          "slot": 6,
-          "itemId": "1332",
-          "name": "Overlord's Platemail",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1332.png",
-          "description": "HP +1,800, PDEF +160, MDEF +80\nExtra HP"
-        }
-      ]
     }
   ],
   "buildsZh": [
     {
       "id": "camp-0",
+      "label": "对抗路",
+      "lane": "Top",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1134",
+          "name": "宗師之力",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1134.png",
+          "description": "+55點攻擊+20%暴擊+600點生命值……\n強化普攻"
+        },
+        {
+          "slot": 2,
+          "itemId": "1347",
+          "name": "永夜守護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1347.png",
+          "description": "+210點法防+1000點生命值\n+7.5%移速減少法術傷害"
+        },
+        {
+          "slot": 3,
+          "itemId": "1328",
+          "name": "血魔之怒",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1328.png",
+          "description": "+75點攻擊+900點生命值 \n犧牲生命值換取護盾值"
+        },
+        {
+          "slot": 4,
+          "itemId": "1327",
+          "name": "反傷刺甲",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1327.png",
+          "description": "+45點攻擊+300點物防\n+700點生命值反彈傷害"
+        },
+        {
+          "slot": 5,
+          "itemId": "1337",
+          "name": "賢者的庇護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+        },
+        {
+          "slot": 6,
+          "itemId": "1127",
+          "name": "名刀・司命",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "+75點攻擊+15%攻速+500點生命值\n保命"
+        }
+      ]
+    },
+    {
+      "id": "camp-1",
       "label": "前期速刷铠",
       "lane": "Jungle",
       "items": [
@@ -417,7 +466,7 @@
       ]
     },
     {
-      "id": "camp-1",
+      "id": "camp-2",
       "label": "META",
       "lane": "Jungle",
       "items": [
@@ -466,7 +515,7 @@
       ]
     },
     {
-      "id": "camp-2",
+      "id": "camp-3",
       "label": "BUILD",
       "lane": "Top",
       "items": [
@@ -513,72 +562,23 @@
           "description": "+75點攻擊+900點生命值 \n犧牲生命值換取護盾值"
         }
       ]
-    },
-    {
-      "id": "camp-3",
-      "label": "Jungler",
-      "lane": "Jungle",
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1337",
-          "name": "賢者的庇護",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
-          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
-        },
-        {
-          "slot": 2,
-          "itemId": "1239",
-          "name": "輝月",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1239.png",
-          "description": "+160法攻 +7.5%減冷卻時間+12%法術吸血\n暫時無敵"
-        },
-        {
-          "slot": 3,
-          "itemId": "1127",
-          "name": "名刀・司命",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
-          "description": "+75點攻擊+15%攻速+500點生命值\n保命"
-        },
-        {
-          "slot": 4,
-          "itemId": "11311",
-          "name": "純淨蒼穹",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/11311.png",
-          "description": "+80點攻擊+150點物防+10%冷卻時間縮減\n暫時增加免傷"
-        },
-        {
-          "slot": 5,
-          "itemId": "1328",
-          "name": "血魔之怒",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1328.png",
-          "description": "+75點攻擊+900點生命值 \n犧牲生命值換取護盾值"
-        },
-        {
-          "slot": 6,
-          "itemId": "1332",
-          "name": "霸者重裝",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1332.png",
-          "description": "+1800點生命值+160點物防+80點法防\n提高額外生命值"
-        }
-      ]
     }
   ],
   "arcana": [
+    "Lvl 5: Red Moon",
     "Lvl 5: Calamity",
-    "Lvl 5: Hunt",
-    "Lvl 5: Eagle Eye"
+    "Lvl 5: Hunt"
   ],
   "arcanaZh": [
+    "5級：紅月",
     "5級：禍源",
-    "5級：狩獵",
-    "5級：鷹眼"
+    "5級：狩獵"
   ],
   "spells": [
-    "Smite"
+    "Flash"
   ],
   "spellsZh": [
-    "懲擊"
+    "閃現"
   ],
   "counters": [
     "Da Qiao",
@@ -593,11 +593,11 @@
   "tips": [
     "Kaizer (Tank): Tier S — 51.02% WR (Camp HOK).",
     "Lane: Clash Lane.",
-    "Build: Rapacious Bite, Master Sword, Succubus Cloak."
+    "Build: Master Sword, Longnight Guardian, Blood Rage."
   ],
   "tipsZh": [
     "鎧（對抗路）：梯度 S，勝率 51.02%（Camp HOK）。",
-    "出裝：貪婪之噬、宗師之力、魔女斗篷."
+    "出裝：宗師之力、永夜守護、血魔之怒."
   ],
   "patchHistory": [
     {
@@ -643,28 +643,6 @@
       "change": "Balanced the strength of different builds.",
       "detail": "\"Currently, Kaizer's overall strength is too high, especially when he purchases a lot of defensive equipment, making it difficult for opponents to counter him. Therefore, we've slightly reduced his strength when using defensive builds while maintaining his power with offensive builds.\"",
       "version": "S6"
-    },
-    {
-      "seasonId": "4",
-      "seasonName": "S4",
-      "versionName": "20240124",
-      "publishedAt": "2024-01-24T07:50:01Z",
-      "isCurrent": false,
-      "tag": "Stat Buffs",
-      "change": "Enhanced the damage bonus ratio for Skills 1 and 2, and adjusted the damage and stat bonus ratios for his Ultimate.",
-      "detail": "As one of the first heroes in Honor of Kings, Kaizer may seem a little weak in comparison to the heroes that have joined since. We hope improving Kaizer's skill damage and stat bonuses will allow him, with the right equipment, to become a true fighter who balances damage output and sustain.",
-      "version": "S4"
-    },
-    {
-      "seasonId": "3",
-      "seasonName": "S3",
-      "versionName": "20231011",
-      "publishedAt": "2023-10-11T12:03:22Z",
-      "isCurrent": false,
-      "tag": "Stat Buffs",
-      "change": "Mana cost reduction",
-      "detail": "",
-      "version": "S3"
     }
   ],
   "patchHistoryZh": [
@@ -711,28 +689,6 @@
       "change": "平衡不同出裝下的強度",
       "detail": "目前鎧的整體強度偏高，尤其在購買較多防禦裝備時，對手難以與其抗衡，因此我們適度降低了鎧出防禦套裝的強度，同時確保他在攻擊出裝下的強度。",
       "version": "S6"
-    },
-    {
-      "seasonId": "4",
-      "seasonName": "S4",
-      "versionName": "20240124",
-      "publishedAt": "2024-01-24T07:50:01Z",
-      "isCurrent": false,
-      "tag": "數值增強",
-      "change": "Enhanced the damage bonus ratio for Skills 1 and 2, and adjusted the damage and stat bonus ratios for his Ultimate.",
-      "detail": "As one of the first heroes in Honor of Kings, Kaizer may seem a little weak in comparison to the heroes that have joined since. We hope improving Kaizer's skill damage and stat bonuses will allow him, with the right equipment, to become a true fighter who balances damage output and sustain.",
-      "version": "S4"
-    },
-    {
-      "seasonId": "3",
-      "seasonName": "S3",
-      "versionName": "20231011",
-      "publishedAt": "2023-10-11T12:03:22Z",
-      "isCurrent": false,
-      "tag": "數值增強",
-      "change": "Mana cost reduction",
-      "detail": "",
-      "version": "S3"
     }
   ],
   "faqs": [
@@ -744,7 +700,7 @@
     {
       "id": "faq-best-build",
       "question": "What is the best Kaizer build?",
-      "answer": "Recommended: Rapacious Bite, Master Sword, Succubus Cloak, Spikemail, Sage's Sanctuary, Destiny."
+      "answer": "Recommended: Master Sword, Longnight Guardian, Blood Rage, Spikemail, Sage's Sanctuary, Destiny."
     },
     {
       "id": "faq-counter",
@@ -761,7 +717,7 @@
     {
       "id": "faq-best-build",
       "question": "鎧 出裝怎麼搭配？",
-      "answer": "推薦：貪婪之噬、宗師之力、魔女斗篷、反傷刺甲、賢者的庇護、名刀・司命."
+      "answer": "推薦：宗師之力、永夜守護、血魔之怒、反傷刺甲、賢者的庇護、名刀・司命."
     },
     {
       "id": "faq-counter",
@@ -770,13 +726,13 @@
     }
   ],
   "metaAnalysis": [
-    "Kaizer win rate 51.02% (Camp HOK, 2026-07-19).",
+    "Kaizer win rate 51.02% (Camp HOK, 2026-07-20).",
     "Pick rate 1.68%.",
     "Ban rate 0.15%.",
     "Counters: Da Qiao, Diaochan, Daji. Weak into: Donghuang, Kui, Sun Bin."
   ],
   "metaAnalysisZh": [
-    "鎧 勝率 51.02%（Camp HOK，2026-07-19）",
+    "鎧 勝率 51.02%（Camp HOK，2026-07-20）",
     "選取率 1.68%",
     "禁用率 0.15%",
     "克制：Da Qiao、Diaochan、Daji；被克制：Donghuang、Kui、Sun Bin"
