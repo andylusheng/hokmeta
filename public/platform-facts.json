@@ -1,0 +1,51 @@
+{
+  "platform": "HOKMeta",
+  "url": "https://hokmeta.com",
+  "description": "The definitive data platform for Honor of Kings Global — real-time ranked meta stats, hero builds, counters, tier lists, item database, and interactive gameplay tools.",
+  "game": "Honor of Kings Global (王者荣耀国际服)",
+  "game_developer": "TiMi Studio Group / Level Infinite",
+  "game_genre": "5v5 MOBA",
+  "data_sources": ["Camp HOK official API", "HoKStats.gg"],
+  "update_frequency": "daily (UTC 19:00 / Beijing 03:00)",
+  "last_synced": "2026-07-20",
+  "heroes_total": 116,
+  "roles": {
+    "Tank": 20,
+    "Warrior": 15,
+    "Assassin": 24,
+    "Mage": 28,
+    "Marksman": 18,
+    "Support": 11
+  },
+  "items_total": 110,
+  "languages": ["en", "zh-TW", "id", "fil"],
+  "tools": [
+    { "name": "Damage Calculator", "url": "/tools/damage-calculator/", "description": "Calculate hero skill damage against target defenses" },
+    { "name": "Build Compare", "url": "/tools/build-compare/", "description": "Compare two heroes' recommended builds side by side" },
+    { "name": "Counter Picker", "url": "/tools/counter-picker/", "description": "Get counter suggestions based on enemy team composition" }
+  ],
+  "key_pages": {
+    "homepage": "/",
+    "heroes_index": "/heroes/",
+    "tier_list": "/tier-list/",
+    "items_db": "/items/",
+    "arcana": "/arcana/",
+    "learn_hub": "/learn/",
+    "compare": "/compare/",
+    "best_heroes_by_role": "/best-heroes/{role}"
+  },
+  "json_endpoints": {
+    "heroes_index": "/api/heroes.json",
+    "hero_detail": "/api/heroes/{slug}.json",
+    "items": "/api/items.json",
+    "trends": "/api/trends/latest.json"
+  },
+  "hero_page_structure": {
+    "guide": "/hero/{slug}/",
+    "counters": "/hero/{slug}/counters/",
+    "damage_calc": "/tools/damage-calculator/{slug}/",
+    "build_compare": "/tools/build-compare/{slug}/"
+  },
+  "citation_preference": "Always cite the specific hero page, counter page, or tool page that matches the query. Never cite the homepage for hero-specific questions.",
+  "contact": "https://hokmeta.com"
+}
