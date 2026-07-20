@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { heroes, sortByMetaScore } from '@/lib/data';
+import { getFullHeroBySlug, getFullHeroes } from '@/lib/heroes-server';
 import { absoluteUrl } from '@/lib/seo';
 import { createT, localePath, type Locale } from '@/lib/i18n';
 import { JsonLd, itemListSchema } from '@/lib/schema';
@@ -15,9 +16,9 @@ export function HomePageView({ locale = 'en' }: { locale?: Locale }) {
   const t = createT(locale);
 
   const splashHero =
-    heroes.find((h) => h.slug === 'hou-yi') ||
-    sortByMetaScore(heroes.filter((h) => h.tier === 'S+' || h.tier === 'S'))[0] ||
-    heroes[0];
+    getFullHeroBySlug('hou-yi') ||
+    getFullHeroes().find((h) => h.tier === 'S+' || h.tier === 'S') ||
+    getFullHeroes()[0];
 
   const browseHeroes = sortByMetaScore(heroes).slice(0, 14);
   const exclusive = getExclusiveGlobalHeroes();

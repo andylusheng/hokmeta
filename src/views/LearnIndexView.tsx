@@ -2,7 +2,7 @@
 
 import { useMemo, useState } from 'react';
 import Link from 'next/link';
-import { getLearnArticles } from '@/lib/learn';
+import type { LearnArticle } from '@/lib/learn';
 import { heroes } from '@/lib/data';
 import { createT, localePath, type Locale } from '@/lib/i18n';
 import { getHeroDisplayName } from '@/lib/locale-names';
@@ -53,9 +53,9 @@ const ROLE_HUBS = [
   { role: 'Support', href: '/best-heroes/support' },
 ] as const;
 
-export function LearnIndexView({ locale = 'en' }: { locale?: Locale }) {
+export function LearnIndexView({ locale = 'en', articles }: { locale?: Locale; articles: LearnArticle[] }) {
   const t = createT(locale);
-  const allArticles = getLearnArticles(locale);
+  const allArticles = articles;
 
   // Separate base articles from hero-specific ones
   const { baseArticles, heroArticles } = useMemo(() => {
@@ -73,15 +73,14 @@ export function LearnIndexView({ locale = 'en' }: { locale?: Locale }) {
 
   // Category filter
   const [activeCategory, setActiveCategory] = useState<string>('all');
-  const [baseSearch, setBaseSearch] = useState('');
-  const [heroSearch, setHeroSearch] = useState('');
+  const [search, setSearch] = useState('');
 
   const filteredBase = useMemo(() => {
     let list = baseArticles;
     if (activeCategory !== 'all') {
       list = list.filter((a) => a.category === activeCategory);
     }
-    const q = baseSearch.trim().toLowerCase();
+    const q = search.trim().toLowerCase();
     if (q) {
       list = list.filter(
         (a) =>
@@ -90,7 +89,7 @@ export function LearnIndexView({ locale = 'en' }: { locale?: Locale }) {
       );
     }
     return list;
-  }, [baseArticles, activeCategory, baseSearch]);
+  }, [baseArticles, activeCategory, search]);
 
   // Group hero articles by hero slug: each hero has up to 3 article types
   const heroGroups = useMemo(() => {
@@ -155,7 +154,7 @@ export function LearnIndexView({ locale = 'en' }: { locale?: Locale }) {
   }, [heroGroups]);
 
   const filteredHeroGroupsByRole = useMemo(() => {
-    const q = heroSearch.trim().toLowerCase();
+    const q = search.trim().toLowerCase();
     if (!q) return heroGroupsByRole;
     return heroGroupsByRole
       .map(({ role, groups }) => ({
@@ -166,7 +165,7 @@ export function LearnIndexView({ locale = 'en' }: { locale?: Locale }) {
         }),
       }))
       .filter(({ groups }) => groups.length > 0);
-  }, [heroGroupsByRole, heroSearch, locale]);
+  }, [heroGroupsByRole, search, locale]);
 
   // Count base articles per category
   const catCounts = useMemo(() => {
@@ -297,13 +296,7 @@ export function LearnIndexView({ locale = 'en' }: { locale?: Locale }) {
         <div className="rounded-xl border border-hok-border bg-hok-card/40 p-4">
           <h2 className="text-lg font-bold text-white">{t('learn.heroLookupTitle')}</h2>
           <p className="mt-1 text-sm text-gray-500">{t('learn.heroLookupDesc')}</p>
-          <input
-            type="text"
-            value={heroSearch}
-            onChange={(e) => setHeroSearch(e.target.value)}
-            placeholder={t('learn.heroSearchPlaceholder')}
-            className="mt-4 w-full rounded-lg border border-hok-border bg-hok-dark/60 px-4 py-2.5 text-sm text-white placeholder:text-gray-500 focus:border-hok-gold/60 focus:outline-none"
-          />
+          <p className="mt-3 text-xs text-gray-600">↓ {t('learn.heroLookupHint')}</p>
         </div>
       </section>
 
@@ -339,12 +332,12 @@ export function LearnIndexView({ locale = 'en' }: { locale?: Locale }) {
         ))}
       </div>
 
-      {/* ════ Search for base guides ════ */}
+      {/* ════ Unified Search ════ */}
       <div className="mb-8">
         <input
           type="text"
-          value={baseSearch}
-          onChange={(e) => setBaseSearch(e.target.value)}
+          value={search}
+          onChange={(e) => setSearch(e.target.value)}
           placeholder={t('learn.searchPlaceholder')}
           className="w-full max-w-md rounded-lg border border-hok-border bg-hok-card px-4 py-2.5 text-sm text-white placeholder:text-gray-500 focus:border-hok-gold/60 focus:outline-none"
         />

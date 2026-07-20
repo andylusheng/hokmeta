@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import type { GameItem, HeroBuildItem } from '@/types/hero';
-import { heroes } from '@/lib/data';
+import { getFullHeroes } from '@/lib/heroes-server';
 import {
   getLocalizedItemDescription,
   getLocalizedItemLabel,
@@ -10,10 +10,11 @@ import {
 import { getHeroDisplayName } from '@/lib/locale-names';
 import { HeroAvatar } from '@/components/HeroAvatar';
 import { Breadcrumb } from '@/components/Breadcrumb';
+import { JsonLd, breadcrumbSchema } from '@/lib/schema';
 import { createT, localePath, type Locale } from '@/lib/i18n';
 
 function heroesUsingItem(itemId: string) {
-  return heroes.filter((h) => {
+  return getFullHeroes().filter((h) => {
     const rows: HeroBuildItem[] = [
       ...(h.build || []),
       ...(h.buildZh || []),
@@ -39,6 +40,13 @@ export function ItemDetailPageView({
 
   return (
     <div className="container-wide">
+      <JsonLd
+        data={breadcrumbSchema([
+          { name: t('common.home'), path: localePath(locale, '/') },
+          { name: t('nav.items'), path: localePath(locale, '/items') },
+          { name: getLocalizedItemName(item, locale), path: localePath(locale, `/items/${item.id}`) },
+        ])}
+      />
       <Breadcrumb
         items={[
           { label: t('common.home'), href: localePath(locale, '/') },

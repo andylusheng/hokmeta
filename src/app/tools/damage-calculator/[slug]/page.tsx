@@ -1,5 +1,6 @@
 import { notFound } from 'next/navigation';
 import { heroes, getHeroBySlug } from '@/lib/data';
+import { getFullHeroBySlug } from '@/lib/heroes-server';
 import { buildMetadata, defaultTitle } from '@/lib/seo';
 import { DamageCalculatorView } from '@/views/DamageCalculatorView';
 
@@ -34,7 +35,7 @@ export default function HeroDamageCalculatorPage({
 }: {
   params: { slug: string };
 }) {
-  const hero = getHeroBySlug(params.slug);
+  const hero = getFullHeroBySlug(params.slug);
   if (!hero) notFound();
 
   return <DamageCalculatorView hero={hero} locale="en" />;

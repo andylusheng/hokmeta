@@ -80,7 +80,7 @@
     "splashPatch": "Patch {season}",
     "splashFeaturedLabel": "Featured hero",
     "splashFeaturedTitle": "{name} build for the current patch",
-    "splashViewBuild": "View build",
+    "splashViewBuild": "View {name} build",
     "decisionsTitle": "Builds, counters, and tools for ranked decisions",
     "decisionsBody": "Start with a hero build, then check counters and use the tools when your item order or matchup changes. Each route is designed for a specific ranked decision, not a generic tier-list score.",
     "decisionsHeroesCta": "Browse hero builds",
@@ -249,7 +249,8 @@
     "subtitle": "Curated duo synergies and fast-push templates for ranked. Honest data sourcing — no fake duo win rates.",
     "sourceNote": "{source} · Updated {updated}",
     "duosTitle": "Featured duos",
-    "templatesTitle": "Fast-push templates"
+    "templatesTitle": "Team comp templates",
+    "faqTitle": "Team Comp FAQ"
   },
   "build": {
     "colOrder": "#",
@@ -496,7 +497,9 @@
     "buildCompareHelperBody": "Compare recommended, alternate, or custom builds against the same target templates before changing your ranked item path.",
     "heroGuideCta": "Open {name} hero guide",
     "heroCounterCta": "Open {name} counter page",
-    "itemDatabaseCta": "Open item database"
+    "itemDatabaseCta": "Open item database",
+    "relatedHeroBuilds": "Browse hero builds",
+    "relatedItemDb": "Browse item database"
   },
   "learn": {
     "title": "Learning Hub",
@@ -505,7 +508,7 @@
     "subtitle": "Honor of Kings Global guides for builds, counters, tier lists, jungle routes, team comps, and ranked climb decisions.",
     "byAuthor": "By {author} · Published {published} · Updated {updated}",
     "dataNote": "Data note",
-    "searchPlaceholder": "Search guides...",
+    "searchPlaceholder": "Search heroes or guides...",
     "allCategories": "All",
     "intentLabel": "Start by search intent",
     "intentTitle": "Find the exact guide for your next ranked decision",
@@ -517,6 +520,7 @@
     "bestRoleGuide": "Best {role} heroes",
     "heroLookupTitle": "Find a hero guide",
     "heroLookupDesc": "Search any hero to open build, counter, and weakness articles from one row.",
+    "heroLookupHint": "Use the search box below to filter heroes and guides at once.",
     "heroGuides": "Hero Guides",
     "heroGuidesDesc": "Individual hero build, counter, and playstyle guides — {count} articles across {heroCount} heroes.",
     "heroSearchPlaceholder": "Search by hero name...",
@@ -729,6 +733,20 @@
     "message": "This page could not be found.",
     "home": "Home",
     "allHeroes": "All Heroes"
+  },
+  "compare": {
+    "title": "Hero Compare",
+    "subtitle": "{role} matchup — side-by-side ranked stats",
+    "statsTitle": "Ranked Stats",
+    "winRate": "Win rate",
+    "pickRate": "Pick rate",
+    "banRate": "Ban rate",
+    "verdictTitle": "Quick Verdict",
+    "higherWr": " has the higher win rate in this {role} matchup — a safer blind pick.",
+    "lowerWr": " has the lower win rate but may shine with the right team comp or counter-pick.",
+    "viewHero": "View {name} guide",
+    "buildCompareTool": "Compare builds in tool",
+    "relatedTitle": "Related Comparisons"
   },
   "footer": {
     "stats": "Stats: Camp HOK",

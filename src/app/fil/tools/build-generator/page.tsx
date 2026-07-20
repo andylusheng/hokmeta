@@ -1,4 +1,4 @@
-import { heroes } from '@/lib/data';
+import { getFullHeroes } from '@/lib/heroes-server';
 import { buildMetadata, defaultTitle } from '@/lib/seo';
 import { createT } from '@/lib/i18n';
 import { BuildGeneratorView } from '@/views/BuildGeneratorView';
@@ -13,5 +13,5 @@ export const metadata = buildMetadata({
 });
 
 export default function ZhTWBuildGeneratorPage() {
-  return <BuildGeneratorView heroes={heroes} locale="fil" />;
+  return <BuildGeneratorView heroes={getFullHeroes()} locale="fil" />;
 }

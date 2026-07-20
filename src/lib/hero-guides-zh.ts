@@ -1,5 +1,6 @@
 import type { Hero } from '@/types/hero';
-import { formatRate, getHeroBySlug } from '@/lib/data';
+import { formatRate } from '@/lib/data';
+import { getFullHeroBySlug } from '@/lib/heroes-server';
 import { getHeroDisplayName, formatHeroNameList } from '@/lib/locale-names';
 export interface LocalizedGuide {
   laning?: string;
@@ -128,7 +129,7 @@ export const S_PLUS_GUIDES_ZH: Record<string, LocalizedGuide> = {
 };
 
 function sTierGuide(slug: string, extras: Partial<LocalizedGuide>): LocalizedGuide | undefined {
-  const hero = getHeroBySlug(slug);
+  const hero = getFullHeroBySlug(slug);
   if (!hero) return undefined;
   return guideFromHero(hero, extras);
 }

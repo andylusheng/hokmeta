@@ -1,12 +1,40 @@
 import {
-  heroes,
-  getHeroesByRole,
   formatRate,
-  getMostPickedHeroes,
-  getMostBannedHeroes,
-  getRecentMetaChanges,
 } from '@/lib/data';
+import { getFullHeroes } from '@/lib/heroes-server';
 import type { Hero, HeroRole } from '@/types/hero';
+
+const heroes = getFullHeroes();
+
+function getHeroesByRoleLocal(role: HeroRole): Hero[] {
+  return heroes.filter((h) => h.role === role);
+}
+
+function getMostPickedLocal(limit: number): Hero[] {
+  return [...heroes]
+    .filter((h) => h.pickRate !== null)
+    .sort((a, b) => (b.pickRate ?? 0) - (a.pickRate ?? 0))
+    .slice(0, limit);
+}
+
+function getMostBannedLocal(limit: number): Hero[] {
+  return [...heroes]
+    .filter((h) => h.banRate !== null)
+    .sort((a, b) => (b.banRate ?? 0) - (a.banRate ?? 0))
+    .slice(0, limit);
+}
+
+function getRecentMetaChangesLocal(limit: number): { hero: Hero; patch: string }[] {
+  const items: { hero: Hero; patch: string }[] = [];
+  for (const hero of heroes) {
+    for (const p of hero.patchHistory) {
+      if (p.change && p.change !== 'Data unavailable') {
+        items.push({ hero, patch: `${p.version}: ${p.change}` });
+      }
+    }
+  }
+  return items.slice(0, limit);
+}
 
 export const DATA_SYNC = heroes[0]?.dataUpdated ?? 'latest Camp HOK pull';
 
@@ -39,7 +67,7 @@ function byLane(lane: string, role?: HeroRole) {
 }
 
 function topByRole(role: HeroRole, n = 5, sort: 'wr' | 'pick' = 'wr') {
-  const list = getHeroesByRole(role).filter((h) => h.winRate !== null);
+  const list = getHeroesByRoleLocal(role).filter((h) => h.winRate !== null);
   return (sort === 'pick' ? sortByPickRate(list) : sortByWinRate(list)).slice(
     0,
     n
@@ -66,8 +94,8 @@ export function counterLineEn(h: Hero): string {
 }
 
 export const topWR = sortByWinRate(heroes).slice(0, 10);
-export const mostPicked = getMostPickedHeroes(8);
-export const mostBanned = getMostBannedHeroes(6);
+export const mostPicked = getMostPickedLocal(8);
+export const mostBanned = getMostBannedLocal(6);
 export const jungleAssassins = sortByPickRate(byLane('Jungling', 'Assassin')).slice(0, 5);
 export const roamSupports = sortByPickRate(byLane('Roaming', 'Support')).slice(0, 4);
 export const clashWarriors = sortByWinRate(byLane('Clash Lane', 'Warrior')).slice(0, 4);
@@ -76,6 +104,6 @@ export const marksmen = topByRole('Marksman', 5);
 export const supports = topByRole('Support', 4, 'pick');
 export const tanks = topByRole('Tank', 4);
 export const assassins = topByRole('Assassin', 5, 'pick');
-export const recentPatches = getRecentMetaChanges(12);
+export const recentPatches = getRecentMetaChangesLocal(12);
 
 export { sortByWinRate, sortByPickRate, byLane, topByRole, heroes };

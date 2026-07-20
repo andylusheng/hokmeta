@@ -6,7 +6,26 @@ import { createT, localePath, type Locale } from '@/lib/i18n';
 import { getHeroDisplayName } from '@/lib/locale-names';
 import { translateLane } from '@/lib/locale-labels';
 import { LANE_LABEL } from '@/lib/lanes';
-import { JsonLd, breadcrumbSchema } from '@/lib/schema';
+import { JsonLd, breadcrumbSchema, faqPageSchema } from '@/lib/schema';
+
+const COMPS_FAQS = [
+  {
+    question: 'What is the best team comp for ranked climb in Honor of Kings?',
+    answer: 'A balanced comp with frontline engage, backline DPS, and peel support works best. Fast Push and Protect-Carry templates are reliable for solo queue.',
+  },
+  {
+    question: 'How do I counter a dive composition?',
+    answer: 'Use Anti-Dive Protection: Dun + Dolia double peel, zone denial from Yi Xing, and a secondary frontline like Kaizer to absorb engages.',
+  },
+  {
+    question: 'Which duo is strongest for bot lane?',
+    answer: 'Marco Polo + Yaria is the classic hyper-carry duo. Garo + Da Qiao enables split-push, while Meng Ya + Sakeer dominates with poke range.',
+  },
+  {
+    question: 'Are these comps based on actual duo win rates?',
+    answer: 'No. Individual hero stats come from Camp HOK international ranked data. Synergy notes are editorial analysis — no official duo win-rate data is published.',
+  },
+];
 
 export function CompsPageView({ locale = 'en' }: { locale?: Locale }) {
   const t = createT(locale);
@@ -98,6 +117,20 @@ export function CompsPageView({ locale = 'en' }: { locale?: Locale }) {
             </article>
           ))}
         </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="mt-12 max-w-2xl">
+        <h2 className="section-title">{t('comps.faqTitle')}</h2>
+        <div className="space-y-4">
+          {COMPS_FAQS.map((faq) => (
+            <details key={faq.question} className="rounded-lg border border-hok-border bg-hok-card/40 p-4">
+              <summary className="cursor-pointer text-sm font-semibold text-white">{faq.question}</summary>
+              <p className="mt-2 text-sm leading-relaxed text-gray-400">{faq.answer}</p>
+            </details>
+          ))}
+        </div>
+        <JsonLd data={faqPageSchema(COMPS_FAQS)} />
       </section>
     </div>
   );

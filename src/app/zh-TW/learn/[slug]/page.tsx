@@ -1,6 +1,7 @@
 import { notFound } from 'next/navigation';
-import { getLearnArticle, getLearnSlugs } from '@/lib/learn';
+import { getLearnArticle, getLearnSlugs, slugToDate } from '@/lib/learn';
 import { buildMetadata, defaultTitle } from '@/lib/seo';
+import { site } from '@/lib/data';
 import { LearnArticleView } from '@/views/LearnArticleView';
 
 export function generateStaticParams() {
@@ -20,6 +21,7 @@ export function generateMetadata({
     path: `/learn/${params.slug}`,
     type: 'article',
     locale: 'zh-TW',
+    modifiedTime: article.lastModified ?? slugToDate(article.slug, new Date(site.dateModified)),
   });
 }
 

@@ -1,10 +1,10 @@
 import { formatRate, heroes, metaScore } from '@/lib/data';
 import { heroToLane, LANE_ORDER, type GameLane } from '@/lib/lanes';
-import type { Hero } from '@/types/hero';
+import type { HeroIndexEntry } from '@/types/hero';
 import { createT, type Locale } from '@/lib/i18n';
 
 export interface ClimbPick {
-  hero: Hero;
+  hero: HeroIndexEntry;
   score: number;
   reasons: string[];
   laneRank: number;
@@ -12,7 +12,7 @@ export interface ClimbPick {
 
 const PICKS_PER_LANE = 5;
 
-function buildReasons(hero: Hero, locale: Locale): string[] {
+function buildReasons(hero: HeroIndexEntry, locale: Locale): string[] {
   const t = createT(locale);
   const reasons: string[] = [];
 
@@ -58,7 +58,7 @@ export function getAllClimbPicks(locale: Locale = 'en'): Record<GameLane, ClimbP
   return result;
 }
 
-export function getClimbPickForHero(hero: Hero, locale: Locale = 'en'): ClimbPick | null {
+export function getClimbPickForHero(hero: HeroIndexEntry, locale: Locale = 'en'): ClimbPick | null {
   const lane = heroToLane(hero);
   const picks = getClimbPicksByLane(lane);
   const idx = picks.findIndex((p) => p.hero.slug === hero.slug);
@@ -71,6 +71,6 @@ export function getClimbPickForHero(hero: Hero, locale: Locale = 'en'): ClimbPic
   };
 }
 
-export function isClimbPick(hero: Hero): boolean {
+export function isClimbPick(hero: HeroIndexEntry): boolean {
   return getClimbPickForHero(hero) !== null;
 }

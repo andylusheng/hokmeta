@@ -1,5 +1,6 @@
 import type { Hero } from '@/types/hero';
-import { heroes, formatRate } from '@/lib/data';
+import { formatRate } from '@/lib/data';
+import { getFullHeroes } from '@/lib/heroes-server';
 import {
   getLocalizedArcana,
   getLocalizedBuild,
@@ -14,6 +15,8 @@ import {
   getHeroDisplayName,
   translateArcanaName,
 } from '@/lib/locale-names';
+
+const heroes = getFullHeroes();
 
 const FAQ_PRIORITY = [
   'faq-best-build',

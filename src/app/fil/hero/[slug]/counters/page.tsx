@@ -1,5 +1,6 @@
 import { notFound } from 'next/navigation';
 import { getHeroBySlug, getHeroSlugs, site } from '@/lib/data';
+import { getFullHeroBySlug } from '@/lib/heroes-server';
 import { createT, getMetaSeasonLabel } from '@/lib/i18n';
 import { getHeroDisplayName } from '@/lib/locale-names';
 import { buildMetadata, defaultTitle } from '@/lib/seo';
@@ -20,14 +21,14 @@ export function generateMetadata({ params }: { params: { slug: string } }) {
     description: t('counterPage.subtitle', { season }),
     path: `/hero/${params.slug}/counters`,
     locale: 'fil',
-    ogImage: hero.avatar,
+    ogImage: `/og/heroes/${hero.slug}.svg`,
     type: 'article',
     modifiedTime: hero.dataUpdated ?? site.dateModified,
   });
 }
 
 export default function ZhTWCounterPage({ params }: { params: { slug: string } }) {
-  const hero = getHeroBySlug(params.slug);
+  const hero = getFullHeroBySlug(params.slug);
   if (!hero) notFound();
   return <CounterPageView hero={hero} locale="fil" />;
 }

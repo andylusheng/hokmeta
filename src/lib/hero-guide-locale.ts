@@ -1,8 +1,10 @@
 import type { Hero } from '@/types/hero';
-import { heroes } from '@/lib/data';
+import { getFullHeroes } from '@/lib/heroes-server';
 import { createT, type Locale } from '@/lib/i18n';
 import { getLocalizedGuideZh } from '@/lib/hero-content-zh';
 import { buildLaningTip, buildHighRankNote, topPeer, peerComparison } from '@/lib/hero-faq';
+
+const heroes = getFullHeroes();
 
 const TEAMFIGHT_KEYS: Record<string, string> = {
   Tank: 'guide.teamfight.tank',

@@ -80,7 +80,7 @@
     "splashPatch": "版本 {season}",
     "splashFeaturedLabel": "精選英雄",
     "splashFeaturedTitle": "{name} 當前版本出裝",
-    "splashViewBuild": "查看出裝",
+    "splashViewBuild": "查看 {name} 出裝",
     "decisionsTitle": "排位前，先確認出裝、克制與工具",
     "decisionsBody": "先看英雄出裝，再確認克制關係；當裝備順序或對局條件改變時，再用工具測試。每個入口都對應一個具體的排位決策，而不是只給一個泛用評分。",
     "decisionsHeroesCta": "瀏覽英雄出裝",
@@ -249,7 +249,8 @@
     "subtitle": "精選雙排搭檔與速推模板，誠實標註數據來源——無虛構雙排勝率。",
     "sourceNote": "{source} · 更新 {updated}",
     "duosTitle": "精選搭檔",
-    "templatesTitle": "速推模板"
+    "templatesTitle": "陣容模板",
+    "faqTitle": "陣容常見問題"
   },
   "build": {
     "colOrder": "#",
@@ -496,7 +497,9 @@
     "buildCompareHelperBody": "在更換排位出裝前，使用相同的目標模板對比推薦、備選或自訂出裝。",
     "heroGuideCta": "查看 {name} 英雄攻略",
     "heroCounterCta": "查看 {name} 克制頁",
-    "itemDatabaseCta": "查看裝備資料庫"
+    "itemDatabaseCta": "查看裝備資料庫",
+    "relatedHeroBuilds": "瀏覽英雄出裝",
+    "relatedItemDb": "瀏覽裝備資料庫"
   },
   "learn": {
     "title": "攻略中心",
@@ -505,7 +508,7 @@
     "subtitle": "王者榮耀國際服攻略：出裝、克制、梯度榜、打野路線、陣容模板與排位上分決策。",
     "byAuthor": "作者 {author} · 發布 {published} · 更新 {updated}",
     "dataNote": "數據說明",
-    "searchPlaceholder": "搜尋攻略...",
+    "searchPlaceholder": "搜尋英雄或攻略...",
     "allCategories": "全部",
     "intentLabel": "依搜尋意圖開始",
     "intentTitle": "直接找到下一場排位需要的攻略",
@@ -517,6 +520,7 @@
     "bestRoleGuide": "最強 {role} 英雄",
     "heroLookupTitle": "查找英雄攻略",
     "heroLookupDesc": "搜尋任一英雄，一行打開出裝、克制與弱點文章。",
+        "heroLookupHint": "使用下方搜尋框，一次篩選英雄與攻略。",
     "heroGuides": "英雄攻略",
     "heroGuidesDesc": "個別英雄出裝、克制與打法攻略——共 {count} 篇，涵蓋 {heroCount} 位英雄。",
     "heroSearchPlaceholder": "搜尋英雄名稱...",
@@ -729,6 +733,20 @@
     "message": "找不到此頁面。",
     "home": "首頁",
     "allHeroes": "全部英雄"
+  },
+  "compare": {
+    "title": "英雄對比",
+    "subtitle": "{role}對決 — 排位數據一比一",
+    "statsTitle": "排位數據",
+    "winRate": "勝率",
+    "pickRate": "選取率",
+    "banRate": "禁用率",
+    "verdictTitle": "快速結論",
+    "higherWr": " 在此 {role} 對決中勝率較高，盲選更安全。",
+    "lowerWr": " 勝率較低，但配合正確陣容或克制選角時能發揮。",
+    "viewHero": "查看 {name} 攻略",
+    "buildCompareTool": "用工具對比出裝",
+    "relatedTitle": "相關對比"
   },
   "footer": {
     "stats": "數據：Camp HOK",

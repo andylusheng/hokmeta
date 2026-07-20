@@ -10,8 +10,8 @@
   "laneZh": "遊走",
   "difficulty": "Easy",
   "tier": "A",
-  "winRate": 49.36,
-  "pickRate": 0.78,
+  "winRate": 49.45,
+  "pickRate": 0.87,
   "banRate": 0.09,
   "rank": 84,
   "avatar": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/i8WMjP6d.png",
@@ -19,7 +19,7 @@
   "heroCover": "https://camp.honorofkings.com/social/game/src/image_hero_cover_1275*718/yvld9fdE.jpg",
   "tencentId": 114,
   "dataSource": "Camp HOK bilingual (primary)",
-  "dataUpdated": "2026-07-16",
+  "dataUpdated": "2026-07-19",
   "skills": [
     {
       "slot": "passive",
@@ -217,55 +217,6 @@
           "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
         }
       ]
-    },
-    {
-      "id": "camp-1",
-      "label": "myanmar item",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1754",
-          "name": "Guardian - Radiance",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1754.png",
-          "description": "HP +1,200, MSPD +7.5%\nSurvivability aura"
-        },
-        {
-          "slot": 2,
-          "itemId": "1336",
-          "name": "Glacial Buckler",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1336.png",
-          "description": "CDR +20%, HP +600, PDEF +240\nGroup damage & slow"
-        },
-        {
-          "slot": 3,
-          "itemId": "1347",
-          "name": "Longnight Guardian",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1347.png",
-          "description": "MDEF +210, HP +1,000, MSPD +7.5%\nReduces magical damage"
-        },
-        {
-          "slot": 4,
-          "itemId": "1333",
-          "name": "Ominous Premonition",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1333.png",
-          "description": "PDEF +300, HP +1,200\nSlows attackers"
-        },
-        {
-          "slot": 5,
-          "itemId": "1137",
-          "name": "Axe of Torment",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1137.png",
-          "description": "PATK +80, CDR +10%, HP +500\nAnti-squishy"
-        },
-        {
-          "slot": 6,
-          "itemId": "1335",
-          "name": "Succubus Cloak",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
-          "description": "MDEF +300, HP +1,100\nNegates magical damage"
-        }
-      ]
     }
   ],
   "buildsZh": [
@@ -317,55 +268,6 @@
           "description": "+900點生命值+150點物防+150點法防……\n原地復活"
         }
       ]
-    },
-    {
-      "id": "camp-1",
-      "label": "myanmar item",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1754",
-          "name": "近衛・形昭",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1754.png",
-          "description": "+1200點生命值+7.5%移速\n光環強化生存"
-        },
-        {
-          "slot": 2,
-          "itemId": "1336",
-          "name": "極寒風暴",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1336.png",
-          "description": "+20%減冷卻時間+600點生命值+240點物防\n群體傷害減速"
-        },
-        {
-          "slot": 3,
-          "itemId": "1347",
-          "name": "永夜守護",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1347.png",
-          "description": "+210點法防+1000點生命值\n+7.5%移速減少法術傷害"
-        },
-        {
-          "slot": 4,
-          "itemId": "1333",
-          "name": "不祥徵兆",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1333.png",
-          "description": "+300點物防+1200點生命值\n受擊時將敵人減速"
-        },
-        {
-          "slot": 5,
-          "itemId": "1137",
-          "name": "暗影戰斧",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1137.png",
-          "description": "+80點攻擊+10%減冷卻時間+500點生命值\n打血薄用"
-        },
-        {
-          "slot": 6,
-          "itemId": "1335",
-          "name": "魔女斗篷",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
-          "description": "+300點法防+1100點生命值\n吸收法術傷害"
-        }
-      ]
     }
   ],
   "arcana": [
@@ -393,12 +295,12 @@
     "Li Bai"
   ],
   "tips": [
-    "Liu Shan (Tank): Tier A — 49.36% WR (Camp HOK).",
+    "Liu Shan (Tank): Tier A — 49.45% WR (Camp HOK).",
     "Lane: Roaming.",
     "Build: Axe of Torment, Blazing Cape, Frigid Charge."
   ],
   "tipsZh": [
-    "劉禪（遊走）：梯度 A，勝率 49.36%（Camp HOK）。",
+    "劉禪（遊走）：梯度 A，勝率 49.45%（Camp HOK）。",
     "出裝：暗影戰斧、紅蓮斗篷、冰霜衝擊."
   ],
   "patchHistory": [
@@ -497,7 +399,7 @@
     {
       "id": "faq-good-season",
       "question": "Is Liu Shan good in current season?",
-      "answer": "Liu Shan is Tier A Tank with 49.36% win rate, 0.78% pick rate, and 0.09% ban rate (Camp HOK international)."
+      "answer": "Liu Shan is Tier A Tank with 49.45% win rate, 0.87% pick rate, and 0.09% ban rate (Camp HOK international)."
     },
     {
       "id": "faq-best-build",
@@ -514,7 +416,7 @@
     {
       "id": "faq-good-season",
       "question": "劉禪 這版本適合上分嗎？",
-      "answer": "劉禪 為 A 梯度，勝率 49.36%、選取 0.78%、禁用 0.09%（Camp HOK 國際服）。"
+      "answer": "劉禪 為 A 梯度，勝率 49.45%、選取 0.87%、禁用 0.09%（Camp HOK 國際服）。"
     },
     {
       "id": "faq-best-build",
@@ -528,14 +430,14 @@
     }
   ],
   "metaAnalysis": [
-    "Liu Shan win rate 49.36% (Camp HOK, 2026-07-16).",
-    "Pick rate 0.78%.",
+    "Liu Shan win rate 49.45% (Camp HOK, 2026-07-19).",
+    "Pick rate 0.87%.",
     "Ban rate 0.09%.",
     "Counters: Arthur, Augran, Biron. Weak into: Li Bai."
   ],
   "metaAnalysisZh": [
-    "劉禪 勝率 49.36%（Camp HOK，2026-07-16）",
-    "選取率 0.78%",
+    "劉禪 勝率 49.45%（Camp HOK，2026-07-19）",
+    "選取率 0.87%",
     "禁用率 0.09%",
     "克制：Arthur、Augran、Biron；被克制：Li Bai"
   ],

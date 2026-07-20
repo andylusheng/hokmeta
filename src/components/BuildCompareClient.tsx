@@ -177,6 +177,22 @@ function BuildCompareWorkspace({
   const presets = useMemo(() => hero.builds ?? [], [hero]);
   const selectedSkillIds = useMemo(() => profile.skills.map((skill) => skill.id), [profile]);
 
+  // Read hero from URL on mount
+  useEffect(() => {
+    const param = new URLSearchParams(window.location.search).get('hero');
+    if (param && heroes.some((h) => h.slug === param)) {
+      setSlug(param);
+    }
+  }, [heroes, initialHeroSlug]);
+
+  // Sync hero selection to URL for shareable/indexable links
+  useEffect(() => {
+    if (!slug) return;
+    const url = new URL(window.location.href);
+    url.searchParams.set('hero', slug);
+    window.history.replaceState(null, '', url.toString());
+  }, [slug]);
+
   useEffect(() => {
     const recommended = defaultBuildIds(hero);
     const alternate = buildIdsFromPreset(presets[1]) || [];
@@ -349,6 +365,14 @@ function BuildCompareWorkspace({
       <div className="rounded border border-amber-400/30 bg-amber-400/10 p-4 text-sm text-amber-100">
         {c.beta}
       </div>
+
+      <button
+        type="button"
+        onClick={() => { navigator.clipboard.writeText(window.location.href); }}
+        className="inline-flex items-center gap-1.5 rounded border border-hok-border px-3 py-1.5 text-xs text-gray-400 transition hover:border-hok-gold/50 hover:text-hok-gold"
+      >
+        🔗 Copy share link
+      </button>
 
       <section className="card">
         <h2 className="section-title">{c.hero}</h2>

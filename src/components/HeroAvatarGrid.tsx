@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import type { Hero } from '@/types/hero';
+import type { HeroIndexEntry } from '@/types/hero';
 import { HeroAvatar } from '@/components/HeroAvatar';
 import { TierBadge } from '@/components/TierBadge';
 import { heroLaneTierBand } from '@/lib/lanes';
@@ -13,7 +13,7 @@ export function HeroAvatarGrid({
   showTier = true,
   columns = 'grid-cols-4 sm:grid-cols-6 md:grid-cols-8 lg:grid-cols-12',
 }: {
-  heroes: Hero[];
+  heroes: HeroIndexEntry[];
   locale?: Locale;
   size?: number;
   showTier?: boolean;

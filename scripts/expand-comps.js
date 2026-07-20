@@ -1,0 +1,294 @@
+/**
+ * expand-comps.js
+ * Expands data/comps.json from ~6 entries to 35+ (duos + templates).
+ * Run: node scripts/expand-comps.js
+ */
+const fs = require('fs');
+const path = require('path');
+
+const OUT = path.join(__dirname, '..', 'data', 'comps.json');
+
+const duos = [
+  // Existing 4
+  {
+    id: 'marco-yaria',
+    slugs: ['marco-polo', 'yaria'],
+    lane: 'farm',
+    tags: ['bot', 'peel', 'hyper-carry'],
+    synergy: { en: "Marco Polo's sustained DPS pairs with Yaria's shields and CC — classic bot lane hyper-carry setup on global server.", 'zh-TW': '馬可波羅持續輸出搭配瑤的護盾與控制，國際服經典發育路保核組合。' },
+    dataNote: { en: 'Roam + marksman. Pick rates from Camp HOK international ranked. No published duo win-rate — synergy is editorial.', 'zh-TW': '游走+射手。選取率來自 Camp HOK 國際服排位；無官方雙排勝率，搭檔說明為編輯整理。' }
+  },
+  {
+    id: 'huang-yaria',
+    slugs: ['huang-zhong', 'yaria'],
+    lane: 'farm',
+    tags: ['siege', 'peel', 'late-game'],
+    synergy: { en: "Huang Zhong needs peel while channeling his ultimate — Yaria's link and shields keep him alive during siege.", 'zh-TW': '黃忠大招需要保護，瑤的鏈接與護盾讓他在壓塔時更難被切。' },
+    dataNote: { en: 'Marksman + roam support (not double support). Individual WR/pick from Camp HOK.', 'zh-TW': '射手+游走輔助（非雙輔）。各英雄 Camp HOK 勝率/選取數據。' }
+  },
+  {
+    id: 'sunbin-luban',
+    slugs: ['sun-bin', 'luban-no-7'],
+    lane: 'farm',
+    tags: ['speed-up', 'siege', 'bot'],
+    synergy: { en: "Sun Bin's team speed-up and CC setup helps Luban No.7 scale and siege turrets safely.", 'zh-TW': '孫臏團隊加速與控制幫魯班七號發育推塔，發育路常見節奏組合。' },
+    dataNote: { en: 'Support roam + marksman — standard lane pairing. Camp HOK pick rates; editorial synergy note.', 'zh-TW': '游走輔助+射手，標準分路搭檔。Camp HOK 選取率；協同為編輯整理。' }
+  },
+  {
+    id: 'wukong-mozi',
+    slugs: ['wukong', 'mozi'],
+    lane: 'jungle',
+    tags: ['dive', 'cc-chain', 'mid-jungle'],
+    synergy: { en: "Wukong jungle engage into Mozi's mid-lane CC — strong pick comp for river and side ganks.", 'zh-TW': '孫悟空打野開團配合墨子中路控制，河道與邊路抓人節奏強。' },
+    dataNote: { en: 'Jungle + mid mage. Camp individual stats; draft-dependent, not duo win-rate data.', 'zh-TW': '打野+中路法師。Camp 個人數據；視陣容而定，非雙排勝率。' }
+  },
+  // New duos
+  {
+    id: 'libai-guiguzi',
+    slugs: ['li-bai', 'guiguzi'],
+    lane: 'jungle',
+    tags: ['dive', 'cc-setup', 'pick'],
+    synergy: { en: "Guiguzi's pull sets up Li Bai's combo — classic assassinate-and-reset jungle-mid synergy.", 'zh-TW': '鬼谷子拉人配合李白連招，經典刺殺重置型野中聯動。' },
+    dataNote: { en: 'Assassin jungle + support roam. Camp HOK pick rates; editorial synergy.', 'zh-TW': '刺客打野+游走輔助。Camp HOK 選取率；編輯協同說明。' }
+  },
+  {
+    id: 'nakoruru-angela',
+    slugs: ['nakoruru', 'angela'],
+    lane: 'jungle',
+    tags: ['burst', 'mid-jungle', 'snowball'],
+    synergy: { en: "Nakoruru dives on Angela's burst follow-up — double assassin pressure that snowballs early kills.", 'zh-TW': '娜可露露突進配合安琪拉爆發，雙刺客壓力滾雪球。' },
+    dataNote: { en: 'Jungle + mid mage. Individual stats from Camp HOK; editorial combo note.', 'zh-TW': '打野+中路法師。Camp HOK 個人數據；編輯連招說明。' }
+  },
+  {
+    id: 'garo-daqiao',
+    slugs: ['garo', 'da-qiao'],
+    lane: 'farm',
+    tags: ['teleport', 'split-push', 'bot'],
+    synergy: { en: "Da Qiao's teleport recall lets Garo reset and rejoin fights — enabling aggressive split-push without risk.", 'zh-TW': '大喬傳送讓伽羅重置回線，激進分帶無後顧之憂。' },
+    dataNote: { en: 'Marksman + support. Camp HOK data; teleport synergy is strategic, not simulated.', 'zh-TW': '射手+輔助。Camp HOK 數據；傳送協同為戰術說明。' }
+  },
+  {
+    id: 'dianwei-caiyan',
+    slugs: ['dian-wei', 'cai-yan'],
+    lane: 'clash',
+    tags: ['sustain', 'dive', 'frontline'],
+    synergy: { en: "Cai Yan's heal and speed boost keeps Dian Wei alive in extended brawls — frontline sustain combo.", 'zh-TW': '蔡文姬回血加速讓典韋在持續團戰中站得更久，前排續航組合。' },
+    dataNote: { en: 'Warrior + support. Camp HOK stats; sustain synergy editorial.', 'zh-TW': '戰士+輔助。Camp HOK 數據；續航協同為編輯整理。' }
+  },
+  {
+    id: 'zilong-ming',
+    slugs: ['zilong', 'ming'],
+    lane: 'jungle',
+    tags: ['engage', 'cc-chain', 'pick'],
+    synergy: { en: "Ming's CC chain extends Zilong's engage window — reliable pick potential in river fights.", 'zh-TW': '明世隱控制鏈延長趙雲進場窗口，河道抓人穩定。' },
+    dataNote: { en: 'Assassin + support. Camp HOK data; editorial CC chain note.', 'zh-TW': '刺客+輔助。Camp HOK 數據；編輯控制鏈說明。' }
+  },
+  {
+    id: 'mengya-sakeer',
+    slugs: ['meng-ya', 'sakeer'],
+    lane: 'farm',
+    tags: ['poke', 'range', 'bot'],
+    synergy: { en: "Meng Ya's long-range poke with Sakeer's zone control creates an impenetrable bot lane siege.", 'zh-TW': '蒙犽遠程消耗配合薩克爾區域控制，發育路壓制力極強。' },
+    dataNote: { en: 'Marksman + support. Camp HOK pick rates; editorial lane synergy.', 'zh-TW': '射手+輔助。Camp HOK 選取率；編輯分路協同。' }
+  },
+  {
+    id: 'athena-wangzhaojun',
+    slugs: ['athena', 'wang-zhaojun'],
+    lane: 'mid',
+    tags: ['cc-chain', 'teamfight', 'aoe'],
+    synergy: { en: "Athena's dive into Wang Zhaojun's freeze — AoE CC chain that locks down teamfights.", 'zh-TW': '雅典娜突進配合王昭君冰凍，範圍控制鏈鎖定團戰。' },
+    dataNote: { en: 'Assassin + mage. Camp HOK stats; CC chain is strategic note.', 'zh-TW': '刺客+法師。Camp HOK 數據；控制鏈為戰術說明。' }
+  },
+  {
+    id: 'liubei-daqiao',
+    slugs: ['liu-bei', 'da-qiao'],
+    lane: 'clash',
+    tags: ['split-push', 'teleport', 'sustain'],
+    synergy: { en: "Liu Bei's split-push pressure with Da Qiao's teleport creates constant map tension.", 'zh-TW': '劉備分帶壓力配合大喬傳送，持續製造地圖壓力。' },
+    dataNote: { en: 'Warrior + support. Camp HOK data; macro synergy editorial.', 'zh-TW': '戰士+輔助。Camp HOK 數據；宏觀協同為編輯整理。' }
+  },
+  {
+    id: 'luban-dolia',
+    slugs: ['luban-no-7', 'dolia'],
+    lane: 'farm',
+    tags: ['shield', 'sustain', 'bot'],
+    synergy: { en: "Dolia's shields and CC peel for Luban No.7's turret siege — safe scaling bot lane.", 'zh-TW': '朵莉亞護盾與控制保護魯班七號推塔，安全發育下路。' },
+    dataNote: { en: 'Marksman + support. Camp HOK stats; editorial peel note.', 'zh-TW': '射手+輔助。Camp HOK 數據；編輯保護說明。' }
+  },
+  {
+    id: 'sima-yi-nuwa',
+    slugs: ['sima-yi', 'nuwa'],
+    lane: 'mid',
+    tags: ['burst', 'roam', 'snowball'],
+    synergy: { en: "Sima Yi's roam pressure with Nuwa's burst creates constant mid-side kill threats.", 'zh-TW': '司馬懿游走壓力配合女媧爆發，中路到邊路擊殺威脅不斷。' },
+    dataNote: { en: 'Assassin + mage. Camp HOK data; roam synergy editorial.', 'zh-TW': '刺客+法師。Camp HOK 數據；游走協同為編輯整理。' }
+  },
+  {
+    id: 'lapulapu-yixing',
+    slugs: ['lapulapu', 'yixing'],
+    lane: 'clash',
+    tags: ['teamfight', 'aoe', 'frontline'],
+    synergy: { en: "Lapu Lapu's AoE disruption with Yi Xing's zone denial — frontline teamfight lockdown.", 'zh-TW': '拉普拉普範圍干擾配合弈星區域封鎖，前排團戰控制。' },
+    dataNote: { en: 'Tank + mage. Camp HOK stats; editorial teamfight note.', 'zh-TW': '坦克+法師。Camp HOK 數據；編輯團戰說明。' }
+  }
+];
+
+const templates = [
+  // Existing 2
+  {
+    id: 'fast-push',
+    title: { en: 'Fast Push (Split Siege)', 'zh-TW': '速推分帶' },
+    coreSlugs: ['huang-zhong', 'yaria', 'liu-bei'],
+    description: { en: 'Siege marksman + peel support + side-lane bruiser. Take outer turrets after first dragon, avoid blind 5v5 until two items.', 'zh-TW': '壓塔射手 + 保核輔助 + 邊路戰士。首條暴君後推外塔，兩件核心前避免盲目五打五。' },
+    dataNote: { en: 'Template from global ranked macro — hero stats Camp HOK; win conditions are strategic, not simulated.', 'zh-TW': '模板依國際服排位節奏整理；英雄數據 Camp HOK，勝利條件為戰術說明非模擬勝率。' }
+  },
+  {
+    id: 'bot-hyper',
+    title: { en: 'Bot Hyper-Carry', 'zh-TW': '發育路保核' },
+    coreSlugs: ['marco-polo', 'yaria', 'mozi'],
+    description: { en: 'Protect marksman through mid game; mid mage provides wave clear and poke. Win via dragon + bot tier 2.', 'zh-TW': '中期保射手發育，中路法師清線消耗。靠暴君與下路二塔建立優勢。' },
+    dataNote: { en: "Core heroes' pick/WR from Camp HOK international. Template is editorial climb advice.", 'zh-TW': '核心英雄選取/勝率來自 Camp HOK 國際服；模板為編輯上分建議。' }
+  },
+  // New templates — Poke
+  {
+    id: 'poke-siege',
+    title: { en: 'Poke & Siege', 'zh-TW': '消耗壓塔' },
+    coreSlugs: ['meng-ya', 'wang-zhaojun', 'sakeer', 'lian-po', 'li-bai'],
+    description: { en: 'Long-range poke from Meng Ya + Wang Zhaojun forces enemies off objectives. Lian Po frontline, Li Bai cleanup.', 'zh-TW': '蒙犽+王昭君遠程消耗逼退敵人，廉頗前排，李白收割。' },
+    dataNote: { en: 'Poke comp template. Camp HOK stats; strategic advice.', 'zh-TW': '消耗陣容模板。Camp HOK 數據；戰術建議。' }
+  },
+  {
+    id: 'poke-zone',
+    title: { en: 'Zone Control Poke', 'zh-TW': '區域消耗' },
+    coreSlugs: ['garo', 'nuwa', 'guiguzi', 'dun', 'xuance'],
+    description: { en: 'Garo and Nuwa deny zones while Guiguzi pulls targets. Dun and Xuance provide frontline and cleanup.', 'zh-TW': '伽羅+女媧封鎖區域，鬼谷子拉人，盾山+玄策前排收割。' },
+    dataNote: { en: 'Zone control template. Camp HOK data; editorial.', 'zh-TW': '區域控制模板。Camp HOK 數據；編輯整理。' }
+  },
+  // Dive
+  {
+    id: 'dive-assassin',
+    title: { en: 'Double Assassin Dive', 'zh-TW': '雙刺突進' },
+    coreSlugs: ['nakoruru', 'li-bai', 'angela', 'dian-wei', 'sun-bin'],
+    description: { en: 'Nakoruru + Li Bai dive backline, Angela burst follow-up. Dian Wei frontline, Sun Bin speed for repositioning.', 'zh-TW': '娜可露露+李白切後排，安琪拉爆發跟上。典韋前排，孫臏加速調整站位。' },
+    dataNote: { en: 'Dive comp. Camp HOK stats; editorial.', 'zh-TW': '突進陣容。Camp HOK 數據；編輯整理。' }
+  },
+  {
+    id: 'dive-cc',
+    title: { en: 'CC Chain Dive', 'zh-TW': '控制鏈突進' },
+    coreSlugs: ['athena', 'wang-zhaojun', 'zilong', 'lapulapu', 'da-qiao'],
+    description: { en: 'Athena engage → Wang Zhaojun freeze → Zilong cleanup. Lapu Lapu peel, Da Qiao teleport for resets.', 'zh-TW': '雅典娜開團→王昭君冰凍→趙雲收割。拉普拉普保護，大喬傳送重置。' },
+    dataNote: { en: 'CC chain template. Camp HOK data; strategic.', 'zh-TW': '控制鏈模板。Camp HOK 數據；戰術說明。' }
+  },
+  {
+    id: 'dive-burst',
+    title: { en: 'Burst Dive', 'zh-TW': '爆發突進' },
+    coreSlugs: ['sima-yi', 'nuwa', 'pei', 'nezha', 'cai-yan'],
+    description: { en: 'Sima Yi + Nuwa one-shot backline. Pei and Nezha frontline engage, Cai Yan sustain for extended fights.', 'zh-TW': '司馬懿+女媧秒殺後排。裴擒虎+哪吒前排開團，蔡文姬續航持久戰。' },
+    dataNote: { en: 'Burst dive template. Camp HOK stats; editorial.', 'zh-TW': '爆發突進模板。Camp HOK 數據；編輯整理。' }
+  },
+  // Split-push
+  {
+    id: 'split-push-teleport',
+    title: { en: 'Teleport Split-Push', 'zh-TW': '傳送分帶' },
+    coreSlugs: ['liu-bei', 'da-qiao', 'garo', 'angela', 'lapulapu'],
+    description: { en: 'Liu Bei splits with Da Qiao teleport escape. 4-man group stalls with Garo siege. Rotate for picks.', 'zh-TW': '劉備分帶+大喬傳送撤退。四人組伽羅壓塔拖延，伺機抓人。' },
+    dataNote: { en: 'Split-push template. Camp HOK data; macro advice.', 'zh-TW': '分帶模板。Camp HOK 數據；宏觀建議。' }
+  },
+  {
+    id: 'split-push-duo',
+    title: { en: 'Duo Split Pressure', 'zh-TW': '雙人分帶壓力' },
+    coreSlugs: ['florentino', 'da-qiao', 'meng-ya', 'yixing', 'dun'],
+    description: { en: 'Florentino + Da Qiao split top/bot. 3-man group with Meng Ya siege. Force enemies to overextend.', 'zh-TW': '花木蘭+大喬上下分帶。三人組蒙犽壓塔，逼敵過度延伸。' },
+    dataNote: { en: 'Split pressure template. Camp HOK stats; editorial.', 'zh-TW': '分帶壓力模板。Camp HOK 數據；編輯整理。' }
+  },
+  // Teamfight
+  {
+    id: 'teamfight-aoe',
+    title: { en: 'AoE Teamfight Wipe', 'zh-TW': '範圍團戰滅團' },
+    coreSlugs: ['lapulapu', 'wang-zhaojun', 'angela', 'luban-no-7', 'yaria'],
+    description: { en: 'Lapu Lapu engage → Wang Zhaojun + Angela AoE burst → Luban cleanup. Yaria peels for marksman.', 'zh-TW': '拉普拉普開團→王昭君+安琪拉範圍爆發→魯班收割。瑤保護射手。' },
+    dataNote: { en: 'AoE teamfight template. Camp HOK data; strategic.', 'zh-TW': '範圍團戰模板。Camp HOK 數據；戰術說明。' }
+  },
+  {
+    id: 'teamfight-frontback',
+    title: { en: 'Front-to-Back Teamfight', 'zh-TW': '前後排團戰' },
+    coreSlugs: ['dun', 'garo', 'yixing', 'sakeer', 'zilong'],
+    description: { en: 'Dun frontline with Sakeer zone. Garo + Yi Xing backline DPS. Zilong flanks on engages.', 'zh-TW': '盾山前排+薩克爾區域。伽羅+弈星後排輸出。趙雲側翼突進。' },
+    dataNote: { en: 'Front-to-back template. Camp HOK stats; editorial.', 'zh-TW': '前後排模板。Camp HOK 數據；編輯整理。' }
+  },
+  {
+    id: 'teamfight-sustain',
+    title: { en: 'Sustain Teamfight', 'zh-TW': '續航團戰' },
+    coreSlugs: ['dian-wei', 'cai-yan', 'luban-no-7', 'mi-yue', 'lian-po'],
+    description: { en: 'Dian Wei + Cai Yan sustain frontline. Luban + Mi Yue backline DPS. Lian Po secondary engage.', 'zh-TW': '典韋+蔡文姬續航前排。魯班+羋月後排輸出。廉頗二次開團。' },
+    dataNote: { en: 'Sustain comp template. Camp HOK data; editorial.', 'zh-TW': '續航陣容模板。Camp HOK 數據；編輯整理。' }
+  },
+  // Protect-carry
+  {
+    id: 'protect-hypercarry',
+    title: { en: 'Protect the Hyper-Carry', 'zh-TW': '保核四保一' },
+    coreSlugs: ['garo', 'yaria', 'sakeer', 'dun', 'angela'],
+    description: { en: 'Four protect Garo: Yaria shields, Sakeer zone, Dun frontline, Angela wave clear. Scale to late game.', 'zh-TW': '四人保伽羅：瑤護盾、薩克爾區域、盾山前排、安琪拉清線。拖到後期。' },
+    dataNote: { en: 'Protect-carry template. Camp HOK stats; editorial.', 'zh-TW': '保核模板。Camp HOK 數據；編輯整理。' }
+  },
+  {
+    id: 'protect-siege',
+    title: { en: 'Protect & Siege', 'zh-TW': '保核壓塔' },
+    coreSlugs: ['huang-zhong', 'dolia', 'lian-po', 'zhou-yu', 'zilong'],
+    description: { en: 'Huang Zhong siege with Dolia peel. Lian Po frontline, Zhou Yu wave clear, Zilong flank threat.', 'zh-TW': '黃忠壓塔+朵莉亞保護。廉頗前排，周瑜清線，趙雲側翼威脅。' },
+    dataNote: { en: 'Protect-siege template. Camp HOK data; strategic.', 'zh-TW': '保核壓塔模板。Camp HOK 數據；戰術說明。' }
+  },
+  {
+    id: 'protect-late',
+    title: { en: 'Late Game Insurance', 'zh-TW': '後期保險' },
+    coreSlugs: ['marco-polo', 'sun-bin', 'lapulapu', 'nuwa', 'kaizer'],
+    description: { en: 'Marco Polo scales with Sun Bin speed. Lapu Lapu + Kaizer frontline, Nuwa burst for picks.', 'zh-TW': '馬可波羅+孫臏加速發育。拉普拉普+凱茲前排，女媧爆發抓人。' },
+    dataNote: { en: 'Late-game template. Camp HOK stats; editorial.', 'zh-TW': '後期模板。Camp HOK 數據；編輯整理。' }
+  },
+  // Additional strategic templates
+  {
+    id: 'early-snowball',
+    title: { en: 'Early Snowball', 'zh-TW': '前期滾雪球' },
+    coreSlugs: ['pei', 'sima-yi', 'angela', 'nezha', 'guiguzi'],
+    description: { en: 'Pei + Sima Yi early invade. Angela mid priority, Nezha + Guiguzi roam for first blood snowball.', 'zh-TW': '裴擒虎+司馬懿前期入侵。安琪拉中路優先，哪吒+鬼谷子游走搶一血滾雪球。' },
+    dataNote: { en: 'Early snowball template. Camp HOK data; strategic.', 'zh-TW': '前期滾雪球模板。Camp HOK 數據；戰術說明。' }
+  },
+  {
+    id: 'pick-comp',
+    title: { en: 'Pick Composition', 'zh-TW': '抓人陣容' },
+    coreSlugs: ['guiguzi', 'li-bai', 'wang-zhaojun', 'zilong', 'dun'],
+    description: { en: 'Guiguzi pull → Wang Zhaojun freeze → Li Bai burst. Zilong + Dun provide follow-up CC.', 'zh-TW': '鬼谷子拉→王昭君冰凍→李白爆發。趙雲+盾山跟上控制。' },
+    dataNote: { en: 'Pick comp template. Camp HOK stats; editorial.', 'zh-TW': '抓人陣容模板。Camp HOK 數據；編輯整理。' }
+  },
+  {
+    id: 'dragon-control',
+    title: { en: 'Dragon Control', 'zh-TW': '暴君控制' },
+    coreSlugs: ['lian-po', 'angela', 'garo', 'sakeer', 'li-bai'],
+    description: { en: 'Lian Po + Sakeer zone around dragon pit. Angela burst for steals, Garo DPS, Li Bai smite secure.', 'zh-TW': '廉頗+薩克爾暴君坑區域控制。安琪拉爆發搶龍，伽羅輸出，李白懲擊收割。' },
+    dataNote: { en: 'Objective control template. Camp HOK data; strategic.', 'zh-TW': '目標控制模板。Camp HOK 數據；戰術說明。' }
+  },
+  {
+    id: 'counter-dive',
+    title: { en: 'Anti-Dive Protection', 'zh-TW': '反突進保護' },
+    coreSlugs: ['dun', 'garo', 'dolia', 'yixing', 'kaizer'],
+    description: { en: 'Dun + Dolia double peel for Garo. Yi Xing zone denial, Kaizer secondary frontline against divers.', 'zh-TW': '盾山+朵莉亞雙保護伽羅。弈星區域封鎖，凱茲副前排對抗突進。' },
+    dataNote: { en: 'Anti-dive template. Camp HOK stats; editorial.', 'zh-TW': '反突進模板。Camp HOK 數據；編輯整理。' }
+  },
+  {
+    id: 'waveclear-stall',
+    title: { en: 'Wave Clear Stall', 'zh-TW': '清線拖延' },
+    coreSlugs: ['zhou-yu', 'angela', 'huang-zhong', 'lian-po', 'yaria'],
+    description: { en: 'Zhou Yu + Angela fast wave clear stalls pushes. Huang Zhong sieges back, Lian Po + Yaria sustain.', 'zh-TW': '周瑜+安琪拉快速清線拖延。黃忠反壓，廉頗+瑤續航。' },
+    dataNote: { en: 'Stall comp template. Camp HOK data; strategic.', 'zh-TW': '拖延陣容模板。Camp HOK 數據；戰術說明。' }
+  }
+];
+
+const output = {
+  updated: '2026-07-20',
+  source: 'Curated synergy notes + Camp HOK international pick/ban stats (not official duo win rates)',
+  duos,
+  templates
+};
+
+fs.writeFileSync(OUT, JSON.stringify(output, null, 2) + '\n', 'utf-8');
+console.log(`comps.json expanded: ${duos.length} duos + ${templates.length} templates = ${duos.length + templates.length} total`);

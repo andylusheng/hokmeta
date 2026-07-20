@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import type { Hero } from '@/types/hero';
+import type { HeroIndexEntry } from '@/types/hero';
 import { HeroAvatar } from '@/components/HeroAvatar';
 import { formatRate } from '@/lib/data';
 import { createT, localePath, type Locale } from '@/lib/i18n';
@@ -10,7 +10,7 @@ export function HeroCard({
   hero,
   locale = 'en',
 }: {
-  hero: Hero;
+  hero: HeroIndexEntry;
   locale?: Locale;
 }) {
   const t = createT(locale);

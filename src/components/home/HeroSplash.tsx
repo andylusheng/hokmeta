@@ -75,7 +75,7 @@ export function HeroSplash({
             href={localePath(locale, `/hero/${hero.slug}#build`)}
             className="btn-primary"
           >
-            {t('home.splashViewBuild')}
+            {t('home.splashViewBuild', { name: heroTitle })}
           </Link>
           <Link
             href={localePath(locale, '/heroes')}

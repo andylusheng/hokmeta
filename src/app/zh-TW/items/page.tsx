@@ -1,5 +1,9 @@
 import { ItemsPageView } from '@/views/ItemsPageView';
 import { buildMetadata } from '@/lib/seo';
+import { JsonLd, breadcrumbSchema } from '@/lib/schema';
+import { createT } from '@/lib/i18n';
+
+const t = createT('zh-TW');
 
 export const metadata = buildMetadata({
   title: '王者榮耀裝備圖鑑 — HOKMeta',
@@ -10,5 +14,15 @@ export const metadata = buildMetadata({
 });
 
 export default function ItemsPageZh() {
-  return <ItemsPageView locale="zh-TW" />;
+  return (
+    <>
+      <JsonLd
+        data={breadcrumbSchema([
+          { name: t('common.home'), path: '/zh-TW' },
+          { name: t('nav.items'), path: '/zh-TW/items' },
+        ])}
+      />
+      <ItemsPageView locale="zh-TW" />
+    </>
+  );
 }

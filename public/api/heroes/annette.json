@@ -10,16 +10,16 @@
   "laneZh": "遊走",
   "difficulty": "Easy",
   "tier": "A",
-  "winRate": 49.38,
-  "pickRate": 0.69,
-  "banRate": 0.77,
-  "rank": 83,
+  "winRate": 49.83,
+  "pickRate": 0.59,
+  "banRate": 0.54,
+  "rank": 76,
   "avatar": "https://camp.honorofkings.com/camp/admin/hero/head_128-128/49o0xBua.png",
   "avatarFallback": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/640/640.jpg",
   "heroCover": "https://camp.honorofkings.com/camp/admin/hero/cover_1275-718/uPwLTCoZ.jpg",
   "tencentId": 640,
   "dataSource": "Camp HOK bilingual (primary)",
-  "dataUpdated": "2026-07-16",
+  "dataUpdated": "2026-07-19",
   "skills": [
     {
       "slot": "passive",
@@ -83,94 +83,143 @@
   "build": [
     {
       "slot": 1,
-      "itemId": "1235",
-      "name": "Mask of Agony",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1235.png",
-      "description": "MATK +100, CDR +7.5%, HP +900\nBoosts skill damage"
+      "itemId": "1724",
+      "name": "Guardian - Redemption",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1751.png",
+      "description": "HP +1,200, MSPD +7.5%\nSurvivability aura"
     },
     {
       "slot": 2,
-      "itemId": "1237",
-      "name": "Augur's Word",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1237.png",
-      "description": "MATK +140, MP +450, HP +900\nOffense & defense"
+      "itemId": "1341",
+      "name": "Frigid Charge",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1341.png",
+      "description": "PDEF +150, HP +900, CDR +7.5%, Resistance +10%\nGreat crowd control"
     },
     {
       "slot": 3,
-      "itemId": "1244",
-      "name": "Breakthrough Robe",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1244.png",
-      "description": "MATK +120, HP +900\nConverts HP into Magical Pierce"
-    },
-    {
-      "slot": 4,
       "itemId": "1234",
       "name": "Frozen Breath",
       "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1234.png",
       "description": "MATK +180, CDR +7.5%, HP +500\nSkill hits slow"
     },
     {
+      "slot": 4,
+      "itemId": "1336",
+      "name": "Glacial Buckler",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1336.png",
+      "description": "CDR +20%, HP +600, PDEF +240\nGroup damage & slow"
+    },
+    {
       "slot": 5,
+      "itemId": "1335",
+      "name": "Succubus Cloak",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
+      "description": "MDEF +300, HP +1,100\nNegates magical damage"
+    },
+    {
+      "slot": 6,
       "itemId": "1337",
       "name": "Sage's Sanctuary",
       "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
       "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
-    },
-    {
-      "slot": 6,
-      "itemId": "1127",
-      "name": "Destiny",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
-      "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
     }
   ],
   "buildZh": [
     {
       "slot": 1,
-      "itemId": "1235",
-      "name": "痛苦面具",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1235.png",
-      "description": "+100點法攻+7.5%減冷卻時間+900點生命值 \n技能額外傷害"
+      "itemId": "1724",
+      "name": "近衛・救贖",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1751.png",
+      "description": "+1200點生命值+7.5%移速\n光環強化生存"
     },
     {
       "slot": 2,
-      "itemId": "1237",
-      "name": "時之預言",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1237.png",
-      "description": "+140點法攻+450法力值+900點生命值……\n攻防兼備"
+      "itemId": "1341",
+      "name": "冰霜衝擊",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1341.png",
+      "description": "+150點物防+900點生命值+7.5%冷卻時間+10%韌性\n群體控制"
     },
     {
       "slot": 3,
-      "itemId": "1244",
-      "name": "破繭之衣",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1244.png",
-      "description": "+120點法攻+900點生命值\n生命值轉法穿"
-    },
-    {
-      "slot": 4,
       "itemId": "1234",
       "name": "凝冰之息",
       "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1234.png",
       "description": "+180點法攻+7.5%減冷卻時間+500點生命值\n技能命中減速"
     },
     {
+      "slot": 4,
+      "itemId": "1336",
+      "name": "極寒風暴",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1336.png",
+      "description": "+20%減冷卻時間+600點生命值+240點物防\n群體傷害減速"
+    },
+    {
       "slot": 5,
+      "itemId": "1335",
+      "name": "魔女斗篷",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
+      "description": "+300點法防+1100點生命值\n吸收法術傷害"
+    },
+    {
+      "slot": 6,
       "itemId": "1337",
       "name": "賢者的庇護",
       "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
       "description": "+900點生命值+150點物防+150點法防……\n原地復活"
-    },
-    {
-      "slot": 6,
-      "itemId": "1127",
-      "name": "名刀・司命",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
-      "description": "+75點攻擊+15%攻速+500點生命值\n保命"
     }
   ],
   "builds": [
     {
       "id": "camp-0",
+      "label": "GO DIVA",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1724",
+          "name": "Guardian - Redemption",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1751.png",
+          "description": "HP +1,200, MSPD +7.5%\nSurvivability aura"
+        },
+        {
+          "slot": 2,
+          "itemId": "1341",
+          "name": "Frigid Charge",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1341.png",
+          "description": "PDEF +150, HP +900, CDR +7.5%, Resistance +10%\nGreat crowd control"
+        },
+        {
+          "slot": 3,
+          "itemId": "1234",
+          "name": "Frozen Breath",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1234.png",
+          "description": "MATK +180, CDR +7.5%, HP +500\nSkill hits slow"
+        },
+        {
+          "slot": 4,
+          "itemId": "1336",
+          "name": "Glacial Buckler",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1336.png",
+          "description": "CDR +20%, HP +600, PDEF +240\nGroup damage & slow"
+        },
+        {
+          "slot": 5,
+          "itemId": "1335",
+          "name": "Succubus Cloak",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
+          "description": "MDEF +300, HP +1,100\nNegates magical damage"
+        },
+        {
+          "slot": 6,
+          "itemId": "1337",
+          "name": "Sage's Sanctuary",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
+        }
+      ]
+    },
+    {
+      "id": "camp-1",
       "label": "辉夜Annette",
       "lane": null,
       "items": [
@@ -219,7 +268,7 @@
       ]
     },
     {
-      "id": "camp-1",
+      "id": "camp-2",
       "label": "Roaming 1",
       "lane": "Mid",
       "items": [
@@ -268,7 +317,7 @@
       ]
     },
     {
-      "id": "camp-2",
+      "id": "camp-3",
       "label": "ROUNDER",
       "lane": "Mid",
       "items": [
@@ -315,60 +364,60 @@
           "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
         }
       ]
-    },
-    {
-      "id": "camp-3",
-      "label": "MID AP",
-      "lane": "Mid",
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1238",
-          "name": "Sage's Tome",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1238.png",
-          "description": "MATK +350, CDR +10%\nGreat for mages"
-        },
-        {
-          "slot": 2,
-          "itemId": "1727",
-          "name": "Twilight Stream",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1727.png",
-          "description": "MATK +160, CDR +10%, Max HP +500\nBoosts Magical Pierce"
-        },
-        {
-          "slot": 3,
-          "itemId": "1426",
-          "name": "Boots of Deftness",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1426.png",
-          "description": "HP +300, MSPD +70\nExtra MSPD"
-        },
-        {
-          "slot": 4,
-          "itemId": "1239",
-          "name": "Splendor",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1239.png",
-          "description": "MATK +160, CDR +7.5%, Magical Lifesteal +12%\nTemp. invincibility"
-        },
-        {
-          "slot": 5,
-          "itemId": "1337",
-          "name": "Sage's Sanctuary",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
-          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
-        },
-        {
-          "slot": 6,
-          "itemId": "1127",
-          "name": "Destiny",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
-          "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
-        }
-      ]
     }
   ],
   "buildsZh": [
     {
       "id": "camp-0",
+      "label": "GO DIVA",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1724",
+          "name": "近衛・救贖",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1751.png",
+          "description": "+1200點生命值+7.5%移速\n光環強化生存"
+        },
+        {
+          "slot": 2,
+          "itemId": "1341",
+          "name": "冰霜衝擊",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1341.png",
+          "description": "+150點物防+900點生命值+7.5%冷卻時間+10%韌性\n群體控制"
+        },
+        {
+          "slot": 3,
+          "itemId": "1234",
+          "name": "凝冰之息",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1234.png",
+          "description": "+180點法攻+7.5%減冷卻時間+500點生命值\n技能命中減速"
+        },
+        {
+          "slot": 4,
+          "itemId": "1336",
+          "name": "極寒風暴",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1336.png",
+          "description": "+20%減冷卻時間+600點生命值+240點物防\n群體傷害減速"
+        },
+        {
+          "slot": 5,
+          "itemId": "1335",
+          "name": "魔女斗篷",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
+          "description": "+300點法防+1100點生命值\n吸收法術傷害"
+        },
+        {
+          "slot": 6,
+          "itemId": "1337",
+          "name": "賢者的庇護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+        }
+      ]
+    },
+    {
+      "id": "camp-1",
       "label": "辉夜Annette",
       "lane": null,
       "items": [
@@ -417,7 +466,7 @@
       ]
     },
     {
-      "id": "camp-1",
+      "id": "camp-2",
       "label": "Roaming 1",
       "lane": "Mid",
       "items": [
@@ -466,7 +515,7 @@
       ]
     },
     {
-      "id": "camp-2",
+      "id": "camp-3",
       "label": "ROUNDER",
       "lane": "Mid",
       "items": [
@@ -513,66 +562,17 @@
           "description": "+75點攻擊+15%攻速+500點生命值\n保命"
         }
       ]
-    },
-    {
-      "id": "camp-3",
-      "label": "MID AP",
-      "lane": "Mid",
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1238",
-          "name": "賢者天書",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1238.png",
-          "description": "+350點法攻+10%減冷卻時間\n法師神裝"
-        },
-        {
-          "slot": 2,
-          "itemId": "1727",
-          "name": "日暮之流",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1727.png",
-          "description": "+160點法攻+10%減冷卻時間+500點最大生命值\n提升法術穿透"
-        },
-        {
-          "slot": 3,
-          "itemId": "1426",
-          "name": "疾步之靴",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1426.png",
-          "description": "+300點生命值+70點移速\n額外增加移速"
-        },
-        {
-          "slot": 4,
-          "itemId": "1239",
-          "name": "輝月",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1239.png",
-          "description": "+160法攻 +7.5%減冷卻時間+12%法術吸血\n暫時無敵"
-        },
-        {
-          "slot": 5,
-          "itemId": "1337",
-          "name": "賢者的庇護",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
-          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
-        },
-        {
-          "slot": 6,
-          "itemId": "1127",
-          "name": "名刀・司命",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
-          "description": "+75點攻擊+15%攻速+500點生命值\n保命"
-        }
-      ]
     }
   ],
   "arcana": [
-    "Lvl 5: Nightmare",
+    "Lvl 5: Fate",
     "Lvl 5: Harmony",
-    "Lvl 5: Mind's Eye"
+    "Lvl 5: Void"
   ],
   "arcanaZh": [
-    "5級：夢魘",
+    "5級：宿命",
     "5級：調和",
-    "5級：心眼"
+    "5級：虛空"
   ],
   "spells": [
     "Flash"
@@ -591,13 +591,13 @@
     "Data unavailable"
   ],
   "tips": [
-    "Annette (Support): Tier A — 49.38% WR (Camp HOK).",
+    "Annette (Support): Tier A — 49.83% WR (Camp HOK).",
     "Lane: Roaming.",
-    "Build: Mask of Agony, Augur's Word, Breakthrough Robe."
+    "Build: Guardian - Redemption, Frigid Charge, Frozen Breath."
   ],
   "tipsZh": [
-    "安奈特（遊走）：梯度 A，勝率 49.38%（Camp HOK）。",
-    "出裝：痛苦面具、時之預言、破繭之衣."
+    "安奈特（遊走）：梯度 A，勝率 49.83%（Camp HOK）。",
+    "出裝：近衛・救贖、冰霜衝擊、凝冰之息."
   ],
   "patchHistory": [],
   "patchHistoryZh": [],
@@ -605,12 +605,12 @@
     {
       "id": "faq-good-season",
       "question": "Is Annette good in current season?",
-      "answer": "Annette is Tier A Support with 49.38% win rate, 0.69% pick rate, and 0.77% ban rate (Camp HOK international)."
+      "answer": "Annette is Tier A Support with 49.83% win rate, 0.59% pick rate, and 0.54% ban rate (Camp HOK international)."
     },
     {
       "id": "faq-best-build",
       "question": "What is the best Annette build?",
-      "answer": "Recommended: Mask of Agony, Augur's Word, Breakthrough Robe, Frozen Breath, Sage's Sanctuary, Destiny."
+      "answer": "Recommended: Guardian - Redemption, Frigid Charge, Frozen Breath, Glacial Buckler, Succubus Cloak, Sage's Sanctuary."
     },
     {
       "id": "faq-counter",
@@ -622,12 +622,12 @@
     {
       "id": "faq-good-season",
       "question": "安奈特 這版本適合上分嗎？",
-      "answer": "安奈特 為 A 梯度，勝率 49.38%、選取 0.69%、禁用 0.77%（Camp HOK 國際服）。"
+      "answer": "安奈特 為 A 梯度，勝率 49.83%、選取 0.59%、禁用 0.54%（Camp HOK 國際服）。"
     },
     {
       "id": "faq-best-build",
       "question": "安奈特 出裝怎麼搭配？",
-      "answer": "推薦：痛苦面具、時之預言、破繭之衣、凝冰之息、賢者的庇護、名刀・司命."
+      "answer": "推薦：近衛・救贖、冰霜衝擊、凝冰之息、極寒風暴、魔女斗篷、賢者的庇護."
     },
     {
       "id": "faq-counter",
@@ -636,15 +636,15 @@
     }
   ],
   "metaAnalysis": [
-    "Annette win rate 49.38% (Camp HOK, 2026-07-16).",
-    "Pick rate 0.69%.",
-    "Ban rate 0.77%.",
+    "Annette win rate 49.83% (Camp HOK, 2026-07-19).",
+    "Pick rate 0.59%.",
+    "Ban rate 0.54%.",
     "Counters: Data unavailable, Data unavailable, Data unavailable. Weak into: Data unavailable, Data unavailable, Data unavailable."
   ],
   "metaAnalysisZh": [
-    "安奈特 勝率 49.38%（Camp HOK，2026-07-16）",
-    "選取率 0.69%",
-    "禁用率 0.77%",
+    "安奈特 勝率 49.83%（Camp HOK，2026-07-19）",
+    "選取率 0.59%",
+    "禁用率 0.54%",
     "克制：Data unavailable、Data unavailable、Data unavailable；被克制：Data unavailable、Data unavailable、Data unavailable"
   ]
 }

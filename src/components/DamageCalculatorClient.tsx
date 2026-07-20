@@ -174,6 +174,14 @@ function DamageCalculatorWorkspace({
     }
   }, [heroes, initialHeroSlug]);
 
+  // Sync hero selection to URL for shareable/indexable links
+  useEffect(() => {
+    if (!slug) return;
+    const url = new URL(window.location.href);
+    url.searchParams.set('hero', slug);
+    window.history.replaceState(null, '', url.toString());
+  }, [slug]);
+
   useEffect(() => {
     const ids = getBuildItemIds(hero.build).slice(0, 6);
     setSelectedItemIds(ids);
@@ -247,6 +255,14 @@ function DamageCalculatorWorkspace({
       <div className="rounded border border-amber-400/30 bg-amber-400/10 p-4 text-sm text-amber-100">
         {copy.beta}
       </div>
+
+      <button
+        type="button"
+        onClick={() => { navigator.clipboard.writeText(window.location.href); }}
+        className="inline-flex items-center gap-1.5 rounded border border-hok-border px-3 py-1.5 text-xs text-gray-400 transition hover:border-hok-gold/50 hover:text-hok-gold"
+      >
+        🔗 Copy share link
+      </button>
 
       <div className="grid gap-6 lg:grid-cols-[minmax(0,1fr)_360px]">
         <section className="space-y-5">

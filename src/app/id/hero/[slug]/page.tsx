@@ -5,6 +5,7 @@ import {
   getKeywordsForHero,
   site,
 } from '@/lib/data';
+import { getFullHeroBySlug } from '@/lib/heroes-server';
 import { buildMetadata, defaultTitle } from '@/lib/seo';
 import { heroPageTitle, heroPageDescription } from '@/lib/meta-season';
 import { getHeroDisplayName } from '@/lib/locale-names';
@@ -32,7 +33,7 @@ export function generateMetadata({
     ),
     path: `/hero/${hero.slug}`,
     locale: 'id',
-    ogImage: hero.avatar,
+    ogImage: `/og/heroes/${hero.slug}.svg`,
     keywords: kw.length ? kw : undefined,
     type: 'article',
     modifiedTime: hero.dataUpdated ?? site.dateModified,
@@ -44,7 +45,7 @@ export default function ZhTWHeroPage({
 }: {
   params: { slug: string };
 }) {
-  const hero = getHeroBySlug(params.slug);
+  const hero = getFullHeroBySlug(params.slug);
   if (!hero) notFound();
   return <HeroPageView hero={hero} locale="id" />;
 }

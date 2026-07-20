@@ -1,5 +1,6 @@
 import { notFound } from 'next/navigation';
 import { getHeroBySlug, getHeroSlugs, site } from '@/lib/data';
+import { getFullHeroBySlug } from '@/lib/heroes-server';
 import { getMetaSeasonLabel } from '@/lib/i18n';
 import { buildMetadata, defaultTitle } from '@/lib/seo';
 import { CounterPageView } from '@/views/CounterPageView';
@@ -17,14 +18,14 @@ export function generateMetadata({ params }: { params: { slug: string } }) {
     description: `Best heroes to counter ${hero.name} in Honor of Kings ${season}. Counter picks and matchup tips from Camp HOK international data.`,
     path: `/hero/${params.slug}/counters`,
     locale: 'en',
-    ogImage: hero.avatar,
+    ogImage: `/og/heroes/${hero.slug}.svg`,
     type: 'article',
     modifiedTime: hero.dataUpdated ?? site.dateModified,
   });
 }
 
 export default function CounterPage({ params }: { params: { slug: string } }) {
-  const hero = getHeroBySlug(params.slug);
+  const hero = getFullHeroBySlug(params.slug);
   if (!hero) notFound();
   return <CounterPageView hero={hero} locale="en" />;
 }

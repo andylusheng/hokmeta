@@ -1,4 +1,5 @@
-import { formatRate, getHeroByName, heroes } from '@/lib/data';
+import { formatRate } from '@/lib/data';
+import { getFullHeroes, getFullHeroByName } from '@/lib/heroes-server';
 import { getLocalizedSkills } from '@/lib/hero-locale-data';
 import { createT, getMetaSeasonLabel, type Locale } from '@/lib/i18n';
 import { getHeroDisplayName } from '@/lib/locale-names';
@@ -19,6 +20,8 @@ import {
   getOverrideFaqWho,
   locList,
 } from '@/lib/counter-rationale-overrides';
+
+const heroes = getFullHeroes();
 
 // 只改这个函数！其他所有代码全部保留！
 export function getCounterList(hero: Hero): string[] {
@@ -46,7 +49,7 @@ export function getCounterList(hero: Hero): string[] {
 }
 
 function resolveCounterHero(name: string): Hero | undefined {
-  return getHeroByName(name);
+  return getFullHeroByName(name);
 }
 
 function formatCounterNames(names: string[], locale: Locale): string {
@@ -237,8 +240,8 @@ export function getCounterFaqs(
 export function getRelatedCounterHeroes(hero: Hero, limit = 3): Hero[] {
   const lane = heroToLane(hero);
   const picks = getClimbPicksByLane(lane, 8)
-    .map((p) => p.hero)
-    .filter((h) => h.slug !== hero.slug);
+    .map((p) => heroes.find((fh) => fh.slug === p.hero.slug)!)
+    .filter((h) => h && h.slug !== hero.slug);
 
   const seen = new Set<string>();
   const related: Hero[] = [];
@@ -266,8 +269,8 @@ export function getRelatedCounterHeroes(hero: Hero, limit = 3): Hero[] {
 export function getRelatedCounters(hero: Hero, limit = 6): Hero[] {
   const lane = heroToLane(hero);
   const picks = getClimbPicksByLane(lane, 12)
-    .map((p) => p.hero)
-    .filter((h) => h.slug !== hero.slug);
+    .map((p) => heroes.find((fh) => fh.slug === p.hero.slug)!)
+    .filter((h) => h && h.slug !== hero.slug);
 
   const seen = new Set<string>();
   const related: Hero[] = [];
@@ -310,7 +313,7 @@ export function getCounterListByLane(hero: Hero): LaneCounterList {
   const otherLane: string[] = [];
 
   for (const name of all) {
-    const h = getHeroByName(name);
+    const h = getFullHeroByName(name);
     if (h && heroToLane(h) === myLane) {
       sameLane.push(name);
     } else {

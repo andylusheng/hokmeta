@@ -10,16 +10,16 @@
   "laneZh": "發育路",
   "difficulty": "Medium",
   "tier": "S",
-  "winRate": 48.87,
-  "pickRate": 1.93,
-  "banRate": 0.3,
-  "rank": 89,
+  "winRate": 49.16,
+  "pickRate": 1.87,
+  "banRate": 0.27,
+  "rank": 87,
   "avatar": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/48d8GxkP.png",
   "avatarFallback": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/132/132.jpg",
   "heroCover": "https://camp.honorofkings.com/social/game/src/image_hero_cover_1275*718/bSmKcGgu.jpg",
   "tencentId": 132,
   "dataSource": "Camp HOK bilingual (primary)",
-  "dataUpdated": "2026-07-16",
+  "dataUpdated": "2026-07-19",
   "skills": [
     {
       "slot": "passive",
@@ -220,6 +220,104 @@
     },
     {
       "id": "camp-1",
+      "label": "Popular",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1126",
+          "name": "Doomsday",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1126.png",
+          "description": "PATK +40, ASPD +20%, HP +500, Lifesteal +20%\nBoosts BA damage"
+        },
+        {
+          "slot": 2,
+          "itemId": "1341",
+          "name": "Frigid Charge",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1341.png",
+          "description": "PDEF +150, HP +900, CDR +7.5%, Resistance +10%\nGreat crowd control"
+        },
+        {
+          "slot": 3,
+          "itemId": "1136",
+          "name": "Shadow Ripper",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1136.png",
+          "description": "PATK +45, ASPD +35%, Crit Rate +20%, MSPD +7.5%\nCrits boosts ASPD"
+        },
+        {
+          "slot": 4,
+          "itemId": "1335",
+          "name": "Succubus Cloak",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
+          "description": "MDEF +300, HP +1,100\nNegates magical damage"
+        },
+        {
+          "slot": 5,
+          "itemId": "1337",
+          "name": "Sage's Sanctuary",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
+        },
+        {
+          "slot": 6,
+          "itemId": "1127",
+          "name": "Destiny",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
+        }
+      ]
+    },
+    {
+      "id": "camp-2",
+      "label": "Carry or Cry",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1155",
+          "name": "Daybreaker's Virtue",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1155.png",
+          "description": "PATK +75, ASPD +30%, Crit Rate +15%\nGreat for marksmen"
+        },
+        {
+          "slot": 2,
+          "itemId": "1335",
+          "name": "Succubus Cloak",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
+          "description": "MDEF +300, HP +1,100\nNegates magical damage"
+        },
+        {
+          "slot": 3,
+          "itemId": "1337",
+          "name": "Sage's Sanctuary",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
+        },
+        {
+          "slot": 4,
+          "itemId": "1127",
+          "name": "Destiny",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
+        },
+        {
+          "slot": 5,
+          "itemId": "1157",
+          "name": "Immovable - Sky Dome",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1157.png",
+          "description": "PATK +80, PDEF +150, CDR +10%\nTemp. damage reduction"
+        },
+        {
+          "slot": 6,
+          "itemId": "1128",
+          "name": "Deepfrost Siege",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1128.png",
+          "description": "PATK +70, ASPD +25%, HP +750\nBAs slow"
+        }
+      ]
+    },
+    {
+      "id": "camp-3",
       "label": "Principal.",
       "lane": null,
       "items": [
@@ -264,104 +362,6 @@
           "name": "Immovable - Sky Dome",
           "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1157.png",
           "description": "PATK +80, PDEF +150, CDR +10%\nTemp. damage reduction"
-        }
-      ]
-    },
-    {
-      "id": "camp-2",
-      "label": "Farm Lane 3",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1135",
-          "name": "Sparkforged Dagger",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1135.png",
-          "description": "PATK +40, ASPD +35%, MSPD +7.5%\nChain lightning BA"
-        },
-        {
-          "slot": 2,
-          "itemId": "1341",
-          "name": "Frigid Charge",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1341.png",
-          "description": "PDEF +150, HP +900, CDR +7.5%, Resistance +10%\nGreat crowd control"
-        },
-        {
-          "slot": 3,
-          "itemId": "1136",
-          "name": "Shadow Ripper",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1136.png",
-          "description": "PATK +45, ASPD +35%, Crit Rate +20%, MSPD +7.5%\nCrits boosts ASPD"
-        },
-        {
-          "slot": 4,
-          "itemId": "1335",
-          "name": "Succubus Cloak",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
-          "description": "MDEF +300, HP +1,100\nNegates magical damage"
-        },
-        {
-          "slot": 5,
-          "itemId": "1337",
-          "name": "Sage's Sanctuary",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
-          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
-        },
-        {
-          "slot": 6,
-          "itemId": "1127",
-          "name": "Destiny",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
-          "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
-        }
-      ]
-    },
-    {
-      "id": "camp-3",
-      "label": "JØ.Marco",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "13310",
-          "name": "Frostscar's Embrace",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/13310.png",
-          "description": "PATK +60, PDEF +300, CDR +10%\nEnhanced BAs slow"
-        },
-        {
-          "slot": 2,
-          "itemId": "1137",
-          "name": "Axe of Torment",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1137.png",
-          "description": "PATK +80, CDR +10%, HP +500\nAnti-squishy"
-        },
-        {
-          "slot": 3,
-          "itemId": "1128",
-          "name": "Deepfrost Siege",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1128.png",
-          "description": "PATK +70, ASPD +25%, HP +750\nBAs slow"
-        },
-        {
-          "slot": 4,
-          "itemId": "1337",
-          "name": "Sage's Sanctuary",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
-          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
-        },
-        {
-          "slot": 5,
-          "itemId": "1127",
-          "name": "Destiny",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
-          "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
-        },
-        {
-          "slot": 6,
-          "itemId": "1331",
-          "name": "Blazing Cape",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1331.png",
-          "description": "PDEF +150, MDEF +150, HP +1,100\nArea burn & imperil"
         }
       ]
     }
@@ -418,6 +418,104 @@
     },
     {
       "id": "camp-1",
+      "label": "Popular",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1126",
+          "name": "末世",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1126.png",
+          "description": "+40點攻擊+20%攻速+500點生命值+20%吸血\n普攻額外傷害"
+        },
+        {
+          "slot": 2,
+          "itemId": "1341",
+          "name": "冰霜衝擊",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1341.png",
+          "description": "+150點物防+900點生命值+7.5%冷卻時間+10%韌性\n群體控制"
+        },
+        {
+          "slot": 3,
+          "itemId": "1136",
+          "name": "影刃",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1136.png",
+          "description": "+45點攻擊 +35%攻速+20%暴擊+7.5%移速\n暴擊增加攻速"
+        },
+        {
+          "slot": 4,
+          "itemId": "1335",
+          "name": "魔女斗篷",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
+          "description": "+300點法防+1100點生命值\n吸收法術傷害"
+        },
+        {
+          "slot": 5,
+          "itemId": "1337",
+          "name": "賢者的庇護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+        },
+        {
+          "slot": 6,
+          "itemId": "1127",
+          "name": "名刀・司命",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "+75點攻擊+15%攻速+500點生命值\n保命"
+        }
+      ]
+    },
+    {
+      "id": "camp-2",
+      "label": "Carry or Cry",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1155",
+          "name": "仁者破曉",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1155.png",
+          "description": "+75點攻擊+30%攻速+15%暴擊\n射手神裝"
+        },
+        {
+          "slot": 2,
+          "itemId": "1335",
+          "name": "魔女斗篷",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
+          "description": "+300點法防+1100點生命值\n吸收法術傷害"
+        },
+        {
+          "slot": 3,
+          "itemId": "1337",
+          "name": "賢者的庇護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+        },
+        {
+          "slot": 4,
+          "itemId": "1127",
+          "name": "名刀・司命",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "+75點攻擊+15%攻速+500點生命值\n保命"
+        },
+        {
+          "slot": 5,
+          "itemId": "1157",
+          "name": "不動・天穹",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1157.png",
+          "description": "+80點攻擊+150點物防+10%冷卻時間縮減\n暫時增加免傷"
+        },
+        {
+          "slot": 6,
+          "itemId": "1128",
+          "name": "寒霜襲侵",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1128.png",
+          "description": "+70點攻擊+25%攻速+750點生命值\n普攻減移速"
+        }
+      ]
+    },
+    {
+      "id": "camp-3",
       "label": "Principal.",
       "lane": null,
       "items": [
@@ -464,104 +562,6 @@
           "description": "+80點攻擊+150點物防+10%冷卻時間縮減\n暫時增加免傷"
         }
       ]
-    },
-    {
-      "id": "camp-2",
-      "label": "Farm Lane 3",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1135",
-          "name": "閃電匕首",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1135.png",
-          "description": "+40點攻擊+35%攻速+7.5%移速\n普攻附帶閃電"
-        },
-        {
-          "slot": 2,
-          "itemId": "1341",
-          "name": "冰霜衝擊",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1341.png",
-          "description": "+150點物防+900點生命值+7.5%冷卻時間+10%韌性\n群體控制"
-        },
-        {
-          "slot": 3,
-          "itemId": "1136",
-          "name": "影刃",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1136.png",
-          "description": "+45點攻擊 +35%攻速+20%暴擊+7.5%移速\n暴擊增加攻速"
-        },
-        {
-          "slot": 4,
-          "itemId": "1335",
-          "name": "魔女斗篷",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
-          "description": "+300點法防+1100點生命值\n吸收法術傷害"
-        },
-        {
-          "slot": 5,
-          "itemId": "1337",
-          "name": "賢者的庇護",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
-          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
-        },
-        {
-          "slot": 6,
-          "itemId": "1127",
-          "name": "名刀・司命",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
-          "description": "+75點攻擊+15%攻速+500點生命值\n保命"
-        }
-      ]
-    },
-    {
-      "id": "camp-3",
-      "label": "JØ.Marco",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "13310",
-          "name": "冰痕之握",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/13310.png",
-          "description": "+60點攻擊+300點物防+10%減冷卻時間……\n強化普攻減速"
-        },
-        {
-          "slot": 2,
-          "itemId": "1137",
-          "name": "暗影戰斧",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1137.png",
-          "description": "+80點攻擊+10%減冷卻時間+500點生命值\n打血薄用"
-        },
-        {
-          "slot": 3,
-          "itemId": "1128",
-          "name": "寒霜襲侵",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1128.png",
-          "description": "+70點攻擊+25%攻速+750點生命值\n普攻減移速"
-        },
-        {
-          "slot": 4,
-          "itemId": "1337",
-          "name": "賢者的庇護",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
-          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
-        },
-        {
-          "slot": 5,
-          "itemId": "1127",
-          "name": "名刀・司命",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
-          "description": "+75點攻擊+15%攻速+500點生命值\n保命"
-        },
-        {
-          "slot": 6,
-          "itemId": "1331",
-          "name": "紅蓮斗篷",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1331.png",
-          "description": "+150點物防+150點法防+1100點生命值\n範圍灼燒重傷"
-        }
-      ]
     }
   ],
   "arcana": [
@@ -591,12 +591,12 @@
     "Zhang Fei"
   ],
   "tips": [
-    "Marco Polo (Marksman): Tier S — 48.87% WR (Camp HOK).",
+    "Marco Polo (Marksman): Tier S — 49.16% WR (Camp HOK).",
     "Lane: Farm Lane.",
     "Build: Succubus Cloak, Daybreaker's Virtue, Ominous Premonition."
   ],
   "tipsZh": [
-    "馬可波羅（發育路）：梯度 S，勝率 48.87%（Camp HOK）。",
+    "馬可波羅（發育路）：梯度 S，勝率 49.16%（Camp HOK）。",
     "出裝：魔女斗篷、仁者破曉、不祥徵兆."
   ],
   "patchHistory": [
@@ -695,7 +695,7 @@
     {
       "id": "faq-good-season",
       "question": "Is Marco Polo good in current season?",
-      "answer": "Marco Polo is Tier S Marksman with 48.87% win rate, 1.93% pick rate, and 0.3% ban rate (Camp HOK international)."
+      "answer": "Marco Polo is Tier S Marksman with 49.16% win rate, 1.87% pick rate, and 0.27% ban rate (Camp HOK international)."
     },
     {
       "id": "faq-best-build",
@@ -712,7 +712,7 @@
     {
       "id": "faq-good-season",
       "question": "馬可波羅 這版本適合上分嗎？",
-      "answer": "馬可波羅 為 S 梯度，勝率 48.87%、選取 1.93%、禁用 0.3%（Camp HOK 國際服）。"
+      "answer": "馬可波羅 為 S 梯度，勝率 49.16%、選取 1.87%、禁用 0.27%（Camp HOK 國際服）。"
     },
     {
       "id": "faq-best-build",
@@ -726,15 +726,15 @@
     }
   ],
   "metaAnalysis": [
-    "Marco Polo win rate 48.87% (Camp HOK, 2026-07-16).",
-    "Pick rate 1.93%.",
-    "Ban rate 0.3%.",
+    "Marco Polo win rate 49.16% (Camp HOK, 2026-07-19).",
+    "Pick rate 1.87%.",
+    "Ban rate 0.27%.",
     "Counters: Cirrus, Mai Shiranui, Wukong. Weak into: Lian Po, Liu Bang, Zhang Fei."
   ],
   "metaAnalysisZh": [
-    "馬可波羅 勝率 48.87%（Camp HOK，2026-07-16）",
-    "選取率 1.93%",
-    "禁用率 0.3%",
+    "馬可波羅 勝率 49.16%（Camp HOK，2026-07-19）",
+    "選取率 1.87%",
+    "禁用率 0.27%",
     "克制：Cirrus、Mai Shiranui、Wukong；被克制：Lian Po、Liu Bang、Zhang Fei"
   ],
   "guide": {

@@ -1,17 +1,17 @@
 import { heroes, formatRate, sortByMetaScore } from '@/lib/data';
-import type { Hero, HeroRole } from '@/types/hero';
+import type { HeroIndexEntry, HeroRole } from '@/types/hero';
 import { ROLES } from '@/types/hero';
 
 const MIN_PICK = 0.2;
 
-function byWinRate(limit: number, filter?: (h: Hero) => boolean) {
+function byWinRate(limit: number, filter?: (h: HeroIndexEntry) => boolean) {
   return [...heroes]
     .filter((h) => h.winRate !== null && (!filter || filter(h)))
     .sort((a, b) => (b.winRate ?? 0) - (a.winRate ?? 0))
     .slice(0, limit);
 }
 
-function byPickRate(limit: number, filter?: (h: Hero) => boolean) {
+function byPickRate(limit: number, filter?: (h: HeroIndexEntry) => boolean) {
   return [...heroes]
     .filter(
       (h) =>
@@ -30,7 +30,7 @@ function byBanRate(limit: number) {
     .slice(0, limit);
 }
 
-function topInRole(role: HeroRole): Hero | undefined {
+function topInRole(role: HeroRole): HeroIndexEntry | undefined {
   return sortByMetaScore(heroes.filter((h) => h.role === role))[0];
 }
 
@@ -65,7 +65,7 @@ export function getProScenePressure(limit = 10) {
 export interface TrendDuo {
   id: string;
   label: string;
-  heroes: Hero[];
+  heroes: HeroIndexEntry[];
   note: string;
 }
 
@@ -137,7 +137,7 @@ export function getBestDuos(limit = 6): TrendDuo[] {
 export interface TrendComp {
   id: string;
   label: string;
-  heroes: Hero[];
+  heroes: HeroIndexEntry[];
   note: string;
 }
 
@@ -149,7 +149,7 @@ export function getBestComps(limit = 4): TrendComp[] {
   const roam =
     byPickRate(1, (h) => h.lane === 'Roaming')[0] ?? picks('Support');
 
-  const balanced = ROLES.map(picks).filter(Boolean) as Hero[];
+  const balanced = ROLES.map(picks).filter(Boolean) as HeroIndexEntry[];
   const fastPush = [
     jungler,
     roam,
@@ -157,7 +157,7 @@ export function getBestComps(limit = 4): TrendComp[] {
     picks('Mage'),
     byPickRate(1, (h) => h.lane === 'Farm Lane' && h.role === 'Marksman')[0] ??
       picks('Marksman'),
-  ].filter(Boolean) as Hero[];
+  ].filter(Boolean) as HeroIndexEntry[];
 
   const piggyback = [
     byPickRate(1, (h) => h.lane === 'Farm Lane' && h.role === 'Marksman')[0] ??
@@ -166,7 +166,7 @@ export function getBestComps(limit = 4): TrendComp[] {
     picks('Tank'),
     jungler,
     picks('Mage'),
-  ].filter(Boolean) as Hero[];
+  ].filter(Boolean) as HeroIndexEntry[];
 
   const comps: TrendComp[] = [];
   if (balanced.length >= 5) {

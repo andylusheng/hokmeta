@@ -1,5 +1,6 @@
 import { notFound } from 'next/navigation';
 import { getHeroBySlug, getHeroSlugs, site } from '@/lib/data';
+import { getFullHeroBySlug } from '@/lib/heroes-server';
 import { getMetaSeasonLabel } from '@/lib/i18n';
 import { getHeroDisplayName } from '@/lib/locale-names';
 import { buildMetadata, defaultTitle } from '@/lib/seo';
@@ -19,14 +20,14 @@ export function generateMetadata({ params }: { params: { slug: string } }) {
     description: `Honor of Kings ${season} 克制 ${displayName} 的最佳英雄與對線思路，數據來自 Camp HOK 國際服。`,
     path: `/hero/${params.slug}/counters`,
     locale: 'zh-TW',
-    ogImage: hero.avatar,
+    ogImage: `/og/heroes/${hero.slug}.svg`,
     type: 'article',
     modifiedTime: hero.dataUpdated ?? site.dateModified,
   });
 }
 
 export default function ZhTWCounterPage({ params }: { params: { slug: string } }) {
-  const hero = getHeroBySlug(params.slug);
+  const hero = getFullHeroBySlug(params.slug);
   if (!hero) notFound();
   return <CounterPageView hero={hero} locale="zh-TW" />;
 }

@@ -1,5 +1,5 @@
 import { heroes, sortByMetaScore } from '@/lib/data';
-import type { Hero, HeroTier } from '@/types/hero';
+import type { HeroIndexEntry, HeroTier } from '@/types/hero';
 
 export type GameLane = 'clash' | 'jungle' | 'mid' | 'farm' | 'roam';
 
@@ -25,7 +25,7 @@ const LANE_TIER_MAP: Record<HeroTier, LaneTierBand> = {
   C: 'D',
 };
 
-export function heroToLane(hero: Hero): GameLane {
+export function heroToLane(hero: HeroIndexEntry): GameLane {
   const lane = (hero.lane || '').toLowerCase();
   if (lane.includes('clash') || lane.includes('對抗')) return 'clash';
   if (lane.includes('jungle') || lane.includes('打野')) return 'jungle';
@@ -41,12 +41,12 @@ export function heroToLane(hero: Hero): GameLane {
   return 'clash';
 }
 
-export function heroLaneTierBand(hero: Hero): LaneTierBand {
+export function heroLaneTierBand(hero: HeroIndexEntry): LaneTierBand {
   return LANE_TIER_MAP[hero.tier] ?? 'C';
 }
 
-export function getTierListByLane(): Record<GameLane, Record<LaneTierBand, Hero[]>> {
-  const result = {} as Record<GameLane, Record<LaneTierBand, Hero[]>>;
+export function getTierListByLane(): Record<GameLane, Record<LaneTierBand, HeroIndexEntry[]>> {
+  const result = {} as Record<GameLane, Record<LaneTierBand, HeroIndexEntry[]>>;
   for (const lane of LANE_ORDER) {
     result[lane] = { S: [], A: [], B: [], C: [], D: [] };
   }
@@ -76,7 +76,7 @@ export const EXCLUSIVE_GLOBAL_SLUGS = [
   'luara',
 ] as const;
 
-export function getExclusiveGlobalHeroes(): Hero[] {
+export function getExclusiveGlobalHeroes(): HeroIndexEntry[] {
   return EXCLUSIVE_GLOBAL_SLUGS.map(
     (slug) => heroes.find((h) => h.slug === slug)!
   ).filter(Boolean);

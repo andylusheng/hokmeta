@@ -10,16 +10,16 @@
   "laneZh": "對抗路",
   "difficulty": "Easy",
   "tier": "S",
-  "winRate": 51.06,
-  "pickRate": 1.85,
-  "banRate": 0.18,
-  "rank": 39,
+  "winRate": 51.02,
+  "pickRate": 1.68,
+  "banRate": 0.15,
+  "rank": 43,
   "avatar": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/xUdtJiLO.png",
   "avatarFallback": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/193/193.jpg",
   "heroCover": "https://camp.honorofkings.com/social/game/src/image_hero_cover_1275*718/pSFK8RBs.jpg",
   "tencentId": 193,
   "dataSource": "Camp HOK bilingual (primary)",
-  "dataUpdated": "2026-07-16",
+  "dataUpdated": "2026-07-19",
   "skills": [
     {
       "slot": "passive",
@@ -83,31 +83,31 @@
   "build": [
     {
       "slot": 1,
-      "itemId": "1422",
-      "name": "Boots of Resistance",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1422.png",
-      "description": "MDEF +100, PDEF +50, MSPD +50\nShortens crowd control"
+      "itemId": "1533",
+      "name": "Rapacious Bite",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1533.png",
+      "description": "PATK +90, MSPD +5%, CDR +7.5%\nMonster kills boost ATK"
     },
     {
       "slot": 2,
-      "itemId": "1327",
-      "name": "Spikemail",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1327.png",
-      "description": "PATK +45, PDEF +300, HP +700\nReflects damage"
-    },
-    {
-      "slot": 3,
       "itemId": "1134",
       "name": "Master Sword",
       "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1134.png",
       "description": "PATK +55, Crit Rate +20%, HP +600\nEnhances BAs"
     },
     {
-      "slot": 4,
+      "slot": 3,
       "itemId": "1335",
       "name": "Succubus Cloak",
       "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
       "description": "MDEF +300, HP +1,100\nNegates magical damage"
+    },
+    {
+      "slot": 4,
+      "itemId": "1327",
+      "name": "Spikemail",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1327.png",
+      "description": "PATK +45, PDEF +300, HP +700\nReflects damage"
     },
     {
       "slot": 5,
@@ -127,31 +127,31 @@
   "buildZh": [
     {
       "slot": 1,
-      "itemId": "1422",
-      "name": "抵抗之靴",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1422.png",
-      "description": "+100點法防+50點物防+50點移速\n減少被控時間"
+      "itemId": "1533",
+      "name": "貪婪之噬",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1533.png",
+      "description": "+90攻擊+5%移速+7.5%冷縮\n打野怪加攻擊"
     },
     {
       "slot": 2,
-      "itemId": "1327",
-      "name": "反傷刺甲",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1327.png",
-      "description": "+45點攻擊+300點物防\n+700點生命值反彈傷害"
-    },
-    {
-      "slot": 3,
       "itemId": "1134",
       "name": "宗師之力",
       "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1134.png",
       "description": "+55點攻擊+20%暴擊+600點生命值……\n強化普攻"
     },
     {
-      "slot": 4,
+      "slot": 3,
       "itemId": "1335",
       "name": "魔女斗篷",
       "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
       "description": "+300點法防+1100點生命值\n吸收法術傷害"
+    },
+    {
+      "slot": 4,
+      "itemId": "1327",
+      "name": "反傷刺甲",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1327.png",
+      "description": "+45點攻擊+300點物防\n+700點生命值反彈傷害"
     },
     {
       "slot": 5,
@@ -171,6 +171,55 @@
   "builds": [
     {
       "id": "camp-0",
+      "label": "前期速刷铠",
+      "lane": "Jungle",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1533",
+          "name": "Rapacious Bite",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1533.png",
+          "description": "PATK +90, MSPD +5%, CDR +7.5%\nMonster kills boost ATK"
+        },
+        {
+          "slot": 2,
+          "itemId": "1134",
+          "name": "Master Sword",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1134.png",
+          "description": "PATK +55, Crit Rate +20%, HP +600\nEnhances BAs"
+        },
+        {
+          "slot": 3,
+          "itemId": "1335",
+          "name": "Succubus Cloak",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
+          "description": "MDEF +300, HP +1,100\nNegates magical damage"
+        },
+        {
+          "slot": 4,
+          "itemId": "1327",
+          "name": "Spikemail",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1327.png",
+          "description": "PATK +45, PDEF +300, HP +700\nReflects damage"
+        },
+        {
+          "slot": 5,
+          "itemId": "1337",
+          "name": "Sage's Sanctuary",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
+        },
+        {
+          "slot": 6,
+          "itemId": "1127",
+          "name": "Destiny",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
+        }
+      ]
+    },
+    {
+      "id": "camp-1",
       "label": "META",
       "lane": "Jungle",
       "items": [
@@ -219,7 +268,7 @@
       ]
     },
     {
-      "id": "camp-1",
+      "id": "camp-2",
       "label": "BUILD",
       "lane": "Top",
       "items": [
@@ -268,7 +317,7 @@
       ]
     },
     {
-      "id": "camp-2",
+      "id": "camp-3",
       "label": "Jungler",
       "lane": "Jungle",
       "items": [
@@ -320,6 +369,55 @@
   "buildsZh": [
     {
       "id": "camp-0",
+      "label": "前期速刷铠",
+      "lane": "Jungle",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1533",
+          "name": "貪婪之噬",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1533.png",
+          "description": "+90攻擊+5%移速+7.5%冷縮\n打野怪加攻擊"
+        },
+        {
+          "slot": 2,
+          "itemId": "1134",
+          "name": "宗師之力",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1134.png",
+          "description": "+55點攻擊+20%暴擊+600點生命值……\n強化普攻"
+        },
+        {
+          "slot": 3,
+          "itemId": "1335",
+          "name": "魔女斗篷",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
+          "description": "+300點法防+1100點生命值\n吸收法術傷害"
+        },
+        {
+          "slot": 4,
+          "itemId": "1327",
+          "name": "反傷刺甲",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1327.png",
+          "description": "+45點攻擊+300點物防\n+700點生命值反彈傷害"
+        },
+        {
+          "slot": 5,
+          "itemId": "1337",
+          "name": "賢者的庇護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+        },
+        {
+          "slot": 6,
+          "itemId": "1127",
+          "name": "名刀・司命",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "+75點攻擊+15%攻速+500點生命值\n保命"
+        }
+      ]
+    },
+    {
+      "id": "camp-1",
       "label": "META",
       "lane": "Jungle",
       "items": [
@@ -368,7 +466,7 @@
       ]
     },
     {
-      "id": "camp-1",
+      "id": "camp-2",
       "label": "BUILD",
       "lane": "Top",
       "items": [
@@ -417,7 +515,7 @@
       ]
     },
     {
-      "id": "camp-2",
+      "id": "camp-3",
       "label": "Jungler",
       "lane": "Jungle",
       "items": [
@@ -493,13 +591,13 @@
     "Sun Bin"
   ],
   "tips": [
-    "Kaizer (Tank): Tier S — 51.06% WR (Camp HOK).",
+    "Kaizer (Tank): Tier S — 51.02% WR (Camp HOK).",
     "Lane: Clash Lane.",
-    "Build: Boots of Resistance, Spikemail, Master Sword."
+    "Build: Rapacious Bite, Master Sword, Succubus Cloak."
   ],
   "tipsZh": [
-    "鎧（對抗路）：梯度 S，勝率 51.06%（Camp HOK）。",
-    "出裝：抵抗之靴、反傷刺甲、宗師之力."
+    "鎧（對抗路）：梯度 S，勝率 51.02%（Camp HOK）。",
+    "出裝：貪婪之噬、宗師之力、魔女斗篷."
   ],
   "patchHistory": [
     {
@@ -641,12 +739,12 @@
     {
       "id": "faq-good-season",
       "question": "Is Kaizer good in current season?",
-      "answer": "Kaizer is Tier S Tank with 51.06% win rate, 1.85% pick rate, and 0.18% ban rate (Camp HOK international)."
+      "answer": "Kaizer is Tier S Tank with 51.02% win rate, 1.68% pick rate, and 0.15% ban rate (Camp HOK international)."
     },
     {
       "id": "faq-best-build",
       "question": "What is the best Kaizer build?",
-      "answer": "Recommended: Boots of Resistance, Spikemail, Master Sword, Succubus Cloak, Sage's Sanctuary, Destiny."
+      "answer": "Recommended: Rapacious Bite, Master Sword, Succubus Cloak, Spikemail, Sage's Sanctuary, Destiny."
     },
     {
       "id": "faq-counter",
@@ -658,12 +756,12 @@
     {
       "id": "faq-good-season",
       "question": "鎧 這版本適合上分嗎？",
-      "answer": "鎧 為 S 梯度，勝率 51.06%、選取 1.85%、禁用 0.18%（Camp HOK 國際服）。"
+      "answer": "鎧 為 S 梯度，勝率 51.02%、選取 1.68%、禁用 0.15%（Camp HOK 國際服）。"
     },
     {
       "id": "faq-best-build",
       "question": "鎧 出裝怎麼搭配？",
-      "answer": "推薦：抵抗之靴、反傷刺甲、宗師之力、魔女斗篷、賢者的庇護、名刀・司命."
+      "answer": "推薦：貪婪之噬、宗師之力、魔女斗篷、反傷刺甲、賢者的庇護、名刀・司命."
     },
     {
       "id": "faq-counter",
@@ -672,15 +770,15 @@
     }
   ],
   "metaAnalysis": [
-    "Kaizer win rate 51.06% (Camp HOK, 2026-07-16).",
-    "Pick rate 1.85%.",
-    "Ban rate 0.18%.",
+    "Kaizer win rate 51.02% (Camp HOK, 2026-07-19).",
+    "Pick rate 1.68%.",
+    "Ban rate 0.15%.",
     "Counters: Da Qiao, Diaochan, Daji. Weak into: Donghuang, Kui, Sun Bin."
   ],
   "metaAnalysisZh": [
-    "鎧 勝率 51.06%（Camp HOK，2026-07-16）",
-    "選取率 1.85%",
-    "禁用率 0.18%",
+    "鎧 勝率 51.02%（Camp HOK，2026-07-19）",
+    "選取率 1.68%",
+    "禁用率 0.15%",
     "克制：Da Qiao、Diaochan、Daji；被克制：Donghuang、Kui、Sun Bin"
   ],
   "guide": {

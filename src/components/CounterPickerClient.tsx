@@ -387,13 +387,13 @@ function CounterPickerWorkspace({
                   href={localePath(locale, '/heroes')}
                   className="rounded border border-hok-border px-3 py-1.5 text-gray-300 hover:border-hok-gold hover:text-hok-gold"
                 >
-                  Hero builds
+                  {t('tools.relatedHeroBuilds')}
                 </Link>
                 <Link
                   href={localePath(locale, '/items')}
                   className="rounded border border-hok-border px-3 py-1.5 text-gray-300 hover:border-hok-gold hover:text-hok-gold"
                 >
-                  Items
+                  {t('tools.relatedItemDb')}
                 </Link>
               </div>
             </section>

@@ -1,4 +1,5 @@
 import { heroes, formatRate, getMostBannedHeroes, getMostPickedHeroes } from '@/lib/data';
+import { getFullHeroes } from '@/lib/heroes-server';
 import {
   laneLabel,
   metaTrends,
@@ -607,9 +608,9 @@ function heroGuideArticles(hero: Hero, locale: LocalLearnLocale): LearnArticle[]
 }
 
 export function getLearnArticlesId(): LearnArticle[] {
-  return [...baseArticlesId, ...trendArticles('id'), ...heroes.flatMap((hero) => heroGuideArticles(hero, 'id'))];
+  return [...baseArticlesId, ...trendArticles('id'), ...getFullHeroes().flatMap((hero) => heroGuideArticles(hero, 'id'))];
 }
 
 export function getLearnArticlesFil(): LearnArticle[] {
-  return [...baseArticlesFil, ...trendArticles('fil'), ...heroes.flatMap((hero) => heroGuideArticles(hero, 'fil'))];
+  return [...baseArticlesFil, ...trendArticles('fil'), ...getFullHeroes().flatMap((hero) => heroGuideArticles(hero, 'fil'))];
 }

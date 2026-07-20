@@ -10,16 +10,16 @@
   "laneZh": "對抗路",
   "difficulty": "Medium",
   "tier": "B",
-  "winRate": 49.87,
+  "winRate": 50.71,
   "pickRate": 0.34,
   "banRate": 0.03,
-  "rank": 70,
+  "rank": 59,
   "avatar": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/p4dfuWXS.png",
   "avatarFallback": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/154/154.jpg",
   "heroCover": "https://camp.honorofkings.com/social/game/src/image_hero_cover_1275*718/8bc1HQgG.jpg",
   "tencentId": 154,
   "dataSource": "Camp HOK bilingual (primary)",
-  "dataUpdated": "2026-07-16",
+  "dataUpdated": "2026-07-19",
   "skills": [
     {
       "slot": "passive",
@@ -83,10 +83,10 @@
   "build": [
     {
       "slot": 1,
-      "itemId": "1336",
-      "name": "Glacial Buckler",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1336.png",
-      "description": "CDR +20%, HP +600, PDEF +240\nGroup damage & slow"
+      "itemId": "1338",
+      "name": "Cuirass of Savagery",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1338.png",
+      "description": "PATK +35, PDEF +210, HP +900\nOffense & defense"
     },
     {
       "slot": 2,
@@ -97,40 +97,40 @@
     },
     {
       "slot": 3,
-      "itemId": "1335",
-      "name": "Succubus Cloak",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
-      "description": "MDEF +300, HP +1,100\nNegates magical damage"
+      "itemId": "1125",
+      "name": "Demonsbane",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1125.png",
+      "description": "PATK +90, MDEF +150, HP +600\nBoosts Magical Defense"
     },
     {
       "slot": 4,
-      "itemId": "1131",
-      "name": "Starbreaker",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1131.png",
-      "description": "PATK +90, HP +700, MSPD +7.5%\nAnti-tank"
-    },
-    {
-      "slot": 5,
       "itemId": "1337",
       "name": "Sage's Sanctuary",
       "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
       "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
     },
     {
-      "slot": 6,
+      "slot": 5,
       "itemId": "1127",
       "name": "Destiny",
       "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
       "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
+    },
+    {
+      "slot": 6,
+      "itemId": "1131",
+      "name": "Starbreaker",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1131.png",
+      "description": "PATK +90, HP +700, MSPD +7.5%\nAnti-tank"
     }
   ],
   "buildZh": [
     {
       "slot": 1,
-      "itemId": "1336",
-      "name": "極寒風暴",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1336.png",
-      "description": "+20%減冷卻時間+600點生命值+240點物防\n群體傷害減速"
+      "itemId": "1338",
+      "name": "暴烈之甲",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1338.png",
+      "description": "+35點攻擊+210點物防+900點生命值\n能抗能打"
     },
     {
       "slot": 2,
@@ -141,36 +141,85 @@
     },
     {
       "slot": 3,
-      "itemId": "1335",
-      "name": "魔女斗篷",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
-      "description": "+300點法防+1100點生命值\n吸收法術傷害"
+      "itemId": "1125",
+      "name": "破魔刀",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1125.png",
+      "description": "+90點攻擊+150點法防+600點生命值\n增加法術防禦"
     },
     {
       "slot": 4,
-      "itemId": "1131",
-      "name": "碎星錘",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1131.png",
-      "description": "+90點攻擊+700點生命值+7.5%移速\n打坦克用"
-    },
-    {
-      "slot": 5,
       "itemId": "1337",
       "name": "賢者的庇護",
       "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
       "description": "+900點生命值+150點物防+150點法防……\n原地復活"
     },
     {
-      "slot": 6,
+      "slot": 5,
       "itemId": "1127",
       "name": "名刀・司命",
       "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
       "description": "+75點攻擊+15%攻速+500點生命值\n保命"
+    },
+    {
+      "slot": 6,
+      "itemId": "1131",
+      "name": "碎星錘",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1131.png",
+      "description": "+90點攻擊+700點生命值+7.5%移速\n打坦克用"
     }
   ],
   "builds": [
     {
       "id": "camp-0",
+      "label": "花木兰",
+      "lane": "Top",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1338",
+          "name": "Cuirass of Savagery",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1338.png",
+          "description": "PATK +35, PDEF +210, HP +900\nOffense & defense"
+        },
+        {
+          "slot": 2,
+          "itemId": "11311",
+          "name": "Pure Sky",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/11311.png",
+          "description": "PATK +80, PDEF +150, CDR +10%\nTemp. damage reduction"
+        },
+        {
+          "slot": 3,
+          "itemId": "1125",
+          "name": "Demonsbane",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1125.png",
+          "description": "PATK +90, MDEF +150, HP +600\nBoosts Magical Defense"
+        },
+        {
+          "slot": 4,
+          "itemId": "1337",
+          "name": "Sage's Sanctuary",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
+        },
+        {
+          "slot": 5,
+          "itemId": "1127",
+          "name": "Destiny",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
+        },
+        {
+          "slot": 6,
+          "itemId": "1131",
+          "name": "Starbreaker",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1131.png",
+          "description": "PATK +90, HP +700, MSPD +7.5%\nAnti-tank"
+        }
+      ]
+    },
+    {
+      "id": "camp-1",
       "label": "Mulan",
       "lane": "Top",
       "items": [
@@ -219,7 +268,7 @@
       ]
     },
     {
-      "id": "camp-1",
+      "id": "camp-2",
       "label": "HeXinLiang",
       "lane": "Top",
       "items": [
@@ -271,6 +320,55 @@
   "buildsZh": [
     {
       "id": "camp-0",
+      "label": "花木兰",
+      "lane": "Top",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1338",
+          "name": "暴烈之甲",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1338.png",
+          "description": "+35點攻擊+210點物防+900點生命值\n能抗能打"
+        },
+        {
+          "slot": 2,
+          "itemId": "11311",
+          "name": "純淨蒼穹",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/11311.png",
+          "description": "+80點攻擊+150點物防+10%冷卻時間縮減\n暫時增加免傷"
+        },
+        {
+          "slot": 3,
+          "itemId": "1125",
+          "name": "破魔刀",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1125.png",
+          "description": "+90點攻擊+150點法防+600點生命值\n增加法術防禦"
+        },
+        {
+          "slot": 4,
+          "itemId": "1337",
+          "name": "賢者的庇護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+        },
+        {
+          "slot": 5,
+          "itemId": "1127",
+          "name": "名刀・司命",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "+75點攻擊+15%攻速+500點生命值\n保命"
+        },
+        {
+          "slot": 6,
+          "itemId": "1131",
+          "name": "碎星錘",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1131.png",
+          "description": "+90點攻擊+700點生命值+7.5%移速\n打坦克用"
+        }
+      ]
+    },
+    {
+      "id": "camp-1",
       "label": "Mulan",
       "lane": "Top",
       "items": [
@@ -319,7 +417,7 @@
       ]
     },
     {
-      "id": "camp-1",
+      "id": "camp-2",
       "label": "HeXinLiang",
       "lane": "Top",
       "items": [
@@ -371,12 +469,12 @@
   "arcana": [
     "Lvl 5: Mutation",
     "Lvl 5: Stealth",
-    "Lvl 5: Longevity"
+    "Lvl 5: Harmony"
   ],
   "arcanaZh": [
     "5級：異變",
     "5級：隱匿",
-    "5級：長生"
+    "5級：調和"
   ],
   "spells": [
     "Flash"
@@ -395,13 +493,13 @@
     "Hou Yi"
   ],
   "tips": [
-    "Mulan (Assassin): Tier B — 49.87% WR (Camp HOK).",
+    "Mulan (Assassin): Tier B — 50.71% WR (Camp HOK).",
     "Lane: Clash Lane.",
-    "Build: Glacial Buckler, Pure Sky, Succubus Cloak."
+    "Build: Cuirass of Savagery, Pure Sky, Demonsbane."
   ],
   "tipsZh": [
-    "花木蘭（對抗路）：梯度 B，勝率 49.87%（Camp HOK）。",
-    "出裝：極寒風暴、純淨蒼穹、魔女斗篷."
+    "花木蘭（對抗路）：梯度 B，勝率 50.71%（Camp HOK）。",
+    "出裝：暴烈之甲、純淨蒼穹、破魔刀."
   ],
   "patchHistory": [
     {
@@ -521,12 +619,12 @@
     {
       "id": "faq-good-season",
       "question": "Is Mulan good in current season?",
-      "answer": "Mulan is Tier B Assassin with 49.87% win rate, 0.34% pick rate, and 0.03% ban rate (Camp HOK international)."
+      "answer": "Mulan is Tier B Assassin with 50.71% win rate, 0.34% pick rate, and 0.03% ban rate (Camp HOK international)."
     },
     {
       "id": "faq-best-build",
       "question": "What is the best Mulan build?",
-      "answer": "Recommended: Glacial Buckler, Pure Sky, Succubus Cloak, Starbreaker, Sage's Sanctuary, Destiny."
+      "answer": "Recommended: Cuirass of Savagery, Pure Sky, Demonsbane, Sage's Sanctuary, Destiny, Starbreaker."
     },
     {
       "id": "faq-counter",
@@ -538,12 +636,12 @@
     {
       "id": "faq-good-season",
       "question": "花木蘭 這版本適合上分嗎？",
-      "answer": "花木蘭 為 B 梯度，勝率 49.87%、選取 0.34%、禁用 0.03%（Camp HOK 國際服）。"
+      "answer": "花木蘭 為 B 梯度，勝率 50.71%、選取 0.34%、禁用 0.03%（Camp HOK 國際服）。"
     },
     {
       "id": "faq-best-build",
       "question": "花木蘭 出裝怎麼搭配？",
-      "answer": "推薦：極寒風暴、純淨蒼穹、魔女斗篷、碎星錘、賢者的庇護、名刀・司命."
+      "answer": "推薦：暴烈之甲、純淨蒼穹、破魔刀、賢者的庇護、名刀・司命、碎星錘."
     },
     {
       "id": "faq-counter",
@@ -552,13 +650,13 @@
     }
   ],
   "metaAnalysis": [
-    "Mulan win rate 49.87% (Camp HOK, 2026-07-16).",
+    "Mulan win rate 50.71% (Camp HOK, 2026-07-19).",
     "Pick rate 0.34%.",
     "Ban rate 0.03%.",
     "Counters: Liang, Mi Yue, Nuwa. Weak into: Diaochan, Heino, Hou Yi."
   ],
   "metaAnalysisZh": [
-    "花木蘭 勝率 49.87%（Camp HOK，2026-07-16）",
+    "花木蘭 勝率 50.71%（Camp HOK，2026-07-19）",
     "選取率 0.34%",
     "禁用率 0.03%",
     "克制：Liang、Mi Yue、Nuwa；被克制：Diaochan、Heino、Hou Yi"

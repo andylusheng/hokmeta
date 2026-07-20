@@ -1,5 +1,5 @@
 import type { LearnArticle } from '@/lib/learn';
-import { heroes } from '@/lib/data';
+import { getFullHeroes } from '@/lib/heroes-server';
 import {
   getCounterOverride,
   getCounterDetails,
@@ -8,6 +8,8 @@ import {
   getMetaTrend,
 } from '@/lib/counter-rationale-overrides';
 import { getHeroDisplayName } from '@/lib/locale-names';
+
+const heroes = getFullHeroes();
 
 /* ═══════════════════════════════════════════
    基础辅助函数

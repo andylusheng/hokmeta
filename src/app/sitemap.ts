@@ -1,6 +1,7 @@
 import type { MetadataRoute } from 'next';
 import { site, heroes, items, getLatestHeroDataDate } from '@/lib/data';
-import { getLearnArticle, getLearnArticles } from '@/lib/learn';
+import { getLearnArticle, getLearnArticles, slugToDate } from '@/lib/learn';
+import { getComparePairs } from '@/lib/hero-compare';
 import { ROLES } from '@/types/hero';
 import { LOCALES, localePath } from '@/lib/i18n';
 import { isLocaleReadyForPath } from '@/lib/locale-readiness';
@@ -139,12 +140,20 @@ export default function sitemap(): MetadataRoute.Sitemap {
       .filter((article) => isLocaleReadyForPath(locale, `/learn/${article.slug}`))
       .map((article) =>
         sitemapEntry(base, localePath(locale, `/learn/${article.slug}`), {
-          lastModified: freshness,
+          lastModified: new Date(article.lastModified ?? slugToDate(article.slug, freshness)),
           changeFrequency: article.relatedHeroSlug ? 'weekly' : 'monthly',
           priority: article.relatedHeroSlug ? 0.82 : 0.72,
         })
       )
   );
 
-  return [...staticRoutes, ...heroRoutes, ...itemRoutes, ...roleRoutes, ...learnRoutes];
+  const compareRoutes = getComparePairs().map((p) =>
+    sitemapEntry(base, `/compare/${p.pair}`, {
+      lastModified: freshness,
+      changeFrequency: 'weekly' as const,
+      priority: 0.68,
+    })
+  );
+
+  return [...staticRoutes, ...heroRoutes, ...itemRoutes, ...roleRoutes, ...learnRoutes, ...compareRoutes];
 }

@@ -65,9 +65,9 @@ export function getLocalizedSpells(hero: Hero, locale: Locale): string[] {
   return hero.spells;
 }
 
-export function getLocalizedPatchHistory(hero: Hero, locale: Locale): PatchEntry[] {
+export function getLocalizedPatchHistory(hero: { patchHistory?: PatchEntry[]; patchHistoryZh?: PatchEntry[] }, locale: Locale): PatchEntry[] {
   if (locale === 'zh-TW' && hero.patchHistoryZh?.length) return hero.patchHistoryZh;
-  return hero.patchHistory;
+  return hero.patchHistory ?? [];
 }
 
 export function getLocalizedLane(hero: Hero, locale: Locale): string | null {

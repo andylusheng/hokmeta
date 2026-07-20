@@ -210,6 +210,28 @@ export interface Hero {
 
 export type KeywordsMap = Record<string, string[]>;
 
+/** Lightweight hero entry for list pages & client components (no skills/builds/guide/faqs/patchHistory). */
+export type HeroIndexEntry = Omit<
+  Hero,
+  | 'skills'
+  | 'skillsZh'
+  | 'build'
+  | 'buildZh'
+  | 'builds'
+  | 'buildsZh'
+  | 'guide'
+  | 'faqs'
+  | 'faqsZh'
+  | 'patchHistory'
+  | 'patchHistoryZh'
+  | 'metaAnalysis'
+  | 'metaAnalysisZh'
+  | 'tips'
+  | 'tipsZh'
+> & {
+  patchHistory?: PatchEntry[];
+};
+
 export const ROLES: HeroRole[] = [
   'Tank',
   'Warrior',

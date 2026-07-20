@@ -53,6 +53,23 @@ export interface LearnArticle {
   sections: { heading: string; body: string }[];
   /** Hero slug this article is about, if hero-specific. Enables back-linking. */
   relatedHeroSlug?: string;
+  /** ISO date string for sitemap/JSON-LD freshness. */
+  lastModified?: string;
+}
+
+/**
+ * Deterministic date derived from a slug string.
+ * Spreads articles across a 60-day window ending at the reference date.
+ */
+export function slugToDate(slug: string, reference: Date): string {
+  let hash = 0;
+  for (let i = 0; i < slug.length; i++) {
+    hash = ((hash << 5) - hash + slug.charCodeAt(i)) | 0;
+  }
+  const offset = Math.abs(hash) % 60; // 0-59 days ago
+  const d = new Date(reference);
+  d.setDate(d.getDate() - offset);
+  return d.toISOString().slice(0, 10);
 }
 
 export const learnDataSync = DATA_SYNC;

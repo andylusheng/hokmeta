@@ -1,5 +1,6 @@
 import { ItemsPageView } from '@/views/ItemsPageView';
 import { buildMetadata } from '@/lib/seo';
+import { JsonLd, breadcrumbSchema } from '@/lib/schema';
 import { createT } from '@/lib/i18n';
 
 const t = createT('fil');
@@ -13,5 +14,15 @@ export const metadata = buildMetadata({
 });
 
 export default function ItemsPageZh() {
-  return <ItemsPageView locale="fil" />;
+  return (
+    <>
+      <JsonLd
+        data={breadcrumbSchema([
+          { name: t('common.home'), path: '/fil' },
+          { name: t('nav.items'), path: '/fil/items' },
+        ])}
+      />
+      <ItemsPageView locale="fil" />
+    </>
+  );
 }

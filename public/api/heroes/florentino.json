@@ -10,16 +10,16 @@
   "laneZh": "對抗路",
   "difficulty": "Medium",
   "tier": "S+",
-  "winRate": 50.46,
-  "pickRate": 0.61,
-  "banRate": 6.32,
-  "rank": 57,
+  "winRate": 50.86,
+  "pickRate": 0.5,
+  "banRate": 6.36,
+  "rank": 52,
   "avatar": "https://camp.honorofkings.com/camp/admin/hero/head_128-128/skJXGWLF.png",
   "avatarFallback": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/631/631.jpg",
   "heroCover": "https://camp.honorofkings.com/camp/admin/hero/cover_1275-718/MPok6xqU.jpg",
   "tencentId": 631,
   "dataSource": "Camp HOK bilingual (primary)",
-  "dataUpdated": "2026-07-16",
+  "dataUpdated": "2026-07-19",
   "skills": [
     {
       "slot": "passive",
@@ -83,94 +83,143 @@
   "build": [
     {
       "slot": 1,
-      "itemId": "13310",
-      "name": "Frostscar's Embrace",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/13310.png",
-      "description": "PATK +60, PDEF +300, CDR +10%\nEnhanced BAs slow"
+      "itemId": "1137",
+      "name": "Axe of Torment",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1137.png",
+      "description": "PATK +80, CDR +10%, HP +500\nAnti-squishy"
     },
     {
       "slot": 2,
-      "itemId": "1347",
-      "name": "Longnight Guardian",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1347.png",
-      "description": "MDEF +210, HP +1,000, MSPD +7.5%\nReduces magical damage"
-    },
-    {
-      "slot": 3,
-      "itemId": "11311",
-      "name": "Pure Sky",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/11311.png",
-      "description": "PATK +80, PDEF +150, CDR +10%\nTemp. damage reduction"
-    },
-    {
-      "slot": 4,
       "itemId": "1337",
       "name": "Sage's Sanctuary",
       "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
       "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
     },
     {
+      "slot": 3,
+      "itemId": "1327",
+      "name": "Spikemail",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1327.png",
+      "description": "PATK +45, PDEF +300, HP +700\nReflects damage"
+    },
+    {
+      "slot": 4,
+      "itemId": "1350",
+      "name": "Ravage - Phantom",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1350.png",
+      "description": "PATK +75, HP +900\nTrades HP for shield"
+    },
+    {
       "slot": 5,
+      "itemId": "1336",
+      "name": "Glacial Buckler",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1336.png",
+      "description": "CDR +20%, HP +600, PDEF +240\nGroup damage & slow"
+    },
+    {
+      "slot": 6,
       "itemId": "1127",
       "name": "Destiny",
       "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
       "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
-    },
-    {
-      "slot": 6,
-      "itemId": "1157",
-      "name": "Immovable - Sky Dome",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1157.png",
-      "description": "PATK +80, PDEF +150, CDR +10%\nTemp. damage reduction"
     }
   ],
   "buildZh": [
     {
       "slot": 1,
-      "itemId": "13310",
-      "name": "冰痕之握",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/13310.png",
-      "description": "+60點攻擊+300點物防+10%減冷卻時間……\n強化普攻減速"
+      "itemId": "1137",
+      "name": "暗影戰斧",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1137.png",
+      "description": "+80點攻擊+10%減冷卻時間+500點生命值\n打血薄用"
     },
     {
       "slot": 2,
-      "itemId": "1347",
-      "name": "永夜守護",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1347.png",
-      "description": "+210點法防+1000點生命值\n+7.5%移速減少法術傷害"
-    },
-    {
-      "slot": 3,
-      "itemId": "11311",
-      "name": "純淨蒼穹",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/11311.png",
-      "description": "+80點攻擊+150點物防+10%冷卻時間縮減\n暫時增加免傷"
-    },
-    {
-      "slot": 4,
       "itemId": "1337",
       "name": "賢者的庇護",
       "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
       "description": "+900點生命值+150點物防+150點法防……\n原地復活"
     },
     {
+      "slot": 3,
+      "itemId": "1327",
+      "name": "反傷刺甲",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1327.png",
+      "description": "+45點攻擊+300點物防\n+700點生命值反彈傷害"
+    },
+    {
+      "slot": 4,
+      "itemId": "1350",
+      "name": "侵略・怒魂",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1350.png",
+      "description": "+75點攻擊+900點生命值\n犧牲生命值換取護盾值"
+    },
+    {
       "slot": 5,
+      "itemId": "1336",
+      "name": "極寒風暴",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1336.png",
+      "description": "+20%減冷卻時間+600點生命值+240點物防\n群體傷害減速"
+    },
+    {
+      "slot": 6,
       "itemId": "1127",
       "name": "名刀・司命",
       "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
       "description": "+75點攻擊+15%攻速+500點生命值\n保命"
-    },
-    {
-      "slot": 6,
-      "itemId": "1157",
-      "name": "不動・天穹",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1157.png",
-      "description": "+80點攻擊+150點物防+10%冷卻時間縮減\n暫時增加免傷"
     }
   ],
   "builds": [
     {
       "id": "camp-0",
+      "label": "FIGHT BRO!",
+      "lane": "Top",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1137",
+          "name": "Axe of Torment",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1137.png",
+          "description": "PATK +80, CDR +10%, HP +500\nAnti-squishy"
+        },
+        {
+          "slot": 2,
+          "itemId": "1337",
+          "name": "Sage's Sanctuary",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
+        },
+        {
+          "slot": 3,
+          "itemId": "1327",
+          "name": "Spikemail",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1327.png",
+          "description": "PATK +45, PDEF +300, HP +700\nReflects damage"
+        },
+        {
+          "slot": 4,
+          "itemId": "1350",
+          "name": "Ravage - Phantom",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1350.png",
+          "description": "PATK +75, HP +900\nTrades HP for shield"
+        },
+        {
+          "slot": 5,
+          "itemId": "1336",
+          "name": "Glacial Buckler",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1336.png",
+          "description": "CDR +20%, HP +600, PDEF +240\nGroup damage & slow"
+        },
+        {
+          "slot": 6,
+          "itemId": "1127",
+          "name": "Destiny",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
+        }
+      ]
+    },
+    {
+      "id": "camp-1",
       "label": "PRIA SOLO",
       "lane": "Top",
       "items": [
@@ -219,7 +268,7 @@
       ]
     },
     {
-      "id": "camp-1",
+      "id": "camp-2",
       "label": "WildCat",
       "lane": "Top",
       "items": [
@@ -268,7 +317,7 @@
       ]
     },
     {
-      "id": "camp-2",
+      "id": "camp-3",
       "label": "Muyun",
       "lane": "Top",
       "items": [
@@ -315,60 +364,60 @@
           "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
         }
       ]
-    },
-    {
-      "id": "camp-3",
-      "label": "Smooth Combo",
-      "lane": "Top",
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "11311",
-          "name": "Pure Sky",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/11311.png",
-          "description": "PATK +80, PDEF +150, CDR +10%\nTemp. damage reduction"
-        },
-        {
-          "slot": 2,
-          "itemId": "1137",
-          "name": "Axe of Torment",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1137.png",
-          "description": "PATK +80, CDR +10%, HP +500\nAnti-squishy"
-        },
-        {
-          "slot": 3,
-          "itemId": "13310",
-          "name": "Frostscar's Embrace",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/13310.png",
-          "description": "PATK +60, PDEF +300, CDR +10%\nEnhanced BAs slow"
-        },
-        {
-          "slot": 4,
-          "itemId": "1328",
-          "name": "Blood Rage",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1328.png",
-          "description": "PATK +75, HP +900\nTrades HP for shield"
-        },
-        {
-          "slot": 5,
-          "itemId": "1335",
-          "name": "Succubus Cloak",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
-          "description": "MDEF +300, HP +1,100\nNegates magical damage"
-        },
-        {
-          "slot": 6,
-          "itemId": "1127",
-          "name": "Destiny",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
-          "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
-        }
-      ]
     }
   ],
   "buildsZh": [
     {
       "id": "camp-0",
+      "label": "FIGHT BRO!",
+      "lane": "Top",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1137",
+          "name": "暗影戰斧",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1137.png",
+          "description": "+80點攻擊+10%減冷卻時間+500點生命值\n打血薄用"
+        },
+        {
+          "slot": 2,
+          "itemId": "1337",
+          "name": "賢者的庇護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+        },
+        {
+          "slot": 3,
+          "itemId": "1327",
+          "name": "反傷刺甲",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1327.png",
+          "description": "+45點攻擊+300點物防\n+700點生命值反彈傷害"
+        },
+        {
+          "slot": 4,
+          "itemId": "1350",
+          "name": "侵略・怒魂",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1350.png",
+          "description": "+75點攻擊+900點生命值\n犧牲生命值換取護盾值"
+        },
+        {
+          "slot": 5,
+          "itemId": "1336",
+          "name": "極寒風暴",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1336.png",
+          "description": "+20%減冷卻時間+600點生命值+240點物防\n群體傷害減速"
+        },
+        {
+          "slot": 6,
+          "itemId": "1127",
+          "name": "名刀・司命",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "+75點攻擊+15%攻速+500點生命值\n保命"
+        }
+      ]
+    },
+    {
+      "id": "camp-1",
       "label": "PRIA SOLO",
       "lane": "Top",
       "items": [
@@ -417,7 +466,7 @@
       ]
     },
     {
-      "id": "camp-1",
+      "id": "camp-2",
       "label": "WildCat",
       "lane": "Top",
       "items": [
@@ -466,7 +515,7 @@
       ]
     },
     {
-      "id": "camp-2",
+      "id": "camp-3",
       "label": "Muyun",
       "lane": "Top",
       "items": [
@@ -513,66 +562,17 @@
           "description": "+900點生命值+150點物防+150點法防……\n原地復活"
         }
       ]
-    },
-    {
-      "id": "camp-3",
-      "label": "Smooth Combo",
-      "lane": "Top",
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "11311",
-          "name": "純淨蒼穹",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/11311.png",
-          "description": "+80點攻擊+150點物防+10%冷卻時間縮減\n暫時增加免傷"
-        },
-        {
-          "slot": 2,
-          "itemId": "1137",
-          "name": "暗影戰斧",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1137.png",
-          "description": "+80點攻擊+10%減冷卻時間+500點生命值\n打血薄用"
-        },
-        {
-          "slot": 3,
-          "itemId": "13310",
-          "name": "冰痕之握",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/13310.png",
-          "description": "+60點攻擊+300點物防+10%減冷卻時間……\n強化普攻減速"
-        },
-        {
-          "slot": 4,
-          "itemId": "1328",
-          "name": "血魔之怒",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1328.png",
-          "description": "+75點攻擊+900點生命值 \n犧牲生命值換取護盾值"
-        },
-        {
-          "slot": 5,
-          "itemId": "1335",
-          "name": "魔女斗篷",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
-          "description": "+300點法防+1100點生命值\n吸收法術傷害"
-        },
-        {
-          "slot": 6,
-          "itemId": "1127",
-          "name": "名刀・司命",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
-          "description": "+75點攻擊+15%攻速+500點生命值\n保命"
-        }
-      ]
     }
   ],
   "arcana": [
     "Lvl 5: Mutation",
-    "Lvl 5: Stealth",
-    "Lvl 5: Eagle Eye"
+    "Lvl 5: Conflict",
+    "Lvl 5: Stealth"
   ],
   "arcanaZh": [
     "5級：異變",
-    "5級：隱匿",
-    "5級：鷹眼"
+    "5級：紛爭",
+    "5級：隱匿"
   ],
   "spells": [
     "Flash"
@@ -591,13 +591,13 @@
     "Data unavailable"
   ],
   "tips": [
-    "Florentino (Warrior): Tier S+ — 50.46% WR (Camp HOK).",
+    "Florentino (Warrior): Tier S+ — 50.86% WR (Camp HOK).",
     "Lane: Clash Lane.",
-    "Build: Frostscar's Embrace, Longnight Guardian, Pure Sky."
+    "Build: Axe of Torment, Sage's Sanctuary, Spikemail."
   ],
   "tipsZh": [
-    "弗洛倫（對抗路）：梯度 S+，勝率 50.46%（Camp HOK）。",
-    "出裝：冰痕之握、永夜守護、純淨蒼穹."
+    "弗洛倫（對抗路）：梯度 S+，勝率 50.86%（Camp HOK）。",
+    "出裝：暗影戰斧、賢者的庇護、反傷刺甲."
   ],
   "patchHistory": [
     {
@@ -629,12 +629,12 @@
     {
       "id": "faq-good-season",
       "question": "Is Florentino good in current season?",
-      "answer": "Florentino is Tier S+ Warrior with 50.46% win rate, 0.61% pick rate, and 6.32% ban rate (Camp HOK international)."
+      "answer": "Florentino is Tier S+ Warrior with 50.86% win rate, 0.5% pick rate, and 6.36% ban rate (Camp HOK international)."
     },
     {
       "id": "faq-best-build",
       "question": "What is the best Florentino build?",
-      "answer": "Recommended: Frostscar's Embrace, Longnight Guardian, Pure Sky, Sage's Sanctuary, Destiny, Immovable - Sky Dome."
+      "answer": "Recommended: Axe of Torment, Sage's Sanctuary, Spikemail, Ravage - Phantom, Glacial Buckler, Destiny."
     },
     {
       "id": "faq-counter",
@@ -646,12 +646,12 @@
     {
       "id": "faq-good-season",
       "question": "弗洛倫 這版本適合上分嗎？",
-      "answer": "弗洛倫 為 S+ 梯度，勝率 50.46%、選取 0.61%、禁用 6.32%（Camp HOK 國際服）。"
+      "answer": "弗洛倫 為 S+ 梯度，勝率 50.86%、選取 0.5%、禁用 6.36%（Camp HOK 國際服）。"
     },
     {
       "id": "faq-best-build",
       "question": "弗洛倫 出裝怎麼搭配？",
-      "answer": "推薦：冰痕之握、永夜守護、純淨蒼穹、賢者的庇護、名刀・司命、不動・天穹."
+      "answer": "推薦：暗影戰斧、賢者的庇護、反傷刺甲、侵略・怒魂、極寒風暴、名刀・司命."
     },
     {
       "id": "faq-counter",
@@ -660,15 +660,15 @@
     }
   ],
   "metaAnalysis": [
-    "Florentino win rate 50.46% (Camp HOK, 2026-07-16).",
-    "Pick rate 0.61%.",
-    "Ban rate 6.32%.",
+    "Florentino win rate 50.86% (Camp HOK, 2026-07-19).",
+    "Pick rate 0.5%.",
+    "Ban rate 6.36%.",
     "Counters: Data unavailable, Data unavailable, Data unavailable. Weak into: Data unavailable, Data unavailable, Data unavailable."
   ],
   "metaAnalysisZh": [
-    "弗洛倫 勝率 50.46%（Camp HOK，2026-07-16）",
-    "選取率 0.61%",
-    "禁用率 6.32%",
+    "弗洛倫 勝率 50.86%（Camp HOK，2026-07-19）",
+    "選取率 0.5%",
+    "禁用率 6.36%",
     "克制：Data unavailable、Data unavailable、Data unavailable；被克制：Data unavailable、Data unavailable、Data unavailable"
   ]
 }

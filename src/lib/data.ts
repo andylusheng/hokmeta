@@ -1,4 +1,4 @@
-import heroesData from '../../data/heroes.json';
+import heroesIndex from '../../data/heroes-index.json';
 import itemsData from '../../data/items.json';
 import keywordsData from '../../data/keywords.json';
 import siteConfig from '../../config/site.json';
@@ -8,13 +8,15 @@ import type {
   GameItem,
   Hero,
   HeroBuildPreset,
+  HeroIndexEntry,
   HeroRole,
   HeroTier,
   KeywordsMap,
 } from '@/types/hero';
 
 export const site = siteConfig;
-export const heroes = heroesData as Hero[];
+/** Lightweight hero index (no skills/builds/guide/faqs). Use heroes-server.ts for full data. */
+export const heroes = heroesIndex as HeroIndexEntry[];
 export const items = itemsData as GameItem[];
 export const keywords = keywordsData as KeywordsMap;
 
@@ -36,7 +38,7 @@ export function getItemSlugs(): string[] {
   return items.map((i) => i.id);
 }
 
-export function getHeroBySlug(slug: string): Hero | undefined {
+export function getHeroBySlug(slug: string): HeroIndexEntry | undefined {
   return heroes.find((h) => h.slug === slug);
 }
 
@@ -67,7 +69,7 @@ export function defaultBuildPresetIndex(
   return recIdx >= 0 ? recIdx : 0;
 }
 
-export function getHeroByName(name: string): Hero | undefined {
+export function getHeroByName(name: string): HeroIndexEntry | undefined {
   const key = name.trim().toLowerCase();
   if (!key || key === 'data unavailable') return undefined;
   return (
@@ -76,7 +78,7 @@ export function getHeroByName(name: string): Hero | undefined {
   );
 }
 
-export function getHeroesGroupedByRole(): Record<HeroRole, Hero[]> {
+export function getHeroesGroupedByRole(): Record<HeroRole, HeroIndexEntry[]> {
   const roles = [
     'Tank',
     'Warrior',
@@ -85,7 +87,7 @@ export function getHeroesGroupedByRole(): Record<HeroRole, Hero[]> {
     'Marksman',
     'Support',
   ] as HeroRole[];
-  const result = {} as Record<HeroRole, Hero[]>;
+  const result = {} as Record<HeroRole, HeroIndexEntry[]>;
   for (const role of roles) {
     result[role] = sortByMetaScore(heroes.filter((h) => h.role === role));
   }
@@ -110,15 +112,15 @@ export function formatRank(rank: number | null): string {
   return `#${rank}`;
 }
 
-export function getHeroesByRole(role: HeroRole): Hero[] {
+export function getHeroesByRole(role: HeroRole): HeroIndexEntry[] {
   return heroes.filter((h) => h.role === role);
 }
 
-export function getHeroesByTier(tier: HeroTier): Hero[] {
+export function getHeroesByTier(tier: HeroTier): HeroIndexEntry[] {
   return heroes.filter((h) => h.tier === tier);
 }
 
-function sortByWinRate(list: Hero[]): Hero[] {
+function sortByWinRate(list: HeroIndexEntry[]): HeroIndexEntry[] {
   return [...list].sort((a, b) => (b.winRate ?? -1) - (a.winRate ?? -1));
 }
 
@@ -131,7 +133,7 @@ const TIER_WEIGHT: Record<HeroTier, number> = {
 };
 
 /** Ranked meta score: tier + pick/ban pressure + WR (not raw WR alone). */
-export function metaScore(hero: Hero): number {
+export function metaScore(hero: HeroIndexEntry): number {
   const tier = TIER_WEIGHT[hero.tier] ?? 0;
   return (
     tier * 100 +
@@ -141,16 +143,16 @@ export function metaScore(hero: Hero): number {
   );
 }
 
-export function sortByMetaScore(list: Hero[]): Hero[] {
+export function sortByMetaScore(list: HeroIndexEntry[]): HeroIndexEntry[] {
   return [...list].sort((a, b) => metaScore(b) - metaScore(a));
 }
 
 /** Best heroes to queue per role — tier and meta activity, not niche high-WR picks. */
-export function getRecommendedHeroesByRole(role: HeroRole, limit = 10): Hero[] {
+export function getRecommendedHeroesByRole(role: HeroRole, limit = 10): HeroIndexEntry[] {
   return sortByMetaScore(heroes.filter((h) => h.role === role)).slice(0, limit);
 }
 
-export function getTierListGrouped(): Record<HeroTier, Record<HeroRole, Hero[]>> {
+export function getTierListGrouped(): Record<HeroTier, Record<HeroRole, HeroIndexEntry[]>> {
   const tiers = ['S+', 'S', 'A', 'B', 'C'] as HeroTier[];
   const roles = [
     'Tank',
@@ -161,9 +163,9 @@ export function getTierListGrouped(): Record<HeroTier, Record<HeroRole, Hero[]>>
     'Support',
   ] as HeroRole[];
 
-  const result = {} as Record<HeroTier, Record<HeroRole, Hero[]>>;
+  const result = {} as Record<HeroTier, Record<HeroRole, HeroIndexEntry[]>>;
   for (const tier of tiers) {
-    result[tier] = {} as Record<HeroRole, Hero[]>;
+    result[tier] = {} as Record<HeroRole, HeroIndexEntry[]>;
     for (const role of roles) {
       result[tier][role] = sortByWinRate(
         heroes.filter((h) => h.tier === tier && h.role === role)
@@ -174,7 +176,7 @@ export function getTierListGrouped(): Record<HeroTier, Record<HeroRole, Hero[]>>
 }
 
 /** Tier list: primary role → S+ / S / A / B bands. */
-export function getTierListByRole(): Record<HeroRole, Record<HeroTier, Hero[]>> {
+export function getTierListByRole(): Record<HeroRole, Record<HeroTier, HeroIndexEntry[]>> {
   const tiers = ['S+', 'S', 'A', 'B', 'C'] as HeroTier[];
   const roles = [
     'Tank',
@@ -185,9 +187,9 @@ export function getTierListByRole(): Record<HeroRole, Record<HeroTier, Hero[]>> 
     'Support',
   ] as HeroRole[];
 
-  const result = {} as Record<HeroRole, Record<HeroTier, Hero[]>>;
+  const result = {} as Record<HeroRole, Record<HeroTier, HeroIndexEntry[]>>;
   for (const role of roles) {
-    result[role] = {} as Record<HeroTier, Hero[]>;
+    result[role] = {} as Record<HeroTier, HeroIndexEntry[]>;
     for (const tier of tiers) {
       result[role][tier] = sortByWinRate(
         heroes.filter((h) => h.role === role && h.tier === tier)
@@ -199,13 +201,13 @@ export function getTierListByRole(): Record<HeroRole, Record<HeroTier, Hero[]>> 
 
 const tierOrder: HeroTier[] = ['S+', 'S', 'A', 'B', 'C'];
 
-function sortByTier( list: Hero[]): Hero[] {
+function sortByTier( list: HeroIndexEntry[]): HeroIndexEntry[] {
   return [...list].sort(
     (a, b) => tierOrder.indexOf(a.tier) - tierOrder.indexOf(b.tier)
   );
 }
 
-export function getTopRisingHeroes(limit = 5): Hero[] {
+export function getTopRisingHeroes(limit = 5): HeroIndexEntry[] {
   const withStats = heroes.filter((h) => h.winRate !== null);
   if (withStats.length) {
     return [...withStats]
@@ -215,7 +217,7 @@ export function getTopRisingHeroes(limit = 5): Hero[] {
   return sortByTier(heroes).slice(0, limit);
 }
 
-export function getMostPickedHeroes(limit = 5): Hero[] {
+export function getMostPickedHeroes(limit = 5): HeroIndexEntry[] {
   const withStats = heroes.filter((h) => h.pickRate !== null);
   if (withStats.length) {
     return [...withStats]
@@ -225,7 +227,7 @@ export function getMostPickedHeroes(limit = 5): Hero[] {
   return sortByTier(heroes).slice(0, limit);
 }
 
-export function getMostBannedHeroes(limit = 5): Hero[] {
+export function getMostBannedHeroes(limit = 5): HeroIndexEntry[] {
   const withStats = heroes.filter((h) => h.banRate !== null);
   if (withStats.length) {
     return [...withStats]
@@ -235,10 +237,10 @@ export function getMostBannedHeroes(limit = 5): Hero[] {
   return sortByTier(heroes).slice(0, limit);
 }
 
-export function getRecentMetaChanges(limit = 8): { hero: Hero; patch: string }[] {
-  const items: { hero: Hero; patch: string }[] = [];
+export function getRecentMetaChanges(limit = 8): { hero: HeroIndexEntry; patch: string }[] {
+  const items: { hero: HeroIndexEntry; patch: string }[] = [];
   for (const hero of heroes) {
-    for (const p of hero.patchHistory) {
+    for (const p of hero.patchHistory ?? []) {
       if (p.change && p.change !== 'Data unavailable') {
         items.push({ hero, patch: `${p.version}: ${p.change}` });
       }
@@ -254,3 +256,6 @@ export function heroAvatarUrl(slug: string): string {
   const hero = getHeroBySlug(slug);
   return hero?.avatar ?? `${AVATAR_CDN}/${slug}.png`;
 }
+
+// Re-export Hero type for consumers that need it
+export type { Hero, HeroIndexEntry } from '@/types/hero';

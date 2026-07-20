@@ -10,16 +10,16 @@
   "laneZh": "遊走",
   "difficulty": "Easy",
   "tier": "S",
-  "winRate": 48.35,
-  "pickRate": 0.69,
-  "banRate": 1.93,
-  "rank": 97,
+  "winRate": 48.53,
+  "pickRate": 0.71,
+  "banRate": 1.88,
+  "rank": 94,
   "avatar": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/PRcq49iS.png",
   "avatarFallback": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/187/187.jpg",
   "heroCover": "https://camp.honorofkings.com/social/game/src/image_hero_cover_1275*718/193uPSM2.jpg",
   "tencentId": 187,
   "dataSource": "Camp HOK bilingual (primary)",
-  "dataUpdated": "2026-07-16",
+  "dataUpdated": "2026-07-19",
   "skills": [
     {
       "slot": "passive",
@@ -83,250 +83,152 @@
   "build": [
     {
       "slot": 1,
-      "itemId": "1237",
-      "name": "Augur's Word",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1237.png",
-      "description": "MATK +140, MP +450, HP +900\nOffense & defense"
-    },
-    {
-      "slot": 2,
-      "itemId": "1240",
-      "name": "Insatiable Tome",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1240.png",
-      "description": "MATK +160, Magical Lifesteal +24%, HP +750\nLifesteal increases CDR"
-    },
-    {
-      "slot": 3,
-      "itemId": "1332",
-      "name": "Overlord's Platemail",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1332.png",
-      "description": "HP +1,800, PDEF +160, MDEF +80\nExtra HP"
-    },
-    {
-      "slot": 4,
       "itemId": "1244",
       "name": "Breakthrough Robe",
       "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1244.png",
       "description": "MATK +120, HP +900\nConverts HP into Magical Pierce"
     },
     {
-      "slot": 5,
-      "itemId": "1232",
-      "name": "Savant's Wrath",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1232.png",
-      "description": "MATK +210\nGreatly boosts MATK"
+      "slot": 2,
+      "itemId": "1332",
+      "name": "Overlord's Platemail",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1332.png",
+      "description": "HP +1,800, PDEF +160, MDEF +80\nExtra HP"
     },
     {
-      "slot": 6,
+      "slot": 3,
       "itemId": "1334",
       "name": "Eye of the Phoenix",
       "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1334.png",
       "description": "MDEF +180, PDEF +90, HP +1,350\nBoosts HP Regen"
+    },
+    {
+      "slot": 4,
+      "itemId": "1335",
+      "name": "Succubus Cloak",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
+      "description": "MDEF +300, HP +1,100\nNegates magical damage"
+    },
+    {
+      "slot": 5,
+      "itemId": "1327",
+      "name": "Spikemail",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1327.png",
+      "description": "PATK +45, PDEF +300, HP +700\nReflects damage"
+    },
+    {
+      "slot": 6,
+      "itemId": "1337",
+      "name": "Sage's Sanctuary",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+      "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
     }
   ],
   "buildZh": [
     {
       "slot": 1,
-      "itemId": "1237",
-      "name": "時之預言",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1237.png",
-      "description": "+140點法攻+450法力值+900點生命值……\n攻防兼備"
-    },
-    {
-      "slot": 2,
-      "itemId": "1240",
-      "name": "噬神之書",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1240.png",
-      "description": "+160點法攻+24%法術吸血+750點生命值 吸血拉長冷卻時間"
-    },
-    {
-      "slot": 3,
-      "itemId": "1332",
-      "name": "霸者重裝",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1332.png",
-      "description": "+1800點生命值+160點物防+80點法防\n提高額外生命值"
-    },
-    {
-      "slot": 4,
       "itemId": "1244",
       "name": "破繭之衣",
       "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1244.png",
       "description": "+120點法攻+900點生命值\n生命值轉法穿"
     },
     {
-      "slot": 5,
-      "itemId": "1232",
-      "name": "博學者之怒",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1232.png",
-      "description": "+210點法術攻擊\n大幅提升法強"
+      "slot": 2,
+      "itemId": "1332",
+      "name": "霸者重裝",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1332.png",
+      "description": "+1800點生命值+160點物防+80點法防\n提高額外生命值"
     },
     {
-      "slot": 6,
+      "slot": 3,
       "itemId": "1334",
       "name": "不死鳥之眼",
       "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1334.png",
       "description": "+180點法防+90點物防+1350點生命值……\n增加回血效果"
+    },
+    {
+      "slot": 4,
+      "itemId": "1335",
+      "name": "魔女斗篷",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
+      "description": "+300點法防+1100點生命值\n吸收法術傷害"
+    },
+    {
+      "slot": 5,
+      "itemId": "1327",
+      "name": "反傷刺甲",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1327.png",
+      "description": "+45點攻擊+300點物防\n+700點生命值反彈傷害"
+    },
+    {
+      "slot": 6,
+      "itemId": "1337",
+      "name": "賢者的庇護",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+      "description": "+900點生命值+150點物防+150點法防……\n原地復活"
     }
   ],
   "builds": [
     {
       "id": "camp-0",
-      "label": "Executor 2",
-      "lane": "Top",
+      "label": "Meta - Roaming",
+      "lane": null,
       "items": [
         {
           "slot": 1,
-          "itemId": "1237",
-          "name": "Augur's Word",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1237.png",
-          "description": "MATK +140, MP +450, HP +900\nOffense & defense"
-        },
-        {
-          "slot": 2,
-          "itemId": "1240",
-          "name": "Insatiable Tome",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1240.png",
-          "description": "MATK +160, Magical Lifesteal +24%, HP +750\nLifesteal increases CDR"
-        },
-        {
-          "slot": 3,
-          "itemId": "1332",
-          "name": "Overlord's Platemail",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1332.png",
-          "description": "HP +1,800, PDEF +160, MDEF +80\nExtra HP"
-        },
-        {
-          "slot": 4,
           "itemId": "1244",
           "name": "Breakthrough Robe",
           "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1244.png",
           "description": "MATK +120, HP +900\nConverts HP into Magical Pierce"
         },
         {
-          "slot": 5,
-          "itemId": "1232",
-          "name": "Savant's Wrath",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1232.png",
-          "description": "MATK +210\nGreatly boosts MATK"
+          "slot": 2,
+          "itemId": "1332",
+          "name": "Overlord's Platemail",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1332.png",
+          "description": "HP +1,800, PDEF +160, MDEF +80\nExtra HP"
         },
         {
-          "slot": 6,
+          "slot": 3,
           "itemId": "1334",
           "name": "Eye of the Phoenix",
           "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1334.png",
           "description": "MDEF +180, PDEF +90, HP +1,350\nBoosts HP Regen"
+        },
+        {
+          "slot": 4,
+          "itemId": "1335",
+          "name": "Succubus Cloak",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
+          "description": "MDEF +300, HP +1,100\nNegates magical damage"
+        },
+        {
+          "slot": 5,
+          "itemId": "1327",
+          "name": "Spikemail",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1327.png",
+          "description": "PATK +45, PDEF +300, HP +700\nReflects damage"
+        },
+        {
+          "slot": 6,
+          "itemId": "1337",
+          "name": "Sage's Sanctuary",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
         }
       ]
     },
     {
       "id": "camp-1",
-      "label": "Roaming 2",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1737",
-          "name": "Crimson Shadow - Radiance",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1749.png",
-          "description": "HP +1,200, MSPD +7.5%\nDPS aura"
-        },
-        {
-          "slot": 2,
-          "itemId": "1333",
-          "name": "Ominous Premonition",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1333.png",
-          "description": "PDEF +300, HP +1,200\nSlows attackers"
-        },
-        {
-          "slot": 3,
-          "itemId": "1347",
-          "name": "Longnight Guardian",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1347.png",
-          "description": "MDEF +210, HP +1,000, MSPD +7.5%\nReduces magical damage"
-        },
-        {
-          "slot": 4,
-          "itemId": "1332",
-          "name": "Overlord's Platemail",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1332.png",
-          "description": "HP +1,800, PDEF +160, MDEF +80\nExtra HP"
-        },
-        {
-          "slot": 5,
-          "itemId": "1334",
-          "name": "Eye of the Phoenix",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1334.png",
-          "description": "MDEF +180, PDEF +90, HP +1,350\nBoosts HP Regen"
-        },
-        {
-          "slot": 6,
-          "itemId": "1337",
-          "name": "Sage's Sanctuary",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
-          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
-        }
-      ]
-    },
-    {
-      "id": "camp-2",
-      "label": "Nara",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1737",
-          "name": "Crimson Shadow - Radiance",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1749.png",
-          "description": "HP +1,200, MSPD +7.5%\nDPS aura"
-        },
-        {
-          "slot": 2,
-          "itemId": "1333",
-          "name": "Ominous Premonition",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1333.png",
-          "description": "PDEF +300, HP +1,200\nSlows attackers"
-        },
-        {
-          "slot": 3,
-          "itemId": "1347",
-          "name": "Longnight Guardian",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1347.png",
-          "description": "MDEF +210, HP +1,000, MSPD +7.5%\nReduces magical damage"
-        },
-        {
-          "slot": 4,
-          "itemId": "1332",
-          "name": "Overlord's Platemail",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1332.png",
-          "description": "HP +1,800, PDEF +160, MDEF +80\nExtra HP"
-        },
-        {
-          "slot": 5,
-          "itemId": "1334",
-          "name": "Eye of the Phoenix",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1334.png",
-          "description": "MDEF +180, PDEF +90, HP +1,350\nBoosts HP Regen"
-        },
-        {
-          "slot": 6,
-          "itemId": "1336",
-          "name": "Glacial Buckler",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1336.png",
-          "description": "CDR +20%, HP +600, PDEF +240\nGroup damage & slow"
-        }
-      ]
-    },
-    {
-      "id": "camp-3",
-      "label": "Semi Tanque",
+      "label": "Meta - Balanced",
       "lane": "Top",
       "items": [
         {
           "slot": 1,
-          "itemId": "1332",
-          "name": "Overlord's Platemail",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1332.png",
-          "description": "HP +1,800, PDEF +160, MDEF +80\nExtra HP"
+          "itemId": "1421",
+          "name": "Boots of Fortitude",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1421.png",
+          "description": "PDEF +100, MDEF +50, MSPD +50\nReduces physical damage"
         },
         {
           "slot": 2,
@@ -337,31 +239,31 @@
         },
         {
           "slot": 3,
-          "itemId": "1334",
-          "name": "Eye of the Phoenix",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1334.png",
-          "description": "MDEF +180, PDEF +90, HP +1,350\nBoosts HP Regen"
+          "itemId": "1331",
+          "name": "Blazing Cape",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1331.png",
+          "description": "PDEF +150, MDEF +150, HP +1,100\nArea burn & imperil"
         },
         {
           "slot": 4,
-          "itemId": "1337",
-          "name": "Sage's Sanctuary",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
-          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
+          "itemId": "1332",
+          "name": "Overlord's Platemail",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1332.png",
+          "description": "HP +1,800, PDEF +160, MDEF +80\nExtra HP"
         },
         {
           "slot": 5,
-          "itemId": "1239",
-          "name": "Splendor",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1239.png",
-          "description": "MATK +160, CDR +7.5%, Magical Lifesteal +12%\nTemp. invincibility"
-        },
-        {
-          "slot": 6,
           "itemId": "1227",
           "name": "Ardent Dominion",
           "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1227.png",
           "description": "MATK +150, Magical Lifesteal +12%, MSPD +7.5%\nCleanse and shield at low HP"
+        },
+        {
+          "slot": 6,
+          "itemId": "1334",
+          "name": "Eye of the Phoenix",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1334.png",
+          "description": "MDEF +180, PDEF +90, HP +1,350\nBoosts HP Regen"
         }
       ]
     }
@@ -369,162 +271,64 @@
   "buildsZh": [
     {
       "id": "camp-0",
-      "label": "Executor 2",
-      "lane": "Top",
+      "label": "Meta - Roaming",
+      "lane": null,
       "items": [
         {
           "slot": 1,
-          "itemId": "1237",
-          "name": "時之預言",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1237.png",
-          "description": "+140點法攻+450法力值+900點生命值……\n攻防兼備"
-        },
-        {
-          "slot": 2,
-          "itemId": "1240",
-          "name": "噬神之書",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1240.png",
-          "description": "+160點法攻+24%法術吸血+750點生命值 吸血拉長冷卻時間"
-        },
-        {
-          "slot": 3,
-          "itemId": "1332",
-          "name": "霸者重裝",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1332.png",
-          "description": "+1800點生命值+160點物防+80點法防\n提高額外生命值"
-        },
-        {
-          "slot": 4,
           "itemId": "1244",
           "name": "破繭之衣",
           "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1244.png",
           "description": "+120點法攻+900點生命值\n生命值轉法穿"
         },
         {
-          "slot": 5,
-          "itemId": "1232",
-          "name": "博學者之怒",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1232.png",
-          "description": "+210點法術攻擊\n大幅提升法強"
+          "slot": 2,
+          "itemId": "1332",
+          "name": "霸者重裝",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1332.png",
+          "description": "+1800點生命值+160點物防+80點法防\n提高額外生命值"
         },
         {
-          "slot": 6,
+          "slot": 3,
           "itemId": "1334",
           "name": "不死鳥之眼",
           "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1334.png",
           "description": "+180點法防+90點物防+1350點生命值……\n增加回血效果"
+        },
+        {
+          "slot": 4,
+          "itemId": "1335",
+          "name": "魔女斗篷",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
+          "description": "+300點法防+1100點生命值\n吸收法術傷害"
+        },
+        {
+          "slot": 5,
+          "itemId": "1327",
+          "name": "反傷刺甲",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1327.png",
+          "description": "+45點攻擊+300點物防\n+700點生命值反彈傷害"
+        },
+        {
+          "slot": 6,
+          "itemId": "1337",
+          "name": "賢者的庇護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
         }
       ]
     },
     {
       "id": "camp-1",
-      "label": "Roaming 2",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1737",
-          "name": "極影・形昭",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1749.png",
-          "description": "+1200點生命值+7.5%移速\n光環提升輸出"
-        },
-        {
-          "slot": 2,
-          "itemId": "1333",
-          "name": "不祥徵兆",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1333.png",
-          "description": "+300點物防+1200點生命值\n受擊時將敵人減速"
-        },
-        {
-          "slot": 3,
-          "itemId": "1347",
-          "name": "永夜守護",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1347.png",
-          "description": "+210點法防+1000點生命值\n+7.5%移速減少法術傷害"
-        },
-        {
-          "slot": 4,
-          "itemId": "1332",
-          "name": "霸者重裝",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1332.png",
-          "description": "+1800點生命值+160點物防+80點法防\n提高額外生命值"
-        },
-        {
-          "slot": 5,
-          "itemId": "1334",
-          "name": "不死鳥之眼",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1334.png",
-          "description": "+180點法防+90點物防+1350點生命值……\n增加回血效果"
-        },
-        {
-          "slot": 6,
-          "itemId": "1337",
-          "name": "賢者的庇護",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
-          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
-        }
-      ]
-    },
-    {
-      "id": "camp-2",
-      "label": "Nara",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1737",
-          "name": "極影・形昭",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1749.png",
-          "description": "+1200點生命值+7.5%移速\n光環提升輸出"
-        },
-        {
-          "slot": 2,
-          "itemId": "1333",
-          "name": "不祥徵兆",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1333.png",
-          "description": "+300點物防+1200點生命值\n受擊時將敵人減速"
-        },
-        {
-          "slot": 3,
-          "itemId": "1347",
-          "name": "永夜守護",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1347.png",
-          "description": "+210點法防+1000點生命值\n+7.5%移速減少法術傷害"
-        },
-        {
-          "slot": 4,
-          "itemId": "1332",
-          "name": "霸者重裝",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1332.png",
-          "description": "+1800點生命值+160點物防+80點法防\n提高額外生命值"
-        },
-        {
-          "slot": 5,
-          "itemId": "1334",
-          "name": "不死鳥之眼",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1334.png",
-          "description": "+180點法防+90點物防+1350點生命值……\n增加回血效果"
-        },
-        {
-          "slot": 6,
-          "itemId": "1336",
-          "name": "極寒風暴",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1336.png",
-          "description": "+20%減冷卻時間+600點生命值+240點物防\n群體傷害減速"
-        }
-      ]
-    },
-    {
-      "id": "camp-3",
-      "label": "Semi Tanque",
+      "label": "Meta - Balanced",
       "lane": "Top",
       "items": [
         {
           "slot": 1,
-          "itemId": "1332",
-          "name": "霸者重裝",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1332.png",
-          "description": "+1800點生命值+160點物防+80點法防\n提高額外生命值"
+          "itemId": "1421",
+          "name": "影忍之足",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1421.png",
+          "description": "+100點物防+50點法防+50點移速\n減少物理傷害"
         },
         {
           "slot": 2,
@@ -535,31 +339,31 @@
         },
         {
           "slot": 3,
-          "itemId": "1334",
-          "name": "不死鳥之眼",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1334.png",
-          "description": "+180點法防+90點物防+1350點生命值……\n增加回血效果"
+          "itemId": "1331",
+          "name": "紅蓮斗篷",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1331.png",
+          "description": "+150點物防+150點法防+1100點生命值\n範圍灼燒重傷"
         },
         {
           "slot": 4,
-          "itemId": "1337",
-          "name": "賢者的庇護",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
-          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+          "itemId": "1332",
+          "name": "霸者重裝",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1332.png",
+          "description": "+1800點生命值+160點物防+80點法防\n提高額外生命值"
         },
         {
           "slot": 5,
-          "itemId": "1239",
-          "name": "輝月",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1239.png",
-          "description": "+160點法攻+7.5%減冷卻時間+12%法術吸血\n暫時無敵"
-        },
-        {
-          "slot": 6,
           "itemId": "1227",
           "name": "熾熱支配",
           "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1227.png",
           "description": "+150點法攻+12%法術吸血+7.5%移速\n殘血解控加盾"
+        },
+        {
+          "slot": 6,
+          "itemId": "1334",
+          "name": "不死鳥之眼",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1334.png",
+          "description": "+180點法防+90點物防+1350點生命值……\n增加回血效果"
         }
       ]
     }
@@ -575,10 +379,10 @@
     "5級：虛空"
   ],
   "spells": [
-    "Execute"
+    "Flash"
   ],
   "spellsZh": [
-    "終結"
+    "閃現"
   ],
   "counters": [
     "Allain",
@@ -591,13 +395,13 @@
     "Ying"
   ],
   "tips": [
-    "Donghuang (Tank): Tier S — 48.35% WR (Camp HOK).",
+    "Donghuang (Tank): Tier S — 48.53% WR (Camp HOK).",
     "Lane: Roaming.",
-    "Build: Augur's Word, Insatiable Tome, Overlord's Platemail."
+    "Build: Breakthrough Robe, Overlord's Platemail, Eye of the Phoenix."
   ],
   "tipsZh": [
-    "東皇太一（遊走）：梯度 S，勝率 48.35%（Camp HOK）。",
-    "出裝：時之預言、噬神之書、霸者重裝."
+    "東皇太一（遊走）：梯度 S，勝率 48.53%（Camp HOK）。",
+    "出裝：破繭之衣、霸者重裝、不死鳥之眼."
   ],
   "patchHistory": [
     {
@@ -629,12 +433,12 @@
     {
       "id": "faq-good-season",
       "question": "Is Donghuang good in current season?",
-      "answer": "Donghuang is Tier S Tank with 48.35% win rate, 0.69% pick rate, and 1.93% ban rate (Camp HOK international)."
+      "answer": "Donghuang is Tier S Tank with 48.53% win rate, 0.71% pick rate, and 1.88% ban rate (Camp HOK international)."
     },
     {
       "id": "faq-best-build",
       "question": "What is the best Donghuang build?",
-      "answer": "Recommended: Augur's Word, Insatiable Tome, Overlord's Platemail, Breakthrough Robe, Savant's Wrath, Eye of the Phoenix."
+      "answer": "Recommended: Breakthrough Robe, Overlord's Platemail, Eye of the Phoenix, Succubus Cloak, Spikemail, Sage's Sanctuary."
     },
     {
       "id": "faq-counter",
@@ -646,12 +450,12 @@
     {
       "id": "faq-good-season",
       "question": "東皇太一 這版本適合上分嗎？",
-      "answer": "東皇太一 為 S 梯度，勝率 48.35%、選取 0.69%、禁用 1.93%（Camp HOK 國際服）。"
+      "answer": "東皇太一 為 S 梯度，勝率 48.53%、選取 0.71%、禁用 1.88%（Camp HOK 國際服）。"
     },
     {
       "id": "faq-best-build",
       "question": "東皇太一 出裝怎麼搭配？",
-      "answer": "推薦：時之預言、噬神之書、霸者重裝、破繭之衣、博學者之怒、不死鳥之眼."
+      "answer": "推薦：破繭之衣、霸者重裝、不死鳥之眼、魔女斗篷、反傷刺甲、賢者的庇護."
     },
     {
       "id": "faq-counter",
@@ -660,15 +464,15 @@
     }
   ],
   "metaAnalysis": [
-    "Donghuang win rate 48.35% (Camp HOK, 2026-07-16).",
-    "Pick rate 0.69%.",
-    "Ban rate 1.93%.",
+    "Donghuang win rate 48.53% (Camp HOK, 2026-07-19).",
+    "Pick rate 0.71%.",
+    "Ban rate 1.88%.",
     "Counters: Allain, Cirrus, Kaizer. Weak into: Wukong, Musashi, Ying."
   ],
   "metaAnalysisZh": [
-    "東皇太一 勝率 48.35%（Camp HOK，2026-07-16）",
-    "選取率 0.69%",
-    "禁用率 1.93%",
+    "東皇太一 勝率 48.53%（Camp HOK，2026-07-19）",
+    "選取率 0.71%",
+    "禁用率 1.88%",
     "克制：Allain、Cirrus、Kaizer；被克制：Wukong、Musashi、Ying"
   ],
   "guide": {
