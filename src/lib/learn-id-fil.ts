@@ -235,6 +235,8 @@ const baseArticlesId: LearnArticle[] = [
     badge: 'META',
     category: 'Hero Guides',
     relatedHeroSlug: 'li-xin',
+    datePublished: '2026-07-22',
+    lastModified: '2026-07-22',
     description:
       'Li Xin punya win rate 53,6% dan ban rate tertinggi di antara warrior. Berikut build terkini, arcana, dan hero yang bisa mematikan dia — berdasarkan data ranked live.',
     sections: [
@@ -396,6 +398,8 @@ const baseArticlesFil: LearnArticle[] = [
     badge: 'META',
     category: 'Hero Guides',
     relatedHeroSlug: 'li-xin',
+    datePublished: '2026-07-22',
+    lastModified: '2026-07-22',
     description:
       'Si Li Xin ay may 53.6% win rate at pinakamataas na ban rate sa lahat ng warrior. Narito ang current build, arcana, at mga hero na pumapatay sa kanya — base sa live ranked data.',
     sections: [

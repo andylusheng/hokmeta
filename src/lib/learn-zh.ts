@@ -387,6 +387,8 @@ export const learnArticlesZh: LearnArticle[] = [
     badge: '版本',
     category: 'Hero Guides',
     relatedHeroSlug: 'li-xin',
+    datePublished: '2026-07-22',
+    lastModified: '2026-07-22',
     description:
       '李信勝率 53.6%、禁用率位居戰士第一。本文從實戰數據出發，解析當前出裝、銘文配置以及能有效克制他的英雄。',
     sections: [

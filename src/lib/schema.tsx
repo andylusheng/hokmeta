@@ -47,7 +47,7 @@ export function itemListSchema(
   };
 }
 
-export function articleSchema(title: string, path: string, description: string) {
+export function articleSchema(title: string, path: string, description: string, dates?: { datePublished?: string; dateModified?: string }) {
   return {
     '@context': 'https://schema.org',
     '@type': 'Article',
@@ -59,8 +59,8 @@ export function articleSchema(title: string, path: string, description: string) 
       name: site.name,
       url: site.domain,
     },
-    datePublished: site.datePublished,
-    dateModified: site.dateModified,
+    datePublished: dates?.datePublished ?? site.datePublished,
+    dateModified: dates?.dateModified ?? site.dateModified,
     mainEntityOfPage: canonicalUrl(path),
   };
 }

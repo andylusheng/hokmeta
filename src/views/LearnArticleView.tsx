@@ -46,7 +46,10 @@ export function LearnArticleView({
         ])}
       />
       <JsonLd
-        data={articleSchema(article.title, localePath(locale, path), article.description)}
+        data={articleSchema(article.title, localePath(locale, path), article.description, {
+          datePublished: article.datePublished,
+          dateModified: article.lastModified,
+        })}
       />
       <Breadcrumb
         items={[
@@ -64,8 +67,8 @@ export function LearnArticleView({
       <p className="mb-4 text-sm text-gray-500">
         {t('learn.byAuthor', {
           author: authorMeta.name,
-          published: authorMeta.datePublished,
-          updated: learnDataSync,
+          published: article.datePublished ?? authorMeta.datePublished,
+          updated: article.lastModified ?? learnDataSync,
         })}
       </p>
       <div className="prose prose-invert max-w-none space-y-8">

@@ -53,6 +53,8 @@ export interface LearnArticle {
   sections: { heading: string; body: string }[];
   /** Hero slug this article is about, if hero-specific. Enables back-linking. */
   relatedHeroSlug?: string;
+  /** ISO date string for per-article published date. Falls back to site.datePublished. */
+  datePublished?: string;
   /** ISO date string for sitemap/JSON-LD freshness. */
   lastModified?: string;
 }
@@ -421,6 +423,8 @@ export const learnArticles: LearnArticle[] = [
     badge: 'META',
     category: 'Hero Guides',
     relatedHeroSlug: 'li-xin',
+    datePublished: '2026-07-22',
+    lastModified: '2026-07-22',
     description:
       'Li Xin holds a 53.6% win rate and the highest ban rate among top warriors. Here is his current build, arcana, and the heroes that shut him down — all from live ranked data.',
     sections: [

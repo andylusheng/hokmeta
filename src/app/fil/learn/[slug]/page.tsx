@@ -21,6 +21,7 @@ export function generateMetadata({
     path: `/fil/learn/${params.slug}`,
     type: 'article',
     locale: 'fil',
+    publishedTime: article.datePublished,
     modifiedTime: article.lastModified ?? slugToDate(article.slug, new Date(site.dateModified)),
   });
 }

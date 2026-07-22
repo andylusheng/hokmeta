@@ -15,6 +15,8 @@ export interface SeoInput {
   keywords?: string[];
   /** ISO date for article freshness (hero pages, guides). */
   modifiedTime?: string;
+  /** ISO date for per-article published date. Falls back to site.datePublished. */
+  publishedTime?: string;
 }
 
 export function getSiteBase(): string {
@@ -93,7 +95,7 @@ export function buildMetadata(input: SeoInput): Metadata {
       images: [{ url: fullOg, width: 1200, height: 630, alt: input.title }],
       ...(input.modifiedTime
         ? {
-            publishedTime: site.datePublished,
+            publishedTime: input.publishedTime ?? site.datePublished,
             modifiedTime: input.modifiedTime,
           }
         : {}),
