@@ -415,6 +415,42 @@ export const learnArticles: LearnArticle[] = [
       },
     ],
   },
+  {
+    slug: 'li-xin-build-and-counters',
+    title: 'Li Xin: The Most Banned Warrior in Ranked — Build, Arcana, and How to Counter Him',
+    badge: 'META',
+    category: 'Hero Guides',
+    relatedHeroSlug: 'li-xin',
+    description:
+      'Li Xin holds a 53.6% win rate and the highest ban rate among top warriors. Here is his current build, arcana, and the heroes that shut him down — all from live ranked data.',
+    sections: [
+      {
+        heading: 'Why Li Xin dominates ranked',
+        body:
+          'Li Xin sits at 53.64% win rate with a 2.84% ban rate — the most feared warrior in the current meta. His dual-form kit (swordsman for burst, spearman for sustained DPS) lets him adapt mid-fight, and his gap-closer makes backline access trivial. When the enemy team lacks hard CC or anti-dive tools, Li Xin deletes carries before they can react.',
+      },
+      {
+        heading: 'Current best build (July 2026)',
+        body:
+          'Core items from ranked data: Ominous Premonition → Demonsbane → Tempest → Sage\'s Sanctuary → Destiny → Boots of Resistance. This build balances burst penetration with survivability. Ominous Premonition provides the shield + CDR needed to survive initial focus fire, while Demonsbane and Tempest stack penetration for the spearman execute. Swap Destiny for a defensive item if the enemy has two+ burst mages.',
+      },
+      {
+        heading: 'Arcana setup',
+        body:
+          'Run Fate (attack + penetration), Hunt (attack speed + move speed), and Reaver (lifesteal + attack). This page maximizes early dueling power — Li Xin\'s win condition is snowballing a 1v1 in the first 4 minutes, then snowballing map pressure. Do not run tank arcana; his kit ratios reward full damage.',
+      },
+      {
+        heading: 'How to counter Li Xin',
+        body:
+          'Heroes that shut him down: Cai Yan (heal denial + CC lock), Da Qiao (silence interrupts his combo), and Guiguzi (sustained CC prevents form-switch). General principles: save your CC for his spearman dash, never 1v1 him at equal gold, and build anti-heal (Dominance) if he runs Reaver arcana. If you see Li Xin in draft and your team has no hard CC, consider banning — his 2.84% ban rate exists for a reason.',
+      },
+      {
+        heading: 'When NOT to pick Li Xin',
+        body:
+          'Avoid Li Xin into heavy-CC comps (multiple stuns, suppressions, or pulls). He also struggles against tanks with 10k+ HP who build Dominance — his burst falls off if the target survives the first rotation. If your team already has an assassin jungler, picking Li Xin as a second diver creates a comp with zero peel for your marksman.',
+      },
+    ],
+  },
 ];
 
 export function getLearnDataNote(locale: Locale = 'en'): string {

@@ -229,6 +229,32 @@ const baseArticlesId: LearnArticle[] = [
       },
     ],
   },
+  {
+    slug: 'li-xin-build-and-counters',
+    title: 'Li Xin: Warrior Paling Ditakuti di Ranked — Build, Arcana, dan Cara Counter',
+    badge: 'META',
+    category: 'Hero Guides',
+    relatedHeroSlug: 'li-xin',
+    description:
+      'Li Xin punya win rate 53,6% dan ban rate tertinggi di antara warrior. Berikut build terkini, arcana, dan hero yang bisa mematikan dia — berdasarkan data ranked live.',
+    sections: [
+      {
+        heading: 'Kenapa Li Xin mendominasi ranked',
+        body:
+          'Li Xin punya win rate 53,64% dengan ban rate 2,84% — warrior paling ditakuti di meta saat ini. Kit dual-form (swordsman untuk burst, spearman untuk DPS berkelanjutan) membuatnya adaptif di tengah fight, dan gap-closer-nya membuat akses ke backline sangat mudah.',
+      },
+      {
+        heading: 'Build terbaik saat ini (Juli 2026)',
+        body:
+          'Item inti: Ominous Premonition → Demonsbane → Tempest → Sage\'s Sanctuary → Destiny → Boots of Resistance. Build ini menyeimbangkan burst penetration dan survivability. Ganti Destiny dengan item defense jika musuh punya 2+ burst mage.',
+      },
+      {
+        heading: 'Cara counter Li Xin',
+        body:
+          'Hero yang efektif: Cai Yan (heal denial + CC), Da Qiao (silence memutus combo), Guiguzi (CC berkelanjutan mencegah form-switch). Simpan CC untuk dash spearman-nya, jangan 1v1 di gold setara, dan beli Dominance jika dia pakai arcana Reaver.',
+      },
+    ],
+  },
 ];
 
 const baseArticlesFil: LearnArticle[] = [
@@ -361,6 +387,32 @@ const baseArticlesFil: LearnArticle[] = [
         heading: 'Pinakamahalaga',
         body:
           'Mas madalas galing sa maliliit na tamang desisyon ang rank climb: wave bago objective, huwag mamatay bago Tyrant, at huwag first-pick ng hero na madaling i-counter.',
+      },
+    ],
+  },
+  {
+    slug: 'li-xin-build-and-counters',
+    title: 'Li Xin: Ang Pinakatakot na Warrior sa Ranked — Build, Arcana, at Paano I-counter',
+    badge: 'META',
+    category: 'Hero Guides',
+    relatedHeroSlug: 'li-xin',
+    description:
+      'Si Li Xin ay may 53.6% win rate at pinakamataas na ban rate sa lahat ng warrior. Narito ang current build, arcana, at mga hero na pumapatay sa kanya — base sa live ranked data.',
+    sections: [
+      {
+        heading: 'Bakit dominado ni Li Xin ang ranked',
+        body:
+          'Si Li Xin ay may 53.64% win rate at 2.84% ban rate — ang pinakatakot na warrior sa current meta. Ang dual-form kit niya (swordsman para burst, spearman para sustained DPS) ay nagpapahintulot sa kanya na mag-adapt sa gitna ng laban, at ang gap-closer niya ay ginagawang madali ang access sa backline.',
+      },
+      {
+        heading: 'Current best build (Hulyo 2026)',
+        body:
+          'Core items: Ominous Premonition → Demonsbane → Tempest → Sage\'s Sanctuary → Destiny → Boots of Resistance. Palitan ang Destiny ng defense item kung ang kalaban ay may 2+ burst mage.',
+      },
+      {
+        heading: 'Paano i-counter si Li Xin',
+        body:
+          'Mga effective na hero: Cai Yan (heal denial + CC), Da Qiao (silence na pumuputol ng combo), Guiguzi (sustained CC na pumipigil ng form-switch). Itago ang CC para sa spearman dash niya, huwag 1v1 sa equal gold, at bumili ng Dominance kung Reaver arcana ang gamit niya.',
       },
     ],
   },
