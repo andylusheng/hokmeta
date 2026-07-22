@@ -2,7 +2,7 @@
   "season": "S15",
   "currentSeason": "S15",
   "source": "Camp HOK bilingual (api-camp.honorofkings.com)",
-  "updated": "2026-07-20",
+  "updated": "2026-07-22",
   "heroCount": 116,
   "seasons": [
     {
@@ -3754,18 +3754,6 @@
       "seasonId": "5",
       "changes": [
         {
-          "heroSlug": "consort-yu",
-          "heroName": "Consort Yu",
-          "heroNameZh": "虞姬",
-          "tag": "Mechanics Upgrade",
-          "change": "Increased basic Movement Speed.Increased Attack Speed to enhance Skill 1 and Ultimate effects, while slightly weakening Skill 2",
-          "changeZh": null,
-          "detail": "As a late-game marksman, Consort Yu's original skill mechanics have made it increasingly difficult to support her position in the current environment.We hope that this update will make Consort Yu's Skill 1 an important part of her damage output in late-game team fights, while also improving the attack power of her Ultimate",
-          "detailZh": null,
-          "versionName": "20240509",
-          "publishedAt": "2024-05-09T02:31:07Z"
-        },
-        {
           "heroSlug": "cai-yan",
           "heroName": "Cai Yan",
           "heroNameZh": "蔡文姬",
@@ -3776,24 +3764,6 @@
           "detailZh": "蔡文姬在獲取裝備優勢後可以為團隊提供不錯的持續作戰能力和保護能力，但是在某些處境不那麼樂觀的對局就很難發揮她應有的作用。我們提升了蔡文姬的恢復效果和大招提供的防禦屬性，確保她可以在尚未獲得大量裝備情況下也能發揮應有的作用。",
           "versionName": "20240523",
           "publishedAt": "2024-05-23T12:11:56Z"
-        }
-      ]
-    },
-    {
-      "seasonName": "S4",
-      "seasonId": "4",
-      "changes": [
-        {
-          "heroSlug": "sun-bin",
-          "heroName": "Sun Bin",
-          "heroNameZh": "孫臏",
-          "tag": "Stat Nerfs",
-          "change": "Reduced some skill effects, and increased some skill multipliers.",
-          "changeZh": null,
-          "detail": "Sun Bin becomes very powerful after reaching a certain level and getting the right equipment, to the point where many unique lineups can be created around him. Since he's currently also pretty powerful during the early game, we lowered some of his basic skill stats and increased some of his skill multipliers so that he can become more of a true late-game hero.",
-          "detailZh": null,
-          "versionName": "20240110",
-          "publishedAt": "2024-01-10T07:53:32Z"
         }
       ]
     },
@@ -3812,18 +3782,6 @@
           "detailZh": null,
           "versionName": "20231011",
           "publishedAt": "2023-10-11T12:03:22Z"
-        },
-        {
-          "heroSlug": "sun-bin",
-          "heroName": "Sun Bin",
-          "heroNameZh": "孫臏",
-          "tag": "Stat Changes",
-          "change": "Reduced the basic Movement Speed bonus from his Skill 2, while increasing the additional bonus received per skill level.",
-          "changeZh": null,
-          "detail": "Sun Bin is a hero with a very high performance ceiling, and many strategies and lineups in the game are centered on him. Although Sun Bin is a late-game hero, he does have considerable capabilities in the early game. For instance, he can easily use his Skill 2 speed-up to run up to you, throw a Time Bomb at you and then speed away before you can hit back. This is why we decided to reduce Skill 2's base Movement Speed bonus while increasing its rate of increase per level. The Movement Speed bonus when Skill 2 is fully leveled remains the same. We hope that with these adjustments Sun Bin will be more in line with his positioning as a late-game hero, with measured capabilities in the early game.",
-          "detailZh": null,
-          "versionName": "20231025",
-          "publishedAt": "2023-10-25T12:02:46Z"
         }
       ]
     },

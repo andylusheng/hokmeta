@@ -19,7 +19,7 @@
   "heroCover": "https://camp.honorofkings.com/social/game/src/image_hero_cover_1275*718/Yte0HgN0.jpg",
   "tencentId": 521,
   "dataSource": "Camp HOK bilingual (primary)",
-  "dataUpdated": "2026-07-20",
+  "dataUpdated": "2026-07-22",
   "skills": [
     {
       "slot": "passive",
@@ -83,24 +83,24 @@
   "build": [
     {
       "slot": 1,
+      "itemId": "1227",
+      "name": "Ardent Dominion",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1227.png",
+      "description": "MATK +150, Magical Lifesteal +12%, MSPD +7.5%\nCleanse and shield at low HP"
+    },
+    {
+      "slot": 2,
       "itemId": "1232",
       "name": "Savant's Wrath",
       "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1232.png",
       "description": "MATK +210\nGreatly boosts MATK"
     },
     {
-      "slot": 2,
+      "slot": 3,
       "itemId": "1231",
       "name": "Void Staff",
       "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1231.png",
       "description": "MATK +210, HP +500, CDR +5%\nAnti-tank"
-    },
-    {
-      "slot": 3,
-      "itemId": "1227",
-      "name": "Ardent Dominion",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1227.png",
-      "description": "MATK +150, Magical Lifesteal +12%, MSPD +7.5%\nCleanse and shield at low HP"
     },
     {
       "slot": 4,
@@ -118,33 +118,33 @@
     },
     {
       "slot": 6,
-      "itemId": "1127",
-      "name": "Destiny",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
-      "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
+      "itemId": "1238",
+      "name": "Sage's Tome",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1238.png",
+      "description": "MATK +350, CDR +10%\nGreat for mages"
     }
   ],
   "buildZh": [
     {
       "slot": 1,
+      "itemId": "1227",
+      "name": "熾熱支配",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1227.png",
+      "description": "+150點法攻+12%法術吸血+7.5%移速\n殘血解控加盾"
+    },
+    {
+      "slot": 2,
       "itemId": "1232",
       "name": "博學者之怒",
       "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1232.png",
       "description": "+210點法術攻擊\n大幅提升法強"
     },
     {
-      "slot": 2,
+      "slot": 3,
       "itemId": "1231",
       "name": "虛無法杖",
       "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1231.png",
       "description": "+210點法攻+500點生命值+5%減冷卻時間\n打坦克用"
-    },
-    {
-      "slot": 3,
-      "itemId": "1227",
-      "name": "熾熱支配",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1227.png",
-      "description": "+150點法攻+12%法術吸血+7.5%移速\n殘血解控加盾"
     },
     {
       "slot": 4,
@@ -162,15 +162,64 @@
     },
     {
       "slot": 6,
-      "itemId": "1127",
-      "name": "名刀・司命",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
-      "description": "+75點攻擊+15%攻速+500點生命值\n保命"
+      "itemId": "1238",
+      "name": "賢者天書",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1238.png",
+      "description": "+350點法攻+10%減冷卻時間\n法師神裝"
     }
   ],
   "builds": [
     {
       "id": "camp-0",
+      "label": "Albave mine",
+      "lane": "Mid",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1227",
+          "name": "Ardent Dominion",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1227.png",
+          "description": "MATK +150, Magical Lifesteal +12%, MSPD +7.5%\nCleanse and shield at low HP"
+        },
+        {
+          "slot": 2,
+          "itemId": "1232",
+          "name": "Savant's Wrath",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1232.png",
+          "description": "MATK +210\nGreatly boosts MATK"
+        },
+        {
+          "slot": 3,
+          "itemId": "1231",
+          "name": "Void Staff",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1231.png",
+          "description": "MATK +210, HP +500, CDR +5%\nAnti-tank"
+        },
+        {
+          "slot": 4,
+          "itemId": "1239",
+          "name": "Splendor",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1239.png",
+          "description": "MATK +160, CDR +7.5%, Magical Lifesteal +12%\nTemp. invincibility"
+        },
+        {
+          "slot": 5,
+          "itemId": "1337",
+          "name": "Sage's Sanctuary",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
+        },
+        {
+          "slot": 6,
+          "itemId": "1238",
+          "name": "Sage's Tome",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1238.png",
+          "description": "MATK +350, CDR +10%\nGreat for mages"
+        }
+      ]
+    },
+    {
+      "id": "camp-1",
       "label": "streamer",
       "lane": "Mid",
       "items": [
@@ -219,7 +268,7 @@
       ]
     },
     {
-      "id": "camp-1",
+      "id": "camp-2",
       "label": "国服海月",
       "lane": "Mid",
       "items": [
@@ -268,7 +317,7 @@
       ]
     },
     {
-      "id": "camp-2",
+      "id": "camp-3",
       "label": "spambuild",
       "lane": "Mid",
       "items": [
@@ -320,6 +369,55 @@
   "buildsZh": [
     {
       "id": "camp-0",
+      "label": "Albave mine",
+      "lane": "Mid",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1227",
+          "name": "熾熱支配",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1227.png",
+          "description": "+150點法攻+12%法術吸血+7.5%移速\n殘血解控加盾"
+        },
+        {
+          "slot": 2,
+          "itemId": "1232",
+          "name": "博學者之怒",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1232.png",
+          "description": "+210點法術攻擊\n大幅提升法強"
+        },
+        {
+          "slot": 3,
+          "itemId": "1231",
+          "name": "虛無法杖",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1231.png",
+          "description": "+210點法攻+500點生命值+5%減冷卻時間\n打坦克用"
+        },
+        {
+          "slot": 4,
+          "itemId": "1239",
+          "name": "輝月",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1239.png",
+          "description": "+160法攻 +7.5%減冷卻時間+12%法術吸血\n暫時無敵"
+        },
+        {
+          "slot": 5,
+          "itemId": "1337",
+          "name": "賢者的庇護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+        },
+        {
+          "slot": 6,
+          "itemId": "1238",
+          "name": "賢者天書",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1238.png",
+          "description": "+350點法攻+10%減冷卻時間\n法師神裝"
+        }
+      ]
+    },
+    {
+      "id": "camp-1",
       "label": "streamer",
       "lane": "Mid",
       "items": [
@@ -368,7 +466,7 @@
       ]
     },
     {
-      "id": "camp-1",
+      "id": "camp-2",
       "label": "国服海月",
       "lane": "Mid",
       "items": [
@@ -417,7 +515,7 @@
       ]
     },
     {
-      "id": "camp-2",
+      "id": "camp-3",
       "label": "spambuild",
       "lane": "Mid",
       "items": [
@@ -467,14 +565,14 @@
     }
   ],
   "arcana": [
-    "Lvl 5: Nightmare",
+    "Lvl 5: Saint",
     "Lvl 5: Reincarnation",
-    "Lvl 5: Eagle Eye"
+    "Lvl 5: Hunt"
   ],
   "arcanaZh": [
-    "5級：夢魘",
+    "5級：聖人",
     "5級：輪迴",
-    "5級：鷹眼"
+    "5級：狩獵"
   ],
   "spells": [
     "Flash"
@@ -495,11 +593,11 @@
   "tips": [
     "Haya (Mage): Tier S — 49.34% WR (Camp HOK).",
     "Lane: Mid Lane.",
-    "Build: Savant's Wrath, Void Staff, Ardent Dominion."
+    "Build: Ardent Dominion, Savant's Wrath, Void Staff."
   ],
   "tipsZh": [
     "海月（中路）：梯度 S，勝率 49.34%（Camp HOK）。",
-    "出裝：博學者之怒、虛無法杖、熾熱支配."
+    "出裝：熾熱支配、博學者之怒、虛無法杖."
   ],
   "patchHistory": [
     {
@@ -525,7 +623,7 @@
     {
       "id": "faq-best-build",
       "question": "What is the best Haya build?",
-      "answer": "Recommended: Savant's Wrath, Void Staff, Ardent Dominion, Splendor, Sage's Sanctuary, Destiny."
+      "answer": "Recommended: Ardent Dominion, Savant's Wrath, Void Staff, Splendor, Sage's Sanctuary, Sage's Tome."
     },
     {
       "id": "faq-counter",
@@ -542,7 +640,7 @@
     {
       "id": "faq-best-build",
       "question": "海月 出裝怎麼搭配？",
-      "answer": "推薦：博學者之怒、虛無法杖、熾熱支配、輝月、賢者的庇護、名刀・司命."
+      "answer": "推薦：熾熱支配、博學者之怒、虛無法杖、輝月、賢者的庇護、賢者天書."
     },
     {
       "id": "faq-counter",
@@ -551,13 +649,13 @@
     }
   ],
   "metaAnalysis": [
-    "Haya win rate 49.34% (Camp HOK, 2026-07-20).",
+    "Haya win rate 49.34% (Camp HOK, 2026-07-22).",
     "Pick rate 0.96%.",
     "Ban rate 2.29%.",
     "Counters: Sakeer, Zilong, Milady. Weak into: Li Xin, Kaizer, Dun."
   ],
   "metaAnalysisZh": [
-    "海月 勝率 49.34%（Camp HOK，2026-07-20）",
+    "海月 勝率 49.34%（Camp HOK，2026-07-22）",
     "選取率 0.96%",
     "禁用率 2.29%",
     "克制：Sakeer、Zilong、Milady；被克制：Li Xin、Kaizer、Dun"
