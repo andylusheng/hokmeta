@@ -19,7 +19,7 @@
   "heroCover": "https://camp.honorofkings.com/social/game/src/image_hero_cover_1275*718/yvld9fdE.jpg",
   "tencentId": 114,
   "dataSource": "Camp HOK bilingual (primary)",
-  "dataUpdated": "2026-07-26",
+  "dataUpdated": "2026-07-27",
   "skills": [
     {
       "slot": "passive",
@@ -83,38 +83,38 @@
   "build": [
     {
       "slot": 1,
-      "itemId": "1137",
-      "name": "Axe of Torment",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1137.png",
-      "description": "PATK +80, CDR +10%, HP +500\nAnti-squishy"
+      "itemId": "1737",
+      "name": "Crimson Shadow - Radiance",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1749.png",
+      "description": "HP +1,200, MSPD +7.5%\nDPS aura"
     },
     {
       "slot": 2,
+      "itemId": "1336",
+      "name": "Glacial Buckler",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1336.png",
+      "description": "CDR +20%, HP +600, PDEF +240\nGroup damage & slow"
+    },
+    {
+      "slot": 3,
       "itemId": "1331",
       "name": "Blazing Cape",
       "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1331.png",
       "description": "PDEF +150, MDEF +150, HP +1,100\nArea burn & imperil"
     },
     {
-      "slot": 3,
-      "itemId": "1341",
-      "name": "Frigid Charge",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1341.png",
-      "description": "PDEF +150, HP +900, CDR +7.5%, Resistance +10%\nGreat crowd control"
-    },
-    {
       "slot": 4,
-      "itemId": "1338",
-      "name": "Cuirass of Savagery",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1338.png",
-      "description": "PATK +35, PDEF +210, HP +900\nOffense & defense"
-    },
-    {
-      "slot": 5,
       "itemId": "1347",
       "name": "Longnight Guardian",
       "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1347.png",
       "description": "MDEF +210, HP +1,000, MSPD +7.5%\nReduces magical damage"
+    },
+    {
+      "slot": 5,
+      "itemId": "1333",
+      "name": "Ominous Premonition",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1333.png",
+      "description": "PDEF +300, HP +1,200\nSlows attackers"
     },
     {
       "slot": 6,
@@ -127,38 +127,38 @@
   "buildZh": [
     {
       "slot": 1,
-      "itemId": "1137",
-      "name": "暗影戰斧",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1137.png",
-      "description": "+80點攻擊+10%減冷卻時間+500點生命值\n打血薄用"
+      "itemId": "1737",
+      "name": "極影・形昭",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1749.png",
+      "description": "+1200點生命值+7.5%移速\n光環提升輸出"
     },
     {
       "slot": 2,
+      "itemId": "1336",
+      "name": "極寒風暴",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1336.png",
+      "description": "+20%減冷卻時間+600點生命值+240點物防\n群體傷害減速"
+    },
+    {
+      "slot": 3,
       "itemId": "1331",
       "name": "紅蓮斗篷",
       "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1331.png",
       "description": "+150點物防+150點法防+1100點生命值\n範圍灼燒重傷"
     },
     {
-      "slot": 3,
-      "itemId": "1341",
-      "name": "冰霜衝擊",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1341.png",
-      "description": "+150點物防+900點生命值+7.5%冷卻時間+10%韌性\n群體控制"
-    },
-    {
       "slot": 4,
-      "itemId": "1338",
-      "name": "暴烈之甲",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1338.png",
-      "description": "+35點攻擊+210點物防+900點生命值\n能抗能打"
-    },
-    {
-      "slot": 5,
       "itemId": "1347",
       "name": "永夜守護",
       "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1347.png",
       "description": "+210點法防+1000點生命值\n+7.5%移速減少法術傷害"
+    },
+    {
+      "slot": 5,
+      "itemId": "1333",
+      "name": "不祥徵兆",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1333.png",
+      "description": "+300點物防+1200點生命值\n受擊時將敵人減速"
     },
     {
       "slot": 6,
@@ -171,6 +171,55 @@
   "builds": [
     {
       "id": "camp-0",
+      "label": "Popular",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1737",
+          "name": "Crimson Shadow - Radiance",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1749.png",
+          "description": "HP +1,200, MSPD +7.5%\nDPS aura"
+        },
+        {
+          "slot": 2,
+          "itemId": "1336",
+          "name": "Glacial Buckler",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1336.png",
+          "description": "CDR +20%, HP +600, PDEF +240\nGroup damage & slow"
+        },
+        {
+          "slot": 3,
+          "itemId": "1331",
+          "name": "Blazing Cape",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1331.png",
+          "description": "PDEF +150, MDEF +150, HP +1,100\nArea burn & imperil"
+        },
+        {
+          "slot": 4,
+          "itemId": "1347",
+          "name": "Longnight Guardian",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1347.png",
+          "description": "MDEF +210, HP +1,000, MSPD +7.5%\nReduces magical damage"
+        },
+        {
+          "slot": 5,
+          "itemId": "1333",
+          "name": "Ominous Premonition",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1333.png",
+          "description": "PDEF +300, HP +1,200\nSlows attackers"
+        },
+        {
+          "slot": 6,
+          "itemId": "1337",
+          "name": "Sage's Sanctuary",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
+        }
+      ]
+    },
+    {
+      "id": "camp-1",
       "label": "Daddy",
       "lane": null,
       "items": [
@@ -222,6 +271,55 @@
   "buildsZh": [
     {
       "id": "camp-0",
+      "label": "Popular",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1737",
+          "name": "極影・形昭",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1749.png",
+          "description": "+1200點生命值+7.5%移速\n光環提升輸出"
+        },
+        {
+          "slot": 2,
+          "itemId": "1336",
+          "name": "極寒風暴",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1336.png",
+          "description": "+20%減冷卻時間+600點生命值+240點物防\n群體傷害減速"
+        },
+        {
+          "slot": 3,
+          "itemId": "1331",
+          "name": "紅蓮斗篷",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1331.png",
+          "description": "+150點物防+150點法防+1100點生命值\n範圍灼燒重傷"
+        },
+        {
+          "slot": 4,
+          "itemId": "1347",
+          "name": "永夜守護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1347.png",
+          "description": "+210點法防+1000點生命值\n+7.5%移速減少法術傷害"
+        },
+        {
+          "slot": 5,
+          "itemId": "1333",
+          "name": "不祥徵兆",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1333.png",
+          "description": "+300點物防+1200點生命值\n受擊時將敵人減速"
+        },
+        {
+          "slot": 6,
+          "itemId": "1337",
+          "name": "賢者的庇護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+        }
+      ]
+    },
+    {
+      "id": "camp-1",
       "label": "Daddy",
       "lane": null,
       "items": [
@@ -281,10 +379,10 @@
     "5級：虛空"
   ],
   "spells": [
-    "Execute"
+    "Flash"
   ],
   "spellsZh": [
-    "終結"
+    "閃現"
   ],
   "counters": [
     "Arthur",
@@ -297,11 +395,11 @@
   "tips": [
     "Liu Shan (Tank): Tier A — 49.97% WR (Camp HOK).",
     "Lane: Roaming.",
-    "Build: Axe of Torment, Blazing Cape, Frigid Charge."
+    "Build: Crimson Shadow - Radiance, Glacial Buckler, Blazing Cape."
   ],
   "tipsZh": [
     "劉禪（遊走）：梯度 A，勝率 49.97%（Camp HOK）。",
-    "出裝：暗影戰斧、紅蓮斗篷、冰霜衝擊."
+    "出裝：極影・形昭、極寒風暴、紅蓮斗篷."
   ],
   "patchHistory": [
     {
@@ -382,7 +480,7 @@
     {
       "id": "faq-best-build",
       "question": "What is the best Liu Shan build?",
-      "answer": "Recommended: Axe of Torment, Blazing Cape, Frigid Charge, Cuirass of Savagery, Longnight Guardian, Sage's Sanctuary."
+      "answer": "Recommended: Crimson Shadow - Radiance, Glacial Buckler, Blazing Cape, Longnight Guardian, Ominous Premonition, Sage's Sanctuary."
     },
     {
       "id": "faq-counter",
@@ -399,7 +497,7 @@
     {
       "id": "faq-best-build",
       "question": "劉禪 出裝怎麼搭配？",
-      "answer": "推薦：暗影戰斧、紅蓮斗篷、冰霜衝擊、暴烈之甲、永夜守護、賢者的庇護."
+      "answer": "推薦：極影・形昭、極寒風暴、紅蓮斗篷、永夜守護、不祥徵兆、賢者的庇護."
     },
     {
       "id": "faq-counter",
@@ -408,13 +506,13 @@
     }
   ],
   "metaAnalysis": [
-    "Liu Shan win rate 49.97% (Camp HOK, 2026-07-26).",
+    "Liu Shan win rate 49.97% (Camp HOK, 2026-07-27).",
     "Pick rate 0.92%.",
     "Ban rate 0.1%.",
     "Counters: Arthur, Augran, Biron. Weak into: Li Bai."
   ],
   "metaAnalysisZh": [
-    "劉禪 勝率 49.97%（Camp HOK，2026-07-26）",
+    "劉禪 勝率 49.97%（Camp HOK，2026-07-27）",
     "選取率 0.92%",
     "禁用率 0.1%",
     "克制：Arthur、Augran、Biron；被克制：Li Bai"

@@ -19,7 +19,7 @@
   "heroCover": "https://camp.honorofkings.com/social/game/src/image_hero_cover_1275*718/81Youojq.jpg",
   "tencentId": 173,
   "dataSource": "Camp HOK bilingual (primary)",
-  "dataUpdated": "2026-07-26",
+  "dataUpdated": "2026-07-27",
   "skills": [
     {
       "slot": "passive",
@@ -83,94 +83,143 @@
   "build": [
     {
       "slot": 1,
-      "itemId": "11210",
-      "name": "Mortal Punisher",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/11210.png",
-      "description": "PATK +100, Lifesteal +20%, ASPD +20%\nLowers Health regen"
-    },
-    {
-      "slot": 2,
       "itemId": "1133",
       "name": "Eternity Blade",
       "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1133.png",
       "description": "PATK +120, Crit Rate +20%\nHigh crit damage"
     },
     {
+      "slot": 2,
+      "itemId": "1421",
+      "name": "Boots of Fortitude",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1421.png",
+      "description": "PDEF +100, MDEF +50, MSPD +50\nReduces physical damage"
+    },
+    {
       "slot": 3,
-      "itemId": "1131",
-      "name": "Starbreaker",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1131.png",
-      "description": "PATK +90, HP +700, MSPD +7.5%\nAnti-tank"
+      "itemId": "1155",
+      "name": "Daybreaker's Virtue",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1155.png",
+      "description": "PATK +75, ASPD +30%, Crit Rate +15%\nGreat for marksmen"
     },
     {
       "slot": 4,
+      "itemId": "1338",
+      "name": "Cuirass of Savagery",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1338.png",
+      "description": "PATK +35, PDEF +210, HP +900\nOffense & defense"
+    },
+    {
+      "slot": 5,
       "itemId": "1337",
       "name": "Sage's Sanctuary",
       "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
       "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
     },
     {
-      "slot": 5,
+      "slot": 6,
       "itemId": "1127",
       "name": "Destiny",
       "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
       "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
-    },
-    {
-      "slot": 6,
-      "itemId": "1338",
-      "name": "Cuirass of Savagery",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1338.png",
-      "description": "PATK +35, PDEF +210, HP +900\nOffense & defense"
     }
   ],
   "buildZh": [
     {
       "slot": 1,
-      "itemId": "11210",
-      "name": "制裁之刃",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/11210.png",
-      "description": "+100點攻擊+20%吸血+20%攻速\n減少敵人回血"
-    },
-    {
-      "slot": 2,
       "itemId": "1133",
       "name": "無盡戰刃",
       "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1133.png",
       "description": "+120點攻擊+20%暴擊\n高額暴擊傷害"
     },
     {
+      "slot": 2,
+      "itemId": "1421",
+      "name": "影忍之足",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1421.png",
+      "description": "+100點物防+50點法防+50點移速\n減少物理傷害"
+    },
+    {
       "slot": 3,
-      "itemId": "1131",
-      "name": "碎星錘",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1131.png",
-      "description": "+90點攻擊+700點生命值+7.5%移速\n打坦克用"
+      "itemId": "1155",
+      "name": "仁者破曉",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1155.png",
+      "description": "+75點攻擊+30%攻速+15%暴擊\n射手神裝"
     },
     {
       "slot": 4,
+      "itemId": "1338",
+      "name": "暴烈之甲",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1338.png",
+      "description": "+35點攻擊+210點物防+900點生命值\n能抗能打"
+    },
+    {
+      "slot": 5,
       "itemId": "1337",
       "name": "賢者的庇護",
       "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
       "description": "+900點生命值+150點物防+150點法防……\n原地復活"
     },
     {
-      "slot": 5,
+      "slot": 6,
       "itemId": "1127",
       "name": "名刀・司命",
       "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
       "description": "+75點攻擊+15%攻速+500點生命值\n保命"
-    },
-    {
-      "slot": 6,
-      "itemId": "1338",
-      "name": "暴烈之甲",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1338.png",
-      "description": "+35點攻擊+210點物防+900點生命值\n能抗能打"
     }
   ],
   "builds": [
     {
       "id": "camp-0",
+      "label": "tiktok米牢芳",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1133",
+          "name": "Eternity Blade",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1133.png",
+          "description": "PATK +120, Crit Rate +20%\nHigh crit damage"
+        },
+        {
+          "slot": 2,
+          "itemId": "1421",
+          "name": "Boots of Fortitude",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1421.png",
+          "description": "PDEF +100, MDEF +50, MSPD +50\nReduces physical damage"
+        },
+        {
+          "slot": 3,
+          "itemId": "1155",
+          "name": "Daybreaker's Virtue",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1155.png",
+          "description": "PATK +75, ASPD +30%, Crit Rate +15%\nGreat for marksmen"
+        },
+        {
+          "slot": 4,
+          "itemId": "1338",
+          "name": "Cuirass of Savagery",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1338.png",
+          "description": "PATK +35, PDEF +210, HP +900\nOffense & defense"
+        },
+        {
+          "slot": 5,
+          "itemId": "1337",
+          "name": "Sage's Sanctuary",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
+        },
+        {
+          "slot": 6,
+          "itemId": "1127",
+          "name": "Destiny",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
+        }
+      ]
+    },
+    {
+      "id": "camp-1",
       "label": "anti sustain",
       "lane": "Jungle",
       "items": [
@@ -219,7 +268,7 @@
       ]
     },
     {
-      "id": "camp-1",
+      "id": "camp-2",
       "label": "Popular",
       "lane": "Jungle",
       "items": [
@@ -271,6 +320,55 @@
   "buildsZh": [
     {
       "id": "camp-0",
+      "label": "tiktok米牢芳",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1133",
+          "name": "無盡戰刃",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1133.png",
+          "description": "+120點攻擊+20%暴擊\n高額暴擊傷害"
+        },
+        {
+          "slot": 2,
+          "itemId": "1421",
+          "name": "影忍之足",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1421.png",
+          "description": "+100點物防+50點法防+50點移速\n減少物理傷害"
+        },
+        {
+          "slot": 3,
+          "itemId": "1155",
+          "name": "仁者破曉",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1155.png",
+          "description": "+75點攻擊+30%攻速+15%暴擊\n射手神裝"
+        },
+        {
+          "slot": 4,
+          "itemId": "1338",
+          "name": "暴烈之甲",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1338.png",
+          "description": "+35點攻擊+210點物防+900點生命值\n能抗能打"
+        },
+        {
+          "slot": 5,
+          "itemId": "1337",
+          "name": "賢者的庇護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+        },
+        {
+          "slot": 6,
+          "itemId": "1127",
+          "name": "名刀・司命",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "+75點攻擊+15%攻速+500點生命值\n保命"
+        }
+      ]
+    },
+    {
+      "id": "camp-1",
       "label": "anti sustain",
       "lane": "Jungle",
       "items": [
@@ -319,7 +417,7 @@
       ]
     },
     {
-      "id": "camp-1",
+      "id": "camp-2",
       "label": "Popular",
       "lane": "Jungle",
       "items": [
@@ -369,20 +467,20 @@
     }
   ],
   "arcana": [
-    "Lvl 5: Mutation",
-    "Lvl 5: Inheritance",
+    "Lvl 5: Red Moon",
+    "Lvl 5: Stealth",
     "Lvl 5: Hunt"
   ],
   "arcanaZh": [
-    "5級：異變",
-    "5級：傳承",
+    "5級：紅月",
+    "5級：隱匿",
     "5級：狩獵"
   ],
   "spells": [
-    "Smite"
+    "Flash"
   ],
   "spellsZh": [
-    "懲擊"
+    "閃現"
   ],
   "counters": [
     "Mai Shiranui",
@@ -395,11 +493,11 @@
   "tips": [
     "Fang (Marksman): Tier A — 49.98% WR (Camp HOK).",
     "Lane: Farm Lane.",
-    "Build: Mortal Punisher, Eternity Blade, Starbreaker."
+    "Build: Eternity Blade, Boots of Fortitude, Daybreaker's Virtue."
   ],
   "tipsZh": [
     "李元芳（發育路）：梯度 A，勝率 49.98%（Camp HOK）。",
-    "出裝：制裁之刃、無盡戰刃、碎星錘."
+    "出裝：無盡戰刃、影忍之足、仁者破曉."
   ],
   "patchHistory": [
     {
@@ -502,7 +600,7 @@
     {
       "id": "faq-best-build",
       "question": "What is the best Fang build?",
-      "answer": "Recommended: Mortal Punisher, Eternity Blade, Starbreaker, Sage's Sanctuary, Destiny, Cuirass of Savagery."
+      "answer": "Recommended: Eternity Blade, Boots of Fortitude, Daybreaker's Virtue, Cuirass of Savagery, Sage's Sanctuary, Destiny."
     },
     {
       "id": "faq-counter",
@@ -519,7 +617,7 @@
     {
       "id": "faq-best-build",
       "question": "李元芳 出裝怎麼搭配？",
-      "answer": "推薦：制裁之刃、無盡戰刃、碎星錘、賢者的庇護、名刀・司命、暴烈之甲."
+      "answer": "推薦：無盡戰刃、影忍之足、仁者破曉、暴烈之甲、賢者的庇護、名刀・司命."
     },
     {
       "id": "faq-counter",
@@ -528,13 +626,13 @@
     }
   ],
   "metaAnalysis": [
-    "Fang win rate 49.98% (Camp HOK, 2026-07-26).",
+    "Fang win rate 49.98% (Camp HOK, 2026-07-27).",
     "Pick rate 0.9%.",
     "Ban rate 0.03%.",
     "Counters: Mai Shiranui, Nakoruru, Zilong. Weak into: Dun."
   ],
   "metaAnalysisZh": [
-    "李元芳 勝率 49.98%（Camp HOK，2026-07-26）",
+    "李元芳 勝率 49.98%（Camp HOK，2026-07-27）",
     "選取率 0.9%",
     "禁用率 0.03%",
     "克制：Mai Shiranui、Nakoruru、Zilong；被克制：Dun"
