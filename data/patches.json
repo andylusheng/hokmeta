@@ -2,7 +2,7 @@
   "season": "S15",
   "currentSeason": "S15",
   "source": "Camp HOK bilingual (api-camp.honorofkings.com)",
-  "updated": "2026-07-27",
+  "updated": "2026-07-28",
   "heroCount": 116,
   "seasons": [
     {
@@ -2608,18 +2608,6 @@
           "publishedAt": "2025-01-09T02:33:14Z"
         },
         {
-          "heroSlug": "angela",
-          "heroName": "Angela",
-          "heroNameZh": "安琪拉",
-          "tag": "QoL Changes",
-          "change": "Optimized Skill 1's indicator.",
-          "changeZh": "最佳化1技能指示器",
-          "detail": "Skill 1: Scorching Barrage",
-          "detailZh": "最佳化1技能指示器",
-          "versionName": "20250124",
-          "publishedAt": "2025-01-24T02:00:29Z"
-        },
-        {
           "heroSlug": "dian-wei",
           "heroName": "Dian Wei",
           "heroNameZh": "典韋",
@@ -3142,6 +3130,18 @@
           "publishedAt": "2024-09-25T03:24:02Z"
         },
         {
+          "heroSlug": "augran",
+          "heroName": "Augran",
+          "heroNameZh": "大司命",
+          "tag": "Stat Nerfs",
+          "change": "Reduced his ability to deal sustained damage with his Basic Attack.",
+          "changeZh": "降低普通攻擊的持續輸出能力",
+          "detail": "\"Augran could consistently continue to deal damage in between attacks from his opponents. We're reducing his sustained damage output to prevent opponents from being taken down too early.\"",
+          "detailZh": "大司命能夠在對方的攻擊間隙持續造成傷害，我們適當削弱他的持續輸出能力，使對手不會太早遭到斬殺。",
+          "versionName": "20240925",
+          "publishedAt": "2024-09-25T03:24:02Z"
+        },
+        {
           "heroSlug": "kongming",
           "heroName": "Kongming",
           "heroNameZh": "諸葛亮",
@@ -3326,18 +3326,6 @@
           "detailZh": "「李信目前的強度偏低，但狂暴形態帶線卻讓對手很難反制；我們提升他全形態（尤其是前期）的屬性，但削弱狂暴形態的機動性，留給對手追上他的可能性。」",
           "versionName": "20240808",
           "publishedAt": "2024-08-08T02:00:57Z"
-        },
-        {
-          "heroSlug": "angela",
-          "heroName": "Angela",
-          "heroNameZh": "安琪拉",
-          "tag": "Stat Nerfs",
-          "change": "Increased Ultimate's cooldown in the early and mid game.",
-          "changeZh": "增加大招前中期的冷卻時間",
-          "detail": "\"Angela has powerful burst damage, and her skill cooldowns are relatively short, allowing her to use skill combos to frequently obliterate opponents. We've increased the cooldown time of her Ultimate in the early and mid game to slightly slow down her pace during these stages.\"",
-          "detailZh": "安琪拉具備強力爆發傷害，且技能冷卻時間也相對較短，這讓她可以頻繁的嘗試連招秒人，我們增加其前中期大招的冷卻時間，適度放緩她在前中期的節奏。",
-          "versionName": "20240822",
-          "publishedAt": "2024-08-22T07:13:54Z"
         },
         {
           "heroSlug": "butterfly",
@@ -3616,6 +3604,18 @@
           "publishedAt": "2024-08-08T02:00:57Z"
         },
         {
+          "heroSlug": "augran",
+          "heroName": "Augran",
+          "heroNameZh": "大司命",
+          "tag": "Stat Nerfs",
+          "change": "Increased Ultimate cooldown and reduced damage and recovery of Skill 2",
+          "changeZh": "增加大招冷卻 減少2技能傷害與回復",
+          "detail": "Increased Ultimate cooldown and reduced damage and recovery of Skill 2",
+          "detailZh": "增加大招冷卻 減少2技能傷害與回復",
+          "versionName": "20240808",
+          "publishedAt": "2024-08-08T02:00:57Z"
+        },
+        {
           "heroSlug": "zhuangzi",
           "heroName": "Zhuangzi",
           "heroNameZh": "莊周",
@@ -3688,18 +3688,6 @@
           "publishedAt": "2024-08-22T07:13:54Z"
         },
         {
-          "heroSlug": "shangguan",
-          "heroName": "Shangguan",
-          "heroNameZh": "上官婉兒",
-          "tag": "Stat Buffs",
-          "change": "Increased base Movement Speed and reduced Skill 2's stock interval.",
-          "changeZh": "提高基礎移速，降低二技能儲存間隔",
-          "detail": null,
-          "detailZh": null,
-          "versionName": "20240725",
-          "publishedAt": "2024-07-25T02:20:21Z"
-        },
-        {
           "heroSlug": "heino",
           "heroName": "Heino",
           "heroNameZh": "海諾",
@@ -3740,6 +3728,24 @@
           "detailZh": "蔡文姬在獲取裝備優勢後可以為團隊提供不錯的持續作戰能力和保護能力，但是在某些處境不那麼樂觀的對局就很難發揮她應有的作用。我們提升了蔡文姬的恢復效果和大招提供的防禦屬性，確保她可以在尚未獲得大量裝備情況下也能發揮應有的作用。",
           "versionName": "20240523",
           "publishedAt": "2024-05-23T12:11:56Z"
+        }
+      ]
+    },
+    {
+      "seasonName": "S4",
+      "seasonId": "4",
+      "changes": [
+        {
+          "heroSlug": "butterfly",
+          "heroName": "Butterfly",
+          "heroNameZh": "刀鋒寶貝",
+          "tag": "Stat Buffs",
+          "change": "Raised the base damage and bonus multiplier of her Skill 1 and Skill 2.",
+          "changeZh": null,
+          "detail": "Raised the base damage and bonus multiplier of her Skill 1 and Skill 2.\nWe've taken notice of the fact that Butterfly has consistently been rather difficult to play as in the current version of the game. Because she is an assassin hero with high mobility, we would like her to be a worthy opponent against the weaker, but still important, enemies. It's for this reason that we have increased the damage dealt by her Skills 1 and 2. We hope that Butterfly will prove to be a more competent fighter in the current season.",
+          "detailZh": null,
+          "versionName": "20240320",
+          "publishedAt": "2024-03-20T12:23:24Z"
         }
       ]
     },
