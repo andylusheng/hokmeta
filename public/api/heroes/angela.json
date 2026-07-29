@@ -19,7 +19,7 @@
   "heroCover": "https://camp.honorofkings.com/social/game/src/image_hero_cover_1275*718/uWglQpp7.jpg",
   "tencentId": 142,
   "dataSource": "Camp HOK bilingual (primary)",
-  "dataUpdated": "2026-07-28",
+  "dataUpdated": "2026-07-29",
   "skills": [
     {
       "slot": "passive",
@@ -620,6 +620,28 @@
       "change": "Reduced Skill Cooldown",
       "detail": "",
       "version": "S12"
+    },
+    {
+      "seasonId": "8",
+      "seasonName": "S8",
+      "versionName": "20250124",
+      "publishedAt": "2025-01-24T02:00:29Z",
+      "isCurrent": false,
+      "tag": "QoL Changes",
+      "change": "Optimized Skill 1's indicator.",
+      "detail": "Skill 1: Scorching Barrage",
+      "version": "S8"
+    },
+    {
+      "seasonId": "6",
+      "seasonName": "S6",
+      "versionName": "20240822",
+      "publishedAt": "2024-08-22T07:13:54Z",
+      "isCurrent": false,
+      "tag": "Stat Nerfs",
+      "change": "Increased Ultimate's cooldown in the early and mid game.",
+      "detail": "\"Angela has powerful burst damage, and her skill cooldowns are relatively short, allowing her to use skill combos to frequently obliterate opponents. We've increased the cooldown time of her Ultimate in the early and mid game to slightly slow down her pace during these stages.\"",
+      "version": "S6"
     }
   ],
   "patchHistoryZh": [
@@ -666,6 +688,28 @@
       "change": "增加大招前中期的冷卻時間",
       "detail": "安琪拉具備強力爆發傷害，且技能冷卻時間也相對較短，這讓她可以頻繁的嘗試連招秒人，我們增加其前中期大招的冷卻時間，適度放緩她在前中期的節奏。",
       "version": "S6"
+    },
+    {
+      "seasonId": "5",
+      "seasonName": "S5",
+      "versionName": "20240424",
+      "publishedAt": "2024-04-24T09:58:37Z",
+      "isCurrent": false,
+      "tag": "數值調整",
+      "change": "調整被動技能中，對技能傷害提升的加成係數",
+      "detail": "「安琪拉是一名爆發傷害很高的英雄，但是目前她在前期和後期的強度有些不夠均衡。因此我們調整她被動技能中的基礎數值和加成係數。確保她前期不會過於強大，同時提升她在後期戰鬥中的傷害。」",
+      "version": "S5"
+    },
+    {
+      "seasonId": "3",
+      "seasonName": "S3",
+      "versionName": "20231011",
+      "publishedAt": "2023-10-11T12:03:22Z",
+      "isCurrent": false,
+      "tag": "數值增強",
+      "change": "Buff stacks expiry mechanic",
+      "detail": "",
+      "version": "S3"
     }
   ],
   "faqs": [
@@ -703,13 +747,13 @@
     }
   ],
   "metaAnalysis": [
-    "Angela win rate 51.91% (Camp HOK, 2026-07-28).",
+    "Angela win rate 51.91% (Camp HOK, 2026-07-29).",
     "Pick rate 2.51%.",
     "Ban rate 2.27%.",
     "Counters: Jing, Athena, Zilong. Weak into: Han Xin, Gao Changgong."
   ],
   "metaAnalysisZh": [
-    "安琪拉 勝率 51.91%（Camp HOK，2026-07-28）",
+    "安琪拉 勝率 51.91%（Camp HOK，2026-07-29）",
     "選取率 2.51%",
     "禁用率 2.27%",
     "克制：Jing、Athena、Zilong；被克制：Han Xin、Gao Changgong"
