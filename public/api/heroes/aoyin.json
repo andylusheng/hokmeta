@@ -19,33 +19,33 @@
   "heroCover": "https://camp.honorofkings.com/camp/admin/hero/cover_1275-718/6KK7yYWf.jpg",
   "tencentId": 519,
   "dataSource": "Camp HOK bilingual (primary)",
-  "dataUpdated": "2026-07-29",
+  "dataUpdated": "2026-07-30",
   "skills": [
     {
       "slot": "passive",
       "name": "Hidden Dragon",
-      "description": "The Dragon Souls from his last 2 skill uses grant effects to his Basic Attacks, which deal physical damage to up to two enemies.\nHe gains 1 mark upon using skills, for up to 3 marks. Basic Attacks consume all marks for various effects, striking once per mark.",
+      "description": "The Dragon Souls from his last 2 skill uses grant effects to his Basic Attacks, which damages one extra enemy.\nHe gains marks when using skills, enhancing his next Basic Attack.\nWhen a target is attacked by more than 1 Dragon Soul, subsequent hits deal only 1% damage. When switching between Dragon Souls, souls of the same element are prioritized.",
       "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/51900.png",
       "cooldown": "1s"
     },
     {
       "slot": "skill1",
       "name": "Flaming Palm",
-      "description": "Deals physical damage and true damage. Attaches a Fire Dragon Soul to his sword.\nBasic Attacks deal extra damage when this Soul is attached. Enhanced Basic Attacks will deal both physical damage and true damage.",
+      "description": "Unleashes sword energy, dealing physical damage and true damage to enemies within range.\nSubsequent Basic Attacks deal extra damage.",
       "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/51910.png",
-      "cooldown": "12s"
+      "cooldown": "13s"
     },
     {
       "slot": "skill2",
       "name": "Downpour",
-      "description": "Deals physical damage and recovers Health upon hit. Attaches a Water Dragon Soul to his sword.\nBasic Attacks restore Health and Mana when this Soul is attached. Enhanced Basic Attacks will deal physical damage and restore Health, but restore less for hits on non-hero units.",
+      "description": "Unleashes sword energy, dealing physical damage to enemies within range and recovering Health on hit.\nSubsequent Basic Attacks restore Health and Mana.",
       "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/51920.png",
-      "cooldown": "12s"
+      "cooldown": "13s"
     },
     {
       "slot": "ultimate",
       "name": "Infinite Vastness",
-      "description": "Soars into the sky for up to 4.5s, then dives forward to damage and slow enemies. Landing deals equal damage and applies Dread.\nGains Attack Speed and Attack Range. Basic Attacks hit 2 more enemies.\nCan switch Dragon Souls mid-flight.",
+      "description": "Soars into the sky, then dives forward to damage and slow enemies in his path. Landing deals equal damage and applies Dread.\nEnhances himself, allowing his Basic Attacks to hit up to 2 more enemies.",
       "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/51930.png",
       "cooldown": "80s"
     }
@@ -54,28 +54,28 @@
     {
       "slot": "passive",
       "name": "隱介藏形",
-      "description": "敖隱最後2次技能的元素龍魂會附於主副劍指上，普攻會用主劍指造成物理傷害，若附近有其他敵人，則用副劍指攻擊目標，造成物理傷害。\n敖隱使用技能會疊加1層龍魂印記，最多3層，敖隱的下次普攻會消耗所有印記，驅使龍魂衝擊目標，每消耗1層印記則多攻擊1次。強化普攻會根據主劍指的龍魂屬性附帶不同效果。\n受到多條龍魂攻擊時，後續的龍魂只會造成50%傷害。切換元素時，優先保留相同元素龍魂。",
+      "description": "敖隱最後2次技能的元素龍魂會附於主副劍指上，普攻對額外1名目標造成傷害。\n敖隱使用技能會疊加龍魂印記，強化下次普攻\n受到多條龍魂攻擊時，後續的龍魂只會造成1%傷害。切換元素時，優先保留相同元素龍魂。",
       "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/51900.png",
       "cooldown": "1s"
     },
     {
       "slot": "skill1",
       "name": "薄日掌火",
-      "description": "敖隱揮出劍氣，對範圍內敵人造成物理傷害和真實傷害，並額外疊加1層龍魂印記。\n使用【薄日掌火】後會將1層火龍魂附於劍指上，普攻附帶額外物理傷害，若雙劍指均附著火龍魂，則再額外增加物理傷害。若火龍魂附於主劍指上，強化普攻造成物理傷害和真實傷害。",
+      "description": "敖隱揮出劍氣，對範圍內敵人造成物理傷害和真實傷害\n敖隱後續普攻附帶額外傷害。",
       "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/51910.png",
-      "cooldown": "12s"
+      "cooldown": "13s"
     },
     {
       "slot": "skill2",
       "name": "擎天司雨",
-      "description": "敖隱揮出劍氣，對範圍內敵人造成物理傷害，命中後回復生命值。\n使用【擎天司雨】後會將1層水龍魂附於劍指上，普攻額外回復生命值和法力值，若雙劍指均附著水龍魂，則再額外增加回復。若水龍魂附於主劍指上，強化普攻造成物理傷害，命中後回復生命值。\n命中回復效果對非英雄單位有衰減。",
+      "description": "敖隱揮出劍氣，對範圍內敵人造成物理傷害，命中後獲得生命值回復。\n敖隱後續普攻獲得生命值回復和法力值回復。",
       "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/51920.png",
-      "cooldown": "12s"
+      "cooldown": "13s"
     },
     {
       "slot": "ultimate",
       "name": "窮乎玄間",
-      "description": "敖隱顯露白龍真身衝上雲霄，期間無法攻擊、無視地形且無法鎖定為目標，最多持續4.5秒(可提前結束)，隨後向前俯衝(過程中無法鎖定為目標)，對路徑上的敵人造成物理傷害和減速，並在落點處對敵人再次造成同等傷害和懼龍效果，持續1秒。\n隨後敖隱顯露真龍雪劍，提升攻速和射程，持續10秒。期間敖隱使用真龍雪劍攻擊，此時雙劍指會攻擊附近至多2名額外目標。\n受到懼龍效果的目標會不由自主地遠離敖隱。敖隱飛行期間可以任意調整劍指的元素龍魂。",
+      "description": "敖隱化為真龍衝上雲霄，隨後向前俯衝，對路徑上的敵人造成傷害和減速，並在落點處對敵人再次造成同等傷害和懼龍效果\n隨後敖隱顯露真龍雪劍，強化自身，此時雙劍指會攻擊附近最多兩名額外目標。",
       "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/51930.png",
       "cooldown": "80s"
     }
@@ -704,13 +704,13 @@
     }
   ],
   "metaAnalysis": [
-    "Ao'yin win rate 48.03% (Camp HOK, 2026-07-29).",
+    "Ao'yin win rate 48.03% (Camp HOK, 2026-07-30).",
     "Pick rate 1.59%.",
     "Ban rate 2.9%.",
     "Counters: Liu Bei, Athena, Zilong. Weak into: Kaizer, Dun, Arthur."
   ],
   "metaAnalysisZh": [
-    "敖隱 勝率 48.03%（Camp HOK，2026-07-29）",
+    "敖隱 勝率 48.03%（Camp HOK，2026-07-30）",
     "選取率 1.59%",
     "禁用率 2.9%",
     "克制：Liu Bei、Athena、Zilong；被克制：Kaizer、Dun、Arthur"
