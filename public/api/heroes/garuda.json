@@ -19,7 +19,7 @@
   "heroCover": "https://camp.honorofkings.com/camp/admin/default/5V8UKnC4.jpg",
   "tencentId": 110,
   "dataSource": "Camp HOK bilingual (primary)",
-  "dataUpdated": "2026-07-30",
+  "dataUpdated": "2026-07-31",
   "skills": [
     {
       "slot": "passive",
@@ -83,94 +83,143 @@
   "build": [
     {
       "slot": 1,
-      "itemId": "1232",
-      "name": "Savant's Wrath",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1232.png",
-      "description": "MATK +210\nGreatly boosts MATK"
+      "itemId": "1424",
+      "name": "Boots of the Arcane",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1424.png",
+      "description": "MSPD +50, MP +400\nMagical Pierce"
     },
     {
       "slot": 2,
-      "itemId": "1231",
-      "name": "Void Staff",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1231.png",
-      "description": "MATK +210, HP +500, CDR +5%\nAnti-tank"
+      "itemId": "1234",
+      "name": "Frozen Breath",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1234.png",
+      "description": "MATK +180, CDR +7.5%, HP +500\nSkill hits slow"
     },
     {
       "slot": 3,
+      "itemId": "1727",
+      "name": "Twilight Stream",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1727.png",
+      "description": "MATK +160, CDR +10%, Max HP +500\nBoosts Magical Pierce"
+    },
+    {
+      "slot": 4,
       "itemId": "1337",
       "name": "Sage's Sanctuary",
       "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
       "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
     },
     {
-      "slot": 4,
+      "slot": 5,
       "itemId": "1127",
       "name": "Destiny",
       "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
       "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
     },
     {
-      "slot": 5,
-      "itemId": "1242",
-      "name": "Enigma - Moon Goddess",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1242.png",
-      "description": "MATK +160, CDR +7.5%, Magical Lifesteal +12%\nTemp. invincibility"
-    },
-    {
       "slot": 6,
-      "itemId": "1227",
-      "name": "Ardent Dominion",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1227.png",
-      "description": "MATK +150, Magical Lifesteal +12%, MSPD +7.5%\nCleanse and shield at low HP"
+      "itemId": "1231",
+      "name": "Void Staff",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1231.png",
+      "description": "MATK +210, HP +500, CDR +5%\nAnti-tank"
     }
   ],
   "buildZh": [
     {
       "slot": 1,
-      "itemId": "1232",
-      "name": "博學者之怒",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1232.png",
-      "description": "+210點法術攻擊\n大幅提升法強"
+      "itemId": "1424",
+      "name": "祕法之靴",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1424.png",
+      "description": "+50點移速+400點法力值\n法術穿透"
     },
     {
       "slot": 2,
-      "itemId": "1231",
-      "name": "虛無法杖",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1231.png",
-      "description": "+210點法攻+500點生命值+5%減冷卻時間\n打坦克用"
+      "itemId": "1234",
+      "name": "凝冰之息",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1234.png",
+      "description": "+180點法攻+7.5%減冷卻時間+500點生命值\n技能命中減速"
     },
     {
       "slot": 3,
+      "itemId": "1727",
+      "name": "日暮之流",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1727.png",
+      "description": "+160點法攻+10%減冷卻時間+500點最大生命值\n提升法術穿透"
+    },
+    {
+      "slot": 4,
       "itemId": "1337",
       "name": "賢者的庇護",
       "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
       "description": "+900點生命值+150點物防+150點法防……\n原地復活"
     },
     {
-      "slot": 4,
+      "slot": 5,
       "itemId": "1127",
       "name": "名刀・司命",
       "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
       "description": "+75點攻擊+15%攻速+500點生命值\n保命"
     },
     {
-      "slot": 5,
-      "itemId": "1242",
-      "name": "難知・月神",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1242.png",
-      "description": "+160點法攻 +7.5%減冷卻時間\n+12%法術吸血暫時無敵"
-    },
-    {
       "slot": 6,
-      "itemId": "1227",
-      "name": "熾熱支配",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1227.png",
-      "description": "+150點法攻+12%法術吸血+7.5%移速\n殘血解控加盾"
+      "itemId": "1231",
+      "name": "虛無法杖",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1231.png",
+      "description": "+210點法攻+500點生命值+5%減冷卻時間\n打坦克用"
     }
   ],
   "builds": [
     {
       "id": "camp-0",
+      "label": "Popular",
+      "lane": "Mid",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1424",
+          "name": "Boots of the Arcane",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1424.png",
+          "description": "MSPD +50, MP +400\nMagical Pierce"
+        },
+        {
+          "slot": 2,
+          "itemId": "1234",
+          "name": "Frozen Breath",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1234.png",
+          "description": "MATK +180, CDR +7.5%, HP +500\nSkill hits slow"
+        },
+        {
+          "slot": 3,
+          "itemId": "1727",
+          "name": "Twilight Stream",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1727.png",
+          "description": "MATK +160, CDR +10%, Max HP +500\nBoosts Magical Pierce"
+        },
+        {
+          "slot": 4,
+          "itemId": "1337",
+          "name": "Sage's Sanctuary",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
+        },
+        {
+          "slot": 5,
+          "itemId": "1127",
+          "name": "Destiny",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
+        },
+        {
+          "slot": 6,
+          "itemId": "1231",
+          "name": "Void Staff",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1231.png",
+          "description": "MATK +210, HP +500, CDR +5%\nAnti-tank"
+        }
+      ]
+    },
+    {
+      "id": "camp-1",
       "label": "Popular",
       "lane": "Mid",
       "items": [
@@ -219,7 +268,7 @@
       ]
     },
     {
-      "id": "camp-1",
+      "id": "camp-2",
       "label": "ANTI TANK",
       "lane": "Mid",
       "items": [
@@ -268,7 +317,7 @@
       ]
     },
     {
-      "id": "camp-2",
+      "id": "camp-3",
       "label": "Anti-heal",
       "lane": "Mid",
       "items": [
@@ -315,60 +364,60 @@
           "description": "MSPD +50, MP +400\nMagical Pierce"
         }
       ]
-    },
+    }
+  ],
+  "buildsZh": [
     {
-      "id": "camp-3",
+      "id": "camp-0",
       "label": "Popular",
       "lane": "Mid",
       "items": [
         {
           "slot": 1,
           "itemId": "1424",
-          "name": "Boots of the Arcane",
+          "name": "祕法之靴",
           "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1424.png",
-          "description": "MSPD +50, MP +400\nMagical Pierce"
+          "description": "+50點移速+400點法力值\n法術穿透"
         },
         {
           "slot": 2,
           "itemId": "1234",
-          "name": "Frozen Breath",
+          "name": "凝冰之息",
           "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1234.png",
-          "description": "MATK +180, CDR +7.5%, HP +500\nSkill hits slow"
+          "description": "+180點法攻+7.5%減冷卻時間+500點生命值\n技能命中減速"
         },
         {
           "slot": 3,
           "itemId": "1727",
-          "name": "Twilight Stream",
+          "name": "日暮之流",
           "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1727.png",
-          "description": "MATK +160, CDR +10%, Max HP +500\nBoosts Magical Pierce"
+          "description": "+160點法攻+10%減冷卻時間+500點最大生命值\n提升法術穿透"
         },
         {
           "slot": 4,
           "itemId": "1337",
-          "name": "Sage's Sanctuary",
+          "name": "賢者的庇護",
           "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
-          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
+          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
         },
         {
           "slot": 5,
           "itemId": "1127",
-          "name": "Destiny",
+          "name": "名刀・司命",
           "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
-          "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
+          "description": "+75點攻擊+15%攻速+500點生命值\n保命"
         },
         {
           "slot": 6,
           "itemId": "1231",
-          "name": "Void Staff",
+          "name": "虛無法杖",
           "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1231.png",
-          "description": "MATK +210, HP +500, CDR +5%\nAnti-tank"
+          "description": "+210點法攻+500點生命值+5%減冷卻時間\n打坦克用"
         }
       ]
-    }
-  ],
-  "buildsZh": [
+    },
     {
-      "id": "camp-0",
+      "id": "camp-1",
       "label": "Popular",
       "lane": "Mid",
       "items": [
@@ -417,7 +466,7 @@
       ]
     },
     {
-      "id": "camp-1",
+      "id": "camp-2",
       "label": "ANTI TANK",
       "lane": "Mid",
       "items": [
@@ -466,7 +515,7 @@
       ]
     },
     {
-      "id": "camp-2",
+      "id": "camp-3",
       "label": "Anti-heal",
       "lane": "Mid",
       "items": [
@@ -513,65 +562,16 @@
           "description": "+50點移速+400點法力值\n法術穿透"
         }
       ]
-    },
-    {
-      "id": "camp-3",
-      "label": "Popular",
-      "lane": "Mid",
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1424",
-          "name": "祕法之靴",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1424.png",
-          "description": "+50點移速+400點法力值\n法術穿透"
-        },
-        {
-          "slot": 2,
-          "itemId": "1234",
-          "name": "凝冰之息",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1234.png",
-          "description": "+180點法攻+7.5%減冷卻時間+500點生命值\n技能命中減速"
-        },
-        {
-          "slot": 3,
-          "itemId": "1727",
-          "name": "日暮之流",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1727.png",
-          "description": "+160點法攻+10%減冷卻時間+500點最大生命值\n提升法術穿透"
-        },
-        {
-          "slot": 4,
-          "itemId": "1337",
-          "name": "賢者的庇護",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
-          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
-        },
-        {
-          "slot": 5,
-          "itemId": "1127",
-          "name": "名刀・司命",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
-          "description": "+75點攻擊+15%攻速+500點生命值\n保命"
-        },
-        {
-          "slot": 6,
-          "itemId": "1231",
-          "name": "虛無法杖",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1231.png",
-          "description": "+210點法攻+500點生命值+5%減冷卻時間\n打坦克用"
-        }
-      ]
     }
   ],
   "arcana": [
     "Lvl 5: Nightmare",
-    "Lvl 5: Red Moon",
+    "Lvl 5: Reincarnation",
     "Lvl 5: Hunt"
   ],
   "arcanaZh": [
     "5級：夢魘",
-    "5級：紅月",
+    "5級：輪迴",
     "5級：狩獵"
   ],
   "spells": [
@@ -593,11 +593,11 @@
   "tips": [
     "Garuda (Mage): Tier A — 50.76% WR (Camp HOK).",
     "Lane: Mid Lane.",
-    "Build: Savant's Wrath, Void Staff, Sage's Sanctuary."
+    "Build: Boots of the Arcane, Frozen Breath, Twilight Stream."
   ],
   "tipsZh": [
     "迦樓羅（中路）：梯度 A，勝率 50.76%（Camp HOK）。",
-    "出裝：博學者之怒、虛無法杖、賢者的庇護."
+    "出裝：祕法之靴、凝冰之息、日暮之流."
   ],
   "patchHistory": [
     {
@@ -623,7 +623,7 @@
     {
       "id": "faq-best-build",
       "question": "What is the best Garuda build?",
-      "answer": "Recommended: Savant's Wrath, Void Staff, Sage's Sanctuary, Destiny, Enigma - Moon Goddess, Ardent Dominion."
+      "answer": "Recommended: Boots of the Arcane, Frozen Breath, Twilight Stream, Sage's Sanctuary, Destiny, Void Staff."
     },
     {
       "id": "faq-counter",
@@ -640,7 +640,7 @@
     {
       "id": "faq-best-build",
       "question": "迦樓羅 出裝怎麼搭配？",
-      "answer": "推薦：博學者之怒、虛無法杖、賢者的庇護、名刀・司命、難知・月神、熾熱支配."
+      "answer": "推薦：祕法之靴、凝冰之息、日暮之流、賢者的庇護、名刀・司命、虛無法杖."
     },
     {
       "id": "faq-counter",
@@ -649,13 +649,13 @@
     }
   ],
   "metaAnalysis": [
-    "Garuda win rate 50.76% (Camp HOK, 2026-07-30).",
+    "Garuda win rate 50.76% (Camp HOK, 2026-07-31).",
     "Pick rate 0.77%.",
     "Ban rate 0.03%.",
     "Counters: Athena, Zilong, Pei. Weak into: Li Xin, Kaizer, Dun."
   ],
   "metaAnalysisZh": [
-    "迦樓羅 勝率 50.76%（Camp HOK，2026-07-30）",
+    "迦樓羅 勝率 50.76%（Camp HOK，2026-07-31）",
     "選取率 0.77%",
     "禁用率 0.03%",
     "克制：Athena、Zilong、Pei；被克制：Li Xin、Kaizer、Dun"

@@ -19,7 +19,7 @@
   "heroCover": "https://camp.honorofkings.com/camp/admin/default/v1MUult2.jpg",
   "tencentId": 168,
   "dataSource": "Camp HOK bilingual (primary)",
-  "dataUpdated": "2026-07-30",
+  "dataUpdated": "2026-07-31",
   "skills": [
     {
       "slot": "passive",
@@ -83,17 +83,17 @@
   "build": [
     {
       "slot": 1,
-      "itemId": "1421",
-      "name": "Boots of Fortitude",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1421.png",
-      "description": "PDEF +100, MDEF +50, MSPD +50\nReduces physical damage"
+      "itemId": "1341",
+      "name": "Frigid Charge",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1341.png",
+      "description": "PDEF +150, HP +900, CDR +7.5%, Resistance +10%\nGreat crowd control"
     },
     {
       "slot": 2,
-      "itemId": "1754",
-      "name": "Guardian - Radiance",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1754.png",
-      "description": "HP +1,200, MSPD +7.5%\nSurvivability aura"
+      "itemId": "1335",
+      "name": "Succubus Cloak",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
+      "description": "MDEF +300, HP +1,100\nNegates magical damage"
     },
     {
       "slot": 3,
@@ -104,40 +104,40 @@
     },
     {
       "slot": 4,
-      "itemId": "1335",
-      "name": "Succubus Cloak",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
-      "description": "MDEF +300, HP +1,100\nNegates magical damage"
-    },
-    {
-      "slot": 5,
-      "itemId": "1341",
-      "name": "Frigid Charge",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1341.png",
-      "description": "PDEF +150, HP +900, CDR +7.5%, Resistance +10%\nGreat crowd control"
-    },
-    {
-      "slot": 6,
       "itemId": "1332",
       "name": "Overlord's Platemail",
       "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1332.png",
       "description": "HP +1,800, PDEF +160, MDEF +80\nExtra HP"
+    },
+    {
+      "slot": 5,
+      "itemId": "1337",
+      "name": "Sage's Sanctuary",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+      "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
+    },
+    {
+      "slot": 6,
+      "itemId": "1351",
+      "name": "Amble - Winter",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1351.png",
+      "description": "PDEF +150, HP +900, CDR +7.5%, Resistance +10%\nGreat crowd control"
     }
   ],
   "buildZh": [
     {
       "slot": 1,
-      "itemId": "1421",
-      "name": "影忍之足",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1421.png",
-      "description": "+100點物防+50點法防+50點移速\n減少物理傷害"
+      "itemId": "1341",
+      "name": "冰霜衝擊",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1341.png",
+      "description": "+150點物防+900點生命值+7.5%冷卻時間+10%韌性\n群體控制"
     },
     {
       "slot": 2,
-      "itemId": "1754",
-      "name": "近衛・形昭",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1754.png",
-      "description": "+1200點生命值+7.5%移速\n光環強化生存"
+      "itemId": "1335",
+      "name": "魔女斗篷",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
+      "description": "+300點法防+1100點生命值\n吸收法術傷害"
     },
     {
       "slot": 3,
@@ -148,29 +148,78 @@
     },
     {
       "slot": 4,
-      "itemId": "1335",
-      "name": "魔女斗篷",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
-      "description": "+300點法防+1100點生命值\n吸收法術傷害"
-    },
-    {
-      "slot": 5,
-      "itemId": "1341",
-      "name": "冰霜衝擊",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1341.png",
-      "description": "+150點物防+900點生命值+7.5%冷卻時間+10%韌性\n群體控制"
-    },
-    {
-      "slot": 6,
       "itemId": "1332",
       "name": "霸者重裝",
       "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1332.png",
       "description": "+1800點生命值+160點物防+80點法防\n提高額外生命值"
+    },
+    {
+      "slot": 5,
+      "itemId": "1337",
+      "name": "賢者的庇護",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+      "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+    },
+    {
+      "slot": 6,
+      "itemId": "1351",
+      "name": "徐行・凜冬",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1351.png",
+      "description": "+150點物防+900點生命值+7.5%冷卻時間+10%韌性\n群體控制"
     }
   ],
   "builds": [
     {
       "id": "camp-0",
+      "label": "Top",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1341",
+          "name": "Frigid Charge",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1341.png",
+          "description": "PDEF +150, HP +900, CDR +7.5%, Resistance +10%\nGreat crowd control"
+        },
+        {
+          "slot": 2,
+          "itemId": "1335",
+          "name": "Succubus Cloak",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
+          "description": "MDEF +300, HP +1,100\nNegates magical damage"
+        },
+        {
+          "slot": 3,
+          "itemId": "1333",
+          "name": "Ominous Premonition",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1333.png",
+          "description": "PDEF +300, HP +1,200\nSlows attackers"
+        },
+        {
+          "slot": 4,
+          "itemId": "1332",
+          "name": "Overlord's Platemail",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1332.png",
+          "description": "HP +1,800, PDEF +160, MDEF +80\nExtra HP"
+        },
+        {
+          "slot": 5,
+          "itemId": "1337",
+          "name": "Sage's Sanctuary",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
+        },
+        {
+          "slot": 6,
+          "itemId": "1351",
+          "name": "Amble - Winter",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1351.png",
+          "description": "PDEF +150, HP +900, CDR +7.5%, Resistance +10%\nGreat crowd control"
+        }
+      ]
+    },
+    {
+      "id": "camp-1",
       "label": "Main",
       "lane": null,
       "items": [
@@ -219,7 +268,7 @@
       ]
     },
     {
-      "id": "camp-1",
+      "id": "camp-2",
       "label": "Valhala Felon",
       "lane": null,
       "items": [
@@ -271,6 +320,55 @@
   "buildsZh": [
     {
       "id": "camp-0",
+      "label": "Top",
+      "lane": null,
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1341",
+          "name": "冰霜衝擊",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1341.png",
+          "description": "+150點物防+900點生命值+7.5%冷卻時間+10%韌性\n群體控制"
+        },
+        {
+          "slot": 2,
+          "itemId": "1335",
+          "name": "魔女斗篷",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
+          "description": "+300點法防+1100點生命值\n吸收法術傷害"
+        },
+        {
+          "slot": 3,
+          "itemId": "1333",
+          "name": "不祥徵兆",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1333.png",
+          "description": "+300點物防+1200點生命值\n受擊時將敵人減速"
+        },
+        {
+          "slot": 4,
+          "itemId": "1332",
+          "name": "霸者重裝",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1332.png",
+          "description": "+1800點生命值+160點物防+80點法防\n提高額外生命值"
+        },
+        {
+          "slot": 5,
+          "itemId": "1337",
+          "name": "賢者的庇護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+        },
+        {
+          "slot": 6,
+          "itemId": "1351",
+          "name": "徐行・凜冬",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1351.png",
+          "description": "+150點物防+900點生命值+7.5%冷卻時間+10%韌性\n群體控制"
+        }
+      ]
+    },
+    {
+      "id": "camp-1",
       "label": "Main",
       "lane": null,
       "items": [
@@ -319,7 +417,7 @@
       ]
     },
     {
-      "id": "camp-1",
+      "id": "camp-2",
       "label": "Valhala Felon",
       "lane": null,
       "items": [
@@ -397,11 +495,11 @@
   "tips": [
     "Lapulapu (Tank): Tier B — 54.7% WR (Camp HOK).",
     "Lane: Roaming.",
-    "Build: Boots of Fortitude, Guardian - Radiance, Ominous Premonition."
+    "Build: Frigid Charge, Succubus Cloak, Ominous Premonition."
   ],
   "tipsZh": [
     "拉普拉普（遊走）：梯度 B，勝率 54.7%（Camp HOK）。",
-    "出裝：影忍之足、近衛・形昭、不祥徵兆."
+    "出裝：冰霜衝擊、魔女斗篷、不祥徵兆."
   ],
   "patchHistory": [
     {
@@ -460,7 +558,7 @@
     {
       "id": "faq-best-build",
       "question": "What is the best Lapulapu build?",
-      "answer": "Recommended: Boots of Fortitude, Guardian - Radiance, Ominous Premonition, Succubus Cloak, Frigid Charge, Overlord's Platemail."
+      "answer": "Recommended: Frigid Charge, Succubus Cloak, Ominous Premonition, Overlord's Platemail, Sage's Sanctuary, Amble - Winter."
     },
     {
       "id": "faq-counter",
@@ -477,7 +575,7 @@
     {
       "id": "faq-best-build",
       "question": "拉普拉普 出裝怎麼搭配？",
-      "answer": "推薦：影忍之足、近衛・形昭、不祥徵兆、魔女斗篷、冰霜衝擊、霸者重裝."
+      "answer": "推薦：冰霜衝擊、魔女斗篷、不祥徵兆、霸者重裝、賢者的庇護、徐行・凜冬."
     },
     {
       "id": "faq-counter",
@@ -486,13 +584,13 @@
     }
   ],
   "metaAnalysis": [
-    "Lapulapu win rate 54.7% (Camp HOK, 2026-07-30).",
+    "Lapulapu win rate 54.7% (Camp HOK, 2026-07-31).",
     "Pick rate 0.34%.",
     "Ban rate 0.02%.",
     "Counters: Meng Ya, Luara, Garo. Weak into: Wukong, Musashi, Ying."
   ],
   "metaAnalysisZh": [
-    "拉普拉普 勝率 54.7%（Camp HOK，2026-07-30）",
+    "拉普拉普 勝率 54.7%（Camp HOK，2026-07-31）",
     "選取率 0.34%",
     "禁用率 0.02%",
     "克制：Meng Ya、Luara、Garo；被克制：Wukong、Musashi、Ying"
