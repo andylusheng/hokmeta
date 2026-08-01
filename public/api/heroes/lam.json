@@ -9,17 +9,17 @@
   "lane": "Jungling",
   "laneZh": "打野",
   "difficulty": "Medium",
-  "tier": "A",
-  "winRate": 48.89,
-  "pickRate": 1.05,
-  "banRate": 0.41,
-  "rank": 91,
+  "tier": "S",
+  "winRate": 48.31,
+  "pickRate": 1.18,
+  "banRate": 0.47,
+  "rank": 101,
   "avatar": "https://camp.honorofkings.com/social/game/src/image_hero_head_128*128/02i6M2YK.png",
   "avatarFallback": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/528/528.jpg",
   "heroCover": "https://camp.honorofkings.com/social/game/src/image_hero_cover_1275*718/uHAwdCLU.jpg",
   "tencentId": 528,
   "dataSource": "Camp HOK bilingual (primary)",
-  "dataUpdated": "2026-07-31",
+  "dataUpdated": "2026-08-01",
   "skills": [
     {
       "slot": "passive",
@@ -269,55 +269,6 @@
     },
     {
       "id": "camp-2",
-      "label": "Vnsbaek",
-      "lane": "Jungle",
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1422",
-          "name": "Boots of Resistance",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1422.png",
-          "description": "MDEF +100, PDEF +50, MSPD +50\nShortens crowd control"
-        },
-        {
-          "slot": 2,
-          "itemId": "1327",
-          "name": "Spikemail",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1327.png",
-          "description": "PATK +45, PDEF +300, HP +700\nReflects damage"
-        },
-        {
-          "slot": 3,
-          "itemId": "1335",
-          "name": "Succubus Cloak",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
-          "description": "MDEF +300, HP +1,100\nNegates magical damage"
-        },
-        {
-          "slot": 4,
-          "itemId": "1337",
-          "name": "Sage's Sanctuary",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
-          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
-        },
-        {
-          "slot": 5,
-          "itemId": "1127",
-          "name": "Destiny",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
-          "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
-        },
-        {
-          "slot": 6,
-          "itemId": "1125",
-          "name": "Demonsbane",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1125.png",
-          "description": "PATK +90, MDEF +150, HP +600\nBoosts Magical Defense"
-        }
-      ]
-    },
-    {
-      "id": "camp-3",
       "label": "Sasin's",
       "lane": "Jungle",
       "items": [
@@ -362,6 +313,55 @@
           "name": "Destiny",
           "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
           "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
+        }
+      ]
+    },
+    {
+      "id": "camp-3",
+      "label": "Wann",
+      "lane": "Jungle",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "11311",
+          "name": "Pure Sky",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/11311.png",
+          "description": "PATK +80, PDEF +150, CDR +10%\nTemp. damage reduction"
+        },
+        {
+          "slot": 2,
+          "itemId": "1335",
+          "name": "Succubus Cloak",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
+          "description": "MDEF +300, HP +1,100\nNegates magical damage"
+        },
+        {
+          "slot": 3,
+          "itemId": "1337",
+          "name": "Sage's Sanctuary",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
+        },
+        {
+          "slot": 4,
+          "itemId": "1138",
+          "name": "Overlord's Might",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1138.png",
+          "description": "PATK +150, CDR +5%\nHigh-damage attack"
+        },
+        {
+          "slot": 5,
+          "itemId": "1131",
+          "name": "Starbreaker",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1131.png",
+          "description": "PATK +90, HP +700, MSPD +7.5%\nAnti-tank"
+        },
+        {
+          "slot": 6,
+          "itemId": "1157",
+          "name": "Immovable - Sky Dome",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1157.png",
+          "description": "PATK +80, PDEF +150, CDR +10%\nTemp. damage reduction"
         }
       ]
     }
@@ -467,55 +467,6 @@
     },
     {
       "id": "camp-2",
-      "label": "Vnsbaek",
-      "lane": "Jungle",
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1422",
-          "name": "抵抗之靴",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1422.png",
-          "description": "+100點法防+50點物防+50點移速\n減少被控時間"
-        },
-        {
-          "slot": 2,
-          "itemId": "1327",
-          "name": "反傷刺甲",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1327.png",
-          "description": "+45點攻擊+300點物防\n+700點生命值反彈傷害"
-        },
-        {
-          "slot": 3,
-          "itemId": "1335",
-          "name": "魔女斗篷",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
-          "description": "+300點法防+1100點生命值\n吸收法術傷害"
-        },
-        {
-          "slot": 4,
-          "itemId": "1337",
-          "name": "賢者的庇護",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
-          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
-        },
-        {
-          "slot": 5,
-          "itemId": "1127",
-          "name": "名刀・司命",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
-          "description": "+75點攻擊+15%攻速+500點生命值\n保命"
-        },
-        {
-          "slot": 6,
-          "itemId": "1125",
-          "name": "破魔刀",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1125.png",
-          "description": "+90點攻擊+150點法防+600點生命值\n增加法術防禦"
-        }
-      ]
-    },
-    {
-      "id": "camp-3",
       "label": "Sasin's",
       "lane": "Jungle",
       "items": [
@@ -562,6 +513,55 @@
           "description": "+75點攻擊+15%攻速+500點生命值\n保命"
         }
       ]
+    },
+    {
+      "id": "camp-3",
+      "label": "Wann",
+      "lane": "Jungle",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "11311",
+          "name": "純淨蒼穹",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/11311.png",
+          "description": "+80點攻擊+150點物防+10%冷卻時間縮減\n暫時增加免傷"
+        },
+        {
+          "slot": 2,
+          "itemId": "1335",
+          "name": "魔女斗篷",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
+          "description": "+300點法防+1100點生命值\n吸收法術傷害"
+        },
+        {
+          "slot": 3,
+          "itemId": "1337",
+          "name": "賢者的庇護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+        },
+        {
+          "slot": 4,
+          "itemId": "1138",
+          "name": "強者破軍",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1138.png",
+          "description": "+150點攻擊+5%減冷卻時間\n高額攻擊"
+        },
+        {
+          "slot": 5,
+          "itemId": "1131",
+          "name": "碎星錘",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1131.png",
+          "description": "+90點攻擊+700點生命值+7.5%移速\n打坦克用"
+        },
+        {
+          "slot": 6,
+          "itemId": "1157",
+          "name": "不動・天穹",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1157.png",
+          "description": "+80點攻擊+150點物防+10%冷卻時間縮減\n暫時增加免傷"
+        }
+      ]
     }
   ],
   "arcana": [
@@ -591,12 +591,12 @@
     "Luara"
   ],
   "tips": [
-    "Lam (Assassin): Tier A — 48.89% WR (Camp HOK).",
+    "Lam (Assassin): Tier S — 48.31% WR (Camp HOK).",
     "Lane: Jungling.",
     "Build: Pure Sky, Boots of Resistance, Blazing Cape."
   ],
   "tipsZh": [
-    "瀾（打野）：梯度 A，勝率 48.89%（Camp HOK）。",
+    "瀾（打野）：梯度 S，勝率 48.31%（Camp HOK）。",
     "出裝：純淨蒼穹、抵抗之靴、紅蓮斗篷."
   ],
   "patchHistory": [
@@ -651,7 +651,7 @@
     {
       "id": "faq-good-season",
       "question": "Is Lam good in current season?",
-      "answer": "Lam is Tier A Assassin with 48.89% win rate, 1.05% pick rate, and 0.41% ban rate (Camp HOK international)."
+      "answer": "Lam is Tier S Assassin with 48.31% win rate, 1.18% pick rate, and 0.47% ban rate (Camp HOK international)."
     },
     {
       "id": "faq-best-build",
@@ -668,7 +668,7 @@
     {
       "id": "faq-good-season",
       "question": "瀾 這版本適合上分嗎？",
-      "answer": "瀾 為 A 梯度，勝率 48.89%、選取 1.05%、禁用 0.41%（Camp HOK 國際服）。"
+      "answer": "瀾 為 S 梯度，勝率 48.31%、選取 1.18%、禁用 0.47%（Camp HOK 國際服）。"
     },
     {
       "id": "faq-best-build",
@@ -682,15 +682,15 @@
     }
   ],
   "metaAnalysis": [
-    "Lam win rate 48.89% (Camp HOK, 2026-07-31).",
-    "Pick rate 1.05%.",
-    "Ban rate 0.41%.",
+    "Lam win rate 48.31% (Camp HOK, 2026-08-01).",
+    "Pick rate 1.18%.",
+    "Ban rate 0.47%.",
     "Counters: Lu Bu, Wuyan, Xiang Yu. Weak into: Erin, Liang, Luara."
   ],
   "metaAnalysisZh": [
-    "瀾 勝率 48.89%（Camp HOK，2026-07-31）",
-    "選取率 1.05%",
-    "禁用率 0.41%",
+    "瀾 勝率 48.31%（Camp HOK，2026-08-01）",
+    "選取率 1.18%",
+    "禁用率 0.47%",
     "克制：Lu Bu、Wuyan、Xiang Yu；被克制：Erin、Liang、Luara"
   ],
   "guide": {
