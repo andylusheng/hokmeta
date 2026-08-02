@@ -2,7 +2,7 @@
   "season": "S15",
   "currentSeason": "S15",
   "source": "Camp HOK bilingual (api-camp.honorofkings.com)",
-  "updated": "2026-08-01",
+  "updated": "2026-08-02",
   "heroCount": 116,
   "seasons": [
     {
@@ -3238,6 +3238,18 @@
           "publishedAt": "2024-10-17T02:18:42Z"
         },
         {
+          "heroSlug": "augran",
+          "heroName": "Augran",
+          "heroNameZh": "大司命",
+          "tag": "Stat Nerfs",
+          "change": "Reduced his ability to deal sustained damage with his Basic Attack.",
+          "changeZh": "降低普通攻擊的持續輸出能力",
+          "detail": "\"Augran could consistently continue to deal damage in between attacks from his opponents. We're reducing his sustained damage output to prevent opponents from being taken down too early.\"",
+          "detailZh": "大司命能夠在對方的攻擊間隙持續造成傷害，我們適當削弱他的持續輸出能力，使對手不會太早遭到斬殺。",
+          "versionName": "20240925",
+          "publishedAt": "2024-09-25T03:24:02Z"
+        },
+        {
           "heroSlug": "gan-mo",
           "heroName": "Gan & Mo",
           "heroNameZh": "干將莫邪",
@@ -3722,6 +3734,18 @@
           "detailZh": "后羿穩定的普攻輸出能力和多目標輸出能力讓其他射手難以抗衡，因此我們稍微降低了他的攻擊頻率，好留給對手一些喘息空間。",
           "versionName": "20240725",
           "publishedAt": "2024-07-25T02:20:21Z"
+        },
+        {
+          "heroSlug": "augran",
+          "heroName": "Augran",
+          "heroNameZh": "大司命",
+          "tag": "Stat Nerfs",
+          "change": "Increased Ultimate cooldown and reduced damage and recovery of Skill 2",
+          "changeZh": "增加大招冷卻 減少2技能傷害與回復",
+          "detail": "Increased Ultimate cooldown and reduced damage and recovery of Skill 2",
+          "detailZh": "增加大招冷卻 減少2技能傷害與回復",
+          "versionName": "20240808",
+          "publishedAt": "2024-08-08T02:00:57Z"
         },
         {
           "heroSlug": "yuhuan",
