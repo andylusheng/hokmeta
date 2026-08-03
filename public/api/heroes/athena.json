@@ -19,7 +19,7 @@
   "heroCover": "https://camp.honorofkings.com/social/game/src/image_hero_cover_1275*718/jvD2dleo.jpg",
   "tencentId": 183,
   "dataSource": "Camp HOK bilingual (primary)",
-  "dataUpdated": "2026-08-02",
+  "dataUpdated": "2026-08-03",
   "skills": [
     {
       "slot": "passive",
@@ -171,6 +171,55 @@
   "builds": [
     {
       "id": "camp-0",
+      "label": "HIGH BURST DMG",
+      "lane": "Jungle",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1138",
+          "name": "Overlord's Might",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1138.png",
+          "description": "PATK +150, CDR +5%\nHigh-damage attack"
+        },
+        {
+          "slot": 2,
+          "itemId": "1131",
+          "name": "Starbreaker",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1131.png",
+          "description": "PATK +90, HP +700, MSPD +7.5%\nAnti-tank"
+        },
+        {
+          "slot": 3,
+          "itemId": "1127",
+          "name": "Destiny",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
+        },
+        {
+          "slot": 4,
+          "itemId": "1337",
+          "name": "Sage's Sanctuary",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
+        },
+        {
+          "slot": 5,
+          "itemId": "11311",
+          "name": "Pure Sky",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/11311.png",
+          "description": "PATK +80, PDEF +150, CDR +10%\nTemp. damage reduction"
+        },
+        {
+          "slot": 6,
+          "itemId": "1157",
+          "name": "Immovable - Sky Dome",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1157.png",
+          "description": "PATK +80, PDEF +150, CDR +10%\nTemp. damage reduction"
+        }
+      ]
+    },
+    {
+      "id": "camp-1",
       "label": "Popular",
       "lane": "Jungle",
       "items": [
@@ -222,6 +271,55 @@
   "buildsZh": [
     {
       "id": "camp-0",
+      "label": "HIGH BURST DMG",
+      "lane": "Jungle",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1138",
+          "name": "強者破軍",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1138.png",
+          "description": "+150點攻擊+5%減冷卻時間\n高額攻擊"
+        },
+        {
+          "slot": 2,
+          "itemId": "1131",
+          "name": "碎星錘",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1131.png",
+          "description": "+90點攻擊+700點生命值+7.5%移速\n打坦克用"
+        },
+        {
+          "slot": 3,
+          "itemId": "1127",
+          "name": "名刀・司命",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "+75點攻擊+15%攻速+500點生命值\n保命"
+        },
+        {
+          "slot": 4,
+          "itemId": "1337",
+          "name": "賢者的庇護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+        },
+        {
+          "slot": 5,
+          "itemId": "11311",
+          "name": "純淨蒼穹",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/11311.png",
+          "description": "+80點攻擊+150點物防+10%冷卻時間縮減\n暫時增加免傷"
+        },
+        {
+          "slot": 6,
+          "itemId": "1157",
+          "name": "不動・天穹",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1157.png",
+          "description": "+80點攻擊+150點物防+10%冷卻時間縮減\n暫時增加免傷"
+        }
+      ]
+    },
+    {
+      "id": "camp-1",
       "label": "Popular",
       "lane": "Jungle",
       "items": [
@@ -386,13 +484,13 @@
     }
   ],
   "metaAnalysis": [
-    "Athena win rate 53.66% (Camp HOK, 2026-08-02).",
+    "Athena win rate 53.66% (Camp HOK, 2026-08-03).",
     "Pick rate 0.07%.",
     "Ban rate 0%.",
     "Counters: Dharma, Gao Changgong. Weak into: Sun Bin, Guan Yu."
   ],
   "metaAnalysisZh": [
-    "雅典娜 勝率 53.66%（Camp HOK，2026-08-02）",
+    "雅典娜 勝率 53.66%（Camp HOK，2026-08-03）",
     "選取率 0.07%",
     "禁用率 0%",
     "克制：Dharma、Gao Changgong；被克制：Sun Bin、Guan Yu"
