@@ -83,94 +83,143 @@
   "build": [
     {
       "slot": 1,
+      "itemId": "1132",
+      "name": "Bloodweeper",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1132.png",
+      "description": "PATK +85, Lifesteal +25%, HP +500\nPhysical Lifesteal"
+    },
+    {
+      "slot": 2,
       "itemId": "1533",
       "name": "Rapacious Bite",
       "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1533.png",
       "description": "PATK +90, MSPD +5%, CDR +7.5%\nMonster kills boost ATK"
     },
     {
-      "slot": 2,
+      "slot": 3,
+      "itemId": "1338",
+      "name": "Cuirass of Savagery",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1338.png",
+      "description": "PATK +35, PDEF +210, HP +900\nOffense & defense"
+    },
+    {
+      "slot": 4,
       "itemId": "1155",
       "name": "Daybreaker's Virtue",
       "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1155.png",
       "description": "PATK +75, ASPD +30%, Crit Rate +15%\nGreat for marksmen"
     },
     {
-      "slot": 3,
-      "itemId": "1133",
-      "name": "Eternity Blade",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1133.png",
-      "description": "PATK +120, Crit Rate +20%\nHigh crit damage"
-    },
-    {
-      "slot": 4,
+      "slot": 5,
       "itemId": "1337",
       "name": "Sage's Sanctuary",
       "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
       "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
     },
     {
-      "slot": 5,
+      "slot": 6,
       "itemId": "1127",
       "name": "Destiny",
       "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
       "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
-    },
-    {
-      "slot": 6,
-      "itemId": "11210",
-      "name": "Mortal Punisher",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/11210.png",
-      "description": "PATK +100, Lifesteal +20%, ASPD +20%\nLowers Health regen"
     }
   ],
   "buildZh": [
     {
       "slot": 1,
+      "itemId": "1132",
+      "name": "泣血之刃",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1132.png",
+      "description": "+85點攻擊+25%吸血+500點生命值\n物理吸血"
+    },
+    {
+      "slot": 2,
       "itemId": "1533",
       "name": "貪婪之噬",
       "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1533.png",
       "description": "+90攻擊+5%移速+7.5%冷縮\n打野怪加攻擊"
     },
     {
-      "slot": 2,
+      "slot": 3,
+      "itemId": "1338",
+      "name": "暴烈之甲",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1338.png",
+      "description": "+35點攻擊+210點物防+900點生命值\n能抗能打"
+    },
+    {
+      "slot": 4,
       "itemId": "1155",
       "name": "仁者破曉",
       "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1155.png",
       "description": "+75點攻擊+30%攻速+15%暴擊\n射手神裝"
     },
     {
-      "slot": 3,
-      "itemId": "1133",
-      "name": "無盡戰刃",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1133.png",
-      "description": "+120點攻擊+20%暴擊\n高額暴擊傷害"
-    },
-    {
-      "slot": 4,
+      "slot": 5,
       "itemId": "1337",
       "name": "賢者的庇護",
       "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
       "description": "+900點生命值+150點物防+150點法防……\n原地復活"
     },
     {
-      "slot": 5,
+      "slot": 6,
       "itemId": "1127",
       "name": "名刀・司命",
       "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
       "description": "+75點攻擊+15%攻速+500點生命值\n保命"
-    },
-    {
-      "slot": 6,
-      "itemId": "11210",
-      "name": "制裁之刃",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/11210.png",
-      "description": "+100點攻擊+20%吸血+20%攻速\n減少敵人回血"
     }
   ],
   "builds": [
     {
       "id": "camp-0",
+      "label": "Burst",
+      "lane": "Jungle",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1132",
+          "name": "Bloodweeper",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1132.png",
+          "description": "PATK +85, Lifesteal +25%, HP +500\nPhysical Lifesteal"
+        },
+        {
+          "slot": 2,
+          "itemId": "1533",
+          "name": "Rapacious Bite",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1533.png",
+          "description": "PATK +90, MSPD +5%, CDR +7.5%\nMonster kills boost ATK"
+        },
+        {
+          "slot": 3,
+          "itemId": "1338",
+          "name": "Cuirass of Savagery",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1338.png",
+          "description": "PATK +35, PDEF +210, HP +900\nOffense & defense"
+        },
+        {
+          "slot": 4,
+          "itemId": "1155",
+          "name": "Daybreaker's Virtue",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1155.png",
+          "description": "PATK +75, ASPD +30%, Crit Rate +15%\nGreat for marksmen"
+        },
+        {
+          "slot": 5,
+          "itemId": "1337",
+          "name": "Sage's Sanctuary",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
+        },
+        {
+          "slot": 6,
+          "itemId": "1127",
+          "name": "Destiny",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
+        }
+      ]
+    },
+    {
+      "id": "camp-1",
       "label": "DMG + CRIT",
       "lane": "Jungle",
       "items": [
@@ -219,7 +268,7 @@
       ]
     },
     {
-      "id": "camp-1",
+      "id": "camp-2",
       "label": "tiktok米牢芳",
       "lane": null,
       "items": [
@@ -268,7 +317,7 @@
       ]
     },
     {
-      "id": "camp-2",
+      "id": "camp-3",
       "label": "anti sustain",
       "lane": "Jungle",
       "items": [
@@ -315,60 +364,60 @@
           "description": "PATK +35, PDEF +210, HP +900\nOffense & defense"
         }
       ]
-    },
-    {
-      "id": "camp-3",
-      "label": "Popular",
-      "lane": "Jungle",
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1137",
-          "name": "Axe of Torment",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1137.png",
-          "description": "PATK +80, CDR +10%, HP +500\nAnti-squishy"
-        },
-        {
-          "slot": 2,
-          "itemId": "1533",
-          "name": "Rapacious Bite",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1533.png",
-          "description": "PATK +90, MSPD +5%, CDR +7.5%\nMonster kills boost ATK"
-        },
-        {
-          "slot": 3,
-          "itemId": "1132",
-          "name": "Bloodweeper",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1132.png",
-          "description": "PATK +85, Lifesteal +25%, HP +500\nPhysical Lifesteal"
-        },
-        {
-          "slot": 4,
-          "itemId": "1338",
-          "name": "Cuirass of Savagery",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1338.png",
-          "description": "PATK +35, PDEF +210, HP +900\nOffense & defense"
-        },
-        {
-          "slot": 5,
-          "itemId": "1155",
-          "name": "Daybreaker's Virtue",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1155.png",
-          "description": "PATK +75, ASPD +30%, Crit Rate +15%\nGreat for marksmen"
-        },
-        {
-          "slot": 6,
-          "itemId": "1127",
-          "name": "Destiny",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
-          "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
-        }
-      ]
     }
   ],
   "buildsZh": [
     {
       "id": "camp-0",
+      "label": "Burst",
+      "lane": "Jungle",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1132",
+          "name": "泣血之刃",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1132.png",
+          "description": "+85點攻擊+25%吸血+500點生命值\n物理吸血"
+        },
+        {
+          "slot": 2,
+          "itemId": "1533",
+          "name": "貪婪之噬",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1533.png",
+          "description": "+90攻擊+5%移速+7.5%冷縮\n打野怪加攻擊"
+        },
+        {
+          "slot": 3,
+          "itemId": "1338",
+          "name": "暴烈之甲",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1338.png",
+          "description": "+35點攻擊+210點物防+900點生命值\n能抗能打"
+        },
+        {
+          "slot": 4,
+          "itemId": "1155",
+          "name": "仁者破曉",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1155.png",
+          "description": "+75點攻擊+30%攻速+15%暴擊\n射手神裝"
+        },
+        {
+          "slot": 5,
+          "itemId": "1337",
+          "name": "賢者的庇護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+        },
+        {
+          "slot": 6,
+          "itemId": "1127",
+          "name": "名刀・司命",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "+75點攻擊+15%攻速+500點生命值\n保命"
+        }
+      ]
+    },
+    {
+      "id": "camp-1",
       "label": "DMG + CRIT",
       "lane": "Jungle",
       "items": [
@@ -417,7 +466,7 @@
       ]
     },
     {
-      "id": "camp-1",
+      "id": "camp-2",
       "label": "tiktok米牢芳",
       "lane": null,
       "items": [
@@ -466,7 +515,7 @@
       ]
     },
     {
-      "id": "camp-2",
+      "id": "camp-3",
       "label": "anti sustain",
       "lane": "Jungle",
       "items": [
@@ -513,66 +562,17 @@
           "description": "+35點攻擊+210點物防+900點生命值\n能抗能打"
         }
       ]
-    },
-    {
-      "id": "camp-3",
-      "label": "Popular",
-      "lane": "Jungle",
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1137",
-          "name": "暗影戰斧",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1137.png",
-          "description": "+80點攻擊+10%減冷卻時間+500點生命值\n打血薄用"
-        },
-        {
-          "slot": 2,
-          "itemId": "1533",
-          "name": "貪婪之噬",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1533.png",
-          "description": "+90攻擊+5%移速+7.5%冷縮\n打野怪加攻擊"
-        },
-        {
-          "slot": 3,
-          "itemId": "1132",
-          "name": "泣血之刃",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1132.png",
-          "description": "+85點攻擊+25%吸血+500點生命值\n物理吸血"
-        },
-        {
-          "slot": 4,
-          "itemId": "1338",
-          "name": "暴烈之甲",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1338.png",
-          "description": "+35點攻擊+210點物防+900點生命值\n能抗能打"
-        },
-        {
-          "slot": 5,
-          "itemId": "1155",
-          "name": "仁者破曉",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1155.png",
-          "description": "+75點攻擊+30%攻速+15%暴擊\n射手神裝"
-        },
-        {
-          "slot": 6,
-          "itemId": "1127",
-          "name": "名刀・司命",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
-          "description": "+75點攻擊+15%攻速+500點生命值\n保命"
-        }
-      ]
     }
   ],
   "arcana": [
-    "Lvl 5: Red Moon",
     "Lvl 5: Mutation",
-    "Lvl 5: Hunt"
+    "Lvl 5: Stealth",
+    "Lvl 5: Eagle Eye"
   ],
   "arcanaZh": [
-    "5級：紅月",
     "5級：異變",
-    "5級：狩獵"
+    "5級：隱匿",
+    "5級：鷹眼"
   ],
   "spells": [
     "Smite"
@@ -591,11 +591,11 @@
   "tips": [
     "Fang (Marksman): Tier A — 50.21% WR (Camp HOK).",
     "Lane: Farm Lane.",
-    "Build: Rapacious Bite, Daybreaker's Virtue, Eternity Blade."
+    "Build: Bloodweeper, Rapacious Bite, Cuirass of Savagery."
   ],
   "tipsZh": [
     "李元芳（發育路）：梯度 A，勝率 50.21%（Camp HOK）。",
-    "出裝：貪婪之噬、仁者破曉、無盡戰刃."
+    "出裝：泣血之刃、貪婪之噬、暴烈之甲."
   ],
   "patchHistory": [
     {
@@ -698,7 +698,7 @@
     {
       "id": "faq-best-build",
       "question": "What is the best Fang build?",
-      "answer": "Recommended: Rapacious Bite, Daybreaker's Virtue, Eternity Blade, Sage's Sanctuary, Destiny, Mortal Punisher."
+      "answer": "Recommended: Bloodweeper, Rapacious Bite, Cuirass of Savagery, Daybreaker's Virtue, Sage's Sanctuary, Destiny."
     },
     {
       "id": "faq-counter",
@@ -715,7 +715,7 @@
     {
       "id": "faq-best-build",
       "question": "李元芳 出裝怎麼搭配？",
-      "answer": "推薦：貪婪之噬、仁者破曉、無盡戰刃、賢者的庇護、名刀・司命、制裁之刃."
+      "answer": "推薦：泣血之刃、貪婪之噬、暴烈之甲、仁者破曉、賢者的庇護、名刀・司命."
     },
     {
       "id": "faq-counter",
