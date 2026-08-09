@@ -2,7 +2,7 @@
   "season": "S15",
   "currentSeason": "S15",
   "source": "Camp HOK bilingual (api-camp.honorofkings.com)",
-  "updated": "2026-08-08",
+  "updated": "2026-08-09",
   "heroCount": 116,
   "seasons": [
     {
@@ -2932,6 +2932,18 @@
           "publishedAt": "2025-01-09T02:33:14Z"
         },
         {
+          "heroSlug": "gao-changgong",
+          "heroName": "Gao Changgong",
+          "heroNameZh": "蘭陵王",
+          "tag": "QoL Changes",
+          "change": "Adjusted Skill 4's stealth mechanic.",
+          "changeZh": "調整了4技能的隱身機制",
+          "detail": "Prince of Lanling's stealth ability puts pressure on the opponent, even if he's leaving or only passing through. We've improved the indicator so that opponents can gauge his distance based on the blinking speed, giving them room to focus on the crucial moment.",
+          "detailZh": "「蘭陵王在隱身狀態下總能為對手帶來一定危機感，哪怕有時他已經離開或只是路過。本次我們改善了提醒效果，讓對手可以根據提示的閃爍頻率判斷距離遠近，進而把注意力集中在最關鍵的時刻。」",
+          "versionName": "20250109",
+          "publishedAt": "2025-01-09T02:33:14Z"
+        },
+        {
           "heroSlug": "mai-shiranui",
           "heroName": "Mai Shiranui",
           "heroNameZh": "不知火舞",
@@ -3344,6 +3356,30 @@
           "detailZh": "「1技能加速效果關乎亞瑟的機動性，沉默效果也能夠對敵人形成一定的限制；目前1技能的初始冷卻時間有點太長了，因此我們適當降低前期的冷卻時間，讓亞瑟在技能升級的選擇上有更多靈活性。」",
           "versionName": "20241017",
           "publishedAt": "2024-10-17T02:18:42Z"
+        },
+        {
+          "heroSlug": "diaochan",
+          "heroName": "Diaochan",
+          "heroNameZh": "貂蟬",
+          "tag": "Stat Buffs",
+          "change": "Enhanced Base Stats",
+          "changeZh": "提升基礎屬性",
+          "detail": "\"Diaochan is one of only a few mages who have to get up close and personal with her enemies. This leaves her more vulnerable to attacks, so we've enhanced her base stats in order to help her shine.\"",
+          "detailZh": "「作為法師，貂蟬是為數不多需要在人群中起舞的，因此也面臨著更多危險；我們適當提高她的基礎屬性，讓她有更多展示精華表現的可能性。」",
+          "versionName": "20241128",
+          "publishedAt": "2024-11-28T01:46:48Z"
+        },
+        {
+          "heroSlug": "diaochan",
+          "heroName": "Diaochan",
+          "heroNameZh": "貂蟬",
+          "tag": "Mechanics Changes",
+          "change": "Made cooldown reduction for Skill 2 smoother.",
+          "changeZh": "2技能冷卻返還機制更連貫",
+          "detail": "\"Diaochan's Skill 2 provides a significant cooldown reduction when hitting enemies, but it can be very frustrating when a miss disrupts follow-up combos.  In order to alleviate this, we've made the cooldown reduction mechanism more continuous.\"",
+          "detailZh": "貂蟬的2技能命中敵人時，會有很高的冷卻返還收益，但失手時也會帶給玩家很強的挫敗感，影響後續的技能銜接。我們嘗試將2技能冷卻返還機制由離散變得更連續，提升貂蟬玩家的使用體驗。",
+          "versionName": "20240925",
+          "publishedAt": "2024-09-25T03:24:02Z"
         },
         {
           "heroSlug": "xiao-qiao",
@@ -3830,6 +3866,24 @@
           "detailZh": "「靈活是公孫離的特點，我們適當降低前期的冷卻時間，好好發揮她的特點。」",
           "versionName": "20240905",
           "publishedAt": "2024-09-05T03:48:42Z"
+        }
+      ]
+    },
+    {
+      "seasonName": "S4",
+      "seasonId": "4",
+      "changes": [
+        {
+          "heroSlug": "luban-no-7",
+          "heroName": "Luban No.7",
+          "heroNameZh": "魯班七號",
+          "tag": "Stat Nerfs",
+          "change": "Reduced the base damage of Luban No.7's passive skill, and increased the base cooldown of his Ultimate.",
+          "changeZh": null,
+          "detail": "Reduced the base damage of Luban No.7's passive skill, and increased the base cooldown of his Ultimate.\nWith his unique damage capabilities, Luban No.7 has become a common choice for marksman players. He is easy to play and can rapidly tear through various types of enemy with ease. We have nerfed Luban No.7 in order to give rivals a fairer chance of getting close to him.",
+          "detailZh": null,
+          "versionName": "20240306",
+          "publishedAt": "2024-03-06T02:00:50Z"
         }
       ]
     },
