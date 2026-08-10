@@ -19,7 +19,7 @@
   "heroCover": "https://camp.honorofkings.com/social/game/src/image_hero_cover_1275*718/aNTpLNiS.jpg",
   "tencentId": 162,
   "dataSource": "Camp HOK bilingual (primary)",
-  "dataUpdated": "2026-08-09",
+  "dataUpdated": "2026-08-10",
   "skills": [
     {
       "slot": "passive",
@@ -220,6 +220,55 @@
     },
     {
       "id": "camp-1",
+      "label": "Preset",
+      "lane": "Jungle",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1533",
+          "name": "Rapacious Bite",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1533.png",
+          "description": "PATK +90, MSPD +5%, CDR +7.5%\nMonster kills boost ATK"
+        },
+        {
+          "slot": 2,
+          "itemId": "1336",
+          "name": "Glacial Buckler",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1336.png",
+          "description": "CDR +20%, HP +600, PDEF +240\nGroup damage & slow"
+        },
+        {
+          "slot": 3,
+          "itemId": "1138",
+          "name": "Overlord's Might",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1138.png",
+          "description": "PATK +150, CDR +5%\nHigh-damage attack"
+        },
+        {
+          "slot": 4,
+          "itemId": "1131",
+          "name": "Starbreaker",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1131.png",
+          "description": "PATK +90, HP +700, MSPD +7.5%\nAnti-tank"
+        },
+        {
+          "slot": 5,
+          "itemId": "1337",
+          "name": "Sage's Sanctuary",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
+        },
+        {
+          "slot": 6,
+          "itemId": "1127",
+          "name": "Destiny",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
+        }
+      ]
+    },
+    {
+      "id": "camp-2",
       "label": "Nakalulu",
       "lane": "Jungle",
       "items": [
@@ -268,7 +317,7 @@
       ]
     },
     {
-      "id": "camp-2",
+      "id": "camp-3",
       "label": "露露",
       "lane": "Jungle",
       "items": [
@@ -313,55 +362,6 @@
           "name": "Blood Rage",
           "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1328.png",
           "description": "PATK +75, HP +900\nTrades HP for shield"
-        }
-      ]
-    },
-    {
-      "id": "camp-3",
-      "label": "TT:Z3nar",
-      "lane": "Jungle",
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1422",
-          "name": "Boots of Resistance",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1422.png",
-          "description": "MDEF +100, PDEF +50, MSPD +50\nShortens crowd control"
-        },
-        {
-          "slot": 2,
-          "itemId": "1138",
-          "name": "Overlord's Might",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1138.png",
-          "description": "PATK +150, CDR +5%\nHigh-damage attack"
-        },
-        {
-          "slot": 3,
-          "itemId": "13310",
-          "name": "Frostscar's Embrace",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/13310.png",
-          "description": "PATK +60, PDEF +300, CDR +10%\nEnhanced BAs slow"
-        },
-        {
-          "slot": 4,
-          "itemId": "1131",
-          "name": "Starbreaker",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1131.png",
-          "description": "PATK +90, HP +700, MSPD +7.5%\nAnti-tank"
-        },
-        {
-          "slot": 5,
-          "itemId": "1337",
-          "name": "Sage's Sanctuary",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
-          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
-        },
-        {
-          "slot": 6,
-          "itemId": "1127",
-          "name": "Destiny",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
-          "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
         }
       ]
     }
@@ -418,6 +418,55 @@
     },
     {
       "id": "camp-1",
+      "label": "Preset",
+      "lane": "Jungle",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1533",
+          "name": "貪婪之噬",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1533.png",
+          "description": "+90攻擊+5%移速+7.5%冷縮\n打野怪加攻擊"
+        },
+        {
+          "slot": 2,
+          "itemId": "1336",
+          "name": "極寒風暴",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1336.png",
+          "description": "+20%減冷卻時間+600點生命值+240點物防\n群體傷害減速"
+        },
+        {
+          "slot": 3,
+          "itemId": "1138",
+          "name": "強者破軍",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1138.png",
+          "description": "+150點攻擊+5%減冷卻時間\n高額攻擊"
+        },
+        {
+          "slot": 4,
+          "itemId": "1131",
+          "name": "碎星錘",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1131.png",
+          "description": "+90點攻擊+700點生命值+7.5%移速\n打坦克用"
+        },
+        {
+          "slot": 5,
+          "itemId": "1337",
+          "name": "賢者的庇護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+        },
+        {
+          "slot": 6,
+          "itemId": "1127",
+          "name": "名刀・司命",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "+75點攻擊+15%攻速+500點生命值\n保命"
+        }
+      ]
+    },
+    {
+      "id": "camp-2",
       "label": "Nakalulu",
       "lane": "Jungle",
       "items": [
@@ -466,7 +515,7 @@
       ]
     },
     {
-      "id": "camp-2",
+      "id": "camp-3",
       "label": "露露",
       "lane": "Jungle",
       "items": [
@@ -511,55 +560,6 @@
           "name": "血魔之怒",
           "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1328.png",
           "description": "+75點攻擊+900點生命值 \n犧牲生命值換取護盾值"
-        }
-      ]
-    },
-    {
-      "id": "camp-3",
-      "label": "TT:Z3nar",
-      "lane": "Jungle",
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1422",
-          "name": "抵抗之靴",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1422.png",
-          "description": "+100點法防+50點物防+50點移速\n減少被控時間"
-        },
-        {
-          "slot": 2,
-          "itemId": "1138",
-          "name": "強者破軍",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1138.png",
-          "description": "+150點攻擊+5%減冷卻時間\n高額攻擊"
-        },
-        {
-          "slot": 3,
-          "itemId": "13310",
-          "name": "冰痕之握",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/13310.png",
-          "description": "+60點攻擊+300點物防+10%減冷卻時間……\n強化普攻減速"
-        },
-        {
-          "slot": 4,
-          "itemId": "1131",
-          "name": "碎星錘",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1131.png",
-          "description": "+90點攻擊+700點生命值+7.5%移速\n打坦克用"
-        },
-        {
-          "slot": 5,
-          "itemId": "1337",
-          "name": "賢者的庇護",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
-          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
-        },
-        {
-          "slot": 6,
-          "itemId": "1127",
-          "name": "名刀・司命",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
-          "description": "+75點攻擊+15%攻速+500點生命值\n保命"
         }
       ]
     }
@@ -704,13 +704,13 @@
     }
   ],
   "metaAnalysis": [
-    "Nakoruru win rate 50.09% (Camp HOK, 2026-08-09).",
+    "Nakoruru win rate 50.09% (Camp HOK, 2026-08-10).",
     "Pick rate 0.5%.",
     "Ban rate 0.05%.",
     "Counters: Wukong, Athena, Xiang Yu. Weak into: Diaochan, Fang, Garo."
   ],
   "metaAnalysisZh": [
-    "娜可露露 勝率 50.09%（Camp HOK，2026-08-09）",
+    "娜可露露 勝率 50.09%（Camp HOK，2026-08-10）",
     "選取率 0.5%",
     "禁用率 0.05%",
     "克制：Wukong、Athena、Xiang Yu；被克制：Diaochan、Fang、Garo"

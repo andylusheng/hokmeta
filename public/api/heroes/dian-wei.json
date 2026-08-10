@@ -19,7 +19,7 @@
   "heroCover": "https://camp.honorofkings.com/social/game/src/image_hero_cover_1275*718/HWAUFh5S.jpg",
   "tencentId": 129,
   "dataSource": "Camp HOK bilingual (primary)",
-  "dataUpdated": "2026-08-09",
+  "dataUpdated": "2026-08-10",
   "skills": [
     {
       "slot": "passive",
@@ -83,38 +83,38 @@
   "build": [
     {
       "slot": 1,
-      "itemId": "1421",
-      "name": "Boots of Fortitude",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1421.png",
-      "description": "PDEF +100, MDEF +50, MSPD +50\nReduces physical damage"
-    },
-    {
-      "slot": 2,
-      "itemId": "1327",
-      "name": "Spikemail",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1327.png",
-      "description": "PATK +45, PDEF +300, HP +700\nReflects damage"
-    },
-    {
-      "slot": 3,
       "itemId": "1134",
       "name": "Master Sword",
       "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1134.png",
       "description": "PATK +55, Crit Rate +20%, HP +600\nEnhances BAs"
     },
     {
-      "slot": 4,
-      "itemId": "11311",
-      "name": "Pure Sky",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/11311.png",
-      "description": "PATK +80, PDEF +150, CDR +10%\nTemp. damage reduction"
+      "slot": 2,
+      "itemId": "1328",
+      "name": "Blood Rage",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1328.png",
+      "description": "PATK +75, HP +900\nTrades HP for shield"
     },
     {
-      "slot": 5,
+      "slot": 3,
       "itemId": "1335",
       "name": "Succubus Cloak",
       "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
       "description": "MDEF +300, HP +1,100\nNegates magical damage"
+    },
+    {
+      "slot": 4,
+      "itemId": "1350",
+      "name": "Ravage - Phantom",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1350.png",
+      "description": "PATK +75, HP +900\nTrades HP for shield"
+    },
+    {
+      "slot": 5,
+      "itemId": "1337",
+      "name": "Sage's Sanctuary",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+      "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
     },
     {
       "slot": 6,
@@ -127,38 +127,38 @@
   "buildZh": [
     {
       "slot": 1,
-      "itemId": "1421",
-      "name": "影忍之足",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1421.png",
-      "description": "+100點物防+50點法防+50點移速\n減少物理傷害"
-    },
-    {
-      "slot": 2,
-      "itemId": "1327",
-      "name": "反傷刺甲",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1327.png",
-      "description": "+45點攻擊+300點物防\n+700點生命值反彈傷害"
-    },
-    {
-      "slot": 3,
       "itemId": "1134",
       "name": "宗師之力",
       "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1134.png",
       "description": "+55點攻擊+20%暴擊+600點生命值……\n強化普攻"
     },
     {
-      "slot": 4,
-      "itemId": "11311",
-      "name": "純淨蒼穹",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/11311.png",
-      "description": "+80點攻擊+150點物防+10%冷卻時間縮減\n暫時增加免傷"
+      "slot": 2,
+      "itemId": "1328",
+      "name": "血魔之怒",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1328.png",
+      "description": "+75點攻擊+900點生命值 \n犧牲生命值換取護盾值"
     },
     {
-      "slot": 5,
+      "slot": 3,
       "itemId": "1335",
       "name": "魔女斗篷",
       "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
       "description": "+300點法防+1100點生命值\n吸收法術傷害"
+    },
+    {
+      "slot": 4,
+      "itemId": "1350",
+      "name": "侵略・怒魂",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1350.png",
+      "description": "+75點攻擊+900點生命值\n犧牲生命值換取護盾值"
+    },
+    {
+      "slot": 5,
+      "itemId": "1337",
+      "name": "賢者的庇護",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+      "description": "+900點生命值+150點物防+150點法防……\n原地復活"
     },
     {
       "slot": 6,
@@ -171,6 +171,55 @@
   "builds": [
     {
       "id": "camp-0",
+      "label": "Scarlett666",
+      "lane": "Jungle",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1134",
+          "name": "Master Sword",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1134.png",
+          "description": "PATK +55, Crit Rate +20%, HP +600\nEnhances BAs"
+        },
+        {
+          "slot": 2,
+          "itemId": "1328",
+          "name": "Blood Rage",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1328.png",
+          "description": "PATK +75, HP +900\nTrades HP for shield"
+        },
+        {
+          "slot": 3,
+          "itemId": "1335",
+          "name": "Succubus Cloak",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
+          "description": "MDEF +300, HP +1,100\nNegates magical damage"
+        },
+        {
+          "slot": 4,
+          "itemId": "1350",
+          "name": "Ravage - Phantom",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1350.png",
+          "description": "PATK +75, HP +900\nTrades HP for shield"
+        },
+        {
+          "slot": 5,
+          "itemId": "1337",
+          "name": "Sage's Sanctuary",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
+        },
+        {
+          "slot": 6,
+          "itemId": "1127",
+          "name": "Destiny",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
+        }
+      ]
+    },
+    {
+      "id": "camp-1",
       "label": "Sustain damage",
       "lane": "Jungle",
       "items": [
@@ -219,7 +268,7 @@
       ]
     },
     {
-      "id": "camp-1",
+      "id": "camp-2",
       "label": "心态崩溃套装",
       "lane": "Jungle",
       "items": [
@@ -268,7 +317,7 @@
       ]
     },
     {
-      "id": "camp-2",
+      "id": "camp-3",
       "label": "High damage",
       "lane": "Jungle",
       "items": [
@@ -320,6 +369,55 @@
   "buildsZh": [
     {
       "id": "camp-0",
+      "label": "Scarlett666",
+      "lane": "Jungle",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1134",
+          "name": "宗師之力",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1134.png",
+          "description": "+55點攻擊+20%暴擊+600點生命值……\n強化普攻"
+        },
+        {
+          "slot": 2,
+          "itemId": "1328",
+          "name": "血魔之怒",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1328.png",
+          "description": "+75點攻擊+900點生命值 \n犧牲生命值換取護盾值"
+        },
+        {
+          "slot": 3,
+          "itemId": "1335",
+          "name": "魔女斗篷",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
+          "description": "+300點法防+1100點生命值\n吸收法術傷害"
+        },
+        {
+          "slot": 4,
+          "itemId": "1350",
+          "name": "侵略・怒魂",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1350.png",
+          "description": "+75點攻擊+900點生命值\n犧牲生命值換取護盾值"
+        },
+        {
+          "slot": 5,
+          "itemId": "1337",
+          "name": "賢者的庇護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+        },
+        {
+          "slot": 6,
+          "itemId": "1127",
+          "name": "名刀・司命",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "+75點攻擊+15%攻速+500點生命值\n保命"
+        }
+      ]
+    },
+    {
+      "id": "camp-1",
       "label": "Sustain damage",
       "lane": "Jungle",
       "items": [
@@ -368,7 +466,7 @@
       ]
     },
     {
-      "id": "camp-1",
+      "id": "camp-2",
       "label": "心态崩溃套装",
       "lane": "Jungle",
       "items": [
@@ -417,7 +515,7 @@
       ]
     },
     {
-      "id": "camp-2",
+      "id": "camp-3",
       "label": "High damage",
       "lane": "Jungle",
       "items": [
@@ -493,11 +591,11 @@
   "tips": [
     "Dian Wei (Warrior): Tier A — 50.93% WR (Camp HOK).",
     "Lane: Jungling.",
-    "Build: Boots of Fortitude, Spikemail, Master Sword."
+    "Build: Master Sword, Blood Rage, Succubus Cloak."
   ],
   "tipsZh": [
     "典韋（打野）：梯度 A，勝率 50.93%（Camp HOK）。",
-    "出裝：影忍之足、反傷刺甲、宗師之力."
+    "出裝：宗師之力、血魔之怒、魔女斗篷."
   ],
   "patchHistory": [
     {
@@ -644,7 +742,7 @@
     {
       "id": "faq-best-build",
       "question": "What is the best Dian Wei build?",
-      "answer": "Recommended: Boots of Fortitude, Spikemail, Master Sword, Pure Sky, Succubus Cloak, Destiny."
+      "answer": "Recommended: Master Sword, Blood Rage, Succubus Cloak, Ravage - Phantom, Sage's Sanctuary, Destiny."
     },
     {
       "id": "faq-counter",
@@ -661,7 +759,7 @@
     {
       "id": "faq-best-build",
       "question": "典韋 出裝怎麼搭配？",
-      "answer": "推薦：影忍之足、反傷刺甲、宗師之力、純淨蒼穹、魔女斗篷、名刀・司命."
+      "answer": "推薦：宗師之力、血魔之怒、魔女斗篷、侵略・怒魂、賢者的庇護、名刀・司命."
     },
     {
       "id": "faq-counter",
@@ -670,13 +768,13 @@
     }
   ],
   "metaAnalysis": [
-    "Dian Wei win rate 50.93% (Camp HOK, 2026-08-09).",
+    "Dian Wei win rate 50.93% (Camp HOK, 2026-08-10).",
     "Pick rate 0.99%.",
     "Ban rate 0.52%.",
     "Counters: Marco Polo, Musashi. Weak into: Sun Bin, Diaochan."
   ],
   "metaAnalysisZh": [
-    "典韋 勝率 50.93%（Camp HOK，2026-08-09）",
+    "典韋 勝率 50.93%（Camp HOK，2026-08-10）",
     "選取率 0.99%",
     "禁用率 0.52%",
     "克制：Marco Polo、Musashi；被克制：Sun Bin、Diaochan"
