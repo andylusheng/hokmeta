@@ -2,7 +2,7 @@
   "season": "S15",
   "currentSeason": "S15",
   "source": "Camp HOK bilingual (api-camp.honorofkings.com)",
-  "updated": "2026-08-12",
+  "updated": "2026-08-13",
   "heroCount": 116,
   "seasons": [
     {
@@ -3820,18 +3820,6 @@
           "publishedAt": "2024-09-05T03:48:42Z"
         },
         {
-          "heroSlug": "hou-yi",
-          "heroName": "Hou Yi",
-          "heroNameZh": "后羿",
-          "tag": "Stat Nerfs",
-          "change": "Increased Basic Attack interval slightly",
-          "changeZh": "略微延長普攻的間隔",
-          "detail": "Hou Yi's stable Basic Attack and ability to target multiple enemies at once make it hard for other marksmen to compete with him, so we've lowered the frequency of his Basic Attacks slightly to give his enemies time to catch their breath.",
-          "detailZh": "后羿穩定的普攻輸出能力和多目標輸出能力讓其他射手難以抗衡，因此我們稍微降低了他的攻擊頻率，好留給對手一些喘息空間。",
-          "versionName": "20240725",
-          "publishedAt": "2024-07-25T02:20:21Z"
-        },
-        {
           "heroSlug": "sun-bin",
           "heroName": "Sun Bin",
           "heroNameZh": "孫臏",
@@ -3974,6 +3962,42 @@
           "detailZh": "「靈活是公孫離的特點，我們適當降低前期的冷卻時間，好好發揮她的特點。」",
           "versionName": "20240905",
           "publishedAt": "2024-09-05T03:48:42Z"
+        }
+      ]
+    },
+    {
+      "seasonName": "S5",
+      "seasonId": "5",
+      "changes": [
+        {
+          "heroSlug": "mai-shiranui",
+          "heroName": "Mai Shiranui",
+          "heroNameZh": "不知火舞",
+          "tag": "Mechanics Upgrade",
+          "change": "Improved her skill cast indicator to make the area of effect of some of her skills clearer. Skill 2 can now hit up to 2 enemies.",
+          "changeZh": null,
+          "detail": "Mai Shiranui is a hero with very complex controls, making her a very difficult hero to master.In the current version, Mai Shiranui's skill mechanics make it very difficult to escape her as she charges forward in the Mid Lane minion wave.We hope that the changes in the new version can help Mai Shiranui to better integrate into the current game environment and demonstrate her advantages.We hope this will give more players the chance to try this hero.",
+          "detailZh": null,
+          "versionName": "20240509",
+          "publishedAt": "2024-05-09T02:31:07Z"
+        }
+      ]
+    },
+    {
+      "seasonName": "S3",
+      "seasonId": "3",
+      "changes": [
+        {
+          "heroSlug": "milady",
+          "heroName": "Milady",
+          "heroNameZh": "米萊狄",
+          "tag": "Stat Nerfs",
+          "change": "Skills (Nerf)",
+          "changeZh": null,
+          "detail": null,
+          "detailZh": null,
+          "versionName": "20231011",
+          "publishedAt": "2023-10-11T12:03:22Z"
         }
       ]
     },
