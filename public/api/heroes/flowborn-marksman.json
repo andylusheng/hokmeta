@@ -19,7 +19,7 @@
   "heroCover": "https://camp.honorofkings.com/camp/admin/hero/cover_1275-718/sJJ3gAWa.jpg",
   "tencentId": 584,
   "dataSource": "Camp HOK bilingual (primary)",
-  "dataUpdated": "2026-08-13",
+  "dataUpdated": "2026-08-14",
   "skills": [
     {
       "slot": "passive",
@@ -318,29 +318,29 @@
     },
     {
       "id": "camp-3",
-      "label": "Late-Game",
+      "label": "Farm Lane 1",
       "lane": null,
       "items": [
         {
           "slot": 1,
-          "itemId": "1133",
-          "name": "Eternity Blade",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1133.png",
-          "description": "PATK +120, Crit Rate +20%\nHigh crit damage"
-        },
-        {
-          "slot": 2,
           "itemId": "1136",
           "name": "Shadow Ripper",
           "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1136.png",
           "description": "PATK +45, ASPD +35%, Crit Rate +20%, MSPD +7.5%\nCrits boosts ASPD"
         },
         {
-          "slot": 3,
+          "slot": 2,
           "itemId": "1155",
           "name": "Daybreaker's Virtue",
           "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1155.png",
           "description": "PATK +75, ASPD +30%, Crit Rate +15%\nGreat for marksmen"
+        },
+        {
+          "slot": 3,
+          "itemId": "1132",
+          "name": "Bloodweeper",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1132.png",
+          "description": "PATK +85, Lifesteal +25%, HP +500\nPhysical Lifesteal"
         },
         {
           "slot": 4,
@@ -351,17 +351,17 @@
         },
         {
           "slot": 5,
-          "itemId": "11210",
-          "name": "Mortal Punisher",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/11210.png",
-          "description": "PATK +100, Lifesteal +20%, ASPD +20%\nLowers Health regen"
-        },
-        {
-          "slot": 6,
           "itemId": "1337",
           "name": "Sage's Sanctuary",
           "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
           "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
+        },
+        {
+          "slot": 6,
+          "itemId": "1156",
+          "name": "Haste - Sunpool",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1156.png",
+          "description": "PATK +40, ASPD +20%, Crit Rate +15%, MSPD +7.5%\nBoosts attack range"
         }
       ]
     }
@@ -516,29 +516,29 @@
     },
     {
       "id": "camp-3",
-      "label": "Late-Game",
+      "label": "Farm Lane 1",
       "lane": null,
       "items": [
         {
           "slot": 1,
-          "itemId": "1133",
-          "name": "無盡戰刃",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1133.png",
-          "description": "+120點攻擊+20%暴擊\n高額暴擊傷害"
-        },
-        {
-          "slot": 2,
           "itemId": "1136",
           "name": "影刃",
           "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1136.png",
           "description": "+45點攻擊 +35%攻速+20%暴擊+7.5%移速\n暴擊增加攻速"
         },
         {
-          "slot": 3,
+          "slot": 2,
           "itemId": "1155",
           "name": "仁者破曉",
           "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1155.png",
           "description": "+75點攻擊+30%攻速+15%暴擊\n射手神裝"
+        },
+        {
+          "slot": 3,
+          "itemId": "1132",
+          "name": "泣血之刃",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1132.png",
+          "description": "+85點攻擊+25%吸血+500點生命值\n物理吸血"
         },
         {
           "slot": 4,
@@ -549,17 +549,17 @@
         },
         {
           "slot": 5,
-          "itemId": "11210",
-          "name": "制裁之刃",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/11210.png",
-          "description": "+100點攻擊+20%吸血+20%攻速\n減少敵人回血"
-        },
-        {
-          "slot": 6,
           "itemId": "1337",
           "name": "賢者的庇護",
           "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
           "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+        },
+        {
+          "slot": 6,
+          "itemId": "1156",
+          "name": "迅疾・日淵",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1156.png",
+          "description": "+40點攻擊+20%攻速+15%暴擊+7.5%移速\n攻擊距離變遠"
         }
       ]
     }
@@ -704,13 +704,13 @@
     }
   ],
   "metaAnalysis": [
-    "Flowborn (Marksman) win rate 51.42% (Camp HOK, 2026-08-13).",
+    "Flowborn (Marksman) win rate 51.42% (Camp HOK, 2026-08-14).",
     "Pick rate 1.09%.",
     "Ban rate 0.05%.",
     "Counters: Liu Bei, Athena, Zilong. Weak into: Kaizer, Dun, Arthur."
   ],
   "metaAnalysisZh": [
-    "元流之子 勝率 51.42%（Camp HOK，2026-08-13）",
+    "元流之子 勝率 51.42%（Camp HOK，2026-08-14）",
     "選取率 1.09%",
     "禁用率 0.05%",
     "克制：Liu Bei、Athena、Zilong；被克制：Kaizer、Dun、Arthur"
