@@ -19,7 +19,7 @@
   "heroCover": "https://camp.honorofkings.com/camp/admin/hero/cover_1275-718/LSR5DicR.jpg",
   "tencentId": 159,
   "dataSource": "Camp HOK bilingual (primary)",
-  "dataUpdated": "2026-08-15",
+  "dataUpdated": "2026-08-16",
   "skills": [
     {
       "slot": "passive",
@@ -318,29 +318,29 @@
     },
     {
       "id": "camp-3",
-      "label": "Rena’s Dolia",
+      "label": "Lalalala",
       "lane": null,
       "items": [
         {
           "slot": 1,
-          "itemId": "1721",
-          "name": "Crimson Shadow - Redemption",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1746.png",
-          "description": "HP +1,200, MSPD +7.5%\nDPS aura"
-        },
-        {
-          "slot": 2,
           "itemId": "1353",
           "name": "Dawnlight",
           "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1353.png",
           "description": "PDEF +210, HP +900, CDR +10%\nShields on dealing damage"
         },
         {
+          "slot": 2,
+          "itemId": "12211",
+          "name": "Venomous Staff",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/12211.png",
+          "description": "MATK +240, CDR +7.5%, MSPD +7.5%\nLowers Health Regen"
+        },
+        {
           "slot": 3,
-          "itemId": "1234",
-          "name": "Frozen Breath",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1234.png",
-          "description": "MATK +180, CDR +7.5%, HP +500\nSkill hits slow"
+          "itemId": "1335",
+          "name": "Succubus Cloak",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
+          "description": "MDEF +300, HP +1,100\nNegates magical damage"
         },
         {
           "slot": 4,
@@ -351,17 +351,17 @@
         },
         {
           "slot": 5,
-          "itemId": "1335",
-          "name": "Succubus Cloak",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
-          "description": "MDEF +300, HP +1,100\nNegates magical damage"
+          "itemId": "1337",
+          "name": "Sage's Sanctuary",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
         },
         {
           "slot": 6,
-          "itemId": "1226",
-          "name": "Holy Grail",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1226.png",
-          "description": "MATK +150, CDR +15%, HP +500\nRapid MP Regen"
+          "itemId": "1127",
+          "name": "Destiny",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "PATK +75, ASPD +15%, HP +500\nNegates fatal damage"
         }
       ]
     }
@@ -516,29 +516,29 @@
     },
     {
       "id": "camp-3",
-      "label": "Rena’s Dolia",
+      "label": "Lalalala",
       "lane": null,
       "items": [
         {
           "slot": 1,
-          "itemId": "1721",
-          "name": "極影・救贖",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1746.png",
-          "description": "+1200點生命值+7.5%移速\n光環提升輸出"
-        },
-        {
-          "slot": 2,
           "itemId": "1353",
           "name": "旭日初光",
           "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1353.png",
           "description": "+210點物防+900點生命值+10%減冷卻時間\n傷害敵人時獲得護盾值"
         },
         {
+          "slot": 2,
+          "itemId": "12211",
+          "name": "夢魘之牙",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/12211.png",
+          "description": "+240點法攻+7.5%減冷卻時間+7.5%移速\n減少敵人回血"
+        },
+        {
           "slot": 3,
-          "itemId": "1234",
-          "name": "凝冰之息",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1234.png",
-          "description": "+180點法攻+7.5%減冷卻時間+500點生命值\n技能命中減速"
+          "itemId": "1335",
+          "name": "魔女斗篷",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
+          "description": "+300點法防+1100點生命值\n吸收法術傷害"
         },
         {
           "slot": 4,
@@ -549,17 +549,17 @@
         },
         {
           "slot": 5,
-          "itemId": "1335",
-          "name": "魔女斗篷",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
-          "description": "+300點法防+1100點生命值\n吸收法術傷害"
+          "itemId": "1337",
+          "name": "賢者的庇護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
         },
         {
           "slot": 6,
-          "itemId": "1226",
-          "name": "聖杯",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1226.png",
-          "description": "+150點法攻+15%減冷卻時間+500點生命值\n快速回復法力"
+          "itemId": "1127",
+          "name": "名刀・司命",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1127.png",
+          "description": "+75點攻擊+15%攻速+500點生命值\n保命"
         }
       ]
     }
@@ -724,13 +724,13 @@
     }
   ],
   "metaAnalysis": [
-    "Dolia win rate 46.84% (Camp HOK, 2026-08-15).",
+    "Dolia win rate 46.84% (Camp HOK, 2026-08-16).",
     "Pick rate 1.73%.",
     "Ban rate 0.65%.",
     "Counters: Dun, Yaria. Weak into: Sima Yi, Guiguzi."
   ],
   "metaAnalysisZh": [
-    "朵莉亞 勝率 46.84%（Camp HOK，2026-08-15）",
+    "朵莉亞 勝率 46.84%（Camp HOK，2026-08-16）",
     "選取率 1.73%",
     "禁用率 0.65%",
     "克制：Dun、Yaria；被克制：Sima Yi、Guiguzi"
