@@ -2,7 +2,7 @@
   "season": "S15",
   "currentSeason": "S15",
   "source": "Camp HOK bilingual (api-camp.honorofkings.com)",
-  "updated": "2026-08-17",
+  "updated": "2026-08-18",
   "heroCount": 116,
   "seasons": [
     {
@@ -3346,18 +3346,6 @@
           "publishedAt": "2024-09-25T03:24:02Z"
         },
         {
-          "heroSlug": "augran",
-          "heroName": "Augran",
-          "heroNameZh": "大司命",
-          "tag": "Stat Nerfs",
-          "change": "Reduced his ability to deal sustained damage with his Basic Attack.",
-          "changeZh": "降低普通攻擊的持續輸出能力",
-          "detail": "\"Augran could consistently continue to deal damage in between attacks from his opponents. We're reducing his sustained damage output to prevent opponents from being taken down too early.\"",
-          "detailZh": "大司命能夠在對方的攻擊間隙持續造成傷害，我們適當削弱他的持續輸出能力，使對手不會太早遭到斬殺。",
-          "versionName": "20240925",
-          "publishedAt": "2024-09-25T03:24:02Z"
-        },
-        {
           "heroSlug": "kongming",
           "heroName": "Kongming",
           "heroNameZh": "諸葛亮",
@@ -3588,6 +3576,30 @@
           "changeZh": "增加1技能的傷害",
           "detail": "Increasing Skill 1's damage allows Li Bai to deal good damage before he gets his Ultimate",
           "detailZh": "「提升1技能的傷害，讓李白即使沒有大招，也能有不俗的傷害。」",
+          "versionName": "20240808",
+          "publishedAt": "2024-08-08T02:00:57Z"
+        },
+        {
+          "heroSlug": "luban-no-7",
+          "heroName": "Luban No.7",
+          "heroNameZh": "魯班七號",
+          "tag": "Stat Nerfs",
+          "change": "Decreased passive damage.",
+          "changeZh": "降低被動傷害",
+          "detail": "Luban No.7 has been outperforming other marksmen for a long time, so it's time to tone him down a bit.",
+          "detailZh": "「魯班七號的強度已經領先其他射手很久了，該是緩和這股氣焰的時候了。」",
+          "versionName": "20240905",
+          "publishedAt": "2024-09-05T03:48:42Z"
+        },
+        {
+          "heroSlug": "luban-no-7",
+          "heroName": "Luban No.7",
+          "heroNameZh": "魯班七號",
+          "tag": "Stat Changes",
+          "change": "Adjusted Passive effect's damage against different targets.",
+          "changeZh": "調整被動對不同目標的傷害",
+          "detail": "Luban's Passive works the same regardless of the target's Health, so heroes cannot guard against it by increasing their Health. As such, we've reduced his effectiveness against high-Health targets. As compensation, we've increased his ability to threaten the enemy carry",
+          "detailZh": "「被動對不同生命值的目標一視同仁，提高生命值在面對魯班七號時無法提高生存能力，因此我們適當削弱他對高生命值目標的傷害能力。作為補償，我們提升了他對全輸出C位目標的威脅。」",
           "versionName": "20240808",
           "publishedAt": "2024-08-08T02:00:57Z"
         },
@@ -3856,18 +3868,6 @@
           "publishedAt": "2024-07-11T03:14:46Z"
         },
         {
-          "heroSlug": "augran",
-          "heroName": "Augran",
-          "heroNameZh": "大司命",
-          "tag": "Stat Nerfs",
-          "change": "Increased Ultimate cooldown and reduced damage and recovery of Skill 2",
-          "changeZh": "增加大招冷卻 減少2技能傷害與回復",
-          "detail": "Increased Ultimate cooldown and reduced damage and recovery of Skill 2",
-          "detailZh": "增加大招冷卻 減少2技能傷害與回復",
-          "versionName": "20240808",
-          "publishedAt": "2024-08-08T02:00:57Z"
-        },
-        {
           "heroSlug": "zhang-fei",
           "heroName": "Zhang Fei",
           "heroNameZh": "張飛",
@@ -3916,18 +3916,6 @@
           "publishedAt": "2024-07-25T02:20:21Z"
         },
         {
-          "heroSlug": "zhuangzi",
-          "heroName": "Zhuangzi",
-          "heroNameZh": "莊周",
-          "tag": "Stat Buffs",
-          "change": "Reduced his Ultimate's cooldown and buffed his shield",
-          "changeZh": "降低大招的冷卻時間，提高護盾效果",
-          "detail": "The interval between each use of Zhuangzi's Ultimate is too long. Also, his shield is often overlooked by his teammates. By buffing the shield, we've made Zhuangzi useful even if he is unable to cleanse teammates of crowd controls.",
-          "detailZh": "莊周大招的使用間隔實在是太久了，而護盾往往會被大家忽略，因此我們適當提高了效果，讓他即使沒有成功解除控制，還是能保持不錯的效果。",
-          "versionName": "20240725",
-          "publishedAt": "2024-07-25T02:20:21Z"
-        },
-        {
           "heroSlug": "arli",
           "heroName": "Arli",
           "heroNameZh": "公孫離",
@@ -3950,6 +3938,24 @@
           "detailZh": "目前海諾給對手的對抗體驗較差，大招高額的免傷和回復能力使其可以在敵方面前持續消耗且不容易受到反制，我們降低了他的輸出能力和大招容錯率，給對手更多的反制空間",
           "versionName": "20240822",
           "publishedAt": "2024-08-22T07:13:54Z"
+        }
+      ]
+    },
+    {
+      "seasonName": "S3",
+      "seasonId": "3",
+      "changes": [
+        {
+          "heroSlug": "marco-polo",
+          "heroName": "Marco Polo",
+          "heroNameZh": "馬可波羅",
+          "tag": "Stat Nerfs",
+          "change": "Reduced the level-up increment of his base Attack stat and his Skill 1 physical damage.",
+          "changeZh": null,
+          "detail": "Thanks to his skill's true damage mechanic, Marco Polo can equip multiple pieces of defensive equipment while still being able to deal lots of damage when poking and deliver tremendous burst damage during team fights. By mid to late game, Marco Polo is able to do just about everything the other marksmen can. By making some slight adjustments to his laning capabilities and late game strength, we hope to make this highly versatily marksman just a little bit less powerful.",
+          "detailZh": null,
+          "versionName": "20231122",
+          "publishedAt": "2023-11-22T12:01:46Z"
         }
       ]
     },
