@@ -19,7 +19,7 @@
   "heroCover": "https://camp.honorofkings.com/social/game/src/image_hero_cover_1275*718/1mmj5K3o.jpg",
   "tencentId": 556,
   "dataSource": "Camp HOK bilingual (primary)",
-  "dataUpdated": "2026-08-19",
+  "dataUpdated": "2026-08-20",
   "skills": [
     {
       "slot": "passive",
@@ -83,10 +83,10 @@
   "build": [
     {
       "slot": 1,
-      "itemId": "1534",
-      "name": "Dragon's Rage",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1536.png",
-      "description": "HP +1,350, PDEF +180, MDEF +90\nGrants extra damage and recovery"
+      "itemId": "1422",
+      "name": "Boots of Resistance",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1422.png",
+      "description": "MDEF +100, PDEF +50, MSPD +50\nShortens crowd control"
     },
     {
       "slot": 2,
@@ -111,26 +111,26 @@
     },
     {
       "slot": 5,
-      "itemId": "1341",
-      "name": "Frigid Charge",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1341.png",
-      "description": "PDEF +150, HP +900, CDR +7.5%, Resistance +10%\nGreat crowd control"
+      "itemId": "1534",
+      "name": "Dragon's Rage",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1536.png",
+      "description": "HP +1,350, PDEF +180, MDEF +90\nGrants extra damage and recovery"
     },
     {
       "slot": 6,
-      "itemId": "1337",
-      "name": "Sage's Sanctuary",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
-      "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
+      "itemId": "1347",
+      "name": "Longnight Guardian",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1347.png",
+      "description": "MDEF +210, HP +1,000, MSPD +7.5%\nReduces magical damage"
     }
   ],
   "buildZh": [
     {
       "slot": 1,
-      "itemId": "1534",
-      "name": "怒龍劍盾",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1536.png",
-      "description": "+1350點生命值+180點物防+90點法防\n額外傷害與回復"
+      "itemId": "1422",
+      "name": "抵抗之靴",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1422.png",
+      "description": "+100點法防+50點物防+50點移速\n減少被控時間"
     },
     {
       "slot": 2,
@@ -155,22 +155,71 @@
     },
     {
       "slot": 5,
-      "itemId": "1341",
-      "name": "冰霜衝擊",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1341.png",
-      "description": "+150點物防+900點生命值+7.5%冷卻時間+10%韌性\n群體控制"
+      "itemId": "1534",
+      "name": "怒龍劍盾",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1536.png",
+      "description": "+1350點生命值+180點物防+90點法防\n額外傷害與回復"
     },
     {
       "slot": 6,
-      "itemId": "1337",
-      "name": "賢者的庇護",
-      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
-      "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+      "itemId": "1347",
+      "name": "永夜守護",
+      "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1347.png",
+      "description": "+210點法防+1000點生命值\n+7.5%移速減少法術傷害"
     }
   ],
   "builds": [
     {
       "id": "camp-0",
+      "label": "Teleport Master",
+      "lane": "Top",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1422",
+          "name": "Boots of Resistance",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1422.png",
+          "description": "MDEF +100, PDEF +50, MSPD +50\nShortens crowd control"
+        },
+        {
+          "slot": 2,
+          "itemId": "1331",
+          "name": "Blazing Cape",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1331.png",
+          "description": "PDEF +150, MDEF +150, HP +1,100\nArea burn & imperil"
+        },
+        {
+          "slot": 3,
+          "itemId": "1334",
+          "name": "Eye of the Phoenix",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1334.png",
+          "description": "MDEF +180, PDEF +90, HP +1,350\nBoosts HP Regen"
+        },
+        {
+          "slot": 4,
+          "itemId": "1332",
+          "name": "Overlord's Platemail",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1332.png",
+          "description": "HP +1,800, PDEF +160, MDEF +80\nExtra HP"
+        },
+        {
+          "slot": 5,
+          "itemId": "1534",
+          "name": "Dragon's Rage",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1536.png",
+          "description": "HP +1,350, PDEF +180, MDEF +90\nGrants extra damage and recovery"
+        },
+        {
+          "slot": 6,
+          "itemId": "1347",
+          "name": "Longnight Guardian",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1347.png",
+          "description": "MDEF +210, HP +1,000, MSPD +7.5%\nReduces magical damage"
+        }
+      ]
+    },
+    {
+      "id": "camp-1",
       "label": "TT:Z3nar",
       "lane": "Top",
       "items": [
@@ -222,6 +271,55 @@
   "buildsZh": [
     {
       "id": "camp-0",
+      "label": "Teleport Master",
+      "lane": "Top",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1422",
+          "name": "抵抗之靴",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1422.png",
+          "description": "+100點法防+50點物防+50點移速\n減少被控時間"
+        },
+        {
+          "slot": 2,
+          "itemId": "1331",
+          "name": "紅蓮斗篷",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1331.png",
+          "description": "+150點物防+150點法防+1100點生命值\n範圍灼燒重傷"
+        },
+        {
+          "slot": 3,
+          "itemId": "1334",
+          "name": "不死鳥之眼",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1334.png",
+          "description": "+180點法防+90點物防+1350點生命值……\n增加回血效果"
+        },
+        {
+          "slot": 4,
+          "itemId": "1332",
+          "name": "霸者重裝",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1332.png",
+          "description": "+1800點生命值+160點物防+80點法防\n提高額外生命值"
+        },
+        {
+          "slot": 5,
+          "itemId": "1534",
+          "name": "怒龍劍盾",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1536.png",
+          "description": "+1350點生命值+180點物防+90點法防\n額外傷害與回復"
+        },
+        {
+          "slot": 6,
+          "itemId": "1347",
+          "name": "永夜守護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1347.png",
+          "description": "+210點法防+1000點生命值\n+7.5%移速減少法術傷害"
+        }
+      ]
+    },
+    {
+      "id": "camp-1",
       "label": "TT:Z3nar",
       "lane": "Top",
       "items": [
@@ -272,19 +370,19 @@
   ],
   "arcana": [
     "Lvl 5: Fate",
-    "Lvl 5: Harmony",
-    "Lvl 5: Void"
+    "Lvl 5: Stealth",
+    "Lvl 5: Harmony"
   ],
   "arcanaZh": [
     "5級：宿命",
-    "5級：調和",
-    "5級：虛空"
+    "5級：隱匿",
+    "5級：調和"
   ],
   "spells": [
-    "Execute"
+    "Teleport"
   ],
   "spellsZh": [
-    "終結"
+    "傳送"
   ],
   "counters": [
     "Agudo",
@@ -299,11 +397,11 @@
   "tips": [
     "Ata (Tank): Tier B — 53.65% WR (Camp HOK).",
     "Lane: Clash Lane.",
-    "Build: Dragon's Rage, Blazing Cape, Eye of the Phoenix."
+    "Build: Boots of Resistance, Blazing Cape, Eye of the Phoenix."
   ],
   "tipsZh": [
     "阿塔（對抗路）：梯度 B，勝率 53.65%（Camp HOK）。",
-    "出裝：怒龍劍盾、紅蓮斗篷、不死鳥之眼."
+    "出裝：抵抗之靴、紅蓮斗篷、不死鳥之眼."
   ],
   "patchHistory": [
     {
@@ -384,7 +482,7 @@
     {
       "id": "faq-best-build",
       "question": "What is the best Ata build?",
-      "answer": "Recommended: Dragon's Rage, Blazing Cape, Eye of the Phoenix, Overlord's Platemail, Frigid Charge, Sage's Sanctuary."
+      "answer": "Recommended: Boots of Resistance, Blazing Cape, Eye of the Phoenix, Overlord's Platemail, Dragon's Rage, Longnight Guardian."
     },
     {
       "id": "faq-counter",
@@ -401,7 +499,7 @@
     {
       "id": "faq-best-build",
       "question": "阿塔 出裝怎麼搭配？",
-      "answer": "推薦：怒龍劍盾、紅蓮斗篷、不死鳥之眼、霸者重裝、冰霜衝擊、賢者的庇護."
+      "answer": "推薦：抵抗之靴、紅蓮斗篷、不死鳥之眼、霸者重裝、怒龍劍盾、永夜守護."
     },
     {
       "id": "faq-counter",
@@ -410,13 +508,13 @@
     }
   ],
   "metaAnalysis": [
-    "Ata win rate 53.65% (Camp HOK, 2026-08-19).",
+    "Ata win rate 53.65% (Camp HOK, 2026-08-20).",
     "Pick rate 0.58%.",
     "Ban rate 0.04%.",
     "Counters: Agudo, Meng Ya, Luara. Weak into: Jing, Wukong, Musashi."
   ],
   "metaAnalysisZh": [
-    "阿塔 勝率 53.65%（Camp HOK，2026-08-19）",
+    "阿塔 勝率 53.65%（Camp HOK，2026-08-20）",
     "選取率 0.58%",
     "禁用率 0.04%",
     "克制：Agudo、Meng Ya、Luara；被克制：Jing、Wukong、Musashi"
