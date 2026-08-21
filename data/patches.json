@@ -2,7 +2,7 @@
   "season": "S15",
   "currentSeason": "S15",
   "source": "Camp HOK bilingual (api-camp.honorofkings.com)",
-  "updated": "2026-08-20",
+  "updated": "2026-08-21",
   "heroCount": 116,
   "seasons": [
     {
@@ -3978,38 +3978,20 @@
       ]
     },
     {
-      "seasonName": "S4",
-      "seasonId": "4",
-      "changes": [
-        {
-          "heroSlug": "lam",
-          "heroName": "Lam",
-          "heroNameZh": "瀾",
-          "tag": "Stat Nerfs",
-          "change": "We've slightly reduced the Health recovery from Basic Attacks enhanced by Skill 2.",
-          "changeZh": null,
-          "detail": "We've slightly reduced the Health recovery from Basic Attacks enhanced by Skill 2.\nPrevious adjustments to Lam's skill stat bonuses made his gameplay more diverse, which was in line with our design expectations.We hope that the slight stat reductions this time round will give more opportunities to other heroes.",
-          "detailZh": null,
-          "versionName": "20240220",
-          "publishedAt": "2024-02-20T02:27:09Z"
-        }
-      ]
-    },
-    {
       "seasonName": "S3",
       "seasonId": "3",
       "changes": [
         {
-          "heroSlug": "lam",
-          "heroName": "Lam",
-          "heroNameZh": "瀾",
-          "tag": "Stat Buffs",
-          "change": "Increased Skill 1's base damage, reduced Skill 2's cooldown; adjusted the base damage, recovery, and equipment bonus multiplier for Skill 2 and the enhanced Basic Attacks; adjusted the base damage and equipment bonus multiplier for the Ultimate.",
+          "heroSlug": "marco-polo",
+          "heroName": "Marco Polo",
+          "heroNameZh": "馬可波羅",
+          "tag": "Stat Nerfs",
+          "change": "Reduced the level-up increment of his base Attack stat and his Skill 1 physical damage.",
           "changeZh": null,
-          "detail": "Lam is a little weak during early game in this version, which makes him less fun to play when your team is at a disadvantage. We boosted the base damage and recovery effects of his skills and hope this will enhance his early-to-mid game performance. We also adjusted the equipment bonus multiplier of some skills so he's not too powerful during late game.",
+          "detail": "Thanks to his skill's true damage mechanic, Marco Polo can equip multiple pieces of defensive equipment while still being able to deal lots of damage when poking and deliver tremendous burst damage during team fights. By mid to late game, Marco Polo is able to do just about everything the other marksmen can. By making some slight adjustments to his laning capabilities and late game strength, we hope to make this highly versatily marksman just a little bit less powerful.",
           "detailZh": null,
-          "versionName": "20231220",
-          "publishedAt": "2023-12-20T08:17:28Z"
+          "versionName": "20231122",
+          "publishedAt": "2023-11-22T12:01:46Z"
         }
       ]
     },
