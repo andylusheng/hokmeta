@@ -2,25 +2,13 @@
   "season": "S15",
   "currentSeason": "S15",
   "source": "Camp HOK bilingual (api-camp.honorofkings.com)",
-  "updated": "2026-08-21",
+  "updated": "2026-08-22",
   "heroCount": 116,
   "seasons": [
     {
       "seasonName": "S15",
       "seasonId": "15",
       "changes": [
-        {
-          "heroSlug": "feyd",
-          "heroName": "Feyd",
-          "heroNameZh": "暃",
-          "tag": "Stat Buffs",
-          "change": "Reduced skill cooldown",
-          "changeZh": "減少技能冷卻時間",
-          "detail": null,
-          "detailZh": null,
-          "versionName": "2026/07/16",
-          "publishedAt": "2026-07-16T01:00:00Z"
-        },
         {
           "heroSlug": "lapulapu",
           "heroName": "Lapulapu",
@@ -34,28 +22,16 @@
           "publishedAt": "2026-07-16T01:00:00Z"
         },
         {
-          "heroSlug": "nuwa",
-          "heroName": "Nuwa",
-          "heroNameZh": "女媧",
+          "heroSlug": "feyd",
+          "heroName": "Feyd",
+          "heroNameZh": "暃",
           "tag": "Stat Buffs",
-          "change": "Increased skill damage",
-          "changeZh": "提升技能傷害",
+          "change": "Reduced skill cooldown",
+          "changeZh": "減少技能冷卻時間",
           "detail": null,
           "detailZh": null,
           "versionName": "2026/07/16",
           "publishedAt": "2026-07-16T01:00:00Z"
-        },
-        {
-          "heroSlug": "sakeer",
-          "heroName": "Sakeer",
-          "heroNameZh": "桑啟",
-          "tag": "Stat Changes",
-          "change": "Adjusted skill recovery",
-          "changeZh": "調整技能回復",
-          "detail": null,
-          "detailZh": null,
-          "versionName": "2026/08/13",
-          "publishedAt": "2026-08-13T15:09:00Z"
         },
         {
           "heroSlug": "xuance",
@@ -70,6 +46,18 @@
           "publishedAt": "2026-08-13T15:09:00Z"
         },
         {
+          "heroSlug": "nuwa",
+          "heroName": "Nuwa",
+          "heroNameZh": "女媧",
+          "tag": "Stat Buffs",
+          "change": "Increased skill damage",
+          "changeZh": "提升技能傷害",
+          "detail": null,
+          "detailZh": null,
+          "versionName": "2026/07/16",
+          "publishedAt": "2026-07-16T01:00:00Z"
+        },
+        {
           "heroSlug": "zilong",
           "heroName": "Zilong",
           "heroNameZh": "趙雲",
@@ -80,18 +68,6 @@
           "detailZh": null,
           "versionName": "2026/07/30",
           "publishedAt": "2026-07-30T01:00:00Z"
-        },
-        {
-          "heroSlug": "meng-ya",
-          "heroName": "Meng Ya",
-          "heroNameZh": "蒙犽",
-          "tag": "Stat Changes",
-          "change": "Adjusted skill damage",
-          "changeZh": "調整技能傷害",
-          "detail": null,
-          "detailZh": null,
-          "versionName": "2026/08/13",
-          "publishedAt": "2026-08-13T15:09:00Z"
         },
         {
           "heroSlug": "li-xin",
@@ -118,72 +94,12 @@
           "publishedAt": "2026-07-02T00:00:00Z"
         },
         {
-          "heroSlug": "pei",
-          "heroName": "Pei",
-          "heroNameZh": "裴擒虎",
-          "tag": "Stat Nerfs",
-          "change": "Adjusted skill damage",
-          "changeZh": "調整技能傷害",
-          "detail": null,
-          "detailZh": null,
-          "versionName": "2026/06/17",
-          "publishedAt": "2026-06-17T01:00:00Z"
-        },
-        {
-          "heroSlug": "dun",
-          "heroName": "Dun",
-          "heroNameZh": "夏侯惇",
-          "tag": "Stat Changes",
-          "change": "Adjusted skill damage",
-          "changeZh": "調整技能傷害",
-          "detail": null,
-          "detailZh": null,
-          "versionName": "2026/07/30",
-          "publishedAt": "2026-07-30T01:00:00Z"
-        },
-        {
           "heroSlug": "sima-yi",
           "heroName": "Sima Yi",
           "heroNameZh": "司馬懿",
           "tag": "Mechanics Upgrade",
           "change": "Skill Mechanics Upgraded",
           "changeZh": "技能機制升級",
-          "detail": null,
-          "detailZh": null,
-          "versionName": "2026/06/17",
-          "publishedAt": "2026-06-17T01:00:00Z"
-        },
-        {
-          "heroSlug": "nezha",
-          "heroName": "Nezha",
-          "heroNameZh": "哪吒",
-          "tag": "Stat Nerfs",
-          "change": "Adjusted skill effect",
-          "changeZh": "調整技能效果",
-          "detail": null,
-          "detailZh": null,
-          "versionName": "2026/06/17",
-          "publishedAt": "2026-06-17T01:00:00Z"
-        },
-        {
-          "heroSlug": "lian-po",
-          "heroName": "Lian Po",
-          "heroNameZh": "廉頗",
-          "tag": "Stat Changes",
-          "change": "Adjusted skill damage",
-          "changeZh": "調整技能傷害",
-          "detail": null,
-          "detailZh": null,
-          "versionName": "2026/07/30",
-          "publishedAt": "2026-07-30T01:00:00Z"
-        },
-        {
-          "heroSlug": "lian-po",
-          "heroName": "Lian Po",
-          "heroNameZh": "廉頗",
-          "tag": "Stat Buffs",
-          "change": "Increased skill damage",
-          "changeZh": "提升技能傷害",
           "detail": null,
           "detailZh": null,
           "versionName": "2026/06/17",
@@ -202,52 +118,16 @@
           "publishedAt": "2026-07-02T00:00:00Z"
         },
         {
-          "heroSlug": "li-bai",
-          "heroName": "Li Bai",
-          "heroNameZh": "李白",
-          "tag": "Mechanics Upgrade",
-          "change": "Adjusted Skill Damage",
-          "changeZh": "調整技能效果",
-          "detail": null,
-          "detailZh": null,
-          "versionName": "2026/07/30",
-          "publishedAt": "2026-07-30T01:00:00Z"
-        },
-        {
-          "heroSlug": "shi",
-          "heroName": "Shi",
-          "heroNameZh": "西施",
-          "tag": "Stat Buffs",
-          "change": "Increased skill damage",
-          "changeZh": "提升技能傷害",
-          "detail": null,
-          "detailZh": null,
-          "versionName": "2026/07/02",
-          "publishedAt": "2026-07-02T00:00:00Z"
-        },
-        {
-          "heroSlug": "luban-no-7",
-          "heroName": "Luban No.7",
-          "heroNameZh": "魯班七號",
+          "heroSlug": "sakeer",
+          "heroName": "Sakeer",
+          "heroNameZh": "桑啟",
           "tag": "Stat Changes",
-          "change": "Adjusted skill damage",
-          "changeZh": "調整技能傷害",
+          "change": "Adjusted skill recovery",
+          "changeZh": "調整技能回復",
           "detail": null,
           "detailZh": null,
-          "versionName": "2026/07/16",
-          "publishedAt": "2026-07-16T01:00:00Z"
-        },
-        {
-          "heroSlug": "wuyan",
-          "heroName": "Wuyan",
-          "heroNameZh": "鍾無艷",
-          "tag": "Stat Buffs",
-          "change": "Increased skill damage",
-          "changeZh": "提升技能傷害",
-          "detail": null,
-          "detailZh": null,
-          "versionName": "2026/07/30",
-          "publishedAt": "2026-07-30T01:00:00Z"
+          "versionName": "2026/08/13",
+          "publishedAt": "2026-08-13T15:09:00Z"
         },
         {
           "heroSlug": "dharma",
@@ -262,9 +142,21 @@
           "publishedAt": "2026-08-13T15:09:00Z"
         },
         {
-          "heroSlug": "erin",
-          "heroName": "Erin",
-          "heroNameZh": "艾琳",
+          "heroSlug": "dun",
+          "heroName": "Dun",
+          "heroNameZh": "夏侯惇",
+          "tag": "Stat Changes",
+          "change": "Adjusted skill damage",
+          "changeZh": "調整技能傷害",
+          "detail": null,
+          "detailZh": null,
+          "versionName": "2026/07/30",
+          "publishedAt": "2026-07-30T01:00:00Z"
+        },
+        {
+          "heroSlug": "meng-ya",
+          "heroName": "Meng Ya",
+          "heroNameZh": "蒙犽",
           "tag": "Stat Changes",
           "change": "Adjusted skill damage",
           "changeZh": "調整技能傷害",
@@ -274,16 +166,64 @@
           "publishedAt": "2026-08-13T15:09:00Z"
         },
         {
-          "heroSlug": "cai-yan",
-          "heroName": "Cai Yan",
-          "heroNameZh": "蔡文姬",
-          "tag": "Stat Buffs",
-          "change": "Adjusted skill cooldown",
-          "changeZh": "調整技能冷卻時間",
+          "heroSlug": "lian-po",
+          "heroName": "Lian Po",
+          "heroNameZh": "廉頗",
+          "tag": "Stat Changes",
+          "change": "Adjusted skill damage",
+          "changeZh": "調整技能傷害",
           "detail": null,
           "detailZh": null,
           "versionName": "2026/07/30",
           "publishedAt": "2026-07-30T01:00:00Z"
+        },
+        {
+          "heroSlug": "lian-po",
+          "heroName": "Lian Po",
+          "heroNameZh": "廉頗",
+          "tag": "Stat Buffs",
+          "change": "Increased skill damage",
+          "changeZh": "提升技能傷害",
+          "detail": null,
+          "detailZh": null,
+          "versionName": "2026/06/17",
+          "publishedAt": "2026-06-17T01:00:00Z"
+        },
+        {
+          "heroSlug": "luban-no-7",
+          "heroName": "Luban No.7",
+          "heroNameZh": "魯班七號",
+          "tag": "Stat Changes",
+          "change": "Adjusted skill damage",
+          "changeZh": "調整技能傷害",
+          "detail": null,
+          "detailZh": null,
+          "versionName": "2026/07/16",
+          "publishedAt": "2026-07-16T01:00:00Z"
+        },
+        {
+          "heroSlug": "nezha",
+          "heroName": "Nezha",
+          "heroNameZh": "哪吒",
+          "tag": "Stat Nerfs",
+          "change": "Adjusted skill effect",
+          "changeZh": "調整技能效果",
+          "detail": null,
+          "detailZh": null,
+          "versionName": "2026/06/17",
+          "publishedAt": "2026-06-17T01:00:00Z"
+        },
+        {
+          "heroSlug": "shi",
+          "heroName": "Shi",
+          "heroNameZh": "西施",
+          "tag": "Stat Buffs",
+          "change": "Increased skill damage",
+          "changeZh": "提升技能傷害",
+          "detail": null,
+          "detailZh": null,
+          "versionName": "2026/07/02",
+          "publishedAt": "2026-07-02T00:00:00Z"
         },
         {
           "heroSlug": "chicha",
@@ -298,48 +238,60 @@
           "publishedAt": "2026-07-16T01:00:00Z"
         },
         {
-          "heroSlug": "liu-bang",
-          "heroName": "Liu Bang",
-          "heroNameZh": "劉邦",
-          "tag": "Stat Buffs",
-          "change": "Increased skill damage",
-          "changeZh": "提升技能傷害",
-          "detail": null,
-          "detailZh": null,
-          "versionName": "2026/07/16",
-          "publishedAt": "2026-07-16T01:00:00Z"
-        },
-        {
-          "heroSlug": "wang-zhaojun",
-          "heroName": "Wang Zhaojun",
-          "heroNameZh": "王昭君",
-          "tag": "Stat Changes",
-          "change": "Adjusted skill cooldown",
-          "changeZh": "調整技能冷卻時間",
-          "detail": null,
-          "detailZh": null,
-          "versionName": "2026/07/16",
-          "publishedAt": "2026-07-16T01:00:00Z"
-        },
-        {
-          "heroSlug": "ming",
-          "heroName": "Ming",
-          "heroNameZh": "明世隱",
-          "tag": "Stat Buffs",
-          "change": "Increased skill damage",
-          "changeZh": "提升技能傷害",
-          "detail": null,
-          "detailZh": null,
-          "versionName": "2026/06/17",
-          "publishedAt": "2026-06-17T01:00:00Z"
-        },
-        {
           "heroSlug": "fatih",
           "heroName": "Fatih",
           "heroNameZh": "法提赫",
           "tag": "Stat Buffs",
           "change": "Increased skill recovery effect",
           "changeZh": "提升技能回復效果",
+          "detail": null,
+          "detailZh": null,
+          "versionName": "2026/08/13",
+          "publishedAt": "2026-08-13T15:09:00Z"
+        },
+        {
+          "heroSlug": "li-bai",
+          "heroName": "Li Bai",
+          "heroNameZh": "李白",
+          "tag": "Mechanics Upgrade",
+          "change": "Adjusted Skill Damage",
+          "changeZh": "調整技能效果",
+          "detail": null,
+          "detailZh": null,
+          "versionName": "2026/07/30",
+          "publishedAt": "2026-07-30T01:00:00Z"
+        },
+        {
+          "heroSlug": "pei",
+          "heroName": "Pei",
+          "heroNameZh": "裴擒虎",
+          "tag": "Stat Nerfs",
+          "change": "Adjusted skill damage",
+          "changeZh": "調整技能傷害",
+          "detail": null,
+          "detailZh": null,
+          "versionName": "2026/06/17",
+          "publishedAt": "2026-06-17T01:00:00Z"
+        },
+        {
+          "heroSlug": "cai-yan",
+          "heroName": "Cai Yan",
+          "heroNameZh": "蔡文姬",
+          "tag": "Stat Buffs",
+          "change": "Adjusted skill cooldown",
+          "changeZh": "調整技能冷卻時間",
+          "detail": null,
+          "detailZh": null,
+          "versionName": "2026/07/30",
+          "publishedAt": "2026-07-30T01:00:00Z"
+        },
+        {
+          "heroSlug": "erin",
+          "heroName": "Erin",
+          "heroNameZh": "艾琳",
+          "tag": "Stat Changes",
+          "change": "Adjusted skill damage",
+          "changeZh": "調整技能傷害",
           "detail": null,
           "detailZh": null,
           "versionName": "2026/08/13",
@@ -358,6 +310,42 @@
           "publishedAt": "2026-07-30T01:00:00Z"
         },
         {
+          "heroSlug": "wuyan",
+          "heroName": "Wuyan",
+          "heroNameZh": "鍾無艷",
+          "tag": "Stat Buffs",
+          "change": "Increased skill damage",
+          "changeZh": "提升技能傷害",
+          "detail": null,
+          "detailZh": null,
+          "versionName": "2026/07/30",
+          "publishedAt": "2026-07-30T01:00:00Z"
+        },
+        {
+          "heroSlug": "wang-zhaojun",
+          "heroName": "Wang Zhaojun",
+          "heroNameZh": "王昭君",
+          "tag": "Stat Changes",
+          "change": "Adjusted skill cooldown",
+          "changeZh": "調整技能冷卻時間",
+          "detail": null,
+          "detailZh": null,
+          "versionName": "2026/07/16",
+          "publishedAt": "2026-07-16T01:00:00Z"
+        },
+        {
+          "heroSlug": "liu-bang",
+          "heroName": "Liu Bang",
+          "heroNameZh": "劉邦",
+          "tag": "Stat Buffs",
+          "change": "Increased skill damage",
+          "changeZh": "提升技能傷害",
+          "detail": null,
+          "detailZh": null,
+          "versionName": "2026/07/16",
+          "publishedAt": "2026-07-16T01:00:00Z"
+        },
+        {
           "heroSlug": "liu-bei",
           "heroName": "Liu Bei",
           "heroNameZh": "劉備",
@@ -370,52 +358,16 @@
           "publishedAt": "2026-07-02T00:00:00Z"
         },
         {
-          "heroSlug": "hou-yi",
-          "heroName": "Hou Yi",
-          "heroNameZh": "后羿",
-          "tag": "Stat Changes",
-          "change": "Adjusted skill damage",
-          "changeZh": "調整技能傷害",
-          "detail": null,
-          "detailZh": null,
-          "versionName": "2026/08/13",
-          "publishedAt": "2026-08-13T15:09:00Z"
-        },
-        {
-          "heroSlug": "devara",
-          "heroName": "Devara",
-          "heroNameZh": "諦梵羅",
+          "heroSlug": "ming",
+          "heroName": "Ming",
+          "heroNameZh": "明世隱",
           "tag": "Stat Buffs",
-          "change": "Upgraded Skill Effects",
+          "change": "Increased skill damage",
           "changeZh": "提升技能傷害",
           "detail": null,
           "detailZh": null,
-          "versionName": "2026/07/16",
-          "publishedAt": "2026-07-16T01:00:00Z"
-        },
-        {
-          "heroSlug": "luara",
-          "heroName": "Luara",
-          "heroNameZh": "盧雅那",
-          "tag": "Mechanics Upgrade",
-          "change": "Upgraded Skill Effects",
-          "changeZh": "提升技能傷害",
-          "detail": null,
-          "detailZh": null,
-          "versionName": "2026/08/13",
-          "publishedAt": "2026-08-13T15:09:00Z"
-        },
-        {
-          "heroSlug": "sun-bin",
-          "heroName": "Sun Bin",
-          "heroNameZh": "孫臏",
-          "tag": "Stat Changes",
-          "change": "Adjusted Skill Damage",
-          "changeZh": "調整技能效果",
-          "detail": null,
-          "detailZh": null,
-          "versionName": "2026/07/02",
-          "publishedAt": "2026-07-02T00:00:00Z"
+          "versionName": "2026/06/17",
+          "publishedAt": "2026-06-17T01:00:00Z"
         },
         {
           "heroSlug": "augran",
@@ -430,6 +382,42 @@
           "publishedAt": "2026-06-17T01:00:00Z"
         },
         {
+          "heroSlug": "aoyin",
+          "heroName": "Ao'yin",
+          "heroNameZh": "敖隱",
+          "tag": "Mechanics Upgrade",
+          "change": "Upgraded Skill Effects",
+          "changeZh": "提升技能傷害",
+          "detail": null,
+          "detailZh": null,
+          "versionName": "2026/07/30",
+          "publishedAt": "2026-07-30T01:00:00Z"
+        },
+        {
+          "heroSlug": "devara",
+          "heroName": "Devara",
+          "heroNameZh": "諦梵羅",
+          "tag": "Stat Buffs",
+          "change": "Upgraded Skill Effects",
+          "changeZh": "提升技能傷害",
+          "detail": null,
+          "detailZh": null,
+          "versionName": "2026/07/16",
+          "publishedAt": "2026-07-16T01:00:00Z"
+        },
+        {
+          "heroSlug": "hou-yi",
+          "heroName": "Hou Yi",
+          "heroNameZh": "后羿",
+          "tag": "Stat Changes",
+          "change": "Adjusted skill damage",
+          "changeZh": "調整技能傷害",
+          "detail": null,
+          "detailZh": null,
+          "versionName": "2026/08/13",
+          "publishedAt": "2026-08-13T15:09:00Z"
+        },
+        {
           "heroSlug": "arthur",
           "heroName": "Arthur",
           "heroNameZh": "亞瑟",
@@ -442,16 +430,16 @@
           "publishedAt": "2026-07-30T01:00:00Z"
         },
         {
-          "heroSlug": "aoyin",
-          "heroName": "Ao'yin",
-          "heroNameZh": "敖隱",
-          "tag": "Mechanics Upgrade",
-          "change": "Upgraded Skill Effects",
-          "changeZh": "提升技能傷害",
+          "heroSlug": "sun-bin",
+          "heroName": "Sun Bin",
+          "heroNameZh": "孫臏",
+          "tag": "Stat Changes",
+          "change": "Adjusted Skill Damage",
+          "changeZh": "調整技能效果",
           "detail": null,
           "detailZh": null,
-          "versionName": "2026/07/30",
-          "publishedAt": "2026-07-30T01:00:00Z"
+          "versionName": "2026/07/02",
+          "publishedAt": "2026-07-02T00:00:00Z"
         },
         {
           "heroSlug": "lu-bu",
@@ -524,6 +512,18 @@
           "detailZh": null,
           "versionName": "2026/07/02",
           "publishedAt": "2026-07-02T00:00:00Z"
+        },
+        {
+          "heroSlug": "luara",
+          "heroName": "Luara",
+          "heroNameZh": "盧雅那",
+          "tag": "Mechanics Upgrade",
+          "change": "Upgraded Skill Effects",
+          "changeZh": "提升技能傷害",
+          "detail": null,
+          "detailZh": null,
+          "versionName": "2026/08/13",
+          "publishedAt": "2026-08-13T15:09:00Z"
         }
       ]
     },
@@ -544,18 +544,6 @@
           "publishedAt": "2026-05-14T01:00:00Z"
         },
         {
-          "heroSlug": "ying",
-          "heroName": "Ying",
-          "heroNameZh": "雲纓",
-          "tag": "Mechanics Upgrade",
-          "change": "Skill Mechanics Upgraded",
-          "changeZh": "技能機制升級",
-          "detail": null,
-          "detailZh": null,
-          "versionName": "2026/05/14",
-          "publishedAt": "2026-05-14T01:00:00Z"
-        },
-        {
           "heroSlug": "zilong",
           "heroName": "Zilong",
           "heroNameZh": "趙雲",
@@ -568,16 +556,28 @@
           "publishedAt": "2026-03-26T01:00:00Z"
         },
         {
-          "heroSlug": "pei",
-          "heroName": "Pei",
-          "heroNameZh": "裴擒虎",
-          "tag": "Stat Nerfs",
-          "change": "Adjusted passive damage",
-          "changeZh": "調整被動傷害",
+          "heroSlug": "ying",
+          "heroName": "Ying",
+          "heroNameZh": "雲纓",
+          "tag": "Mechanics Upgrade",
+          "change": "Skill Mechanics Upgraded",
+          "changeZh": "技能機制升級",
           "detail": null,
           "detailZh": null,
-          "versionName": "2026/04/09",
-          "publishedAt": "2026-04-09T01:00:00Z"
+          "versionName": "2026/05/14",
+          "publishedAt": "2026-05-14T01:00:00Z"
+        },
+        {
+          "heroSlug": "dharma",
+          "heroName": "Dharma",
+          "heroNameZh": "達摩",
+          "tag": "Stat Nerfs",
+          "change": "Adjusted skill damage",
+          "changeZh": "調整技能傷害",
+          "detail": null,
+          "detailZh": null,
+          "versionName": "2026/03/11",
+          "publishedAt": "2026-03-11T03:17:26Z"
         },
         {
           "heroSlug": "dun",
@@ -598,30 +598,6 @@
           "tag": "Stat Buffs",
           "change": "Increased skill damage",
           "changeZh": "提升技能傷害",
-          "detail": null,
-          "detailZh": null,
-          "versionName": "2026/03/11",
-          "publishedAt": "2026-03-11T03:17:26Z"
-        },
-        {
-          "heroSlug": "nezha",
-          "heroName": "Nezha",
-          "heroNameZh": "哪吒",
-          "tag": "Mechanics Upgrade",
-          "change": "Skill Mechanics Upgraded",
-          "changeZh": "技能機制升級",
-          "detail": null,
-          "detailZh": null,
-          "versionName": "2026/03/11",
-          "publishedAt": "2026-03-11T03:17:26Z"
-        },
-        {
-          "heroSlug": "fuzi",
-          "heroName": "Fuzi",
-          "heroNameZh": "老夫子",
-          "tag": "Stat Nerfs",
-          "change": "Adjusted skill damage",
-          "changeZh": "調整技能傷害",
           "detail": null,
           "detailZh": null,
           "versionName": "2026/03/11",
@@ -652,6 +628,18 @@
           "publishedAt": "2026-05-28T01:00:00Z"
         },
         {
+          "heroSlug": "nezha",
+          "heroName": "Nezha",
+          "heroNameZh": "哪吒",
+          "tag": "Mechanics Upgrade",
+          "change": "Skill Mechanics Upgraded",
+          "changeZh": "技能機制升級",
+          "detail": null,
+          "detailZh": null,
+          "versionName": "2026/03/11",
+          "publishedAt": "2026-03-11T03:17:26Z"
+        },
+        {
           "heroSlug": "gao",
           "heroName": "Gao",
           "heroNameZh": "高漸離",
@@ -664,21 +652,9 @@
           "publishedAt": "2026-05-14T01:00:00Z"
         },
         {
-          "heroSlug": "angela",
-          "heroName": "Angela",
-          "heroNameZh": "安琪拉",
-          "tag": "Stat Buffs",
-          "change": "Increased skill damage",
-          "changeZh": "提升技能傷害",
-          "detail": null,
-          "detailZh": null,
-          "versionName": "2026/04/29",
-          "publishedAt": "2026-04-29T01:00:00Z"
-        },
-        {
-          "heroSlug": "dharma",
-          "heroName": "Dharma",
-          "heroNameZh": "達摩",
+          "heroSlug": "fuzi",
+          "heroName": "Fuzi",
+          "heroNameZh": "老夫子",
           "tag": "Stat Nerfs",
           "change": "Adjusted skill damage",
           "changeZh": "調整技能傷害",
@@ -686,18 +662,6 @@
           "detailZh": null,
           "versionName": "2026/03/11",
           "publishedAt": "2026-03-11T03:17:26Z"
-        },
-        {
-          "heroSlug": "daji",
-          "heroName": "Daji",
-          "heroNameZh": "妲己",
-          "tag": "Stat Buffs",
-          "change": "Adjusted skill cooldown",
-          "changeZh": "調整技能冷卻時間",
-          "detail": null,
-          "detailZh": null,
-          "versionName": "2026/05/28",
-          "publishedAt": "2026-05-28T01:00:00Z"
         },
         {
           "heroSlug": "chicha",
@@ -712,18 +676,6 @@
           "publishedAt": "2026-03-26T01:00:00Z"
         },
         {
-          "heroSlug": "gan-mo",
-          "heroName": "Gan & Mo",
-          "heroNameZh": "干將莫邪",
-          "tag": "Stat Nerfs",
-          "change": "Adjusted skill damage",
-          "changeZh": "調整技能傷害",
-          "detail": null,
-          "detailZh": null,
-          "versionName": "2026/03/11",
-          "publishedAt": "2026-03-11T03:17:26Z"
-        },
-        {
           "heroSlug": "fatih",
           "heroName": "Fatih",
           "heroNameZh": "法提赫",
@@ -734,6 +686,42 @@
           "detailZh": null,
           "versionName": "2026/03/11",
           "publishedAt": "2026-03-11T03:17:26Z"
+        },
+        {
+          "heroSlug": "angela",
+          "heroName": "Angela",
+          "heroNameZh": "安琪拉",
+          "tag": "Stat Buffs",
+          "change": "Increased skill damage",
+          "changeZh": "提升技能傷害",
+          "detail": null,
+          "detailZh": null,
+          "versionName": "2026/04/29",
+          "publishedAt": "2026-04-29T01:00:00Z"
+        },
+        {
+          "heroSlug": "pei",
+          "heroName": "Pei",
+          "heroNameZh": "裴擒虎",
+          "tag": "Stat Nerfs",
+          "change": "Adjusted passive damage",
+          "changeZh": "調整被動傷害",
+          "detail": null,
+          "detailZh": null,
+          "versionName": "2026/04/09",
+          "publishedAt": "2026-04-09T01:00:00Z"
+        },
+        {
+          "heroSlug": "daji",
+          "heroName": "Daji",
+          "heroNameZh": "妲己",
+          "tag": "Stat Buffs",
+          "change": "Adjusted skill cooldown",
+          "changeZh": "調整技能冷卻時間",
+          "detail": null,
+          "detailZh": null,
+          "versionName": "2026/05/28",
+          "publishedAt": "2026-05-28T01:00:00Z"
         },
         {
           "heroSlug": "kaizer",
@@ -758,6 +746,18 @@
           "detailZh": null,
           "versionName": "2026/03/26",
           "publishedAt": "2026-03-26T01:00:00Z"
+        },
+        {
+          "heroSlug": "gan-mo",
+          "heroName": "Gan & Mo",
+          "heroNameZh": "干將莫邪",
+          "tag": "Stat Nerfs",
+          "change": "Adjusted skill damage",
+          "changeZh": "調整技能傷害",
+          "detail": null,
+          "detailZh": null,
+          "versionName": "2026/03/11",
+          "publishedAt": "2026-03-11T03:17:26Z"
         },
         {
           "heroSlug": "allain",
@@ -832,21 +832,69 @@
           "publishedAt": "2026-04-09T01:00:00Z"
         },
         {
-          "heroSlug": "luara",
-          "heroName": "Luara",
-          "heroNameZh": "盧雅那",
+          "heroSlug": "charlotte",
+          "heroName": "Charlotte",
+          "heroNameZh": "夏洛特",
           "tag": "Stat Buffs",
-          "change": "Reduced Mana consumption and adjusted skill damage.",
-          "changeZh": "減少法力消耗，調整技能傷害",
+          "change": "Increased skill damage and recovery",
+          "changeZh": "提升技能傷害和回復",
+          "detail": null,
+          "detailZh": null,
+          "versionName": "2026/04/29",
+          "publishedAt": "2026-04-29T01:00:00Z"
+        },
+        {
+          "heroSlug": "marco-polo",
+          "heroName": "Marco Polo",
+          "heroNameZh": "馬可波羅",
+          "tag": "Stat Nerfs",
+          "change": "Adjusted skill damage",
+          "changeZh": "調整技能傷害",
+          "detail": null,
+          "detailZh": null,
+          "versionName": "2026/03/26",
+          "publishedAt": "2026-03-26T01:00:00Z"
+        },
+        {
+          "heroSlug": "nakoruru",
+          "heroName": "Nakoruru",
+          "heroNameZh": "娜可露露",
+          "tag": "Stat Buffs",
+          "change": "Increased skill damage",
+          "changeZh": "提升技能傷害",
+          "detail": null,
+          "detailZh": null,
+          "versionName": "2026/05/14",
+          "publishedAt": "2026-05-14T01:00:00Z"
+        },
+        {
+          "heroSlug": "arthur",
+          "heroName": "Arthur",
+          "heroNameZh": "亞瑟",
+          "tag": "Stat Buffs",
+          "change": "Increased Health recovery and skill damage",
+          "changeZh": "提升生命值回復和技能傷害",
           "detail": null,
           "detailZh": null,
           "versionName": "2026/03/11",
           "publishedAt": "2026-03-11T03:17:26Z"
         },
         {
-          "heroSlug": "charlotte",
-          "heroName": "Charlotte",
-          "heroNameZh": "夏洛特",
+          "heroSlug": "zhang-fei",
+          "heroName": "Zhang Fei",
+          "heroNameZh": "張飛",
+          "tag": "Stat Buffs",
+          "change": "Increased skill damage",
+          "changeZh": "提升技能傷害",
+          "detail": null,
+          "detailZh": null,
+          "versionName": "2026/04/29",
+          "publishedAt": "2026-04-29T01:00:00Z"
+        },
+        {
+          "heroSlug": "lu-bu",
+          "heroName": "Lu Bu",
+          "heroNameZh": "呂布",
           "tag": "Stat Buffs",
           "change": "Increased skill damage and recovery",
           "changeZh": "提升技能傷害和回復",
@@ -868,64 +916,16 @@
           "publishedAt": "2026-05-28T01:00:00Z"
         },
         {
-          "heroSlug": "nakoruru",
-          "heroName": "Nakoruru",
-          "heroNameZh": "娜可露露",
+          "heroSlug": "lady-sun",
+          "heroName": "Lady Sun",
+          "heroNameZh": "孫尚香",
           "tag": "Stat Buffs",
           "change": "Increased skill damage",
           "changeZh": "提升技能傷害",
           "detail": null,
           "detailZh": null,
-          "versionName": "2026/05/14",
-          "publishedAt": "2026-05-14T01:00:00Z"
-        },
-        {
-          "heroSlug": "marco-polo",
-          "heroName": "Marco Polo",
-          "heroNameZh": "馬可波羅",
-          "tag": "Stat Nerfs",
-          "change": "Adjusted skill damage",
-          "changeZh": "調整技能傷害",
-          "detail": null,
-          "detailZh": null,
-          "versionName": "2026/03/26",
-          "publishedAt": "2026-03-26T01:00:00Z"
-        },
-        {
-          "heroSlug": "zhang-fei",
-          "heroName": "Zhang Fei",
-          "heroNameZh": "張飛",
-          "tag": "Stat Buffs",
-          "change": "Increased skill damage",
-          "changeZh": "提升技能傷害",
-          "detail": null,
-          "detailZh": null,
-          "versionName": "2026/04/29",
-          "publishedAt": "2026-04-29T01:00:00Z"
-        },
-        {
-          "heroSlug": "arthur",
-          "heroName": "Arthur",
-          "heroNameZh": "亞瑟",
-          "tag": "Stat Buffs",
-          "change": "Increased Health recovery and skill damage",
-          "changeZh": "提升生命值回復和技能傷害",
-          "detail": null,
-          "detailZh": null,
-          "versionName": "2026/03/11",
-          "publishedAt": "2026-03-11T03:17:26Z"
-        },
-        {
-          "heroSlug": "lu-bu",
-          "heroName": "Lu Bu",
-          "heroNameZh": "呂布",
-          "tag": "Stat Buffs",
-          "change": "Increased skill damage and recovery",
-          "changeZh": "提升技能傷害和回復",
-          "detail": null,
-          "detailZh": null,
-          "versionName": "2026/04/29",
-          "publishedAt": "2026-04-29T01:00:00Z"
+          "versionName": "2026/04/09",
+          "publishedAt": "2026-04-09T01:00:00Z"
         },
         {
           "heroSlug": "flowborn-tank",
@@ -938,18 +938,6 @@
           "detailZh": null,
           "versionName": "2026/05/14",
           "publishedAt": "2026-05-14T01:00:00Z"
-        },
-        {
-          "heroSlug": "lady-sun",
-          "heroName": "Lady Sun",
-          "heroNameZh": "孫尚香",
-          "tag": "Stat Buffs",
-          "change": "Increased skill damage",
-          "changeZh": "提升技能傷害",
-          "detail": null,
-          "detailZh": null,
-          "versionName": "2026/04/09",
-          "publishedAt": "2026-04-09T01:00:00Z"
         },
         {
           "heroSlug": "gao-changgong",
@@ -998,6 +986,18 @@
           "detailZh": null,
           "versionName": "2026/04/29",
           "publishedAt": "2026-04-29T01:00:00Z"
+        },
+        {
+          "heroSlug": "luara",
+          "heroName": "Luara",
+          "heroNameZh": "盧雅那",
+          "tag": "Stat Buffs",
+          "change": "Reduced Mana consumption and adjusted skill damage.",
+          "changeZh": "減少法力消耗，調整技能傷害",
+          "detail": null,
+          "detailZh": null,
+          "versionName": "2026/03/11",
+          "publishedAt": "2026-03-11T03:17:26Z"
         }
       ]
     },
@@ -1016,18 +1016,6 @@
           "detailZh": null,
           "versionName": "2025/12/16",
           "publishedAt": "2025-12-16T01:00:00Z"
-        },
-        {
-          "heroSlug": "ata",
-          "heroName": "Ata",
-          "heroNameZh": "阿塔",
-          "tag": "Stat Buffs",
-          "change": "Upgraded Skill Effects",
-          "changeZh": "提升技能傷害",
-          "detail": null,
-          "detailZh": null,
-          "versionName": "2026/01/08",
-          "publishedAt": "2026-01-08T01:00:00Z"
         },
         {
           "heroSlug": "garo",
@@ -1054,6 +1042,18 @@
           "publishedAt": "2025-12-16T01:00:00Z"
         },
         {
+          "heroSlug": "ata",
+          "heroName": "Ata",
+          "heroNameZh": "阿塔",
+          "tag": "Stat Buffs",
+          "change": "Upgraded Skill Effects",
+          "changeZh": "提升技能傷害",
+          "detail": null,
+          "detailZh": null,
+          "versionName": "2026/01/08",
+          "publishedAt": "2026-01-08T01:00:00Z"
+        },
+        {
           "heroSlug": "meng-ya",
           "heroName": "Meng Ya",
           "heroNameZh": "蒙犽",
@@ -1064,30 +1064,6 @@
           "detailZh": null,
           "versionName": "2025/12/16",
           "publishedAt": "2025-12-16T01:00:00Z"
-        },
-        {
-          "heroSlug": "agudo",
-          "heroName": "Agudo",
-          "heroNameZh": "阿古朵",
-          "tag": "Stat Changes",
-          "change": "Adjusted Skill Damage",
-          "changeZh": "調整技能傷害",
-          "detail": null,
-          "detailZh": null,
-          "versionName": "2025/12/16",
-          "publishedAt": "2025-12-16T01:00:00Z"
-        },
-        {
-          "heroSlug": "fuzi",
-          "heroName": "Fuzi",
-          "heroNameZh": "老夫子",
-          "tag": "Stat Changes",
-          "change": "Adjusted Skill Damage",
-          "changeZh": "調整技能傷害",
-          "detail": null,
-          "detailZh": null,
-          "versionName": "2026/01/08",
-          "publishedAt": "2026-01-08T01:00:00Z"
         },
         {
           "heroSlug": "flowborn-marksman",
@@ -1138,6 +1114,30 @@
           "publishedAt": "2025-12-16T01:00:00Z"
         },
         {
+          "heroSlug": "consort-yu",
+          "heroName": "Consort Yu",
+          "heroNameZh": "虞姬",
+          "tag": "Stat Changes",
+          "change": "Adjusted Skill Damage",
+          "changeZh": "調整技能傷害",
+          "detail": null,
+          "detailZh": null,
+          "versionName": "2026/01/22",
+          "publishedAt": "2026-01-22T01:00:00Z"
+        },
+        {
+          "heroSlug": "consort-yu",
+          "heroName": "Consort Yu",
+          "heroNameZh": "虞姬",
+          "tag": "Stat Changes",
+          "change": "Adjusted Skill Damage",
+          "changeZh": "調整技能傷害",
+          "detail": null,
+          "detailZh": null,
+          "versionName": "2025/12/16",
+          "publishedAt": "2025-12-16T01:00:00Z"
+        },
+        {
           "heroSlug": "gao",
           "heroName": "Gao",
           "heroNameZh": "高漸離",
@@ -1150,21 +1150,21 @@
           "publishedAt": "2026-01-22T01:00:00Z"
         },
         {
-          "heroSlug": "wuyan",
-          "heroName": "Wuyan",
-          "heroNameZh": "鍾無艷",
-          "tag": "Stat Buffs",
+          "heroSlug": "fuzi",
+          "heroName": "Fuzi",
+          "heroNameZh": "老夫子",
+          "tag": "Stat Changes",
           "change": "Adjusted Skill Damage",
           "changeZh": "調整技能傷害",
           "detail": null,
           "detailZh": null,
-          "versionName": "2026/01/22",
-          "publishedAt": "2026-01-22T01:00:00Z"
+          "versionName": "2026/01/08",
+          "publishedAt": "2026-01-08T01:00:00Z"
         },
         {
-          "heroSlug": "erin",
-          "heroName": "Erin",
-          "heroNameZh": "艾琳",
+          "heroSlug": "agudo",
+          "heroName": "Agudo",
+          "heroNameZh": "阿古朵",
           "tag": "Stat Changes",
           "change": "Adjusted Skill Damage",
           "changeZh": "調整技能傷害",
@@ -1172,18 +1172,6 @@
           "detailZh": null,
           "versionName": "2025/12/16",
           "publishedAt": "2025-12-16T01:00:00Z"
-        },
-        {
-          "heroSlug": "bai-qi",
-          "heroName": "Bai Qi",
-          "heroNameZh": "白起",
-          "tag": "Stat Changes",
-          "change": "Adjusted skill damage and recovery",
-          "changeZh": "調整技能傷害和回復",
-          "detail": null,
-          "detailZh": null,
-          "versionName": "2026/02/05",
-          "publishedAt": "2026-02-05T01:00:00Z"
         },
         {
           "heroSlug": "chicha",
@@ -1198,42 +1186,6 @@
           "publishedAt": "2026-02-05T01:00:00Z"
         },
         {
-          "heroSlug": "liu-bang",
-          "heroName": "Liu Bang",
-          "heroNameZh": "劉邦",
-          "tag": "Stat Buffs",
-          "change": "Increased skill damage",
-          "changeZh": "提升技能傷害",
-          "detail": null,
-          "detailZh": null,
-          "versionName": "2026/02/05",
-          "publishedAt": "2026-02-05T01:00:00Z"
-        },
-        {
-          "heroSlug": "consort-yu",
-          "heroName": "Consort Yu",
-          "heroNameZh": "虞姬",
-          "tag": "Stat Changes",
-          "change": "Adjusted Skill Damage",
-          "changeZh": "調整技能傷害",
-          "detail": null,
-          "detailZh": null,
-          "versionName": "2026/01/22",
-          "publishedAt": "2026-01-22T01:00:00Z"
-        },
-        {
-          "heroSlug": "consort-yu",
-          "heroName": "Consort Yu",
-          "heroNameZh": "虞姬",
-          "tag": "Stat Changes",
-          "change": "Adjusted Skill Damage",
-          "changeZh": "調整技能傷害",
-          "detail": null,
-          "detailZh": null,
-          "versionName": "2025/12/16",
-          "publishedAt": "2025-12-16T01:00:00Z"
-        },
-        {
           "heroSlug": "fatih",
           "heroName": "Fatih",
           "heroNameZh": "法提赫",
@@ -1246,16 +1198,40 @@
           "publishedAt": "2026-01-08T01:00:00Z"
         },
         {
-          "heroSlug": "yang-jian",
-          "heroName": "Yang Jian",
-          "heroNameZh": "楊戩",
+          "heroSlug": "bai-qi",
+          "heroName": "Bai Qi",
+          "heroNameZh": "白起",
           "tag": "Stat Changes",
-          "change": "Adjusted Skill Effect and Cooldown",
-          "changeZh": "調整技能效果和冷卻時間",
+          "change": "Adjusted skill damage and recovery",
+          "changeZh": "調整技能傷害和回復",
           "detail": null,
           "detailZh": null,
-          "versionName": "2026/01/08",
-          "publishedAt": "2026-01-08T01:00:00Z"
+          "versionName": "2026/02/05",
+          "publishedAt": "2026-02-05T01:00:00Z"
+        },
+        {
+          "heroSlug": "chano",
+          "heroName": "Chano",
+          "heroNameZh": "蒼",
+          "tag": "Stat Changes",
+          "change": "Adjusted Skill Damage",
+          "changeZh": "調整技能傷害",
+          "detail": null,
+          "detailZh": null,
+          "versionName": "2026/01/22",
+          "publishedAt": "2026-01-22T01:00:00Z"
+        },
+        {
+          "heroSlug": "chano",
+          "heroName": "Chano",
+          "heroNameZh": "蒼",
+          "tag": "Stat Changes",
+          "change": "Adjusted Skill Damage",
+          "changeZh": "調整技能傷害",
+          "detail": null,
+          "detailZh": null,
+          "versionName": "2025/12/16",
+          "publishedAt": "2025-12-16T01:00:00Z"
         },
         {
           "heroSlug": "huang-zhong",
@@ -1270,6 +1246,54 @@
           "publishedAt": "2025-12-16T01:00:00Z"
         },
         {
+          "heroSlug": "erin",
+          "heroName": "Erin",
+          "heroNameZh": "艾琳",
+          "tag": "Stat Changes",
+          "change": "Adjusted Skill Damage",
+          "changeZh": "調整技能傷害",
+          "detail": null,
+          "detailZh": null,
+          "versionName": "2025/12/16",
+          "publishedAt": "2025-12-16T01:00:00Z"
+        },
+        {
+          "heroSlug": "yang-jian",
+          "heroName": "Yang Jian",
+          "heroNameZh": "楊戩",
+          "tag": "Stat Changes",
+          "change": "Adjusted Skill Effect and Cooldown",
+          "changeZh": "調整技能效果和冷卻時間",
+          "detail": null,
+          "detailZh": null,
+          "versionName": "2026/01/08",
+          "publishedAt": "2026-01-08T01:00:00Z"
+        },
+        {
+          "heroSlug": "wuyan",
+          "heroName": "Wuyan",
+          "heroNameZh": "鍾無艷",
+          "tag": "Stat Buffs",
+          "change": "Adjusted Skill Damage",
+          "changeZh": "調整技能傷害",
+          "detail": null,
+          "detailZh": null,
+          "versionName": "2026/01/22",
+          "publishedAt": "2026-01-22T01:00:00Z"
+        },
+        {
+          "heroSlug": "liu-bang",
+          "heroName": "Liu Bang",
+          "heroNameZh": "劉邦",
+          "tag": "Stat Buffs",
+          "change": "Increased skill damage",
+          "changeZh": "提升技能傷害",
+          "detail": null,
+          "detailZh": null,
+          "versionName": "2026/02/05",
+          "publishedAt": "2026-02-05T01:00:00Z"
+        },
+        {
           "heroSlug": "allain",
           "heroName": "Allain",
           "heroNameZh": "亞連",
@@ -1282,81 +1306,9 @@
           "publishedAt": "2026-01-08T01:00:00Z"
         },
         {
-          "heroSlug": "chano",
-          "heroName": "Chano",
-          "heroNameZh": "蒼",
-          "tag": "Stat Changes",
-          "change": "Adjusted Skill Damage",
-          "changeZh": "調整技能傷害",
-          "detail": null,
-          "detailZh": null,
-          "versionName": "2026/01/22",
-          "publishedAt": "2026-01-22T01:00:00Z"
-        },
-        {
-          "heroSlug": "chano",
-          "heroName": "Chano",
-          "heroNameZh": "蒼",
-          "tag": "Stat Changes",
-          "change": "Adjusted Skill Damage",
-          "changeZh": "調整技能傷害",
-          "detail": null,
-          "detailZh": null,
-          "versionName": "2025/12/16",
-          "publishedAt": "2025-12-16T01:00:00Z"
-        },
-        {
-          "heroSlug": "liang",
-          "heroName": "Liang",
-          "heroNameZh": "張良",
-          "tag": "Stat Changes",
-          "change": "Adjusted skill damage",
-          "changeZh": "調整技能傷害",
-          "detail": null,
-          "detailZh": null,
-          "versionName": "2026/02/05",
-          "publishedAt": "2026-02-05T01:00:00Z"
-        },
-        {
-          "heroSlug": "hou-yi",
-          "heroName": "Hou Yi",
-          "heroNameZh": "后羿",
-          "tag": "Stat Buffs",
-          "change": "Increased skill damage",
-          "changeZh": "提升技能傷害",
-          "detail": null,
-          "detailZh": null,
-          "versionName": "2026/02/05",
-          "publishedAt": "2026-02-05T01:00:00Z"
-        },
-        {
-          "heroSlug": "hou-yi",
-          "heroName": "Hou Yi",
-          "heroNameZh": "后羿",
-          "tag": "Stat Changes",
-          "change": "Adjusted Skill Damage",
-          "changeZh": "調整技能傷害",
-          "detail": null,
-          "detailZh": null,
-          "versionName": "2025/12/16",
-          "publishedAt": "2025-12-16T01:00:00Z"
-        },
-        {
           "heroSlug": "shouyue",
           "heroName": "Shouyue",
           "heroNameZh": "百里守約",
-          "tag": "Stat Changes",
-          "change": "Adjusted Skill Damage",
-          "changeZh": "調整技能傷害",
-          "detail": null,
-          "detailZh": null,
-          "versionName": "2025/12/16",
-          "publishedAt": "2025-12-16T01:00:00Z"
-        },
-        {
-          "heroSlug": "marco-polo",
-          "heroName": "Marco Polo",
-          "heroNameZh": "馬可波羅",
           "tag": "Stat Changes",
           "change": "Adjusted Skill Damage",
           "changeZh": "調整技能傷害",
@@ -1390,9 +1342,45 @@
           "publishedAt": "2025-12-16T01:00:00Z"
         },
         {
-          "heroSlug": "lady-sun",
-          "heroName": "Lady Sun",
-          "heroNameZh": "孫尚香",
+          "heroSlug": "liang",
+          "heroName": "Liang",
+          "heroNameZh": "張良",
+          "tag": "Stat Changes",
+          "change": "Adjusted skill damage",
+          "changeZh": "調整技能傷害",
+          "detail": null,
+          "detailZh": null,
+          "versionName": "2026/02/05",
+          "publishedAt": "2026-02-05T01:00:00Z"
+        },
+        {
+          "heroSlug": "marco-polo",
+          "heroName": "Marco Polo",
+          "heroNameZh": "馬可波羅",
+          "tag": "Stat Changes",
+          "change": "Adjusted Skill Damage",
+          "changeZh": "調整技能傷害",
+          "detail": null,
+          "detailZh": null,
+          "versionName": "2025/12/16",
+          "publishedAt": "2025-12-16T01:00:00Z"
+        },
+        {
+          "heroSlug": "hou-yi",
+          "heroName": "Hou Yi",
+          "heroNameZh": "后羿",
+          "tag": "Stat Buffs",
+          "change": "Increased skill damage",
+          "changeZh": "提升技能傷害",
+          "detail": null,
+          "detailZh": null,
+          "versionName": "2026/02/05",
+          "publishedAt": "2026-02-05T01:00:00Z"
+        },
+        {
+          "heroSlug": "hou-yi",
+          "heroName": "Hou Yi",
+          "heroNameZh": "后羿",
           "tag": "Stat Changes",
           "change": "Adjusted Skill Damage",
           "changeZh": "調整技能傷害",
@@ -1417,6 +1405,18 @@
           "heroSlug": "fang",
           "heroName": "Fang",
           "heroNameZh": "李元芳",
+          "tag": "Stat Changes",
+          "change": "Adjusted Skill Damage",
+          "changeZh": "調整技能傷害",
+          "detail": null,
+          "detailZh": null,
+          "versionName": "2025/12/16",
+          "publishedAt": "2025-12-16T01:00:00Z"
+        },
+        {
+          "heroSlug": "lady-sun",
+          "heroName": "Lady Sun",
+          "heroNameZh": "孫尚香",
           "tag": "Stat Changes",
           "change": "Adjusted Skill Damage",
           "changeZh": "調整技能傷害",
@@ -1504,18 +1504,6 @@
           "publishedAt": "2025-10-17T01:00:00Z"
         },
         {
-          "heroSlug": "sakeer",
-          "heroName": "Sakeer",
-          "heroNameZh": "桑啟",
-          "tag": "Stat Changes",
-          "change": "Adjusted Skill Damage",
-          "changeZh": "調整技能傷害",
-          "detail": null,
-          "detailZh": null,
-          "versionName": "20251030",
-          "publishedAt": "2025-10-30T01:00:00Z"
-        },
-        {
           "heroSlug": "xuance",
           "heroName": "Xuance",
           "heroNameZh": "百里玄策",
@@ -1526,30 +1514,6 @@
           "detailZh": null,
           "versionName": "20251030",
           "publishedAt": "2025-10-30T01:00:00Z"
-        },
-        {
-          "heroSlug": "athena",
-          "heroName": "Athena",
-          "heroNameZh": "雅典娜",
-          "tag": "Stat Buffs",
-          "change": "Skill Effects Upgrade",
-          "changeZh": "提升技能效果",
-          "detail": null,
-          "detailZh": null,
-          "versionName": "20250924",
-          "publishedAt": "2025-09-24T01:00:00Z"
-        },
-        {
-          "heroSlug": "meng-ya",
-          "heroName": "Meng Ya",
-          "heroNameZh": "蒙犽",
-          "tag": "Stat Buffs",
-          "change": "Increased Skill Damage",
-          "changeZh": "提升技能傷害",
-          "detail": null,
-          "detailZh": null,
-          "versionName": "20251017",
-          "publishedAt": "2025-10-17T01:00:00Z"
         },
         {
           "heroSlug": "sima-yi",
@@ -1564,16 +1528,52 @@
           "publishedAt": "2025-11-27T01:00:00Z"
         },
         {
-          "heroSlug": "agudo",
-          "heroName": "Agudo",
-          "heroNameZh": "阿古朵",
-          "tag": "Mechanics Upgrade",
-          "change": "Comprehensive Mechanics Upgrade",
-          "changeZh": "全面機制升級",
+          "heroSlug": "athena",
+          "heroName": "Athena",
+          "heroNameZh": "雅典娜",
+          "tag": "Stat Buffs",
+          "change": "Skill Effects Upgrade",
+          "changeZh": "提升技能效果",
           "detail": null,
           "detailZh": null,
           "versionName": "20250924",
           "publishedAt": "2025-09-24T01:00:00Z"
+        },
+        {
+          "heroSlug": "sakeer",
+          "heroName": "Sakeer",
+          "heroNameZh": "桑啟",
+          "tag": "Stat Changes",
+          "change": "Adjusted Skill Damage",
+          "changeZh": "調整技能傷害",
+          "detail": null,
+          "detailZh": null,
+          "versionName": "20251030",
+          "publishedAt": "2025-10-30T01:00:00Z"
+        },
+        {
+          "heroSlug": "dharma",
+          "heroName": "Dharma",
+          "heroNameZh": "達摩",
+          "tag": "Stat Changes",
+          "change": "Adjusted Skill Damage",
+          "changeZh": "調整技能傷害",
+          "detail": null,
+          "detailZh": null,
+          "versionName": "20251030",
+          "publishedAt": "2025-10-30T01:00:00Z"
+        },
+        {
+          "heroSlug": "meng-ya",
+          "heroName": "Meng Ya",
+          "heroNameZh": "蒙犽",
+          "tag": "Stat Buffs",
+          "change": "Increased Skill Damage",
+          "changeZh": "提升技能傷害",
+          "detail": null,
+          "detailZh": null,
+          "versionName": "20251017",
+          "publishedAt": "2025-10-17T01:00:00Z"
         },
         {
           "heroSlug": "fuzi",
@@ -1586,6 +1586,18 @@
           "detailZh": null,
           "versionName": "20251030",
           "publishedAt": "2025-10-30T01:00:00Z"
+        },
+        {
+          "heroSlug": "agudo",
+          "heroName": "Agudo",
+          "heroNameZh": "阿古朵",
+          "tag": "Mechanics Upgrade",
+          "change": "Comprehensive Mechanics Upgrade",
+          "changeZh": "全面機制升級",
+          "detail": null,
+          "detailZh": null,
+          "versionName": "20250924",
+          "publishedAt": "2025-09-24T01:00:00Z"
         },
         {
           "heroSlug": "li-bai",
@@ -1612,30 +1624,6 @@
           "publishedAt": "2025-11-27T01:00:00Z"
         },
         {
-          "heroSlug": "dharma",
-          "heroName": "Dharma",
-          "heroNameZh": "達摩",
-          "tag": "Stat Changes",
-          "change": "Adjusted Skill Damage",
-          "changeZh": "調整技能傷害",
-          "detail": null,
-          "detailZh": null,
-          "versionName": "20251030",
-          "publishedAt": "2025-10-30T01:00:00Z"
-        },
-        {
-          "heroSlug": "yuhuan",
-          "heroName": "Yuhuan",
-          "heroNameZh": "楊玉環",
-          "tag": "Stat Changes",
-          "change": "Adjusted Skill Damage",
-          "changeZh": "調整技能傷害",
-          "detail": null,
-          "detailZh": null,
-          "versionName": "20251030",
-          "publishedAt": "2025-10-30T01:00:00Z"
-        },
-        {
           "heroSlug": "yang-jian",
           "heroName": "Yang Jian",
           "heroNameZh": "楊戩",
@@ -1648,16 +1636,16 @@
           "publishedAt": "2025-09-24T01:00:00Z"
         },
         {
-          "heroSlug": "kaizer",
-          "heroName": "Kaizer",
-          "heroNameZh": "鎧",
+          "heroSlug": "liu-bei",
+          "heroName": "Liu Bei",
+          "heroNameZh": "劉備",
           "tag": "Stat Buffs",
           "change": "Increased Skill Damage",
           "changeZh": "提升技能傷害",
           "detail": null,
           "detailZh": null,
-          "versionName": "20250924",
-          "publishedAt": "2025-09-24T01:00:00Z"
+          "versionName": "20251030",
+          "publishedAt": "2025-10-30T01:00:00Z"
         },
         {
           "heroSlug": "butterfly",
@@ -1672,12 +1660,24 @@
           "publishedAt": "2025-10-17T01:00:00Z"
         },
         {
-          "heroSlug": "liu-bei",
-          "heroName": "Liu Bei",
-          "heroNameZh": "劉備",
+          "heroSlug": "kaizer",
+          "heroName": "Kaizer",
+          "heroNameZh": "鎧",
           "tag": "Stat Buffs",
           "change": "Increased Skill Damage",
           "changeZh": "提升技能傷害",
+          "detail": null,
+          "detailZh": null,
+          "versionName": "20250924",
+          "publishedAt": "2025-09-24T01:00:00Z"
+        },
+        {
+          "heroSlug": "yuhuan",
+          "heroName": "Yuhuan",
+          "heroNameZh": "楊玉環",
+          "tag": "Stat Changes",
+          "change": "Adjusted Skill Damage",
+          "changeZh": "調整技能傷害",
           "detail": null,
           "detailZh": null,
           "versionName": "20251030",
@@ -1694,18 +1694,6 @@
           "detailZh": null,
           "versionName": "2025/11/27",
           "publishedAt": "2025-11-27T01:00:00Z"
-        },
-        {
-          "heroSlug": "luara",
-          "heroName": "Luara",
-          "heroNameZh": "盧雅那",
-          "tag": "Stat Buffs",
-          "change": "Increased Skill Damage",
-          "changeZh": "提升技能傷害",
-          "detail": null,
-          "detailZh": null,
-          "versionName": "20251030",
-          "publishedAt": "2025-10-30T01:00:00Z"
         },
         {
           "heroSlug": "charlotte",
@@ -1780,6 +1768,18 @@
           "publishedAt": "2025-10-17T01:00:00Z"
         },
         {
+          "heroSlug": "luara",
+          "heroName": "Luara",
+          "heroNameZh": "盧雅那",
+          "tag": "Stat Buffs",
+          "change": "Increased Skill Damage",
+          "changeZh": "提升技能傷害",
+          "detail": null,
+          "detailZh": null,
+          "versionName": "20251030",
+          "publishedAt": "2025-10-30T01:00:00Z"
+        },
+        {
           "heroSlug": "luna",
           "heroName": "Luna",
           "heroNameZh": "露娜",
@@ -1810,6 +1810,18 @@
           "publishedAt": "2025-06-24T02:07:52Z"
         },
         {
+          "heroSlug": "garo",
+          "heroName": "Garo",
+          "heroNameZh": "伽羅",
+          "tag": "Stat Nerfs",
+          "change": "Ultimate Critical Rate reduced",
+          "changeZh": "大招暴擊削弱",
+          "detail": null,
+          "detailZh": null,
+          "versionName": "20250624",
+          "publishedAt": "2025-06-24T02:07:52Z"
+        },
+        {
           "heroSlug": "nuwa",
           "heroName": "Nuwa",
           "heroNameZh": "女媧",
@@ -1834,18 +1846,6 @@
           "publishedAt": "2025-08-01T01:00:00Z"
         },
         {
-          "heroSlug": "garo",
-          "heroName": "Garo",
-          "heroNameZh": "伽羅",
-          "tag": "Stat Nerfs",
-          "change": "Ultimate Critical Rate reduced",
-          "changeZh": "大招暴擊削弱",
-          "detail": null,
-          "detailZh": null,
-          "versionName": "20250624",
-          "publishedAt": "2025-06-24T02:07:52Z"
-        },
-        {
           "heroSlug": "dun",
           "heroName": "Dun",
           "heroNameZh": "夏侯惇",
@@ -1856,42 +1856,6 @@
           "detailZh": null,
           "versionName": "20250624",
           "publishedAt": "2025-06-24T02:07:52Z"
-        },
-        {
-          "heroSlug": "nezha",
-          "heroName": "Nezha",
-          "heroNameZh": "哪吒",
-          "tag": "Stat Buffs",
-          "change": "Increased Skill 1's Damage",
-          "changeZh": "提升1技能傷害",
-          "detail": null,
-          "detailZh": null,
-          "versionName": "20250814",
-          "publishedAt": "2025-08-14T01:00:00Z"
-        },
-        {
-          "heroSlug": "fuzi",
-          "heroName": "Fuzi",
-          "heroNameZh": "老夫子",
-          "tag": "Stat Buffs",
-          "change": "Reduced Skill 2 Cooldown",
-          "changeZh": "降低2技能冷卻時間",
-          "detail": null,
-          "detailZh": null,
-          "versionName": "20250717",
-          "publishedAt": "2025-07-17T01:00:00Z"
-        },
-        {
-          "heroSlug": "wuyan",
-          "heroName": "Wuyan",
-          "heroNameZh": "鍾無艷",
-          "tag": "Stat Nerfs",
-          "change": "Adjusted Ultimate Damage and Shield",
-          "changeZh": "調整3技能傷害和護盾",
-          "detail": null,
-          "detailZh": null,
-          "versionName": "20250814",
-          "publishedAt": "2025-08-14T01:00:00Z"
         },
         {
           "heroSlug": "alessio",
@@ -1906,16 +1870,16 @@
           "publishedAt": "2025-08-28T01:00:00Z"
         },
         {
-          "heroSlug": "bai-qi",
-          "heroName": "Bai Qi",
-          "heroNameZh": "白起",
+          "heroSlug": "nezha",
+          "heroName": "Nezha",
+          "heroNameZh": "哪吒",
           "tag": "Stat Buffs",
-          "change": "Damage and Recovery Upgrade",
-          "changeZh": "提升傷害和回復效果",
+          "change": "Increased Skill 1's Damage",
+          "changeZh": "提升1技能傷害",
           "detail": null,
           "detailZh": null,
-          "versionName": "20250717",
-          "publishedAt": "2025-07-17T01:00:00Z"
+          "versionName": "20250814",
+          "publishedAt": "2025-08-14T01:00:00Z"
         },
         {
           "heroSlug": "consort-yu",
@@ -1930,16 +1894,16 @@
           "publishedAt": "2025-08-28T01:00:00Z"
         },
         {
-          "heroSlug": "mulan",
-          "heroName": "Mulan",
-          "heroNameZh": "花木蘭",
+          "heroSlug": "fuzi",
+          "heroName": "Fuzi",
+          "heroNameZh": "老夫子",
           "tag": "Stat Buffs",
-          "change": "Increased Skill 2 Damage",
-          "changeZh": "提升2技能傷害",
+          "change": "Reduced Skill 2 Cooldown",
+          "changeZh": "降低2技能冷卻時間",
           "detail": null,
           "detailZh": null,
-          "versionName": "20250814",
-          "publishedAt": "2025-08-14T01:00:00Z"
+          "versionName": "20250717",
+          "publishedAt": "2025-07-17T01:00:00Z"
         },
         {
           "heroSlug": "fatih",
@@ -1954,9 +1918,9 @@
           "publishedAt": "2025-08-14T01:00:00Z"
         },
         {
-          "heroSlug": "yuhuan",
-          "heroName": "Yuhuan",
-          "heroNameZh": "楊玉環",
+          "heroSlug": "bai-qi",
+          "heroName": "Bai Qi",
+          "heroNameZh": "白起",
           "tag": "Stat Buffs",
           "change": "Damage and Recovery Upgrade",
           "changeZh": "提升傷害和回復效果",
@@ -1964,42 +1928,6 @@
           "detailZh": null,
           "versionName": "20250717",
           "publishedAt": "2025-07-17T01:00:00Z"
-        },
-        {
-          "heroSlug": "yao",
-          "heroName": "Yao",
-          "heroNameZh": "曜",
-          "tag": "Stat Buffs",
-          "change": "Increased Skill 1's Damage",
-          "changeZh": "提升技能傷害",
-          "detail": null,
-          "detailZh": null,
-          "versionName": "20250814",
-          "publishedAt": "2025-08-14T01:00:00Z"
-        },
-        {
-          "heroSlug": "xiang-yu",
-          "heroName": "Xiang Yu",
-          "heroNameZh": "項羽",
-          "tag": "Stat Buffs",
-          "change": "Damage Recovery Increased",
-          "changeZh": "傷害回復增強",
-          "detail": null,
-          "detailZh": null,
-          "versionName": "20250624",
-          "publishedAt": "2025-06-24T02:07:52Z"
-        },
-        {
-          "heroSlug": "dian-wei",
-          "heroName": "Dian Wei",
-          "heroNameZh": "典韋",
-          "tag": "Stat Nerfs",
-          "change": "Ultimate damage reduced",
-          "changeZh": "大招傷害降低",
-          "detail": null,
-          "detailZh": null,
-          "versionName": "20250624",
-          "publishedAt": "2025-06-24T02:07:52Z"
         },
         {
           "heroSlug": "chano",
@@ -2014,16 +1942,76 @@
           "publishedAt": "2025-08-01T01:00:00Z"
         },
         {
-          "heroSlug": "hou-yi",
-          "heroName": "Hou Yi",
-          "heroNameZh": "后羿",
+          "heroSlug": "wuyan",
+          "heroName": "Wuyan",
+          "heroNameZh": "鍾無艷",
           "tag": "Stat Nerfs",
-          "change": "Skill Damage Adjustments",
-          "changeZh": "技能傷害調整",
+          "change": "Adjusted Ultimate Damage and Shield",
+          "changeZh": "調整3技能傷害和護盾",
           "detail": null,
           "detailZh": null,
-          "versionName": "20250801",
-          "publishedAt": "2025-08-01T01:00:00Z"
+          "versionName": "20250814",
+          "publishedAt": "2025-08-14T01:00:00Z"
+        },
+        {
+          "heroSlug": "mulan",
+          "heroName": "Mulan",
+          "heroNameZh": "花木蘭",
+          "tag": "Stat Buffs",
+          "change": "Increased Skill 2 Damage",
+          "changeZh": "提升2技能傷害",
+          "detail": null,
+          "detailZh": null,
+          "versionName": "20250814",
+          "publishedAt": "2025-08-14T01:00:00Z"
+        },
+        {
+          "heroSlug": "yao",
+          "heroName": "Yao",
+          "heroNameZh": "曜",
+          "tag": "Stat Buffs",
+          "change": "Increased Skill 1's Damage",
+          "changeZh": "提升技能傷害",
+          "detail": null,
+          "detailZh": null,
+          "versionName": "20250814",
+          "publishedAt": "2025-08-14T01:00:00Z"
+        },
+        {
+          "heroSlug": "dian-wei",
+          "heroName": "Dian Wei",
+          "heroNameZh": "典韋",
+          "tag": "Stat Nerfs",
+          "change": "Ultimate damage reduced",
+          "changeZh": "大招傷害降低",
+          "detail": null,
+          "detailZh": null,
+          "versionName": "20250624",
+          "publishedAt": "2025-06-24T02:07:52Z"
+        },
+        {
+          "heroSlug": "xiang-yu",
+          "heroName": "Xiang Yu",
+          "heroNameZh": "項羽",
+          "tag": "Stat Buffs",
+          "change": "Damage Recovery Increased",
+          "changeZh": "傷害回復增強",
+          "detail": null,
+          "detailZh": null,
+          "versionName": "20250624",
+          "publishedAt": "2025-06-24T02:07:52Z"
+        },
+        {
+          "heroSlug": "yuhuan",
+          "heroName": "Yuhuan",
+          "heroNameZh": "楊玉環",
+          "tag": "Stat Buffs",
+          "change": "Damage and Recovery Upgrade",
+          "changeZh": "提升傷害和回復效果",
+          "detail": null,
+          "detailZh": null,
+          "versionName": "20250717",
+          "publishedAt": "2025-07-17T01:00:00Z"
         },
         {
           "heroSlug": "kui",
@@ -2038,16 +2026,16 @@
           "publishedAt": "2025-07-17T01:00:00Z"
         },
         {
-          "heroSlug": "luara",
-          "heroName": "Luara",
-          "heroNameZh": "盧雅那",
-          "tag": "Stat Nerfs",
-          "change": "Skill Cooldown Increased",
-          "changeZh": "技能冷卻時間削弱",
+          "heroSlug": "kongming",
+          "heroName": "Kongming",
+          "heroNameZh": "諸葛亮",
+          "tag": "Stat Buffs",
+          "change": "Reduced Skill Cooldown",
+          "changeZh": "減少技能冷卻時間",
           "detail": null,
           "detailZh": null,
-          "versionName": "20250624",
-          "publishedAt": "2025-06-24T02:07:52Z"
+          "versionName": "20250828",
+          "publishedAt": "2025-08-28T01:00:00Z"
         },
         {
           "heroSlug": "nakoruru",
@@ -2062,16 +2050,28 @@
           "publishedAt": "2025-06-24T02:07:52Z"
         },
         {
-          "heroSlug": "kongming",
-          "heroName": "Kongming",
-          "heroNameZh": "諸葛亮",
-          "tag": "Stat Buffs",
-          "change": "Reduced Skill Cooldown",
-          "changeZh": "減少技能冷卻時間",
+          "heroSlug": "da-qiao",
+          "heroName": "Da Qiao",
+          "heroNameZh": "大喬",
+          "tag": "Mechanics Changes",
+          "change": "Mechanics Changes",
+          "changeZh": "機制調整",
           "detail": null,
           "detailZh": null,
-          "versionName": "20250828",
-          "publishedAt": "2025-08-28T01:00:00Z"
+          "versionName": "20250717",
+          "publishedAt": "2025-07-17T01:00:00Z"
+        },
+        {
+          "heroSlug": "hou-yi",
+          "heroName": "Hou Yi",
+          "heroNameZh": "后羿",
+          "tag": "Stat Nerfs",
+          "change": "Skill Damage Adjustments",
+          "changeZh": "技能傷害調整",
+          "detail": null,
+          "detailZh": null,
+          "versionName": "20250801",
+          "publishedAt": "2025-08-01T01:00:00Z"
         },
         {
           "heroSlug": "wukong",
@@ -2084,18 +2084,6 @@
           "detailZh": null,
           "versionName": "20250801",
           "publishedAt": "2025-08-01T01:00:00Z"
-        },
-        {
-          "heroSlug": "da-qiao",
-          "heroName": "Da Qiao",
-          "heroNameZh": "大喬",
-          "tag": "Mechanics Changes",
-          "change": "Mechanics Changes",
-          "changeZh": "機制調整",
-          "detail": null,
-          "detailZh": null,
-          "versionName": "20250717",
-          "publishedAt": "2025-07-17T01:00:00Z"
         },
         {
           "heroSlug": "flowborn-tank",
@@ -2132,6 +2120,18 @@
           "detailZh": null,
           "versionName": "20250828",
           "publishedAt": "2025-08-28T01:00:00Z"
+        },
+        {
+          "heroSlug": "luara",
+          "heroName": "Luara",
+          "heroNameZh": "盧雅那",
+          "tag": "Stat Nerfs",
+          "change": "Skill Cooldown Increased",
+          "changeZh": "技能冷卻時間削弱",
+          "detail": null,
+          "detailZh": null,
+          "versionName": "20250624",
+          "publishedAt": "2025-06-24T02:07:52Z"
         }
       ]
     },
@@ -2140,12 +2140,12 @@
       "seasonId": "10",
       "changes": [
         {
-          "heroSlug": "sakeer",
-          "heroName": "Sakeer",
-          "heroNameZh": "桑啟",
+          "heroSlug": "garo",
+          "heroName": "Garo",
+          "heroNameZh": "伽羅",
           "tag": "Stat Nerfs",
-          "change": "Skill 1 cooldown increased",
-          "changeZh": "1技能冷卻時間削弱",
+          "change": "Ultimate cooldown increased",
+          "changeZh": "3技能冷卻時間削弱",
           "detail": null,
           "detailZh": null,
           "versionName": "20250501",
@@ -2164,36 +2164,12 @@
           "publishedAt": "2025-05-29T01:48:14Z"
         },
         {
-          "heroSlug": "garo",
-          "heroName": "Garo",
-          "heroNameZh": "伽羅",
-          "tag": "Stat Nerfs",
-          "change": "Ultimate cooldown increased",
-          "changeZh": "3技能冷卻時間削弱",
-          "detail": null,
-          "detailZh": null,
-          "versionName": "20250501",
-          "publishedAt": "2025-05-01T02:00:00Z"
-        },
-        {
           "heroSlug": "ying",
           "heroName": "Ying",
           "heroNameZh": "雲纓",
           "tag": "Stat Buffs",
           "change": "Enhanced Basic Attack",
           "changeZh": "強化普攻加強",
-          "detail": null,
-          "detailZh": null,
-          "versionName": "20250515",
-          "publishedAt": "2025-05-15T02:03:23Z"
-        },
-        {
-          "heroSlug": "pei",
-          "heroName": "Pei",
-          "heroNameZh": "裴擒虎",
-          "tag": "Stat Buffs",
-          "change": "Enhanced Skill 2's shield",
-          "changeZh": "2技能護盾提升",
           "detail": null,
           "detailZh": null,
           "versionName": "20250515",
@@ -2224,6 +2200,18 @@
           "publishedAt": "2025-05-29T01:48:14Z"
         },
         {
+          "heroSlug": "sakeer",
+          "heroName": "Sakeer",
+          "heroNameZh": "桑啟",
+          "tag": "Stat Nerfs",
+          "change": "Skill 1 cooldown increased",
+          "changeZh": "1技能冷卻時間削弱",
+          "detail": null,
+          "detailZh": null,
+          "versionName": "20250501",
+          "publishedAt": "2025-05-01T02:00:00Z"
+        },
+        {
           "heroSlug": "di-renjie",
           "heroName": "Di Renjie",
           "heroNameZh": "狄仁傑",
@@ -2248,12 +2236,12 @@
           "publishedAt": "2025-05-29T01:48:14Z"
         },
         {
-          "heroSlug": "yixing",
-          "heroName": "Yixing",
-          "heroNameZh": "弈星",
-          "tag": "Stat Nerfs",
-          "change": "Ultimate cooldown increased",
-          "changeZh": "3技能冷卻時間削弱",
+          "heroSlug": "pei",
+          "heroName": "Pei",
+          "heroNameZh": "裴擒虎",
+          "tag": "Stat Buffs",
+          "change": "Enhanced Skill 2's shield",
+          "changeZh": "2技能護盾提升",
           "detail": null,
           "detailZh": null,
           "versionName": "20250515",
@@ -2272,16 +2260,16 @@
           "publishedAt": "2025-05-01T02:00:00Z"
         },
         {
-          "heroSlug": "yuhuan",
-          "heroName": "Yuhuan",
-          "heroNameZh": "楊玉環",
-          "tag": "Stat Buffs",
-          "change": "Ultimate recovery effect strengthened",
-          "changeZh": "大招回復效果加強",
+          "heroSlug": "yixing",
+          "heroName": "Yixing",
+          "heroNameZh": "弈星",
+          "tag": "Stat Nerfs",
+          "change": "Ultimate cooldown increased",
+          "changeZh": "3技能冷卻時間削弱",
           "detail": null,
           "detailZh": null,
-          "versionName": "20250501",
-          "publishedAt": "2025-05-01T02:00:00Z"
+          "versionName": "20250515",
+          "publishedAt": "2025-05-15T02:03:23Z"
         },
         {
           "heroSlug": "huang-zhong",
@@ -2308,30 +2296,6 @@
           "publishedAt": "2025-05-29T01:48:14Z"
         },
         {
-          "heroSlug": "xiang-yu",
-          "heroName": "Xiang Yu",
-          "heroNameZh": "項羽",
-          "tag": "Mechanics Upgrade",
-          "change": "Enhanced Basic Attack and Ultimate Effect Upgrade",
-          "changeZh": "強化普攻&大招效果升級",
-          "detail": null,
-          "detailZh": null,
-          "versionName": "20250515",
-          "publishedAt": "2025-05-15T02:03:23Z"
-        },
-        {
-          "heroSlug": "hou-yi",
-          "heroName": "Hou Yi",
-          "heroNameZh": "后羿",
-          "tag": "Stat Nerfs",
-          "change": "Passive Attack Speed reduced",
-          "changeZh": "被動攻速降低",
-          "detail": null,
-          "detailZh": null,
-          "versionName": "20250515",
-          "publishedAt": "2025-05-15T02:03:23Z"
-        },
-        {
           "heroSlug": "shouyue",
           "heroName": "Shouyue",
           "heroNameZh": "百里守約",
@@ -2344,12 +2308,24 @@
           "publishedAt": "2025-05-15T02:03:23Z"
         },
         {
-          "heroSlug": "luara",
-          "heroName": "Luara",
-          "heroNameZh": "盧雅那",
-          "tag": "Stat Changes",
-          "change": "Base stats changed",
-          "changeZh": "基礎屬性調整",
+          "heroSlug": "xiang-yu",
+          "heroName": "Xiang Yu",
+          "heroNameZh": "項羽",
+          "tag": "Mechanics Upgrade",
+          "change": "Enhanced Basic Attack and Ultimate Effect Upgrade",
+          "changeZh": "強化普攻&大招效果升級",
+          "detail": null,
+          "detailZh": null,
+          "versionName": "20250515",
+          "publishedAt": "2025-05-15T02:03:23Z"
+        },
+        {
+          "heroSlug": "yuhuan",
+          "heroName": "Yuhuan",
+          "heroNameZh": "楊玉環",
+          "tag": "Stat Buffs",
+          "change": "Ultimate recovery effect strengthened",
+          "changeZh": "大招回復效果加強",
           "detail": null,
           "detailZh": null,
           "versionName": "20250501",
@@ -2368,18 +2344,6 @@
           "publishedAt": "2025-05-01T02:00:00Z"
         },
         {
-          "heroSlug": "sun-bin",
-          "heroName": "Sun Bin",
-          "heroNameZh": "孫臏",
-          "tag": "Stat Buffs",
-          "change": "Skill 2 Effect Upgrade",
-          "changeZh": "提升2技能效果",
-          "detail": null,
-          "detailZh": null,
-          "versionName": "20250612",
-          "publishedAt": "2025-06-12T02:00:00Z"
-        },
-        {
           "heroSlug": "musashi",
           "heroName": "Musashi",
           "heroNameZh": "宮本武藏",
@@ -2390,6 +2354,18 @@
           "detailZh": null,
           "versionName": "20250501",
           "publishedAt": "2025-05-01T02:00:00Z"
+        },
+        {
+          "heroSlug": "hou-yi",
+          "heroName": "Hou Yi",
+          "heroNameZh": "后羿",
+          "tag": "Stat Nerfs",
+          "change": "Passive Attack Speed reduced",
+          "changeZh": "被動攻速降低",
+          "detail": null,
+          "detailZh": null,
+          "versionName": "20250515",
+          "publishedAt": "2025-05-15T02:03:23Z"
         },
         {
           "heroSlug": "arthur",
@@ -2416,24 +2392,12 @@
           "publishedAt": "2025-05-01T02:00:00Z"
         },
         {
-          "heroSlug": "diaochan",
-          "heroName": "Diaochan",
-          "heroNameZh": "貂蟬",
-          "tag": "Stat Nerfs",
-          "change": "Cooldown Mechanic Adjustments",
-          "changeZh": "冷卻時間機制調整",
-          "detail": null,
-          "detailZh": null,
-          "versionName": "20250612",
-          "publishedAt": "2025-06-12T02:00:00Z"
-        },
-        {
-          "heroSlug": "sun-ce",
-          "heroName": "Sun Ce",
-          "heroNameZh": "孫策",
+          "heroSlug": "sun-bin",
+          "heroName": "Sun Bin",
+          "heroNameZh": "孫臏",
           "tag": "Stat Buffs",
-          "change": "Skill Damage Increase",
-          "changeZh": "提升技能傷害",
+          "change": "Skill 2 Effect Upgrade",
+          "changeZh": "提升2技能效果",
           "detail": null,
           "detailZh": null,
           "versionName": "20250612",
@@ -2450,6 +2414,30 @@
           "detailZh": null,
           "versionName": "20250529",
           "publishedAt": "2025-05-29T01:48:14Z"
+        },
+        {
+          "heroSlug": "sun-ce",
+          "heroName": "Sun Ce",
+          "heroNameZh": "孫策",
+          "tag": "Stat Buffs",
+          "change": "Skill Damage Increase",
+          "changeZh": "提升技能傷害",
+          "detail": null,
+          "detailZh": null,
+          "versionName": "20250612",
+          "publishedAt": "2025-06-12T02:00:00Z"
+        },
+        {
+          "heroSlug": "diaochan",
+          "heroName": "Diaochan",
+          "heroNameZh": "貂蟬",
+          "tag": "Stat Nerfs",
+          "change": "Cooldown Mechanic Adjustments",
+          "changeZh": "冷卻時間機制調整",
+          "detail": null,
+          "detailZh": null,
+          "versionName": "20250612",
+          "publishedAt": "2025-06-12T02:00:00Z"
         },
         {
           "heroSlug": "zhuangzi",
@@ -2510,6 +2498,18 @@
           "detailZh": null,
           "versionName": "20250612",
           "publishedAt": "2025-06-12T02:00:00Z"
+        },
+        {
+          "heroSlug": "luara",
+          "heroName": "Luara",
+          "heroNameZh": "盧雅那",
+          "tag": "Stat Changes",
+          "change": "Base stats changed",
+          "changeZh": "基礎屬性調整",
+          "detail": null,
+          "detailZh": null,
+          "versionName": "20250501",
+          "publishedAt": "2025-05-01T02:00:00Z"
         }
       ]
     },
@@ -2517,6 +2517,18 @@
       "seasonName": "S9",
       "seasonId": "9",
       "changes": [
+        {
+          "heroSlug": "sima-yi",
+          "heroName": "Sima Yi",
+          "heroNameZh": "司馬懿",
+          "tag": "Stat Changes",
+          "change": "Stat Changes",
+          "changeZh": "數值調整",
+          "detail": null,
+          "detailZh": null,
+          "versionName": "20250320",
+          "publishedAt": "2025-03-20T01:53:54Z"
+        },
         {
           "heroSlug": "ata",
           "heroName": "Ata",
@@ -2554,16 +2566,16 @@
           "publishedAt": "2025-04-10T01:49:40Z"
         },
         {
-          "heroSlug": "sima-yi",
-          "heroName": "Sima Yi",
-          "heroNameZh": "司馬懿",
-          "tag": "Stat Changes",
-          "change": "Stat Changes",
-          "changeZh": "數值調整",
+          "heroSlug": "alessio",
+          "heroName": "Alessio",
+          "heroNameZh": "萊西奧",
+          "tag": "Stat Nerfs",
+          "change": "Passive Damage Reduced",
+          "changeZh": "降低被動傷害",
           "detail": null,
           "detailZh": null,
-          "versionName": "20250320",
-          "publishedAt": "2025-03-20T01:53:54Z"
+          "versionName": "20250410",
+          "publishedAt": "2025-04-10T01:49:40Z"
         },
         {
           "heroSlug": "agudo",
@@ -2578,18 +2590,6 @@
           "publishedAt": "2025-03-20T01:53:54Z"
         },
         {
-          "heroSlug": "alessio",
-          "heroName": "Alessio",
-          "heroNameZh": "萊西奧",
-          "tag": "Stat Nerfs",
-          "change": "Passive Damage Reduced",
-          "changeZh": "降低被動傷害",
-          "detail": null,
-          "detailZh": null,
-          "versionName": "20250410",
-          "publishedAt": "2025-04-10T01:49:40Z"
-        },
-        {
           "heroSlug": "wang-zhaojun",
           "heroName": "Wang Zhaojun",
           "heroNameZh": "王昭君",
@@ -2602,9 +2602,9 @@
           "publishedAt": "2025-04-10T01:49:40Z"
         },
         {
-          "heroSlug": "ming",
-          "heroName": "Ming",
-          "heroNameZh": "明世隱",
+          "heroSlug": "cirrus",
+          "heroName": "Cirrus",
+          "heroNameZh": "雲中君",
           "tag": "Stat Nerfs",
           "change": "Stat Nerfs",
           "changeZh": "數值削弱",
@@ -2626,9 +2626,9 @@
           "publishedAt": "2025-04-10T01:49:40Z"
         },
         {
-          "heroSlug": "cirrus",
-          "heroName": "Cirrus",
-          "heroNameZh": "雲中君",
+          "heroSlug": "ming",
+          "heroName": "Ming",
+          "heroNameZh": "明世隱",
           "tag": "Stat Nerfs",
           "change": "Stat Nerfs",
           "changeZh": "數值削弱",
@@ -2674,16 +2674,16 @@
           "publishedAt": "2025-03-20T01:53:54Z"
         },
         {
-          "heroSlug": "sun-bin",
-          "heroName": "Sun Bin",
-          "heroNameZh": "孫臏",
-          "tag": "Stat Buffs",
-          "change": "Skill 1 damage increased, Skill 2's cooldown reduced",
-          "changeZh": "提升1技能傷害，縮短2技能冷卻時間",
+          "heroSlug": "kongming",
+          "heroName": "Kongming",
+          "heroNameZh": "諸葛亮",
+          "tag": "Stat Nerfs",
+          "change": "Stat Nerfs",
+          "changeZh": "數值削弱",
           "detail": null,
           "detailZh": null,
-          "versionName": "20250410",
-          "publishedAt": "2025-04-10T01:49:40Z"
+          "versionName": "20250320",
+          "publishedAt": "2025-03-20T01:53:54Z"
         },
         {
           "heroSlug": "nakoruru",
@@ -2698,16 +2698,16 @@
           "publishedAt": "2025-04-10T01:49:40Z"
         },
         {
-          "heroSlug": "kongming",
-          "heroName": "Kongming",
-          "heroNameZh": "諸葛亮",
-          "tag": "Stat Nerfs",
-          "change": "Stat Nerfs",
-          "changeZh": "數值削弱",
+          "heroSlug": "sun-bin",
+          "heroName": "Sun Bin",
+          "heroNameZh": "孫臏",
+          "tag": "Stat Buffs",
+          "change": "Skill 1 damage increased, Skill 2's cooldown reduced",
+          "changeZh": "提升1技能傷害，縮短2技能冷卻時間",
           "detail": null,
           "detailZh": null,
-          "versionName": "20250320",
-          "publishedAt": "2025-03-20T01:53:54Z"
+          "versionName": "20250410",
+          "publishedAt": "2025-04-10T01:49:40Z"
         },
         {
           "heroSlug": "ukyo-tachibana",
@@ -2788,16 +2788,16 @@
           "publishedAt": "2025-01-09T02:33:14Z"
         },
         {
-          "heroSlug": "sakeer",
-          "heroName": "Sakeer",
-          "heroNameZh": "桑啟",
-          "tag": "Stat Nerfs",
-          "change": "Reduced damage and recovery",
-          "changeZh": "降低傷害和回復",
-          "detail": "\"Sakeer has performed exceptionally well since his release. We have moderately nerfed him to ensure a better experience for opponents.\"",
-          "detailZh": "「桑啟上線後表現過於亮眼，我們將其適度削弱，以保證對手擁有良好的對抗體驗。」",
-          "versionName": "20250213",
-          "publishedAt": "2025-02-13T03:25:14Z"
+          "heroSlug": "zilong",
+          "heroName": "Zilong",
+          "heroNameZh": "趙雲",
+          "tag": "Stat Buffs",
+          "change": "Increased Skill 2 damage.",
+          "changeZh": "提升2技能的傷害",
+          "detail": "Skill 2 is Zilong's main damage skill, but its damage output is somewhat lacking if it doesn't trigger his passive. Hence, we've slightly increased Skill 2's damage.",
+          "detailZh": "「2技能作為趙雲的主要輸出技能，在沒有觸發被動的額外效果時傷害略顯不足，因此我們適當提高了2技能的傷害。」",
+          "versionName": "20250109",
+          "publishedAt": "2025-01-09T02:33:14Z"
         },
         {
           "heroSlug": "ying",
@@ -2812,16 +2812,16 @@
           "publishedAt": "2025-01-24T02:00:29Z"
         },
         {
-          "heroSlug": "zilong",
-          "heroName": "Zilong",
-          "heroNameZh": "趙雲",
-          "tag": "Stat Buffs",
-          "change": "Increased Skill 2 damage.",
-          "changeZh": "提升2技能的傷害",
-          "detail": "Skill 2 is Zilong's main damage skill, but its damage output is somewhat lacking if it doesn't trigger his passive. Hence, we've slightly increased Skill 2's damage.",
-          "detailZh": "「2技能作為趙雲的主要輸出技能，在沒有觸發被動的額外效果時傷害略顯不足，因此我們適當提高了2技能的傷害。」",
-          "versionName": "20250109",
-          "publishedAt": "2025-01-09T02:33:14Z"
+          "heroSlug": "sakeer",
+          "heroName": "Sakeer",
+          "heroNameZh": "桑啟",
+          "tag": "Stat Nerfs",
+          "change": "Reduced damage and recovery",
+          "changeZh": "降低傷害和回復",
+          "detail": "\"Sakeer has performed exceptionally well since his release. We have moderately nerfed him to ensure a better experience for opponents.\"",
+          "detailZh": "「桑啟上線後表現過於亮眼，我們將其適度削弱，以保證對手擁有良好的對抗體驗。」",
+          "versionName": "20250213",
+          "publishedAt": "2025-02-13T03:25:14Z"
         },
         {
           "heroSlug": "guiguzi",
@@ -2836,18 +2836,6 @@
           "publishedAt": "2025-01-24T02:00:29Z"
         },
         {
-          "heroSlug": "pei",
-          "heroName": "Pei",
-          "heroNameZh": "裴擒虎",
-          "tag": "Stat Buffs",
-          "change": "Buffed Tiger Form",
-          "changeZh": "增強虎形態",
-          "detail": "\"Pei has to switch forms to maximize his skill effects, but while in his tiger form, he has much shorter range and needs to get very close to his enemies. We've increased the stats of his tiger form to give him a higher margin of error.\"",
-          "detailZh": "「裴擒虎需要切換形態才能發揮技能效果，但當他切換到虎形態的時候，需要與敵人近身作戰；我們適度地提高了他變成虎形態時的屬性，並提升他的容錯率。」",
-          "versionName": "20250213",
-          "publishedAt": "2025-02-13T03:25:14Z"
-        },
-        {
           "heroSlug": "dun",
           "heroName": "Dun",
           "heroNameZh": "夏侯惇",
@@ -2860,18 +2848,6 @@
           "publishedAt": "2025-01-09T02:33:14Z"
         },
         {
-          "heroSlug": "li-bai",
-          "heroName": "Li Bai",
-          "heroNameZh": "李白",
-          "tag": "Stat Buffs",
-          "change": "Increased base stats and Ultimate damage.",
-          "changeZh": "提升基礎屬性和大招傷害",
-          "detail": "Li Bai has an agile combat style. We have increased his stats to improve his survivability if he makes a mistake.",
-          "detailZh": "「李白有著非常靈活的作戰風格，我們提高了他的屬性以保證他偶爾失誤時的生存能力。」",
-          "versionName": "20250124",
-          "publishedAt": "2025-01-24T02:00:29Z"
-        },
-        {
           "heroSlug": "di-renjie",
           "heroName": "Di Renjie",
           "heroNameZh": "狄仁傑",
@@ -2880,42 +2856,6 @@
           "changeZh": "提升令牌傷害",
           "detail": "Changed the stat-based calculation of the tokens' damage, so Di Renjie is no longer limited to attack effect equipment, but can try out other   builds.",
           "detailZh": "「調整令牌的屬性加成結構，讓狄大人不再與攻擊特效套裝綁定，可以嘗試更多的出裝選擇。」",
-          "versionName": "20250124",
-          "publishedAt": "2025-01-24T02:00:29Z"
-        },
-        {
-          "heroSlug": "gao",
-          "heroName": "Gao",
-          "heroNameZh": "高漸離",
-          "tag": "Stat Buffs",
-          "change": "Increased Attack Range and Added Damage Reduction to Ultimate",
-          "changeZh": "增加射程及3技能減傷",
-          "detail": "\"Gao needs to get close to as many enemies as possible while using his Ultimate, so we've increased his damage reduction to improve his survivability. Additionally, we've increased his range so it's easier for him to find a way to enter combat.\"",
-          "detailZh": "「高漸離放大招時，靠近越多敵人效果越好，因此我們提高了他的減傷效果，讓他存活的時間更長；同時提升射程以便他更容易獲得切入機會。」",
-          "versionName": "20250213",
-          "publishedAt": "2025-02-13T03:25:14Z"
-        },
-        {
-          "heroSlug": "angela",
-          "heroName": "Angela",
-          "heroNameZh": "安琪拉",
-          "tag": "QoL Changes",
-          "change": "Optimized Skill 1's indicator.",
-          "changeZh": "最佳化1技能指示器",
-          "detail": "Skill 1: Scorching Barrage",
-          "detailZh": "最佳化1技能指示器",
-          "versionName": "20250124",
-          "publishedAt": "2025-01-24T02:00:29Z"
-        },
-        {
-          "heroSlug": "erin",
-          "heroName": "Erin",
-          "heroNameZh": "艾琳",
-          "tag": "Stat Buffs",
-          "change": "Increased Skill 1's damage and Physical Defense.",
-          "changeZh": "提升1技能傷害和物理防禦",
-          "detail": "During the 'I'm a dev for HoK!' event in Honor of Kings Camp, there were many calls to buff Erin, so we have increased her viability in the early game.",
-          "detailZh": "「在HOK CAMP的活動『我在HOK當企劃活動中』加強艾琳的呼聲很高，因此本次我們提升了她前期的對抗能力。」",
           "versionName": "20250124",
           "publishedAt": "2025-01-24T02:00:29Z"
         },
@@ -2932,14 +2872,74 @@
           "publishedAt": "2025-01-09T02:33:14Z"
         },
         {
-          "heroSlug": "ming",
-          "heroName": "Ming",
-          "heroNameZh": "明世隱",
+          "heroSlug": "gao",
+          "heroName": "Gao",
+          "heroNameZh": "高漸離",
           "tag": "Stat Buffs",
-          "change": "Passive Effect Buffed",
-          "changeZh": "增強被動效果",
-          "detail": "\"Ming will often find himself standing in front of teammates drawing fire as he buffs them. As such, we've slightly increased the recovery he gets from his Passive to give him a bit more room to breathe in battle.\"",
-          "detailZh": "「明世隱在增強隊友的同時，往往還要在隊友身前吸引火力；我們略微提高了他被動的自身回復效果，讓他在戰鬥中更加從容。」",
+          "change": "Increased Attack Range and Added Damage Reduction to Ultimate",
+          "changeZh": "增加射程及3技能減傷",
+          "detail": "\"Gao needs to get close to as many enemies as possible while using his Ultimate, so we've increased his damage reduction to improve his survivability. Additionally, we've increased his range so it's easier for him to find a way to enter combat.\"",
+          "detailZh": "「高漸離放大招時，靠近越多敵人效果越好，因此我們提高了他的減傷效果，讓他存活的時間更長；同時提升射程以便他更容易獲得切入機會。」",
+          "versionName": "20250213",
+          "publishedAt": "2025-02-13T03:25:14Z"
+        },
+        {
+          "heroSlug": "li-bai",
+          "heroName": "Li Bai",
+          "heroNameZh": "李白",
+          "tag": "Stat Buffs",
+          "change": "Increased base stats and Ultimate damage.",
+          "changeZh": "提升基礎屬性和大招傷害",
+          "detail": "Li Bai has an agile combat style. We have increased his stats to improve his survivability if he makes a mistake.",
+          "detailZh": "「李白有著非常靈活的作戰風格，我們提高了他的屬性以保證他偶爾失誤時的生存能力。」",
+          "versionName": "20250124",
+          "publishedAt": "2025-01-24T02:00:29Z"
+        },
+        {
+          "heroSlug": "angela",
+          "heroName": "Angela",
+          "heroNameZh": "安琪拉",
+          "tag": "QoL Changes",
+          "change": "Optimized Skill 1's indicator.",
+          "changeZh": "最佳化1技能指示器",
+          "detail": "Skill 1: Scorching Barrage",
+          "detailZh": "最佳化1技能指示器",
+          "versionName": "20250124",
+          "publishedAt": "2025-01-24T02:00:29Z"
+        },
+        {
+          "heroSlug": "pei",
+          "heroName": "Pei",
+          "heroNameZh": "裴擒虎",
+          "tag": "Stat Buffs",
+          "change": "Buffed Tiger Form",
+          "changeZh": "增強虎形態",
+          "detail": "\"Pei has to switch forms to maximize his skill effects, but while in his tiger form, he has much shorter range and needs to get very close to his enemies. We've increased the stats of his tiger form to give him a higher margin of error.\"",
+          "detailZh": "「裴擒虎需要切換形態才能發揮技能效果，但當他切換到虎形態的時候，需要與敵人近身作戰；我們適度地提高了他變成虎形態時的屬性，並提升他的容錯率。」",
+          "versionName": "20250213",
+          "publishedAt": "2025-02-13T03:25:14Z"
+        },
+        {
+          "heroSlug": "erin",
+          "heroName": "Erin",
+          "heroNameZh": "艾琳",
+          "tag": "Stat Buffs",
+          "change": "Increased Skill 1's damage and Physical Defense.",
+          "changeZh": "提升1技能傷害和物理防禦",
+          "detail": "During the 'I'm a dev for HoK!' event in Honor of Kings Camp, there were many calls to buff Erin, so we have increased her viability in the early game.",
+          "detailZh": "「在HOK CAMP的活動『我在HOK當企劃活動中』加強艾琳的呼聲很高，因此本次我們提升了她前期的對抗能力。」",
+          "versionName": "20250124",
+          "publishedAt": "2025-01-24T02:00:29Z"
+        },
+        {
+          "heroSlug": "cirrus",
+          "heroName": "Cirrus",
+          "heroNameZh": "雲中君",
+          "tag": "Stat Buffs",
+          "change": "Reduced Skill Cooldowns",
+          "changeZh": "降低技能冷卻時間",
+          "detail": "\"Damage over time is an important element of how Cirrus deals damage. He has to lead with repeated hits. We've reduced his skill cooldowns to increase his overall damage frequency.\"",
+          "detailZh": "「作為雲中君的重要輸出手段，持續傷害效果需要前置的連續命中，我們降低了他的技能冷卻時間，提升他整體的輸出頻率。」",
           "versionName": "20250213",
           "publishedAt": "2025-02-13T03:25:14Z"
         },
@@ -2956,14 +2956,14 @@
           "publishedAt": "2025-01-09T02:33:14Z"
         },
         {
-          "heroSlug": "cirrus",
-          "heroName": "Cirrus",
-          "heroNameZh": "雲中君",
+          "heroSlug": "ming",
+          "heroName": "Ming",
+          "heroNameZh": "明世隱",
           "tag": "Stat Buffs",
-          "change": "Reduced Skill Cooldowns",
-          "changeZh": "降低技能冷卻時間",
-          "detail": "\"Damage over time is an important element of how Cirrus deals damage. He has to lead with repeated hits. We've reduced his skill cooldowns to increase his overall damage frequency.\"",
-          "detailZh": "「作為雲中君的重要輸出手段，持續傷害效果需要前置的連續命中，我們降低了他的技能冷卻時間，提升他整體的輸出頻率。」",
+          "change": "Passive Effect Buffed",
+          "changeZh": "增強被動效果",
+          "detail": "\"Ming will often find himself standing in front of teammates drawing fire as he buffs them. As such, we've slightly increased the recovery he gets from his Passive to give him a bit more room to breathe in battle.\"",
+          "detailZh": "「明世隱在增強隊友的同時，往往還要在隊友身前吸引火力；我們略微提高了他被動的自身回復效果，讓他在戰鬥中更加從容。」",
           "versionName": "20250213",
           "publishedAt": "2025-02-13T03:25:14Z"
         },
@@ -3004,30 +3004,6 @@
           "publishedAt": "2025-02-13T03:25:14Z"
         },
         {
-          "heroSlug": "luara",
-          "heroName": "Luara",
-          "heroNameZh": "盧雅那",
-          "tag": "Mechanics Upgrade",
-          "change": "Mechanics Upgrade",
-          "changeZh": "機制升級",
-          "detail": "Luara's passive made her overly reliant on Critical Rate equipment. We wanted to give her a playstyle that utilizes attack effects, so we adjusted the Critical Rate and attack effect aspects of her skillset. Also, since Luara gained serpent blades whenever she performs kills or assists, her performance was very dependent on the match situation. We hope that these changes will give her more consistency. Finally, we have also improved her playability and the display of some mechanics.",
-          "detailZh": "「盧雅那的被動機制使她對暴擊裝備過度依賴，我們希望未來她可以擁有一套攻擊特效流的玩法，因此調整了暴擊率和攻擊特效衰減比例。此外，盧雅那參與擊殺和助攻可以獲得環刃，這讓盧雅那在不同局勢的戰鬥中表現落差較大，我們希望她可以更加穩定。最後，本次升級還改善了她的機制顯示和操作手感。」",
-          "versionName": "20250109",
-          "publishedAt": "2025-01-09T02:33:14Z"
-        },
-        {
-          "heroSlug": "han-xin",
-          "heroName": "Han Xin",
-          "heroNameZh": "韓信",
-          "tag": "Mechanics Upgrade",
-          "change": "Upgraded Passive and Skill 2",
-          "changeZh": "升級被動和2技能",
-          "detail": "\"Han Xin's Skill 2 interrupting his Passive has been a huge pain point for players for a long time now. We've addressed the issue in this update. Additionally, we've enhanced his Passive's effects. Now, the Passive and Skill 2 work together to create a stronger combined effect.\"",
-          "detailZh": "「一直以來，2技能打斷被動都是操作韓信的一大痛點，本次改善了這一點，同時升級被動效果，讓兩者能互相加成。」",
-          "versionName": "20250213",
-          "publishedAt": "2025-02-13T03:25:14Z"
-        },
-        {
           "heroSlug": "kongming",
           "heroName": "Kongming",
           "heroNameZh": "諸葛亮",
@@ -3064,6 +3040,18 @@
           "publishedAt": "2025-01-09T02:33:14Z"
         },
         {
+          "heroSlug": "han-xin",
+          "heroName": "Han Xin",
+          "heroNameZh": "韓信",
+          "tag": "Mechanics Upgrade",
+          "change": "Upgraded Passive and Skill 2",
+          "changeZh": "升級被動和2技能",
+          "detail": "\"Han Xin's Skill 2 interrupting his Passive has been a huge pain point for players for a long time now. We've addressed the issue in this update. Additionally, we've enhanced his Passive's effects. Now, the Passive and Skill 2 work together to create a stronger combined effect.\"",
+          "detailZh": "「一直以來，2技能打斷被動都是操作韓信的一大痛點，本次改善了這一點，同時升級被動效果，讓兩者能互相加成。」",
+          "versionName": "20250213",
+          "publishedAt": "2025-02-13T03:25:14Z"
+        },
+        {
           "heroSlug": "gao-changgong",
           "heroName": "Gao Changgong",
           "heroNameZh": "蘭陵王",
@@ -3086,6 +3074,18 @@
           "detailZh": "「讓不知火舞有更多嘗試2技能的機會，同時削弱了傷害降低對手被秒殺的體驗。」",
           "versionName": "20250124",
           "publishedAt": "2025-01-24T02:00:29Z"
+        },
+        {
+          "heroSlug": "luara",
+          "heroName": "Luara",
+          "heroNameZh": "盧雅那",
+          "tag": "Mechanics Upgrade",
+          "change": "Mechanics Upgrade",
+          "changeZh": "機制升級",
+          "detail": "Luara's passive made her overly reliant on Critical Rate equipment. We wanted to give her a playstyle that utilizes attack effects, so we adjusted the Critical Rate and attack effect aspects of her skillset. Also, since Luara gained serpent blades whenever she performs kills or assists, her performance was very dependent on the match situation. We hope that these changes will give her more consistency. Finally, we have also improved her playability and the display of some mechanics.",
+          "detailZh": "「盧雅那的被動機制使她對暴擊裝備過度依賴，我們希望未來她可以擁有一套攻擊特效流的玩法，因此調整了暴擊率和攻擊特效衰減比例。此外，盧雅那參與擊殺和助攻可以獲得環刃，這讓盧雅那在不同局勢的戰鬥中表現落差較大，我們希望她可以更加穩定。最後，本次升級還改善了她的機制顯示和操作手感。」",
+          "versionName": "20250109",
+          "publishedAt": "2025-01-09T02:33:14Z"
         },
         {
           "heroSlug": "luna",
@@ -3154,18 +3154,6 @@
           "publishedAt": "2024-09-25T03:24:02Z"
         },
         {
-          "heroSlug": "nezha",
-          "heroName": "Nezha",
-          "heroNameZh": "哪吒",
-          "tag": "Stat Buffs",
-          "change": "Enhanced Base Stats",
-          "changeZh": "提升基礎屬性",
-          "detail": "\"Nezha often initiates team fights, which also means that he tends to draw the enemy's firepower. As such, we've enhanced his base stats so that he can survive until his teammates arrive to help.\"",
-          "detailZh": "「哪吒團戰中往往一馬當先，很容易吸引敵方的全部火力，我們適當提高他的基礎屬性，讓他能夠等到隊友的支援和配合。」",
-          "versionName": "20241128",
-          "publishedAt": "2024-11-28T01:46:48Z"
-        },
-        {
           "heroSlug": "lian-po",
           "heroName": "Lian Po",
           "heroNameZh": "廉頗",
@@ -3176,18 +3164,6 @@
           "detailZh": "「廉頗在提供控制的同時造成更多的傷害威脅。」",
           "versionName": "20241101",
           "publishedAt": "2024-11-01T01:52:22Z"
-        },
-        {
-          "heroSlug": "fuzi",
-          "heroName": "Fuzi",
-          "heroNameZh": "老夫子",
-          "tag": "Stat Buffs",
-          "change": "Reduced the cooldown of Skills 1 and 2 in the late game",
-          "changeZh": "降低1、2技能後期的冷卻時間",
-          "detail": "\"Fuzi's passive ability to reduce the cooldown of his Skills 1 and 2 with his Basic Attack is an important part of his performance. However, in the late game team fights, he doesn't have much time left for Basic Attacks. As such, we've reduced the cooldown of his Skills 1 and 2 in the late game to increase his chances of survival.\"",
-          "detailZh": "「老夫子透過被動降低的1技能和2技能冷卻是他的重要技巧，而在後期團戰中留給他普通攻擊的時間並不多。因此我們降低了1技能和2技能後期的冷卻，提升他存活的可能性。」",
-          "versionName": "20241128",
-          "publishedAt": "2024-11-28T01:46:48Z"
         },
         {
           "heroSlug": "di-renjie",
@@ -3202,14 +3178,26 @@
           "publishedAt": "2024-11-07T02:00:00Z"
         },
         {
-          "heroSlug": "wuyan",
-          "heroName": "Wuyan",
-          "heroNameZh": "鍾無艷",
-          "tag": "Mechanics Upgrade",
-          "change": "Enhanced Skill Base Effects",
-          "changeZh": "提升技能的基礎效果",
-          "detail": "\"Currently, Wuyan's ability to hit the enemy with the center of her Skill 2 attack plays a huge part in her overall performance, so we've made adjustments to help her perform more consistently across different situations. At the same time, we've made adjustments to her skills' stat bonuses to give players more options in terms of her equipment.\"",
-          "detailZh": "「目前鍾無艷是否能用2技能中心區域命中敵人，大大決定了她的表現，因此我們縮減了不同情形的差異；同時調整了技能的屬性加成結構，讓她能有不同的出裝嘗試。」",
+          "heroSlug": "nezha",
+          "heroName": "Nezha",
+          "heroNameZh": "哪吒",
+          "tag": "Stat Buffs",
+          "change": "Enhanced Base Stats",
+          "changeZh": "提升基礎屬性",
+          "detail": "\"Nezha often initiates team fights, which also means that he tends to draw the enemy's firepower. As such, we've enhanced his base stats so that he can survive until his teammates arrive to help.\"",
+          "detailZh": "「哪吒團戰中往往一馬當先，很容易吸引敵方的全部火力，我們適當提高他的基礎屬性，讓他能夠等到隊友的支援和配合。」",
+          "versionName": "20241128",
+          "publishedAt": "2024-11-28T01:46:48Z"
+        },
+        {
+          "heroSlug": "fuzi",
+          "heroName": "Fuzi",
+          "heroNameZh": "老夫子",
+          "tag": "Stat Buffs",
+          "change": "Reduced the cooldown of Skills 1 and 2 in the late game",
+          "changeZh": "降低1、2技能後期的冷卻時間",
+          "detail": "\"Fuzi's passive ability to reduce the cooldown of his Skills 1 and 2 with his Basic Attack is an important part of his performance. However, in the late game team fights, he doesn't have much time left for Basic Attacks. As such, we've reduced the cooldown of his Skills 1 and 2 in the late game to increase his chances of survival.\"",
+          "detailZh": "「老夫子透過被動降低的1技能和2技能冷卻是他的重要技巧，而在後期團戰中留給他普通攻擊的時間並不多。因此我們降低了1技能和2技能後期的冷卻，提升他存活的可能性。」",
           "versionName": "20241128",
           "publishedAt": "2024-11-28T01:46:48Z"
         },
@@ -3238,26 +3226,26 @@
           "publishedAt": "2024-11-07T02:00:00Z"
         },
         {
-          "heroSlug": "gan-mo",
-          "heroName": "Gan & Mo",
-          "heroNameZh": "干將莫邪",
+          "heroSlug": "wuyan",
+          "heroName": "Wuyan",
+          "heroNameZh": "鍾無艷",
           "tag": "Mechanics Upgrade",
-          "change": "Increased skill use count.",
-          "changeZh": "增加更多的技能嘗試次數",
-          "detail": "\"Gan & Mo can deal extremely high damage after activating their Ultimate, but if they miss, they'll be more or less harmless for a short period of time. To alleviate this, we're giving them more chances to deal damage, and allowing them to more freely choose a comfortable attack range.\"",
-          "detailZh": "「干將莫邪放大招後傷害非常高，但一旦失手，短期內很難造成傷害。因此，我們給了他們更多的嘗試機會，並讓他們更自由地選擇舒適的輸出距離。」",
-          "versionName": "20240925",
-          "publishedAt": "2024-09-25T03:24:02Z"
+          "change": "Enhanced Skill Base Effects",
+          "changeZh": "提升技能的基礎效果",
+          "detail": "\"Currently, Wuyan's ability to hit the enemy with the center of her Skill 2 attack plays a huge part in her overall performance, so we've made adjustments to help her perform more consistently across different situations. At the same time, we've made adjustments to her skills' stat bonuses to give players more options in terms of her equipment.\"",
+          "detailZh": "「目前鍾無艷是否能用2技能中心區域命中敵人，大大決定了她的表現，因此我們縮減了不同情形的差異；同時調整了技能的屬性加成結構，讓她能有不同的出裝嘗試。」",
+          "versionName": "20241128",
+          "publishedAt": "2024-11-28T01:46:48Z"
         },
         {
-          "heroSlug": "lady-zhen",
-          "heroName": "Lady Zhen",
-          "heroNameZh": "甄姬",
+          "heroSlug": "liu-bei",
+          "heroName": "Liu Bei",
+          "heroNameZh": "劉備",
           "tag": "Stat Buffs",
-          "change": "Increased Skill 2's bounces, reduced Skill 1 CD",
-          "changeZh": "調整2技能彈射次數，降低1技能冷卻",
-          "detail": "Lady Zhen's bounce attacks perform well during small team fights in the early to mid game. To better pace her power level and make it last until the late game, we've changed the number of bounces her Skill 2 has. We've also reduced the cooldown of her Skill 1 to give her more opportunities to freeze enemies and protect herself in the early game.",
-          "detailZh": "「甄姬的彈射在前中期小規模團戰中有不錯的表現，我們調整了2技能的彈射次數，略微延緩她發威的時間，並保證她在後期能維持好表現；同時我們降低1技能前期的冷卻時間，讓她有更多嘗試冰凍敵人以及自保的機會。」",
+          "change": "Increased BA range, reduced Skill 1 CD in early game",
+          "changeZh": "提升普攻射程，降低1技能前期冷卻",
+          "detail": "Liu Bei's shotgun is most effective up close, and Skill 1 is his core damage and mobility skill, so we have reduced its cooldown in the early game to improve his leveling efficiency. The range of his shotgun has also been increased to give him some mid-range coverage.",
+          "detailZh": "「劉備在接近對手時可以發揮出霰彈槍的最大威力，其中1技能作為移動和輸出的核心主要技能，我們適當降低了前期的冷卻來提升他的發育效率；同時霰彈槍的射程升級也能讓他兼顧一定的中距離作戰能力。」",
           "versionName": "20241212",
           "publishedAt": "2024-12-12T01:44:36Z"
         },
@@ -3274,6 +3262,42 @@
           "publishedAt": "2024-09-25T03:24:02Z"
         },
         {
+          "heroSlug": "lady-zhen",
+          "heroName": "Lady Zhen",
+          "heroNameZh": "甄姬",
+          "tag": "Stat Buffs",
+          "change": "Increased Skill 2's bounces, reduced Skill 1 CD",
+          "changeZh": "調整2技能彈射次數，降低1技能冷卻",
+          "detail": "Lady Zhen's bounce attacks perform well during small team fights in the early to mid game. To better pace her power level and make it last until the late game, we've changed the number of bounces her Skill 2 has. We've also reduced the cooldown of her Skill 1 to give her more opportunities to freeze enemies and protect herself in the early game.",
+          "detailZh": "「甄姬的彈射在前中期小規模團戰中有不錯的表現，我們調整了2技能的彈射次數，略微延緩她發威的時間，並保證她在後期能維持好表現；同時我們降低1技能前期的冷卻時間，讓她有更多嘗試冰凍敵人以及自保的機會。」",
+          "versionName": "20241212",
+          "publishedAt": "2024-12-12T01:44:36Z"
+        },
+        {
+          "heroSlug": "gan-mo",
+          "heroName": "Gan & Mo",
+          "heroNameZh": "干將莫邪",
+          "tag": "Mechanics Upgrade",
+          "change": "Increased skill use count.",
+          "changeZh": "增加更多的技能嘗試次數",
+          "detail": "\"Gan & Mo can deal extremely high damage after activating their Ultimate, but if they miss, they'll be more or less harmless for a short period of time. To alleviate this, we're giving them more chances to deal damage, and allowing them to more freely choose a comfortable attack range.\"",
+          "detailZh": "「干將莫邪放大招後傷害非常高，但一旦失手，短期內很難造成傷害。因此，我們給了他們更多的嘗試機會，並讓他們更自由地選擇舒適的輸出距離。」",
+          "versionName": "20240925",
+          "publishedAt": "2024-09-25T03:24:02Z"
+        },
+        {
+          "heroSlug": "shouyue",
+          "heroName": "Shouyue",
+          "heroNameZh": "百里守約",
+          "tag": "Mechanics Upgrade",
+          "change": "More Builds and Play Styles",
+          "changeZh": "提供不同出裝和打法風格",
+          "detail": "\"Previously, players using Shouyue had a hard time choosing between sniping from a distance and using Basic Attacks at a closer range. Now, we've upgraded his skills to give our players more equipment options. At the same time, with the same set of equipment, players can now mix long-range sniping with Basic Attacks more effectively.\"",
+          "detailZh": "「過去的百里守約很難在遠程狙擊和近距離普攻之間做出抉擇，本次我們升級了他的技能，希望他能夠有更多出裝選擇；同時，在同一套出裝下，能夠讓遠程狙擊和普攻之間產生更多搭配。」",
+          "versionName": "20241128",
+          "publishedAt": "2024-11-28T01:46:48Z"
+        },
+        {
           "heroSlug": "yaria",
           "heroName": "Yaria",
           "heroNameZh": "瑤",
@@ -3282,18 +3306,6 @@
           "changeZh": "被動冷卻隨等級成長而降低，調整護盾係數",
           "detail": "In the mid to late game, most heroes' skills get shorter cooldowns and higher DPS. The cooldown of Yaria's passive feels quite long in comparison, so we've reduced its cooldown per hero level. The effect of Yaria's shield will now also vary based on the target.",
           "detailZh": "「相較於中後期對手技能冷卻的縮減和傷害的提高，瑤的被動技能觸發間隔顯得有點太長，因此我們調整了隨等級成長的冷卻時間；同時瑤的護盾也會隨著保護的目標而發生改變。」",
-          "versionName": "20241212",
-          "publishedAt": "2024-12-12T01:44:36Z"
-        },
-        {
-          "heroSlug": "liu-bei",
-          "heroName": "Liu Bei",
-          "heroNameZh": "劉備",
-          "tag": "Stat Buffs",
-          "change": "Increased BA range, reduced Skill 1 CD in early game",
-          "changeZh": "提升普攻射程，降低1技能前期冷卻",
-          "detail": "Liu Bei's shotgun is most effective up close, and Skill 1 is his core damage and mobility skill, so we have reduced its cooldown in the early game to improve his leveling efficiency. The range of his shotgun has also been increased to give him some mid-range coverage.",
-          "detailZh": "「劉備在接近對手時可以發揮出霰彈槍的最大威力，其中1技能作為移動和輸出的核心主要技能，我們適當降低了前期的冷卻來提升他的發育效率；同時霰彈槍的射程升級也能讓他兼顧一定的中距離作戰能力。」",
           "versionName": "20241212",
           "publishedAt": "2024-12-12T01:44:36Z"
         },
@@ -3310,16 +3322,16 @@
           "publishedAt": "2024-10-17T02:18:42Z"
         },
         {
-          "heroSlug": "shouyue",
-          "heroName": "Shouyue",
-          "heroNameZh": "百里守約",
-          "tag": "Mechanics Upgrade",
-          "change": "More Builds and Play Styles",
-          "changeZh": "提供不同出裝和打法風格",
-          "detail": "\"Previously, players using Shouyue had a hard time choosing between sniping from a distance and using Basic Attacks at a closer range. Now, we've upgraded his skills to give our players more equipment options. At the same time, with the same set of equipment, players can now mix long-range sniping with Basic Attacks more effectively.\"",
-          "detailZh": "「過去的百里守約很難在遠程狙擊和近距離普攻之間做出抉擇，本次我們升級了他的技能，希望他能夠有更多出裝選擇；同時，在同一套出裝下，能夠讓遠程狙擊和普攻之間產生更多搭配。」",
-          "versionName": "20241128",
-          "publishedAt": "2024-11-28T01:46:48Z"
+          "heroSlug": "augran",
+          "heroName": "Augran",
+          "heroNameZh": "大司命",
+          "tag": "Stat Nerfs",
+          "change": "Reduced his ability to deal sustained damage with his Basic Attack.",
+          "changeZh": "降低普通攻擊的持續輸出能力",
+          "detail": "\"Augran could consistently continue to deal damage in between attacks from his opponents. We're reducing his sustained damage output to prevent opponents from being taken down too early.\"",
+          "detailZh": "大司命能夠在對方的攻擊間隙持續造成傷害，我們適當削弱他的持續輸出能力，使對手不會太早遭到斬殺。",
+          "versionName": "20240925",
+          "publishedAt": "2024-09-25T03:24:02Z"
         },
         {
           "heroSlug": "charlotte",
@@ -3334,42 +3346,6 @@
           "publishedAt": "2024-09-25T03:24:02Z"
         },
         {
-          "heroSlug": "han-xin",
-          "heroName": "Han Xin",
-          "heroNameZh": "韓信",
-          "tag": "Stat Buffs",
-          "change": "Improved base Physical Defense and balanced Ultimate's late game damage",
-          "changeZh": "提高基礎物理防禦，平衡大招前後期傷害",
-          "detail": "Improved base Physical Defense and balanced Ultimate's late game damage",
-          "detailZh": "提高基礎物理防禦，平衡大招前後期傷害",
-          "versionName": "20240925",
-          "publishedAt": "2024-09-25T03:24:02Z"
-        },
-        {
-          "heroSlug": "augran",
-          "heroName": "Augran",
-          "heroNameZh": "大司命",
-          "tag": "Stat Nerfs",
-          "change": "Reduced his ability to deal sustained damage with his Basic Attack.",
-          "changeZh": "降低普通攻擊的持續輸出能力",
-          "detail": "\"Augran could consistently continue to deal damage in between attacks from his opponents. We're reducing his sustained damage output to prevent opponents from being taken down too early.\"",
-          "detailZh": "大司命能夠在對方的攻擊間隙持續造成傷害，我們適當削弱他的持續輸出能力，使對手不會太早遭到斬殺。",
-          "versionName": "20240925",
-          "publishedAt": "2024-09-25T03:24:02Z"
-        },
-        {
-          "heroSlug": "kongming",
-          "heroName": "Kongming",
-          "heroNameZh": "諸葛亮",
-          "tag": "Stat Buffs",
-          "change": "Increased damage from Skill 1 and reduced Skill 2 charge time.",
-          "changeZh": "提升1技能傷害，降低2技能儲存時間",
-          "detail": "\"Increasing Kongming's damage while reducing his dash skill's charge time to make him more flexible.\"",
-          "detailZh": "「提升諸葛亮的傷害，同時降低位移技能的儲存時間，使其更加靈活。」",
-          "versionName": "20241017",
-          "publishedAt": "2024-10-17T02:18:42Z"
-        },
-        {
           "heroSlug": "musashi",
           "heroName": "Musashi",
           "heroNameZh": "宮本武藏",
@@ -3382,26 +3358,14 @@
           "publishedAt": "2024-11-28T01:46:48Z"
         },
         {
-          "heroSlug": "arthur",
-          "heroName": "Arthur",
-          "heroNameZh": "亞瑟",
+          "heroSlug": "kongming",
+          "heroName": "Kongming",
+          "heroNameZh": "諸葛亮",
           "tag": "Stat Buffs",
-          "change": "Reduced Skill 1 cooldown, adjusted damage structure.",
-          "changeZh": "降低1技能冷卻，調整傷害結構",
-          "detail": "\"Arthur's mobility and the silence effect on his Skill 1 are crucial for his playstyle. The initial cooldown of this skill has been a bit too long, so we're reducing it to give Arthur more flexibility in skill upgrades.\"",
-          "detailZh": "「1技能加速效果關乎亞瑟的機動性，沉默效果也能夠對敵人形成一定的限制；目前1技能的初始冷卻時間有點太長了，因此我們適當降低前期的冷卻時間，讓亞瑟在技能升級的選擇上有更多靈活性。」",
-          "versionName": "20241017",
-          "publishedAt": "2024-10-17T02:18:42Z"
-        },
-        {
-          "heroSlug": "wukong",
-          "heroName": "Wukong",
-          "heroNameZh": "孫悟空",
-          "tag": "Stat Buffs",
-          "change": "Reduced Ultimate cooldown and increased passive base damage.",
-          "changeZh": "降低大招冷卻，提升被動的基礎傷害",
-          "detail": "\"Wukong has been underperforming lately. His enhanced Basic Attack, being his primary damage source, relies heavily on completing his equipment. We're increasing the Growth of his enhanced Basic Attack, so he can still pose a threat even when behind.\"",
-          "detailZh": "「孫悟空已經沉寂一段時間了，強化普攻作為其最主要的輸出來源，非常依賴裝備的成型；因此我們適當提高了強化普攻的成長，讓他即使在逆風時也能向對手構成一定程度的威脅。」",
+          "change": "Increased damage from Skill 1 and reduced Skill 2 charge time.",
+          "changeZh": "提升1技能傷害，降低2技能儲存時間",
+          "detail": "\"Increasing Kongming's damage while reducing his dash skill's charge time to make him more flexible.\"",
+          "detailZh": "「提升諸葛亮的傷害，同時降低位移技能的儲存時間，使其更加靈活。」",
           "versionName": "20241017",
           "publishedAt": "2024-10-17T02:18:42Z"
         },
@@ -3418,6 +3382,42 @@
           "publishedAt": "2024-09-25T03:24:02Z"
         },
         {
+          "heroSlug": "arthur",
+          "heroName": "Arthur",
+          "heroNameZh": "亞瑟",
+          "tag": "Stat Buffs",
+          "change": "Reduced Skill 1 cooldown, adjusted damage structure.",
+          "changeZh": "降低1技能冷卻，調整傷害結構",
+          "detail": "\"Arthur's mobility and the silence effect on his Skill 1 are crucial for his playstyle. The initial cooldown of this skill has been a bit too long, so we're reducing it to give Arthur more flexibility in skill upgrades.\"",
+          "detailZh": "「1技能加速效果關乎亞瑟的機動性，沉默效果也能夠對敵人形成一定的限制；目前1技能的初始冷卻時間有點太長了，因此我們適當降低前期的冷卻時間，讓亞瑟在技能升級的選擇上有更多靈活性。」",
+          "versionName": "20241017",
+          "publishedAt": "2024-10-17T02:18:42Z"
+        },
+        {
+          "heroSlug": "fang",
+          "heroName": "Fang",
+          "heroNameZh": "李元芳",
+          "tag": "Mechanics Upgrade",
+          "change": "Passive's extra damage now applies to minions",
+          "changeZh": "被動的額外傷害會對小兵生效",
+          "detail": "\"As he is a marksman, we want his passive to also apply to minions to increase his farming speed, rather than only being effective when he's jungling.\"",
+          "detailZh": "「作為射手，我們希望他的被動也能對小兵生效，以提升他的發育速度，而不是僅僅當他身處打野位置上才生效。」",
+          "versionName": "20241101",
+          "publishedAt": "2024-11-01T01:52:22Z"
+        },
+        {
+          "heroSlug": "wukong",
+          "heroName": "Wukong",
+          "heroNameZh": "孫悟空",
+          "tag": "Stat Buffs",
+          "change": "Reduced Ultimate cooldown and increased passive base damage.",
+          "changeZh": "降低大招冷卻，提升被動的基礎傷害",
+          "detail": "\"Wukong has been underperforming lately. His enhanced Basic Attack, being his primary damage source, relies heavily on completing his equipment. We're increasing the Growth of his enhanced Basic Attack, so he can still pose a threat even when behind.\"",
+          "detailZh": "「孫悟空已經沉寂一段時間了，強化普攻作為其最主要的輸出來源，非常依賴裝備的成型；因此我們適當提高了強化普攻的成長，讓他即使在逆風時也能向對手構成一定程度的威脅。」",
+          "versionName": "20241017",
+          "publishedAt": "2024-10-17T02:18:42Z"
+        },
+        {
           "heroSlug": "ukyo-tachibana",
           "heroName": "Ukyo Tachibana",
           "heroNameZh": "橘右京",
@@ -3430,14 +3430,38 @@
           "publishedAt": "2024-09-25T03:24:02Z"
         },
         {
-          "heroSlug": "fang",
-          "heroName": "Fang",
-          "heroNameZh": "李元芳",
-          "tag": "Mechanics Upgrade",
-          "change": "Passive's extra damage now applies to minions",
-          "changeZh": "被動的額外傷害會對小兵生效",
-          "detail": "\"As he is a marksman, we want his passive to also apply to minions to increase his farming speed, rather than only being effective when he's jungling.\"",
-          "detailZh": "「作為射手，我們希望他的被動也能對小兵生效，以提升他的發育速度，而不是僅僅當他身處打野位置上才生效。」",
+          "heroSlug": "han-xin",
+          "heroName": "Han Xin",
+          "heroNameZh": "韓信",
+          "tag": "Stat Buffs",
+          "change": "Improved base Physical Defense and balanced Ultimate's late game damage",
+          "changeZh": "提高基礎物理防禦，平衡大招前後期傷害",
+          "detail": "Improved base Physical Defense and balanced Ultimate's late game damage",
+          "detailZh": "提高基礎物理防禦，平衡大招前後期傷害",
+          "versionName": "20240925",
+          "publishedAt": "2024-09-25T03:24:02Z"
+        },
+        {
+          "heroSlug": "xiao-qiao",
+          "heroName": "Xiao Qiao",
+          "heroNameZh": "小喬",
+          "tag": "Stat Buffs",
+          "change": "Reduced Skill 1 CD",
+          "changeZh": "降低1技能冷卻",
+          "detail": "Work hard and get stronger, Xiao Qiao.",
+          "detailZh": "「小喬，要努力變強。」",
+          "versionName": "20241212",
+          "publishedAt": "2024-12-12T01:44:36Z"
+        },
+        {
+          "heroSlug": "sun-ce",
+          "heroName": "Sun Ce",
+          "heroNameZh": "孫策",
+          "tag": "Stat Buffs",
+          "change": "Increased base stats and Ultimate damage",
+          "changeZh": "提高基礎屬性與大招傷害",
+          "detail": "\"We hope that Sun Ce's Ultimate will not only serve as a way to assist teammates, but also provide some extra damage in his combos.\"",
+          "detailZh": "「希望孫策的大招不僅作為支援的手段，也能在連招中時有更顯著的傷害效果。」",
           "versionName": "20241101",
           "publishedAt": "2024-11-01T01:52:22Z"
         },
@@ -3464,30 +3488,6 @@
           "detailZh": "貂蟬的2技能命中敵人時，會有很高的冷卻返還收益，但失手時也會帶給玩家很強的挫敗感，影響後續的技能銜接。我們嘗試將2技能冷卻返還機制由離散變得更連續，提升貂蟬玩家的使用體驗。",
           "versionName": "20240925",
           "publishedAt": "2024-09-25T03:24:02Z"
-        },
-        {
-          "heroSlug": "sun-ce",
-          "heroName": "Sun Ce",
-          "heroNameZh": "孫策",
-          "tag": "Stat Buffs",
-          "change": "Increased base stats and Ultimate damage",
-          "changeZh": "提高基礎屬性與大招傷害",
-          "detail": "\"We hope that Sun Ce's Ultimate will not only serve as a way to assist teammates, but also provide some extra damage in his combos.\"",
-          "detailZh": "「希望孫策的大招不僅作為支援的手段，也能在連招中時有更顯著的傷害效果。」",
-          "versionName": "20241101",
-          "publishedAt": "2024-11-01T01:52:22Z"
-        },
-        {
-          "heroSlug": "xiao-qiao",
-          "heroName": "Xiao Qiao",
-          "heroNameZh": "小喬",
-          "tag": "Stat Buffs",
-          "change": "Reduced Skill 1 CD",
-          "changeZh": "降低1技能冷卻",
-          "detail": "Work hard and get stronger, Xiao Qiao.",
-          "detailZh": "「小喬，要努力變強。」",
-          "versionName": "20241212",
-          "publishedAt": "2024-12-12T01:44:36Z"
         },
         {
           "heroSlug": "mai-shiranui",
@@ -3580,16 +3580,16 @@
           "publishedAt": "2024-08-08T02:00:57Z"
         },
         {
-          "heroSlug": "li-bai",
-          "heroName": "Li Bai",
-          "heroNameZh": "李白",
+          "heroSlug": "dharma",
+          "heroName": "Dharma",
+          "heroNameZh": "達摩",
           "tag": "Stat Buffs",
-          "change": "Skill 1 damage increased.",
-          "changeZh": "增加1技能的傷害",
-          "detail": "Increasing Skill 1's damage allows Li Bai to deal good damage before he gets his Ultimate",
-          "detailZh": "「提升1技能的傷害，讓李白即使沒有大招，也能有不俗的傷害。」",
-          "versionName": "20240808",
-          "publishedAt": "2024-08-08T02:00:57Z"
+          "change": "Reduced Skill 1 and Skill 3 cooldowns.",
+          "changeZh": "降低1技能和3技能的冷卻時間",
+          "detail": "\"Currently, Dharma is relatively weak, so we've reduced the cooldown of his Ultimate to give him more opportunities to knock opponents into walls. Since his Skill 2's stationary punch is difficult to land on agile opponents, we've shortened the stock time for his Skill 1, allowing him to better adjust the position of his Skill 2.\"",
+          "detailZh": "目前達摩強度偏低，我們降低他大招的冷卻時間，給他更多的機會嘗試將對手擊退到牆體上；2技能原地揮拳很難命中靈活的對手，因此我們縮短1技能儲存時間，讓他能更好地調整2技能的位置。",
+          "versionName": "20240822",
+          "publishedAt": "2024-08-22T07:13:54Z"
         },
         {
           "heroSlug": "luban-no-7",
@@ -3616,6 +3616,18 @@
           "publishedAt": "2024-08-08T02:00:57Z"
         },
         {
+          "heroSlug": "li-bai",
+          "heroName": "Li Bai",
+          "heroNameZh": "李白",
+          "tag": "Stat Buffs",
+          "change": "Skill 1 damage increased.",
+          "changeZh": "增加1技能的傷害",
+          "detail": "Increasing Skill 1's damage allows Li Bai to deal good damage before he gets his Ultimate",
+          "detailZh": "「提升1技能的傷害，讓李白即使沒有大招，也能有不俗的傷害。」",
+          "versionName": "20240808",
+          "publishedAt": "2024-08-08T02:00:57Z"
+        },
+        {
           "heroSlug": "angela",
           "heroName": "Angela",
           "heroNameZh": "安琪拉",
@@ -3628,26 +3640,14 @@
           "publishedAt": "2024-08-22T07:13:54Z"
         },
         {
-          "heroSlug": "dharma",
-          "heroName": "Dharma",
-          "heroNameZh": "達摩",
+          "heroSlug": "huang-zhong",
+          "heroName": "Huang Zhong",
+          "heroNameZh": "黃忠",
           "tag": "Stat Buffs",
-          "change": "Reduced Skill 1 and Skill 3 cooldowns.",
-          "changeZh": "降低1技能和3技能的冷卻時間",
-          "detail": "\"Currently, Dharma is relatively weak, so we've reduced the cooldown of his Ultimate to give him more opportunities to knock opponents into walls. Since his Skill 2's stationary punch is difficult to land on agile opponents, we've shortened the stock time for his Skill 1, allowing him to better adjust the position of his Skill 2.\"",
-          "detailZh": "目前達摩強度偏低，我們降低他大招的冷卻時間，給他更多的機會嘗試將對手擊退到牆體上；2技能原地揮拳很難命中靈活的對手，因此我們縮短1技能儲存時間，讓他能更好地調整2技能的位置。",
-          "versionName": "20240822",
-          "publishedAt": "2024-08-22T07:13:54Z"
-        },
-        {
-          "heroSlug": "erin",
-          "heroName": "Erin",
-          "heroNameZh": "艾琳",
-          "tag": "Stat Buffs",
-          "change": "Improved base stats.",
-          "changeZh": "提高基礎屬性",
-          "detail": "Erin can explore both physical and magic equipment. We're improving her base stats to ensure she remains strong under different playstyles.",
-          "detailZh": "「艾琳可以探索物理或法術出裝，我們提高她的基礎屬性，希望保證她在不同流派下的基礎強度。」",
+          "change": "Increased base Movement Speed.",
+          "changeZh": "增加基礎移速",
+          "detail": "Huang Zhong is still full of vigor, and we hope this change will make him more flexible in combat.",
+          "detailZh": "「黃忠依然充滿活力，希望他在一般形態下能夠更加靈活地戰鬥。」",
           "versionName": "20240905",
           "publishedAt": "2024-09-05T03:48:42Z"
         },
@@ -3664,52 +3664,16 @@
           "publishedAt": "2024-08-22T07:13:54Z"
         },
         {
-          "heroSlug": "wang-zhaojun",
-          "heroName": "Wang Zhaojun",
-          "heroNameZh": "王昭君",
-          "tag": "Stat Nerfs",
-          "change": "Reduced early game strength while allowing her to use Skill 2 more frequently in the late game",
-          "changeZh": "降低前期強度，適當提升後期二技能頻率",
-          "detail": null,
-          "detailZh": null,
-          "versionName": "20240725",
-          "publishedAt": "2024-07-25T02:20:21Z"
-        },
-        {
-          "heroSlug": "mulan",
-          "heroName": "Mulan",
-          "heroNameZh": "花木蘭",
+          "heroSlug": "erin",
+          "heroName": "Erin",
+          "heroNameZh": "艾琳",
           "tag": "Stat Buffs",
-          "change": "Increased damage reduction while wielding the heavy sword and the damage of Skill 1 when wielding both heavy and dual swords.",
-          "changeZh": "增加重劍形態的免傷效果，同時提升1技能在輕劍和重劍形態的傷害",
-          "detail": "We made Mulan tankier while wielding her heavy sword and increased her overall damage output. Hopefully she will now perform better in team fights",
-          "detailZh": "「提升花木蘭重劍的坦度和整體輸出能力，希望她在團戰中有更好的表現。」",
-          "versionName": "20240808",
-          "publishedAt": "2024-08-08T02:00:57Z"
-        },
-        {
-          "heroSlug": "ming",
-          "heroName": "Ming",
-          "heroNameZh": "明世隱",
-          "tag": "Stat Nerfs",
-          "change": "Reduced the early game bonus to teammates.",
-          "changeZh": "降低前期對隊友的屬性加成",
-          "detail": "\"In the early game, Ming can boost his team's effectiveness when linking with allies, creating a whole that is greater than its parts and further magnifying any advantage gained. In order to alleviate this, we've slightly reduced the early game bonus he provides to allies.\"",
-          "detailZh": "明世隱在前期連結隊友時能夠發揮1+1>2的效果，並進一步放大取得的優勢，因此我們適度削弱了前期對隊友的屬性加成效果。",
-          "versionName": "20240822",
-          "publishedAt": "2024-08-22T07:13:54Z"
-        },
-        {
-          "heroSlug": "yuhuan",
-          "heroName": "Yuhuan",
-          "heroNameZh": "楊玉環",
-          "tag": "Stat Buffs",
-          "change": "Increased number of Skill 1 sound waves, base damage, and jungling effectiveness",
-          "changeZh": "提升1技能的音波數量和基礎傷害及打野效率",
-          "detail": "Her smile could melt your heart. The powdered faces of all the ladies-in-waiting paled in comparison",
-          "detailZh": "「回眸一笑百媚生，六宮粉黛無顏色。」",
-          "versionName": "20240808",
-          "publishedAt": "2024-08-08T02:00:57Z"
+          "change": "Improved base stats.",
+          "changeZh": "提高基礎屬性",
+          "detail": "Erin can explore both physical and magic equipment. We're improving her base stats to ensure she remains strong under different playstyles.",
+          "detailZh": "「艾琳可以探索物理或法術出裝，我們提高她的基礎屬性，希望保證她在不同流派下的基礎強度。」",
+          "versionName": "20240905",
+          "publishedAt": "2024-09-05T03:48:42Z"
         },
         {
           "heroSlug": "yang-jian",
@@ -3724,16 +3688,40 @@
           "publishedAt": "2024-09-05T03:48:42Z"
         },
         {
-          "heroSlug": "kaizer",
-          "heroName": "Kaizer",
-          "heroNameZh": "鎧",
-          "tag": "Stat Changes",
-          "change": "Balanced the strength of different builds.",
-          "changeZh": "平衡不同出裝下的強度",
-          "detail": "\"Currently, Kaizer's overall strength is too high, especially when he purchases a lot of defensive equipment, making it difficult for opponents to counter him. Therefore, we've slightly reduced his strength when using defensive builds while maintaining his power with offensive builds.\"",
-          "detailZh": "目前鎧的整體強度偏高，尤其在購買較多防禦裝備時，對手難以與其抗衡，因此我們適度降低了鎧出防禦套裝的強度，同時確保他在攻擊出裝下的強度。",
-          "versionName": "20240822",
-          "publishedAt": "2024-08-22T07:13:54Z"
+          "heroSlug": "wang-zhaojun",
+          "heroName": "Wang Zhaojun",
+          "heroNameZh": "王昭君",
+          "tag": "Stat Nerfs",
+          "change": "Reduced early game strength while allowing her to use Skill 2 more frequently in the late game",
+          "changeZh": "降低前期強度，適當提升後期二技能頻率",
+          "detail": null,
+          "detailZh": null,
+          "versionName": "20240725",
+          "publishedAt": "2024-07-25T02:20:21Z"
+        },
+        {
+          "heroSlug": "liu-bei",
+          "heroName": "Liu Bei",
+          "heroNameZh": "劉備",
+          "tag": "Stat Buffs",
+          "change": "Increased Ultimate's attack and shield.",
+          "changeZh": "提升大招攻擊力和護盾量",
+          "detail": "Do no evil no matter how small, and do not avoid doing good no matter how small.",
+          "detailZh": "「勿以惡小而為之，勿以善小而不為。」",
+          "versionName": "20240905",
+          "publishedAt": "2024-09-05T03:48:42Z"
+        },
+        {
+          "heroSlug": "mulan",
+          "heroName": "Mulan",
+          "heroNameZh": "花木蘭",
+          "tag": "Stat Buffs",
+          "change": "Increased damage reduction while wielding the heavy sword and the damage of Skill 1 when wielding both heavy and dual swords.",
+          "changeZh": "增加重劍形態的免傷效果，同時提升1技能在輕劍和重劍形態的傷害",
+          "detail": "We made Mulan tankier while wielding her heavy sword and increased her overall damage output. Hopefully she will now perform better in team fights",
+          "detailZh": "「提升花木蘭重劍的坦度和整體輸出能力，希望她在團戰中有更好的表現。」",
+          "versionName": "20240808",
+          "publishedAt": "2024-08-08T02:00:57Z"
         },
         {
           "heroSlug": "butterfly",
@@ -3746,6 +3734,30 @@
           "detailZh": "大招的標記是刀鋒寶貝的重要機制，我們提升了印記的持續時間，希望給她更多的容錯空間來利用這個特點。",
           "versionName": "20240822",
           "publishedAt": "2024-08-22T07:13:54Z"
+        },
+        {
+          "heroSlug": "kaizer",
+          "heroName": "Kaizer",
+          "heroNameZh": "鎧",
+          "tag": "Stat Changes",
+          "change": "Balanced the strength of different builds.",
+          "changeZh": "平衡不同出裝下的強度",
+          "detail": "\"Currently, Kaizer's overall strength is too high, especially when he purchases a lot of defensive equipment, making it difficult for opponents to counter him. Therefore, we've slightly reduced his strength when using defensive builds while maintaining his power with offensive builds.\"",
+          "detailZh": "目前鎧的整體強度偏高，尤其在購買較多防禦裝備時，對手難以與其抗衡，因此我們適度降低了鎧出防禦套裝的強度，同時確保他在攻擊出裝下的強度。",
+          "versionName": "20240822",
+          "publishedAt": "2024-08-22T07:13:54Z"
+        },
+        {
+          "heroSlug": "yao",
+          "heroName": "Yao",
+          "heroNameZh": "曜",
+          "tag": "Stat Buffs",
+          "change": "Increased base stats and Skill 1 damage",
+          "changeZh": "提高基礎屬性和一技能傷害",
+          "detail": "While Yao's combat style relies on him being able to freely move in and out of battle, his current stats don't really enable him to do this well. So, we increased them to allow him greater freedom to enter and exit fights.",
+          "detailZh": "曜目前的屬性無法支撐他進退自如的戰鬥風格，因此我們提高他的屬性讓他更有信心切入和退場。",
+          "versionName": "20240725",
+          "publishedAt": "2024-07-25T02:20:21Z"
         },
         {
           "heroSlug": "lady-zhen",
@@ -3772,30 +3784,6 @@
           "publishedAt": "2024-07-11T03:14:46Z"
         },
         {
-          "heroSlug": "huang-zhong",
-          "heroName": "Huang Zhong",
-          "heroNameZh": "黃忠",
-          "tag": "Stat Buffs",
-          "change": "Increased base Movement Speed.",
-          "changeZh": "增加基礎移速",
-          "detail": "Huang Zhong is still full of vigor, and we hope this change will make him more flexible in combat.",
-          "detailZh": "「黃忠依然充滿活力，希望他在一般形態下能夠更加靈活地戰鬥。」",
-          "versionName": "20240905",
-          "publishedAt": "2024-09-05T03:48:42Z"
-        },
-        {
-          "heroSlug": "yao",
-          "heroName": "Yao",
-          "heroNameZh": "曜",
-          "tag": "Stat Buffs",
-          "change": "Increased base stats and Skill 1 damage",
-          "changeZh": "提高基礎屬性和一技能傷害",
-          "detail": "While Yao's combat style relies on him being able to freely move in and out of battle, his current stats don't really enable him to do this well. So, we increased them to allow him greater freedom to enter and exit fights.",
-          "detailZh": "曜目前的屬性無法支撐他進退自如的戰鬥風格，因此我們提高他的屬性讓他更有信心切入和退場。",
-          "versionName": "20240725",
-          "publishedAt": "2024-07-25T02:20:21Z"
-        },
-        {
           "heroSlug": "allain",
           "heroName": "Allain",
           "heroNameZh": "亞連",
@@ -3808,16 +3796,16 @@
           "publishedAt": "2024-09-05T03:48:42Z"
         },
         {
-          "heroSlug": "liu-bei",
-          "heroName": "Liu Bei",
-          "heroNameZh": "劉備",
-          "tag": "Stat Buffs",
-          "change": "Increased Ultimate's attack and shield.",
-          "changeZh": "提升大招攻擊力和護盾量",
-          "detail": "Do no evil no matter how small, and do not avoid doing good no matter how small.",
-          "detailZh": "「勿以惡小而為之，勿以善小而不為。」",
-          "versionName": "20240905",
-          "publishedAt": "2024-09-05T03:48:42Z"
+          "heroSlug": "ming",
+          "heroName": "Ming",
+          "heroNameZh": "明世隱",
+          "tag": "Stat Nerfs",
+          "change": "Reduced the early game bonus to teammates.",
+          "changeZh": "降低前期對隊友的屬性加成",
+          "detail": "\"In the early game, Ming can boost his team's effectiveness when linking with allies, creating a whole that is greater than its parts and further magnifying any advantage gained. In order to alleviate this, we've slightly reduced the early game bonus he provides to allies.\"",
+          "detailZh": "明世隱在前期連結隊友時能夠發揮1+1>2的效果，並進一步放大取得的優勢，因此我們適度削弱了前期對隊友的屬性加成效果。",
+          "versionName": "20240822",
+          "publishedAt": "2024-08-22T07:13:54Z"
         },
         {
           "heroSlug": "dian-wei",
@@ -3832,38 +3820,26 @@
           "publishedAt": "2024-07-25T02:20:21Z"
         },
         {
-          "heroSlug": "hou-yi",
-          "heroName": "Hou Yi",
-          "heroNameZh": "后羿",
+          "heroSlug": "yuhuan",
+          "heroName": "Yuhuan",
+          "heroNameZh": "楊玉環",
+          "tag": "Stat Buffs",
+          "change": "Increased number of Skill 1 sound waves, base damage, and jungling effectiveness",
+          "changeZh": "提升1技能的音波數量和基礎傷害及打野效率",
+          "detail": "Her smile could melt your heart. The powdered faces of all the ladies-in-waiting paled in comparison",
+          "detailZh": "「回眸一笑百媚生，六宮粉黛無顏色。」",
+          "versionName": "20240808",
+          "publishedAt": "2024-08-08T02:00:57Z"
+        },
+        {
+          "heroSlug": "augran",
+          "heroName": "Augran",
+          "heroNameZh": "大司命",
           "tag": "Stat Nerfs",
-          "change": "Increased Basic Attack interval slightly",
-          "changeZh": "略微延長普攻的間隔",
-          "detail": "Hou Yi's stable Basic Attack and ability to target multiple enemies at once make it hard for other marksmen to compete with him, so we've lowered the frequency of his Basic Attacks slightly to give his enemies time to catch their breath.",
-          "detailZh": "后羿穩定的普攻輸出能力和多目標輸出能力讓其他射手難以抗衡，因此我們稍微降低了他的攻擊頻率，好留給對手一些喘息空間。",
-          "versionName": "20240725",
-          "publishedAt": "2024-07-25T02:20:21Z"
-        },
-        {
-          "heroSlug": "sun-bin",
-          "heroName": "Sun Bin",
-          "heroNameZh": "孫臏",
-          "tag": "Stat Buffs",
-          "change": "Increased base Movement Speed.",
-          "changeZh": "提高基礎移速",
-          "detail": null,
-          "detailZh": null,
-          "versionName": "20240725",
-          "publishedAt": "2024-07-25T02:20:21Z"
-        },
-        {
-          "heroSlug": "han-xin",
-          "heroName": "Han Xin",
-          "heroNameZh": "韓信",
-          "tag": "Stat Buffs",
-          "change": "Increased base Health and Skill 1 damage, reduced Skill 1's early game CD.",
-          "changeZh": "提升基礎生命值，增加1技能的傷害，並且降低前期冷卻值",
-          "detail": "Han Xin needs an economic advantage to be useful in team fights. We've adjusted his Skill 1 so that he can participate in team fights earlier, and we've boosted his Health to give him a wider margin of error in those team fights",
-          "detailZh": "「韓信需要領先一定程度的經濟才有能力參與團戰，我們適當提高1技能的等級成長，讓他能夠更早參與團戰，並且適當提升生命值，藉此提高團戰的容錯率。」",
+          "change": "Increased Ultimate cooldown and reduced damage and recovery of Skill 2",
+          "changeZh": "增加大招冷卻 減少2技能傷害與回復",
+          "detail": "Increased Ultimate cooldown and reduced damage and recovery of Skill 2",
+          "detailZh": "增加大招冷卻 減少2技能傷害與回復",
           "versionName": "20240808",
           "publishedAt": "2024-08-08T02:00:57Z"
         },
@@ -3880,16 +3856,16 @@
           "publishedAt": "2024-07-11T03:14:46Z"
         },
         {
-          "heroSlug": "augran",
-          "heroName": "Augran",
-          "heroNameZh": "大司命",
+          "heroSlug": "hou-yi",
+          "heroName": "Hou Yi",
+          "heroNameZh": "后羿",
           "tag": "Stat Nerfs",
-          "change": "Increased Ultimate cooldown and reduced damage and recovery of Skill 2",
-          "changeZh": "增加大招冷卻 減少2技能傷害與回復",
-          "detail": "Increased Ultimate cooldown and reduced damage and recovery of Skill 2",
-          "detailZh": "增加大招冷卻 減少2技能傷害與回復",
-          "versionName": "20240808",
-          "publishedAt": "2024-08-08T02:00:57Z"
+          "change": "Increased Basic Attack interval slightly",
+          "changeZh": "略微延長普攻的間隔",
+          "detail": "Hou Yi's stable Basic Attack and ability to target multiple enemies at once make it hard for other marksmen to compete with him, so we've lowered the frequency of his Basic Attacks slightly to give his enemies time to catch their breath.",
+          "detailZh": "后羿穩定的普攻輸出能力和多目標輸出能力讓其他射手難以抗衡，因此我們稍微降低了他的攻擊頻率，好留給對手一些喘息空間。",
+          "versionName": "20240725",
+          "publishedAt": "2024-07-25T02:20:21Z"
         },
         {
           "heroSlug": "zhang-fei",
@@ -3904,16 +3880,16 @@
           "publishedAt": "2024-07-25T02:20:21Z"
         },
         {
-          "heroSlug": "wukong",
-          "heroName": "Wukong",
-          "heroNameZh": "孫悟空",
+          "heroSlug": "sun-bin",
+          "heroName": "Sun Bin",
+          "heroNameZh": "孫臏",
           "tag": "Stat Buffs",
-          "change": "Ultimate damage and Skill 1 shield are increased, improving play from the beginning.",
-          "changeZh": "提升大招傷害和1技能護盾，確保基礎體驗",
-          "detail": "Wukong is currently too weak, so we strengthened the shield of his Skill 1, giving him a stronger response when successfully blocking skills. Since his Ultimate is an important part of his skill combos, we also hope to adequately improve his early-game stats to ensure his playability from the start.",
-          "detailZh": "孫悟空目前強度偏低，我們提升1技能的護盾讓他在成功抵擋技能時有更強的回饋感；同時大招作為連招重要組成部分，我們希望適當提高前期數值，確保他的基礎體驗。",
-          "versionName": "20240711",
-          "publishedAt": "2024-07-11T03:14:46Z"
+          "change": "Increased base Movement Speed.",
+          "changeZh": "提高基礎移速",
+          "detail": null,
+          "detailZh": null,
+          "versionName": "20240725",
+          "publishedAt": "2024-07-25T02:20:21Z"
         },
         {
           "heroSlug": "lu-bu",
@@ -3926,6 +3902,30 @@
           "detailZh": "我們為呂布2技能增加了傷害，防止對手殘血逃跑；目前，呂布出高攻擊力套裝的恢復和護盾能力收益，會遠高於其出偏重生存能力的套裝，因此我們已加以調整。",
           "versionName": "20240822",
           "publishedAt": "2024-08-22T07:13:54Z"
+        },
+        {
+          "heroSlug": "wukong",
+          "heroName": "Wukong",
+          "heroNameZh": "孫悟空",
+          "tag": "Stat Buffs",
+          "change": "Ultimate damage and Skill 1 shield are increased, improving play from the beginning.",
+          "changeZh": "提升大招傷害和1技能護盾，確保基礎體驗",
+          "detail": "Wukong is currently too weak, so we strengthened the shield of his Skill 1, giving him a stronger response when successfully blocking skills. Since his Ultimate is an important part of his skill combos, we also hope to adequately improve his early-game stats to ensure his playability from the start.",
+          "detailZh": "孫悟空目前強度偏低，我們提升1技能的護盾讓他在成功抵擋技能時有更強的回饋感；同時大招作為連招重要組成部分，我們希望適當提高前期數值，確保他的基礎體驗。",
+          "versionName": "20240711",
+          "publishedAt": "2024-07-11T03:14:46Z"
+        },
+        {
+          "heroSlug": "han-xin",
+          "heroName": "Han Xin",
+          "heroNameZh": "韓信",
+          "tag": "Stat Buffs",
+          "change": "Increased base Health and Skill 1 damage, reduced Skill 1's early game CD.",
+          "changeZh": "提升基礎生命值，增加1技能的傷害，並且降低前期冷卻值",
+          "detail": "Han Xin needs an economic advantage to be useful in team fights. We've adjusted his Skill 1 so that he can participate in team fights earlier, and we've boosted his Health to give him a wider margin of error in those team fights",
+          "detailZh": "「韓信需要領先一定程度的經濟才有能力參與團戰，我們適當提高1技能的等級成長，讓他能夠更早參與團戰，並且適當提升生命值，藉此提高團戰的容錯率。」",
+          "versionName": "20240808",
+          "publishedAt": "2024-08-08T02:00:57Z"
         },
         {
           "heroSlug": "shangguan",
@@ -3974,24 +3974,6 @@
           "detailZh": "目前海諾給對手的對抗體驗較差，大招高額的免傷和回復能力使其可以在敵方面前持續消耗且不容易受到反制，我們降低了他的輸出能力和大招容錯率，給對手更多的反制空間",
           "versionName": "20240822",
           "publishedAt": "2024-08-22T07:13:54Z"
-        }
-      ]
-    },
-    {
-      "seasonName": "S3",
-      "seasonId": "3",
-      "changes": [
-        {
-          "heroSlug": "marco-polo",
-          "heroName": "Marco Polo",
-          "heroNameZh": "馬可波羅",
-          "tag": "Stat Nerfs",
-          "change": "Reduced the level-up increment of his base Attack stat and his Skill 1 physical damage.",
-          "changeZh": null,
-          "detail": "Thanks to his skill's true damage mechanic, Marco Polo can equip multiple pieces of defensive equipment while still being able to deal lots of damage when poking and deliver tremendous burst damage during team fights. By mid to late game, Marco Polo is able to do just about everything the other marksmen can. By making some slight adjustments to his laning capabilities and late game strength, we hope to make this highly versatily marksman just a little bit less powerful.",
-          "detailZh": null,
-          "versionName": "20231122",
-          "publishedAt": "2023-11-22T12:01:46Z"
         }
       ]
     },
