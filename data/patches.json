@@ -2,7 +2,7 @@
   "season": "S15",
   "currentSeason": "S15",
   "source": "Camp HOK bilingual (api-camp.honorofkings.com)",
-  "updated": "2026-08-26",
+  "updated": "2026-08-28",
   "heroCount": 116,
   "seasons": [
     {
@@ -20,6 +20,18 @@
           "detailZh": null,
           "versionName": "2026/07/16",
           "publishedAt": "2026-07-16T01:00:00Z"
+        },
+        {
+          "heroSlug": "feyd",
+          "heroName": "Feyd",
+          "heroNameZh": "暃",
+          "tag": "Stat Changes",
+          "change": "Adjusted Skill Damage",
+          "changeZh": "調整技能效果",
+          "detail": null,
+          "detailZh": null,
+          "versionName": "2026/08/27",
+          "publishedAt": "2026-08-27T01:00:00Z"
         },
         {
           "heroSlug": "feyd",
@@ -73,6 +85,18 @@
           "heroSlug": "li-xin",
           "heroName": "Li Xin",
           "heroNameZh": "李信",
+          "tag": "Stat Changes",
+          "change": "Adjusted Skill Damage",
+          "changeZh": "調整技能效果",
+          "detail": null,
+          "detailZh": null,
+          "versionName": "2026/08/27",
+          "publishedAt": "2026-08-27T01:00:00Z"
+        },
+        {
+          "heroSlug": "li-xin",
+          "heroName": "Li Xin",
+          "heroNameZh": "李信",
           "tag": "Mechanics Upgrade",
           "change": "Skill Mechanics Upgraded",
           "changeZh": "技能機制升級",
@@ -92,6 +116,18 @@
           "detailZh": null,
           "versionName": "2026/07/02",
           "publishedAt": "2026-07-02T00:00:00Z"
+        },
+        {
+          "heroSlug": "sima-yi",
+          "heroName": "Sima Yi",
+          "heroNameZh": "司馬懿",
+          "tag": "Stat Buffs",
+          "change": "Increased skill damage",
+          "changeZh": "提升技能傷害",
+          "detail": null,
+          "detailZh": null,
+          "versionName": "2026/08/27",
+          "publishedAt": "2026-08-27T01:00:00Z"
         },
         {
           "heroSlug": "sima-yi",
@@ -226,6 +262,18 @@
           "publishedAt": "2026-07-02T00:00:00Z"
         },
         {
+          "heroSlug": "agudo",
+          "heroName": "Agudo",
+          "heroNameZh": "阿古朵",
+          "tag": "Stat Changes",
+          "change": "Adjusted Skill Damage",
+          "changeZh": "調整技能效果",
+          "detail": null,
+          "detailZh": null,
+          "versionName": "2026/08/27",
+          "publishedAt": "2026-08-27T01:00:00Z"
+        },
+        {
           "heroSlug": "chicha",
           "heroName": "Chicha",
           "heroNameZh": "蚩奼",
@@ -358,6 +406,18 @@
           "publishedAt": "2026-07-02T00:00:00Z"
         },
         {
+          "heroSlug": "yao",
+          "heroName": "Yao",
+          "heroNameZh": "曜",
+          "tag": "Stat Buffs",
+          "change": "Increased skill damage",
+          "changeZh": "提升技能傷害",
+          "detail": null,
+          "detailZh": null,
+          "versionName": "2026/08/27",
+          "publishedAt": "2026-08-27T01:00:00Z"
+        },
+        {
           "heroSlug": "ming",
           "heroName": "Ming",
           "heroNameZh": "明世隱",
@@ -404,6 +464,18 @@
           "detailZh": null,
           "versionName": "2026/07/16",
           "publishedAt": "2026-07-16T01:00:00Z"
+        },
+        {
+          "heroSlug": "kongming",
+          "heroName": "Kongming",
+          "heroNameZh": "諸葛亮",
+          "tag": "Stat Buffs",
+          "change": "Increased skill damage",
+          "changeZh": "提升技能傷害",
+          "detail": null,
+          "detailZh": null,
+          "versionName": "2026/08/27",
+          "publishedAt": "2026-08-27T01:00:00Z"
         },
         {
           "heroSlug": "hou-yi",
@@ -514,6 +586,18 @@
           "publishedAt": "2026-07-02T00:00:00Z"
         },
         {
+          "heroSlug": "dolia",
+          "heroName": "Dolia",
+          "heroNameZh": "朵莉亞",
+          "tag": "Stat Buffs",
+          "change": "Increased skill damage",
+          "changeZh": "提升技能傷害",
+          "detail": null,
+          "detailZh": null,
+          "versionName": "2026/08/27",
+          "publishedAt": "2026-08-27T01:00:00Z"
+        },
+        {
           "heroSlug": "luara",
           "heroName": "Luara",
           "heroNameZh": "盧雅那",
@@ -524,6 +608,18 @@
           "detailZh": null,
           "versionName": "2026/08/13",
           "publishedAt": "2026-08-13T15:09:00Z"
+        },
+        {
+          "heroSlug": "luna",
+          "heroName": "Luna",
+          "heroNameZh": "露娜",
+          "tag": "Stat Buffs",
+          "change": "Upgraded Skill Effects",
+          "changeZh": "提升技能傷害",
+          "detail": null,
+          "detailZh": null,
+          "versionName": "2026/08/27",
+          "publishedAt": "2026-08-27T01:00:00Z"
         }
       ]
     },
@@ -3982,16 +4078,28 @@
       "seasonId": "4",
       "changes": [
         {
-          "heroSlug": "kaizer",
-          "heroName": "Kaizer",
-          "heroNameZh": "鎧",
+          "heroSlug": "dharma",
+          "heroName": "Dharma",
+          "heroNameZh": "達摩",
           "tag": "Stat Buffs",
-          "change": "Enhanced the damage bonus ratio for Skills 1 and 2, and adjusted the damage and stat bonus ratios for his Ultimate.",
+          "change": "Raised the base damage of his Skill 2.",
           "changeZh": null,
-          "detail": "As one of the first heroes in Honor of Kings, Kaizer may seem a little weak in comparison to the heroes that have joined since. We hope improving Kaizer's skill damage and stat bonuses will allow him, with the right equipment, to become a true fighter who balances damage output and sustain.",
+          "detail": "Raised the base damage of his Skill 2.\nThis change to Dharma makes him a more powerful and interesting. We hope that players will find this version of him to be a dependable choice in the Clash Lane or jungler hero pool. By strengthening the base damage of his Skill 2, he will be able to deal a good amount of damage during a fast-moving fight.",
           "detailZh": null,
-          "versionName": "20240124",
-          "publishedAt": "2024-01-24T07:50:01Z"
+          "versionName": "20240320",
+          "publishedAt": "2024-03-20T03:11:35Z"
+        },
+        {
+          "heroSlug": "dharma",
+          "heroName": "Dharma",
+          "heroNameZh": "達摩",
+          "tag": "Mechanics Upgrade",
+          "change": "We've retained Dharma's original design and gameplay while upgrading the mechanics of his Passive and some active skills. We've adjusted some of his bonus stats to adapt their strength to the current game environment.",
+          "changeZh": null,
+          "detail": "We've retained Dharma's original design and gameplay while upgrading the mechanics of his Passive and some active skills. We've adjusted some of his bonus stats to adapt their strength to the current game environment.\nDharma's original skill specialties required players to invest a certain amount of practice to make use of their full strength.As more and more heroes have been added, even expert Dharma players sometimes find it hard to compete with him in Hero's Gorge.We've injected Dharma with new power in this latest version, which we hope will make him more effective in combat for new players and veterans alike.",
+          "detailZh": null,
+          "versionName": "20240220",
+          "publishedAt": "2024-02-20T02:27:09Z"
         }
       ]
     },
@@ -4000,11 +4108,11 @@
       "seasonId": "3",
       "changes": [
         {
-          "heroSlug": "kaizer",
-          "heroName": "Kaizer",
-          "heroNameZh": "鎧",
+          "heroSlug": "dharma",
+          "heroName": "Dharma",
+          "heroNameZh": "達摩",
           "tag": "Stat Buffs",
-          "change": "Mana cost reduction",
+          "change": "Buff stacks expiry mechanic",
           "changeZh": null,
           "detail": null,
           "detailZh": null,

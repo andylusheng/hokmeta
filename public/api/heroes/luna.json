@@ -19,7 +19,7 @@
   "heroCover": "https://camp.honorofkings.com/social/game/src/image_hero_cover_1275*718/qGCGOIn8.jpg",
   "tencentId": 146,
   "dataSource": "Camp HOK bilingual (primary)",
-  "dataUpdated": "2026-08-26",
+  "dataUpdated": "2026-08-28",
   "skills": [
     {
       "slot": "passive",
@@ -47,7 +47,7 @@
       "name": "New Moon",
       "description": "Dashes to the target location, dealing damage to enemies in her path.\nIf she hits a marked enemy, this skill's cooldown is reset.",
       "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/14630.png",
-      "cooldown": "20s"
+      "cooldown": "15s"
     }
   ],
   "skillsZh": [
@@ -77,7 +77,7 @@
       "name": "新月突擊",
       "description": "朝指定方向突進，對沿途敵人造成傷害。\n命中有露娜標記的敵人時重置大招的冷卻時間。",
       "icon": "https://camp.honorofkings.com/Global/Common/UGUI/SystemRes/902_HeroSkillIcon/14630.png",
-      "cooldown": "20s"
+      "cooldown": "15s"
     }
   ],
   "build": [
@@ -601,6 +601,17 @@
   ],
   "patchHistory": [
     {
+      "seasonId": "15",
+      "seasonName": "S15",
+      "versionName": "2026/08/27",
+      "publishedAt": "2026-08-27T01:00:00Z",
+      "isCurrent": true,
+      "tag": "Stat Buffs",
+      "change": "Upgraded Skill Effects",
+      "detail": "",
+      "version": "S15"
+    },
+    {
       "seasonId": "12",
       "seasonName": "S12",
       "versionName": "20251030",
@@ -624,6 +635,17 @@
     }
   ],
   "patchHistoryZh": [
+    {
+      "seasonId": "15",
+      "seasonName": "S15",
+      "versionName": "2026/08/27",
+      "publishedAt": "2026-08-27T01:00:00Z",
+      "isCurrent": true,
+      "tag": "數值增強",
+      "change": "提升技能傷害",
+      "detail": "",
+      "version": "S15"
+    },
     {
       "seasonId": "12",
       "seasonName": "S12",
@@ -682,13 +704,13 @@
     }
   ],
   "metaAnalysis": [
-    "Luna win rate 45.62% (Camp HOK, 2026-08-26).",
+    "Luna win rate 45.62% (Camp HOK, 2026-08-28).",
     "Pick rate 0.59%.",
     "Ban rate 0.21%.",
     "Counters: Yuhuan, Lady Zhen, Heino. Weak into: Athena, Augran, Fuzi."
   ],
   "metaAnalysisZh": [
-    "露娜 勝率 45.62%（Camp HOK，2026-08-26）",
+    "露娜 勝率 45.62%（Camp HOK，2026-08-28）",
     "選取率 0.59%",
     "禁用率 0.21%",
     "克制：Yuhuan、Lady Zhen、Heino；被克制：Athena、Augran、Fuzi"
