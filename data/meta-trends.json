@@ -1,18 +1,18 @@
 {
-  "generatedAt": "2026-09-07T22:03:35.602Z",
+  "generatedAt": "2026-09-08T21:45:53.410Z",
   "source": {
     "database": "hokmeta-heroes",
     "table": "hero_daily_snapshot",
     "note": "Camp HOK international snapshot data synced by HOKMeta."
   },
-  "latestDate": "2026-09-07",
+  "latestDate": "2026-09-08",
   "comparisonDates": {
-    "sevenDay": "2026-08-31",
-    "thirtyDay": "2026-08-08"
+    "sevenDay": "2026-09-01",
+    "thirtyDay": "2026-08-09"
   },
   "coverage": {
-    "trackedDays": 83,
-    "totalRows": 9605,
+    "trackedDays": 84,
+    "totalRows": 9721,
     "latestHeroCount": 116,
     "daysCompared7d": 7,
     "daysCompared30d": 30
@@ -38,12 +38,6 @@
         "banRate": 0.01
       },
       "history30d": [
-        {
-          "date": "2026-08-08",
-          "winRate": 51.7,
-          "pickRate": 0.46,
-          "banRate": 0.04
-        },
         {
           "date": "2026-08-09",
           "winRate": 51.7,
@@ -214,6 +208,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 53.65,
+          "pickRate": 0.5,
+          "banRate": 0.05
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 53.65,
           "pickRate": 0.5,
           "banRate": 0.05
@@ -241,12 +241,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 51.7,
-          "pickRate": 0.94,
-          "banRate": 0.03
-        },
-        {
           "date": "2026-08-09",
           "winRate": 51.7,
           "pickRate": 0.94,
@@ -416,6 +410,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 52.37,
+          "pickRate": 0.88,
+          "banRate": 0.03
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 52.37,
           "pickRate": 0.88,
           "banRate": 0.03
@@ -443,12 +443,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 50.46,
-          "pickRate": 0.55,
-          "banRate": 0.03
-        },
-        {
           "date": "2026-08-09",
           "winRate": 50.46,
           "pickRate": 0.55,
@@ -618,6 +612,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 50.43,
+          "pickRate": 0.5,
+          "banRate": 0.03
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 50.43,
           "pickRate": 0.5,
           "banRate": 0.03
@@ -645,12 +645,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 51.85,
-          "pickRate": 2.75,
-          "banRate": 1.46
-        },
-        {
           "date": "2026-08-09",
           "winRate": 51.85,
           "pickRate": 2.75,
@@ -820,6 +814,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 51.07,
+          "pickRate": 2.76,
+          "banRate": 1.43
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 51.07,
           "pickRate": 2.76,
           "banRate": 1.43
@@ -847,12 +847,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 50,
-          "pickRate": 0.45,
-          "banRate": 0.15
-        },
-        {
           "date": "2026-08-09",
           "winRate": 50,
           "pickRate": 0.45,
@@ -1022,6 +1016,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 49.16,
+          "pickRate": 0.39,
+          "banRate": 0.1
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 49.16,
           "pickRate": 0.39,
           "banRate": 0.1
@@ -1049,12 +1049,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 48.53,
-          "pickRate": 1.86,
-          "banRate": 4.11
-        },
-        {
           "date": "2026-08-09",
           "winRate": 48.53,
           "pickRate": 1.86,
@@ -1224,6 +1218,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 49.53,
+          "pickRate": 1.61,
+          "banRate": 3.22
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 49.53,
           "pickRate": 1.61,
           "banRate": 3.22
@@ -1251,12 +1251,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 51.29,
-          "pickRate": 0.51,
-          "banRate": 0.96
-        },
-        {
           "date": "2026-08-09",
           "winRate": 51.29,
           "pickRate": 0.51,
@@ -1426,6 +1420,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 51.4,
+          "pickRate": 0.54,
+          "banRate": 0.84
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 51.4,
           "pickRate": 0.54,
           "banRate": 0.84
@@ -1453,12 +1453,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 46.4,
-          "pickRate": 0.67,
-          "banRate": 0.27
-        },
-        {
           "date": "2026-08-09",
           "winRate": 46.4,
           "pickRate": 0.67,
@@ -1628,6 +1622,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 46.94,
+          "pickRate": 0.7,
+          "banRate": 0.24
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 46.94,
           "pickRate": 0.7,
           "banRate": 0.24
@@ -1655,12 +1655,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 48.43,
-          "pickRate": 1.42,
-          "banRate": 0.14
-        },
-        {
           "date": "2026-08-09",
           "winRate": 48.43,
           "pickRate": 1.42,
@@ -1830,6 +1824,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 49.89,
+          "pickRate": 1.07,
+          "banRate": 0.04
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 49.89,
           "pickRate": 1.07,
           "banRate": 0.04
@@ -1857,12 +1857,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 52.78,
-          "pickRate": 0.58,
-          "banRate": 0.04
-        },
-        {
           "date": "2026-08-09",
           "winRate": 52.78,
           "pickRate": 0.58,
@@ -2032,6 +2026,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 52.82,
+          "pickRate": 0.53,
+          "banRate": 0.04
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 52.82,
           "pickRate": 0.53,
           "banRate": 0.04
@@ -2059,12 +2059,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 54.17,
-          "pickRate": 0.06,
-          "banRate": 0
-        },
-        {
           "date": "2026-08-09",
           "winRate": 54.17,
           "pickRate": 0.06,
@@ -2234,6 +2228,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 54.25,
+          "pickRate": 0.06,
+          "banRate": 0
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 54.25,
           "pickRate": 0.06,
           "banRate": 0
@@ -2261,12 +2261,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 49.27,
-          "pickRate": 1.66,
-          "banRate": 4.09
-        },
-        {
           "date": "2026-08-09",
           "winRate": 49.27,
           "pickRate": 1.66,
@@ -2436,6 +2430,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 49.57,
+          "pickRate": 1.63,
+          "banRate": 3.98
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 49.57,
           "pickRate": 1.63,
           "banRate": 3.98
@@ -2463,12 +2463,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 50.8,
-          "pickRate": 0.35,
-          "banRate": 0.05
-        },
-        {
           "date": "2026-08-09",
           "winRate": 50.8,
           "pickRate": 0.35,
@@ -2638,6 +2632,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 51.18,
+          "pickRate": 0.36,
+          "banRate": 0.05
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 51.18,
           "pickRate": 0.36,
           "banRate": 0.05
@@ -2665,12 +2665,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 47.79,
-          "pickRate": 0.79,
-          "banRate": 0.13
-        },
-        {
           "date": "2026-08-09",
           "winRate": 47.79,
           "pickRate": 0.79,
@@ -2840,6 +2834,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 47.78,
+          "pickRate": 0.69,
+          "banRate": 0.19
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 47.78,
           "pickRate": 0.69,
           "banRate": 0.19
@@ -2867,12 +2867,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 51.3,
-          "pickRate": 0.62,
-          "banRate": 0.08
-        },
-        {
           "date": "2026-08-09",
           "winRate": 51.3,
           "pickRate": 0.62,
@@ -3042,6 +3036,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 51.69,
+          "pickRate": 0.53,
+          "banRate": 0.08
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 51.69,
           "pickRate": 0.53,
           "banRate": 0.08
@@ -3069,12 +3069,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 51.26,
-          "pickRate": 1.28,
-          "banRate": 2.58
-        },
-        {
           "date": "2026-08-09",
           "winRate": 51.26,
           "pickRate": 1.28,
@@ -3244,6 +3238,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 51.22,
+          "pickRate": 1.23,
+          "banRate": 2.24
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 51.22,
           "pickRate": 1.23,
           "banRate": 2.24
@@ -3271,12 +3271,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 50.24,
-          "pickRate": 0.73,
-          "banRate": 0.07
-        },
-        {
           "date": "2026-08-09",
           "winRate": 50.24,
           "pickRate": 0.73,
@@ -3446,6 +3440,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 51,
+          "pickRate": 0.77,
+          "banRate": 0.06
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 51,
           "pickRate": 0.77,
           "banRate": 0.06
@@ -3473,12 +3473,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 49.7,
-          "pickRate": 0.71,
-          "banRate": 0.05
-        },
-        {
           "date": "2026-08-09",
           "winRate": 49.7,
           "pickRate": 0.71,
@@ -3648,6 +3642,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 49.61,
+          "pickRate": 0.69,
+          "banRate": 0.05
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 49.61,
           "pickRate": 0.69,
           "banRate": 0.05
@@ -3675,12 +3675,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 51.17,
-          "pickRate": 1.47,
-          "banRate": 0.4
-        },
-        {
           "date": "2026-08-09",
           "winRate": 51.17,
           "pickRate": 1.47,
@@ -3850,6 +3844,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 52.23,
+          "pickRate": 1.49,
+          "banRate": 0.38
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 52.23,
           "pickRate": 1.49,
           "banRate": 0.38
@@ -3877,12 +3877,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 51.17,
-          "pickRate": 0.19,
-          "banRate": 0.01
-        },
-        {
           "date": "2026-08-09",
           "winRate": 51.17,
           "pickRate": 0.19,
@@ -4052,6 +4046,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 51.73,
+          "pickRate": 0.2,
+          "banRate": 0.01
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 51.73,
           "pickRate": 0.2,
           "banRate": 0.01
@@ -4079,12 +4079,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 51.47,
-          "pickRate": 1.52,
-          "banRate": 0.2
-        },
-        {
           "date": "2026-08-09",
           "winRate": 51.47,
           "pickRate": 1.52,
@@ -4254,6 +4248,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 51.91,
+          "pickRate": 1.65,
+          "banRate": 0.26
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 51.91,
           "pickRate": 1.65,
           "banRate": 0.26
@@ -4281,12 +4281,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 49.22,
-          "pickRate": 0.84,
-          "banRate": 0.46
-        },
-        {
           "date": "2026-08-09",
           "winRate": 49.22,
           "pickRate": 0.84,
@@ -4456,6 +4450,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 48.54,
+          "pickRate": 0.88,
+          "banRate": 0.51
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 48.54,
           "pickRate": 0.88,
           "banRate": 0.51
@@ -4483,12 +4483,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 51.35,
-          "pickRate": 2.64,
-          "banRate": 2.41
-        },
-        {
           "date": "2026-08-09",
           "winRate": 51.35,
           "pickRate": 2.64,
@@ -4658,6 +4652,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 51.3,
+          "pickRate": 2.75,
+          "banRate": 2.32
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 51.3,
           "pickRate": 2.75,
           "banRate": 2.32
@@ -4685,12 +4685,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 48.86,
-          "pickRate": 1.2,
-          "banRate": 0.33
-        },
-        {
           "date": "2026-08-09",
           "winRate": 48.86,
           "pickRate": 1.2,
@@ -4860,6 +4854,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 48.8,
+          "pickRate": 1.17,
+          "banRate": 0.33
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 48.8,
           "pickRate": 1.17,
           "banRate": 0.33
@@ -4887,12 +4887,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 50.96,
-          "pickRate": 0.19,
-          "banRate": 0.02
-        },
-        {
           "date": "2026-08-09",
           "winRate": 50.96,
           "pickRate": 0.19,
@@ -5062,6 +5056,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 52.8,
+          "pickRate": 0.25,
+          "banRate": 0.02
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 52.8,
           "pickRate": 0.25,
           "banRate": 0.02
@@ -5089,12 +5089,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 51.22,
-          "pickRate": 0.81,
-          "banRate": 0.02
-        },
-        {
           "date": "2026-08-09",
           "winRate": 51.22,
           "pickRate": 0.81,
@@ -5264,6 +5258,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 51.91,
+          "pickRate": 0.86,
+          "banRate": 0.02
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 51.91,
           "pickRate": 0.86,
           "banRate": 0.02
@@ -5291,12 +5291,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 50.93,
-          "pickRate": 0.99,
-          "banRate": 0.52
-        },
-        {
           "date": "2026-08-09",
           "winRate": 50.93,
           "pickRate": 0.99,
@@ -5466,6 +5460,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 50.66,
+          "pickRate": 0.98,
+          "banRate": 0.62
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 50.66,
           "pickRate": 0.98,
           "banRate": 0.62
@@ -5493,12 +5493,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 48.39,
-          "pickRate": 0.66,
-          "banRate": 0.07
-        },
-        {
           "date": "2026-08-09",
           "winRate": 48.39,
           "pickRate": 0.66,
@@ -5668,6 +5662,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 47.6,
+          "pickRate": 0.73,
+          "banRate": 0.08
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 47.6,
           "pickRate": 0.73,
           "banRate": 0.08
@@ -5695,12 +5695,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 46.54,
-          "pickRate": 1.72,
-          "banRate": 0.62
-        },
-        {
           "date": "2026-08-09",
           "winRate": 46.54,
           "pickRate": 1.72,
@@ -5870,6 +5864,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 46.97,
+          "pickRate": 2.27,
+          "banRate": 0.96
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 46.97,
           "pickRate": 2.27,
           "banRate": 0.96
@@ -5897,12 +5897,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 49.15,
-          "pickRate": 0.72,
-          "banRate": 2.43
-        },
-        {
           "date": "2026-08-09",
           "winRate": 49.15,
           "pickRate": 0.72,
@@ -6072,6 +6066,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 48.26,
+          "pickRate": 0.73,
+          "banRate": 2.53
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 48.26,
           "pickRate": 0.73,
           "banRate": 2.53
@@ -6099,12 +6099,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 49.81,
-          "pickRate": 0.53,
-          "banRate": 0.16
-        },
-        {
           "date": "2026-08-09",
           "winRate": 49.81,
           "pickRate": 0.53,
@@ -6274,6 +6268,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 50.2,
+          "pickRate": 0.51,
+          "banRate": 0.19
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 50.2,
           "pickRate": 0.51,
           "banRate": 0.19
@@ -6301,12 +6301,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 52.4,
-          "pickRate": 1.52,
-          "banRate": 0.54
-        },
-        {
           "date": "2026-08-09",
           "winRate": 52.4,
           "pickRate": 1.52,
@@ -6476,6 +6470,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 52.81,
+          "pickRate": 1.68,
+          "banRate": 0.58
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 52.81,
           "pickRate": 1.68,
           "banRate": 0.58
@@ -6503,12 +6503,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 48.34,
-          "pickRate": 0.97,
-          "banRate": 1.11
-        },
-        {
           "date": "2026-08-09",
           "winRate": 48.34,
           "pickRate": 0.97,
@@ -6678,6 +6672,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 48.66,
+          "pickRate": 1.04,
+          "banRate": 1.28
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 48.66,
           "pickRate": 1.04,
           "banRate": 1.28
@@ -6705,12 +6705,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 51.49,
-          "pickRate": 1.84,
-          "banRate": 0.22
-        },
-        {
           "date": "2026-08-09",
           "winRate": 51.49,
           "pickRate": 1.84,
@@ -6880,6 +6874,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 50.75,
+          "pickRate": 1.71,
+          "banRate": 0.21
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 50.75,
           "pickRate": 1.71,
           "banRate": 0.21
@@ -6907,12 +6907,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 49.25,
-          "pickRate": 0.89,
-          "banRate": 0.03
-        },
-        {
           "date": "2026-08-09",
           "winRate": 49.25,
           "pickRate": 0.89,
@@ -7082,6 +7076,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 49.05,
+          "pickRate": 1.03,
+          "banRate": 0.04
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 49.05,
           "pickRate": 1.03,
           "banRate": 0.04
@@ -7109,12 +7109,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 50.68,
-          "pickRate": 0.35,
-          "banRate": 0.06
-        },
-        {
           "date": "2026-08-09",
           "winRate": 50.68,
           "pickRate": 0.35,
@@ -7284,6 +7278,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 52.79,
+          "pickRate": 0.4,
+          "banRate": 0.06
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 52.79,
           "pickRate": 0.4,
           "banRate": 0.06
@@ -7311,12 +7311,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 54.32,
-          "pickRate": 0.52,
-          "banRate": 0.18
-        },
-        {
           "date": "2026-08-09",
           "winRate": 54.32,
           "pickRate": 0.52,
@@ -7486,6 +7480,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 53.93,
+          "pickRate": 0.52,
+          "banRate": 0.34
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 53.93,
           "pickRate": 0.52,
           "banRate": 0.34
@@ -7513,12 +7513,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 52.03,
-          "pickRate": 0.66,
-          "banRate": 2.28
-        },
-        {
           "date": "2026-08-09",
           "winRate": 52.03,
           "pickRate": 0.66,
@@ -7688,6 +7682,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 51.83,
+          "pickRate": 0.54,
+          "banRate": 1.74
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 51.83,
           "pickRate": 0.54,
           "banRate": 1.74
@@ -7715,12 +7715,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 51.29,
-          "pickRate": 0.45,
-          "banRate": 0.04
-        },
-        {
           "date": "2026-08-09",
           "winRate": 51.29,
           "pickRate": 0.45,
@@ -7890,6 +7884,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 51.14,
+          "pickRate": 0.42,
+          "banRate": 0.04
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 51.14,
           "pickRate": 0.42,
           "banRate": 0.04
@@ -7917,12 +7917,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 51.42,
-          "pickRate": 1.09,
-          "banRate": 0.05
-        },
-        {
           "date": "2026-08-09",
           "winRate": 51.42,
           "pickRate": 1.09,
@@ -8092,6 +8086,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 52.26,
+          "pickRate": 1.17,
+          "banRate": 0.09
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 52.26,
           "pickRate": 1.17,
           "banRate": 0.09
@@ -8119,12 +8119,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 48.43,
-          "pickRate": 0.58,
-          "banRate": 0.07
-        },
-        {
           "date": "2026-08-09",
           "winRate": 48.43,
           "pickRate": 0.58,
@@ -8294,6 +8288,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 48.83,
+          "pickRate": 0.63,
+          "banRate": 0.07
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 48.83,
           "pickRate": 0.63,
           "banRate": 0.07
@@ -8321,12 +8321,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 51.95,
-          "pickRate": 0.38,
-          "banRate": 0.05
-        },
-        {
           "date": "2026-08-09",
           "winRate": 51.95,
           "pickRate": 0.38,
@@ -8496,6 +8490,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 52.72,
+          "pickRate": 0.39,
+          "banRate": 0.04
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 52.72,
           "pickRate": 0.39,
           "banRate": 0.04
@@ -8523,12 +8523,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 50.46,
-          "pickRate": 0.43,
-          "banRate": 0.08
-        },
-        {
           "date": "2026-08-09",
           "winRate": 50.46,
           "pickRate": 0.43,
@@ -8698,6 +8692,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 49.98,
+          "pickRate": 0.41,
+          "banRate": 0.08
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 49.98,
           "pickRate": 0.41,
           "banRate": 0.08
@@ -8725,12 +8725,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 51.99,
-          "pickRate": 0.42,
-          "banRate": 0.04
-        },
-        {
           "date": "2026-08-09",
           "winRate": 51.99,
           "pickRate": 0.42,
@@ -8900,6 +8894,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 52.06,
+          "pickRate": 0.42,
+          "banRate": 0.04
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 52.06,
           "pickRate": 0.42,
           "banRate": 0.04
@@ -8927,12 +8927,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 48.91,
-          "pickRate": 0.46,
-          "banRate": 0.98
-        },
-        {
           "date": "2026-08-09",
           "winRate": 48.91,
           "pickRate": 0.46,
@@ -9102,6 +9096,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 47.94,
+          "pickRate": 0.45,
+          "banRate": 1.12
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 47.94,
           "pickRate": 0.45,
           "banRate": 1.12
@@ -9129,12 +9129,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 53.55,
-          "pickRate": 1.38,
-          "banRate": 0.36
-        },
-        {
           "date": "2026-08-09",
           "winRate": 53.55,
           "pickRate": 1.38,
@@ -9304,6 +9298,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 53.78,
+          "pickRate": 1.6,
+          "banRate": 0.4
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 53.78,
           "pickRate": 1.6,
           "banRate": 0.4
@@ -9331,12 +9331,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 51.17,
-          "pickRate": 0.81,
-          "banRate": 0.03
-        },
-        {
           "date": "2026-08-09",
           "winRate": 51.17,
           "pickRate": 0.81,
@@ -9506,6 +9500,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 51.03,
+          "pickRate": 0.77,
+          "banRate": 0.04
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 51.03,
           "pickRate": 0.77,
           "banRate": 0.04
@@ -9533,12 +9533,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 47.24,
-          "pickRate": 0.37,
-          "banRate": 0.09
-        },
-        {
           "date": "2026-08-09",
           "winRate": 47.24,
           "pickRate": 0.37,
@@ -9708,6 +9702,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 47.54,
+          "pickRate": 0.42,
+          "banRate": 0.12
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 47.54,
           "pickRate": 0.42,
           "banRate": 0.12
@@ -9735,12 +9735,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 52.36,
-          "pickRate": 0.21,
-          "banRate": 0.33
-        },
-        {
           "date": "2026-08-09",
           "winRate": 52.36,
           "pickRate": 0.21,
@@ -9910,6 +9904,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 51.09,
+          "pickRate": 0.21,
+          "banRate": 0.2
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 51.09,
           "pickRate": 0.21,
           "banRate": 0.2
@@ -9937,12 +9937,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 48.45,
-          "pickRate": 0.25,
-          "banRate": 0.04
-        },
-        {
           "date": "2026-08-09",
           "winRate": 48.45,
           "pickRate": 0.25,
@@ -10112,6 +10106,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 47.58,
+          "pickRate": 0.27,
+          "banRate": 0.04
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 47.58,
           "pickRate": 0.27,
           "banRate": 0.04
@@ -10139,12 +10139,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 49.23,
-          "pickRate": 1.02,
-          "banRate": 2.02
-        },
-        {
           "date": "2026-08-09",
           "winRate": 49.23,
           "pickRate": 1.02,
@@ -10314,6 +10308,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 48.19,
+          "pickRate": 1.12,
+          "banRate": 2.41
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 48.19,
           "pickRate": 1.12,
           "banRate": 2.41
@@ -10341,12 +10341,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 47.7,
-          "pickRate": 0.75,
-          "banRate": 0.14
-        },
-        {
           "date": "2026-08-09",
           "winRate": 47.7,
           "pickRate": 0.75,
@@ -10516,6 +10510,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 47.66,
+          "pickRate": 0.71,
+          "banRate": 0.14
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 47.66,
           "pickRate": 0.71,
           "banRate": 0.14
@@ -10543,12 +10543,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 49.82,
-          "pickRate": 2.86,
-          "banRate": 0.17
-        },
-        {
           "date": "2026-08-09",
           "winRate": 49.82,
           "pickRate": 2.86,
@@ -10718,6 +10712,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 49.28,
+          "pickRate": 2.67,
+          "banRate": 0.19
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 49.28,
           "pickRate": 2.67,
           "banRate": 0.19
@@ -10745,12 +10745,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 50.53,
-          "pickRate": 0.43,
-          "banRate": 0.02
-        },
-        {
           "date": "2026-08-09",
           "winRate": 50.53,
           "pickRate": 0.43,
@@ -10920,6 +10914,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 50.65,
+          "pickRate": 0.41,
+          "banRate": 0.02
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 50.65,
           "pickRate": 0.41,
           "banRate": 0.02
@@ -10947,12 +10947,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 46.01,
-          "pickRate": 0.31,
-          "banRate": 0.12
-        },
-        {
           "date": "2026-08-09",
           "winRate": 46.01,
           "pickRate": 0.31,
@@ -11122,6 +11116,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 45.81,
+          "pickRate": 0.32,
+          "banRate": 0.13
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 45.81,
           "pickRate": 0.32,
           "banRate": 0.13
@@ -11149,12 +11149,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 50.33,
-          "pickRate": 1.4,
-          "banRate": 0.14
-        },
-        {
           "date": "2026-08-09",
           "winRate": 50.33,
           "pickRate": 1.4,
@@ -11324,6 +11318,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 50.67,
+          "pickRate": 1.39,
+          "banRate": 0.14
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 50.67,
           "pickRate": 1.39,
           "banRate": 0.14
@@ -11351,12 +11351,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 49.96,
-          "pickRate": 1.26,
-          "banRate": 0.34
-        },
-        {
           "date": "2026-08-09",
           "winRate": 49.96,
           "pickRate": 1.26,
@@ -11526,6 +11520,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 51.41,
+          "pickRate": 1.85,
+          "banRate": 0.7
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 51.41,
           "pickRate": 1.85,
           "banRate": 0.7
@@ -11553,12 +11553,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 50.13,
-          "pickRate": 0.86,
-          "banRate": 0.48
-        },
-        {
           "date": "2026-08-09",
           "winRate": 50.13,
           "pickRate": 0.86,
@@ -11728,6 +11722,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 49.06,
+          "pickRate": 0.9,
+          "banRate": 0.54
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 49.06,
           "pickRate": 0.9,
           "banRate": 0.54
@@ -11755,12 +11755,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 48.28,
-          "pickRate": 1.54,
-          "banRate": 0.07
-        },
-        {
           "date": "2026-08-09",
           "winRate": 48.28,
           "pickRate": 1.54,
@@ -11930,6 +11924,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 48.96,
+          "pickRate": 1.77,
+          "banRate": 0.1
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 48.96,
           "pickRate": 1.77,
           "banRate": 0.1
@@ -11957,12 +11957,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 50.31,
-          "pickRate": 0.91,
-          "banRate": 0.03
-        },
-        {
           "date": "2026-08-09",
           "winRate": 50.31,
           "pickRate": 0.91,
@@ -12132,6 +12126,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 50.84,
+          "pickRate": 0.99,
+          "banRate": 0.03
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 50.84,
           "pickRate": 0.99,
           "banRate": 0.03
@@ -12159,12 +12159,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 48.11,
-          "pickRate": 1.62,
-          "banRate": 0.92
-        },
-        {
           "date": "2026-08-09",
           "winRate": 48.11,
           "pickRate": 1.62,
@@ -12334,6 +12328,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 48.28,
+          "pickRate": 1.33,
+          "banRate": 1.15
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 48.28,
           "pickRate": 1.33,
           "banRate": 1.15
@@ -12361,12 +12361,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 54.49,
-          "pickRate": 0.37,
-          "banRate": 0.02
-        },
-        {
           "date": "2026-08-09",
           "winRate": 54.49,
           "pickRate": 0.37,
@@ -12536,6 +12530,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 55.09,
+          "pickRate": 0.36,
+          "banRate": 0.02
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 55.09,
           "pickRate": 0.36,
           "banRate": 0.02
@@ -12563,12 +12563,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 51.41,
-          "pickRate": 0.63,
-          "banRate": 0.34
-        },
-        {
           "date": "2026-08-09",
           "winRate": 51.41,
           "pickRate": 0.63,
@@ -12738,6 +12732,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 52.21,
+          "pickRate": 0.49,
+          "banRate": 0.13
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 52.21,
           "pickRate": 0.49,
           "banRate": 0.13
@@ -12765,12 +12765,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 53.83,
-          "pickRate": 2.66,
-          "banRate": 3.23
-        },
-        {
           "date": "2026-08-09",
           "winRate": 53.83,
           "pickRate": 2.66,
@@ -12940,6 +12934,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 51.38,
+          "pickRate": 2.16,
+          "banRate": 3.01
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 51.38,
           "pickRate": 2.16,
           "banRate": 3.01
@@ -12967,12 +12967,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 52.08,
-          "pickRate": 1.13,
-          "banRate": 0.15
-        },
-        {
           "date": "2026-08-09",
           "winRate": 52.08,
           "pickRate": 1.13,
@@ -13142,6 +13136,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 52.63,
+          "pickRate": 1.15,
+          "banRate": 0.18
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 52.63,
           "pickRate": 1.15,
           "banRate": 0.18
@@ -13169,12 +13169,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 50.53,
-          "pickRate": 0.8,
-          "banRate": 3.72
-        },
-        {
           "date": "2026-08-09",
           "winRate": 50.53,
           "pickRate": 0.8,
@@ -13344,6 +13338,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 50.73,
+          "pickRate": 0.77,
+          "banRate": 3.71
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 50.73,
           "pickRate": 0.77,
           "banRate": 3.71
@@ -13371,12 +13371,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 50.73,
-          "pickRate": 0.27,
-          "banRate": 0.02
-        },
-        {
           "date": "2026-08-09",
           "winRate": 50.73,
           "pickRate": 0.27,
@@ -13546,6 +13540,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 51.2,
+          "pickRate": 0.27,
+          "banRate": 0.02
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 51.2,
           "pickRate": 0.27,
           "banRate": 0.02
@@ -13573,12 +13573,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 50.97,
-          "pickRate": 0.29,
-          "banRate": 0.03
-        },
-        {
           "date": "2026-08-09",
           "winRate": 50.97,
           "pickRate": 0.29,
@@ -13748,6 +13742,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 51.28,
+          "pickRate": 0.29,
+          "banRate": 0.03
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 51.28,
           "pickRate": 0.29,
           "banRate": 0.03
@@ -13775,12 +13775,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 50.09,
-          "pickRate": 0.85,
-          "banRate": 0.09
-        },
-        {
           "date": "2026-08-09",
           "winRate": 50.09,
           "pickRate": 0.85,
@@ -13950,6 +13944,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 48.63,
+          "pickRate": 0.85,
+          "banRate": 0.1
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 48.63,
           "pickRate": 0.85,
           "banRate": 0.1
@@ -13977,12 +13977,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 51.65,
-          "pickRate": 0.68,
-          "banRate": 0.85
-        },
-        {
           "date": "2026-08-09",
           "winRate": 51.65,
           "pickRate": 0.68,
@@ -14152,6 +14146,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 51.12,
+          "pickRate": 0.44,
+          "banRate": 0.24
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 51.12,
           "pickRate": 0.44,
           "banRate": 0.24
@@ -14179,12 +14179,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 49.12,
-          "pickRate": 1.04,
-          "banRate": 0.23
-        },
-        {
           "date": "2026-08-09",
           "winRate": 49.12,
           "pickRate": 1.04,
@@ -14354,6 +14348,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 48.94,
+          "pickRate": 1.11,
+          "banRate": 0.33
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 48.94,
           "pickRate": 1.11,
           "banRate": 0.33
@@ -14381,12 +14381,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 52.96,
-          "pickRate": 1.51,
-          "banRate": 0.16
-        },
-        {
           "date": "2026-08-09",
           "winRate": 52.96,
           "pickRate": 1.51,
@@ -14556,6 +14550,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 46.36,
+          "pickRate": 0.89,
+          "banRate": 0.12
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 46.36,
           "pickRate": 0.89,
           "banRate": 0.12
@@ -14583,12 +14583,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 51.26,
-          "pickRate": 2.01,
-          "banRate": 0.36
-        },
-        {
           "date": "2026-08-09",
           "winRate": 51.26,
           "pickRate": 2.01,
@@ -14758,6 +14752,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 51.89,
+          "pickRate": 2.14,
+          "banRate": 0.41
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 51.89,
           "pickRate": 2.14,
           "banRate": 0.41
@@ -14785,12 +14785,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 46.96,
-          "pickRate": 0.52,
-          "banRate": 0.23
-        },
-        {
           "date": "2026-08-09",
           "winRate": 46.96,
           "pickRate": 0.52,
@@ -14960,6 +14954,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 46.24,
+          "pickRate": 0.63,
+          "banRate": 0.39
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 46.24,
           "pickRate": 0.63,
           "banRate": 0.39
@@ -14987,12 +14987,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 48.46,
-          "pickRate": 0.63,
-          "banRate": 0.11
-        },
-        {
           "date": "2026-08-09",
           "winRate": 48.46,
           "pickRate": 0.63,
@@ -15162,6 +15156,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 49.2,
+          "pickRate": 0.61,
+          "banRate": 0.13
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 49.2,
           "pickRate": 0.61,
           "banRate": 0.13
@@ -15189,12 +15189,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 49.07,
-          "pickRate": 1.77,
-          "banRate": 0.29
-        },
-        {
           "date": "2026-08-09",
           "winRate": 49.07,
           "pickRate": 1.77,
@@ -15364,6 +15358,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 49.96,
+          "pickRate": 1.88,
+          "banRate": 0.32
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 49.96,
           "pickRate": 1.88,
           "banRate": 0.32
@@ -15391,12 +15391,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 47.44,
-          "pickRate": 0.38,
-          "banRate": 0.05
-        },
-        {
           "date": "2026-08-09",
           "winRate": 47.44,
           "pickRate": 0.38,
@@ -15566,6 +15560,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 47.39,
+          "pickRate": 0.35,
+          "banRate": 0.04
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 47.39,
           "pickRate": 0.35,
           "banRate": 0.04
@@ -15593,12 +15593,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 54.19,
-          "pickRate": 0.5,
-          "banRate": 0.01
-        },
-        {
           "date": "2026-08-09",
           "winRate": 54.19,
           "pickRate": 0.5,
@@ -15768,6 +15762,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 52.35,
+          "pickRate": 0.36,
+          "banRate": 0.01
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 52.35,
           "pickRate": 0.36,
           "banRate": 0.01
@@ -15795,12 +15795,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 52.7,
-          "pickRate": 0.22,
-          "banRate": 0.02
-        },
-        {
           "date": "2026-08-09",
           "winRate": 52.7,
           "pickRate": 0.22,
@@ -15970,6 +15964,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 53.22,
+          "pickRate": 0.21,
+          "banRate": 0.02
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 53.22,
           "pickRate": 0.21,
           "banRate": 0.02
@@ -15997,12 +15997,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 51.44,
-          "pickRate": 0.85,
-          "banRate": 1.11
-        },
-        {
           "date": "2026-08-09",
           "winRate": 51.44,
           "pickRate": 0.85,
@@ -16172,6 +16166,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 49.96,
+          "pickRate": 0.81,
+          "banRate": 1.05
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 49.96,
           "pickRate": 0.81,
           "banRate": 1.05
@@ -16199,12 +16199,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 47.91,
-          "pickRate": 1.79,
-          "banRate": 1.92
-        },
-        {
           "date": "2026-08-09",
           "winRate": 47.91,
           "pickRate": 1.79,
@@ -16374,6 +16368,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 47.82,
+          "pickRate": 1.66,
+          "banRate": 1.84
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 47.82,
           "pickRate": 1.66,
           "banRate": 1.84
@@ -16401,12 +16401,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 50.95,
-          "pickRate": 0.44,
-          "banRate": 0.02
-        },
-        {
           "date": "2026-08-09",
           "winRate": 50.95,
           "pickRate": 0.44,
@@ -16576,6 +16570,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 50.29,
+          "pickRate": 0.48,
+          "banRate": 0.03
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 50.29,
           "pickRate": 0.48,
           "banRate": 0.03
@@ -16603,12 +16603,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 49.64,
-          "pickRate": 1.64,
-          "banRate": 1.38
-        },
-        {
           "date": "2026-08-09",
           "winRate": 49.64,
           "pickRate": 1.64,
@@ -16778,6 +16772,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 49.82,
+          "pickRate": 1.55,
+          "banRate": 1.7
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 49.82,
           "pickRate": 1.55,
           "banRate": 1.7
@@ -16805,12 +16805,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 49.35,
-          "pickRate": 0.36,
-          "banRate": 0.02
-        },
-        {
           "date": "2026-08-09",
           "winRate": 49.35,
           "pickRate": 0.36,
@@ -16980,6 +16974,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 49.82,
+          "pickRate": 0.34,
+          "banRate": 0.03
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 49.82,
           "pickRate": 0.34,
           "banRate": 0.03
@@ -17007,12 +17007,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 49.28,
-          "pickRate": 0.94,
-          "banRate": 0.27
-        },
-        {
           "date": "2026-08-09",
           "winRate": 49.28,
           "pickRate": 0.94,
@@ -17182,6 +17176,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 49.51,
+          "pickRate": 0.9,
+          "banRate": 0.32
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 49.51,
           "pickRate": 0.9,
           "banRate": 0.32
@@ -17209,12 +17209,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 50.09,
-          "pickRate": 0.5,
-          "banRate": 0.05
-        },
-        {
           "date": "2026-08-09",
           "winRate": 50.09,
           "pickRate": 0.5,
@@ -17384,6 +17378,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 49.73,
+          "pickRate": 0.49,
+          "banRate": 0.05
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 49.73,
           "pickRate": 0.49,
           "banRate": 0.05
@@ -17411,12 +17411,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 51.82,
-          "pickRate": 0.39,
-          "banRate": 0.04
-        },
-        {
           "date": "2026-08-09",
           "winRate": 51.82,
           "pickRate": 0.39,
@@ -17586,6 +17580,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 52.74,
+          "pickRate": 0.42,
+          "banRate": 0.05
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 52.74,
           "pickRate": 0.42,
           "banRate": 0.05
@@ -17613,12 +17613,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 53.87,
-          "pickRate": 1.02,
-          "banRate": 0.67
-        },
-        {
           "date": "2026-08-09",
           "winRate": 53.87,
           "pickRate": 1.02,
@@ -17788,6 +17782,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 53.82,
+          "pickRate": 1.01,
+          "banRate": 0.57
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 53.82,
           "pickRate": 1.01,
           "banRate": 0.57
@@ -17815,12 +17815,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 50.93,
-          "pickRate": 0.25,
-          "banRate": 0.06
-        },
-        {
           "date": "2026-08-09",
           "winRate": 50.93,
           "pickRate": 0.25,
@@ -17990,6 +17984,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 50.94,
+          "pickRate": 0.29,
+          "banRate": 0.06
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 50.94,
           "pickRate": 0.29,
           "banRate": 0.06
@@ -18017,12 +18017,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 53.77,
-          "pickRate": 0.49,
-          "banRate": 0.02
-        },
-        {
           "date": "2026-08-09",
           "winRate": 53.77,
           "pickRate": 0.49,
@@ -18192,6 +18186,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 52.74,
+          "pickRate": 0.45,
+          "banRate": 0.02
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 52.74,
           "pickRate": 0.45,
           "banRate": 0.02
@@ -18219,12 +18219,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 48.99,
-          "pickRate": 0.39,
-          "banRate": 0.04
-        },
-        {
           "date": "2026-08-09",
           "winRate": 48.99,
           "pickRate": 0.39,
@@ -18394,6 +18388,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 48.75,
+          "pickRate": 0.35,
+          "banRate": 0.03
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 48.75,
           "pickRate": 0.35,
           "banRate": 0.03
@@ -18421,12 +18421,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 51.34,
-          "pickRate": 0.59,
-          "banRate": 0.3
-        },
-        {
           "date": "2026-08-09",
           "winRate": 51.34,
           "pickRate": 0.59,
@@ -18596,6 +18590,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 51.44,
+          "pickRate": 0.9,
+          "banRate": 0.53
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 51.44,
           "pickRate": 0.9,
           "banRate": 0.53
@@ -18623,12 +18623,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 49.93,
-          "pickRate": 0.91,
-          "banRate": 0.09
-        },
-        {
           "date": "2026-08-09",
           "winRate": 49.93,
           "pickRate": 0.91,
@@ -18798,6 +18792,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 50.46,
+          "pickRate": 0.93,
+          "banRate": 0.12
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 50.46,
           "pickRate": 0.93,
           "banRate": 0.12
@@ -18825,12 +18825,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 52.81,
-          "pickRate": 0.59,
-          "banRate": 0.12
-        },
-        {
           "date": "2026-08-09",
           "winRate": 52.81,
           "pickRate": 0.59,
@@ -19000,6 +18994,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 53.49,
+          "pickRate": 0.73,
+          "banRate": 0.28
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 53.49,
           "pickRate": 0.73,
           "banRate": 0.28
@@ -19027,12 +19027,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 49.52,
-          "pickRate": 0.33,
-          "banRate": 0.02
-        },
-        {
           "date": "2026-08-09",
           "winRate": 49.52,
           "pickRate": 0.33,
@@ -19202,6 +19196,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 48.78,
+          "pickRate": 0.32,
+          "banRate": 0.02
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 48.78,
           "pickRate": 0.32,
           "banRate": 0.02
@@ -19229,12 +19229,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 48.46,
-          "pickRate": 0.8,
-          "banRate": 0.03
-        },
-        {
           "date": "2026-08-09",
           "winRate": 48.46,
           "pickRate": 0.8,
@@ -19404,6 +19398,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 48.42,
+          "pickRate": 0.85,
+          "banRate": 0.03
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 48.42,
           "pickRate": 0.85,
           "banRate": 0.03
@@ -19431,12 +19431,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 48.59,
-          "pickRate": 0.37,
-          "banRate": 0.02
-        },
-        {
           "date": "2026-08-09",
           "winRate": 48.59,
           "pickRate": 0.37,
@@ -19606,6 +19600,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 48.86,
+          "pickRate": 0.34,
+          "banRate": 0.02
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 48.86,
           "pickRate": 0.34,
           "banRate": 0.02
@@ -19633,12 +19633,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 50.3,
-          "pickRate": 0.7,
-          "banRate": 0.05
-        },
-        {
           "date": "2026-08-09",
           "winRate": 50.3,
           "pickRate": 0.7,
@@ -19808,6 +19802,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 50.62,
+          "pickRate": 0.96,
+          "banRate": 0.1
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 50.62,
           "pickRate": 0.96,
           "banRate": 0.1
@@ -19835,12 +19835,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 51.8,
-          "pickRate": 2.01,
-          "banRate": 0.74
-        },
-        {
           "date": "2026-08-09",
           "winRate": 51.8,
           "pickRate": 2.01,
@@ -20010,6 +20004,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 50.93,
+          "pickRate": 1.73,
+          "banRate": 0.73
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 50.93,
           "pickRate": 1.73,
           "banRate": 0.73
@@ -20037,12 +20037,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 49.29,
-          "pickRate": 1.32,
-          "banRate": 0.52
-        },
-        {
           "date": "2026-08-09",
           "winRate": 49.29,
           "pickRate": 1.32,
@@ -20212,6 +20206,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 48.98,
+          "pickRate": 1.44,
+          "banRate": 0.6
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 48.98,
           "pickRate": 1.44,
           "banRate": 0.6
@@ -20239,12 +20239,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 51.47,
-          "pickRate": 0.52,
-          "banRate": 0.05
-        },
-        {
           "date": "2026-08-09",
           "winRate": 51.47,
           "pickRate": 0.52,
@@ -20414,6 +20408,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 51.89,
+          "pickRate": 0.4,
+          "banRate": 0.03
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 51.89,
           "pickRate": 0.4,
           "banRate": 0.03
@@ -20441,12 +20441,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 50.83,
-          "pickRate": 0.7,
-          "banRate": 0.03
-        },
-        {
           "date": "2026-08-09",
           "winRate": 50.83,
           "pickRate": 0.7,
@@ -20616,6 +20610,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 50.82,
+          "pickRate": 0.71,
+          "banRate": 0.03
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 50.82,
           "pickRate": 0.71,
           "banRate": 0.03
@@ -20643,12 +20643,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 48.37,
-          "pickRate": 1.62,
-          "banRate": 0.24
-        },
-        {
           "date": "2026-08-09",
           "winRate": 48.37,
           "pickRate": 1.62,
@@ -20818,6 +20812,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 48.22,
+          "pickRate": 1.6,
+          "banRate": 0.25
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 48.22,
           "pickRate": 1.6,
           "banRate": 0.25
@@ -20845,12 +20845,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 52.59,
-          "pickRate": 0.2,
-          "banRate": 0.03
-        },
-        {
           "date": "2026-08-09",
           "winRate": 52.59,
           "pickRate": 0.2,
@@ -21020,6 +21014,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 54.18,
+          "pickRate": 0.3,
+          "banRate": 0.07
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 54.18,
           "pickRate": 0.3,
           "banRate": 0.07
@@ -21047,12 +21047,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 50.21,
-          "pickRate": 0.44,
-          "banRate": 0.05
-        },
-        {
           "date": "2026-08-09",
           "winRate": 50.21,
           "pickRate": 0.44,
@@ -21222,6 +21216,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 50.84,
+          "pickRate": 0.31,
+          "banRate": 0.02
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 50.84,
           "pickRate": 0.31,
           "banRate": 0.02
@@ -21249,12 +21249,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 48.76,
-          "pickRate": 0.31,
-          "banRate": 0.05
-        },
-        {
           "date": "2026-08-09",
           "winRate": 48.76,
           "pickRate": 0.31,
@@ -21424,6 +21418,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 49.22,
+          "pickRate": 0.31,
+          "banRate": 0.04
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 49.22,
           "pickRate": 0.31,
           "banRate": 0.04
@@ -21451,12 +21451,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 50.43,
-          "pickRate": 0.42,
-          "banRate": 0.03
-        },
-        {
           "date": "2026-08-09",
           "winRate": 50.43,
           "pickRate": 0.42,
@@ -21626,6 +21620,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 51.99,
+          "pickRate": 0.67,
+          "banRate": 0.08
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 51.99,
           "pickRate": 0.67,
           "banRate": 0.08
@@ -21653,12 +21653,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 48.97,
-          "pickRate": 1.01,
-          "banRate": 1.54
-        },
-        {
           "date": "2026-08-09",
           "winRate": 48.97,
           "pickRate": 1.01,
@@ -21828,6 +21822,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 49.43,
+          "pickRate": 1.14,
+          "banRate": 1.58
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 49.43,
           "pickRate": 1.14,
           "banRate": 1.58
@@ -21855,12 +21855,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 52.72,
-          "pickRate": 0.72,
-          "banRate": 0.06
-        },
-        {
           "date": "2026-08-09",
           "winRate": 52.72,
           "pickRate": 0.72,
@@ -22030,6 +22024,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 53.9,
+          "pickRate": 0.78,
+          "banRate": 0.06
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 53.9,
           "pickRate": 0.78,
           "banRate": 0.06
@@ -22057,12 +22057,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 51.07,
-          "pickRate": 0.61,
-          "banRate": 0.03
-        },
-        {
           "date": "2026-08-09",
           "winRate": 51.07,
           "pickRate": 0.61,
@@ -22232,6 +22226,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 51.03,
+          "pickRate": 0.66,
+          "banRate": 0.03
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 51.03,
           "pickRate": 0.66,
           "banRate": 0.03
@@ -22259,12 +22259,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 50.27,
-          "pickRate": 0.43,
-          "banRate": 0.01
-        },
-        {
           "date": "2026-08-09",
           "winRate": 50.27,
           "pickRate": 0.43,
@@ -22434,6 +22428,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 49.51,
+          "pickRate": 0.45,
+          "banRate": 0.02
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 49.51,
           "pickRate": 0.45,
           "banRate": 0.02
@@ -22461,12 +22461,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 48.78,
-          "pickRate": 0.83,
-          "banRate": 0.33
-        },
-        {
           "date": "2026-08-09",
           "winRate": 48.78,
           "pickRate": 0.83,
@@ -22636,6 +22630,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 49.3,
+          "pickRate": 0.77,
+          "banRate": 0.36
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 49.3,
           "pickRate": 0.77,
           "banRate": 0.36
@@ -22663,12 +22663,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 52.16,
-          "pickRate": 0.43,
-          "banRate": 0.01
-        },
-        {
           "date": "2026-08-09",
           "winRate": 52.16,
           "pickRate": 0.43,
@@ -22838,6 +22832,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 51.32,
+          "pickRate": 0.42,
+          "banRate": 0.01
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 51.32,
           "pickRate": 0.42,
           "banRate": 0.01
@@ -22865,12 +22865,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 47.82,
-          "pickRate": 0.62,
-          "banRate": 1.23
-        },
-        {
           "date": "2026-08-09",
           "winRate": 47.82,
           "pickRate": 0.62,
@@ -23040,6 +23034,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 47.83,
+          "pickRate": 0.59,
+          "banRate": 1.23
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 47.83,
           "pickRate": 0.59,
           "banRate": 1.23
@@ -23067,12 +23067,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 53.4,
-          "pickRate": 1.06,
-          "banRate": 0.06
-        },
-        {
           "date": "2026-08-09",
           "winRate": 53.4,
           "pickRate": 1.06,
@@ -23242,6 +23236,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 54.39,
+          "pickRate": 0.85,
+          "banRate": 0.02
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 54.39,
           "pickRate": 0.85,
           "banRate": 0.02
@@ -23269,12 +23269,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 50.85,
-          "pickRate": 0.72,
-          "banRate": 0.07
-        },
-        {
           "date": "2026-08-09",
           "winRate": 50.85,
           "pickRate": 0.72,
@@ -23444,6 +23438,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 49.98,
+          "pickRate": 0.65,
+          "banRate": 0.06
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 49.98,
           "pickRate": 0.65,
           "banRate": 0.06
@@ -23473,12 +23473,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 53.4,
-          "pickRate": 1.06,
-          "banRate": 0.06
-        },
-        {
           "date": "2026-08-09",
           "winRate": 53.4,
           "pickRate": 1.06,
@@ -23648,6 +23642,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 54.39,
+          "pickRate": 0.85,
+          "banRate": 0.02
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 54.39,
           "pickRate": 0.85,
           "banRate": 0.02
@@ -23675,12 +23675,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 54.32,
-          "pickRate": 0.52,
-          "banRate": 0.18
-        },
-        {
           "date": "2026-08-09",
           "winRate": 54.32,
           "pickRate": 0.52,
@@ -23850,6 +23844,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 53.93,
+          "pickRate": 0.52,
+          "banRate": 0.34
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 53.93,
           "pickRate": 0.52,
           "banRate": 0.34
@@ -23877,12 +23877,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 52.72,
-          "pickRate": 0.72,
-          "banRate": 0.06
-        },
-        {
           "date": "2026-08-09",
           "winRate": 52.72,
           "pickRate": 0.72,
@@ -24052,6 +24046,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 53.9,
+          "pickRate": 0.78,
+          "banRate": 0.06
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 53.9,
           "pickRate": 0.78,
           "banRate": 0.06
@@ -24079,12 +24079,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 53.87,
-          "pickRate": 1.02,
-          "banRate": 0.67
-        },
-        {
           "date": "2026-08-09",
           "winRate": 53.87,
           "pickRate": 1.02,
@@ -24254,6 +24248,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 53.82,
+          "pickRate": 1.01,
+          "banRate": 0.57
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 53.82,
           "pickRate": 1.01,
           "banRate": 0.57
@@ -24281,12 +24281,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 53.55,
-          "pickRate": 1.38,
-          "banRate": 0.36
-        },
-        {
           "date": "2026-08-09",
           "winRate": 53.55,
           "pickRate": 1.38,
@@ -24456,6 +24450,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 53.78,
+          "pickRate": 1.6,
+          "banRate": 0.4
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 53.78,
           "pickRate": 1.6,
           "banRate": 0.4
@@ -24483,12 +24483,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 51.7,
-          "pickRate": 0.46,
-          "banRate": 0.04
-        },
-        {
           "date": "2026-08-09",
           "winRate": 51.7,
           "pickRate": 0.46,
@@ -24658,6 +24652,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 53.65,
+          "pickRate": 0.5,
+          "banRate": 0.05
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 53.65,
           "pickRate": 0.5,
           "banRate": 0.05
@@ -24685,12 +24685,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 52.81,
-          "pickRate": 0.59,
-          "banRate": 0.12
-        },
-        {
           "date": "2026-08-09",
           "winRate": 52.81,
           "pickRate": 0.59,
@@ -24860,6 +24854,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 53.49,
+          "pickRate": 0.73,
+          "banRate": 0.28
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 53.49,
           "pickRate": 0.73,
           "banRate": 0.28
@@ -24887,12 +24887,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 52.78,
-          "pickRate": 0.58,
-          "banRate": 0.04
-        },
-        {
           "date": "2026-08-09",
           "winRate": 52.78,
           "pickRate": 0.58,
@@ -25062,6 +25056,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 52.82,
+          "pickRate": 0.53,
+          "banRate": 0.04
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 52.82,
           "pickRate": 0.53,
           "banRate": 0.04
@@ -25089,12 +25089,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 52.4,
-          "pickRate": 1.52,
-          "banRate": 0.54
-        },
-        {
           "date": "2026-08-09",
           "winRate": 52.4,
           "pickRate": 1.52,
@@ -25264,6 +25258,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 52.81,
+          "pickRate": 1.68,
+          "banRate": 0.58
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 52.81,
           "pickRate": 1.68,
           "banRate": 0.58
@@ -25291,12 +25291,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 52.08,
-          "pickRate": 1.13,
-          "banRate": 0.15
-        },
-        {
           "date": "2026-08-09",
           "winRate": 52.08,
           "pickRate": 1.13,
@@ -25466,6 +25460,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 52.63,
+          "pickRate": 1.15,
+          "banRate": 0.18
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 52.63,
           "pickRate": 1.15,
           "banRate": 0.18
@@ -25495,12 +25495,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 46.96,
-          "pickRate": 0.52,
-          "banRate": 0.23
-        },
-        {
           "date": "2026-08-09",
           "winRate": 46.96,
           "pickRate": 0.52,
@@ -25670,6 +25664,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 46.24,
+          "pickRate": 0.63,
+          "banRate": 0.39
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 46.24,
           "pickRate": 0.63,
           "banRate": 0.39
@@ -25697,12 +25697,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 52.96,
-          "pickRate": 1.51,
-          "banRate": 0.16
-        },
-        {
           "date": "2026-08-09",
           "winRate": 52.96,
           "pickRate": 1.51,
@@ -25872,6 +25866,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 46.36,
+          "pickRate": 0.89,
+          "banRate": 0.12
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 46.36,
           "pickRate": 0.89,
           "banRate": 0.12
@@ -25899,12 +25899,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 46.4,
-          "pickRate": 0.67,
-          "banRate": 0.27
-        },
-        {
           "date": "2026-08-09",
           "winRate": 46.4,
           "pickRate": 0.67,
@@ -26074,6 +26068,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 46.94,
+          "pickRate": 0.7,
+          "banRate": 0.24
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 46.94,
           "pickRate": 0.7,
           "banRate": 0.24
@@ -26101,12 +26101,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 46.54,
-          "pickRate": 1.72,
-          "banRate": 0.62
-        },
-        {
           "date": "2026-08-09",
           "winRate": 46.54,
           "pickRate": 1.72,
@@ -26276,6 +26270,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 46.97,
+          "pickRate": 2.27,
+          "banRate": 0.96
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 46.97,
           "pickRate": 2.27,
           "banRate": 0.96
@@ -26303,12 +26303,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 48.39,
-          "pickRate": 0.66,
-          "banRate": 0.07
-        },
-        {
           "date": "2026-08-09",
           "winRate": 48.39,
           "pickRate": 0.66,
@@ -26478,6 +26472,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 47.6,
+          "pickRate": 0.73,
+          "banRate": 0.08
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 47.6,
           "pickRate": 0.73,
           "banRate": 0.08
@@ -26505,12 +26505,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 47.7,
-          "pickRate": 0.75,
-          "banRate": 0.14
-        },
-        {
           "date": "2026-08-09",
           "winRate": 47.7,
           "pickRate": 0.75,
@@ -26680,6 +26674,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 47.66,
+          "pickRate": 0.71,
+          "banRate": 0.14
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 47.66,
           "pickRate": 0.71,
           "banRate": 0.14
@@ -26707,12 +26707,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 47.79,
-          "pickRate": 0.79,
-          "banRate": 0.13
-        },
-        {
           "date": "2026-08-09",
           "winRate": 47.79,
           "pickRate": 0.79,
@@ -26882,6 +26876,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 47.78,
+          "pickRate": 0.69,
+          "banRate": 0.19
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 47.78,
           "pickRate": 0.69,
           "banRate": 0.19
@@ -26909,12 +26909,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 47.91,
-          "pickRate": 1.79,
-          "banRate": 1.92
-        },
-        {
           "date": "2026-08-09",
           "winRate": 47.91,
           "pickRate": 1.79,
@@ -27084,6 +27078,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 47.82,
+          "pickRate": 1.66,
+          "banRate": 1.84
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 47.82,
           "pickRate": 1.66,
           "banRate": 1.84
@@ -27111,12 +27111,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 47.82,
-          "pickRate": 0.62,
-          "banRate": 1.23
-        },
-        {
           "date": "2026-08-09",
           "winRate": 47.82,
           "pickRate": 0.62,
@@ -27286,6 +27280,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 47.83,
+          "pickRate": 0.59,
+          "banRate": 1.23
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 47.83,
           "pickRate": 0.59,
           "banRate": 1.23
@@ -27313,12 +27313,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 49.23,
-          "pickRate": 1.02,
-          "banRate": 2.02
-        },
-        {
           "date": "2026-08-09",
           "winRate": 49.23,
           "pickRate": 1.02,
@@ -27488,6 +27482,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 48.19,
+          "pickRate": 1.12,
+          "banRate": 2.41
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 48.19,
           "pickRate": 1.12,
           "banRate": 2.41
@@ -27517,12 +27517,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 51.85,
-          "pickRate": 2.75,
-          "banRate": 1.46
-        },
-        {
           "date": "2026-08-09",
           "winRate": 51.85,
           "pickRate": 2.75,
@@ -27692,6 +27686,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 51.07,
+          "pickRate": 2.76,
+          "banRate": 1.43
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 51.07,
           "pickRate": 2.76,
           "banRate": 1.43
@@ -27719,12 +27719,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 51.35,
-          "pickRate": 2.64,
-          "banRate": 2.41
-        },
-        {
           "date": "2026-08-09",
           "winRate": 51.35,
           "pickRate": 2.64,
@@ -27894,6 +27888,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 51.3,
+          "pickRate": 2.75,
+          "banRate": 2.32
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 51.3,
           "pickRate": 2.75,
           "banRate": 2.32
@@ -27921,12 +27921,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 49.82,
-          "pickRate": 2.86,
-          "banRate": 0.17
-        },
-        {
           "date": "2026-08-09",
           "winRate": 49.82,
           "pickRate": 2.86,
@@ -28096,6 +28090,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 49.28,
+          "pickRate": 2.67,
+          "banRate": 0.19
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 49.28,
           "pickRate": 2.67,
           "banRate": 0.19
@@ -28123,12 +28123,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 46.54,
-          "pickRate": 1.72,
-          "banRate": 0.62
-        },
-        {
           "date": "2026-08-09",
           "winRate": 46.54,
           "pickRate": 1.72,
@@ -28298,6 +28292,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 46.97,
+          "pickRate": 2.27,
+          "banRate": 0.96
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 46.97,
           "pickRate": 2.27,
           "banRate": 0.96
@@ -28325,12 +28325,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 53.83,
-          "pickRate": 2.66,
-          "banRate": 3.23
-        },
-        {
           "date": "2026-08-09",
           "winRate": 53.83,
           "pickRate": 2.66,
@@ -28500,6 +28494,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 51.38,
+          "pickRate": 2.16,
+          "banRate": 3.01
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 51.38,
           "pickRate": 2.16,
           "banRate": 3.01
@@ -28527,12 +28527,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 51.26,
-          "pickRate": 2.01,
-          "banRate": 0.36
-        },
-        {
           "date": "2026-08-09",
           "winRate": 51.26,
           "pickRate": 2.01,
@@ -28702,6 +28696,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 51.89,
+          "pickRate": 2.14,
+          "banRate": 0.41
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 51.89,
           "pickRate": 2.14,
           "banRate": 0.41
@@ -28729,12 +28729,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 49.07,
-          "pickRate": 1.77,
-          "banRate": 0.29
-        },
-        {
           "date": "2026-08-09",
           "winRate": 49.07,
           "pickRate": 1.77,
@@ -28904,6 +28898,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 49.96,
+          "pickRate": 1.88,
+          "banRate": 0.32
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 49.96,
           "pickRate": 1.88,
           "banRate": 0.32
@@ -28931,12 +28931,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 49.96,
-          "pickRate": 1.26,
-          "banRate": 0.34
-        },
-        {
           "date": "2026-08-09",
           "winRate": 49.96,
           "pickRate": 1.26,
@@ -29106,6 +29100,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 51.41,
+          "pickRate": 1.85,
+          "banRate": 0.7
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 51.41,
           "pickRate": 1.85,
           "banRate": 0.7
@@ -29133,12 +29133,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 48.28,
-          "pickRate": 1.54,
-          "banRate": 0.07
-        },
-        {
           "date": "2026-08-09",
           "winRate": 48.28,
           "pickRate": 1.54,
@@ -29308,6 +29302,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 48.96,
+          "pickRate": 1.77,
+          "banRate": 0.1
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 48.96,
           "pickRate": 1.77,
           "banRate": 0.1
@@ -29335,12 +29335,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 51.8,
-          "pickRate": 2.01,
-          "banRate": 0.74
-        },
-        {
           "date": "2026-08-09",
           "winRate": 51.8,
           "pickRate": 2.01,
@@ -29510,6 +29504,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 50.93,
+          "pickRate": 1.73,
+          "banRate": 0.73
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 50.93,
           "pickRate": 1.73,
           "banRate": 0.73
@@ -29539,12 +29539,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 49.27,
-          "pickRate": 1.66,
-          "banRate": 4.09
-        },
-        {
           "date": "2026-08-09",
           "winRate": 49.27,
           "pickRate": 1.66,
@@ -29714,6 +29708,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 49.57,
+          "pickRate": 1.63,
+          "banRate": 3.98
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 49.57,
           "pickRate": 1.63,
           "banRate": 3.98
@@ -29741,12 +29741,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 50.53,
-          "pickRate": 0.8,
-          "banRate": 3.72
-        },
-        {
           "date": "2026-08-09",
           "winRate": 50.53,
           "pickRate": 0.8,
@@ -29916,6 +29910,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 50.73,
+          "pickRate": 0.77,
+          "banRate": 3.71
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 50.73,
           "pickRate": 0.77,
           "banRate": 3.71
@@ -29943,12 +29943,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 48.53,
-          "pickRate": 1.86,
-          "banRate": 4.11
-        },
-        {
           "date": "2026-08-09",
           "winRate": 48.53,
           "pickRate": 1.86,
@@ -30118,6 +30112,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 49.53,
+          "pickRate": 1.61,
+          "banRate": 3.22
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 49.53,
           "pickRate": 1.61,
           "banRate": 3.22
@@ -30145,12 +30145,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 53.83,
-          "pickRate": 2.66,
-          "banRate": 3.23
-        },
-        {
           "date": "2026-08-09",
           "winRate": 53.83,
           "pickRate": 2.66,
@@ -30320,6 +30314,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 51.38,
+          "pickRate": 2.16,
+          "banRate": 3.01
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 51.38,
           "pickRate": 2.16,
           "banRate": 3.01
@@ -30347,12 +30347,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 49.15,
-          "pickRate": 0.72,
-          "banRate": 2.43
-        },
-        {
           "date": "2026-08-09",
           "winRate": 49.15,
           "pickRate": 0.72,
@@ -30522,6 +30516,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 48.26,
+          "pickRate": 0.73,
+          "banRate": 2.53
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 48.26,
           "pickRate": 0.73,
           "banRate": 2.53
@@ -30549,12 +30549,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 49.23,
-          "pickRate": 1.02,
-          "banRate": 2.02
-        },
-        {
           "date": "2026-08-09",
           "winRate": 49.23,
           "pickRate": 1.02,
@@ -30724,6 +30718,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 48.19,
+          "pickRate": 1.12,
+          "banRate": 2.41
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 48.19,
           "pickRate": 1.12,
           "banRate": 2.41
@@ -30751,12 +30751,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 51.35,
-          "pickRate": 2.64,
-          "banRate": 2.41
-        },
-        {
           "date": "2026-08-09",
           "winRate": 51.35,
           "pickRate": 2.64,
@@ -30926,6 +30920,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 51.3,
+          "pickRate": 2.75,
+          "banRate": 2.32
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 51.3,
           "pickRate": 2.75,
           "banRate": 2.32
@@ -30953,12 +30953,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 51.26,
-          "pickRate": 1.28,
-          "banRate": 2.58
-        },
-        {
           "date": "2026-08-09",
           "winRate": 51.26,
           "pickRate": 1.28,
@@ -31128,6 +31122,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 51.22,
+          "pickRate": 1.23,
+          "banRate": 2.24
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 51.22,
           "pickRate": 1.23,
           "banRate": 2.24
@@ -31155,12 +31155,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 47.91,
-          "pickRate": 1.79,
-          "banRate": 1.92
-        },
-        {
           "date": "2026-08-09",
           "winRate": 47.91,
           "pickRate": 1.79,
@@ -31330,6 +31324,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 47.82,
+          "pickRate": 1.66,
+          "banRate": 1.84
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 47.82,
           "pickRate": 1.66,
           "banRate": 1.84
@@ -31357,12 +31357,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 52.03,
-          "pickRate": 0.66,
-          "banRate": 2.28
-        },
-        {
           "date": "2026-08-09",
           "winRate": 52.03,
           "pickRate": 0.66,
@@ -31532,6 +31526,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 51.83,
+          "pickRate": 0.54,
+          "banRate": 1.74
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 51.83,
           "pickRate": 0.54,
           "banRate": 1.74
@@ -31561,12 +31561,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 49.96,
-          "pickRate": 1.26,
-          "banRate": 0.34
-        },
-        {
           "date": "2026-08-09",
           "winRate": 49.96,
           "pickRate": 1.26,
@@ -31736,6 +31730,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 51.41,
+          "pickRate": 1.85,
+          "banRate": 0.7
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 51.41,
           "pickRate": 1.85,
           "banRate": 0.7
@@ -31763,12 +31763,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 50.43,
-          "pickRate": 0.42,
-          "banRate": 0.03
-        },
-        {
           "date": "2026-08-09",
           "winRate": 50.43,
           "pickRate": 0.42,
@@ -31938,6 +31932,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 51.99,
+          "pickRate": 0.67,
+          "banRate": 0.08
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 51.99,
           "pickRate": 0.67,
           "banRate": 0.08
@@ -31965,12 +31965,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 53.4,
-          "pickRate": 1.06,
-          "banRate": 0.06
-        },
-        {
           "date": "2026-08-09",
           "winRate": 53.4,
           "pickRate": 1.06,
@@ -32140,6 +32134,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 54.39,
+          "pickRate": 0.85,
+          "banRate": 0.02
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 54.39,
           "pickRate": 0.85,
           "banRate": 0.02
@@ -32167,12 +32167,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 48.46,
-          "pickRate": 0.63,
-          "banRate": 0.11
-        },
-        {
           "date": "2026-08-09",
           "winRate": 48.46,
           "pickRate": 0.63,
@@ -32342,6 +32336,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 49.2,
+          "pickRate": 0.61,
+          "banRate": 0.13
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 49.2,
           "pickRate": 0.61,
           "banRate": 0.13
@@ -32369,12 +32369,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 51.7,
-          "pickRate": 0.46,
-          "banRate": 0.04
-        },
-        {
           "date": "2026-08-09",
           "winRate": 51.7,
           "pickRate": 0.46,
@@ -32544,6 +32538,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 53.65,
+          "pickRate": 0.5,
+          "banRate": 0.05
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 53.65,
           "pickRate": 0.5,
           "banRate": 0.05
@@ -32571,12 +32571,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 48.43,
-          "pickRate": 1.42,
-          "banRate": 0.14
-        },
-        {
           "date": "2026-08-09",
           "winRate": 48.43,
           "pickRate": 1.42,
@@ -32746,6 +32740,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 49.89,
+          "pickRate": 1.07,
+          "banRate": 0.04
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 49.89,
           "pickRate": 1.07,
           "banRate": 0.04
@@ -32773,12 +32773,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 51.17,
-          "pickRate": 1.47,
-          "banRate": 0.4
-        },
-        {
           "date": "2026-08-09",
           "winRate": 51.17,
           "pickRate": 1.47,
@@ -32948,6 +32942,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 52.23,
+          "pickRate": 1.49,
+          "banRate": 0.38
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 52.23,
           "pickRate": 1.49,
           "banRate": 0.38
@@ -32975,12 +32975,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 50.53,
-          "pickRate": 0.8,
-          "banRate": 3.72
-        },
-        {
           "date": "2026-08-09",
           "winRate": 50.53,
           "pickRate": 0.8,
@@ -33150,6 +33144,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 50.73,
+          "pickRate": 0.77,
+          "banRate": 3.71
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 50.73,
           "pickRate": 0.77,
           "banRate": 3.71
@@ -33177,12 +33177,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 48.43,
-          "pickRate": 0.58,
-          "banRate": 0.07
-        },
-        {
           "date": "2026-08-09",
           "winRate": 48.43,
           "pickRate": 0.58,
@@ -33352,6 +33346,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 48.83,
+          "pickRate": 0.63,
+          "banRate": 0.07
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 48.83,
           "pickRate": 0.63,
           "banRate": 0.07
@@ -33379,12 +33379,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 46.54,
-          "pickRate": 1.72,
-          "banRate": 0.62
-        },
-        {
           "date": "2026-08-09",
           "winRate": 46.54,
           "pickRate": 1.72,
@@ -33554,6 +33548,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 46.97,
+          "pickRate": 2.27,
+          "banRate": 0.96
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 46.97,
           "pickRate": 2.27,
           "banRate": 0.96
@@ -33583,12 +33583,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 49.96,
-          "pickRate": 1.26,
-          "banRate": 0.34
-        },
-        {
           "date": "2026-08-09",
           "winRate": 49.96,
           "pickRate": 1.26,
@@ -33758,6 +33752,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 51.41,
+          "pickRate": 1.85,
+          "banRate": 0.7
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 51.41,
           "pickRate": 1.85,
           "banRate": 0.7
@@ -33785,12 +33785,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 46.54,
-          "pickRate": 1.72,
-          "banRate": 0.62
-        },
-        {
           "date": "2026-08-09",
           "winRate": 46.54,
           "pickRate": 1.72,
@@ -33960,6 +33954,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 46.97,
+          "pickRate": 2.27,
+          "banRate": 0.96
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 46.97,
           "pickRate": 2.27,
           "banRate": 0.96
@@ -33987,12 +33987,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 50.43,
-          "pickRate": 0.42,
-          "banRate": 0.03
-        },
-        {
           "date": "2026-08-09",
           "winRate": 50.43,
           "pickRate": 0.42,
@@ -34162,6 +34156,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 51.99,
+          "pickRate": 0.67,
+          "banRate": 0.08
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 51.99,
           "pickRate": 0.67,
           "banRate": 0.08
@@ -34189,12 +34189,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 52.81,
-          "pickRate": 0.59,
-          "banRate": 0.12
-        },
-        {
           "date": "2026-08-09",
           "winRate": 52.81,
           "pickRate": 0.59,
@@ -34364,6 +34358,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 53.49,
+          "pickRate": 0.73,
+          "banRate": 0.28
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 53.49,
           "pickRate": 0.73,
           "banRate": 0.28
@@ -34391,12 +34391,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 53.55,
-          "pickRate": 1.38,
-          "banRate": 0.36
-        },
-        {
           "date": "2026-08-09",
           "winRate": 53.55,
           "pickRate": 1.38,
@@ -34566,6 +34560,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 53.78,
+          "pickRate": 1.6,
+          "banRate": 0.4
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 53.78,
           "pickRate": 1.6,
           "banRate": 0.4
@@ -34593,12 +34593,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 51.47,
-          "pickRate": 1.52,
-          "banRate": 0.2
-        },
-        {
           "date": "2026-08-09",
           "winRate": 51.47,
           "pickRate": 1.52,
@@ -34768,6 +34762,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 51.91,
+          "pickRate": 1.65,
+          "banRate": 0.26
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 51.91,
           "pickRate": 1.65,
           "banRate": 0.26
@@ -34795,12 +34795,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 49.25,
-          "pickRate": 0.89,
-          "banRate": 0.03
-        },
-        {
           "date": "2026-08-09",
           "winRate": 49.25,
           "pickRate": 0.89,
@@ -34970,6 +34964,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 49.05,
+          "pickRate": 1.03,
+          "banRate": 0.04
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 49.05,
           "pickRate": 1.03,
           "banRate": 0.04
@@ -34997,12 +34997,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 49.29,
-          "pickRate": 1.32,
-          "banRate": 0.52
-        },
-        {
           "date": "2026-08-09",
           "winRate": 49.29,
           "pickRate": 1.32,
@@ -35172,6 +35166,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 48.98,
+          "pickRate": 1.44,
+          "banRate": 0.6
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 48.98,
           "pickRate": 1.44,
           "banRate": 0.6
@@ -35199,12 +35199,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 53.4,
-          "pickRate": 1.06,
-          "banRate": 0.06
-        },
-        {
           "date": "2026-08-09",
           "winRate": 53.4,
           "pickRate": 1.06,
@@ -35374,6 +35368,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 54.39,
+          "pickRate": 0.85,
+          "banRate": 0.02
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 54.39,
           "pickRate": 0.85,
           "banRate": 0.02
@@ -35401,12 +35401,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 52.4,
-          "pickRate": 1.52,
-          "banRate": 0.54
-        },
-        {
           "date": "2026-08-09",
           "winRate": 52.4,
           "pickRate": 1.52,
@@ -35576,6 +35570,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 52.81,
+          "pickRate": 1.68,
+          "banRate": 0.58
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 52.81,
           "pickRate": 1.68,
           "banRate": 0.58
@@ -35605,12 +35605,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 49.96,
-          "pickRate": 1.26,
-          "banRate": 0.34
-        },
-        {
           "date": "2026-08-09",
           "winRate": 49.96,
           "pickRate": 1.26,
@@ -35780,6 +35774,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 51.41,
+          "pickRate": 1.85,
+          "banRate": 0.7
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 51.41,
           "pickRate": 1.85,
           "banRate": 0.7
@@ -35807,12 +35807,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 46.54,
-          "pickRate": 1.72,
-          "banRate": 0.62
-        },
-        {
           "date": "2026-08-09",
           "winRate": 46.54,
           "pickRate": 1.72,
@@ -35982,6 +35976,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 46.97,
+          "pickRate": 2.27,
+          "banRate": 0.96
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 46.97,
           "pickRate": 2.27,
           "banRate": 0.96
@@ -36009,12 +36009,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 52.81,
-          "pickRate": 0.59,
-          "banRate": 0.12
-        },
-        {
           "date": "2026-08-09",
           "winRate": 52.81,
           "pickRate": 0.59,
@@ -36184,6 +36178,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 53.49,
+          "pickRate": 0.73,
+          "banRate": 0.28
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 53.49,
           "pickRate": 0.73,
           "banRate": 0.28
@@ -36211,12 +36211,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 46.96,
-          "pickRate": 0.52,
-          "banRate": 0.23
-        },
-        {
           "date": "2026-08-09",
           "winRate": 46.96,
           "pickRate": 0.52,
@@ -36386,6 +36380,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 46.24,
+          "pickRate": 0.63,
+          "banRate": 0.39
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 46.24,
           "pickRate": 0.63,
           "banRate": 0.39
@@ -36413,12 +36413,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 48.34,
-          "pickRate": 0.97,
-          "banRate": 1.11
-        },
-        {
           "date": "2026-08-09",
           "winRate": 48.34,
           "pickRate": 0.97,
@@ -36588,6 +36582,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 48.66,
+          "pickRate": 1.04,
+          "banRate": 1.28
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 48.66,
           "pickRate": 1.04,
           "banRate": 1.28
@@ -36615,12 +36615,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 51.34,
-          "pickRate": 0.59,
-          "banRate": 0.3
-        },
-        {
           "date": "2026-08-09",
           "winRate": 51.34,
           "pickRate": 0.59,
@@ -36790,6 +36784,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 51.44,
+          "pickRate": 0.9,
+          "banRate": 0.53
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 51.44,
           "pickRate": 0.9,
           "banRate": 0.53
@@ -36817,12 +36817,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 51.47,
-          "pickRate": 1.52,
-          "banRate": 0.2
-        },
-        {
           "date": "2026-08-09",
           "winRate": 51.47,
           "pickRate": 1.52,
@@ -36992,6 +36986,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 51.91,
+          "pickRate": 1.65,
+          "banRate": 0.26
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 51.91,
           "pickRate": 1.65,
           "banRate": 0.26
@@ -37019,12 +37019,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 49.15,
-          "pickRate": 0.72,
-          "banRate": 2.43
-        },
-        {
           "date": "2026-08-09",
           "winRate": 49.15,
           "pickRate": 0.72,
@@ -37194,6 +37188,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 48.26,
+          "pickRate": 0.73,
+          "banRate": 2.53
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 48.26,
           "pickRate": 0.73,
           "banRate": 2.53
@@ -37221,12 +37221,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 49.23,
-          "pickRate": 1.02,
-          "banRate": 2.02
-        },
-        {
           "date": "2026-08-09",
           "winRate": 49.23,
           "pickRate": 1.02,
@@ -37396,6 +37390,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 48.19,
+          "pickRate": 1.12,
+          "banRate": 2.41
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 48.19,
           "pickRate": 1.12,
           "banRate": 2.41
@@ -37423,12 +37423,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 50.43,
-          "pickRate": 0.42,
-          "banRate": 0.03
-        },
-        {
           "date": "2026-08-09",
           "winRate": 50.43,
           "pickRate": 0.42,
@@ -37598,6 +37592,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 51.99,
+          "pickRate": 0.67,
+          "banRate": 0.08
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 51.99,
           "pickRate": 0.67,
           "banRate": 0.08
@@ -37627,12 +37627,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 53.83,
-          "pickRate": 2.66,
-          "banRate": 3.23
-        },
-        {
           "date": "2026-08-09",
           "winRate": 53.83,
           "pickRate": 2.66,
@@ -37802,6 +37796,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 51.38,
+          "pickRate": 2.16,
+          "banRate": 3.01
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 51.38,
           "pickRate": 2.16,
           "banRate": 3.01
@@ -37829,12 +37829,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 54.32,
-          "pickRate": 0.52,
-          "banRate": 0.18
-        },
-        {
           "date": "2026-08-09",
           "winRate": 54.32,
           "pickRate": 0.52,
@@ -38004,6 +37998,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 53.93,
+          "pickRate": 0.52,
+          "banRate": 0.34
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 53.93,
           "pickRate": 0.52,
           "banRate": 0.34
@@ -38031,12 +38031,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 50.09,
-          "pickRate": 0.85,
-          "banRate": 0.09
-        },
-        {
           "date": "2026-08-09",
           "winRate": 50.09,
           "pickRate": 0.85,
@@ -38206,6 +38200,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 48.63,
+          "pickRate": 0.85,
+          "banRate": 0.1
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 48.63,
           "pickRate": 0.85,
           "banRate": 0.1
@@ -38233,12 +38233,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 49.27,
-          "pickRate": 1.66,
-          "banRate": 4.09
-        },
-        {
           "date": "2026-08-09",
           "winRate": 49.27,
           "pickRate": 1.66,
@@ -38408,6 +38402,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 49.57,
+          "pickRate": 1.63,
+          "banRate": 3.98
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 49.57,
           "pickRate": 1.63,
           "banRate": 3.98
@@ -38435,12 +38435,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 51.85,
-          "pickRate": 2.75,
-          "banRate": 1.46
-        },
-        {
           "date": "2026-08-09",
           "winRate": 51.85,
           "pickRate": 2.75,
@@ -38610,6 +38604,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 51.07,
+          "pickRate": 2.76,
+          "banRate": 1.43
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 51.07,
           "pickRate": 2.76,
           "banRate": 1.43
@@ -38637,12 +38637,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 51.49,
-          "pickRate": 1.84,
-          "banRate": 0.22
-        },
-        {
           "date": "2026-08-09",
           "winRate": 51.49,
           "pickRate": 1.84,
@@ -38812,6 +38806,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 50.75,
+          "pickRate": 1.71,
+          "banRate": 0.21
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 50.75,
           "pickRate": 1.71,
           "banRate": 0.21
@@ -38839,12 +38839,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 48.11,
-          "pickRate": 1.62,
-          "banRate": 0.92
-        },
-        {
           "date": "2026-08-09",
           "winRate": 48.11,
           "pickRate": 1.62,
@@ -39014,6 +39008,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 48.28,
+          "pickRate": 1.33,
+          "banRate": 1.15
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 48.28,
           "pickRate": 1.33,
           "banRate": 1.15
@@ -39041,12 +39041,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 51.34,
-          "pickRate": 0.59,
-          "banRate": 0.3
-        },
-        {
           "date": "2026-08-09",
           "winRate": 51.34,
           "pickRate": 0.59,
@@ -39216,6 +39210,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 51.44,
+          "pickRate": 0.9,
+          "banRate": 0.53
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 51.44,
           "pickRate": 0.9,
           "banRate": 0.53
@@ -39243,12 +39243,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 48.86,
-          "pickRate": 1.2,
-          "banRate": 0.33
-        },
-        {
           "date": "2026-08-09",
           "winRate": 48.86,
           "pickRate": 1.2,
@@ -39418,6 +39412,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 48.8,
+          "pickRate": 1.17,
+          "banRate": 0.33
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 48.8,
           "pickRate": 1.17,
           "banRate": 0.33
@@ -39445,12 +39445,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 51.26,
-          "pickRate": 2.01,
-          "banRate": 0.36
-        },
-        {
           "date": "2026-08-09",
           "winRate": 51.26,
           "pickRate": 2.01,
@@ -39620,6 +39614,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 51.89,
+          "pickRate": 2.14,
+          "banRate": 0.41
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 51.89,
           "pickRate": 2.14,
           "banRate": 0.41
@@ -39649,12 +39649,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 54.49,
-          "pickRate": 0.37,
-          "banRate": 0.02
-        },
-        {
           "date": "2026-08-09",
           "winRate": 54.49,
           "pickRate": 0.37,
@@ -39824,6 +39818,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 55.09,
+          "pickRate": 0.36,
+          "banRate": 0.02
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 55.09,
           "pickRate": 0.36,
           "banRate": 0.02
@@ -39851,12 +39851,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 53.4,
-          "pickRate": 1.06,
-          "banRate": 0.06
-        },
-        {
           "date": "2026-08-09",
           "winRate": 53.4,
           "pickRate": 1.06,
@@ -40026,6 +40020,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 54.39,
+          "pickRate": 0.85,
+          "banRate": 0.02
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 54.39,
           "pickRate": 0.85,
           "banRate": 0.02
@@ -40053,12 +40053,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 52.59,
-          "pickRate": 0.2,
-          "banRate": 0.03
-        },
-        {
           "date": "2026-08-09",
           "winRate": 52.59,
           "pickRate": 0.2,
@@ -40228,6 +40222,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 54.18,
+          "pickRate": 0.3,
+          "banRate": 0.07
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 54.18,
           "pickRate": 0.3,
           "banRate": 0.07
@@ -40255,12 +40255,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 54.32,
-          "pickRate": 0.52,
-          "banRate": 0.18
-        },
-        {
           "date": "2026-08-09",
           "winRate": 54.32,
           "pickRate": 0.52,
@@ -40430,6 +40424,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 53.93,
+          "pickRate": 0.52,
+          "banRate": 0.34
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 53.93,
           "pickRate": 0.52,
           "banRate": 0.34
@@ -40457,12 +40457,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 52.72,
-          "pickRate": 0.72,
-          "banRate": 0.06
-        },
-        {
           "date": "2026-08-09",
           "winRate": 52.72,
           "pickRate": 0.72,
@@ -40632,6 +40626,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 53.9,
+          "pickRate": 0.78,
+          "banRate": 0.06
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 53.9,
           "pickRate": 0.78,
           "banRate": 0.06
@@ -40659,12 +40659,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 51.7,
-          "pickRate": 0.46,
-          "banRate": 0.04
-        },
-        {
           "date": "2026-08-09",
           "winRate": 51.7,
           "pickRate": 0.46,
@@ -40834,6 +40828,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 53.65,
+          "pickRate": 0.5,
+          "banRate": 0.05
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 53.65,
           "pickRate": 0.5,
           "banRate": 0.05
@@ -40861,12 +40861,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 53.87,
-          "pickRate": 1.02,
-          "banRate": 0.67
-        },
-        {
           "date": "2026-08-09",
           "winRate": 53.87,
           "pickRate": 1.02,
@@ -41036,6 +41030,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 53.82,
+          "pickRate": 1.01,
+          "banRate": 0.57
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 53.82,
           "pickRate": 1.01,
           "banRate": 0.57
@@ -41063,12 +41063,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 52.81,
-          "pickRate": 0.59,
-          "banRate": 0.12
-        },
-        {
           "date": "2026-08-09",
           "winRate": 52.81,
           "pickRate": 0.59,
@@ -41238,6 +41232,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 53.49,
+          "pickRate": 0.73,
+          "banRate": 0.28
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 53.49,
           "pickRate": 0.73,
           "banRate": 0.28
@@ -41265,12 +41265,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 52.7,
-          "pickRate": 0.22,
-          "banRate": 0.02
-        },
-        {
           "date": "2026-08-09",
           "winRate": 52.7,
           "pickRate": 0.22,
@@ -41440,6 +41434,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 53.22,
+          "pickRate": 0.21,
+          "banRate": 0.02
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 53.22,
           "pickRate": 0.21,
           "banRate": 0.02
@@ -41467,12 +41467,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 50.96,
-          "pickRate": 0.19,
-          "banRate": 0.02
-        },
-        {
           "date": "2026-08-09",
           "winRate": 50.96,
           "pickRate": 0.19,
@@ -41642,6 +41636,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 52.8,
+          "pickRate": 0.25,
+          "banRate": 0.02
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 52.8,
           "pickRate": 0.25,
           "banRate": 0.02
@@ -41671,12 +41671,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 49.82,
-          "pickRate": 2.86,
-          "banRate": 0.17
-        },
-        {
           "date": "2026-08-09",
           "winRate": 49.82,
           "pickRate": 2.86,
@@ -41846,6 +41840,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 49.28,
+          "pickRate": 2.67,
+          "banRate": 0.19
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 49.28,
           "pickRate": 2.67,
           "banRate": 0.19
@@ -41873,12 +41873,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 46.54,
-          "pickRate": 1.72,
-          "banRate": 0.62
-        },
-        {
           "date": "2026-08-09",
           "winRate": 46.54,
           "pickRate": 1.72,
@@ -42048,6 +42042,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 46.97,
+          "pickRate": 2.27,
+          "banRate": 0.96
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 46.97,
           "pickRate": 2.27,
           "banRate": 0.96
@@ -42075,12 +42075,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 49.07,
-          "pickRate": 1.77,
-          "banRate": 0.29
-        },
-        {
           "date": "2026-08-09",
           "winRate": 49.07,
           "pickRate": 1.77,
@@ -42250,6 +42244,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 49.96,
+          "pickRate": 1.88,
+          "banRate": 0.32
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 49.96,
           "pickRate": 1.88,
           "banRate": 0.32
@@ -42277,12 +42277,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 48.28,
-          "pickRate": 1.54,
-          "banRate": 0.07
-        },
-        {
           "date": "2026-08-09",
           "winRate": 48.28,
           "pickRate": 1.54,
@@ -42452,6 +42446,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 48.96,
+          "pickRate": 1.77,
+          "banRate": 0.1
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 48.96,
           "pickRate": 1.77,
           "banRate": 0.1
@@ -42479,12 +42479,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 47.91,
-          "pickRate": 1.79,
-          "banRate": 1.92
-        },
-        {
           "date": "2026-08-09",
           "winRate": 47.91,
           "pickRate": 1.79,
@@ -42654,6 +42648,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 47.82,
+          "pickRate": 1.66,
+          "banRate": 1.84
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 47.82,
           "pickRate": 1.66,
           "banRate": 1.84
@@ -42681,12 +42681,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 49.27,
-          "pickRate": 1.66,
-          "banRate": 4.09
-        },
-        {
           "date": "2026-08-09",
           "winRate": 49.27,
           "pickRate": 1.66,
@@ -42856,6 +42850,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 49.57,
+          "pickRate": 1.63,
+          "banRate": 3.98
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 49.57,
           "pickRate": 1.63,
           "banRate": 3.98
@@ -42883,12 +42883,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 48.53,
-          "pickRate": 1.86,
-          "banRate": 4.11
-        },
-        {
           "date": "2026-08-09",
           "winRate": 48.53,
           "pickRate": 1.86,
@@ -43058,6 +43052,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 49.53,
+          "pickRate": 1.61,
+          "banRate": 3.22
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 49.53,
           "pickRate": 1.61,
           "banRate": 3.22
@@ -43085,12 +43085,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 48.37,
-          "pickRate": 1.62,
-          "banRate": 0.24
-        },
-        {
           "date": "2026-08-09",
           "winRate": 48.37,
           "pickRate": 1.62,
@@ -43260,6 +43254,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 48.22,
+          "pickRate": 1.6,
+          "banRate": 0.25
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 48.22,
           "pickRate": 1.6,
           "banRate": 0.25
@@ -43287,12 +43287,6 @@
       },
       "history30d": [
         {
-          "date": "2026-08-08",
-          "winRate": 49.64,
-          "pickRate": 1.64,
-          "banRate": 1.38
-        },
-        {
           "date": "2026-08-09",
           "winRate": 49.64,
           "pickRate": 1.64,
@@ -43462,6 +43456,12 @@
         },
         {
           "date": "2026-09-07",
+          "winRate": 49.82,
+          "pickRate": 1.55,
+          "banRate": 1.7
+        },
+        {
+          "date": "2026-09-08",
           "winRate": 49.82,
           "pickRate": 1.55,
           "banRate": 1.7
@@ -43494,12 +43494,6 @@
           },
           "history30d": [
             {
-              "date": "2026-08-08",
-              "winRate": 52.78,
-              "pickRate": 0.58,
-              "banRate": 0.04
-            },
-            {
               "date": "2026-08-09",
               "winRate": 52.78,
               "pickRate": 0.58,
@@ -43669,6 +43663,12 @@
             },
             {
               "date": "2026-09-07",
+              "winRate": 52.82,
+              "pickRate": 0.53,
+              "banRate": 0.04
+            },
+            {
+              "date": "2026-09-08",
               "winRate": 52.82,
               "pickRate": 0.53,
               "banRate": 0.04
@@ -43696,12 +43696,6 @@
           },
           "history30d": [
             {
-              "date": "2026-08-08",
-              "winRate": 52.4,
-              "pickRate": 1.52,
-              "banRate": 0.54
-            },
-            {
               "date": "2026-08-09",
               "winRate": 52.4,
               "pickRate": 1.52,
@@ -43871,6 +43865,12 @@
             },
             {
               "date": "2026-09-07",
+              "winRate": 52.81,
+              "pickRate": 1.68,
+              "banRate": 0.58
+            },
+            {
+              "date": "2026-09-08",
               "winRate": 52.81,
               "pickRate": 1.68,
               "banRate": 0.58
@@ -43898,12 +43898,6 @@
           },
           "history30d": [
             {
-              "date": "2026-08-08",
-              "winRate": 50.68,
-              "pickRate": 0.35,
-              "banRate": 0.06
-            },
-            {
               "date": "2026-08-09",
               "winRate": 50.68,
               "pickRate": 0.35,
@@ -44073,6 +44067,12 @@
             },
             {
               "date": "2026-09-07",
+              "winRate": 52.79,
+              "pickRate": 0.4,
+              "banRate": 0.06
+            },
+            {
+              "date": "2026-09-08",
               "winRate": 52.79,
               "pickRate": 0.4,
               "banRate": 0.06
@@ -44100,12 +44100,6 @@
           },
           "history30d": [
             {
-              "date": "2026-08-08",
-              "winRate": 51.82,
-              "pickRate": 0.39,
-              "banRate": 0.04
-            },
-            {
               "date": "2026-08-09",
               "winRate": 51.82,
               "pickRate": 0.39,
@@ -44275,6 +44269,12 @@
             },
             {
               "date": "2026-09-07",
+              "winRate": 52.74,
+              "pickRate": 0.42,
+              "banRate": 0.05
+            },
+            {
+              "date": "2026-09-08",
               "winRate": 52.74,
               "pickRate": 0.42,
               "banRate": 0.05
@@ -44302,12 +44302,6 @@
           },
           "history30d": [
             {
-              "date": "2026-08-08",
-              "winRate": 51.95,
-              "pickRate": 0.38,
-              "banRate": 0.05
-            },
-            {
               "date": "2026-08-09",
               "winRate": 51.95,
               "pickRate": 0.38,
@@ -44477,6 +44471,12 @@
             },
             {
               "date": "2026-09-07",
+              "winRate": 52.72,
+              "pickRate": 0.39,
+              "banRate": 0.04
+            },
+            {
+              "date": "2026-09-08",
               "winRate": 52.72,
               "pickRate": 0.39,
               "banRate": 0.04
@@ -44509,12 +44509,6 @@
           },
           "history30d": [
             {
-              "date": "2026-08-08",
-              "winRate": 53.4,
-              "pickRate": 1.06,
-              "banRate": 0.06
-            },
-            {
               "date": "2026-08-09",
               "winRate": 53.4,
               "pickRate": 1.06,
@@ -44684,6 +44678,12 @@
             },
             {
               "date": "2026-09-07",
+              "winRate": 54.39,
+              "pickRate": 0.85,
+              "banRate": 0.02
+            },
+            {
+              "date": "2026-09-08",
               "winRate": 54.39,
               "pickRate": 0.85,
               "banRate": 0.02
@@ -44711,12 +44711,6 @@
           },
           "history30d": [
             {
-              "date": "2026-08-08",
-              "winRate": 54.32,
-              "pickRate": 0.52,
-              "banRate": 0.18
-            },
-            {
               "date": "2026-08-09",
               "winRate": 54.32,
               "pickRate": 0.52,
@@ -44886,6 +44880,12 @@
             },
             {
               "date": "2026-09-07",
+              "winRate": 53.93,
+              "pickRate": 0.52,
+              "banRate": 0.34
+            },
+            {
+              "date": "2026-09-08",
               "winRate": 53.93,
               "pickRate": 0.52,
               "banRate": 0.34
@@ -44913,12 +44913,6 @@
           },
           "history30d": [
             {
-              "date": "2026-08-08",
-              "winRate": 52.72,
-              "pickRate": 0.72,
-              "banRate": 0.06
-            },
-            {
               "date": "2026-08-09",
               "winRate": 52.72,
               "pickRate": 0.72,
@@ -45088,6 +45082,12 @@
             },
             {
               "date": "2026-09-07",
+              "winRate": 53.9,
+              "pickRate": 0.78,
+              "banRate": 0.06
+            },
+            {
+              "date": "2026-09-08",
               "winRate": 53.9,
               "pickRate": 0.78,
               "banRate": 0.06
@@ -45115,12 +45115,6 @@
           },
           "history30d": [
             {
-              "date": "2026-08-08",
-              "winRate": 51.7,
-              "pickRate": 0.46,
-              "banRate": 0.04
-            },
-            {
               "date": "2026-08-09",
               "winRate": 51.7,
               "pickRate": 0.46,
@@ -45290,6 +45284,12 @@
             },
             {
               "date": "2026-09-07",
+              "winRate": 53.65,
+              "pickRate": 0.5,
+              "banRate": 0.05
+            },
+            {
+              "date": "2026-09-08",
               "winRate": 53.65,
               "pickRate": 0.5,
               "banRate": 0.05
@@ -45317,12 +45317,6 @@
           },
           "history30d": [
             {
-              "date": "2026-08-08",
-              "winRate": 52.81,
-              "pickRate": 0.59,
-              "banRate": 0.12
-            },
-            {
               "date": "2026-08-09",
               "winRate": 52.81,
               "pickRate": 0.59,
@@ -45492,6 +45486,12 @@
             },
             {
               "date": "2026-09-07",
+              "winRate": 53.49,
+              "pickRate": 0.73,
+              "banRate": 0.28
+            },
+            {
+              "date": "2026-09-08",
               "winRate": 53.49,
               "pickRate": 0.73,
               "banRate": 0.28
@@ -45524,12 +45524,6 @@
           },
           "history30d": [
             {
-              "date": "2026-08-08",
-              "winRate": 53.87,
-              "pickRate": 1.02,
-              "banRate": 0.67
-            },
-            {
               "date": "2026-08-09",
               "winRate": 53.87,
               "pickRate": 1.02,
@@ -45699,6 +45693,12 @@
             },
             {
               "date": "2026-09-07",
+              "winRate": 53.82,
+              "pickRate": 1.01,
+              "banRate": 0.57
+            },
+            {
+              "date": "2026-09-08",
               "winRate": 53.82,
               "pickRate": 1.01,
               "banRate": 0.57
@@ -45726,12 +45726,6 @@
           },
           "history30d": [
             {
-              "date": "2026-08-08",
-              "winRate": 51.99,
-              "pickRate": 0.42,
-              "banRate": 0.04
-            },
-            {
               "date": "2026-08-09",
               "winRate": 51.99,
               "pickRate": 0.42,
@@ -45901,6 +45895,12 @@
             },
             {
               "date": "2026-09-07",
+              "winRate": 52.06,
+              "pickRate": 0.42,
+              "banRate": 0.04
+            },
+            {
+              "date": "2026-09-08",
               "winRate": 52.06,
               "pickRate": 0.42,
               "banRate": 0.04
@@ -45928,12 +45928,6 @@
           },
           "history30d": [
             {
-              "date": "2026-08-08",
-              "winRate": 51.34,
-              "pickRate": 0.59,
-              "banRate": 0.3
-            },
-            {
               "date": "2026-08-09",
               "winRate": 51.34,
               "pickRate": 0.59,
@@ -46103,6 +46097,12 @@
             },
             {
               "date": "2026-09-07",
+              "winRate": 51.44,
+              "pickRate": 0.9,
+              "banRate": 0.53
+            },
+            {
+              "date": "2026-09-08",
               "winRate": 51.44,
               "pickRate": 0.9,
               "banRate": 0.53
@@ -46130,12 +46130,6 @@
           },
           "history30d": [
             {
-              "date": "2026-08-08",
-              "winRate": 49.96,
-              "pickRate": 1.26,
-              "banRate": 0.34
-            },
-            {
               "date": "2026-08-09",
               "winRate": 49.96,
               "pickRate": 1.26,
@@ -46305,6 +46299,12 @@
             },
             {
               "date": "2026-09-07",
+              "winRate": 51.41,
+              "pickRate": 1.85,
+              "banRate": 0.7
+            },
+            {
+              "date": "2026-09-08",
               "winRate": 51.41,
               "pickRate": 1.85,
               "banRate": 0.7
@@ -46332,12 +46332,6 @@
           },
           "history30d": [
             {
-              "date": "2026-08-08",
-              "winRate": 52.16,
-              "pickRate": 0.43,
-              "banRate": 0.01
-            },
-            {
               "date": "2026-08-09",
               "winRate": 52.16,
               "pickRate": 0.43,
@@ -46507,6 +46501,12 @@
             },
             {
               "date": "2026-09-07",
+              "winRate": 51.32,
+              "pickRate": 0.42,
+              "banRate": 0.01
+            },
+            {
+              "date": "2026-09-08",
               "winRate": 51.32,
               "pickRate": 0.42,
               "banRate": 0.01
@@ -46539,12 +46539,6 @@
           },
           "history30d": [
             {
-              "date": "2026-08-08",
-              "winRate": 53.55,
-              "pickRate": 1.38,
-              "banRate": 0.36
-            },
-            {
               "date": "2026-08-09",
               "winRate": 53.55,
               "pickRate": 1.38,
@@ -46714,6 +46708,12 @@
             },
             {
               "date": "2026-09-07",
+              "winRate": 53.78,
+              "pickRate": 1.6,
+              "banRate": 0.4
+            },
+            {
+              "date": "2026-09-08",
               "winRate": 53.78,
               "pickRate": 1.6,
               "banRate": 0.4
@@ -46741,12 +46741,6 @@
           },
           "history30d": [
             {
-              "date": "2026-08-08",
-              "winRate": 51.7,
-              "pickRate": 0.94,
-              "banRate": 0.03
-            },
-            {
               "date": "2026-08-09",
               "winRate": 51.7,
               "pickRate": 0.94,
@@ -46916,6 +46910,12 @@
             },
             {
               "date": "2026-09-07",
+              "winRate": 52.37,
+              "pickRate": 0.88,
+              "banRate": 0.03
+            },
+            {
+              "date": "2026-09-08",
               "winRate": 52.37,
               "pickRate": 0.88,
               "banRate": 0.03
@@ -46943,12 +46943,6 @@
           },
           "history30d": [
             {
-              "date": "2026-08-08",
-              "winRate": 54.19,
-              "pickRate": 0.5,
-              "banRate": 0.01
-            },
-            {
               "date": "2026-08-09",
               "winRate": 54.19,
               "pickRate": 0.5,
@@ -47118,6 +47112,12 @@
             },
             {
               "date": "2026-09-07",
+              "winRate": 52.35,
+              "pickRate": 0.36,
+              "banRate": 0.01
+            },
+            {
+              "date": "2026-09-08",
               "winRate": 52.35,
               "pickRate": 0.36,
               "banRate": 0.01
@@ -47145,12 +47145,6 @@
           },
           "history30d": [
             {
-              "date": "2026-08-08",
-              "winRate": 51.42,
-              "pickRate": 1.09,
-              "banRate": 0.05
-            },
-            {
               "date": "2026-08-09",
               "winRate": 51.42,
               "pickRate": 1.09,
@@ -47320,6 +47314,12 @@
             },
             {
               "date": "2026-09-07",
+              "winRate": 52.26,
+              "pickRate": 1.17,
+              "banRate": 0.09
+            },
+            {
+              "date": "2026-09-08",
               "winRate": 52.26,
               "pickRate": 1.17,
               "banRate": 0.09
@@ -47347,12 +47347,6 @@
           },
           "history30d": [
             {
-              "date": "2026-08-08",
-              "winRate": 51.47,
-              "pickRate": 1.52,
-              "banRate": 0.2
-            },
-            {
               "date": "2026-08-09",
               "winRate": 51.47,
               "pickRate": 1.52,
@@ -47522,6 +47516,12 @@
             },
             {
               "date": "2026-09-07",
+              "winRate": 51.91,
+              "pickRate": 1.65,
+              "banRate": 0.26
+            },
+            {
+              "date": "2026-09-08",
               "winRate": 51.91,
               "pickRate": 1.65,
               "banRate": 0.26
@@ -47554,12 +47554,6 @@
           },
           "history30d": [
             {
-              "date": "2026-08-08",
-              "winRate": 54.49,
-              "pickRate": 0.37,
-              "banRate": 0.02
-            },
-            {
               "date": "2026-08-09",
               "winRate": 54.49,
               "pickRate": 0.37,
@@ -47729,6 +47723,12 @@
             },
             {
               "date": "2026-09-07",
+              "winRate": 55.09,
+              "pickRate": 0.36,
+              "banRate": 0.02
+            },
+            {
+              "date": "2026-09-08",
               "winRate": 55.09,
               "pickRate": 0.36,
               "banRate": 0.02
@@ -47756,12 +47756,6 @@
           },
           "history30d": [
             {
-              "date": "2026-08-08",
-              "winRate": 53.77,
-              "pickRate": 0.49,
-              "banRate": 0.02
-            },
-            {
               "date": "2026-08-09",
               "winRate": 53.77,
               "pickRate": 0.49,
@@ -47931,6 +47925,12 @@
             },
             {
               "date": "2026-09-07",
+              "winRate": 52.74,
+              "pickRate": 0.45,
+              "banRate": 0.02
+            },
+            {
+              "date": "2026-09-08",
               "winRate": 52.74,
               "pickRate": 0.45,
               "banRate": 0.02
@@ -47958,12 +47958,6 @@
           },
           "history30d": [
             {
-              "date": "2026-08-08",
-              "winRate": 51.26,
-              "pickRate": 1.28,
-              "banRate": 2.58
-            },
-            {
               "date": "2026-08-09",
               "winRate": 51.26,
               "pickRate": 1.28,
@@ -48133,6 +48127,12 @@
             },
             {
               "date": "2026-09-07",
+              "winRate": 51.22,
+              "pickRate": 1.23,
+              "banRate": 2.24
+            },
+            {
+              "date": "2026-09-08",
               "winRate": 51.22,
               "pickRate": 1.23,
               "banRate": 2.24
@@ -48160,12 +48160,6 @@
           },
           "history30d": [
             {
-              "date": "2026-08-08",
-              "winRate": 50.95,
-              "pickRate": 0.44,
-              "banRate": 0.02
-            },
-            {
               "date": "2026-08-09",
               "winRate": 50.95,
               "pickRate": 0.44,
@@ -48335,6 +48329,12 @@
             },
             {
               "date": "2026-09-07",
+              "winRate": 50.29,
+              "pickRate": 0.48,
+              "banRate": 0.03
+            },
+            {
+              "date": "2026-09-08",
               "winRate": 50.29,
               "pickRate": 0.48,
               "banRate": 0.03
@@ -48362,12 +48362,6 @@
           },
           "history30d": [
             {
-              "date": "2026-08-08",
-              "winRate": 48.97,
-              "pickRate": 1.01,
-              "banRate": 1.54
-            },
-            {
               "date": "2026-08-09",
               "winRate": 48.97,
               "pickRate": 1.01,
@@ -48537,6 +48531,12 @@
             },
             {
               "date": "2026-09-07",
+              "winRate": 49.43,
+              "pickRate": 1.14,
+              "banRate": 1.58
+            },
+            {
+              "date": "2026-09-08",
               "winRate": 49.43,
               "pickRate": 1.14,
               "banRate": 1.58
@@ -48571,12 +48571,6 @@
           },
           "history30d": [
             {
-              "date": "2026-08-08",
-              "winRate": 53.4,
-              "pickRate": 1.06,
-              "banRate": 0.06
-            },
-            {
               "date": "2026-08-09",
               "winRate": 53.4,
               "pickRate": 1.06,
@@ -48746,6 +48740,12 @@
             },
             {
               "date": "2026-09-07",
+              "winRate": 54.39,
+              "pickRate": 0.85,
+              "banRate": 0.02
+            },
+            {
+              "date": "2026-09-08",
               "winRate": 54.39,
               "pickRate": 0.85,
               "banRate": 0.02
@@ -48773,12 +48773,6 @@
           },
           "history30d": [
             {
-              "date": "2026-08-08",
-              "winRate": 54.17,
-              "pickRate": 0.06,
-              "banRate": 0
-            },
-            {
               "date": "2026-08-09",
               "winRate": 54.17,
               "pickRate": 0.06,
@@ -48948,6 +48942,12 @@
             },
             {
               "date": "2026-09-07",
+              "winRate": 54.25,
+              "pickRate": 0.06,
+              "banRate": 0
+            },
+            {
+              "date": "2026-09-08",
               "winRate": 54.25,
               "pickRate": 0.06,
               "banRate": 0
@@ -48975,12 +48975,6 @@
           },
           "history30d": [
             {
-              "date": "2026-08-08",
-              "winRate": 52.59,
-              "pickRate": 0.2,
-              "banRate": 0.03
-            },
-            {
               "date": "2026-08-09",
               "winRate": 52.59,
               "pickRate": 0.2,
@@ -49150,6 +49144,12 @@
             },
             {
               "date": "2026-09-07",
+              "winRate": 54.18,
+              "pickRate": 0.3,
+              "banRate": 0.07
+            },
+            {
+              "date": "2026-09-08",
               "winRate": 54.18,
               "pickRate": 0.3,
               "banRate": 0.07
@@ -49179,12 +49179,6 @@
           },
           "history30d": [
             {
-              "date": "2026-08-08",
-              "winRate": 50.43,
-              "pickRate": 0.42,
-              "banRate": 0.03
-            },
-            {
               "date": "2026-08-09",
               "winRate": 50.43,
               "pickRate": 0.42,
@@ -49354,6 +49348,12 @@
             },
             {
               "date": "2026-09-07",
+              "winRate": 51.99,
+              "pickRate": 0.67,
+              "banRate": 0.08
+            },
+            {
+              "date": "2026-09-08",
               "winRate": 51.99,
               "pickRate": 0.67,
               "banRate": 0.08
@@ -49381,12 +49381,6 @@
           },
           "history30d": [
             {
-              "date": "2026-08-08",
-              "winRate": 54.17,
-              "pickRate": 0.06,
-              "banRate": 0
-            },
-            {
               "date": "2026-08-09",
               "winRate": 54.17,
               "pickRate": 0.06,
@@ -49556,6 +49550,12 @@
             },
             {
               "date": "2026-09-07",
+              "winRate": 54.25,
+              "pickRate": 0.06,
+              "banRate": 0
+            },
+            {
+              "date": "2026-09-08",
               "winRate": 54.25,
               "pickRate": 0.06,
               "banRate": 0
@@ -49583,12 +49583,6 @@
           },
           "history30d": [
             {
-              "date": "2026-08-08",
-              "winRate": 53.4,
-              "pickRate": 1.06,
-              "banRate": 0.06
-            },
-            {
               "date": "2026-08-09",
               "winRate": 53.4,
               "pickRate": 1.06,
@@ -49758,6 +49752,12 @@
             },
             {
               "date": "2026-09-07",
+              "winRate": 54.39,
+              "pickRate": 0.85,
+              "banRate": 0.02
+            },
+            {
+              "date": "2026-09-08",
               "winRate": 54.39,
               "pickRate": 0.85,
               "banRate": 0.02
@@ -49787,12 +49787,6 @@
           },
           "history30d": [
             {
-              "date": "2026-08-08",
-              "winRate": 49.29,
-              "pickRate": 1.32,
-              "banRate": 0.52
-            },
-            {
               "date": "2026-08-09",
               "winRate": 49.29,
               "pickRate": 1.32,
@@ -49962,6 +49956,12 @@
             },
             {
               "date": "2026-09-07",
+              "winRate": 48.98,
+              "pickRate": 1.44,
+              "banRate": 0.6
+            },
+            {
+              "date": "2026-09-08",
               "winRate": 48.98,
               "pickRate": 1.44,
               "banRate": 0.6
@@ -49989,12 +49989,6 @@
           },
           "history30d": [
             {
-              "date": "2026-08-08",
-              "winRate": 48.11,
-              "pickRate": 1.62,
-              "banRate": 0.92
-            },
-            {
               "date": "2026-08-09",
               "winRate": 48.11,
               "pickRate": 1.62,
@@ -50164,6 +50158,12 @@
             },
             {
               "date": "2026-09-07",
+              "winRate": 48.28,
+              "pickRate": 1.33,
+              "banRate": 1.15
+            },
+            {
+              "date": "2026-09-08",
               "winRate": 48.28,
               "pickRate": 1.33,
               "banRate": 1.15
@@ -50191,12 +50191,6 @@
           },
           "history30d": [
             {
-              "date": "2026-08-08",
-              "winRate": 49.93,
-              "pickRate": 0.91,
-              "banRate": 0.09
-            },
-            {
               "date": "2026-08-09",
               "winRate": 49.93,
               "pickRate": 0.91,
@@ -50366,6 +50360,12 @@
             },
             {
               "date": "2026-09-07",
+              "winRate": 50.46,
+              "pickRate": 0.93,
+              "banRate": 0.12
+            },
+            {
+              "date": "2026-09-08",
               "winRate": 50.46,
               "pickRate": 0.93,
               "banRate": 0.12
@@ -50398,12 +50398,6 @@
           },
           "history30d": [
             {
-              "date": "2026-08-08",
-              "winRate": 53.87,
-              "pickRate": 1.02,
-              "banRate": 0.67
-            },
-            {
               "date": "2026-08-09",
               "winRate": 53.87,
               "pickRate": 1.02,
@@ -50573,6 +50567,12 @@
             },
             {
               "date": "2026-09-07",
+              "winRate": 53.82,
+              "pickRate": 1.01,
+              "banRate": 0.57
+            },
+            {
+              "date": "2026-09-08",
               "winRate": 53.82,
               "pickRate": 1.01,
               "banRate": 0.57
@@ -50600,12 +50600,6 @@
           },
           "history30d": [
             {
-              "date": "2026-08-08",
-              "winRate": 52.7,
-              "pickRate": 0.22,
-              "banRate": 0.02
-            },
-            {
               "date": "2026-08-09",
               "winRate": 52.7,
               "pickRate": 0.22,
@@ -50775,6 +50769,12 @@
             },
             {
               "date": "2026-09-07",
+              "winRate": 53.22,
+              "pickRate": 0.21,
+              "banRate": 0.02
+            },
+            {
+              "date": "2026-09-08",
               "winRate": 53.22,
               "pickRate": 0.21,
               "banRate": 0.02
@@ -50802,12 +50802,6 @@
           },
           "history30d": [
             {
-              "date": "2026-08-08",
-              "winRate": 51.99,
-              "pickRate": 0.42,
-              "banRate": 0.04
-            },
-            {
               "date": "2026-08-09",
               "winRate": 51.99,
               "pickRate": 0.42,
@@ -50977,6 +50971,12 @@
             },
             {
               "date": "2026-09-07",
+              "winRate": 52.06,
+              "pickRate": 0.42,
+              "banRate": 0.04
+            },
+            {
+              "date": "2026-09-08",
               "winRate": 52.06,
               "pickRate": 0.42,
               "banRate": 0.04
@@ -51006,12 +51006,6 @@
           },
           "history30d": [
             {
-              "date": "2026-08-08",
-              "winRate": 49.96,
-              "pickRate": 1.26,
-              "banRate": 0.34
-            },
-            {
               "date": "2026-08-09",
               "winRate": 49.96,
               "pickRate": 1.26,
@@ -51181,6 +51175,12 @@
             },
             {
               "date": "2026-09-07",
+              "winRate": 51.41,
+              "pickRate": 1.85,
+              "banRate": 0.7
+            },
+            {
+              "date": "2026-09-08",
               "winRate": 51.41,
               "pickRate": 1.85,
               "banRate": 0.7
@@ -51208,12 +51208,6 @@
           },
           "history30d": [
             {
-              "date": "2026-08-08",
-              "winRate": 50.53,
-              "pickRate": 0.8,
-              "banRate": 3.72
-            },
-            {
               "date": "2026-08-09",
               "winRate": 50.53,
               "pickRate": 0.8,
@@ -51383,6 +51377,12 @@
             },
             {
               "date": "2026-09-07",
+              "winRate": 50.73,
+              "pickRate": 0.77,
+              "banRate": 3.71
+            },
+            {
+              "date": "2026-09-08",
               "winRate": 50.73,
               "pickRate": 0.77,
               "banRate": 3.71
@@ -51410,12 +51410,6 @@
           },
           "history30d": [
             {
-              "date": "2026-08-08",
-              "winRate": 51.99,
-              "pickRate": 0.42,
-              "banRate": 0.04
-            },
-            {
               "date": "2026-08-09",
               "winRate": 51.99,
               "pickRate": 0.42,
@@ -51585,6 +51579,12 @@
             },
             {
               "date": "2026-09-07",
+              "winRate": 52.06,
+              "pickRate": 0.42,
+              "banRate": 0.04
+            },
+            {
+              "date": "2026-09-08",
               "winRate": 52.06,
               "pickRate": 0.42,
               "banRate": 0.04
@@ -51614,12 +51614,6 @@
           },
           "history30d": [
             {
-              "date": "2026-08-08",
-              "winRate": 51.85,
-              "pickRate": 2.75,
-              "banRate": 1.46
-            },
-            {
               "date": "2026-08-09",
               "winRate": 51.85,
               "pickRate": 2.75,
@@ -51789,6 +51783,12 @@
             },
             {
               "date": "2026-09-07",
+              "winRate": 51.07,
+              "pickRate": 2.76,
+              "banRate": 1.43
+            },
+            {
+              "date": "2026-09-08",
               "winRate": 51.07,
               "pickRate": 2.76,
               "banRate": 1.43
@@ -51816,12 +51816,6 @@
           },
           "history30d": [
             {
-              "date": "2026-08-08",
-              "winRate": 51.35,
-              "pickRate": 2.64,
-              "banRate": 2.41
-            },
-            {
               "date": "2026-08-09",
               "winRate": 51.35,
               "pickRate": 2.64,
@@ -51991,6 +51985,12 @@
             },
             {
               "date": "2026-09-07",
+              "winRate": 51.3,
+              "pickRate": 2.75,
+              "banRate": 2.32
+            },
+            {
+              "date": "2026-09-08",
               "winRate": 51.3,
               "pickRate": 2.75,
               "banRate": 2.32
@@ -52018,12 +52018,6 @@
           },
           "history30d": [
             {
-              "date": "2026-08-08",
-              "winRate": 49.96,
-              "pickRate": 1.26,
-              "banRate": 0.34
-            },
-            {
               "date": "2026-08-09",
               "winRate": 49.96,
               "pickRate": 1.26,
@@ -52193,6 +52187,12 @@
             },
             {
               "date": "2026-09-07",
+              "winRate": 51.41,
+              "pickRate": 1.85,
+              "banRate": 0.7
+            },
+            {
+              "date": "2026-09-08",
               "winRate": 51.41,
               "pickRate": 1.85,
               "banRate": 0.7
@@ -52225,12 +52225,6 @@
           },
           "history30d": [
             {
-              "date": "2026-08-08",
-              "winRate": 53.55,
-              "pickRate": 1.38,
-              "banRate": 0.36
-            },
-            {
               "date": "2026-08-09",
               "winRate": 53.55,
               "pickRate": 1.38,
@@ -52400,6 +52394,12 @@
             },
             {
               "date": "2026-09-07",
+              "winRate": 53.78,
+              "pickRate": 1.6,
+              "banRate": 0.4
+            },
+            {
+              "date": "2026-09-08",
               "winRate": 53.78,
               "pickRate": 1.6,
               "banRate": 0.4
@@ -52427,12 +52427,6 @@
           },
           "history30d": [
             {
-              "date": "2026-08-08",
-              "winRate": 51.7,
-              "pickRate": 0.46,
-              "banRate": 0.04
-            },
-            {
               "date": "2026-08-09",
               "winRate": 51.7,
               "pickRate": 0.46,
@@ -52602,6 +52596,12 @@
             },
             {
               "date": "2026-09-07",
+              "winRate": 53.65,
+              "pickRate": 0.5,
+              "banRate": 0.05
+            },
+            {
+              "date": "2026-09-08",
               "winRate": 53.65,
               "pickRate": 0.5,
               "banRate": 0.05
@@ -52629,12 +52629,6 @@
           },
           "history30d": [
             {
-              "date": "2026-08-08",
-              "winRate": 51.7,
-              "pickRate": 0.94,
-              "banRate": 0.03
-            },
-            {
               "date": "2026-08-09",
               "winRate": 51.7,
               "pickRate": 0.94,
@@ -52804,6 +52798,12 @@
             },
             {
               "date": "2026-09-07",
+              "winRate": 52.37,
+              "pickRate": 0.88,
+              "banRate": 0.03
+            },
+            {
+              "date": "2026-09-08",
               "winRate": 52.37,
               "pickRate": 0.88,
               "banRate": 0.03
@@ -52833,12 +52833,6 @@
           },
           "history30d": [
             {
-              "date": "2026-08-08",
-              "winRate": 51.7,
-              "pickRate": 0.46,
-              "banRate": 0.04
-            },
-            {
               "date": "2026-08-09",
               "winRate": 51.7,
               "pickRate": 0.46,
@@ -53008,6 +53002,12 @@
             },
             {
               "date": "2026-09-07",
+              "winRate": 53.65,
+              "pickRate": 0.5,
+              "banRate": 0.05
+            },
+            {
+              "date": "2026-09-08",
               "winRate": 53.65,
               "pickRate": 0.5,
               "banRate": 0.05
@@ -53035,12 +53035,6 @@
           },
           "history30d": [
             {
-              "date": "2026-08-08",
-              "winRate": 52.96,
-              "pickRate": 1.51,
-              "banRate": 0.16
-            },
-            {
               "date": "2026-08-09",
               "winRate": 52.96,
               "pickRate": 1.51,
@@ -53210,6 +53204,12 @@
             },
             {
               "date": "2026-09-07",
+              "winRate": 46.36,
+              "pickRate": 0.89,
+              "banRate": 0.12
+            },
+            {
+              "date": "2026-09-08",
               "winRate": 46.36,
               "pickRate": 0.89,
               "banRate": 0.12
@@ -53237,12 +53237,6 @@
           },
           "history30d": [
             {
-              "date": "2026-08-08",
-              "winRate": 49.07,
-              "pickRate": 1.77,
-              "banRate": 0.29
-            },
-            {
               "date": "2026-08-09",
               "winRate": 49.07,
               "pickRate": 1.77,
@@ -53412,6 +53406,12 @@
             },
             {
               "date": "2026-09-07",
+              "winRate": 49.96,
+              "pickRate": 1.88,
+              "banRate": 0.32
+            },
+            {
+              "date": "2026-09-08",
               "winRate": 49.96,
               "pickRate": 1.88,
               "banRate": 0.32
@@ -53441,12 +53441,6 @@
           },
           "history30d": [
             {
-              "date": "2026-08-08",
-              "winRate": 49.82,
-              "pickRate": 2.86,
-              "banRate": 0.17
-            },
-            {
               "date": "2026-08-09",
               "winRate": 49.82,
               "pickRate": 2.86,
@@ -53616,6 +53610,12 @@
             },
             {
               "date": "2026-09-07",
+              "winRate": 49.28,
+              "pickRate": 2.67,
+              "banRate": 0.19
+            },
+            {
+              "date": "2026-09-08",
               "winRate": 49.28,
               "pickRate": 2.67,
               "banRate": 0.19
@@ -53643,12 +53643,6 @@
           },
           "history30d": [
             {
-              "date": "2026-08-08",
-              "winRate": 51.26,
-              "pickRate": 2.01,
-              "banRate": 0.36
-            },
-            {
               "date": "2026-08-09",
               "winRate": 51.26,
               "pickRate": 2.01,
@@ -53818,6 +53812,12 @@
             },
             {
               "date": "2026-09-07",
+              "winRate": 51.89,
+              "pickRate": 2.14,
+              "banRate": 0.41
+            },
+            {
+              "date": "2026-09-08",
               "winRate": 51.89,
               "pickRate": 2.14,
               "banRate": 0.41
@@ -53845,12 +53845,6 @@
           },
           "history30d": [
             {
-              "date": "2026-08-08",
-              "winRate": 49.07,
-              "pickRate": 1.77,
-              "banRate": 0.29
-            },
-            {
               "date": "2026-08-09",
               "winRate": 49.07,
               "pickRate": 1.77,
@@ -54020,6 +54014,12 @@
             },
             {
               "date": "2026-09-07",
+              "winRate": 49.96,
+              "pickRate": 1.88,
+              "banRate": 0.32
+            },
+            {
+              "date": "2026-09-08",
               "winRate": 49.96,
               "pickRate": 1.88,
               "banRate": 0.32
@@ -54052,12 +54052,6 @@
           },
           "history30d": [
             {
-              "date": "2026-08-08",
-              "winRate": 53.77,
-              "pickRate": 0.49,
-              "banRate": 0.02
-            },
-            {
               "date": "2026-08-09",
               "winRate": 53.77,
               "pickRate": 0.49,
@@ -54227,6 +54221,12 @@
             },
             {
               "date": "2026-09-07",
+              "winRate": 52.74,
+              "pickRate": 0.45,
+              "banRate": 0.02
+            },
+            {
+              "date": "2026-09-08",
               "winRate": 52.74,
               "pickRate": 0.45,
               "banRate": 0.02
@@ -54254,12 +54254,6 @@
           },
           "history30d": [
             {
-              "date": "2026-08-08",
-              "winRate": 51.26,
-              "pickRate": 1.28,
-              "banRate": 2.58
-            },
-            {
               "date": "2026-08-09",
               "winRate": 51.26,
               "pickRate": 1.28,
@@ -54429,6 +54423,12 @@
             },
             {
               "date": "2026-09-07",
+              "winRate": 51.22,
+              "pickRate": 1.23,
+              "banRate": 2.24
+            },
+            {
+              "date": "2026-09-08",
               "winRate": 51.22,
               "pickRate": 1.23,
               "banRate": 2.24
@@ -54456,12 +54456,6 @@
           },
           "history30d": [
             {
-              "date": "2026-08-08",
-              "winRate": 52.36,
-              "pickRate": 0.21,
-              "banRate": 0.33
-            },
-            {
               "date": "2026-08-09",
               "winRate": 52.36,
               "pickRate": 0.21,
@@ -54631,6 +54625,12 @@
             },
             {
               "date": "2026-09-07",
+              "winRate": 51.09,
+              "pickRate": 0.21,
+              "banRate": 0.2
+            },
+            {
+              "date": "2026-09-08",
               "winRate": 51.09,
               "pickRate": 0.21,
               "banRate": 0.2
@@ -54660,12 +54660,6 @@
           },
           "history30d": [
             {
-              "date": "2026-08-08",
-              "winRate": 46.54,
-              "pickRate": 1.72,
-              "banRate": 0.62
-            },
-            {
               "date": "2026-08-09",
               "winRate": 46.54,
               "pickRate": 1.72,
@@ -54835,6 +54829,12 @@
             },
             {
               "date": "2026-09-07",
+              "winRate": 46.97,
+              "pickRate": 2.27,
+              "banRate": 0.96
+            },
+            {
+              "date": "2026-09-08",
               "winRate": 46.97,
               "pickRate": 2.27,
               "banRate": 0.96
@@ -54862,12 +54862,6 @@
           },
           "history30d": [
             {
-              "date": "2026-08-08",
-              "winRate": 53.77,
-              "pickRate": 0.49,
-              "banRate": 0.02
-            },
-            {
               "date": "2026-08-09",
               "winRate": 53.77,
               "pickRate": 0.49,
@@ -55037,6 +55031,12 @@
             },
             {
               "date": "2026-09-07",
+              "winRate": 52.74,
+              "pickRate": 0.45,
+              "banRate": 0.02
+            },
+            {
+              "date": "2026-09-08",
               "winRate": 52.74,
               "pickRate": 0.45,
               "banRate": 0.02
@@ -55064,12 +55064,6 @@
           },
           "history30d": [
             {
-              "date": "2026-08-08",
-              "winRate": 50,
-              "pickRate": 0.45,
-              "banRate": 0.15
-            },
-            {
               "date": "2026-08-09",
               "winRate": 50,
               "pickRate": 0.45,
@@ -55239,6 +55233,12 @@
             },
             {
               "date": "2026-09-07",
+              "winRate": 49.16,
+              "pickRate": 0.39,
+              "banRate": 0.1
+            },
+            {
+              "date": "2026-09-08",
               "winRate": 49.16,
               "pickRate": 0.39,
               "banRate": 0.1
@@ -55268,12 +55268,6 @@
           },
           "history30d": [
             {
-              "date": "2026-08-08",
-              "winRate": 46.54,
-              "pickRate": 1.72,
-              "banRate": 0.62
-            },
-            {
               "date": "2026-08-09",
               "winRate": 46.54,
               "pickRate": 1.72,
@@ -55443,6 +55437,12 @@
             },
             {
               "date": "2026-09-07",
+              "winRate": 46.97,
+              "pickRate": 2.27,
+              "banRate": 0.96
+            },
+            {
+              "date": "2026-09-08",
               "winRate": 46.97,
               "pickRate": 2.27,
               "banRate": 0.96
@@ -55470,12 +55470,6 @@
           },
           "history30d": [
             {
-              "date": "2026-08-08",
-              "winRate": 51.26,
-              "pickRate": 1.28,
-              "banRate": 2.58
-            },
-            {
               "date": "2026-08-09",
               "winRate": 51.26,
               "pickRate": 1.28,
@@ -55645,6 +55639,12 @@
             },
             {
               "date": "2026-09-07",
+              "winRate": 51.22,
+              "pickRate": 1.23,
+              "banRate": 2.24
+            },
+            {
+              "date": "2026-09-08",
               "winRate": 51.22,
               "pickRate": 1.23,
               "banRate": 2.24
@@ -55672,12 +55672,6 @@
           },
           "history30d": [
             {
-              "date": "2026-08-08",
-              "winRate": 48.97,
-              "pickRate": 1.01,
-              "banRate": 1.54
-            },
-            {
               "date": "2026-08-09",
               "winRate": 48.97,
               "pickRate": 1.01,
@@ -55847,6 +55841,12 @@
             },
             {
               "date": "2026-09-07",
+              "winRate": 49.43,
+              "pickRate": 1.14,
+              "banRate": 1.58
+            },
+            {
+              "date": "2026-09-08",
               "winRate": 49.43,
               "pickRate": 1.14,
               "banRate": 1.58
@@ -55879,12 +55879,6 @@
           },
           "history30d": [
             {
-              "date": "2026-08-08",
-              "winRate": 54.49,
-              "pickRate": 0.37,
-              "banRate": 0.02
-            },
-            {
               "date": "2026-08-09",
               "winRate": 54.49,
               "pickRate": 0.37,
@@ -56054,6 +56048,12 @@
             },
             {
               "date": "2026-09-07",
+              "winRate": 55.09,
+              "pickRate": 0.36,
+              "banRate": 0.02
+            },
+            {
+              "date": "2026-09-08",
               "winRate": 55.09,
               "pickRate": 0.36,
               "banRate": 0.02
@@ -56081,12 +56081,6 @@
           },
           "history30d": [
             {
-              "date": "2026-08-08",
-              "winRate": 52.78,
-              "pickRate": 0.58,
-              "banRate": 0.04
-            },
-            {
               "date": "2026-08-09",
               "winRate": 52.78,
               "pickRate": 0.58,
@@ -56256,6 +56250,12 @@
             },
             {
               "date": "2026-09-07",
+              "winRate": 52.82,
+              "pickRate": 0.53,
+              "banRate": 0.04
+            },
+            {
+              "date": "2026-09-08",
               "winRate": 52.82,
               "pickRate": 0.53,
               "banRate": 0.04
@@ -56283,12 +56283,6 @@
           },
           "history30d": [
             {
-              "date": "2026-08-08",
-              "winRate": 52.4,
-              "pickRate": 1.52,
-              "banRate": 0.54
-            },
-            {
               "date": "2026-08-09",
               "winRate": 52.4,
               "pickRate": 1.52,
@@ -56458,6 +56452,12 @@
             },
             {
               "date": "2026-09-07",
+              "winRate": 52.81,
+              "pickRate": 1.68,
+              "banRate": 0.58
+            },
+            {
+              "date": "2026-09-08",
               "winRate": 52.81,
               "pickRate": 1.68,
               "banRate": 0.58
@@ -56487,12 +56487,6 @@
           },
           "history30d": [
             {
-              "date": "2026-08-08",
-              "winRate": 51.47,
-              "pickRate": 0.52,
-              "banRate": 0.05
-            },
-            {
               "date": "2026-08-09",
               "winRate": 51.47,
               "pickRate": 0.52,
@@ -56662,6 +56656,12 @@
             },
             {
               "date": "2026-09-07",
+              "winRate": 51.89,
+              "pickRate": 0.4,
+              "banRate": 0.03
+            },
+            {
+              "date": "2026-09-08",
               "winRate": 51.89,
               "pickRate": 0.4,
               "banRate": 0.03
@@ -56689,12 +56689,6 @@
           },
           "history30d": [
             {
-              "date": "2026-08-08",
-              "winRate": 48.43,
-              "pickRate": 1.42,
-              "banRate": 0.14
-            },
-            {
               "date": "2026-08-09",
               "winRate": 48.43,
               "pickRate": 1.42,
@@ -56864,6 +56858,12 @@
             },
             {
               "date": "2026-09-07",
+              "winRate": 49.89,
+              "pickRate": 1.07,
+              "banRate": 0.04
+            },
+            {
+              "date": "2026-09-08",
               "winRate": 49.89,
               "pickRate": 1.07,
               "banRate": 0.04
@@ -56891,12 +56891,6 @@
           },
           "history30d": [
             {
-              "date": "2026-08-08",
-              "winRate": 48.43,
-              "pickRate": 0.58,
-              "banRate": 0.07
-            },
-            {
               "date": "2026-08-09",
               "winRate": 48.43,
               "pickRate": 0.58,
@@ -57066,6 +57060,12 @@
             },
             {
               "date": "2026-09-07",
+              "winRate": 48.83,
+              "pickRate": 0.63,
+              "banRate": 0.07
+            },
+            {
+              "date": "2026-09-08",
               "winRate": 48.83,
               "pickRate": 0.63,
               "banRate": 0.07
@@ -57095,12 +57095,6 @@
           },
           "history30d": [
             {
-              "date": "2026-08-08",
-              "winRate": 52.4,
-              "pickRate": 1.52,
-              "banRate": 0.54
-            },
-            {
               "date": "2026-08-09",
               "winRate": 52.4,
               "pickRate": 1.52,
@@ -57270,6 +57264,12 @@
             },
             {
               "date": "2026-09-07",
+              "winRate": 52.81,
+              "pickRate": 1.68,
+              "banRate": 0.58
+            },
+            {
+              "date": "2026-09-08",
               "winRate": 52.81,
               "pickRate": 1.68,
               "banRate": 0.58
@@ -57297,12 +57297,6 @@
           },
           "history30d": [
             {
-              "date": "2026-08-08",
-              "winRate": 50.33,
-              "pickRate": 1.4,
-              "banRate": 0.14
-            },
-            {
               "date": "2026-08-09",
               "winRate": 50.33,
               "pickRate": 1.4,
@@ -57472,6 +57466,12 @@
             },
             {
               "date": "2026-09-07",
+              "winRate": 50.67,
+              "pickRate": 1.39,
+              "banRate": 0.14
+            },
+            {
+              "date": "2026-09-08",
               "winRate": 50.67,
               "pickRate": 1.39,
               "banRate": 0.14
@@ -57499,12 +57499,6 @@
           },
           "history30d": [
             {
-              "date": "2026-08-08",
-              "winRate": 52.08,
-              "pickRate": 1.13,
-              "banRate": 0.15
-            },
-            {
               "date": "2026-08-09",
               "winRate": 52.08,
               "pickRate": 1.13,
@@ -57674,6 +57668,12 @@
             },
             {
               "date": "2026-09-07",
+              "winRate": 52.63,
+              "pickRate": 1.15,
+              "banRate": 0.18
+            },
+            {
+              "date": "2026-09-08",
               "winRate": 52.63,
               "pickRate": 1.15,
               "banRate": 0.18
@@ -57706,12 +57706,6 @@
           },
           "history30d": [
             {
-              "date": "2026-08-08",
-              "winRate": 50.68,
-              "pickRate": 0.35,
-              "banRate": 0.06
-            },
-            {
               "date": "2026-08-09",
               "winRate": 50.68,
               "pickRate": 0.35,
@@ -57881,6 +57875,12 @@
             },
             {
               "date": "2026-09-07",
+              "winRate": 52.79,
+              "pickRate": 0.4,
+              "banRate": 0.06
+            },
+            {
+              "date": "2026-09-08",
               "winRate": 52.79,
               "pickRate": 0.4,
               "banRate": 0.06
@@ -57908,12 +57908,6 @@
           },
           "history30d": [
             {
-              "date": "2026-08-08",
-              "winRate": 51.95,
-              "pickRate": 0.38,
-              "banRate": 0.05
-            },
-            {
               "date": "2026-08-09",
               "winRate": 51.95,
               "pickRate": 0.38,
@@ -58083,6 +58077,12 @@
             },
             {
               "date": "2026-09-07",
+              "winRate": 52.72,
+              "pickRate": 0.39,
+              "banRate": 0.04
+            },
+            {
+              "date": "2026-09-08",
               "winRate": 52.72,
               "pickRate": 0.39,
               "banRate": 0.04
@@ -58110,12 +58110,6 @@
           },
           "history30d": [
             {
-              "date": "2026-08-08",
-              "winRate": 51.17,
-              "pickRate": 1.47,
-              "banRate": 0.4
-            },
-            {
               "date": "2026-08-09",
               "winRate": 51.17,
               "pickRate": 1.47,
@@ -58285,6 +58279,12 @@
             },
             {
               "date": "2026-09-07",
+              "winRate": 52.23,
+              "pickRate": 1.49,
+              "banRate": 0.38
+            },
+            {
+              "date": "2026-09-08",
               "winRate": 52.23,
               "pickRate": 1.49,
               "banRate": 0.38
@@ -58314,12 +58314,6 @@
           },
           "history30d": [
             {
-              "date": "2026-08-08",
-              "winRate": 50.68,
-              "pickRate": 0.35,
-              "banRate": 0.06
-            },
-            {
               "date": "2026-08-09",
               "winRate": 50.68,
               "pickRate": 0.35,
@@ -58489,6 +58483,12 @@
             },
             {
               "date": "2026-09-07",
+              "winRate": 52.79,
+              "pickRate": 0.4,
+              "banRate": 0.06
+            },
+            {
+              "date": "2026-09-08",
               "winRate": 52.79,
               "pickRate": 0.4,
               "banRate": 0.06
@@ -58516,12 +58516,6 @@
           },
           "history30d": [
             {
-              "date": "2026-08-08",
-              "winRate": 51.95,
-              "pickRate": 0.38,
-              "banRate": 0.05
-            },
-            {
               "date": "2026-08-09",
               "winRate": 51.95,
               "pickRate": 0.38,
@@ -58691,6 +58685,12 @@
             },
             {
               "date": "2026-09-07",
+              "winRate": 52.72,
+              "pickRate": 0.39,
+              "banRate": 0.04
+            },
+            {
+              "date": "2026-09-08",
               "winRate": 52.72,
               "pickRate": 0.39,
               "banRate": 0.04
@@ -58718,12 +58718,6 @@
           },
           "history30d": [
             {
-              "date": "2026-08-08",
-              "winRate": 51.17,
-              "pickRate": 1.47,
-              "banRate": 0.4
-            },
-            {
               "date": "2026-08-09",
               "winRate": 51.17,
               "pickRate": 1.47,
@@ -58893,6 +58887,12 @@
             },
             {
               "date": "2026-09-07",
+              "winRate": 52.23,
+              "pickRate": 1.49,
+              "banRate": 0.38
+            },
+            {
+              "date": "2026-09-08",
               "winRate": 52.23,
               "pickRate": 1.49,
               "banRate": 0.38
@@ -58922,12 +58922,6 @@
           },
           "history30d": [
             {
-              "date": "2026-08-08",
-              "winRate": 53.83,
-              "pickRate": 2.66,
-              "banRate": 3.23
-            },
-            {
               "date": "2026-08-09",
               "winRate": 53.83,
               "pickRate": 2.66,
@@ -59097,6 +59091,12 @@
             },
             {
               "date": "2026-09-07",
+              "winRate": 51.38,
+              "pickRate": 2.16,
+              "banRate": 3.01
+            },
+            {
+              "date": "2026-09-08",
               "winRate": 51.38,
               "pickRate": 2.16,
               "banRate": 3.01
@@ -59124,12 +59124,6 @@
           },
           "history30d": [
             {
-              "date": "2026-08-08",
-              "winRate": 49.27,
-              "pickRate": 1.66,
-              "banRate": 4.09
-            },
-            {
               "date": "2026-08-09",
               "winRate": 49.27,
               "pickRate": 1.66,
@@ -59299,6 +59293,12 @@
             },
             {
               "date": "2026-09-07",
+              "winRate": 49.57,
+              "pickRate": 1.63,
+              "banRate": 3.98
+            },
+            {
+              "date": "2026-09-08",
               "winRate": 49.57,
               "pickRate": 1.63,
               "banRate": 3.98
@@ -59326,12 +59326,6 @@
           },
           "history30d": [
             {
-              "date": "2026-08-08",
-              "winRate": 51.17,
-              "pickRate": 1.47,
-              "banRate": 0.4
-            },
-            {
               "date": "2026-08-09",
               "winRate": 51.17,
               "pickRate": 1.47,
@@ -59501,6 +59495,12 @@
             },
             {
               "date": "2026-09-07",
+              "winRate": 52.23,
+              "pickRate": 1.49,
+              "banRate": 0.38
+            },
+            {
+              "date": "2026-09-08",
               "winRate": 52.23,
               "pickRate": 1.49,
               "banRate": 0.38
