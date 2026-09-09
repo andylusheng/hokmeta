@@ -2,7 +2,7 @@
   "season": "S15",
   "currentSeason": "S15",
   "source": "Camp HOK bilingual (api-camp.honorofkings.com)",
-  "updated": "2026-09-08",
+  "updated": "2026-09-09",
   "heroCount": 116,
   "seasons": [
     {
@@ -4078,9 +4078,21 @@
       "seasonId": "5",
       "changes": [
         {
-          "heroSlug": "dun",
-          "heroName": "Dun",
-          "heroNameZh": "夏侯惇",
+          "heroSlug": "lian-po",
+          "heroName": "Lian Po",
+          "heroNameZh": "廉頗",
+          "tag": "Mechanics Upgrade",
+          "change": "New Health recovery mechanic; skill stat values and bonus multipliers have also been adjusted to make Lian Po more suitable for his role as a frontline hero",
+          "changeZh": null,
+          "detail": "New Health recovery mechanic; skill stat values and bonus multipliers have also been adjusted to make Lian Po more suitable for his role as a frontline hero.\nAs one of the heroes available to new players, Lian Po has been with our players through thick and thin over many versions.He shines in games where he has farmed adequately. However, in certain uphill scenarios, there can be precious little room for Lian Po to perform to his full potential.With these changes, we expect that users who use Lian Po will now have more equipment to choose from, as well as a better game experience in the new version.",
+          "detailZh": null,
+          "versionName": "20240424",
+          "publishedAt": "2024-04-24T09:58:37Z"
+        },
+        {
+          "heroSlug": "lian-po",
+          "heroName": "Lian Po",
+          "heroNameZh": "廉頗",
           "tag": "Stat Changes",
           "change": "We're increasing the base Health of some tanks but decreasing their per-level Health growth multiplier so that their Health at max level stays the same.",
           "changeZh": null,
