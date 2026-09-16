@@ -19,7 +19,7 @@
   "heroCover": "https://camp.honorofkings.com/social/game/src/image_hero_cover_1275*718/SszuE9E2.jpg",
   "tencentId": 126,
   "dataSource": "Camp HOK bilingual (primary)",
-  "dataUpdated": "2026-09-15",
+  "dataUpdated": "2026-09-16",
   "skills": [
     {
       "slot": "passive",
@@ -220,55 +220,6 @@
     },
     {
       "id": "camp-1",
-      "label": "My Dun",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1331",
-          "name": "Blazing Cape",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1331.png",
-          "description": "PDEF +150, MDEF +150, HP +1,100\nArea burn & imperil"
-        },
-        {
-          "slot": 2,
-          "itemId": "1347",
-          "name": "Longnight Guardian",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1347.png",
-          "description": "MDEF +210, HP +1,000, MSPD +7.5%\nReduces magical damage"
-        },
-        {
-          "slot": 3,
-          "itemId": "1338",
-          "name": "Cuirass of Savagery",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1338.png",
-          "description": "PATK +35, PDEF +210, HP +900\nOffense & defense"
-        },
-        {
-          "slot": 4,
-          "itemId": "1337",
-          "name": "Sage's Sanctuary",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
-          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
-        },
-        {
-          "slot": 5,
-          "itemId": "1334",
-          "name": "Eye of the Phoenix",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1334.png",
-          "description": "MDEF +180, PDEF +90, HP +1,350\nBoosts HP Regen"
-        },
-        {
-          "slot": 6,
-          "itemId": "13310",
-          "name": "Frostscar's Embrace",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/13310.png",
-          "description": "PATK +60, PDEF +300, CDR +10%\nEnhanced BAs slow"
-        }
-      ]
-    },
-    {
-      "id": "camp-2",
       "label": "Shield/Pertahan",
       "lane": "Top",
       "items": [
@@ -317,7 +268,7 @@
       ]
     },
     {
-      "id": "camp-3",
+      "id": "camp-2",
       "label": "Jungle",
       "lane": "Jungle",
       "items": [
@@ -361,6 +312,55 @@
           "itemId": "1341",
           "name": "Frigid Charge",
           "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1341.png",
+          "description": "PDEF +150, HP +900, CDR +7.5%, Resistance +10%\nGreat crowd control"
+        }
+      ]
+    },
+    {
+      "id": "camp-3",
+      "label": "Clash Lane 1",
+      "lane": "Top",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1422",
+          "name": "Boots of Resistance",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1422.png",
+          "description": "MDEF +100, PDEF +50, MSPD +50\nShortens crowd control"
+        },
+        {
+          "slot": 2,
+          "itemId": "1341",
+          "name": "Frigid Charge",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1341.png",
+          "description": "PDEF +150, HP +900, CDR +7.5%, Resistance +10%\nGreat crowd control"
+        },
+        {
+          "slot": 3,
+          "itemId": "1335",
+          "name": "Succubus Cloak",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
+          "description": "MDEF +300, HP +1,100\nNegates magical damage"
+        },
+        {
+          "slot": 4,
+          "itemId": "1353",
+          "name": "Dawnlight",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1353.png",
+          "description": "PDEF +210, HP +900, CDR +10%\nShields on dealing damage"
+        },
+        {
+          "slot": 5,
+          "itemId": "1337",
+          "name": "Sage's Sanctuary",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "HP +900, PDEF +150, MDEF +150\nResurrect on the spot"
+        },
+        {
+          "slot": 6,
+          "itemId": "1351",
+          "name": "Amble - Winter",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1351.png",
           "description": "PDEF +150, HP +900, CDR +7.5%, Resistance +10%\nGreat crowd control"
         }
       ]
@@ -418,55 +418,6 @@
     },
     {
       "id": "camp-1",
-      "label": "My Dun",
-      "lane": null,
-      "items": [
-        {
-          "slot": 1,
-          "itemId": "1331",
-          "name": "紅蓮斗篷",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1331.png",
-          "description": "+150點物防+150點法防+1100點生命值\n範圍灼燒重傷"
-        },
-        {
-          "slot": 2,
-          "itemId": "1347",
-          "name": "永夜守護",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1347.png",
-          "description": "+210點法防+1000點生命值\n+7.5%移速減少法術傷害"
-        },
-        {
-          "slot": 3,
-          "itemId": "1338",
-          "name": "暴烈之甲",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1338.png",
-          "description": "+35點攻擊+210點物防+900點生命值\n能抗能打"
-        },
-        {
-          "slot": 4,
-          "itemId": "1337",
-          "name": "賢者的庇護",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
-          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
-        },
-        {
-          "slot": 5,
-          "itemId": "1334",
-          "name": "不死鳥之眼",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1334.png",
-          "description": "+180點法防+90點物防+1350點生命值……\n增加回血效果"
-        },
-        {
-          "slot": 6,
-          "itemId": "13310",
-          "name": "冰痕之握",
-          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/13310.png",
-          "description": "+60點攻擊+300點物防+10%減冷卻時間……\n強化普攻減速"
-        }
-      ]
-    },
-    {
-      "id": "camp-2",
       "label": "Shield/Pertahan",
       "lane": "Top",
       "items": [
@@ -515,7 +466,7 @@
       ]
     },
     {
-      "id": "camp-3",
+      "id": "camp-2",
       "label": "Jungle",
       "lane": "Jungle",
       "items": [
@@ -559,6 +510,55 @@
           "itemId": "1341",
           "name": "冰霜衝擊",
           "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1341.png",
+          "description": "+150點物防+900點生命值+7.5%冷卻時間+10%韌性\n群體控制"
+        }
+      ]
+    },
+    {
+      "id": "camp-3",
+      "label": "Clash Lane 1",
+      "lane": "Top",
+      "items": [
+        {
+          "slot": 1,
+          "itemId": "1422",
+          "name": "抵抗之靴",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1422.png",
+          "description": "+100點法防+50點物防+50點移速\n減少被控時間"
+        },
+        {
+          "slot": 2,
+          "itemId": "1341",
+          "name": "冰霜衝擊",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1341.png",
+          "description": "+150點物防+900點生命值+7.5%冷卻時間+10%韌性\n群體控制"
+        },
+        {
+          "slot": 3,
+          "itemId": "1335",
+          "name": "魔女斗篷",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1335.png",
+          "description": "+300點法防+1100點生命值\n吸收法術傷害"
+        },
+        {
+          "slot": 4,
+          "itemId": "1353",
+          "name": "旭日初光",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1353.png",
+          "description": "+210點物防+900點生命值+10%減冷卻時間\n傷害敵人時獲得護盾值"
+        },
+        {
+          "slot": 5,
+          "itemId": "1337",
+          "name": "賢者的庇護",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1337.png",
+          "description": "+900點生命值+150點物防+150點法防……\n原地復活"
+        },
+        {
+          "slot": 6,
+          "itemId": "1351",
+          "name": "徐行・凜冬",
+          "icon": "https://camp.honorofkings.com/social/game/BattleEquip/1351.png",
           "description": "+150點物防+900點生命值+7.5%冷卻時間+10%韌性\n群體控制"
         }
       ]
@@ -770,13 +770,13 @@
     }
   ],
   "metaAnalysis": [
-    "Dun win rate 52.85% (Camp HOK, 2026-09-15).",
+    "Dun win rate 52.85% (Camp HOK, 2026-09-16).",
     "Pick rate 1.63%.",
     "Ban rate 0.57%.",
     "Counters: Diaochan, Fang, Erin. Weak into: Han Xin, Li Bai, Wukong."
   ],
   "metaAnalysisZh": [
-    "夏侯惇 勝率 52.85%（Camp HOK，2026-09-15）",
+    "夏侯惇 勝率 52.85%（Camp HOK，2026-09-16）",
     "選取率 1.63%",
     "禁用率 0.57%",
     "克制：Diaochan、Fang、Erin；被克制：Han Xin、Li Bai、Wukong"
