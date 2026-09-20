@@ -2,7 +2,7 @@
   "season": "S15",
   "currentSeason": "S15",
   "source": "Camp HOK bilingual (api-camp.honorofkings.com)",
-  "updated": "2026-09-19",
+  "updated": "2026-09-20",
   "heroCount": 116,
   "seasons": [
     {
@@ -4142,6 +4142,132 @@
           "detailZh": "「靈活是公孫離的特點，我們適當降低前期的冷卻時間，好好發揮她的特點。」",
           "versionName": "20240905",
           "publishedAt": "2024-09-05T03:48:42Z"
+        }
+      ]
+    },
+    {
+      "seasonName": "S5",
+      "seasonId": "5",
+      "changes": [
+        {
+          "heroSlug": "zilong",
+          "heroName": "Zilong",
+          "heroNameZh": "趙雲",
+          "tag": "Stat Changes",
+          "change": "Increased Skill 2's recovery, and reduced its damage accordingly.",
+          "changeZh": null,
+          "detail": "Zilong is a very good all-rounder. Players can use different equipment based on different situations and lineups to give their Zilong various strengths. We adjusted his Skill 2 somewhat to increase his recovery and reduce his ability to deal sustained damage.",
+          "detailZh": null,
+          "versionName": "20240523",
+          "publishedAt": "2024-05-23T12:11:56Z"
+        },
+        {
+          "heroSlug": "cai-yan",
+          "heroName": "Cai Yan",
+          "heroNameZh": "蔡文姬",
+          "tag": "Stat Buffs",
+          "change": "Increased the recovery from Cai Yan's Skill 1 and Ultimate, and increased the defense provided by the Ultimate during late-game.",
+          "changeZh": null,
+          "detail": "Cai Yan provides great sustain and protection for her teammates as long as she can afford equipment, but she becomes less useful when her team is falling behind. To alleviate this, we increased her recovery effects and the defense provided by her Ultimate, so that she can be effective even before she has a lot of equipment.",
+          "detailZh": null,
+          "versionName": "20240523",
+          "publishedAt": "2024-05-23T12:11:56Z"
+        },
+        {
+          "heroSlug": "dr-bian",
+          "heroName": "Dr Bian",
+          "heroNameZh": "扁鵲",
+          "tag": "Stat Buffs",
+          "change": "Reduced Dr Bian's early-game damage, and increased his healing and late-game damage",
+          "changeZh": null,
+          "detail": "n the current version, Dr Bian is extremely powerful during the early game. However, his lack of dash and crowd control skills makes him less powerful during in the late game. We hope to change that, so we will increase his late-game damage and healing, and reduce his early-game damage accordingly.",
+          "detailZh": null,
+          "versionName": "20240523",
+          "publishedAt": "2024-05-23T12:11:56Z"
+        }
+      ]
+    },
+    {
+      "seasonName": "S4",
+      "seasonId": "4",
+      "changes": [
+        {
+          "heroSlug": "zilong",
+          "heroName": "Zilong",
+          "heroNameZh": "趙雲",
+          "tag": "Mechanics Upgrade",
+          "change": "We've retained Zilong's original design and gameplay while upgrading his passive and active skill mechanics. We've adjusted some of his bonus stats to adapt their strength to the current game environment.",
+          "changeZh": null,
+          "detail": "We've retained Zilong's original design and gameplay while upgrading his passive and active skill mechanics. We've adjusted some of his bonus stats to adapt their strength to the current game environment.\nZilong is a characteristic versatile hero, with dash skills, damage reduction, and recovery capabilities. He can deal both burst damage and damage over time. However, as the game environment evolves and players improve, his easy-to-use skill mechanics are ceasing to be an advantage. We have thus added new mechanics to his skill set, while retaining his core gameplay. It is our hope that this will make Zilong a trusted choice for players in higher-level matches.",
+          "detailZh": null,
+          "versionName": "20240220",
+          "publishedAt": "2024-02-20T02:27:09Z"
+        }
+      ]
+    },
+    {
+      "seasonName": "S3",
+      "seasonId": "3",
+      "changes": [
+        {
+          "heroSlug": "cai-yan",
+          "heroName": "Cai Yan",
+          "heroNameZh": "蔡文姬",
+          "tag": "Stat Nerfs",
+          "change": "Skills (Nerf)",
+          "changeZh": null,
+          "detail": null,
+          "detailZh": null,
+          "versionName": "20231011",
+          "publishedAt": "2023-10-11T12:03:22Z"
+        },
+        {
+          "heroSlug": "dr-bian",
+          "heroName": "Dr Bian",
+          "heroNameZh": "扁鵲",
+          "tag": "Stat Changes",
+          "change": "Reduced the Health recovery effects of Bian Que's Skill 2. Reduced the basic Health recovery effect of his Ultimate but increased the rate of increase for effects per skill level.",
+          "changeZh": null,
+          "detail": "At the beginning of the new season, we reduced the effect of the Imperil equipment passive. The goal was to make life a little easier for heroes with healing capabilities. However, this also meant that when Dr Bian was well equipped or matched with other healers, his team would have an outsized advantage. As we hope to see players continue to use healers and the corresponding lineups, we have made certain adjustments to Dr Bian's skill stats to moderate his capabilities in the early-to-mid game. At the same time, Dr Bian will become more powerful than before when he reaches the higher levels.",
+          "detailZh": null,
+          "versionName": "20231025",
+          "publishedAt": "2023-10-25T12:02:46Z"
+        },
+        {
+          "heroSlug": "yaria",
+          "heroName": "Yaria",
+          "heroNameZh": "瑤",
+          "tag": "Stat Nerfs",
+          "change": "Reduced the shield granted by her Ultimate.",
+          "changeZh": null,
+          "detail": "At the beginning of the new season, we made certain adjustments to support equipment that have, in most cases, enhanced the strength of support-type heroes. With the introduction of certain support equipment in the update, Yaria's Ultimate shield has become even harder to wear down. Very often, together with the teammate she is attached to, Yaria has been able to create a whole that is far greater than the sum of its parts. We hope that with this slight adjustment to her Ultimate's stats, we will see fewer lopsided fights as a result of this issue.",
+          "detailZh": null,
+          "versionName": "20231122",
+          "publishedAt": "2023-11-22T12:01:46Z"
+        },
+        {
+          "heroSlug": "milady",
+          "heroName": "Milady",
+          "heroNameZh": "米萊狄",
+          "tag": "Stat Nerfs",
+          "change": "Skills (Nerf)",
+          "changeZh": null,
+          "detail": null,
+          "detailZh": null,
+          "versionName": "20231011",
+          "publishedAt": "2023-10-11T12:03:22Z"
+        },
+        {
+          "heroSlug": "luna",
+          "heroName": "Luna",
+          "heroNameZh": "露娜",
+          "tag": "Stat Buffs",
+          "change": "Increased magical damage dealt by Skill 1.",
+          "changeZh": null,
+          "detail": "With her high level of difficulty and enormous potential, Luna can deal massive damage as long as she constantly refreshes her Ultimate. But when Lunais interrupted or the player makes a mistake, there's not much left for her to do other than spam Skill 1. Considering the occasional mistakes, we want Skill 1 to pose more of a threat. In this way, we can further increase Luna's overall strength and let her shine even brighter in the Gorge.",
+          "detailZh": null,
+          "versionName": "20231108",
+          "publishedAt": "2023-11-08T12:02:09Z"
         }
       ]
     },
